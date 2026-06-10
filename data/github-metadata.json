@@ -1,0 +1,1926 @@
+[
+  {
+    "rank": 1,
+    "name": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "category": "personal AI assistant / multi-surface agent",
+    "note": "Personal device-resident AI assistant; unusually fast star growth requires source and security validation.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:52.566Z",
+    "github": {
+      "createdAt": "2025-11-24T10:16:47Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "forkCount": 79036,
+      "homepageUrl": "https://openclaw.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "openclaw 2026.6.5",
+        "tagName": "v2026.6.5",
+        "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.5",
+        "publishedAt": "2026-06-09T18:13:20Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "openclaw/openclaw",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T12:51:55Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "assistant"
+        },
+        {
+          "name": "own-your-data"
+        },
+        {
+          "name": "personal"
+        },
+        {
+          "name": "crustacean"
+        },
+        {
+          "name": "molty"
+        },
+        {
+          "name": "openclaw"
+        }
+      ],
+      "stargazerCount": 377929,
+      "updatedAt": "2026-06-10T13:56:03Z",
+      "url": "https://github.com/openclaw/openclaw",
+      "watchers": {
+        "totalCount": 1809
+      }
+    }
+  },
+  {
+    "rank": 2,
+    "name": "ultraworkers/claw-code",
+    "url": "https://github.com/ultraworkers/claw-code",
+    "category": "Claude Code-like CLI / Rust and Python",
+    "note": "Rust canonical implementation with Python companion/workspace; clean-room and provenance concerns should be checked.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:53.151Z",
+    "github": {
+      "createdAt": "2026-03-31T08:58:08Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
+      "forkCount": 109961,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": null,
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "ultraworkers/claw-code",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-06-08T06:06:12Z",
+      "repositoryTopics": null,
+      "stargazerCount": 193577,
+      "updatedAt": "2026-06-10T13:21:33Z",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "watchers": {
+        "totalCount": 1998
+      }
+    }
+  },
+  {
+    "rank": 3,
+    "name": "NousResearch/hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "category": "personal AI agent",
+    "note": "OpenClaw migration, memory, skills, MCP, cron, and messaging gateway style persistent agent.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:53.936Z",
+    "github": {
+      "createdAt": "2025-07-22T22:22:28Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "The agent that grows with you",
+      "forkCount": 32782,
+      "homepageUrl": "https://hermes-agent.nousresearch.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Hermes Agent v0.16.0 (2026.6.5) — The Surface Release",
+        "tagName": "v2026.6.5",
+        "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.5",
+        "publishedAt": "2026-06-06T00:55:58Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "NousResearch/hermes-agent",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T12:40:36Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-agent"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "anthropic"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "claude"
+        },
+        {
+          "name": "claude-code"
+        },
+        {
+          "name": "clawdbot"
+        },
+        {
+          "name": "codex"
+        },
+        {
+          "name": "hermes"
+        },
+        {
+          "name": "hermes-agent"
+        },
+        {
+          "name": "moltbot"
+        },
+        {
+          "name": "nous-research"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "openclaw"
+        }
+      ],
+      "stargazerCount": 189565,
+      "updatedAt": "2026-06-10T13:58:47Z",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "watchers": {
+        "totalCount": 747
+      }
+    }
+  },
+  {
+    "rank": 4,
+    "name": "anomalyco/opencode",
+    "url": "https://github.com/anomalyco/opencode",
+    "category": "open source coding agent",
+    "note": "Terminal coding agent with desktop beta, plan/build agent flow, and subagent structure.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:54.667Z",
+    "github": {
+      "createdAt": "2025-04-30T20:08:00Z",
+      "defaultBranchRef": {
+        "name": "dev"
+      },
+      "description": "The open source coding agent.",
+      "forkCount": 20711,
+      "homepageUrl": "https://opencode.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.17.1",
+        "tagName": "v1.17.1",
+        "url": "https://github.com/anomalyco/opencode/releases/tag/v1.17.1",
+        "publishedAt": "2026-06-10T11:38:01Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "anomalyco/opencode",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T11:55:25Z",
+      "repositoryTopics": null,
+      "stargazerCount": 172524,
+      "updatedAt": "2026-06-10T13:54:03Z",
+      "url": "https://github.com/anomalyco/opencode",
+      "watchers": {
+        "totalCount": 654
+      }
+    }
+  },
+  {
+    "rank": 5,
+    "name": "google-gemini/gemini-cli",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "category": "official terminal AI agent",
+    "note": "Official Google terminal agent with large context, MCP, built-in tools, and free tier.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:55.391Z",
+    "github": {
+      "createdAt": "2025-04-17T17:04:31Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "forkCount": 14026,
+      "homepageUrl": "https://geminicli.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Release v0.46.0",
+        "tagName": "v0.46.0",
+        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.46.0",
+        "publishedAt": "2026-06-10T01:15:02Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "google-gemini/gemini-cli",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T04:57:01Z",
+      "repositoryTopics": [
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "gemini-api"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "cli"
+        },
+        {
+          "name": "mcp-client"
+        },
+        {
+          "name": "mcp-server"
+        }
+      ],
+      "stargazerCount": 105128,
+      "updatedAt": "2026-06-10T11:49:43Z",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "watchers": {
+        "totalCount": 568
+      }
+    }
+  },
+  {
+    "rank": 6,
+    "name": "browser-use/browser-use",
+    "url": "https://github.com/browser-use/browser-use",
+    "category": "browser automation agent",
+    "note": "Representative browser automation agent with browser harness, Claude Code skill, and benchmarks.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:56.111Z",
+    "github": {
+      "createdAt": "2024-10-31T16:00:56Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "forkCount": 10944,
+      "homepageUrl": "https://browser-use.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "0.13.1",
+        "tagName": "0.13.1",
+        "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.1",
+        "publishedAt": "2026-06-10T01:00:59Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "browser-use/browser-use",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T13:31:50Z",
+      "repositoryTopics": [
+        {
+          "name": "llm"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "ai-tools"
+        },
+        {
+          "name": "browser-automation"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "browser-use"
+        },
+        {
+          "name": "playwright"
+        }
+      ],
+      "stargazerCount": 98088,
+      "updatedAt": "2026-06-10T13:59:39Z",
+      "url": "https://github.com/browser-use/browser-use",
+      "watchers": {
+        "totalCount": 439
+      }
+    }
+  },
+  {
+    "rank": 7,
+    "name": "openai/codex",
+    "url": "https://github.com/openai/codex",
+    "category": "official Codex CLI",
+    "note": "OpenAI official local coding agent CLI.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:56.733Z",
+    "github": {
+      "createdAt": "2025-04-13T05:37:54Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Lightweight coding agent that runs in your terminal",
+      "forkCount": 13275,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "0.139.0",
+        "tagName": "rust-v0.139.0",
+        "url": "https://github.com/openai/codex/releases/tag/rust-v0.139.0",
+        "publishedAt": "2026-06-09T20:13:29Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "openai/codex",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-06-10T13:57:08Z",
+      "repositoryTopics": null,
+      "stargazerCount": 90152,
+      "updatedAt": "2026-06-10T13:56:08Z",
+      "url": "https://github.com/openai/codex",
+      "watchers": {
+        "totalCount": 494
+      }
+    }
+  },
+  {
+    "rank": 8,
+    "name": "modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "category": "MCP server collection",
+    "note": "Core MCP server collection used as infrastructure by modern coding agents.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:57.815Z",
+    "github": {
+      "createdAt": "2024-11-19T01:10:17Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Model Context Protocol Servers",
+      "forkCount": 10969,
+      "homepageUrl": "https://modelcontextprotocol.io",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Release 2026.1.26",
+        "tagName": "2026.1.26",
+        "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.26",
+        "publishedAt": "2026-01-27T12:11:26Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "modelcontextprotocol/servers",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-07T22:29:30Z",
+      "repositoryTopics": null,
+      "stargazerCount": 87007,
+      "updatedAt": "2026-06-10T13:47:06Z",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "watchers": {
+        "totalCount": 623
+      }
+    }
+  },
+  {
+    "rank": 9,
+    "name": "All-Hands-AI/OpenHands",
+    "url": "https://github.com/All-Hands-AI/OpenHands",
+    "category": "autonomous software development agent",
+    "note": "Former OpenDevin lineage; development agent with file editing, command execution, browsing, CLI, and SDK flows.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:58.760Z",
+    "github": {
+      "createdAt": "2024-03-13T03:33:31Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "🙌 OpenHands: AI-Driven Development",
+      "forkCount": 9711,
+      "homepageUrl": "https://openhands.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "1.7.0 - 2026-05-01",
+        "tagName": "1.7.0",
+        "url": "https://github.com/OpenHands/OpenHands/releases/tag/1.7.0",
+        "publishedAt": "2026-05-01T14:52:47Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "OpenHands/OpenHands",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T13:57:59Z",
+      "repositoryTopics": [
+        {
+          "name": "agent"
+        },
+        {
+          "name": "artificial-intelligence"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "claude-ai"
+        },
+        {
+          "name": "cli"
+        },
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "gpt"
+        },
+        {
+          "name": "openai"
+        }
+      ],
+      "stargazerCount": 76382,
+      "updatedAt": "2026-06-10T13:58:40Z",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "watchers": {
+        "totalCount": 454
+      }
+    }
+  },
+  {
+    "rank": 10,
+    "name": "openinterpreter/open-interpreter",
+    "url": "https://github.com/openinterpreter/open-interpreter",
+    "category": "local computer control agent",
+    "note": "Natural language interface for local Python, JavaScript, shell, and computer control.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T13:59:59.686Z",
+    "github": {
+      "createdAt": "2023-07-14T07:10:44Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "A natural language interface for computers",
+      "forkCount": 5543,
+      "homepageUrl": "http://openinterpreter.com/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": null,
+      "licenseInfo": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "nickname": "GNU AGPLv3"
+      },
+      "nameWithOwner": "openinterpreter/openinterpreter",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-09T22:32:08Z",
+      "repositoryTopics": [
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "gpt-4"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "interpreter"
+        },
+        {
+          "name": "javascript"
+        },
+        {
+          "name": "nodejs"
+        }
+      ],
+      "stargazerCount": 63850,
+      "updatedAt": "2026-06-10T13:52:30Z",
+      "url": "https://github.com/openinterpreter/openinterpreter",
+      "watchers": {
+        "totalCount": 462
+      }
+    }
+  },
+  {
+    "rank": 11,
+    "name": "cline/cline",
+    "url": "https://github.com/cline/cline",
+    "category": "IDE and terminal coding agent",
+    "note": "VS Code, JetBrains, and CLI coding agent with Plan/Act, MCP, file editing, and command execution.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:00.342Z",
+    "github": {
+      "createdAt": "2024-07-06T07:28:10Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+      "forkCount": 6649,
+      "homepageUrl": "https://cline.bot",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "CLI v3.0.23",
+        "tagName": "cli-v3.0.23",
+        "url": "https://github.com/cline/cline/releases/tag/cli-v3.0.23",
+        "publishedAt": "2026-06-10T00:52:44Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "cline/cline",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T13:56:09Z",
+      "repositoryTopics": null,
+      "stargazerCount": 63010,
+      "updatedAt": "2026-06-10T13:54:20Z",
+      "url": "https://github.com/cline/cline",
+      "watchers": {
+        "totalCount": 276
+      }
+    }
+  },
+  {
+    "rank": 12,
+    "name": "microsoft/autogen",
+    "url": "https://github.com/microsoft/autogen",
+    "category": "multi-agent framework",
+    "note": "Long-running Microsoft multi-agent framework; current project status should be checked.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:01.199Z",
+    "github": {
+      "createdAt": "2023-08-18T11:43:45Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "A programming framework for agentic AI",
+      "forkCount": 8877,
+      "homepageUrl": "https://microsoft.github.io/autogen/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "python-v0.7.5",
+        "tagName": "python-v0.7.5",
+        "url": "https://github.com/microsoft/autogen/releases/tag/python-v0.7.5",
+        "publishedAt": "2025-09-30T06:18:26Z"
+      },
+      "licenseInfo": {
+        "key": "cc-by-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "nickname": ""
+      },
+      "nameWithOwner": "microsoft/autogen",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-04-15T11:59:09Z",
+      "repositoryTopics": [
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "llm-agent"
+        },
+        {
+          "name": "llm-framework"
+        },
+        {
+          "name": "agentic"
+        },
+        {
+          "name": "agentic-agi"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "autogen"
+        },
+        {
+          "name": "framework"
+        },
+        {
+          "name": "autogen-ecosystem"
+        }
+      ],
+      "stargazerCount": 58839,
+      "updatedAt": "2026-06-10T13:20:45Z",
+      "url": "https://github.com/microsoft/autogen",
+      "watchers": {
+        "totalCount": 527
+      }
+    }
+  },
+  {
+    "rank": 13,
+    "name": "upstash/context7",
+    "url": "https://github.com/upstash/context7",
+    "category": "MCP documentation context server",
+    "note": "Injects up-to-date documentation and examples into coding agents.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:01.970Z",
+    "github": {
+      "createdAt": "2025-03-26T23:40:39Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "forkCount": 2697,
+      "homepageUrl": "https://context7.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "ctx7@0.5.1",
+        "tagName": "ctx7@0.5.1",
+        "url": "https://github.com/upstash/context7/releases/tag/ctx7%400.5.1",
+        "publishedAt": "2026-06-05T08:04:14Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "upstash/context7",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T12:43:52Z",
+      "repositoryTopics": [
+        {
+          "name": "llm"
+        },
+        {
+          "name": "mcp"
+        },
+        {
+          "name": "mcp-server"
+        },
+        {
+          "name": "vibe-coding"
+        }
+      ],
+      "stargazerCount": 57119,
+      "updatedAt": "2026-06-10T13:46:35Z",
+      "url": "https://github.com/upstash/context7",
+      "watchers": {
+        "totalCount": 152
+      }
+    }
+  },
+  {
+    "rank": 14,
+    "name": "crewAIInc/crewAI",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "category": "multi-agent automation framework",
+    "note": "Role-playing autonomous agent orchestration framework emphasizing production workflows.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:02.670Z",
+    "github": {
+      "createdAt": "2023-10-27T03:26:59Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+      "forkCount": 7441,
+      "homepageUrl": "https://crewai.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "1.14.6",
+        "tagName": "1.14.6",
+        "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.14.6",
+        "publishedAt": "2026-05-28T17:04:02Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "crewAIInc/crewAI",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T04:59:15Z",
+      "repositoryTopics": [
+        {
+          "name": "agents"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "llms"
+        },
+        {
+          "name": "aiagentframework"
+        }
+      ],
+      "stargazerCount": 53198,
+      "updatedAt": "2026-06-10T13:08:22Z",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "watchers": {
+        "totalCount": 381
+      }
+    }
+  },
+  {
+    "rank": 15,
+    "name": "aaif-goose/goose",
+    "url": "https://github.com/aaif-goose/goose",
+    "category": "desktop and CLI AI agent",
+    "note": "General-purpose extensible agent with desktop, CLI, API, MCP extension, and provider support.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:03.563Z",
+    "github": {
+      "createdAt": "2024-08-23T19:03:36Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+      "forkCount": 5113,
+      "homepageUrl": "https://goose-docs.ai/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.37.0",
+        "tagName": "v1.37.0",
+        "url": "https://github.com/aaif-goose/goose/releases/tag/v1.37.0",
+        "publishedAt": "2026-06-03T19:37:45Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "aaif-goose/goose",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-06-10T12:47:38Z",
+      "repositoryTopics": [
+        {
+          "name": "mcp"
+        },
+        {
+          "name": "acp"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-agents"
+        }
+      ],
+      "stargazerCount": 48696,
+      "updatedAt": "2026-06-10T13:51:15Z",
+      "url": "https://github.com/aaif-goose/goose",
+      "watchers": {
+        "totalCount": 245
+      }
+    }
+  },
+  {
+    "rank": 16,
+    "name": "Aider-AI/aider",
+    "url": "https://github.com/Aider-AI/aider",
+    "category": "terminal AI pair programmer",
+    "note": "Mature CLI coding workflow with Git integration, repository map, tests, and lint loop.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:04.392Z",
+    "github": {
+      "createdAt": "2023-05-09T18:57:49Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "aider is AI pair programming in your terminal",
+      "forkCount": 4563,
+      "homepageUrl": "https://aider.chat/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Aider v0.86.0",
+        "tagName": "v0.86.0",
+        "url": "https://github.com/Aider-AI/aider/releases/tag/v0.86.0",
+        "publishedAt": "2025-08-09T17:42:19Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "Aider-AI/aider",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-05-22T14:02:20Z",
+      "repositoryTopics": [
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "cli"
+        },
+        {
+          "name": "command-line"
+        },
+        {
+          "name": "gpt-4"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "gpt-3"
+        },
+        {
+          "name": "gpt-35-turbo"
+        },
+        {
+          "name": "claude-3"
+        },
+        {
+          "name": "gpt-4o"
+        },
+        {
+          "name": "anthropic"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "llama"
+        },
+        {
+          "name": "sonnet"
+        }
+      ],
+      "stargazerCount": 45967,
+      "updatedAt": "2026-06-10T13:38:32Z",
+      "url": "https://github.com/Aider-AI/aider",
+      "watchers": {
+        "totalCount": 253
+      }
+    }
+  },
+  {
+    "rank": 17,
+    "name": "agno-agi/agno",
+    "url": "https://github.com/agno-agi/agno",
+    "category": "agent platform SDK",
+    "note": "SDK for building, running, and managing agent platforms.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:05.212Z",
+    "github": {
+      "createdAt": "2022-05-04T15:23:02Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Build, run, and manage agent platforms.",
+      "forkCount": 5500,
+      "homepageUrl": "https://docs.agno.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v2.6.12",
+        "tagName": "v2.6.12",
+        "url": "https://github.com/agno-agi/agno/releases/tag/v2.6.12",
+        "publishedAt": "2026-06-05T19:03:19Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "agno-agi/agno",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T13:30:52Z",
+      "repositoryTopics": [
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-agents"
+        }
+      ],
+      "stargazerCount": 40620,
+      "updatedAt": "2026-06-10T13:55:25Z",
+      "url": "https://github.com/agno-agi/agno",
+      "watchers": {
+        "totalCount": 235
+      }
+    }
+  },
+  {
+    "rank": 18,
+    "name": "Yeachan-Heo/oh-my-claudecode",
+    "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "category": "Claude Code workflow layer",
+    "note": "Workflow and multi-agent orchestration layer for Claude Code.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:06.050Z",
+    "github": {
+      "createdAt": "2026-01-09T03:36:29Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Teams-first Multi-agent orchestration for Claude Code",
+      "forkCount": 3290,
+      "homepageUrl": "https://oh-my-claudecode.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v4.14.6",
+        "tagName": "v4.14.6",
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v4.14.6",
+        "publishedAt": "2026-06-09T02:55:39Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "Yeachan-Heo/oh-my-claudecode",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T09:23:20Z",
+      "repositoryTopics": [
+        {
+          "name": "agentic-coding"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "claude"
+        },
+        {
+          "name": "claude-code"
+        },
+        {
+          "name": "oh-my-opencode"
+        },
+        {
+          "name": "opencode"
+        },
+        {
+          "name": "vibe-coding"
+        },
+        {
+          "name": "automation"
+        },
+        {
+          "name": "multi-agent-systems"
+        },
+        {
+          "name": "parallel-execution"
+        }
+      ],
+      "stargazerCount": 36121,
+      "updatedAt": "2026-06-10T13:46:22Z",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "watchers": {
+        "totalCount": 127
+      }
+    }
+  },
+  {
+    "rank": 19,
+    "name": "langchain-ai/langgraph",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "category": "stateful agent orchestration",
+    "note": "Low-level framework for long-running stateful agents with durable execution and human-in-the-loop.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:06.952Z",
+    "github": {
+      "createdAt": "2023-08-09T18:33:12Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Build resilient agents.",
+      "forkCount": 5771,
+      "homepageUrl": "https://docs.langchain.com/oss/python/langgraph/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "langgraph==1.2.4",
+        "tagName": "1.2.4",
+        "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.4",
+        "publishedAt": "2026-06-02T17:07:49Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "langchain-ai/langgraph",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-09T22:41:05Z",
+      "repositoryTopics": [
+        {
+          "name": "agents"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "deepagents"
+        },
+        {
+          "name": "enterprise"
+        },
+        {
+          "name": "framework"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "generative-ai"
+        },
+        {
+          "name": "langchain"
+        },
+        {
+          "name": "langgraph"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "multiagent"
+        },
+        {
+          "name": "open-source"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "pydantic"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "rag"
+        }
+      ],
+      "stargazerCount": 34351,
+      "updatedAt": "2026-06-10T13:49:15Z",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "watchers": {
+        "totalCount": 159
+      }
+    }
+  },
+  {
+    "rank": 20,
+    "name": "continuedev/continue",
+    "url": "https://github.com/continuedev/continue",
+    "category": "IDE and CLI coding agent",
+    "note": "VS Code, JetBrains, and CLI AI tooling; current repository status should be verified.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:07.720Z",
+    "github": {
+      "createdAt": "2023-05-24T03:39:39Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "⏩ Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI",
+      "forkCount": 4634,
+      "homepageUrl": "https://docs.continue.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.2.22-vscode",
+        "tagName": "v1.2.22-vscode",
+        "url": "https://github.com/continuedev/continue/releases/tag/v1.2.22-vscode",
+        "publishedAt": "2026-03-27T21:25:10Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "continuedev/continue",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T07:25:15Z",
+      "repositoryTopics": [
+        {
+          "name": "open-source"
+        },
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "agent"
+        },
+        {
+          "name": "cli"
+        },
+        {
+          "name": "jetbrains-plugin"
+        },
+        {
+          "name": "vs-code-extenstion"
+        }
+      ],
+      "stargazerCount": 33640,
+      "updatedAt": "2026-06-10T12:54:34Z",
+      "url": "https://github.com/continuedev/continue",
+      "watchers": {
+        "totalCount": 158
+      }
+    }
+  },
+  {
+    "rank": 21,
+    "name": "TabbyML/tabby",
+    "url": "https://github.com/TabbyML/tabby",
+    "category": "self-hosted coding assistant",
+    "note": "Self-hosted GitHub Copilot alternative for on-premise code assistance.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:08.594Z",
+    "github": {
+      "createdAt": "2023-03-16T09:18:01Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Self-hosted AI coding assistant",
+      "forkCount": 1750,
+      "homepageUrl": "https://tabbyml.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.32.0",
+        "tagName": "v0.32.0",
+        "url": "https://github.com/TabbyML/tabby/releases/tag/v0.32.0",
+        "publishedAt": "2026-01-25T17:07:44Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "TabbyML/tabby",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-03-02T20:08:28Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "codegen"
+        },
+        {
+          "name": "coding-assistant"
+        },
+        {
+          "name": "coding-language"
+        },
+        {
+          "name": "developer-experience"
+        },
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "gen-ai"
+        },
+        {
+          "name": "llms"
+        },
+        {
+          "name": "ide"
+        }
+      ],
+      "stargazerCount": 33579,
+      "updatedAt": "2026-06-10T07:45:44Z",
+      "url": "https://github.com/TabbyML/tabby",
+      "watchers": {
+        "totalCount": 181
+      }
+    }
+  },
+  {
+    "rank": 22,
+    "name": "Yeachan-Heo/oh-my-codex",
+    "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+    "category": "Codex CLI workflow layer",
+    "note": "Workflow, hook, planning, and agent-team layer on top of OpenAI Codex CLI.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:09.205Z",
+    "github": {
+      "createdAt": "2026-02-02T14:21:18Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more.",
+      "forkCount": 2420,
+      "homepageUrl": "https://oh-my-codex.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.18.11",
+        "tagName": "v0.18.11",
+        "url": "https://github.com/Yeachan-Heo/oh-my-codex/releases/tag/v0.18.11",
+        "publishedAt": "2026-06-09T00:13:14Z"
+      },
+      "licenseInfo": null,
+      "nameWithOwner": "Yeachan-Heo/oh-my-codex",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T11:40:13Z",
+      "repositoryTopics": null,
+      "stargazerCount": 30707,
+      "updatedAt": "2026-06-10T13:49:39Z",
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+      "watchers": {
+        "totalCount": 73
+      }
+    }
+  },
+  {
+    "rank": 23,
+    "name": "ComposioHQ/composio",
+    "url": "https://github.com/ComposioHQ/composio",
+    "category": "agent tool integration / MCP",
+    "note": "Toolkits, authentication, context management, and workbench layer for external app actions.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:10.232Z",
+    "github": {
+      "createdAt": "2024-02-23T13:58:27Z",
+      "defaultBranchRef": {
+        "name": "next"
+      },
+      "description": "Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that turn intent into action.",
+      "forkCount": 4617,
+      "homepageUrl": "https://docs.composio.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "CLI @composio/cli@0.2.31",
+        "tagName": "@composio/cli@0.2.31",
+        "url": "https://github.com/ComposioHQ/composio/releases/tag/%40composio/cli%400.2.31",
+        "publishedAt": "2026-06-09T09:42:56Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "ComposioHQ/composio",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T03:27:16Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "aiagents"
+        },
+        {
+          "name": "function-calling"
+        },
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "gpt-4"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "typescript"
+        },
+        {
+          "name": "javascript"
+        },
+        {
+          "name": "js"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "mcp"
+        },
+        {
+          "name": "remote-mcp-server"
+        },
+        {
+          "name": "sse"
+        },
+        {
+          "name": "agentic-ai"
+        }
+      ],
+      "stargazerCount": 28708,
+      "updatedAt": "2026-06-10T08:21:27Z",
+      "url": "https://github.com/ComposioHQ/composio",
+      "watchers": {
+        "totalCount": 66
+      }
+    }
+  },
+  {
+    "rank": 24,
+    "name": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "category": "Qwen-optimized terminal coding agent",
+    "note": "Terminal-first coding agent optimized for Qwen models with skills and subagents.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:10.843Z",
+    "github": {
+      "createdAt": "2025-06-26T01:37:46Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "forkCount": 2491,
+      "homepageUrl": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Release v0.17.1",
+        "tagName": "v0.17.1",
+        "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.17.1",
+        "publishedAt": "2026-06-03T11:58:14Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "QwenLM/qwen-code",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T13:55:05Z",
+      "repositoryTopics": null,
+      "stargazerCount": 25065,
+      "updatedAt": "2026-06-10T13:58:50Z",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "watchers": {
+        "totalCount": 130
+      }
+    }
+  },
+  {
+    "rank": 25,
+    "name": "RooCodeInc/Roo-Code",
+    "url": "https://github.com/RooCodeInc/Roo-Code",
+    "category": "VS Code coding agent",
+    "note": "Cline/Roo lineage IDE coding agent; current extension status should be verified.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:11.519Z",
+    "github": {
+      "createdAt": "2024-10-31T17:56:50Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Roo Code gives you a whole dev team of AI agents in your code editor.",
+      "forkCount": 3309,
+      "homepageUrl": "https://roocode.com",
+      "isArchived": true,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Release v3.54.0",
+        "tagName": "v3.54.0",
+        "url": "https://github.com/RooCodeInc/Roo-Code/releases/tag/v3.54.0",
+        "publishedAt": "2026-05-15T17:52:24Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "RooCodeInc/Roo-Code",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-05-15T18:08:47Z",
+      "repositoryTopics": null,
+      "stargazerCount": 24227,
+      "updatedAt": "2026-06-10T13:37:46Z",
+      "url": "https://github.com/RooCodeInc/Roo-Code",
+      "watchers": {
+        "totalCount": 141
+      }
+    }
+  },
+  {
+    "rank": 26,
+    "name": "openai/codex-plugin-cc",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "category": "Claude Code to Codex bridge",
+    "note": "Plugin that lets Claude Code call Codex for review or delegation.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:12.382Z",
+    "github": {
+      "createdAt": "2026-03-30T15:29:52Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Use Codex from Claude Code to review code or delegate tasks.",
+      "forkCount": 1245,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.0.4",
+        "tagName": "v1.0.4",
+        "url": "https://github.com/openai/codex-plugin-cc/releases/tag/v1.0.4",
+        "publishedAt": "2026-04-18T20:42:15Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "openai/codex-plugin-cc",
+      "primaryLanguage": {
+        "name": "JavaScript"
+      },
+      "pushedAt": "2026-04-18T20:42:15Z",
+      "repositoryTopics": null,
+      "stargazerCount": 20581,
+      "updatedAt": "2026-06-10T13:57:31Z",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "watchers": {
+        "totalCount": 61
+      }
+    }
+  },
+  {
+    "rank": 27,
+    "name": "Kilo-Org/kilocode",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "category": "IDE and CLI coding agent",
+    "note": "All-in-one agentic engineering platform in the Cline/Roo family.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:13.198Z",
+    "github": {
+      "createdAt": "2025-03-10T15:34:26Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "forkCount": 2643,
+      "homepageUrl": "https://kilo.ai/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v7.3.41 (release)",
+        "tagName": "v7.3.41",
+        "url": "https://github.com/Kilo-Org/kilocode/releases/tag/v7.3.41",
+        "publishedAt": "2026-06-09T14:27:36Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "Kilo-Org/kilocode",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-10T13:57:52Z",
+      "repositoryTopics": [
+        {
+          "name": "ai-coding"
+        },
+        {
+          "name": "vscode"
+        },
+        {
+          "name": "vscode-extension"
+        },
+        {
+          "name": "ai-developer-tools"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "claude"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "sonnet"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-age"
+        },
+        {
+          "name": "cli"
+        },
+        {
+          "name": "jetbrains"
+        }
+      ],
+      "stargazerCount": 19983,
+      "updatedAt": "2026-06-10T13:41:21Z",
+      "url": "https://github.com/Kilo-Org/kilocode",
+      "watchers": {
+        "totalCount": 101
+      }
+    }
+  },
+  {
+    "rank": 28,
+    "name": "SWE-agent/SWE-agent",
+    "url": "https://github.com/SWE-agent/SWE-agent",
+    "category": "research software engineering agent",
+    "note": "Research agent for fixing GitHub issues and SWE-bench workflows.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:14.018Z",
+    "github": {
+      "createdAt": "2024-04-02T04:09:47Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "SWE-agent takes a GitHub issue and tries to automatically fix it, using your LM of choice. It can also be employed for offensive cybersecurity or competitive coding challenges. [NeurIPS 2024] ",
+      "forkCount": 2125,
+      "homepageUrl": "https://swe-agent.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.1.0: 10s of thousands of training trajectories",
+        "tagName": "v1.1.0",
+        "url": "https://github.com/SWE-agent/SWE-agent/releases/tag/v1.1.0",
+        "publishedAt": "2025-05-22T16:11:39Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "SWE-agent/SWE-agent",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T02:52:28Z",
+      "repositoryTopics": [
+        {
+          "name": "agent"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "developer-tools"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "agent-based-model"
+        },
+        {
+          "name": "lms"
+        },
+        {
+          "name": "cybersecurity"
+        }
+      ],
+      "stargazerCount": 19475,
+      "updatedAt": "2026-06-10T13:39:25Z",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "watchers": {
+        "totalCount": 110
+      }
+    }
+  },
+  {
+    "rank": 29,
+    "name": "nesquena/hermes-webui",
+    "url": "https://github.com/nesquena/hermes-webui",
+    "category": "Hermes web UI",
+    "note": "Web UI for using Hermes Agent from browser or phone.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:14.838Z",
+    "github": {
+      "createdAt": "2026-03-30T21:50:12Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+      "forkCount": 1739,
+      "homepageUrl": "https://get-hermes.ai/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.51.350",
+        "tagName": "v0.51.350",
+        "url": "https://github.com/nesquena/hermes-webui/releases/tag/v0.51.350",
+        "publishedAt": "2026-06-10T09:57:05Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "nesquena/hermes-webui",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T09:56:51Z",
+      "repositoryTopics": [
+        {
+          "name": "agent"
+        },
+        {
+          "name": "hermes"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "hermes-agent"
+        },
+        {
+          "name": "nous-research"
+        }
+      ],
+      "stargazerCount": 14148,
+      "updatedAt": "2026-06-10T14:00:17Z",
+      "url": "https://github.com/nesquena/hermes-webui",
+      "watchers": {
+        "totalCount": 51
+      }
+    }
+  },
+  {
+    "rank": 30,
+    "name": "nanobrowser/nanobrowser",
+    "url": "https://github.com/nanobrowser/nanobrowser",
+    "category": "browser extension web agent",
+    "note": "Chrome/Edge extension for multi-agent web automation with user-owned API keys.",
+    "exists": true,
+    "fetchedAt": "2026-06-10T14:00:15.853Z",
+    "github": {
+      "createdAt": "2024-12-31T08:11:27Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.",
+      "forkCount": 1378,
+      "homepageUrl": "https://nanobrowser.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.1.13",
+        "tagName": "v0.1.13",
+        "url": "https://github.com/nanobrowser/nanobrowser/releases/tag/v0.1.13",
+        "publishedAt": "2025-11-22T13:52:50Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "nanobrowser/nanobrowser",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2025-11-24T11:10:03Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "chrome-extension"
+        },
+        {
+          "name": "agent"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "ai-tools"
+        },
+        {
+          "name": "automation"
+        },
+        {
+          "name": "browser-use"
+        },
+        {
+          "name": "multi-agent"
+        },
+        {
+          "name": "web-automation"
+        },
+        {
+          "name": "manus"
+        },
+        {
+          "name": "opensource"
+        },
+        {
+          "name": "mariner"
+        },
+        {
+          "name": "browser"
+        },
+        {
+          "name": "nano"
+        },
+        {
+          "name": "browser-automation"
+        },
+        {
+          "name": "comet"
+        },
+        {
+          "name": "extension"
+        },
+        {
+          "name": "dia"
+        },
+        {
+          "name": "n8n"
+        },
+        {
+          "name": "playwright"
+        }
+      ],
+      "stargazerCount": 13110,
+      "updatedAt": "2026-06-10T13:27:34Z",
+      "url": "https://github.com/nanobrowser/nanobrowser",
+      "watchers": {
+        "totalCount": 63
+      }
+    }
+  }
+]

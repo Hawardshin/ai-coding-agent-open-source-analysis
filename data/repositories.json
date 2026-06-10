@@ -1,0 +1,213 @@
+[
+  {
+    "rank": 1,
+    "name": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "category": "personal AI assistant / multi-surface agent",
+    "note": "Personal device-resident AI assistant; unusually fast star growth requires source and security validation."
+  },
+  {
+    "rank": 2,
+    "name": "ultraworkers/claw-code",
+    "url": "https://github.com/ultraworkers/claw-code",
+    "category": "Claude Code-like CLI / Rust and Python",
+    "note": "Rust canonical implementation with Python companion/workspace; clean-room and provenance concerns should be checked."
+  },
+  {
+    "rank": 3,
+    "name": "NousResearch/hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "category": "personal AI agent",
+    "note": "OpenClaw migration, memory, skills, MCP, cron, and messaging gateway style persistent agent."
+  },
+  {
+    "rank": 4,
+    "name": "anomalyco/opencode",
+    "url": "https://github.com/anomalyco/opencode",
+    "category": "open source coding agent",
+    "note": "Terminal coding agent with desktop beta, plan/build agent flow, and subagent structure."
+  },
+  {
+    "rank": 5,
+    "name": "google-gemini/gemini-cli",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "category": "official terminal AI agent",
+    "note": "Official Google terminal agent with large context, MCP, built-in tools, and free tier."
+  },
+  {
+    "rank": 6,
+    "name": "browser-use/browser-use",
+    "url": "https://github.com/browser-use/browser-use",
+    "category": "browser automation agent",
+    "note": "Representative browser automation agent with browser harness, Claude Code skill, and benchmarks."
+  },
+  {
+    "rank": 7,
+    "name": "openai/codex",
+    "url": "https://github.com/openai/codex",
+    "category": "official Codex CLI",
+    "note": "OpenAI official local coding agent CLI."
+  },
+  {
+    "rank": 8,
+    "name": "modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "category": "MCP server collection",
+    "note": "Core MCP server collection used as infrastructure by modern coding agents."
+  },
+  {
+    "rank": 9,
+    "name": "All-Hands-AI/OpenHands",
+    "url": "https://github.com/All-Hands-AI/OpenHands",
+    "category": "autonomous software development agent",
+    "note": "Former OpenDevin lineage; development agent with file editing, command execution, browsing, CLI, and SDK flows."
+  },
+  {
+    "rank": 10,
+    "name": "openinterpreter/open-interpreter",
+    "url": "https://github.com/openinterpreter/open-interpreter",
+    "category": "local computer control agent",
+    "note": "Natural language interface for local Python, JavaScript, shell, and computer control."
+  },
+  {
+    "rank": 11,
+    "name": "cline/cline",
+    "url": "https://github.com/cline/cline",
+    "category": "IDE and terminal coding agent",
+    "note": "VS Code, JetBrains, and CLI coding agent with Plan/Act, MCP, file editing, and command execution."
+  },
+  {
+    "rank": 12,
+    "name": "microsoft/autogen",
+    "url": "https://github.com/microsoft/autogen",
+    "category": "multi-agent framework",
+    "note": "Long-running Microsoft multi-agent framework; current project status should be checked."
+  },
+  {
+    "rank": 13,
+    "name": "upstash/context7",
+    "url": "https://github.com/upstash/context7",
+    "category": "MCP documentation context server",
+    "note": "Injects up-to-date documentation and examples into coding agents."
+  },
+  {
+    "rank": 14,
+    "name": "crewAIInc/crewAI",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "category": "multi-agent automation framework",
+    "note": "Role-playing autonomous agent orchestration framework emphasizing production workflows."
+  },
+  {
+    "rank": 15,
+    "name": "aaif-goose/goose",
+    "url": "https://github.com/aaif-goose/goose",
+    "category": "desktop and CLI AI agent",
+    "note": "General-purpose extensible agent with desktop, CLI, API, MCP extension, and provider support."
+  },
+  {
+    "rank": 16,
+    "name": "Aider-AI/aider",
+    "url": "https://github.com/Aider-AI/aider",
+    "category": "terminal AI pair programmer",
+    "note": "Mature CLI coding workflow with Git integration, repository map, tests, and lint loop."
+  },
+  {
+    "rank": 17,
+    "name": "agno-agi/agno",
+    "url": "https://github.com/agno-agi/agno",
+    "category": "agent platform SDK",
+    "note": "SDK for building, running, and managing agent platforms."
+  },
+  {
+    "rank": 18,
+    "name": "Yeachan-Heo/oh-my-claudecode",
+    "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "category": "Claude Code workflow layer",
+    "note": "Workflow and multi-agent orchestration layer for Claude Code."
+  },
+  {
+    "rank": 19,
+    "name": "langchain-ai/langgraph",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "category": "stateful agent orchestration",
+    "note": "Low-level framework for long-running stateful agents with durable execution and human-in-the-loop."
+  },
+  {
+    "rank": 20,
+    "name": "continuedev/continue",
+    "url": "https://github.com/continuedev/continue",
+    "category": "IDE and CLI coding agent",
+    "note": "VS Code, JetBrains, and CLI AI tooling; current repository status should be verified."
+  },
+  {
+    "rank": 21,
+    "name": "TabbyML/tabby",
+    "url": "https://github.com/TabbyML/tabby",
+    "category": "self-hosted coding assistant",
+    "note": "Self-hosted GitHub Copilot alternative for on-premise code assistance."
+  },
+  {
+    "rank": 22,
+    "name": "Yeachan-Heo/oh-my-codex",
+    "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+    "category": "Codex CLI workflow layer",
+    "note": "Workflow, hook, planning, and agent-team layer on top of OpenAI Codex CLI."
+  },
+  {
+    "rank": 23,
+    "name": "ComposioHQ/composio",
+    "url": "https://github.com/ComposioHQ/composio",
+    "category": "agent tool integration / MCP",
+    "note": "Toolkits, authentication, context management, and workbench layer for external app actions."
+  },
+  {
+    "rank": 24,
+    "name": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "category": "Qwen-optimized terminal coding agent",
+    "note": "Terminal-first coding agent optimized for Qwen models with skills and subagents."
+  },
+  {
+    "rank": 25,
+    "name": "RooCodeInc/Roo-Code",
+    "url": "https://github.com/RooCodeInc/Roo-Code",
+    "category": "VS Code coding agent",
+    "note": "Cline/Roo lineage IDE coding agent; current extension status should be verified."
+  },
+  {
+    "rank": 26,
+    "name": "openai/codex-plugin-cc",
+    "url": "https://github.com/openai/codex-plugin-cc",
+    "category": "Claude Code to Codex bridge",
+    "note": "Plugin that lets Claude Code call Codex for review or delegation."
+  },
+  {
+    "rank": 27,
+    "name": "Kilo-Org/kilocode",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "category": "IDE and CLI coding agent",
+    "note": "All-in-one agentic engineering platform in the Cline/Roo family."
+  },
+  {
+    "rank": 28,
+    "name": "SWE-agent/SWE-agent",
+    "url": "https://github.com/SWE-agent/SWE-agent",
+    "category": "research software engineering agent",
+    "note": "Research agent for fixing GitHub issues and SWE-bench workflows."
+  },
+  {
+    "rank": 29,
+    "name": "nesquena/hermes-webui",
+    "url": "https://github.com/nesquena/hermes-webui",
+    "category": "Hermes web UI",
+    "note": "Web UI for using Hermes Agent from browser or phone."
+  },
+  {
+    "rank": 30,
+    "name": "nanobrowser/nanobrowser",
+    "url": "https://github.com/nanobrowser/nanobrowser",
+    "category": "browser extension web agent",
+    "note": "Chrome/Edge extension for multi-agent web automation with user-owned API keys."
+  }
+]
+

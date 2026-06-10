@@ -1,0 +1,53 @@
+# AI Coding Agent Open Source Analysis
+
+This repository collects detailed Korean analysis reports for open source AI coding agents, terminal/IDE agents, MCP tooling, browser automation agents, and agent frameworks.
+
+The source repositories are cloned locally under `sources/` for inspection and execution checks, but are intentionally not committed. Reports, diagrams, and metadata are committed here.
+
+## Structure
+
+- `data/repositories.json`: canonical target repository list from the user-provided source document.
+- `data/github-metadata.json`: GitHub metadata gathered from the live API.
+- `data/source-inventory.json`: local clone inventory, commits, manifests, languages, and package metadata.
+- `reports/00-source-inventory.md`: clone inventory summary table.
+- `reports/`: repository-by-repository analysis reports.
+- `scripts/`: local automation for metadata collection and cloning.
+
+## Repository Reports
+
+1. [openclaw/openclaw](reports/repositories/openclaw-openclaw.md)
+2. [ultraworkers/claw-code](reports/repositories/ultraworkers-claw-code.md)
+3. [NousResearch/hermes-agent](reports/repositories/NousResearch-hermes-agent.md)
+4. [anomalyco/opencode](reports/repositories/anomalyco-opencode.md)
+5. [google-gemini/gemini-cli](reports/repositories/google-gemini-cli.md)
+6. [browser-use/browser-use](reports/repositories/browser-use-browser-use.md)
+7. [openai/codex](reports/repositories/openai-codex.md)
+8. [modelcontextprotocol/servers](reports/repositories/modelcontextprotocol-servers.md)
+9. [All-Hands-AI/OpenHands](reports/repositories/all-hands-ai-openhands.md)
+10. [openinterpreter/open-interpreter](reports/repositories/openinterpreter-open-interpreter.md)
+11. [cline/cline](reports/repositories/cline-cline.md)
+12. [microsoft/autogen](reports/repositories/microsoft-autogen.md)
+13. [upstash/context7](reports/repositories/upstash-context7.md)
+14. [crewAIInc/crewAI](reports/repositories/crewaiinc-crewai.md)
+15. [aaif-goose/goose](reports/repositories/aaif-goose-goose.md)
+16. [Aider-AI/aider](reports/repositories/aider-ai-aider.md)
+17. [agno-agi/agno](reports/repositories/agno-agi-agno.md)
+18. [Yeachan-Heo/oh-my-claudecode](reports/repositories/Yeachan-Heo-oh-my-claudecode.md)
+19. [langchain-ai/langgraph](reports/repositories/langchain-ai-langgraph.md)
+20. [continuedev/continue](reports/repositories/continuedev-continue.md)
+21. [TabbyML/tabby](reports/repositories/TabbyML-tabby.md)
+22. [Yeachan-Heo/oh-my-codex](reports/repositories/Yeachan-Heo-oh-my-codex.md)
+23. [ComposioHQ/composio](reports/repositories/ComposioHQ-composio.md)
+24. [QwenLM/qwen-code](reports/repositories/QwenLM-qwen-code.md)
+25. [RooCodeInc/Roo-Code](reports/repositories/RooCodeInc-Roo-Code.md)
+26. [openai/codex-plugin-cc](reports/repositories/openai-codex-plugin-cc.md)
+27. [Kilo-Org/kilocode](reports/repositories/Kilo-Org-kilocode.md)
+28. [SWE-agent/SWE-agent](reports/repositories/SWE-agent-SWE-agent.md)
+29. [nesquena/hermes-webui](reports/repositories/nesquena-hermes-webui.md)
+30. [nanobrowser/nanobrowser](reports/repositories/nanobrowser-nanobrowser.md)
+
+## Scope Notes
+
+- The cloned upstream repositories live under `sources/` and are intentionally ignored by git.
+- Reports are written in Korean and include source-level architecture, execution flow, diagrams, runtime checks, risks, and notable hidden surfaces.
+- Metadata was collected on 2026-06-10.
