@@ -9,9 +9,23 @@ The source repositories are cloned locally under `sources/` for inspection and e
 - `data/repositories.json`: canonical target repository list from the user-provided source document.
 - `data/github-metadata.json`: GitHub metadata gathered from the live API.
 - `data/source-inventory.json`: local clone inventory, commits, manifests, languages, and package metadata.
+- `data/project-comparison-matrix.json`: normalized comparison matrix for the 30 analyzed projects.
 - `reports/00-source-inventory.md`: clone inventory summary table.
 - `reports/`: repository-by-repository analysis reports.
+- `reports/comparisons/`: cross-repository taxonomy, feature comparison, and similarity cluster reports.
+- `reports/research/`: 2026 agent/harness/context/evaluation research synthesis, source catalog, and conflicting theories.
 - `scripts/`: local automation for metadata collection and cloning.
+
+## Cross-Repository Reports
+
+1. [30개 프로젝트 분류와 기능 비교](reports/comparisons/01-project-taxonomy-and-feature-comparison.md)
+2. [유사군별 비교와 관계 지도](reports/comparisons/02-similarity-clusters.md)
+
+## Agent Research Reports
+
+1. [2026 AI 코딩 에이전트 설계 트렌드 종합](reports/research/01-agent-trends-2026.md)
+2. [AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선](reports/research/02-evidence-catalog-100-sources.md)
+3. [AI 에이전트 설계의 충돌 이론과 보류된 질문](reports/research/03-conflicting-theories-and-open-questions.md)
 
 ## Repository Reports
 
