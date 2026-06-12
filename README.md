@@ -39,7 +39,8 @@ The repository now also includes a second research track for adjacent AI infrast
 1. [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md)
 2. [컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석](reports/adjacent-tech/02-repository-analysis-50.md)
 3. [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](reports/adjacent-tech/03-official-docs-and-source-map.md)
-4. [50개 adjacent-stack clone inventory](reports/adjacent-tech-source-inventory.md)
+4. [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md)
+5. [50개 adjacent-stack clone inventory](reports/adjacent-tech-source-inventory.md)
 
 ## Repository Reports
 
