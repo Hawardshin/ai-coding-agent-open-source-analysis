@@ -4,16 +4,23 @@ This repository collects detailed Korean analysis reports for open source AI cod
 
 The source repositories are cloned locally under `sources/` for inspection and execution checks, but are intentionally not committed. Reports, diagrams, and metadata are committed here.
 
+The repository now also includes a second research track for adjacent AI infrastructure: context engineering, RAG, vLLM/local LLM serving, vector databases, evaluation, observability, and agent harness tooling.
+
 ## Structure
 
 - `data/repositories.json`: canonical target repository list from the user-provided source document.
 - `data/github-metadata.json`: GitHub metadata gathered from the live API.
 - `data/source-inventory.json`: local clone inventory, commits, manifests, languages, and package metadata.
 - `data/project-comparison-matrix.json`: normalized comparison matrix for the 30 analyzed projects.
+- `data/adjacent-tech-repositories.json`: 50 selected adjacent-stack repositories for context/RAG/local LLM/harness research.
+- `data/adjacent-tech-github-metadata.json`: GitHub metadata for the 50 adjacent-stack repositories.
+- `data/adjacent-tech-source-inventory.json`: local clone inventory for the 50 adjacent-stack repositories.
 - `reports/00-source-inventory.md`: clone inventory summary table.
+- `reports/adjacent-tech-source-inventory.md`: clone inventory summary for the 50 adjacent-stack repositories.
 - `reports/`: repository-by-repository analysis reports.
 - `reports/comparisons/`: cross-repository taxonomy, feature comparison, and similarity cluster reports.
 - `reports/research/`: 2026 agent/harness/context/evaluation research synthesis, source catalog, and conflicting theories.
+- `reports/adjacent-tech/`: context engineering, RAG, local LLM, vector DB, evaluation, and harness reports.
 - `scripts/`: local automation for metadata collection and cloning.
 
 ## Cross-Repository Reports
@@ -26,6 +33,13 @@ The source repositories are cloned locally under `sources/` for inspection and e
 1. [2026 AI 코딩 에이전트 설계 트렌드 종합](reports/research/01-agent-trends-2026.md)
 2. [AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선](reports/research/02-evidence-catalog-100-sources.md)
 3. [AI 에이전트 설계의 충돌 이론과 보류된 질문](reports/research/03-conflicting-theories-and-open-questions.md)
+
+## Adjacent Infrastructure Reports
+
+1. [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md)
+2. [컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석](reports/adjacent-tech/02-repository-analysis-50.md)
+3. [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](reports/adjacent-tech/03-official-docs-and-source-map.md)
+4. [50개 adjacent-stack clone inventory](reports/adjacent-tech-source-inventory.md)
 
 ## Repository Reports
 
@@ -65,3 +79,4 @@ The source repositories are cloned locally under `sources/` for inspection and e
 - The cloned upstream repositories live under `sources/` and are intentionally ignored by git.
 - Reports are written in Korean and include source-level architecture, execution flow, diagrams, runtime checks, risks, and notable hidden surfaces.
 - Metadata was collected on 2026-06-10.
+- Adjacent-stack metadata and clone inventory were collected on 2026-06-13 KST.

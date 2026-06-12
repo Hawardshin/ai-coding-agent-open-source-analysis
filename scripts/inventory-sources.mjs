@@ -9,8 +9,13 @@ import {
 } from "node:fs";
 import { basename, dirname, extname, join, relative } from "node:path";
 
-const repositories = JSON.parse(readFileSync("data/repositories.json", "utf8"));
-const metadata = JSON.parse(readFileSync("data/github-metadata.json", "utf8"));
+const repositoriesFile = process.env.REPOSITORIES_FILE || "data/repositories.json";
+const metadataFile = process.env.GITHUB_METADATA_FILE || "data/github-metadata.json";
+const sourcesDir = process.env.SOURCES_DIR || "sources";
+const inventoryFile = process.env.SOURCE_INVENTORY_FILE || "data/source-inventory.json";
+const inventoryReportFile = process.env.SOURCE_INVENTORY_REPORT_FILE || "reports/00-source-inventory.md";
+const repositories = JSON.parse(readFileSync(repositoriesFile, "utf8"));
+const metadata = JSON.parse(readFileSync(metadataFile, "utf8"));
 const metaByName = new Map(metadata.map((item) => [item.name, item]));
 
 const SKIP_DIRS = new Set([
@@ -58,7 +63,7 @@ const MANIFEST_NAMES = new Set([
 ]);
 
 function repoDir(name) {
-  return join("sources", name.replace("/", "__"));
+  return join(sourcesDir, name.replace("/", "__"));
 }
 
 function git(dir, args) {
@@ -322,7 +327,7 @@ for (const repo of repositories) {
 
 mkdirSync("data", { recursive: true });
 mkdirSync("reports", { recursive: true });
-writeFileSync("data/source-inventory.json", `${JSON.stringify(inventory, null, 2)}\n`);
+writeFileSync(inventoryFile, `${JSON.stringify(inventory, null, 2)}\n`);
 
 const lines = [
   "# Source Inventory",
@@ -353,4 +358,4 @@ for (const item of inventory) {
   lines.push("");
 }
 
-writeFileSync("reports/00-source-inventory.md", `${lines.join("\n")}\n`);
+writeFileSync(inventoryReportFile, `${lines.join("\n")}\n`);

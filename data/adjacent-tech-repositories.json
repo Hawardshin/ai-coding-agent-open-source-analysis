@@ -1,0 +1,452 @@
+[
+  {
+    "rank": 1,
+    "name": "vllm-project/vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "category": "LLM serving / vLLM",
+    "trend_tags": ["vllm", "serving", "continuous-batching", "openai-compatible-api"],
+    "official_docs": "https://docs.vllm.ai/",
+    "note": "High-throughput LLM serving engine; central reference for vLLM, PagedAttention, OpenAI-compatible local/cloud serving."
+  },
+  {
+    "rank": 2,
+    "name": "ggml-org/llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "category": "local LLM inference",
+    "trend_tags": ["local-llm", "gguf", "quantization", "edge-inference"],
+    "official_docs": "https://github.com/ggml-org/llama.cpp/tree/master/docs",
+    "note": "Reference local/edge inference stack for GGUF models, CPU/GPU backends, quantized inference, and local agent deployment."
+  },
+  {
+    "rank": 3,
+    "name": "ollama/ollama",
+    "url": "https://github.com/ollama/ollama",
+    "category": "local LLM runtime",
+    "trend_tags": ["local-llm", "model-registry", "desktop", "openai-compatible-api"],
+    "official_docs": "https://docs.ollama.com/",
+    "note": "Popular local model runner and model packaging layer used by agent tools for offline/private inference."
+  },
+  {
+    "rank": 4,
+    "name": "sgl-project/sglang",
+    "url": "https://github.com/sgl-project/sglang",
+    "category": "LLM serving / structured generation",
+    "trend_tags": ["serving", "structured-generation", "agent-runtime", "radix-attention"],
+    "official_docs": "https://docs.sglang.ai/",
+    "note": "Serving and programming framework for LLM/VLM applications with structured generation and high-performance runtime."
+  },
+  {
+    "rank": 5,
+    "name": "huggingface/text-generation-inference",
+    "url": "https://github.com/huggingface/text-generation-inference",
+    "category": "LLM serving",
+    "trend_tags": ["serving", "huggingface", "text-generation", "production"],
+    "official_docs": "https://huggingface.co/docs/text-generation-inference/",
+    "note": "Hugging Face production inference server for text generation models."
+  },
+  {
+    "rank": 6,
+    "name": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "category": "model library",
+    "trend_tags": ["models", "tokenizers", "local-llm", "inference"],
+    "official_docs": "https://huggingface.co/docs/transformers/",
+    "note": "Core model library underlying many local LLM, RAG, and serving stacks."
+  },
+  {
+    "rank": 7,
+    "name": "huggingface/accelerate",
+    "url": "https://github.com/huggingface/accelerate",
+    "category": "model runtime / distributed",
+    "trend_tags": ["distributed", "training", "inference", "huggingface"],
+    "official_docs": "https://huggingface.co/docs/accelerate/",
+    "note": "Runtime abstraction for distributed training/inference and device placement."
+  },
+  {
+    "rank": 8,
+    "name": "mlc-ai/mlc-llm",
+    "url": "https://github.com/mlc-ai/mlc-llm",
+    "category": "local LLM compilation",
+    "trend_tags": ["compiler", "edge-inference", "webgpu", "local-llm"],
+    "official_docs": "https://llm.mlc.ai/docs/",
+    "note": "Compiler-oriented LLM deployment stack targeting local, browser, mobile, and heterogeneous devices."
+  },
+  {
+    "rank": 9,
+    "name": "EricLBuehler/mistral.rs",
+    "url": "https://github.com/EricLBuehler/mistral.rs",
+    "category": "local LLM inference",
+    "trend_tags": ["rust", "local-llm", "mistral", "quantization"],
+    "official_docs": "https://github.com/mistralai/mistral.rs",
+    "note": "Rust inference engine for Mistral and compatible models."
+  },
+  {
+    "rank": 10,
+    "name": "mudler/LocalAI",
+    "url": "https://github.com/mudler/LocalAI",
+    "category": "local AI server",
+    "trend_tags": ["local-llm", "openai-compatible-api", "multimodal", "self-hosted"],
+    "official_docs": "https://localai.io/",
+    "note": "Self-hosted OpenAI-compatible local AI server for LLMs and multimodal models."
+  },
+  {
+    "rank": 11,
+    "name": "oobabooga/text-generation-webui",
+    "url": "https://github.com/oobabooga/text-generation-webui",
+    "category": "local LLM UI",
+    "trend_tags": ["local-llm", "webui", "experimentation", "model-loading"],
+    "official_docs": "https://github.com/oobabooga/text-generation-webui/wiki",
+    "note": "Widely used local text generation UI and model experimentation surface."
+  },
+  {
+    "rank": 12,
+    "name": "lm-sys/FastChat",
+    "url": "https://github.com/lm-sys/FastChat",
+    "category": "chat serving / evaluation",
+    "trend_tags": ["chatbot", "serving", "arena", "multi-model"],
+    "official_docs": "https://github.com/lm-sys/FastChat",
+    "note": "Chatbot serving and evaluation infrastructure associated with LMSYS arena lineage."
+  },
+  {
+    "rank": 13,
+    "name": "NVIDIA/TensorRT-LLM",
+    "url": "https://github.com/NVIDIA/TensorRT-LLM",
+    "category": "LLM serving / optimized inference",
+    "trend_tags": ["nvidia", "tensorrt", "inference-optimization", "gpu-serving"],
+    "official_docs": "https://nvidia.github.io/TensorRT-LLM/",
+    "note": "NVIDIA optimized LLM inference stack for GPU deployment."
+  },
+  {
+    "rank": 14,
+    "name": "microsoft/BitNet",
+    "url": "https://github.com/microsoft/BitNet",
+    "category": "efficient local LLM inference",
+    "trend_tags": ["bitnet", "1bit", "efficient-inference", "local-llm"],
+    "official_docs": "https://github.com/microsoft/BitNet",
+    "note": "Efficient 1-bit LLM inference and model research implementation relevant to local LLM cost trends."
+  },
+  {
+    "rank": 15,
+    "name": "xorbitsai/inference",
+    "url": "https://github.com/xorbitsai/inference",
+    "category": "local model serving",
+    "trend_tags": ["xinference", "serving", "local-llm", "openai-compatible-api"],
+    "official_docs": "https://inference.readthedocs.io/",
+    "note": "Xinference model serving stack for local and distributed LLM/embedding/reranker deployment."
+  },
+  {
+    "rank": 16,
+    "name": "run-llama/llama_index",
+    "url": "https://github.com/run-llama/llama_index",
+    "category": "RAG framework",
+    "trend_tags": ["rag", "agents", "indexing", "data-connectors"],
+    "official_docs": "https://docs.llamaindex.ai/",
+    "note": "Major RAG and agent framework focused on data ingestion, indexing, retrieval, and agent workflows."
+  },
+  {
+    "rank": 17,
+    "name": "langchain-ai/langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "category": "LLM application framework",
+    "trend_tags": ["rag", "chains", "agents", "retrieval"],
+    "official_docs": "https://docs.langchain.com/",
+    "note": "Core LLM application framework for RAG, tool calling, agents, and integrations."
+  },
+  {
+    "rank": 18,
+    "name": "deepset-ai/haystack",
+    "url": "https://github.com/deepset-ai/haystack",
+    "category": "RAG framework",
+    "trend_tags": ["rag", "pipelines", "retrieval", "enterprise-search"],
+    "official_docs": "https://docs.haystack.deepset.ai/",
+    "note": "Pipeline-based RAG/search framework with components, document stores, generators, and evaluators."
+  },
+  {
+    "rank": 19,
+    "name": "microsoft/graphrag",
+    "url": "https://github.com/microsoft/graphrag",
+    "category": "GraphRAG",
+    "trend_tags": ["graphrag", "knowledge-graph", "retrieval", "global-local-search"],
+    "official_docs": "https://microsoft.github.io/graphrag/",
+    "note": "Microsoft GraphRAG implementation for graph-structured retrieval and community/global-local query patterns."
+  },
+  {
+    "rank": 20,
+    "name": "HKUDS/LightRAG",
+    "url": "https://github.com/HKUDS/LightRAG",
+    "category": "GraphRAG / lightweight RAG",
+    "trend_tags": ["rag", "graphrag", "knowledge-graph", "lightweight"],
+    "official_docs": "https://github.com/HKUDS/LightRAG",
+    "note": "Lightweight RAG/GraphRAG-style system focused on simple, fast, and graph-enhanced retrieval."
+  },
+  {
+    "rank": 21,
+    "name": "mem0ai/mem0",
+    "url": "https://github.com/mem0ai/mem0",
+    "category": "agent memory",
+    "trend_tags": ["memory", "personalization", "agents", "context-engineering"],
+    "official_docs": "https://docs.mem0.ai/",
+    "note": "Agent memory layer for persistent personalized context across conversations and tools."
+  },
+  {
+    "rank": 22,
+    "name": "getzep/zep",
+    "url": "https://github.com/getzep/zep",
+    "category": "agent memory",
+    "trend_tags": ["memory", "knowledge-graph", "conversation-memory", "agents"],
+    "official_docs": "https://help.getzep.com/",
+    "note": "Memory server and graph memory layer for AI agents."
+  },
+  {
+    "rank": 23,
+    "name": "stanford-oval/storm",
+    "url": "https://github.com/stanford-oval/storm",
+    "category": "research/RAG writing system",
+    "trend_tags": ["research-agent", "rag", "long-form-writing", "retrieval"],
+    "official_docs": "https://storm.genie.stanford.edu/",
+    "note": "Research and writing system that uses retrieval and multi-perspective synthesis."
+  },
+  {
+    "rank": 24,
+    "name": "weaviate/Verba",
+    "url": "https://github.com/weaviate/Verba",
+    "category": "RAG app",
+    "trend_tags": ["rag", "chat-with-docs", "weaviate", "app-template"],
+    "official_docs": "https://github.com/weaviate/Verba",
+    "note": "Reference RAG application for chat-with-docs workflows backed by Weaviate."
+  },
+  {
+    "rank": 25,
+    "name": "khoj-ai/khoj",
+    "url": "https://github.com/khoj-ai/khoj",
+    "category": "personal RAG / local assistant",
+    "trend_tags": ["personal-ai", "rag", "local-llm", "search"],
+    "official_docs": "https://docs.khoj.dev/",
+    "note": "Personal AI assistant with local/private knowledge search and RAG-oriented workflows."
+  },
+  {
+    "rank": 26,
+    "name": "QuivrHQ/quivr",
+    "url": "https://github.com/QuivrHQ/quivr",
+    "category": "RAG app",
+    "trend_tags": ["rag", "second-brain", "knowledge-base", "app"],
+    "official_docs": "https://docs.quivr.com/",
+    "note": "Knowledge-base and second-brain style RAG application."
+  },
+  {
+    "rank": 27,
+    "name": "infiniflow/ragflow",
+    "url": "https://github.com/infiniflow/ragflow",
+    "category": "RAG platform",
+    "trend_tags": ["rag", "document-intelligence", "workflow", "enterprise"],
+    "official_docs": "https://ragflow.io/docs/dev/",
+    "note": "Enterprise-oriented RAG platform focused on document parsing, retrieval, and workflow."
+  },
+  {
+    "rank": 28,
+    "name": "qdrant/qdrant",
+    "url": "https://github.com/qdrant/qdrant",
+    "category": "vector database",
+    "trend_tags": ["vector-db", "hnsw", "hybrid-search", "rust"],
+    "official_docs": "https://qdrant.tech/documentation/",
+    "note": "Vector search database used heavily in RAG stacks."
+  },
+  {
+    "rank": 29,
+    "name": "milvus-io/milvus",
+    "url": "https://github.com/milvus-io/milvus",
+    "category": "vector database",
+    "trend_tags": ["vector-db", "distributed", "hybrid-search", "rag"],
+    "official_docs": "https://milvus.io/docs/",
+    "note": "Distributed vector database for high-scale similarity search and RAG applications."
+  },
+  {
+    "rank": 30,
+    "name": "chroma-core/chroma",
+    "url": "https://github.com/chroma-core/chroma",
+    "category": "vector database",
+    "trend_tags": ["vector-db", "embeddings", "developer-experience", "rag"],
+    "official_docs": "https://docs.trychroma.com/",
+    "note": "Developer-friendly embedding database used in many local RAG examples."
+  },
+  {
+    "rank": 31,
+    "name": "weaviate/weaviate",
+    "url": "https://github.com/weaviate/weaviate",
+    "category": "vector database",
+    "trend_tags": ["vector-db", "hybrid-search", "modules", "rag"],
+    "official_docs": "https://weaviate.io/developers/weaviate",
+    "note": "Vector database and search engine with hybrid search and module ecosystem."
+  },
+  {
+    "rank": 32,
+    "name": "lancedb/lancedb",
+    "url": "https://github.com/lancedb/lancedb",
+    "category": "vector database / lakehouse",
+    "trend_tags": ["vector-db", "lance", "multimodal", "local-first"],
+    "official_docs": "https://lancedb.github.io/lancedb/",
+    "note": "Vector database built on Lance format for multimodal and local/cloud retrieval."
+  },
+  {
+    "rank": 33,
+    "name": "pgvector/pgvector",
+    "url": "https://github.com/pgvector/pgvector",
+    "category": "Postgres vector extension",
+    "trend_tags": ["postgres", "vector-search", "rag", "sql"],
+    "official_docs": "https://github.com/pgvector/pgvector",
+    "note": "Postgres extension that makes vector search a database-native capability."
+  },
+  {
+    "rank": 34,
+    "name": "timescale/pgvectorscale",
+    "url": "https://github.com/timescale/pgvectorscale",
+    "category": "Postgres vector extension",
+    "trend_tags": ["postgres", "vector-search", "scaling", "rag"],
+    "official_docs": "https://github.com/timescale/pgvectorscale",
+    "note": "Timescale vector search extension for scalable ANN search in Postgres."
+  },
+  {
+    "rank": 35,
+    "name": "facebookresearch/faiss",
+    "url": "https://github.com/facebookresearch/faiss",
+    "category": "vector search library",
+    "trend_tags": ["ann", "vector-search", "indexing", "retrieval"],
+    "official_docs": "https://faiss.ai/",
+    "note": "Foundational vector similarity search library behind many retrieval systems."
+  },
+  {
+    "rank": 36,
+    "name": "typesense/typesense",
+    "url": "https://github.com/typesense/typesense",
+    "category": "search engine / hybrid retrieval",
+    "trend_tags": ["search", "hybrid-search", "keyword-search", "vector-search"],
+    "official_docs": "https://typesense.org/docs/",
+    "note": "Open-source search engine with keyword, semantic, hybrid, and vector search features for RAG-style retrieval."
+  },
+  {
+    "rank": 37,
+    "name": "explodinggradients/ragas",
+    "url": "https://github.com/explodinggradients/ragas",
+    "category": "RAG evaluation",
+    "trend_tags": ["rag-evaluation", "metrics", "testsets", "llm-evals"],
+    "official_docs": "https://docs.ragas.io/",
+    "note": "RAG evaluation framework for answer quality, faithfulness, context precision, and testset generation."
+  },
+  {
+    "rank": 38,
+    "name": "promptfoo/promptfoo",
+    "url": "https://github.com/promptfoo/promptfoo",
+    "category": "LLM testing / red teaming",
+    "trend_tags": ["evals", "prompt-testing", "red-teaming", "ci"],
+    "official_docs": "https://www.promptfoo.dev/docs/",
+    "note": "Prompt/model/app testing framework with CI, assertions, and red-team workflows."
+  },
+  {
+    "rank": 39,
+    "name": "confident-ai/deepeval",
+    "url": "https://github.com/confident-ai/deepeval",
+    "category": "LLM evaluation",
+    "trend_tags": ["evals", "rag-evaluation", "unit-testing", "metrics"],
+    "official_docs": "https://docs.confident-ai.com/",
+    "note": "LLM evaluation and testing framework for RAG, agents, and LLM app quality gates."
+  },
+  {
+    "rank": 40,
+    "name": "truera/trulens",
+    "url": "https://github.com/truera/trulens",
+    "category": "LLM observability / evaluation",
+    "trend_tags": ["observability", "evals", "rag-triads", "feedback-functions"],
+    "official_docs": "https://www.trulens.org/",
+    "note": "Evaluation and tracing framework for RAG and LLM applications."
+  },
+  {
+    "rank": 41,
+    "name": "Arize-ai/phoenix",
+    "url": "https://github.com/Arize-ai/phoenix",
+    "category": "LLM observability",
+    "trend_tags": ["observability", "tracing", "evals", "openinference"],
+    "official_docs": "https://arize.com/docs/phoenix",
+    "note": "Open-source AI observability and evaluation system with OpenInference tracing."
+  },
+  {
+    "rank": 42,
+    "name": "langfuse/langfuse",
+    "url": "https://github.com/langfuse/langfuse",
+    "category": "LLM observability",
+    "trend_tags": ["observability", "tracing", "prompt-management", "evals"],
+    "official_docs": "https://langfuse.com/docs",
+    "note": "Open-source LLM observability, tracing, prompt management, and evaluation platform."
+  },
+  {
+    "rank": 43,
+    "name": "agenta-ai/agenta",
+    "url": "https://github.com/agenta-ai/agenta",
+    "category": "LLMOps / evaluation",
+    "trend_tags": ["llmops", "evals", "prompt-management", "deployment"],
+    "official_docs": "https://docs.agenta.ai/",
+    "note": "LLMOps platform for prompt management, evaluation, and deployment workflows."
+  },
+  {
+    "rank": 44,
+    "name": "BerriAI/litellm",
+    "url": "https://github.com/BerriAI/litellm",
+    "category": "LLM gateway",
+    "trend_tags": ["gateway", "router", "openai-compatible-api", "cost-control"],
+    "official_docs": "https://docs.litellm.ai/",
+    "note": "LLM gateway/proxy/router used to standardize provider calls, budgets, fallbacks, and telemetry."
+  },
+  {
+    "rank": 45,
+    "name": "stanfordnlp/dspy",
+    "url": "https://github.com/stanfordnlp/dspy",
+    "category": "programmatic prompting / optimization",
+    "trend_tags": ["prompt-optimization", "programming-model", "retrieval", "evals"],
+    "official_docs": "https://dspy.ai/",
+    "note": "Programming model for LM pipelines with optimizers, signatures, modules, retrieval, and evaluation loops."
+  },
+  {
+    "rank": 46,
+    "name": "pydantic/pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai",
+    "category": "agent framework / typed outputs",
+    "trend_tags": ["agents", "typed-outputs", "tools", "python"],
+    "official_docs": "https://ai.pydantic.dev/",
+    "note": "Typed Python agent framework emphasizing Pydantic models, structured outputs, tools, and testability."
+  },
+  {
+    "rank": 47,
+    "name": "guardrails-ai/guardrails",
+    "url": "https://github.com/guardrails-ai/guardrails",
+    "category": "guardrails / validation",
+    "trend_tags": ["guardrails", "validation", "structured-outputs", "safety"],
+    "official_docs": "https://www.guardrailsai.com/docs",
+    "note": "Validation and guardrail framework for LLM outputs and structured constraints."
+  },
+  {
+    "rank": 48,
+    "name": "humanlayer/humanlayer",
+    "url": "https://github.com/humanlayer/humanlayer",
+    "category": "human-in-the-loop agent control",
+    "trend_tags": ["hitl", "approval", "agent-control", "harness"],
+    "official_docs": "https://docs.humanlayer.dev/",
+    "note": "Human approval and control layer for tool-using agents."
+  },
+  {
+    "rank": 49,
+    "name": "microsoft/promptflow",
+    "url": "https://github.com/microsoft/promptflow",
+    "category": "LLMOps / flow harness",
+    "trend_tags": ["flow", "evals", "llmops", "tracing"],
+    "official_docs": "https://microsoft.github.io/promptflow/",
+    "note": "Flow-based LLM application development, evaluation, and deployment tooling."
+  },
+  {
+    "rank": 50,
+    "name": "openai/evals",
+    "url": "https://github.com/openai/evals",
+    "category": "LLM evaluation harness",
+    "trend_tags": ["evals", "benchmark", "harness", "openai"],
+    "official_docs": "https://github.com/openai/evals",
+    "note": "OpenAI evaluation framework and registry; useful as historical and practical eval harness reference."
+  }
+]

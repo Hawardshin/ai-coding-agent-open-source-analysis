@@ -1,0 +1,502 @@
+[
+  {
+    "rank": 1,
+    "name": "vllm-project/vllm",
+    "exists": true,
+    "stars": 82691,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:54:19Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 2,
+    "name": "ggml-org/llama.cpp",
+    "exists": true,
+    "stars": 116215,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:15:26Z",
+    "license": "mit",
+    "language": "C++"
+  },
+  {
+    "rank": 3,
+    "name": "ollama/ollama",
+    "exists": true,
+    "stars": 173946,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:12:12Z",
+    "license": "mit",
+    "language": "Go"
+  },
+  {
+    "rank": 4,
+    "name": "sgl-project/sglang",
+    "exists": true,
+    "stars": 28930,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:42:23Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 5,
+    "name": "huggingface/text-generation-inference",
+    "exists": true,
+    "stars": 10863,
+    "archived": true,
+    "pushedAt": "2026-03-21T11:34:22Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 6,
+    "name": "huggingface/transformers",
+    "exists": true,
+    "stars": 161537,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:47:34Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 7,
+    "name": "huggingface/accelerate",
+    "exists": true,
+    "stars": 9719,
+    "archived": false,
+    "pushedAt": "2026-06-12T13:37:59Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 8,
+    "name": "mlc-ai/mlc-llm",
+    "exists": true,
+    "stars": 22790,
+    "archived": false,
+    "pushedAt": "2026-05-11T22:52:18Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 9,
+    "name": "EricLBuehler/mistral.rs",
+    "exists": true,
+    "stars": 7282,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:23:59Z",
+    "license": "mit",
+    "language": "Rust"
+  },
+  {
+    "rank": 10,
+    "name": "mudler/LocalAI",
+    "exists": true,
+    "stars": 46805,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:43:33Z",
+    "license": "mit",
+    "language": "Go"
+  },
+  {
+    "rank": 11,
+    "name": "oobabooga/text-generation-webui",
+    "exists": true,
+    "stars": 47291,
+    "archived": false,
+    "pushedAt": "2026-06-02T03:10:11Z",
+    "license": "agpl-3.0",
+    "language": "Python"
+  },
+  {
+    "rank": 12,
+    "name": "lm-sys/FastChat",
+    "exists": true,
+    "stars": 39469,
+    "archived": false,
+    "pushedAt": "2026-05-01T00:25:53Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 13,
+    "name": "NVIDIA/TensorRT-LLM",
+    "exists": true,
+    "stars": 13857,
+    "archived": false,
+    "pushedAt": "2026-06-12T11:34:04Z",
+    "license": "other",
+    "language": "Python"
+  },
+  {
+    "rank": 14,
+    "name": "microsoft/BitNet",
+    "exists": true,
+    "stars": 39291,
+    "archived": false,
+    "pushedAt": "2026-03-10T07:49:47Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 15,
+    "name": "xorbitsai/inference",
+    "exists": true,
+    "stars": 9348,
+    "archived": false,
+    "pushedAt": "2026-06-12T09:43:39Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 16,
+    "name": "run-llama/llama_index",
+    "exists": true,
+    "stars": 50096,
+    "archived": false,
+    "pushedAt": "2026-06-12T02:21:26Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 17,
+    "name": "langchain-ai/langchain",
+    "exists": true,
+    "stars": 139119,
+    "archived": false,
+    "pushedAt": "2026-06-12T14:20:59Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 18,
+    "name": "deepset-ai/haystack",
+    "exists": true,
+    "stars": 25551,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:45:23Z",
+    "license": "apache-2.0",
+    "language": "MDX"
+  },
+  {
+    "rank": 19,
+    "name": "microsoft/graphrag",
+    "exists": true,
+    "stars": 33684,
+    "archived": false,
+    "pushedAt": "2026-06-05T23:46:49Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 20,
+    "name": "HKUDS/LightRAG",
+    "exists": true,
+    "stars": 36505,
+    "archived": false,
+    "pushedAt": "2026-06-12T14:16:56Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 21,
+    "name": "mem0ai/mem0",
+    "exists": true,
+    "stars": 58430,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:37:51Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 22,
+    "name": "getzep/zep",
+    "exists": true,
+    "stars": 4659,
+    "archived": false,
+    "pushedAt": "2026-04-09T01:30:25Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 23,
+    "name": "stanford-oval/storm",
+    "exists": true,
+    "stars": 28356,
+    "archived": false,
+    "pushedAt": "2025-09-30T18:07:21Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 24,
+    "name": "weaviate/Verba",
+    "exists": true,
+    "stars": 7714,
+    "archived": true,
+    "pushedAt": "2026-06-08T09:25:18Z",
+    "license": "bsd-3-clause",
+    "language": "Python"
+  },
+  {
+    "rank": 25,
+    "name": "khoj-ai/khoj",
+    "exists": true,
+    "stars": 35088,
+    "archived": false,
+    "pushedAt": "2026-03-26T03:35:43Z",
+    "license": "agpl-3.0",
+    "language": "Python"
+  },
+  {
+    "rank": 26,
+    "name": "QuivrHQ/quivr",
+    "exists": true,
+    "stars": 39153,
+    "archived": false,
+    "pushedAt": "2025-07-09T12:55:23Z",
+    "license": "other",
+    "language": "Python"
+  },
+  {
+    "rank": 27,
+    "name": "infiniflow/ragflow",
+    "exists": true,
+    "stars": 82563,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:28:15Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 28,
+    "name": "qdrant/qdrant",
+    "exists": true,
+    "stars": 32060,
+    "archived": false,
+    "pushedAt": "2026-06-12T14:50:51Z",
+    "license": "apache-2.0",
+    "language": "Rust"
+  },
+  {
+    "rank": 29,
+    "name": "milvus-io/milvus",
+    "exists": true,
+    "stars": 44745,
+    "archived": false,
+    "pushedAt": "2026-06-12T10:40:29Z",
+    "license": "apache-2.0",
+    "language": "Go"
+  },
+  {
+    "rank": 30,
+    "name": "chroma-core/chroma",
+    "exists": true,
+    "stars": 28402,
+    "archived": false,
+    "pushedAt": "2026-06-12T09:41:03Z",
+    "license": "apache-2.0",
+    "language": "Rust"
+  },
+  {
+    "rank": 31,
+    "name": "weaviate/weaviate",
+    "exists": true,
+    "stars": 16319,
+    "archived": false,
+    "pushedAt": "2026-06-12T14:27:33Z",
+    "license": "bsd-3-clause",
+    "language": "Go"
+  },
+  {
+    "rank": 32,
+    "name": "lancedb/lancedb",
+    "exists": true,
+    "stars": 10584,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:14:24Z",
+    "license": "apache-2.0",
+    "language": "HTML"
+  },
+  {
+    "rank": 33,
+    "name": "pgvector/pgvector",
+    "exists": true,
+    "stars": 21721,
+    "archived": false,
+    "pushedAt": "2026-06-11T03:21:05Z",
+    "license": "other",
+    "language": "C"
+  },
+  {
+    "rank": 34,
+    "name": "timescale/pgvectorscale",
+    "exists": true,
+    "stars": 3052,
+    "archived": false,
+    "pushedAt": "2026-04-30T06:41:39Z",
+    "license": "postgresql",
+    "language": "Rust"
+  },
+  {
+    "rank": 35,
+    "name": "facebookresearch/faiss",
+    "exists": true,
+    "stars": 40272,
+    "archived": false,
+    "pushedAt": "2026-06-11T22:27:59Z",
+    "license": "mit",
+    "language": "C++"
+  },
+  {
+    "rank": 36,
+    "name": "typesense/typesense",
+    "exists": true,
+    "stars": 25984,
+    "archived": false,
+    "pushedAt": "2026-06-10T02:20:26Z",
+    "license": "gpl-3.0",
+    "language": "C++"
+  },
+  {
+    "rank": 37,
+    "name": "explodinggradients/ragas",
+    "exists": true,
+    "stars": 14349,
+    "archived": false,
+    "pushedAt": "2026-02-24T07:47:19Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 38,
+    "name": "promptfoo/promptfoo",
+    "exists": true,
+    "stars": 22149,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:54:12Z",
+    "license": "mit",
+    "language": "TypeScript"
+  },
+  {
+    "rank": 39,
+    "name": "confident-ai/deepeval",
+    "exists": true,
+    "stars": 16124,
+    "archived": false,
+    "pushedAt": "2026-06-10T09:03:15Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 40,
+    "name": "truera/trulens",
+    "exists": true,
+    "stars": 3375,
+    "archived": false,
+    "pushedAt": "2026-06-05T23:25:19Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 41,
+    "name": "Arize-ai/phoenix",
+    "exists": true,
+    "stars": 10112,
+    "archived": false,
+    "pushedAt": "2026-06-12T13:57:25Z",
+    "license": "other",
+    "language": "Python"
+  },
+  {
+    "rank": 42,
+    "name": "langfuse/langfuse",
+    "exists": true,
+    "stars": 28985,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:46:06Z",
+    "license": "other",
+    "language": "TypeScript"
+  },
+  {
+    "rank": 43,
+    "name": "agenta-ai/agenta",
+    "exists": true,
+    "stars": 4198,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:46:57Z",
+    "license": "other",
+    "language": "TypeScript"
+  },
+  {
+    "rank": 44,
+    "name": "BerriAI/litellm",
+    "exists": true,
+    "stars": 50171,
+    "archived": false,
+    "pushedAt": "2026-06-12T15:43:52Z",
+    "license": "other",
+    "language": "Python"
+  },
+  {
+    "rank": 45,
+    "name": "stanfordnlp/dspy",
+    "exists": true,
+    "stars": 35002,
+    "archived": false,
+    "pushedAt": "2026-06-11T19:59:42Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 46,
+    "name": "pydantic/pydantic-ai",
+    "exists": true,
+    "stars": 17724,
+    "archived": false,
+    "pushedAt": "2026-06-12T14:49:25Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 47,
+    "name": "guardrails-ai/guardrails",
+    "exists": true,
+    "stars": 6999,
+    "archived": false,
+    "pushedAt": "2026-06-10T18:35:47Z",
+    "license": "apache-2.0",
+    "language": "Python"
+  },
+  {
+    "rank": 48,
+    "name": "humanlayer/humanlayer",
+    "exists": true,
+    "stars": 10981,
+    "archived": false,
+    "pushedAt": "2026-03-07T22:34:40Z",
+    "license": "other",
+    "language": "TypeScript"
+  },
+  {
+    "rank": 49,
+    "name": "microsoft/promptflow",
+    "exists": true,
+    "stars": 11145,
+    "archived": false,
+    "pushedAt": "2026-06-04T02:58:12Z",
+    "license": "mit",
+    "language": "Python"
+  },
+  {
+    "rank": 50,
+    "name": "openai/evals",
+    "exists": true,
+    "stars": 18677,
+    "archived": false,
+    "pushedAt": "2026-04-14T15:29:57Z",
+    "license": "other",
+    "language": "Python"
+  }
+]

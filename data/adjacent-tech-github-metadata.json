@@ -1,0 +1,4076 @@
+[
+  {
+    "rank": 1,
+    "name": "vllm-project/vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "category": "LLM serving / vLLM",
+    "trend_tags": [
+      "vllm",
+      "serving",
+      "continuous-batching",
+      "openai-compatible-api"
+    ],
+    "official_docs": "https://docs.vllm.ai/",
+    "note": "High-throughput LLM serving engine; central reference for vLLM, PagedAttention, OpenAI-compatible local/cloud serving.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:46.825Z",
+    "github": {
+      "createdAt": "2023-02-09T11:23:20Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "forkCount": 17986,
+      "homepageUrl": "https://vllm.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.22.1",
+        "tagName": "v0.22.1",
+        "url": "https://github.com/vllm-project/vllm/releases/tag/v0.22.1",
+        "publishedAt": "2026-06-05T10:10:00Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "vllm-project/vllm",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T15:54:19Z",
+      "repositoryTopics": [
+        {
+          "name": "gpt"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "pytorch"
+        },
+        {
+          "name": "model-serving"
+        },
+        {
+          "name": "transformer"
+        },
+        {
+          "name": "llm-serving"
+        },
+        {
+          "name": "inference"
+        },
+        {
+          "name": "llama"
+        },
+        {
+          "name": "amd"
+        },
+        {
+          "name": "cuda"
+        },
+        {
+          "name": "tpu"
+        },
+        {
+          "name": "deepseek"
+        },
+        {
+          "name": "qwen"
+        },
+        {
+          "name": "blackwell"
+        },
+        {
+          "name": "deepseek-v3"
+        },
+        {
+          "name": "gpt-oss"
+        },
+        {
+          "name": "kimi"
+        },
+        {
+          "name": "moe"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "qwen3"
+        }
+      ],
+      "stargazerCount": 82691,
+      "updatedAt": "2026-06-12T15:45:57Z",
+      "url": "https://github.com/vllm-project/vllm",
+      "watchers": {
+        "totalCount": 567
+      }
+    }
+  },
+  {
+    "rank": 2,
+    "name": "ggml-org/llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "category": "local LLM inference",
+    "trend_tags": [
+      "local-llm",
+      "gguf",
+      "quantization",
+      "edge-inference"
+    ],
+    "official_docs": "https://github.com/ggml-org/llama.cpp/tree/master/docs",
+    "note": "Reference local/edge inference stack for GGUF models, CPU/GPU backends, quantized inference, and local agent deployment.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:47.351Z",
+    "github": {
+      "createdAt": "2023-03-10T18:58:00Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "LLM inference in C/C++",
+      "forkCount": 19509,
+      "homepageUrl": "https://llama.app",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "b9611",
+        "tagName": "b9611",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b9611",
+        "publishedAt": "2026-06-12T14:03:47Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "ggml-org/llama.cpp",
+      "primaryLanguage": {
+        "name": "C++"
+      },
+      "pushedAt": "2026-06-12T15:15:26Z",
+      "repositoryTopics": [
+        {
+          "name": "ggml"
+        }
+      ],
+      "stargazerCount": 116215,
+      "updatedAt": "2026-06-12T15:51:06Z",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "watchers": {
+        "totalCount": 753
+      }
+    }
+  },
+  {
+    "rank": 3,
+    "name": "ollama/ollama",
+    "url": "https://github.com/ollama/ollama",
+    "category": "local LLM runtime",
+    "trend_tags": [
+      "local-llm",
+      "model-registry",
+      "desktop",
+      "openai-compatible-api"
+    ],
+    "official_docs": "https://docs.ollama.com/",
+    "note": "Popular local model runner and model packaging layer used by agent tools for offline/private inference.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:48.042Z",
+    "github": {
+      "createdAt": "2023-06-26T19:39:32Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "forkCount": 16573,
+      "homepageUrl": "https://ollama.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.30.7",
+        "tagName": "v0.30.7",
+        "url": "https://github.com/ollama/ollama/releases/tag/v0.30.7",
+        "publishedAt": "2026-06-07T21:51:48Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "ollama/ollama",
+      "primaryLanguage": {
+        "name": "Go"
+      },
+      "pushedAt": "2026-06-12T15:12:12Z",
+      "repositoryTopics": [
+        {
+          "name": "llama"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "llms"
+        },
+        {
+          "name": "go"
+        },
+        {
+          "name": "golang"
+        },
+        {
+          "name": "ollama"
+        },
+        {
+          "name": "mistral"
+        },
+        {
+          "name": "gemma"
+        },
+        {
+          "name": "llama3"
+        },
+        {
+          "name": "deepseek"
+        },
+        {
+          "name": "gemma3"
+        },
+        {
+          "name": "qwen"
+        },
+        {
+          "name": "gpt-oss"
+        },
+        {
+          "name": "glm"
+        },
+        {
+          "name": "minimax"
+        }
+      ],
+      "stargazerCount": 173946,
+      "updatedAt": "2026-06-12T15:31:29Z",
+      "url": "https://github.com/ollama/ollama",
+      "watchers": {
+        "totalCount": 983
+      }
+    }
+  },
+  {
+    "rank": 4,
+    "name": "sgl-project/sglang",
+    "url": "https://github.com/sgl-project/sglang",
+    "category": "LLM serving / structured generation",
+    "trend_tags": [
+      "serving",
+      "structured-generation",
+      "agent-runtime",
+      "radix-attention"
+    ],
+    "official_docs": "https://docs.sglang.ai/",
+    "note": "Serving and programming framework for LLM/VLM applications with structured generation and high-performance runtime.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:48.838Z",
+    "github": {
+      "createdAt": "2024-01-08T04:15:52Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+      "forkCount": 6492,
+      "homepageUrl": "https://sglang.io",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.5.12.post1",
+        "tagName": "v0.5.12.post1",
+        "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.12.post1",
+        "publishedAt": "2026-05-26T23:58:17Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "sgl-project/sglang",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T15:42:23Z",
+      "repositoryTopics": [
+        {
+          "name": "cuda"
+        },
+        {
+          "name": "inference"
+        },
+        {
+          "name": "llama"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "moe"
+        },
+        {
+          "name": "transformer"
+        },
+        {
+          "name": "vlm"
+        },
+        {
+          "name": "deepseek"
+        },
+        {
+          "name": "blackwell"
+        },
+        {
+          "name": "gpt-oss"
+        },
+        {
+          "name": "diffusion"
+        },
+        {
+          "name": "attention"
+        },
+        {
+          "name": "glm"
+        },
+        {
+          "name": "minimax"
+        },
+        {
+          "name": "qwen"
+        },
+        {
+          "name": "qwen-image"
+        },
+        {
+          "name": "reinforcement-learning"
+        },
+        {
+          "name": "wan"
+        }
+      ],
+      "stargazerCount": 28930,
+      "updatedAt": "2026-06-12T15:51:18Z",
+      "url": "https://github.com/sgl-project/sglang",
+      "watchers": {
+        "totalCount": 155
+      }
+    }
+  },
+  {
+    "rank": 5,
+    "name": "huggingface/text-generation-inference",
+    "url": "https://github.com/huggingface/text-generation-inference",
+    "category": "LLM serving",
+    "trend_tags": [
+      "serving",
+      "huggingface",
+      "text-generation",
+      "production"
+    ],
+    "official_docs": "https://huggingface.co/docs/text-generation-inference/",
+    "note": "Hugging Face production inference server for text generation models.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:49.535Z",
+    "github": {
+      "createdAt": "2022-10-08T10:26:28Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Large Language Model Text Generation Inference",
+      "forkCount": 1271,
+      "homepageUrl": "http://hf.co/docs/text-generation-inference",
+      "isArchived": true,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v3.3.7",
+        "tagName": "v3.3.7",
+        "url": "https://github.com/huggingface/text-generation-inference/releases/tag/v3.3.7",
+        "publishedAt": "2025-12-19T14:35:25Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "huggingface/text-generation-inference",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-03-21T11:34:22Z",
+      "repositoryTopics": [
+        {
+          "name": "bloom"
+        },
+        {
+          "name": "nlp"
+        },
+        {
+          "name": "pytorch"
+        },
+        {
+          "name": "inference"
+        },
+        {
+          "name": "gpt"
+        },
+        {
+          "name": "deep-learning"
+        },
+        {
+          "name": "transformer"
+        },
+        {
+          "name": "falcon"
+        },
+        {
+          "name": "starcoder"
+        }
+      ],
+      "stargazerCount": 10863,
+      "updatedAt": "2026-06-12T00:38:03Z",
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "watchers": {
+        "totalCount": 100
+      }
+    }
+  },
+  {
+    "rank": 6,
+    "name": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "category": "model library",
+    "trend_tags": [
+      "models",
+      "tokenizers",
+      "local-llm",
+      "inference"
+    ],
+    "official_docs": "https://huggingface.co/docs/transformers/",
+    "note": "Core model library underlying many local LLM, RAG, and serving stacks.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:50.369Z",
+    "github": {
+      "createdAt": "2018-10-29T13:56:00Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "forkCount": 33490,
+      "homepageUrl": "https://huggingface.co/transformers",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Release v5.12.0",
+        "tagName": "v5.12.0",
+        "url": "https://github.com/huggingface/transformers/releases/tag/v5.12.0",
+        "publishedAt": "2026-06-12T14:39:40Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "huggingface/transformers",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T15:47:34Z",
+      "repositoryTopics": [
+        {
+          "name": "nlp"
+        },
+        {
+          "name": "natural-language-processing"
+        },
+        {
+          "name": "pytorch"
+        },
+        {
+          "name": "pytorch-transformers"
+        },
+        {
+          "name": "transformer"
+        },
+        {
+          "name": "model-hub"
+        },
+        {
+          "name": "pretrained-models"
+        },
+        {
+          "name": "speech-recognition"
+        },
+        {
+          "name": "hacktoberfest"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "machine-learning"
+        },
+        {
+          "name": "deep-learning"
+        },
+        {
+          "name": "audio"
+        },
+        {
+          "name": "deepseek"
+        },
+        {
+          "name": "gemma"
+        },
+        {
+          "name": "glm"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "qwen"
+        },
+        {
+          "name": "vlm"
+        }
+      ],
+      "stargazerCount": 161537,
+      "updatedAt": "2026-06-12T15:53:09Z",
+      "url": "https://github.com/huggingface/transformers",
+      "watchers": {
+        "totalCount": 1216
+      }
+    }
+  },
+  {
+    "rank": 7,
+    "name": "huggingface/accelerate",
+    "url": "https://github.com/huggingface/accelerate",
+    "category": "model runtime / distributed",
+    "trend_tags": [
+      "distributed",
+      "training",
+      "inference",
+      "huggingface"
+    ],
+    "official_docs": "https://huggingface.co/docs/accelerate/",
+    "note": "Runtime abstraction for distributed training/inference and device placement.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:50.935Z",
+    "github": {
+      "createdAt": "2020-10-30T13:27:12Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "🚀 A simple way to launch, train, and use PyTorch models on almost any device and distributed configuration, automatic mixed precision (including fp8), and easy-to-configure FSDP and DeepSpeed support",
+      "forkCount": 1364,
+      "homepageUrl": "https://huggingface.co/docs/accelerate",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.14.0: AMD ROCm support, FSDP2 hardening",
+        "tagName": "v1.14.0",
+        "url": "https://github.com/huggingface/accelerate/releases/tag/v1.14.0",
+        "publishedAt": "2026-06-11T13:58:31Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "huggingface/accelerate",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T13:37:59Z",
+      "repositoryTopics": null,
+      "stargazerCount": 9719,
+      "updatedAt": "2026-06-12T13:38:22Z",
+      "url": "https://github.com/huggingface/accelerate",
+      "watchers": {
+        "totalCount": 94
+      }
+    }
+  },
+  {
+    "rank": 8,
+    "name": "mlc-ai/mlc-llm",
+    "url": "https://github.com/mlc-ai/mlc-llm",
+    "category": "local LLM compilation",
+    "trend_tags": [
+      "compiler",
+      "edge-inference",
+      "webgpu",
+      "local-llm"
+    ],
+    "official_docs": "https://llm.mlc.ai/docs/",
+    "note": "Compiler-oriented LLM deployment stack targeting local, browser, mobile, and heterogeneous devices.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:51.717Z",
+    "github": {
+      "createdAt": "2023-04-29T01:59:25Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Universal LLM Deployment Engine with ML Compilation",
+      "forkCount": 2066,
+      "homepageUrl": "https://llm.mlc.ai/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": null,
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "mlc-ai/mlc-llm",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-05-11T22:52:18Z",
+      "repositoryTopics": [
+        {
+          "name": "llm"
+        },
+        {
+          "name": "machine-learning-compilation"
+        },
+        {
+          "name": "language-model"
+        },
+        {
+          "name": "tvm"
+        }
+      ],
+      "stargazerCount": 22790,
+      "updatedAt": "2026-06-12T12:26:08Z",
+      "url": "https://github.com/mlc-ai/mlc-llm",
+      "watchers": {
+        "totalCount": 193
+      }
+    }
+  },
+  {
+    "rank": 9,
+    "name": "EricLBuehler/mistral.rs",
+    "url": "https://github.com/EricLBuehler/mistral.rs",
+    "category": "local LLM inference",
+    "trend_tags": [
+      "rust",
+      "local-llm",
+      "mistral",
+      "quantization"
+    ],
+    "official_docs": "https://github.com/mistralai/mistral.rs",
+    "note": "Rust inference engine for Mistral and compatible models.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:52.225Z",
+    "github": {
+      "createdAt": "2024-02-26T22:30:06Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Fast, flexible LLM inference",
+      "forkCount": 623,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.8.3",
+        "tagName": "v0.8.3",
+        "url": "https://github.com/EricLBuehler/mistral.rs/releases/tag/v0.8.3",
+        "publishedAt": "2026-06-01T18:06:49Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "EricLBuehler/mistral.rs",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-06-12T15:23:59Z",
+      "repositoryTopics": [
+        {
+          "name": "llm"
+        },
+        {
+          "name": "rust"
+        },
+        {
+          "name": "uqff"
+        }
+      ],
+      "stargazerCount": 7282,
+      "updatedAt": "2026-06-12T13:54:31Z",
+      "url": "https://github.com/EricLBuehler/mistral.rs",
+      "watchers": {
+        "totalCount": 43
+      }
+    }
+  },
+  {
+    "rank": 10,
+    "name": "mudler/LocalAI",
+    "url": "https://github.com/mudler/LocalAI",
+    "category": "local AI server",
+    "trend_tags": [
+      "local-llm",
+      "openai-compatible-api",
+      "multimodal",
+      "self-hosted"
+    ],
+    "official_docs": "https://localai.io/",
+    "note": "Self-hosted OpenAI-compatible local AI server for LLMs and multimodal models.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:52.922Z",
+    "github": {
+      "createdAt": "2023-03-18T22:58:02Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+      "forkCount": 4134,
+      "homepageUrl": "https://localai.io",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v4.4.2",
+        "tagName": "v4.4.2",
+        "url": "https://github.com/mudler/LocalAI/releases/tag/v4.4.2",
+        "publishedAt": "2026-06-11T22:22:09Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "mudler/LocalAI",
+      "primaryLanguage": {
+        "name": "Go"
+      },
+      "pushedAt": "2026-06-12T15:43:33Z",
+      "repositoryTopics": [
+        {
+          "name": "llama"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "stable-diffusion"
+        },
+        {
+          "name": "api"
+        },
+        {
+          "name": "tts"
+        },
+        {
+          "name": "musicgen"
+        },
+        {
+          "name": "mamba"
+        },
+        {
+          "name": "audio-generation"
+        },
+        {
+          "name": "image-generation"
+        },
+        {
+          "name": "text-generation"
+        },
+        {
+          "name": "rerank"
+        },
+        {
+          "name": "distributed"
+        },
+        {
+          "name": "libp2p"
+        },
+        {
+          "name": "decentralized"
+        },
+        {
+          "name": "object-detection"
+        },
+        {
+          "name": "mcp"
+        },
+        {
+          "name": "agents"
+        }
+      ],
+      "stargazerCount": 46805,
+      "updatedAt": "2026-06-12T15:42:03Z",
+      "url": "https://github.com/mudler/LocalAI",
+      "watchers": {
+        "totalCount": 287
+      }
+    }
+  },
+  {
+    "rank": 11,
+    "name": "oobabooga/text-generation-webui",
+    "url": "https://github.com/oobabooga/text-generation-webui",
+    "category": "local LLM UI",
+    "trend_tags": [
+      "local-llm",
+      "webui",
+      "experimentation",
+      "model-loading"
+    ],
+    "official_docs": "https://github.com/oobabooga/text-generation-webui/wiki",
+    "note": "Widely used local text generation UI and model experimentation surface.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:53.502Z",
+    "github": {
+      "createdAt": "2022-12-21T04:17:37Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.",
+      "forkCount": 5974,
+      "homepageUrl": "https://localbench.substack.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v4.9",
+        "tagName": "v4.9",
+        "url": "https://github.com/oobabooga/textgen/releases/tag/v4.9",
+        "publishedAt": "2026-05-20T19:02:34Z"
+      },
+      "licenseInfo": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "nickname": "GNU AGPLv3"
+      },
+      "nameWithOwner": "oobabooga/textgen",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-02T03:10:11Z",
+      "repositoryTopics": null,
+      "stargazerCount": 47291,
+      "updatedAt": "2026-06-12T13:55:06Z",
+      "url": "https://github.com/oobabooga/textgen",
+      "watchers": {
+        "totalCount": 351
+      }
+    }
+  },
+  {
+    "rank": 12,
+    "name": "lm-sys/FastChat",
+    "url": "https://github.com/lm-sys/FastChat",
+    "category": "chat serving / evaluation",
+    "trend_tags": [
+      "chatbot",
+      "serving",
+      "arena",
+      "multi-model"
+    ],
+    "official_docs": "https://github.com/lm-sys/FastChat",
+    "note": "Chatbot serving and evaluation infrastructure associated with LMSYS arena lineage.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:55.475Z",
+    "github": {
+      "createdAt": "2023-03-19T00:18:02Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "An open platform for training, serving, and evaluating large language models. Release repo for Vicuna and Chatbot Arena.",
+      "forkCount": 4786,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Release v0.2.36",
+        "tagName": "v0.2.36",
+        "url": "https://github.com/lm-sys/FastChat/releases/tag/v0.2.36",
+        "publishedAt": "2024-02-11T15:40:27Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "lm-sys/FastChat",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-05-01T00:25:53Z",
+      "repositoryTopics": null,
+      "stargazerCount": 39469,
+      "updatedAt": "2026-06-12T14:28:07Z",
+      "url": "https://github.com/lm-sys/FastChat",
+      "watchers": {
+        "totalCount": 355
+      }
+    }
+  },
+  {
+    "rank": 13,
+    "name": "NVIDIA/TensorRT-LLM",
+    "url": "https://github.com/NVIDIA/TensorRT-LLM",
+    "category": "LLM serving / optimized inference",
+    "trend_tags": [
+      "nvidia",
+      "tensorrt",
+      "inference-optimization",
+      "gpu-serving"
+    ],
+    "official_docs": "https://nvidia.github.io/TensorRT-LLM/",
+    "note": "NVIDIA optimized LLM inference stack for GPU deployment.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:56.147Z",
+    "github": {
+      "createdAt": "2023-08-16T17:14:27Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execution in a performant way.",
+      "forkCount": 2463,
+      "homepageUrl": "https://nvidia.github.io/TensorRT-LLM",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.2.1",
+        "tagName": "v1.2.1",
+        "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.2.1",
+        "publishedAt": "2026-04-20T11:51:33Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "NVIDIA/TensorRT-LLM",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T11:34:04Z",
+      "repositoryTopics": [
+        {
+          "name": "blackwell"
+        },
+        {
+          "name": "cuda"
+        },
+        {
+          "name": "moe"
+        },
+        {
+          "name": "pytorch"
+        },
+        {
+          "name": "llm-serving"
+        }
+      ],
+      "stargazerCount": 13857,
+      "updatedAt": "2026-06-12T11:34:09Z",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "watchers": {
+        "totalCount": 117
+      }
+    }
+  },
+  {
+    "rank": 14,
+    "name": "microsoft/BitNet",
+    "url": "https://github.com/microsoft/BitNet",
+    "category": "efficient local LLM inference",
+    "trend_tags": [
+      "bitnet",
+      "1bit",
+      "efficient-inference",
+      "local-llm"
+    ],
+    "official_docs": "https://github.com/microsoft/BitNet",
+    "note": "Efficient 1-bit LLM inference and model research implementation relevant to local LLM cost trends.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:56.854Z",
+    "github": {
+      "createdAt": "2024-08-05T09:07:38Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Official inference framework for 1-bit LLMs",
+      "forkCount": 3591,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": null,
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "microsoft/BitNet",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-03-10T07:49:47Z",
+      "repositoryTopics": null,
+      "stargazerCount": 39291,
+      "updatedAt": "2026-06-12T14:59:47Z",
+      "url": "https://github.com/microsoft/BitNet",
+      "watchers": {
+        "totalCount": 348
+      }
+    }
+  },
+  {
+    "rank": 15,
+    "name": "xorbitsai/inference",
+    "url": "https://github.com/xorbitsai/inference",
+    "category": "local model serving",
+    "trend_tags": [
+      "xinference",
+      "serving",
+      "local-llm",
+      "openai-compatible-api"
+    ],
+    "official_docs": "https://inference.readthedocs.io/",
+    "note": "Xinference model serving stack for local and distributed LLM/embedding/reranker deployment.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:57.564Z",
+    "github": {
+      "createdAt": "2023-06-14T07:05:04Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Swap GPT for any LLM by changing a single line of code. Xinference lets you run open-source, speech, and multimodal models on cloud, on-prem, or your laptop — all through one unified, production-ready inference API.",
+      "forkCount": 836,
+      "homepageUrl": "https://inference.readthedocs.io",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v2.10.0",
+        "tagName": "v2.10.0",
+        "url": "https://github.com/xorbitsai/inference/releases/tag/v2.10.0",
+        "publishedAt": "2026-06-05T23:00:21Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "xorbitsai/inference",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T09:43:39Z",
+      "repositoryTopics": [
+        {
+          "name": "ggml"
+        },
+        {
+          "name": "pytorch"
+        },
+        {
+          "name": "chatglm"
+        },
+        {
+          "name": "deployment"
+        },
+        {
+          "name": "flan-t5"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "wizardlm"
+        },
+        {
+          "name": "artificial-intelligence"
+        },
+        {
+          "name": "machine-learning"
+        },
+        {
+          "name": "whisper"
+        },
+        {
+          "name": "inference"
+        },
+        {
+          "name": "openai-api"
+        },
+        {
+          "name": "mistral"
+        },
+        {
+          "name": "gemma"
+        },
+        {
+          "name": "llama"
+        },
+        {
+          "name": "llamacpp"
+        },
+        {
+          "name": "vllm"
+        },
+        {
+          "name": "qwen"
+        },
+        {
+          "name": "llama3"
+        },
+        {
+          "name": "glm4"
+        }
+      ],
+      "stargazerCount": 9348,
+      "updatedAt": "2026-06-12T14:23:52Z",
+      "url": "https://github.com/xorbitsai/inference",
+      "watchers": {
+        "totalCount": 60
+      }
+    }
+  },
+  {
+    "rank": 16,
+    "name": "run-llama/llama_index",
+    "url": "https://github.com/run-llama/llama_index",
+    "category": "RAG framework",
+    "trend_tags": [
+      "rag",
+      "agents",
+      "indexing",
+      "data-connectors"
+    ],
+    "official_docs": "https://docs.llamaindex.ai/",
+    "note": "Major RAG and agent framework focused on data ingestion, indexing, retrieval, and agent workflows.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:58.207Z",
+    "github": {
+      "createdAt": "2022-11-02T04:24:54Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "LlamaIndex is the leading document agent and OCR platform",
+      "forkCount": 7540,
+      "homepageUrl": "https://developers.llamaindex.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.14.22",
+        "tagName": "v0.14.22",
+        "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.22",
+        "publishedAt": "2026-05-14T20:22:24Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "run-llama/llama_index",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T02:21:26Z",
+      "repositoryTopics": [
+        {
+          "name": "agents"
+        },
+        {
+          "name": "application"
+        },
+        {
+          "name": "data"
+        },
+        {
+          "name": "fine-tuning"
+        },
+        {
+          "name": "framework"
+        },
+        {
+          "name": "llamaindex"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "vector-database"
+        },
+        {
+          "name": "multi-agents"
+        }
+      ],
+      "stargazerCount": 50096,
+      "updatedAt": "2026-06-12T15:09:15Z",
+      "url": "https://github.com/run-llama/llama_index",
+      "watchers": {
+        "totalCount": 279
+      }
+    }
+  },
+  {
+    "rank": 17,
+    "name": "langchain-ai/langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "category": "LLM application framework",
+    "trend_tags": [
+      "rag",
+      "chains",
+      "agents",
+      "retrieval"
+    ],
+    "official_docs": "https://docs.langchain.com/",
+    "note": "Core LLM application framework for RAG, tool calling, agents, and integrations.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:58.904Z",
+    "github": {
+      "createdAt": "2022-10-17T02:58:36Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "The agent engineering platform.",
+      "forkCount": 23061,
+      "homepageUrl": "https://docs.langchain.com/langchain/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "langchain-core==1.4.6",
+        "tagName": "langchain-core==1.4.6",
+        "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.4.6",
+        "publishedAt": "2026-06-11T07:10:07Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "langchain-ai/langchain",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T14:20:59Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "anthropic"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "langchain"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "enterprise"
+        },
+        {
+          "name": "framework"
+        },
+        {
+          "name": "generative-ai"
+        },
+        {
+          "name": "multiagent"
+        },
+        {
+          "name": "open-source"
+        },
+        {
+          "name": "pydantic"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "deepagents"
+        },
+        {
+          "name": "langgraph"
+        },
+        {
+          "name": "typescript"
+        }
+      ],
+      "stargazerCount": 139119,
+      "updatedAt": "2026-06-12T15:37:01Z",
+      "url": "https://github.com/langchain-ai/langchain",
+      "watchers": {
+        "totalCount": 890
+      }
+    }
+  },
+  {
+    "rank": 18,
+    "name": "deepset-ai/haystack",
+    "url": "https://github.com/deepset-ai/haystack",
+    "category": "RAG framework",
+    "trend_tags": [
+      "rag",
+      "pipelines",
+      "retrieval",
+      "enterprise-search"
+    ],
+    "official_docs": "https://docs.haystack.deepset.ai/",
+    "note": "Pipeline-based RAG/search framework with components, document stores, generators, and evaluators.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:54:59.593Z",
+    "github": {
+      "createdAt": "2019-11-14T09:05:28Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
+      "forkCount": 2842,
+      "homepageUrl": "https://haystack.deepset.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v2.30.1",
+        "tagName": "v2.30.1",
+        "url": "https://github.com/deepset-ai/haystack/releases/tag/v2.30.1",
+        "publishedAt": "2026-06-09T13:26:29Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "deepset-ai/haystack",
+      "primaryLanguage": {
+        "name": "MDX"
+      },
+      "pushedAt": "2026-06-12T15:45:23Z",
+      "repositoryTopics": [
+        {
+          "name": "nlp"
+        },
+        {
+          "name": "question-answering"
+        },
+        {
+          "name": "pytorch"
+        },
+        {
+          "name": "semantic-search"
+        },
+        {
+          "name": "information-retrieval"
+        },
+        {
+          "name": "summarization"
+        },
+        {
+          "name": "transformers"
+        },
+        {
+          "name": "machine-learning"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "large-language-models"
+        },
+        {
+          "name": "generative-ai"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "retrieval-augmented-generation"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "agent"
+        },
+        {
+          "name": "gemini"
+        },
+        {
+          "name": "gpt-4"
+        },
+        {
+          "name": "orchestration"
+        }
+      ],
+      "stargazerCount": 25551,
+      "updatedAt": "2026-06-12T14:44:01Z",
+      "url": "https://github.com/deepset-ai/haystack",
+      "watchers": {
+        "totalCount": 162
+      }
+    }
+  },
+  {
+    "rank": 19,
+    "name": "microsoft/graphrag",
+    "url": "https://github.com/microsoft/graphrag",
+    "category": "GraphRAG",
+    "trend_tags": [
+      "graphrag",
+      "knowledge-graph",
+      "retrieval",
+      "global-local-search"
+    ],
+    "official_docs": "https://microsoft.github.io/graphrag/",
+    "note": "Microsoft GraphRAG implementation for graph-structured retrieval and community/global-local query patterns.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:00.277Z",
+    "github": {
+      "createdAt": "2024-03-27T17:57:52Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
+      "forkCount": 3567,
+      "homepageUrl": "https://microsoft.github.io/graphrag/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v3.1.0",
+        "tagName": "v3.1.0",
+        "url": "https://github.com/microsoft/graphrag/releases/tag/v3.1.0",
+        "publishedAt": "2026-05-28T15:55:40Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "microsoft/graphrag",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-05T23:46:49Z",
+      "repositoryTopics": [
+        {
+          "name": "graphrag"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "llms"
+        },
+        {
+          "name": "gpt"
+        },
+        {
+          "name": "gpt-4"
+        },
+        {
+          "name": "gpt4"
+        }
+      ],
+      "stargazerCount": 33684,
+      "updatedAt": "2026-06-12T15:24:09Z",
+      "url": "https://github.com/microsoft/graphrag",
+      "watchers": {
+        "totalCount": 193
+      }
+    }
+  },
+  {
+    "rank": 20,
+    "name": "HKUDS/LightRAG",
+    "url": "https://github.com/HKUDS/LightRAG",
+    "category": "GraphRAG / lightweight RAG",
+    "trend_tags": [
+      "rag",
+      "graphrag",
+      "knowledge-graph",
+      "lightweight"
+    ],
+    "official_docs": "https://github.com/HKUDS/LightRAG",
+    "note": "Lightweight RAG/GraphRAG-style system focused on simple, fast, and graph-enhanced retrieval.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:00.930Z",
+    "github": {
+      "createdAt": "2024-10-02T11:57:54Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\"",
+      "forkCount": 5158,
+      "homepageUrl": "https://arxiv.org/abs/2410.05779",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.5.2",
+        "tagName": "v1.5.2",
+        "url": "https://github.com/HKUDS/LightRAG/releases/tag/v1.5.2",
+        "publishedAt": "2026-06-11T06:14:51Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "HKUDS/LightRAG",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T14:16:56Z",
+      "repositoryTopics": [
+        {
+          "name": "knowledge-graph"
+        },
+        {
+          "name": "large-language-models"
+        },
+        {
+          "name": "retrieval-augmented-generation"
+        },
+        {
+          "name": "genai"
+        },
+        {
+          "name": "graphrag"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "gpt"
+        },
+        {
+          "name": "gpt-4"
+        }
+      ],
+      "stargazerCount": 36505,
+      "updatedAt": "2026-06-12T15:48:07Z",
+      "url": "https://github.com/HKUDS/LightRAG",
+      "watchers": {
+        "totalCount": 211
+      }
+    }
+  },
+  {
+    "rank": 21,
+    "name": "mem0ai/mem0",
+    "url": "https://github.com/mem0ai/mem0",
+    "category": "agent memory",
+    "trend_tags": [
+      "memory",
+      "personalization",
+      "agents",
+      "context-engineering"
+    ],
+    "official_docs": "https://docs.mem0.ai/",
+    "note": "Agent memory layer for persistent personalized context across conversations and tools.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:01.666Z",
+    "github": {
+      "createdAt": "2023-06-20T08:58:36Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Universal memory layer for AI Agents",
+      "forkCount": 6710,
+      "homepageUrl": "https://mem0.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Mem0 Pi Agent Plugin (v0.1.2)",
+        "tagName": "pi-agent-v0.1.2",
+        "url": "https://github.com/mem0ai/mem0/releases/tag/pi-agent-v0.1.2",
+        "publishedAt": "2026-06-12T13:46:16Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "mem0ai/mem0",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T15:37:51Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "chatbots"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "application"
+        },
+        {
+          "name": "long-term-memory"
+        },
+        {
+          "name": "memory"
+        },
+        {
+          "name": "memory-management"
+        },
+        {
+          "name": "state-management"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "genai"
+        }
+      ],
+      "stargazerCount": 58430,
+      "updatedAt": "2026-06-12T15:37:55Z",
+      "url": "https://github.com/mem0ai/mem0",
+      "watchers": {
+        "totalCount": 233
+      }
+    }
+  },
+  {
+    "rank": 22,
+    "name": "getzep/zep",
+    "url": "https://github.com/getzep/zep",
+    "category": "agent memory",
+    "trend_tags": [
+      "memory",
+      "knowledge-graph",
+      "conversation-memory",
+      "agents"
+    ],
+    "official_docs": "https://help.getzep.com/",
+    "note": "Memory server and graph memory layer for AI agents.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:02.317Z",
+    "github": {
+      "createdAt": "2023-04-29T14:06:22Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Zep | Examples, Integrations, & More",
+      "forkCount": 634,
+      "homepageUrl": "https://help.getzep.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "zep-crewai v1.1.1",
+        "tagName": "zep-crewai-v1.1.1",
+        "url": "https://github.com/getzep/zep/releases/tag/zep-crewai-v1.1.1",
+        "publishedAt": "2025-09-11T17:58:29Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "getzep/zep",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-04-09T01:30:25Z",
+      "repositoryTopics": [
+        {
+          "name": "language-model"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "knowledge-graphs"
+        }
+      ],
+      "stargazerCount": 4659,
+      "updatedAt": "2026-06-12T00:44:21Z",
+      "url": "https://github.com/getzep/zep",
+      "watchers": {
+        "totalCount": 28
+      }
+    }
+  },
+  {
+    "rank": 23,
+    "name": "stanford-oval/storm",
+    "url": "https://github.com/stanford-oval/storm",
+    "category": "research/RAG writing system",
+    "trend_tags": [
+      "research-agent",
+      "rag",
+      "long-form-writing",
+      "retrieval"
+    ],
+    "official_docs": "https://storm.genie.stanford.edu/",
+    "note": "Research and writing system that uses retrieval and multi-perspective synthesis.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:02.967Z",
+    "github": {
+      "createdAt": "2024-03-24T16:23:39Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
+      "forkCount": 2583,
+      "homepageUrl": "http://storm.genie.stanford.edu",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.1.0 Compatible with LiteLLM API",
+        "tagName": "v1.1.0",
+        "url": "https://github.com/stanford-oval/storm/releases/tag/v1.1.0",
+        "publishedAt": "2025-01-23T07:21:44Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "stanford-oval/storm",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2025-09-30T18:07:21Z",
+      "repositoryTopics": [
+        {
+          "name": "large-language-models"
+        },
+        {
+          "name": "nlp"
+        },
+        {
+          "name": "knowledge-curation"
+        },
+        {
+          "name": "naacl"
+        },
+        {
+          "name": "report-generation"
+        },
+        {
+          "name": "retrieval-augmented-generation"
+        },
+        {
+          "name": "emnlp2024"
+        },
+        {
+          "name": "agentic-rag"
+        },
+        {
+          "name": "deep-research"
+        }
+      ],
+      "stargazerCount": 28356,
+      "updatedAt": "2026-06-12T15:11:58Z",
+      "url": "https://github.com/stanford-oval/storm",
+      "watchers": {
+        "totalCount": 189
+      }
+    }
+  },
+  {
+    "rank": 24,
+    "name": "weaviate/Verba",
+    "url": "https://github.com/weaviate/Verba",
+    "category": "RAG app",
+    "trend_tags": [
+      "rag",
+      "chat-with-docs",
+      "weaviate",
+      "app-template"
+    ],
+    "official_docs": "https://github.com/weaviate/Verba",
+    "note": "Reference RAG application for chat-with-docs workflows backed by Weaviate.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:03.580Z",
+    "github": {
+      "createdAt": "2023-07-28T16:53:42Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Retrieval Augmented Generation (RAG) chatbot powered by Weaviate",
+      "forkCount": 851,
+      "homepageUrl": "",
+      "isArchived": true,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v2.1.3",
+        "tagName": "v2.1.3",
+        "url": "https://github.com/weaviate/Verba/releases/tag/v2.1.3",
+        "publishedAt": "2025-07-14T11:24:41Z"
+      },
+      "licenseInfo": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "nickname": "Modified BSD License"
+      },
+      "nameWithOwner": "weaviate/Verba",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-08T09:25:18Z",
+      "repositoryTopics": null,
+      "stargazerCount": 7714,
+      "updatedAt": "2026-06-11T08:22:59Z",
+      "url": "https://github.com/weaviate/Verba",
+      "watchers": {
+        "totalCount": 77
+      }
+    }
+  },
+  {
+    "rank": 25,
+    "name": "khoj-ai/khoj",
+    "url": "https://github.com/khoj-ai/khoj",
+    "category": "personal RAG / local assistant",
+    "trend_tags": [
+      "personal-ai",
+      "rag",
+      "local-llm",
+      "search"
+    ],
+    "official_docs": "https://docs.khoj.dev/",
+    "note": "Personal AI assistant with local/private knowledge search and RAG-oriented workflows.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:04.354Z",
+    "github": {
+      "createdAt": "2021-08-16T01:48:44Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+      "forkCount": 2245,
+      "homepageUrl": "https://khoj.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "2.0.0-beta.28",
+        "tagName": "2.0.0-beta.28",
+        "url": "https://github.com/khoj-ai/khoj/releases/tag/2.0.0-beta.28",
+        "publishedAt": "2026-03-26T03:36:04Z"
+      },
+      "licenseInfo": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "nickname": "GNU AGPLv3"
+      },
+      "nameWithOwner": "khoj-ai/khoj",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-03-26T03:35:43Z",
+      "repositoryTopics": [
+        {
+          "name": "semantic-search"
+        },
+        {
+          "name": "emacs"
+        },
+        {
+          "name": "obsidian-md"
+        },
+        {
+          "name": "chat"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "productivity"
+        },
+        {
+          "name": "agent"
+        },
+        {
+          "name": "self-hosted"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "whatsapp-ai"
+        },
+        {
+          "name": "offline-llm"
+        },
+        {
+          "name": "llamacpp"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "llama3"
+        },
+        {
+          "name": "image-generation"
+        },
+        {
+          "name": "stt"
+        },
+        {
+          "name": "assistant"
+        },
+        {
+          "name": "research"
+        }
+      ],
+      "stargazerCount": 35088,
+      "updatedAt": "2026-06-12T15:37:16Z",
+      "url": "https://github.com/khoj-ai/khoj",
+      "watchers": {
+        "totalCount": 169
+      }
+    }
+  },
+  {
+    "rank": 26,
+    "name": "QuivrHQ/quivr",
+    "url": "https://github.com/QuivrHQ/quivr",
+    "category": "RAG app",
+    "trend_tags": [
+      "rag",
+      "second-brain",
+      "knowledge-base",
+      "app"
+    ],
+    "official_docs": "https://docs.quivr.com/",
+    "note": "Knowledge-base and second-brain style RAG application.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:05.101Z",
+    "github": {
+      "createdAt": "2023-05-12T23:53:30Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Opiniated RAG for integrating GenAI in your apps 🧠   Focus on your product rather than the RAG. Easy integration in existing products with customisation!  Any LLM: GPT4, Groq, Llama. Any Vectorstore: PGVector, Faiss. Any Files. Anyway you want.",
+      "forkCount": 3727,
+      "homepageUrl": "https://core.quivr.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "core: v0.0.33",
+        "tagName": "core-0.0.33",
+        "url": "https://github.com/QuivrHQ/quivr/releases/tag/core-0.0.33",
+        "publishedAt": "2025-02-04T10:18:50Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "QuivrHQ/quivr",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2025-07-09T12:55:23Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "api"
+        },
+        {
+          "name": "chatbot"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "database"
+        },
+        {
+          "name": "docker"
+        },
+        {
+          "name": "frontend"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "postgresql"
+        },
+        {
+          "name": "privacy"
+        },
+        {
+          "name": "security"
+        },
+        {
+          "name": "typescript"
+        },
+        {
+          "name": "html"
+        },
+        {
+          "name": "javascript"
+        },
+        {
+          "name": "react"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "vector"
+        },
+        {
+          "name": "groq"
+        },
+        {
+          "name": "framework"
+        }
+      ],
+      "stargazerCount": 39153,
+      "updatedAt": "2026-06-12T14:28:51Z",
+      "url": "https://github.com/QuivrHQ/quivr",
+      "watchers": {
+        "totalCount": 285
+      }
+    }
+  },
+  {
+    "rank": 27,
+    "name": "infiniflow/ragflow",
+    "url": "https://github.com/infiniflow/ragflow",
+    "category": "RAG platform",
+    "trend_tags": [
+      "rag",
+      "document-intelligence",
+      "workflow",
+      "enterprise"
+    ],
+    "official_docs": "https://ragflow.io/docs/dev/",
+    "note": "Enterprise-oriented RAG platform focused on document parsing, retrieval, and workflow.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:05.742Z",
+    "github": {
+      "createdAt": "2023-12-12T06:13:13Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "forkCount": 9521,
+      "homepageUrl": "https://ragflow.io",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.26.0",
+        "tagName": "v0.26.0",
+        "url": "https://github.com/infiniflow/ragflow/releases/tag/v0.26.0",
+        "publishedAt": "2026-06-11T11:04:54Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "infiniflow/ragflow",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T15:28:15Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "context-engine"
+        },
+        {
+          "name": "llm-apps"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "retrieval-augmented-generation"
+        },
+        {
+          "name": "agentic-ai"
+        },
+        {
+          "name": "agentic-retrieval"
+        },
+        {
+          "name": "agentic-search"
+        },
+        {
+          "name": "context-management"
+        }
+      ],
+      "stargazerCount": 82563,
+      "updatedAt": "2026-06-12T15:28:20Z",
+      "url": "https://github.com/infiniflow/ragflow",
+      "watchers": {
+        "totalCount": 332
+      }
+    }
+  },
+  {
+    "rank": 28,
+    "name": "qdrant/qdrant",
+    "url": "https://github.com/qdrant/qdrant",
+    "category": "vector database",
+    "trend_tags": [
+      "vector-db",
+      "hnsw",
+      "hybrid-search",
+      "rust"
+    ],
+    "official_docs": "https://qdrant.tech/documentation/",
+    "note": "Vector search database used heavily in RAG stacks.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:06.487Z",
+    "github": {
+      "createdAt": "2020-05-30T21:37:01Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+      "forkCount": 2352,
+      "homepageUrl": "https://qdrant.tech",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.18.2",
+        "tagName": "v1.18.2",
+        "url": "https://github.com/qdrant/qdrant/releases/tag/v1.18.2",
+        "publishedAt": "2026-06-04T06:50:36Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "qdrant/qdrant",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-06-12T14:50:51Z",
+      "repositoryTopics": [
+        {
+          "name": "neural-network"
+        },
+        {
+          "name": "search-engine"
+        },
+        {
+          "name": "knn-algorithm"
+        },
+        {
+          "name": "hnsw"
+        },
+        {
+          "name": "vector-search"
+        },
+        {
+          "name": "nearest-neighbor-search"
+        },
+        {
+          "name": "image-search"
+        },
+        {
+          "name": "embeddings-similarity"
+        },
+        {
+          "name": "recommender-system"
+        },
+        {
+          "name": "vector-search-engine"
+        },
+        {
+          "name": "mlops"
+        },
+        {
+          "name": "search-engines"
+        },
+        {
+          "name": "neural-search"
+        },
+        {
+          "name": "similarity-search"
+        },
+        {
+          "name": "vector-database"
+        },
+        {
+          "name": "machine-learning"
+        },
+        {
+          "name": "search"
+        },
+        {
+          "name": "ai-search"
+        },
+        {
+          "name": "ai-search-engine"
+        },
+        {
+          "name": "hybrid-search"
+        }
+      ],
+      "stargazerCount": 32060,
+      "updatedAt": "2026-06-12T15:33:39Z",
+      "url": "https://github.com/qdrant/qdrant",
+      "watchers": {
+        "totalCount": 151
+      }
+    }
+  },
+  {
+    "rank": 29,
+    "name": "milvus-io/milvus",
+    "url": "https://github.com/milvus-io/milvus",
+    "category": "vector database",
+    "trend_tags": [
+      "vector-db",
+      "distributed",
+      "hybrid-search",
+      "rag"
+    ],
+    "official_docs": "https://milvus.io/docs/",
+    "note": "Distributed vector database for high-scale similarity search and RAG applications.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:07.179Z",
+    "github": {
+      "createdAt": "2019-09-16T06:43:43Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+      "forkCount": 4064,
+      "homepageUrl": "https://milvus.io",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "milvus-2.6.18",
+        "tagName": "v2.6.18",
+        "url": "https://github.com/milvus-io/milvus/releases/tag/v2.6.18",
+        "publishedAt": "2026-06-05T04:03:06Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "milvus-io/milvus",
+      "primaryLanguage": {
+        "name": "Go"
+      },
+      "pushedAt": "2026-06-12T10:40:29Z",
+      "repositoryTopics": [
+        {
+          "name": "anns"
+        },
+        {
+          "name": "nearest-neighbor-search"
+        },
+        {
+          "name": "faiss"
+        },
+        {
+          "name": "vector-search"
+        },
+        {
+          "name": "image-search"
+        },
+        {
+          "name": "hnsw"
+        },
+        {
+          "name": "vector-database"
+        },
+        {
+          "name": "embedding-database"
+        },
+        {
+          "name": "embedding-store"
+        },
+        {
+          "name": "vector-store"
+        },
+        {
+          "name": "vector-similarity"
+        },
+        {
+          "name": "embedding-similarity"
+        },
+        {
+          "name": "distributed"
+        },
+        {
+          "name": "golang"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "cloud-native"
+        },
+        {
+          "name": "diskann"
+        },
+        {
+          "name": "rag"
+        }
+      ],
+      "stargazerCount": 44745,
+      "updatedAt": "2026-06-12T15:22:02Z",
+      "url": "https://github.com/milvus-io/milvus",
+      "watchers": {
+        "totalCount": 331
+      }
+    }
+  },
+  {
+    "rank": 30,
+    "name": "chroma-core/chroma",
+    "url": "https://github.com/chroma-core/chroma",
+    "category": "vector database",
+    "trend_tags": [
+      "vector-db",
+      "embeddings",
+      "developer-experience",
+      "rag"
+    ],
+    "official_docs": "https://docs.trychroma.com/",
+    "note": "Developer-friendly embedding database used in many local RAG examples.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:07.888Z",
+    "github": {
+      "createdAt": "2022-10-05T17:58:44Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Search infrastructure for AI",
+      "forkCount": 2313,
+      "homepageUrl": "https://www.trychroma.com/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "1.5.9",
+        "tagName": "1.5.9",
+        "url": "https://github.com/chroma-core/chroma/releases/tag/1.5.9",
+        "publishedAt": "2026-05-05T05:55:40Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "chroma-core/chroma",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-06-12T09:41:03Z",
+      "repositoryTopics": [
+        {
+          "name": "database"
+        },
+        {
+          "name": "rust"
+        },
+        {
+          "name": "rust-lang"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "ai-agents"
+        }
+      ],
+      "stargazerCount": 28402,
+      "updatedAt": "2026-06-12T14:32:15Z",
+      "url": "https://github.com/chroma-core/chroma",
+      "watchers": {
+        "totalCount": 137
+      }
+    }
+  },
+  {
+    "rank": 31,
+    "name": "weaviate/weaviate",
+    "url": "https://github.com/weaviate/weaviate",
+    "category": "vector database",
+    "trend_tags": [
+      "vector-db",
+      "hybrid-search",
+      "modules",
+      "rag"
+    ],
+    "official_docs": "https://weaviate.io/developers/weaviate",
+    "note": "Vector database and search engine with hybrid search and module ecosystem.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:09.071Z",
+    "github": {
+      "createdAt": "2016-03-30T15:03:17Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database​.",
+      "forkCount": 1308,
+      "homepageUrl": "https://weaviate.io/developers/weaviate/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.38.0 - HFresh, Namespaces, Nested Object Filtering, Alter Schema Reindex property",
+        "tagName": "v1.38.0",
+        "url": "https://github.com/weaviate/weaviate/releases/tag/v1.38.0",
+        "publishedAt": "2026-06-05T16:34:27Z"
+      },
+      "licenseInfo": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "nickname": "Modified BSD License"
+      },
+      "nameWithOwner": "weaviate/weaviate",
+      "primaryLanguage": {
+        "name": "Go"
+      },
+      "pushedAt": "2026-06-12T14:27:33Z",
+      "repositoryTopics": [
+        {
+          "name": "search-engine"
+        },
+        {
+          "name": "semantic-search"
+        },
+        {
+          "name": "semantic-search-engine"
+        },
+        {
+          "name": "vector-search"
+        },
+        {
+          "name": "vector-search-engine"
+        },
+        {
+          "name": "vector-database"
+        },
+        {
+          "name": "approximate-nearest-neighbor-search"
+        },
+        {
+          "name": "image-search"
+        },
+        {
+          "name": "hnsw"
+        },
+        {
+          "name": "information-retrieval"
+        },
+        {
+          "name": "mlops"
+        },
+        {
+          "name": "nearest-neighbor-search"
+        },
+        {
+          "name": "neural-search"
+        },
+        {
+          "name": "recommender-system"
+        },
+        {
+          "name": "similarity-search"
+        },
+        {
+          "name": "vectors"
+        },
+        {
+          "name": "generative-search"
+        },
+        {
+          "name": "hybrid-search"
+        },
+        {
+          "name": "weaviate"
+        },
+        {
+          "name": "grpc"
+        }
+      ],
+      "stargazerCount": 16319,
+      "updatedAt": "2026-06-12T15:36:55Z",
+      "url": "https://github.com/weaviate/weaviate",
+      "watchers": {
+        "totalCount": 137
+      }
+    }
+  },
+  {
+    "rank": 32,
+    "name": "lancedb/lancedb",
+    "url": "https://github.com/lancedb/lancedb",
+    "category": "vector database / lakehouse",
+    "trend_tags": [
+      "vector-db",
+      "lance",
+      "multimodal",
+      "local-first"
+    ],
+    "official_docs": "https://lancedb.github.io/lancedb/",
+    "note": "Vector database built on Lance format for multimodal and local/cloud retrieval.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:09.718Z",
+    "github": {
+      "createdAt": "2023-02-28T01:15:17Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Developer-friendly OSS embedded retrieval library for multimodal AI. Search More; Manage Less.",
+      "forkCount": 906,
+      "homepageUrl": "https://lancedb.com/docs",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Python LanceDB v0.33.1-beta.2",
+        "tagName": "python-v0.33.1-beta.2",
+        "url": "https://github.com/lancedb/lancedb/releases/tag/python-v0.33.1-beta.2",
+        "publishedAt": "2026-06-04T06:06:03Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "lancedb/lancedb",
+      "primaryLanguage": {
+        "name": "HTML"
+      },
+      "pushedAt": "2026-06-12T15:14:24Z",
+      "repositoryTopics": [
+        {
+          "name": "approximate-nearest-neighbor-search"
+        },
+        {
+          "name": "image-search"
+        },
+        {
+          "name": "nearest-neighbor-search"
+        },
+        {
+          "name": "recommender-system"
+        },
+        {
+          "name": "search-engine"
+        },
+        {
+          "name": "semantic-search"
+        },
+        {
+          "name": "similarity-search"
+        },
+        {
+          "name": "vector-database"
+        }
+      ],
+      "stargazerCount": 10584,
+      "updatedAt": "2026-06-12T14:05:25Z",
+      "url": "https://github.com/lancedb/lancedb",
+      "watchers": {
+        "totalCount": 53
+      }
+    }
+  },
+  {
+    "rank": 33,
+    "name": "pgvector/pgvector",
+    "url": "https://github.com/pgvector/pgvector",
+    "category": "Postgres vector extension",
+    "trend_tags": [
+      "postgres",
+      "vector-search",
+      "rag",
+      "sql"
+    ],
+    "official_docs": "https://github.com/pgvector/pgvector",
+    "note": "Postgres extension that makes vector search a database-native capability.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:10.377Z",
+    "github": {
+      "createdAt": "2021-04-20T21:13:52Z",
+      "defaultBranchRef": {
+        "name": "master"
+      },
+      "description": "Open-source vector similarity search for Postgres",
+      "forkCount": 1203,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": null,
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "pgvector/pgvector",
+      "primaryLanguage": {
+        "name": "C"
+      },
+      "pushedAt": "2026-06-11T03:21:05Z",
+      "repositoryTopics": [
+        {
+          "name": "nearest-neighbor-search"
+        },
+        {
+          "name": "approximate-nearest-neighbor-search"
+        }
+      ],
+      "stargazerCount": 21721,
+      "updatedAt": "2026-06-12T14:47:15Z",
+      "url": "https://github.com/pgvector/pgvector",
+      "watchers": {
+        "totalCount": 133
+      }
+    }
+  },
+  {
+    "rank": 34,
+    "name": "timescale/pgvectorscale",
+    "url": "https://github.com/timescale/pgvectorscale",
+    "category": "Postgres vector extension",
+    "trend_tags": [
+      "postgres",
+      "vector-search",
+      "scaling",
+      "rag"
+    ],
+    "official_docs": "https://github.com/timescale/pgvectorscale",
+    "note": "Timescale vector search extension for scalable ANN search in Postgres.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:10.929Z",
+    "github": {
+      "createdAt": "2023-07-01T01:05:05Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Postgres extension for vector search (DiskANN), complements pgvector for performance and scale. Postgres OSS licensed.",
+      "forkCount": 138,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "0.9.0",
+        "tagName": "0.9.0",
+        "url": "https://github.com/timescale/pgvectorscale/releases/tag/0.9.0",
+        "publishedAt": "2025-11-04T16:30:12Z"
+      },
+      "licenseInfo": {
+        "key": "postgresql",
+        "name": "PostgreSQL License",
+        "nickname": ""
+      },
+      "nameWithOwner": "timescale/pgvectorscale",
+      "primaryLanguage": {
+        "name": "Rust"
+      },
+      "pushedAt": "2026-04-30T06:41:39Z",
+      "repositoryTopics": null,
+      "stargazerCount": 3052,
+      "updatedAt": "2026-06-12T10:33:41Z",
+      "url": "https://github.com/timescale/pgvectorscale",
+      "watchers": {
+        "totalCount": 27
+      }
+    }
+  },
+  {
+    "rank": 35,
+    "name": "facebookresearch/faiss",
+    "url": "https://github.com/facebookresearch/faiss",
+    "category": "vector search library",
+    "trend_tags": [
+      "ann",
+      "vector-search",
+      "indexing",
+      "retrieval"
+    ],
+    "official_docs": "https://faiss.ai/",
+    "note": "Foundational vector similarity search library behind many retrieval systems.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:11.467Z",
+    "github": {
+      "createdAt": "2017-02-07T16:07:05Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "A library for efficient similarity search and clustering of dense vectors.",
+      "forkCount": 4420,
+      "homepageUrl": "https://faiss.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.14.2",
+        "tagName": "v1.14.2",
+        "url": "https://github.com/facebookresearch/faiss/releases/tag/v1.14.2",
+        "publishedAt": "2026-05-22T20:05:00Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "facebookresearch/faiss",
+      "primaryLanguage": {
+        "name": "C++"
+      },
+      "pushedAt": "2026-06-11T22:27:59Z",
+      "repositoryTopics": null,
+      "stargazerCount": 40272,
+      "updatedAt": "2026-06-12T13:59:12Z",
+      "url": "https://github.com/facebookresearch/faiss",
+      "watchers": {
+        "totalCount": 495
+      }
+    }
+  },
+  {
+    "rank": 36,
+    "name": "typesense/typesense",
+    "url": "https://github.com/typesense/typesense",
+    "category": "search engine / hybrid retrieval",
+    "trend_tags": [
+      "search",
+      "hybrid-search",
+      "keyword-search",
+      "vector-search"
+    ],
+    "official_docs": "https://typesense.org/docs/",
+    "note": "Open-source search engine with keyword, semantic, hybrid, and vector search features for RAG-style retrieval.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:12.216Z",
+    "github": {
+      "createdAt": "2017-01-18T08:01:47Z",
+      "defaultBranchRef": {
+        "name": "v31"
+      },
+      "description": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences",
+      "forkCount": 899,
+      "homepageUrl": "https://typesense.org",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Version 30.2",
+        "tagName": "v30.2",
+        "url": "https://github.com/typesense/typesense/releases/tag/v30.2",
+        "publishedAt": "2026-04-19T16:00:09Z"
+      },
+      "licenseInfo": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "nickname": "GNU GPLv3"
+      },
+      "nameWithOwner": "typesense/typesense",
+      "primaryLanguage": {
+        "name": "C++"
+      },
+      "pushedAt": "2026-06-10T02:20:26Z",
+      "repositoryTopics": [
+        {
+          "name": "search-engine"
+        },
+        {
+          "name": "search"
+        },
+        {
+          "name": "typo-tolerance"
+        },
+        {
+          "name": "site-search"
+        },
+        {
+          "name": "instantsearch"
+        },
+        {
+          "name": "fuzzy-search"
+        },
+        {
+          "name": "full-text-search"
+        },
+        {
+          "name": "enterprise-search"
+        },
+        {
+          "name": "synonyms"
+        },
+        {
+          "name": "faceting"
+        },
+        {
+          "name": "geosearch"
+        },
+        {
+          "name": "algolia"
+        },
+        {
+          "name": "elasticsearch"
+        },
+        {
+          "name": "merchandising"
+        },
+        {
+          "name": "datastore"
+        },
+        {
+          "name": "in-memory"
+        },
+        {
+          "name": "vector-search"
+        },
+        {
+          "name": "pinecone"
+        },
+        {
+          "name": "semantic-search"
+        },
+        {
+          "name": "similarity-search"
+        }
+      ],
+      "stargazerCount": 25984,
+      "updatedAt": "2026-06-12T15:15:58Z",
+      "url": "https://github.com/typesense/typesense",
+      "watchers": {
+        "totalCount": 135
+      }
+    }
+  },
+  {
+    "rank": 37,
+    "name": "explodinggradients/ragas",
+    "url": "https://github.com/explodinggradients/ragas",
+    "category": "RAG evaluation",
+    "trend_tags": [
+      "rag-evaluation",
+      "metrics",
+      "testsets",
+      "llm-evals"
+    ],
+    "official_docs": "https://docs.ragas.io/",
+    "note": "RAG evaluation framework for answer quality, faithfulness, context precision, and testset generation.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:12.790Z",
+    "github": {
+      "createdAt": "2023-05-08T17:48:04Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Supercharge Your LLM Application Evaluations 🚀",
+      "forkCount": 1482,
+      "homepageUrl": "https://docs.ragas.io",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.4.3",
+        "tagName": "v0.4.3",
+        "url": "https://github.com/vibrantlabsai/ragas/releases/tag/v0.4.3",
+        "publishedAt": "2026-01-13T17:47:29Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "vibrantlabsai/ragas",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-02-24T07:47:19Z",
+      "repositoryTopics": [
+        {
+          "name": "llm"
+        },
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "evaluation"
+        }
+      ],
+      "stargazerCount": 14349,
+      "updatedAt": "2026-06-12T13:17:57Z",
+      "url": "https://github.com/vibrantlabsai/ragas",
+      "watchers": {
+        "totalCount": 52
+      }
+    }
+  },
+  {
+    "rank": 38,
+    "name": "promptfoo/promptfoo",
+    "url": "https://github.com/promptfoo/promptfoo",
+    "category": "LLM testing / red teaming",
+    "trend_tags": [
+      "evals",
+      "prompt-testing",
+      "red-teaming",
+      "ci"
+    ],
+    "official_docs": "https://www.promptfoo.dev/docs/",
+    "note": "Prompt/model/app testing framework with CI, assertions, and red-team workflows.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:13.589Z",
+    "github": {
+      "createdAt": "2023-04-28T15:48:49Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic.",
+      "forkCount": 1967,
+      "homepageUrl": "https://promptfoo.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "0.121.15",
+        "tagName": "0.121.15",
+        "url": "https://github.com/promptfoo/promptfoo/releases/tag/0.121.15",
+        "publishedAt": "2026-06-05T14:21:17Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "promptfoo/promptfoo",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-12T15:54:12Z",
+      "repositoryTopics": [
+        {
+          "name": "llm"
+        },
+        {
+          "name": "prompt-engineering"
+        },
+        {
+          "name": "prompts"
+        },
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "prompt-testing"
+        },
+        {
+          "name": "testing"
+        },
+        {
+          "name": "rag"
+        },
+        {
+          "name": "evaluation"
+        },
+        {
+          "name": "evaluation-framework"
+        },
+        {
+          "name": "llm-eval"
+        },
+        {
+          "name": "llm-evaluation"
+        },
+        {
+          "name": "llm-evaluation-framework"
+        },
+        {
+          "name": "ci"
+        },
+        {
+          "name": "ci-cd"
+        },
+        {
+          "name": "cicd"
+        },
+        {
+          "name": "pentesting"
+        },
+        {
+          "name": "red-teaming"
+        },
+        {
+          "name": "vulnerability-scanners"
+        }
+      ],
+      "stargazerCount": 22149,
+      "updatedAt": "2026-06-12T15:54:38Z",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "watchers": {
+        "totalCount": 58
+      }
+    }
+  },
+  {
+    "rank": 39,
+    "name": "confident-ai/deepeval",
+    "url": "https://github.com/confident-ai/deepeval",
+    "category": "LLM evaluation",
+    "trend_tags": [
+      "evals",
+      "rag-evaluation",
+      "unit-testing",
+      "metrics"
+    ],
+    "official_docs": "https://docs.confident-ai.com/",
+    "note": "LLM evaluation and testing framework for RAG, agents, and LLM app quality gates.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:14.209Z",
+    "github": {
+      "createdAt": "2023-08-10T05:35:04Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "The LLM Evaluation Framework",
+      "forkCount": 1525,
+      "homepageUrl": "https://deepeval.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "Opus 4.8: Day 0 Support",
+        "tagName": "v4.0.5",
+        "url": "https://github.com/confident-ai/deepeval/releases/tag/v4.0.5",
+        "publishedAt": "2026-05-28T18:42:29Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "confident-ai/deepeval",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T09:03:15Z",
+      "repositoryTopics": [
+        {
+          "name": "evaluation-metrics"
+        },
+        {
+          "name": "evaluation-framework"
+        },
+        {
+          "name": "llm-evaluation"
+        },
+        {
+          "name": "llm-evaluation-framework"
+        },
+        {
+          "name": "llm-evaluation-metrics"
+        },
+        {
+          "name": "python"
+        }
+      ],
+      "stargazerCount": 16124,
+      "updatedAt": "2026-06-12T15:23:49Z",
+      "url": "https://github.com/confident-ai/deepeval",
+      "watchers": {
+        "totalCount": 62
+      }
+    }
+  },
+  {
+    "rank": 40,
+    "name": "truera/trulens",
+    "url": "https://github.com/truera/trulens",
+    "category": "LLM observability / evaluation",
+    "trend_tags": [
+      "observability",
+      "evals",
+      "rag-triads",
+      "feedback-functions"
+    ],
+    "official_docs": "https://www.trulens.org/",
+    "note": "Evaluation and tracing framework for RAG and LLM applications.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:15.412Z",
+    "github": {
+      "createdAt": "2020-11-02T21:56:45Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Evaluation and Tracking for LLM Experiments and AI Agents",
+      "forkCount": 291,
+      "homepageUrl": "https://www.trulens.org/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "TruLens 2.8.1",
+        "tagName": "trulens-2.8.1",
+        "url": "https://github.com/truera/trulens/releases/tag/trulens-2.8.1",
+        "publishedAt": "2026-05-14T17:18:08Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "truera/trulens",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-05T23:25:19Z",
+      "repositoryTopics": [
+        {
+          "name": "machine-learning"
+        },
+        {
+          "name": "neural-networks"
+        },
+        {
+          "name": "explainable-ml"
+        },
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "ai-monitoring"
+        },
+        {
+          "name": "ai-observability"
+        },
+        {
+          "name": "evals"
+        },
+        {
+          "name": "llm-evaluation"
+        },
+        {
+          "name": "llms"
+        },
+        {
+          "name": "ai-agents"
+        },
+        {
+          "name": "llm-eval"
+        },
+        {
+          "name": "agentops"
+        },
+        {
+          "name": "agent-evaluation"
+        }
+      ],
+      "stargazerCount": 3375,
+      "updatedAt": "2026-06-12T15:38:36Z",
+      "url": "https://github.com/truera/trulens",
+      "watchers": {
+        "totalCount": 22
+      }
+    }
+  },
+  {
+    "rank": 41,
+    "name": "Arize-ai/phoenix",
+    "url": "https://github.com/Arize-ai/phoenix",
+    "category": "LLM observability",
+    "trend_tags": [
+      "observability",
+      "tracing",
+      "evals",
+      "openinference"
+    ],
+    "official_docs": "https://arize.com/docs/phoenix",
+    "note": "Open-source AI observability and evaluation system with OpenInference tracing.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:16.131Z",
+    "github": {
+      "createdAt": "2022-11-09T23:44:35Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "AI Observability & Evaluation",
+      "forkCount": 915,
+      "homepageUrl": "https://arize.com/docs/phoenix",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "arize-phoenix-client: v2.9.0",
+        "tagName": "arize-phoenix-client-v2.9.0",
+        "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-client-v2.9.0",
+        "publishedAt": "2026-06-11T22:41:57Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "Arize-ai/phoenix",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T13:57:25Z",
+      "repositoryTopics": [
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "ai-monitoring"
+        },
+        {
+          "name": "ai-observability"
+        },
+        {
+          "name": "llm-eval"
+        },
+        {
+          "name": "aiengineering"
+        },
+        {
+          "name": "datasets"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "llms"
+        },
+        {
+          "name": "prompt-engineering"
+        },
+        {
+          "name": "anthropic"
+        },
+        {
+          "name": "evals"
+        },
+        {
+          "name": "llm-evaluation"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "langchain"
+        },
+        {
+          "name": "llamaindex"
+        },
+        {
+          "name": "smolagents"
+        }
+      ],
+      "stargazerCount": 10112,
+      "updatedAt": "2026-06-12T15:42:00Z",
+      "url": "https://github.com/Arize-ai/phoenix",
+      "watchers": {
+        "totalCount": 56
+      }
+    }
+  },
+  {
+    "rank": 42,
+    "name": "langfuse/langfuse",
+    "url": "https://github.com/langfuse/langfuse",
+    "category": "LLM observability",
+    "trend_tags": [
+      "observability",
+      "tracing",
+      "prompt-management",
+      "evals"
+    ],
+    "official_docs": "https://langfuse.com/docs",
+    "note": "Open-source LLM observability, tracing, prompt management, and evaluation platform.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:16.899Z",
+    "github": {
+      "createdAt": "2023-05-18T17:47:09Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "🪢 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playground, datasets. Integrates with OpenTelemetry, LangChain, OpenAI SDK, LiteLLM, and more. 🍊YC W23 ",
+      "forkCount": 3004,
+      "homepageUrl": "https://langfuse.com",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v3.185.0",
+        "tagName": "v3.185.0",
+        "url": "https://github.com/langfuse/langfuse/releases/tag/v3.185.0",
+        "publishedAt": "2026-06-12T11:48:13Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "langfuse/langfuse",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-12T15:46:06Z",
+      "repositoryTopics": [
+        {
+          "name": "analytics"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "large-language-models"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "self-hosted"
+        },
+        {
+          "name": "ycombinator"
+        },
+        {
+          "name": "monitoring"
+        },
+        {
+          "name": "observability"
+        },
+        {
+          "name": "open-source"
+        },
+        {
+          "name": "langchain"
+        },
+        {
+          "name": "llama-index"
+        },
+        {
+          "name": "evaluation"
+        },
+        {
+          "name": "prompt-engineering"
+        },
+        {
+          "name": "prompt-management"
+        },
+        {
+          "name": "playground"
+        },
+        {
+          "name": "llm-evaluation"
+        },
+        {
+          "name": "llm-observability"
+        },
+        {
+          "name": "autogen"
+        }
+      ],
+      "stargazerCount": 28985,
+      "updatedAt": "2026-06-12T15:43:03Z",
+      "url": "https://github.com/langfuse/langfuse",
+      "watchers": {
+        "totalCount": 98
+      }
+    }
+  },
+  {
+    "rank": 43,
+    "name": "agenta-ai/agenta",
+    "url": "https://github.com/agenta-ai/agenta",
+    "category": "LLMOps / evaluation",
+    "trend_tags": [
+      "llmops",
+      "evals",
+      "prompt-management",
+      "deployment"
+    ],
+    "official_docs": "https://docs.agenta.ai/",
+    "note": "LLMOps platform for prompt management, evaluation, and deployment workflows.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:17.689Z",
+    "github": {
+      "createdAt": "2023-04-26T09:54:28Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "The open-source LLMOps platform: prompt playground, prompt management, LLM evaluation, and LLM observability all in one place.",
+      "forkCount": 544,
+      "homepageUrl": "http://www.agenta.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.103.2",
+        "tagName": "v0.103.2",
+        "url": "https://github.com/Agenta-AI/agenta/releases/tag/v0.103.2",
+        "publishedAt": "2026-06-11T13:15:16Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "Agenta-AI/agenta",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-06-12T15:46:57Z",
+      "repositoryTopics": [
+        {
+          "name": "llm-tools"
+        },
+        {
+          "name": "prompt-engineering"
+        },
+        {
+          "name": "prompt-management"
+        },
+        {
+          "name": "llm-evaluation"
+        },
+        {
+          "name": "llm-framework"
+        },
+        {
+          "name": "rag-evaluation"
+        },
+        {
+          "name": "llm-observability"
+        },
+        {
+          "name": "llm-as-a-judge"
+        },
+        {
+          "name": "llm-monitoring"
+        },
+        {
+          "name": "llm-platform"
+        },
+        {
+          "name": "llm-playground"
+        },
+        {
+          "name": "agents"
+        },
+        {
+          "name": "evaluation"
+        },
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "observability"
+        }
+      ],
+      "stargazerCount": 4198,
+      "updatedAt": "2026-06-12T12:10:36Z",
+      "url": "https://github.com/Agenta-AI/agenta",
+      "watchers": {
+        "totalCount": 31
+      }
+    }
+  },
+  {
+    "rank": 44,
+    "name": "BerriAI/litellm",
+    "url": "https://github.com/BerriAI/litellm",
+    "category": "LLM gateway",
+    "trend_tags": [
+      "gateway",
+      "router",
+      "openai-compatible-api",
+      "cost-control"
+    ],
+    "official_docs": "https://docs.litellm.ai/",
+    "note": "LLM gateway/proxy/router used to standardize provider calls, budgets, fallbacks, and telemetry.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:18.378Z",
+    "github": {
+      "createdAt": "2023-07-27T00:09:52Z",
+      "defaultBranchRef": {
+        "name": "litellm_internal_staging"
+      },
+      "description": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
+      "forkCount": 8823,
+      "homepageUrl": "https://docs.litellm.ai/docs/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.88.1",
+        "tagName": "v1.88.1",
+        "url": "https://github.com/BerriAI/litellm/releases/tag/v1.88.1",
+        "publishedAt": "2026-06-09T01:26:49Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "BerriAI/litellm",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T15:43:52Z",
+      "repositoryTopics": [
+        {
+          "name": "anthropic"
+        },
+        {
+          "name": "langchain"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "llmops"
+        },
+        {
+          "name": "openai"
+        },
+        {
+          "name": "ai-gateway"
+        },
+        {
+          "name": "azure-openai"
+        },
+        {
+          "name": "bedrock"
+        },
+        {
+          "name": "gateway"
+        },
+        {
+          "name": "openai-proxy"
+        },
+        {
+          "name": "vertex-ai"
+        },
+        {
+          "name": "llm-gateway"
+        },
+        {
+          "name": "litellm"
+        },
+        {
+          "name": "mcp-gateway"
+        }
+      ],
+      "stargazerCount": 50171,
+      "updatedAt": "2026-06-12T15:54:13Z",
+      "url": "https://github.com/BerriAI/litellm",
+      "watchers": {
+        "totalCount": 208
+      }
+    }
+  },
+  {
+    "rank": 45,
+    "name": "stanfordnlp/dspy",
+    "url": "https://github.com/stanfordnlp/dspy",
+    "category": "programmatic prompting / optimization",
+    "trend_tags": [
+      "prompt-optimization",
+      "programming-model",
+      "retrieval",
+      "evals"
+    ],
+    "official_docs": "https://dspy.ai/",
+    "note": "Programming model for LM pipelines with optimizers, signatures, modules, retrieval, and evaluation loops.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:18.906Z",
+    "github": {
+      "createdAt": "2023-01-09T21:01:51Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "DSPy: The framework for programming—not prompting—language models",
+      "forkCount": 2974,
+      "homepageUrl": "https://dspy.ai",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "3.2.1",
+        "tagName": "3.2.1",
+        "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.2.1",
+        "publishedAt": "2026-05-05T19:37:48Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "stanfordnlp/dspy",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-11T19:59:42Z",
+      "repositoryTopics": null,
+      "stargazerCount": 35002,
+      "updatedAt": "2026-06-12T15:20:14Z",
+      "url": "https://github.com/stanfordnlp/dspy",
+      "watchers": {
+        "totalCount": 198
+      }
+    }
+  },
+  {
+    "rank": 46,
+    "name": "pydantic/pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai",
+    "category": "agent framework / typed outputs",
+    "trend_tags": [
+      "agents",
+      "typed-outputs",
+      "tools",
+      "python"
+    ],
+    "official_docs": "https://ai.pydantic.dev/",
+    "note": "Typed Python agent framework emphasizing Pydantic models, structured outputs, tools, and testability.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:19.898Z",
+    "github": {
+      "createdAt": "2024-06-21T15:55:04Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "AI Agent Framework, the Pydantic way",
+      "forkCount": 2209,
+      "homepageUrl": "https://ai.pydantic.dev",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v1.107.0 (2026-06-10)",
+        "tagName": "v1.107.0",
+        "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.0",
+        "publishedAt": "2026-06-10T14:40:24Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "pydantic/pydantic-ai",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-12T14:49:25Z",
+      "repositoryTopics": [
+        {
+          "name": "agent-framework"
+        },
+        {
+          "name": "pydantic"
+        },
+        {
+          "name": "python"
+        },
+        {
+          "name": "genai"
+        },
+        {
+          "name": "llm"
+        }
+      ],
+      "stargazerCount": 17724,
+      "updatedAt": "2026-06-12T14:49:30Z",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "watchers": {
+        "totalCount": 113
+      }
+    }
+  },
+  {
+    "rank": 47,
+    "name": "guardrails-ai/guardrails",
+    "url": "https://github.com/guardrails-ai/guardrails",
+    "category": "guardrails / validation",
+    "trend_tags": [
+      "guardrails",
+      "validation",
+      "structured-outputs",
+      "safety"
+    ],
+    "official_docs": "https://www.guardrailsai.com/docs",
+    "note": "Validation and guardrail framework for LLM outputs and structured constraints.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:20.516Z",
+    "github": {
+      "createdAt": "2023-01-29T04:11:35Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Adding guardrails to large language models.",
+      "forkCount": 620,
+      "homepageUrl": "https://www.guardrailsai.com/docs",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "v0.10.2",
+        "tagName": "v0.10.2",
+        "url": "https://github.com/guardrails-ai/guardrails/releases/tag/v0.10.2",
+        "publishedAt": "2026-06-04T19:37:56Z"
+      },
+      "licenseInfo": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "nickname": ""
+      },
+      "nameWithOwner": "guardrails-ai/guardrails",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-10T18:35:47Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "foundation-model"
+        },
+        {
+          "name": "gpt-3"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "openai"
+        }
+      ],
+      "stargazerCount": 6999,
+      "updatedAt": "2026-06-12T13:40:51Z",
+      "url": "https://github.com/guardrails-ai/guardrails",
+      "watchers": {
+        "totalCount": 40
+      }
+    }
+  },
+  {
+    "rank": 48,
+    "name": "humanlayer/humanlayer",
+    "url": "https://github.com/humanlayer/humanlayer",
+    "category": "human-in-the-loop agent control",
+    "trend_tags": [
+      "hitl",
+      "approval",
+      "agent-control",
+      "harness"
+    ],
+    "official_docs": "https://docs.humanlayer.dev/",
+    "note": "Human approval and control layer for tool-using agents.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:21.272Z",
+    "github": {
+      "createdAt": "2024-08-05T21:26:44Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "The best way to get AI coding agents to solve hard problems in complex codebases.",
+      "forkCount": 926,
+      "homepageUrl": "https://humanlayer.dev/code",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "codelayer-0.20.0",
+        "tagName": "pro-0.20.0",
+        "url": "https://github.com/humanlayer/humanlayer/releases/tag/pro-0.20.0",
+        "publishedAt": "2025-12-23T05:08:05Z"
+      },
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "humanlayer/humanlayer",
+      "primaryLanguage": {
+        "name": "TypeScript"
+      },
+      "pushedAt": "2026-03-07T22:34:40Z",
+      "repositoryTopics": [
+        {
+          "name": "agents"
+        },
+        {
+          "name": "ai"
+        },
+        {
+          "name": "human-in-the-loop"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "llms"
+        },
+        {
+          "name": "humanlayer"
+        },
+        {
+          "name": "amp"
+        },
+        {
+          "name": "claude-code"
+        },
+        {
+          "name": "codex"
+        },
+        {
+          "name": "opencode"
+        }
+      ],
+      "stargazerCount": 10981,
+      "updatedAt": "2026-06-12T10:32:14Z",
+      "url": "https://github.com/humanlayer/humanlayer",
+      "watchers": {
+        "totalCount": 74
+      }
+    }
+  },
+  {
+    "rank": 49,
+    "name": "microsoft/promptflow",
+    "url": "https://github.com/microsoft/promptflow",
+    "category": "LLMOps / flow harness",
+    "trend_tags": [
+      "flow",
+      "evals",
+      "llmops",
+      "tracing"
+    ],
+    "official_docs": "https://microsoft.github.io/promptflow/",
+    "note": "Flow-based LLM application development, evaluation, and deployment tooling.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:22.027Z",
+    "github": {
+      "createdAt": "2023-06-30T06:03:06Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Build high-quality LLM apps - from prototyping, testing to production deployment and monitoring.",
+      "forkCount": 1101,
+      "homepageUrl": "https://microsoft.github.io/promptflow/",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": {
+        "name": "promptflow 1.17.1",
+        "tagName": "promptflow_1.17.1",
+        "url": "https://github.com/microsoft/promptflow/releases/tag/promptflow_1.17.1",
+        "publishedAt": "2025-01-09T21:00:17Z"
+      },
+      "licenseInfo": {
+        "key": "mit",
+        "name": "MIT License",
+        "nickname": ""
+      },
+      "nameWithOwner": "microsoft/promptflow",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-06-04T02:58:12Z",
+      "repositoryTopics": [
+        {
+          "name": "ai"
+        },
+        {
+          "name": "llm"
+        },
+        {
+          "name": "chatgpt"
+        },
+        {
+          "name": "gpt"
+        },
+        {
+          "name": "prompt"
+        },
+        {
+          "name": "prompt-engineering"
+        },
+        {
+          "name": "ai-application-development"
+        },
+        {
+          "name": "ai-applications"
+        }
+      ],
+      "stargazerCount": 11145,
+      "updatedAt": "2026-06-12T15:41:50Z",
+      "url": "https://github.com/microsoft/promptflow",
+      "watchers": {
+        "totalCount": 109
+      }
+    }
+  },
+  {
+    "rank": 50,
+    "name": "openai/evals",
+    "url": "https://github.com/openai/evals",
+    "category": "LLM evaluation harness",
+    "trend_tags": [
+      "evals",
+      "benchmark",
+      "harness",
+      "openai"
+    ],
+    "official_docs": "https://github.com/openai/evals",
+    "note": "OpenAI evaluation framework and registry; useful as historical and practical eval harness reference.",
+    "exists": true,
+    "fetchedAt": "2026-06-12T15:55:23.107Z",
+    "github": {
+      "createdAt": "2023-01-23T20:51:04Z",
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Evals is a framework for evaluating LLMs and LLM systems, and an open-source registry of benchmarks.",
+      "forkCount": 2987,
+      "homepageUrl": "",
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "latestRelease": null,
+      "licenseInfo": {
+        "key": "other",
+        "name": "Other",
+        "nickname": ""
+      },
+      "nameWithOwner": "openai/evals",
+      "primaryLanguage": {
+        "name": "Python"
+      },
+      "pushedAt": "2026-04-14T15:29:57Z",
+      "repositoryTopics": null,
+      "stargazerCount": 18677,
+      "updatedAt": "2026-06-12T10:14:32Z",
+      "url": "https://github.com/openai/evals",
+      "watchers": {
+        "totalCount": 279
+      }
+    }
+  }
+]

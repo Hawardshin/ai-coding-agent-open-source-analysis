@@ -1,7 +1,10 @@
 import { execFileSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const repositories = JSON.parse(readFileSync("data/repositories.json", "utf8"));
+const repositoriesFile = process.env.REPOSITORIES_FILE || "data/repositories.json";
+const metadataFile = process.env.GITHUB_METADATA_FILE || "data/github-metadata.json";
+const summaryFile = process.env.GITHUB_METADATA_SUMMARY_FILE || "data/github-metadata-summary.json";
+const repositories = JSON.parse(readFileSync(repositoriesFile, "utf8"));
 
 const fields = [
   "nameWithOwner",
@@ -62,7 +65,7 @@ for (const repo of repositories) {
 }
 
 mkdirSync("data", { recursive: true });
-writeFileSync("data/github-metadata.json", `${JSON.stringify(results, null, 2)}\n`);
+writeFileSync(metadataFile, `${JSON.stringify(results, null, 2)}\n`);
 
 const summary = results.map((item) => ({
   rank: item.rank,
@@ -74,4 +77,4 @@ const summary = results.map((item) => ({
   license: item.github?.licenseInfo?.spdxId ?? item.github?.licenseInfo?.key ?? item.github?.licenseInfo?.name ?? null,
   language: item.github?.primaryLanguage?.name ?? null
 }));
-writeFileSync("data/github-metadata-summary.json", `${JSON.stringify(summary, null, 2)}\n`);
+writeFileSync(summaryFile, `${JSON.stringify(summary, null, 2)}\n`);
