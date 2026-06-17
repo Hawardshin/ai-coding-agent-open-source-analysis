@@ -15,8 +15,11 @@ The repository now also includes a second research track for adjacent AI infrast
 - `data/adjacent-tech-repositories.json`: 50 selected adjacent-stack repositories for context/RAG/local LLM/harness research.
 - `data/adjacent-tech-github-metadata.json`: GitHub metadata for the 50 adjacent-stack repositories.
 - `data/adjacent-tech-source-inventory.json`: local clone inventory for the 50 adjacent-stack repositories.
+- `data/current-clone-inventory-107.json`: current inventory for all 107 locally cloned repositories, including newly added source-scan/code-search/agent workflow repositories.
 - `reports/00-source-inventory.md`: clone inventory summary table.
 - `reports/adjacent-tech-source-inventory.md`: clone inventory summary for the 50 adjacent-stack repositories.
+- `reports/current-clone-inventory-107.md`: current clone inventory summary for 107 open source repositories.
+- `reports/full-source-scan-research-summary-2026-06-18.md`: focused Korean synthesis on full source scanning, Codex/Claude Code context handling, and user-intent-to-source retrieval design.
 - `reports/`: repository-by-repository analysis reports.
 - `reports/comparisons/`: cross-repository taxonomy, feature comparison, and similarity cluster reports.
 - `reports/research/`: 2026 agent/harness/context/evaluation research synthesis, source catalog, and conflicting theories.
@@ -33,6 +36,7 @@ The repository now also includes a second research track for adjacent AI infrast
 1. [2026 AI 코딩 에이전트 설계 트렌드 종합](reports/research/01-agent-trends-2026.md)
 2. [AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선](reports/research/02-evidence-catalog-100-sources.md)
 3. [AI 에이전트 설계의 충돌 이론과 보류된 질문](reports/research/03-conflicting-theories-and-open-questions.md)
+4. [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](reports/full-source-scan-research-summary-2026-06-18.md)
 
 ## Adjacent Infrastructure Reports
 
