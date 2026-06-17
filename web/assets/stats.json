@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-17T22:58:25.942Z",
-  "totalDocuments": 1060,
+  "generatedAt": "2026-06-17T23:20:14.877Z",
+  "totalDocuments": 1063,
   "byType": {
-    "report": 275,
+    "report": 278,
     "repository": 120,
     "paper": 650,
     "data": 15
@@ -10,12 +10,12 @@
   "byCategory": {
     "report": 129,
     "repository-analysis": 130,
-    "research": 3,
+    "research": 4,
     "adjacent-tech": 4,
     "comparison": 2,
     "overview": 1,
-    "spec-driven": 5,
-    "source-scan": 1,
+    "spec-driven": 6,
+    "source-scan": 2,
     "llm-wiki-open-source": 100,
     "spec-driven-open-source": 20,
     "agent-memory": 76,
