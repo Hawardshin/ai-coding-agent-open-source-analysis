@@ -6,6 +6,15 @@ The source repositories are cloned locally under `sources/` for inspection and e
 
 The repository now also includes a second research track for adjacent AI infrastructure: context engineering, RAG, vLLM/local LLM serving, vector databases, evaluation, observability, and agent harness tooling.
 
+## Web Research Browser
+
+This repository can be deployed as a static Vercel site for reading and searching the collected reports, open-source metadata, and evidence corpus.
+
+- `web/`: static browser UI.
+- `scripts/build-web-index.mjs`: builds `web/assets/search-index.json` from `README.md`, `reports/**/*.md`, and selected `data/*.json` files.
+- `npm run build:web`: regenerate the browser search index.
+- `npx -y vercel@latest --prod --yes`: deploy the static browser to Vercel when the local Vercel CLI is authenticated.
+
 ## Structure
 
 - `data/repositories.json`: canonical target repository list from the user-provided source document.
@@ -16,15 +25,19 @@ The repository now also includes a second research track for adjacent AI infrast
 - `data/adjacent-tech-github-metadata.json`: GitHub metadata for the 50 adjacent-stack repositories.
 - `data/adjacent-tech-source-inventory.json`: local clone inventory for the 50 adjacent-stack repositories.
 - `data/current-clone-inventory-107.json`: current inventory for all 107 locally cloned repositories, including newly added source-scan/code-search/agent workflow repositories.
+- `data/spec-driven-repositories.json`: 20 selected spec-driven/open-source workflow repositories cloned and inspected locally.
+- `data/spec-driven-evidence-corpus-500.json`: reproducible OpenAlex evidence corpus for spec-driven development, requirements engineering, traceability, executable specs, and agent memory research.
 - `reports/00-source-inventory.md`: clone inventory summary table.
 - `reports/adjacent-tech-source-inventory.md`: clone inventory summary for the 50 adjacent-stack repositories.
 - `reports/current-clone-inventory-107.md`: current clone inventory summary for 107 open source repositories.
 - `reports/full-source-scan-research-summary-2026-06-18.md`: focused Korean synthesis on full source scanning, Codex/Claude Code context handling, and user-intent-to-source retrieval design.
+- `reports/spec-driven-evidence-corpus-500.md`: summary of the 650-item OpenAlex evidence corpus used for SDD research.
 - `reports/`: repository-by-repository analysis reports.
 - `reports/comparisons/`: cross-repository taxonomy, feature comparison, and similarity cluster reports.
 - `reports/research/`: 2026 agent/harness/context/evaluation research synthesis, source catalog, and conflicting theories.
 - `reports/adjacent-tech/`: context engineering, RAG, local LLM, vector DB, evaluation, and harness reports.
 - `scripts/`: local automation for metadata collection and cloning.
+- `web/`: Vercel-ready static research browser.
 
 ## Cross-Repository Reports
 

@@ -1,0 +1,870 @@
+{
+  "collectedAt": "2026-06-17T22:25:53.485Z",
+  "count": 20,
+  "repositories": [
+    {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "localPath": "sources/github__spec-kit",
+      "github": {
+        "createdAt": "2025-08-21T22:54:31Z",
+        "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+        "forkCount": 10002,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "github/spec-kit",
+        "primaryLanguage": {
+          "name": "Python"
+        },
+        "pushedAt": "2026-06-17T22:03:16Z",
+        "repositoryTopics": [
+          {
+            "name": "ai"
+          },
+          {
+            "name": "copilot"
+          },
+          {
+            "name": "development"
+          },
+          {
+            "name": "engineering"
+          },
+          {
+            "name": "prd"
+          },
+          {
+            "name": "spec"
+          },
+          {
+            "name": "spec-driven"
+          }
+        ],
+        "stargazerCount": 113352,
+        "updatedAt": "2026-06-17T22:19:10Z",
+        "url": "https://github.com/github/spec-kit"
+      },
+      "localCommit": "ee8b3580ddc5fc7d034c63021cd388c3e13407f6\t2026-06-17\tfix(bug-assess): recompile lock so github guard repos is 'all' (#3036)"
+    },
+    {
+      "name": "Fission-AI/OpenSpec",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "localPath": "sources/Fission-AI__OpenSpec",
+      "github": {
+        "createdAt": "2025-08-05T10:37:45Z",
+        "description": "Spec-driven development (SDD) for AI coding assistants.",
+        "forkCount": 3873,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "Fission-AI/OpenSpec",
+        "primaryLanguage": {
+          "name": "TypeScript"
+        },
+        "pushedAt": "2026-06-13T01:49:22Z",
+        "repositoryTopics": [
+          {
+            "name": "spec"
+          },
+          {
+            "name": "ai"
+          },
+          {
+            "name": "context-engineering"
+          },
+          {
+            "name": "engineering"
+          },
+          {
+            "name": "planning"
+          },
+          {
+            "name": "prd"
+          },
+          {
+            "name": "sdlc"
+          },
+          {
+            "name": "spec-driven-development"
+          },
+          {
+            "name": "specification"
+          },
+          {
+            "name": "sdd"
+          }
+        ],
+        "stargazerCount": 55359,
+        "updatedAt": "2026-06-17T21:45:49Z",
+        "url": "https://github.com/Fission-AI/OpenSpec"
+      },
+      "localCommit": "1b06fddd59d8e592d5b5794a1970b22867e85b1f\t2026-06-03\tVersion Packages (#1166)"
+    },
+    {
+      "name": "bmad-code-org/BMAD-METHOD",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "localPath": "sources/bmad-code-org__BMAD-METHOD",
+      "github": {
+        "createdAt": "2025-04-13T14:54:25Z",
+        "description": "Breakthrough Method for Agile Ai Driven Development",
+        "forkCount": 5702,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "other",
+          "name": "Other",
+          "nickname": ""
+        },
+        "nameWithOwner": "bmad-code-org/BMAD-METHOD",
+        "primaryLanguage": {
+          "name": "JavaScript"
+        },
+        "pushedAt": "2026-06-17T21:00:52Z",
+        "repositoryTopics": null,
+        "stargazerCount": 49285,
+        "updatedAt": "2026-06-17T22:13:06Z",
+        "url": "https://github.com/bmad-code-org/BMAD-METHOD"
+      },
+      "localCommit": "2417f0048daa9b668239423789640fb7212850e7\t2026-06-17\tbmad-architecture: lean directives, breadth coverage, redesigned spine template (#2475)"
+    },
+    {
+      "name": "buildermethods/agent-os",
+      "url": "https://github.com/buildermethods/agent-os",
+      "localPath": "sources/buildermethods__agent-os",
+      "github": {
+        "createdAt": "2025-07-16T21:28:59Z",
+        "description": "Agent OS is a system for injecting your codebase standards and writing better specs for spec-driven development.",
+        "forkCount": 769,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "buildermethods/agent-os",
+        "primaryLanguage": {
+          "name": "Shell"
+        },
+        "pushedAt": "2026-05-05T05:07:51Z",
+        "repositoryTopics": null,
+        "stargazerCount": 4894,
+        "updatedAt": "2026-06-17T18:52:13Z",
+        "url": "https://github.com/buildermethods/agent-os"
+      },
+      "localCommit": "cae8e664fb59a01869718c3151e0f45b7a06a2fb\t2026-05-05\tNote PR #327 in CHANGELOG"
+    },
+    {
+      "name": "gsd-build/get-shit-done",
+      "url": "https://github.com/gsd-build/get-shit-done",
+      "localPath": "sources/gsd-build__get-shit-done",
+      "github": {
+        "createdAt": "2025-12-14T14:17:12Z",
+        "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+        "forkCount": 5465,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "gsd-build/get-shit-done",
+        "primaryLanguage": {
+          "name": "JavaScript"
+        },
+        "pushedAt": "2026-05-31T17:46:54Z",
+        "repositoryTopics": [
+          {
+            "name": "claude-code"
+          },
+          {
+            "name": "context-engineering"
+          },
+          {
+            "name": "meta-prompting"
+          },
+          {
+            "name": "spec-driven-development"
+          }
+        ],
+        "stargazerCount": 64305,
+        "updatedAt": "2026-06-17T22:04:06Z",
+        "url": "https://github.com/gsd-build/get-shit-done"
+      },
+      "localCommit": "bdcaab2c752d9a33a1a1ca9acf3a3c81fb991815\t2026-05-31\tMerge pull request #3886 from gsd-build/chore/update-discord-link"
+    },
+    {
+      "name": "gsd-build/gsd-2",
+      "url": "https://github.com/gsd-build/gsd-2",
+      "localPath": "sources/gsd-build__gsd-2",
+      "github": {
+        "createdAt": "2026-03-11T04:28:49Z",
+        "description": "A powerful meta-prompting, context engineering and spec-driven development system that enables agents to work for long periods of time autonomously without losing track of the big picture",
+        "forkCount": 776,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "gsd-build/gsd-2",
+        "primaryLanguage": {
+          "name": "TypeScript"
+        },
+        "pushedAt": "2026-05-22T23:08:59Z",
+        "repositoryTopics": [
+          {
+            "name": "context-engineering"
+          },
+          {
+            "name": "meta-prompting"
+          },
+          {
+            "name": "spec-driven-development"
+          }
+        ],
+        "stargazerCount": 7739,
+        "updatedAt": "2026-06-17T21:41:47Z",
+        "url": "https://github.com/gsd-build/gsd-2"
+      },
+      "localCommit": "33c00aaffa56e5d394bccce1c8df59fb842e84c5\t2026-05-22\tMerge pull request #6451 from gsd-build/fix/legacy-forensics-redirect"
+    },
+    {
+      "name": "formulahendry/mcp-server-spec-driven-development",
+      "url": "https://github.com/formulahendry/mcp-server-spec-driven-development",
+      "localPath": "sources/formulahendry__mcp-server-spec-driven-development",
+      "github": {
+        "createdAt": "2025-07-28T11:42:06Z",
+        "description": "Spec-Driven Development MCP Server, not just Vibe Coding",
+        "forkCount": 39,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "formulahendry/mcp-server-spec-driven-development",
+        "primaryLanguage": {
+          "name": "TypeScript"
+        },
+        "pushedAt": "2025-09-26T06:50:18Z",
+        "repositoryTopics": [
+          {
+            "name": "mcp"
+          },
+          {
+            "name": "mcp-server"
+          },
+          {
+            "name": "spec-driven-development"
+          },
+          {
+            "name": "vibe-coding"
+          }
+        ],
+        "stargazerCount": 430,
+        "updatedAt": "2026-06-03T17:36:54Z",
+        "url": "https://github.com/formulahendry/mcp-server-spec-driven-development"
+      },
+      "localCommit": "8a0532a2eb1519f4f5e0514896c89ae12af734e4\t2025-09-26\tupdate description for server.json"
+    },
+    {
+      "name": "Engineering4AI/awesome-spec-driven-development",
+      "url": "https://github.com/Engineering4AI/awesome-spec-driven-development",
+      "localPath": "sources/Engineering4AI__awesome-spec-driven-development",
+      "github": {
+        "createdAt": "2025-11-27T03:20:51Z",
+        "description": "A curated list of awesome resources for spec-driven development (SDD)",
+        "forkCount": 17,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": null,
+        "nameWithOwner": "Engineering4AI/awesome-spec-driven-development",
+        "primaryLanguage": null,
+        "pushedAt": "2026-06-17T05:13:37Z",
+        "repositoryTopics": [
+          {
+            "name": "ai-assistant"
+          },
+          {
+            "name": "software-engineering"
+          },
+          {
+            "name": "spec-driven-development"
+          },
+          {
+            "name": "vibe-coding"
+          }
+        ],
+        "stargazerCount": 182,
+        "updatedAt": "2026-06-17T19:11:12Z",
+        "url": "https://github.com/Engineering4AI/awesome-spec-driven-development"
+      },
+      "localCommit": "74aa23294addc11140563634cea1dcaafd712a06\t2026-06-17\tMerge pull request #9 from logohere/add/dotdog"
+    },
+    {
+      "name": "FredAntB/Spec-Driven-Development",
+      "url": "https://github.com/FredAntB/Spec-Driven-Development",
+      "localPath": "sources/FredAntB__Spec-Driven-Development",
+      "github": {
+        "createdAt": "2026-05-18T17:04:47Z",
+        "description": "A Claude skill that keeps your AI coding tools from contradicting  each other. Generates requirements.md, design.md, and tasks.md  before any code is written — then creates matching config files  for Claude Code, Cursor, Copilot, Windsurf, and Aider.",
+        "forkCount": 7,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "FredAntB/Spec-Driven-Development",
+        "primaryLanguage": {
+          "name": "Python"
+        },
+        "pushedAt": "2026-05-23T01:06:43Z",
+        "repositoryTopics": [
+          {
+            "name": "ai"
+          },
+          {
+            "name": "claude"
+          },
+          {
+            "name": "claude-code"
+          },
+          {
+            "name": "copilot"
+          },
+          {
+            "name": "cursor"
+          },
+          {
+            "name": "developer-tools"
+          },
+          {
+            "name": "llm"
+          },
+          {
+            "name": "requirements"
+          },
+          {
+            "name": "spec-driven-development"
+          },
+          {
+            "name": "windsurf"
+          }
+        ],
+        "stargazerCount": 92,
+        "updatedAt": "2026-06-17T21:00:05Z",
+        "url": "https://github.com/FredAntB/Spec-Driven-Development"
+      },
+      "localCommit": "7296108716dea8447938a81fa82bbf7369a0fce2\t2026-05-22\tUpdate README with new assertion and test counts"
+    },
+    {
+      "name": "fabriqaai/specs.md",
+      "url": "https://github.com/fabriqaai/specs.md",
+      "localPath": "sources/fabriqaai__specs.md",
+      "github": {
+        "createdAt": "2025-12-24T14:28:50Z",
+        "description": "specs.md - ai-dlc spec driven development framework",
+        "forkCount": 19,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "fabriqaai/specs.md",
+        "primaryLanguage": {
+          "name": "TypeScript"
+        },
+        "pushedAt": "2026-06-07T20:17:16Z",
+        "repositoryTopics": [
+          {
+            "name": "ai"
+          },
+          {
+            "name": "ai-native"
+          },
+          {
+            "name": "ai-native-engineering"
+          },
+          {
+            "name": "development"
+          },
+          {
+            "name": "driven"
+          },
+          {
+            "name": "genai"
+          },
+          {
+            "name": "llm"
+          },
+          {
+            "name": "sdd"
+          },
+          {
+            "name": "spec"
+          },
+          {
+            "name": "specs"
+          },
+          {
+            "name": "ai-native-sdlc"
+          },
+          {
+            "name": "context-engineering"
+          },
+          {
+            "name": "aidlc"
+          }
+        ],
+        "stargazerCount": 175,
+        "updatedAt": "2026-06-17T20:01:00Z",
+        "url": "https://github.com/fabriqaai/specs.md"
+      },
+      "localCommit": "f4b6458cd69243dd53b92c9562eca53f614bcdf9\t2026-06-07\tdocs: set dashboard nav label"
+    },
+    {
+      "name": "ariel-frischer/autospec",
+      "url": "https://github.com/ariel-frischer/autospec",
+      "localPath": "sources/ariel-frischer__autospec",
+      "github": {
+        "createdAt": "2025-12-15T03:02:04Z",
+        "description": "CLI for streamlined spec-driven development",
+        "forkCount": 10,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "ariel-frischer/autospec",
+        "primaryLanguage": {
+          "name": "Go"
+        },
+        "pushedAt": "2026-05-23T20:15:23Z",
+        "repositoryTopics": [
+          {
+            "name": "claude-code"
+          },
+          {
+            "name": "golang"
+          },
+          {
+            "name": "spec-driven-development"
+          },
+          {
+            "name": "speckit"
+          },
+          {
+            "name": "command-line"
+          },
+          {
+            "name": "developer-tools"
+          },
+          {
+            "name": "terminal"
+          },
+          {
+            "name": "vibe-coding"
+          },
+          {
+            "name": "ai"
+          },
+          {
+            "name": "prd"
+          },
+          {
+            "name": "spec"
+          },
+          {
+            "name": "specification"
+          },
+          {
+            "name": "agentic-workflow"
+          },
+          {
+            "name": "codex"
+          },
+          {
+            "name": "opencode"
+          }
+        ],
+        "stargazerCount": 136,
+        "updatedAt": "2026-06-07T14:52:16Z",
+        "url": "https://github.com/ariel-frischer/autospec"
+      },
+      "localCommit": "8ea596a15b5fcb24ad3d3a4b726cfbb3dbf40830\t2026-05-23\tchore(changelog): prepare changelog for v0.11.5 release with new features and updates chore(changelog.yaml): update changelog.yaml for v0.11.5 release with date and new features"
+    },
+    {
+      "name": "codervisor/leanspec",
+      "url": "https://github.com/codervisor/leanspec",
+      "localPath": "sources/codervisor__leanspec",
+      "github": {
+        "createdAt": "2025-10-31T08:59:00Z",
+        "description": "Lightweight, flexible Spec-Driven Development (SDD) for modern AI-powered development",
+        "forkCount": 20,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "codervisor/leanspec",
+        "primaryLanguage": {
+          "name": "Rust"
+        },
+        "pushedAt": "2026-05-20T08:38:59Z",
+        "repositoryTopics": [
+          {
+            "name": "ai"
+          },
+          {
+            "name": "ai-agents"
+          },
+          {
+            "name": "project-management"
+          },
+          {
+            "name": "spec-driven-development"
+          },
+          {
+            "name": "development"
+          },
+          {
+            "name": "spec"
+          }
+        ],
+        "stargazerCount": 262,
+        "updatedAt": "2026-06-17T19:54:23Z",
+        "url": "https://github.com/codervisor/leanspec"
+      },
+      "localCommit": "ee122d6fe4bdf3c22f2507e2944f5a213ddcf7a6\t2026-05-20\tchore(skills): retire draft/planned/in-progress spec status labels (#313)"
+    },
+    {
+      "name": "tesslio/spec-driven-development-tile",
+      "url": "https://github.com/tesslio/spec-driven-development-tile",
+      "localPath": "sources/tesslio__spec-driven-development-tile",
+      "github": {
+        "createdAt": "2025-12-05T11:59:31Z",
+        "description": "Spec Driven Development - Tessl Tile",
+        "forkCount": 7,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "tesslio/spec-driven-development-tile",
+        "primaryLanguage": {
+          "name": "Shell"
+        },
+        "pushedAt": "2026-03-30T17:28:43Z",
+        "repositoryTopics": null,
+        "stargazerCount": 40,
+        "updatedAt": "2026-06-04T17:27:18Z",
+        "url": "https://github.com/tesslio/spec-driven-development-tile"
+      },
+      "localCommit": "b8fdff700a5df98386d82d29f1ef3dc783092daf\t2026-03-30\tMerge pull request #7 from tesslio/chore/bump-v2.0.1"
+    },
+    {
+      "name": "gotalab/cc-sdd",
+      "url": "https://github.com/gotalab/cc-sdd",
+      "localPath": "sources/gotalab__cc-sdd",
+      "github": {
+        "createdAt": "2025-07-17T04:41:37Z",
+        "description": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+        "forkCount": 258,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "gotalab/cc-sdd",
+        "primaryLanguage": {
+          "name": "TypeScript"
+        },
+        "pushedAt": "2026-05-20T08:45:14Z",
+        "repositoryTopics": [
+          {
+            "name": "steering"
+          },
+          {
+            "name": "kiro"
+          },
+          {
+            "name": "spec-driven-development"
+          },
+          {
+            "name": "cursor"
+          },
+          {
+            "name": "claude-code"
+          },
+          {
+            "name": "codex"
+          },
+          {
+            "name": "gemini-cli"
+          },
+          {
+            "name": "github-copilot"
+          },
+          {
+            "name": "subagents"
+          },
+          {
+            "name": "opencode"
+          },
+          {
+            "name": "agent-skills"
+          },
+          {
+            "name": "sdd"
+          }
+        ],
+        "stargazerCount": 3484,
+        "updatedAt": "2026-06-17T13:07:04Z",
+        "url": "https://github.com/gotalab/cc-sdd"
+      },
+      "localCommit": "29aee950f4addc36f9aeecb9881c46540e71ecc9\t2026-04-27\tMerge pull request #172 from gotalab/codex/fix-nlpm-remaining-prs"
+    },
+    {
+      "name": "IBM/iac-spec-kit",
+      "url": "https://github.com/IBM/iac-spec-kit",
+      "localPath": "sources/IBM__iac-spec-kit",
+      "github": {
+        "createdAt": "2025-11-14T15:16:54Z",
+        "description": "AI-assisted workflows for translating business requirements into infrastructure code",
+        "forkCount": 8,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "IBM/iac-spec-kit",
+        "primaryLanguage": {
+          "name": "Python"
+        },
+        "pushedAt": "2026-03-02T17:35:45Z",
+        "repositoryTopics": [
+          {
+            "name": "ai"
+          },
+          {
+            "name": "bob"
+          },
+          {
+            "name": "claude"
+          },
+          {
+            "name": "copilot"
+          },
+          {
+            "name": "cursor"
+          },
+          {
+            "name": "iac"
+          },
+          {
+            "name": "llm"
+          },
+          {
+            "name": "sdd"
+          },
+          {
+            "name": "terraform"
+          },
+          {
+            "name": "vscode"
+          }
+        ],
+        "stargazerCount": 68,
+        "updatedAt": "2026-06-12T23:32:10Z",
+        "url": "https://github.com/IBM/iac-spec-kit"
+      },
+      "localCommit": "fc01030a00ea6183679ab8f0ececddd0803dbb8f\t2026-03-02\tUpdate CHANGELOG.md"
+    },
+    {
+      "name": "https-deeplearning-ai/sc-spec-driven-development-files",
+      "url": "https://github.com/https-deeplearning-ai/sc-spec-driven-development-files",
+      "localPath": "sources/https-deeplearning-ai__sc-spec-driven-development-files",
+      "github": {
+        "createdAt": "2026-04-13T21:03:36Z",
+        "description": "All materials needed to follow along with the Spec-Driven Development with Coding Agents course, built in partnership with JetBrains",
+        "forkCount": 199,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": null,
+        "nameWithOwner": "https-deeplearning-ai/sc-spec-driven-development-files",
+        "primaryLanguage": {
+          "name": "TypeScript"
+        },
+        "pushedAt": "2026-06-01T19:03:54Z",
+        "repositoryTopics": null,
+        "stargazerCount": 213,
+        "updatedAt": "2026-06-17T07:59:11Z",
+        "url": "https://github.com/https-deeplearning-ai/sc-spec-driven-development-files"
+      },
+      "localCommit": "4a9c2ac8cdac38a6689b65512461dde614487650\t2026-06-01\tEnhance README with DeepLearning.AI resource links"
+    },
+    {
+      "name": "potpie-ai/potpie",
+      "url": "https://github.com/potpie-ai/potpie",
+      "localPath": "sources/potpie-ai__potpie",
+      "github": {
+        "createdAt": "2024-08-12T09:18:25Z",
+        "description": "Spec-driven development for large codebases",
+        "forkCount": 637,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "nickname": ""
+        },
+        "nameWithOwner": "potpie-ai/potpie",
+        "primaryLanguage": {
+          "name": "Python"
+        },
+        "pushedAt": "2026-06-17T09:32:26Z",
+        "repositoryTopics": [
+          {
+            "name": "agents"
+          },
+          {
+            "name": "artificial-intelligence"
+          },
+          {
+            "name": "developer-tools"
+          },
+          {
+            "name": "generative-ai"
+          },
+          {
+            "name": "knowledge-graph"
+          },
+          {
+            "name": "rag"
+          },
+          {
+            "name": "ai-agents"
+          },
+          {
+            "name": "ai-agents-framework"
+          },
+          {
+            "name": "devtools"
+          }
+        ],
+        "stargazerCount": 5456,
+        "updatedAt": "2026-06-17T17:19:39Z",
+        "url": "https://github.com/potpie-ai/potpie"
+      },
+      "localCommit": "602f4dbc69a2c841a3fbae714398329d96f312c0\t2026-06-17\tRestore detached context-engine daemon lifecycle (#889)"
+    },
+    {
+      "name": "amaynez/kiro-style-sdd",
+      "url": "https://github.com/amaynez/kiro-style-sdd",
+      "localPath": "sources/amaynez__kiro-style-sdd",
+      "github": {
+        "createdAt": "2025-09-12T21:43:55Z",
+        "description": "Kiro Style Spec Driven Development using any LLM",
+        "forkCount": 17,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "gpl-3.0",
+          "name": "GNU General Public License v3.0",
+          "nickname": "GNU GPLv3"
+        },
+        "nameWithOwner": "amaynez/kiro-style-sdd",
+        "primaryLanguage": {
+          "name": "JavaScript"
+        },
+        "pushedAt": "2026-05-13T07:39:32Z",
+        "repositoryTopics": null,
+        "stargazerCount": 77,
+        "updatedAt": "2026-06-08T10:50:34Z",
+        "url": "https://github.com/amaynez/kiro-style-sdd"
+      },
+      "localCommit": "be24eb6bd13a58ca785c10bf3798ba8392b6b508\t2026-05-13\tMerge pull request #6 from amaynez/testing-improvement-native-test-runner-8290160101254076852"
+    },
+    {
+      "name": "mreferre/ralph-loop-kiro-specs",
+      "url": "https://github.com/mreferre/ralph-loop-kiro-specs",
+      "localPath": "sources/mreferre__ralph-loop-kiro-specs",
+      "github": {
+        "createdAt": "2026-02-11T12:48:17Z",
+        "description": "A Ralph loop for Kiro specs driven development",
+        "forkCount": 5,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "nickname": ""
+        },
+        "nameWithOwner": "mreferre/ralph-loop-kiro-specs",
+        "primaryLanguage": {
+          "name": "Shell"
+        },
+        "pushedAt": "2026-02-13T14:50:34Z",
+        "repositoryTopics": null,
+        "stargazerCount": 10,
+        "updatedAt": "2026-05-18T20:00:33Z",
+        "url": "https://github.com/mreferre/ralph-loop-kiro-specs"
+      },
+      "localCommit": "26850643c9691c51808a5d3797c864c6406bf83e\t2026-02-13\tAdded a dashboard output example"
+    },
+    {
+      "name": "Lumiaqian/openspec-mcp",
+      "url": "https://github.com/Lumiaqian/openspec-mcp",
+      "localPath": "sources/Lumiaqian__openspec-mcp",
+      "github": {
+        "createdAt": "2025-12-16T06:11:25Z",
+        "description": "MCP server for OpenSpec - spec-driven development with dashboard and approval workflow",
+        "forkCount": 3,
+        "isArchived": false,
+        "isFork": false,
+        "licenseInfo": {
+          "key": "mit",
+          "name": "MIT License",
+          "nickname": ""
+        },
+        "nameWithOwner": "Lumiaqian/openspec-mcp",
+        "primaryLanguage": {
+          "name": "TypeScript"
+        },
+        "pushedAt": "2026-01-12T08:00:59Z",
+        "repositoryTopics": null,
+        "stargazerCount": 25,
+        "updatedAt": "2026-06-04T01:22:00Z",
+        "url": "https://github.com/Lumiaqian/openspec-mcp"
+      },
+      "localCommit": "48f86841b88462695f165ac178ea5cdcc3475da9\t2026-01-12\tchore: bump version to 0.4.2"
+    }
+  ]
+}

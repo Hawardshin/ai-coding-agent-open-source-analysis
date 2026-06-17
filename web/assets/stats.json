@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-17T22:37:35.977Z",
+  "totalDocuments": 727,
+  "byType": {
+    "report": 45,
+    "repository": 20,
+    "paper": 650,
+    "data": 12
+  },
+  "byCategory": {
+    "research": 3,
+    "adjacent-tech": 4,
+    "comparison": 2,
+    "repository-analysis": 30,
+    "overview": 1,
+    "report": 3,
+    "spec-driven": 1,
+    "source-scan": 1,
+    "spec-driven-open-source": 20,
+    "agent-memory": 76,
+    "context-engineering": 10,
+    "software-repair": 30,
+    "srs": 39,
+    "acceptance-criteria": 5,
+    "formal-specification": 39,
+    "mbse-requirements": 38,
+    "traceability": 39,
+    "tdd-acceptance": 39,
+    "requirements-engineering": 39,
+    "requirements-generation": 39,
+    "bdd-living-docs": 39,
+    "api-contracts": 44,
+    "requirements-llm": 39,
+    "nl-requirements": 39,
+    "specification-driven": 37,
+    "program-synthesis": 13,
+    "spec-driven-ai": 8,
+    "software-agents": 38,
+    "data": 12
+  }
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Coding Research Browser</title>
+    <meta name="description" content="Searchable research browser for source scan, spec-driven development, repositories, papers, and evidence data.">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">AI</div>
+          <div>
+            <h1>Research Browser</h1>
+            <p>소스 스캔 · SDD · 논문 · 오픈소스</p>
+          </div>
+        </div>
+
+        <label class="search-box">
+          <span>검색</span>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="예: Kiro, requirements, traceability, Codex">
+        </label>
+
+        <div class="filters">
+          <div class="filter-label">자료 유형</div>
+          <div id="typeFilters" class="segmented"></div>
+        </div>
+
+        <label class="select-box">
+          <span>카테고리</span>
+          <select id="categorySelect"></select>
+        </label>
+
+        <label class="select-box">
+          <span>정렬</span>
+          <select id="sortSelect">
+            <option value="relevance">관련도</option>
+            <option value="title">제목</option>
+            <option value="year">연도</option>
+            <option value="citations">인용수</option>
+            <option value="stars">GitHub stars</option>
+          </select>
+        </label>
+
+        <div id="stats" class="stats"></div>
+      </aside>
+
+      <main class="main">
+        <section class="results-pane">
+          <div class="toolbar">
+            <div>
+              <div class="eyebrow">검색 결과</div>
+              <h2 id="resultTitle">문서 불러오는 중</h2>
+            </div>
+            <button id="clearButton" type="button" class="secondary-button">초기화</button>
+          </div>
+          <div id="results" class="results"></div>
+        </section>
+
+        <article class="reader-pane">
+          <div id="reader" class="reader">
+            <div class="empty-state">
+              <h2>왼쪽에서 문서를 선택하세요</h2>
+              <p>보고서, 논문 후보, 오픈소스 메타데이터를 한 번에 검색할 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <script src="/assets/app.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "ai-coding-research-browser",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:web": "node scripts/build-web-index.mjs"
+  }
+}
