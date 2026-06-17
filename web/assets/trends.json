@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Spec-driven / SDD",
+    "summary": "requirements, design, tasks, Kiro, Spec Kit, OpenSpec 계열",
+    "query": "spec requirements design tasks kiro openspec",
+    "category": "all",
+    "repos": [
+      "gsd-build/gsd-2",
+      "gotalab/cc-sdd",
+      "fabriqaai/specs.md",
+      "codervisor/leanspec",
+      "Fission-AI/OpenSpec",
+      "gsd-build/get-shit-done"
+    ]
+  },
+  {
+    "title": "Agent coding harnesses",
+    "summary": "Codex, Claude/Cline/Roo, OpenHands, Goose, Gemini CLI류 실행 하네스",
+    "query": "agent harness codex cli tools sandbox",
+    "category": "all",
+    "repos": [
+      "ComposioHQ/composio",
+      "google-gemini/gemini-cli",
+      "NousResearch/hermes-agent",
+      "openclaw/openclaw",
+      "QwenLM/qwen-code",
+      "openai/codex"
+    ]
+  },
+  {
+    "title": "Code search / repo map",
+    "summary": "source indexing, symbol graph, ripgrep, vector/BM25 search",
+    "query": "code search repo map index symbol graph",
+    "category": "all",
+    "repos": [
+      "RooCodeInc/Roo-Code",
+      "continuedev/continue",
+      "upstash/context7",
+      "sourcebot-dev/sourcebot",
+      "bartolli/codanna",
+      "ceaksan/mcp-code-search"
+    ]
+  },
+  {
+    "title": "Context and memory",
+    "summary": "long-running agent memory, steering, context persistence, session resume",
+    "query": "memory context steering persistent session resume",
+    "category": "agent-memory",
+    "repos": [
+      "gsd-build/gsd-2",
+      "gotalab/cc-sdd",
+      "mem0ai/mem0",
+      "gsd-build/get-shit-done",
+      "rohitg00/agentmemory",
+      "upstash/context7"
+    ]
+  },
+  {
+    "title": "RAG / local LLM stack",
+    "summary": "RAG frameworks, vector DBs, local inference, vLLM/TGI/llama.cpp",
+    "query": "rag vector local llm inference vllm llama",
+    "category": "all",
+    "repos": [
+      "Arize-ai/phoenix",
+      "langfuse/langfuse",
+      "NVIDIA/TensorRT-LLM",
+      "promptfoo/promptfoo",
+      "sgl-project/sglang",
+      "infiniflow/ragflow"
+    ]
+  },
+  {
+    "title": "Evaluation / observability",
+    "summary": "prompt eval, agent eval, tracing, observability, quality gates",
+    "query": "evaluation observability tracing quality gates",
+    "category": "all",
+    "repos": [
+      "Arize-ai/phoenix",
+      "langfuse/langfuse",
+      "promptfoo/promptfoo",
+      "agenta-ai/agenta",
+      "confident-ai/deepeval",
+      "truera/trulens"
+    ]
+  }
+]

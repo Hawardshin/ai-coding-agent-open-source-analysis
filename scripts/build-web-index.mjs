@@ -1,5 +1,5 @@
 import { mkdir, readdir, readFile, stat, writeFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
@@ -198,8 +198,73 @@ const stats = {
   }, {})
 };
 
+function awaitReadFile(file) {
+  return readFileSync(file, "utf8");
+}
+
+function topReposBy(predicate, limit = 6) {
+  const cloneAnalysisPath = path.join(root, "data/clone-structure-analysis-127.json");
+  if (!existsSync(cloneAnalysisPath)) return [];
+  const cloneData = JSON.parse(awaitReadFile(cloneAnalysisPath));
+  return (cloneData.analyses || [])
+    .filter(predicate)
+    .sort((a, b) => {
+      const scoreA = (a.specArtifacts?.length || 0) * 2 + (a.agentInstructionFiles?.length || 0) + (a.fileCount > 2000 ? 30 : 0);
+      const scoreB = (b.specArtifacts?.length || 0) * 2 + (b.agentInstructionFiles?.length || 0) + (b.fileCount > 2000 ? 30 : 0);
+      return scoreB - scoreA || a.name.localeCompare(b.name);
+    })
+    .slice(0, limit)
+    .map((item) => item.name);
+}
+
+const trends = [
+  {
+    title: "Spec-driven / SDD",
+    summary: "requirements, design, tasks, Kiro, Spec Kit, OpenSpec 계열",
+    query: "spec requirements design tasks kiro openspec",
+    category: "all",
+    repos: topReposBy((item) => item.groups?.includes("spec-driven-20"))
+  },
+  {
+    title: "Agent coding harnesses",
+    summary: "Codex, Claude/Cline/Roo, OpenHands, Goose, Gemini CLI류 실행 하네스",
+    query: "agent harness codex cli tools sandbox",
+    category: "all",
+    repos: topReposBy((item) => item.groups?.includes("core-agent-30"))
+  },
+  {
+    title: "Code search / repo map",
+    summary: "source indexing, symbol graph, ripgrep, vector/BM25 search",
+    query: "code search repo map index symbol graph",
+    category: "all",
+    repos: topReposBy((item) => /sourcebot|codanna|mcp-code-search|pgr|aider|continue|roo|context7/i.test(item.name))
+  },
+  {
+    title: "Context and memory",
+    summary: "long-running agent memory, steering, context persistence, session resume",
+    query: "memory context steering persistent session resume",
+    category: "agent-memory",
+    repos: topReposBy((item) => /mem0|zep|agentmemory|gsd|cc-sdd|context|kiro/i.test(item.name))
+  },
+  {
+    title: "RAG / local LLM stack",
+    summary: "RAG frameworks, vector DBs, local inference, vLLM/TGI/llama.cpp",
+    query: "rag vector local llm inference vllm llama",
+    category: "all",
+    repos: topReposBy((item) => item.groups?.includes("adjacent-tech-50"))
+  },
+  {
+    title: "Evaluation / observability",
+    summary: "prompt eval, agent eval, tracing, observability, quality gates",
+    query: "evaluation observability tracing quality gates",
+    category: "all",
+    repos: topReposBy((item) => /eval|phoenix|langfuse|promptfoo|deepeval|ragas|trulens|agenta/i.test(item.name))
+  }
+];
+
 await mkdir(assetsDir, { recursive: true });
 await writeFile(path.join(assetsDir, "search-index.json"), JSON.stringify({ stats, docs }, null, 2));
 await writeFile(path.join(assetsDir, "stats.json"), JSON.stringify(stats, null, 2));
+await writeFile(path.join(assetsDir, "trends.json"), JSON.stringify(trends, null, 2));
 
 console.error(`web index: ${docs.length} documents`);

@@ -13,6 +13,8 @@ This repository can be deployed as a static Vercel site for reading and searchin
 - `web/`: static browser UI.
 - `scripts/build-web-index.mjs`: builds `web/assets/search-index.json` from `README.md`, `reports/**/*.md`, and selected `data/*.json` files.
 - `npm run build:web`: regenerate the browser search index.
+- GitHub Pages target: `https://hawardshin.github.io/ai-coding-agent-open-source-analysis/`.
+- `.github/workflows/pages.yml`: deploys `web/` to GitHub Pages on every `main` push.
 - `npx -y vercel@latest --prod --yes`: deploy the static browser to Vercel when the local Vercel CLI is authenticated.
 
 ## Structure

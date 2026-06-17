@@ -14,6 +14,7 @@ const els = {
   category: document.querySelector("#categorySelect"),
   sort: document.querySelector("#sortSelect"),
   stats: document.querySelector("#stats"),
+  trends: document.querySelector("#trends"),
   results: document.querySelector("#results"),
   resultTitle: document.querySelector("#resultTitle"),
   reader: document.querySelector("#reader"),
@@ -328,6 +329,31 @@ function renderStats(stats) {
   `;
 }
 
+function renderTrends(trends) {
+  if (!els.trends) return;
+  els.trends.innerHTML = "";
+  for (const trend of trends.slice(0, 8)) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "trend-button";
+    button.innerHTML = `
+      <strong>${escapeHtml(trend.title)}</strong>
+      <span>${escapeHtml(trend.summary)}</span>
+      <em>${escapeHtml((trend.repos || []).slice(0, 3).join(" · "))}</em>
+    `;
+    button.addEventListener("click", () => {
+      state.query = trend.query || trend.title;
+      state.type = trend.type || "all";
+      state.category = trend.category || "all";
+      els.search.value = state.query;
+      renderFilters();
+      applyFilters();
+      if (state.filtered[0]) selectDoc(state.filtered[0].id, true);
+    });
+    els.trends.appendChild(button);
+  }
+}
+
 function readHash() {
   const params = new URLSearchParams(location.hash.replace(/^#/, ""));
   state.query = params.get("q") || "";
@@ -336,12 +362,15 @@ function readHash() {
 }
 
 async function boot() {
-  const res = await fetch("/assets/search-index.json");
+  const res = await fetch("assets/search-index.json");
   const payload = await res.json();
+  const trendsRes = await fetch("assets/trends.json").catch(() => null);
+  const trends = trendsRes?.ok ? await trendsRes.json() : [];
   state.docs = payload.docs || [];
   readHash();
   renderFilters();
   renderStats(payload.stats || {});
+  renderTrends(trends);
   applyFilters();
 
   if (state.selectedId) {

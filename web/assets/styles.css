@@ -151,6 +151,46 @@ select {
   font-size: 12px;
 }
 
+.trend-panel {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.trends {
+  display: grid;
+  gap: 8px;
+}
+
+.trend-button {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #354557;
+  border-radius: 8px;
+  background: #162331;
+  color: #e8f0f8;
+  text-align: left;
+  cursor: pointer;
+}
+
+.trend-button:hover {
+  border-color: #30c7b5;
+}
+
+.trend-button strong {
+  font-size: 13px;
+}
+
+.trend-button span,
+.trend-button em {
+  color: #b8c5d6;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
 .stat-row {
   display: flex;
   justify-content: space-between;

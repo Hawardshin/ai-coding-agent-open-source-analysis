@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AI Coding Research Browser</title>
     <meta name="description" content="Searchable research browser for source scan, spec-driven development, repositories, papers, and evidence data.">
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
     <div class="app-shell">
@@ -45,6 +45,10 @@
         </label>
 
         <div id="stats" class="stats"></div>
+        <div class="trend-panel">
+          <div class="filter-label">트렌드 바로가기</div>
+          <div id="trends" class="trends"></div>
+        </div>
       </aside>
 
       <main class="main">
@@ -70,6 +74,6 @@
       </main>
     </div>
 
-    <script src="/assets/app.js" type="module"></script>
+    <script src="assets/app.js" type="module"></script>
   </body>
 </html>
