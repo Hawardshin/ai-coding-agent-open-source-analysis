@@ -25,17 +25,20 @@ This repository can be deployed as a static Vercel site for reading and searchin
 - `data/adjacent-tech-github-metadata.json`: GitHub metadata for the 50 adjacent-stack repositories.
 - `data/adjacent-tech-source-inventory.json`: local clone inventory for the 50 adjacent-stack repositories.
 - `data/current-clone-inventory-107.json`: current inventory for all 107 locally cloned repositories, including newly added source-scan/code-search/agent workflow repositories.
+- `data/clone-structure-analysis-127.json`: current structural analysis for all 127 locally cloned repositories.
 - `data/spec-driven-repositories.json`: 20 selected spec-driven/open-source workflow repositories cloned and inspected locally.
 - `data/spec-driven-evidence-corpus-500.json`: reproducible OpenAlex evidence corpus for spec-driven development, requirements engineering, traceability, executable specs, and agent memory research.
 - `reports/00-source-inventory.md`: clone inventory summary table.
 - `reports/adjacent-tech-source-inventory.md`: clone inventory summary for the 50 adjacent-stack repositories.
 - `reports/current-clone-inventory-107.md`: current clone inventory summary for 107 open source repositories.
+- `reports/clone-structure-analysis-127.md`: full structural coverage summary for all 127 local clones, including clone coverage and per-repo report links.
 - `reports/full-source-scan-research-summary-2026-06-18.md`: focused Korean synthesis on full source scanning, Codex/Claude Code context handling, and user-intent-to-source retrieval design.
 - `reports/spec-driven-evidence-corpus-500.md`: summary of the 650-item OpenAlex evidence corpus used for SDD research.
 - `reports/`: repository-by-repository analysis reports.
 - `reports/comparisons/`: cross-repository taxonomy, feature comparison, and similarity cluster reports.
 - `reports/research/`: 2026 agent/harness/context/evaluation research synthesis, source catalog, and conflicting theories.
 - `reports/adjacent-tech/`: context engineering, RAG, local LLM, vector DB, evaluation, and harness reports.
+- `reports/clone-structures/`: generated per-repository structure reports for all 127 local clones.
 - `scripts/`: local automation for metadata collection and cloning.
 - `web/`: Vercel-ready static research browser.
 
@@ -50,6 +53,7 @@ This repository can be deployed as a static Vercel site for reading and searchin
 2. [AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선](reports/research/02-evidence-catalog-100-sources.md)
 3. [AI 에이전트 설계의 충돌 이론과 보류된 질문](reports/research/03-conflicting-theories-and-open-questions.md)
 4. [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](reports/full-source-scan-research-summary-2026-06-18.md)
+5. [127개 로컬 클론 구조 분석 총괄](reports/clone-structure-analysis-127.md)
 
 ## Adjacent Infrastructure Reports
 

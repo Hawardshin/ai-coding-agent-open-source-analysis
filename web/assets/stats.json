@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-17T22:37:35.977Z",
-  "totalDocuments": 727,
+  "generatedAt": "2026-06-17T22:41:37.705Z",
+  "totalDocuments": 856,
   "byType": {
-    "report": 45,
+    "report": 173,
     "repository": 20,
     "paper": 650,
-    "data": 12
+    "data": 13
   },
   "byCategory": {
+    "report": 127,
     "research": 3,
     "adjacent-tech": 4,
     "comparison": 2,
     "repository-analysis": 30,
     "overview": 1,
-    "report": 3,
-    "spec-driven": 1,
+    "spec-driven": 5,
     "source-scan": 1,
     "spec-driven-open-source": 20,
     "agent-memory": 76,
@@ -36,6 +36,6 @@
     "program-synthesis": 13,
     "spec-driven-ai": 8,
     "software-agents": 38,
-    "data": 12
+    "data": 13
   }
 }
