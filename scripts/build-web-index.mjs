@@ -145,6 +145,41 @@ async function addSpecRepoDocs(docs) {
   }
 }
 
+async function addLlmWikiRepoDocs(docs) {
+  const repoPath = path.join(root, "data/llm-wiki-repositories.json");
+  if (!existsSync(repoPath)) return;
+  const data = JSON.parse(await readFile(repoPath, "utf8"));
+  for (const repo of safeArray(data.repositories)) {
+    const topics = safeArray(repo.topics);
+    const tags = safeArray(repo.tags);
+    const content = [
+      repo.name,
+      repo.description,
+      tags.join(", "),
+      topics.join(", "),
+      safeArray(repo.matchedLabels).join(", "),
+      safeArray(repo.matchedQueries).join("\n"),
+      repo.localPath
+    ].filter(Boolean).join("\n");
+
+    docs.push({
+      id: `repo:llm-wiki:${repo.name}`,
+      type: "repository",
+      category: "llm-wiki-open-source",
+      title: repo.name,
+      path: repo.localPath,
+      url: repo.url || null,
+      stars: repo.stars || 0,
+      forks: repo.forks || 0,
+      language: repo.language || null,
+      license: repo.license || null,
+      updatedAt: repo.pushedAt || repo.updatedAt || null,
+      summary: repo.description || tags.join(", ") || "LLM wiki / AI knowledge-base repository",
+      content
+    });
+  }
+}
+
 async function addDataFileDocs(docs) {
   const dataFiles = await listFiles(path.join(root, "data"), (file) => file.endsWith(".json"));
   for (const file of dataFiles.sort()) {
@@ -178,6 +213,7 @@ const docs = [];
 await addMarkdownDocs(docs);
 await addEvidenceDocs(docs);
 await addSpecRepoDocs(docs);
+await addLlmWikiRepoDocs(docs);
 await addDataFileDocs(docs);
 
 docs.sort((a, b) => {
@@ -203,10 +239,17 @@ function awaitReadFile(file) {
 }
 
 function topReposBy(predicate, limit = 6) {
-  const cloneAnalysisPath = path.join(root, "data/clone-structure-analysis-127.json");
-  if (!existsSync(cloneAnalysisPath)) return [];
-  const cloneData = JSON.parse(awaitReadFile(cloneAnalysisPath));
-  return (cloneData.analyses || [])
+  const analysisFiles = [
+    path.join(root, "data/clone-structure-analysis-127.json"),
+    path.join(root, "data/llm-wiki-structure-analysis-100.json")
+  ];
+  const analyses = [];
+  for (const cloneAnalysisPath of analysisFiles) {
+    if (!existsSync(cloneAnalysisPath)) continue;
+    const cloneData = JSON.parse(awaitReadFile(cloneAnalysisPath));
+    analyses.push(...safeArray(cloneData.analyses));
+  }
+  return analyses
     .filter(predicate)
     .sort((a, b) => {
       const scoreA = (a.specArtifacts?.length || 0) * 2 + (a.agentInstructionFiles?.length || 0) + (a.fileCount > 2000 ? 30 : 0);
@@ -215,6 +258,20 @@ function topReposBy(predicate, limit = 6) {
     })
     .slice(0, limit)
     .map((item) => item.name);
+}
+
+function topLlmWikiRepos(limit = 6) {
+  const repoPath = path.join(root, "data/llm-wiki-repositories.json");
+  if (!existsSync(repoPath)) return [];
+  const data = JSON.parse(awaitReadFile(repoPath));
+  return safeArray(data.repositories)
+    .sort((a, b) => {
+      const directA = safeArray(a.tags).includes("direct-llm-wiki") ? 1000 : 0;
+      const directB = safeArray(b.tags).includes("direct-llm-wiki") ? 1000 : 0;
+      return directB + (b.score || 0) - (directA + (a.score || 0)) || (b.stars || 0) - (a.stars || 0);
+    })
+    .slice(0, limit)
+    .map((repo) => repo.name);
 }
 
 const trends = [
@@ -252,6 +309,13 @@ const trends = [
     query: "rag vector local llm inference vllm llama",
     category: "all",
     repos: topReposBy((item) => item.groups?.includes("adjacent-tech-50"))
+  },
+  {
+    title: "LLM wiki / AI knowledge base",
+    summary: "self-maintaining wiki, document knowledge base, GraphRAG, NotebookLM-like tools",
+    query: "llm wiki knowledge base rag notebooklm graph rag korean",
+    category: "llm-wiki-open-source",
+    repos: topLlmWikiRepos()
   },
   {
     title: "Evaluation / observability",

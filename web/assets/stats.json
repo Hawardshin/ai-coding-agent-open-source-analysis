@@ -1,21 +1,22 @@
 {
-  "generatedAt": "2026-06-17T22:43:36.986Z",
-  "totalDocuments": 856,
+  "generatedAt": "2026-06-17T22:58:25.942Z",
+  "totalDocuments": 1060,
   "byType": {
-    "report": 173,
-    "repository": 20,
+    "report": 275,
+    "repository": 120,
     "paper": 650,
-    "data": 13
+    "data": 15
   },
   "byCategory": {
-    "report": 127,
+    "report": 129,
+    "repository-analysis": 130,
     "research": 3,
     "adjacent-tech": 4,
     "comparison": 2,
-    "repository-analysis": 30,
     "overview": 1,
     "spec-driven": 5,
     "source-scan": 1,
+    "llm-wiki-open-source": 100,
     "spec-driven-open-source": 20,
     "agent-memory": 76,
     "context-engineering": 10,
@@ -36,6 +37,6 @@
     "program-synthesis": 13,
     "spec-driven-ai": 8,
     "software-agents": 38,
-    "data": 13
+    "data": 15
   }
 }

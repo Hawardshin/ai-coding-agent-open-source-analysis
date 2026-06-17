@@ -1,0 +1,4561 @@
+{
+  "collectedAt": "2026-06-17T22:49:15.993Z",
+  "count": 100,
+  "candidateCount": 1204,
+  "queryStats": [
+    {
+      "label": "direct-llm-wiki-stars",
+      "q": "llm wiki in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "direct-ai-wiki-stars",
+      "q": "ai wiki llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "wiki-rag-stars",
+      "q": "wiki rag in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "repo-wiki-stars",
+      "q": "repo wiki llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "knowledge-base-llm-stars",
+      "q": "knowledge base llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "rag-knowledge-base-stars",
+      "q": "rag knowledge base in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "document-chat-rag-stars",
+      "q": "document chat rag in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "chat-with-docs-stars",
+      "q": "chat with documents llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "chat-with-pdf-stars",
+      "q": "chat pdf langchain in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "notebooklm-stars",
+      "q": "notebooklm open source in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "personal-kb-stars",
+      "q": "personal knowledge base llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "knowledge-graph-rag-stars",
+      "q": "knowledge graph rag llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "graphrag-stars",
+      "q": "graphrag in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "enterprise-kb-stars",
+      "q": "enterprise knowledge base ai in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "mcp-knowledge-stars",
+      "q": "mcp knowledge base in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "llm-wiki-recent",
+      "q": "llm wiki in:name,description,readme pushed:>2025-09-01",
+      "sort": "updated",
+      "count": 100
+    },
+    {
+      "label": "ai-knowledge-recent",
+      "q": "ai knowledge base llm in:name,description,readme pushed:>2025-09-01",
+      "sort": "updated",
+      "count": 100
+    },
+    {
+      "label": "rag-recent",
+      "q": "rag knowledge base in:name,description,readme pushed:>2025-09-01",
+      "sort": "updated",
+      "count": 100
+    },
+    {
+      "label": "notebooklm-recent",
+      "q": "notebooklm in:name,description,readme pushed:>2025-09-01",
+      "sort": "updated",
+      "count": 100
+    },
+    {
+      "label": "korean-rag",
+      "q": "korean rag llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "hangul-rag",
+      "q": "한국어 RAG LLM in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "korea-knowledge",
+      "q": "korea knowledge base llm in:name,description,readme",
+      "sort": "stars",
+      "count": 100
+    },
+    {
+      "label": "korean-recent",
+      "q": "korean rag llm in:name,description,readme pushed:>2025-01-01",
+      "sort": "updated",
+      "count": 100
+    }
+  ],
+  "selectionNote": "Selected from GitHub search queries covering LLM wiki, AI wiki, RAG knowledge bases, document chat, NotebookLM-like tools, knowledge graphs, MCP knowledge hubs, and Korean/Korea RAG signals. Score combines direct LLM-wiki relevance, knowledge-base/RAG/doc-chat terms, stars, forks, recent pushes, query overlap, and Korea signals.",
+  "repositories": [
+    {
+      "name": "nashsu/llm_wiki",
+      "url": "https://github.com/nashsu/llm_wiki",
+      "description": "LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from your sources。",
+      "language": "TypeScript",
+      "stars": 11791,
+      "forks": 1434,
+      "openIssues": 147,
+      "pushedAt": "2026-06-16T07:53:24Z",
+      "updatedAt": "2026-06-17T22:43:15Z",
+      "createdAt": "2026-04-08T11:24:01Z",
+      "topics": [],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "wiki rag in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "wiki-rag-stars",
+        "repo-wiki-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "personal-kb-stars",
+        "knowledge-graph-rag-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 148,
+      "localPath": "sources/nashsu__llm_wiki"
+    },
+    {
+      "name": "Tencent/WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "language": "Go",
+      "stars": 16422,
+      "forks": 2120,
+      "openIssues": 247,
+      "pushedAt": "2026-06-17T12:52:37Z",
+      "updatedAt": "2026-06-17T20:38:15Z",
+      "createdAt": "2025-07-22T08:01:23Z",
+      "topics": [
+        "agent",
+        "agentic",
+        "ai",
+        "chatbot",
+        "embeddings",
+        "evaluation",
+        "generative-ai",
+        "golang",
+        "knowledge-base",
+        "llm",
+        "multi-tenant",
+        "multimodel",
+        "ollama",
+        "openai",
+        "question-answering",
+        "rag",
+        "reranking",
+        "semantic-search",
+        "vector-search",
+        "wiki"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "wiki rag in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme",
+        "korean rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "wiki-rag-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "knowledge-graph-rag-stars",
+        "graphrag-stars",
+        "enterprise-kb-stars",
+        "korean-rag",
+        "hangul-rag",
+        "korea-knowledge",
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 114,
+      "localPath": "sources/Tencent__WeKnora"
+    },
+    {
+      "name": "ohbryt/bb-wiki",
+      "url": "https://github.com/ohbryt/bb-wiki",
+      "description": "Brown Biotech persistent knowledge base — Karpathy LLM-Wiki × An Lab pedagogy × BB 14 query family. 4-섹션 judgment layer on all concept/entity pages. Synced to Obsidian ~/Documents/Obsidian Vault/brown-biotech.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-06-17T14:11:41Z",
+      "updatedAt": "2026-06-17T14:15:01Z",
+      "createdAt": "2026-06-15T12:50:28Z",
+      "topics": [],
+      "license": null,
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "korean-recent"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "knowledge-base",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 109,
+      "localPath": "sources/ohbryt__bb-wiki"
+    },
+    {
+      "name": "SamurAIGPT/llm-wiki-agent",
+      "url": "https://github.com/SamurAIGPT/llm-wiki-agent",
+      "description": "A personal knowledge base that builds and maintains itself. Drop in sources — Claude (or Codex/Gemini) reads them, extracts knowledge, and maintains a persistent interlinked wiki. Works with Claude Code, Codex, OpenCode, Gemini CLI. No API key needed.",
+      "language": "Python",
+      "stars": 2959,
+      "forks": 350,
+      "openIssues": 4,
+      "pushedAt": "2026-06-13T06:25:47Z",
+      "updatedAt": "2026-06-17T21:58:39Z",
+      "createdAt": "2023-04-21T08:31:00Z",
+      "topics": [
+        "ai-agent",
+        "ai-tools",
+        "automation",
+        "claude-code",
+        "codex",
+        "gemini",
+        "generative-ai",
+        "knowledge-base",
+        "knowledge-graph",
+        "llm",
+        "markdown",
+        "muapi",
+        "note-taking",
+        "obsidian",
+        "open-source",
+        "personal-knowledge-management",
+        "rag",
+        "research",
+        "second-brain",
+        "wiki"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "wiki rag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "wiki-rag-stars"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 105,
+      "localPath": "sources/SamurAIGPT__llm-wiki-agent"
+    },
+    {
+      "name": "axoviq-ai/synthadoc",
+      "url": "https://github.com/axoviq-ai/synthadoc",
+      "description": "Synthadoc: An open-source LLM knowledge compilation engine that turns raw documents into structured, local-first wikis. A transparent, human-readable alternative to traditional RAG, which can be self-managed and self-improved without the use of any tools.",
+      "language": "Python",
+      "stars": 464,
+      "forks": 42,
+      "openIssues": 2,
+      "pushedAt": "2026-06-17T16:26:35Z",
+      "updatedAt": "2026-06-17T18:51:56Z",
+      "createdAt": "2026-04-11T03:50:12Z",
+      "topics": [
+        "agent-skills",
+        "agentic-ai",
+        "cli-tool",
+        "domain-adaptation",
+        "enterprise",
+        "enterprise-solutions",
+        "knowledge-graph",
+        "local-llm",
+        "obsidian-md",
+        "obsidian-plugin",
+        "personal-knowledge-management",
+        "pkm",
+        "rag-alternative",
+        "synthetic",
+        "synthetic-data"
+      ],
+      "license": "AGPL-3.0",
+      "matchedQueries": [
+        "notebooklm open source in:name,description,readme",
+        "korean rag llm in:name,description,readme",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "notebooklm-stars",
+        "korean-rag",
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 105,
+      "localPath": "sources/axoviq-ai__synthadoc"
+    },
+    {
+      "name": "arthurpanhku/DocSentinel",
+      "url": "https://github.com/arthurpanhku/DocSentinel",
+      "description": "MCP server for AI agent for cybersecurity: automate assessment of documents, questionnaires & reports. Multi-format parsing, RAG knowledge base,Risks, compliance gaps, remediations. ",
+      "language": "Python",
+      "stars": 88,
+      "forks": 11,
+      "openIssues": 2,
+      "pushedAt": "2026-06-10T06:31:56Z",
+      "updatedAt": "2026-06-11T01:42:25Z",
+      "createdAt": "2026-03-06T03:55:04Z",
+      "topics": [
+        "ai-agent",
+        "compliance",
+        "document-parsing",
+        "fastapi",
+        "llm",
+        "mcp",
+        "ollama",
+        "openai",
+        "openclaw",
+        "rag",
+        "security",
+        "security-assessment"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 99,
+      "localPath": "sources/arthurpanhku__DocSentinel"
+    },
+    {
+      "name": "joungminsung/OpenDocuments",
+      "url": "https://github.com/joungminsung/OpenDocuments",
+      "description": "Self-hosted RAG platform for AI document search across GitHub, Notion, Google Drive, local files, and web sources with citations.",
+      "language": "TypeScript",
+      "stars": 80,
+      "forks": 13,
+      "openIssues": 9,
+      "pushedAt": "2026-05-27T14:37:37Z",
+      "updatedAt": "2026-06-17T17:15:09Z",
+      "createdAt": "2026-03-27T03:23:14Z",
+      "topics": [
+        "ai",
+        "ai-search",
+        "document-qa",
+        "document-search",
+        "embeddings",
+        "enterprise-search",
+        "github",
+        "google-drive",
+        "knowledge-base",
+        "llm",
+        "mcp",
+        "notion",
+        "ollama",
+        "open-source",
+        "rag",
+        "retrieval-augmented-generation",
+        "self-hosted",
+        "semantic-search",
+        "typescript",
+        "vector-search"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 99,
+      "localPath": "sources/joungminsung__OpenDocuments"
+    },
+    {
+      "name": "safishamsi/graphify",
+      "url": "https://github.com/safishamsi/graphify",
+      "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+      "language": "Python",
+      "stars": 68688,
+      "forks": 6934,
+      "openIssues": 362,
+      "pushedAt": "2026-06-17T18:10:40Z",
+      "updatedAt": "2026-06-17T22:39:33Z",
+      "createdAt": "2026-04-03T15:49:07Z",
+      "topics": [
+        "antigravity",
+        "claude-code",
+        "codex",
+        "gemini",
+        "graphrag",
+        "knowledge-graph",
+        "leiden",
+        "openclaw",
+        "rag",
+        "skills",
+        "tree-sitter"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "knowledge base llm in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "mcp knowledge base in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "repo-wiki-stars",
+        "knowledge-base-llm-stars",
+        "chat-with-docs-stars",
+        "mcp-knowledge-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 96,
+      "localPath": "sources/safishamsi__graphify"
+    },
+    {
+      "name": "tirth8205/code-review-graph",
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+      "language": "Python",
+      "stars": 18632,
+      "forks": 1997,
+      "openIssues": 137,
+      "pushedAt": "2026-06-14T17:20:41Z",
+      "updatedAt": "2026-06-17T22:31:54Z",
+      "createdAt": "2026-02-26T17:25:13Z",
+      "topics": [
+        "ai-coding",
+        "claude",
+        "claude-code",
+        "code-review",
+        "graphrag",
+        "incremental",
+        "knowledge-graph",
+        "llm",
+        "mcp",
+        "python",
+        "static-analysis",
+        "tree-sitter"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "wiki rag in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "mcp knowledge base in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "wiki-rag-stars",
+        "repo-wiki-stars",
+        "rag-knowledge-base-stars",
+        "knowledge-graph-rag-stars",
+        "mcp-knowledge-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 96,
+      "localPath": "sources/tirth8205__code-review-graph"
+    },
+    {
+      "name": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "language": "TypeScript",
+      "stars": 62740,
+      "forks": 5169,
+      "openIssues": 213,
+      "pushedAt": "2026-06-16T07:51:27Z",
+      "updatedAt": "2026-06-17T22:47:49Z",
+      "createdAt": "2026-03-15T02:30:51Z",
+      "topics": [
+        "antigravity-skills",
+        "business-knowledge",
+        "claude-code",
+        "claude-skills",
+        "codebase-analysis",
+        "codex",
+        "codex-skills",
+        "developer-tools-ai-agent",
+        "gemini-cli-skills",
+        "karpathy-llm-wiki",
+        "knowledge-base",
+        "knowledge-graph",
+        "memory",
+        "opencode-skills",
+        "pi-agent",
+        "understandcode",
+        "vibe-coding"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "knowledge base llm in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "repo-wiki-stars",
+        "knowledge-base-llm-stars",
+        "personal-kb-stars"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 93,
+      "localPath": "sources/Egonex-AI__Understand-Anything"
+    },
+    {
+      "name": "raphaelmansuy/edgequake",
+      "url": "https://github.com/raphaelmansuy/edgequake",
+      "description": "EdegQuake 🌋 High-performance GraphRAG inspired from LightRag written in Rust; Transform documents into intelligent knowledge graphs for superior retrieval and generation",
+      "language": "Rust",
+      "stars": 2003,
+      "forks": 229,
+      "openIssues": 20,
+      "pushedAt": "2026-06-17T06:08:53Z",
+      "updatedAt": "2026-06-16T13:16:45Z",
+      "createdAt": "2025-12-21T11:19:52Z",
+      "topics": [
+        "graphrag",
+        "knowledge-graph",
+        "lightrag",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 91,
+      "localPath": "sources/raphaelmansuy__edgequake"
+    },
+    {
+      "name": "zosmaai/pi-llm-wiki",
+      "url": "https://github.com/zosmaai/pi-llm-wiki",
+      "description": "Self-maintaining, Obsidian-compatible knowledge base for pi — turn raw sources into an interlinked wiki that compounds over time. Follows Karpathy's LLM Wiki pattern.",
+      "language": "TypeScript",
+      "stars": 154,
+      "forks": 12,
+      "openIssues": 4,
+      "pushedAt": "2026-06-10T20:25:16Z",
+      "updatedAt": "2026-06-17T09:14:30Z",
+      "createdAt": "2026-04-27T15:00:34Z",
+      "topics": [
+        "karpathy",
+        "knowledge-base",
+        "llm-wiki",
+        "markdown",
+        "memory",
+        "obsidian",
+        "pi",
+        "pkm",
+        "second-brain",
+        "wiki"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 91,
+      "localPath": "sources/zosmaai__pi-llm-wiki"
+    },
+    {
+      "name": "green-dalii/obsidian-llm-wiki",
+      "url": "https://github.com/green-dalii/obsidian-llm-wiki",
+      "description": "Karpathy's LLM Wiki implementation - multi-page knowledge generation with entity/concept pages and conversational query.",
+      "language": "TypeScript",
+      "stars": 101,
+      "forks": 10,
+      "openIssues": 10,
+      "pushedAt": "2026-06-17T10:49:23Z",
+      "updatedAt": "2026-06-17T22:08:41Z",
+      "createdAt": "2026-04-26T14:57:39Z",
+      "topics": [
+        "karpathy",
+        "knowledge-graph",
+        "knowledge-management",
+        "llm-wiki",
+        "llm-wiki-karpathy",
+        "note-taking",
+        "obsidian",
+        "obsidian-plugin"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 91,
+      "localPath": "sources/green-dalii__obsidian-llm-wiki"
+    },
+    {
+      "name": "chatchat-space/Langchain-Chatchat",
+      "url": "https://github.com/chatchat-space/Langchain-Chatchat",
+      "description": "Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与 Llama 等语言模型的 RAG 与 Agent 应用 | Langchain-Chatchat (formerly langchain-ChatGLM), local knowledge based LLM (like ChatGLM, Qwen and Llama) RAG and Agent app with langchain ",
+      "language": "Python",
+      "stars": 38186,
+      "forks": 6218,
+      "openIssues": 24,
+      "pushedAt": "2025-11-10T09:27:42Z",
+      "updatedAt": "2026-06-17T16:04:55Z",
+      "createdAt": "2023-03-31T12:12:45Z",
+      "topics": [
+        "chatbot",
+        "chatchat",
+        "chatglm",
+        "chatgpt",
+        "embedding",
+        "faiss",
+        "fastchat",
+        "gpt",
+        "knowledge-base",
+        "langchain",
+        "langchain-chatglm",
+        "llama",
+        "llm",
+        "milvus",
+        "ollama",
+        "qwen",
+        "rag",
+        "retrieval-augmented-generation",
+        "streamlit",
+        "xinference"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 90,
+      "localPath": "sources/chatchat-space__Langchain-Chatchat"
+    },
+    {
+      "name": "stanford-oval/WikiChat",
+      "url": "https://github.com/stanford-oval/WikiChat",
+      "description": "WikiChat is an improved RAG. It stops the hallucination of large language models by retrieving data from a corpus.",
+      "language": "Python",
+      "stars": 1602,
+      "forks": 144,
+      "openIssues": 9,
+      "pushedAt": "2026-01-31T04:13:47Z",
+      "updatedAt": "2026-06-17T11:18:23Z",
+      "createdAt": "2023-10-19T18:17:25Z",
+      "topics": [
+        "chatbot",
+        "emnlp2023",
+        "factuality",
+        "llm",
+        "natural-language-processing",
+        "nlp",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "wiki rag in:name,description,readme",
+        "korean rag llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "wiki-rag-stars",
+        "korean-rag"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "rag",
+        "korea-signal"
+      ],
+      "score": 90,
+      "localPath": "sources/stanford-oval__WikiChat"
+    },
+    {
+      "name": "labring/FastGPT",
+      "url": "https://github.com/labring/FastGPT",
+      "description": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
+      "language": "TypeScript",
+      "stars": 28496,
+      "forks": 7156,
+      "openIssues": 178,
+      "pushedAt": "2026-06-17T10:19:10Z",
+      "updatedAt": "2026-06-17T22:02:06Z",
+      "createdAt": "2023-02-23T16:53:25Z",
+      "topics": [
+        "agent",
+        "claude",
+        "deepseek",
+        "llm",
+        "mcp",
+        "nextjs",
+        "openai",
+        "qwen",
+        "rag",
+        "workflow"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "mcp knowledge base in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "mcp-knowledge-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 87,
+      "localPath": "sources/labring__FastGPT"
+    },
+    {
+      "name": "memvid/memvid",
+      "url": "https://github.com/memvid/memvid",
+      "description": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory.",
+      "language": "Rust",
+      "stars": 15665,
+      "forks": 1352,
+      "openIssues": 21,
+      "pushedAt": "2026-05-27T19:31:24Z",
+      "updatedAt": "2026-06-17T21:36:49Z",
+      "createdAt": "2025-05-27T16:01:08Z",
+      "topics": [
+        "ai",
+        "context",
+        "embedded",
+        "faiss",
+        "knowledge-base",
+        "knowledge-graph",
+        "llm",
+        "machine-learning",
+        "memory",
+        "memvid",
+        "mv2",
+        "nlp",
+        "offline-first",
+        "opencv",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-search",
+        "vector-database",
+        "video-processing"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "personal-kb-stars",
+        "enterprise-kb-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 87,
+      "localPath": "sources/memvid__memvid"
+    },
+    {
+      "name": "matevip/mateclaw",
+      "url": "https://github.com/matevip/mateclaw",
+      "description": "🤖 MateClaw — Your second brain with Multi-Agent Orchestration, MCP Protocol, Skills & Memory, Dream, and Multi-Channel Support. Built on Spring AI Alibaba.",
+      "language": "Java",
+      "stars": 624,
+      "forks": 199,
+      "openIssues": 66,
+      "pushedAt": "2026-06-17T22:43:46Z",
+      "updatedAt": "2026-06-17T22:43:51Z",
+      "createdAt": "2026-04-04T10:53:35Z",
+      "topics": [
+        "agent",
+        "agent-harness",
+        "ai-agent",
+        "dingtalk-robot",
+        "feishu-bot",
+        "llm-wiki",
+        "mcp-protocol",
+        "multi-agent",
+        "multiagent",
+        "openclaw",
+        "plan-and-execute",
+        "skills",
+        "spring-ai",
+        "spring-boot",
+        "telegrambot",
+        "tool-calling"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme pushed:>2025-09-01",
+        "ai knowledge base llm in:name,description,readme pushed:>2025-09-01",
+        "rag knowledge base in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "llm-wiki-recent",
+        "ai-knowledge-recent",
+        "rag-recent"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 87,
+      "localPath": "sources/matevip__mateclaw"
+    },
+    {
+      "name": "VectifyAI/PageIndex",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "description": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+      "language": "Python",
+      "stars": 33160,
+      "forks": 2886,
+      "openIssues": 177,
+      "pushedAt": "2026-06-05T22:08:22Z",
+      "updatedAt": "2026-06-17T21:23:49Z",
+      "createdAt": "2025-04-01T10:53:54Z",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "ai-agents",
+        "context-engineering",
+        "information-retrieval",
+        "llm",
+        "rag",
+        "reasoning",
+        "retrieval",
+        "retrieval-augmented-generation",
+        "vector-database"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "wiki rag in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme",
+        "mcp knowledge base in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "wiki-rag-stars",
+        "repo-wiki-stars",
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "enterprise-kb-stars",
+        "mcp-knowledge-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 86,
+      "localPath": "sources/VectifyAI__PageIndex"
+    },
+    {
+      "name": "enescingoz/awesome-n8n-templates",
+      "url": "https://github.com/enescingoz/awesome-n8n-templates",
+      "description": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.",
+      "language": null,
+      "stars": 23064,
+      "forks": 6158,
+      "openIssues": 20,
+      "pushedAt": "2026-06-17T21:58:26Z",
+      "updatedAt": "2026-06-17T21:59:00Z",
+      "createdAt": "2025-05-08T18:34:01Z",
+      "topics": [
+        "ai-agents",
+        "ai-automation",
+        "automation",
+        "automation-templates",
+        "awesome",
+        "awesome-list",
+        "integration",
+        "low-code",
+        "n8n",
+        "n8n-automation",
+        "n8n-template",
+        "no-code-ai",
+        "no-code-automation",
+        "self-hosted",
+        "telegram-bot",
+        "workflow-automation"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "chat pdf langchain in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "mcp knowledge base in:name,description,readme",
+        "korean rag llm in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "chat-with-pdf-stars",
+        "personal-kb-stars",
+        "knowledge-graph-rag-stars",
+        "mcp-knowledge-stars",
+        "korean-rag",
+        "korea-knowledge",
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 86,
+      "localPath": "sources/enescingoz__awesome-n8n-templates"
+    },
+    {
+      "name": "AgriciDaniel/claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+      "language": "Python",
+      "stars": 7035,
+      "forks": 830,
+      "openIssues": 73,
+      "pushedAt": "2026-05-28T00:42:43Z",
+      "updatedAt": "2026-06-17T22:41:10Z",
+      "createdAt": "2026-04-07T08:59:37Z",
+      "topics": [
+        "agent-skills",
+        "ai-note-taking",
+        "ai-second-brain",
+        "claude-code",
+        "claude-code-skill",
+        "claude-memory",
+        "claude-plugin",
+        "karpathy-llm-wiki",
+        "knowledge-graph",
+        "knowledge-management",
+        "note-taking",
+        "notion-alternative",
+        "obsidian",
+        "obsidian-ai",
+        "obsidian-plugin",
+        "obsidian-second-brain",
+        "open-source",
+        "personal-knowledge-management",
+        "pkm",
+        "second-brain"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "ai wiki llm in:name,description,readme",
+        "repo wiki llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-ai-wiki-stars",
+        "repo-wiki-stars"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 84,
+      "localPath": "sources/AgriciDaniel__claude-obsidian"
+    },
+    {
+      "name": "semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "description": "Semantica 🧠 • Build AI systems that can explain, trace, and justify every decision. Knowledge graphs, context graphs, reasoning engines, provenance, and governance for production AI.",
+      "language": "Python",
+      "stars": 1225,
+      "forks": 185,
+      "openIssues": 8,
+      "pushedAt": "2026-06-17T20:22:24Z",
+      "updatedAt": "2026-06-17T21:07:40Z",
+      "createdAt": "2025-06-25T10:41:00Z",
+      "topics": [
+        "agent-memory",
+        "agentic-ai",
+        "ai-agents",
+        "ai-infrastructure",
+        "context-graph",
+        "context-management",
+        "data-infrastructure",
+        "developer-tools",
+        "graph-analytics",
+        "graph-modeling",
+        "graphrag",
+        "knowledge-engineering",
+        "knowledge-graphs",
+        "ontology-engineering",
+        "python-library",
+        "rag",
+        "schema-design",
+        "semantic-layer",
+        "semantic-web"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "graphrag in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 84,
+      "localPath": "sources/semantica-agi__semantica"
+    },
+    {
+      "name": "NirDiamant/RAG_Techniques",
+      "url": "https://github.com/NirDiamant/RAG_Techniques",
+      "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial.",
+      "language": "Jupyter Notebook",
+      "stars": 28013,
+      "forks": 3389,
+      "openIssues": 15,
+      "pushedAt": "2026-06-17T20:54:18Z",
+      "updatedAt": "2026-06-17T20:54:31Z",
+      "createdAt": "2024-07-13T16:08:36Z",
+      "topics": [
+        "agentic-rag",
+        "ai",
+        "embeddings",
+        "generative-ai",
+        "gpt",
+        "langchain",
+        "llama-index",
+        "llm",
+        "llms",
+        "machine-learning",
+        "nlp",
+        "openai",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-search",
+        "tutorials",
+        "vector-database"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "knowledge-graph-rag-stars",
+        "graphrag-stars",
+        "enterprise-kb-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 83,
+      "localPath": "sources/NirDiamant__RAG_Techniques"
+    },
+    {
+      "name": "HKUDS/LightRAG",
+      "url": "https://github.com/HKUDS/LightRAG",
+      "description": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\"",
+      "language": "Python",
+      "stars": 36711,
+      "forks": 5182,
+      "openIssues": 220,
+      "pushedAt": "2026-06-17T08:45:28Z",
+      "updatedAt": "2026-06-17T22:18:19Z",
+      "createdAt": "2024-10-02T11:57:54Z",
+      "topics": [
+        "genai",
+        "gpt",
+        "gpt-4",
+        "graphrag",
+        "knowledge-graph",
+        "large-language-models",
+        "llm",
+        "rag",
+        "retrieval-augmented-generation"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "knowledge-graph-rag-stars",
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 82,
+      "localPath": "sources/HKUDS__LightRAG"
+    },
+    {
+      "name": "linny006/rag-radar",
+      "url": "https://github.com/linny006/rag-radar",
+      "description": "Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes",
+      "language": "Python",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 3,
+      "pushedAt": "2026-06-17T22:45:19Z",
+      "updatedAt": "2026-06-17T22:45:22Z",
+      "createdAt": "2026-05-23T10:51:18Z",
+      "topics": [
+        "ai-development",
+        "ai-engineering",
+        "ai-tools",
+        "auto-updated",
+        "awesome-list",
+        "awesome-rag",
+        "knowledge-base",
+        "live-data",
+        "llm-rag",
+        "llm-stack",
+        "llm-tools",
+        "machine-learning",
+        "rag",
+        "rag-tools",
+        "retrieval-augmented",
+        "retrieval-augmented-generation",
+        "semantic-search",
+        "vector-database",
+        "vector-search"
+      ],
+      "license": null,
+      "matchedQueries": [
+        "llm wiki in:name,description,readme pushed:>2025-09-01",
+        "ai knowledge base llm in:name,description,readme pushed:>2025-09-01",
+        "rag knowledge base in:name,description,readme pushed:>2025-09-01",
+        "notebooklm in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "llm-wiki-recent",
+        "ai-knowledge-recent",
+        "rag-recent",
+        "notebooklm-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 82,
+      "localPath": "sources/linny006__rag-radar"
+    },
+    {
+      "name": "khoj-ai/khoj",
+      "url": "https://github.com/khoj-ai/khoj",
+      "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+      "language": "Python",
+      "stars": 35186,
+      "forks": 2252,
+      "openIssues": 110,
+      "pushedAt": "2026-03-26T03:35:43Z",
+      "updatedAt": "2026-06-17T21:19:26Z",
+      "createdAt": "2021-08-16T01:48:44Z",
+      "topics": [
+        "agent",
+        "ai",
+        "assistant",
+        "chat",
+        "chatgpt",
+        "emacs",
+        "image-generation",
+        "llama3",
+        "llamacpp",
+        "llm",
+        "obsidian",
+        "obsidian-md",
+        "offline-llm",
+        "productivity",
+        "rag",
+        "research",
+        "self-hosted",
+        "semantic-search",
+        "stt",
+        "whatsapp-ai"
+      ],
+      "license": "AGPL-3.0",
+      "matchedQueries": [
+        "chat with documents llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "chat-with-docs-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 81,
+      "localPath": "sources/khoj-ai__khoj"
+    },
+    {
+      "name": "Ar9av/obsidian-wiki",
+      "url": "https://github.com/Ar9av/obsidian-wiki",
+      "description": "Framework for AI agents to build and maintain a digital brain through Obsidian wiki using Karpathy's LLM Wiki pattern",
+      "language": "Python",
+      "stars": 2232,
+      "forks": 224,
+      "openIssues": 6,
+      "pushedAt": "2026-06-16T10:08:26Z",
+      "updatedAt": "2026-06-17T22:44:19Z",
+      "createdAt": "2026-04-06T06:20:10Z",
+      "topics": [
+        "agent-skills",
+        "brain",
+        "knowledge-base",
+        "llm-tools",
+        "obsidian",
+        "obsidian-brain",
+        "wiki"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "wiki rag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "wiki-rag-stars"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 81,
+      "localPath": "sources/Ar9av__obsidian-wiki"
+    },
+    {
+      "name": "VectifyAI/OpenKB",
+      "url": "https://github.com/VectifyAI/OpenKB",
+      "description": "OpenKB: Open LLM Knowledge Base",
+      "language": "Python",
+      "stars": 2083,
+      "forks": 231,
+      "openIssues": 21,
+      "pushedAt": "2026-06-17T11:11:09Z",
+      "updatedAt": "2026-06-17T22:08:08Z",
+      "createdAt": "2026-04-04T12:26:04Z",
+      "topics": [
+        "agents",
+        "ai",
+        "knowledge-base",
+        "llm",
+        "rag",
+        "retrieval"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "wiki rag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "wiki-rag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 81,
+      "localPath": "sources/VectifyAI__OpenKB"
+    },
+    {
+      "name": "IAAR-Shanghai/Awesome-AI-Memory",
+      "url": "https://github.com/IAAR-Shanghai/Awesome-AI-Memory",
+      "description": "Awesome AI Memory | LLM Memory | A curated knowledge base on AI memory for LLMs and agents, covering long-term memory, reasoning, retrieval, and memory-native system design.  Awesome-AI-Memory 是一个 集中式、持续更新的 AI 记忆知识库，系统性整理了与 大模型记忆（LLM Memory）与智能体记忆（Agent Memory） 相关的前沿研究、工程框架、系统设计、评测基准与真实应用实践。",
+      "language": "Python",
+      "stars": 996,
+      "forks": 93,
+      "openIssues": 2,
+      "pushedAt": "2026-06-15T02:07:07Z",
+      "updatedAt": "2026-06-17T16:59:18Z",
+      "createdAt": "2025-12-01T14:23:20Z",
+      "topics": [
+        "agent-memory",
+        "ai-memory",
+        "ai-memory-system",
+        "awesome-ai-memory",
+        "continual-learning",
+        "llm-memory",
+        "long-term-memory",
+        "memory-augmented-models",
+        "memory-systems",
+        "rag",
+        "reasoning-over-time"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 81,
+      "localPath": "sources/IAAR-Shanghai__Awesome-AI-Memory"
+    },
+    {
+      "name": "zhimaAi/ChatClaw",
+      "url": "https://github.com/zhimaAi/ChatClaw",
+      "description": "ChatClaw: Get OpenClaw-like knowledge base personal AI agent in 5 mins. Sandbox-secured, ultra-small 30MB installer for macOS & Windows (install in 1 min). Connects to WhatsApp, Telegram, Slack, Discord, Gmail, DingTalk, WeChat Work, QQ, Feishu. Built-in Skill Market, Knowledge Base, Memory, MCP, Scheduled Tasks. Developed in Go ,run",
+      "language": "Go",
+      "stars": 291,
+      "forks": 54,
+      "openIssues": 20,
+      "pushedAt": "2026-05-13T10:34:33Z",
+      "updatedAt": "2026-06-13T06:25:06Z",
+      "createdAt": "2026-02-09T09:35:52Z",
+      "topics": [
+        "ai-assistant",
+        "ima",
+        "open-cowork",
+        "openclaw",
+        "rag"
+      ],
+      "license": "GPL-3.0",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 81,
+      "localPath": "sources/zhimaAi__ChatClaw"
+    },
+    {
+      "name": "benmaster82/Kwipu",
+      "url": "https://github.com/benmaster82/Kwipu",
+      "description": "Ask questions across your Markdown notes using a fully local Graph RAG engine. Built for Obsidian vaults, works with any folder of Markdown files. Extracts entity-relation triples from wikilinks & YAML frontmatter, retrieves answers via hybrid search (vector + BM25 + temporal). Multilingual. No cloud. Runs on Ollama.",
+      "language": "Python",
+      "stars": 248,
+      "forks": 33,
+      "openIssues": 1,
+      "pushedAt": "2026-05-18T14:20:43Z",
+      "updatedAt": "2026-06-17T21:37:40Z",
+      "createdAt": "2026-04-21T15:01:58Z",
+      "topics": [
+        "claude-code",
+        "embeddings",
+        "graph-rag",
+        "help-wanted",
+        "knowledge-graph",
+        "llama-index",
+        "llm",
+        "markdown",
+        "mcp",
+        "md",
+        "natural-language",
+        "obsidian",
+        "obsidian-notes",
+        "obsidian-vault",
+        "offline",
+        "offline-first",
+        "ollama",
+        "rag",
+        "rag-chatbot",
+        "terminal-ui"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "korean-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 81,
+      "localPath": "sources/benmaster82__Kwipu"
+    },
+    {
+      "name": "studyield/studyield",
+      "url": "https://github.com/studyield/studyield",
+      "description": " Open-source AI learning platform with exam cloning, multi-agent problem solving, knowledge graphs, and teach-back evaluation. Self-hosted, 12 languages, web + mobile.",
+      "language": "TypeScript",
+      "stars": 50,
+      "forks": 29,
+      "openIssues": 39,
+      "pushedAt": "2026-05-13T03:55:46Z",
+      "updatedAt": "2026-06-16T02:38:32Z",
+      "createdAt": "2026-04-08T03:24:38Z",
+      "topics": [
+        "ai",
+        "ai-tutor",
+        "anki-alternative",
+        "chatgpt-alternative",
+        "e-learning",
+        "edtech",
+        "exam-prep",
+        "khan-academy-alternative",
+        "learning-platform",
+        "llm",
+        "multilingual",
+        "open-source",
+        "personalized-learning",
+        "problem-solver",
+        "quiz-generator",
+        "quizlet-alternative",
+        "rag",
+        "self-hosted",
+        "study-assistant",
+        "study-tool"
+      ],
+      "license": "AGPL-3.0",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 81,
+      "localPath": "sources/studyield__studyield"
+    },
+    {
+      "name": "iikarus/Dragon-Brain",
+      "url": "https://github.com/iikarus/Dragon-Brain",
+      "description": "Dragon Brain — persistent long-term memory for AI agents via MCP (Model Context Protocol). Knowledge graph (FalkorDB) + vector search (Qdrant) + CUDA GPU embeddings. Works with Claude, Gemini CLI, Cursor, Windsurf, VS Code Copilot. 30 tools, 1121 tests.",
+      "language": "Python",
+      "stars": 48,
+      "forks": 7,
+      "openIssues": 6,
+      "pushedAt": "2026-05-28T14:24:51Z",
+      "updatedAt": "2026-06-12T09:49:33Z",
+      "createdAt": "2026-02-23T21:45:37Z",
+      "topics": [
+        "ai-memory",
+        "claude",
+        "codex-cli",
+        "cursor",
+        "falkordb",
+        "gemini-cli",
+        "knowledge-graph",
+        "llm-tools",
+        "mcp",
+        "memory",
+        "model-agnostic",
+        "qdrant",
+        "vector-search"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 81,
+      "localPath": "sources/iikarus__Dragon-Brain"
+    },
+    {
+      "name": "iammonth1997/paperwiki-research-compiler",
+      "url": "https://github.com/iammonth1997/paperwiki-research-compiler",
+      "description": "AI Research Wiki 2026: Auto-Building Knowledge Base with Deep Citation Syntheses",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-06-17T22:39:22Z",
+      "updatedAt": "2026-06-17T22:39:27Z",
+      "createdAt": "2026-05-24T20:52:58Z",
+      "topics": [
+        "claude-code",
+        "claude-desktop",
+        "claude-plugin",
+        "deep-research",
+        "karpathy",
+        "knowledge-management",
+        "llm-agent",
+        "markdown",
+        "obsidian",
+        "onnx",
+        "pkm",
+        "rag",
+        "wiki",
+        "windows",
+        "zero-shot-classification"
+      ],
+      "license": null,
+      "matchedQueries": [
+        "llm wiki in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "llm-wiki-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 81,
+      "localPath": "sources/iammonth1997__paperwiki-research-compiler"
+    },
+    {
+      "name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "description": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+      "language": "TypeScript",
+      "stars": 42381,
+      "forks": 4794,
+      "openIssues": 268,
+      "pushedAt": "2026-06-17T20:53:32Z",
+      "updatedAt": "2026-06-17T21:36:08Z",
+      "createdAt": "2025-08-02T23:20:31Z",
+      "topics": [],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "wiki rag in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme",
+        "mcp knowledge base in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "wiki-rag-stars",
+        "repo-wiki-stars",
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "knowledge-graph-rag-stars",
+        "enterprise-kb-stars",
+        "mcp-knowledge-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 78,
+      "localPath": "sources/abhigyanpatwari__GitNexus"
+    },
+    {
+      "name": "onyx-dot-app/onyx",
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "language": "Python",
+      "stars": 30391,
+      "forks": 4157,
+      "openIssues": 462,
+      "pushedAt": "2026-06-17T22:46:13Z",
+      "updatedAt": "2026-06-17T22:39:06Z",
+      "createdAt": "2023-04-27T06:04:01Z",
+      "topics": [
+        "ai",
+        "ai-chat",
+        "chatgpt",
+        "chatui",
+        "enterprise-search",
+        "gen-ai",
+        "information-retrieval",
+        "llm",
+        "llm-ui",
+        "nextjs",
+        "python",
+        "rag",
+        "self-hosted",
+        "vector-search"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme",
+        "mcp knowledge base in:name,description,readme",
+        "rag knowledge base in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "knowledge-graph-rag-stars",
+        "enterprise-kb-stars",
+        "mcp-knowledge-stars",
+        "rag-recent"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 78,
+      "localPath": "sources/onyx-dot-app__onyx"
+    },
+    {
+      "name": "getzep/graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "description": "Build Real-Time Knowledge Graphs for AI Agents",
+      "language": "Python",
+      "stars": 27553,
+      "forks": 2761,
+      "openIssues": 386,
+      "pushedAt": "2026-06-17T01:07:01Z",
+      "updatedAt": "2026-06-17T22:39:57Z",
+      "createdAt": "2024-08-08T22:08:30Z",
+      "topics": [
+        "agents",
+        "graph",
+        "llms",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme",
+        "mcp knowledge base in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "personal-kb-stars",
+        "knowledge-graph-rag-stars",
+        "graphrag-stars",
+        "enterprise-kb-stars",
+        "mcp-knowledge-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 78,
+      "localPath": "sources/getzep__graphiti"
+    },
+    {
+      "name": "openai/chatgpt-retrieval-plugin",
+      "url": "https://github.com/openai/chatgpt-retrieval-plugin",
+      "description": "The ChatGPT Retrieval Plugin lets you easily find personal or work documents by asking questions in natural language.",
+      "language": "Python",
+      "stars": 21190,
+      "forks": 3600,
+      "openIssues": 267,
+      "pushedAt": "2024-07-04T22:00:16Z",
+      "updatedAt": "2026-06-17T21:02:31Z",
+      "createdAt": "2023-03-23T06:06:22Z",
+      "topics": [
+        "chatgpt",
+        "chatgpt-plugins"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "personal-kb-stars",
+        "knowledge-graph-rag-stars",
+        "enterprise-kb-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 78,
+      "localPath": "sources/openai__chatgpt-retrieval-plugin"
+    },
+    {
+      "name": "tobi/qmd",
+      "url": "https://github.com/tobi/qmd",
+      "description": "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local",
+      "language": "TypeScript",
+      "stars": 26713,
+      "forks": 1673,
+      "openIssues": 141,
+      "pushedAt": "2026-06-17T16:02:50Z",
+      "updatedAt": "2026-06-17T22:17:26Z",
+      "createdAt": "2025-12-08T14:22:57Z",
+      "topics": [],
+      "license": "MIT",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "mcp knowledge base in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "personal-kb-stars",
+        "mcp-knowledge-stars",
+        "korea-knowledge"
+      ],
+      "tags": [
+        "knowledge-base",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 76,
+      "localPath": "sources/tobi__qmd"
+    },
+    {
+      "name": "OpenSPG/KAG",
+      "url": "https://github.com/OpenSPG/KAG",
+      "description": "KAG is a logical form-guided reasoning and retrieval framework based on OpenSPG engine and LLMs.  It is used to build logical reasoning and factual Q&A solutions for professional domain knowledge bases. It can effectively overcome the shortcomings of the traditional RAG vector similarity calculation model.",
+      "language": "Python",
+      "stars": 8834,
+      "forks": 688,
+      "openIssues": 173,
+      "pushedAt": "2026-01-28T13:30:54Z",
+      "updatedAt": "2026-06-17T20:36:10Z",
+      "createdAt": "2024-09-21T13:56:44Z",
+      "topics": [
+        "knowledge-graph",
+        "large-language-model",
+        "logical-reasoning",
+        "multi-hop-question-answering",
+        "trustfulness"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-graph-rag-stars",
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 76,
+      "localPath": "sources/OpenSPG__KAG"
+    },
+    {
+      "name": "neo4j-labs/llm-graph-builder",
+      "url": "https://github.com/neo4j-labs/llm-graph-builder",
+      "description": "Neo4j graph construction from unstructured data using LLMs",
+      "language": "Jupyter Notebook",
+      "stars": 4799,
+      "forks": 826,
+      "openIssues": 55,
+      "pushedAt": "2026-06-16T10:25:30Z",
+      "updatedAt": "2026-06-17T20:57:10Z",
+      "createdAt": "2024-01-11T14:31:18Z",
+      "topics": [
+        "data-import",
+        "genai",
+        "graph",
+        "graph-rag",
+        "graph-search",
+        "graphdb",
+        "graphrag",
+        "knowledge-graph",
+        "langchain",
+        "neo4j",
+        "rag",
+        "unstructured-data",
+        "vectordb"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "repo wiki llm in:name,description,readme",
+        "chat pdf langchain in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "repo-wiki-stars",
+        "chat-with-pdf-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat"
+      ],
+      "score": 76,
+      "localPath": "sources/neo4j-labs__llm-graph-builder"
+    },
+    {
+      "name": "HKUST-KnowComp/AutoSchemaKG",
+      "url": "https://github.com/HKUST-KnowComp/AutoSchemaKG",
+      "description": "This repository contains the implementation of AutoSchemaKG, a novel framework for automatic knowledge graph construction that combines schema generation via conceptualization.",
+      "language": "Python",
+      "stars": 761,
+      "forks": 104,
+      "openIssues": 5,
+      "pushedAt": "2026-04-29T16:30:22Z",
+      "updatedAt": "2026-06-17T07:51:08Z",
+      "createdAt": "2025-05-21T11:35:20Z",
+      "topics": [
+        "graph-construction",
+        "knowledge-graph",
+        "rag"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "korea-knowledge"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 76,
+      "localPath": "sources/HKUST-KnowComp__AutoSchemaKG"
+    },
+    {
+      "name": "xr843/fojin",
+      "url": "https://github.com/xr843/fojin",
+      "description": "Buddhist Digital Text Platform — 9,200+ texts, 500+ sources, 8 UI languages, AI Q&A (RAG), knowledge graph, full-text search",
+      "language": "Python",
+      "stars": 312,
+      "forks": 53,
+      "openIssues": 16,
+      "pushedAt": "2026-06-17T15:09:20Z",
+      "updatedAt": "2026-06-17T15:14:57Z",
+      "createdAt": "2026-03-10T14:05:37Z",
+      "topics": [
+        "ai",
+        "buddhism",
+        "buddhist-studies",
+        "chinese-classics",
+        "digital-humanities",
+        "docker",
+        "elasticsearch",
+        "fastapi",
+        "full-text-search",
+        "knowledge-graph",
+        "nlp",
+        "open-source",
+        "pali",
+        "parallel-reading",
+        "rag",
+        "react",
+        "sanskrit",
+        "semantic-search",
+        "tibetan"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 76,
+      "localPath": "sources/xr843__fojin"
+    },
+    {
+      "name": "arc53/DocsGPT",
+      "url": "https://github.com/arc53/DocsGPT",
+      "description": "Private AI platform for agents, assistants and enterprise search. Built-in Agent Builder, Deep research, Document analysis, Multi-model support, and API connectivity for agents.",
+      "language": "Python",
+      "stars": 17938,
+      "forks": 2062,
+      "openIssues": 85,
+      "pushedAt": "2026-06-17T14:49:42Z",
+      "updatedAt": "2026-06-17T14:52:33Z",
+      "createdAt": "2023-02-02T11:03:23Z",
+      "topics": [
+        "agent-builder",
+        "agents",
+        "ai",
+        "chatgpt",
+        "docsgpt",
+        "hacktoberfest",
+        "hacktoberfest2025",
+        "information-retrieval",
+        "language-model",
+        "llm",
+        "machine-learning",
+        "natural-language-processing",
+        "python",
+        "pytorch",
+        "rag",
+        "react",
+        "search",
+        "semantic-search",
+        "transformers"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "personal knowledge base llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "personal-kb-stars",
+        "enterprise-kb-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 74,
+      "localPath": "sources/arc53__DocsGPT"
+    },
+    {
+      "name": "kreuzberg-dev/kreuzberg",
+      "url": "https://github.com/kreuzberg-dev/kreuzberg",
+      "description": "A polyglot document intelligence framework with a Rust core. Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats. Available for Rust, Python, Ruby, Java, Go, PHP, Elixir, C#, R, C, TypeScript (Node/Bun/Wasm/Deno)- or use via CLI, REST API, or MCP server.",
+      "language": "Rust",
+      "stars": 8500,
+      "forks": 499,
+      "openIssues": 12,
+      "pushedAt": "2026-06-17T17:42:19Z",
+      "updatedAt": "2026-06-17T15:52:00Z",
+      "createdAt": "2025-01-31T21:50:02Z",
+      "topics": [
+        "bun",
+        "csharp",
+        "document-intelligence",
+        "elixir",
+        "ffi",
+        "golang",
+        "java",
+        "metadata-extraction",
+        "node",
+        "pdf-extraction",
+        "pdfium",
+        "php",
+        "python",
+        "rag",
+        "ruby",
+        "rust",
+        "table-extraction",
+        "tesseract",
+        "text-extraction",
+        "wasm"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 74,
+      "localPath": "sources/kreuzberg-dev__kreuzberg"
+    },
+    {
+      "name": "OSU-NLP-Group/HippoRAG",
+      "url": "https://github.com/OSU-NLP-Group/HippoRAG",
+      "description": "[NeurIPS'24] HippoRAG is a novel RAG framework inspired by human long-term memory that enables LLMs to continuously integrate knowledge across external documents. RAG + Knowledge Graphs + Personalized PageRank.",
+      "language": "Python",
+      "stars": 3631,
+      "forks": 382,
+      "openIssues": 26,
+      "pushedAt": "2025-09-04T14:42:42Z",
+      "updatedAt": "2026-06-17T22:07:52Z",
+      "createdAt": "2024-05-23T23:07:16Z",
+      "topics": [],
+      "license": "MIT",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "document-chat"
+      ],
+      "score": 73,
+      "localPath": "sources/OSU-NLP-Group__HippoRAG"
+    },
+    {
+      "name": "DEEP-PolyU/Awesome-GraphRAG",
+      "url": "https://github.com/DEEP-PolyU/Awesome-GraphRAG",
+      "description": "Awesome-GraphRAG: A curated list of resources (surveys, papers, benchmarks, and opensource projects) on graph-based retrieval-augmented generation. ",
+      "language": null,
+      "stars": 2474,
+      "forks": 213,
+      "openIssues": 8,
+      "pushedAt": "2026-06-02T12:52:38Z",
+      "updatedAt": "2026-06-17T15:26:16Z",
+      "createdAt": "2024-10-21T08:29:58Z",
+      "topics": [
+        "graphrag",
+        "graphrag-paper",
+        "graphrag-survey",
+        "knowledge-graph",
+        "large-language-models",
+        "rag",
+        "retrieval-augmented-generation"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 73,
+      "localPath": "sources/DEEP-PolyU__Awesome-GraphRAG"
+    },
+    {
+      "name": "marswangyang/personal-ai-memory",
+      "url": "https://github.com/marswangyang/personal-ai-memory",
+      "description": "A local-first Chrome extension that passively captures ChatGPT, Gemini, Claude, Grok, Perplexity conversations into a private memory graph. Features in-browser Hybrid RAG (Vector + BM25), semantic search, and 100% privacy via WebAssembly and IndexedDB. No servers, no API keys.",
+      "language": "TypeScript",
+      "stars": 48,
+      "forks": 6,
+      "openIssues": 1,
+      "pushedAt": "2026-03-24T23:47:26Z",
+      "updatedAt": "2026-06-09T08:12:19Z",
+      "createdAt": "2026-02-24T19:46:08Z",
+      "topics": [
+        "chatgpt",
+        "chrome-extension",
+        "claude",
+        "gemini",
+        "grok",
+        "hybrid-search",
+        "indexeddb",
+        "knowledge-graph",
+        "llm",
+        "local-first",
+        "no-api-key",
+        "offline-first",
+        "perplexity",
+        "personal-ai",
+        "privacy-first",
+        "rag",
+        "semantic-search",
+        "transformers-js",
+        "vector-database",
+        "webassembly"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "korea-signal"
+      ],
+      "score": 73,
+      "localPath": "sources/marswangyang__personal-ai-memory"
+    },
+    {
+      "name": "datawhalechina/tiny-universe",
+      "url": "https://github.com/datawhalechina/tiny-universe",
+      "description": "《大模型白盒子构建指南》：一个全手搓的Tiny-Universe",
+      "language": "Jupyter Notebook",
+      "stars": 4916,
+      "forks": 467,
+      "openIssues": 14,
+      "pushedAt": "2026-02-12T02:00:08Z",
+      "updatedAt": "2026-06-17T17:18:25Z",
+      "createdAt": "2024-04-06T13:55:07Z",
+      "topics": [
+        "agent",
+        "diffusion",
+        "evaluation-metrics",
+        "llama",
+        "qwen",
+        "rag",
+        "transformers"
+      ],
+      "license": null,
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 71,
+      "localPath": "sources/datawhalechina__tiny-universe"
+    },
+    {
+      "name": "GiovanniPasq/agentic-rag-for-dummies",
+      "url": "https://github.com/GiovanniPasq/agentic-rag-for-dummies",
+      "description": "A modular Agentic RAG built with LangGraph — learn Retrieval-Augmented Generation Agents in minutes.",
+      "language": "Jupyter Notebook",
+      "stars": 3502,
+      "forks": 461,
+      "openIssues": 0,
+      "pushedAt": "2026-06-10T07:52:32Z",
+      "updatedAt": "2026-06-17T11:17:01Z",
+      "createdAt": "2025-10-13T18:51:41Z",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "agentic-rag",
+        "agents",
+        "ai-agents",
+        "bm25",
+        "generative-ai",
+        "gradio",
+        "langchain",
+        "langgraph",
+        "llm",
+        "ollama",
+        "qdrant",
+        "rag",
+        "rag-agents",
+        "rag-chatbot",
+        "rag-pipeline",
+        "retrieval-augmented-generation",
+        "retrieval-augmented-generation-rag"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "chat pdf langchain in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "chat-with-pdf-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 71,
+      "localPath": "sources/GiovanniPasq__agentic-rag-for-dummies"
+    },
+    {
+      "name": "opendatalab/MinerU-Document-Explorer",
+      "url": "https://github.com/opendatalab/MinerU-Document-Explorer",
+      "description": "Agent-native knowledge engine with MCP tools for document indexing, wiki organization, fast retrieval and deep reading across PDF/DOCX/PPTX/Markdown",
+      "language": "TypeScript",
+      "stars": 586,
+      "forks": 64,
+      "openIssues": 4,
+      "pushedAt": "2026-04-26T07:10:38Z",
+      "updatedAt": "2026-06-17T07:59:48Z",
+      "createdAt": "2026-03-26T02:45:30Z",
+      "topics": [],
+      "license": "MIT",
+      "matchedQueries": [
+        "notebooklm open source in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "notebooklm-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 71,
+      "localPath": "sources/opendatalab__MinerU-Document-Explorer"
+    },
+    {
+      "name": "pathwaycom/llm-app",
+      "url": "https://github.com/pathwaycom/llm-app",
+      "description": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Always in sync with Sharepoint, Google Drive, S3, Kafka, PostgreSQL, real-time data APIs, and more.",
+      "language": "Jupyter Notebook",
+      "stars": 59331,
+      "forks": 1430,
+      "openIssues": 10,
+      "pushedAt": "2026-06-10T12:49:56Z",
+      "updatedAt": "2026-06-17T19:36:35Z",
+      "createdAt": "2023-07-19T08:43:37Z",
+      "topics": [
+        "chatbot",
+        "hugging-face",
+        "llm",
+        "llm-local",
+        "llm-prompting",
+        "llm-security",
+        "llmops",
+        "machine-learning",
+        "open-ai",
+        "pathway",
+        "rag",
+        "real-time",
+        "retrieval-augmented-generation",
+        "vector-database",
+        "vector-index"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "enterprise-kb-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 69,
+      "localPath": "sources/pathwaycom__llm-app"
+    },
+    {
+      "name": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "language": "Python",
+      "stars": 83027,
+      "forks": 9595,
+      "openIssues": 3055,
+      "pushedAt": "2026-06-17T14:13:49Z",
+      "updatedAt": "2026-06-17T22:47:02Z",
+      "createdAt": "2023-12-12T06:13:13Z",
+      "topics": [
+        "agentic-ai",
+        "agentic-retrieval",
+        "agentic-search",
+        "ai",
+        "ai-agents",
+        "context-engine",
+        "context-management",
+        "llm-apps",
+        "rag",
+        "retrieval-augmented-generation"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "knowledge base llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme",
+        "mcp knowledge base in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-base-llm-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "personal-kb-stars",
+        "enterprise-kb-stars",
+        "mcp-knowledge-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 68,
+      "localPath": "sources/infiniflow__ragflow"
+    },
+    {
+      "name": "NirDiamant/GenAI_Agents",
+      "url": "https://github.com/NirDiamant/GenAI_Agents",
+      "description": "50+ tutorials and implementations for Generative AI Agent techniques, from basic conversational bots to complex multi-agent systems.",
+      "language": "Jupyter Notebook",
+      "stars": 22688,
+      "forks": 3812,
+      "openIssues": 8,
+      "pushedAt": "2026-06-17T20:54:15Z",
+      "updatedAt": "2026-06-17T22:45:37Z",
+      "createdAt": "2024-09-09T20:10:19Z",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "ai-agents",
+        "autonomous-agents",
+        "genai",
+        "generative-ai",
+        "langchain",
+        "langgraph",
+        "llm",
+        "llms",
+        "machine-learning",
+        "mcp",
+        "multi-agent",
+        "multi-agent-systems",
+        "openai",
+        "python",
+        "rag",
+        "tutorials"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme",
+        "chat pdf langchain in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "mcp knowledge base in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-docs-stars",
+        "chat-with-pdf-stars",
+        "knowledge-graph-rag-stars",
+        "mcp-knowledge-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 68,
+      "localPath": "sources/NirDiamant__GenAI_Agents"
+    },
+    {
+      "name": "PaddlePaddle/PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+      "language": "Python",
+      "stars": 82807,
+      "forks": 10814,
+      "openIssues": 235,
+      "pushedAt": "2026-06-16T08:16:18Z",
+      "updatedAt": "2026-06-17T22:29:26Z",
+      "createdAt": "2020-05-08T10:38:16Z",
+      "topics": [
+        "ai4science",
+        "chineseocr",
+        "document-parsing",
+        "document-translation",
+        "kie",
+        "ocr",
+        "paddleocr-vl",
+        "pdf-extractor-rag",
+        "pdf-parser",
+        "pdf2markdown",
+        "pp-ocr",
+        "pp-structure",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 66,
+      "localPath": "sources/PaddlePaddle__PaddleOCR"
+    },
+    {
+      "name": "opendataloader-project/opendataloader-pdf",
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf",
+      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "language": "Java",
+      "stars": 25243,
+      "forks": 2383,
+      "openIssues": 70,
+      "pushedAt": "2026-06-17T15:55:42Z",
+      "updatedAt": "2026-06-17T22:24:23Z",
+      "createdAt": "2025-05-13T05:48:02Z",
+      "topics": [
+        "a11y",
+        "accessibility",
+        "ai",
+        "bounding-box",
+        "document-parsing",
+        "eaa",
+        "html",
+        "json",
+        "markdown",
+        "ocr",
+        "ocr-recognition",
+        "pdf",
+        "pdf-accessibility",
+        "pdf-converter",
+        "pdf-extraction",
+        "pdf-parser",
+        "pdf-ua",
+        "rag",
+        "tables",
+        "tagged-pdf"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 66,
+      "localPath": "sources/opendataloader-project__opendataloader-pdf"
+    },
+    {
+      "name": "LearningCircuit/local-deep-research",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "description": " ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
+      "language": "Python",
+      "stars": 8493,
+      "forks": 743,
+      "openIssues": 276,
+      "pushedAt": "2026-06-17T22:42:22Z",
+      "updatedAt": "2026-06-17T22:21:42Z",
+      "createdAt": "2025-02-09T15:41:32Z",
+      "topics": [
+        "academia",
+        "anthropic",
+        "arxiv",
+        "brave",
+        "deep-research",
+        "encryption",
+        "home-automation",
+        "homeserver",
+        "local",
+        "local-deep-research",
+        "local-llm",
+        "mistral",
+        "ollama",
+        "openai",
+        "pubmed",
+        "research",
+        "research-tool",
+        "retrieval-augmented-generation",
+        "searxng",
+        "self-hosted"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "chat pdf langchain in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "chat-with-pdf-stars",
+        "korea-knowledge"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 66,
+      "localPath": "sources/LearningCircuit__local-deep-research"
+    },
+    {
+      "name": "Marker-Inc-Korea/AutoRAG",
+      "url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+      "description": "AutoRAG: An Open-Source Framework for Retrieval-Augmented Generation (RAG) Evaluation & Optimization with AutoML-Style Automation",
+      "language": "Python",
+      "stars": 4832,
+      "forks": 403,
+      "openIssues": 160,
+      "pushedAt": "2026-06-17T14:05:37Z",
+      "updatedAt": "2026-06-17T14:55:14Z",
+      "createdAt": "2024-01-10T12:25:00Z",
+      "topics": [
+        "analysis",
+        "automl",
+        "benchmarking",
+        "document-parser",
+        "embeddings",
+        "evaluation",
+        "llm",
+        "llm-evaluation",
+        "llm-ops",
+        "open-source",
+        "ops",
+        "optimization",
+        "pipeline",
+        "python",
+        "qa",
+        "rag",
+        "rag-evaluation",
+        "retrieval-augmented-generation"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 66,
+      "localPath": "sources/Marker-Inc-Korea__AutoRAG"
+    },
+    {
+      "name": "phonghhd/EvoNet-AI-Core",
+      "url": "https://github.com/phonghhd/EvoNet-AI-Core",
+      "description": "Autonomous AI Security Agent leveraging LLMs, RAG, and Knowledge Graphs for automated CVE analysis and auto-patching.",
+      "language": "Python",
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-06-17T22:44:19Z",
+      "updatedAt": "2026-06-17T22:44:23Z",
+      "createdAt": "2026-04-17T01:12:33Z",
+      "topics": [
+        "ai-agent",
+        "cybersecurity",
+        "llm",
+        "python",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "ai knowledge base llm in:name,description,readme pushed:>2025-09-01",
+        "rag knowledge base in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "ai-knowledge-recent",
+        "rag-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 66,
+      "localPath": "sources/phonghhd__EvoNet-AI-Core"
+    },
+    {
+      "name": "hjhun/llm-wiki",
+      "url": "https://github.com/hjhun/llm-wiki",
+      "description": "",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-06-17T22:35:08Z",
+      "updatedAt": "2026-06-17T22:35:11Z",
+      "createdAt": "2026-05-16T11:14:21Z",
+      "topics": [],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme pushed:>2025-09-01",
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "llm-wiki-recent",
+        "korean-recent"
+      ],
+      "tags": [
+        "direct-llm-wiki",
+        "korea-signal"
+      ],
+      "score": 66,
+      "localPath": "sources/hjhun__llm-wiki"
+    },
+    {
+      "name": "neomjs/neo",
+      "url": "https://github.com/neomjs/neo",
+      "description": "Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-healing loops.",
+      "language": "JavaScript",
+      "stars": 3206,
+      "forks": 213,
+      "openIssues": 170,
+      "pushedAt": "2026-06-17T22:09:05Z",
+      "updatedAt": "2026-06-17T20:44:22Z",
+      "createdAt": "2019-11-10T23:56:02Z",
+      "topics": [
+        "agent-memory",
+        "ai",
+        "ai-agent",
+        "ai-memory",
+        "context-engineering",
+        "frontend",
+        "frontend-runtime",
+        "graph-rag",
+        "javascript",
+        "json",
+        "knowledge-graph",
+        "llm",
+        "long-term-memory",
+        "mcp",
+        "mcp-server",
+        "multi-agent-systems",
+        "rag",
+        "scene-graph",
+        "semantic-search",
+        "web-workers"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 63,
+      "localPath": "sources/neomjs__neo"
+    },
+    {
+      "name": "HKUDS/VideoRAG",
+      "url": "https://github.com/HKUDS/VideoRAG",
+      "description": "[KDD'2026] \"VideoRAG: Chat with Your Videos\"",
+      "language": "Python",
+      "stars": 3065,
+      "forks": 431,
+      "openIssues": 18,
+      "pushedAt": "2026-03-18T08:33:07Z",
+      "updatedAt": "2026-06-17T15:00:13Z",
+      "createdAt": "2025-02-03T03:59:11Z",
+      "topics": [
+        "large-language-models",
+        "llms",
+        "long-video-understanding",
+        "multi-modal-llms",
+        "rag",
+        "retrieval-augmented-generation"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 63,
+      "localPath": "sources/HKUDS__VideoRAG"
+    },
+    {
+      "name": "1517005260/graph-rag-agent",
+      "url": "https://github.com/1517005260/graph-rag-agent",
+      "description": "拼好RAG：手搓并融合了GraphRAG、LightRAG、Neo4j-llm-graph-builder进行知识图谱构建以及搜索；整合DeepSearch技术实现私域RAG的推理；自制针对GraphRAG的评估框架| Integrate GraphRAG, LightRAG, and Neo4j-llm-graph-builder for knowledge graph construction and search. Combine DeepSearch for private RAG reasoning. Create a custom evaluation framework for GraphRAG.",
+      "language": "Python",
+      "stars": 2227,
+      "forks": 315,
+      "openIssues": 36,
+      "pushedAt": "2025-11-05T08:15:51Z",
+      "updatedAt": "2026-06-17T13:12:41Z",
+      "createdAt": "2025-02-12T15:11:51Z",
+      "topics": [
+        "agentic-rag",
+        "chain-of-exploration",
+        "deepresearch",
+        "deepsearch",
+        "evaluation",
+        "graphrag",
+        "graphsearch",
+        "kg",
+        "lightrag",
+        "reasoning",
+        "think-on-graph"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 63,
+      "localPath": "sources/1517005260__graph-rag-agent"
+    },
+    {
+      "name": "SaiAkhil066/CORTEX-AI-SUPER-RAG",
+      "url": "https://github.com/SaiAkhil066/CORTEX-AI-SUPER-RAG",
+      "description": "You upload a PDF. You ask a question. Cortex RAG retrieves, cross-checks, reasons, and cites — entirely on your machine. No API key  ·  No cloud upload  ·  No subscription",
+      "language": "Python",
+      "stars": 1727,
+      "forks": 257,
+      "openIssues": 14,
+      "pushedAt": "2026-06-17T16:53:39Z",
+      "updatedAt": "2026-06-17T19:40:31Z",
+      "createdAt": "2025-01-30T10:15:46Z",
+      "topics": [],
+      "license": "MIT",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 63,
+      "localPath": "sources/SaiAkhil066__CORTEX-AI-SUPER-RAG"
+    },
+    {
+      "name": "yifanfeng97/Hyper-Extract",
+      "url": "https://github.com/yifanfeng97/Hyper-Extract",
+      "description": "Transform unstructured text into structured knowledge with LLMs. Graphs, hypergraphs, and spatio-temporal extractions — with one command.",
+      "language": "Python",
+      "stars": 1571,
+      "forks": 177,
+      "openIssues": 3,
+      "pushedAt": "2026-06-14T10:27:11Z",
+      "updatedAt": "2026-06-17T22:47:21Z",
+      "createdAt": "2026-01-07T09:44:41Z",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "cli",
+        "hypergraph",
+        "information-extraction",
+        "knowledge",
+        "knowledge-graph",
+        "llm",
+        "python",
+        "rag"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 63,
+      "localPath": "sources/yifanfeng97__Hyper-Extract"
+    },
+    {
+      "name": "KalyanKS-NLP/rag-zero-to-hero-guide",
+      "url": "https://github.com/KalyanKS-NLP/rag-zero-to-hero-guide",
+      "description": "Comprehensive guide to learn RAG from basics to advanced. ",
+      "language": "Jupyter Notebook",
+      "stars": 1348,
+      "forks": 333,
+      "openIssues": 3,
+      "pushedAt": "2025-03-29T03:29:24Z",
+      "updatedAt": "2026-06-17T11:30:09Z",
+      "createdAt": "2025-03-15T05:44:43Z",
+      "topics": [
+        "ai-engineer",
+        "generative-ai",
+        "large-language-models",
+        "llm-engineer",
+        "llm-rag",
+        "llms",
+        "retrieval-augmented-generation"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 63,
+      "localPath": "sources/KalyanKS-NLP__rag-zero-to-hero-guide"
+    },
+    {
+      "name": "apecloud/ApeRAG",
+      "url": "https://github.com/apecloud/ApeRAG",
+      "description": "ApeRAG: Production-ready GraphRAG with multi-modal indexing, AI agents, MCP support, and scalable K8s deployment",
+      "language": "Python",
+      "stars": 1193,
+      "forks": 132,
+      "openIssues": 28,
+      "pushedAt": "2026-05-02T05:01:36Z",
+      "updatedAt": "2026-06-17T18:19:48Z",
+      "createdAt": "2023-06-20T12:18:12Z",
+      "topics": [
+        "agents",
+        "context-engineering",
+        "graphrag",
+        "knowledge-graph",
+        "mcp"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 63,
+      "localPath": "sources/apecloud__ApeRAG"
+    },
+    {
+      "name": "onlybooks/llm",
+      "url": "https://github.com/onlybooks/llm",
+      "description": "LLM을 활용한 실전 AI 애플리케이션 개발",
+      "language": "Jupyter Notebook",
+      "stars": 200,
+      "forks": 161,
+      "openIssues": 13,
+      "pushedAt": "2026-04-22T12:13:00Z",
+      "updatedAt": "2026-05-31T08:44:19Z",
+      "createdAt": "2024-03-04T01:54:59Z",
+      "topics": [
+        "ai",
+        "chatgpt",
+        "llamaindex",
+        "llm",
+        "rag",
+        "transformer-architecture"
+      ],
+      "license": null,
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 63,
+      "localPath": "sources/onlybooks__llm"
+    },
+    {
+      "name": "bzsanti/oxidizePdf",
+      "url": "https://github.com/bzsanti/oxidizePdf",
+      "description": "Pure Rust PDF library for AI/RAG: structure-aware chunking, no ML, no C deps.",
+      "language": "Rust",
+      "stars": 176,
+      "forks": 21,
+      "openIssues": 3,
+      "pushedAt": "2026-06-17T19:51:21Z",
+      "updatedAt": "2026-06-17T19:50:49Z",
+      "createdAt": "2025-07-07T20:26:20Z",
+      "topics": [
+        "ai",
+        "chunking",
+        "data-extraction",
+        "digital-signatures",
+        "document-processing",
+        "embeddings",
+        "encryption",
+        "invoice",
+        "langchain",
+        "llamaindex",
+        "ocr",
+        "pdf",
+        "pdf-generation",
+        "pdf-manipulation",
+        "pdf-parser",
+        "pdfa",
+        "rag",
+        "rust",
+        "table-extraction",
+        "text-extraction"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme pushed:>2025-01-01"
+      ],
+      "matchedLabels": [
+        "korean-recent"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "korea-signal"
+      ],
+      "score": 63,
+      "localPath": "sources/bzsanti__oxidizePdf"
+    },
+    {
+      "name": "kkollsga/kglite",
+      "url": "https://github.com/kkollsga/kglite",
+      "description": "Lightweight in-memory knowledge graph with Cypher query support",
+      "language": "Rust",
+      "stars": 31,
+      "forks": 4,
+      "openIssues": 0,
+      "pushedAt": "2026-06-17T22:46:32Z",
+      "updatedAt": "2026-06-17T22:33:55Z",
+      "createdAt": "2024-03-10T22:00:28Z",
+      "topics": [
+        "ai-agents",
+        "cypher",
+        "graph",
+        "graph-database",
+        "knowledge-graph",
+        "llm-tools",
+        "petgraph",
+        "rag"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "llm-wiki-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 63,
+      "localPath": "sources/kkollsga__kglite"
+    },
+    {
+      "name": "jee3m/augmentative-knowledge-hooks",
+      "url": "https://github.com/jee3m/augmentative-knowledge-hooks",
+      "description": "Semantic Search for Pi 2026: Local Knowledge Base & AI Tool",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-06-17T22:29:48Z",
+      "updatedAt": "2026-06-17T22:29:52Z",
+      "createdAt": "2026-05-24T20:55:23Z",
+      "topics": [
+        "ai-coding-agent",
+        "developer-tools",
+        "knowledge-base",
+        "pi-coding-agent",
+        "rag",
+        "semantic-search"
+      ],
+      "license": null,
+      "matchedQueries": [
+        "llm wiki in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "llm-wiki-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 63,
+      "localPath": "sources/jee3m__augmentative-knowledge-hooks"
+    },
+    {
+      "name": "otomata-tech/memento-core",
+      "url": "https://github.com/otomata-tech/memento-core",
+      "description": "Memento — structured, sourced, living knowledge substrate for AI agents, via MCP. Typed blocks, propose-validate loop. Apache-2.0. Hosted at mento.cc",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "pushedAt": "2026-06-17T22:41:26Z",
+      "updatedAt": "2026-06-17T22:41:41Z",
+      "createdAt": "2026-06-17T22:41:22Z",
+      "topics": [
+        "ai-agents",
+        "deno",
+        "knowledge-base",
+        "mcp",
+        "rag",
+        "vue"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "rag-recent"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base",
+        "agent-knowledge"
+      ],
+      "score": 63,
+      "localPath": "sources/otomata-tech__memento-core"
+    },
+    {
+      "name": "langbot-app/LangBot",
+      "url": "https://github.com/langbot-app/LangBot",
+      "description": "Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, MiniMax, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow",
+      "language": "Python",
+      "stars": 16358,
+      "forks": 1453,
+      "openIssues": 125,
+      "pushedAt": "2026-06-17T12:35:25Z",
+      "updatedAt": "2026-06-17T21:17:24Z",
+      "createdAt": "2022-12-07T08:48:02Z",
+      "topics": [
+        "agent",
+        "coze",
+        "deepseek",
+        "dify",
+        "dingtalk",
+        "discord",
+        "feishu",
+        "kook",
+        "langbot",
+        "lark",
+        "line",
+        "llm",
+        "n8n",
+        "ollama",
+        "openai",
+        "plugins",
+        "qq",
+        "rag",
+        "telegram",
+        "wechat"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "enterprise knowledge base ai in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "personal-kb-stars",
+        "enterprise-kb-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 62,
+      "localPath": "sources/langbot-app__LangBot"
+    },
+    {
+      "name": "MODSetter/SurfSense",
+      "url": "https://github.com/MODSetter/SurfSense",
+      "description": "An open source, privacy focused alternative to NotebookLM for teams with no data limits. Join our Discord: https://discord.gg/ejRNvftDp9",
+      "language": "Python",
+      "stars": 14914,
+      "forks": 1425,
+      "openIssues": 99,
+      "pushedAt": "2026-06-17T22:26:02Z",
+      "updatedAt": "2026-06-17T22:30:07Z",
+      "createdAt": "2024-07-30T23:00:09Z",
+      "topics": [
+        "agent",
+        "agents",
+        "ai",
+        "chrome-extension",
+        "extension",
+        "fastapi",
+        "langchain",
+        "langgraph",
+        "nextjs",
+        "notebooklm",
+        "ollama",
+        "perplexity",
+        "python",
+        "rag",
+        "typescript"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "chat pdf langchain in:name,description,readme",
+        "notebooklm open source in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "notebooklm in:name,description,readme pushed:>2025-09-01"
+      ],
+      "matchedLabels": [
+        "chat-with-pdf-stars",
+        "notebooklm-stars",
+        "personal-kb-stars",
+        "notebooklm-recent"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 62,
+      "localPath": "sources/MODSetter__SurfSense"
+    },
+    {
+      "name": "yusufkaraaslan/Skill_Seekers",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "description": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+      "language": "Python",
+      "stars": 14134,
+      "forks": 1453,
+      "openIssues": 102,
+      "pushedAt": "2026-06-16T18:23:03Z",
+      "updatedAt": "2026-06-17T22:43:26Z",
+      "createdAt": "2025-10-17T14:43:48Z",
+      "topics": [
+        "ai-tools",
+        "ast-parser",
+        "automation",
+        "claude-ai",
+        "claude-skills",
+        "code-analysis",
+        "conflict-detection",
+        "documentation",
+        "documentation-generator",
+        "github",
+        "github-scraper",
+        "mcp",
+        "mcp-server",
+        "multi-source",
+        "ocr",
+        "pdf",
+        "python",
+        "web-scraping"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "wiki rag in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "chat pdf langchain in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "wiki-rag-stars",
+        "repo-wiki-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "chat-with-pdf-stars",
+        "personal-kb-stars",
+        "knowledge-graph-rag-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "document-chat",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 62,
+      "localPath": "sources/yusufkaraaslan__Skill_Seekers"
+    },
+    {
+      "name": "neuml/txtai",
+      "url": "https://github.com/neuml/txtai",
+      "description": "💡 All-in-one AI framework for semantic search, LLM orchestration and language model workflows",
+      "language": "Python",
+      "stars": 12669,
+      "forks": 834,
+      "openIssues": 9,
+      "pushedAt": "2026-06-16T14:47:15Z",
+      "updatedAt": "2026-06-17T18:56:09Z",
+      "createdAt": "2020-08-09T19:14:59Z",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "embeddings",
+        "information-retrieval",
+        "language-model",
+        "large-language-models",
+        "llm",
+        "nlp",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "search",
+        "search-engine",
+        "semantic-search",
+        "sentence-embeddings",
+        "transformers",
+        "txtai",
+        "vector-database",
+        "vector-search"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "knowledge-graph-rag-stars",
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 62,
+      "localPath": "sources/neuml__txtai"
+    },
+    {
+      "name": "The-Pocket/PocketFlow",
+      "url": "https://github.com/The-Pocket/PocketFlow",
+      "description": "Pocket Flow: 100-line LLM framework. Let Agents build Agents!",
+      "language": "Python",
+      "stars": 10769,
+      "forks": 1172,
+      "openIssues": 70,
+      "pushedAt": "2026-03-27T18:48:41Z",
+      "updatedAt": "2026-06-17T07:36:06Z",
+      "createdAt": "2024-12-24T02:43:30Z",
+      "topics": [
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-workflow",
+        "agents",
+        "ai-framework",
+        "ai-frameworks",
+        "aiagent",
+        "aiagents",
+        "artificial-intelligence",
+        "flow-based-programming",
+        "flow-engineering",
+        "large-language-model",
+        "large-language-models",
+        "llm-agent",
+        "llm-framework",
+        "pocket-flow",
+        "pocketflow",
+        "retrieval-augmented-generation",
+        "workflow",
+        "workflow-orchestration"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "document chat rag in:name,description,readme",
+        "chat pdf langchain in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "document-chat-rag-stars",
+        "chat-with-pdf-stars",
+        "knowledge-graph-rag-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 62,
+      "localPath": "sources/The-Pocket__PocketFlow"
+    },
+    {
+      "name": "WangRongsheng/awesome-LLM-resources",
+      "url": "https://github.com/WangRongsheng/awesome-LLM-resources",
+      "description": "🧑‍🚀 全世界最好的LLM资料总结（多模态生成、Agent、辅助编程、AI审稿、数据处理、模型训练、模型推理、o1 模型、MCP、小语言模型、视觉语言模型） | Summary of the world's best LLM resources. ",
+      "language": null,
+      "stars": 8550,
+      "forks": 898,
+      "openIssues": 45,
+      "pushedAt": "2026-06-16T06:55:12Z",
+      "updatedAt": "2026-06-17T16:38:35Z",
+      "createdAt": "2024-04-19T03:31:13Z",
+      "topics": [
+        "awesome-list",
+        "book",
+        "course",
+        "large-language-models",
+        "llama",
+        "llm",
+        "mistral",
+        "openai",
+        "qwen",
+        "rag",
+        "retrieval-augmented-generation",
+        "webui"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "document chat rag in:name,description,readme",
+        "chat pdf langchain in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "document-chat-rag-stars",
+        "chat-with-pdf-stars",
+        "knowledge-graph-rag-stars",
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 62,
+      "localPath": "sources/WangRongsheng__awesome-LLM-resources"
+    },
+    {
+      "name": "StarTrail-org/LEANN",
+      "url": "https://github.com/StarTrail-org/LEANN",
+      "description": "[MLsys2026]: RAG on Everything with LEANN. Enjoy 97% storage savings while running a fast, accurate, and 100% private RAG application on your personal device.",
+      "language": "Python",
+      "stars": 12182,
+      "forks": 1092,
+      "openIssues": 51,
+      "pushedAt": "2026-06-17T05:38:01Z",
+      "updatedAt": "2026-06-17T22:47:06Z",
+      "createdAt": "2025-06-09T06:52:59Z",
+      "topics": [
+        "ai",
+        "faiss",
+        "gpt-oss",
+        "langchain",
+        "llama-index",
+        "llm",
+        "localstorage",
+        "offline-first",
+        "ollama",
+        "privacy",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "vector-database",
+        "vector-search",
+        "vectors"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "wiki rag in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "personal knowledge base llm in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "wiki-rag-stars",
+        "repo-wiki-stars",
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "personal-kb-stars",
+        "knowledge-graph-rag-stars"
+      ],
+      "tags": [
+        "rag",
+        "korea-signal"
+      ],
+      "score": 60,
+      "localPath": "sources/StarTrail-org__LEANN"
+    },
+    {
+      "name": "aristoapp/awesome-second-brain",
+      "url": "https://github.com/aristoapp/awesome-second-brain",
+      "description": "A curated solutions to building a self-evolving second brain that helps AI agents understand your personal and team context.",
+      "language": null,
+      "stars": 422,
+      "forks": 44,
+      "openIssues": 4,
+      "pushedAt": "2026-06-16T13:50:44Z",
+      "updatedAt": "2026-06-17T15:09:35Z",
+      "createdAt": "2026-01-12T02:57:43Z",
+      "topics": [
+        "anthropic",
+        "awesome",
+        "awesome-lists",
+        "brain",
+        "chatgpt",
+        "claude",
+        "context",
+        "copilot",
+        "cursor",
+        "gemini",
+        "knowledge",
+        "llm",
+        "local-llm",
+        "mcp",
+        "memory",
+        "openai",
+        "personalization",
+        "second-brain"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "notebooklm open source in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "notebooklm-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 60,
+      "localPath": "sources/aristoapp__awesome-second-brain"
+    },
+    {
+      "name": "stanford-oval/storm",
+      "url": "https://github.com/stanford-oval/storm",
+      "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
+      "language": "Python",
+      "stars": 28424,
+      "forks": 2596,
+      "openIssues": 97,
+      "pushedAt": "2025-09-30T18:07:21Z",
+      "updatedAt": "2026-06-17T22:38:35Z",
+      "createdAt": "2024-03-24T16:23:39Z",
+      "topics": [
+        "agentic-rag",
+        "deep-research",
+        "emnlp2024",
+        "knowledge-curation",
+        "large-language-models",
+        "naacl",
+        "nlp",
+        "report-generation",
+        "retrieval-augmented-generation"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "llm wiki in:name,description,readme",
+        "ai wiki llm in:name,description,readme",
+        "knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "direct-llm-wiki-stars",
+        "direct-ai-wiki-stars",
+        "knowledge-base-llm-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 59,
+      "localPath": "sources/stanford-oval__storm"
+    },
+    {
+      "name": "llmware-ai/llmware",
+      "url": "https://github.com/llmware-ai/llmware",
+      "description": "Unified framework for building enterprise RAG pipelines with small, specialized models",
+      "language": "Python",
+      "stars": 14837,
+      "forks": 2921,
+      "openIssues": 89,
+      "pushedAt": "2026-05-17T13:53:37Z",
+      "updatedAt": "2026-06-17T13:01:49Z",
+      "createdAt": "2023-09-29T15:19:06Z",
+      "topics": [
+        "agents",
+        "generative-ai-tools",
+        "llamacpp",
+        "llm",
+        "onnx",
+        "openvino",
+        "parsing",
+        "retrieval-augmented-generation",
+        "small-specialized-models"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "knowledge-graph-rag-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 59,
+      "localPath": "sources/llmware-ai__llmware"
+    },
+    {
+      "name": "NevaMind-AI/memU",
+      "url": "https://github.com/NevaMind-AI/memU",
+      "description": "The memory harness for proactive AI agents — structured storage, intent capture, 10x token reduction.",
+      "language": "Python",
+      "stars": 13884,
+      "forks": 1037,
+      "openIssues": 98,
+      "pushedAt": "2026-06-17T22:30:16Z",
+      "updatedAt": "2026-06-17T22:29:55Z",
+      "createdAt": "2025-07-29T01:54:40Z",
+      "topics": [
+        "agent-memory",
+        "agentic-workflow",
+        "claude",
+        "claude-skills",
+        "mcp",
+        "memory",
+        "openclaw",
+        "openclaw-skills",
+        "proactive",
+        "proactive-ai",
+        "sandbox",
+        "skills"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 59,
+      "localPath": "sources/NevaMind-AI__memU"
+    },
+    {
+      "name": "MemTensor/MemOS",
+      "url": "https://github.com/MemTensor/MemOS",
+      "description": "Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token savings",
+      "language": "TypeScript",
+      "stars": 9913,
+      "forks": 904,
+      "openIssues": 228,
+      "pushedAt": "2026-06-17T08:29:36Z",
+      "updatedAt": "2026-06-17T20:54:09Z",
+      "createdAt": "2025-07-06T09:51:27Z",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "ai",
+        "ai-agents",
+        "chatgpt",
+        "claude",
+        "hermes",
+        "llm",
+        "long-term-memory",
+        "mcp",
+        "memory",
+        "memory-management",
+        "multi-agent",
+        "openclaw",
+        "python",
+        "rag",
+        "self-evolving",
+        "self-hosted",
+        "skills",
+        "token-savings"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "knowledge-graph-rag-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 59,
+      "localPath": "sources/MemTensor__MemOS"
+    },
+    {
+      "name": "VoltAgent/voltagent",
+      "url": "https://github.com/VoltAgent/voltagent",
+      "description": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework",
+      "language": "TypeScript",
+      "stars": 9661,
+      "forks": 999,
+      "openIssues": 58,
+      "pushedAt": "2026-06-08T20:06:55Z",
+      "updatedAt": "2026-06-17T21:02:52Z",
+      "createdAt": "2025-04-16T15:41:18Z",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "ai-agents-framework",
+        "aiagentframework",
+        "chatbots",
+        "chatgpt",
+        "framework",
+        "javascript",
+        "llm",
+        "llm-observability",
+        "mcp",
+        "multiagent",
+        "nodejs",
+        "observability",
+        "open-source",
+        "openai",
+        "rag",
+        "tts",
+        "typescript"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "rag knowledge base in:name,description,readme",
+        "document chat rag in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "rag-knowledge-base-stars",
+        "document-chat-rag-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 59,
+      "localPath": "sources/VoltAgent__voltagent"
+    },
+    {
+      "name": "langroid/langroid",
+      "url": "https://github.com/langroid/langroid",
+      "description": "Harness LLMs with Multi-Agent Programming",
+      "language": "Python",
+      "stars": 4040,
+      "forks": 376,
+      "openIssues": 68,
+      "pushedAt": "2026-06-15T15:52:28Z",
+      "updatedAt": "2026-06-17T13:00:23Z",
+      "createdAt": "2023-04-16T20:47:28Z",
+      "topics": [
+        "agents",
+        "ai",
+        "chatgpt",
+        "function-calling",
+        "gpt",
+        "gpt-4",
+        "gpt4",
+        "information-retrieval",
+        "language-model",
+        "llama",
+        "llm",
+        "llm-agent",
+        "llm-framework",
+        "local-llm",
+        "multi-agent-systems",
+        "openai-api",
+        "rag",
+        "retrieval-augmented-generation"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "wiki rag in:name,description,readme",
+        "repo wiki llm in:name,description,readme",
+        "chat pdf langchain in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "wiki-rag-stars",
+        "repo-wiki-stars",
+        "chat-with-pdf-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 59,
+      "localPath": "sources/langroid__langroid"
+    },
+    {
+      "name": "OrionStarAI/Orion",
+      "url": "https://github.com/OrionStarAI/Orion",
+      "description": "Orion-14B is a family of models includes a 14B foundation LLM, and a series of models: a chat model, a long context model, a quantized model, a RAG fine-tuned model, and an Agent fine-tuned model. Orion-14B 系列模型包括一个具有140亿参数的多语言基座大模型以及一系列相关的衍生模型，包括对话模型，长文本模型，量化模型，RAG微调模型，Agent微调模型等。",
+      "language": "Python",
+      "stars": 811,
+      "forks": 59,
+      "openIssues": 41,
+      "pushedAt": "2024-06-03T08:13:19Z",
+      "updatedAt": "2026-06-01T06:22:55Z",
+      "createdAt": "2024-01-17T05:32:29Z",
+      "topics": [],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "hangul-rag",
+        "korea-knowledge"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 59,
+      "localPath": "sources/OrionStarAI__Orion"
+    },
+    {
+      "name": "nanbingxyz/5ire",
+      "url": "https://github.com/nanbingxyz/5ire",
+      "description": "5ire is a cross-platform desktop AI assistant, MCP client. It compatible with major service providers,  supports local knowledge base and  tools via model context protocol servers .",
+      "language": "TypeScript",
+      "stars": 5247,
+      "forks": 407,
+      "openIssues": 72,
+      "pushedAt": "2026-06-17T07:00:19Z",
+      "updatedAt": "2026-06-17T16:48:34Z",
+      "createdAt": "2024-01-06T06:57:15Z",
+      "topics": [
+        "knowledge-base",
+        "llms",
+        "mcp",
+        "mcp-client",
+        "model-context-protocol"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "wiki rag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "wiki-rag-stars"
+      ],
+      "tags": [
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 57,
+      "localPath": "sources/nanbingxyz__5ire"
+    },
+    {
+      "name": "PleasePrompto/notebooklm-mcp",
+      "url": "https://github.com/PleasePrompto/notebooklm-mcp",
+      "description": "MCP server for NotebookLM - Let your AI agents (Claude Code, Codex) research documentation directly with grounded, citation-backed answers from Gemini. Persistent auth, library management, cross-client sharing. Zero hallucinations, just your knowledge base.",
+      "language": "TypeScript",
+      "stars": 2810,
+      "forks": 393,
+      "openIssues": 16,
+      "pushedAt": "2026-05-01T05:51:20Z",
+      "updatedAt": "2026-06-17T22:20:26Z",
+      "createdAt": "2025-10-16T11:59:47Z",
+      "topics": [],
+      "license": "MIT",
+      "matchedQueries": [
+        "notebooklm open source in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "notebooklm-stars"
+      ],
+      "tags": [
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 57,
+      "localPath": "sources/PleasePrompto__notebooklm-mcp"
+    },
+    {
+      "name": "eugeniughelbur/obsidian-second-brain",
+      "url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+      "description": "Cross-CLI skill for Obsidian: turn your vault into a living AI-first second brain across Claude Code, Codex, Gemini, and OpenCode. 43 commands - now with /obsidian-architect to document your codebase, key-less web research, Google Calendar, and self-rewriting notes.",
+      "language": "Python",
+      "stars": 2519,
+      "forks": 295,
+      "openIssues": 1,
+      "pushedAt": "2026-06-17T13:50:24Z",
+      "updatedAt": "2026-06-17T21:12:34Z",
+      "createdAt": "2026-03-24T11:58:12Z",
+      "topics": [
+        "ai-agent",
+        "ai-agents",
+        "ai-automation",
+        "ai-research",
+        "ai-tools",
+        "anthropic",
+        "claude",
+        "claude-ai",
+        "claude-code",
+        "claude-code-skill",
+        "claude-skill",
+        "knowledge-management",
+        "llm-tools",
+        "note-taking",
+        "obsidian",
+        "obsidian-md",
+        "obsidian-plugin",
+        "obsidian-skill",
+        "personal-knowledge-management",
+        "second-brain"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "notebooklm open source in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "notebooklm-stars"
+      ],
+      "tags": [
+        "knowledge-base",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 57,
+      "localPath": "sources/eugeniughelbur__obsidian-second-brain"
+    },
+    {
+      "name": "zhitongblog/solomd",
+      "url": "https://github.com/zhitongblog/solomd",
+      "description": "A markdown editor — and the bridge to your LLM. Local-first, MIT, ~15 MB. Bundled MCP server lets Claude Code / Codex / Cursor drive your vault directly. 14 AI providers BYOK.",
+      "language": "TypeScript",
+      "stars": 376,
+      "forks": 17,
+      "openIssues": 20,
+      "pushedAt": "2026-06-17T06:28:15Z",
+      "updatedAt": "2026-06-17T08:37:25Z",
+      "createdAt": "2026-04-08T03:52:45Z",
+      "topics": [
+        "ai",
+        "android",
+        "autogit",
+        "byok",
+        "cross-platform",
+        "ios",
+        "knowledge-base",
+        "local-first",
+        "markdown",
+        "markdown-editor",
+        "mcp",
+        "mcp-server",
+        "note-taking",
+        "obsidian-alternative",
+        "tauri",
+        "tldraw",
+        "typora-alternative",
+        "vue",
+        "whiteboard",
+        "wikilinks"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "hangul-rag"
+      ],
+      "tags": [
+        "knowledge-base",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 57,
+      "localPath": "sources/zhitongblog__solomd"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+      "language": "Python",
+      "stars": 114877,
+      "forks": 17043,
+      "openIssues": 13,
+      "pushedAt": "2026-06-15T01:00:09Z",
+      "updatedAt": "2026-06-17T22:08:56Z",
+      "createdAt": "2024-04-29T05:30:25Z",
+      "topics": [
+        "agents",
+        "llms",
+        "python",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "knowledge graph rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-graph-rag-stars",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 56,
+      "localPath": "sources/Shubhamsaboo__awesome-llm-apps"
+    },
+    {
+      "name": "patchy631/ai-engineering-hub",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+      "language": "Jupyter Notebook",
+      "stars": 35839,
+      "forks": 5949,
+      "openIssues": 114,
+      "pushedAt": "2026-06-08T11:18:11Z",
+      "updatedAt": "2026-06-17T20:23:03Z",
+      "createdAt": "2024-10-21T10:43:24Z",
+      "topics": [
+        "agents",
+        "ai",
+        "llms",
+        "machine-learning",
+        "mcp",
+        "rag"
+      ],
+      "license": "MIT",
+      "matchedQueries": [
+        "document chat rag in:name,description,readme",
+        "chat with documents llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "document-chat-rag-stars",
+        "chat-with-docs-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 56,
+      "localPath": "sources/patchy631__ai-engineering-hub"
+    },
+    {
+      "name": "NirDiamant/agents-towards-production",
+      "url": "https://github.com/NirDiamant/agents-towards-production",
+      "description": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment.",
+      "language": "Jupyter Notebook",
+      "stars": 20762,
+      "forks": 2759,
+      "openIssues": 8,
+      "pushedAt": "2026-06-17T20:54:13Z",
+      "updatedAt": "2026-06-17T21:37:22Z",
+      "createdAt": "2025-06-16T17:33:44Z",
+      "topics": [
+        "agent",
+        "agent-framework",
+        "agentic-ai",
+        "agents",
+        "ai-agents",
+        "deployment",
+        "genai",
+        "generative-ai",
+        "langgraph",
+        "llm",
+        "llms",
+        "mcp",
+        "mlops",
+        "multi-agent-systems",
+        "observability",
+        "production",
+        "python",
+        "rag",
+        "tutorials"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "document chat rag in:name,description,readme",
+        "knowledge graph rag llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "document-chat-rag-stars",
+        "knowledge-graph-rag-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 56,
+      "localPath": "sources/NirDiamant__agents-towards-production"
+    },
+    {
+      "name": "luhengshiwo/LLMForEverybody",
+      "url": "https://github.com/luhengshiwo/LLMForEverybody",
+      "description": "每个人都能看懂的大模型知识分享，LLMs春/秋招大模型面试前必看，让你和面试官侃侃而谈",
+      "language": "Jupyter Notebook",
+      "stars": 6742,
+      "forks": 630,
+      "openIssues": 0,
+      "pushedAt": "2026-05-31T06:44:22Z",
+      "updatedAt": "2026-06-17T14:07:30Z",
+      "createdAt": "2024-08-05T07:28:49Z",
+      "topics": [
+        "agent",
+        "interview-practice",
+        "interview-questions",
+        "learnllm",
+        "llm",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "knowledge graph rag llm in:name,description,readme",
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "knowledge-graph-rag-stars",
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "document-chat",
+        "agent-knowledge"
+      ],
+      "score": 56,
+      "localPath": "sources/luhengshiwo__LLMForEverybody"
+    },
+    {
+      "name": "InternLM/HuixiangDou",
+      "url": "https://github.com/InternLM/HuixiangDou",
+      "description": "HuixiangDou: Overcoming Group Chat Scenarios with LLM-based Technical Assistance",
+      "language": "Python",
+      "stars": 2492,
+      "forks": 177,
+      "openIssues": 36,
+      "pushedAt": "2025-11-24T11:17:29Z",
+      "updatedAt": "2026-06-17T06:34:24Z",
+      "createdAt": "2023-12-28T03:57:11Z",
+      "topics": [
+        "application",
+        "assistant",
+        "assistant-chat-bots",
+        "chatbot",
+        "dsl",
+        "group-chat",
+        "image-retrieval",
+        "lark",
+        "llm",
+        "multimodal",
+        "pipeline",
+        "rag",
+        "robot",
+        "wechat"
+      ],
+      "license": "BSD-3-Clause",
+      "matchedQueries": [
+        "chat pdf langchain in:name,description,readme",
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "chat-with-pdf-stars",
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 56,
+      "localPath": "sources/InternLM__HuixiangDou"
+    },
+    {
+      "name": "szczyglis-dev/py-gpt",
+      "url": "https://github.com/szczyglis-dev/py-gpt",
+      "description": "Desktop AI Assistant powered by GPT-5, GPT-4, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web search, memory, presets, assistants,and more. Linux, Windows, Mac",
+      "language": "Python",
+      "stars": 1827,
+      "forks": 330,
+      "openIssues": 58,
+      "pushedAt": "2026-02-06T03:08:43Z",
+      "updatedAt": "2026-06-17T20:00:43Z",
+      "createdAt": "2023-04-09T23:48:06Z",
+      "topics": [
+        "ai",
+        "ai-assistant",
+        "artificial-intelligence",
+        "autonomous-agent",
+        "chatbot",
+        "claude",
+        "deepseek",
+        "desktop-app",
+        "gemini",
+        "gpt-4",
+        "gpt-5",
+        "grok",
+        "llama-index",
+        "llm",
+        "mcp",
+        "o1",
+        "ollama",
+        "openai",
+        "perplexity",
+        "sora2"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "korea-knowledge"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 56,
+      "localPath": "sources/szczyglis-dev__py-gpt"
+    },
+    {
+      "name": "jegly/Box",
+      "url": "https://github.com/jegly/Box",
+      "description": "The most advanced, fully offline client-side AI suite on Android today.",
+      "language": "Kotlin",
+      "stars": 595,
+      "forks": 34,
+      "openIssues": 2,
+      "pushedAt": "2026-06-17T11:31:55Z",
+      "updatedAt": "2026-06-17T21:09:57Z",
+      "createdAt": "2026-04-17T10:42:52Z",
+      "topics": [
+        "android",
+        "android-ai-app",
+        "artificial-intelligence",
+        "box",
+        "gguf",
+        "linux",
+        "linux-ai",
+        "litert",
+        "litert-community-functiongemma",
+        "litert-for-android",
+        "litert-lm",
+        "litertlm",
+        "llamacpp",
+        "local-ai",
+        "local-llm",
+        "mcp-server",
+        "ondevice-ai",
+        "privacy-first-ai",
+        "rag",
+        "visionai"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "korea knowledge base llm in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "korea-knowledge"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 56,
+      "localPath": "sources/jegly__Box"
+    },
+    {
+      "name": "xuiltul/animaworks",
+      "url": "https://github.com/xuiltul/animaworks",
+      "description": "Organization-as-Code for autonomous AI agents. Brain-inspired memory that grows, consolidates, and forgets. Multi-model (Claude/Codex/Gemini/Cursor/Ollama).",
+      "language": "Python",
+      "stars": 240,
+      "forks": 39,
+      "openIssues": 6,
+      "pushedAt": "2026-06-17T14:34:50Z",
+      "updatedAt": "2026-06-16T09:03:33Z",
+      "createdAt": "2026-02-18T09:43:25Z",
+      "topics": [
+        "agent-framework",
+        "ai-agents",
+        "autonomous-agents",
+        "brain-inspired",
+        "claude",
+        "forgetting",
+        "llm",
+        "memory",
+        "multi-agent",
+        "multi-model",
+        "ollama",
+        "organization-as-code",
+        "python",
+        "rag"
+      ],
+      "license": "Apache-2.0",
+      "matchedQueries": [
+        "korean rag llm in:name,description,readme",
+        "한국어 RAG LLM in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "korean-rag",
+        "hangul-rag"
+      ],
+      "tags": [
+        "rag",
+        "agent-knowledge",
+        "korea-signal"
+      ],
+      "score": 56,
+      "localPath": "sources/xuiltul__animaworks"
+    },
+    {
+      "name": "FalkorDB/FalkorDB",
+      "url": "https://github.com/FalkorDB/FalkorDB",
+      "description": "A super fast Graph Database uses GraphBLAS under the hood for its sparse adjacency matrix graph representation. Our goal is to provide the best Knowledge Graph for LLM (GraphRAG).",
+      "language": "C",
+      "stars": 4597,
+      "forks": 393,
+      "openIssues": 701,
+      "pushedAt": "2026-06-16T23:49:36Z",
+      "updatedAt": "2026-06-17T19:10:00Z",
+      "createdAt": "2023-07-20T10:47:51Z",
+      "topics": [
+        "cloud-database",
+        "database",
+        "database-as-a-service",
+        "developer-tools",
+        "devtools",
+        "graph-database",
+        "graphrag",
+        "knowledge-graph",
+        "realtime-database"
+      ],
+      "license": "NOASSERTION",
+      "matchedQueries": [
+        "graphrag in:name,description,readme"
+      ],
+      "matchedLabels": [
+        "graphrag-stars"
+      ],
+      "tags": [
+        "rag",
+        "knowledge-base"
+      ],
+      "score": 55,
+      "localPath": "sources/FalkorDB__FalkorDB"
+    }
+  ]
+}

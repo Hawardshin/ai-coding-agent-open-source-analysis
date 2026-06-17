@@ -11,9 +11,10 @@ import {
 import path from "node:path";
 
 const sourcesDir = "sources";
-const dataFile = "data/clone-structure-analysis-127.json";
-const summaryReportFile = "reports/clone-structure-analysis-127.md";
-const perRepoReportDir = "reports/clone-structures";
+const dataFile = process.env.STRUCTURE_ANALYSIS_DATA_FILE || "data/clone-structure-analysis-127.json";
+const summaryReportFile = process.env.STRUCTURE_ANALYSIS_REPORT_FILE || "reports/clone-structure-analysis-127.md";
+const perRepoReportDir = process.env.STRUCTURE_ANALYSIS_REPORT_DIR || "reports/clone-structures";
+const targetGroupFilter = process.env.TARGET_GROUP_FILTER || "";
 
 const SKIP_DIR_NAMES = new Set([
   ".git",
@@ -587,6 +588,10 @@ function writeRepoReport(analysis) {
   writeFileSync(path.join(perRepoReportDir, `${analysis.safeName}.md`), `${lines.join("\n")}\n`);
 }
 
+function repoReportPath(analysis) {
+  return `${perRepoReportDir}/${analysis.safeName}.md`.replaceAll("\\", "/");
+}
+
 function loadTargets() {
   const targets = new Map();
   function add(name, url, group) {
@@ -599,6 +604,7 @@ function loadTargets() {
   for (const repo of readJson("data/repositories.json", [])) add(repo.name, repo.url, "core-agent-30");
   for (const repo of readJson("data/adjacent-tech-repositories.json", [])) add(repo.name, repo.url, "adjacent-tech-50");
   for (const repo of readJson("data/spec-driven-repositories.json", { repositories: [] }).repositories || []) add(repo.name, repo.url, "spec-driven-20");
+  for (const repo of readJson("data/llm-wiki-repositories.json", { repositories: [] }).repositories || []) add(repo.name, repo.url, "llm-wiki-100");
   for (const repo of readJson("data/current-clone-inventory-107.json", [])) {
     const remote = repo.remote;
     add(remote ? normalizeRepoUrl(remote) : repo.dir?.replace("__", "/"), remote, "previous-clone-inventory-107");
@@ -617,6 +623,8 @@ rmSync(perRepoReportDir, { recursive: true, force: true });
 mkdirSync(perRepoReportDir, { recursive: true });
 mkdirSync("data", { recursive: true });
 mkdirSync("reports", { recursive: true });
+mkdirSync(path.dirname(summaryReportFile), { recursive: true });
+mkdirSync(path.dirname(dataFile), { recursive: true });
 
 const analyses = [];
 
@@ -625,6 +633,7 @@ for (const dir of sourceDirs) {
   const remote = git(root, ["remote", "get-url", "origin"]);
   const normalizedRemote = normalizeRepoUrl(remote);
   const target = targetMap.get(normalizedRemote);
+  if (targetGroupFilter && !target?.groups?.includes(targetGroupFilter)) continue;
   const { files, dirs, truncated } = walk(root);
   const manifests = findManifests(files);
   const docs = findDocs(files);
@@ -669,14 +678,16 @@ for (const dir of sourceDirs) {
 }
 
 const localRemoteSet = new Set(analyses.map((item) => item.normalizedRemote));
-const missingTargets = [...targetMap.values()]
+const targetValues = [...targetMap.values()].filter((target) => !targetGroupFilter || target.groups.includes(targetGroupFilter));
+const missingTargets = targetValues
   .filter((target) => !localRemoteSet.has(normalizeRepoUrl(target.url)))
   .sort((a, b) => a.name.localeCompare(b.name));
 
 const summary = {
   generatedAt,
+  targetGroupFilter: targetGroupFilter || null,
   sourceCloneCount: analyses.length,
-  targetCount: targetMap.size,
+  targetCount: targetValues.length,
   missingTargetCount: missingTargets.length,
   missingTargets,
   analyses
@@ -685,16 +696,17 @@ const summary = {
 writeFileSync(dataFile, JSON.stringify(summary, null, 2) + "\n");
 
 const lines = [];
-lines.push("# 127개 로컬 클론 구조 분석 총괄");
+lines.push(`# ${process.env.STRUCTURE_ANALYSIS_TITLE || `${analyses.length}개 로컬 클론 구조 분석 총괄`}`);
 lines.push("");
 lines.push(`생성일: ${generatedAt}`);
 lines.push("");
 lines.push("## 검증 범위");
 lines.push("");
+if (targetGroupFilter) lines.push(`- target group filter: \`${targetGroupFilter}\``);
 lines.push(`- 실제 로컬 클론: ${analyses.length}개`);
-lines.push(`- 데이터 파일에 명시된 target: ${targetMap.size}개`);
+lines.push(`- 데이터 파일에 명시된 target: ${targetValues.length}개`);
 lines.push(`- target 중 로컬 클론 누락: ${missingTargets.length}개`);
-lines.push(`- 레포별 상세 보고서: \`reports/clone-structures/*.md\``);
+lines.push(`- 레포별 상세 보고서: \`${perRepoReportDir}/*.md\``);
 lines.push(`- 구조 데이터: \`${dataFile}\``);
 lines.push("");
 
@@ -738,7 +750,7 @@ lines.push(table(analyses.map((analysis) => ({
   manifests: analysis.manifests.slice(0, 4).join(", "),
   specs: analysis.specArtifacts.length,
   agents: analysis.agentInstructionFiles.length,
-  report: `reports/clone-structures/${analysis.safeName}.md`
+  report: repoReportPath(analysis)
 })), ["repo", "group", "files", "stack", "manifests", "specs", "agents", "report"]));
 
 lines.push("## 우선 심층 분석이 필요한 후보");
@@ -757,7 +769,7 @@ const needsDeepDive = analyses
       analysis.fileCount > 2000 ? `large repo ${analysis.fileCount} files` : null,
       analysis.architecture.stack.length > 1 ? `multi-stack ${analysis.architecture.stack.join("/")}` : null
     ].filter(Boolean).join("; "),
-    report: `reports/clone-structures/${analysis.safeName}.md`
+    report: repoReportPath(analysis)
   }))
   .sort((a, b) => b.score - a.score)
   .slice(0, 30);

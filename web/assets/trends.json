@@ -70,6 +70,20 @@
     ]
   },
   {
+    "title": "LLM wiki / AI knowledge base",
+    "summary": "self-maintaining wiki, document knowledge base, GraphRAG, NotebookLM-like tools",
+    "query": "llm wiki knowledge base rag notebooklm graph rag korean",
+    "category": "llm-wiki-open-source",
+    "repos": [
+      "nashsu/llm_wiki",
+      "ohbryt/bb-wiki",
+      "SamurAIGPT/llm-wiki-agent",
+      "Egonex-AI/Understand-Anything",
+      "zosmaai/pi-llm-wiki",
+      "green-dalii/obsidian-llm-wiki"
+    ]
+  },
+  {
     "title": "Evaluation / observability",
     "summary": "prompt eval, agent eval, tracing, observability, quality gates",
     "query": "evaluation observability tracing quality gates",
