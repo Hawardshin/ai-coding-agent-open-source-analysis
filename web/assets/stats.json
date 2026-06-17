@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-17T23:20:14.877Z",
-  "totalDocuments": 1063,
+  "generatedAt": "2026-06-17T23:32:03.002Z",
+  "totalDocuments": 1165,
   "byType": {
-    "report": 278,
+    "report": 379,
     "repository": 120,
     "paper": 650,
-    "data": 15
+    "data": 16
   },
   "byCategory": {
-    "report": 129,
+    "report": 230,
     "repository-analysis": 130,
     "research": 4,
     "adjacent-tech": 4,
@@ -37,6 +37,6 @@
     "program-synthesis": 13,
     "spec-driven-ai": 8,
     "software-agents": 38,
-    "data": 15
+    "data": 16
   }
 }

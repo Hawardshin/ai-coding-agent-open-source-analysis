@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "analyze:llm-wiki-code": "node scripts/analyze-llm-wiki-code-level.mjs",
     "build:web": "node scripts/build-web-index.mjs"
   }
 }
