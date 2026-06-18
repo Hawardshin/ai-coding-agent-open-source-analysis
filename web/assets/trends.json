@@ -1,5 +1,21 @@
 [
   {
+    "title": "Claude/Codex harness",
+    "summary": "Claude Code 사용 사례, CLAUDE.md/AGENTS.md, MCP, hooks, Codex config/action/exec 세팅 자료 1000+",
+    "query": "claude code codex harness AGENTS.md CLAUDE.md MCP hooks config.toml codex exec github action",
+    "category": "claude-codex-agent-harness",
+    "repos": [
+      "Agentic AI Foundation / MCP open governance coverage",
+      "anthropics/claude-code-action",
+      "Claude Code Docs llms.txt",
+      "Claude Code features and settings reference 2026",
+      "Claude Code GitHub Actions",
+      "Claude Code power user tips",
+      "Codex Configuration Reference",
+      "Codex custom instructions with AGENTS.md"
+    ]
+  },
+  {
     "title": "Global-trending OSS",
     "summary": "GitHub Search, seed repositories, OSSInsight/Octoverse/HN/report signals 기반 500개 글로벌 오픈소스",
     "query": "global trending open source ai agents mcp rag local llm devtools security observability database",

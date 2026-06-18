@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-06-18T00:38:38.806Z",
-  "totalDocuments": 3175,
+  "generatedAt": "2026-06-18T02:22:18.948Z",
+  "totalDocuments": 4378,
   "byType": {
-    "report": 1381,
+    "report": 1383,
     "repository": 1120,
     "paper": 650,
-    "data": 24
+    "data": 25,
+    "material": 1200
   },
   "byCategory": {
     "repository-analysis": 1130,
-    "report": 232,
+    "report": 234,
     "research": 4,
     "adjacent-tech": 4,
     "comparison": 2,
@@ -39,6 +40,7 @@
     "program-synthesis": 13,
     "spec-driven-ai": 8,
     "software-agents": 38,
-    "data": 24
+    "data": 25,
+    "claude-codex-agent-harness": 1200
   }
 }

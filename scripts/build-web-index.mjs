@@ -266,6 +266,43 @@ async function addGlobalTrendingRepoDocs(docs) {
   }
 }
 
+async function addAgentHarnessMaterialDocs(docs) {
+  const corpusPath = path.join(root, "data/claude-codex-harness-materials-1000.json");
+  if (!existsSync(corpusPath)) return;
+  const data = JSON.parse(await readFile(corpusPath, "utf8"));
+  for (const material of safeArray(data.materials)) {
+    const categories = safeArray(material.categories);
+    const content = [
+      material.title,
+      material.summary,
+      material.source,
+      material.materialType,
+      material.url,
+      material.repository,
+      material.path,
+      material.queryLabel,
+      categories.join(", ")
+    ].filter(Boolean).join("\n");
+
+    docs.push({
+      id: `material:claude-codex-harness:${material.id}`,
+      type: "material",
+      category: "claude-codex-agent-harness",
+      categories,
+      title: material.title || "Untitled material",
+      path: "data/claude-codex-harness-materials-1000.json",
+      url: material.url || null,
+      source: material.source || null,
+      materialType: material.materialType || null,
+      repository: material.repository || null,
+      stars: material.stars || 0,
+      updatedAt: material.updatedAt || material.pushedAt || null,
+      summary: material.summary || categories.join(", ") || "Claude Code / Codex harness material",
+      content
+    });
+  }
+}
+
 async function addDataFileDocs(docs) {
   const dataFiles = await listFiles(path.join(root, "data"), (file) => file.endsWith(".json"));
   for (const file of dataFiles.sort()) {
@@ -302,6 +339,7 @@ await addSpecRepoDocs(docs);
 await addLlmWikiRepoDocs(docs);
 await addKoreaTrendingRepoDocs(docs);
 await addGlobalTrendingRepoDocs(docs);
+await addAgentHarnessMaterialDocs(docs);
 await addDataFileDocs(docs);
 
 docs.sort((a, b) => {
@@ -382,7 +420,24 @@ function topGlobalTrendingRepos(limit = 8) {
     .map((repo) => repo.name);
 }
 
+function topAgentHarnessMaterials(limit = 8) {
+  const corpusPath = path.join(root, "data/claude-codex-harness-materials-1000.json");
+  if (!existsSync(corpusPath)) return [];
+  const data = JSON.parse(awaitReadFile(corpusPath));
+  return safeArray(data.materials)
+    .sort((a, b) => (b.score || 0) - (a.score || 0) || a.title.localeCompare(b.title))
+    .slice(0, limit)
+    .map((material) => material.repository || material.title);
+}
+
 const trends = [
+  {
+    title: "Claude/Codex harness",
+    summary: "Claude Code 사용 사례, CLAUDE.md/AGENTS.md, MCP, hooks, Codex config/action/exec 세팅 자료 1000+",
+    query: "claude code codex harness AGENTS.md CLAUDE.md MCP hooks config.toml codex exec github action",
+    category: "claude-codex-agent-harness",
+    repos: topAgentHarnessMaterials()
+  },
   {
     title: "Global-trending OSS",
     summary: "GitHub Search, seed repositories, OSSInsight/Octoverse/HN/report signals 기반 500개 글로벌 오픈소스",
