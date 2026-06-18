@@ -1,6 +1,6 @@
 # aliyun/alibabacloud-dataworks-mcp-server 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 A Model Context Protocol (MCP) server that provides tools for AI, allowing it to interact with the DataWorks Open API through a standardized interface. This implementation is based on the Aliyun Open API and enables AI agents to perform cloud resources operations seamlessly.
 

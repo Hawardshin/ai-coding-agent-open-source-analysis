@@ -1,6 +1,6 @@
 # 1Panel-dev/MaxKB 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 🔥 MaxKB is an open-source platform for building enterprise-grade agents. 强大易用的开源企业级智能体平台。
 

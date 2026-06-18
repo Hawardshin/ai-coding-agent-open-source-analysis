@@ -1,6 +1,6 @@
 # microsoft/agent-framework 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.
 

@@ -1,6 +1,6 @@
 # proffesor-for-testing/agentic-qe 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Agentic QE Fleet is an open-source AI-powered QA/QE platform designed for use with Coding Agents (works best with Claude Code) featuring specialized agents and skills to support testing activities for a product at any stage of the SDLC. Free to use, fork, build, and contribute. Based on the Agentic QE Framework created by Dragan Spiridonov.
 

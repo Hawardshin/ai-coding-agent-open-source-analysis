@@ -1,6 +1,6 @@
 # SamurAIGPT/llm-wiki-agent 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 A personal knowledge base that builds and maintains itself. Drop in sources — Claude (or Codex/Gemini) reads them, extracts knowledge, and maintains a persistent interlinked wiki. Works with Claude Code, Codex, OpenCode, Gemini CLI. No API key needed.
 

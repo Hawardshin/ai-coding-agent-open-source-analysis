@@ -1,6 +1,6 @@
 # SaiAkhil066/CORTEX-AI-SUPER-RAG 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 You upload a PDF. You ask a question. Cortex RAG retrieves, cross-checks, reasons, and cites — entirely on your machine. No API key · No cloud upload · No subscription
 

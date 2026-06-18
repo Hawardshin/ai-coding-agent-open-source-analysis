@@ -1,6 +1,6 @@
 # 글로벌 트렌딩 오픈소스
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 전세계 트렌딩 오픈소스 코퍼스와 레포별 보고서를 묶은 주제입니다.
 
@@ -29,22 +29,38 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 글로벌에서 star velocity와 커뮤니티 신호가 강한 프로젝트는 무엇인가? |
+| 먼저 뽑을 것 | 글로벌 인기 프로젝트<br>언어/스택/카테고리 분포<br>급상승 구현 패턴 |
+| 최종 활용 | 전세계 트렌드 기준의 후보군과 비교 대상을 뽑습니다. |
+| 먼저 볼 보고서 | [Global Trending Open Source 500 Analysis](../../global-trending/00-global-open-source-trend-report-2026-06-18.md)<br>[글로벌 AI 오픈소스](../../categories/global-ai-open-source/README.md)<br>[cocoindex-io/cocoindex-code](../../global-trending/repositories/cocoindex-io__cocoindex-code.md)<br>[run-llama/llama_index](../../global-trending/repositories/run-llama__llama_index.md)<br>[0xMassi/webclaw](../../global-trending/repositories/0xMassi__webclaw.md) |
+
 ## 범위
 
 - 보고서 수: 502
 - 데이터: [data/report-categories/global-trending-open-source.json](../../../data/report-categories/global-trending-open-source.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - per-repository-report: 500
 - global-trending-report: 1
 - category-guide: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - global-trending/repositories: 500
 - global-trending: 1
 - categories: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -82,7 +98,10 @@
 | [alibaba/zvec](../../global-trending/repositories/alibaba__zvec.md) | per-repository-report | global-trending/repositories | -29 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 502개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -588,3 +607,5 @@
 | [Zoo-Code-Org/Zoo-Code](../../global-trending/repositories/Zoo-Code-Org__Zoo-Code.md) | per-repository-report | global-trending/repositories | -29 |
 | [zubair-trabzada/geo-seo-claude](../../global-trending/repositories/zubair-trabzada__geo-seo-claude.md) | per-repository-report | global-trending/repositories | -29 |
 | [zzet/gortex](../../global-trending/repositories/zzet__gortex.md) | per-repository-report | global-trending/repositories | -29 |
+
+</details>

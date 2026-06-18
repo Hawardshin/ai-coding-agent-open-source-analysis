@@ -1,6 +1,6 @@
 # secure-agentic-framework/saf-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 SAF-MCP is a comprehensive security framework for documenting and mitigating threats in the AI Agent ecosystem.
 

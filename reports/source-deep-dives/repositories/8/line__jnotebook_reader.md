@@ -1,6 +1,6 @@
 # line/jnotebook_reader 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 :black_joker: An awesome viewer to browse and render Jupyter Notebooks from local, Amazon S3, Google Cloud Storage or MinIO
 

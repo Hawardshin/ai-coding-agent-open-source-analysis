@@ -1,6 +1,6 @@
 # 카테고리별 근거
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 오픈소스, 연구, 발표, 트렌드 근거를 artifact 기준으로 묶은 분류 지도입니다.
 
@@ -29,18 +29,34 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 각 근거는 어떤 종류이고 어떤 조사 질문을 뒷받침하는가? |
+| 먼저 뽑을 것 | 근거 유형별 분포<br>주제별 원천 자료 위치<br>자료 신뢰도와 활용 범위 |
+| 최종 활용 | 분석의 근거가 어디에서 왔는지 추적합니다. |
+| 먼저 볼 보고서 | [근거 카테고리 목차](../../categories/README.md)<br>[에이전트 하네스/오케스트레이션](../../categories/agent-harness-orchestration/README.md)<br>[AI 인프라/서빙](../../categories/ai-infrastructure-serving/README.md)<br>[AI 활용 트렌드](../../categories/ai-usage-trends/README.md)<br>[코딩 에이전트/IDE](../../categories/coding-agents-ides/README.md) |
+
 ## 범위
 
 - 보고서 수: 18
 - 데이터: [data/report-categories/category-guides.json](../../../data/report-categories/category-guides.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - category-guide: 18
 
-## 출처 폴더
+### 출처 폴더
 
 - categories: 18
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -66,7 +82,10 @@
 | [스펙 드리븐/요구사항](../../categories/spec-driven-requirements/README.md) | category-guide | categories | 156 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 18개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -88,3 +107,5 @@
 | [논문/연구 근거](../../categories/research-papers/README.md) | category-guide | categories | 156 |
 | [보안/거버넌스/안전](../../categories/security-governance-safety/README.md) | category-guide | categories | 156 |
 | [스펙 드리븐/요구사항](../../categories/spec-driven-requirements/README.md) | category-guide | categories | 156 |
+
+</details>

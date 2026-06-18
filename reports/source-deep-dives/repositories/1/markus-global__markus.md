@@ -1,6 +1,6 @@
 # markus-global/markus 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Not another agent framework — an operating system for AI workforces. Autonomous agents coordinate, remember across sessions, review each other's work, and deliver while you sleep. One command. Zero dependencies. Manage your AI company from your phone.
 

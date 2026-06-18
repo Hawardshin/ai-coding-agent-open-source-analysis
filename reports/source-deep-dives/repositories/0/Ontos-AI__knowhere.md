@@ -1,6 +1,6 @@
 # Ontos-AI/knowhere 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Knowhere extracts, parses, and outputs structured chunks ready for AI Agents and RAG.
 

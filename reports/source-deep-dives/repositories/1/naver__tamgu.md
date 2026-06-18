@@ -1,6 +1,6 @@
 # naver/tamgu 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Tamgu (탐구), a FIL programming language: Functional, Imperative, Logical all in one for annotation and data augmentation
 

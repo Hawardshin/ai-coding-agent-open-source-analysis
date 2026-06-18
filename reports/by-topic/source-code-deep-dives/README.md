@@ -1,6 +1,6 @@
 # 소스 코드 딥다이브
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | README 설명이 아니라 실제 코드에서 어떤 구조가 확인되는가? |
+| 먼저 뽑을 것 | 핵심 파일 경로<br>구현 패턴과 feature bucket<br>레포별 위험 신호와 검증 표면 |
+| 최종 활용 | 레포별로 바로 확인할 코드 근거와 구현 차이를 얻습니다. |
+| 먼저 볼 보고서 | [30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서](../../comparisons/01-project-taxonomy-and-feature-comparison.md)<br>[LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄](../../llm-wiki/00-llm-wiki-100-summary.md)<br>[LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약](../../llm-wiki/01-llm-wiki-100-selection-and-patterns.md)<br>[한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](../../korea-trending/00-korea-open-source-trend-report-2026-06-18.md)<br>[소스 딥다이브](../../source-deep-dives/README.md) |
+
 ## 범위
 
 - 보고서 수: 1187
 - 데이터: [data/report-categories/source-code-deep-dives.json](../../../data/report-categories/source-code-deep-dives.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - source-deep-dive-report: 1165
 - source-insight-report: 13
@@ -45,7 +59,7 @@
 - korea-trending-report: 1
 - infrastructure-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - source-deep-dives: 1165
 - source-insights: 13
@@ -57,6 +71,8 @@
 - repository-insights: 1
 - root: 1
 - adjacent-tech: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -94,7 +110,10 @@
 | [보안/거버넌스/안전 소스 인사이트](../../source-insights/by-category/security-governance/README.md) | source-insight-report | source-insights | 155 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 1187개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -1285,3 +1304,5 @@
 | [woowacourse/java-racingcar-precourse 소스 딥다이브](../../source-deep-dives/repositories/f/woowacourse__java-racingcar-precourse.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [woowacourse/woowacourse-docs 소스 딥다이브](../../source-deep-dives/repositories/f/woowacourse__woowacourse-docs.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [WordPress/mcp-adapter 소스 딥다이브](../../source-deep-dives/repositories/f/WordPress__mcp-adapter.md) | source-deep-dive-report | source-deep-dives | -5 |
+
+</details>

@@ -1,6 +1,6 @@
 # 코딩 에이전트/IDE
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 터미널 에이전트, IDE 에이전트, 코드 리뷰 에이전트, 코딩 보조 도구를 묶은 주제입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 코딩 에이전트 제품은 어떤 실행 루프와 코드 수정 표면을 가져야 하는가? |
+| 먼저 뽑을 것 | CLI/IDE 실행면<br>파일 수정 및 diff 루프<br>테스트/리뷰/sandbox 구조 |
+| 최종 활용 | 코딩 에이전트 제품 구조와 구현 후보를 비교합니다. |
+| 먼저 볼 보고서 | [AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선](../../research/02-evidence-catalog-100-sources.md)<br>[Claude Code / Codex Harness Materials 1000+ Corpus](../../agent-harness/00-claude-code-codex-harness-materials-1000.md)<br>[코딩 에이전트/IDE](../../categories/coding-agents-ides/README.md)<br>[코딩 에이전트/IDE](../../repository-insights/by-role/coding-agent-ide/README.md)<br>[코딩 에이전트/IDE 소스 딥다이브](../../source-deep-dives/by-topic/coding-agent-ide/README.md) |
+
 ## 범위
 
 - 보고서 수: 124
 - 데이터: [data/report-categories/coding-agents.json](../../../data/report-categories/coding-agents.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - per-repository-report: 64
 - source-deep-dive-report: 39
@@ -47,7 +61,7 @@
 - source-insight-report: 1
 - presentation-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - source-deep-dives: 39
 - repositories: 30
@@ -63,6 +77,8 @@
 - source-insights: 1
 - root: 1
 - presentations: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -100,7 +116,10 @@
 | [videosdk-live/agents 소스 딥다이브](../../source-deep-dives/repositories/7/videosdk-live__agents.md) | source-deep-dive-report | source-deep-dives | -5 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 124개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -228,3 +247,5 @@
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon](../../korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | per-repository-report | korea-trending/repositories | -29 |
 | [AgriciDaniel/claude-obsidian 구조 분석](../../llm-wiki/repositories/AgriciDaniel__claude-obsidian.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [HKUDS/VideoRAG 구조 분석](../../llm-wiki/repositories/HKUDS__VideoRAG.md) | per-repository-report | llm-wiki/repositories | -29 |
+
+</details>

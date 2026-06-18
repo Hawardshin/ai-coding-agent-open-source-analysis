@@ -1,6 +1,6 @@
 # 글로벌 AI 오픈소스
 
-생성 시각: 2026-06-18T15:43:30.239Z
+생성 시각: 2026-06-18T15:47:21.168Z
 
 글로벌 트렌딩 AI, LLM, agent, RAG, devtool, security, infrastructure 오픈소스 레포를 묶은 카테고리입니다.
 

@@ -1,6 +1,6 @@
 # gracebereblue-cpu/-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 공무원이 만든 법제처 MCP https://github.com/chrisryugj/korean-law-mcp
 

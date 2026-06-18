@@ -1,6 +1,6 @@
 # LLM 위키/RAG/지식베이스
 
-생성 시각: 2026-06-18T15:43:30.239Z
+생성 시각: 2026-06-18T15:47:21.168Z
 
 LLM-maintained wiki, RAG, GraphRAG, knowledge base, document chat, retrieval, notebook, source-aware knowledge system을 묶은 카테고리입니다.
 

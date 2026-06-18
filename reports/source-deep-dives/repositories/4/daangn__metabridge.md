@@ -1,6 +1,6 @@
 # daangn/metabridge 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 🔗 Defines the communication layer between mobile native(iOS/Android) and webview using JSON Schema and automatically generates SDK code. (TypeScript, Swift, Kotlin)
 

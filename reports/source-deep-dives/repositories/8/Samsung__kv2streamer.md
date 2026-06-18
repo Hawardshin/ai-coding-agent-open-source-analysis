@@ -1,6 +1,6 @@
 # Samsung/kv2streamer 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 kv2streamer is a library that allows developers to access the new Kinect V2 sensor data and tracking capabilities from non-windows OS. It provides a server-side application that can stream out Kinect V2 data to multiple client-side applications accessing the client-side API running on non-windows OS over LAN.
 

@@ -1,6 +1,6 @@
 # MelonS/MelonS-Agents 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 An agent that builds, plays, and verifies its own game ? a colony-sim prototype gated by 15-scenario input-level repro tests + isolated-grader rubric verdicts ? plus production media skills: music-video (60s 9:16 shorts, beat-aligned, genre-aware) and Korean job-board digest. agentskills.io-spec compliant. v0.4.0.
 

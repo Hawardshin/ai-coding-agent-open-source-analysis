@@ -1,6 +1,6 @@
 # 발표/컨퍼런스
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 컨퍼런스, 키노트, 웨비나, 발표 방법론과 산업 신호를 모은 주제입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 최근 발표들이 AI 활용과 에이전트 설계에서 무엇을 강조하는가? |
+| 먼저 뽑을 것 | 빅테크 발표 흐름<br>Amazon/AWS와 기업 도입 신호<br>한국/글로벌 컨퍼런스 차이 |
+| 최종 활용 | 논문/코드만으로 보이지 않는 산업 채택 방향을 보완합니다. |
+| 먼저 볼 보고서 | [Agent Harness Conference and Presentation Patterns](../../presentations/00-agent-harness-conference-presentation-patterns.md)<br>[AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md)<br>[발표/컨퍼런스](../../categories/presentations-conferences/README.md)<br>[AI Usage Trend Conference Source Catalog](../../presentations/ai-usage-trend-source-catalog-6-12mo.md)<br>[Conference Source Catalog](../../presentations/conference-source-catalog.md) |
+
 ## 범위
 
 - 보고서 수: 9
 - 데이터: [data/report-categories/presentations-conferences.json](../../../data/report-categories/presentations-conferences.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - presentation-report: 5
 - category-guide: 1
@@ -42,13 +56,15 @@
 - source-deep-dive-report: 1
 - per-repository-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - presentations: 5
 - categories: 1
 - adjacent-tech: 1
 - source-deep-dives: 1
 - korea-trending/repositories: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -65,7 +81,10 @@
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon](../../korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | per-repository-report | korea-trending/repositories | -29 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 9개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -78,3 +97,5 @@
 | [Codex Conference Talk Playbook](../../presentations/codex-conference-talk-playbook.md) | presentation-report | presentations | 117 |
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon 소스 딥다이브](../../source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon](../../korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | per-repository-report | korea-trending/repositories | -29 |
+
+</details>

@@ -1,6 +1,6 @@
 # 전체 소스 스캔/코드 검색
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 코딩 에이전트가 소스를 발견하고 인덱싱하고 사용자 의도와 코드 위치를 연결하는 방식입니다.
 
@@ -29,20 +29,36 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 코딩 에이전트는 어떤 파일을 찾아 읽고, 왜 그 파일이 답이라고 판단하는가? |
+| 먼저 뽑을 것 | 파일 발견과 랭킹 축<br>grep/symbol/AST/embedding의 역할<br>문맥 예산과 증거 연결 방식 |
+| 최종 활용 | 전체 소스 스캔 시스템을 설계할 때 필요한 탐색 파이프라인을 뽑습니다. |
+| 먼저 볼 보고서 | [Source Inventory](../../00-source-inventory.md)<br>[Full Source Scan Deep Dive: 필요한 파일을 찾고 읽는 구현 로직](../../full-source-scan/02-file-discovery-reading-implementation-deep-dive.md)<br>[전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) |
+
 ## 범위
 
 - 보고서 수: 3
 - 데이터: [data/report-categories/full-source-scan.json](../../../data/report-categories/full-source-scan.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - overview-report: 2
 - source-scan-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - root: 2
 - full-source-scan: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -53,10 +69,15 @@
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 3개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
 | [Source Inventory](../../00-source-inventory.md) | overview-report | root | 158 |
 | [Full Source Scan Deep Dive: 필요한 파일을 찾고 읽는 구현 로직](../../full-source-scan/02-file-discovery-reading-implementation-deep-dive.md) | source-scan-report | full-source-scan | 157 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
+
+</details>

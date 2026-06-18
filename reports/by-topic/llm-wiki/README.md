@@ -1,6 +1,6 @@
 # LLM 위키/RAG/지식베이스
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 보는 주제입니다.
 
@@ -29,12 +29,26 @@ LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 코드와 문서를 어떻게 수집하고 검색하고 출처와 함께 기억할 것인가? |
+| 먼저 뽑을 것 | ingestion/chunking pipeline<br>embedding/vector/graph retrieval<br>provenance와 knowledge update 방식 |
+| 최종 활용 | LLM 지식베이스와 코드 위키를 설계할 때 필요한 파이프라인 차이를 비교합니다. |
+| 먼저 볼 보고서 | [LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄](../../llm-wiki/00-llm-wiki-100-summary.md)<br>[LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약](../../llm-wiki/01-llm-wiki-100-selection-and-patterns.md)<br>[LLM Wiki 100 Code-Level Pipeline Comparison](../../llm-wiki/02-code-level-pipeline-comparison.md)<br>[컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](../../adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md)<br>[컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석](../../adjacent-tech/02-repository-analysis-50.md) |
+
 ## 범위
 
 - 보고서 수: 292
 - 데이터: [data/report-categories/llm-wiki.json](../../../data/report-categories/llm-wiki.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - per-repository-report: 128
 - llm-wiki-report: 103
@@ -45,7 +59,7 @@ LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 
 - overview-report: 1
 - source-insight-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - llm-wiki/code-level-repositories: 100
 - llm-wiki/repositories: 100
@@ -60,6 +74,8 @@ LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 
 - categories: 1
 - repository-insights: 1
 - source-insights: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -97,7 +113,10 @@ LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 
 | [eugeniughelbur/obsidian-second-brain 코드 레벨 분석](../../llm-wiki/code-level-repositories/eugeniughelbur__obsidian-second-brain.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 292개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -393,3 +412,5 @@ LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 
 | [zhimaAi/ChatClaw 구조 분석](../../llm-wiki/repositories/zhimaAi__ChatClaw.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zhitongblog/solomd 구조 분석](../../llm-wiki/repositories/zhitongblog__solomd.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zosmaai/pi-llm-wiki 구조 분석](../../llm-wiki/repositories/zosmaai__pi-llm-wiki.md) | per-repository-report | llm-wiki/repositories | -29 |
+
+</details>

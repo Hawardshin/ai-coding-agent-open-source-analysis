@@ -1,6 +1,6 @@
 # bripin123/rag-memory-epf-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Project-local RAG memory MCP server — knowledge graph + multilingual vector + FTS5 in a single SQLite file. Per-project isolation, 30 MCP tools, codepoint-safe chunking (Korean/CJK/emoji).
 

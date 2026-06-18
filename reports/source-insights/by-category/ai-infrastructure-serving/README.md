@@ -1,6 +1,6 @@
 # AI 인프라/서빙 소스 인사이트
 
-생성 시각: 2026-06-18T15:43:43.893Z
+생성 시각: 2026-06-18T15:47:35.104Z
 
 모델 서빙, API server, 배포, Docker/Kubernetes, runtime adapter
 

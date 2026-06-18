@@ -1,6 +1,6 @@
 # MCP/도구/프로토콜
 
-생성 시각: 2026-06-18T15:43:30.239Z
+생성 시각: 2026-06-18T15:47:21.168Z
 
 Model Context Protocol 서버, tool registry, gateway, connector, protocol SDK, tool-calling infrastructure를 묶은 카테고리입니다.
 

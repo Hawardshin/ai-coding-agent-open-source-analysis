@@ -1,6 +1,6 @@
 # 비교/유사도 지도
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 비슷해 보이는 프로젝트들은 무엇이 다르고 어느 카테고리에 속하는가? |
+| 먼저 뽑을 것 | 기능별 비교<br>유사군과 차이점<br>카테고리 간 설계 거리 |
+| 최종 활용 | 후보 프로젝트를 비교하고 선택 기준을 세웁니다. |
+| 먼저 볼 보고서 | [30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서](../../comparisons/01-project-taxonomy-and-feature-comparison.md)<br>[유사군별 비교와 관계 지도](../../comparisons/02-similarity-clusters.md)<br>[LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약](../../llm-wiki/01-llm-wiki-100-selection-and-patterns.md)<br>[LLM Wiki 100 Code-Level Pipeline Comparison](../../llm-wiki/02-code-level-pipeline-comparison.md)<br>[레포별 인사이트](../../repository-insights/README.md) |
+
 ## 범위
 
 - 보고서 수: 1195
 - 데이터: [data/report-categories/comparisons.json](../../../data/report-categories/comparisons.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - source-deep-dive-report: 1165
 - source-insight-report: 13
@@ -44,7 +58,7 @@
 - spec-driven-report: 1
 - per-repository-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - source-deep-dives: 1165
 - source-insights: 13
@@ -53,6 +67,8 @@
 - llm-wiki/01-llm-wiki-100-selection-and-patterns.md: 1
 - llm-wiki/02-code-level-pipeline-comparison.md: 1
 - global-trending/repositories: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -90,7 +106,10 @@
 | [스펙 드리븐/요구사항 소스 딥다이브](../../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 1195개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -1289,3 +1308,5 @@
 | [woowacourse/woowacourse-docs 소스 딥다이브](../../source-deep-dives/repositories/f/woowacourse__woowacourse-docs.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [WordPress/mcp-adapter 소스 딥다이브](../../source-deep-dives/repositories/f/WordPress__mcp-adapter.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [matrixorigin/matrixone](../../global-trending/repositories/matrixorigin__matrixone.md) | per-repository-report | global-trending/repositories | -29 |
+
+</details>

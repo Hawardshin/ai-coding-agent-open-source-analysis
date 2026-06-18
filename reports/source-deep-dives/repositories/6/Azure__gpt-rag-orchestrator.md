@@ -1,6 +1,6 @@
 # Azure/gpt-rag-orchestrator 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 The GPT-RAG Orchestrator service is an agentic orchestration layer built on Microsoft Foundry Agent Service and the Microsoft Agent framework. It enables agent-based RAG workflows by coordinating multiple specialized agents to collaboratively generate accurate, context-aware responses for complex user queries.
 

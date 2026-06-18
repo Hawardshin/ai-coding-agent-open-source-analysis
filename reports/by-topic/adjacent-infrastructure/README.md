@@ -1,6 +1,6 @@
 # 인접 AI 인프라
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 컨텍스트 엔지니어링, RAG 인프라, 벡터 DB, 로컬 LLM 서빙, 평가/관측성을 보는 주제입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 에이전트를 제품화하려면 주변 인프라에서 무엇을 갖춰야 하는가? |
+| 먼저 뽑을 것 | 컨텍스트/메모리 계층<br>서빙과 벡터 인프라<br>eval/observability 연결 |
+| 최종 활용 | 에이전트 외부 의존 스택과 운영 준비도를 판단합니다. |
+| 먼저 볼 보고서 | [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](../../adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md)<br>[컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석](../../adjacent-tech/02-repository-analysis-50.md)<br>[AI 인프라/서빙](../../categories/ai-infrastructure-serving/README.md)<br>[데이터 플랫폼/벡터 DB](../../categories/data-platforms-vector-databases/README.md)<br>[평가/관측/품질](../../categories/evals-observability-quality/README.md) |
+
 ## 범위
 
 - 보고서 수: 18
 - 데이터: [data/report-categories/adjacent-infrastructure.json](../../../data/report-categories/adjacent-infrastructure.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - infrastructure-report: 4
 - source-deep-dive-report: 4
@@ -44,7 +58,7 @@
 - source-insight-report: 1
 - clone-structure-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - adjacent-tech: 4
 - source-deep-dives: 4
@@ -54,6 +68,8 @@
 - source-insights: 1
 - root: 1
 - clone-structures: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -79,7 +95,10 @@
 | [waybarrios/vllm-mlx](../../global-trending/repositories/waybarrios__vllm-mlx.md) | per-repository-report | global-trending/repositories | -29 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 18개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -101,3 +120,5 @@
 | [vllm-project/vllm-ascend](../../global-trending/repositories/vllm-project__vllm-ascend.md) | per-repository-report | global-trending/repositories | -29 |
 | [vllm-project/vllm](../../global-trending/repositories/vllm-project__vllm.md) | per-repository-report | global-trending/repositories | -29 |
 | [waybarrios/vllm-mlx](../../global-trending/repositories/waybarrios__vllm-mlx.md) | per-repository-report | global-trending/repositories | -29 |
+
+</details>

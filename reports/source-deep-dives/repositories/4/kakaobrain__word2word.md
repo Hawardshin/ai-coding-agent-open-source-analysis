@@ -1,6 +1,6 @@
 # kakaobrain/word2word 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Easy-to-use word-to-word translations for 3,564 language pairs.
 

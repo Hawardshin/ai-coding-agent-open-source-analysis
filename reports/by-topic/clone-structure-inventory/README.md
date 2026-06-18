@@ -1,6 +1,6 @@
 # 클론 구조/인벤토리
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 로컬 클론 목록, 구조 분석, manifest, source directory, 레포별 구조 보고서입니다.
 
@@ -29,20 +29,36 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 분석 대상 소스는 실제로 어디에 있고 어떤 구조를 갖는가? |
+| 먼저 뽑을 것 | 로컬 소스 위치<br>레포별 파일 구조<br>entrypoint와 주요 디렉터리 |
+| 최종 활용 | 분석 근거가 되는 원본 소스 트리를 찾습니다. |
+| 먼저 볼 보고서 | [127개 로컬 클론 구조 분석 총괄](../../clone-structure-analysis-127.md)<br>[run-llama/llama_index 구조 분석](../../clone-structures/run-llama__llama_index.md)<br>[aaif-goose/goose 구조 분석](../../clone-structures/aaif-goose__goose.md)<br>[addyosmani/agent-skills 구조 분석](../../clone-structures/addyosmani__agent-skills.md)<br>[agenta-ai/agenta 구조 분석](../../clone-structures/agenta-ai__agenta.md) |
+
 ## 범위
 
 - 보고서 수: 128
 - 데이터: [data/report-categories/clone-structure-inventory.json](../../../data/report-categories/clone-structure-inventory.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - clone-structure-report: 127
 - overview-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - clone-structures: 127
 - root: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -80,7 +96,10 @@
 | [docfork/docfork 구조 분석](../../clone-structures/docfork__docfork.md) | clone-structure-report | clone-structures | -28 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 128개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -212,3 +231,5 @@
 | [xorbitsai/inference 구조 분석](../../clone-structures/xorbitsai__inference.md) | clone-structure-report | clone-structures | -28 |
 | [Yeachan-Heo/oh-my-claudecode 구조 분석](../../clone-structures/Yeachan-Heo__oh-my-claudecode.md) | clone-structure-report | clone-structures | -28 |
 | [Yeachan-Heo/oh-my-codex 구조 분석](../../clone-structures/Yeachan-Heo__oh-my-codex.md) | clone-structure-report | clone-structures | -28 |
+
+</details>

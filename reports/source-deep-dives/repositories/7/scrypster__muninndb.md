@@ -1,6 +1,6 @@
 # scrypster/muninndb 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 The cognitive database. A new class of data storage. Not a vector store, not a graph DB, not a RAG wrapper. Ebbinghaus decay, Hebbian learning, and Bayesian confidence are engine-native primitives. Memories evolve on their own. MCP-native. Single binary.
 

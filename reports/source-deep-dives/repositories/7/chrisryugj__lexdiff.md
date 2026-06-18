@@ -1,6 +1,6 @@
 # chrisryugj/lexdiff 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 한국 법령 AI 검색 — 자연어 질문 → 법령·판례 원문 근거 답변. Verbatim RAG · 신구조문 비교 · 3단 위임법령 · 영향 추적 · 조례 벤치마킹 (Next.js 16 · Gemini 3 Flash) | Korean Legal AI with verbatim RAG over govt API
 

@@ -1,6 +1,6 @@
 # toss/apps-in-toss-ax 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 An AI-powered MCP/CLI toolkit for AppsInToss mini-app development, designed to assist the entire workflow from documentation and code examples to project scaffolding, building, and deployment
 

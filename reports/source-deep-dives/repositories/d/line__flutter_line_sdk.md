@@ -1,6 +1,6 @@
 # line/flutter_line_sdk 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 A Flutter plugin that lets developers access LINE's native SDKs in Flutter apps with Dart.
 

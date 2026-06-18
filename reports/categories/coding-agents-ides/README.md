@@ -1,6 +1,6 @@
 # 코딩 에이전트/IDE
 
-생성 시각: 2026-06-18T15:43:30.239Z
+생성 시각: 2026-06-18T15:47:21.168Z
 
 Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, 코드 리뷰, 코딩 보조, agentic IDE workflow를 묶은 카테고리입니다.
 

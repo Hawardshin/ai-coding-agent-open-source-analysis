@@ -1,6 +1,6 @@
 # NickCirv/engram 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 The context spine that 10x's every AI coding session. Live in 8 IDEs (Claude Code, Cursor, Cline, Continue, Aider, Codex, Windsurf, Zed) via npm + OpenVSX + Anthropic plugin directory. 89% measured token reduction. Local SQLite, zero cloud, Apache 2.0.
 

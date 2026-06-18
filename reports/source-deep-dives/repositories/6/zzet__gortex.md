@@ -1,6 +1,6 @@
 # zzet/gortex 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 High-performance code graph and code intelligence engine, supports 257 languages, multi repositories, with access via CLI, MCP Server, and API. Built for AI coding agents - expose only needed information, cutting token usage up to 50x. 100% local.
 

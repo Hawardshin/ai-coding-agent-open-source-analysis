@@ -17,6 +17,15 @@
 
 이 레포는 “깊은 폴더를 직접 뒤지는 구조”가 아니라 “README를 따라가며 요약, 총평, 표, 원문 링크로 내려가는 구조”로 읽는 것이 맞습니다. 먼저 이 루트 README에서 큰 카테고리를 잡고, [전체 보고서 읽기 지도](reports/README.md)에서 조사 흐름을 고른 뒤, 필요한 경우 [소스 딥다이브](reports/source-deep-dives/README.md)나 [레포별 인사이트](reports/repository-insights/README.md)로 내려가면 됩니다.
 
+## 핵심만 먼저
+
+| 핵심 질문 | 바로 볼 곳 | 한 줄 판단 |
+| --- | --- | --- |
+| 이 레포 전체가 무엇을 말하나? | [전체 인사이트 지도](reports/insight-map/README.md) | 주제의 의미, 위치, 뽑아낼 인사이트를 먼저 잡습니다. |
+| 어떤 카테고리가 어떻게 다른가? | [상세 비교 리포트](reports/source-insights/comparative-report.md) | 강점, 약점, 대표 레포, 차이 점수를 봅니다. |
+| 실제 코드 근거는 어디 있나? | [소스 딥다이브](reports/source-deep-dives/README.md) | entrypoint, runtime, retrieval, spec, eval, security 경로를 확인합니다. |
+| 많은 자료를 어떻게 찾나? | [표/CSV 목차](reports/tables/README.md) | 보고서와 데이터는 CSV로 빠르게 필터링합니다. |
+
 ## 한눈에 보는 핵심 입구
 
 | 바로가기 | 한눈에 볼 것 | 추천 상황 |
@@ -72,6 +81,9 @@
 | [발표/컨퍼런스](reports/by-topic/presentations-conferences/README.md) | Amazon/AWS, 빅테크, 한국 행사, AI 활용 트렌드 발표 자료 |
 | [연구 근거](reports/by-topic/research-foundations/README.md) | 논문, 근거 카탈로그, 충돌 이론, 연구 종합 |
 
+<details>
+<summary>데이터 파일과 재생성 명령 보기</summary>
+
 ## 주요 데이터 파일
 
 | 데이터 | 내용 |
@@ -93,6 +105,8 @@
 | `npm run build:source-insights` | 카테고리별 소스 트렌드 인사이트 재생성 |
 | `npm run build:report-index` | 전체 보고서/주제/폴더/표 README 재생성 |
 | `npm run build:indexes` | 위 인덱스 전체 재생성 |
+
+</details>
 
 ## 운영 메모
 

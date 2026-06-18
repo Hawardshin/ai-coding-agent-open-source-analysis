@@ -1,6 +1,6 @@
 # 레포별 딥다이브
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 특정 레포 하나를 깊게 볼 때 어떤 요약과 근거가 있는가? |
+| 먼저 뽑을 것 | 레포별 총평<br>구현 특징과 위험 신호<br>다음에 볼 소스/보고서 링크 |
+| 최종 활용 | 개별 레포를 선택하거나 제외할 판단 근거를 뽑습니다. |
+| 먼저 볼 보고서 | [레포별 인사이트](../../repository-insights/README.md)<br>[소스 딥다이브](../../source-deep-dives/README.md)<br>[역할군별 레포 인사이트](../../repository-insights/by-role/README.md)<br>[주제별 소스 딥다이브](../../source-deep-dives/by-topic/README.md)<br>[에이전트 하네스/MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) |
+
 ## 범위
 
 - 보고서 수: 2434
 - 데이터: [data/report-categories/repository-deep-dives.json](../../../data/report-categories/repository-deep-dives.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - source-deep-dive-report: 1165
 - per-repository-report: 1130
@@ -42,7 +56,7 @@
 - overview-report: 11
 - spec-driven-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - source-deep-dives: 1165
 - global-trending/repositories: 500
@@ -51,6 +65,8 @@
 - llm-wiki/repositories: 100
 - repositories: 30
 - repository-insights: 12
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -88,7 +104,10 @@
 | [레포별 소스 딥다이브: Shard 4](../../source-deep-dives/repositories/4/README.md) | source-deep-dive-report | source-deep-dives | 35 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 2434개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -2526,3 +2545,5 @@
 | [zhimaAi/ChatClaw 구조 분석](../../llm-wiki/repositories/zhimaAi__ChatClaw.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zhitongblog/solomd 구조 분석](../../llm-wiki/repositories/zhitongblog__solomd.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zosmaai/pi-llm-wiki 구조 분석](../../llm-wiki/repositories/zosmaai__pi-llm-wiki.md) | per-repository-report | llm-wiki/repositories | -29 |
+
+</details>

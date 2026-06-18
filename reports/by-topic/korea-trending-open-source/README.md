@@ -1,6 +1,6 @@
 # 한국 트렌딩 오픈소스
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 트렌드 보고서를 묶은 주제입니다.
 
@@ -29,22 +29,38 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 한국에서 실제 관심을 받고 있는 소스와 구현 주제는 무엇인가? |
+| 먼저 뽑을 것 | 국내 트렌드 레포<br>한국어/국내 도메인 MCP/RAG 흐름<br>기업/커뮤니티별 기술 신호 |
+| 최종 활용 | 국내 맥락에서 우선 볼 프로젝트와 차별점을 뽑습니다. |
+| 먼저 볼 보고서 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](../../korea-trending/00-korea-open-source-trend-report-2026-06-18.md)<br>[한국 AI/오픈소스](../../categories/korean-ai-open-source/README.md)<br>[bits-bytes-nn/omnisummary](../../korea-trending/repositories/bits-bytes-nn__omnisummary.md)<br>[naver/naver-openapi-guide](../../korea-trending/repositories/naver__naver-openapi-guide.md)<br>[toss/yarn-plugin-catalogs](../../korea-trending/repositories/toss__yarn-plugin-catalogs.md) |
+
 ## 범위
 
 - 보고서 수: 502
 - 데이터: [data/report-categories/korea-trending-open-source.json](../../../data/report-categories/korea-trending-open-source.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - per-repository-report: 500
 - korea-trending-report: 1
 - category-guide: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - korea-trending/repositories: 500
 - korea-trending: 1
 - categories: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -82,7 +98,10 @@
 | [chrisryugj/lexdiff](../../korea-trending/repositories/chrisryugj__lexdiff.md) | per-repository-report | korea-trending/repositories | -29 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 502개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -588,3 +607,5 @@
 | [yjhann33-design/korea-stock-insight-mcp](../../korea-trending/repositories/yjhann33-design__korea-stock-insight-mcp.md) | per-repository-report | korea-trending/repositories | -29 |
 | [z0nam/korea-rio-mcp](../../korea-trending/repositories/z0nam__korea-rio-mcp.md) | per-repository-report | korea-trending/repositories | -29 |
 | [zzet/gortex](../../korea-trending/repositories/zzet__gortex.md) | per-repository-report | korea-trending/repositories | -29 |
+
+</details>

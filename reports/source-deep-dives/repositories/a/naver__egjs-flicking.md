@@ -1,6 +1,6 @@
 # naver/egjs-flicking 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 🎠 ♻️ Everyday 30 million people experience. It's reliable, flexible and extendable carousel.
 

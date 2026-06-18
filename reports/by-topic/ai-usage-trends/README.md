@@ -1,6 +1,6 @@
 # AI 활용 트렌드
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 빅테크, Amazon/AWS, 한국 컨퍼런스, 기업 도입 신호를 모은 최근 AI 활용 트렌드입니다.
 
@@ -29,20 +29,36 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 최근 6~12개월 AI 활용은 어떤 업무와 아키텍처로 이동하고 있는가? |
+| 먼저 뽑을 것 | agentic enterprise 흐름<br>업무 자동화 적용 지점<br>국내외 도입 방식 차이 |
+| 최종 활용 | 실제 제품/조직 적용 관점의 우선순위를 뽑습니다. |
+| 먼저 볼 보고서 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md)<br>[AI 활용 트렌드](../../categories/ai-usage-trends/README.md)<br>[AI Usage Trend Conference Source Catalog](../../presentations/ai-usage-trend-source-catalog-6-12mo.md) |
+
 ## 범위
 
 - 보고서 수: 3
 - 데이터: [data/report-categories/ai-usage-trends.json](../../../data/report-categories/ai-usage-trends.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - presentation-report: 2
 - category-guide: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - presentations: 2
 - categories: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -53,10 +69,15 @@
 | [AI Usage Trend Conference Source Catalog](../../presentations/ai-usage-trend-source-catalog-6-12mo.md) | presentation-report | presentations | 142 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 3개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
 | [AI 활용 트렌드](../../categories/ai-usage-trends/README.md) | category-guide | categories | 156 |
 | [AI Usage Trend Conference Source Catalog](../../presentations/ai-usage-trend-source-catalog-6-12mo.md) | presentation-report | presentations | 142 |
+
+</details>

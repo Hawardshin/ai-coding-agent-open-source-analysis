@@ -1,6 +1,6 @@
 # toss/es-toolkit 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 A modern JavaScript utility library that's 2-3 times faster and up to 97% smaller—a major upgrade to lodash.
 

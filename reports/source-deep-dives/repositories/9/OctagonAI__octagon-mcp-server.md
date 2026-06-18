@@ -1,6 +1,6 @@
 # OctagonAI/octagon-mcp-server 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 An MCP server for public & prediction markets research. Ask natural-language questions and get structured, source-backed answers across SEC filings, earnings transcripts, company financials, stock & crypto market data, and prediction markets news & research. Built for investors, analysts, and researchers who need fast, cited intelligence.
 

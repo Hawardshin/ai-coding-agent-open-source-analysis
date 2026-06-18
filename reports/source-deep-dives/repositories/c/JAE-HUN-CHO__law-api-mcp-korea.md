@@ -1,6 +1,6 @@
 # JAE-HUN-CHO/law-api-mcp-korea 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 MCP server for the Korean Ministry of Government Legislation (MOLEG) APIs, providing structured access to Korean laws, regulations, and legal documents for AI agents.
 

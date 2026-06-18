@@ -1,6 +1,6 @@
 # JeongSeongMok/tossinvest-openapi-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 토스증권 Open API(Toss Securities Open API)를 AI 에이전트가 쉽게 탐색·연동하도록 돕는 MCP 서버 (stdio). Claude·Cursor·Codex 지원.
 

@@ -1,6 +1,6 @@
 # kakaobrain/mindall-e 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 PyTorch implementation of a 1.3B text-to-image generation model trained on 14 million image-text pairs
 

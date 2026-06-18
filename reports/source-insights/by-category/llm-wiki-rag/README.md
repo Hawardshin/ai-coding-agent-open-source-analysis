@@ -1,6 +1,6 @@
 # LLM 위키/RAG/지식베이스 소스 인사이트
 
-생성 시각: 2026-06-18T15:43:43.893Z
+생성 시각: 2026-06-18T15:47:35.104Z
 
 수집, chunking, embedding, retrieval, memory, vector store
 

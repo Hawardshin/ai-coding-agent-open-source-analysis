@@ -1,6 +1,6 @@
 # alice840126-ship-it/korean-law-mcp-setup 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 한국 법령 MCP Claude Code 연동 세팅
 

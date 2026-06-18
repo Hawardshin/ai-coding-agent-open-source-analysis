@@ -1,6 +1,6 @@
 # tobocop2/lilbee 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Run and manage local AI models, search your files and code, and crawl the web, all in one program. Cited answers, local-first, with an MCP server for your coding agent. TUI, CLI, REST API, and Python library. Works with Ollama and LM Studio.
 

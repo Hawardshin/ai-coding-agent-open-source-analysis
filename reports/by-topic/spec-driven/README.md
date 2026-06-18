@@ -1,6 +1,6 @@
 # 스펙 드리븐/요구사항
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 스펙 추출, 요구사항, 추적성, acceptance criteria, SDD 근거를 보는 주제입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 스펙을 어떻게 뽑고 저장하고 테스트 trace와 연결해야 오래 기억되는가? |
+| 먼저 뽑을 것 | 스펙 추출 방식<br>요구사항-설계-테스트 추적성<br>spec memory와 acceptance gate |
+| 최종 활용 | 스펙 드리븐 개발 체계를 만들 때 필요한 산출물과 연결 규칙을 뽑습니다. |
+| 먼저 볼 보고서 | [Spec-Driven Development: 스펙 추출과 스펙 메모리 합성 보고서](../../spec-driven/00-spec-extraction-and-spec-memory-synthesis.md)<br>[스펙 드리븐/요구사항](../../categories/spec-driven-requirements/README.md)<br>[스펙 드리븐/요구사항](../../repository-insights/by-role/spec-driven/README.md)<br>[스펙 드리븐/요구사항 소스 딥다이브](../../source-deep-dives/by-topic/spec-driven/README.md)<br>[스펙 드리븐/요구사항 소스 인사이트](../../source-insights/by-category/spec-driven/README.md) |
+
 ## 범위
 
 - 보고서 수: 42
 - 데이터: [data/report-categories/spec-driven.json](../../../data/report-categories/spec-driven.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - source-deep-dive-report: 19
 - clone-structure-report: 15
@@ -44,7 +58,7 @@
 - source-insight-report: 1
 - overview-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - source-deep-dives: 19
 - clone-structures: 15
@@ -55,6 +69,8 @@
 - source-insights: 1
 - root: 1
 - global-trending/repositories: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -92,7 +108,10 @@
 | [Fission-AI/OpenSpec 구조 분석](../../clone-structures/Fission-AI__OpenSpec.md) | clone-structure-report | clone-structures | -28 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 42개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -138,3 +157,5 @@
 | [MCPJam/inspector](../../global-trending/repositories/MCPJam__inspector.md) | per-repository-report | global-trending/repositories | -29 |
 | [kakao/hbase-region-inspector](../../korea-trending/repositories/kakao__hbase-region-inspector.md) | per-repository-report | korea-trending/repositories | -29 |
 | [line/liff-inspector](../../korea-trending/repositories/line__liff-inspector.md) | per-repository-report | korea-trending/repositories | -29 |
+
+</details>

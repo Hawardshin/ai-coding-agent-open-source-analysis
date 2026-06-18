@@ -1,6 +1,6 @@
 # JunsikChoi/korea-cli 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Access Korea's public data APIs with natural language. CLI + MCP server powered by LLM.
 

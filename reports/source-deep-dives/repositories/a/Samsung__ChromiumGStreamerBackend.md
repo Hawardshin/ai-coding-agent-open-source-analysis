@@ -1,6 +1,6 @@
 # Samsung/ChromiumGStreamerBackend 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Use GStreamer to play media streams in chromium. We implemented a Media Process which is own by the Browser Process and creates players on-demand. Any Video tag will be backed by a GStreamer pipeline that lives in the Media Process.
 

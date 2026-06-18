@@ -1,6 +1,6 @@
 # CoWork-OS/CoWork-OS 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Local-first personal agentic OS and everything app for coding, knowledge work, web design, automations, and artifacts.
 

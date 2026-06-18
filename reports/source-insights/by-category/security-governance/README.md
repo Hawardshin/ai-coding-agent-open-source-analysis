@@ -1,6 +1,6 @@
 # 보안/거버넌스/안전 소스 인사이트
 
-생성 시각: 2026-06-18T15:43:43.893Z
+생성 시각: 2026-06-18T15:47:35.104Z
 
 sandbox, permission, policy, auth, guardrail, secret handling
 

@@ -1,6 +1,6 @@
 # CharlesLee1991/bmp-ai-air 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 AIR Korean Ad Insights — Tier 1 LLM-First MCP gateway (air.bmp.ai). Operated by BIZACTIONER room.
 

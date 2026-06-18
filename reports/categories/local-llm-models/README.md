@@ -1,6 +1,6 @@
 # 로컬 LLM/모델
 
-생성 시각: 2026-06-18T15:43:30.239Z
+생성 시각: 2026-06-18T15:47:21.168Z
 
 local model runtime, open model, model optimization, transformers, small model, edge inference, model-serving UI를 묶은 카테고리입니다.
 

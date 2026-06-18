@@ -1,6 +1,6 @@
 # 전체 보고서 읽기 지도
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 이 페이지는 GitHub나 로컬 checkout에서 레포를 그대로 읽기 위한 최상위 보고서 지도입니다. 배포용 웹 UI는 제거되어 있으므로, 이 README와 하위 카테고리/표/JSON 인덱스를 기준으로 탐색하면 됩니다.
 
@@ -13,6 +13,15 @@
 ## 총평
 
 이 README 하나를 시작점으로 삼으면 레포 전체 조사를 끊긴 링크 없이 따라갈 수 있습니다. 주제 중심으로 볼 때는 주제별 보고서 목차, 물리 구조 중심으로 볼 때는 폴더별 README 지도, 정량 비교가 필요할 때는 표/CSV 목차를 쓰는 구성이 가장 읽기 쉽습니다.
+
+## 핵심 먼저
+
+| 하고 싶은 일 | 먼저 볼 곳 | 이유 |
+| --- | --- | --- |
+| 전체 주제 의미를 한 번에 파악 | [전체 인사이트 지도](insight-map/README.md) | 각 주제의 의미, 위치, 뽑아낼 인사이트가 한 문서에 있습니다. |
+| 구현 차이와 대표 레포 비교 | [상세 비교 리포트](source-insights/comparative-report.md) | 카테고리별 강점, 약점, 대표 레포 판단표가 있습니다. |
+| 실제 파일 경로 확인 | [소스 딥다이브](source-deep-dives/README.md) | 로컬 클론에서 뽑은 entrypoint와 구현 근거를 봅니다. |
+| 전체 목록을 빠르게 필터링 | [표/CSV 목차](tables/README.md) | CSV와 matrix로 많은 항목을 비교합니다. |
 
 ## 범위
 
@@ -51,17 +60,12 @@
 | [Claude Code / Codex Harness Materials 1000+ Corpus](agent-harness/00-claude-code-codex-harness-materials-1000.md) | agent-harness-report | agent-harness | 157 |
 | [근거 카테고리 목차](categories/README.md) | category-guide | categories | 157 |
 | [Global Trending Open Source 500 Analysis](global-trending/00-global-open-source-trend-report-2026-06-18.md) | global-trending-report | global-trending | 157 |
-| [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | 157 |
-| [Agent Harness Conference and Presentation Patterns](presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
-| [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
-| [레포별 인사이트](repository-insights/README.md) | overview-report | repository-insights | 157 |
-| [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
-| [소스 딥다이브](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
-| [127개 로컬 클론 구조 분석 총괄](clone-structure-analysis-127.md) | overview-report | root | 143 |
-| [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 
 
-## 핵심 총괄 보고서
+## 핵심 총괄 보고서 펼쳐보기
+
+<details>
+<summary>핵심 총괄 보고서 30개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -96,6 +100,7 @@
 | [평가/관측/품질](categories/evals-observability-quality/README.md) | category-guide | categories | 156 |
 | [글로벌 AI 오픈소스](categories/global-ai-open-source/README.md) | category-guide | categories | 156 |
 
+</details>
 
 ## 주제별 목차
 

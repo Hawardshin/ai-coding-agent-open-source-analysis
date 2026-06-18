@@ -1,6 +1,6 @@
 # LLM 위키/지식베이스 보고서
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 LLM wiki, RAG, GraphRAG, 문서 지식베이스, code-level pipeline, provenance 보고서입니다.
 

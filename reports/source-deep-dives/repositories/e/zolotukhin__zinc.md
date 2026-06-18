@@ -1,6 +1,6 @@
 # zolotukhin/zinc 소스 딥다이브
 
-생성 시각: 2026-06-18T15:43:32.234Z
+생성 시각: 2026-06-18T15:47:23.104Z
 
 Zig INferenCe Engine — Local LLM inference on AMD GPUs and Apple Silicon
 

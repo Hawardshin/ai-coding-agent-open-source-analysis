@@ -1,6 +1,6 @@
 # 먼저 읽기
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 전체 조사 흐름과 핵심 시작점을 빠르게 잡는 상위 지도입니다.
 
@@ -29,12 +29,26 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 이 레포에서 먼저 무엇을 읽어야 하는가? |
+| 먼저 뽑을 것 | 전체 조사 구조<br>핵심 보고서 우선순위<br>깊게 들어갈 다음 링크 |
+| 최종 활용 | 처음 10분 안에 읽을 순서와 핵심 위치를 결정합니다. |
+| 먼저 볼 보고서 | [30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서](../../comparisons/01-project-taxonomy-and-feature-comparison.md)<br>[유사군별 비교와 관계 지도](../../comparisons/02-similarity-clusters.md)<br>[LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄](../../llm-wiki/00-llm-wiki-100-summary.md)<br>[LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약](../../llm-wiki/01-llm-wiki-100-selection-and-patterns.md)<br>[LLM Wiki 100 Code-Level Pipeline Comparison](../../llm-wiki/02-code-level-pipeline-comparison.md) |
+
 ## 범위
 
 - 보고서 수: 21
 - 데이터: [data/report-categories/start-here.json](../../../data/report-categories/start-here.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - overview-report: 4
 - llm-wiki-report: 3
@@ -49,7 +63,7 @@
 - korea-trending-report: 1
 - source-deep-dive-report: 1
 
-## 출처 폴더
+### 출처 폴더
 
 - research: 3
 - root: 3
@@ -66,6 +80,8 @@
 - korea-trending: 1
 - repository-insights: 1
 - source-deep-dives: 1
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -94,7 +110,10 @@
 | [AI 에이전트 설계의 충돌 이론과 보류된 질문](../../research/03-conflicting-theories-and-open-questions.md) | research-synthesis | research | 117 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 21개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -119,3 +138,5 @@
 | [127개 로컬 클론 구조 분석 총괄](../../clone-structure-analysis-127.md) | overview-report | root | 143 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 | [AI 에이전트 설계의 충돌 이론과 보류된 질문](../../research/03-conflicting-theories-and-open-questions.md) | research-synthesis | research | 117 |
+
+</details>

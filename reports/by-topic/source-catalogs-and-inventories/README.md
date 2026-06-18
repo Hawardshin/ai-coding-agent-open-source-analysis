@@ -1,6 +1,6 @@
 # 소스 카탈로그/인벤토리
 
-생성 시각: 2026-06-18T15:43:44.521Z
+생성 시각: 2026-06-18T15:47:35.662Z
 
 조사에 사용한 소스 카탈로그, 인벤토리, 클론 목록, evidence ledger입니다.
 
@@ -29,20 +29,36 @@
 | [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
+## 핵심 먼저
+
+| 항목 | 내용 |
+| --- | --- |
+| 핵심 질문 | 자료 목록과 출처를 빠짐없이 추적하려면 어디를 봐야 하는가? |
+| 먼저 뽑을 것 | 전체 자료 목록<br>클론/근거 인벤토리<br>데이터 파일 위치 |
+| 최종 활용 | 분석 대상과 근거 목록의 누락 여부를 확인합니다. |
+| 먼저 볼 보고서 | [Source Inventory](../../00-source-inventory.md)<br>[AI Usage Trend Conference Source Catalog](../../presentations/ai-usage-trend-source-catalog-6-12mo.md)<br>[Conference Source Catalog](../../presentations/conference-source-catalog.md)<br>[Source Inventory](../../adjacent-tech-source-inventory.md)<br>[Current Clone Inventory: 107 Open Source Repositories](../../current-clone-inventory-107.md) |
+
 ## 범위
 
 - 보고서 수: 6
 - 데이터: [data/report-categories/source-catalogs-and-inventories.json](../../../data/report-categories/source-catalogs-and-inventories.json)
 
-## 보고서 유형
+## 세부 분포 펼쳐보기
+
+<details>
+<summary>보고서 유형과 출처 폴더 보기</summary>
+
+### 보고서 유형
 
 - overview-report: 4
 - presentation-report: 2
 
-## 출처 폴더
+### 출처 폴더
 
 - root: 4
 - presentations: 2
+
+</details>
 
 ## 추천 읽기 경로
 
@@ -56,7 +72,10 @@
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
 
 
-## 전체 보고서
+## 전체 보고서 펼쳐보기
+
+<details>
+<summary>전체 보고서 6개 보기</summary>
 
 | 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
@@ -66,3 +85,5 @@
 | [Source Inventory](../../adjacent-tech-source-inventory.md) | overview-report | root | 118 |
 | [Current Clone Inventory: 107 Open Source Repositories](../../current-clone-inventory-107.md) | overview-report | root | 118 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
+
+</details>
