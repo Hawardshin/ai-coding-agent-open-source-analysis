@@ -1,0 +1,2174 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "agent-harness",
+  "title": "Agent Harness, MCP, and Orchestration",
+  "description": "Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.",
+  "count": 144,
+  "reports": [
+    {
+      "id": "report:reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "path": "reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "title": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석",
+      "summary": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석 기준일 2026 06 13 KST. 대상 새로 선정/clone한 50개 오픈소스 레포지토리와 공식 문서. 관련 데이터 data/adjacent tech repositories.json , data/adjacent tech source inventory.json , reports/adjacent tech source inventory.md . 1. 결론 요약 기존 30개 ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T15:59:18.841Z",
+      "categories": [
+        "start-here",
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/agent-harness/00-claude-code-codex-harness-materials-1000.md",
+      "path": "reports/agent-harness/00-claude-code-codex-harness-materials-1000.md",
+      "title": "Claude Code / Codex Harness Materials 1000+ Corpus",
+      "summary": "Claude Code / Codex Harness Materials 1000+ Corpus Generated 2026 06 18T02 20 43.625Z Scope Selected materials 1200 Raw candidates before dedupe 3622 GitHub repository search queries 20 GitHub code search queries attempted 8 Official Claude docs parsed 148 Off",
+      "kind": "agent-harness-report",
+      "folder": "agent-harness",
+      "updatedAt": "2026-06-18T02:22:00.517Z",
+      "categories": [
+        "start-here",
+        "coding-agents",
+        "agent-harness"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/presentations/00-agent-harness-conference-presentation-patterns.md",
+      "path": "reports/presentations/00-agent-harness-conference-presentation-patterns.md",
+      "title": "Agent Harness Conference and Presentation Patterns",
+      "summary": "Agent Harness Conference and Presentation Patterns Generated 2026 06 18T03 37 26.867Z Scope Indexed materials 665 AI Engineer schedule sessions retained after dedupe 605 Interrupt 2026 recordings retained after dedupe 24 Source groups 17 License policy metadat",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T03:37:27.433Z",
+      "categories": [
+        "start-here",
+        "agent-harness",
+        "presentations-conferences"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/categories/agent-harness-orchestration/README.md",
+      "path": "reports/categories/agent-harness-orchestration/README.md",
+      "title": "Agent Harness and Orchestration",
+      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 38 56.297Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. Counts Total categorized entries 2650 Repositories 575 Research papers 162 ",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.603Z",
+      "categories": [
+        "category-guides",
+        "agent-harness"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/categories/mcp-tools-protocols/README.md",
+      "path": "reports/categories/mcp-tools-protocols/README.md",
+      "title": "MCP, Tools, and Protocols",
+      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 38 56.297Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. Counts Total categorized entries 649 Repositories 427 Research papers 10 Present",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "categories": [
+        "category-guides",
+        "agent-harness"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/agent-harness/codex-harness-setup-guide.md",
+      "path": "reports/agent-harness/codex-harness-setup-guide.md",
+      "title": "Codex Harness Setup Guide from Claude Code Patterns",
+      "summary": "Codex Harness Setup Guide from Claude Code Patterns Generated 2026 06 18T02 20 43.625Z This guide translates the Claude Code patterns in the 1000+ material corpus into Codex settings you can use as a repeatable harness. 1. Repository Instructions Create AGENTS",
+      "kind": "agent-harness-report",
+      "folder": "agent-harness",
+      "updatedAt": "2026-06-18T13:42:18.894Z",
+      "categories": [
+        "coding-agents",
+        "agent-harness"
+      ],
+      "priority": 142
+    },
+    {
+      "id": "report:reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "path": "reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "title": "공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness",
+      "summary": "공식 문서와 소스맵 Context Engineering, RAG, Local LLM, Agent Harness 기준일 2026 06 13 KST. 대상 새로 clone한 50개 레포지토리와 공식 문서. 목적 \"공식 문서가 말하는 설계 철학\"과 \"clone된 코드에서 확인할 위치\"를 연결한다. 1. 공식 문서에서 확인한 큰 흐름 Context engineering은 prompt 작성이 아니라 runtime context 운영이다 Anthropic의 context ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:07:03.248Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md",
+      "path": "reports/llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md",
+      "title": "jee3m/augmentative-knowledge-hooks 코드 레벨 분석",
+      "summary": "jee3m/augmentative knowledge hooks 코드 레벨 분석 생성일 2026 06 17T23 31 46.230Z 기본 판정 항목 값 type curated list/template maturity D small/demo/list 4 stars 0 language HTML tags rag, knowledge base, agent knowledge files/code/source 4/0/0 tests/ci 0/1 local path sources/",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:46.232Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/PleasePrompto__notebooklm-mcp.md",
+      "path": "reports/llm-wiki/code-level-repositories/PleasePrompto__notebooklm-mcp.md",
+      "title": "PleasePrompto/notebooklm-mcp 코드 레벨 분석",
+      "summary": "PleasePrompto/notebooklm mcp 코드 레벨 분석 생성일 2026 06 17T23 31 52.866Z 기본 판정 항목 값 type agent memory/tooling maturity C focused implementation 53 stars 2810 language TypeScript tags knowledge base, document chat, agent knowledge files/code/source 50/37/37 tests/ci ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:52.867Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/clone-structures/addyosmani__agent-skills.md",
+      "path": "reports/clone-structures/addyosmani__agent-skills.md",
+      "title": "addyosmani/agent-skills 구조 분석",
+      "summary": "addyosmani/agent skills 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/addyosmani agent skills remote https //github.com/addyosmani/agent skills.git HEAD a5f0b17 2026 06 15 Merge pull request 260 from nucliweb/fix/issue 258 agents readme fron",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.683Z",
+      "categories": [
+        "agent-harness",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ceaksan__mcp-code-search.md",
+      "path": "reports/clone-structures/ceaksan__mcp-code-search.md",
+      "title": "ceaksan/mcp-code-search 구조 분석",
+      "summary": "ceaksan/mcp code search 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ceaksan mcp code search remote https //github.com/ceaksan/mcp code search.git HEAD 00360fe 2026 03 09 refactor switch default embedding model from jina to all MiniLM L6 v2",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.821Z",
+      "categories": [
+        "agent-harness",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/formulahendry__mcp-server-spec-driven-development.md",
+      "path": "reports/clone-structures/formulahendry__mcp-server-spec-driven-development.md",
+      "title": "formulahendry/mcp-server-spec-driven-development 구조 분석",
+      "summary": "formulahendry/mcp server spec driven development 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/formulahendry mcp server spec driven development remote https //github.com/formulahendry/mcp server spec driven development HEAD 8a0532a 2025 09 2",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.053Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Lumiaqian__openspec-mcp.md",
+      "path": "reports/clone-structures/Lumiaqian__openspec-mcp.md",
+      "title": "Lumiaqian/openspec-mcp 구조 분석",
+      "summary": "Lumiaqian/openspec mcp 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Lumiaqian openspec mcp remote https //github.com/Lumiaqian/openspec mcp HEAD 48f8684 2026 01 12 chore bump version to 0.4.2 branch main groups spec driven 20 files 74 dirs ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.505Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/numman-ali__openskills.md",
+      "path": "reports/clone-structures/numman-ali__openskills.md",
+      "title": "numman-ali/openskills 구조 분석",
+      "summary": "numman ali/openskills 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/numman ali openskills remote https //github.com/numman ali/openskills.git HEAD 57d933a 2026 01 18 chore added claude md branch main groups previous clone inventory 107 files",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.819Z",
+      "categories": [
+        "agent-harness",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Agent-Hellboy__mcp-server-fuzzer.md",
+      "path": "reports/global-trending/repositories/Agent-Hellboy__mcp-server-fuzzer.md",
+      "title": "Agent-Hellboy/mcp-server-fuzzer",
+      "summary": "Agent Hellboy/mcp server fuzzer Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Agent Hellboy/mcp server fuzzer local path sources/Agent Hellboy mcp server fuzzer HEAD 249f9e9 stars/forks 35 / 6 language Python license pushedA",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.116Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/ai-boost__awesome-harness-engineering.md",
+      "path": "reports/global-trending/repositories/ai-boost__awesome-harness-engineering.md",
+      "title": "ai-boost/awesome-harness-engineering",
+      "summary": "ai boost/awesome harness engineering Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/ai boost/awesome harness engineering local path sources/ai boost awesome harness engineering HEAD 22fa932 stars/forks 1905 / 195 language Pyt",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:55.231Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Aimino-Tech__opendocswork-mcp.md",
+      "path": "reports/global-trending/repositories/Aimino-Tech__opendocswork-mcp.md",
+      "title": "Aimino-Tech/opendocswork-mcp",
+      "summary": "Aimino Tech/opendocswork mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Aimino Tech/opendocswork mcp local path sources/Aimino Tech opendocswork mcp HEAD 945ab3d stars/forks 149 / 11 language Rust license pushedAt 2026 06",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:16.240Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/aliyun__alibabacloud-dataworks-mcp-server.md",
+      "path": "reports/global-trending/repositories/aliyun__alibabacloud-dataworks-mcp-server.md",
+      "title": "aliyun/alibabacloud-dataworks-mcp-server",
+      "summary": "aliyun/alibabacloud dataworks mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/aliyun/alibabacloud dataworks mcp server local path sources/aliyun alibabacloud dataworks mcp server HEAD 348888e stars/forks 43 / 16 lan",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:17.263Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/artokun__comfyui-mcp.md",
+      "path": "reports/global-trending/repositories/artokun__comfyui-mcp.md",
+      "title": "artokun/comfyui-mcp",
+      "summary": "artokun/comfyui mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/artokun/comfyui mcp local path sources/artokun comfyui mcp HEAD 248011a stars/forks 163 / 33 language TypeScript license pushedAt 2026 06 18T00 14 55Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:06.359Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/awkoy__notion-mcp-server.md",
+      "path": "reports/global-trending/repositories/awkoy__notion-mcp-server.md",
+      "title": "awkoy/notion-mcp-server",
+      "summary": "awkoy/notion mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/awkoy/notion mcp server local path sources/awkoy notion mcp server HEAD 717cd58 stars/forks 156 / 28 language TypeScript license pushedAt 2026 06 17T16 17",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:07.179Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/awslabs__mcp.md",
+      "path": "reports/global-trending/repositories/awslabs__mcp.md",
+      "title": "awslabs/mcp",
+      "summary": "awslabs/mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/awslabs/mcp local path sources/awslabs mcp HEAD ea55b31 stars/forks 9289 / 1584 language Python license pushedAt 2026 06 18T00 22 22Z trendScore / priorityScore 164 /",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:52.900Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/bitbonsai__mcpvault.md",
+      "path": "reports/global-trending/repositories/bitbonsai__mcpvault.md",
+      "title": "bitbonsai/mcpvault",
+      "summary": "bitbonsai/mcpvault Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/bitbonsai/mcpvault local path sources/bitbonsai mcpvault HEAD b9ea91a stars/forks 1429 / 111 language Astro license pushedAt 2026 06 17T17 42 55Z trendScore / ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:06.125Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/blockscout__mcp-server.md",
+      "path": "reports/global-trending/repositories/blockscout__mcp-server.md",
+      "title": "blockscout/mcp-server",
+      "summary": "blockscout/mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/blockscout/mcp server local path sources/blockscout mcp server HEAD 2ed7f05 stars/forks 40 / 19 language Python license pushedAt 2026 06 17T22 15 13Z trendS",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.038Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/borghei__Claude-Skills.md",
+      "path": "reports/global-trending/repositories/borghei__Claude-Skills.md",
+      "title": "borghei/Claude-Skills",
+      "summary": "borghei/Claude Skills Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/borghei/Claude Skills local path sources/borghei Claude Skills HEAD 13332d2 stars/forks 279 / 50 language HTML license pushedAt 2026 06 17T09 29 03Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.383Z",
+      "categories": [
+        "coding-agents",
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/brycewang-stanford__Awesome-Journal-Skills.md",
+      "path": "reports/global-trending/repositories/brycewang-stanford__Awesome-Journal-Skills.md",
+      "title": "brycewang-stanford/Awesome-Journal-Skills",
+      "summary": "brycewang stanford/Awesome Journal Skills Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/brycewang stanford/Awesome Journal Skills local path sources/brycewang stanford Awesome Journal Skills HEAD 6a9a500 stars/forks 75 / 20 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:13.210Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/BuilderIO__skills.md",
+      "path": "reports/global-trending/repositories/BuilderIO__skills.md",
+      "title": "BuilderIO/skills",
+      "summary": "BuilderIO/skills Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/BuilderIO/skills local path sources/BuilderIO skills HEAD a072671 stars/forks 877 / 38 language JavaScript license pushedAt 2026 06 17T23 30 10Z trendScore / pri",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.226Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/cbcoutinho__nextcloud-mcp-server.md",
+      "path": "reports/global-trending/repositories/cbcoutinho__nextcloud-mcp-server.md",
+      "title": "cbcoutinho/nextcloud-mcp-server",
+      "summary": "cbcoutinho/nextcloud mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/cbcoutinho/nextcloud mcp server local path sources/cbcoutinho nextcloud mcp server HEAD ccc3f42 stars/forks 272 / 45 language Python license pushe",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:50.832Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/ChiR24__Unreal_mcp.md",
+      "path": "reports/global-trending/repositories/ChiR24__Unreal_mcp.md",
+      "title": "ChiR24/Unreal_mcp",
+      "summary": "ChiR24/Unreal mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/ChiR24/Unreal mcp local path sources/ChiR24 Unreal mcp HEAD e1ceb64 stars/forks 729 / 136 language C++ license pushedAt 2026 06 16T07 03 34Z trendScore / priori",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:10.973Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/cisco-ai-defense__mcp-scanner.md",
+      "path": "reports/global-trending/repositories/cisco-ai-defense__mcp-scanner.md",
+      "title": "cisco-ai-defense/mcp-scanner",
+      "summary": "cisco ai defense/mcp scanner Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/cisco ai defense/mcp scanner local path sources/cisco ai defense mcp scanner HEAD 67475ef stars/forks 965 / 116 language Python license pushedAt 2026",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:50.316Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/containers__kubernetes-mcp-server.md",
+      "path": "reports/global-trending/repositories/containers__kubernetes-mcp-server.md",
+      "title": "containers/kubernetes-mcp-server",
+      "summary": "containers/kubernetes mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/containers/kubernetes mcp server local path sources/containers kubernetes mcp server HEAD 1d3eb28 stars/forks 1699 / 365 language Go license push",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.388Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/datagouv__datagouv-mcp.md",
+      "path": "reports/global-trending/repositories/datagouv__datagouv-mcp.md",
+      "title": "datagouv/datagouv-mcp",
+      "summary": "datagouv/datagouv mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/datagouv/datagouv mcp local path sources/datagouv datagouv mcp HEAD 88375fa stars/forks 1538 / 125 language Python license pushedAt 2026 06 17T12 25 25Z tre",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:05.090Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/DAWNCR0W__affine-mcp-server.md",
+      "path": "reports/global-trending/repositories/DAWNCR0W__affine-mcp-server.md",
+      "title": "DAWNCR0W/affine-mcp-server",
+      "summary": "DAWNCR0W/affine mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/DAWNCR0W/affine mcp server local path sources/DAWNCR0W affine mcp server HEAD 50f8853 stars/forks 201 / 59 language TypeScript license pushedAt 2026 06",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:04.041Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/dbt-labs__dbt-mcp.md",
+      "path": "reports/global-trending/repositories/dbt-labs__dbt-mcp.md",
+      "title": "dbt-labs/dbt-mcp",
+      "summary": "dbt labs/dbt mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/dbt labs/dbt mcp local path sources/dbt labs dbt mcp HEAD 2a7af75 stars/forks 581 / 124 language Python license pushedAt 2026 06 17T08 02 48Z trendScore / priori",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.385Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/DeusData__codebase-memory-mcp.md",
+      "path": "reports/global-trending/repositories/DeusData__codebase-memory-mcp.md",
+      "title": "DeusData/codebase-memory-mcp",
+      "summary": "DeusData/codebase memory mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/DeusData/codebase memory mcp local path sources/DeusData codebase memory mcp HEAD e599df1 stars/forks 5246 / 484 language C license MIT pushedAt 2026",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:43.138Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Dicklesworthstone__mcp_agent_mail_rust.md",
+      "path": "reports/global-trending/repositories/Dicklesworthstone__mcp_agent_mail_rust.md",
+      "title": "Dicklesworthstone/mcp_agent_mail_rust",
+      "summary": "Dicklesworthstone/mcp agent mail rust Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Dicklesworthstone/mcp agent mail rust local path sources/Dicklesworthstone mcp agent mail rust HEAD 59b9349 stars/forks 89 / 23 language Rus",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:11.926Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Dicklesworthstone__mcp_agent_mail.md",
+      "path": "reports/global-trending/repositories/Dicklesworthstone__mcp_agent_mail.md",
+      "title": "Dicklesworthstone/mcp_agent_mail",
+      "summary": "Dicklesworthstone/mcp agent mail Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Dicklesworthstone/mcp agent mail local path sources/Dicklesworthstone mcp agent mail HEAD b18d925 stars/forks 1990 / 209 language Python license ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:57.377Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/freee__freee-mcp.md",
+      "path": "reports/global-trending/repositories/freee__freee-mcp.md",
+      "title": "freee/freee-mcp",
+      "summary": "freee/freee mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/freee/freee mcp local path sources/freee freee mcp HEAD 7140ab5 stars/forks 459 / 53 language TypeScript license pushedAt 2026 06 17T23 16 34Z trendScore / priori",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:55.448Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/genomoncology__biomcp.md",
+      "path": "reports/global-trending/repositories/genomoncology__biomcp.md",
+      "title": "genomoncology/biomcp",
+      "summary": "genomoncology/biomcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/genomoncology/biomcp local path sources/genomoncology biomcp HEAD b8710d7 stars/forks 527 / 107 language Rust license pushedAt 2026 06 18T00 26 54Z trendScor",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.948Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/getsentry__sentry-mcp.md",
+      "path": "reports/global-trending/repositories/getsentry__sentry-mcp.md",
+      "title": "getsentry/sentry-mcp",
+      "summary": "getsentry/sentry mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/getsentry/sentry mcp local path sources/getsentry sentry mcp HEAD 5dee0fc stars/forks 730 / 119 language TypeScript license pushedAt 2026 06 17T23 22 15Z tre",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:10.879Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/getsentry__XcodeBuildMCP.md",
+      "path": "reports/global-trending/repositories/getsentry__XcodeBuildMCP.md",
+      "title": "getsentry/XcodeBuildMCP",
+      "summary": "getsentry/XcodeBuildMCP Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/getsentry/XcodeBuildMCP local path sources/getsentry XcodeBuildMCP HEAD 5127139 stars/forks 5921 / 294 language TypeScript license pushedAt 2026 06 17T16 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:47.595Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/github__github-mcp-server.md",
+      "path": "reports/global-trending/repositories/github__github-mcp-server.md",
+      "title": "github/github-mcp-server",
+      "summary": "github/github mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/github/github mcp server local path sources/github github mcp server HEAD 4f73cfd stars/forks 30770 / 4406 language Go license pushedAt 2026 06 17T20 54 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:42.514Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Glade-tool__glade-mcp.md",
+      "path": "reports/global-trending/repositories/Glade-tool__glade-mcp.md",
+      "title": "Glade-tool/glade-mcp",
+      "summary": "Glade tool/glade mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Glade tool/glade mcp local path sources/Glade tool glade mcp HEAD 4d07c86 stars/forks 168 / 20 language C license pushedAt 2026 06 17T23 26 28Z trendScore / ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:05.532Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/GLips__Figma-Context-MCP.md",
+      "path": "reports/global-trending/repositories/GLips__Figma-Context-MCP.md",
+      "title": "GLips/Figma-Context-MCP",
+      "summary": "GLips/Figma Context MCP Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/GLips/Figma Context MCP local path sources/GLips Figma Context MCP HEAD 22426e6 stars/forks 15139 / 1198 language TypeScript license pushedAt 2026 06 18T0",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:43.063Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/GlitterKill__sdl-mcp.md",
+      "path": "reports/global-trending/repositories/GlitterKill__sdl-mcp.md",
+      "title": "GlitterKill/sdl-mcp",
+      "summary": "GlitterKill/sdl mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/GlitterKill/sdl mcp local path sources/GlitterKill sdl mcp HEAD 0a256da stars/forks 369 / 22 language TypeScript license pushedAt 2026 06 18T00 24 44Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:52.583Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Goldentrii__AgentRecall-MCP.md",
+      "path": "reports/global-trending/repositories/Goldentrii__AgentRecall-MCP.md",
+      "title": "Goldentrii/AgentRecall-MCP",
+      "summary": "Goldentrii/AgentRecall MCP Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Goldentrii/AgentRecall MCP local path sources/Goldentrii AgentRecall MCP HEAD b6808dc stars/forks 303 / 52 language TypeScript license pushedAt 2026 06",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:08.841Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/google-marketing-solutions__google_ads_mcp.md",
+      "path": "reports/global-trending/repositories/google-marketing-solutions__google_ads_mcp.md",
+      "title": "google-marketing-solutions/google_ads_mcp",
+      "summary": "google marketing solutions/google ads mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/google marketing solutions/google ads mcp local path sources/google marketing solutions google ads mcp HEAD 940959e stars/forks 227 / 71",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.636Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/googleapis__mcp-toolbox.md",
+      "path": "reports/global-trending/repositories/googleapis__mcp-toolbox.md",
+      "title": "googleapis/mcp-toolbox",
+      "summary": "googleapis/mcp toolbox Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/googleapis/mcp toolbox local path sources/googleapis mcp toolbox HEAD 2dada83 stars/forks 15643 / 1604 language Go license pushedAt 2026 06 17T23 58 10Z tr",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:58.592Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/grafana__loki-mcp.md",
+      "path": "reports/global-trending/repositories/grafana__loki-mcp.md",
+      "title": "grafana/loki-mcp",
+      "summary": "grafana/loki mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/grafana/loki mcp local path sources/grafana loki mcp HEAD c814856 stars/forks 152 / 32 language Go license pushedAt 2026 06 16T11 15 39Z trendScore / prioritySco",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:07.197Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/homeassistant-ai__ha-mcp.md",
+      "path": "reports/global-trending/repositories/homeassistant-ai__ha-mcp.md",
+      "title": "homeassistant-ai/ha-mcp",
+      "summary": "homeassistant ai/ha mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/homeassistant ai/ha mcp local path sources/homeassistant ai ha mcp HEAD b2a8ead stars/forks 3449 / 138 language Python license pushedAt 2026 06 17T20 52 0",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:59.563Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/intuit__quickbooks-online-mcp-server.md",
+      "path": "reports/global-trending/repositories/intuit__quickbooks-online-mcp-server.md",
+      "title": "intuit/quickbooks-online-mcp-server",
+      "summary": "intuit/quickbooks online mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/intuit/quickbooks online mcp server local path sources/intuit quickbooks online mcp server HEAD def3687 stars/forks 285 / 148 language TypeScr",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.243Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/jacob-bd__notebooklm-mcp-cli.md",
+      "path": "reports/global-trending/repositories/jacob-bd__notebooklm-mcp-cli.md",
+      "title": "jacob-bd/notebooklm-mcp-cli",
+      "summary": "jacob bd/notebooklm mcp cli Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/jacob bd/notebooklm mcp cli local path sources/jacob bd notebooklm mcp cli HEAD 78b3d28 stars/forks 4941 / 772 language Python license pushedAt 2026 0",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:47.278Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/jgravelle__jcodemunch-mcp.md",
+      "path": "reports/global-trending/repositories/jgravelle__jcodemunch-mcp.md",
+      "title": "jgravelle/jcodemunch-mcp",
+      "summary": "jgravelle/jcodemunch mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/jgravelle/jcodemunch mcp local path sources/jgravelle jcodemunch mcp HEAD 64027a4 stars/forks 1924 / 295 language Python license pushedAt 2026 06 17T19 4",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.313Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/jingcheng-chen__rhinomcp.md",
+      "path": "reports/global-trending/repositories/jingcheng-chen__rhinomcp.md",
+      "title": "jingcheng-chen/rhinomcp",
+      "summary": "jingcheng chen/rhinomcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/jingcheng chen/rhinomcp local path sources/jingcheng chen rhinomcp HEAD 02ab3dd stars/forks 724 / 76 language Python license pushedAt 2026 06 16T11 19 46Z",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:56.160Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/jonigl__mcp-client-for-ollama.md",
+      "path": "reports/global-trending/repositories/jonigl__mcp-client-for-ollama.md",
+      "title": "jonigl/mcp-client-for-ollama",
+      "summary": "jonigl/mcp client for ollama Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/jonigl/mcp client for ollama local path sources/jonigl mcp client for ollama HEAD 53eebf9 stars/forks 746 / 104 language Python license pushedAt 2026",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:53.126Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/jonigl__ollama-mcp-bridge.md",
+      "path": "reports/global-trending/repositories/jonigl__ollama-mcp-bridge.md",
+      "title": "jonigl/ollama-mcp-bridge",
+      "summary": "jonigl/ollama mcp bridge Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/jonigl/ollama mcp bridge local path sources/jonigl ollama mcp bridge HEAD dda3a52 stars/forks 93 / 32 language Python license pushedAt 2026 06 08T20 52 5",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.645Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/kubeflow__mcp-apache-spark-history-server.md",
+      "path": "reports/global-trending/repositories/kubeflow__mcp-apache-spark-history-server.md",
+      "title": "kubeflow/mcp-apache-spark-history-server",
+      "summary": "kubeflow/mcp apache spark history server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/kubeflow/mcp apache spark history server local path sources/kubeflow mcp apache spark history server HEAD ef9b081 stars/forks 177 / 65 la",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:04.099Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/line__line-bot-mcp-server.md",
+      "path": "reports/global-trending/repositories/line__line-bot-mcp-server.md",
+      "title": "line/line-bot-mcp-server",
+      "summary": "line/line bot mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/line/line bot mcp server local path sources/line line bot mcp server HEAD bfbbdab stars/forks 599 / 108 language TypeScript license pushedAt 2026 06 18T0",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:56.899Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/makenotion__notion-mcp-server.md",
+      "path": "reports/global-trending/repositories/makenotion__notion-mcp-server.md",
+      "title": "makenotion/notion-mcp-server",
+      "summary": "makenotion/notion mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/makenotion/notion mcp server local path sources/makenotion notion mcp server HEAD df04d3f stars/forks 4432 / 580 language TypeScript license pushedAt",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:56.818Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/mark3labs__mcp-go.md",
+      "path": "reports/global-trending/repositories/mark3labs__mcp-go.md",
+      "title": "mark3labs/mcp-go",
+      "summary": "mark3labs/mcp go Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/mark3labs/mcp go local path sources/mark3labs mcp go HEAD 43c2ca0 stars/forks 8809 / 844 language Go license pushedAt 2026 06 16T13 04 20Z trendScore / priorityS",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:46.001Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/mcp-use__mcp-use.md",
+      "path": "reports/global-trending/repositories/mcp-use__mcp-use.md",
+      "title": "mcp-use/mcp-use",
+      "summary": "mcp use/mcp use Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/mcp use/mcp use local path sources/mcp use mcp use HEAD e0280d1 stars/forks 10115 / 1336 language TypeScript license pushedAt 2026 06 16T20 41 50Z trendScore / pr",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:46.495Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/MCPJam__inspector.md",
+      "path": "reports/global-trending/repositories/MCPJam__inspector.md",
+      "title": "MCPJam/inspector",
+      "summary": "MCPJam/inspector Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/MCPJam/inspector local path sources/MCPJam inspector HEAD d8fefbf stars/forks 2016 / 239 language TypeScript license pushedAt 2026 06 18T00 27 09Z trendScore / p",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.242Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/microsoft__mcp-for-beginners.md",
+      "path": "reports/global-trending/repositories/microsoft__mcp-for-beginners.md",
+      "title": "microsoft/mcp-for-beginners",
+      "summary": "microsoft/mcp for beginners Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/microsoft/mcp for beginners local path sources/microsoft mcp for beginners HEAD fb2321e1 stars/forks 16551 / 5406 language Jupyter Notebook license pu",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:04.692Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/microsoft__mcp.md",
+      "path": "reports/global-trending/repositories/microsoft__mcp.md",
+      "title": "microsoft/mcp",
+      "summary": "microsoft/mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/microsoft/mcp local path sources/microsoft mcp HEAD 7a3ba50 stars/forks 3326 / 531 language C license pushedAt 2026 06 17T21 24 25Z trendScore / priorityScore 170 /",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:50.756Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/microsoft__skills.md",
+      "path": "reports/global-trending/repositories/microsoft__skills.md",
+      "title": "microsoft/skills",
+      "summary": "microsoft/skills Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/microsoft/skills local path sources/microsoft skills HEAD c5c544a stars/forks 2580 / 298 language TypeScript license pushedAt 2026 06 17T22 52 27Z trendScore / p",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:44.162Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/mongodb-js__mongodb-mcp-server.md",
+      "path": "reports/global-trending/repositories/mongodb-js__mongodb-mcp-server.md",
+      "title": "mongodb-js/mongodb-mcp-server",
+      "summary": "mongodb js/mongodb mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/mongodb js/mongodb mcp server local path sources/mongodb js mongodb mcp server HEAD 4ad6ce3 stars/forks 1055 / 257 language TypeScript license pushe",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:06.999Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/netboxlabs__netbox-mcp-server.md",
+      "path": "reports/global-trending/repositories/netboxlabs__netbox-mcp-server.md",
+      "title": "netboxlabs/netbox-mcp-server",
+      "summary": "netboxlabs/netbox mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/netboxlabs/netbox mcp server local path sources/netboxlabs netbox mcp server HEAD 8d02e9a stars/forks 187 / 84 language Python license pushedAt 2026 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:58.417Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/OctagonAI__octagon-mcp-server.md",
+      "path": "reports/global-trending/repositories/OctagonAI__octagon-mcp-server.md",
+      "title": "OctagonAI/octagon-mcp-server",
+      "summary": "OctagonAI/octagon mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/OctagonAI/octagon mcp server local path sources/OctagonAI octagon mcp server HEAD d262fe9 stars/forks 132 / 23 language TypeScript license pushedAt 2",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:09.113Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/oracle__mcp.md",
+      "path": "reports/global-trending/repositories/oracle__mcp.md",
+      "title": "oracle/mcp",
+      "summary": "oracle/mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/oracle/mcp local path sources/oracle mcp HEAD 36d4ea0 stars/forks 382 / 120 language Python license pushedAt 2026 06 16T19 50 40Z trendScore / priorityScore 135 / 423 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:14.728Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Power-Agent__PowerMCP.md",
+      "path": "reports/global-trending/repositories/Power-Agent__PowerMCP.md",
+      "title": "Power-Agent/PowerMCP",
+      "summary": "Power Agent/PowerMCP Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Power Agent/PowerMCP local path sources/Power Agent PowerMCP HEAD cc99f34 stars/forks 157 / 49 language Python license pushedAt 2026 06 15T01 32 55Z trendSco",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:14.936Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/ProfessionalWiki__MediaWiki-MCP-Server.md",
+      "path": "reports/global-trending/repositories/ProfessionalWiki__MediaWiki-MCP-Server.md",
+      "title": "ProfessionalWiki/MediaWiki-MCP-Server",
+      "summary": "ProfessionalWiki/MediaWiki MCP Server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/ProfessionalWiki/MediaWiki MCP Server local path sources/ProfessionalWiki MediaWiki MCP Server HEAD 4bbb3c5 stars/forks 96 / 25 language Typ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:52.635Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/redis__mcp-redis.md",
+      "path": "reports/global-trending/repositories/redis__mcp-redis.md",
+      "title": "redis/mcp-redis",
+      "summary": "redis/mcp redis Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/redis/mcp redis local path sources/redis mcp redis HEAD e3ed320 stars/forks 535 / 99 language Python license pushedAt 2026 06 17T11 23 25Z trendScore / prioritySc",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:05.271Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/robotmcp__ros-mcp-server.md",
+      "path": "reports/global-trending/repositories/robotmcp__ros-mcp-server.md",
+      "title": "robotmcp/ros-mcp-server",
+      "summary": "robotmcp/ros mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/robotmcp/ros mcp server local path sources/robotmcp ros mcp server HEAD 0eb504a stars/forks 1294 / 194 language Python license pushedAt 2026 06 17T22 52 0",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:06.185Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/ruvnet__agent-harness-generator.md",
+      "path": "reports/global-trending/repositories/ruvnet__agent-harness-generator.md",
+      "title": "ruvnet/agent-harness-generator",
+      "summary": "ruvnet/agent harness generator Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/ruvnet/agent harness generator local path sources/ruvnet agent harness generator HEAD b2506a1 stars/forks 164 / 15 language TypeScript license push",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:51.457Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Scottcjn__iota-agent-mcp.md",
+      "path": "reports/global-trending/repositories/Scottcjn__iota-agent-mcp.md",
+      "title": "Scottcjn/iota-agent-mcp",
+      "summary": "Scottcjn/iota agent mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Scottcjn/iota agent mcp local path sources/Scottcjn iota agent mcp HEAD d177b15 stars/forks 58 / 12 language JavaScript license pushedAt 2026 06 16T19 05 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:16.253Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/secure-agentic-framework__saf-mcp.md",
+      "path": "reports/global-trending/repositories/secure-agentic-framework__saf-mcp.md",
+      "title": "secure-agentic-framework/saf-mcp",
+      "summary": "secure agentic framework/saf mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/secure agentic framework/saf mcp local path sources/secure agentic framework saf mcp HEAD f2f5a7b stars/forks 348 / 92 language Python license pu",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:54.846Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Shelpuk-AI-Technology-Consulting__kindly-web-search-mcp-server.md",
+      "path": "reports/global-trending/repositories/Shelpuk-AI-Technology-Consulting__kindly-web-search-mcp-server.md",
+      "title": "Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
+      "summary": "Shelpuk AI Technology Consulting/kindly web search mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Shelpuk AI Technology Consulting/kindly web search mcp server local path sources/Shelpuk AI Technology Consulting ki",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.943Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/shinpr__mcp-local-rag.md",
+      "path": "reports/global-trending/repositories/shinpr__mcp-local-rag.md",
+      "title": "shinpr/mcp-local-rag",
+      "summary": "shinpr/mcp local rag Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/shinpr/mcp local rag local path sources/shinpr mcp local rag HEAD 95e39ea stars/forks 317 / 57 language TypeScript license pushedAt 2026 06 15T14 45 43Z tren",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:59.044Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/simota__agent-skills.md",
+      "path": "reports/global-trending/repositories/simota__agent-skills.md",
+      "title": "simota/agent-skills",
+      "summary": "simota/agent skills Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/simota/agent skills local path sources/simota agent skills HEAD b27a274 stars/forks 52 / 11 language HTML license pushedAt 2026 06 18T00 03 06Z trendScore / p",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:07.964Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/sirkirby__unifi-mcp.md",
+      "path": "reports/global-trending/repositories/sirkirby__unifi-mcp.md",
+      "title": "sirkirby/unifi-mcp",
+      "summary": "sirkirby/unifi mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/sirkirby/unifi mcp local path sources/sirkirby unifi mcp HEAD 43b8ea9 stars/forks 442 / 65 language Python license pushedAt 2026 06 17T21 46 18Z trendScore / p",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:58.108Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/SocketDev__socket-mcp.md",
+      "path": "reports/global-trending/repositories/SocketDev__socket-mcp.md",
+      "title": "SocketDev/socket-mcp",
+      "summary": "SocketDev/socket mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/SocketDev/socket mcp local path sources/SocketDev socket mcp HEAD 750761a stars/forks 117 / 33 language TypeScript license pushedAt 2026 06 18T00 00 43Z tren",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.587Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Softeria__ms-365-mcp-server.md",
+      "path": "reports/global-trending/repositories/Softeria__ms-365-mcp-server.md",
+      "title": "Softeria/ms-365-mcp-server",
+      "summary": "Softeria/ms 365 mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Softeria/ms 365 mcp server local path sources/Softeria ms 365 mcp server HEAD ae40eb9 stars/forks 785 / 303 language TypeScript license pushedAt 2026 0",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:51.184Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/spences10__mcpick.md",
+      "path": "reports/global-trending/repositories/spences10__mcpick.md",
+      "title": "spences10/mcpick",
+      "summary": "spences10/mcpick Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/spences10/mcpick local path sources/spences10 mcpick HEAD 8a98c28 stars/forks 85 / 12 language TypeScript license pushedAt 2026 06 17T20 50 37Z trendScore / prio",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:13.045Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/StarRocks__mcp-server-starrocks.md",
+      "path": "reports/global-trending/repositories/StarRocks__mcp-server-starrocks.md",
+      "title": "StarRocks/mcp-server-starrocks",
+      "summary": "StarRocks/mcp server starrocks Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/StarRocks/mcp server starrocks local path sources/StarRocks mcp server starrocks HEAD 75bc4a9 stars/forks 175 / 55 language Python license pushedAt",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:05.449Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/stefanoamorelli__sec-edgar-mcp.md",
+      "path": "reports/global-trending/repositories/stefanoamorelli__sec-edgar-mcp.md",
+      "title": "stefanoamorelli/sec-edgar-mcp",
+      "summary": "stefanoamorelli/sec edgar mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/stefanoamorelli/sec edgar mcp local path sources/stefanoamorelli sec edgar mcp HEAD c9726ad stars/forks 319 / 88 language Python license pushedAt 20",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:16.858Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/tableau__tableau-mcp.md",
+      "path": "reports/global-trending/repositories/tableau__tableau-mcp.md",
+      "title": "tableau/tableau-mcp",
+      "summary": "tableau/tableau mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/tableau/tableau mcp local path sources/tableau tableau mcp HEAD 82ee0e6 stars/forks 294 / 116 language TypeScript license pushedAt 2026 06 18T00 14 49Z trendS",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:00.276Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/TensorBlock__awesome-mcp-servers.md",
+      "path": "reports/global-trending/repositories/TensorBlock__awesome-mcp-servers.md",
+      "title": "TensorBlock/awesome-mcp-servers",
+      "summary": "TensorBlock/awesome mcp servers Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/TensorBlock/awesome mcp servers local path sources/TensorBlock awesome mcp servers HEAD ebad379 stars/forks 746 / 503 language TypeScript license ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:51.327Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/tinyfish-io__agentql-mcp.md",
+      "path": "reports/global-trending/repositories/tinyfish-io__agentql-mcp.md",
+      "title": "tinyfish-io/agentql-mcp",
+      "summary": "tinyfish io/agentql mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/tinyfish io/agentql mcp local path sources/tinyfish io agentql mcp HEAD 4acd231 stars/forks 174 / 40 language JavaScript license pushedAt 2026 06 17T12 45",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:06.285Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/tomtom-international__tomtom-maps-mcp.md",
+      "path": "reports/global-trending/repositories/tomtom-international__tomtom-maps-mcp.md",
+      "title": "tomtom-international/tomtom-maps-mcp",
+      "summary": "tomtom international/tomtom maps mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/tomtom international/tomtom maps mcp local path sources/tomtom international tomtom maps mcp HEAD b2499e2 stars/forks 47 / 22 language TypeSc",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:16.313Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/UI5__mcp-server.md",
+      "path": "reports/global-trending/repositories/UI5__mcp-server.md",
+      "title": "UI5/mcp-server",
+      "summary": "UI5/mcp server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/UI5/mcp server local path sources/UI5 mcp server HEAD 35924f7 stars/forks 89 / 18 language TypeScript license pushedAt 2026 06 17T13 35 28Z trendScore / prioritySc",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:13.006Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/utensils__mcp-nixos.md",
+      "path": "reports/global-trending/repositories/utensils__mcp-nixos.md",
+      "title": "utensils/mcp-nixos",
+      "summary": "utensils/mcp nixos Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/utensils/mcp nixos local path sources/utensils mcp nixos HEAD 0ef99b6 stars/forks 697 / 37 language Python license pushedAt 2026 06 17T18 44 23Z trendScore / p",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:54.230Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/vishalsachdev__canvas-mcp.md",
+      "path": "reports/global-trending/repositories/vishalsachdev__canvas-mcp.md",
+      "title": "vishalsachdev/canvas-mcp",
+      "summary": "vishalsachdev/canvas mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/vishalsachdev/canvas mcp local path sources/vishalsachdev canvas mcp HEAD 20da02d stars/forks 146 / 41 language Python license pushedAt 2026 06 18T00 20 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:07.271Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/vuetifyjs__mcp.md",
+      "path": "reports/global-trending/repositories/vuetifyjs__mcp.md",
+      "title": "vuetifyjs/mcp",
+      "summary": "vuetifyjs/mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/vuetifyjs/mcp local path sources/vuetifyjs mcp HEAD a9ff9d7 stars/forks 100 / 3 language TypeScript license pushedAt 2026 06 17T10 47 25Z trendScore / priorityScore",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:14.060Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/witchan__ios-mcp.md",
+      "path": "reports/global-trending/repositories/witchan__ios-mcp.md",
+      "title": "witchan/ios-mcp",
+      "summary": "witchan/ios mcp Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/witchan/ios mcp local path sources/witchan ios mcp HEAD 6f20c55 stars/forks 567 / 79 language Objective C license pushedAt 2026 06 17T02 35 34Z trendScore / prior",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:09.869Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/WordPress__mcp-adapter.md",
+      "path": "reports/global-trending/repositories/WordPress__mcp-adapter.md",
+      "title": "WordPress/mcp-adapter",
+      "summary": "WordPress/mcp adapter Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/WordPress/mcp adapter local path sources/WordPress mcp adapter HEAD 529b9e9 stars/forks 1292 / 145 language PHP license pushedAt 2026 06 16T20 44 55Z trendS",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:06.271Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/yotsuda__PowerShell.MCP.md",
+      "path": "reports/global-trending/repositories/yotsuda__PowerShell.MCP.md",
+      "title": "yotsuda/PowerShell.MCP",
+      "summary": "yotsuda/PowerShell.MCP Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/yotsuda/PowerShell.MCP local path sources/yotsuda PowerShell.MCP HEAD 1b7734d stars/forks 73 / 7 language C license pushedAt 2026 06 18T00 24 02Z trendScor",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:15.088Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/zhuyansen__agent-skills-hub.md",
+      "path": "reports/global-trending/repositories/zhuyansen__agent-skills-hub.md",
+      "title": "zhuyansen/agent-skills-hub",
+      "summary": "zhuyansen/agent skills hub Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/zhuyansen/agent skills hub local path sources/zhuyansen agent skills hub HEAD b05615f stars/forks 296 / 30 language TypeScript license pushedAt 2026 06",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.529Z",
+      "categories": [
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/aesthetic-legalism5470__korean-dart-mcp.md",
+      "path": "reports/korea-trending/repositories/aesthetic-legalism5470__korean-dart-mcp.md",
+      "title": "aesthetic-legalism5470/korean-dart-mcp",
+      "summary": "aesthetic legalism5470/korean dart mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/aesthetic legalism5470/korean dart mcp local path sources/aesthetic legalism5470 korean dart mcp HEAD f3296c8 stars/forks 0 / 0 language TypeScript li",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:21.640Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/AgentBridge-Lab__korea-space-support-mcp.md",
+      "path": "reports/korea-trending/repositories/AgentBridge-Lab__korea-space-support-mcp.md",
+      "title": "AgentBridge-Lab/korea-space-support-mcp",
+      "summary": "AgentBridge Lab/korea space support mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/AgentBridge Lab/korea space support mcp local path sources/AgentBridge Lab korea space support mcp HEAD 420220b stars/forks 0 / 0 language TypeScript",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.081Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/ai-frendly-datahub__KoreanNLPMCPRadar.md",
+      "path": "reports/korea-trending/repositories/ai-frendly-datahub__KoreanNLPMCPRadar.md",
+      "title": "ai-frendly-datahub/KoreanNLPMCPRadar",
+      "summary": "ai frendly datahub/KoreanNLPMCPRadar 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/ai frendly datahub/KoreanNLPMCPRadar local path sources/ai frendly datahub KoreanNLPMCPRadar HEAD 085969b stars/forks 0 / 0 language HTML license pushed",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.090Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/alice840126-ship-it__korean-law-mcp-setup.md",
+      "path": "reports/korea-trending/repositories/alice840126-ship-it__korean-law-mcp-setup.md",
+      "title": "alice840126-ship-it/korean-law-mcp-setup",
+      "summary": "alice840126 ship it/korean law mcp setup 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/alice840126 ship it/korean law mcp setup local path sources/alice840126 ship it korean law mcp setup HEAD 4db8aa8 stars/forks 0 / 0 language license",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:32.496Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/bripin123__rag-memory-epf-mcp.md",
+      "path": "reports/korea-trending/repositories/bripin123__rag-memory-epf-mcp.md",
+      "title": "bripin123/rag-memory-epf-mcp",
+      "summary": "bripin123/rag memory epf mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/bripin123/rag memory epf mcp local path sources/bripin123 rag memory epf mcp HEAD 58283cd stars/forks 0 / 0 language JavaScript license pushedAt 2026 05 28T01 4",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:19.476Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/caramador83__harness-100.md",
+      "path": "reports/korea-trending/repositories/caramador83__harness-100.md",
+      "title": "caramador83/harness-100",
+      "summary": "caramador83/harness 100 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/caramador83/harness 100 local path sources/caramador83 harness 100 HEAD e0a804a stars/forks 0 / 0 language license pushedAt 2026 06 16T14 15 00Z trendScore / priorit",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:27.519Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/chrisryugj__korean-dart-mcp.md",
+      "path": "reports/korea-trending/repositories/chrisryugj__korean-dart-mcp.md",
+      "title": "chrisryugj/korean-dart-mcp",
+      "summary": "chrisryugj/korean dart mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/chrisryugj/korean dart mcp local path sources/chrisryugj korean dart mcp HEAD c1671ce stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 11T00 18 00Z ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.363Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/chrisryugj__korean-law-mcp.md",
+      "path": "reports/korea-trending/repositories/chrisryugj__korean-law-mcp.md",
+      "title": "chrisryugj/korean-law-mcp",
+      "summary": "chrisryugj/korean law mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/chrisryugj/korean law mcp local path sources/chrisryugj korean law mcp HEAD 7cb7db0 stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 11T04 31 05Z tre",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:21.781Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/closermethod__apac-compliance-mcp.md",
+      "path": "reports/korea-trending/repositories/closermethod__apac-compliance-mcp.md",
+      "title": "closermethod/apac-compliance-mcp",
+      "summary": "closermethod/apac compliance mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/closermethod/apac compliance mcp local path sources/closermethod apac compliance mcp HEAD 8c1a171 stars/forks 0 / 0 language TypeScript license pushedAt 202",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:32.409Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/CSOAI-ORG__korea-ai-basic-act-mcp.md",
+      "path": "reports/korea-trending/repositories/CSOAI-ORG__korea-ai-basic-act-mcp.md",
+      "title": "CSOAI-ORG/korea-ai-basic-act-mcp",
+      "summary": "CSOAI ORG/korea ai basic act mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/CSOAI ORG/korea ai basic act mcp local path sources/CSOAI ORG korea ai basic act mcp HEAD 2e9384f stars/forks 0 / 0 language Python license pushedAt 2026 06",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:21.704Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/dangamsoft__cafe-mcp.md",
+      "path": "reports/korea-trending/repositories/dangamsoft__cafe-mcp.md",
+      "title": "dangamsoft/cafe-mcp",
+      "summary": "dangamsoft/cafe mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/dangamsoft/cafe mcp local path sources/dangamsoft cafe mcp HEAD 218360f stars/forks 0 / 0 language JavaScript license pushedAt 2026 06 14T13 54 19Z trendScore / priority",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:21.733Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/dongdorrong__korean-law-mcp-lab.md",
+      "path": "reports/korea-trending/repositories/dongdorrong__korean-law-mcp-lab.md",
+      "title": "dongdorrong/korean-law-mcp-lab",
+      "summary": "dongdorrong/korean law mcp lab 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/dongdorrong/korean law mcp lab local path sources/dongdorrong korean law mcp lab HEAD 1180973 stars/forks 0 / 0 language Shell license pushedAt 2026 06 07T09 ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.937Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/dream8837z__hwp-hwpx-proposal-mcp.md",
+      "path": "reports/korea-trending/repositories/dream8837z__hwp-hwpx-proposal-mcp.md",
+      "title": "dream8837z/hwp-hwpx-proposal-mcp",
+      "summary": "dream8837z/hwp hwpx proposal mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/dream8837z/hwp hwpx proposal mcp local path sources/dream8837z hwp hwpx proposal mcp HEAD fcf642f stars/forks 0 / 0 language license pushedAt 2026 05 22T14 ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.238Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/everynation__kimchisushi-mcp.md",
+      "path": "reports/korea-trending/repositories/everynation__kimchisushi-mcp.md",
+      "title": "everynation/kimchisushi-mcp",
+      "summary": "everynation/kimchisushi mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/everynation/kimchisushi mcp local path sources/everynation kimchisushi mcp HEAD b906d01 stars/forks 0 / 0 language license pushedAt 2026 06 12T08 53 58Z trendSco",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.334Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/farmbit-mdk__korea-market-data-mcp.md",
+      "path": "reports/korea-trending/repositories/farmbit-mdk__korea-market-data-mcp.md",
+      "title": "farmbit-mdk/korea-market-data-mcp",
+      "summary": "farmbit mdk/korea market data mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/farmbit mdk/korea market data mcp local path sources/farmbit mdk korea market data mcp HEAD bdc90f5 stars/forks 0 / 0 language TypeScript license pushedAt ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.030Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/gih2yun__bareun-mcp.md",
+      "path": "reports/korea-trending/repositories/gih2yun__bareun-mcp.md",
+      "title": "gih2yun/bareun-mcp",
+      "summary": "gih2yun/bareun mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/gih2yun/bareun mcp local path sources/gih2yun bareun mcp HEAD df41414 stars/forks 0 / 0 language license pushedAt 2026 06 09T06 04 15Z trendScore / priorityScore 72 / 103",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.906Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/gracebereblue-cpu__-mcp.md",
+      "path": "reports/korea-trending/repositories/gracebereblue-cpu__-mcp.md",
+      "title": "gracebereblue-cpu/-mcp",
+      "summary": "gracebereblue cpu/ mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/gracebereblue cpu/ mcp local path sources/gracebereblue cpu mcp HEAD stars/forks 0 / 0 language license pushedAt 2026 06 16T00 56 39Z trendScore / priorityScore 76 / ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.257Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/hmmhmmhm__daiso-mcp.md",
+      "path": "reports/korea-trending/repositories/hmmhmmhm__daiso-mcp.md",
+      "title": "hmmhmmhm/daiso-mcp",
+      "summary": "hmmhmmhm/daiso mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/hmmhmmhm/daiso mcp local path sources/hmmhmmhm daiso mcp HEAD 8b78570 stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 17T16 33 42Z trendScore / prioritySco",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.137Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/hypn4__tossinvest-mcp.md",
+      "path": "reports/korea-trending/repositories/hypn4__tossinvest-mcp.md",
+      "title": "hypn4/tossinvest-mcp",
+      "summary": "hypn4/tossinvest mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/hypn4/tossinvest mcp local path sources/hypn4 tossinvest mcp HEAD 4d1100f stars/forks 0 / 0 language Python license pushedAt 2026 06 04T09 53 22Z trendScore / priorityS",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:22.591Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/JAE-HUN-CHO__law-api-mcp-korea.md",
+      "path": "reports/korea-trending/repositories/JAE-HUN-CHO__law-api-mcp-korea.md",
+      "title": "JAE-HUN-CHO/law-api-mcp-korea",
+      "summary": "JAE HUN CHO/law api mcp korea 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/JAE HUN CHO/law api mcp korea local path sources/JAE HUN CHO law api mcp korea HEAD 3572432 stars/forks 0 / 0 language Python license pushedAt 2026 04 18T06 37",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:32.485Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/jayjodev__vivory-mcp.md",
+      "path": "reports/korea-trending/repositories/jayjodev__vivory-mcp.md",
+      "title": "jayjodev/vivory-mcp",
+      "summary": "jayjodev/vivory mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/jayjodev/vivory mcp local path sources/jayjodev vivory mcp HEAD 23372b7 stars/forks 0 / 0 language Python license pushedAt 2026 06 05T04 25 08Z trendScore / priorityScor",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.102Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/JeongSeongMok__tossinvest-openapi-mcp.md",
+      "path": "reports/korea-trending/repositories/JeongSeongMok__tossinvest-openapi-mcp.md",
+      "title": "JeongSeongMok/tossinvest-openapi-mcp",
+      "summary": "JeongSeongMok/tossinvest openapi mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/JeongSeongMok/tossinvest openapi mcp local path sources/JeongSeongMok tossinvest openapi mcp HEAD eb5cceb stars/forks 0 / 0 language TypeScript license ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.046Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/jinmyungjong__korean-law-mcp.md",
+      "path": "reports/korea-trending/repositories/jinmyungjong__korean-law-mcp.md",
+      "title": "jinmyungjong/korean-law-mcp",
+      "summary": "jinmyungjong/korean law mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/jinmyungjong/korean law mcp local path sources/jinmyungjong korean law mcp HEAD 6a33a1c stars/forks 0 / 0 language JavaScript license pushedAt 2026 06 12T05 45 5",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.338Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/jung-jin-lee__paldo-mcp.md",
+      "path": "reports/korea-trending/repositories/jung-jin-lee__paldo-mcp.md",
+      "title": "jung-jin-lee/paldo-mcp",
+      "summary": "jung jin lee/paldo mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/jung jin lee/paldo mcp local path sources/jung jin lee paldo mcp HEAD e4e5665 stars/forks 0 / 0 language TypeScript license pushedAt 2026 05 24T02 22 07Z trendScore /",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.229Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/kakao__OrchestrationBench.md",
+      "path": "reports/korea-trending/repositories/kakao__OrchestrationBench.md",
+      "title": "kakao/OrchestrationBench",
+      "summary": "kakao/OrchestrationBench 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/kakao/OrchestrationBench local path sources/kakao OrchestrationBench HEAD f3596da stars/forks 47 / 10 language Python license Apache 2.0 pushedAt 2026 04 17T04 24 2",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:24.413Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/KM-it-ops__memory-mcp.md",
+      "path": "reports/korea-trending/repositories/KM-it-ops__memory-mcp.md",
+      "title": "KM-it-ops/memory-mcp",
+      "summary": "KM it ops/memory mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/KM it ops/memory mcp local path sources/KM it ops memory mcp HEAD 6ce088b stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 17T23 53 00Z trendScore / prior",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:24.088Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/kokogo100__ragalgo-mcp-server.md",
+      "path": "reports/korea-trending/repositories/kokogo100__ragalgo-mcp-server.md",
+      "title": "kokogo100/ragalgo-mcp-server",
+      "summary": "kokogo100/ragalgo mcp server 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/kokogo100/ragalgo mcp server local path sources/kokogo100 ragalgo mcp server HEAD 05fa836 stars/forks 0 / 0 language JavaScript license pushedAt 2026 01 31T17 1",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:24.747Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/latemonk__agent-store-skills.md",
+      "path": "reports/korea-trending/repositories/latemonk__agent-store-skills.md",
+      "title": "latemonk/agent-store-skills",
+      "summary": "latemonk/agent store skills 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/latemonk/agent store skills local path sources/latemonk agent store skills HEAD b0772e1 stars/forks 0 / 0 language license pushedAt 2026 06 15T15 06 41Z trendSco",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.258Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/LimEulYoung__legal_mcp.md",
+      "path": "reports/korea-trending/repositories/LimEulYoung__legal_mcp.md",
+      "title": "LimEulYoung/legal_mcp",
+      "summary": "LimEulYoung/legal mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/LimEulYoung/legal mcp local path sources/LimEulYoung legal mcp HEAD cbc827b stars/forks 0 / 0 language Python license pushedAt 2026 06 17T04 10 53Z trendScore / priori",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.232Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/line__line-bot-mcp-server.md",
+      "path": "reports/korea-trending/repositories/line__line-bot-mcp-server.md",
+      "title": "line/line-bot-mcp-server",
+      "summary": "line/line bot mcp server 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/line/line bot mcp server local path sources/line line bot mcp server HEAD bfbbdab stars/forks 599 / 108 language TypeScript license Apache 2.0 pushedAt 2026 06 17T1",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:17.253Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/loved0543-dotcom__kdata-gate-mcp.md",
+      "path": "reports/korea-trending/repositories/loved0543-dotcom__kdata-gate-mcp.md",
+      "title": "loved0543-dotcom/kdata-gate-mcp",
+      "summary": "loved0543 dotcom/kdata gate mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/loved0543 dotcom/kdata gate mcp local path sources/loved0543 dotcom kdata gate mcp HEAD 35c1d8a stars/forks 0 / 0 language JavaScript license pushedAt 2026 0",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.268Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/MarcoYou__open-proxy-mcp.md",
+      "path": "reports/korea-trending/repositories/MarcoYou__open-proxy-mcp.md",
+      "title": "MarcoYou/open-proxy-mcp",
+      "summary": "MarcoYou/open proxy mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/MarcoYou/open proxy mcp local path sources/MarcoYou open proxy mcp HEAD 2eb3efe stars/forks 0 / 0 language Python license pushedAt 2026 06 17T15 36 13Z trendScore / ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.207Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/mcpads__create-retro-game-kr-patch.md",
+      "path": "reports/korea-trending/repositories/mcpads__create-retro-game-kr-patch.md",
+      "title": "mcpads/create-retro-game-kr-patch",
+      "summary": "mcpads/create retro game kr patch 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/mcpads/create retro game kr patch local path sources/mcpads create retro game kr patch HEAD 74ebdf4 stars/forks 0 / 0 language license pushedAt 2026 06 17T",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:29.318Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/MICONNM__openclaw-consensus-mcp.md",
+      "path": "reports/korea-trending/repositories/MICONNM__openclaw-consensus-mcp.md",
+      "title": "MICONNM/openclaw-consensus-mcp",
+      "summary": "MICONNM/openclaw consensus mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/MICONNM/openclaw consensus mcp local path sources/MICONNM openclaw consensus mcp HEAD 8f02319 stars/forks 0 / 0 language Python license pushedAt 2026 06 01T05",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.948Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/ruvnet__agent-harness-generator.md",
+      "path": "reports/korea-trending/repositories/ruvnet__agent-harness-generator.md",
+      "title": "ruvnet/agent-harness-generator",
+      "summary": "ruvnet/agent harness generator 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/ruvnet/agent harness generator local path sources/ruvnet agent harness generator HEAD b2506a1 stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 1",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:32.249Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/scvcoder__korean-law-alio-mcp.md",
+      "path": "reports/korea-trending/repositories/scvcoder__korean-law-alio-mcp.md",
+      "title": "scvcoder/korean-law-alio-mcp",
+      "summary": "scvcoder/korean law alio mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/scvcoder/korean law alio mcp local path sources/scvcoder korean law alio mcp HEAD 09a00ac stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 06T15 3",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:22.571Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/seung23__lawtutor-mcp.md",
+      "path": "reports/korea-trending/repositories/seung23__lawtutor-mcp.md",
+      "title": "seung23/lawtutor-mcp",
+      "summary": "seung23/lawtutor mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/seung23/lawtutor mcp local path sources/seung23 lawtutor mcp HEAD e9aca7e stars/forks 0 / 0 language Python license pushedAt 2026 05 17T15 30 34Z trendScore / priorityS",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:23.801Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/sodam-ai__Langent-MCP_One-Click_Kit.md",
+      "path": "reports/korea-trending/repositories/sodam-ai__Langent-MCP_One-Click_Kit.md",
+      "title": "sodam-ai/Langent-MCP_One-Click_Kit",
+      "summary": "sodam ai/Langent MCP One Click Kit 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/sodam ai/Langent MCP One Click Kit local path sources/sodam ai Langent MCP One Click Kit HEAD 5fffb4a stars/forks 0 / 0 language Batchfile license pushedA",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:21.327Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/SonAIengine__ku-portal-mcp.md",
+      "path": "reports/korea-trending/repositories/SonAIengine__ku-portal-mcp.md",
+      "title": "SonAIengine/ku-portal-mcp",
+      "summary": "SonAIengine/ku portal mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/SonAIengine/ku portal mcp local path sources/SonAIengine ku portal mcp HEAD 588d6b6 stars/forks 0 / 0 language Python license pushedAt 2026 06 07T12 17 58Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.926Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/ssuksak__cheongyak-rag-mcp.md",
+      "path": "reports/korea-trending/repositories/ssuksak__cheongyak-rag-mcp.md",
+      "title": "ssuksak/cheongyak-rag-mcp",
+      "summary": "ssuksak/cheongyak rag mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/ssuksak/cheongyak rag mcp local path sources/ssuksak cheongyak rag mcp HEAD 0b6e0fb stars/forks 0 / 0 language Python license pushedAt 2026 04 22T07 11 22Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:32.453Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/stephano0308-cloud__korean-law-mcp.md",
+      "path": "reports/korea-trending/repositories/stephano0308-cloud__korean-law-mcp.md",
+      "title": "stephano0308-cloud/korean-law-mcp",
+      "summary": "stephano0308 cloud/korean law mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/stephano0308 cloud/korean law mcp local path sources/stephano0308 cloud korean law mcp HEAD 1fc52c2 stars/forks 0 / 0 language Python license pushedAt 2026",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.962Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/tjwodud04__mcp-tour.md",
+      "path": "reports/korea-trending/repositories/tjwodud04__mcp-tour.md",
+      "title": "tjwodud04/mcp-tour",
+      "summary": "tjwodud04/mcp tour 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/tjwodud04/mcp tour local path sources/tjwodud04 mcp tour HEAD 8712ff7 stars/forks 0 / 0 language Python license pushedAt 2026 06 17T01 58 43Z trendScore / priorityScore 7",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.200Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/treesoop__hwp-mcp.md",
+      "path": "reports/korea-trending/repositories/treesoop__hwp-mcp.md",
+      "title": "treesoop/hwp-mcp",
+      "summary": "treesoop/hwp mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/treesoop/hwp mcp local path sources/treesoop hwp mcp HEAD 087c829 stars/forks 0 / 0 language TypeScript license pushedAt 2026 05 29T06 35 19Z trendScore / priorityScore 88 ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:22.615Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/workbookbulb863__korean-law-alio-mcp.md",
+      "path": "reports/korea-trending/repositories/workbookbulb863__korean-law-alio-mcp.md",
+      "title": "workbookbulb863/korean-law-alio-mcp",
+      "summary": "workbookbulb863/korean law alio mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/workbookbulb863/korean law alio mcp local path sources/workbookbulb863 korean law alio mcp HEAD 010cec0 stars/forks 0 / 0 language TypeScript license pus",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:21.614Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/yjhann33-design__korea-stock-insight-mcp.md",
+      "path": "reports/korea-trending/repositories/yjhann33-design__korea-stock-insight-mcp.md",
+      "title": "yjhann33-design/korea-stock-insight-mcp",
+      "summary": "yjhann33 design/korea stock insight mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/yjhann33 design/korea stock insight mcp local path sources/yjhann33 design korea stock insight mcp HEAD 7084e6c stars/forks 0 / 0 language Python lic",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.249Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/z0nam__korea-rio-mcp.md",
+      "path": "reports/korea-trending/repositories/z0nam__korea-rio-mcp.md",
+      "title": "z0nam/korea-rio-mcp",
+      "summary": "z0nam/korea rio mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/z0nam/korea rio mcp local path sources/z0nam korea rio mcp HEAD 90e6034 stars/forks 0 / 0 language Python license pushedAt 2026 05 25T09 54 59Z trendScore / priorityScor",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.216Z",
+      "categories": [
+        "agent-harness",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/jee3m__augmentative-knowledge-hooks.md",
+      "path": "reports/llm-wiki/repositories/jee3m__augmentative-knowledge-hooks.md",
+      "title": "jee3m/augmentative-knowledge-hooks 구조 분석",
+      "summary": "jee3m/augmentative knowledge hooks 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/jee3m augmentative knowledge hooks remote https //github.com/jee3m/augmentative knowledge hooks HEAD 9f7af8d 2026 06 17 feature cleanup 378 branch main groups l",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.941Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/PleasePrompto__notebooklm-mcp.md",
+      "path": "reports/llm-wiki/repositories/PleasePrompto__notebooklm-mcp.md",
+      "title": "PleasePrompto/notebooklm-mcp 구조 분석",
+      "summary": "PleasePrompto/notebooklm mcp 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/PleasePrompto notebooklm mcp remote https //github.com/PleasePrompto/notebooklm mcp HEAD 50b3e7f 2026 05 01 feat v2.0.0 — multilingual selector overhaul, async audio ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.730Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    }
+  ]
+}

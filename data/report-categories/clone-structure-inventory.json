@@ -1,0 +1,1836 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "clone-structure-inventory",
+  "title": "Clone Structure and Inventory",
+  "description": "Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports.",
+  "count": 128,
+  "reports": [
+    {
+      "id": "report:reports/clone-structure-analysis-127.md",
+      "path": "reports/clone-structure-analysis-127.md",
+      "title": "127개 로컬 클론 구조 분석 총괄",
+      "summary": "127개 로컬 클론 구조 분석 총괄 생성일 2026 06 17T22 41 11.818Z 검증 범위 실제 로컬 클론 127개 데이터 파일에 명시된 target 127개 target 중 로컬 클론 누락 0개 레포별 상세 보고서 reports/clone structures/ .md 구조 데이터 data/clone structure analysis 127.json 로컬 클론 누락 target 명시 target 기준 누락 없음. 그룹별 분포 group count adja",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:41:23.982Z",
+      "categories": [
+        "start-here",
+        "clone-structure-inventory"
+      ],
+      "priority": 143
+    },
+    {
+      "id": "report:reports/clone-structures/run-llama__llama_index.md",
+      "path": "reports/clone-structures/run-llama__llama_index.md",
+      "title": "run-llama/llama_index 구조 분석",
+      "summary": "run llama/llama index 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/run llama llama index remote https //github.com/run llama/llama index HEAD d8d7ffb 2026 06 11 Fix RecursionError in TokenTextSplitter & SentenceSplitter for units larger tha",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.541Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -3
+    },
+    {
+      "id": "report:reports/clone-structures/aaif-goose__goose.md",
+      "path": "reports/clone-structures/aaif-goose__goose.md",
+      "title": "aaif-goose/goose 구조 분석",
+      "summary": "aaif goose/goose 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/aaif goose goose remote https //github.com/aaif goose/goose HEAD d2ab786 2026 06 10 feat acp list session with keyword and type filter 9695 branch main groups core agent 30, prev",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.605Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/addyosmani__agent-skills.md",
+      "path": "reports/clone-structures/addyosmani__agent-skills.md",
+      "title": "addyosmani/agent-skills 구조 분석",
+      "summary": "addyosmani/agent skills 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/addyosmani agent skills remote https //github.com/addyosmani/agent skills.git HEAD a5f0b17 2026 06 15 Merge pull request 260 from nucliweb/fix/issue 258 agents readme fron",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.683Z",
+      "categories": [
+        "agent-harness",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/agenta-ai__agenta.md",
+      "path": "reports/clone-structures/agenta-ai__agenta.md",
+      "title": "agenta-ai/agenta 구조 분석",
+      "summary": "agenta ai/agenta 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/agenta ai agenta remote https //github.com/agenta ai/agenta HEAD a2e9150 2026 06 12 Merge pull request 4651 from Agenta AI/all contributors/add unfitcoder101 branch main groups a",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.838Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/agno-agi__agno.md",
+      "path": "reports/clone-structures/agno-agi__agno.md",
+      "title": "agno-agi/agno 구조 분석",
+      "summary": "agno agi/agno 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/agno agi agno remote https //github.com/agno agi/agno HEAD 3adb736 2026 06 10 feat socket support for workflows HITL 7749 branch main groups core agent 30, previous clone inventory ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.948Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Aider-AI__aider.md",
+      "path": "reports/clone-structures/Aider-AI__aider.md",
+      "title": "Aider-AI/aider 구조 분석",
+      "summary": "Aider AI/aider 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Aider AI aider remote https //github.com/Aider AI/aider HEAD 5dc9490 2026 05 22 Merge pull request 5173 from Cyberfilo/feat/anthropic models list add opus 4 5 branch main groups co",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:11.941Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/All-Hands-AI__OpenHands.md",
+      "path": "reports/clone-structures/All-Hands-AI__OpenHands.md",
+      "title": "All-Hands-AI/OpenHands 구조 분석",
+      "summary": "All Hands AI/OpenHands 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/All Hands AI OpenHands remote https //github.com/All Hands AI/OpenHands HEAD 2a3f06a 2026 06 09 perf skip runtime API call in webhook auth via SandboxRecord 14732 branch ma",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.056Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/amaynez__kiro-style-sdd.md",
+      "path": "reports/clone-structures/amaynez__kiro-style-sdd.md",
+      "title": "amaynez/kiro-style-sdd 구조 분석",
+      "summary": "amaynez/kiro style sdd 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/amaynez kiro style sdd remote https //github.com/amaynez/kiro style sdd HEAD be24eb6 2026 05 13 Merge pull request 6 from amaynez/testing improvement native test runner 829",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.025Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/anomalyco__opencode.md",
+      "path": "reports/clone-structures/anomalyco__opencode.md",
+      "title": "anomalyco/opencode 구조 분석",
+      "summary": "anomalyco/opencode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/anomalyco opencode remote https //github.com/anomalyco/opencode HEAD 4c9abff 2026 06 10 sync release versions for v1.17.1 branch dev groups core agent 30, previous clone invent",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.141Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ariel-frischer__autospec.md",
+      "path": "reports/clone-structures/ariel-frischer__autospec.md",
+      "title": "ariel-frischer/autospec 구조 분석",
+      "summary": "ariel frischer/autospec 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ariel frischer autospec remote https //github.com/ariel frischer/autospec HEAD 8ea596a 2026 05 23 chore changelog prepare changelog for v0.11.5 release with new features a",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.226Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Arize-ai__phoenix.md",
+      "path": "reports/clone-structures/Arize-ai__phoenix.md",
+      "title": "Arize-ai/phoenix 구조 분석",
+      "summary": "Arize ai/phoenix 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Arize ai phoenix remote https //github.com/Arize ai/phoenix HEAD 3d33799 2026 06 11 fix add Anthropic computer use beta header 13242 branch main groups adjacent tech 50, previous",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.201Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/awslabs__aidlc-workflows.md",
+      "path": "reports/clone-structures/awslabs__aidlc-workflows.md",
+      "title": "awslabs/aidlc-workflows 구조 분석",
+      "summary": "awslabs/aidlc workflows 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/awslabs aidlc workflows remote https //github.com/awslabs/aidlc workflows.git HEAD 31edd16 2026 06 17 docs update changelog for v1.0.0 385 branch main groups previous clon",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.310Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/bartolli__codanna.md",
+      "path": "reports/clone-structures/bartolli__codanna.md",
+      "title": "bartolli/codanna 구조 분석",
+      "summary": "bartolli/codanna 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/bartolli codanna remote https //github.com/bartolli/codanna.git HEAD cb2c095 2026 05 19 release v0.9.22 branch main groups previous clone inventory 107 files 822 dirs 201 stack N",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.393Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/BerriAI__litellm.md",
+      "path": "reports/clone-structures/BerriAI__litellm.md",
+      "title": "BerriAI/litellm 구조 분석",
+      "summary": "BerriAI/litellm 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/BerriAI litellm remote https //github.com/BerriAI/litellm HEAD 729b005 2026 06 12 fix google genai preserve complete SSE events in Vertex/Gemini image streaming 30270 branch litel",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.358Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/BloopAI__bloop.md",
+      "path": "reports/clone-structures/BloopAI__bloop.md",
+      "title": "bloopai/bloop 구조 분석",
+      "summary": "bloopai/bloop 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/BloopAI bloop remote https //github.com/BloopAI/bloop.git HEAD 431e9e8 2024 12 04 Add \"Open with Codeanywhere\" badge to README.md 1296 branch oss groups previous clone inventory 107",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.445Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/bmad-code-org__BMAD-METHOD.md",
+      "path": "reports/clone-structures/bmad-code-org__BMAD-METHOD.md",
+      "title": "bmad-code-org/BMAD-METHOD 구조 분석",
+      "summary": "bmad code org/BMAD METHOD 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/bmad code org BMAD METHOD remote https //github.com/bmad code org/BMAD METHOD HEAD 2417f00 2026 06 17 bmad architecture lean directives, breadth coverage, redesigned spi",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.474Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/browser-use__browser-use.md",
+      "path": "reports/clone-structures/browser-use__browser-use.md",
+      "title": "browser-use/browser-use 구조 분석",
+      "summary": "browser use/browser use 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/browser use browser use remote https //github.com/browser use/browser use HEAD 476ef1b 2026 06 09 codex add BU3 browser use models 5002 branch main groups core agent 30, p",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.558Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/buildermethods__agent-os.md",
+      "path": "reports/clone-structures/buildermethods__agent-os.md",
+      "title": "buildermethods/agent-os 구조 분석",
+      "summary": "buildermethods/agent os 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/buildermethods agent os remote https //github.com/buildermethods/agent os HEAD cae8e66 2026 05 05 Note PR 327 in CHANGELOG branch main groups spec driven 20 files 22 dirs ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.636Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/can1357__oh-my-pi.md",
+      "path": "reports/clone-structures/can1357__oh-my-pi.md",
+      "title": "can1357/oh-my-pi 구조 분석",
+      "summary": "can1357/oh my pi 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/can1357 oh my pi remote https //github.com/can1357/oh my pi.git HEAD 7251ca1 2026 06 17 test coding agent added OpenAI key initialization in context test setup branch main groups",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.740Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ceaksan__mcp-code-search.md",
+      "path": "reports/clone-structures/ceaksan__mcp-code-search.md",
+      "title": "ceaksan/mcp-code-search 구조 분석",
+      "summary": "ceaksan/mcp code search 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ceaksan mcp code search remote https //github.com/ceaksan/mcp code search.git HEAD 00360fe 2026 03 09 refactor switch default embedding model from jina to all MiniLM L6 v2",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.821Z",
+      "categories": [
+        "agent-harness",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/chroma-core__chroma.md",
+      "path": "reports/clone-structures/chroma-core__chroma.md",
+      "title": "chroma-core/chroma 구조 분석",
+      "summary": "chroma core/chroma 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/chroma core chroma remote https //github.com/chroma core/chroma HEAD b8bf764 2026 06 10 BLD tilt Persist postgres state across restarts + bump CPU cap 7207 branch main groups a",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.917Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/cline__cline.md",
+      "path": "reports/clone-structures/cline__cline.md",
+      "title": "cline/cline 구조 분석",
+      "summary": "cline/cline 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/cline cline remote https //github.com/cline/cline HEAD 7d11935 2026 06 10 fix cli suppress flickering console windows on Windows 11408 branch main groups core agent 30, previous clone",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.023Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/codervisor__leanspec.md",
+      "path": "reports/clone-structures/codervisor__leanspec.md",
+      "title": "codervisor/leanspec 구조 분석",
+      "summary": "codervisor/leanspec 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/codervisor leanspec remote https //github.com/codervisor/leanspec HEAD ee122d6 2026 05 20 chore skills retire draft/planned/in progress spec status labels 313 branch main grou",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.119Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ComposioHQ__composio.md",
+      "path": "reports/clone-structures/ComposioHQ__composio.md",
+      "title": "ComposioHQ/composio 구조 분석",
+      "summary": "ComposioHQ/composio 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ComposioHQ composio remote https //github.com/ComposioHQ/composio HEAD 094aed6 2026 06 09 rename scoped API key reference 3534 branch next groups core agent 30, previous clone",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.555Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/confident-ai__deepeval.md",
+      "path": "reports/clone-structures/confident-ai__deepeval.md",
+      "title": "confident-ai/deepeval 구조 분석",
+      "summary": "confident ai/deepeval 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/confident ai deepeval remote https //github.com/confident ai/deepeval HEAD c399fb4 2026 06 10 updated docs branch main groups adjacent tech 50, previous clone inventory 107 ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.216Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/continuedev__continue.md",
+      "path": "reports/clone-structures/continuedev__continue.md",
+      "title": "continuedev/continue 구조 분석",
+      "summary": "continuedev/continue 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/continuedev continue remote https //github.com/continuedev/continue HEAD eaa23c5 2026 06 07 Merge pull request 12570 from continuedev/main branch main groups core agent 30, p",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.317Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/crewAIInc__crewAI.md",
+      "path": "reports/clone-structures/crewAIInc__crewAI.md",
+      "title": "crewAIInc/crewAI 구조 분석",
+      "summary": "crewAIInc/crewAI 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/crewAIInc crewAI remote https //github.com/crewAIInc/crewAI HEAD da8fe8c 2026 06 09 fix respect suppress flow events for method execution events 6095 branch main groups core agen",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.421Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/deepset-ai__haystack.md",
+      "path": "reports/clone-structures/deepset-ai__haystack.md",
+      "title": "deepset-ai/haystack 구조 분석",
+      "summary": "deepset ai/haystack 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/deepset ai haystack remote https //github.com/deepset ai/haystack HEAD acbf725 2026 06 12 build deps bump sharp from 0.34.5 to 0.35.0 in /docs website 11610 branch main groups",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.556Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/docfork__docfork.md",
+      "path": "reports/clone-structures/docfork__docfork.md",
+      "title": "docfork/docfork 구조 분석",
+      "summary": "docfork/docfork 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/docfork docfork remote https //github.com/docfork/docfork.git HEAD 3cb4ba2 2026 06 13 Update README with shutdown information for Docfork 170 branch main groups previous clone inv",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.640Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Doorman11991__smallcode.md",
+      "path": "reports/clone-structures/Doorman11991__smallcode.md",
+      "title": "doorman11991/smallcode 구조 분석",
+      "summary": "doorman11991/smallcode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Doorman11991 smallcode remote https //github.com/Doorman11991/smallcode.git HEAD c3fc7ba 2026 05 30 chore release v1.6.0 — hybrid code search 67 + TUI visual refresh 72 bra",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.644Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Engineering4AI__awesome-spec-driven-development.md",
+      "path": "reports/clone-structures/Engineering4AI__awesome-spec-driven-development.md",
+      "title": "Engineering4AI/awesome-spec-driven-development 구조 분석",
+      "summary": "Engineering4AI/awesome spec driven development 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Engineering4AI awesome spec driven development remote https //github.com/Engineering4AI/awesome spec driven development HEAD 74aa232 2026 06 17 Merg",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.732Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/entireio__pgr.md",
+      "path": "reports/clone-structures/entireio__pgr.md",
+      "title": "entireio/pgr 구조 분석",
+      "summary": "entireio/pgr 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/entireio pgr remote https //github.com/entireio/pgr.git HEAD 2e702e6 2026 05 06 Merge pull request 4 from entireio/codex/clarify pgr research artifact branch main groups previous clo",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.720Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/EricLBuehler__mistral.rs.md",
+      "path": "reports/clone-structures/EricLBuehler__mistral.rs.md",
+      "title": "EricLBuehler/mistral.rs 구조 분석",
+      "summary": "EricLBuehler/mistral.rs 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/EricLBuehler mistral.rs remote https //github.com/EricLBuehler/mistral.rs HEAD c22c2e2 2026 06 12 feat core support new online calibration for K quants! 2203 branch master",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.831Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/explodinggradients__ragas.md",
+      "path": "reports/clone-structures/explodinggradients__ragas.md",
+      "title": "explodinggradients/ragas 구조 분석",
+      "summary": "explodinggradients/ragas 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/explodinggradients ragas remote https //github.com/explodinggradients/ragas HEAD 298b682 2026 02 24 fix allow fork contributors in check docs CI workflow 2606 branch main",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.804Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/fabriqaai__specs.md.md",
+      "path": "reports/clone-structures/fabriqaai__specs.md.md",
+      "title": "fabriqaai/specs.md 구조 분석",
+      "summary": "fabriqaai/specs.md 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/fabriqaai specs.md remote https //github.com/fabriqaai/specs.md HEAD f4b6458 2026 06 07 docs set dashboard nav label branch main groups spec driven 20 files 849 dirs 283 stack ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.892Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/facebookresearch__faiss.md",
+      "path": "reports/clone-structures/facebookresearch__faiss.md",
+      "title": "facebookresearch/faiss 구조 분석",
+      "summary": "facebookresearch/faiss 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/facebookresearch faiss remote https //github.com/facebookresearch/faiss HEAD 20afed0 2026 06 11 make intentional cudaGetLastError error clears explicit void for clang21 fix",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.974Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Fission-AI__OpenSpec.md",
+      "path": "reports/clone-structures/Fission-AI__OpenSpec.md",
+      "title": "Fission-AI/OpenSpec 구조 분석",
+      "summary": "Fission AI/OpenSpec 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Fission AI OpenSpec remote https //github.com/Fission AI/OpenSpec HEAD 1b06fdd 2026 06 03 Version Packages 1166 branch main groups spec driven 20 files 842 dirs 462 stack Node",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.932Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/formulahendry__mcp-server-spec-driven-development.md",
+      "path": "reports/clone-structures/formulahendry__mcp-server-spec-driven-development.md",
+      "title": "formulahendry/mcp-server-spec-driven-development 구조 분석",
+      "summary": "formulahendry/mcp server spec driven development 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/formulahendry mcp server spec driven development remote https //github.com/formulahendry/mcp server spec driven development HEAD 8a0532a 2025 09 2",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.053Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/FredAntB__Spec-Driven-Development.md",
+      "path": "reports/clone-structures/FredAntB__Spec-Driven-Development.md",
+      "title": "FredAntB/Spec-Driven-Development 구조 분석",
+      "summary": "FredAntB/Spec Driven Development 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/FredAntB Spec Driven Development remote https //github.com/FredAntB/Spec Driven Development HEAD 7296108 2026 05 22 Update README with new assertion and test coun",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.020Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Gentleman-Programming__engram.md",
+      "path": "reports/clone-structures/Gentleman-Programming__engram.md",
+      "title": "gentleman-programming/engram 구조 분석",
+      "summary": "gentleman programming/engram 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Gentleman Programming engram remote https //github.com/Gentleman Programming/engram.git HEAD 36c0819 2026 06 14 Merge pull request 497 from Gentleman Programming/fix/",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.109Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/getzep__zep.md",
+      "path": "reports/clone-structures/getzep__zep.md",
+      "title": "getzep/zep 구조 분석",
+      "summary": "getzep/zep 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/getzep zep remote https //github.com/getzep/zep HEAD faf2ace 2026 04 08 Add document graph custom ontology/instructions and fix conversation polling 518 branch main groups adjacent tec",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.139Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ggml-org__llama.cpp.md",
+      "path": "reports/clone-structures/ggml-org__llama.cpp.md",
+      "title": "ggml-org/llama.cpp 구조 분석",
+      "summary": "ggml org/llama.cpp 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ggml org llama.cpp remote https //github.com/ggml org/llama.cpp HEAD ebc1077 2026 06 12 server fix reasoning budget WebUI precedence over model.ini 24517 branch master groups a",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.242Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/github__awesome-copilot.md",
+      "path": "reports/clone-structures/github__awesome-copilot.md",
+      "title": "github/awesome-copilot 구조 분석",
+      "summary": "github/awesome copilot 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/github awesome copilot remote https //github.com/github/awesome copilot.git HEAD 0aca2d9 2026 06 17 chore publish from staged branch main groups previous clone inventory 10",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.357Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/github__spec-kit.md",
+      "path": "reports/clone-structures/github__spec-kit.md",
+      "title": "github/spec-kit 구조 분석",
+      "summary": "github/spec kit 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/github spec kit remote https //github.com/github/spec kit HEAD ee8b358 2026 06 17 fix bug assess recompile lock so github guard repos is 'all' 3036 branch main groups spec driven ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.440Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/google-gemini__gemini-cli.md",
+      "path": "reports/clone-structures/google-gemini__gemini-cli.md",
+      "title": "google-gemini/gemini-cli 구조 분석",
+      "summary": "google gemini/gemini cli 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/google gemini gemini cli remote https //github.com/google gemini/gemini cli HEAD 1d2adf7 2026 06 10 chore release bump version to 0.48.0 nightly.20260609.g3a13b8eeb 27779",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.532Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/gotalab__cc-sdd.md",
+      "path": "reports/clone-structures/gotalab__cc-sdd.md",
+      "title": "gotalab/cc-sdd 구조 분석",
+      "summary": "gotalab/cc sdd 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/gotalab cc sdd remote https //github.com/gotalab/cc sdd HEAD 29aee95 2026 04 27 Merge pull request 172 from gotalab/codex/fix nlpm remaining prs branch main groups spec driven 20 f",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.618Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/gsd-build__get-shit-done.md",
+      "path": "reports/clone-structures/gsd-build__get-shit-done.md",
+      "title": "gsd-build/get-shit-done 구조 분석",
+      "summary": "gsd build/get shit done 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/gsd build get shit done remote https //github.com/gsd build/get shit done HEAD bdcaab2 2026 05 31 Merge pull request 3886 from gsd build/chore/update discord link branch m",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.702Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/gsd-build__gsd-2.md",
+      "path": "reports/clone-structures/gsd-build__gsd-2.md",
+      "title": "gsd-build/gsd-2 구조 분석",
+      "summary": "gsd build/gsd 2 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/gsd build gsd 2 remote https //github.com/gsd build/gsd 2 HEAD 33c00aa 2026 05 22 Merge pull request 6451 from gsd build/fix/legacy forensics redirect branch main groups spec driv",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.818Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/guardrails-ai__guardrails.md",
+      "path": "reports/clone-structures/guardrails-ai__guardrails.md",
+      "title": "guardrails-ai/guardrails 구조 분석",
+      "summary": "guardrails ai/guardrails 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/guardrails ai guardrails remote https //github.com/guardrails ai/guardrails HEAD 6fa9524 2026 06 10 Merge pull request 1499 from guardrails ai/ShreyaR patch 2 branch main",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.900Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/HKUDS__LightRAG.md",
+      "path": "reports/clone-structures/HKUDS__LightRAG.md",
+      "title": "HKUDS/LightRAG 구조 분석",
+      "summary": "HKUDS/LightRAG 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/HKUDS LightRAG remote https //github.com/HKUDS/LightRAG HEAD ad7161b 2026 06 12 📝 chore env remove milvus migration memory settings branch main groups adjacent tech 50, previous c",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.198Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/https-deeplearning-ai__sc-spec-driven-development-files.md",
+      "path": "reports/clone-structures/https-deeplearning-ai__sc-spec-driven-development-files.md",
+      "title": "https-deeplearning-ai/sc-spec-driven-development-files 구조 분석",
+      "summary": "https deeplearning ai/sc spec driven development files 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/https deeplearning ai sc spec driven development files remote https //github.com/https deeplearning ai/sc spec driven development files HEAD",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.980Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/huggingface__accelerate.md",
+      "path": "reports/clone-structures/huggingface__accelerate.md",
+      "title": "huggingface/accelerate 구조 분석",
+      "summary": "huggingface/accelerate 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/huggingface accelerate remote https //github.com/huggingface/accelerate HEAD fb77442 2026 06 12 Fix flaky behavior in gated model CLI test by making the test deterministic ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.076Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/huggingface__text-generation-inference.md",
+      "path": "reports/clone-structures/huggingface__text-generation-inference.md",
+      "title": "huggingface/text-generation-inference 구조 분석",
+      "summary": "huggingface/text generation inference 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/huggingface text generation inference remote https //github.com/huggingface/text generation inference HEAD b4adbf2 2026 03 21 docs add AWS EC2/SageMaker depl",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.168Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/huggingface__transformers.md",
+      "path": "reports/clone-structures/huggingface__transformers.md",
+      "title": "huggingface/transformers 구조 분석",
+      "summary": "huggingface/transformers 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/huggingface transformers remote https //github.com/huggingface/transformers HEAD f208766 2026 06 12 Add minimax m3vl 46600 branch main groups adjacent tech 50, previous c",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.296Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/humanlayer__humanlayer.md",
+      "path": "reports/clone-structures/humanlayer__humanlayer.md",
+      "title": "humanlayer/humanlayer 구조 분석",
+      "summary": "humanlayer/humanlayer 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/humanlayer humanlayer remote https //github.com/humanlayer/humanlayer HEAD bdea199 2026 01 07 Merge pull request 885 from jeanduplessis/fix log file path branch main groups ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.378Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/IBM__iac-spec-kit.md",
+      "path": "reports/clone-structures/IBM__iac-spec-kit.md",
+      "title": "IBM/iac-spec-kit 구조 분석",
+      "summary": "IBM/iac spec kit 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/IBM iac spec kit remote https //github.com/IBM/iac spec kit HEAD fc01030 2026 03 02 Update CHANGELOG.md branch main groups spec driven 20 files 91 dirs 30 stack Python 구조 해석 핵심 구",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.284Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/infiniflow__ragflow.md",
+      "path": "reports/clone-structures/infiniflow__ragflow.md",
+      "title": "infiniflow/ragflow 구조 분석",
+      "summary": "infiniflow/ragflow 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/infiniflow ragflow remote https //github.com/infiniflow/ragflow HEAD d32e05d 2026 06 12 Go add more file parser 15979 branch main groups adjacent tech 50, previous clone invent",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.484Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/jayminwest__overstory.md",
+      "path": "reports/clone-structures/jayminwest__overstory.md",
+      "title": "jayminwest/overstory 구조 분석",
+      "summary": "jayminwest/overstory 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/jayminwest overstory remote https //github.com/jayminwest/overstory.git HEAD ff38f3f 2026 05 28 docs mark overstory as no longer maintained / archived branch main groups prev",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.569Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/kaplanelad__shellfirm.md",
+      "path": "reports/clone-structures/kaplanelad__shellfirm.md",
+      "title": "kaplanelad/shellfirm 구조 분석",
+      "summary": "kaplanelad/shellfirm 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/kaplanelad shellfirm remote https //github.com/kaplanelad/shellfirm.git HEAD 7ebf869 2026 05 15 fix force direct tty prompts for zsh hook 184 branch main groups previous clon",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.646Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/khoj-ai__khoj.md",
+      "path": "reports/clone-structures/khoj-ai__khoj.md",
+      "title": "khoj-ai/khoj 구조 분석",
+      "summary": "khoj ai/khoj 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/khoj ai khoj remote https //github.com/khoj ai/khoj HEAD 9258f57 2026 03 26 Release Khoj version 2.0.0 beta.28 branch master groups adjacent tech 50, previous clone inventory 107 fil",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.729Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Kilo-Org__kilocode.md",
+      "path": "reports/clone-structures/Kilo-Org__kilocode.md",
+      "title": "Kilo-Org/kilocode 구조 분석",
+      "summary": "Kilo Org/kilocode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Kilo Org kilocode remote https //github.com/Kilo Org/kilocode HEAD 5637375 2026 06 10 Merge pull request 11072 from Kilo Org/curious swordtail branch main groups core agent 30, ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.423Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/lancedb__lancedb.md",
+      "path": "reports/clone-structures/lancedb__lancedb.md",
+      "title": "lancedb/lancedb 구조 분석",
+      "summary": "lancedb/lancedb 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/lancedb lancedb remote https //github.com/lancedb/lancedb HEAD dfbe5be 2026 06 11 chore update lance dependency to v8.0.0 beta.12 3538 branch main groups adjacent tech 50, previou",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.811Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/langchain-ai__langchain.md",
+      "path": "reports/clone-structures/langchain-ai__langchain.md",
+      "title": "langchain-ai/langchain 구조 분석",
+      "summary": "langchain ai/langchain 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/langchain ai langchain remote https //github.com/langchain ai/langchain HEAD 0392b6b 2026 06 12 fix core fix Pydantic v1 support in tools/runnable 33698 branch master group",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.910Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/langchain-ai__langgraph.md",
+      "path": "reports/clone-structures/langchain-ai__langgraph.md",
+      "title": "langchain-ai/langgraph 구조 분석",
+      "summary": "langchain ai/langgraph 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/langchain ai langgraph remote https //github.com/langchain ai/langgraph HEAD d57a74f 2026 06 09 fix updateState bug for deltaChannel on empty thread 8011 branch main groups",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.993Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/langchain-ai__open-swe.md",
+      "path": "reports/clone-structures/langchain-ai__open-swe.md",
+      "title": "langchain-ai/open-swe 구조 분석",
+      "summary": "langchain ai/open swe 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/langchain ai open swe remote https //github.com/langchain ai/open swe.git HEAD 7dd758f 2026 06 17 feat shared GitHub HTTP helper with retries, rate limit handling closes OPE",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.075Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/langfuse__langfuse.md",
+      "path": "reports/clone-structures/langfuse__langfuse.md",
+      "title": "langfuse/langfuse 구조 분석",
+      "summary": "langfuse/langfuse 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/langfuse langfuse remote https //github.com/langfuse/langfuse HEAD de483b3 2026 06 12 perf api add redundant timestamp bound to scores v3 cursor for index pruning LFE 10208 1423",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.197Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/lm-sys__FastChat.md",
+      "path": "reports/clone-structures/lm-sys__FastChat.md",
+      "title": "lm-sys/FastChat 구조 분석",
+      "summary": "lm sys/FastChat 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/lm sys FastChat remote https //github.com/lm sys/FastChat HEAD 587d5cf 2025 06 02 Update constants.py 3733 branch main groups adjacent tech 50, previous clone inventory 107 files ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.275Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Lumiaqian__openspec-mcp.md",
+      "path": "reports/clone-structures/Lumiaqian__openspec-mcp.md",
+      "title": "Lumiaqian/openspec-mcp 구조 분석",
+      "summary": "Lumiaqian/openspec mcp 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Lumiaqian openspec mcp remote https //github.com/Lumiaqian/openspec mcp HEAD 48f8684 2026 01 12 chore bump version to 0.4.2 branch main groups spec driven 20 files 74 dirs ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.505Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/MadAppGang__claudish.md",
+      "path": "reports/clone-structures/MadAppGang__claudish.md",
+      "title": "madappgang/claudish 구조 분석",
+      "summary": "madappgang/claudish 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/MadAppGang claudish remote https //github.com/MadAppGang/claudish.git HEAD cd1a1a4 2026 06 10 docs update CHANGELOG.md for v7.5.0 branch main groups previous clone inventory 1",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.592Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/mem0ai__mem0.md",
+      "path": "reports/clone-structures/mem0ai__mem0.md",
+      "title": "mem0ai/mem0 구조 분석",
+      "summary": "mem0ai/mem0 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/mem0ai mem0 remote https //github.com/mem0ai/mem0 HEAD 06d33f6 2026 06 12 fix relax flaky entity boost parallelism timing threshold 5511 branch main groups adjacent tech 50, previous ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.367Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/microsoft__autogen.md",
+      "path": "reports/clone-structures/microsoft__autogen.md",
+      "title": "microsoft/autogen 구조 분석",
+      "summary": "microsoft/autogen 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/microsoft autogen remote https //github.com/microsoft/autogen HEAD 027ecf0 2026 04 06 Update maintenance mode banner in readme 7521 branch main groups core agent 30, previous cl",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.546Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/microsoft__BitNet.md",
+      "path": "reports/clone-structures/microsoft__BitNet.md",
+      "title": "microsoft/BitNet 구조 분석",
+      "summary": "microsoft/BitNet 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/microsoft BitNet remote https //github.com/microsoft/BitNet HEAD 01eb415 2026 03 10 Update demo link in README.md branch main groups adjacent tech 50, previous clone inventory 10",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.445Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/microsoft__graphrag.md",
+      "path": "reports/clone-structures/microsoft__graphrag.md",
+      "title": "microsoft/graphrag 구조 분석",
+      "summary": "microsoft/graphrag 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/microsoft graphrag remote https //github.com/microsoft/graphrag HEAD 6d02c23 2026 05 28 Update getting started docs. 2367 branch main groups adjacent tech 50, previous clone in",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.633Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/microsoft__promptflow.md",
+      "path": "reports/clone-structures/microsoft__promptflow.md",
+      "title": "microsoft/promptflow 구조 분석",
+      "summary": "microsoft/promptflow 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/microsoft promptflow remote https //github.com/microsoft/promptflow HEAD 3928a72 2026 05 13 Add docs related to devui and connections 4160 branch main groups adjacent tech 50",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.749Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/microsoft__vscode-copilot-chat.md",
+      "path": "reports/clone-structures/microsoft__vscode-copilot-chat.md",
+      "title": "microsoft/vscode-copilot-chat 구조 분석",
+      "summary": "microsoft/vscode copilot chat 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/microsoft vscode copilot chat remote https //github.com/microsoft/vscode copilot chat.git HEAD 5863f5a 2026 05 20 Add archive notice 5120 branch main groups previous",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.871Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/milvus-io__milvus.md",
+      "path": "reports/clone-structures/milvus-io__milvus.md",
+      "title": "milvus-io/milvus 구조 분석",
+      "summary": "milvus io/milvus 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/milvus io milvus remote https //github.com/milvus io/milvus HEAD 14c4cf6 2026 06 12 enhance add dynamic StructArray field APIs 50276 branch master groups adjacent tech 50, previo",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.983Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/minmaxflow__mini-kode.md",
+      "path": "reports/clone-structures/minmaxflow__mini-kode.md",
+      "title": "minmaxflow/mini-kode 구조 분석",
+      "summary": "minmaxflow/mini kode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/minmaxflow mini kode remote https //github.com/minmaxflow/mini kode.git HEAD 4e7f976 2025 11 04 docs add DeepWiki analysis link to README branch master groups previous clone ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.064Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/mksglu__context-mode.md",
+      "path": "reports/clone-structures/mksglu__context-mode.md",
+      "title": "mksglu/context-mode 구조 분석",
+      "summary": "mksglu/context mode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/mksglu context mode remote https //github.com/mksglu/context mode.git HEAD 26ef3ba 2026 06 17 ci update install stats branch main groups previous clone inventory 107 files 562",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.146Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/mlc-ai__mlc-llm.md",
+      "path": "reports/clone-structures/mlc-ai__mlc-llm.md",
+      "title": "mlc-ai/mlc-llm 구조 분석",
+      "summary": "mlc ai/mlc llm 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/mlc ai mlc llm remote https //github.com/mlc ai/mlc llm HEAD 2008fe8 2026 05 11 Auto updated submodule references branch main groups adjacent tech 50, previous clone inventory 107 ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.232Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/moazbuilds__CodeMachine-CLI.md",
+      "path": "reports/clone-structures/moazbuilds__CodeMachine-CLI.md",
+      "title": "moazbuilds/codemachine-cli 구조 분석",
+      "summary": "moazbuilds/codemachine cli 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/moazbuilds CodeMachine CLI remote https //github.com/moazbuilds/CodeMachine CLI.git HEAD 572def6 2026 02 25 telemetry replace auto import console warnings with logger b",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.315Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/modelcontextprotocol__servers.md",
+      "path": "reports/clone-structures/modelcontextprotocol__servers.md",
+      "title": "modelcontextprotocol/servers 구조 분석",
+      "summary": "modelcontextprotocol/servers 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/modelcontextprotocol servers remote https //github.com/modelcontextprotocol/servers HEAD 275175c 2026 06 07 Merge pull request 3816 from galagaevdc/fix/everything eli",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.392Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/mreferre__ralph-loop-kiro-specs.md",
+      "path": "reports/clone-structures/mreferre__ralph-loop-kiro-specs.md",
+      "title": "mreferre/ralph-loop-kiro-specs 구조 분석",
+      "summary": "mreferre/ralph loop kiro specs 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/mreferre ralph loop kiro specs remote https //github.com/mreferre/ralph loop kiro specs HEAD 2685064 2026 02 13 Added a dashboard output example branch main groups ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.467Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/mudler__LocalAI.md",
+      "path": "reports/clone-structures/mudler__LocalAI.md",
+      "title": "mudler/LocalAI 구조 분석",
+      "summary": "mudler/LocalAI 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/mudler LocalAI remote https //github.com/mudler/LocalAI HEAD 4ce0f61 2026 06 12 chore model gallery robot add 1 new models via gallery agent 10270 branch master groups adjacent tec",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.566Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/nanobrowser__nanobrowser.md",
+      "path": "reports/clone-structures/nanobrowser__nanobrowser.md",
+      "title": "nanobrowser/nanobrowser 구조 분석",
+      "summary": "nanobrowser/nanobrowser 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/nanobrowser nanobrowser remote https //github.com/nanobrowser/nanobrowser HEAD 322384f 2025 11 24 update extension description branch master groups core agent 30, previous",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.651Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/nesquena__hermes-webui.md",
+      "path": "reports/clone-structures/nesquena__hermes-webui.md",
+      "title": "nesquena/hermes-webui 구조 분석",
+      "summary": "nesquena/hermes webui 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/nesquena hermes webui remote https //github.com/nesquena/hermes webui HEAD 85d0e52 2026 06 10 Stamp v0.51.350 — Release LN session move / project delete timeout fix 3923 bra",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.738Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/NousResearch__hermes-agent.md",
+      "path": "reports/clone-structures/NousResearch__hermes-agent.md",
+      "title": "NousResearch/hermes-agent 구조 분석",
+      "summary": "NousResearch/hermes agent 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/NousResearch hermes agent remote https //github.com/NousResearch/hermes agent HEAD a72bb03 2026 06 10 fix docker optimize image size — .dockerignore, drop dev deps, spli",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.871Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/numman-ali__openskills.md",
+      "path": "reports/clone-structures/numman-ali__openskills.md",
+      "title": "numman-ali/openskills 구조 분석",
+      "summary": "numman ali/openskills 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/numman ali openskills remote https //github.com/numman ali/openskills.git HEAD 57d933a 2026 01 18 chore added claude md branch main groups previous clone inventory 107 files",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.819Z",
+      "categories": [
+        "agent-harness",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/NVIDIA__TensorRT-LLM.md",
+      "path": "reports/clone-structures/NVIDIA__TensorRT-LLM.md",
+      "title": "NVIDIA/TensorRT-LLM 구조 분석",
+      "summary": "NVIDIA/TensorRT LLM 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/NVIDIA TensorRT LLM remote https //github.com/NVIDIA/TensorRT LLM HEAD db7161b 2026 06 12 None fix Revert \"Add PyTorch reset prefix cache API 14970 \" 15306 branch main groups ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.758Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ollama__ollama.md",
+      "path": "reports/clone-structures/ollama__ollama.md",
+      "title": "ollama/ollama 구조 분석",
+      "summary": "ollama/ollama 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ollama ollama remote https //github.com/ollama/ollama HEAD 12e0437 2026 06 11 launch Fix launch provider drift 16683 branch main groups adjacent tech 50, previous clone inventory 10",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.910Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/oobabooga__text-generation-webui.md",
+      "path": "reports/clone-structures/oobabooga__text-generation-webui.md",
+      "title": "oobabooga/text-generation-webui 구조 분석",
+      "summary": "oobabooga/text generation webui 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/oobabooga text generation webui remote https //github.com/oobabooga/text generation webui HEAD ed888c7 2026 05 31 Update llama.cpp branch main groups adjacent tech",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.994Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/openai__codex-plugin-cc.md",
+      "path": "reports/clone-structures/openai__codex-plugin-cc.md",
+      "title": "openai/codex-plugin-cc 구조 분석",
+      "summary": "openai/codex plugin cc 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/openai codex plugin cc remote https //github.com/openai/codex plugin cc HEAD 807e03a 2026 04 18 fix bump plugin version to 1.0.4 244 branch main groups core agent 30, previ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.198Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/openai__codex.md",
+      "path": "reports/clone-structures/openai__codex.md",
+      "title": "openai/codex 구조 분석",
+      "summary": "openai/codex 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/openai codex remote https //github.com/openai/codex HEAD d2f6d23 2026 06 10 Remove async trait from extension contributors 27383 branch main groups core agent 30, previous clone inve",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.115Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/openai__evals.md",
+      "path": "reports/clone-structures/openai__evals.md",
+      "title": "openai/evals 구조 분석",
+      "summary": "openai/evals 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/openai evals remote https //github.com/openai/evals HEAD 8eac7a7 2026 04 14 Pin pre commit hook revisions to immutable commits 1644 branch main groups adjacent tech 50, previous clon",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.298Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/openclaw__openclaw.md",
+      "path": "reports/clone-structures/openclaw__openclaw.md",
+      "title": "openclaw/openclaw 구조 분석",
+      "summary": "openclaw/openclaw 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/openclaw openclaw remote https //github.com/openclaw/openclaw HEAD bb6e4772 2026 06 10 fix compaction lower default timeout from 900s to 180s, preserve explicit config 91361 bra",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.468Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/opencode-ai__opencode.md",
+      "path": "reports/clone-structures/opencode-ai__opencode.md",
+      "title": "opencode-ai/opencode 구조 분석",
+      "summary": "opencode ai/opencode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/opencode ai opencode remote https //github.com/opencode ai/opencode.git HEAD 73ee493 2025 09 17 docs readme update archive note branch main groups previous clone inventory 10",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.551Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/openinterpreter__open-interpreter.md",
+      "path": "reports/clone-structures/openinterpreter__open-interpreter.md",
+      "title": "openinterpreter/open-interpreter 구조 분석",
+      "summary": "openinterpreter/open interpreter 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/openinterpreter open interpreter remote https //github.com/openinterpreter/open interpreter HEAD e00f08e 2026 05 17 Merge pull request 1749 from endolith/update m",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.631Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/pgvector__pgvector.md",
+      "path": "reports/clone-structures/pgvector__pgvector.md",
+      "title": "pgvector/pgvector 구조 분석",
+      "summary": "pgvector/pgvector 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/pgvector pgvector remote https //github.com/pgvector/pgvector HEAD 1f68c73 2026 06 10 Updated changelog skip ci branch master groups adjacent tech 50, previous clone inventory 1",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.708Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/plandex-ai__plandex.md",
+      "path": "reports/clone-structures/plandex-ai__plandex.md",
+      "title": "plandex-ai/plandex 구조 분석",
+      "summary": "plandex ai/plandex 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/plandex ai plandex remote https //github.com/plandex ai/plandex.git HEAD e2d7720 2025 10 03 link to cloud wind down post branch main groups previous clone inventory 107 files 6",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.789Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/potpie-ai__potpie.md",
+      "path": "reports/clone-structures/potpie-ai__potpie.md",
+      "title": "potpie-ai/potpie 구조 분석",
+      "summary": "potpie ai/potpie 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/potpie ai potpie remote https //github.com/potpie ai/potpie HEAD 602f4db 2026 06 17 Restore detached context engine daemon lifecycle 889 branch main groups spec driven 20 files 1",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.877Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/promptfoo__promptfoo.md",
+      "path": "reports/clone-structures/promptfoo__promptfoo.md",
+      "title": "promptfoo/promptfoo 구조 분석",
+      "summary": "promptfoo/promptfoo 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/promptfoo promptfoo remote https //github.com/promptfoo/promptfoo HEAD 30dc14b 2026 06 12 fix eval handle config directory inputs without promptfooconfig 7825 branch main grou",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.993Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/pydantic__pydantic-ai.md",
+      "path": "reports/clone-structures/pydantic__pydantic-ai.md",
+      "title": "pydantic/pydantic-ai 구조 분석",
+      "summary": "pydantic/pydantic ai 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/pydantic pydantic ai remote https //github.com/pydantic/pydantic ai HEAD 3c98a10 2026 06 12 Add agent guideline avoid getattr / setattr over our own statically known fields 5",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.085Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/qdrant__qdrant.md",
+      "path": "reports/clone-structures/qdrant__qdrant.md",
+      "title": "qdrant/qdrant 구조 분석",
+      "summary": "qdrant/qdrant 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/qdrant qdrant remote https //github.com/qdrant/qdrant HEAD 44ad62f 2026 06 03 Bump version to 1.18.2 9290 branch master groups adjacent tech 50, previous clone inventory 107 files 1",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.179Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/QuivrHQ__quivr.md",
+      "path": "reports/clone-structures/QuivrHQ__quivr.md",
+      "title": "QuivrHQ/quivr 구조 분석",
+      "summary": "QuivrHQ/quivr 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/QuivrHQ quivr remote https //github.com/QuivrHQ/quivr HEAD 947a785 2025 06 19 fix add Claude 4 support 3645 branch main groups adjacent tech 50, previous clone inventory 107 files 2",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.950Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/QwenLM__qwen-code.md",
+      "path": "reports/clone-structures/QwenLM__qwen-code.md",
+      "title": "QwenLM/qwen-code 구조 분석",
+      "summary": "QwenLM/qwen code 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/QwenLM qwen code remote https //github.com/QwenLM/qwen code HEAD be62f0e 2026 06 10 fix core give complete intentional sleep guidance on first rejection for sleep chains 4948 bra",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.051Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/regent-vcs__re_gent.md",
+      "path": "reports/clone-structures/regent-vcs__re_gent.md",
+      "title": "regent-vcs/re_gent 구조 분석",
+      "summary": "regent vcs/re gent 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/regent vcs re gent remote https //github.com/regent vcs/re gent.git HEAD 1cde53e 2026 06 13 Merge pull request 65 from regent vcs/fix/version ldflags 64 branch main groups prev",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.258Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/rohitg00__agentmemory.md",
+      "path": "reports/clone-structures/rohitg00__agentmemory.md",
+      "title": "rohitg00/agentmemory 구조 분석",
+      "summary": "rohitg00/agentmemory 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/rohitg00 agentmemory remote https //github.com/rohitg00/agentmemory.git HEAD f6f9e3c 2026 06 11 fix website portal mobile nav sheet to body and close breakpoint gap 670 branc",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.340Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/RooCodeInc__Roo-Code.md",
+      "path": "reports/clone-structures/RooCodeInc__Roo-Code.md",
+      "title": "RooCodeInc/Roo-Code 구조 분석",
+      "summary": "RooCodeInc/Roo Code 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/RooCodeInc Roo Code remote https //github.com/RooCodeInc/Roo Code HEAD b867ec9 2026 05 15 Remove roocode.com web app 12375 branch main groups core agent 30, previous clone inv",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.152Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/sgl-project__sglang.md",
+      "path": "reports/clone-structures/sgl-project__sglang.md",
+      "title": "sgl-project/sglang 구조 분석",
+      "summary": "sgl project/sglang 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/sgl project sglang remote https //github.com/sgl project/sglang HEAD 9f6b233 2026 06 12 docs minimax m3 warm steady state benchmark numbers 28062 branch main groups adjacent te",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.666Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/sourcebot-dev__sourcebot.md",
+      "path": "reports/clone-structures/sourcebot-dev__sourcebot.md",
+      "title": "sourcebot-dev/sourcebot 구조 분석",
+      "summary": "sourcebot dev/sourcebot 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/sourcebot dev sourcebot remote https //github.com/sourcebot dev/sourcebot.git HEAD e626691 2026 06 17 chore upgrade @grpc/grpc js to ^1.14.4 to address CVE 2026 48068, CVE",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.758Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/stanford-oval__storm.md",
+      "path": "reports/clone-structures/stanford-oval__storm.md",
+      "title": "stanford-oval/storm 구조 분석",
+      "summary": "stanford oval/storm 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/stanford oval storm remote https //github.com/stanford oval/storm HEAD fb951af 2025 09 30 Merge pull request 400 from stanford oval/patch/requirement change branch main groups",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.834Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/stanfordnlp__dspy.md",
+      "path": "reports/clone-structures/stanfordnlp__dspy.md",
+      "title": "stanfordnlp/dspy 구조 분석",
+      "summary": "stanfordnlp/dspy 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/stanfordnlp dspy remote https //github.com/stanfordnlp/dspy HEAD 85027b1 2026 06 11 chore deps bump urllib3 from 1.26.6 to 2.7.0 in /docs 9761 branch main groups adjacent tech 50",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.915Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/SWE-agent__SWE-agent.md",
+      "path": "reports/clone-structures/SWE-agent__SWE-agent.md",
+      "title": "SWE-agent/SWE-agent 구조 분석",
+      "summary": "SWE agent/SWE agent 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/SWE agent SWE agent remote https //github.com/SWE agent/SWE agent HEAD a3d018f 2026 06 09 Chore deps Bump codecov/codecov action from 6.0.1 to 7.0.0 1421 branch main groups co",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.237Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/TabbyML__tabby.md",
+      "path": "reports/clone-structures/TabbyML__tabby.md",
+      "title": "TabbyML/tabby 구조 분석",
+      "summary": "TabbyML/tabby 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/TabbyML tabby remote https //github.com/TabbyML/tabby HEAD e8608d6 2026 03 02 feat add Avian as a model provider 4448 branch main groups core agent 30, previous clone inventory 107 ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.334Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/tesslio__spec-driven-development-tile.md",
+      "path": "reports/clone-structures/tesslio__spec-driven-development-tile.md",
+      "title": "tesslio/spec-driven-development-tile 구조 분석",
+      "summary": "tesslio/spec driven development tile 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/tesslio spec driven development tile remote https //github.com/tesslio/spec driven development tile HEAD b8fdff7 2026 03 30 Merge pull request 7 from tesslio/",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.991Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/timescale__pgvectorscale.md",
+      "path": "reports/clone-structures/timescale__pgvectorscale.md",
+      "title": "timescale/pgvectorscale 구조 분석",
+      "summary": "timescale/pgvectorscale 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/timescale pgvectorscale remote https //github.com/timescale/pgvectorscale HEAD 57c88b7 2026 04 30 style qualify pg catalog schema references in extension SQL 271 branch ma",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.071Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/tontinton__maki.md",
+      "path": "reports/clone-structures/tontinton__maki.md",
+      "title": "tontinton/maki 구조 분석",
+      "summary": "tontinton/maki 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/tontinton maki remote https //github.com/tontinton/maki.git HEAD c397d7a 2026 06 16 providers use adaptive thinking for Opus 4.7+ budgets branch main groups previous clone inventor",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.153Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/truera__trulens.md",
+      "path": "reports/clone-structures/truera__trulens.md",
+      "title": "truera/trulens 구조 분석",
+      "summary": "truera/trulens 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/truera trulens remote https //github.com/truera/trulens HEAD 3fb807e 2026 06 02 feat dashboard thread based grouping of records by conversation id 2527 branch main groups adjacent ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.246Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/typesense__typesense.md",
+      "path": "reports/clone-structures/typesense__typesense.md",
+      "title": "typesense/typesense 구조 분석",
+      "summary": "typesense/typesense 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/typesense typesense remote https //github.com/typesense/typesense HEAD c5e2e5b 2026 06 10 Aggregate nested references correctly. 2951 branch v31 groups adjacent tech 50, previ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.327Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ultraworkers__claw-code.md",
+      "path": "reports/clone-structures/ultraworkers__claw-code.md",
+      "title": "ultraworkers/claw-code 구조 분석",
+      "summary": "ultraworkers/claw code 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ultraworkers claw code remote https //github.com/ultraworkers/claw code HEAD d229a9b 2026 06 08 Merge pull request 3227 from TheArchitectit/worktree wizard entry points bra",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.409Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/upstash__context7.md",
+      "path": "reports/clone-structures/upstash__context7.md",
+      "title": "upstash/context7 구조 분석",
+      "summary": "upstash/context7 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/upstash context7 remote https //github.com/upstash/context7 HEAD 1f6212b 2026 06 10 trigger the Test workflow only when they touch packages/ or the root files that affect the too",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.489Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/vercel-labs__opensrc.md",
+      "path": "reports/clone-structures/vercel-labs__opensrc.md",
+      "title": "vercel-labs/opensrc 구조 분석",
+      "summary": "vercel labs/opensrc 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/vercel labs opensrc remote https //github.com/vercel labs/opensrc.git HEAD 2efd74e 2026 04 30 Document fetch command, fix search index, add type check CI, structured error han",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.570Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/vllm-project__vllm.md",
+      "path": "reports/clone-structures/vllm-project__vllm.md",
+      "title": "vllm-project/vllm 구조 분석",
+      "summary": "vllm project/vllm 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/vllm project vllm remote https //github.com/vllm project/vllm HEAD a30addc 2026 06 12 Docs KV Connector NIXL document KV Transfer stat logging and Prometheus metrics 44055 branc",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.684Z",
+      "categories": [
+        "adjacent-infrastructure",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/weaviate__Verba.md",
+      "path": "reports/clone-structures/weaviate__Verba.md",
+      "title": "weaviate/Verba 구조 분석",
+      "summary": "weaviate/Verba 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/weaviate Verba remote https //github.com/weaviate/Verba HEAD 70b6cfb 2026 06 08 goodbye branch main groups adjacent tech 50, previous clone inventory 107 files 377 dirs 68 stack No",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.764Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/weaviate__weaviate.md",
+      "path": "reports/clone-structures/weaviate__weaviate.md",
+      "title": "weaviate/weaviate 구조 분석",
+      "summary": "weaviate/weaviate 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/weaviate weaviate remote https //github.com/weaviate/weaviate HEAD 24163af 2026 06 12 Merge pull request 10657 from weaviate/more alloc optimization branch main groups adjacent ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.875Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/xorbitsai__inference.md",
+      "path": "reports/clone-structures/xorbitsai__inference.md",
+      "title": "xorbitsai/inference 구조 분석",
+      "summary": "xorbitsai/inference 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/xorbitsai inference remote https //github.com/xorbitsai/inference HEAD 1fbae04 2026 06 12 fix monitor correct alert rule labels/expressions and add 4 new rules 5016 branch mai",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.967Z",
+      "categories": [
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Yeachan-Heo__oh-my-claudecode.md",
+      "path": "reports/clone-structures/Yeachan-Heo__oh-my-claudecode.md",
+      "title": "Yeachan-Heo/oh-my-claudecode 구조 분석",
+      "summary": "Yeachan Heo/oh my claudecode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Yeachan Heo oh my claudecode remote https //github.com/Yeachan Heo/oh my claudecode HEAD deee3a4 2026 06 09 chore release merge dev for v4.14.6 branch main groups cor",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.422Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Yeachan-Heo__oh-my-codex.md",
+      "path": "reports/clone-structures/Yeachan-Heo__oh-my-codex.md",
+      "title": "Yeachan-Heo/oh-my-codex 구조 분석",
+      "summary": "Yeachan Heo/oh my codex 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Yeachan Heo oh my codex remote https //github.com/Yeachan Heo/oh my codex HEAD 0332e47 2026 06 09 ci configure npm auth for manual publish 2766 branch main groups core age",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.507Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    }
+  ]
+}

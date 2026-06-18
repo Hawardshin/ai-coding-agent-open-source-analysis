@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "ai-usage-trends",
+  "title": "AI Usage Trends",
+  "description": "Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals.",
+  "count": 3,
+  "reports": [
+    {
+      "id": "report:reports/presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md",
+      "path": "reports/presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md",
+      "title": "AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea",
+      "summary": "AI Usage Trend Conferences Big Tech, Amazon/AWS, Global and Korea Generated 2026 06 18T07 28 59.736Z Scope Requested window 2025 06 18 to 2026 06 18 Indexed sources 58 In requested date window 55 Near term context just outside window 3 Source policy metadata o",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T07:29:29.225Z",
+      "categories": [
+        "start-here",
+        "presentations-conferences",
+        "ai-usage-trends"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/categories/ai-usage-trends/README.md",
+      "path": "reports/categories/ai-usage-trends/README.md",
+      "title": "AI Usage Trends",
+      "summary": "AI Usage Trends Generated 2026 06 18T13 38 56.297Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. Counts Total categorized entries 58 Repositories 0 Research pa",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "categories": [
+        "category-guides",
+        "ai-usage-trends"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/presentations/ai-usage-trend-source-catalog-6-12mo.md",
+      "path": "reports/presentations/ai-usage-trend-source-catalog-6-12mo.md",
+      "title": "AI Usage Trend Conference Source Catalog",
+      "summary": "AI Usage Trend Conference Source Catalog Generated 2026 06 18T07 28 59.736Z Requested window 2025 06 18 to 2026 06 18 Date Region Company Event Source Trends 2026 08 19 korea AI Summit Seoul AI Summit Seoul & Expo 2026 AI Summit Seoul & EXPO 2026 https //www.a",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T07:29:29.225Z",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 142
+    }
+  ]
+}

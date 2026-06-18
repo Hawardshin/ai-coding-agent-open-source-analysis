@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "source-catalogs-and-inventories",
+  "title": "Source Catalogs and Inventories",
+  "description": "Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations.",
+  "count": 6,
+  "reports": [
+    {
+      "id": "report:reports/00-source-inventory.md",
+      "path": "reports/00-source-inventory.md",
+      "title": "Source Inventory",
+      "summary": "Source Inventory Generated at 2026 06 10T14 00 24.330Z Repository Commit Lang Files License Archived Source dirs 1 openclaw/openclaw bb6e4772 TypeScript 19887 other no src, packages, apps, docs 2 ultraworkers/claw code d229a9b Rust 386 mit no src, docs 3 NousR",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-10T14:00:24.333Z",
+      "categories": [
+        "start-here",
+        "full-source-scan",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 158
+    },
+    {
+      "id": "report:reports/presentations/ai-usage-trend-source-catalog-6-12mo.md",
+      "path": "reports/presentations/ai-usage-trend-source-catalog-6-12mo.md",
+      "title": "AI Usage Trend Conference Source Catalog",
+      "summary": "AI Usage Trend Conference Source Catalog Generated 2026 06 18T07 28 59.736Z Requested window 2025 06 18 to 2026 06 18 Date Region Company Event Source Trends 2026 08 19 korea AI Summit Seoul AI Summit Seoul & Expo 2026 AI Summit Seoul & EXPO 2026 https //www.a",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T07:29:29.225Z",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 142
+    },
+    {
+      "id": "report:reports/presentations/conference-source-catalog.md",
+      "path": "reports/presentations/conference-source-catalog.md",
+      "title": "Conference Source Catalog",
+      "summary": "Conference Source Catalog Generated 2026 06 18T03 37 26.867Z This catalog stores source metadata only. It is intended as a searchable reference index for talks, conference schedules, recordings, webinars, and event analysis posts related to Claude Code, Codex,",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T03:37:27.434Z",
+      "categories": [
+        "presentations-conferences",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 142
+    },
+    {
+      "id": "report:reports/adjacent-tech-source-inventory.md",
+      "path": "reports/adjacent-tech-source-inventory.md",
+      "title": "Source Inventory",
+      "summary": "Source Inventory Generated at 2026 06 12T15 55 41.066Z Repository Commit Lang Files License Archived Source dirs 1 vllm project/vllm a30addc Python 5488 apache 2.0 no docs 2 ggml org/llama.cpp ebc1077 C++ 2985 mit no src, docs 3 ollama/ollama 12e0437 Go 1233 m",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-12T15:55:41.074Z",
+      "categories": [
+        "adjacent-infrastructure",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 118
+    },
+    {
+      "id": "report:reports/current-clone-inventory-107.md",
+      "path": "reports/current-clone-inventory-107.md",
+      "title": "Current Clone Inventory: 107 Open Source Repositories",
+      "summary": "Current Clone Inventory 107 Open Source Repositories Generated 2026 06 17T22 18 01.259Z Total git clones 107 Repository HEAD Files sampled Key manifests 1 Aider AI/aider 5dc9490 685 benchmark/Dockerfile<br docker/Dockerfile<br pyproject.toml<br requirements.tx",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:18:01.261Z",
+      "categories": [
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 118
+    },
+    {
+      "id": "report:reports/spec-driven-evidence-corpus-500.md",
+      "path": "reports/spec-driven-evidence-corpus-500.md",
+      "title": "Spec-Driven Development Evidence Corpus 500+",
+      "summary": "Spec Driven Development Evidence Corpus 500+ Collected at 2026 06 17T22 30 27.587Z This file summarizes the reproducible OpenAlex corpus used by the web research browser and follow up spec driven development analysis. It intentionally separates broad evidence ",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:37:32.647Z",
+      "categories": [
+        "coding-agents",
+        "spec-driven",
+        "research-foundations",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 118
+    }
+  ]
+}

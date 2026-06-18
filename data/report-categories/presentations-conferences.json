@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "presentations-conferences",
+  "title": "Presentations and Conferences",
+  "description": "Conference, talk, webinar, and presentation-method research.",
+  "count": 8,
+  "reports": [
+    {
+      "id": "report:reports/presentations/00-agent-harness-conference-presentation-patterns.md",
+      "path": "reports/presentations/00-agent-harness-conference-presentation-patterns.md",
+      "title": "Agent Harness Conference and Presentation Patterns",
+      "summary": "Agent Harness Conference and Presentation Patterns Generated 2026 06 18T03 37 26.867Z Scope Indexed materials 665 AI Engineer schedule sessions retained after dedupe 605 Interrupt 2026 recordings retained after dedupe 24 Source groups 17 License policy metadat",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T03:37:27.433Z",
+      "categories": [
+        "start-here",
+        "agent-harness",
+        "presentations-conferences"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md",
+      "path": "reports/presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md",
+      "title": "AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea",
+      "summary": "AI Usage Trend Conferences Big Tech, Amazon/AWS, Global and Korea Generated 2026 06 18T07 28 59.736Z Scope Requested window 2025 06 18 to 2026 06 18 Indexed sources 58 In requested date window 55 Near term context just outside window 3 Source policy metadata o",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T07:29:29.225Z",
+      "categories": [
+        "start-here",
+        "presentations-conferences",
+        "ai-usage-trends"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/categories/presentations-conferences/README.md",
+      "path": "reports/categories/presentations-conferences/README.md",
+      "title": "Presentations and Conferences",
+      "summary": "Presentations and Conferences Generated 2026 06 18T13 38 56.297Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. Counts Total categorized entries 723 Repositories 0 Research papers 0 Presentatio",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "categories": [
+        "category-guides",
+        "presentations-conferences"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/presentations/ai-usage-trend-source-catalog-6-12mo.md",
+      "path": "reports/presentations/ai-usage-trend-source-catalog-6-12mo.md",
+      "title": "AI Usage Trend Conference Source Catalog",
+      "summary": "AI Usage Trend Conference Source Catalog Generated 2026 06 18T07 28 59.736Z Requested window 2025 06 18 to 2026 06 18 Date Region Company Event Source Trends 2026 08 19 korea AI Summit Seoul AI Summit Seoul & Expo 2026 AI Summit Seoul & EXPO 2026 https //www.a",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T07:29:29.225Z",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 142
+    },
+    {
+      "id": "report:reports/presentations/conference-source-catalog.md",
+      "path": "reports/presentations/conference-source-catalog.md",
+      "title": "Conference Source Catalog",
+      "summary": "Conference Source Catalog Generated 2026 06 18T03 37 26.867Z This catalog stores source metadata only. It is intended as a searchable reference index for talks, conference schedules, recordings, webinars, and event analysis posts related to Claude Code, Codex,",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T03:37:27.434Z",
+      "categories": [
+        "presentations-conferences",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 142
+    },
+    {
+      "id": "report:reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "path": "reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "title": "2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드",
+      "summary": "2026 최신 자료 레이더 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드 기준일 2026 06 13 KST. 범위 context engineering, RAG/GraphRAG/agentic RAG, local LLM/vLLM serving, agent memory, eval/observability, MCP/A2A, agent platform/harness. 자료 우선순위 공식 발표/공식 문서 arXiv/논문 표준 문서 산업 분석/시장 기사. 이 문서",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:38:46.724Z",
+      "categories": [
+        "llm-wiki",
+        "presentations-conferences",
+        "adjacent-infrastructure",
+        "research-foundations"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/presentations/codex-conference-talk-playbook.md",
+      "path": "reports/presentations/codex-conference-talk-playbook.md",
+      "title": "Codex Conference Talk Playbook",
+      "summary": "Codex Conference Talk Playbook Generated 2026 06 18T03 37 26.867Z Recommended Talk Structure 1. Problem framing name the engineering bottleneck and the human workflow it blocks. 2. Harness framing show AGENTS.md, Codex config, sandbox/approval policy, MCP serv",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T03:37:27.444Z",
+      "categories": [
+        "coding-agents",
+        "presentations-conferences"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
+      "path": "reports/korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
+      "title": "sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon",
+      "summary": "sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon local path sources/sktelecom SK AI SUMMIT 2025 Claude Code Builder Hackat",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:18.273Z",
+      "categories": [
+        "coding-agents",
+        "presentations-conferences",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    }
+  ]
+}

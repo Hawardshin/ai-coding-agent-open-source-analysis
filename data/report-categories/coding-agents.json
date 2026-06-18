@@ -1,0 +1,1235 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "coding-agents",
+  "title": "Coding Agents and IDEs",
+  "description": "Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.",
+  "count": 84,
+  "reports": [
+    {
+      "id": "report:reports/research/02-evidence-catalog-100-sources.md",
+      "path": "reports/research/02-evidence-catalog-100-sources.md",
+      "title": "AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선",
+      "summary": "AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선 기준일 2026 06 11 KST. 범위 AI 코딩 에이전트, agent harness, tool use, MCP/A2A, context engineering, loop engineering, evaluation, benchmark, multi agent architecture. 원칙 기업 공식 문서/엔지니어링 글을 우선하고, 논문/벤치마크/오픈소스 문서를 보조 근거로 사용했다. 서로 충돌하는 해석",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-10T22:30:45.096Z",
+      "categories": [
+        "start-here",
+        "coding-agents",
+        "research-foundations"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/agent-harness/00-claude-code-codex-harness-materials-1000.md",
+      "path": "reports/agent-harness/00-claude-code-codex-harness-materials-1000.md",
+      "title": "Claude Code / Codex Harness Materials 1000+ Corpus",
+      "summary": "Claude Code / Codex Harness Materials 1000+ Corpus Generated 2026 06 18T02 20 43.625Z Scope Selected materials 1200 Raw candidates before dedupe 3622 GitHub repository search queries 20 GitHub code search queries attempted 8 Official Claude docs parsed 148 Off",
+      "kind": "agent-harness-report",
+      "folder": "agent-harness",
+      "updatedAt": "2026-06-18T02:22:00.517Z",
+      "categories": [
+        "start-here",
+        "coding-agents",
+        "agent-harness"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/categories/coding-agents-ides/README.md",
+      "path": "reports/categories/coding-agents-ides/README.md",
+      "title": "Coding Agents and IDEs",
+      "summary": "Coding Agents and IDEs Generated 2026 06 18T13 38 56.297Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. Counts Total categorized entries 1417 Repositories 174 Research papers 13 Presenta",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "categories": [
+        "category-guides",
+        "coding-agents"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/categories/research-papers/README.md",
+      "path": "reports/categories/research-papers/README.md",
+      "title": "Research Papers and Evidence",
+      "summary": "Research Papers and Evidence Generated 2026 06 18T13 38 56.297Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. Counts Total categorized entries 650 Repositories 0 Research papers 650 Pres",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "categories": [
+        "category-guides",
+        "coding-agents"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/agent-harness/codex-harness-setup-guide.md",
+      "path": "reports/agent-harness/codex-harness-setup-guide.md",
+      "title": "Codex Harness Setup Guide from Claude Code Patterns",
+      "summary": "Codex Harness Setup Guide from Claude Code Patterns Generated 2026 06 18T02 20 43.625Z This guide translates the Claude Code patterns in the 1000+ material corpus into Codex settings you can use as a repeatable harness. 1. Repository Instructions Create AGENTS",
+      "kind": "agent-harness-report",
+      "folder": "agent-harness",
+      "updatedAt": "2026-06-18T13:42:18.894Z",
+      "categories": [
+        "coding-agents",
+        "agent-harness"
+      ],
+      "priority": 142
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "path": "reports/llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "title": "KalyanKS-NLP/rag-zero-to-hero-guide 코드 레벨 분석",
+      "summary": "KalyanKS NLP/rag zero to hero guide 코드 레벨 분석 생성일 2026 06 17T23 31 44.039Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 0 stars 1348 language Jupyter Notebook tags rag, document chat, korea signal files/code/source 20/0/0 tests/ci 0/0 local ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:44.040Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki"
+      ],
+      "priority": 141
+    },
+    {
+      "id": "report:reports/spec-driven-evidence-corpus-500.md",
+      "path": "reports/spec-driven-evidence-corpus-500.md",
+      "title": "Spec-Driven Development Evidence Corpus 500+",
+      "summary": "Spec Driven Development Evidence Corpus 500+ Collected at 2026 06 17T22 30 27.587Z This file summarizes the reproducible OpenAlex corpus used by the web research browser and follow up spec driven development analysis. It intentionally separates broad evidence ",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:37:32.647Z",
+      "categories": [
+        "coding-agents",
+        "spec-driven",
+        "research-foundations",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 118
+    },
+    {
+      "id": "report:reports/presentations/codex-conference-talk-playbook.md",
+      "path": "reports/presentations/codex-conference-talk-playbook.md",
+      "title": "Codex Conference Talk Playbook",
+      "summary": "Codex Conference Talk Playbook Generated 2026 06 18T03 37 26.867Z Recommended Talk Structure 1. Problem framing name the engineering bottleneck and the human workflow it blocks. 2. Harness framing show AGENTS.md, Codex config, sandbox/approval policy, MCP serv",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T03:37:27.444Z",
+      "categories": [
+        "coding-agents",
+        "presentations-conferences"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/AgriciDaniel__claude-obsidian.md",
+      "path": "reports/llm-wiki/code-level-repositories/AgriciDaniel__claude-obsidian.md",
+      "title": "AgriciDaniel/claude-obsidian 코드 레벨 분석",
+      "summary": "AgriciDaniel/claude obsidian 코드 레벨 분석 생성일 2026 06 17T23 31 20.737Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 98 stars 7035 language Python tags direct llm wiki, knowledge base, agent knowledge files/code/source 190/29/20 tests/ci 9/1 l",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:20.739Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/HKUDS__VideoRAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/HKUDS__VideoRAG.md",
+      "title": "HKUDS/VideoRAG 코드 레벨 분석",
+      "summary": "HKUDS/VideoRAG 코드 레벨 분석 생성일 2026 06 17T23 31 43.313Z 기본 판정 항목 값 type rag knowledge platform maturity B production leaning 78 stars 3065 language Python tags rag, document chat, korea signal files/code/source 112/95/93 tests/ci 0/0 local path sources/HKUDS Vide",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:43.313Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/naver__naver-openapi-guide.md",
+      "path": "reports/korea-trending/repositories/naver__naver-openapi-guide.md",
+      "title": "naver/naver-openapi-guide",
+      "summary": "naver/naver openapi guide 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/naver/naver openapi guide local path sources/naver naver openapi guide HEAD 64d4ea8 stars/forks 152 / 90 language CSS license pushedAt 2026 06 01T09 22 01Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:20.255Z",
+      "categories": [
+        "coding-agents",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -4
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "path": "reports/llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "title": "KalyanKS-NLP/rag-zero-to-hero-guide 구조 분석",
+      "summary": "KalyanKS NLP/rag zero to hero guide 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/KalyanKS NLP rag zero to hero guide remote https //github.com/KalyanKS NLP/rag zero to hero guide HEAD 2719db3 2025 03 29 Add RAG Evaluation Course Content bra",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.503Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -4
+    },
+    {
+      "id": "report:reports/clone-structures/Aider-AI__aider.md",
+      "path": "reports/clone-structures/Aider-AI__aider.md",
+      "title": "Aider-AI/aider 구조 분석",
+      "summary": "Aider AI/aider 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Aider AI aider remote https //github.com/Aider AI/aider HEAD 5dc9490 2026 05 22 Merge pull request 5173 from Cyberfilo/feat/anthropic models list add opus 4 5 branch main groups co",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:11.941Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/All-Hands-AI__OpenHands.md",
+      "path": "reports/clone-structures/All-Hands-AI__OpenHands.md",
+      "title": "All-Hands-AI/OpenHands 구조 분석",
+      "summary": "All Hands AI/OpenHands 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/All Hands AI OpenHands remote https //github.com/All Hands AI/OpenHands HEAD 2a3f06a 2026 06 09 perf skip runtime API call in webhook auth via SandboxRecord 14732 branch ma",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.056Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/cline__cline.md",
+      "path": "reports/clone-structures/cline__cline.md",
+      "title": "cline/cline 구조 분석",
+      "summary": "cline/cline 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/cline cline remote https //github.com/cline/cline HEAD 7d11935 2026 06 10 fix cli suppress flickering console windows on Windows 11408 branch main groups core agent 30, previous clone",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.023Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/confident-ai__deepeval.md",
+      "path": "reports/clone-structures/confident-ai__deepeval.md",
+      "title": "confident-ai/deepeval 구조 분석",
+      "summary": "confident ai/deepeval 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/confident ai deepeval remote https //github.com/confident ai/deepeval HEAD c399fb4 2026 06 10 updated docs branch main groups adjacent tech 50, previous clone inventory 107 ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.216Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/google-gemini__gemini-cli.md",
+      "path": "reports/clone-structures/google-gemini__gemini-cli.md",
+      "title": "google-gemini/gemini-cli 구조 분석",
+      "summary": "google gemini/gemini cli 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/google gemini gemini cli remote https //github.com/google gemini/gemini cli HEAD 1d2adf7 2026 06 10 chore release bump version to 0.48.0 nightly.20260609.g3a13b8eeb 27779",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.532Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/openai__codex-plugin-cc.md",
+      "path": "reports/clone-structures/openai__codex-plugin-cc.md",
+      "title": "openai/codex-plugin-cc 구조 분석",
+      "summary": "openai/codex plugin cc 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/openai codex plugin cc remote https //github.com/openai/codex plugin cc HEAD 807e03a 2026 04 18 fix bump plugin version to 1.0.4 244 branch main groups core agent 30, previ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.198Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/openai__codex.md",
+      "path": "reports/clone-structures/openai__codex.md",
+      "title": "openai/codex 구조 분석",
+      "summary": "openai/codex 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/openai codex remote https //github.com/openai/codex HEAD d2f6d23 2026 06 10 Remove async trait from extension contributors 27383 branch main groups core agent 30, previous clone inve",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:21.115Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/RooCodeInc__Roo-Code.md",
+      "path": "reports/clone-structures/RooCodeInc__Roo-Code.md",
+      "title": "RooCodeInc/Roo-Code 구조 분석",
+      "summary": "RooCodeInc/Roo Code 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/RooCodeInc Roo Code remote https //github.com/RooCodeInc/Roo Code HEAD b867ec9 2026 05 15 Remove roocode.com web app 12375 branch main groups core agent 30, previous clone inv",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.152Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Yeachan-Heo__oh-my-claudecode.md",
+      "path": "reports/clone-structures/Yeachan-Heo__oh-my-claudecode.md",
+      "title": "Yeachan-Heo/oh-my-claudecode 구조 분석",
+      "summary": "Yeachan Heo/oh my claudecode 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Yeachan Heo oh my claudecode remote https //github.com/Yeachan Heo/oh my claudecode HEAD deee3a4 2026 06 09 chore release merge dev for v4.14.6 branch main groups cor",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.422Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Yeachan-Heo__oh-my-codex.md",
+      "path": "reports/clone-structures/Yeachan-Heo__oh-my-codex.md",
+      "title": "Yeachan-Heo/oh-my-codex 구조 분석",
+      "summary": "Yeachan Heo/oh my codex 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Yeachan Heo oh my codex remote https //github.com/Yeachan Heo/oh my codex HEAD 0332e47 2026 06 09 ci configure npm auth for manual publish 2766 branch main groups core age",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:14.507Z",
+      "categories": [
+        "coding-agents",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/aaif-goose-goose.md",
+      "path": "reports/repositories/aaif-goose-goose.md",
+      "title": "aaif-goose/goose 분석 보고서",
+      "summary": "aaif goose/goose 분석 보고서 1. 요약 평가 goose는 Rust 기반의 로컬 AI 에이전트 플랫폼이다. 단순한 코딩 보조 CLI라기보다, CLI, Electron Desktop, HTTP API 서버, ACP 서버, MCP 확장 런타임, 스케줄러, 게이트웨이, 레시피, 플러그인, 스킬, 로컬 추론까지 포함하는 “사용자 머신 위의 범용 agent operating layer”에 가깝다. README가 강조하는 핵심 문장은 “general purpo",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T15:26:01.103Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/agno-agi-agno.md",
+      "path": "reports/repositories/agno-agi-agno.md",
+      "title": "agno-agi/agno 분석 보고서",
+      "summary": "agno agi/agno 분석 보고서 1. 요약 평가 Agno는 Python 기반의 에이전트 플랫폼 SDK다. Claude Code, Codex, Gemini CLI류처럼 터미널에서 개발자의 로컬 파일을 직접 수정하는 “코딩 전용 에이전트”라기보다, 에이전트·팀·워크플로우·지식·메모리·승인·스케줄·API 서버를 하나의 제품 플랫폼으로 묶는 프레임워크다. README가 스스로를 “SDK for building agent platforms”라고 설명하는 것처럼, 핵",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T15:44:36.952Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/aider-ai-aider.md",
+      "path": "reports/repositories/aider-ai-aider.md",
+      "title": "Aider-AI/aider 분석 보고서",
+      "summary": "Aider AI/aider 분석 보고서 1. 요약 평가 Aider는 Python 기반의 터미널 AI pair programmer다. Claude Code, Codex, Gemini CLI류의 “범용 agent shell”과 비교하면 더 좁고 선명한 철학을 가진다. Aider는 사용자의 저장소 안에서 명시적으로 선택한 파일을 LLM과 함께 편집하고, Git commit과 undo를 안전망으로 삼고, repo map으로 전체 코드베이스의 구조적 맥락을 압축해서 제공",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T15:35:31.940Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/all-hands-ai-openhands.md",
+      "path": "reports/repositories/all-hands-ai-openhands.md",
+      "title": "All-Hands-AI/OpenHands 심층 분석",
+      "summary": "All Hands AI/OpenHands 심층 분석 분석 기준일 2026 06 10 분석 대상 All Hands AI/OpenHands 로컬 소스 sources/All Hands AI OpenHands 분석 커밋 2a3f06a 기본 브랜치 main 주 언어 Python, TypeScript/React 라이선스 루트 MIT, enterprise/ 는 PolyForm Free Trial License 1.0.0 최신 릴리스 메타데이터 1.7.0 2026 05 01 ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:34:38.574Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/anomalyco-opencode.md",
+      "path": "reports/repositories/anomalyco-opencode.md",
+      "title": "anomalyco/opencode 심층 분석",
+      "summary": "anomalyco/opencode 심층 분석 분석 기준일 2026 06 10 분석 대상 anomalyco/opencode 로컬 경로 sources/anomalyco opencode 분석 커밋 4c9abff 기본 브랜치 dev 라이선스 MIT 주요 언어 TypeScript 최신 릴리스 v1.17.1 1. 총평 opencode는 단순한 터미널 래퍼형 코딩 에이전트가 아니라, CLI, TUI, 웹 앱, 데스크톱 앱, HTTP 서버, SDK, 플러그인, MCP, 세션 ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:16:40.642Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/browser-use-browser-use.md",
+      "path": "reports/repositories/browser-use-browser-use.md",
+      "title": "browser-use/browser-use 심층 분석",
+      "summary": "browser use/browser use 심층 분석 분석 기준일 2026 06 10 분석 대상 browser use/browser use 로컬 경로 sources/browser use browser use 분석 커밋 476ef1b 기본 브랜치 main 라이선스 MIT 주요 언어 Python 최신 릴리스 0.13.1 1. 총평 browser use는 \"웹사이트를 AI 에이전트가 사용할 수 있게 만드는\" 브라우저 자동화 에이전트 프레임워크다. 코딩 에이전트 계열과",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:22:50.785Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/cline-cline.md",
+      "path": "reports/repositories/cline-cline.md",
+      "title": "cline/cline 심층 분석",
+      "summary": "cline/cline 심층 분석 분석 기준일 2026 06 10 분석 대상 cline/cline 로컬 소스 sources/cline cline 분석 커밋 7d11935 기본 브랜치 main 주 언어 TypeScript 라이선스 Apache 2.0 최신 릴리스 메타데이터 CLI v3.0.23 cli v3.0.23 , 2026 06 10 GitHub 메타데이터 2026 06 10 수집 시점 기준 star 약 63,010, fork 약 6,649 1. 한 줄 평가 C",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:52:00.038Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/ComposioHQ-composio.md",
+      "path": "reports/repositories/ComposioHQ-composio.md",
+      "title": "ComposioHQ/composio 분석 보고서",
+      "summary": "ComposioHQ/composio 분석 보고서 대상 저장소 https //github.com/ComposioHQ/composio 로컬 경로 /Users/shinjoungeun/Documents/중은v2/sources/ComposioHQ composio 분석 기준 커밋 094aed6 기본 브랜치 next 생성일 2024 02 23 주 언어 TypeScript 라이선스 표기 GitHub metadata는 MIT, TypeScript 패키지는 ISC, Python ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T16:58:55.085Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/continuedev-continue.md",
+      "path": "reports/repositories/continuedev-continue.md",
+      "title": "continuedev/continue 분석 보고서",
+      "summary": "continuedev/continue 분석 보고서 1. 요약 평가 Continue는 IDE extension, CLI, core engine, indexing, model provider layer를 함께 가진 오픈소스 코딩 에이전트 코드베이스다. Codex/Gemini CLI처럼 터미널에서만 동작하는 도구가 아니라, VS Code/JetBrains 안에서 chat, edit, autocomplete, next edit, codebase retrieval을 제공",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T16:27:44.453Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/crewaiinc-crewai.md",
+      "path": "reports/repositories/crewaiinc-crewai.md",
+      "title": "crewAIInc/crewAI 분석 보고서",
+      "summary": "crewAIInc/crewAI 분석 보고서 1. 요약 평가 CrewAI는 Python 기반 multi agent automation framework다. 이 프로젝트의 핵심은 “자율 agent 팀”인 Crews와 “생산 환경용 event/state workflow”인 Flows를 분리해서 제공하는 것이다. Crew는 역할, 목표, backstory, tools를 가진 agent들이 task를 수행하게 만들고, Flow는 그 agent 팀을 실제 업무 시스템 안에",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T15:10:13.062Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/google-gemini-cli.md",
+      "path": "reports/repositories/google-gemini-cli.md",
+      "title": "google-gemini/gemini-cli 심층 분석 보고서",
+      "summary": "google gemini/gemini cli 심층 분석 보고서 분석 기준일 2026 06 10 로컬 소스 sources/google gemini gemini cli 분석 commit 1d2adf7 GitHub <https //github.com/google gemini/gemini cli 주 언어 TypeScript 라이선스 Apache 2.0 GitHub 메타데이터 105,128 stars, 14,026 forks, latest release v0.46.0 ,",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:09:25.876Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/Kilo-Org-kilocode.md",
+      "path": "reports/repositories/Kilo-Org-kilocode.md",
+      "title": "Kilo-Org/kilocode 상세 분석 보고서",
+      "summary": "Kilo Org/kilocode 상세 분석 보고서 1. 기본 평가 대상 https //github.com/Kilo Org/kilocode 로컬 소스 sources/Kilo Org kilocode 분석 기준 커밋 5637375874d80dacf7d7365ba5a3e97ca29110b8 5637375 기준 브랜치 main 마지막 커밋 시각 2026 06 10 15 27 05 +0200 최신 릴리스 v7.3.41 , 2026 06 09 생성일 2025 03 10 주 ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T17:24:50.084Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/langchain-ai-langgraph.md",
+      "path": "reports/repositories/langchain-ai-langgraph.md",
+      "title": "langchain-ai/langgraph 분석 보고서",
+      "summary": "langchain ai/langgraph 분석 보고서 1. 요약 평가 LangGraph는 Claude Code, Codex, Gemini CLI처럼 완성된 코딩 에이전트 앱이 아니라, 그런 종류의 에이전트를 더 안정적으로 만들기 위한 저수준 orchestration framework다. 핵심 질문은 “LLM에게 어떤 명령을 줄 것인가”가 아니라 “LLM, tool, human approval, memory, retry, streaming, checkpoint, ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T16:20:02.862Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/microsoft-autogen.md",
+      "path": "reports/repositories/microsoft-autogen.md",
+      "title": "microsoft/autogen 심층 분석 보고서",
+      "summary": "microsoft/autogen 심층 분석 보고서 분석 기준일 2026 06 10 분석 대상 커밋 027ecf0 로컬 소스 sources/microsoft autogen 공식 저장소 https //github.com/microsoft/autogen 1. 요약 판단 microsoft/autogen 은 AI 코딩 에이전트라기보다, 여러 에이전트를 이벤트/메시지 기반으로 조립하고 도구, 모델, 코드 실행기, 웹/파일 브라우징 에이전트, Studio UI까지 얹을 수 ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:59:38.407Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/modelcontextprotocol-servers.md",
+      "path": "reports/repositories/modelcontextprotocol-servers.md",
+      "title": "modelcontextprotocol/servers 심층 분석",
+      "summary": "modelcontextprotocol/servers 심층 분석 분석 기준일 2026 06 10 분석 대상 modelcontextprotocol/servers 로컬 경로 sources/modelcontextprotocol servers 분석 커밋 275175c 기본 브랜치 main 주요 언어 TypeScript, Python 루트 패키지 버전 0.6.2 라이선스 Apache 2.0 전환 중, 기존 MIT 코드 및 문서 CC BY 4.0 혼재 1. 총평 modelc",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:27:14.707Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/nanobrowser-nanobrowser.md",
+      "path": "reports/repositories/nanobrowser-nanobrowser.md",
+      "title": "nanobrowser/nanobrowser 심층 분석 보고서",
+      "summary": "nanobrowser/nanobrowser 심층 분석 보고서 분석 기준일 2026 06 10 분석 대상 커밋 322384f8b4d48d8614343e51efca68c85e64f90b 원격 저장소 https //github.com/nanobrowser/nanobrowser 로컬 경로 sources/nanobrowser nanobrowser 1. 한 줄 결론 nanobrowser 는 서버형 브라우저 자동화 서비스가 아니라, Chrome/Edge 안에서 직접 실행되는",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T17:50:10.416Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/nesquena-hermes-webui.md",
+      "path": "reports/repositories/nesquena-hermes-webui.md",
+      "title": "nesquena/hermes-webui 심층 분석 보고서",
+      "summary": "nesquena/hermes webui 심층 분석 보고서 분석 기준일 2026 06 10 분석 대상 커밋 85d0e522e008b176767e3cc5fd6fad5b23270dc0 원격 저장소 https //github.com/nesquena/hermes webui 로컬 경로 sources/nesquena hermes webui 1. 한 줄 결론 hermes webui 는 Hermes Agent 자체가 아니라, Hermes Agent를 브라우저와 모바일에서 쓰기 ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T17:37:35.350Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/NousResearch-hermes-agent.md",
+      "path": "reports/repositories/NousResearch-hermes-agent.md",
+      "title": "NousResearch/hermes-agent 분석 보고서",
+      "summary": "NousResearch/hermes agent 분석 보고서 1. 요약 평가 Hermes Agent는 Python 기반의 개인 AI agent 플랫폼이다. 단순한 CLI coding assistant가 아니라 CLI, TUI, messaging gateway, cron automation, MCP, plugin, memory provider, subagent delegation, terminal backend를 하나의 agent core 주변에 묶는 “항상 켜져 ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T16:05:37.178Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/openai-codex-plugin-cc.md",
+      "path": "reports/repositories/openai-codex-plugin-cc.md",
+      "title": "openai/codex-plugin-cc 상세 분석 보고서",
+      "summary": "openai/codex plugin cc 상세 분석 보고서 1. 기본 평가 대상 https //github.com/openai/codex plugin cc 로컬 소스 sources/openai codex plugin cc 분석 기준 커밋 807e03ac9d5aa23bc395fdec8c3767500a86b3cf 807e03 기준 브랜치 main 마지막 커밋 시각 2026 04 18 13 41 53 0700 최신 릴리스 v1.0.4 , 2026 04 18 생성일 2",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T17:14:37.811Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/openai-codex.md",
+      "path": "reports/repositories/openai-codex.md",
+      "title": "openai/codex 심층 분석 보고서",
+      "summary": "openai/codex 심층 분석 보고서 검증 기준 2026 06 10, local clone sources/openai codex , commit d2f6d23 , GitHub stars 90150 , license apache 2.0 . 1. 평가 요약 openai/codex 는 \"로컬 터미널에서 실행되는 공식 코딩 에이전트\"라는 포지션이 명확하다. 겉으로는 codex 라는 단일 CLI지만, 실제 구조는 npm wrapper, Rust CLI, TUI, he",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:03:09.648Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/openclaw-openclaw.md",
+      "path": "reports/repositories/openclaw-openclaw.md",
+      "title": "openclaw/openclaw 분석 보고서",
+      "summary": "openclaw/openclaw 분석 보고서 1. 요약 평가 OpenClaw는 TypeScript 기반의 개인 AI assistant gateway다. Codex, Gemini CLI, Aider처럼 “터미널에서 현재 repo를 고치는 coding agent”가 아니라, 한 사용자가 자기 기기와 메시징 채널을 묶어 항상 켜두는 개인 assistant를 만드는 제품형 모노레포다. README의 표현대로 Gateway는 control plane이고, 실제 제품은 W",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T15:50:13.115Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/openinterpreter-open-interpreter.md",
+      "path": "reports/repositories/openinterpreter-open-interpreter.md",
+      "title": "openinterpreter/open-interpreter 심층 분석",
+      "summary": "openinterpreter/open interpreter 심층 분석 분석 기준일 2026 06 10 분석 대상 openinterpreter/open interpreter 로컬 소스 sources/openinterpreter open interpreter 분석 커밋 e00f08e 기본 브랜치 main 주 언어 Python 라이선스 AGPL 3.0 최신 릴리스 메타데이터 GitHub API 기준 없음 GitHub 메타데이터 2026 06 10 수집 시점 기준 st",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T14:44:16.134Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/QwenLM-qwen-code.md",
+      "path": "reports/repositories/QwenLM-qwen-code.md",
+      "title": "QwenLM/qwen-code 상세 분석 보고서",
+      "summary": "QwenLM/qwen code 상세 분석 보고서 1. 기본 평가 대상 https //github.com/QwenLM/qwen code 로컬 소스 sources/QwenLM qwen code 분석 기준 커밋 be62f0e93d4e2f59259650aa39a0a389fd033d44 be62f0e 기준 브랜치 main 마지막 커밋 시각 2026 06 10 21 32 56 +0800 GitHub 메타데이터 수집 시각 2026 06 10T14 00 10.843Z 생성일 ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T17:07:01.750Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/RooCodeInc-Roo-Code.md",
+      "path": "reports/repositories/RooCodeInc-Roo-Code.md",
+      "title": "RooCodeInc/Roo-Code 상세 분석 보고서",
+      "summary": "RooCodeInc/Roo Code 상세 분석 보고서 1. 기본 평가 대상 https //github.com/RooCodeInc/Roo Code 로컬 소스 sources/RooCodeInc Roo Code 분석 기준 커밋 b867ec9145750d0ae1ff7f02d35406e9bf2a0b16 b867ec9 기준 브랜치 main 마지막 커밋 시각 2026 05 15 14 04 45 0400 최신 릴리스 v3.54.0 , 2026 05 15 GitHub 상태 ar",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T17:10:37.251Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/SWE-agent-SWE-agent.md",
+      "path": "reports/repositories/SWE-agent-SWE-agent.md",
+      "title": "SWE-agent/SWE-agent 상세 분석 보고서",
+      "summary": "SWE agent/SWE agent 상세 분석 보고서 1. 기본 평가 대상 https //github.com/SWE agent/SWE agent 로컬 소스 sources/SWE agent SWE agent 분석 기준 커밋 a3d018f a3d018f Chore deps Bump codecov/codecov action from 6.0.1 to 7.0.0 기준 브랜치 main 마지막 커밋 시각 2026 06 09 최신 릴리스 v1.1.0 , 2025 05 22 생",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T17:28:56.171Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/TabbyML-tabby.md",
+      "path": "reports/repositories/TabbyML-tabby.md",
+      "title": "TabbyML/tabby 분석 보고서",
+      "summary": "TabbyML/tabby 분석 보고서 1. 요약 평가 Tabby는 Claude Code, Codex, Gemini CLI처럼 사용자의 터미널에서 직접 작업을 수행하는 agent라기보다, self hosted AI coding assistant 서버와 IDE 클라이언트 생태계다. 핵심 목적은 GitHub Copilot류 코드완성/채팅/편집 보조를 조직 내부 인프라에서 자체 운영하게 하는 것이다. 이 저장소의 중심은 Rust 서버다. crates/tabby 가 /v",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T16:38:23.111Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/ultraworkers-claw-code.md",
+      "path": "reports/repositories/ultraworkers-claw-code.md",
+      "title": "ultraworkers/claw-code 상세 분석",
+      "summary": "ultraworkers/claw code 상세 분석 분석 기준일 2026 06 10 로컬 소스 sources/ultraworkers claw code 분석 커밋 d229a9b022d4845d28a728677e6a6b7c22ec5a2e 기본 브랜치 main 주 언어 Rust 라이선스 MIT GitHub 메타데이터 공개 저장소, 생성일 2026 03 31, stars 193,577, forks 109,961, watchers 1,998, latest release ",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T15:58:05.165Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/upstash-context7.md",
+      "path": "reports/repositories/upstash-context7.md",
+      "title": "upstash/context7 분석 보고서",
+      "summary": "upstash/context7 분석 보고서 1. 요약 평가 Context7은 Claude Code, Codex, Gemini CLI, Cursor, Cline류 에이전트가 오래된 학습 데이터나 부정확한 패키지 지식에 의존하지 않도록, 최신 라이브러리 문서를 MCP 도구와 CLI로 공급하는 문서 컨텍스트 레이어다. 이 레포지토리는 코딩 에이전트의 계획·실행·수정 루프 자체를 제공하지 않는다. 대신 에이전트가 “지금 이 라이브러리의 실제 문서”를 질의할 수 있게 만",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T15:04:52.896Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/Yeachan-Heo-oh-my-claudecode.md",
+      "path": "reports/repositories/Yeachan-Heo-oh-my-claudecode.md",
+      "title": "Yeachan-Heo/oh-my-claudecode 분석 보고서",
+      "summary": "Yeachan Heo/oh my claudecode 분석 보고서 1. 요약 평가 oh my claudecode, 이하 OMC는 Claude Code 위에 설치되는 multi agent orchestration layer다. 자체 LLM runtime을 구현하는 프로젝트가 아니라 Claude Code plugin, slash command, hook, skill, MCP tools server, npm CLI, tmux worker runtime을 묶어 Claud",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T16:11:32.379Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/repositories/Yeachan-Heo-oh-my-codex.md",
+      "path": "reports/repositories/Yeachan-Heo-oh-my-codex.md",
+      "title": "Yeachan-Heo/oh-my-codex 심층 분석",
+      "summary": "Yeachan Heo/oh my codex 심층 분석 1. 분석 기준과 결론 요약 대상 저장소 Yeachan Heo/oh my codex 로컬 소스 sources/Yeachan Heo oh my codex 분석 커밋 0332e47 최신 확인 릴리스 v0.18.11 , 2026 06 09 주 언어 TypeScript, Rust 보조 바이너리 패키지명 oh my codex 실행 명령 omx 라이선스 표기 package.json 및 플러그인 manifest는 MIT,",
+      "kind": "per-repository-report",
+      "folder": "repositories",
+      "updatedAt": "2026-06-10T16:47:15.796Z",
+      "categories": [
+        "coding-agents",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Aider-AI__aider.md",
+      "path": "reports/global-trending/repositories/Aider-AI__aider.md",
+      "title": "Aider-AI/aider",
+      "summary": "Aider AI/aider Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Aider AI/aider local path sources/Aider AI aider HEAD 5dc9490 stars/forks 46390 / 4615 language Python license Apache 2.0 pushedAt 2026 05 22T14 02 20Z trendScore ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:48.416Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/anthropics__claude-code.md",
+      "path": "reports/global-trending/repositories/anthropics__claude-code.md",
+      "title": "anthropics/claude-code",
+      "summary": "anthropics/claude code Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/anthropics/claude code local path sources/anthropics claude code HEAD 0047022 stars/forks 133037 / 21517 language Python license pushedAt 2026 06 17T22 07 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:42.655Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/bagidea__bagidea-office.md",
+      "path": "reports/global-trending/repositories/bagidea__bagidea-office.md",
+      "title": "bagidea/bagidea-office",
+      "summary": "bagidea/bagidea office Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/bagidea/bagidea office local path sources/bagidea bagidea office HEAD 00a8a93 stars/forks 55 / 26 language HTML license pushedAt 2026 06 17T23 46 01Z trend",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.717Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/borghei__Claude-Skills.md",
+      "path": "reports/global-trending/repositories/borghei__Claude-Skills.md",
+      "title": "borghei/Claude-Skills",
+      "summary": "borghei/Claude Skills Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/borghei/Claude Skills local path sources/borghei Claude Skills HEAD 13332d2 stars/forks 279 / 50 language HTML license pushedAt 2026 06 17T09 29 03Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.383Z",
+      "categories": [
+        "coding-agents",
+        "agent-harness",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/bosun-ai__swiftide.md",
+      "path": "reports/global-trending/repositories/bosun-ai__swiftide.md",
+      "title": "bosun-ai/swiftide",
+      "summary": "bosun ai/swiftide Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/bosun ai/swiftide local path sources/bosun ai swiftide HEAD e5fb532 stars/forks 710 / 62 language Rust license pushedAt 2026 06 17T07 01 02Z trendScore / priori",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:08.548Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/chopratejas__headroom.md",
+      "path": "reports/global-trending/repositories/chopratejas__headroom.md",
+      "title": "chopratejas/headroom",
+      "summary": "chopratejas/headroom Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/chopratejas/headroom local path sources/chopratejas headroom HEAD b0cd032 stars/forks 31580 / 2133 language Python license pushedAt 2026 06 17T17 28 53Z tren",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:44.776Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/cline__cline.md",
+      "path": "reports/global-trending/repositories/cline__cline.md",
+      "title": "cline/cline",
+      "summary": "cline/cline Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/cline/cline local path sources/cline cline HEAD 7d11935 stars/forks 63454 / 6712 language TypeScript license pushedAt 2026 06 18T00 17 40Z trendScore / priorityScore ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:43.657Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/GeminiLight__MindOS.md",
+      "path": "reports/global-trending/repositories/GeminiLight__MindOS.md",
+      "title": "GeminiLight/MindOS",
+      "summary": "GeminiLight/MindOS Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/GeminiLight/MindOS local path sources/GeminiLight MindOS HEAD d434bb2 stars/forks 628 / 55 language TypeScript license pushedAt 2026 06 17T22 26 55Z trendScore",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.139Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/google-gemini__gemini-cli.md",
+      "path": "reports/global-trending/repositories/google-gemini__gemini-cli.md",
+      "title": "google-gemini/gemini-cli",
+      "summary": "google gemini/gemini cli Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/google gemini/gemini cli local path sources/google gemini gemini cli HEAD 1d2adf7 stars/forks 105365 / 14098 language TypeScript license Apache 2.0 pushe",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:43.472Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/hoangsonww__Claude-Code-Agent-Monitor.md",
+      "path": "reports/global-trending/repositories/hoangsonww__Claude-Code-Agent-Monitor.md",
+      "title": "hoangsonww/Claude-Code-Agent-Monitor",
+      "summary": "hoangsonww/Claude Code Agent Monitor Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/hoangsonww/Claude Code Agent Monitor local path sources/hoangsonww Claude Code Agent Monitor HEAD 1a21bb9 stars/forks 467 / 94 language TypeS",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:14.578Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/JSONbored__awesome-claude.md",
+      "path": "reports/global-trending/repositories/JSONbored__awesome-claude.md",
+      "title": "JSONbored/awesome-claude",
+      "summary": "JSONbored/awesome claude Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/JSONbored/awesome claude local path sources/JSONbored awesome claude HEAD 3064468 stars/forks 265 / 79 language MDX license pushedAt 2026 06 18T00 15 02Z",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:01.757Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/liaohch3__claude-tap.md",
+      "path": "reports/global-trending/repositories/liaohch3__claude-tap.md",
+      "title": "liaohch3/claude-tap",
+      "summary": "liaohch3/claude tap Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/liaohch3/claude tap local path sources/liaohch3 claude tap HEAD 8759349 stars/forks 1824 / 193 language Python license pushedAt 2026 06 17T12 50 31Z trendScor",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:11.478Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/makoMakoGo__fish-claude.md",
+      "path": "reports/global-trending/repositories/makoMakoGo__fish-claude.md",
+      "title": "makoMakoGo/fish-claude",
+      "summary": "makoMakoGo/fish claude Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/makoMakoGo/fish claude local path sources/makoMakoGo fish claude HEAD 43b3479 stars/forks 140 / 15 language Python license pushedAt 2026 06 17T23 35 53Z tr",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:09.089Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/marcusquinn__aidevops.md",
+      "path": "reports/global-trending/repositories/marcusquinn__aidevops.md",
+      "title": "marcusquinn/aidevops",
+      "summary": "marcusquinn/aidevops Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/marcusquinn/aidevops local path sources/marcusquinn aidevops HEAD 433ebe3 stars/forks 269 / 51 language Shell license pushedAt 2026 06 18T00 20 01Z trendScor",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:11.754Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/numtide__llm-agents.nix.md",
+      "path": "reports/global-trending/repositories/numtide__llm-agents.nix.md",
+      "title": "numtide/llm-agents.nix",
+      "summary": "numtide/llm agents.nix Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/numtide/llm agents.nix local path sources/numtide llm agents.nix HEAD 8345e98 stars/forks 1436 / 158 language Nix license pushedAt 2026 06 17T22 03 11Z tre",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:06.079Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/NVIDIA-AI-Blueprints__video-search-and-summarization.md",
+      "path": "reports/global-trending/repositories/NVIDIA-AI-Blueprints__video-search-and-summarization.md",
+      "title": "NVIDIA-AI-Blueprints/video-search-and-summarization",
+      "summary": "NVIDIA AI Blueprints/video search and summarization Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/NVIDIA AI Blueprints/video search and summarization local path sources/NVIDIA AI Blueprints video search and summarization HEA",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:00.067Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/openai__codex.md",
+      "path": "reports/global-trending/repositories/openai__codex.md",
+      "title": "openai/codex",
+      "summary": "openai/codex Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/openai/codex local path sources/openai codex HEAD d2f6d23 stars/forks 91749 / 13558 language Rust license pushedAt 2026 06 18T00 27 06Z trendScore / priorityScore 20",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:43.553Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/OpenHands__OpenHands.md",
+      "path": "reports/global-trending/repositories/OpenHands__OpenHands.md",
+      "title": "OpenHands/OpenHands",
+      "summary": "OpenHands/OpenHands Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/OpenHands/OpenHands local path sources/OpenHands OpenHands HEAD f27d34c stars/forks 77562 / 9858 language Python license NOASSERTION pushedAt 2026 06 17T22 31",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:50.510Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/rebel0789__codexpro.md",
+      "path": "reports/global-trending/repositories/rebel0789__codexpro.md",
+      "title": "rebel0789/codexpro",
+      "summary": "rebel0789/codexpro Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/rebel0789/codexpro local path sources/rebel0789 codexpro HEAD 76ed1eb stars/forks 239 / 22 language JavaScript license pushedAt 2026 06 17T22 55 35Z trendScore",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.979Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/rocketride-org__rocketride-server.md",
+      "path": "reports/global-trending/repositories/rocketride-org__rocketride-server.md",
+      "title": "rocketride-org/rocketride-server",
+      "summary": "rocketride org/rocketride server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/rocketride org/rocketride server local path sources/rocketride org rocketride server HEAD bc36b63 stars/forks 3866 / 1234 language Python license",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:42.822Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/SheikhSheave__Claude-Code-CLI-Reference.md",
+      "path": "reports/global-trending/repositories/SheikhSheave__Claude-Code-CLI-Reference.md",
+      "title": "SheikhSheave/Claude-Code-CLI-Reference",
+      "summary": "SheikhSheave/Claude Code CLI Reference Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/SheikhSheave/Claude Code CLI Reference local path sources/SheikhSheave Claude Code CLI Reference HEAD 63f62bf stars/forks 211 / 0 language ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:11.766Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/thedotmack__claude-mem.md",
+      "path": "reports/global-trending/repositories/thedotmack__claude-mem.md",
+      "title": "thedotmack/claude-mem",
+      "summary": "thedotmack/claude mem Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/thedotmack/claude mem local path sources/thedotmack claude mem HEAD aafbb3a stars/forks 82994 / 7188 language JavaScript license pushedAt 2026 06 17T21 24 3",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:48.262Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/videosdk-live__agents.md",
+      "path": "reports/global-trending/repositories/videosdk-live__agents.md",
+      "title": "videosdk-live/agents",
+      "summary": "videosdk live/agents Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/videosdk live/agents local path sources/videosdk live agents HEAD a4e6da1 stars/forks 629 / 92 language Python license pushedAt 2026 06 17T12 50 44Z trendSco",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:14.351Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Wide-Moat__open-computer-use.md",
+      "path": "reports/global-trending/repositories/Wide-Moat__open-computer-use.md",
+      "title": "Wide-Moat/open-computer-use",
+      "summary": "Wide Moat/open computer use Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Wide Moat/open computer use local path sources/Wide Moat open computer use HEAD d7c182f stars/forks 101 / 21 language Python license pushedAt 2026 06 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:11.185Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/zilliztech__claude-context.md",
+      "path": "reports/global-trending/repositories/zilliztech__claude-context.md",
+      "title": "zilliztech/claude-context",
+      "summary": "zilliztech/claude context Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/zilliztech/claude context local path sources/zilliztech claude context HEAD b2b4ca4 stars/forks 11880 / 877 language TypeScript license pushedAt 2026 06",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:47.008Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/zubair-trabzada__geo-seo-claude.md",
+      "path": "reports/global-trending/repositories/zubair-trabzada__geo-seo-claude.md",
+      "title": "zubair-trabzada/geo-seo-claude",
+      "summary": "zubair trabzada/geo seo claude Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/zubair trabzada/geo seo claude local path sources/zubair trabzada geo seo claude HEAD 9eec32f stars/forks 8195 / 1325 language Python license pushe",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:05.798Z",
+      "categories": [
+        "coding-agents",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/bagidea__bagidea-office.md",
+      "path": "reports/korea-trending/repositories/bagidea__bagidea-office.md",
+      "title": "bagidea/bagidea-office",
+      "summary": "bagidea/bagidea office 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/bagidea/bagidea office local path sources/bagidea bagidea office HEAD 00a8a93 stars/forks 0 / 0 language HTML license pushedAt 2026 06 17T23 46 01Z trendScore / prior",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:30.524Z",
+      "categories": [
+        "coding-agents",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/lowtidebuild__data-protection-agent.md",
+      "path": "reports/korea-trending/repositories/lowtidebuild__data-protection-agent.md",
+      "title": "lowtidebuild/data-protection-agent",
+      "summary": "lowtidebuild/data protection agent 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/lowtidebuild/data protection agent local path sources/lowtidebuild data protection agent HEAD 4797b78 stars/forks 0 / 0 language Python license pushedAt 2",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.825Z",
+      "categories": [
+        "coding-agents",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/rocketride-org__rocketride-server.md",
+      "path": "reports/korea-trending/repositories/rocketride-org__rocketride-server.md",
+      "title": "rocketride-org/rocketride-server",
+      "summary": "rocketride org/rocketride server 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/rocketride org/rocketride server local path sources/rocketride org rocketride server HEAD bc36b63 stars/forks 0 / 0 language Python license pushedAt 2026 06",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:26.750Z",
+      "categories": [
+        "coding-agents",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
+      "path": "reports/korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
+      "title": "sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon",
+      "summary": "sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon local path sources/sktelecom SK AI SUMMIT 2025 Claude Code Builder Hackat",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:18.273Z",
+      "categories": [
+        "coding-agents",
+        "presentations-conferences",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/AgriciDaniel__claude-obsidian.md",
+      "path": "reports/llm-wiki/repositories/AgriciDaniel__claude-obsidian.md",
+      "title": "AgriciDaniel/claude-obsidian 구조 분석",
+      "summary": "AgriciDaniel/claude obsidian 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/AgriciDaniel claude obsidian remote https //github.com/AgriciDaniel/claude obsidian HEAD cb93ff6 2026 05 28 chore assets add 1280x640 social preview card branch main ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.354Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/HKUDS__VideoRAG.md",
+      "path": "reports/llm-wiki/repositories/HKUDS__VideoRAG.md",
+      "title": "HKUDS/VideoRAG 구조 분석",
+      "summary": "HKUDS/VideoRAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/HKUDS VideoRAG remote https //github.com/HKUDS/VideoRAG HEAD c412a09 2026 03 18 docs upload results branch main groups llm wiki 100 files 118 dirs 39 stack Node/TypeScript/JavaScri",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.138Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "adjacent-infrastructure",
+  "title": "Adjacent AI Infrastructure",
+  "description": "Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.",
+  "count": 13,
+  "reports": [
+    {
+      "id": "report:reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "path": "reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "title": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석",
+      "summary": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석 기준일 2026 06 13 KST. 대상 새로 선정/clone한 50개 오픈소스 레포지토리와 공식 문서. 관련 데이터 data/adjacent tech repositories.json , data/adjacent tech source inventory.json , reports/adjacent tech source inventory.md . 1. 결론 요약 기존 30개 ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T15:59:18.841Z",
+      "categories": [
+        "start-here",
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/adjacent-tech/02-repository-analysis-50.md",
+      "path": "reports/adjacent-tech/02-repository-analysis-50.md",
+      "title": "컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석",
+      "summary": "컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석 기준일 2026 06 13 KST. 분석 근거 data/adjacent tech repositories.json , data/adjacent tech github metadata.json , data/adjacent tech source inventory.json , reports/adjacent tech source inventory.md , 각 clone의 README/docs/s",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:05:27.734Z",
+      "categories": [
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/categories/ai-infrastructure-serving/README.md",
+      "path": "reports/categories/ai-infrastructure-serving/README.md",
+      "title": "AI Infrastructure and Serving",
+      "summary": "AI Infrastructure and Serving Generated 2026 06 18T13 38 56.297Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. Counts Total categorized entries 244 Repositories 147 Research p",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "categories": [
+        "category-guides",
+        "adjacent-infrastructure"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/categories/data-platforms-vector-databases/README.md",
+      "path": "reports/categories/data-platforms-vector-databases/README.md",
+      "title": "Data Platforms and Vector Databases",
+      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T13 38 56.297Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. Counts Total categorized entries 200 Repositories 145 Research papers 44 ",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "categories": [
+        "category-guides",
+        "adjacent-infrastructure"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/categories/evals-observability-quality/README.md",
+      "path": "reports/categories/evals-observability-quality/README.md",
+      "title": "Evals, Observability, and Quality",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T13 38 56.297Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. Counts Total categorized entries 648 Repositories 141 Research papers ",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "categories": [
+        "category-guides",
+        "adjacent-infrastructure"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/categories/local-llm-models/README.md",
+      "path": "reports/categories/local-llm-models/README.md",
+      "title": "Local LLMs and Models",
+      "summary": "Local LLMs and Models Generated 2026 06 18T13 38 56.297Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. Counts Total categorized entries 692 Repositories 313 Research papers 290 Present",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "categories": [
+        "category-guides",
+        "adjacent-infrastructure"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/adjacent-tech-source-inventory.md",
+      "path": "reports/adjacent-tech-source-inventory.md",
+      "title": "Source Inventory",
+      "summary": "Source Inventory Generated at 2026 06 12T15 55 41.066Z Repository Commit Lang Files License Archived Source dirs 1 vllm project/vllm a30addc Python 5488 apache 2.0 no docs 2 ggml org/llama.cpp ebc1077 C++ 2985 mit no src, docs 3 ollama/ollama 12e0437 Go 1233 m",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-12T15:55:41.074Z",
+      "categories": [
+        "adjacent-infrastructure",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 118
+    },
+    {
+      "id": "report:reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "path": "reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "title": "공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness",
+      "summary": "공식 문서와 소스맵 Context Engineering, RAG, Local LLM, Agent Harness 기준일 2026 06 13 KST. 대상 새로 clone한 50개 레포지토리와 공식 문서. 목적 \"공식 문서가 말하는 설계 철학\"과 \"clone된 코드에서 확인할 위치\"를 연결한다. 1. 공식 문서에서 확인한 큰 흐름 Context engineering은 prompt 작성이 아니라 runtime context 운영이다 Anthropic의 context ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:07:03.248Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "path": "reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "title": "2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드",
+      "summary": "2026 최신 자료 레이더 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드 기준일 2026 06 13 KST. 범위 context engineering, RAG/GraphRAG/agentic RAG, local LLM/vLLM serving, agent memory, eval/observability, MCP/A2A, agent platform/harness. 자료 우선순위 공식 발표/공식 문서 arXiv/논문 표준 문서 산업 분석/시장 기사. 이 문서",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:38:46.724Z",
+      "categories": [
+        "llm-wiki",
+        "presentations-conferences",
+        "adjacent-infrastructure",
+        "research-foundations"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/clone-structures/vllm-project__vllm.md",
+      "path": "reports/clone-structures/vllm-project__vllm.md",
+      "title": "vllm-project/vllm 구조 분석",
+      "summary": "vllm project/vllm 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/vllm project vllm remote https //github.com/vllm project/vllm HEAD a30addc 2026 06 12 Docs KV Connector NIXL document KV Transfer stat logging and Prometheus metrics 44055 branc",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:23.684Z",
+      "categories": [
+        "adjacent-infrastructure",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/global-trending/repositories/vllm-project__vllm-ascend.md",
+      "path": "reports/global-trending/repositories/vllm-project__vllm-ascend.md",
+      "title": "vllm-project/vllm-ascend",
+      "summary": "vllm project/vllm ascend Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/vllm project/vllm ascend local path sources/vllm project vllm ascend HEAD 350d1f0 stars/forks 2258 / 1411 language C++ license pushedAt 2026 06 17T16 47 ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.886Z",
+      "categories": [
+        "global-trending-open-source",
+        "adjacent-infrastructure",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/vllm-project__vllm.md",
+      "path": "reports/global-trending/repositories/vllm-project__vllm.md",
+      "title": "vllm-project/vllm",
+      "summary": "vllm project/vllm Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/vllm project/vllm local path sources/vllm project vllm HEAD a30addc stars/forks 83195 / 18159 language Python license pushedAt 2026 06 18T00 28 34Z trendScore /",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:44.703Z",
+      "categories": [
+        "global-trending-open-source",
+        "adjacent-infrastructure",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/waybarrios__vllm-mlx.md",
+      "path": "reports/global-trending/repositories/waybarrios__vllm-mlx.md",
+      "title": "waybarrios/vllm-mlx",
+      "summary": "waybarrios/vllm mlx Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/waybarrios/vllm mlx local path sources/waybarrios vllm mlx HEAD a48c86c stars/forks 1350 / 188 language Python license pushedAt 2026 06 12T21 09 54Z trendScor",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:51.133Z",
+      "categories": [
+        "global-trending-open-source",
+        "adjacent-infrastructure",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    }
+  ]
+}

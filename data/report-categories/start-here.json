@@ -1,0 +1,284 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "start-here",
+  "title": "Start Here",
+  "description": "High-level maps and entry points for reading the repository.",
+  "count": 19,
+  "reports": [
+    {
+      "id": "report:reports/categories/README.md",
+      "path": "reports/categories/README.md",
+      "title": "Category Index",
+      "summary": "Category Index Generated 2026 06 18T13 38 56.297Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.603Z",
+      "categories": [
+        "start-here",
+        "category-guides"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
+      "path": "reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
+      "title": "30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서",
+      "summary": "30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서 기준일 2026 06 11 KST. 기반 자료 reports/repositories/ .md 30개 상세 분석, data/source inventory.json , data/project comparison matrix.json . 이 문서는 각 레포지토리의 세부 구현을 반복하지 않고, 사용자가 실제 설계 판단을 할 때 필요한 비교 축으로 재배열한다. 핵심 결론은 다음과 같다. 1. 이 30개는 모두",
+      "kind": "comparison-report",
+      "folder": "comparisons",
+      "updatedAt": "2026-06-10T22:18:41.682Z",
+      "categories": [
+        "start-here",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/comparisons/02-similarity-clusters.md",
+      "path": "reports/comparisons/02-similarity-clusters.md",
+      "title": "유사군별 비교와 관계 지도",
+      "summary": "유사군별 비교와 관계 지도 기준일 2026 06 11 KST. 대상 30개 레포지토리 전체. 이 문서는 01 project taxonomy and feature comparison.md 보다 관계 중심이다. 목적은 \"이 레포와 비슷한 레포가 무엇인가\", \"같은 군에서 어떤 프로젝트를 먼저 봐야 하는가\", \"설계 철학이 어디서 갈라지는가\"를 정리하는 것이다. 1. 전체 유사도 지도 2. 클러스터 A 공식/터미널 코딩 에이전트 구성 핵심 openai/codex , ",
+      "kind": "comparison-report",
+      "folder": "comparisons",
+      "updatedAt": "2026-06-10T22:20:17.846Z",
+      "categories": [
+        "start-here",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/00-llm-wiki-100-summary.md",
+      "path": "reports/llm-wiki/00-llm-wiki-100-summary.md",
+      "title": "LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄",
+      "summary": "LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄 생성일 2026 06 17T22 56 52.162Z 검증 범위 target group filter llm wiki 100 실제 로컬 클론 100개 데이터 파일에 명시된 target 100개 target 중 로컬 클론 누락 0개 레포별 상세 보고서 reports/llm wiki/repositories/ .md 구조 데이터 data/llm wiki structure analysis 100.json 로",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/00-llm-wiki-100-summary.md",
+      "updatedAt": "2026-06-17T22:57:02.870Z",
+      "categories": [
+        "start-here",
+        "llm-wiki"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "path": "reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "title": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약",
+      "summary": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약 생성일 2026 06 17T22 58 03.126Z 산출물 후보 수집 데이터 data/llm wiki repositories.json 구조 분석 데이터 data/llm wiki structure analysis 100.json 총괄 구조 분석 reports/llm wiki/00 llm wiki 100 summary.md 레포별 구조 분석 reports/llm wiki/repositories/ .md 수",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "updatedAt": "2026-06-17T22:58:03.138Z",
+      "categories": [
+        "start-here",
+        "llm-wiki",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/02-code-level-pipeline-comparison.md",
+      "path": "reports/llm-wiki/02-code-level-pipeline-comparison.md",
+      "title": "LLM Wiki 100 Code-Level Pipeline Comparison",
+      "summary": "LLM Wiki 100 Code Level Pipeline Comparison 작성일 2026 06 17T23 31 58.667Z 이 문서는 data/llm wiki repositories.json 의 100개 로컬 클론을 같은 정적 코드 스캔 기준으로 다시 비교한 결과다. 기존 구조 분석이 README, manifest, 디렉터리 표면을 본 1차 분석이라면, 이 문서는 실제 소스에서 ingestion, parsing, chunking, embedding, re",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/02-code-level-pipeline-comparison.md",
+      "updatedAt": "2026-06-17T23:31:58.669Z",
+      "categories": [
+        "start-here",
+        "llm-wiki",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/research/02-evidence-catalog-100-sources.md",
+      "path": "reports/research/02-evidence-catalog-100-sources.md",
+      "title": "AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선",
+      "summary": "AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선 기준일 2026 06 11 KST. 범위 AI 코딩 에이전트, agent harness, tool use, MCP/A2A, context engineering, loop engineering, evaluation, benchmark, multi agent architecture. 원칙 기업 공식 문서/엔지니어링 글을 우선하고, 논문/벤치마크/오픈소스 문서를 보조 근거로 사용했다. 서로 충돌하는 해석",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-10T22:30:45.096Z",
+      "categories": [
+        "start-here",
+        "coding-agents",
+        "research-foundations"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/spec-driven/00-spec-extraction-and-spec-memory-synthesis.md",
+      "path": "reports/spec-driven/00-spec-extraction-and-spec-memory-synthesis.md",
+      "title": "Spec-Driven Development: 스펙 추출과 스펙 메모리 합성 보고서",
+      "summary": "Spec Driven Development 스펙 추출과 스펙 메모리 합성 보고서 작성일 2026 06 18 이 문서는 기존 수집물의 빈 부분을 메운다. 이미 이 저장소에는 650개 연구자료, 20개 spec driven 오픈소스 후보, 100개 LLM 위키/AI 지식베이스 후보, 127개 클론 구조 분석이 있다. 부족했던 것은 \"스펙을 어떻게 뽑고, 왜 그렇게 저장해야 에이전트가 계속 기억하고 재사용하는가\"에 대한 통합 비교다. 근거 위치 연구 코퍼스 data/",
+      "kind": "spec-driven-report",
+      "folder": "spec-driven",
+      "updatedAt": "2026-06-17T23:17:46.365Z",
+      "categories": [
+        "start-here",
+        "spec-driven"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/00-source-inventory.md",
+      "path": "reports/00-source-inventory.md",
+      "title": "Source Inventory",
+      "summary": "Source Inventory Generated at 2026 06 10T14 00 24.330Z Repository Commit Lang Files License Archived Source dirs 1 openclaw/openclaw bb6e4772 TypeScript 19887 other no src, packages, apps, docs 2 ultraworkers/claw code d229a9b Rust 386 mit no src, docs 3 NousR",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-10T14:00:24.333Z",
+      "categories": [
+        "start-here",
+        "full-source-scan",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 158
+    },
+    {
+      "id": "report:reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "path": "reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "title": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석",
+      "summary": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석 기준일 2026 06 13 KST. 대상 새로 선정/clone한 50개 오픈소스 레포지토리와 공식 문서. 관련 데이터 data/adjacent tech repositories.json , data/adjacent tech source inventory.json , reports/adjacent tech source inventory.md . 1. 결론 요약 기존 30개 ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T15:59:18.841Z",
+      "categories": [
+        "start-here",
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/agent-harness/00-claude-code-codex-harness-materials-1000.md",
+      "path": "reports/agent-harness/00-claude-code-codex-harness-materials-1000.md",
+      "title": "Claude Code / Codex Harness Materials 1000+ Corpus",
+      "summary": "Claude Code / Codex Harness Materials 1000+ Corpus Generated 2026 06 18T02 20 43.625Z Scope Selected materials 1200 Raw candidates before dedupe 3622 GitHub repository search queries 20 GitHub code search queries attempted 8 Official Claude docs parsed 148 Off",
+      "kind": "agent-harness-report",
+      "folder": "agent-harness",
+      "updatedAt": "2026-06-18T02:22:00.517Z",
+      "categories": [
+        "start-here",
+        "coding-agents",
+        "agent-harness"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/global-trending/00-global-open-source-trend-report-2026-06-18.md",
+      "path": "reports/global-trending/00-global-open-source-trend-report-2026-06-18.md",
+      "title": "Global Trending Open Source 500 Analysis",
+      "summary": "Global Trending Open Source 500 Analysis Generated 2026 06 18T00 37 41.085Z Scope Selected repositories 500 Local clone success 500 Local clone failed 0 Per repository reports reports/global trending/repositories/ .md Analysis data data/global trending analysi",
+      "kind": "global-trending-report",
+      "folder": "global-trending",
+      "updatedAt": "2026-06-18T00:38:17.362Z",
+      "categories": [
+        "start-here",
+        "global-trending-open-source"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/korea-trending/00-korea-open-source-trend-report-2026-06-18.md",
+      "path": "reports/korea-trending/00-korea-open-source-trend-report-2026-06-18.md",
+      "title": "한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석",
+      "summary": "한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석 생성일 2026 06 18T00 02 16.992Z 검증 범위 선정 저장소 500개 로컬 클론 성공 500개 로컬 클론 실패 0개 저장소별 상세 보고서 reports/korea trending/repositories/ .md 구조/신호 데이터 data/korea trending analysis 500.json 클론 상태 데이터 data/korea trending clone status 500.json 수집 기준",
+      "kind": "korea-trending-report",
+      "folder": "korea-trending",
+      "updatedAt": "2026-06-18T00:02:33.882Z",
+      "categories": [
+        "start-here",
+        "korea-trending-open-source"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/presentations/00-agent-harness-conference-presentation-patterns.md",
+      "path": "reports/presentations/00-agent-harness-conference-presentation-patterns.md",
+      "title": "Agent Harness Conference and Presentation Patterns",
+      "summary": "Agent Harness Conference and Presentation Patterns Generated 2026 06 18T03 37 26.867Z Scope Indexed materials 665 AI Engineer schedule sessions retained after dedupe 605 Interrupt 2026 recordings retained after dedupe 24 Source groups 17 License policy metadat",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T03:37:27.433Z",
+      "categories": [
+        "start-here",
+        "agent-harness",
+        "presentations-conferences"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md",
+      "path": "reports/presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md",
+      "title": "AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea",
+      "summary": "AI Usage Trend Conferences Big Tech, Amazon/AWS, Global and Korea Generated 2026 06 18T07 28 59.736Z Scope Requested window 2025 06 18 to 2026 06 18 Indexed sources 58 In requested date window 55 Near term context just outside window 3 Source policy metadata o",
+      "kind": "presentation-report",
+      "folder": "presentations",
+      "updatedAt": "2026-06-18T07:29:29.225Z",
+      "categories": [
+        "start-here",
+        "presentations-conferences",
+        "ai-usage-trends"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/research/01-agent-trends-2026.md",
+      "path": "reports/research/01-agent-trends-2026.md",
+      "title": "2026 AI 코딩 에이전트 설계 트렌드 종합 보고서",
+      "summary": "2026 AI 코딩 에이전트 설계 트렌드 종합 보고서 기준일 2026 06 11 KST. 근거 목록 reports/research/02 evidence catalog 100 sources.md 의 S001 S165. 연결 대상 reports/repositories/ .md 30개 레포 분석과 reports/comparisons/ .md . 1. 요약 2026년 현재 AI 코딩 에이전트의 경쟁축은 \"어떤 모델을 쓰는가\"에서 \"어떤 harness로 모델을 둘러싸는가",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-10T22:27:51.777Z",
+      "categories": [
+        "start-here",
+        "research-foundations"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/clone-structure-analysis-127.md",
+      "path": "reports/clone-structure-analysis-127.md",
+      "title": "127개 로컬 클론 구조 분석 총괄",
+      "summary": "127개 로컬 클론 구조 분석 총괄 생성일 2026 06 17T22 41 11.818Z 검증 범위 실제 로컬 클론 127개 데이터 파일에 명시된 target 127개 target 중 로컬 클론 누락 0개 레포별 상세 보고서 reports/clone structures/ .md 구조 데이터 data/clone structure analysis 127.json 로컬 클론 누락 target 명시 target 기준 누락 없음. 그룹별 분포 group count adja",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:41:23.982Z",
+      "categories": [
+        "start-here",
+        "clone-structure-inventory"
+      ],
+      "priority": 143
+    },
+    {
+      "id": "report:reports/full-source-scan-research-summary-2026-06-18.md",
+      "path": "reports/full-source-scan-research-summary-2026-06-18.md",
+      "title": "전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약",
+      "summary": "전체 소스 스캔과 사용자 의도 코드 연결 방식 리서치 요약 기준일 2026 06 18 KST. 이 문서는 기존 reports/ 의 30개 코딩 에이전트 상세 분석, 50개 adjacent stack 분석, 새로 추가한 27개 클론 인벤토리, OpenAI/Anthropic 공식 문서, 대표 오픈소스 구현을 묶어 정리한다. 결론부터 말하면, Codex와 Claude Code류의 핵심은 \"전체 소스를 모델 프롬프트에 한 번에 넣기\"가 아니라 탐색 도구 + 축약 ind",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:19:43.192Z",
+      "categories": [
+        "start-here",
+        "full-source-scan"
+      ],
+      "priority": 143
+    },
+    {
+      "id": "report:reports/research/03-conflicting-theories-and-open-questions.md",
+      "path": "reports/research/03-conflicting-theories-and-open-questions.md",
+      "title": "AI 에이전트 설계의 충돌 이론과 보류된 질문",
+      "summary": "AI 에이전트 설계의 충돌 이론과 보류된 질문 기준일 2026 06 11 KST. 근거 목록 02 evidence catalog 100 sources.md 의 S001 S165. 원칙 이 문서는 상반된 이론 중 하나를 승자로 고르지 않는다. 서로 다른 조건에서 모두 맞을 수 있거나, 아직 충분한 공개 근거가 없는 쟁점을 보존한다. 1. 단순 workflow 우선 vs general autonomous agent 우선 이론 A 먼저 단순 workflow와 comp",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-10T22:29:17.582Z",
+      "categories": [
+        "start-here",
+        "research-foundations"
+      ],
+      "priority": 117
+    }
+  ]
+}

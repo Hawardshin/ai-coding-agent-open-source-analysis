@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "research-foundations",
+  "title": "Research Foundations",
+  "description": "Evidence catalogs, conflicting theories, source catalogs, and research synthesis.",
+  "count": 6,
+  "reports": [
+    {
+      "id": "report:reports/research/02-evidence-catalog-100-sources.md",
+      "path": "reports/research/02-evidence-catalog-100-sources.md",
+      "title": "AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선",
+      "summary": "AI 에이전트/하네스/컨텍스트/루프 엔지니어링 근거자료 165선 기준일 2026 06 11 KST. 범위 AI 코딩 에이전트, agent harness, tool use, MCP/A2A, context engineering, loop engineering, evaluation, benchmark, multi agent architecture. 원칙 기업 공식 문서/엔지니어링 글을 우선하고, 논문/벤치마크/오픈소스 문서를 보조 근거로 사용했다. 서로 충돌하는 해석",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-10T22:30:45.096Z",
+      "categories": [
+        "start-here",
+        "coding-agents",
+        "research-foundations"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/research/01-agent-trends-2026.md",
+      "path": "reports/research/01-agent-trends-2026.md",
+      "title": "2026 AI 코딩 에이전트 설계 트렌드 종합 보고서",
+      "summary": "2026 AI 코딩 에이전트 설계 트렌드 종합 보고서 기준일 2026 06 11 KST. 근거 목록 reports/research/02 evidence catalog 100 sources.md 의 S001 S165. 연결 대상 reports/repositories/ .md 30개 레포 분석과 reports/comparisons/ .md . 1. 요약 2026년 현재 AI 코딩 에이전트의 경쟁축은 \"어떤 모델을 쓰는가\"에서 \"어떤 harness로 모델을 둘러싸는가",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-10T22:27:51.777Z",
+      "categories": [
+        "start-here",
+        "research-foundations"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/spec-driven-evidence-corpus-500.md",
+      "path": "reports/spec-driven-evidence-corpus-500.md",
+      "title": "Spec-Driven Development Evidence Corpus 500+",
+      "summary": "Spec Driven Development Evidence Corpus 500+ Collected at 2026 06 17T22 30 27.587Z This file summarizes the reproducible OpenAlex corpus used by the web research browser and follow up spec driven development analysis. It intentionally separates broad evidence ",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:37:32.647Z",
+      "categories": [
+        "coding-agents",
+        "spec-driven",
+        "research-foundations",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 118
+    },
+    {
+      "id": "report:reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "path": "reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "title": "2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드",
+      "summary": "2026 최신 자료 레이더 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드 기준일 2026 06 13 KST. 범위 context engineering, RAG/GraphRAG/agentic RAG, local LLM/vLLM serving, agent memory, eval/observability, MCP/A2A, agent platform/harness. 자료 우선순위 공식 발표/공식 문서 arXiv/논문 표준 문서 산업 분석/시장 기사. 이 문서",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:38:46.724Z",
+      "categories": [
+        "llm-wiki",
+        "presentations-conferences",
+        "adjacent-infrastructure",
+        "research-foundations"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/research/03-conflicting-theories-and-open-questions.md",
+      "path": "reports/research/03-conflicting-theories-and-open-questions.md",
+      "title": "AI 에이전트 설계의 충돌 이론과 보류된 질문",
+      "summary": "AI 에이전트 설계의 충돌 이론과 보류된 질문 기준일 2026 06 11 KST. 근거 목록 02 evidence catalog 100 sources.md 의 S001 S165. 원칙 이 문서는 상반된 이론 중 하나를 승자로 고르지 않는다. 서로 다른 조건에서 모두 맞을 수 있거나, 아직 충분한 공개 근거가 없는 쟁점을 보존한다. 1. 단순 workflow 우선 vs general autonomous agent 우선 이론 A 먼저 단순 workflow와 comp",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-10T22:29:17.582Z",
+      "categories": [
+        "start-here",
+        "research-foundations"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/research/04-deferred-work-parallel-review-status.md",
+      "path": "reports/research/04-deferred-work-parallel-review-status.md",
+      "title": "Deferred Work Parallel Review Status",
+      "summary": "Deferred Work Parallel Review Status 작성일 2026 06 18 이 문서는 미뤄둔 조사 라인을 병렬로 다시 점검한 결과를 한 곳에 묶은 상태표다. 새로 추가한 심화 문서는 아래 두 개다. reports/full source scan/02 file discovery reading implementation deep dive.md reports/spec driven/00 spec extraction and spec memory synth",
+      "kind": "research-synthesis",
+      "folder": "research",
+      "updatedAt": "2026-06-18T13:42:29.741Z",
+      "categories": [
+        "research-foundations"
+      ],
+      "priority": 117
+    }
+  ]
+}

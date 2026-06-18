@@ -1,0 +1,3323 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "llm-wiki",
+  "title": "LLM Wiki, RAG, and Knowledge Bases",
+  "description": "LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.",
+  "count": 240,
+  "reports": [
+    {
+      "id": "report:reports/llm-wiki/00-llm-wiki-100-summary.md",
+      "path": "reports/llm-wiki/00-llm-wiki-100-summary.md",
+      "title": "LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄",
+      "summary": "LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄 생성일 2026 06 17T22 56 52.162Z 검증 범위 target group filter llm wiki 100 실제 로컬 클론 100개 데이터 파일에 명시된 target 100개 target 중 로컬 클론 누락 0개 레포별 상세 보고서 reports/llm wiki/repositories/ .md 구조 데이터 data/llm wiki structure analysis 100.json 로",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/00-llm-wiki-100-summary.md",
+      "updatedAt": "2026-06-17T22:57:02.870Z",
+      "categories": [
+        "start-here",
+        "llm-wiki"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "path": "reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "title": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약",
+      "summary": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약 생성일 2026 06 17T22 58 03.126Z 산출물 후보 수집 데이터 data/llm wiki repositories.json 구조 분석 데이터 data/llm wiki structure analysis 100.json 총괄 구조 분석 reports/llm wiki/00 llm wiki 100 summary.md 레포별 구조 분석 reports/llm wiki/repositories/ .md 수",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "updatedAt": "2026-06-17T22:58:03.138Z",
+      "categories": [
+        "start-here",
+        "llm-wiki",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/02-code-level-pipeline-comparison.md",
+      "path": "reports/llm-wiki/02-code-level-pipeline-comparison.md",
+      "title": "LLM Wiki 100 Code-Level Pipeline Comparison",
+      "summary": "LLM Wiki 100 Code Level Pipeline Comparison 작성일 2026 06 17T23 31 58.667Z 이 문서는 data/llm wiki repositories.json 의 100개 로컬 클론을 같은 정적 코드 스캔 기준으로 다시 비교한 결과다. 기존 구조 분석이 README, manifest, 디렉터리 표면을 본 1차 분석이라면, 이 문서는 실제 소스에서 ingestion, parsing, chunking, embedding, re",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/02-code-level-pipeline-comparison.md",
+      "updatedAt": "2026-06-17T23:31:58.669Z",
+      "categories": [
+        "start-here",
+        "llm-wiki",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "path": "reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
+      "title": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석",
+      "summary": "컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석 기준일 2026 06 13 KST. 대상 새로 선정/clone한 50개 오픈소스 레포지토리와 공식 문서. 관련 데이터 data/adjacent tech repositories.json , data/adjacent tech source inventory.json , reports/adjacent tech source inventory.md . 1. 결론 요약 기존 30개 ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T15:59:18.841Z",
+      "categories": [
+        "start-here",
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/adjacent-tech/02-repository-analysis-50.md",
+      "path": "reports/adjacent-tech/02-repository-analysis-50.md",
+      "title": "컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석",
+      "summary": "컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석 기준일 2026 06 13 KST. 분석 근거 data/adjacent tech repositories.json , data/adjacent tech github metadata.json , data/adjacent tech source inventory.json , reports/adjacent tech source inventory.md , 각 clone의 README/docs/s",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:05:27.734Z",
+      "categories": [
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/categories/llm-wiki-rag-knowledge/README.md",
+      "path": "reports/categories/llm-wiki-rag-knowledge/README.md",
+      "title": "LLM Wiki, RAG, and Knowledge Bases",
+      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T13 38 56.297Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. Counts Total categorized entries 1729 Repositories 407 Research",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "categories": [
+        "category-guides",
+        "llm-wiki"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "path": "reports/llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "title": "KalyanKS-NLP/rag-zero-to-hero-guide 코드 레벨 분석",
+      "summary": "KalyanKS NLP/rag zero to hero guide 코드 레벨 분석 생성일 2026 06 17T23 31 44.039Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 0 stars 1348 language Jupyter Notebook tags rag, document chat, korea signal files/code/source 20/0/0 tests/ci 0/0 local ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:44.040Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki"
+      ],
+      "priority": 141
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/VectifyAI__PageIndex.md",
+      "path": "reports/llm-wiki/code-level-repositories/VectifyAI__PageIndex.md",
+      "title": "VectifyAI/PageIndex 코드 레벨 분석",
+      "summary": "VectifyAI/PageIndex 코드 레벨 분석 생성일 2026 06 17T23 31 19.943Z 기본 판정 항목 값 type agent memory/tooling maturity C focused implementation 48 stars 33160 language Python tags rag, document chat, agent knowledge, korea signal files/code/source 44/10/9 tests/ci 0/6 local ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:19.944Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 141
+    },
+    {
+      "id": "report:reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "path": "reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "title": "공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness",
+      "summary": "공식 문서와 소스맵 Context Engineering, RAG, Local LLM, Agent Harness 기준일 2026 06 13 KST. 대상 새로 clone한 50개 레포지토리와 공식 문서. 목적 \"공식 문서가 말하는 설계 철학\"과 \"clone된 코드에서 확인할 위치\"를 연결한다. 1. 공식 문서에서 확인한 큰 흐름 Context engineering은 prompt 작성이 아니라 runtime context 운영이다 Anthropic의 context ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:07:03.248Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "path": "reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
+      "title": "2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드",
+      "summary": "2026 최신 자료 레이더 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드 기준일 2026 06 13 KST. 범위 context engineering, RAG/GraphRAG/agentic RAG, local LLM/vLLM serving, agent memory, eval/observability, MCP/A2A, agent platform/harness. 자료 우선순위 공식 발표/공식 문서 arXiv/논문 표준 문서 산업 분석/시장 기사. 이 문서",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:38:46.724Z",
+      "categories": [
+        "llm-wiki",
+        "presentations-conferences",
+        "adjacent-infrastructure",
+        "research-foundations"
+      ],
+      "priority": 117
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/1517005260__graph-rag-agent.md",
+      "path": "reports/llm-wiki/code-level-repositories/1517005260__graph-rag-agent.md",
+      "title": "1517005260/graph-rag-agent 코드 레벨 분석",
+      "summary": "1517005260/graph rag agent 코드 레벨 분석 생성일 2026 06 17T23 31 43.561Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 104 stars 2227 language Python tags rag, knowledge base, agent knowledge files/code/source 276/233/222 tests/ci 15/1 local path sources",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:43.561Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/abhigyanpatwari__GitNexus.md",
+      "path": "reports/llm-wiki/code-level-repositories/abhigyanpatwari__GitNexus.md",
+      "title": "abhigyanpatwari/GitNexus 코드 레벨 분석",
+      "summary": "abhigyanpatwari/GitNexus 코드 레벨 분석 생성일 2026 06 17T23 31 25.416Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 104 stars 42381 language TypeScript tags rag, knowledge base, agent knowledge files/code/source 3934/3124/870 tests/ci 120/26 local path ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:25.417Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/AgriciDaniel__claude-obsidian.md",
+      "path": "reports/llm-wiki/code-level-repositories/AgriciDaniel__claude-obsidian.md",
+      "title": "AgriciDaniel/claude-obsidian 코드 레벨 분석",
+      "summary": "AgriciDaniel/claude obsidian 코드 레벨 분석 생성일 2026 06 17T23 31 20.737Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 98 stars 7035 language Python tags direct llm wiki, knowledge base, agent knowledge files/code/source 190/29/20 tests/ci 9/1 l",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:20.739Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/apecloud__ApeRAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/apecloud__ApeRAG.md",
+      "title": "apecloud/ApeRAG 코드 레벨 분석",
+      "summary": "apecloud/ApeRAG 코드 레벨 분석 생성일 2026 06 17T23 31 44.410Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 1193 language Python tags rag, knowledge base, agent knowledge files/code/source 1097/804/732 tests/ci 74/22 local path sources/apecloud",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:44.411Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/Ar9av__obsidian-wiki.md",
+      "path": "reports/llm-wiki/code-level-repositories/Ar9av__obsidian-wiki.md",
+      "title": "Ar9av/obsidian-wiki 코드 레벨 분석",
+      "summary": "Ar9av/obsidian wiki 코드 레벨 분석 생성일 2026 06 17T23 31 22.537Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 88 stars 2232 language Python tags direct llm wiki, knowledge base, agent knowledge files/code/source 89/20/19 tests/ci 1/2 local path ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:22.538Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/arc53__DocsGPT.md",
+      "path": "reports/llm-wiki/code-level-repositories/arc53__DocsGPT.md",
+      "title": "arc53/DocsGPT 코드 레벨 분석",
+      "summary": "arc53/DocsGPT 코드 레벨 분석 생성일 2026 06 17T23 31 30.315Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 17938 language Python tags rag, document chat, agent knowledge, korea signal files/code/source 1251/1057/603 tests/ci 120/26 local path so",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:30.316Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/aristoapp__awesome-second-brain.md",
+      "path": "reports/llm-wiki/code-level-repositories/aristoapp__awesome-second-brain.md",
+      "title": "aristoapp/awesome-second-brain 코드 레벨 분석",
+      "summary": "aristoapp/awesome second brain 코드 레벨 분석 생성일 2026 06 17T23 31 49.834Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 0 stars 422 language tags knowledge base, agent knowledge, korea signal files/code/source 102/0/0 tests/ci 0/0 local path sour",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:49.835Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/arthurpanhku__DocSentinel.md",
+      "path": "reports/llm-wiki/code-level-repositories/arthurpanhku__DocSentinel.md",
+      "title": "arthurpanhku/DocSentinel 코드 레벨 분석",
+      "summary": "arthurpanhku/DocSentinel 코드 레벨 분석 생성일 2026 06 17T23 31 13.756Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 102 stars 88 language Python tags rag, knowledge base, document chat, agent knowledge, korea signal files/code/source 127/66/54",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:13.756Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/axoviq-ai__synthadoc.md",
+      "path": "reports/llm-wiki/code-level-repositories/axoviq-ai__synthadoc.md",
+      "title": "axoviq-ai/synthadoc 코드 레벨 분석",
+      "summary": "axoviq ai/synthadoc 코드 레벨 분석 생성일 2026 06 17T23 31 13.609Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 104 stars 464 language Python tags rag, knowledge base, document chat, agent knowledge, korea signal files/code/source 331/221/121 t",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:13.610Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/benmaster82__Kwipu.md",
+      "path": "reports/llm-wiki/code-level-repositories/benmaster82__Kwipu.md",
+      "title": "benmaster82/Kwipu 코드 레벨 분석",
+      "summary": "benmaster82/Kwipu 코드 레벨 분석 생성일 2026 06 17T23 31 23.437Z 기본 판정 항목 값 type graph rag/kg maturity B production leaning 63 stars 248 language Python tags rag, knowledge base, agent knowledge, korea signal files/code/source 17/3/3 tests/ci 0/0 local path sources/ben",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:23.438Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/bzsanti__oxidizePdf.md",
+      "path": "reports/llm-wiki/code-level-repositories/bzsanti__oxidizePdf.md",
+      "title": "bzsanti/oxidizePdf 코드 레벨 분석",
+      "summary": "bzsanti/oxidizePdf 코드 레벨 분석 생성일 2026 06 17T23 31 45.336Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 104 stars 176 language Rust tags rag, document chat, korea signal files/code/source 1177/803/428 tests/ci 120/8 local path sources/bz",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:45.337Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/chatchat-space__Langchain-Chatchat.md",
+      "path": "reports/llm-wiki/code-level-repositories/chatchat-space__Langchain-Chatchat.md",
+      "title": "chatchat-space/Langchain-Chatchat 코드 레벨 분석",
+      "summary": "chatchat space/Langchain Chatchat 코드 레벨 분석 생성일 2026 06 17T23 31 17.047Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 86 stars 38186 language Python tags rag, knowledge base, agent knowledge, korea signal files/code/source 470/293/260 t",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:17.048Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/datawhalechina__tiny-universe.md",
+      "path": "reports/llm-wiki/code-level-repositories/datawhalechina__tiny-universe.md",
+      "title": "datawhalechina/tiny-universe 코드 레벨 분석",
+      "summary": "datawhalechina/tiny universe 코드 레벨 분석 생성일 2026 06 17T23 31 32.845Z 기본 판정 항목 값 type curated list/tutorial maturity C focused implementation 46 stars 4916 language Jupyter Notebook tags rag, document chat, agent knowledge, korea signal files/code/source 127/50/4",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:32.845Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/DEEP-PolyU__Awesome-GraphRAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/DEEP-PolyU__Awesome-GraphRAG.md",
+      "title": "DEEP-PolyU/Awesome-GraphRAG 코드 레벨 분석",
+      "summary": "DEEP PolyU/Awesome GraphRAG 코드 레벨 분석 생성일 2026 06 17T23 31 32.334Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 0 stars 2474 language tags rag, knowledge base, korea signal files/code/source 2/0/0 tests/ci 0/0 local path sources/DEEP PolyU A",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:32.335Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/Egonex-AI__Understand-Anything.md",
+      "path": "reports/llm-wiki/code-level-repositories/Egonex-AI__Understand-Anything.md",
+      "title": "Egonex-AI/Understand-Anything 코드 레벨 분석",
+      "summary": "Egonex AI/Understand Anything 코드 레벨 분석 생성일 2026 06 17T23 31 14.913Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 90 stars 62740 language TypeScript tags direct llm wiki, knowledge base, agent knowledge files/code/source 409/243/191 tests/",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:14.914Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/enescingoz__awesome-n8n-templates.md",
+      "path": "reports/llm-wiki/code-level-repositories/enescingoz__awesome-n8n-templates.md",
+      "title": "enescingoz/awesome-n8n-templates 코드 레벨 분석",
+      "summary": "enescingoz/awesome n8n templates 코드 레벨 분석 생성일 2026 06 17T23 31 20.272Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 4 stars 23064 language tags rag, document chat, agent knowledge, korea signal files/code/source 351/0/0 tests/ci 0/2 local p",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:20.273Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/eugeniughelbur__obsidian-second-brain.md",
+      "path": "reports/llm-wiki/code-level-repositories/eugeniughelbur__obsidian-second-brain.md",
+      "title": "eugeniughelbur/obsidian-second-brain 코드 레벨 분석",
+      "summary": "eugeniughelbur/obsidian second brain 코드 레벨 분석 생성일 2026 06 17T23 31 53.023Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 88 stars 2519 language Python tags knowledge base, document chat, agent knowledge files/code/source 159/62/60 tests",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:53.024Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/FalkorDB__FalkorDB.md",
+      "path": "reports/llm-wiki/code-level-repositories/FalkorDB__FalkorDB.md",
+      "title": "FalkorDB/FalkorDB 코드 레벨 분석",
+      "summary": "FalkorDB/FalkorDB 코드 레벨 분석 생성일 2026 06 17T23 31 58.650Z 기본 판정 항목 값 type graph rag/kg maturity C focused implementation 45 stars 4597 language C tags rag, knowledge base files/code/source 6792/160/22 tests/ci 120/18 local path sources/FalkorDB FalkorDB 파이프라인 단계",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:58.651Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/getzep__graphiti.md",
+      "path": "reports/llm-wiki/code-level-repositories/getzep__graphiti.md",
+      "title": "getzep/graphiti 코드 레벨 분석",
+      "summary": "getzep/graphiti 코드 레벨 분석 생성일 2026 06 17T23 31 27.209Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 104 stars 27553 language Python tags rag, knowledge base, agent knowledge files/code/source 343/258/188 tests/ci 63/22 local path sources/getzep g",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:27.209Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/GiovanniPasq__agentic-rag-for-dummies.md",
+      "path": "reports/llm-wiki/code-level-repositories/GiovanniPasq__agentic-rag-for-dummies.md",
+      "title": "GiovanniPasq/agentic-rag-for-dummies 코드 레벨 분석",
+      "summary": "GiovanniPasq/agentic rag for dummies 코드 레벨 분석 생성일 2026 06 17T23 31 32.987Z 기본 판정 항목 값 type curated list/tutorial maturity C focused implementation 46 stars 3502 language Jupyter Notebook tags rag, document chat, agent knowledge, korea signal files/code/source ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:32.988Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/green-dalii__obsidian-llm-wiki.md",
+      "path": "reports/llm-wiki/code-level-repositories/green-dalii__obsidian-llm-wiki.md",
+      "title": "green-dalii/obsidian-llm-wiki 코드 레벨 분석",
+      "summary": "green dalii/obsidian llm wiki 코드 레벨 분석 생성일 2026 06 17T23 31 16.409Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 99 stars 101 language TypeScript tags direct llm wiki, knowledge base, korea signal files/code/source 151/124/76 tests/ci 45/",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:16.410Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/hjhun__llm-wiki.md",
+      "path": "reports/llm-wiki/code-level-repositories/hjhun__llm-wiki.md",
+      "title": "hjhun/llm-wiki 코드 레벨 분석",
+      "summary": "hjhun/llm wiki 코드 레벨 분석 생성일 2026 06 17T23 31 38.281Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 100 stars 0 language TypeScript tags direct llm wiki, korea signal files/code/source 344/277/230 tests/ci 44/3 local path sources/hjhun llm ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:38.282Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/HKUDS__LightRAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/HKUDS__LightRAG.md",
+      "title": "HKUDS/LightRAG 코드 레벨 분석",
+      "summary": "HKUDS/LightRAG 코드 레벨 분석 생성일 2026 06 17T23 31 22.009Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 106 stars 36711 language Python tags rag, knowledge base, korea signal files/code/source 663/498/266 tests/ci 120/13 local path sources/HKUDS Light",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:22.010Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/HKUDS__VideoRAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/HKUDS__VideoRAG.md",
+      "title": "HKUDS/VideoRAG 코드 레벨 분석",
+      "summary": "HKUDS/VideoRAG 코드 레벨 분석 생성일 2026 06 17T23 31 43.313Z 기본 판정 항목 값 type rag knowledge platform maturity B production leaning 78 stars 3065 language Python tags rag, document chat, korea signal files/code/source 112/95/93 tests/ci 0/0 local path sources/HKUDS Vide",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:43.313Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/HKUST-KnowComp__AutoSchemaKG.md",
+      "path": "reports/llm-wiki/code-level-repositories/HKUST-KnowComp__AutoSchemaKG.md",
+      "title": "HKUST-KnowComp/AutoSchemaKG 코드 레벨 분석",
+      "summary": "HKUST KnowComp/AutoSchemaKG 코드 레벨 분석 생성일 2026 06 17T23 31 29.339Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 91 stars 761 language Python tags rag, knowledge base, korea signal files/code/source 1188/210/170 tests/ci 120/0 local path sources/H",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:29.340Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/IAAR-Shanghai__Awesome-AI-Memory.md",
+      "path": "reports/llm-wiki/code-level-repositories/IAAR-Shanghai__Awesome-AI-Memory.md",
+      "title": "IAAR-Shanghai/Awesome-AI-Memory 코드 레벨 분석",
+      "summary": "IAAR Shanghai/Awesome AI Memory 코드 레벨 분석 생성일 2026 06 17T23 31 22.885Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 0 stars 996 language Python tags rag, knowledge base, agent knowledge, korea signal files/code/source 6/1/1 tests/ci 0/0 loca",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:22.886Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/iammonth1997__paperwiki-research-compiler.md",
+      "path": "reports/llm-wiki/code-level-repositories/iammonth1997__paperwiki-research-compiler.md",
+      "title": "iammonth1997/paperwiki-research-compiler 코드 레벨 분석",
+      "summary": "iammonth1997/paperwiki research compiler 코드 레벨 분석 생성일 2026 06 17T23 31 24.053Z 기본 판정 항목 값 type curated list/template maturity D small/demo/list 4 stars 0 language HTML tags rag, knowledge base, agent knowledge, korea signal files/code/source 4/0/0 tests/ci 0/1",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:24.054Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/iikarus__Dragon-Brain.md",
+      "path": "reports/llm-wiki/code-level-repositories/iikarus__Dragon-Brain.md",
+      "title": "iikarus/Dragon-Brain 코드 레벨 분석",
+      "summary": "iikarus/Dragon Brain 코드 레벨 분석 생성일 2026 06 17T23 31 23.938Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 84 stars 48 language Python tags rag, knowledge base, agent knowledge, korea signal files/code/source 341/236/124 tests/ci 112/3 local path s",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:23.939Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/infiniflow__ragflow.md",
+      "path": "reports/llm-wiki/code-level-repositories/infiniflow__ragflow.md",
+      "title": "infiniflow/ragflow 코드 레벨 분석",
+      "summary": "infiniflow/ragflow 코드 레벨 분석 생성일 2026 06 17T23 31 34.477Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 83027 language Python tags rag, agent knowledge, korea signal files/code/source 3355/2695/2311 tests/ci 120/11 local path sources/inf",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:34.478Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/InternLM__HuixiangDou.md",
+      "path": "reports/llm-wiki/code-level-repositories/InternLM__HuixiangDou.md",
+      "title": "InternLM/HuixiangDou 코드 레벨 분석",
+      "summary": "InternLM/HuixiangDou 코드 레벨 분석 생성일 2026 06 17T23 31 55.367Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 104 stars 2492 language Python tags rag, agent knowledge, korea signal files/code/source 390/231/181 tests/ci 41/2 local path sources/InternL",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:55.367Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md",
+      "path": "reports/llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md",
+      "title": "jee3m/augmentative-knowledge-hooks 코드 레벨 분석",
+      "summary": "jee3m/augmentative knowledge hooks 코드 레벨 분석 생성일 2026 06 17T23 31 46.230Z 기본 판정 항목 값 type curated list/template maturity D small/demo/list 4 stars 0 language HTML tags rag, knowledge base, agent knowledge files/code/source 4/0/0 tests/ci 0/1 local path sources/",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:46.232Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/jegly__Box.md",
+      "path": "reports/llm-wiki/code-level-repositories/jegly__Box.md",
+      "title": "jegly/Box 코드 레벨 분석",
+      "summary": "jegly/Box 코드 레벨 분석 생성일 2026 06 17T23 31 56.484Z 기본 판정 항목 값 type agent memory/tooling maturity B production leaning 70 stars 595 language Kotlin tags rag, agent knowledge, korea signal files/code/source 473/211/211 tests/ci 0/0 local path sources/jegly Box 파이프라",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:56.485Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/joungminsung__OpenDocuments.md",
+      "path": "reports/llm-wiki/code-level-repositories/joungminsung__OpenDocuments.md",
+      "title": "joungminsung/OpenDocuments 코드 레벨 분석",
+      "summary": "joungminsung/OpenDocuments 코드 레벨 분석 생성일 2026 06 17T23 31 13.944Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 105 stars 80 language TypeScript tags rag, knowledge base, document chat, agent knowledge, korea signal files/code/source 447",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:13.945Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/khoj-ai__khoj.md",
+      "path": "reports/llm-wiki/code-level-repositories/khoj-ai__khoj.md",
+      "title": "khoj-ai/khoj 코드 레벨 분석",
+      "summary": "khoj ai/khoj 코드 레벨 분석 생성일 2026 06 17T23 31 22.374Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 101 stars 35186 language Python tags rag, knowledge base, document chat, agent knowledge files/code/source 568/375/347 tests/ci 62/15 local",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:22.375Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/kkollsga__kglite.md",
+      "path": "reports/llm-wiki/code-level-repositories/kkollsga__kglite.md",
+      "title": "kkollsga/kglite 코드 레벨 분석",
+      "summary": "kkollsga/kglite 코드 레벨 분석 생성일 2026 06 17T23 31 46.103Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 104 stars 31 language Rust tags rag, knowledge base, agent knowledge files/code/source 893/614/379 tests/ci 120/4 local path sources/kkollsga kgli",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:46.104Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/kreuzberg-dev__kreuzberg.md",
+      "path": "reports/llm-wiki/code-level-repositories/kreuzberg-dev__kreuzberg.md",
+      "title": "kreuzberg-dev/kreuzberg 코드 레벨 분석",
+      "summary": "kreuzberg dev/kreuzberg 코드 레벨 분석 생성일 2026 06 17T23 31 32.078Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 8500 language Rust tags rag, document chat, agent knowledge, korea signal files/code/source 6421/2502/1849 tests/ci 12",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:32.079Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/labring__FastGPT.md",
+      "path": "reports/llm-wiki/code-level-repositories/labring__FastGPT.md",
+      "title": "labring/FastGPT 코드 레벨 분석",
+      "summary": "labring/FastGPT 코드 레벨 분석 생성일 2026 06 17T23 31 18.403Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 28496 language TypeScript tags rag, knowledge base, agent knowledge, korea signal files/code/source 4105/3181/2653 tests/ci 12",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:18.404Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/langbot-app__LangBot.md",
+      "path": "reports/llm-wiki/code-level-repositories/langbot-app__LangBot.md",
+      "title": "langbot-app/LangBot 코드 레벨 분석",
+      "summary": "langbot app/LangBot 코드 레벨 분석 생성일 2026 06 17T23 31 46.760Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 16358 language Python tags rag, agent knowledge, korea signal files/code/source 938/768/601 tests/ci 120/13 local path sou",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:46.761Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/langroid__langroid.md",
+      "path": "reports/llm-wiki/code-level-repositories/langroid__langroid.md",
+      "title": "langroid/langroid 코드 레벨 분석",
+      "summary": "langroid/langroid 코드 레벨 분석 생성일 2026 06 17T23 31 52.413Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 106 stars 4040 language Python tags rag, agent knowledge, korea signal files/code/source 657/436/141 tests/ci 120/10 local path sources/langroid",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:52.414Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/LearningCircuit__local-deep-research.md",
+      "path": "reports/llm-wiki/code-level-repositories/LearningCircuit__local-deep-research.md",
+      "title": "LearningCircuit/local-deep-research 코드 레벨 분석",
+      "summary": "LearningCircuit/local deep research 코드 레벨 분석 생성일 2026 06 17T23 31 37.722Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 8493 language Python tags rag, document chat, korea signal files/code/source 2964/2519/667 tests/ci 120/75",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:37.723Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/linny006__rag-radar.md",
+      "path": "reports/llm-wiki/code-level-repositories/linny006__rag-radar.md",
+      "title": "linny006/rag-radar 코드 레벨 분석",
+      "summary": "linny006/rag radar 코드 레벨 분석 생성일 2026 06 17T23 31 22.125Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 23 stars 1 language Python tags rag, knowledge base, korea signal files/code/source 10/1/1 tests/ci 0/1 local path sources/linny006 rag ra",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:22.126Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/llmware-ai__llmware.md",
+      "path": "reports/llm-wiki/code-level-repositories/llmware-ai__llmware.md",
+      "title": "llmware-ai/llmware 코드 레벨 분석",
+      "summary": "llmware ai/llmware 코드 레벨 분석 생성일 2026 06 17T23 31 50.329Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 104 stars 14837 language Python tags rag, agent knowledge, korea signal files/code/source 430/238/219 tests/ci 20/9 local path source",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:50.330Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/luhengshiwo__LLMForEverybody.md",
+      "path": "reports/llm-wiki/code-level-repositories/luhengshiwo__LLMForEverybody.md",
+      "title": "luhengshiwo/LLMForEverybody 코드 레벨 분석",
+      "summary": "luhengshiwo/LLMForEverybody 코드 레벨 분석 생성일 2026 06 17T23 31 55.188Z 기본 판정 항목 값 type curated list/template maturity D small/demo/list 0 stars 6742 language Jupyter Notebook tags rag, document chat, agent knowledge files/code/source 493/0/0 tests/ci 0/0 local path",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:55.189Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/Marker-Inc-Korea__AutoRAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/Marker-Inc-Korea__AutoRAG.md",
+      "title": "Marker-Inc-Korea/AutoRAG 코드 레벨 분석",
+      "summary": "Marker Inc Korea/AutoRAG 코드 레벨 분석 생성일 2026 06 17T23 31 37.933Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 96 stars 4832 language Python tags rag, document chat, korea signal files/code/source 641/310/178 tests/ci 120/3 local path sou",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:37.934Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/marswangyang__personal-ai-memory.md",
+      "path": "reports/llm-wiki/code-level-repositories/marswangyang__personal-ai-memory.md",
+      "title": "marswangyang/personal-ai-memory 코드 레벨 분석",
+      "summary": "marswangyang/personal ai memory 코드 레벨 분석 생성일 2026 06 17T23 31 32.499Z 기본 판정 항목 값 type rag knowledge platform maturity B production leaning 79 stars 48 language TypeScript tags rag, knowledge base, korea signal files/code/source 100/82/63 tests/ci 19/1 local pa",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:32.500Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/matevip__mateclaw.md",
+      "path": "reports/llm-wiki/code-level-repositories/matevip__mateclaw.md",
+      "title": "matevip/mateclaw 코드 레벨 분석",
+      "summary": "matevip/mateclaw 코드 레벨 분석 생성일 2026 06 17T23 31 19.765Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 104 stars 624 language Java tags direct llm wiki, knowledge base, agent knowledge files/code/source 2830/2197/1718 tests/ci 120/3 local pa",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:19.766Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/MemTensor__MemOS.md",
+      "path": "reports/llm-wiki/code-level-repositories/MemTensor__MemOS.md",
+      "title": "MemTensor/MemOS 코드 레벨 분석",
+      "summary": "MemTensor/MemOS 코드 레벨 분석 생성일 2026 06 17T23 31 51.317Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 9913 language TypeScript tags rag, agent knowledge, korea signal files/code/source 1734/1365/973 tests/ci 120/10 local path so",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:51.317Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/memvid__memvid.md",
+      "path": "reports/llm-wiki/code-level-repositories/memvid__memvid.md",
+      "title": "memvid/memvid 코드 레벨 분석",
+      "summary": "memvid/memvid 코드 레벨 분석 생성일 2026 06 17T23 31 18.616Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 99 stars 15665 language Rust tags rag, knowledge base, agent knowledge, korea signal files/code/source 216/163/139 tests/ci 12/5 local pat",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:18.617Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/MODSetter__SurfSense.md",
+      "path": "reports/llm-wiki/code-level-repositories/MODSetter__SurfSense.md",
+      "title": "MODSetter/SurfSense 코드 레벨 분석",
+      "summary": "MODSetter/SurfSense 코드 레벨 분석 생성일 2026 06 17T23 31 47.568Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 14914 language Python tags rag, document chat, agent knowledge files/code/source 3288/2754/2313 tests/ci 120/17 local path",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:47.569Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/nanbingxyz__5ire.md",
+      "path": "reports/llm-wiki/code-level-repositories/nanbingxyz__5ire.md",
+      "title": "nanbingxyz/5ire 코드 레벨 분석",
+      "summary": "nanbingxyz/5ire 코드 레벨 분석 생성일 2026 06 17T23 31 52.722Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 105 stars 5247 language TypeScript tags knowledge base, agent knowledge, korea signal files/code/source 456/328/314 tests/ci 30/2 local ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:52.723Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/nashsu__llm_wiki.md",
+      "path": "reports/llm-wiki/code-level-repositories/nashsu__llm_wiki.md",
+      "title": "nashsu/llm_wiki 코드 레벨 분석",
+      "summary": "nashsu/llm wiki 코드 레벨 분석 생성일 2026 06 17T23 31 12.093Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 101 stars 11791 language TypeScript tags direct llm wiki, rag, knowledge base, document chat, korea signal files/code/source 350/315/188 te",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:12.095Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/neo4j-labs__llm-graph-builder.md",
+      "path": "reports/llm-wiki/code-level-repositories/neo4j-labs__llm-graph-builder.md",
+      "title": "neo4j-labs/llm-graph-builder 코드 레벨 분석",
+      "summary": "neo4j labs/llm graph builder 코드 레벨 분석 생성일 2026 06 17T23 31 28.807Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 97 stars 4799 language Jupyter Notebook tags rag, knowledge base, document chat files/code/source 255/188/188 tests/ci 0/3 local path",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:28.808Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/neomjs__neo.md",
+      "path": "reports/llm-wiki/code-level-repositories/neomjs__neo.md",
+      "title": "neomjs/neo 코드 레벨 분석",
+      "summary": "neomjs/neo 코드 레벨 분석 생성일 2026 06 17T23 31 43.138Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 104 stars 3206 language JavaScript tags rag, knowledge base, agent knowledge files/code/source 18478/2188/1170 tests/ci 120/23 local path sources/neomj",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:43.139Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/neuml__txtai.md",
+      "path": "reports/llm-wiki/code-level-repositories/neuml__txtai.md",
+      "title": "neuml/txtai 코드 레벨 분석",
+      "summary": "neuml/txtai 코드 레벨 분석 생성일 2026 06 17T23 31 48.896Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 92 stars 12669 language Python tags rag, agent knowledge, korea signal files/code/source 576/373/268 tests/ci 94/9 local path sources/neuml ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:48.897Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/NevaMind-AI__memU.md",
+      "path": "reports/llm-wiki/code-level-repositories/NevaMind-AI__memU.md",
+      "title": "NevaMind-AI/memU 코드 레벨 분석",
+      "summary": "NevaMind AI/memU 코드 레벨 분석 생성일 2026 06 17T23 31 50.539Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 103 stars 13884 language Python tags rag, agent knowledge, korea signal files/code/source 215/151/115 tests/ci 17/3 local path sources/",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:50.540Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/NirDiamant__agents-towards-production.md",
+      "path": "reports/llm-wiki/code-level-repositories/NirDiamant__agents-towards-production.md",
+      "title": "NirDiamant/agents-towards-production 코드 레벨 분석",
+      "summary": "NirDiamant/agents towards production 코드 레벨 분석 생성일 2026 06 17T23 31 54.893Z 기본 판정 항목 값 type curated list/tutorial maturity C focused implementation 46 stars 20762 language Jupyter Notebook tags rag, document chat, agent knowledge files/code/source 102/17/13 tes",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:54.894Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/NirDiamant__GenAI_Agents.md",
+      "path": "reports/llm-wiki/code-level-repositories/NirDiamant__GenAI_Agents.md",
+      "title": "NirDiamant/GenAI_Agents 코드 레벨 분석",
+      "summary": "NirDiamant/GenAI Agents 코드 레벨 분석 생성일 2026 06 17T23 31 35.150Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 15 stars 22688 language Jupyter Notebook tags rag, document chat, agent knowledge files/code/source 118/3/3 tests/ci 0/0 local path s",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:35.151Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/NirDiamant__RAG_Techniques.md",
+      "path": "reports/llm-wiki/code-level-repositories/NirDiamant__RAG_Techniques.md",
+      "title": "NirDiamant/RAG_Techniques 코드 레벨 분석",
+      "summary": "NirDiamant/RAG Techniques 코드 레벨 분석 생성일 2026 06 17T23 31 21.557Z 기본 판정 항목 값 type curated list/tutorial maturity C focused implementation 46 stars 28013 language Jupyter Notebook tags rag, document chat, agent knowledge, korea signal files/code/source 51/2/2 tes",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:21.558Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/ohbryt__bb-wiki.md",
+      "path": "reports/llm-wiki/code-level-repositories/ohbryt__bb-wiki.md",
+      "title": "ohbryt/bb-wiki 코드 레벨 분석",
+      "summary": "ohbryt/bb wiki 코드 레벨 분석 생성일 2026 06 17T23 31 13.125Z 기본 판정 항목 값 type persistent llm wiki maturity C focused implementation 47 stars 0 language Python tags direct llm wiki, knowledge base, document chat, korea signal files/code/source 28/2/2 tests/ci 0/0 local ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:13.126Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/onlybooks__llm.md",
+      "path": "reports/llm-wiki/code-level-repositories/onlybooks__llm.md",
+      "title": "onlybooks/llm 코드 레벨 분석",
+      "summary": "onlybooks/llm 코드 레벨 분석 생성일 2026 06 17T23 31 44.648Z 기본 판정 항목 값 type curated list/template maturity D small/demo/list 25 stars 200 language Jupyter Notebook tags rag, document chat, korea signal files/code/source 16/2/2 tests/ci 0/0 local path sources/onlybooks",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:44.649Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/onyx-dot-app__onyx.md",
+      "path": "reports/llm-wiki/code-level-repositories/onyx-dot-app__onyx.md",
+      "title": "onyx-dot-app/onyx 코드 레벨 분석",
+      "summary": "onyx dot app/onyx 코드 레벨 분석 생성일 2026 06 17T23 31 26.904Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 30391 language Python tags rag, document chat, korea signal files/code/source 5467/4768/3642 tests/ci 120/60 local path sour",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:26.905Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/openai__chatgpt-retrieval-plugin.md",
+      "path": "reports/llm-wiki/code-level-repositories/openai__chatgpt-retrieval-plugin.md",
+      "title": "openai/chatgpt-retrieval-plugin 코드 레벨 분석",
+      "summary": "openai/chatgpt retrieval plugin 코드 레벨 분석 생성일 2026 06 17T23 31 27.359Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 98 stars 21190 language Python tags rag, document chat, korea signal files/code/source 116/53/33 tests/ci 17/6 local pat",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:27.360Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/opendatalab__MinerU-Document-Explorer.md",
+      "path": "reports/llm-wiki/code-level-repositories/opendatalab__MinerU-Document-Explorer.md",
+      "title": "opendatalab/MinerU-Document-Explorer 코드 레벨 분석",
+      "summary": "opendatalab/MinerU Document Explorer 코드 레벨 분석 생성일 2026 06 17T23 31 33.286Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 95 stars 586 language TypeScript tags rag, document chat, agent knowledge, korea signal files/code/source 181/111/8",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:33.287Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/opendataloader-project__opendataloader-pdf.md",
+      "path": "reports/llm-wiki/code-level-repositories/opendataloader-project__opendataloader-pdf.md",
+      "title": "opendataloader-project/opendataloader-pdf 코드 레벨 분석",
+      "summary": "opendataloader project/opendataloader pdf 코드 레벨 분석 생성일 2026 06 17T23 31 36.282Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 100 stars 25243 language Java tags rag, document chat, korea signal files/code/source 313/231/142 tests/ci 83/",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:36.282Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/OpenSPG__KAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/OpenSPG__KAG.md",
+      "title": "OpenSPG/KAG 코드 레벨 분석",
+      "summary": "OpenSPG/KAG 코드 레벨 분석 생성일 2026 06 17T23 31 28.543Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 8834 language Python tags rag, knowledge base, korea signal files/code/source 1183/739/619 tests/ci 60/2 local path sources/OpenSPG KAG 파이프라",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:28.544Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/OrionStarAI__Orion.md",
+      "path": "reports/llm-wiki/code-level-repositories/OrionStarAI__Orion.md",
+      "title": "OrionStarAI/Orion 코드 레벨 분석",
+      "summary": "OrionStarAI/Orion 코드 레벨 분석 생성일 2026 06 17T23 31 52.544Z 기본 판정 항목 값 type mixed/partial kb maturity C focused implementation 44 stars 811 language Python tags rag, agent knowledge, korea signal files/code/source 38/24/23 tests/ci 0/0 local path sources/OrionStar",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:52.544Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/OSU-NLP-Group__HippoRAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/OSU-NLP-Group__HippoRAG.md",
+      "title": "OSU-NLP-Group/HippoRAG 코드 레벨 분석",
+      "summary": "OSU NLP Group/HippoRAG 코드 레벨 분석 생성일 2026 06 17T23 31 32.205Z 기본 판정 항목 값 type graph rag/kg maturity C focused implementation 59 stars 3631 language Python tags rag, knowledge base, document chat files/code/source 79/62/62 tests/ci 0/0 local path sources/OSU NLP",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:32.205Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/otomata-tech__memento-core.md",
+      "path": "reports/llm-wiki/code-level-repositories/otomata-tech__memento-core.md",
+      "title": "otomata-tech/memento-core 코드 레벨 분석",
+      "summary": "otomata tech/memento core 코드 레벨 분석 생성일 2026 06 17T23 31 46.419Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 88 stars 0 language TypeScript tags rag, knowledge base, agent knowledge files/code/source 128/71/70 tests/ci 1/1 local path s",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:46.419Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/PaddlePaddle__PaddleOCR.md",
+      "path": "reports/llm-wiki/code-level-repositories/PaddlePaddle__PaddleOCR.md",
+      "title": "PaddlePaddle/PaddleOCR 코드 레벨 분석",
+      "summary": "PaddlePaddle/PaddleOCR 코드 레벨 분석 생성일 2026 06 17T23 31 35.987Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 82807 language Python tags rag, document chat, korea signal files/code/source 2137/835/741 tests/ci 101/21 local path s",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:35.987Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/patchy631__ai-engineering-hub.md",
+      "path": "reports/llm-wiki/code-level-repositories/patchy631__ai-engineering-hub.md",
+      "title": "patchy631/ai-engineering-hub 코드 레벨 분석",
+      "summary": "patchy631/ai engineering hub 코드 레벨 분석 생성일 2026 06 17T23 31 54.605Z 기본 판정 항목 값 type curated list/tutorial maturity C focused implementation 46 stars 35839 language Jupyter Notebook tags rag, document chat, agent knowledge files/code/source 1253/710/700 tests/ci",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:54.606Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/pathwaycom__llm-app.md",
+      "path": "reports/llm-wiki/code-level-repositories/pathwaycom__llm-app.md",
+      "title": "pathwaycom/llm-app 코드 레벨 분석",
+      "summary": "pathwaycom/llm app 코드 레벨 분석 생성일 2026 06 17T23 31 33.436Z 기본 판정 항목 값 type rag knowledge platform maturity B production leaning 77 stars 59331 language Jupyter Notebook tags rag, document chat, korea signal files/code/source 88/18/18 tests/ci 0/21 local path sou",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:33.437Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/phonghhd__EvoNet-AI-Core.md",
+      "path": "reports/llm-wiki/code-level-repositories/phonghhd__EvoNet-AI-Core.md",
+      "title": "phonghhd/EvoNet-AI-Core 코드 레벨 분석",
+      "summary": "phonghhd/EvoNet AI Core 코드 레벨 분석 생성일 2026 06 17T23 31 38.072Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 83 stars 4 language Python tags rag, knowledge base, agent knowledge files/code/source 74/57/55 tests/ci 3/3 local path sources/phonghhd E",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:38.073Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/PleasePrompto__notebooklm-mcp.md",
+      "path": "reports/llm-wiki/code-level-repositories/PleasePrompto__notebooklm-mcp.md",
+      "title": "PleasePrompto/notebooklm-mcp 코드 레벨 분석",
+      "summary": "PleasePrompto/notebooklm mcp 코드 레벨 분석 생성일 2026 06 17T23 31 52.866Z 기본 판정 항목 값 type agent memory/tooling maturity C focused implementation 53 stars 2810 language TypeScript tags knowledge base, document chat, agent knowledge files/code/source 50/37/37 tests/ci ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:52.867Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/raphaelmansuy__edgequake.md",
+      "path": "reports/llm-wiki/code-level-repositories/raphaelmansuy__edgequake.md",
+      "title": "raphaelmansuy/edgequake 코드 레벨 분석",
+      "summary": "raphaelmansuy/edgequake 코드 레벨 분석 생성일 2026 06 17T23 31 16.071Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 2003 language Rust tags rag, knowledge base, document chat, korea signal files/code/source 2755/1709/1272 tests/ci 120/21 local ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:16.072Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/safishamsi__graphify.md",
+      "path": "reports/llm-wiki/code-level-repositories/safishamsi__graphify.md",
+      "title": "safishamsi/graphify 코드 레벨 분석",
+      "summary": "safishamsi/graphify 코드 레벨 분석 생성일 2026 06 17T23 31 14.319Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 103 stars 68688 language Python tags rag, knowledge base, document chat, agent knowledge files/code/source 572/182/56 tests/ci 120/3 local pat",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:14.320Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "path": "reports/llm-wiki/code-level-repositories/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "title": "SaiAkhil066/CORTEX-AI-SUPER-RAG 코드 레벨 분석",
+      "summary": "SaiAkhil066/CORTEX AI SUPER RAG 코드 레벨 분석 생성일 2026 06 17T23 31 43.685Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 87 stars 1727 language Python tags rag, document chat, korea signal files/code/source 14/6/6 tests/ci 0/2 local path sources/SaiAk",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:43.686Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/SamurAIGPT__llm-wiki-agent.md",
+      "path": "reports/llm-wiki/code-level-repositories/SamurAIGPT__llm-wiki-agent.md",
+      "title": "SamurAIGPT/llm-wiki-agent 코드 레벨 분석",
+      "summary": "SamurAIGPT/llm wiki agent 코드 레벨 분석 생성일 2026 06 17T23 31 13.270Z 기본 판정 항목 값 type persistent llm wiki maturity B production leaning 72 stars 2959 language Python tags direct llm wiki, rag, knowledge base, agent knowledge files/code/source 28/9/9 tests/ci 0/0 loc",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:13.271Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/semantica-agi__semantica.md",
+      "path": "reports/llm-wiki/code-level-repositories/semantica-agi__semantica.md",
+      "title": "semantica-agi/semantica 코드 레벨 분석",
+      "summary": "semantica agi/semantica 코드 레벨 분석 생성일 2026 06 17T23 31 21.177Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 1225 language Python tags rag, knowledge base, agent knowledge, korea signal files/code/source 888/670/438 tests/ci 120/10 local",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:21.178Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/Shubhamsaboo__awesome-llm-apps.md",
+      "path": "reports/llm-wiki/code-level-repositories/Shubhamsaboo__awesome-llm-apps.md",
+      "title": "Shubhamsaboo/awesome-llm-apps 코드 레벨 분석",
+      "summary": "Shubhamsaboo/awesome llm apps 코드 레벨 분석 생성일 2026 06 17T23 31 53.873Z 기본 판정 항목 값 type curated list/tutorial maturity C focused implementation 46 stars 114877 language Python tags rag, agent knowledge, korea signal files/code/source 1594/883/871 tests/ci 13/12 lo",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:53.874Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/stanford-oval__storm.md",
+      "path": "reports/llm-wiki/code-level-repositories/stanford-oval__storm.md",
+      "title": "stanford-oval/storm 코드 레벨 분석",
+      "summary": "stanford oval/storm 코드 레벨 분석 생성일 2026 06 17T23 31 49.964Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 92 stars 28424 language Python tags rag, agent knowledge, korea signal files/code/source 66/52/40 tests/ci 0/2 local path sources/st",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:49.965Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/stanford-oval__WikiChat.md",
+      "path": "reports/llm-wiki/code-level-repositories/stanford-oval__WikiChat.md",
+      "title": "stanford-oval/WikiChat 코드 레벨 분석",
+      "summary": "stanford oval/WikiChat 코드 레벨 분석 생성일 2026 06 17T23 31 17.384Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 94 stars 1602 language Python tags direct llm wiki, rag, korea signal files/code/source 151/62/57 tests/ci 8/0 local path sources/st",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:17.385Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/StarTrail-org__LEANN.md",
+      "path": "reports/llm-wiki/code-level-repositories/StarTrail-org__LEANN.md",
+      "title": "StarTrail-org/LEANN 코드 레벨 분석",
+      "summary": "StarTrail org/LEANN 코드 레벨 분석 생성일 2026 06 17T23 31 49.697Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 103 stars 12182 language Python tags rag, korea signal files/code/source 252/165/115 tests/ci 49/6 local path sources/StarTrail org ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:49.698Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/studyield__studyield.md",
+      "path": "reports/llm-wiki/code-level-repositories/studyield__studyield.md",
+      "title": "studyield/studyield 코드 레벨 분석",
+      "summary": "studyield/studyield 코드 레벨 분석 생성일 2026 06 17T23 31 23.723Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 99 stars 50 language TypeScript tags rag, knowledge base, agent knowledge, korea signal files/code/source 396/329/329 tests/ci 0/4 local path ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:23.724Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/szczyglis-dev__py-gpt.md",
+      "path": "reports/llm-wiki/code-level-repositories/szczyglis-dev__py-gpt.md",
+      "title": "szczyglis-dev/py-gpt 코드 레벨 분석",
+      "summary": "szczyglis dev/py gpt 코드 레벨 분석 생성일 2026 06 17T23 31 56.224Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 100 stars 1827 language Python tags rag, agent knowledge, korea signal files/code/source 2369/1846/1626 tests/ci 120/0 local path s",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:56.225Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/Tencent__WeKnora.md",
+      "path": "reports/llm-wiki/code-level-repositories/Tencent__WeKnora.md",
+      "title": "Tencent/WeKnora 코드 레벨 분석",
+      "summary": "Tencent/WeKnora 코드 레벨 분석 생성일 2026 06 17T23 31 12.955Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 16422 language Go tags rag, knowledge base, document chat, agent knowledge, korea signal files/code/source 1943/1543/1508 tests/ci 19/8 ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:12.956Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/The-Pocket__PocketFlow.md",
+      "path": "reports/llm-wiki/code-level-repositories/The-Pocket__PocketFlow.md",
+      "title": "The-Pocket/PocketFlow 코드 레벨 분석",
+      "summary": "The Pocket/PocketFlow 코드 레벨 분석 생성일 2026 06 17T23 31 49.107Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 91 stars 10769 language Python tags rag, agent knowledge, korea signal files/code/source 493/269/257 tests/ci 10/0 local path sour",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:49.107Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/tirth8205__code-review-graph.md",
+      "path": "reports/llm-wiki/code-level-repositories/tirth8205__code-review-graph.md",
+      "title": "tirth8205/code-review-graph 코드 레벨 분석",
+      "summary": "tirth8205/code review graph 코드 레벨 분석 생성일 2026 06 17T23 31 14.582Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 103 stars 18632 language Python tags rag, knowledge base, agent knowledge, korea signal files/code/source 274/151/83 tests/ci 92/4 loc",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:14.583Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/tobi__qmd.md",
+      "path": "reports/llm-wiki/code-level-repositories/tobi__qmd.md",
+      "title": "tobi/qmd 코드 레벨 분석",
+      "summary": "tobi/qmd 코드 레벨 분석 생성일 2026 06 17T23 31 27.572Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 98 stars 26713 language TypeScript tags knowledge base, document chat, korea signal files/code/source 143/82/51 tests/ci 37/3 local path source",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:27.572Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/VectifyAI__OpenKB.md",
+      "path": "reports/llm-wiki/code-level-repositories/VectifyAI__OpenKB.md",
+      "title": "VectifyAI/OpenKB 코드 레벨 분석",
+      "summary": "VectifyAI/OpenKB 코드 레벨 분석 생성일 2026 06 17T23 31 22.711Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 98 stars 2083 language Python tags rag, knowledge base, agent knowledge, korea signal files/code/source 100/85/37 tests/ci 48/1 local p",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:22.712Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/VoltAgent__voltagent.md",
+      "path": "reports/llm-wiki/code-level-repositories/VoltAgent__voltagent.md",
+      "title": "VoltAgent/voltagent 코드 레벨 분석",
+      "summary": "VoltAgent/voltagent 코드 레벨 분석 생성일 2026 06 17T23 31 52.072Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 108 stars 9661 language TypeScript tags rag, agent knowledge, korea signal files/code/source 2811/1665/1010 tests/ci 120/7 local pat",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:52.073Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/WangRongsheng__awesome-LLM-resources.md",
+      "path": "reports/llm-wiki/code-level-repositories/WangRongsheng__awesome-LLM-resources.md",
+      "title": "WangRongsheng/awesome-LLM-resources 코드 레벨 분석",
+      "summary": "WangRongsheng/awesome LLM resources 코드 레벨 분석 생성일 2026 06 17T23 31 49.233Z 기본 판정 항목 값 type curated list/tutorial maturity D small/demo/list 0 stars 8550 language tags rag, agent knowledge, korea signal files/code/source 4/0/0 tests/ci 0/0 local path sources/Wan",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:49.234Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/xr843__fojin.md",
+      "path": "reports/llm-wiki/code-level-repositories/xr843__fojin.md",
+      "title": "xr843/fojin 코드 레벨 분석",
+      "summary": "xr843/fojin 코드 레벨 분석 생성일 2026 06 17T23 31 29.727Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 312 language Python tags rag, knowledge base, korea signal files/code/source 826/626/555 tests/ci 71/9 local path sources/xr843 fojin 파이프라인 ",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:29.728Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/xuiltul__animaworks.md",
+      "path": "reports/llm-wiki/code-level-repositories/xuiltul__animaworks.md",
+      "title": "xuiltul/animaworks 코드 레벨 분석",
+      "summary": "xuiltul/animaworks 코드 레벨 분석 생성일 2026 06 17T23 31 57.779Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 108 stars 240 language Python tags rag, agent knowledge, korea signal files/code/source 2694/1660/701 tests/ci 120/10 local path sources/xuiltu",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:57.780Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/yifanfeng97__Hyper-Extract.md",
+      "path": "reports/llm-wiki/code-level-repositories/yifanfeng97__Hyper-Extract.md",
+      "title": "yifanfeng97/Hyper-Extract 코드 레벨 분석",
+      "summary": "yifanfeng97/Hyper Extract 코드 레벨 분석 생성일 2026 06 17T23 31 43.890Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 89 stars 1571 language Python tags rag, knowledge base, agent knowledge files/code/source 434/134/52 tests/ci 97/5 local path sources/yi",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:43.890Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/yusufkaraaslan__Skill_Seekers.md",
+      "path": "reports/llm-wiki/code-level-repositories/yusufkaraaslan__Skill_Seekers.md",
+      "title": "yusufkaraaslan/Skill_Seekers 코드 레벨 분석",
+      "summary": "yusufkaraaslan/Skill Seekers 코드 레벨 분석 생성일 2026 06 17T23 31 48.468Z 기본 판정 항목 값 type graph rag/kg maturity A integrated platform 106 stars 14134 language Python tags document chat, agent knowledge, korea signal files/code/source 2927/472/269 tests/ci 120/10 loca",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:48.469Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/zhimaAi__ChatClaw.md",
+      "path": "reports/llm-wiki/code-level-repositories/zhimaAi__ChatClaw.md",
+      "title": "zhimaAi/ChatClaw 코드 레벨 분석",
+      "summary": "zhimaAi/ChatClaw 코드 레벨 분석 생성일 2026 06 17T23 31 23.320Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 107 stars 291 language Go tags rag, knowledge base, agent knowledge, korea signal files/code/source 851/520/517 tests/ci 3/1 local path",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:23.321Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/zhitongblog__solomd.md",
+      "path": "reports/llm-wiki/code-level-repositories/zhitongblog__solomd.md",
+      "title": "zhitongblog/solomd 코드 레벨 분석",
+      "summary": "zhitongblog/solomd 코드 레벨 분석 생성일 2026 06 17T23 31 53.425Z 기본 판정 항목 값 type rag knowledge platform maturity A integrated platform 100 stars 376 language TypeScript tags knowledge base, agent knowledge, korea signal files/code/source 756/234/208 tests/ci 20/4 loca",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:53.425Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/code-level-repositories/zosmaai__pi-llm-wiki.md",
+      "path": "reports/llm-wiki/code-level-repositories/zosmaai__pi-llm-wiki.md",
+      "title": "zosmaai/pi-llm-wiki 코드 레벨 분석",
+      "summary": "zosmaai/pi llm wiki 코드 레벨 분석 생성일 2026 06 17T23 31 16.219Z 기본 판정 항목 값 type persistent llm wiki maturity A integrated platform 98 stars 154 language TypeScript tags direct llm wiki, knowledge base, korea signal files/code/source 107/49/24 tests/ci 25/4 local pat",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/code-level-repositories",
+      "updatedAt": "2026-06-17T23:31:16.219Z",
+      "categories": [
+        "llm-wiki"
+      ],
+      "priority": 116
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "path": "reports/llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "title": "KalyanKS-NLP/rag-zero-to-hero-guide 구조 분석",
+      "summary": "KalyanKS NLP/rag zero to hero guide 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/KalyanKS NLP rag zero to hero guide remote https //github.com/KalyanKS NLP/rag zero to hero guide HEAD 2719db3 2025 03 29 Add RAG Evaluation Course Content bra",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.503Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -4
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/VectifyAI__PageIndex.md",
+      "path": "reports/llm-wiki/repositories/VectifyAI__PageIndex.md",
+      "title": "VectifyAI/PageIndex 구조 분석",
+      "summary": "VectifyAI/PageIndex 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/VectifyAI PageIndex remote https //github.com/VectifyAI/PageIndex HEAD 5a18553 2026 06 06 update readme branch main groups llm wiki 100 files 53 dirs 14 stack Python 구조 해석 스펙/",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.472Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -4
+    },
+    {
+      "id": "report:reports/clone-structures/explodinggradients__ragas.md",
+      "path": "reports/clone-structures/explodinggradients__ragas.md",
+      "title": "explodinggradients/ragas 구조 분석",
+      "summary": "explodinggradients/ragas 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/explodinggradients ragas remote https //github.com/explodinggradients/ragas HEAD 298b682 2026 02 24 fix allow fork contributors in check docs CI workflow 2606 branch main",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.804Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/HKUDS__LightRAG.md",
+      "path": "reports/clone-structures/HKUDS__LightRAG.md",
+      "title": "HKUDS/LightRAG 구조 분석",
+      "summary": "HKUDS/LightRAG 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/HKUDS LightRAG remote https //github.com/HKUDS/LightRAG HEAD ad7161b 2026 06 12 📝 chore env remove milvus migration memory settings branch main groups adjacent tech 50, previous c",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.198Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/infiniflow__ragflow.md",
+      "path": "reports/clone-structures/infiniflow__ragflow.md",
+      "title": "infiniflow/ragflow 구조 분석",
+      "summary": "infiniflow/ragflow 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/infiniflow ragflow remote https //github.com/infiniflow/ragflow HEAD d32e05d 2026 06 12 Go add more file parser 15979 branch main groups adjacent tech 50, previous clone invent",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:18.484Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/microsoft__graphrag.md",
+      "path": "reports/clone-structures/microsoft__graphrag.md",
+      "title": "microsoft/graphrag 구조 분석",
+      "summary": "microsoft/graphrag 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/microsoft graphrag remote https //github.com/microsoft/graphrag HEAD 6d02c23 2026 05 28 Update getting started docs. 2367 branch main groups adjacent tech 50, previous clone in",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:19.633Z",
+      "categories": [
+        "llm-wiki",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Azure__gpt-rag-orchestrator.md",
+      "path": "reports/global-trending/repositories/Azure__gpt-rag-orchestrator.md",
+      "title": "Azure/gpt-rag-orchestrator",
+      "summary": "Azure/gpt rag orchestrator Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Azure/gpt rag orchestrator local path sources/Azure gpt rag orchestrator HEAD eb99535 stars/forks 91 / 110 language Python license pushedAt 2026 06 17T",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:17.173Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Azure__GPT-RAG.md",
+      "path": "reports/global-trending/repositories/Azure__GPT-RAG.md",
+      "title": "Azure/GPT-RAG",
+      "summary": "Azure/GPT RAG Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Azure/GPT RAG local path sources/Azure GPT RAG HEAD fbf50c4 stars/forks 1161 / 304 language Python license pushedAt 2026 06 17T19 41 30Z trendScore / priorityScore ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:13.347Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/infiniflow__ragflow.md",
+      "path": "reports/global-trending/repositories/infiniflow__ragflow.md",
+      "title": "infiniflow/ragflow",
+      "summary": "infiniflow/ragflow Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/infiniflow/ragflow local path sources/infiniflow ragflow HEAD d32e05d stars/forks 83034 / 9597 language Python license Apache 2.0 pushedAt 2026 06 17T14 13 49Z",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:44.248Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/johnsonhk88__AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction.md",
+      "path": "reports/global-trending/repositories/johnsonhk88__AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction.md",
+      "title": "johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction",
+      "summary": "johnsonhk88/AI Bank Statement Document Automation By LLM And Personal Finanical Analysis Prediction Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/johnsonhk88/AI Bank Statement Document Automation By LLM And Personal Finanica",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:55.394Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/jonfairbanks__local-rag.md",
+      "path": "reports/global-trending/repositories/jonfairbanks__local-rag.md",
+      "title": "jonfairbanks/local-rag",
+      "summary": "jonfairbanks/local rag Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/jonfairbanks/local rag local path sources/jonfairbanks local rag HEAD 8277066 stars/forks 747 / 91 language Python license pushedAt 2026 06 17T14 34 21Z tr",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:10.816Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/lyonzin__knowledge-rag.md",
+      "path": "reports/global-trending/repositories/lyonzin__knowledge-rag.md",
+      "title": "lyonzin/knowledge-rag",
+      "summary": "lyonzin/knowledge rag Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/lyonzin/knowledge rag local path sources/lyonzin knowledge rag HEAD 56a2529 stars/forks 96 / 17 language Python license pushedAt 2026 06 17T22 27 43Z trendS",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:47.148Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/nashsu__llm_wiki.md",
+      "path": "reports/global-trending/repositories/nashsu__llm_wiki.md",
+      "title": "nashsu/llm_wiki",
+      "summary": "nashsu/llm wiki Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/nashsu/llm wiki local path sources/nashsu llm wiki HEAD d0437e8 stars/forks 11795 / 1434 language TypeScript license pushedAt 2026 06 16T07 53 24Z trendScore / pr",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.100Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/Neverdecel__CodeRAG.md",
+      "path": "reports/global-trending/repositories/Neverdecel__CodeRAG.md",
+      "title": "Neverdecel/CodeRAG",
+      "summary": "Neverdecel/CodeRAG Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/Neverdecel/CodeRAG local path sources/Neverdecel CodeRAG HEAD cd744b6 stars/forks 214 / 35 language Python license pushedAt 2026 06 17T20 09 13Z trendScore / p",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:03.425Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/NirDiamant__RAG_Techniques.md",
+      "path": "reports/global-trending/repositories/NirDiamant__RAG_Techniques.md",
+      "title": "NirDiamant/RAG_Techniques",
+      "summary": "NirDiamant/RAG Techniques Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/NirDiamant/RAG Techniques local path sources/NirDiamant RAG Techniques HEAD 991e16c stars/forks 28014 / 3389 language Jupyter Notebook license pushedAt ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:48.534Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/ProfessionalWiki__MediaWiki-MCP-Server.md",
+      "path": "reports/global-trending/repositories/ProfessionalWiki__MediaWiki-MCP-Server.md",
+      "title": "ProfessionalWiki/MediaWiki-MCP-Server",
+      "summary": "ProfessionalWiki/MediaWiki MCP Server Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/ProfessionalWiki/MediaWiki MCP Server local path sources/ProfessionalWiki MediaWiki MCP Server HEAD 4bbb3c5 stars/forks 96 / 25 language Typ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:52.635Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/rage-rb__rage.md",
+      "path": "reports/global-trending/repositories/rage-rb__rage.md",
+      "title": "rage-rb/rage",
+      "summary": "rage rb/rage Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/rage rb/rage local path sources/rage rb rage HEAD df25a97 stars/forks 1388 / 42 language Ruby license pushedAt 2026 06 17T18 29 24Z trendScore / priorityScore 133 / ",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:16.642Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "path": "reports/global-trending/repositories/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "title": "SaiAkhil066/CORTEX-AI-SUPER-RAG",
+      "summary": "SaiAkhil066/CORTEX AI SUPER RAG Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/SaiAkhil066/CORTEX AI SUPER RAG local path sources/SaiAkhil066 CORTEX AI SUPER RAG HEAD fba31cb stars/forks 1727 / 257 language Python license pus",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:12.199Z",
+      "categories": [
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/global-trending/repositories/shinpr__mcp-local-rag.md",
+      "path": "reports/global-trending/repositories/shinpr__mcp-local-rag.md",
+      "title": "shinpr/mcp-local-rag",
+      "summary": "shinpr/mcp local rag Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/shinpr/mcp local rag local path sources/shinpr mcp local rag HEAD 95e39ea stars/forks 317 / 57 language TypeScript license pushedAt 2026 06 15T14 45 43Z tren",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:59.044Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/2betforyou__GraphRAG.md",
+      "path": "reports/korea-trending/repositories/2betforyou__GraphRAG.md",
+      "title": "2betforyou/GraphRAG",
+      "summary": "2betforyou/GraphRAG 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/2betforyou/GraphRAG local path sources/2betforyou GraphRAG HEAD 4cbe4fb stars/forks 0 / 0 language Python license pushedAt 2026 06 08T05 26 30Z trendScore / priorityScor",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:30.058Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/bripin123__rag-memory-epf-mcp.md",
+      "path": "reports/korea-trending/repositories/bripin123__rag-memory-epf-mcp.md",
+      "title": "bripin123/rag-memory-epf-mcp",
+      "summary": "bripin123/rag memory epf mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/bripin123/rag memory epf mcp local path sources/bripin123 rag memory epf mcp HEAD 58283cd stars/forks 0 / 0 language JavaScript license pushedAt 2026 05 28T01 4",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:19.476Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/hjhun__llm-wiki.md",
+      "path": "reports/korea-trending/repositories/hjhun__llm-wiki.md",
+      "title": "hjhun/llm-wiki",
+      "summary": "hjhun/llm wiki 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/hjhun/llm wiki local path sources/hjhun llm wiki HEAD 5b4817e stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 17T23 16 54Z trendScore / priorityScore 72 / 223 ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.742Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/joungminsung__OpenDocuments.md",
+      "path": "reports/korea-trending/repositories/joungminsung__OpenDocuments.md",
+      "title": "joungminsung/OpenDocuments",
+      "summary": "joungminsung/OpenDocuments 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/joungminsung/OpenDocuments local path sources/joungminsung OpenDocuments HEAD cec84ab stars/forks 80 / 13 language TypeScript license MIT pushedAt 2026 05 27T14 3",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:17.234Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/kokogo100__ragalgo-mcp-server.md",
+      "path": "reports/korea-trending/repositories/kokogo100__ragalgo-mcp-server.md",
+      "title": "kokogo100/ragalgo-mcp-server",
+      "summary": "kokogo100/ragalgo mcp server 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/kokogo100/ragalgo mcp server local path sources/kokogo100 ragalgo mcp server HEAD 05fa836 stars/forks 0 / 0 language JavaScript license pushedAt 2026 01 31T17 1",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:24.747Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/line__abc-kmm-shared-storage.md",
+      "path": "reports/korea-trending/repositories/line__abc-kmm-shared-storage.md",
+      "title": "line/abc-kmm-shared-storage",
+      "summary": "line/abc kmm shared storage 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/line/abc kmm shared storage local path sources/line abc kmm shared storage HEAD 3e700b8 stars/forks 29 / 6 language Kotlin license pushedAt 2023 03 20T22 41 56Z ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:25.614Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/Marker-Inc-Korea__AutoRAG.md",
+      "path": "reports/korea-trending/repositories/Marker-Inc-Korea__AutoRAG.md",
+      "title": "Marker-Inc-Korea/AutoRAG",
+      "summary": "Marker Inc Korea/AutoRAG 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/Marker Inc Korea/AutoRAG local path sources/Marker Inc Korea AutoRAG HEAD e0a717b stars/forks 4832 / 403 language Python license Apache 2.0 pushedAt 2026 06 17T14 0",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:17.085Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/minsung2da__stock-wiki.md",
+      "path": "reports/korea-trending/repositories/minsung2da__stock-wiki.md",
+      "title": "minsung2da/stock-wiki",
+      "summary": "minsung2da/stock wiki 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/minsung2da/stock wiki local path sources/minsung2da stock wiki HEAD 276adf9 stars/forks 0 / 0 language Python license pushedAt 2026 05 29T03 39 03Z trendScore / priori",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:19.836Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/nashsu__llm_wiki.md",
+      "path": "reports/korea-trending/repositories/nashsu__llm_wiki.md",
+      "title": "nashsu/llm_wiki",
+      "summary": "nashsu/llm wiki 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/nashsu/llm wiki local path sources/nashsu llm wiki HEAD d0437e8 stars/forks 0 / 0 language TypeScript license pushedAt 2026 06 16T07 53 24Z trendScore / priorityScore 84 / 2",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:23.518Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/naver__deep-image-retrieval.md",
+      "path": "reports/korea-trending/repositories/naver__deep-image-retrieval.md",
+      "title": "naver/deep-image-retrieval",
+      "summary": "naver/deep image retrieval 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/naver/deep image retrieval local path sources/naver deep image retrieval HEAD 610247f stars/forks 681 / 102 language Python license BSD 3 Clause pushedAt 2021 05 ",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:18.900Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/PlateerLab__document-adapter.md",
+      "path": "reports/korea-trending/repositories/PlateerLab__document-adapter.md",
+      "title": "PlateerLab/document-adapter",
+      "summary": "PlateerLab/document adapter 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/PlateerLab/document adapter local path sources/PlateerLab document adapter HEAD 2d2d36b stars/forks 0 / 0 language Python license pushedAt 2026 06 02T05 35 46Z t",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:29.408Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/rhkswnd0118-crypto__korean-rag-chatbot-boilerplate.md",
+      "path": "reports/korea-trending/repositories/rhkswnd0118-crypto__korean-rag-chatbot-boilerplate.md",
+      "title": "rhkswnd0118-crypto/korean-rag-chatbot-boilerplate",
+      "summary": "rhkswnd0118 crypto/korean rag chatbot boilerplate 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/rhkswnd0118 crypto/korean rag chatbot boilerplate local path sources/rhkswnd0118 crypto korean rag chatbot boilerplate HEAD 7ba9430 stars/f",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:33.855Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/Samsung__KnowledgeSharingPlatform.md",
+      "path": "reports/korea-trending/repositories/Samsung__KnowledgeSharingPlatform.md",
+      "title": "Samsung/KnowledgeSharingPlatform",
+      "summary": "Samsung/KnowledgeSharingPlatform 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/Samsung/KnowledgeSharingPlatform local path sources/Samsung KnowledgeSharingPlatform HEAD 14ca0c2 stars/forks 187 / 40 language Java license pushedAt 2020 1",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:24.580Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/simonsez9510__oh-my-wiki.md",
+      "path": "reports/korea-trending/repositories/simonsez9510__oh-my-wiki.md",
+      "title": "simonsez9510/oh-my-wiki",
+      "summary": "simonsez9510/oh my wiki 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/simonsez9510/oh my wiki local path sources/simonsez9510 oh my wiki HEAD 27b1197 stars/forks 0 / 0 language PowerShell license pushedAt 2026 06 02T14 32 02Z trendScor",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:31.118Z",
+      "categories": [
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/ssuksak__cheongyak-rag-mcp.md",
+      "path": "reports/korea-trending/repositories/ssuksak__cheongyak-rag-mcp.md",
+      "title": "ssuksak/cheongyak-rag-mcp",
+      "summary": "ssuksak/cheongyak rag mcp 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/ssuksak/cheongyak rag mcp local path sources/ssuksak cheongyak rag mcp HEAD 0b6e0fb stars/forks 0 / 0 language Python license pushedAt 2026 04 22T07 11 22Z trendSc",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:32.453Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/1517005260__graph-rag-agent.md",
+      "path": "reports/llm-wiki/repositories/1517005260__graph-rag-agent.md",
+      "title": "1517005260/graph-rag-agent 구조 분석",
+      "summary": "1517005260/graph rag agent 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/1517005260 graph rag agent remote https //github.com/1517005260/graph rag agent HEAD 4296b7c 2025 11 05 Update start.md branch master groups llm wiki 100 files 274 dirs",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.271Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/abhigyanpatwari__GitNexus.md",
+      "path": "reports/llm-wiki/repositories/abhigyanpatwari__GitNexus.md",
+      "title": "abhigyanpatwari/GitNexus 구조 분석",
+      "summary": "abhigyanpatwari/GitNexus 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/abhigyanpatwari GitNexus remote https //github.com/abhigyanpatwari/GitNexus HEAD 78e5ff3 2026 06 17 fix wiki keep graph DB pinned during generation 2232 branch main group",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.882Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/AgriciDaniel__claude-obsidian.md",
+      "path": "reports/llm-wiki/repositories/AgriciDaniel__claude-obsidian.md",
+      "title": "AgriciDaniel/claude-obsidian 구조 분석",
+      "summary": "AgriciDaniel/claude obsidian 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/AgriciDaniel claude obsidian remote https //github.com/AgriciDaniel/claude obsidian HEAD cb93ff6 2026 05 28 chore assets add 1280x640 social preview card branch main ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.354Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/apecloud__ApeRAG.md",
+      "path": "reports/llm-wiki/repositories/apecloud__ApeRAG.md",
+      "title": "apecloud/ApeRAG 구조 분석",
+      "summary": "apecloud/ApeRAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/apecloud ApeRAG remote https //github.com/apecloud/ApeRAG HEAD a6bb55c 2026 04 15 docs remove hosted live demo line from README 1459 branch main groups llm wiki 100 files 1196 dir",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.033Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/Ar9av__obsidian-wiki.md",
+      "path": "reports/llm-wiki/repositories/Ar9av__obsidian-wiki.md",
+      "title": "Ar9av/obsidian-wiki 구조 분석",
+      "summary": "Ar9av/obsidian wiki 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/Ar9av obsidian wiki remote https //github.com/Ar9av/obsidian wiki HEAD c4d27ec 2026 06 16 Fix OKF folder note link roundtrip 110 branch main groups llm wiki 100 files 89 dirs ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.463Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/arc53__DocsGPT.md",
+      "path": "reports/llm-wiki/repositories/arc53__DocsGPT.md",
+      "title": "arc53/DocsGPT 구조 분석",
+      "summary": "arc53/DocsGPT 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/arc53 DocsGPT remote https //github.com/arc53/DocsGPT HEAD 7b0f5d7 2026 06 17 chore update readme branch main groups llm wiki 100 files 1381 dirs 201 stack Node/TypeScript/JavaScrip",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.119Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/aristoapp__awesome-second-brain.md",
+      "path": "reports/llm-wiki/repositories/aristoapp__awesome-second-brain.md",
+      "title": "aristoapp/awesome-second-brain 구조 분석",
+      "summary": "aristoapp/awesome second brain 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/aristoapp awesome second brain remote https //github.com/aristoapp/awesome second brain HEAD a059872 2026 06 16 Add Hermes Obsidian Honcho setup docs branch main gr",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.209Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/arthurpanhku__DocSentinel.md",
+      "path": "reports/llm-wiki/repositories/arthurpanhku__DocSentinel.md",
+      "title": "arthurpanhku/DocSentinel 구조 분석",
+      "summary": "arthurpanhku/DocSentinel 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/arthurpanhku DocSentinel remote https //github.com/arthurpanhku/DocSentinel HEAD ce2fde4 2026 06 10 docs add secure development guidance branch main groups llm wiki 100 f",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.288Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/axoviq-ai__synthadoc.md",
+      "path": "reports/llm-wiki/repositories/axoviq-ai__synthadoc.md",
+      "title": "axoviq-ai/synthadoc 구조 분석",
+      "summary": "axoviq ai/synthadoc 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/axoviq ai synthadoc remote https //github.com/axoviq ai/synthadoc HEAD 1d99102 2026 06 17 fix ingest use getattr in backfill okf fields to handle pre v0.9.0 pages 152 branch m",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.384Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/benmaster82__Kwipu.md",
+      "path": "reports/llm-wiki/repositories/benmaster82__Kwipu.md",
+      "title": "benmaster82/Kwipu 구조 분석",
+      "summary": "benmaster82/Kwipu 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/benmaster82 Kwipu remote https //github.com/benmaster82/Kwipu HEAD 908f0e4 2026 05 18 Add MCP badge branch main groups llm wiki 100 files 19 dirs 3 stack Python 구조 해석 AGENTS/CLA",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.473Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/bzsanti__oxidizePdf.md",
+      "path": "reports/llm-wiki/repositories/bzsanti__oxidizePdf.md",
+      "title": "bzsanti/oxidizePdf 구조 분석",
+      "summary": "bzsanti/oxidizePdf 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/bzsanti oxidizePdf remote https //github.com/bzsanti/oxidizePdf HEAD f7fe568 2026 06 17 Merge pull request 342 from bzsanti/release/2.16.2 branch main groups llm wiki 100 files",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.599Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/chatchat-space__Langchain-Chatchat.md",
+      "path": "reports/llm-wiki/repositories/chatchat-space__Langchain-Chatchat.md",
+      "title": "chatchat-space/Langchain-Chatchat 구조 분석",
+      "summary": "chatchat space/Langchain Chatchat 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/chatchat space Langchain Chatchat remote https //github.com/chatchat space/Langchain Chatchat HEAD 49165d6 2025 11 10 Refactor tool message formatting and enhanc",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.709Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/datawhalechina__tiny-universe.md",
+      "path": "reports/llm-wiki/repositories/datawhalechina__tiny-universe.md",
+      "title": "datawhalechina/tiny-universe 구조 분석",
+      "summary": "datawhalechina/tiny universe 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/datawhalechina tiny universe remote https //github.com/datawhalechina/tiny universe HEAD a5ae08d 2026 02 12 Add initial description for TinyRL LLM branch main groups ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.867Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/DEEP-PolyU__Awesome-GraphRAG.md",
+      "path": "reports/llm-wiki/repositories/DEEP-PolyU__Awesome-GraphRAG.md",
+      "title": "DEEP-PolyU/Awesome-GraphRAG 구조 분석",
+      "summary": "DEEP PolyU/Awesome GraphRAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/DEEP PolyU Awesome GraphRAG remote https //github.com/DEEP PolyU/Awesome GraphRAG HEAD 48abc5a 2026 06 02 Merge pull request 29 from savannahluy/main branch main group",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.590Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/Egonex-AI__Understand-Anything.md",
+      "path": "reports/llm-wiki/repositories/Egonex-AI__Understand-Anything.md",
+      "title": "Egonex-AI/Understand-Anything 구조 분석",
+      "summary": "Egonex AI/Understand Anything 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/Egonex AI Understand Anything remote https //github.com/Egonex AI/Understand Anything HEAD ba9ba1f 2026 06 16 Merge pull request 364 from smjeong84/feat/add kiro pla",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.689Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/enescingoz__awesome-n8n-templates.md",
+      "path": "reports/llm-wiki/repositories/enescingoz__awesome-n8n-templates.md",
+      "title": "enescingoz/awesome-n8n-templates 구조 분석",
+      "summary": "enescingoz/awesome n8n templates 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/enescingoz awesome n8n templates remote https //github.com/enescingoz/awesome n8n templates HEAD 03a6552 2026 06 17 Merge pull request 132 from eightask01 design/",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:56.979Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/eugeniughelbur__obsidian-second-brain.md",
+      "path": "reports/llm-wiki/repositories/eugeniughelbur__obsidian-second-brain.md",
+      "title": "eugeniughelbur/obsidian-second-brain 구조 분석",
+      "summary": "eugeniughelbur/obsidian second brain 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/eugeniughelbur obsidian second brain remote https //github.com/eugeniughelbur/obsidian second brain HEAD 9930ebf 2026 06 17 Bump actions/checkout to v6 + set ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.075Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/FalkorDB__FalkorDB.md",
+      "path": "reports/llm-wiki/repositories/FalkorDB__FalkorDB.md",
+      "title": "FalkorDB/FalkorDB 구조 분석",
+      "summary": "FalkorDB/FalkorDB 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/FalkorDB FalkorDB remote https //github.com/FalkorDB/FalkorDB HEAD bfa6833 2026 06 17 Fix typo in memory usage metrics 2135 branch master groups llm wiki 100 files 6846 dirs 422",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.828Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/getzep__graphiti.md",
+      "path": "reports/llm-wiki/repositories/getzep__graphiti.md",
+      "title": "getzep/graphiti 구조 분석",
+      "summary": "getzep/graphiti 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/getzep graphiti remote https //github.com/getzep/graphiti HEAD b82b80e 2026 06 16 @aasc77 has signed the CLA in getzep/graphiti 1590 branch main groups llm wiki 100 files 352 dirs",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.215Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/GiovanniPasq__agentic-rag-for-dummies.md",
+      "path": "reports/llm-wiki/repositories/GiovanniPasq__agentic-rag-for-dummies.md",
+      "title": "GiovanniPasq/agentic-rag-for-dummies 구조 분석",
+      "summary": "GiovanniPasq/agentic rag for dummies 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/GiovanniPasq agentic rag for dummies remote https //github.com/GiovanniPasq/agentic rag for dummies HEAD a1411be 2026 06 10 docs add uv installation instructi",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:52.963Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/green-dalii__obsidian-llm-wiki.md",
+      "path": "reports/llm-wiki/repositories/green-dalii__obsidian-llm-wiki.md",
+      "title": "green-dalii/obsidian-llm-wiki 구조 분석",
+      "summary": "green dalii/obsidian llm wiki 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/green dalii obsidian llm wiki remote https //github.com/green dalii/obsidian llm wiki HEAD 4f688c5 2026 06 17 Merge pull request 140 from green dalii/docs/post refac",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.378Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/hjhun__llm-wiki.md",
+      "path": "reports/llm-wiki/repositories/hjhun__llm-wiki.md",
+      "title": "hjhun/llm-wiki 구조 분석",
+      "summary": "hjhun/llm wiki 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/hjhun llm wiki remote https //github.com/hjhun/llm wiki HEAD 5b4817e 2026 06 17 Bump webapp version to v1.0.4 branch main groups llm wiki 100 files 349 dirs 157 stack Node/TypeScri",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.505Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/HKUDS__LightRAG.md",
+      "path": "reports/llm-wiki/repositories/HKUDS__LightRAG.md",
+      "title": "HKUDS/LightRAG 구조 분석",
+      "summary": "HKUDS/LightRAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/HKUDS LightRAG remote https //github.com/HKUDS/LightRAG HEAD ad7161b 2026 06 12 📝 chore env remove milvus migration memory settings branch main groups adjacent tech 50, llm wiki 1",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.055Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/HKUDS__VideoRAG.md",
+      "path": "reports/llm-wiki/repositories/HKUDS__VideoRAG.md",
+      "title": "HKUDS/VideoRAG 구조 분석",
+      "summary": "HKUDS/VideoRAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/HKUDS VideoRAG remote https //github.com/HKUDS/VideoRAG HEAD c412a09 2026 03 18 docs upload results branch main groups llm wiki 100 files 118 dirs 39 stack Node/TypeScript/JavaScri",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.138Z",
+      "categories": [
+        "coding-agents",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/HKUST-KnowComp__AutoSchemaKG.md",
+      "path": "reports/llm-wiki/repositories/HKUST-KnowComp__AutoSchemaKG.md",
+      "title": "HKUST-KnowComp/AutoSchemaKG 구조 분석",
+      "summary": "HKUST KnowComp/AutoSchemaKG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/HKUST KnowComp AutoSchemaKG remote https //github.com/HKUST KnowComp/AutoSchemaKG HEAD d0a1666 2026 01 14 Merge pull request 41 from HKUST KnowComp/bugfix/0.0.5.post1 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.225Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/IAAR-Shanghai__Awesome-AI-Memory.md",
+      "path": "reports/llm-wiki/repositories/IAAR-Shanghai__Awesome-AI-Memory.md",
+      "title": "IAAR-Shanghai/Awesome-AI-Memory 구조 분석",
+      "summary": "IAAR Shanghai/Awesome AI Memory 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/IAAR Shanghai Awesome AI Memory remote https //github.com/IAAR Shanghai/Awesome AI Memory HEAD 92348b8 2026 06 15 update repo branch main groups llm wiki 100 files",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.304Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/iammonth1997__paperwiki-research-compiler.md",
+      "path": "reports/llm-wiki/repositories/iammonth1997__paperwiki-research-compiler.md",
+      "title": "iammonth1997/paperwiki-research-compiler 구조 분석",
+      "summary": "iammonth1997/paperwiki research compiler 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/iammonth1997 paperwiki research compiler remote https //github.com/iammonth1997/paperwiki research compiler HEAD b359d3b 2026 06 17 compress save 4881 bra",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.651Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/iikarus__Dragon-Brain.md",
+      "path": "reports/llm-wiki/repositories/iikarus__Dragon-Brain.md",
+      "title": "iikarus/Dragon-Brain 구조 분석",
+      "summary": "iikarus/Dragon Brain 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/iikarus Dragon Brain remote https //github.com/iikarus/Dragon Brain HEAD 7410096 2026 05 28 docs process 22a round 1 audit fixes — outer mock type logic, marker check scope, ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.736Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/infiniflow__ragflow.md",
+      "path": "reports/llm-wiki/repositories/infiniflow__ragflow.md",
+      "title": "infiniflow/ragflow 구조 분석",
+      "summary": "infiniflow/ragflow 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/infiniflow ragflow remote https //github.com/infiniflow/ragflow HEAD d32e05d 2026 06 12 Go add more file parser 15979 branch main groups adjacent tech 50, llm wiki 100, previou",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.849Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/InternLM__HuixiangDou.md",
+      "path": "reports/llm-wiki/repositories/InternLM__HuixiangDou.md",
+      "title": "InternLM/HuixiangDou 구조 분석",
+      "summary": "InternLM/HuixiangDou 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/InternLM HuixiangDou remote https //github.com/InternLM/HuixiangDou HEAD 711c754 2025 11 24 feat uv add pyproject.toml 443 branch main groups llm wiki 100 files 407 dirs 124 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.418Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/jee3m__augmentative-knowledge-hooks.md",
+      "path": "reports/llm-wiki/repositories/jee3m__augmentative-knowledge-hooks.md",
+      "title": "jee3m/augmentative-knowledge-hooks 구조 분석",
+      "summary": "jee3m/augmentative knowledge hooks 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/jee3m augmentative knowledge hooks remote https //github.com/jee3m/augmentative knowledge hooks HEAD 9f7af8d 2026 06 17 feature cleanup 378 branch main groups l",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:57.941Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/jegly__Box.md",
+      "path": "reports/llm-wiki/repositories/jegly__Box.md",
+      "title": "jegly/Box 구조 분석",
+      "summary": "jegly/Box 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/jegly Box remote https //github.com/jegly/Box HEAD f279efe 2026 06 17 Update README.md branch main groups llm wiki 100 files 591 dirs 161 stack unknown/mixed 구조 해석 스펙/템플릿/명령/스킬 아티팩트가 있어",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.025Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/joungminsung__OpenDocuments.md",
+      "path": "reports/llm-wiki/repositories/joungminsung__OpenDocuments.md",
+      "title": "joungminsung/OpenDocuments 구조 분석",
+      "summary": "joungminsung/OpenDocuments 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/joungminsung OpenDocuments remote https //github.com/joungminsung/OpenDocuments HEAD cec84ab 2026 05 27 docs add Korean architecture overview branch main groups llm wik",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.115Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/khoj-ai__khoj.md",
+      "path": "reports/llm-wiki/repositories/khoj-ai__khoj.md",
+      "title": "khoj-ai/khoj 구조 분석",
+      "summary": "khoj ai/khoj 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/khoj ai khoj remote https //github.com/khoj ai/khoj HEAD 9258f57 2026 03 26 Release Khoj version 2.0.0 beta.28 branch master groups adjacent tech 50, llm wiki 100, previous clone inv",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.217Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/kkollsga__kglite.md",
+      "path": "reports/llm-wiki/repositories/kkollsga__kglite.md",
+      "title": "kkollsga/kglite 구조 분석",
+      "summary": "kkollsga/kglite 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/kkollsga kglite remote https //github.com/kkollsga/kglite HEAD 2adf3ab 2026 06 18 release 0.11.1 HNSW in Cypher, ~5 6× faster index build, embedding provenance papercuts branch ma",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.301Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/kreuzberg-dev__kreuzberg.md",
+      "path": "reports/llm-wiki/repositories/kreuzberg-dev__kreuzberg.md",
+      "title": "kreuzberg-dev/kreuzberg 구조 분석",
+      "summary": "kreuzberg dev/kreuzberg 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/kreuzberg dev kreuzberg remote https //github.com/kreuzberg dev/kreuzberg HEAD fa37ce6 2026 06 17 chore release v5.0.0 rc.20 branch main groups llm wiki 100 files 6472 dir",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.423Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/labring__FastGPT.md",
+      "path": "reports/llm-wiki/repositories/labring__FastGPT.md",
+      "title": "labring/FastGPT 구조 분석",
+      "summary": "labring/FastGPT 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/labring FastGPT remote https //github.com/labring/FastGPT HEAD ffa1037 2026 06 17 refactor align system tool JSON schema codec 7116 branch main groups llm wiki 100 files 5030 dirs",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.560Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/langbot-app__LangBot.md",
+      "path": "reports/llm-wiki/repositories/langbot-app__LangBot.md",
+      "title": "langbot-app/LangBot 구조 분석",
+      "summary": "langbot app/LangBot 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/langbot app LangBot remote https //github.com/langbot app/LangBot HEAD b3c6de2 2026 06 16 codex cover frontend CRUD smoke flows 2253 branch master groups llm wiki 100 files 10",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.658Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/langroid__langroid.md",
+      "path": "reports/llm-wiki/repositories/langroid__langroid.md",
+      "title": "langroid/langroid 구조 분석",
+      "summary": "langroid/langroid 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/langroid langroid remote https //github.com/langroid/langroid HEAD cf5a398 2026 06 15 bump version 0.65.6 → 0.65.7 branch main groups llm wiki 100 files 723 dirs 95 stack Python",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.792Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/LearningCircuit__local-deep-research.md",
+      "path": "reports/llm-wiki/repositories/LearningCircuit__local-deep-research.md",
+      "title": "LearningCircuit/local-deep-research 구조 분석",
+      "summary": "LearningCircuit/local deep research 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/LearningCircuit local deep research remote https //github.com/LearningCircuit/local deep research HEAD c964494 2026 06 18 fix memory cap persisted log message ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.617Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/linny006__rag-radar.md",
+      "path": "reports/llm-wiki/repositories/linny006__rag-radar.md",
+      "title": "linny006/rag-radar 구조 분석",
+      "summary": "linny006/rag radar 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/linny006 rag radar remote https //github.com/linny006/rag radar HEAD a3e06c8 2026 06 17 feat +23 added, 23 removed 2026 06 17 22 45 branch master groups llm wiki 100 files 10 d",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.868Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/llmware-ai__llmware.md",
+      "path": "reports/llm-wiki/repositories/llmware-ai__llmware.md",
+      "title": "llmware-ai/llmware 구조 분석",
+      "summary": "llmware ai/llmware 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/llmware ai llmware remote https //github.com/llmware ai/llmware HEAD 081bc08 2026 05 17 Merge pull request 1302 from llmware ai/update 051726 1 branch main groups llm wiki 100 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:58.946Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/luhengshiwo__LLMForEverybody.md",
+      "path": "reports/llm-wiki/repositories/luhengshiwo__LLMForEverybody.md",
+      "title": "luhengshiwo/LLMForEverybody 구조 분석",
+      "summary": "luhengshiwo/LLMForEverybody 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/luhengshiwo LLMForEverybody remote https //github.com/luhengshiwo/LLMForEverybody HEAD 24814a3 2026 05 31 Merge pull request 120 from simfeng/main branch main groups l",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.045Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/Marker-Inc-Korea__AutoRAG.md",
+      "path": "reports/llm-wiki/repositories/Marker-Inc-Korea__AutoRAG.md",
+      "title": "Marker-Inc-Korea/AutoRAG 구조 분석",
+      "summary": "Marker Inc Korea/AutoRAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/Marker Inc Korea AutoRAG remote https //github.com/Marker Inc Korea/AutoRAG HEAD e0a717b 2026 04 04 Bump onnx from 1.17.0 to 1.21.0 1216 branch main groups llm wiki 100 f",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.844Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/marswangyang__personal-ai-memory.md",
+      "path": "reports/llm-wiki/repositories/marswangyang__personal-ai-memory.md",
+      "title": "marswangyang/personal-ai-memory 구조 분석",
+      "summary": "marswangyang/personal ai memory 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/marswangyang personal ai memory remote https //github.com/marswangyang/personal ai memory HEAD bc519e5 2026 03 24 Merge pull request 6 from marswangyang/issue 4 br",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.119Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/matevip__mateclaw.md",
+      "path": "reports/llm-wiki/repositories/matevip__mateclaw.md",
+      "title": "matevip/mateclaw 구조 분석",
+      "summary": "matevip/mateclaw 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/matevip mateclaw remote https //github.com/matevip/mateclaw HEAD 8f8d43d 2026 06 18 fix db renumber webchat migrations to V151/V152 to avoid version collision branch dev groups l",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.227Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/MemTensor__MemOS.md",
+      "path": "reports/llm-wiki/repositories/MemTensor__MemOS.md",
+      "title": "MemTensor/MemOS 구조 분석",
+      "summary": "MemTensor/MemOS 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/MemTensor MemOS remote https //github.com/MemTensor/MemOS HEAD 258c3a3 2026 06 12 chore add ai harness rules 1843 branch main groups llm wiki 100 files 1794 dirs 394 stack Node/Ty",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.940Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/memvid__memvid.md",
+      "path": "reports/llm-wiki/repositories/memvid__memvid.md",
+      "title": "memvid/memvid 구조 분석",
+      "summary": "memvid/memvid 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/memvid memvid remote https //github.com/memvid/memvid HEAD fa9efe5 2026 05 27 test make commit per put survives wal growth Windows safe and deterministic branch main groups llm wiki",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.318Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/MODSetter__SurfSense.md",
+      "path": "reports/llm-wiki/repositories/MODSetter__SurfSense.md",
+      "title": "MODSetter/SurfSense 구조 분석",
+      "summary": "MODSetter/SurfSense 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/MODSetter SurfSense remote https //github.com/MODSetter/SurfSense HEAD 77688ac 2026 06 17 Merge pull request 1507 from AnishSarkar22/fix/documents editor branch main groups ll",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:53.746Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/nanbingxyz__5ire.md",
+      "path": "reports/llm-wiki/repositories/nanbingxyz__5ire.md",
+      "title": "nanbingxyz/5ire 구조 분석",
+      "summary": "nanbingxyz/5ire 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/nanbingxyz 5ire remote https //github.com/nanbingxyz/5ire HEAD c7fabb9 2026 06 17 Merge pull request 428 from RheagalFire/feat/add litellm provider branch main groups llm wiki 100",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.559Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/nashsu__llm_wiki.md",
+      "path": "reports/llm-wiki/repositories/nashsu__llm_wiki.md",
+      "title": "nashsu/llm_wiki 구조 분석",
+      "summary": "nashsu/llm wiki 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/nashsu llm wiki remote https //github.com/nashsu/llm wiki HEAD d0437e8 2026 06 16 release v0.4.24 branch main groups llm wiki 100 files 374 dirs 39 stack Node/TypeScript/JavaScrip",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.653Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/neo4j-labs__llm-graph-builder.md",
+      "path": "reports/llm-wiki/repositories/neo4j-labs__llm-graph-builder.md",
+      "title": "neo4j-labs/llm-graph-builder 구조 분석",
+      "summary": "neo4j labs/llm graph builder 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/neo4j labs llm graph builder remote https //github.com/neo4j labs/llm graph builder HEAD 4a412f4 2026 06 10 Staging to main 1534 branch main groups llm wiki 100 files",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.741Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/neomjs__neo.md",
+      "path": "reports/llm-wiki/repositories/neomjs__neo.md",
+      "title": "neomjs/neo 구조 분석",
+      "summary": "neomjs/neo 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/neomjs neo remote https //github.com/neomjs/neo HEAD 2032eb22 2026 06 17 chore data Hourly data sync pipeline update skip ci branch dev groups llm wiki 100 files 19492 dirs 4308 stack ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:59.975Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/neuml__txtai.md",
+      "path": "reports/llm-wiki/repositories/neuml__txtai.md",
+      "title": "neuml/txtai 구조 분석",
+      "summary": "neuml/txtai 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/neuml txtai remote https //github.com/neuml/txtai HEAD 7844e2c 2026 06 16 Fix how custom encoding is added to routers, closes 1115 branch master groups llm wiki 100 files 621 dirs 84 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.076Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/NevaMind-AI__memU.md",
+      "path": "reports/llm-wiki/repositories/NevaMind-AI__memU.md",
+      "title": "NevaMind-AI/memU 구조 분석",
+      "summary": "NevaMind AI/memU 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/NevaMind AI memU remote https //github.com/NevaMind AI/memU HEAD f4e82ce 2026 06 18 docs readme sync translated READMEs to file system as memory narrative 433 branch main groups ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.047Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/NirDiamant__agents-towards-production.md",
+      "path": "reports/llm-wiki/repositories/NirDiamant__agents-towards-production.md",
+      "title": "NirDiamant/agents-towards-production 구조 분석",
+      "summary": "NirDiamant/agents towards production 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/NirDiamant agents towards production remote https //github.com/NirDiamant/agents towards production HEAD 0dee56a 2026 06 17 Point course CTA at the /courses i",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.294Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/NirDiamant__GenAI_Agents.md",
+      "path": "reports/llm-wiki/repositories/NirDiamant__GenAI_Agents.md",
+      "title": "NirDiamant/GenAI_Agents 구조 분석",
+      "summary": "NirDiamant/GenAI Agents 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/NirDiamant GenAI Agents remote https //github.com/NirDiamant/GenAI Agents HEAD 2376537 2026 06 17 Point course CTA at the /courses info page instead of the waitlist branch",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.125Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/NirDiamant__RAG_Techniques.md",
+      "path": "reports/llm-wiki/repositories/NirDiamant__RAG_Techniques.md",
+      "title": "NirDiamant/RAG_Techniques 구조 분석",
+      "summary": "NirDiamant/RAG Techniques 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/NirDiamant RAG Techniques remote https //github.com/NirDiamant/RAG Techniques HEAD 991e16c 2026 06 17 Point course CTA at the /courses info page instead of the waitlist ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.216Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/ohbryt__bb-wiki.md",
+      "path": "reports/llm-wiki/repositories/ohbryt__bb-wiki.md",
+      "title": "ohbryt/bb-wiki 구조 분석",
+      "summary": "ohbryt/bb wiki 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/ohbryt bb wiki remote https //github.com/ohbryt/bb wiki HEAD 39210dd 2026 06 17 wiki concepts add Harness Engineering concept page 2026 06 17 branch main groups llm wiki 100 files ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.164Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/onlybooks__llm.md",
+      "path": "reports/llm-wiki/repositories/onlybooks__llm.md",
+      "title": "onlybooks/llm 구조 분석",
+      "summary": "onlybooks/llm 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/onlybooks llm remote https //github.com/onlybooks/llm HEAD f64a190 2026 04 22 Update chapter 8.ipynb branch main groups llm wiki 100 files 18 dirs 13 stack unknown/mixed 구조 해석 루트 파일",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.254Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/onyx-dot-app__onyx.md",
+      "path": "reports/llm-wiki/repositories/onyx-dot-app__onyx.md",
+      "title": "onyx-dot-app/onyx 구조 분석",
+      "summary": "onyx dot app/onyx 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/onyx dot app onyx remote https //github.com/onyx dot app/onyx HEAD 988857e 2026 06 17 docs agents add comment writing guideline 12167 branch main groups llm wiki 100 files 5453 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.411Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/openai__chatgpt-retrieval-plugin.md",
+      "path": "reports/llm-wiki/repositories/openai__chatgpt-retrieval-plugin.md",
+      "title": "openai/chatgpt-retrieval-plugin 구조 분석",
+      "summary": "openai/chatgpt retrieval plugin 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/openai chatgpt retrieval plugin remote https //github.com/openai/chatgpt retrieval plugin HEAD b28ddce 2024 04 24 Feature Addition of MongoDB Atlas datastore 428 b",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.505Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/opendatalab__MinerU-Document-Explorer.md",
+      "path": "reports/llm-wiki/repositories/opendatalab__MinerU-Document-Explorer.md",
+      "title": "opendatalab/MinerU-Document-Explorer 구조 분석",
+      "summary": "opendatalab/MinerU Document Explorer 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/opendatalab MinerU Document Explorer remote https //github.com/opendatalab/MinerU Document Explorer HEAD a7e9c6c 2026 04 22 update docs branch main groups llm",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.644Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/opendataloader-project__opendataloader-pdf.md",
+      "path": "reports/llm-wiki/repositories/opendataloader-project__opendataloader-pdf.md",
+      "title": "opendataloader-project/opendataloader-pdf 구조 분석",
+      "summary": "opendataloader project/opendataloader pdf 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/opendataloader project opendataloader pdf remote https //github.com/opendataloader project/opendataloader pdf HEAD d184517 2026 06 16 Fix the issue where",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.731Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/OpenSPG__KAG.md",
+      "path": "reports/llm-wiki/repositories/OpenSPG__KAG.md",
+      "title": "OpenSPG/KAG 구조 분석",
+      "summary": "OpenSPG/KAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/OpenSPG KAG remote https //github.com/OpenSPG/KAG HEAD fdab15b 2026 01 28 Fix McpExecutor kag project config initialization for MCP HTTP store path 736 branch master groups llm wiki 1",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.470Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/OrionStarAI__Orion.md",
+      "path": "reports/llm-wiki/repositories/OrionStarAI__Orion.md",
+      "title": "OrionStarAI/Orion 구조 분석",
+      "summary": "OrionStarAI/Orion 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/OrionStarAI Orion remote https //github.com/OrionStarAI/Orion HEAD 3b23aea 2024 06 03 Fix quantization typo branch master groups llm wiki 100 files 48 dirs 14 stack Python 구조 해석",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.554Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/OSU-NLP-Group__HippoRAG.md",
+      "path": "reports/llm-wiki/repositories/OSU-NLP-Group__HippoRAG.md",
+      "title": "OSU-NLP-Group/HippoRAG 구조 분석",
+      "summary": "OSU NLP Group/HippoRAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/OSU NLP Group HippoRAG remote https //github.com/OSU NLP Group/HippoRAG HEAD d437bfb 2025 09 04 Merge pull request 158 from YiboZhao624/main branch main groups llm wiki 100",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.384Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/otomata-tech__memento-core.md",
+      "path": "reports/llm-wiki/repositories/otomata-tech__memento-core.md",
+      "title": "otomata-tech/memento-core 구조 분석",
+      "summary": "otomata tech/memento core 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/otomata tech memento core remote https //github.com/otomata tech/memento core HEAD 037a9d7 2026 06 18 Memento — public core initial release branch master groups llm wiki",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.824Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/PaddlePaddle__PaddleOCR.md",
+      "path": "reports/llm-wiki/repositories/PaddlePaddle__PaddleOCR.md",
+      "title": "PaddlePaddle/PaddleOCR 구조 분석",
+      "summary": "PaddlePaddle/PaddleOCR 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/PaddlePaddle PaddleOCR remote https //github.com/PaddlePaddle/PaddleOCR HEAD ef346e0 2026 06 16 Disable push and schedule triggers in link check.yml branch main groups llm ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.651Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/patchy631__ai-engineering-hub.md",
+      "path": "reports/llm-wiki/repositories/patchy631__ai-engineering-hub.md",
+      "title": "patchy631/ai-engineering-hub 구조 분석",
+      "summary": "patchy631/ai engineering hub 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/patchy631 ai engineering hub remote https //github.com/patchy631/ai engineering hub HEAD cfd74dc 2026 06 08 Merge pull request 243 from namanvirk18/add fireworks grpo",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:00.926Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/pathwaycom__llm-app.md",
+      "path": "reports/llm-wiki/repositories/pathwaycom__llm-app.md",
+      "title": "pathwaycom/llm-app 구조 분석",
+      "summary": "pathwaycom/llm app 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/pathwaycom llm app remote https //github.com/pathwaycom/llm app HEAD b8879cc 2026 06 10 Rebranding public repo 10390 branch main groups llm wiki 100 files 136 dirs 37 stack Pyt",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.020Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/phonghhd__EvoNet-AI-Core.md",
+      "path": "reports/llm-wiki/repositories/phonghhd__EvoNet-AI-Core.md",
+      "title": "phonghhd/EvoNet-AI-Core 구조 분석",
+      "summary": "phonghhd/EvoNet AI Core 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/phonghhd EvoNet AI Core remote https //github.com/phonghhd/EvoNet AI Core HEAD 3e3c71e 2026 06 17 Auto update CVE + PoC + Patch data branch main groups llm wiki 100 files ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.119Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/PleasePrompto__notebooklm-mcp.md",
+      "path": "reports/llm-wiki/repositories/PleasePrompto__notebooklm-mcp.md",
+      "title": "PleasePrompto/notebooklm-mcp 구조 분석",
+      "summary": "PleasePrompto/notebooklm mcp 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/PleasePrompto notebooklm mcp remote https //github.com/PleasePrompto/notebooklm mcp HEAD 50b3e7f 2026 05 01 feat v2.0.0 — multilingual selector overhaul, async audio ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.730Z",
+      "categories": [
+        "agent-harness",
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/raphaelmansuy__edgequake.md",
+      "path": "reports/llm-wiki/repositories/raphaelmansuy__edgequake.md",
+      "title": "raphaelmansuy/edgequake 구조 분석",
+      "summary": "raphaelmansuy/edgequake 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/raphaelmansuy edgequake remote https //github.com/raphaelmansuy/edgequake HEAD 2882651 2026 06 09 release v0.12.11 — document notices and workspace scoped dedup branch edg",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.327Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/safishamsi__graphify.md",
+      "path": "reports/llm-wiki/repositories/safishamsi__graphify.md",
+      "title": "safishamsi/graphify 구조 분석",
+      "summary": "safishamsi/graphify 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/safishamsi graphify remote https //github.com/safishamsi/graphify HEAD 9e0b876 2026 06 17 Release 0.8.41 branch v8 groups llm wiki 100 files 582 dirs 68 stack Python, Rust 구조 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.455Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "path": "reports/llm-wiki/repositories/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "title": "SaiAkhil066/CORTEX-AI-SUPER-RAG 구조 분석",
+      "summary": "SaiAkhil066/CORTEX AI SUPER RAG 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/SaiAkhil066 CORTEX AI SUPER RAG remote https //github.com/SaiAkhil066/CORTEX AI SUPER RAG HEAD fba31cb 2026 06 17 feat Cortex RAG — full 2026 Advanced RAG stack + ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.857Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/SamurAIGPT__llm-wiki-agent.md",
+      "path": "reports/llm-wiki/repositories/SamurAIGPT__llm-wiki-agent.md",
+      "title": "SamurAIGPT/llm-wiki-agent 구조 분석",
+      "summary": "SamurAIGPT/llm wiki agent 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/SamurAIGPT llm wiki agent remote https //github.com/SamurAIGPT/llm wiki agent HEAD f837f5b 2026 06 13 fix sanitize entity filenames in heal.py to prevent path traversal ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:54.933Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/semantica-agi__semantica.md",
+      "path": "reports/llm-wiki/repositories/semantica-agi__semantica.md",
+      "title": "semantica-agi/semantica 구조 분석",
+      "summary": "semantica agi/semantica 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/semantica agi semantica remote https //github.com/semantica agi/semantica HEAD 0765cfe 2026 06 18 docs add CLI demo gif 649 branch main groups llm wiki 100 files 904 dirs ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.550Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/Shubhamsaboo__awesome-llm-apps.md",
+      "path": "reports/llm-wiki/repositories/Shubhamsaboo__awesome-llm-apps.md",
+      "title": "Shubhamsaboo/awesome-llm-apps 구조 분석",
+      "summary": "Shubhamsaboo/awesome llm apps 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/Shubhamsaboo awesome llm apps remote https //github.com/Shubhamsaboo/awesome llm apps HEAD ca3a3d3 2026 06 14 Add Gmail delivery to HN briefing agent branch main gro",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.031Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/stanford-oval__storm.md",
+      "path": "reports/llm-wiki/repositories/stanford-oval__storm.md",
+      "title": "stanford-oval/storm 구조 분석",
+      "summary": "stanford oval/storm 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/stanford oval storm remote https //github.com/stanford oval/storm HEAD fb951af 2025 09 30 Merge pull request 400 from stanford oval/patch/requirement change branch main groups",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.739Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/stanford-oval__WikiChat.md",
+      "path": "reports/llm-wiki/repositories/stanford-oval__WikiChat.md",
+      "title": "stanford-oval/WikiChat 구조 분석",
+      "summary": "stanford oval/WikiChat 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/stanford oval WikiChat remote https //github.com/stanford oval/WikiChat HEAD 803683b 2026 01 30 Merge pull request 58 from diegodlh/patch 1 branch main groups llm wiki 100 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.657Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/StarTrail-org__LEANN.md",
+      "path": "reports/llm-wiki/repositories/StarTrail-org__LEANN.md",
+      "title": "StarTrail-org/LEANN 구조 분석",
+      "summary": "StarTrail org/LEANN 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/StarTrail org LEANN remote https //github.com/StarTrail org/LEANN HEAD cfb1382 2026 06 14 style chunking utils rename overlap tokens to overlap size 376 branch main groups llm",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.113Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/studyield__studyield.md",
+      "path": "reports/llm-wiki/repositories/studyield__studyield.md",
+      "title": "studyield/studyield 구조 분석",
+      "summary": "studyield/studyield 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/studyield studyield remote https //github.com/studyield/studyield HEAD 32d2bf3 2026 04 17 Merge pull request 90 from studyield/develop branch main groups llm wiki 100 files 40",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.836Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/szczyglis-dev__py-gpt.md",
+      "path": "reports/llm-wiki/repositories/szczyglis-dev__py-gpt.md",
+      "title": "szczyglis-dev/py-gpt 구조 분석",
+      "summary": "szczyglis dev/py gpt 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/szczyglis dev py gpt remote https //github.com/szczyglis dev/py gpt HEAD 75bc06e 2026 02 06 Updated CHANGELOG branch master groups llm wiki 100 files 3086 dirs 395 stack Node",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:01.936Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/Tencent__WeKnora.md",
+      "path": "reports/llm-wiki/repositories/Tencent__WeKnora.md",
+      "title": "Tencent/WeKnora 구조 분석",
+      "summary": "Tencent/WeKnora 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/Tencent WeKnora remote https //github.com/Tencent/WeKnora HEAD e0d3c1d 2026 06 17 feat frontend improve manual knowledge editor and chat citation rendering branch main groups llm ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.239Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/The-Pocket__PocketFlow.md",
+      "path": "reports/llm-wiki/repositories/The-Pocket__PocketFlow.md",
+      "title": "The-Pocket/PocketFlow 구조 분석",
+      "summary": "The Pocket/PocketFlow 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/The Pocket PocketFlow remote https //github.com/The Pocket/PocketFlow HEAD 43ef382 2026 03 27 add new examples branch main groups llm wiki 100 files 529 dirs 138 stack Pytho",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.319Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/tirth8205__code-review-graph.md",
+      "path": "reports/llm-wiki/repositories/tirth8205__code-review-graph.md",
+      "title": "tirth8205/code-review-graph 구조 분석",
+      "summary": "tirth8205/code review graph 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/tirth8205 code review graph remote https //github.com/tirth8205/code review graph HEAD b72413c 2026 06 10 docs fix daemon logs flag names in cli docstring branch main ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.045Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/tobi__qmd.md",
+      "path": "reports/llm-wiki/repositories/tobi__qmd.md",
+      "title": "tobi/qmd 구조 분석",
+      "summary": "tobi/qmd 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/tobi qmd remote https //github.com/tobi/qmd HEAD 62b3a67 2026 06 17 fix llm guard ensureLlama against concurrent init 740 branch main groups llm wiki 100 files 154 dirs 32 stack Node/Typ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.124Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/VectifyAI__OpenKB.md",
+      "path": "reports/llm-wiki/repositories/VectifyAI__OpenKB.md",
+      "title": "VectifyAI/OpenKB 구조 분석",
+      "summary": "VectifyAI/OpenKB 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/VectifyAI OpenKB remote https //github.com/VectifyAI/OpenKB HEAD 26f8b13 2026 06 16 feat skills add openkb deck neon dark Aurora Glass + make it the default deck skill 101 branch",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.397Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/VoltAgent__voltagent.md",
+      "path": "reports/llm-wiki/repositories/VoltAgent__voltagent.md",
+      "title": "VoltAgent/voltagent 구조 분석",
+      "summary": "VoltAgent/voltagent 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/VoltAgent voltagent remote https //github.com/VoltAgent/voltagent HEAD 1e1af65 2026 06 08 ci changesets version packages 1340 branch main groups llm wiki 100 files 2871 dirs 8",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.580Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/WangRongsheng__awesome-LLM-resources.md",
+      "path": "reports/llm-wiki/repositories/WangRongsheng__awesome-LLM-resources.md",
+      "title": "WangRongsheng/awesome-LLM-resources 구조 분석",
+      "summary": "WangRongsheng/awesome LLM resources 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/WangRongsheng awesome LLM resources remote https //github.com/WangRongsheng/awesome LLM resources HEAD 7aa21d1 2026 06 16 Update README.md branch main groups l",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:56:55.657Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/xr843__fojin.md",
+      "path": "reports/llm-wiki/repositories/xr843__fojin.md",
+      "title": "xr843/fojin 구조 분석",
+      "summary": "xr843/fojin 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/xr843 fojin remote https //github.com/xr843/fojin HEAD a148abb 2026 06 17 Merge pull request 763 from xr843/fix/chat stream detached session branch master groups llm wiki 100 files 84",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.340Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/xuiltul__animaworks.md",
+      "path": "reports/llm-wiki/repositories/xuiltul__animaworks.md",
+      "title": "xuiltul/animaworks 구조 분석",
+      "summary": "xuiltul/animaworks 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/xuiltul animaworks remote https //github.com/xuiltul/animaworks HEAD c7427cb 2026 06 16 fix sync Korean reference templates with CI expectations branch main groups llm wiki 100",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.434Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/yifanfeng97__Hyper-Extract.md",
+      "path": "reports/llm-wiki/repositories/yifanfeng97__Hyper-Extract.md",
+      "title": "yifanfeng97/Hyper-Extract 구조 분석",
+      "summary": "yifanfeng97/Hyper Extract 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/yifanfeng97 Hyper Extract remote https //github.com/yifanfeng97/Hyper Extract HEAD 3fb2f38 2026 06 14 Merge pull request 32 from yifanfeng97/dependabot/github actions/co",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.514Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/yusufkaraaslan__Skill_Seekers.md",
+      "path": "reports/llm-wiki/repositories/yusufkaraaslan__Skill_Seekers.md",
+      "title": "yusufkaraaslan/Skill_Seekers 구조 분석",
+      "summary": "yusufkaraaslan/Skill Seekers 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/yusufkaraaslan Skill Seekers remote https //github.com/yusufkaraaslan/Skill Seekers HEAD 3b60a3a 2026 06 16 chore open 3.9.0 development cycle 3.9.0.dev0 branch devel",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.605Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/zhimaAi__ChatClaw.md",
+      "path": "reports/llm-wiki/repositories/zhimaAi__ChatClaw.md",
+      "title": "zhimaAi/ChatClaw 구조 분석",
+      "summary": "zhimaAi/ChatClaw 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/zhimaAi ChatClaw remote https //github.com/zhimaAi/ChatClaw HEAD 24cf232 2026 05 13 Merge branch 'feature/ivan 9 7 openclaw 20260513' into 'main' branch main groups llm wiki 100 ",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.701Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/zhitongblog__solomd.md",
+      "path": "reports/llm-wiki/repositories/zhitongblog__solomd.md",
+      "title": "zhitongblog/solomd 구조 분석",
+      "summary": "zhitongblog/solomd 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/zhitongblog solomd remote https //github.com/zhitongblog/solomd HEAD 65f2b77 2026 06 17 chore web bump download VERSION 4.6.3 → 4.6.4 4.6.4 released branch main groups llm wiki",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.784Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/llm-wiki/repositories/zosmaai__pi-llm-wiki.md",
+      "path": "reports/llm-wiki/repositories/zosmaai__pi-llm-wiki.md",
+      "title": "zosmaai/pi-llm-wiki 구조 분석",
+      "summary": "zosmaai/pi llm wiki 구조 분석 생성일 2026 06 17T22 56 52.162Z 기본 정보 항목 값 local path sources/zosmaai pi llm wiki remote https //github.com/zosmaai/pi llm wiki HEAD 4314a2b 2026 06 10 fix 81 wiki watch emits real crontab line, not fictional schedule prompt 86 branch ma",
+      "kind": "per-repository-report",
+      "folder": "llm-wiki/repositories",
+      "updatedAt": "2026-06-17T22:57:02.861Z",
+      "categories": [
+        "llm-wiki",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    }
+  ]
+}

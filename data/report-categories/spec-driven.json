@@ -1,0 +1,326 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "spec-driven",
+  "title": "Spec-Driven and Requirements",
+  "description": "Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.",
+  "count": 21,
+  "reports": [
+    {
+      "id": "report:reports/spec-driven/00-spec-extraction-and-spec-memory-synthesis.md",
+      "path": "reports/spec-driven/00-spec-extraction-and-spec-memory-synthesis.md",
+      "title": "Spec-Driven Development: 스펙 추출과 스펙 메모리 합성 보고서",
+      "summary": "Spec Driven Development 스펙 추출과 스펙 메모리 합성 보고서 작성일 2026 06 18 이 문서는 기존 수집물의 빈 부분을 메운다. 이미 이 저장소에는 650개 연구자료, 20개 spec driven 오픈소스 후보, 100개 LLM 위키/AI 지식베이스 후보, 127개 클론 구조 분석이 있다. 부족했던 것은 \"스펙을 어떻게 뽑고, 왜 그렇게 저장해야 에이전트가 계속 기억하고 재사용하는가\"에 대한 통합 비교다. 근거 위치 연구 코퍼스 data/",
+      "kind": "spec-driven-report",
+      "folder": "spec-driven",
+      "updatedAt": "2026-06-17T23:17:46.365Z",
+      "categories": [
+        "start-here",
+        "spec-driven"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/categories/spec-driven-requirements/README.md",
+      "path": "reports/categories/spec-driven-requirements/README.md",
+      "title": "Spec-Driven and Requirements",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T13 38 56.297Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. Counts Total categorized entries 696 Repositories 27 Resear",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "categories": [
+        "category-guides",
+        "spec-driven"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/spec-driven-evidence-corpus-500.md",
+      "path": "reports/spec-driven-evidence-corpus-500.md",
+      "title": "Spec-Driven Development Evidence Corpus 500+",
+      "summary": "Spec Driven Development Evidence Corpus 500+ Collected at 2026 06 17T22 30 27.587Z This file summarizes the reproducible OpenAlex corpus used by the web research browser and follow up spec driven development analysis. It intentionally separates broad evidence ",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:37:32.647Z",
+      "categories": [
+        "coding-agents",
+        "spec-driven",
+        "research-foundations",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 118
+    },
+    {
+      "id": "report:reports/clone-structures/amaynez__kiro-style-sdd.md",
+      "path": "reports/clone-structures/amaynez__kiro-style-sdd.md",
+      "title": "amaynez/kiro-style-sdd 구조 분석",
+      "summary": "amaynez/kiro style sdd 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/amaynez kiro style sdd remote https //github.com/amaynez/kiro style sdd HEAD be24eb6 2026 05 13 Merge pull request 6 from amaynez/testing improvement native test runner 829",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.025Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/ariel-frischer__autospec.md",
+      "path": "reports/clone-structures/ariel-frischer__autospec.md",
+      "title": "ariel-frischer/autospec 구조 분석",
+      "summary": "ariel frischer/autospec 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/ariel frischer autospec remote https //github.com/ariel frischer/autospec HEAD 8ea596a 2026 05 23 chore changelog prepare changelog for v0.11.5 release with new features a",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:15.226Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/codervisor__leanspec.md",
+      "path": "reports/clone-structures/codervisor__leanspec.md",
+      "title": "codervisor/leanspec 구조 분석",
+      "summary": "codervisor/leanspec 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/codervisor leanspec remote https //github.com/codervisor/leanspec HEAD ee122d6 2026 05 20 chore skills retire draft/planned/in progress spec status labels 313 branch main grou",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.119Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Engineering4AI__awesome-spec-driven-development.md",
+      "path": "reports/clone-structures/Engineering4AI__awesome-spec-driven-development.md",
+      "title": "Engineering4AI/awesome-spec-driven-development 구조 분석",
+      "summary": "Engineering4AI/awesome spec driven development 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Engineering4AI awesome spec driven development remote https //github.com/Engineering4AI/awesome spec driven development HEAD 74aa232 2026 06 17 Merg",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.732Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/fabriqaai__specs.md.md",
+      "path": "reports/clone-structures/fabriqaai__specs.md.md",
+      "title": "fabriqaai/specs.md 구조 분석",
+      "summary": "fabriqaai/specs.md 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/fabriqaai specs.md remote https //github.com/fabriqaai/specs.md HEAD f4b6458 2026 06 07 docs set dashboard nav label branch main groups spec driven 20 files 849 dirs 283 stack ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:16.892Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Fission-AI__OpenSpec.md",
+      "path": "reports/clone-structures/Fission-AI__OpenSpec.md",
+      "title": "Fission-AI/OpenSpec 구조 분석",
+      "summary": "Fission AI/OpenSpec 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Fission AI OpenSpec remote https //github.com/Fission AI/OpenSpec HEAD 1b06fdd 2026 06 03 Version Packages 1166 branch main groups spec driven 20 files 842 dirs 462 stack Node",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:12.932Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/formulahendry__mcp-server-spec-driven-development.md",
+      "path": "reports/clone-structures/formulahendry__mcp-server-spec-driven-development.md",
+      "title": "formulahendry/mcp-server-spec-driven-development 구조 분석",
+      "summary": "formulahendry/mcp server spec driven development 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/formulahendry mcp server spec driven development remote https //github.com/formulahendry/mcp server spec driven development HEAD 8a0532a 2025 09 2",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.053Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/FredAntB__Spec-Driven-Development.md",
+      "path": "reports/clone-structures/FredAntB__Spec-Driven-Development.md",
+      "title": "FredAntB/Spec-Driven-Development 구조 분석",
+      "summary": "FredAntB/Spec Driven Development 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/FredAntB Spec Driven Development remote https //github.com/FredAntB/Spec Driven Development HEAD 7296108 2026 05 22 Update README with new assertion and test coun",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.020Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/github__spec-kit.md",
+      "path": "reports/clone-structures/github__spec-kit.md",
+      "title": "github/spec-kit 구조 분석",
+      "summary": "github/spec kit 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/github spec kit remote https //github.com/github/spec kit HEAD ee8b358 2026 06 17 fix bug assess recompile lock so github guard repos is 'all' 3036 branch main groups spec driven ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.440Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/gotalab__cc-sdd.md",
+      "path": "reports/clone-structures/gotalab__cc-sdd.md",
+      "title": "gotalab/cc-sdd 구조 분석",
+      "summary": "gotalab/cc sdd 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/gotalab cc sdd remote https //github.com/gotalab/cc sdd HEAD 29aee95 2026 04 27 Merge pull request 172 from gotalab/codex/fix nlpm remaining prs branch main groups spec driven 20 f",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.618Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/https-deeplearning-ai__sc-spec-driven-development-files.md",
+      "path": "reports/clone-structures/https-deeplearning-ai__sc-spec-driven-development-files.md",
+      "title": "https-deeplearning-ai/sc-spec-driven-development-files 구조 분석",
+      "summary": "https deeplearning ai/sc spec driven development files 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/https deeplearning ai sc spec driven development files remote https //github.com/https deeplearning ai/sc spec driven development files HEAD",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:17.980Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/IBM__iac-spec-kit.md",
+      "path": "reports/clone-structures/IBM__iac-spec-kit.md",
+      "title": "IBM/iac-spec-kit 구조 분석",
+      "summary": "IBM/iac spec kit 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/IBM iac spec kit remote https //github.com/IBM/iac spec kit HEAD fc01030 2026 03 02 Update CHANGELOG.md branch main groups spec driven 20 files 91 dirs 30 stack Python 구조 해석 핵심 구",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.284Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/Lumiaqian__openspec-mcp.md",
+      "path": "reports/clone-structures/Lumiaqian__openspec-mcp.md",
+      "title": "Lumiaqian/openspec-mcp 구조 분석",
+      "summary": "Lumiaqian/openspec mcp 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/Lumiaqian openspec mcp remote https //github.com/Lumiaqian/openspec mcp HEAD 48f8684 2026 01 12 chore bump version to 0.4.2 branch main groups spec driven 20 files 74 dirs ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:13.505Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/mreferre__ralph-loop-kiro-specs.md",
+      "path": "reports/clone-structures/mreferre__ralph-loop-kiro-specs.md",
+      "title": "mreferre/ralph-loop-kiro-specs 구조 분석",
+      "summary": "mreferre/ralph loop kiro specs 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/mreferre ralph loop kiro specs remote https //github.com/mreferre/ralph loop kiro specs HEAD 2685064 2026 02 13 Added a dashboard output example branch main groups ",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:20.467Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/clone-structures/tesslio__spec-driven-development-tile.md",
+      "path": "reports/clone-structures/tesslio__spec-driven-development-tile.md",
+      "title": "tesslio/spec-driven-development-tile 구조 분석",
+      "summary": "tesslio/spec driven development tile 구조 분석 생성일 2026 06 17T22 41 11.818Z 기본 정보 항목 값 local path sources/tesslio spec driven development tile remote https //github.com/tesslio/spec driven development tile HEAD b8fdff7 2026 03 30 Merge pull request 7 from tesslio/",
+      "kind": "clone-structure-report",
+      "folder": "clone-structures",
+      "updatedAt": "2026-06-17T22:41:22.991Z",
+      "categories": [
+        "spec-driven",
+        "clone-structure-inventory",
+        "repository-deep-dives"
+      ],
+      "priority": -28
+    },
+    {
+      "id": "report:reports/global-trending/repositories/MCPJam__inspector.md",
+      "path": "reports/global-trending/repositories/MCPJam__inspector.md",
+      "title": "MCPJam/inspector",
+      "summary": "MCPJam/inspector Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/MCPJam/inspector local path sources/MCPJam inspector HEAD d8fefbf stars/forks 2016 / 239 language TypeScript license pushedAt 2026 06 18T00 27 09Z trendScore / p",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:38:02.242Z",
+      "categories": [
+        "agent-harness",
+        "spec-driven",
+        "global-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/kakao__hbase-region-inspector.md",
+      "path": "reports/korea-trending/repositories/kakao__hbase-region-inspector.md",
+      "title": "kakao/hbase-region-inspector",
+      "summary": "kakao/hbase region inspector 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/kakao/hbase region inspector local path sources/kakao hbase region inspector HEAD 9c7d789 stars/forks 107 / 29 language Clojure license Apache 2.0 pushedAt 2023",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:27.896Z",
+      "categories": [
+        "spec-driven",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    },
+    {
+      "id": "report:reports/korea-trending/repositories/line__liff-inspector.md",
+      "path": "reports/korea-trending/repositories/line__liff-inspector.md",
+      "title": "line/liff-inspector",
+      "summary": "line/liff inspector 생성일 2026 06 18T00 02 16.992Z 기본 정보 key value GitHub https //github.com/line/liff inspector local path sources/line liff inspector HEAD 4bc92a2 stars/forks 75 / 5 language TypeScript license Apache 2.0 pushedAt 2025 11 17T02 53 26Z trendScor",
+      "kind": "per-repository-report",
+      "folder": "korea-trending/repositories",
+      "updatedAt": "2026-06-18T00:02:28.000Z",
+      "categories": [
+        "spec-driven",
+        "korea-trending-open-source",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    }
+  ]
+}

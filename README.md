@@ -11,9 +11,15 @@ The repository now also includes a second research track for adjacent AI infrast
 This repository is meant to be read directly through GitHub or a local checkout. Deployment-specific GitHub Pages, Vercel, and static web-browser files have been removed.
 
 - `reports/categories/`: category-first reading folders for open source, research papers, conference materials, and trend references.
+- `reports/README.md`: report-first reading entry point for every Markdown report in this repository.
+- `reports/by-topic/`: topic-first report folders for source-scan, spec-driven, LLM wiki, Korean/global trending, conferences, research, and repository deep dives.
+- `data/report-index.json`: complete report-level reading index across all Markdown reports.
+- `data/report-categories/*.json`: complete report membership lists for each report topic.
 - `data/category-index.json`: complete normalized category index across all collected artifacts.
 - `data/categories/*.json`: complete membership lists for each category.
 - `npm run build:categories`: regenerate the category index and category README files after changing source data.
+- `npm run build:report-index`: regenerate the report-level index and topic README files after changing reports.
+- `npm run build:indexes`: regenerate both artifact-level and report-level indexes.
 
 ## Structure
 
@@ -42,6 +48,7 @@ This repository is meant to be read directly through GitHub or a local checkout.
 - `reports/adjacent-tech/`: context engineering, RAG, local LLM, vector DB, evaluation, and harness reports.
 - `reports/clone-structures/`: generated per-repository structure reports for all 127 local clones.
 - `reports/categories/`: category-first reading index with links back to data, reports, and cloned source directories.
+- `reports/by-topic/`: report-first reading index grouping every Markdown report by investigation line.
 - `scripts/`: local automation for metadata collection and cloning.
 
 ## Cross-Repository Reports

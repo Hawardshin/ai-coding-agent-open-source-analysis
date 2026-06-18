@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "comparisons",
+  "title": "Comparisons and Similarity Maps",
+  "description": "Cross-repository comparisons, taxonomy matrices, and similarity clusters.",
+  "count": 5,
+  "reports": [
+    {
+      "id": "report:reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
+      "path": "reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
+      "title": "30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서",
+      "summary": "30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서 기준일 2026 06 11 KST. 기반 자료 reports/repositories/ .md 30개 상세 분석, data/source inventory.json , data/project comparison matrix.json . 이 문서는 각 레포지토리의 세부 구현을 반복하지 않고, 사용자가 실제 설계 판단을 할 때 필요한 비교 축으로 재배열한다. 핵심 결론은 다음과 같다. 1. 이 30개는 모두",
+      "kind": "comparison-report",
+      "folder": "comparisons",
+      "updatedAt": "2026-06-10T22:18:41.682Z",
+      "categories": [
+        "start-here",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/comparisons/02-similarity-clusters.md",
+      "path": "reports/comparisons/02-similarity-clusters.md",
+      "title": "유사군별 비교와 관계 지도",
+      "summary": "유사군별 비교와 관계 지도 기준일 2026 06 11 KST. 대상 30개 레포지토리 전체. 이 문서는 01 project taxonomy and feature comparison.md 보다 관계 중심이다. 목적은 \"이 레포와 비슷한 레포가 무엇인가\", \"같은 군에서 어떤 프로젝트를 먼저 봐야 하는가\", \"설계 철학이 어디서 갈라지는가\"를 정리하는 것이다. 1. 전체 유사도 지도 2. 클러스터 A 공식/터미널 코딩 에이전트 구성 핵심 openai/codex , ",
+      "kind": "comparison-report",
+      "folder": "comparisons",
+      "updatedAt": "2026-06-10T22:20:17.846Z",
+      "categories": [
+        "start-here",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "path": "reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "title": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약",
+      "summary": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약 생성일 2026 06 17T22 58 03.126Z 산출물 후보 수집 데이터 data/llm wiki repositories.json 구조 분석 데이터 data/llm wiki structure analysis 100.json 총괄 구조 분석 reports/llm wiki/00 llm wiki 100 summary.md 레포별 구조 분석 reports/llm wiki/repositories/ .md 수",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "updatedAt": "2026-06-17T22:58:03.138Z",
+      "categories": [
+        "start-here",
+        "llm-wiki",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/02-code-level-pipeline-comparison.md",
+      "path": "reports/llm-wiki/02-code-level-pipeline-comparison.md",
+      "title": "LLM Wiki 100 Code-Level Pipeline Comparison",
+      "summary": "LLM Wiki 100 Code Level Pipeline Comparison 작성일 2026 06 17T23 31 58.667Z 이 문서는 data/llm wiki repositories.json 의 100개 로컬 클론을 같은 정적 코드 스캔 기준으로 다시 비교한 결과다. 기존 구조 분석이 README, manifest, 디렉터리 표면을 본 1차 분석이라면, 이 문서는 실제 소스에서 ingestion, parsing, chunking, embedding, re",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/02-code-level-pipeline-comparison.md",
+      "updatedAt": "2026-06-17T23:31:58.669Z",
+      "categories": [
+        "start-here",
+        "llm-wiki",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/global-trending/repositories/matrixorigin__matrixone.md",
+      "path": "reports/global-trending/repositories/matrixorigin__matrixone.md",
+      "title": "matrixorigin/matrixone",
+      "summary": "matrixorigin/matrixone Generated 2026 06 18T00 37 41.085Z Basic Info key value GitHub https //github.com/matrixorigin/matrixone local path sources/matrixorigin matrixone HEAD 629f58d stars/forks 1847 / 299 language Go license pushedAt 2026 06 17T17 15 59Z tren",
+      "kind": "per-repository-report",
+      "folder": "global-trending/repositories",
+      "updatedAt": "2026-06-18T00:37:49.515Z",
+      "categories": [
+        "global-trending-open-source",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -29
+    }
+  ]
+}

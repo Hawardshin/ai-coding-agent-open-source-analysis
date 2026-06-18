@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "slug": "full-source-scan",
+  "title": "Full Source Scan and Code Retrieval",
+  "description": "How coding agents discover, index, search, and read source code.",
+  "count": 3,
+  "reports": [
+    {
+      "id": "report:reports/00-source-inventory.md",
+      "path": "reports/00-source-inventory.md",
+      "title": "Source Inventory",
+      "summary": "Source Inventory Generated at 2026 06 10T14 00 24.330Z Repository Commit Lang Files License Archived Source dirs 1 openclaw/openclaw bb6e4772 TypeScript 19887 other no src, packages, apps, docs 2 ultraworkers/claw code d229a9b Rust 386 mit no src, docs 3 NousR",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-10T14:00:24.333Z",
+      "categories": [
+        "start-here",
+        "full-source-scan",
+        "source-catalogs-and-inventories"
+      ],
+      "priority": 158
+    },
+    {
+      "id": "report:reports/full-source-scan/02-file-discovery-reading-implementation-deep-dive.md",
+      "path": "reports/full-source-scan/02-file-discovery-reading-implementation-deep-dive.md",
+      "title": "Full Source Scan Deep Dive: 필요한 파일을 찾고 읽는 구현 로직",
+      "summary": "Full Source Scan Deep Dive 필요한 파일을 찾고 읽는 구현 로직 작성일 2026 06 18 이 문서는 기존 reports/full source scan research summary 2026 06 18.md 의 후속 심화본이다. 초점은 \"전체 소스코드를 다 넣는가?\"가 아니라 \"사용자의 말에서 어떤 신호를 뽑아 어떤 파일 후보를 만들고, 그중 무엇을 어느 범위로 읽는가?\"이다. 조사 기준은 로컬에 클론된 실제 구현체다. 핵심 결론은 다음과 같",
+      "kind": "source-scan-report",
+      "folder": "full-source-scan",
+      "updatedAt": "2026-06-17T23:18:38.692Z",
+      "categories": [
+        "full-source-scan"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/full-source-scan-research-summary-2026-06-18.md",
+      "path": "reports/full-source-scan-research-summary-2026-06-18.md",
+      "title": "전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약",
+      "summary": "전체 소스 스캔과 사용자 의도 코드 연결 방식 리서치 요약 기준일 2026 06 18 KST. 이 문서는 기존 reports/ 의 30개 코딩 에이전트 상세 분석, 50개 adjacent stack 분석, 새로 추가한 27개 클론 인벤토리, OpenAI/Anthropic 공식 문서, 대표 오픈소스 구현을 묶어 정리한다. 결론부터 말하면, Codex와 Claude Code류의 핵심은 \"전체 소스를 모델 프롬프트에 한 번에 넣기\"가 아니라 탐색 도구 + 축약 ind",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:19:43.192Z",
+      "categories": [
+        "start-here",
+        "full-source-scan"
+      ],
+      "priority": 143
+    }
+  ]
+}
