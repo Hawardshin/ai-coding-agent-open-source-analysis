@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T14:54:26.642Z",
+  "generatedAt": "2026-06-18T15:04:44.222Z",
   "slug": "adjacent-infrastructure",
   "title": "Adjacent AI Infrastructure",
   "description": "Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.",
-  "count": 15,
+  "count": 18,
   "reports": [
     {
       "id": "report:reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
@@ -39,10 +39,10 @@
       "id": "report:reports/categories/ai-infrastructure-serving/README.md",
       "path": "reports/categories/ai-infrastructure-serving/README.md",
       "title": "AI Infrastructure and Serving",
-      "summary": "AI Infrastructure and Serving Generated 2026 06 18T14 52 38.646Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. 요약 조사 단위 ai infrastructure serving artifact 카테고리에 속한 오픈소스, 논문, 발",
+      "summary": "AI Infrastructure and Serving Generated 2026 06 18T15 04 26.653Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. 요약 조사 단위 ai infrastructure serving artifact 카테고리에 속한 오픈소스, 논문, 발",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:52:39.307Z",
+      "updatedAt": "2026-06-18T15:04:27.315Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -53,10 +53,10 @@
       "id": "report:reports/categories/data-platforms-vector-databases/README.md",
       "path": "reports/categories/data-platforms-vector-databases/README.md",
       "title": "Data Platforms and Vector Databases",
-      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T14 52 38.646Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. 요약 조사 단위 data platforms vector databases artifact 카테고리에 속한 오픈소스, 논문, 발표/트",
+      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T15 04 26.653Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. 요약 조사 단위 data platforms vector databases artifact 카테고리에 속한 오픈소스, 논문, 발표/트",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:52:39.310Z",
+      "updatedAt": "2026-06-18T15:04:27.318Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -67,10 +67,10 @@
       "id": "report:reports/categories/evals-observability-quality/README.md",
       "path": "reports/categories/evals-observability-quality/README.md",
       "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T14 52 38.646Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. 요약 조사 단위 evals observability quality artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T15 04 26.653Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. 요약 조사 단위 evals observability quality artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:52:39.296Z",
+      "updatedAt": "2026-06-18T15:04:27.305Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -81,10 +81,10 @@
       "id": "report:reports/categories/local-llm-models/README.md",
       "path": "reports/categories/local-llm-models/README.md",
       "title": "Local LLMs and Models",
-      "summary": "Local LLMs and Models Generated 2026 06 18T14 52 38.646Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. 요약 조사 단위 local llm models artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 6",
+      "summary": "Local LLMs and Models Generated 2026 06 18T15 04 26.653Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. 요약 조사 단위 local llm models artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 6",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:52:39.329Z",
+      "updatedAt": "2026-06-18T15:04:27.338Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -95,10 +95,10 @@
       "id": "report:reports/repository-insights/by-role/eval-observability/README.md",
       "path": "reports/repository-insights/by-role/eval-observability/README.md",
       "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T14 52 41.414Z 평가/관측/품질 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 eval observability 역할로 분류된 레포 묶음입니다. 포함 범위 27 repositories, report link 27, local source 27. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T15 04 28.365Z 평가/관측/품질 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 eval observability 역할로 분류된 레포 묶음입니다. 포함 범위 27 repositories, report link 27, local source 27. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:52:42.321Z",
+      "updatedAt": "2026-06-18T15:04:29.032Z",
       "categories": [
         "adjacent-infrastructure",
         "comparisons",
@@ -110,10 +110,10 @@
       "id": "report:reports/source-deep-dives/by-topic/eval-observability/README.md",
       "path": "reports/source-deep-dives/by-topic/eval-observability/README.md",
       "title": "Evals, Observability, and Quality Source Deep Dive",
-      "summary": "Evals, Observability, and Quality Source Deep Dive Generated 2026 06 18T14 52 44.529Z 평가/관측/품질 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 eval observability 역할로 분류된 로컬 소스 레포 27개입니다. 포함 범위 eval suites, benchmark harness, tracing, observability, quality gates 경로를 중",
+      "summary": "Evals, Observability, and Quality Source Deep Dive Generated 2026 06 18T15 04 30.215Z 평가/관측/품질 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 eval observability 역할로 분류된 로컬 소스 레포 27개입니다. 포함 범위 eval suites, benchmark harness, tracing, observability, quality gates 경로를 중",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T14:53:14.604Z",
+      "updatedAt": "2026-06-18T15:04:37.471Z",
       "categories": [
         "source-code-deep-dives",
         "adjacent-infrastructure",
@@ -167,6 +167,54 @@
         "research-foundations"
       ],
       "priority": 117
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/vllm-project__vllm-ascend.md",
+      "path": "reports/source-deep-dives/repositories/2/vllm-project__vllm-ascend.md",
+      "title": "vllm-project/vllm-ascend Source Deep Dive",
+      "summary": "vllm project/vllm ascend Source Deep Dive Generated 2026 06 18T15 04 30.215Z Community maintained hardware plugin for vLLM on Ascend 요약 조사 단위 sources/vllm project vllm ascend 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 2,793 files, 594 directories, depth ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.119Z",
+      "categories": [
+        "source-code-deep-dives",
+        "adjacent-infrastructure",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/6/vllm-project__vllm.md",
+      "path": "reports/source-deep-dives/repositories/6/vllm-project__vllm.md",
+      "title": "vllm-project/vllm Source Deep Dive",
+      "summary": "vllm project/vllm Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 5488 files, 713 directories. 요약 조사 단위 sources/vllm project vllm 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 5,488 files, 713 directories, depth score 138,",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.956Z",
+      "categories": [
+        "source-code-deep-dives",
+        "adjacent-infrastructure",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/e/waybarrios__vllm-mlx.md",
+      "path": "reports/source-deep-dives/repositories/e/waybarrios__vllm-mlx.md",
+      "title": "waybarrios/vllm-mlx Source Deep Dive",
+      "summary": "waybarrios/vllm mlx Source Deep Dive Generated 2026 06 18T15 04 30.215Z OpenAI and Anthropic compatible server for Apple Silicon. Run LLMs and vision language models Llama, Qwen VL, LLaVA with continuous batching, MCP tool calling, and multimodal support. Nati",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.924Z",
+      "categories": [
+        "source-code-deep-dives",
+        "adjacent-infrastructure",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
     },
     {
       "id": "report:reports/clone-structures/vllm-project__vllm.md",

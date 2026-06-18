@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T14:54:26.642Z",
+  "generatedAt": "2026-06-18T15:04:44.222Z",
   "slug": "spec-driven",
   "title": "Spec-Driven and Requirements",
   "description": "Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.",
-  "count": 23,
+  "count": 41,
   "reports": [
     {
       "id": "report:reports/spec-driven/00-spec-extraction-and-spec-memory-synthesis.md",
@@ -23,10 +23,10 @@
       "id": "report:reports/categories/spec-driven-requirements/README.md",
       "path": "reports/categories/spec-driven-requirements/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 52 38.646Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T15 04 26.653Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:52:39.261Z",
+      "updatedAt": "2026-06-18T15:04:27.270Z",
       "categories": [
         "category-guides",
         "spec-driven"
@@ -37,10 +37,10 @@
       "id": "report:reports/repository-insights/by-role/spec-driven/README.md",
       "path": "reports/repository-insights/by-role/spec-driven/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 52 41.414Z 스펙 드리븐/요구사항 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 spec driven 역할로 분류된 레포 묶음입니다. 포함 범위 5 repositories, report link 5, local source 5. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 re",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T15 04 28.365Z 스펙 드리븐/요구사항 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 spec driven 역할로 분류된 레포 묶음입니다. 포함 범위 5 repositories, report link 5, local source 5. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 re",
       "kind": "spec-driven-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:52:42.323Z",
+      "updatedAt": "2026-06-18T15:04:29.033Z",
       "categories": [
         "spec-driven",
         "comparisons",
@@ -52,10 +52,10 @@
       "id": "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
       "path": "reports/source-deep-dives/by-topic/spec-driven/README.md",
       "title": "Spec-Driven and Requirements Source Deep Dive",
-      "summary": "Spec Driven and Requirements Source Deep Dive Generated 2026 06 18T14 52 44.529Z 스펙 드리븐/요구사항 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 spec driven 역할로 분류된 로컬 소스 레포 5개입니다. 포함 범위 requirements, ADR, design docs, spec artifacts, acceptance/test trace 경로를 중심으로 key so",
-      "kind": "spec-driven-report",
+      "summary": "Spec Driven and Requirements Source Deep Dive Generated 2026 06 18T15 04 30.215Z 스펙 드리븐/요구사항 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 spec driven 역할로 분류된 로컬 소스 레포 5개입니다. 포함 범위 requirements, ADR, design docs, spec artifacts, acceptance/test trace 경로를 중심으로 key so",
+      "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T14:53:14.603Z",
+      "updatedAt": "2026-06-18T15:04:37.468Z",
       "categories": [
         "source-code-deep-dives",
         "spec-driven",
@@ -79,6 +79,297 @@
         "source-catalogs-and-inventories"
       ],
       "priority": 118
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/0/Engineering4AI__awesome-spec-driven-development.md",
+      "path": "reports/source-deep-dives/repositories/0/Engineering4AI__awesome-spec-driven-development.md",
+      "title": "Engineering4AI/awesome-spec-driven-development Source Deep Dive",
+      "summary": "Engineering4AI/awesome spec driven development Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 1 files, 0 directories. 요약 조사 단위 sources/Engineering4AI awesome spec driven development 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:37.744Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/0/IBM__iac-spec-kit.md",
+      "path": "reports/source-deep-dives/repositories/0/IBM__iac-spec-kit.md",
+      "title": "IBM/iac-spec-kit Source Deep Dive",
+      "summary": "IBM/iac spec kit Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 91 files, 30 directories. 요약 조사 단위 sources/IBM iac spec kit 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 91 files, 30 directories, depth score 95, key refer",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:37.718Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/amaynez__kiro-style-sdd.md",
+      "path": "reports/source-deep-dives/repositories/2/amaynez__kiro-style-sdd.md",
+      "title": "amaynez/kiro-style-sdd Source Deep Dive",
+      "summary": "amaynez/kiro style sdd Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 26 files, 12 directories. 요약 조사 단위 sources/amaynez kiro style sdd 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 26 files, 12 directories, depth score 7",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.189Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/kakao__hbase-region-inspector.md",
+      "path": "reports/source-deep-dives/repositories/2/kakao__hbase-region-inspector.md",
+      "title": "kakao/hbase-region-inspector Source Deep Dive",
+      "summary": "kakao/hbase region inspector Source Deep Dive Generated 2026 06 18T15 04 30.215Z A visual dashboard of HBase region statistics 요약 조사 단위 sources/kakao hbase region inspector 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 42 files, 20 directories, depth score ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.195Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/3/Fission-AI__OpenSpec.md",
+      "path": "reports/source-deep-dives/repositories/3/Fission-AI__OpenSpec.md",
+      "title": "Fission-AI/OpenSpec Source Deep Dive",
+      "summary": "Fission AI/OpenSpec Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 842 files, 462 directories. 요약 조사 단위 sources/Fission AI OpenSpec 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 842 files, 462 directories, depth score 121",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.388Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/3/mreferre__ralph-loop-kiro-specs.md",
+      "path": "reports/source-deep-dives/repositories/3/mreferre__ralph-loop-kiro-specs.md",
+      "title": "mreferre/ralph-loop-kiro-specs Source Deep Dive",
+      "summary": "mreferre/ralph loop kiro specs Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 5 files, 1 directories. 요약 조사 단위 sources/mreferre ralph loop kiro specs 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 5 files, 1 directories, d",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.492Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/3/tesslio__spec-driven-development-tile.md",
+      "path": "reports/source-deep-dives/repositories/3/tesslio__spec-driven-development-tile.md",
+      "title": "tesslio/spec-driven-development-tile Source Deep Dive",
+      "summary": "tesslio/spec driven development tile Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 37 files, 20 directories. 요약 조사 단위 sources/tesslio spec driven development tile 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 37 files, 2",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.463Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/gotalab__cc-sdd.md",
+      "path": "reports/source-deep-dives/repositories/5/gotalab__cc-sdd.md",
+      "title": "gotalab/cc-sdd Source Deep Dive",
+      "summary": "gotalab/cc sdd Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 536 files, 285 directories. 요약 조사 단위 sources/gotalab cc sdd 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 536 files, 285 directories, depth score 121, key refe",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.868Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/6/Lumiaqian__openspec-mcp.md",
+      "path": "reports/source-deep-dives/repositories/6/Lumiaqian__openspec-mcp.md",
+      "title": "Lumiaqian/openspec-mcp Source Deep Dive",
+      "summary": "Lumiaqian/openspec mcp Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 74 files, 15 directories. 요약 조사 단위 sources/Lumiaqian openspec mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 74 files, 15 directories, depth score 1",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.142Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/7/github__spec-kit.md",
+      "path": "reports/source-deep-dives/repositories/7/github__spec-kit.md",
+      "title": "github/spec-kit Source Deep Dive",
+      "summary": "github/spec kit Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 380 files, 111 directories. 요약 조사 단위 sources/github spec kit 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 380 files, 111 directories, depth score 113, key re",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.394Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/8/fabriqaai__specs.md.md",
+      "path": "reports/source-deep-dives/repositories/8/fabriqaai__specs.md.md",
+      "title": "fabriqaai/specs.md Source Deep Dive",
+      "summary": "fabriqaai/specs.md Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 849 files, 283 directories. 요약 조사 단위 sources/fabriqaai specs.md 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 847 files, 282 directories, depth score 119, ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.584Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/8/MCPJam__inspector.md",
+      "path": "reports/source-deep-dives/repositories/8/MCPJam__inspector.md",
+      "title": "MCPJam/inspector Source Deep Dive",
+      "summary": "MCPJam/inspector Source Deep Dive Generated 2026 06 18T15 04 30.215Z Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps. 요약 조사 단위 sources/MCPJam inspector 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 2,723 f",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.485Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/9/ariel-frischer__autospec.md",
+      "path": "reports/source-deep-dives/repositories/9/ariel-frischer__autospec.md",
+      "title": "ariel-frischer/autospec Source Deep Dive",
+      "summary": "ariel frischer/autospec Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 650 files, 102 directories. 요약 조사 단위 sources/ariel frischer autospec 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 650 files, 102 directories, depth s",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.749Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/a/https-deeplearning-ai__sc-spec-driven-development-files.md",
+      "path": "reports/source-deep-dives/repositories/a/https-deeplearning-ai__sc-spec-driven-development-files.md",
+      "title": "https-deeplearning-ai/sc-spec-driven-development-files Source Deep Dive",
+      "summary": "https deeplearning ai/sc spec driven development files Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 332 files, 101 directories. 요약 조사 단위 sources/https deeplearning ai sc spec driven development files 로컬 클론을 실제 파일 트리 기준으로 분",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.088Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/b/formulahendry__mcp-server-spec-driven-development.md",
+      "path": "reports/source-deep-dives/repositories/b/formulahendry__mcp-server-spec-driven-development.md",
+      "title": "formulahendry/mcp-server-spec-driven-development Source Deep Dive",
+      "summary": "formulahendry/mcp server spec driven development Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 13 files, 2 directories. 요약 조사 단위 sources/formulahendry mcp server spec driven development 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep div",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.351Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/c/FredAntB__Spec-Driven-Development.md",
+      "path": "reports/source-deep-dives/repositories/c/FredAntB__Spec-Driven-Development.md",
+      "title": "FredAntB/Spec-Driven-Development Source Deep Dive",
+      "summary": "FredAntB/Spec Driven Development Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 33 files, 11 directories. 요약 조사 단위 sources/FredAntB Spec Driven Development 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 33 files, 11 direct",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.574Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/e/codervisor__leanspec.md",
+      "path": "reports/source-deep-dives/repositories/e/codervisor__leanspec.md",
+      "title": "codervisor/leanspec Source Deep Dive",
+      "summary": "codervisor/leanspec Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 1393 files, 506 directories. 요약 조사 단위 sources/codervisor leanspec 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,392 files, 505 directories, depth score ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.841Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/f/line__liff-inspector.md",
+      "path": "reports/source-deep-dives/repositories/f/line__liff-inspector.md",
+      "title": "line/liff-inspector Source Deep Dive",
+      "summary": "line/liff inspector Source Deep Dive Generated 2026 06 18T15 04 30.215Z The universal DevTools for LIFF WebView browser 요약 조사 단위 sources/line liff inspector 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 93 files, 23 directories, depth score 87, key referenc",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:41.253Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
     },
     {
       "id": "report:reports/clone-structures/amaynez__kiro-style-sdd.md",

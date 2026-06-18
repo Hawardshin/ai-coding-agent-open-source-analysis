@@ -1,14 +1,14 @@
 # Coding Agents and IDEs
 
-Generated: 2026-06-18T14:54:26.642Z
+Generated: 2026-06-18T15:04:44.222Z
 
 Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.
 
 ## 요약
 
 - 조사 단위: `coding-agents` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 86 reports이며, 주요 보고서 유형은 per-repository-report (64), clone-structure-report (10), llm-wiki-report (3), agent-harness-report (2), category-guide (2)입니다.
-- 주요 출처 폴더: repositories (30), global-trending/repositories (26), clone-structures (10), korea-trending/repositories (5), llm-wiki/code-level-repositories (3).
+- 포함 범위: 124 reports이며, 주요 보고서 유형은 per-repository-report (64), source-deep-dive-report (39), clone-structure-report (10), llm-wiki-report (3), agent-harness-report (2)입니다.
+- 주요 출처 폴더: source-deep-dives (39), repositories (30), global-trending/repositories (26), clone-structures (10), korea-trending/repositories (5).
 
 ## 총평
 
@@ -29,23 +29,24 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 
 ## Counts
 
-- Reports: 86
+- Reports: 124
 - Data: [data/report-categories/coding-agents.json](../../../data/report-categories/coding-agents.json)
 
 ## Report Types
 
 - per-repository-report: 64
+- source-deep-dive-report: 39
 - clone-structure-report: 10
 - llm-wiki-report: 3
 - agent-harness-report: 2
 - category-guide: 2
 - overview-report: 2
 - research-synthesis: 1
-- source-deep-dive-report: 1
 - presentation-report: 1
 
 ## Source Folders
 
+- source-deep-dives: 39
 - repositories: 30
 - global-trending/repositories: 26
 - clone-structures: 10
@@ -56,7 +57,6 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 - categories: 2
 - research: 1
 - repository-insights: 1
-- source-deep-dives: 1
 - root: 1
 - presentations: 1
 
@@ -76,24 +76,24 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 | [Codex Conference Talk Playbook](../../presentations/codex-conference-talk-playbook.md) | presentation-report | presentations | 117 |
 | [AgriciDaniel/claude-obsidian 코드 레벨 분석](../../llm-wiki/code-level-repositories/AgriciDaniel__claude-obsidian.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [HKUDS/VideoRAG 코드 레벨 분석](../../llm-wiki/code-level-repositories/HKUDS__VideoRAG.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
+| [naver/naver-openapi-guide Source Deep Dive](../../source-deep-dives/repositories/1/naver__naver-openapi-guide.md) | source-deep-dive-report | source-deep-dives | 20 |
+| [KalyanKS-NLP/rag-zero-to-hero-guide Source Deep Dive](../../source-deep-dives/repositories/2/KalyanKS-NLP__rag-zero-to-hero-guide.md) | source-deep-dive-report | source-deep-dives | 20 |
 | [naver/naver-openapi-guide](../../korea-trending/repositories/naver__naver-openapi-guide.md) | per-repository-report | korea-trending/repositories | -4 |
 | [KalyanKS-NLP/rag-zero-to-hero-guide 구조 분석](../../llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | per-repository-report | llm-wiki/repositories | -4 |
-| [Aider-AI/aider 구조 분석](../../clone-structures/Aider-AI__aider.md) | clone-structure-report | clone-structures | -28 |
-| [All-Hands-AI/OpenHands 구조 분석](../../clone-structures/All-Hands-AI__OpenHands.md) | clone-structure-report | clone-structures | -28 |
-| [cline/cline 구조 분석](../../clone-structures/cline__cline.md) | clone-structure-report | clone-structures | -28 |
-| [confident-ai/deepeval 구조 분석](../../clone-structures/confident-ai__deepeval.md) | clone-structure-report | clone-structures | -28 |
-| [google-gemini/gemini-cli 구조 분석](../../clone-structures/google-gemini__gemini-cli.md) | clone-structure-report | clone-structures | -28 |
-| [openai/codex-plugin-cc 구조 분석](../../clone-structures/openai__codex-plugin-cc.md) | clone-structure-report | clone-structures | -28 |
-| [openai/codex 구조 분석](../../clone-structures/openai__codex.md) | clone-structure-report | clone-structures | -28 |
-| [RooCodeInc/Roo-Code 구조 분석](../../clone-structures/RooCodeInc__Roo-Code.md) | clone-structure-report | clone-structures | -28 |
-| [Yeachan-Heo/oh-my-claudecode 구조 분석](../../clone-structures/Yeachan-Heo__oh-my-claudecode.md) | clone-structure-report | clone-structures | -28 |
-| [Yeachan-Heo/oh-my-codex 구조 분석](../../clone-structures/Yeachan-Heo__oh-my-codex.md) | clone-structure-report | clone-structures | -28 |
-| [aaif-goose/goose 분석 보고서](../../repositories/aaif-goose-goose.md) | per-repository-report | repositories | -28 |
-| [agno-agi/agno 분석 보고서](../../repositories/agno-agi-agno.md) | per-repository-report | repositories | -28 |
-| [Aider-AI/aider 분석 보고서](../../repositories/aider-ai-aider.md) | per-repository-report | repositories | -28 |
-| [All-Hands-AI/OpenHands 심층 분석](../../repositories/all-hands-ai-openhands.md) | per-repository-report | repositories | -28 |
-| [anomalyco/opencode 심층 분석](../../repositories/anomalyco-opencode.md) | per-repository-report | repositories | -28 |
-| [browser-use/browser-use 심층 분석](../../repositories/browser-use-browser-use.md) | per-repository-report | repositories | -28 |
+| [bagidea/bagidea-office Source Deep Dive](../../source-deep-dives/repositories/0/bagidea__bagidea-office.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [borghei/Claude-Skills Source Deep Dive](../../source-deep-dives/repositories/0/borghei__Claude-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [makoMakoGo/fish-claude Source Deep Dive](../../source-deep-dives/repositories/1/makoMakoGo__fish-claude.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [zubair-trabzada/geo-seo-claude Source Deep Dive](../../source-deep-dives/repositories/1/zubair-trabzada__geo-seo-claude.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Aider-AI/aider Source Deep Dive](../../source-deep-dives/repositories/2/Aider-AI__aider.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [confident-ai/deepeval Source Deep Dive](../../source-deep-dives/repositories/2/confident-ai__deepeval.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [hoangsonww/Claude-Code-Agent-Monitor Source Deep Dive](../../source-deep-dives/repositories/2/hoangsonww__Claude-Code-Agent-Monitor.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [liaohch3/claude-tap Source Deep Dive](../../source-deep-dives/repositories/2/liaohch3__claude-tap.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [marcusquinn/aidevops Source Deep Dive](../../source-deep-dives/repositories/4/marcusquinn__aidevops.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [rebel0789/codexpro Source Deep Dive](../../source-deep-dives/repositories/4/rebel0789__codexpro.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [JSONbored/awesome-claude Source Deep Dive](../../source-deep-dives/repositories/6/JSONbored__awesome-claude.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [AgriciDaniel/claude-obsidian Source Deep Dive](../../source-deep-dives/repositories/7/AgriciDaniel__claude-obsidian.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [rocketride-org/rocketride-server Source Deep Dive](../../source-deep-dives/repositories/7/rocketride-org__rocketride-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [videosdk-live/agents Source Deep Dive](../../source-deep-dives/repositories/7/videosdk-live__agents.md) | source-deep-dive-report | source-deep-dives | -5 |
 
 
 ## All Reports
@@ -112,8 +112,46 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 | [Codex Conference Talk Playbook](../../presentations/codex-conference-talk-playbook.md) | presentation-report | presentations | 117 |
 | [AgriciDaniel/claude-obsidian 코드 레벨 분석](../../llm-wiki/code-level-repositories/AgriciDaniel__claude-obsidian.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [HKUDS/VideoRAG 코드 레벨 분석](../../llm-wiki/code-level-repositories/HKUDS__VideoRAG.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
+| [naver/naver-openapi-guide Source Deep Dive](../../source-deep-dives/repositories/1/naver__naver-openapi-guide.md) | source-deep-dive-report | source-deep-dives | 20 |
+| [KalyanKS-NLP/rag-zero-to-hero-guide Source Deep Dive](../../source-deep-dives/repositories/2/KalyanKS-NLP__rag-zero-to-hero-guide.md) | source-deep-dive-report | source-deep-dives | 20 |
 | [naver/naver-openapi-guide](../../korea-trending/repositories/naver__naver-openapi-guide.md) | per-repository-report | korea-trending/repositories | -4 |
 | [KalyanKS-NLP/rag-zero-to-hero-guide 구조 분석](../../llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | per-repository-report | llm-wiki/repositories | -4 |
+| [bagidea/bagidea-office Source Deep Dive](../../source-deep-dives/repositories/0/bagidea__bagidea-office.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [borghei/Claude-Skills Source Deep Dive](../../source-deep-dives/repositories/0/borghei__Claude-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [makoMakoGo/fish-claude Source Deep Dive](../../source-deep-dives/repositories/1/makoMakoGo__fish-claude.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [zubair-trabzada/geo-seo-claude Source Deep Dive](../../source-deep-dives/repositories/1/zubair-trabzada__geo-seo-claude.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Aider-AI/aider Source Deep Dive](../../source-deep-dives/repositories/2/Aider-AI__aider.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [confident-ai/deepeval Source Deep Dive](../../source-deep-dives/repositories/2/confident-ai__deepeval.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [hoangsonww/Claude-Code-Agent-Monitor Source Deep Dive](../../source-deep-dives/repositories/2/hoangsonww__Claude-Code-Agent-Monitor.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [liaohch3/claude-tap Source Deep Dive](../../source-deep-dives/repositories/2/liaohch3__claude-tap.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [marcusquinn/aidevops Source Deep Dive](../../source-deep-dives/repositories/4/marcusquinn__aidevops.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [rebel0789/codexpro Source Deep Dive](../../source-deep-dives/repositories/4/rebel0789__codexpro.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [JSONbored/awesome-claude Source Deep Dive](../../source-deep-dives/repositories/6/JSONbored__awesome-claude.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [AgriciDaniel/claude-obsidian Source Deep Dive](../../source-deep-dives/repositories/7/AgriciDaniel__claude-obsidian.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [rocketride-org/rocketride-server Source Deep Dive](../../source-deep-dives/repositories/7/rocketride-org__rocketride-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [videosdk-live/agents Source Deep Dive](../../source-deep-dives/repositories/7/videosdk-live__agents.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Yeachan-Heo/oh-my-claudecode Source Deep Dive](../../source-deep-dives/repositories/7/Yeachan-Heo__oh-my-claudecode.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [openai/codex-plugin-cc Source Deep Dive](../../source-deep-dives/repositories/8/openai__codex-plugin-cc.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon Source Deep Dive](../../source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [HKUDS/VideoRAG Source Deep Dive](../../source-deep-dives/repositories/9/HKUDS__VideoRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [openai/codex Source Deep Dive](../../source-deep-dives/repositories/9/openai__codex.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [chopratejas/headroom Source Deep Dive](../../source-deep-dives/repositories/a/chopratejas__headroom.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [google-gemini/gemini-cli Source Deep Dive](../../source-deep-dives/repositories/a/google-gemini__gemini-cli.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [numtide/llm-agents.nix Source Deep Dive](../../source-deep-dives/repositories/b/numtide__llm-agents.nix.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [SheikhSheave/Claude-Code-CLI-Reference Source Deep Dive](../../source-deep-dives/repositories/b/SheikhSheave__Claude-Code-CLI-Reference.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [zilliztech/claude-context Source Deep Dive](../../source-deep-dives/repositories/b/zilliztech__claude-context.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [OpenHands/OpenHands Source Deep Dive](../../source-deep-dives/repositories/c/OpenHands__OpenHands.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [GeminiLight/MindOS Source Deep Dive](../../source-deep-dives/repositories/d/GeminiLight__MindOS.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Wide-Moat/open-computer-use Source Deep Dive](../../source-deep-dives/repositories/d/Wide-Moat__open-computer-use.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Yeachan-Heo/oh-my-codex Source Deep Dive](../../source-deep-dives/repositories/d/Yeachan-Heo__oh-my-codex.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [All-Hands-AI/OpenHands Source Deep Dive](../../source-deep-dives/repositories/e/All-Hands-AI__OpenHands.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [lowtidebuild/data-protection-agent Source Deep Dive](../../source-deep-dives/repositories/e/lowtidebuild__data-protection-agent.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [NVIDIA-AI-Blueprints/video-search-and-summarization Source Deep Dive](../../source-deep-dives/repositories/e/NVIDIA-AI-Blueprints__video-search-and-summarization.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [thedotmack/claude-mem Source Deep Dive](../../source-deep-dives/repositories/e/thedotmack__claude-mem.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [anthropics/claude-code Source Deep Dive](../../source-deep-dives/repositories/f/anthropics__claude-code.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [bosun-ai/swiftide Source Deep Dive](../../source-deep-dives/repositories/f/bosun-ai__swiftide.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [cline/cline Source Deep Dive](../../source-deep-dives/repositories/f/cline__cline.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [RooCodeInc/Roo-Code Source Deep Dive](../../source-deep-dives/repositories/f/RooCodeInc__Roo-Code.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [Aider-AI/aider 구조 분석](../../clone-structures/Aider-AI__aider.md) | clone-structure-report | clone-structures | -28 |
 | [All-Hands-AI/OpenHands 구조 분석](../../clone-structures/All-Hands-AI__OpenHands.md) | clone-structure-report | clone-structures | -28 |
 | [cline/cline 구조 분석](../../clone-structures/cline__cline.md) | clone-structure-report | clone-structures | -28 |

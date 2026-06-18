@@ -1,6 +1,6 @@
 # Repository Insights by Role
 
-Generated: 2026-06-18T14:52:41.414Z
+Generated: 2026-06-18T15:04:28.365Z
 
 ## 요약
 

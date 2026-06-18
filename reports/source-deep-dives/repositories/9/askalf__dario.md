@@ -1,0 +1,176 @@
+# askalf/dario Source Deep Dive
+
+Generated: 2026-06-18T15:04:30.215Z
+
+Your Claude Pro/Max subscription in any tool — Cursor, Cline, Aider, Agent SDK — at subscription pricing, not per-token bills. One local endpoint that replays Claude Code's wire shape so your traffic stays in the subscription pool.
+
+## 요약
+
+- 조사 단위: `sources/askalf__dario` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
+- 포함 범위: 245 files, 16 directories, depth score 119, key references 12개입니다.
+- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+
+## 총평
+
+AI 인프라/서빙 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=src/cli.ts, src/index.ts, src/mcp/server.ts이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
+| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
+| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
+| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
+| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+
+
+## Repository Context
+
+| Field | Value |
+| --- | --- |
+| Repository | askalf/dario |
+| Topic | AI Infrastructure and Serving / AI 인프라/서빙 |
+| Region | global |
+| Language | JavaScript |
+| Stars | 278 |
+| Forks | 43 |
+| License | none |
+| Maturity | solid |
+| Evidence | source+report |
+| Source | [sources/askalf__dario](../../../../sources/askalf__dario) |
+| Existing report | [reports/global-trending/repositories/askalf__dario.md](../../../global-trending/repositories/askalf__dario.md) |
+
+
+## Architecture Map
+
+| Field | Value |
+| --- | --- |
+| Files / directories | 245 / 16 |
+| Max observed depth | 4 |
+| Top directories | .github, docs, reviews, scripts, src, test |
+| Top extensions | .mjs: 121, .ts: 47, .md: 42, .yml: 19, (none): 6, .json: 5, .cjs: 1, .html: 1, .png: 1, .sh: 1, .yaml: 1 |
+| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, eval/test harness, security/policy surface, containerized deploy |
+
+### Components
+
+| Component | Role | Signal count |
+| --- | --- | ---: |
+| docs | documentation surface | 24 |
+| src | source boundary | 12 |
+| .github | ci surface | 1 |
+| reviews | top-level component | 1 |
+| scripts | top-level component | 1 |
+| test | validation surface | 1 |
+
+
+## How It Runs
+
+| Category | Source | Name | Command |
+| --- | --- | --- | --- |
+| build | package.json | build | tsc && cp src/cc-template-data.json dist/ && node -e "require('fs').mkdirSync('dist/shim',{recursive:true})" && cp src/shim/runtime.cjs dist/shim/ |
+| test | package.json | test | node --test --test-concurrency=8 test/all.test.mjs |
+| test | package.json | test:serial | node test/issue-29-tool-translation.mjs && node test/hybrid-tools.mjs && node test/tool-schema-contract.mjs && node test/scrub-paths.mjs && node test/provider-prefix.mjs && node test/analytics-recording.mjs && node test/ |
+| utility | package.json | audit | npm audit --production --audit-level=high |
+| build | package.json | prepublishOnly | npm run build |
+| serve-dev | package.json | start | node dist/cli.js |
+| serve-dev | package.json | dev | tsx src/cli.ts |
+| test | package.json | e2e | node test/e2e.mjs |
+| test | package.json | stress | node test/stress.mjs |
+| test | package.json | compat | node test/compat.mjs |
+| quality | package.json | lint:pkg | node scripts/check-package-json.mjs |
+| quality | package.json | drift:sdk | node scripts/check-sdk-drift.mjs |
+| utility | package.json | cch:calibrate | node scripts/cch-calibrate.mjs |
+| utility | package.json | fix:pkg | node -e "const fs=require('fs');fs.writeFileSync('package.json',JSON.stringify(JSON.parse(fs.readFileSync('package.json','utf-8')),null,2)+'\n')" |
+| entrypoint | package.json bin | cli.js | ./dist/cli.js |
+
+
+## Dependency Stack
+
+| Group | Detected cues |
+| --- | --- |
+| llmProviders | none |
+| agentProtocols | none |
+| agentFrameworks | none |
+| vectorStores | none |
+| modelRuntime | none |
+| webRuntime | none |
+| developerSurface | none |
+| observability | none |
+| browserAutomation | none |
+
+
+## Key Source References
+
+| Bucket | Source path | Why it matters |
+| --- | --- | --- |
+| entrypoints | [src/cli.ts](../../../../sources/askalf__dario/src/cli.ts) | entrypoints signal |
+| entrypoints | [src/index.ts](../../../../sources/askalf__dario/src/index.ts) | entrypoints signal |
+| entrypoints | [src/mcp/server.ts](../../../../sources/askalf__dario/src/mcp/server.ts) | entrypoints signal |
+| container | [Dockerfile](../../../../sources/askalf__dario/Dockerfile) | container signal |
+| config | [package.json](../../../../sources/askalf__dario/package.json) | config signal |
+| config | [tsconfig.json](../../../../sources/askalf__dario/tsconfig.json) | config signal |
+| ci | [.github/workflows/actionlint.yml](../../../../sources/askalf__dario/.github/workflows/actionlint.yml) | ci signal |
+| ci | [.github/workflows/auto-merge-bot-prs.yml](../../../../sources/askalf__dario/.github/workflows/auto-merge-bot-prs.yml) | ci signal |
+| ci | [.github/workflows/cc-billing-classifier-canary.yml](../../../../sources/askalf__dario/.github/workflows/cc-billing-classifier-canary.yml) | ci signal |
+| ci | [.github/workflows/cc-drift-auto-release.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-auto-release.yml) | ci signal |
+| eval | [test/account-refresh-singleflight.mjs](../../../../sources/askalf__dario/test/account-refresh-singleflight.mjs) | eval support |
+| eval | [test/adaptive-thinking-gate.mjs](../../../../sources/askalf__dario/test/adaptive-thinking-gate.mjs) | eval support |
+
+
+## Evidence Buckets
+
+| Evidence bucket | Hits | Representative paths |
+| --- | ---: | --- |
+| entrypoints | 3 | [src/cli.ts](../../../../sources/askalf__dario/src/cli.ts)<br>[src/index.ts](../../../../sources/askalf__dario/src/index.ts)<br>[src/mcp/server.ts](../../../../sources/askalf__dario/src/mcp/server.ts) |
+| agentRuntime | 4 | [test/tool-advertise-respects-client.mjs](../../../../sources/askalf__dario/test/tool-advertise-respects-client.mjs)<br>[test/tool-schema-contract.mjs](../../../../sources/askalf__dario/test/tool-schema-contract.mjs)<br>[src/mcp/tools.ts](../../../../sources/askalf__dario/src/mcp/tools.ts)<br>[docs/integrations/agent-compat.md](../../../../sources/askalf__dario/docs/integrations/agent-compat.md) |
+| mcp | 7 | [test/mcp-e2e.mjs](../../../../sources/askalf__dario/test/mcp-e2e.mjs)<br>[test/mcp-protocol.mjs](../../../../sources/askalf__dario/test/mcp-protocol.mjs)<br>[test/mcp-tools.mjs](../../../../sources/askalf__dario/test/mcp-tools.mjs)<br>[src/mcp/protocol.ts](../../../../sources/askalf__dario/src/mcp/protocol.ts)<br>[src/mcp/server.ts](../../../../sources/askalf__dario/src/mcp/server.ts)<br>[src/mcp/tools.ts](../../../../sources/askalf__dario/src/mcp/tools.ts)<br>[docs/mcp-server.md](../../../../sources/askalf__dario/docs/mcp-server.md) |
+| retrieval | 1 | [src/index.ts](../../../../sources/askalf__dario/src/index.ts) |
+| spec | 0 | not obvious |
+| eval | 108 | [test/account-refresh-singleflight.mjs](../../../../sources/askalf__dario/test/account-refresh-singleflight.mjs)<br>[test/adaptive-thinking-gate.mjs](../../../../sources/askalf__dario/test/adaptive-thinking-gate.mjs)<br>[test/all.test.mjs](../../../../sources/askalf__dario/test/all.test.mjs)<br>[test/analytics-billing-bucket.mjs](../../../../sources/askalf__dario/test/analytics-billing-bucket.mjs)<br>[test/analytics-recording.mjs](../../../../sources/askalf__dario/test/analytics-recording.mjs)<br>[test/analytics-stream.mjs](../../../../sources/askalf__dario/test/analytics-stream.mjs)<br>[test/atomic-write.mjs](../../../../sources/askalf__dario/test/atomic-write.mjs)<br>[test/auth-check.mjs](../../../../sources/askalf__dario/test/auth-check.mjs) |
+| security | 16 | [SECURITY.md](../../../../sources/askalf__dario/SECURITY.md)<br>[test/auth-check.mjs](../../../../sources/askalf__dario/test/auth-check.mjs)<br>[test/auth-reject-diagnostic.mjs](../../../../sources/askalf__dario/test/auth-reject-diagnostic.mjs)<br>[test/main-entry-guard.mjs](../../../../sources/askalf__dario/test/main-entry-guard.mjs)<br>[test/manual-oauth-flow.mjs](../../../../sources/askalf__dario/test/manual-oauth-flow.mjs)<br>[test/oauth-authorize-url-normalize.mjs](../../../../sources/askalf__dario/test/oauth-authorize-url-normalize.mjs)<br>[test/oauth-detector.mjs](../../../../sources/askalf__dario/test/oauth-detector.mjs)<br>[test/oauth-state-length.mjs](../../../../sources/askalf__dario/test/oauth-state-length.mjs) |
+| ci | 16 | [.github/workflows/actionlint.yml](../../../../sources/askalf__dario/.github/workflows/actionlint.yml)<br>[.github/workflows/auto-merge-bot-prs.yml](../../../../sources/askalf__dario/.github/workflows/auto-merge-bot-prs.yml)<br>[.github/workflows/cc-billing-classifier-canary.yml](../../../../sources/askalf__dario/.github/workflows/cc-billing-classifier-canary.yml)<br>[.github/workflows/cc-drift-auto-release.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-auto-release.yml)<br>[.github/workflows/cc-drift-template-watch.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-template-watch.yml)<br>[.github/workflows/cc-drift-watch.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-watch.yml)<br>[.github/workflows/cc-drift-watcher-liveness.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-watcher-liveness.yml)<br>[.github/workflows/ci.yml](../../../../sources/askalf__dario/.github/workflows/ci.yml) |
+| container | 1 | [Dockerfile](../../../../sources/askalf__dario/Dockerfile) |
+| instruction | 1 | [CLAUDE.md](../../../../sources/askalf__dario/CLAUDE.md) |
+| docs | 23 | [README.md](../../../../sources/askalf__dario/README.md)<br>[reviews/README.md](../../../../sources/askalf__dario/reviews/README.md)<br>[docs/commands.md](../../../../sources/askalf__dario/docs/commands.md)<br>[docs/docker.md](../../../../sources/askalf__dario/docs/docker.md)<br>[docs/drift-monitor.md](../../../../sources/askalf__dario/docs/drift-monitor.md)<br>[docs/faq.md](../../../../sources/askalf__dario/docs/faq.md)<br>[docs/mcp-server.md](../../../../sources/askalf__dario/docs/mcp-server.md)<br>[docs/multi-account-pool.md](../../../../sources/askalf__dario/docs/multi-account-pool.md) |
+| config | 2 | [package.json](../../../../sources/askalf__dario/package.json)<br>[tsconfig.json](../../../../sources/askalf__dario/tsconfig.json) |
+
+
+## Validation Surface
+
+| Surface | Hits | Representative paths |
+| --- | ---: | --- |
+| Tests / evals | 108 | [test/account-refresh-singleflight.mjs](../../../../sources/askalf__dario/test/account-refresh-singleflight.mjs)<br>[test/adaptive-thinking-gate.mjs](../../../../sources/askalf__dario/test/adaptive-thinking-gate.mjs)<br>[test/all.test.mjs](../../../../sources/askalf__dario/test/all.test.mjs)<br>[test/analytics-billing-bucket.mjs](../../../../sources/askalf__dario/test/analytics-billing-bucket.mjs)<br>[test/analytics-recording.mjs](../../../../sources/askalf__dario/test/analytics-recording.mjs)<br>[test/analytics-stream.mjs](../../../../sources/askalf__dario/test/analytics-stream.mjs) |
+| CI workflows | 16 | [.github/workflows/actionlint.yml](../../../../sources/askalf__dario/.github/workflows/actionlint.yml)<br>[.github/workflows/auto-merge-bot-prs.yml](../../../../sources/askalf__dario/.github/workflows/auto-merge-bot-prs.yml)<br>[.github/workflows/cc-billing-classifier-canary.yml](../../../../sources/askalf__dario/.github/workflows/cc-billing-classifier-canary.yml)<br>[.github/workflows/cc-drift-auto-release.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-auto-release.yml)<br>[.github/workflows/cc-drift-template-watch.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-template-watch.yml)<br>[.github/workflows/cc-drift-watch.yml](../../../../sources/askalf__dario/.github/workflows/cc-drift-watch.yml) |
+| Containers / deploy | 1 | [Dockerfile](../../../../sources/askalf__dario/Dockerfile) |
+| Security / policy | 16 | [SECURITY.md](../../../../sources/askalf__dario/SECURITY.md)<br>[test/auth-check.mjs](../../../../sources/askalf__dario/test/auth-check.mjs)<br>[test/auth-reject-diagnostic.mjs](../../../../sources/askalf__dario/test/auth-reject-diagnostic.mjs)<br>[test/main-entry-guard.mjs](../../../../sources/askalf__dario/test/main-entry-guard.mjs)<br>[test/manual-oauth-flow.mjs](../../../../sources/askalf__dario/test/manual-oauth-flow.mjs)<br>[test/oauth-authorize-url-normalize.mjs](../../../../sources/askalf__dario/test/oauth-authorize-url-normalize.mjs) |
+| Agent instructions | 1 | [CLAUDE.md](../../../../sources/askalf__dario/CLAUDE.md) |
+
+
+## Risks and Follow-up Checks
+
+| Risk category | Findings |
+| --- | --- |
+| architecture | none |
+| operation | none |
+| security | none |
+| evidenceGaps | dependency cue weak in root manifests |
+
+
+## Reading Plan
+
+1. Start from key references: `src/cli.ts`, `src/index.ts`, `src/mcp/server.ts`.
+2. Trace execution through entrypoints: `src/cli.ts`, `src/index.ts`, `src/mcp/server.ts`.
+3. Map agent/tool runtime through: `test/tool-advertise-respects-client.mjs`, `test/tool-schema-contract.mjs`, `src/mcp/tools.ts`.
+4. Inspect retrieval/memory/indexing through: `src/index.ts`.
+5. Verify behavior through test/eval files: `test/account-refresh-singleflight.mjs`, `test/adaptive-thinking-gate.mjs`, `test/all.test.mjs`.
+
+## Existing Repository Insight
+
+AI 인프라/서빙 관점에서 Your Claude Pro/Max subscription in any tool — Cursor, Cline, Aider, Agent SDK — at subscription pricing, not per token . 핵심 구조 신호는 JavaScript, package.json, Dockerfile, README.md, CLAUDE.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+
+## Existing Assessment
+
+global 신호의 AI 인프라/서빙 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.

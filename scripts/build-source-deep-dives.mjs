@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -9,8 +10,10 @@ const outputDataFile = path.join(root, "data", "source-deep-scan.json");
 const outputCsvFile = path.join(root, "data", "report-tables", "source-deep-scan.csv");
 const outputReportDir = path.join(root, "reports", "source-deep-dives");
 const outputTopicDir = path.join(outputReportDir, "by-topic");
+const outputRepositoryDir = path.join(outputReportDir, "repositories");
 const maxFilesPerRepo = 15000;
 const maxDepth = 12;
+const sourceScanConcurrency = Number(process.env.SOURCE_DEEP_SCAN_CONCURRENCY || 12);
 
 const topicDefinitions = [
   { slug: "coding-agent-ide", title: "Coding Agent and IDE", korean: "코딩 에이전트/IDE", focus: "CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문" },
@@ -55,6 +58,18 @@ const cueTerms = [
   "weaviate", "pgvector", "faiss", "opentelemetry", "prometheus", "playwright", "puppeteer"
 ];
 
+const dependencyGroupRules = {
+  llmProviders: ["openai", "anthropic", "claude", "gemini"],
+  agentProtocols: ["mcp", "modelcontextprotocol", "codex"],
+  agentFrameworks: ["langchain", "langgraph", "llamaindex", "llama-index"],
+  vectorStores: ["chroma", "qdrant", "milvus", "weaviate", "pgvector", "faiss"],
+  modelRuntime: ["torch", "transformers", "vllm", "ollama", "llama"],
+  webRuntime: ["fastapi", "express", "next", "react", "vue", "svelte"],
+  developerSurface: ["vscode", "electron", "click", "typer", "commander", "cobra"],
+  observability: ["opentelemetry", "prometheus"],
+  browserAutomation: ["playwright", "puppeteer"]
+};
+
 function safeArray(value) {
   return Array.isArray(value) ? value : [];
 }
@@ -94,6 +109,28 @@ function renderMarkdown(content) {
   return `${content.trimEnd()}\n`;
 }
 
+function repoSafeName(value) {
+  return String(value || "")
+    .replace(/^https:\/\/github\.com\//, "")
+    .replace(/\.git$/, "")
+    .replaceAll("/", "__")
+    .replace(/[^A-Za-z0-9_.-]+/g, "_")
+    .slice(0, 120);
+}
+
+function canonicalRepoSlug(row) {
+  const fromLocalPath = row?.localPath ? path.basename(row.localPath) : "";
+  return fromLocalPath || repoSafeName(row?.name || row?.url || "unknown-repository");
+}
+
+function shardForSlug(slug) {
+  return createHash("sha1").update(slug).digest("hex").slice(0, 1);
+}
+
+function isSafeRelativePath(value) {
+  return Boolean(value) && !/[\n|()[\]<>]/.test(value);
+}
+
 function linkFrom(baseDir, target, label) {
   if (!target) return "";
   const relative = path.relative(path.join(root, baseDir), path.join(root, target)).replaceAll(path.sep, "/");
@@ -115,6 +152,20 @@ function countBy(rows, keyFn) {
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
+}
+
+async function mapLimit(items, limit, mapper) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+  async function worker() {
+    while (nextIndex < items.length) {
+      const current = nextIndex;
+      nextIndex += 1;
+      results[current] = await mapper(items[current], current);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
 }
 
 function addBucket(scan, bucket, filePath) {
@@ -177,6 +228,7 @@ async function extractManifestDetails(absolute) {
   const details = {
     packageName: null,
     packageScripts: [],
+    packageScriptCommands: [],
     packageBins: [],
     packageEntrypoints: [],
     makeTargets: [],
@@ -190,8 +242,13 @@ async function extractManifestDetails(absolute) {
   if (existsSync(packageFile)) {
     try {
       const pkg = JSON.parse(await readFile(packageFile, "utf8"));
+      const scriptEntries = Object.entries(pkg.scripts || {}).slice(0, 40);
       details.packageName = pkg.name || null;
-      details.packageScripts = Object.keys(pkg.scripts || {}).slice(0, 20);
+      details.packageScripts = scriptEntries.map(([name]) => name);
+      details.packageScriptCommands = scriptEntries.map(([name, command]) => ({
+        name,
+        command: String(command || "").slice(0, 220)
+      }));
       details.packageBins = typeof pkg.bin === "string" ? [pkg.bin] : Object.values(pkg.bin || {}).slice(0, 20);
       details.packageEntrypoints = [pkg.main, pkg.module, pkg.types, pkg.exports && "exports"].filter(Boolean).slice(0, 20);
       dependencyTextParts.push(Object.keys({ ...(pkg.dependencies || {}), ...(pkg.devDependencies || {}), ...(pkg.peerDependencies || {}) }).join(" "));
@@ -252,6 +309,128 @@ function detectPatterns(repo, scan, manifests) {
   return patterns.slice(0, 8);
 }
 
+function dependencyGroups(cues) {
+  const cueSet = new Set(safeArray(cues));
+  return Object.fromEntries(Object.entries(dependencyGroupRules).map(([group, terms]) => [
+    group,
+    terms.filter((term) => cueSet.has(term))
+  ]));
+}
+
+function allBucketPaths(scan) {
+  return Object.values(scan.buckets).flatMap((paths) => safeArray(paths));
+}
+
+function inferComponents(scan) {
+  const counts = new Map();
+  const add = (component, role) => {
+    if (!component) return;
+    const current = counts.get(component) || { component, role, count: 0 };
+    current.count += 1;
+    counts.set(component, current);
+  };
+  for (const dir of scan.topDirectories) {
+    if (dir.startsWith(".") && ![".github", ".codex", ".devcontainer"].includes(dir)) continue;
+    if (/docs?|website|site/i.test(dir)) add(dir, "documentation surface");
+    else if (/tests?|e2e|bench/i.test(dir)) add(dir, "validation surface");
+    else if (/github|ci/i.test(dir)) add(dir, "ci surface");
+    else if (/devcontainer|docker|deploy|k8s|helm/i.test(dir)) add(dir, "deployment surface");
+    else if (/packages|apps|crates|cmd|src|lib|libs|server|client|web|api/i.test(dir)) add(dir, "source boundary");
+    else add(dir, "top-level component");
+  }
+  for (const filePath of allBucketPaths(scan)) {
+    const parts = filePath.split("/");
+    if (parts.length >= 2 && /^(apps|packages|crates|cmd|services|libs|examples)$/i.test(parts[0])) {
+      add(`${parts[0]}/${parts[1]}`, `${parts[0]} workspace`);
+    } else if (parts.length >= 3 && parts[0] === "python" && parts[1] === "packages") {
+      add(`${parts[0]}/${parts[1]}/${parts[2]}`, "python package");
+    } else if (parts.length >= 2 && /^(src|lib|server|client|web|api|tests|docs)$/i.test(parts[0])) {
+      add(parts[0], "source boundary");
+    }
+  }
+  return [...counts.values()]
+    .sort((a, b) => b.count - a.count || a.component.localeCompare(b.component))
+    .slice(0, 18);
+}
+
+function commandCategory(name, command = "") {
+  const text = `${name} ${command}`.toLowerCase();
+  if (/test|spec|vitest|jest|pytest|cargo test|go test|coverage/.test(text)) return "test";
+  if (/dev|watch|serve|start|server|uvicorn|fastapi|next dev|vite/.test(text)) return "serve-dev";
+  if (/build|compile|bundle|dist|release/.test(text)) return "build";
+  if (/lint|format|type|tsc|mypy|ruff|eslint|clippy|fmt|prettier|check/.test(text)) return "quality";
+  if (/docker|compose|container|image/.test(text)) return "container";
+  return "utility";
+}
+
+function deriveCommands(manifests) {
+  const commands = [];
+  for (const item of safeArray(manifests.packageScriptCommands)) {
+    commands.push({ source: "package.json", name: item.name, command: item.command, category: commandCategory(item.name, item.command) });
+  }
+  for (const target of safeArray(manifests.makeTargets)) {
+    commands.push({ source: "Makefile", name: target, command: `make ${target}`, category: commandCategory(target) });
+  }
+  for (const script of safeArray(manifests.pythonProjectScripts)) {
+    commands.push({ source: "pyproject.toml", name: script, command: script, category: commandCategory(script) });
+  }
+  for (const bin of safeArray(manifests.packageBins)) {
+    commands.push({ source: "package.json bin", name: path.basename(bin), command: bin, category: "entrypoint" });
+  }
+  return commands.slice(0, 80);
+}
+
+function commandSummary(commands) {
+  return {
+    test: commands.filter((item) => item.category === "test").slice(0, 10),
+    serveDev: commands.filter((item) => item.category === "serve-dev").slice(0, 10),
+    build: commands.filter((item) => item.category === "build").slice(0, 10),
+    quality: commands.filter((item) => item.category === "quality").slice(0, 10),
+    container: commands.filter((item) => item.category === "container").slice(0, 10),
+    entrypoint: commands.filter((item) => item.category === "entrypoint").slice(0, 10),
+    utility: commands.filter((item) => item.category === "utility").slice(0, 10)
+  };
+}
+
+function riskCategories(rowLike, scan, references) {
+  return {
+    architecture: [
+      scan.topDirectories.length > 18 ? "many top-level directories; module boundaries need review" : null,
+      scan.truncated ? `large repository scan truncated at ${maxFilesPerRepo} files` : null,
+      !scan.bucketCounts.entrypoints ? "primary entrypoint not obvious from path scan" : null
+    ].filter(Boolean),
+    operation: [
+      !scan.bucketCounts.ci ? "CI workflow path not obvious" : null,
+      !scan.bucketCounts.container ? "container/deploy path not obvious" : null,
+      !scan.bucketCounts.eval ? "test/eval path not obvious" : null
+    ].filter(Boolean),
+    security: [
+      scan.bucketCounts.security ? null : "security/policy surface not obvious",
+      rowLike.role === "agent-harness-mcp" && !scan.bucketCounts.instruction ? "agent instruction files not obvious" : null
+    ].filter(Boolean),
+    evidenceGaps: [
+      !references.length ? "no high-confidence key source references" : null,
+      !safeArray(rowLike.dependencyCues).length ? "dependency cue weak in root manifests" : null
+    ].filter(Boolean)
+  };
+}
+
+function assignUniqueDeepDivePaths(rows) {
+  const seen = new Map();
+  for (const row of rows) {
+    const base = canonicalRepoSlug(row);
+    const shard = shardForSlug(base);
+    const key = `${shard}/${base}`;
+    const count = seen.get(key) || 0;
+    seen.set(key, count + 1);
+    const fileName = count ? `${base}-${count + 1}.md` : `${base}.md`;
+    row.sourceDeepDiveSlug = base;
+    row.sourceDeepDiveShard = shard;
+    row.sourceDeepDivePath = `reports/source-deep-dives/repositories/${shard}/${fileName}`;
+  }
+  return rows;
+}
+
 function topicBuckets(role) {
   if (role === "coding-agent-ide") return ["entrypoints", "agentRuntime", "instruction", "security", "eval"];
   if (role === "agent-harness-mcp") return ["mcp", "agentRuntime", "entrypoints", "instruction", "config"];
@@ -269,7 +448,7 @@ function selectReferences(repo, scan, manifests) {
   const selected = [];
   const seen = new Set();
   const add = (bucket, filePath, reason) => {
-    if (!filePath || seen.has(filePath) || /[\n|()[\]<>]/.test(filePath)) return;
+    if (!isSafeRelativePath(filePath) || seen.has(filePath)) return;
     seen.add(filePath);
     selected.push({ bucket, path: filePath, reason });
   };
@@ -329,19 +508,28 @@ function buildSourceRisks(scan, references) {
 
 async function buildRows() {
   const insightData = await readJson(inputInsightsFile, { repositories: [] });
-  const rows = [];
-  for (const repo of safeArray(insightData.repositories)) {
+  const repositories = safeArray(insightData.repositories);
+  const rows = await mapLimit(repositories, sourceScanConcurrency, async (repo) => {
     const absolute = repo.localPath ? path.join(root, repo.localPath) : null;
-    if (!absolute || !existsSync(absolute)) continue;
+    if (!absolute || !existsSync(absolute)) return null;
     const scan = await scanFiles(absolute);
     const manifests = await extractManifestDetails(absolute);
     const patterns = detectPatterns(repo, scan, manifests);
     const references = selectReferences(repo, scan, manifests);
     const score = sourceDepthScore(repo, scan, references, patterns);
     const risks = buildSourceRisks(scan, references);
-    rows.push({
+    const commands = deriveCommands(manifests);
+    const groupedDependencies = dependencyGroups(manifests.dependencyCues);
+    const componentMap = inferComponents(scan);
+    const sourceDeepDiveSlug = canonicalRepoSlug(repo);
+    const sourceDeepDiveShard = shardForSlug(sourceDeepDiveSlug);
+    const sourceDeepDivePath = `reports/source-deep-dives/repositories/${sourceDeepDiveShard}/${sourceDeepDiveSlug}.md`;
+    const sourceRiskCategories = riskCategories({ ...repo, dependencyCues: manifests.dependencyCues }, scan, references);
+    return {
       id: repo.id,
       name: repo.name,
+      title: repo.title,
+      summary: repo.summary,
       url: repo.url,
       role: repo.role,
       roleTitle: repo.roleTitle,
@@ -349,33 +537,51 @@ async function buildRows() {
       region: repo.region,
       language: repo.language,
       stars: repo.stars,
+      forks: repo.forks,
+      license: repo.license,
       maturity: repo.maturity,
       evidence: repo.evidence,
+      strategy: repo.strategy,
+      categories: safeArray(repo.categories),
+      originTags: safeArray(repo.originTags),
+      repositoryAssessment: repo.assessment,
+      repositoryInsight: repo.insight,
       reportPath: repo.reportPath,
       localPath: repo.localPath,
+      sourceDeepDiveSlug,
+      sourceDeepDiveShard,
+      sourceDeepDivePath,
       fileCount: scan.fileCount,
       dirCount: scan.dirCount,
       maxDepth: scan.maxObservedDepth,
       truncated: scan.truncated,
+      extensions: scan.extensions,
       topDirectories: scan.topDirectories,
       bucketCounts: scan.bucketCounts,
       buckets: scan.buckets,
+      components: componentMap,
       packageScripts: manifests.packageScripts,
+      packageScriptCommands: manifests.packageScriptCommands,
       packageBins: manifests.packageBins,
       packageEntrypoints: manifests.packageEntrypoints,
       makeTargets: manifests.makeTargets,
       pythonProjectScripts: manifests.pythonProjectScripts,
       goModule: manifests.goModule,
       rustPackage: manifests.rustPackage,
+      commands,
+      commandSummary: commandSummary(commands),
       dependencyCues: manifests.dependencyCues,
+      dependencyGroups: groupedDependencies,
       patterns,
       keySourceReferences: references,
       sourceDepthScore: score,
       sourceRisks: risks,
+      sourceRiskCategories,
       deepInsight: buildDeepInsight(repo, scan, manifests, patterns, references)
-    });
-  }
-  return rows.sort((a, b) => b.sourceDepthScore - a.sourceDepthScore || b.stars - a.stars || a.name.localeCompare(b.name));
+    };
+  });
+  const sortedRows = rows.filter(Boolean).sort((a, b) => b.sourceDepthScore - a.sourceDepthScore || b.stars - a.stars || a.name.localeCompare(b.name));
+  return assignUniqueDeepDivePaths(sortedRows);
 }
 
 function aggregateBucketCounts(rows) {
@@ -394,14 +600,96 @@ function renderReferenceLinks(row, baseDir, limit = 5) {
   return refs.length ? refs.join("<br>") : "not obvious";
 }
 
+function formatSourcePath(row, baseDir, relativePath, label = relativePath) {
+  if (!relativePath) return "";
+  const target = `${row.localPath}/${relativePath}`;
+  if (isSafeRelativePath(relativePath) && existsSync(path.join(root, target))) {
+    return linkFrom(baseDir, target, label);
+  }
+  return `\`${tableText(relativePath)}\``;
+}
+
+function renderSourcePathList(row, baseDir, paths, limit = 12) {
+  const selected = safeArray(paths).slice(0, limit);
+  if (!selected.length) return "not obvious";
+  return selected.map((filePath) => formatSourcePath(row, baseDir, filePath)).join("<br>");
+}
+
+function topEntriesFromObject(object, limit = 12) {
+  return Object.entries(object || {})
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, limit);
+}
+
+function renderKeyValueTable(rows) {
+  return `| Field | Value |\n| --- | --- |\n${rows.map(([field, value]) => `| ${tableText(field)} | ${tableText(value || "none")} |`).join("\n")}\n`;
+}
+
+function renderComponentTable(row) {
+  if (!row.components.length) return "_No module boundary signal extracted._\n";
+  return `| Component | Role | Signal count |\n| --- | --- | ---: |\n${row.components.map((item) => `| ${tableText(item.component)} | ${tableText(item.role)} | ${item.count} |`).join("\n")}\n`;
+}
+
+function renderDependencyGroups(row) {
+  const groups = Object.entries(row.dependencyGroups || {});
+  if (!groups.length) return "_No dependency groups extracted._\n";
+  return `| Group | Detected cues |\n| --- | --- |\n${groups.map(([group, cues]) => `| ${tableText(group)} | ${tableText(safeArray(cues).join(", ") || "none")} |`).join("\n")}\n`;
+}
+
+function renderCommandTable(commands, limit = 40) {
+  const selected = safeArray(commands).slice(0, limit);
+  if (!selected.length) return "_No command surface extracted from root manifests._\n";
+  return `| Category | Source | Name | Command |\n| --- | --- | --- | --- |\n${selected.map((item) => `| ${tableText(item.category)} | ${tableText(item.source)} | ${tableText(item.name)} | ${tableText(item.command)} |`).join("\n")}\n`;
+}
+
+function renderBucketEvidenceTable(row, baseDir) {
+  return `| Evidence bucket | Hits | Representative paths |\n| --- | ---: | --- |\n${bucketRules.map(([bucket]) => `| ${tableText(bucket)} | ${row.bucketCounts[bucket] || 0} | ${renderSourcePathList(row, baseDir, row.buckets[bucket], 8)} |`).join("\n")}\n`;
+}
+
+function renderKeyReferencesTable(row, baseDir) {
+  if (!row.keySourceReferences.length) return "_No high-confidence key references extracted._\n";
+  return `| Bucket | Source path | Why it matters |\n| --- | --- | --- |\n${row.keySourceReferences.map((ref) => `| ${tableText(ref.bucket)} | ${formatSourcePath(row, baseDir, ref.path)} | ${tableText(ref.reason)} |`).join("\n")}\n`;
+}
+
+function renderRiskCategoryTable(row) {
+  const rows = Object.entries(row.sourceRiskCategories || {}).map(([category, risks]) => {
+    const value = safeArray(risks).length ? safeArray(risks).join("; ") : "none";
+    return `| ${tableText(category)} | ${tableText(value)} |`;
+  });
+  return `| Risk category | Findings |\n| --- | --- |\n${rows.join("\n")}\n`;
+}
+
+function renderValidationSurface(row, baseDir) {
+  const rows = [
+    ["Tests / evals", row.bucketCounts.eval, renderSourcePathList(row, baseDir, row.buckets.eval, 6)],
+    ["CI workflows", row.bucketCounts.ci, renderSourcePathList(row, baseDir, row.buckets.ci, 6)],
+    ["Containers / deploy", row.bucketCounts.container, renderSourcePathList(row, baseDir, row.buckets.container, 6)],
+    ["Security / policy", row.bucketCounts.security, renderSourcePathList(row, baseDir, row.buckets.security, 6)],
+    ["Agent instructions", row.bucketCounts.instruction, renderSourcePathList(row, baseDir, row.buckets.instruction, 6)]
+  ];
+  return `| Surface | Hits | Representative paths |\n| --- | ---: | --- |\n${rows.map(([surface, hits, paths]) => `| ${surface} | ${hits || 0} | ${paths} |`).join("\n")}\n`;
+}
+
+function renderReadingPlan(row) {
+  const steps = [];
+  if (row.keySourceReferences.length) steps.push(`Start from key references: ${row.keySourceReferences.slice(0, 3).map((ref) => `\`${ref.path}\``).join(", ")}.`);
+  if (row.buckets.entrypoints?.length) steps.push(`Trace execution through entrypoints: ${row.buckets.entrypoints.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (row.buckets.agentRuntime?.length) steps.push(`Map agent/tool runtime through: ${row.buckets.agentRuntime.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (row.buckets.retrieval?.length) steps.push(`Inspect retrieval/memory/indexing through: ${row.buckets.retrieval.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (row.buckets.eval?.length) steps.push(`Verify behavior through test/eval files: ${row.buckets.eval.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (!steps.length) steps.push("Start with root manifests and README because specialized source buckets were weak.");
+  return steps.map((step, index) => `${index + 1}. ${step}`).join("\n");
+}
+
 function renderSourceTable(rows, baseDir, limit = Infinity) {
   const selected = rows.slice(0, limit);
   if (!selected.length) return "_No source deep-scan rows indexed._\n";
   const body = selected.map((row) => {
     const repo = externalOrText(row.name, row.url);
+    const deepDive = row.sourceDeepDivePath ? linkFrom(baseDir, row.sourceDeepDivePath, "deep dive") : "";
     const source = linkFrom(baseDir, row.localPath, "source");
     const report = row.reportPath ? linkFrom(baseDir, row.reportPath, "report") : "";
-    const links = [report, source].filter(Boolean).join(" / ");
+    const links = [deepDive, report, source].filter(Boolean).join(" / ");
     return `| ${repo} | ${row.fileCount} / ${row.dirCount} | ${row.sourceDepthScore} | ${tableText(row.patterns.join(", "))} | ${renderReferenceLinks(row, baseDir, 4)} | ${tableText(row.deepInsight)} | ${tableText(row.sourceRisks.join(", ") || "none")} | ${links} |`;
   }).join("\n");
   return `| Repository | Files / Dirs | Depth score | Source pattern | Key source references | Deep source insight | Risks | Links |\n| --- | ---: | ---: | --- | --- | --- | --- | --- |\n${body}\n`;
@@ -444,6 +732,7 @@ function renderNavigation(baseDir) {
 | ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository assessment rows. |
 | ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Source-path-level findings by topic. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/repositories/README.md", "Source Repository Deep Dives")} | One Markdown deep dive per cloned repository. |
 `;
 }
 
@@ -491,6 +780,11 @@ ${renderNavigation(baseDir)}
 | Topic README | Repositories | Korean label | Source focus |
 | --- | ---: | --- | --- |
 ${renderTopicSummary(rows, baseDir)}
+
+## Repository Deep Dive Files
+
+- ${linkFrom(baseDir, "reports/source-deep-dives/repositories/README.md", "reports/source-deep-dives/repositories/README.md")}
+- 레포별 deep dive 파일은 주제별 shard 아래에 생성됩니다. 예: \`repositories/agent-harness-mcp/<owner__repo>.md\`.
 
 ## Source Pattern Matrix
 
@@ -578,6 +872,172 @@ ${renderSourceTable(rows, baseDir)}
 `;
 }
 
+function renderRepositoryIndex(rows) {
+  const baseDir = "reports/source-deep-dives/repositories";
+  const byTopic = countBy(rows, (row) => row.role);
+  const byShard = countBy(rows, (row) => row.sourceDeepDiveShard);
+  const sourceReferenceCount = rows.reduce((sum, row) => sum + row.keySourceReferences.length, 0);
+  const shardRows = [..."0123456789abcdef"].map((shard) => ({
+    shard,
+    count: byShard[shard] || 0
+  })).map(({ shard, count }) => `| ${linkFrom(baseDir, `reports/source-deep-dives/repositories/${shard}/README.md`, shard)} | ${count} |`).join("\n");
+  const topicRows = topicDefinitions
+    .map((topic) => ({ ...topic, count: byTopic[topic.slug] || 0 }))
+    .filter((topic) => topic.count)
+    .sort((a, b) => b.count - a.count || a.title.localeCompare(b.title))
+    .map((topic) => `| ${linkFrom(baseDir, `reports/source-deep-dives/by-topic/${topic.slug}/README.md`, topic.title)} | ${topic.count} | ${tableText(topic.korean)} | ${tableText(topic.focus)} |`)
+    .join("\n");
+  return `# Source Repository Deep Dives
+
+Generated: ${generatedAt}
+
+## 요약
+
+- 조사 단위: 로컬에 클론된 ${rows.length.toLocaleString("en-US")}개 소스 레포 각각의 독립 deep dive 파일입니다.
+- 포함 범위: 레포별 metadata, architecture map, entrypoint/run commands, dependency stack, evidence buckets, validation surface, risks, reading plan입니다.
+- 탐색 방식: Canonical Shards는 안정적인 실제 파일 위치이고, Topic Views는 같은 레포별 deep dive를 주제 기준으로 다시 보여주는 인덱스입니다.
+
+## 총평
+
+이 폴더는 기존의 큰 표를 레포 단위 문서로 풀어낸 결과입니다. 대규모 비교는 상위 Source Deep Dives 표가 빠르고, 실제 구현을 따라 읽을 때는 이 레포별 파일이 더 적합합니다. 총 ${sourceReferenceCount.toLocaleString("en-US")}개의 key source reference가 각 보고서에 분산되어 있습니다.
+
+${renderNavigation(baseDir)}
+
+## Canonical Shards
+
+| Shard | Repository reports |
+| --- | ---: |
+${shardRows}
+
+## Topic Views
+
+| Topic view | Repository reports | Korean label | Source focus |
+| --- | ---: | --- | --- |
+${topicRows}
+
+## Top 120 Repository Files
+
+${renderSourceTable(rows, baseDir, 120)}
+`;
+}
+
+function renderRepositoryShardIndex(shard, rows) {
+  const baseDir = `reports/source-deep-dives/repositories/${shard}`;
+  const sourceReferenceCount = rows.reduce((sum, row) => sum + row.keySourceReferences.length, 0);
+  return `# Source Repository Deep Dives: Shard ${shard}
+
+Generated: ${generatedAt}
+
+## 요약
+
+- 조사 단위: canonical shard \`${shard}\`에 속한 레포별 source deep dive ${rows.length.toLocaleString("en-US")}개입니다.
+- 포함 범위: role과 무관하게 안정적인 파일 경로를 유지하는 레포별 deep dive 본문입니다.
+- 탐색 방식: 아래 표에서 deep dive 링크를 열면 해당 레포의 Architecture, How It Runs, Evidence Buckets, Validation Surface를 볼 수 있습니다.
+
+## 총평
+
+이 shard는 파일 시스템 규모를 고르게 나누기 위한 canonical 분할입니다. 주제별 비교는 Source Deep Dives by Topic을 쓰고, 본문 파일의 안정적인 위치는 이 shard 경로를 기준으로 삼으면 됩니다. 이 shard의 key source reference는 ${sourceReferenceCount.toLocaleString("en-US")}개입니다.
+
+${renderNavigation(baseDir)}
+
+## Repository Deep Dive Files
+
+${renderSourceTable(rows, baseDir)}
+`;
+}
+
+function renderRepositoryDeepDive(row) {
+  const baseDir = path.dirname(row.sourceDeepDivePath).replaceAll(path.sep, "/");
+  const topic = topicBySlug.get(row.role) || topicBySlug.get("general-ai-open-source");
+  const sourceLink = linkFrom(baseDir, row.localPath, row.localPath);
+  const reportLink = row.reportPath ? linkFrom(baseDir, row.reportPath, row.reportPath) : "none";
+  const extensionSummary = topEntriesFromObject(row.extensions, 12).map(([ext, count]) => `${ext}: ${count}`).join(", ") || "none";
+  return `# ${row.name} Source Deep Dive
+
+Generated: ${generatedAt}
+
+${row.summary || row.title || row.name}
+
+## 요약
+
+- 조사 단위: \`${row.localPath}\` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
+- 포함 범위: ${row.fileCount.toLocaleString("en-US")} files, ${row.dirCount.toLocaleString("en-US")} directories, depth score ${row.sourceDepthScore}, key references ${row.keySourceReferences.length}개입니다.
+- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+
+## 총평
+
+${row.deepInsight} 기존 레포 평가 관점은 ${row.strategy || "architecture comparison point"}이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+
+${renderNavigation(baseDir)}
+
+## Repository Context
+
+${renderKeyValueTable([
+    ["Repository", row.name],
+    ["Topic", `${topic.title} / ${row.roleKorean}`],
+    ["Region", row.region],
+    ["Language", row.language],
+    ["Stars", row.stars],
+    ["Forks", row.forks],
+    ["License", row.license],
+    ["Maturity", row.maturity],
+    ["Evidence", row.evidence],
+    ["Source", sourceLink],
+    ["Existing report", reportLink]
+  ])}
+
+## Architecture Map
+
+| Field | Value |
+| --- | --- |
+| Files / directories | ${row.fileCount} / ${row.dirCount} |
+| Max observed depth | ${row.maxDepth} |
+| Top directories | ${tableText(row.topDirectories.slice(0, 20).join(", ") || "none")} |
+| Top extensions | ${tableText(extensionSummary)} |
+| Source patterns | ${tableText(row.patterns.join(", ") || "none")} |
+
+### Components
+
+${renderComponentTable(row)}
+
+## How It Runs
+
+${renderCommandTable(row.commands)}
+
+## Dependency Stack
+
+${renderDependencyGroups(row)}
+
+## Key Source References
+
+${renderKeyReferencesTable(row, baseDir)}
+
+## Evidence Buckets
+
+${renderBucketEvidenceTable(row, baseDir)}
+
+## Validation Surface
+
+${renderValidationSurface(row, baseDir)}
+
+## Risks and Follow-up Checks
+
+${renderRiskCategoryTable(row)}
+
+## Reading Plan
+
+${renderReadingPlan(row)}
+
+## Existing Repository Insight
+
+${row.repositoryInsight || "No prior repository insight text."}
+
+## Existing Assessment
+
+${row.repositoryAssessment || "No prior repository assessment text."}
+`;
+}
+
 function buildCsvRows(rows) {
   return rows.map((row) => ({
     name: row.name,
@@ -595,10 +1055,16 @@ function buildCsvRows(rows) {
     truncated: row.truncated,
     sourceDepthScore: row.sourceDepthScore,
     patterns: row.patterns.join(";"),
+    components: row.components.map((item) => `${item.component}:${item.role}:${item.count}`).join(";"),
     dependencyCues: row.dependencyCues.join(";"),
+    dependencyGroups: Object.entries(row.dependencyGroups || {}).map(([group, cues]) => `${group}:${safeArray(cues).join("+") || "none"}`).join(";"),
+    commands: row.commands.map((item) => `${item.category}:${item.source}:${item.name}`).join(";"),
     keySourceReferences: row.keySourceReferences.map((ref) => `${ref.bucket}:${ref.path}`).join(";"),
     sourceRisks: row.sourceRisks.join(";"),
     deepInsight: row.deepInsight,
+    sourceDeepDiveSlug: row.sourceDeepDiveSlug,
+    sourceDeepDiveShard: row.sourceDeepDiveShard,
+    sourceDeepDivePath: row.sourceDeepDivePath,
     reportPath: row.reportPath,
     localPath: row.localPath
   }));
@@ -609,6 +1075,7 @@ async function main() {
   await rm(outputReportDir, { recursive: true, force: true });
   await mkdir(outputReportDir, { recursive: true });
   await mkdir(outputTopicDir, { recursive: true });
+  await mkdir(outputRepositoryDir, { recursive: true });
   await mkdir(path.dirname(outputDataFile), { recursive: true });
   await mkdir(path.dirname(outputCsvFile), { recursive: true });
 
@@ -624,7 +1091,8 @@ async function main() {
   await writeFile(outputCsvFile, renderCsv([
     "name", "url", "role", "roleKorean", "region", "language", "stars", "maturity", "evidence",
     "fileCount", "dirCount", "maxDepth", "truncated", "sourceDepthScore", "patterns",
-    "dependencyCues", "keySourceReferences", "sourceRisks", "deepInsight", "reportPath", "localPath"
+    "components", "dependencyCues", "dependencyGroups", "commands", "keySourceReferences", "sourceRisks",
+    "deepInsight", "sourceDeepDiveSlug", "sourceDeepDiveShard", "sourceDeepDivePath", "reportPath", "localPath"
   ], buildCsvRows(rows)));
   await writeFile(path.join(outputReportDir, "README.md"), renderMarkdown(renderMainReadme(rows)));
   await writeFile(path.join(outputTopicDir, "README.md"), renderMarkdown(renderTopicIndex(rows)));
@@ -638,8 +1106,21 @@ async function main() {
     await writeFile(path.join(topicDir, "README.md"), renderMarkdown(renderTopicReadme(topic, topicRows)));
   }
 
+  await writeFile(path.join(outputRepositoryDir, "README.md"), renderMarkdown(renderRepositoryIndex(rows)));
+  for (const shard of "0123456789abcdef") {
+    const shardRows = rows.filter((row) => row.sourceDeepDiveShard === shard)
+      .sort((a, b) => b.sourceDepthScore - a.sourceDepthScore || b.stars - a.stars || a.name.localeCompare(b.name));
+    const shardDir = path.join(outputRepositoryDir, shard);
+    await mkdir(shardDir, { recursive: true });
+    await writeFile(path.join(shardDir, "README.md"), renderMarkdown(renderRepositoryShardIndex(shard, shardRows)));
+    for (const row of shardRows) {
+      await writeFile(path.join(root, row.sourceDeepDivePath), renderMarkdown(renderRepositoryDeepDive(row)));
+    }
+  }
+
   console.error(`source deep-scan repositories: ${rows.length}`);
   console.error(`source deep-scan topics: ${Object.keys(byTopic).length}`);
+  console.error(`source repository deep dives: ${rows.length}`);
 }
 
 await main();

@@ -1,6 +1,6 @@
 # Security, Governance, and Safety
 
-Generated: 2026-06-18T14:52:41.414Z
+Generated: 2026-06-18T15:04:28.365Z
 
 보안/거버넌스/안전 역할군에 속한 repository-level insight 목록입니다.
 

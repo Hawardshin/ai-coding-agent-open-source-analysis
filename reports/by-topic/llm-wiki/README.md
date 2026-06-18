@@ -1,14 +1,14 @@
 # LLM Wiki, RAG, and Knowledge Bases
 
-Generated: 2026-06-18T14:54:26.642Z
+Generated: 2026-06-18T15:04:44.222Z
 
 LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.
 
 ## 요약
 
 - 조사 단위: `llm-wiki` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 242 reports이며, 주요 보고서 유형은 per-repository-report (128), llm-wiki-report (103), clone-structure-report (4), infrastructure-report (4), category-guide (1)입니다.
-- 주요 출처 폴더: llm-wiki/code-level-repositories (100), llm-wiki/repositories (100), korea-trending/repositories (15), global-trending/repositories (13), adjacent-tech (4).
+- 포함 범위: 291 reports이며, 주요 보고서 유형은 per-repository-report (128), llm-wiki-report (103), source-deep-dive-report (50), clone-structure-report (4), infrastructure-report (4)입니다.
+- 주요 출처 폴더: llm-wiki/code-level-repositories (100), llm-wiki/repositories (100), source-deep-dives (50), korea-trending/repositories (15), global-trending/repositories (13).
 
 ## 총평
 
@@ -29,23 +29,24 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 
 ## Counts
 
-- Reports: 242
+- Reports: 291
 - Data: [data/report-categories/llm-wiki.json](../../../data/report-categories/llm-wiki.json)
 
 ## Report Types
 
 - per-repository-report: 128
 - llm-wiki-report: 103
+- source-deep-dive-report: 50
 - infrastructure-report: 4
 - clone-structure-report: 4
 - category-guide: 1
 - overview-report: 1
-- source-deep-dive-report: 1
 
 ## Source Folders
 
 - llm-wiki/code-level-repositories: 100
 - llm-wiki/repositories: 100
+- source-deep-dives: 50
 - korea-trending/repositories: 15
 - global-trending/repositories: 13
 - adjacent-tech: 4
@@ -55,7 +56,6 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 - llm-wiki/02-code-level-pipeline-comparison.md: 1
 - categories: 1
 - repository-insights: 1
-- source-deep-dives: 1
 
 ## Recommended Reading Path
 
@@ -207,8 +207,57 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 | [zhimaAi/ChatClaw 코드 레벨 분석](../../llm-wiki/code-level-repositories/zhimaAi__ChatClaw.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [zhitongblog/solomd 코드 레벨 분석](../../llm-wiki/code-level-repositories/zhitongblog__solomd.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [zosmaai/pi-llm-wiki 코드 레벨 분석](../../llm-wiki/code-level-repositories/zosmaai__pi-llm-wiki.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
+| [KalyanKS-NLP/rag-zero-to-hero-guide Source Deep Dive](../../source-deep-dives/repositories/2/KalyanKS-NLP__rag-zero-to-hero-guide.md) | source-deep-dive-report | source-deep-dives | 20 |
 | [KalyanKS-NLP/rag-zero-to-hero-guide 구조 분석](../../llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | per-repository-report | llm-wiki/repositories | -4 |
 | [VectifyAI/PageIndex 구조 분석](../../llm-wiki/repositories/VectifyAI__PageIndex.md) | per-repository-report | llm-wiki/repositories | -4 |
+| [jonfairbanks/local-rag Source Deep Dive](../../source-deep-dives/repositories/0/jonfairbanks__local-rag.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [bripin123/rag-memory-epf-mcp Source Deep Dive](../../source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [green-dalii/obsidian-llm-wiki Source Deep Dive](../../source-deep-dives/repositories/2/green-dalii__obsidian-llm-wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [linny006/rag-radar Source Deep Dive](../../source-deep-dives/repositories/2/linny006__rag-radar.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [microsoft/graphrag Source Deep Dive](../../source-deep-dives/repositories/2/microsoft__graphrag.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [NirDiamant/RAG_Techniques Source Deep Dive](../../source-deep-dives/repositories/2/NirDiamant__RAG_Techniques.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [PlateerLab/document-adapter Source Deep Dive](../../source-deep-dives/repositories/2/PlateerLab__document-adapter.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [stanford-oval/WikiChat Source Deep Dive](../../source-deep-dives/repositories/2/stanford-oval__WikiChat.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [kokogo100/ragalgo-mcp-server Source Deep Dive](../../source-deep-dives/repositories/3/kokogo100__ragalgo-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [rhkswnd0118-crypto/korean-rag-chatbot-boilerplate Source Deep Dive](../../source-deep-dives/repositories/3/rhkswnd0118-crypto__korean-rag-chatbot-boilerplate.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [GiovanniPasq/agentic-rag-for-dummies Source Deep Dive](../../source-deep-dives/repositories/4/GiovanniPasq__agentic-rag-for-dummies.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [HKUDS/LightRAG Source Deep Dive](../../source-deep-dives/repositories/4/HKUDS__LightRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [infiniflow/ragflow Source Deep Dive](../../source-deep-dives/repositories/4/infiniflow__ragflow.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [joungminsung/OpenDocuments Source Deep Dive](../../source-deep-dives/repositories/4/joungminsung__OpenDocuments.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [minsung2da/stock-wiki Source Deep Dive](../../source-deep-dives/repositories/4/minsung2da__stock-wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [openai/chatgpt-retrieval-plugin Source Deep Dive](../../source-deep-dives/repositories/4/openai__chatgpt-retrieval-plugin.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [DEEP-PolyU/Awesome-GraphRAG Source Deep Dive](../../source-deep-dives/repositories/5/DEEP-PolyU__Awesome-GraphRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [iammonth1997/paperwiki-research-compiler Source Deep Dive](../../source-deep-dives/repositories/5/iammonth1997__paperwiki-research-compiler.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction Source Deep Dive](../../source-deep-dives/repositories/5/johnsonhk88__AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [line/abc-kmm-shared-storage Source Deep Dive](../../source-deep-dives/repositories/5/line__abc-kmm-shared-storage.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Marker-Inc-Korea/AutoRAG Source Deep Dive](../../source-deep-dives/repositories/5/Marker-Inc-Korea__AutoRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Neverdecel/CodeRAG Source Deep Dive](../../source-deep-dives/repositories/5/Neverdecel__CodeRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ProfessionalWiki/MediaWiki-MCP-Server Source Deep Dive](../../source-deep-dives/repositories/5/ProfessionalWiki__MediaWiki-MCP-Server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [shinpr/mcp-local-rag Source Deep Dive](../../source-deep-dives/repositories/5/shinpr__mcp-local-rag.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [1517005260/graph-rag-agent Source Deep Dive](../../source-deep-dives/repositories/6/1517005260__graph-rag-agent.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Azure/gpt-rag-orchestrator Source Deep Dive](../../source-deep-dives/repositories/6/Azure__gpt-rag-orchestrator.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [naver/deep-image-retrieval Source Deep Dive](../../source-deep-dives/repositories/6/naver__deep-image-retrieval.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ssuksak/cheongyak-rag-mcp Source Deep Dive](../../source-deep-dives/repositories/6/ssuksak__cheongyak-rag-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [SaiAkhil066/CORTEX-AI-SUPER-RAG Source Deep Dive](../../source-deep-dives/repositories/7/SaiAkhil066__CORTEX-AI-SUPER-RAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [apecloud/ApeRAG Source Deep Dive](../../source-deep-dives/repositories/9/apecloud__ApeRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [explodinggradients/ragas Source Deep Dive](../../source-deep-dives/repositories/9/explodinggradients__ragas.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [HKUDS/VideoRAG Source Deep Dive](../../source-deep-dives/repositories/9/HKUDS__VideoRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ohbryt/bb-wiki Source Deep Dive](../../source-deep-dives/repositories/9/ohbryt__bb-wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [rage-rb/rage Source Deep Dive](../../source-deep-dives/repositories/9/rage-rb__rage.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [zosmaai/pi-llm-wiki Source Deep Dive](../../source-deep-dives/repositories/9/zosmaai__pi-llm-wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [lyonzin/knowledge-rag Source Deep Dive](../../source-deep-dives/repositories/a/lyonzin__knowledge-rag.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jee3m/augmentative-knowledge-hooks Source Deep Dive](../../source-deep-dives/repositories/b/jee3m__augmentative-knowledge-hooks.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [nashsu/llm_wiki Source Deep Dive](../../source-deep-dives/repositories/b/nashsu__llm_wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [2betforyou/GraphRAG Source Deep Dive](../../source-deep-dives/repositories/c/2betforyou__GraphRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [OSU-NLP-Group/HippoRAG Source Deep Dive](../../source-deep-dives/repositories/c/OSU-NLP-Group__HippoRAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [simonsez9510/oh-my-wiki Source Deep Dive](../../source-deep-dives/repositories/c/simonsez9510__oh-my-wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [hjhun/llm-wiki Source Deep Dive](../../source-deep-dives/repositories/d/hjhun__llm-wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Samsung/KnowledgeSharingPlatform Source Deep Dive](../../source-deep-dives/repositories/d/Samsung__KnowledgeSharingPlatform.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [SamurAIGPT/llm-wiki-agent Source Deep Dive](../../source-deep-dives/repositories/d/SamurAIGPT__llm-wiki-agent.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Azure/GPT-RAG Source Deep Dive](../../source-deep-dives/repositories/e/Azure__GPT-RAG.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Ar9av/obsidian-wiki Source Deep Dive](../../source-deep-dives/repositories/f/Ar9av__obsidian-wiki.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [iikarus/Dragon-Brain Source Deep Dive](../../source-deep-dives/repositories/f/iikarus__Dragon-Brain.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [opendatalab/MinerU-Document-Explorer Source Deep Dive](../../source-deep-dives/repositories/f/opendatalab__MinerU-Document-Explorer.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [explodinggradients/ragas 구조 분석](../../clone-structures/explodinggradients__ragas.md) | clone-structure-report | clone-structures | -28 |
 | [HKUDS/LightRAG 구조 분석](../../clone-structures/HKUDS__LightRAG.md) | clone-structure-report | clone-structures | -28 |
 | [infiniflow/ragflow 구조 분석](../../clone-structures/infiniflow__ragflow.md) | clone-structure-report | clone-structures | -28 |

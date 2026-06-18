@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:54:26.642Z",
+  "generatedAt": "2026-06-18T15:04:44.222Z",
   "slug": "start-here",
   "title": "Start Here",
   "description": "High-level maps and entry points for reading the repository.",
@@ -9,10 +9,10 @@
       "id": "report:reports/categories/README.md",
       "path": "reports/categories/README.md",
       "title": "Category Index",
-      "summary": "Category Index Generated 2026 06 18T14 52 38.646Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
+      "summary": "Category Index Generated 2026 06 18T15 04 26.653Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:52:39.384Z",
+      "updatedAt": "2026-06-18T15:04:27.394Z",
       "categories": [
         "start-here",
         "category-guides"
@@ -232,10 +232,10 @@
       "id": "report:reports/repository-insights/README.md",
       "path": "reports/repository-insights/README.md",
       "title": "Repository Insights",
-      "summary": "Repository Insights Generated 2026 06 18T14 52 41.414Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
+      "summary": "Repository Insights Generated 2026 06 18T15 04 28.365Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:52:42.295Z",
+      "updatedAt": "2026-06-18T15:04:29.008Z",
       "categories": [
         "start-here",
         "comparisons",
@@ -261,10 +261,10 @@
       "id": "report:reports/source-deep-dives/README.md",
       "path": "reports/source-deep-dives/README.md",
       "title": "Source Deep Dives",
-      "summary": "Source Deep Dives Generated 2026 06 18T14 52 44.529Z This report adds topic first, source path level evidence extracted from the locally cloned repositories under sources/ . 요약 조사 단위 로컬 clone 1,136개를 실제 파일 트리 기준으로 다시 스캔한 source deep scan 보고서입니다. 포함 범위 file/dir",
+      "summary": "Source Deep Dives Generated 2026 06 18T15 04 30.215Z This report adds topic first, source path level evidence extracted from the locally cloned repositories under sources/ . 요약 조사 단위 로컬 clone 1,136개를 실제 파일 트리 기준으로 다시 스캔한 source deep scan 보고서입니다. 포함 범위 file/dir",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T14:53:14.569Z",
+      "updatedAt": "2026-06-18T15:04:37.431Z",
       "categories": [
         "start-here",
         "source-code-deep-dives",

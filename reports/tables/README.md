@@ -1,13 +1,13 @@
 # Report Tables
 
-Generated: 2026-06-18T14:54:26.642Z
+Generated: 2026-06-18T15:04:44.222Z
 
 This page is the table-first view of the repository. Use it when you want to scan the full investigation structure before opening individual reports.
 
 ## 요약
 
 - 조사 단위: 보고서, 주제, 폴더, 보고서 유형을 표와 CSV로 정리한 탐색 허브입니다.
-- 포함 범위: 1,429 reports, 18 topics, 16 folder README guides입니다.
+- 포함 범위: 2,582 reports, 18 topics, 16 folder README guides입니다.
 - 데이터 파일: topic/folder/type matrix/all reports CSV를 제공하므로 GitHub 화면과 스프레드시트 양쪽에서 탐색할 수 있습니다.
 
 ## 총평
@@ -41,20 +41,20 @@ This page is the table-first view of the repository. Use it when you want to sca
 
 | Topic | Reports | Description | Data |
 | --- | ---: | --- | --- |
-| [Repository Deep Dives](../by-topic/repository-deep-dives/README.md) | 1281 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. | [json](../../data/report-categories/repository-deep-dives.json) |
+| [Repository Deep Dives](../by-topic/repository-deep-dives/README.md) | 2434 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. | [json](../../data/report-categories/repository-deep-dives.json) |
+| [Comparisons and Similarity Maps](../by-topic/comparisons/README.md) | 1182 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. | [json](../../data/report-categories/comparisons.json) |
+| [Source Code Deep Dives](../by-topic/source-code-deep-dives/README.md) | 1171 | Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence. | [json](../../data/report-categories/source-code-deep-dives.json) |
 | [Global Trending Open Source](../by-topic/global-trending-open-source/README.md) | 502 | Global trending open-source corpus and per-repository reports. | [json](../../data/report-categories/global-trending-open-source.json) |
 | [Korea Trending Open Source](../by-topic/korea-trending-open-source/README.md) | 502 | Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports. | [json](../../data/report-categories/korea-trending-open-source.json) |
-| [LLM Wiki, RAG, and Knowledge Bases](../by-topic/llm-wiki/README.md) | 242 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. | [json](../../data/report-categories/llm-wiki.json) |
-| [Agent Harness, MCP, and Orchestration](../by-topic/agent-harness/README.md) | 146 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. | [json](../../data/report-categories/agent-harness.json) |
+| [LLM Wiki, RAG, and Knowledge Bases](../by-topic/llm-wiki/README.md) | 291 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. | [json](../../data/report-categories/llm-wiki.json) |
+| [Agent Harness, MCP, and Orchestration](../by-topic/agent-harness/README.md) | 280 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. | [json](../../data/report-categories/agent-harness.json) |
 | [Clone Structure and Inventory](../by-topic/clone-structure-inventory/README.md) | 128 | Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports. | [json](../../data/report-categories/clone-structure-inventory.json) |
-| [Coding Agents and IDEs](../by-topic/coding-agents/README.md) | 86 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. | [json](../../data/report-categories/coding-agents.json) |
-| [Comparisons and Similarity Maps](../by-topic/comparisons/README.md) | 29 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. | [json](../../data/report-categories/comparisons.json) |
-| [Spec-Driven and Requirements](../by-topic/spec-driven/README.md) | 23 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. | [json](../../data/report-categories/spec-driven.json) |
+| [Coding Agents and IDEs](../by-topic/coding-agents/README.md) | 124 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. | [json](../../data/report-categories/coding-agents.json) |
+| [Spec-Driven and Requirements](../by-topic/spec-driven/README.md) | 41 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. | [json](../../data/report-categories/spec-driven.json) |
 | [Start Here](../by-topic/start-here/README.md) | 21 | High-level maps and entry points for reading the repository. | [json](../../data/report-categories/start-here.json) |
+| [Adjacent AI Infrastructure](../by-topic/adjacent-infrastructure/README.md) | 18 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. | [json](../../data/report-categories/adjacent-infrastructure.json) |
 | [Category Guides](../by-topic/category-guides/README.md) | 18 | Generated category pages that group open-source, research, presentation, and trend artifacts. | [json](../../data/report-categories/category-guides.json) |
-| [Source Code Deep Dives](../by-topic/source-code-deep-dives/README.md) | 18 | Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence. | [json](../../data/report-categories/source-code-deep-dives.json) |
-| [Adjacent AI Infrastructure](../by-topic/adjacent-infrastructure/README.md) | 15 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. | [json](../../data/report-categories/adjacent-infrastructure.json) |
-| [Presentations and Conferences](../by-topic/presentations-conferences/README.md) | 8 | Conference, talk, webinar, and presentation-method research. | [json](../../data/report-categories/presentations-conferences.json) |
+| [Presentations and Conferences](../by-topic/presentations-conferences/README.md) | 9 | Conference, talk, webinar, and presentation-method research. | [json](../../data/report-categories/presentations-conferences.json) |
 | [Research Foundations](../by-topic/research-foundations/README.md) | 6 | Evidence catalogs, conflicting theories, source catalogs, and research synthesis. | [json](../../data/report-categories/research-foundations.json) |
 | [Source Catalogs and Inventories](../by-topic/source-catalogs-and-inventories/README.md) | 6 | Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations. | [json](../../data/report-categories/source-catalogs-and-inventories.json) |
 | [AI Usage Trends](../by-topic/ai-usage-trends/README.md) | 3 | Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals. | [json](../../data/report-categories/ai-usage-trends.json) |
@@ -85,20 +85,20 @@ This page is the table-first view of the repository. Use it when you want to sca
 
 | Topic | Reports | agent-harness-report | category-guide | clone-structure-report | comparison-report | global-trending-report | infrastructure-report | korea-trending-report | llm-wiki-report | overview-report | per-repository-report | presentation-report | research-synthesis | source-deep-dive-report | source-scan-report | spec-driven-report |
 | --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Repository Deep Dives | 1281 | 0 | 0 | 127 | 0 | 0 | 0 | 0 | 0 | 11 | 1130 | 0 | 0 | 11 | 0 | 2 |
+| Repository Deep Dives | 2434 | 0 | 0 | 127 | 0 | 0 | 0 | 0 | 0 | 11 | 1130 | 0 | 0 | 1165 | 0 | 1 |
+| Comparisons and Similarity Maps | 1182 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 11 | 1 | 0 | 0 | 1165 | 0 | 1 |
+| Source Code Deep Dives | 1171 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 0 | 1165 | 0 | 0 |
 | Global Trending Open Source | 502 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 500 | 0 | 0 | 0 | 0 | 0 |
 | Korea Trending Open Source | 502 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 500 | 0 | 0 | 0 | 0 | 0 |
-| LLM Wiki, RAG, and Knowledge Bases | 242 | 0 | 1 | 4 | 0 | 0 | 4 | 0 | 103 | 1 | 128 | 0 | 0 | 1 | 0 | 0 |
-| Agent Harness, MCP, and Orchestration | 146 | 2 | 2 | 5 | 0 | 0 | 2 | 0 | 2 | 1 | 130 | 1 | 0 | 1 | 0 | 0 |
+| LLM Wiki, RAG, and Knowledge Bases | 291 | 0 | 1 | 4 | 0 | 0 | 4 | 0 | 103 | 1 | 128 | 0 | 0 | 50 | 0 | 0 |
+| Agent Harness, MCP, and Orchestration | 280 | 2 | 2 | 5 | 0 | 0 | 2 | 0 | 2 | 1 | 130 | 1 | 0 | 135 | 0 | 0 |
 | Clone Structure and Inventory | 128 | 0 | 0 | 127 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Coding Agents and IDEs | 86 | 2 | 2 | 10 | 0 | 0 | 0 | 0 | 3 | 2 | 64 | 1 | 1 | 1 | 0 | 0 |
-| Comparisons and Similarity Maps | 29 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 11 | 1 | 0 | 0 | 11 | 0 | 2 |
-| Spec-Driven and Requirements | 23 | 0 | 1 | 15 | 0 | 0 | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 3 |
+| Coding Agents and IDEs | 124 | 2 | 2 | 10 | 0 | 0 | 0 | 0 | 3 | 2 | 64 | 1 | 1 | 39 | 0 | 0 |
+| Spec-Driven and Requirements | 41 | 0 | 1 | 15 | 0 | 0 | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 19 | 0 | 2 |
 | Start Here | 21 | 1 | 1 | 0 | 2 | 1 | 1 | 1 | 3 | 4 | 0 | 2 | 3 | 1 | 0 | 1 |
+| Adjacent AI Infrastructure | 18 | 0 | 4 | 1 | 0 | 0 | 4 | 0 | 0 | 2 | 3 | 0 | 0 | 4 | 0 | 0 |
 | Category Guides | 18 | 0 | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Source Code Deep Dives | 18 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 2 | 1 | 0 | 0 | 0 | 11 | 0 | 1 |
-| Adjacent AI Infrastructure | 15 | 0 | 4 | 1 | 0 | 0 | 4 | 0 | 0 | 2 | 3 | 0 | 0 | 1 | 0 | 0 |
-| Presentations and Conferences | 8 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 5 | 0 | 0 | 0 | 0 |
+| Presentations and Conferences | 9 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 5 | 0 | 1 | 0 | 0 |
 | Research Foundations | 6 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 4 | 0 | 0 | 0 |
 | Source Catalogs and Inventories | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 2 | 0 | 0 | 0 | 0 |
 | AI Usage Trends | 3 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
@@ -167,7 +167,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | [General AI Open Source Source Deep Dive](../source-deep-dives/by-topic/general-ai-open-source/README.md) | source-deep-dive-report | source-deep-dives | Source Code Deep Dives, Comparisons and Similarity Maps, Repository Deep Dives |
 | [LLM Wiki, RAG, and Knowledge Source Deep Dive](../source-deep-dives/by-topic/llm-wiki-rag/README.md) | source-deep-dive-report | source-deep-dives | Source Code Deep Dives, LLM Wiki, RAG, and Knowledge Bases, Comparisons and Similarity Maps, Repository Deep Dives |
 | [Security, Governance, and Safety Source Deep Dive](../source-deep-dives/by-topic/security-governance/README.md) | source-deep-dive-report | source-deep-dives | Source Code Deep Dives, Comparisons and Similarity Maps, Repository Deep Dives |
-| [Spec-Driven and Requirements Source Deep Dive](../source-deep-dives/by-topic/spec-driven/README.md) | spec-driven-report | source-deep-dives | Source Code Deep Dives, Spec-Driven and Requirements, Comparisons and Similarity Maps, Repository Deep Dives |
+| [Spec-Driven and Requirements Source Deep Dive](../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | Source Code Deep Dives, Spec-Driven and Requirements, Comparisons and Similarity Maps, Repository Deep Dives |
 | [127개 로컬 클론 구조 분석 총괄](../clone-structure-analysis-127.md) | overview-report | root | Start Here, Clone Structure and Inventory |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | Start Here, Full Source Scan and Code Retrieval, Source Code Deep Dives |
 | [Codex Harness Setup Guide from Claude Code Patterns](../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | Coding Agents and IDEs, Agent Harness, MCP, and Orchestration |

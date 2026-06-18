@@ -1,6 +1,6 @@
 # Research Papers and Evidence
 
-Generated: 2026-06-18T14:52:38.646Z
+Generated: 2026-06-18T15:04:26.653Z
 
 OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries.
 

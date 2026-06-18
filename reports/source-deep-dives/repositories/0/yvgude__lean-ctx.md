@@ -1,0 +1,181 @@
+# yvgude/lean-ctx Source Deep Dive
+
+Generated: 2026-06-18T15:04:30.215Z
+
+Control what your AI can see. LeanCTX (Lean Context) is the context intelligence layer for AI agents — one local Rust binary that decides what they read, remembers what they learn, guards what they touch, and proves what they save. 60–90% fewer tokens as the receipt. 76 MCP tools, 30+ agents, local-first.
+
+## 요약
+
+- 조사 단위: `sources/yvgude__lean-ctx` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
+- 포함 범위: 1,812 files, 255 directories, depth score 132, key references 12개입니다.
+- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+
+## 총평
+
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=rust/tests/mcp_manifest_up_to_date.rs, rust/tests/mcp_optout_281.rs, rust/tests/p4_docker_claude_mcp_selfheal_eval.rs이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
+| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
+| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
+| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
+| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+
+
+## Repository Context
+
+| Field | Value |
+| --- | --- |
+| Repository | yvgude/lean-ctx |
+| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| Region | global |
+| Language | Rust |
+| Stars | 2753 |
+| Forks | 277 |
+| License | none |
+| Maturity | solid |
+| Evidence | source+report |
+| Source | [sources/yvgude__lean-ctx](../../../../sources/yvgude__lean-ctx) |
+| Existing report | [reports/global-trending/repositories/yvgude__lean-ctx.md](../../../global-trending/repositories/yvgude__lean-ctx.md) |
+
+
+## Architecture Map
+
+| Field | Value |
+| --- | --- |
+| Files / directories | 1812 / 255 |
+| Max observed depth | 10 |
+| Top directories | .claude-plugin, .githooks, .github, .kiro, assets, aur, bench, benchmark, benchmarks, bin, blog, ci, clients, cloud-infra, cookbook, demo, discord-faq, docs, email-templates, integrations |
+| Top extensions | .rs: 1176, .md: 187, .kt: 73, .snap: 57, .json: 53, .ts: 33, .js: 32, .py: 32, (none): 31, .toml: 25, .sh: 14, .yml: 13 |
+| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+
+### Components
+
+| Component | Role | Signal count |
+| --- | --- | ---: |
+| docs | documentation surface | 37 |
+| packages/pi-lean-ctx | packages workspace | 5 |
+| packages/lean-ctx-bin | packages workspace | 3 |
+| packages/leanctx-verify | packages workspace | 3 |
+| packages/node-lean-ctx | packages workspace | 3 |
+| .github | ci surface | 1 |
+| assets | top-level component | 1 |
+| aur | top-level component | 1 |
+| bench | validation surface | 1 |
+| benchmark | validation surface | 1 |
+| benchmarks | validation surface | 1 |
+| bin | top-level component | 1 |
+| blog | top-level component | 1 |
+| ci | ci surface | 1 |
+| clients | source boundary | 1 |
+| cloud-infra | top-level component | 1 |
+| cookbook | top-level component | 1 |
+| demo | top-level component | 1 |
+
+
+## How It Runs
+
+| Category | Source | Name | Command |
+| --- | --- | --- | --- |
+| utility | Makefile | .PHONY | make .PHONY |
+| utility | Makefile | setup-hooks | make setup-hooks |
+| utility | Makefile | install | make install |
+| serve-dev | Makefile | dev | make dev |
+| test | Makefile | test | make test |
+| utility | Makefile | preflight | make preflight |
+| utility | Makefile | preflight-fast | make preflight-fast |
+| utility | Makefile | help | make help |
+
+
+## Dependency Stack
+
+| Group | Detected cues |
+| --- | --- |
+| llmProviders | none |
+| agentProtocols | none |
+| agentFrameworks | none |
+| vectorStores | none |
+| modelRuntime | none |
+| webRuntime | none |
+| developerSurface | none |
+| observability | none |
+| browserAutomation | none |
+
+
+## Key Source References
+
+| Bucket | Source path | Why it matters |
+| --- | --- | --- |
+| mcp | [rust/tests/mcp_manifest_up_to_date.rs](../../../../sources/yvgude__lean-ctx/rust/tests/mcp_manifest_up_to_date.rs) | mcp signal |
+| mcp | [rust/tests/mcp_optout_281.rs](../../../../sources/yvgude__lean-ctx/rust/tests/mcp_optout_281.rs) | mcp signal |
+| mcp | [rust/tests/p4_docker_claude_mcp_selfheal_eval.rs](../../../../sources/yvgude__lean-ctx/rust/tests/p4_docker_claude_mcp_selfheal_eval.rs) | mcp signal |
+| mcp | [rust/src/mcp_stdio.rs](../../../../sources/yvgude__lean-ctx/rust/src/mcp_stdio.rs) | mcp signal |
+| agentRuntime | [AGENTS.md](../../../../sources/yvgude__lean-ctx/AGENTS.md) | agentRuntime signal |
+| agentRuntime | [skills/lean-ctx/SKILL.md](../../../../sources/yvgude__lean-ctx/skills/lean-ctx/SKILL.md) | agentRuntime signal |
+| agentRuntime | [skills/lean-ctx/scripts/install.sh](../../../../sources/yvgude__lean-ctx/skills/lean-ctx/scripts/install.sh) | agentRuntime signal |
+| agentRuntime | [rust/AGENTS.md](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md) | agentRuntime signal |
+| entrypoints | [rust/src/main.rs](../../../../sources/yvgude__lean-ctx/rust/src/main.rs) | entrypoints signal |
+| entrypoints | [rust/src/tools/server.rs](../../../../sources/yvgude__lean-ctx/rust/src/tools/server.rs) | entrypoints signal |
+| entrypoints | [rust/src/cli/dispatch/server.rs](../../../../sources/yvgude__lean-ctx/rust/src/cli/dispatch/server.rs) | entrypoints signal |
+| entrypoints | [rust/src/bin/gen_docs.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_docs.rs) | entrypoints signal |
+
+
+## Evidence Buckets
+
+| Evidence bucket | Hits | Representative paths |
+| --- | ---: | --- |
+| entrypoints | 17 | [rust/src/main.rs](../../../../sources/yvgude__lean-ctx/rust/src/main.rs)<br>[rust/src/tools/server.rs](../../../../sources/yvgude__lean-ctx/rust/src/tools/server.rs)<br>[rust/src/cli/dispatch/server.rs](../../../../sources/yvgude__lean-ctx/rust/src/cli/dispatch/server.rs)<br>[rust/src/bin/gen_docs.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_docs.rs)<br>[rust/src/bin/gen_mcp_manifest.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_mcp_manifest.rs)<br>[rust/src/bin/gen_tdd_schema.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_tdd_schema.rs)<br>[rust/src/bin/lean-ctx-cloud-api.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/lean-ctx-cloud-api.rs)<br>[rust/src/bin/locomo_bench.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/locomo_bench.rs) |
+| agentRuntime | 325 | [AGENTS.md](../../../../sources/yvgude__lean-ctx/AGENTS.md)<br>[skills/lean-ctx/SKILL.md](../../../../sources/yvgude__lean-ctx/skills/lean-ctx/SKILL.md)<br>[skills/lean-ctx/scripts/install.sh](../../../../sources/yvgude__lean-ctx/skills/lean-ctx/scripts/install.sh)<br>[rust/AGENTS.md](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md)<br>[rust/AGENTS.md.lean-ctx.bak](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md.lean-ctx.bak)<br>[rust/tests/context_cortex_e2e_scenarios.rs](../../../../sources/yvgude__lean-ctx/rust/tests/context_cortex_e2e_scenarios.rs)<br>[rust/tests/context_cortex_phase1.rs](../../../../sources/yvgude__lean-ctx/rust/tests/context_cortex_phase1.rs)<br>[rust/tests/context_cortex_phase2.rs](../../../../sources/yvgude__lean-ctx/rust/tests/context_cortex_phase2.rs) |
+| mcp | 18 | [rust/tests/mcp_manifest_up_to_date.rs](../../../../sources/yvgude__lean-ctx/rust/tests/mcp_manifest_up_to_date.rs)<br>[rust/tests/mcp_optout_281.rs](../../../../sources/yvgude__lean-ctx/rust/tests/mcp_optout_281.rs)<br>[rust/tests/p4_docker_claude_mcp_selfheal_eval.rs](../../../../sources/yvgude__lean-ctx/rust/tests/p4_docker_claude_mcp_selfheal_eval.rs)<br>[rust/src/mcp_stdio.rs](../../../../sources/yvgude__lean-ctx/rust/src/mcp_stdio.rs)<br>[rust/src/setup/mcp.rs](../../../../sources/yvgude__lean-ctx/rust/src/setup/mcp.rs)<br>[rust/src/core/mcp_manifest.rs](../../../../sources/yvgude__lean-ctx/rust/src/core/mcp_manifest.rs)<br>[rust/src/core/terse/mcp_compress.rs](../../../../sources/yvgude__lean-ctx/rust/src/core/terse/mcp_compress.rs)<br>[rust/src/core/providers/mcp_bridge.rs](../../../../sources/yvgude__lean-ctx/rust/src/core/providers/mcp_bridge.rs) |
+| retrieval | 141 | [rust/tests/embedding_download_test.py](../../../../sources/yvgude__lean-ctx/rust/tests/embedding_download_test.py)<br>[rust/tests/graph_export_contract.rs](../../../../sources/yvgude__lean-ctx/rust/tests/graph_export_contract.rs)<br>[rust/tests/index_scoping_scenarios.rs](../../../../sources/yvgude__lean-ctx/rust/tests/index_scoping_scenarios.rs)<br>[rust/tests/issue_249_index_observability.rs](../../../../sources/yvgude__lean-ctx/rust/tests/issue_249_index_observability.rs)<br>[rust/tests/issue_326_parallel_knowledge.rs](../../../../sources/yvgude__lean-ctx/rust/tests/issue_326_parallel_knowledge.rs)<br>[rust/tests/memory_benchmark_suite.rs](../../../../sources/yvgude__lean-ctx/rust/tests/memory_benchmark_suite.rs)<br>[rust/tests/output_contracts_knowledge.rs](../../../../sources/yvgude__lean-ctx/rust/tests/output_contracts_knowledge.rs)<br>[rust/tests/p2_graph_embeddings_eval.rs](../../../../sources/yvgude__lean-ctx/rust/tests/p2_graph_embeddings_eval.rs) |
+| spec | 7 | [ARCHITECTURE.md](../../../../sources/yvgude__lean-ctx/ARCHITECTURE.md)<br>[rust/src/tools/ctx_architecture.rs](../../../../sources/yvgude__lean-ctx/rust/src/tools/ctx_architecture.rs)<br>[rust/src/tools/registered/ctx_architecture.rs](../../../../sources/yvgude__lean-ctx/rust/src/tools/registered/ctx_architecture.rs)<br>[rust/src/dashboard/static/components/cockpit-architecture.js](../../../../sources/yvgude__lean-ctx/rust/src/dashboard/static/components/cockpit-architecture.js)<br>[rust/src/dashboard/routes/graph/architecture.rs](../../../../sources/yvgude__lean-ctx/rust/src/dashboard/routes/graph/architecture.rs)<br>[docs/contracts/persona-spec-v1.md](../../../../sources/yvgude__lean-ctx/docs/contracts/persona-spec-v1.md)<br>[bench/agent-task/requirements.txt](../../../../sources/yvgude__lean-ctx/bench/agent-task/requirements.txt) |
+| eval | 285 | [rust/tests/adversarial_compression.rs](../../../../sources/yvgude__lean-ctx/rust/tests/adversarial_compression.rs)<br>[rust/tests/archive_expand_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/archive_expand_tests.rs)<br>[rust/tests/autonomy_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/autonomy_tests.rs)<br>[rust/tests/bazsi_reported_scenarios.rs](../../../../sources/yvgude__lean-ctx/rust/tests/bazsi_reported_scenarios.rs)<br>[rust/tests/benchmark_compare_integration.rs](../../../../sources/yvgude__lean-ctx/rust/tests/benchmark_compare_integration.rs)<br>[rust/tests/capabilities_contract_up_to_date.rs](../../../../sources/yvgude__lean-ctx/rust/tests/capabilities_contract_up_to_date.rs)<br>[rust/tests/claude_config_dir.rs](../../../../sources/yvgude__lean-ctx/rust/tests/claude_config_dir.rs)<br>[rust/tests/cli_characterization.rs](../../../../sources/yvgude__lean-ctx/rust/tests/cli_characterization.rs) |
+| security | 64 | [SECURITY.md](../../../../sources/yvgude__lean-ctx/SECURITY.md)<br>[rust/tests/compliance_frameworks.rs](../../../../sources/yvgude__lean-ctx/rust/tests/compliance_frameworks.rs)<br>[rust/tests/p4_adaptive_mode_policy_eval.rs](../../../../sources/yvgude__lean-ctx/rust/tests/p4_adaptive_mode_policy_eval.rs)<br>[rust/tests/ro_config_sandbox.rs](../../../../sources/yvgude__lean-ctx/rust/tests/ro_config_sandbox.rs)<br>[rust/tests/secret_scan_artifacts.rs](../../../../sources/yvgude__lean-ctx/rust/tests/secret_scan_artifacts.rs)<br>[rust/tests/security_hardening.rs](../../../../sources/yvgude__lean-ctx/rust/tests/security_hardening.rs)<br>[rust/tests/security_resolve_path_guard.rs](../../../../sources/yvgude__lean-ctx/rust/tests/security_resolve_path_guard.rs)<br>[rust/tests/tcc_sandbox.rs](../../../../sources/yvgude__lean-ctx/rust/tests/tcc_sandbox.rs) |
+| ci | 10 | [lean/.github/workflows/lean_action_ci.yml](../../../../sources/yvgude__lean-ctx/lean/.github/workflows/lean_action_ci.yml)<br>[ci/gitlab-ci.yml](../../../../sources/yvgude__lean-ctx/ci/gitlab-ci.yml)<br>[.github/workflows/ci.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/ci.yml)<br>[.github/workflows/cla.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/cla.yml)<br>[.github/workflows/codeql.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/codeql.yml)<br>[.github/workflows/issue-reopen.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/issue-reopen.yml)<br>[.github/workflows/jetbrains-plugin.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/jetbrains-plugin.yml)<br>[.github/workflows/publish-vscode.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/publish-vscode.yml) |
+| container | 1 | [cloud-infra/Dockerfile.cloud-api](../../../../sources/yvgude__lean-ctx/cloud-infra/Dockerfile.cloud-api) |
+| instruction | 7 | [AGENTS.md](../../../../sources/yvgude__lean-ctx/AGENTS.md)<br>[rust/AGENTS.md](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md)<br>[rust/AGENTS.md.lean-ctx.bak](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md.lean-ctx.bak)<br>[rust/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/CLAUDE.md)<br>[rust/src/templates/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/src/templates/CLAUDE.md)<br>[rust/examples/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/examples/CLAUDE.md)<br>[.github/copilot/mcp.json](../../../../sources/yvgude__lean-ctx/.github/copilot/mcp.json) |
+| docs | 141 | [README.md](../../../../sources/yvgude__lean-ctx/README.md)<br>[vscode-extension/README.md](../../../../sources/yvgude__lean-ctx/vscode-extension/README.md)<br>[rust/README.md](../../../../sources/yvgude__lean-ctx/rust/README.md)<br>[packages/pi-lean-ctx/README.md](../../../../sources/yvgude__lean-ctx/packages/pi-lean-ctx/README.md)<br>[packages/leanctx-verify/README.md](../../../../sources/yvgude__lean-ctx/packages/leanctx-verify/README.md)<br>[packages/lean-ctx-bin/README.md](../../../../sources/yvgude__lean-ctx/packages/lean-ctx-bin/README.md)<br>[packages/chrome-lean-ctx/README.md](../../../../sources/yvgude__lean-ctx/packages/chrome-lean-ctx/README.md)<br>[lean/README.md](../../../../sources/yvgude__lean-ctx/lean/README.md) |
+| config | 25 | [Makefile](../../../../sources/yvgude__lean-ctx/Makefile)<br>[vscode-extension/package.json](../../../../sources/yvgude__lean-ctx/vscode-extension/package.json)<br>[vscode-extension/tsconfig.json](../../../../sources/yvgude__lean-ctx/vscode-extension/tsconfig.json)<br>[rust/Cargo.lock](../../../../sources/yvgude__lean-ctx/rust/Cargo.lock)<br>[rust/Cargo.toml](../../../../sources/yvgude__lean-ctx/rust/Cargo.toml)<br>[rust/src/templates/package.json](../../../../sources/yvgude__lean-ctx/rust/src/templates/package.json)<br>[packages/python-lean-ctx/pyproject.toml](../../../../sources/yvgude__lean-ctx/packages/python-lean-ctx/pyproject.toml)<br>[packages/pi-lean-ctx/package.json](../../../../sources/yvgude__lean-ctx/packages/pi-lean-ctx/package.json) |
+
+
+## Validation Surface
+
+| Surface | Hits | Representative paths |
+| --- | ---: | --- |
+| Tests / evals | 285 | [rust/tests/adversarial_compression.rs](../../../../sources/yvgude__lean-ctx/rust/tests/adversarial_compression.rs)<br>[rust/tests/archive_expand_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/archive_expand_tests.rs)<br>[rust/tests/autonomy_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/autonomy_tests.rs)<br>[rust/tests/bazsi_reported_scenarios.rs](../../../../sources/yvgude__lean-ctx/rust/tests/bazsi_reported_scenarios.rs)<br>[rust/tests/benchmark_compare_integration.rs](../../../../sources/yvgude__lean-ctx/rust/tests/benchmark_compare_integration.rs)<br>[rust/tests/capabilities_contract_up_to_date.rs](../../../../sources/yvgude__lean-ctx/rust/tests/capabilities_contract_up_to_date.rs) |
+| CI workflows | 10 | [lean/.github/workflows/lean_action_ci.yml](../../../../sources/yvgude__lean-ctx/lean/.github/workflows/lean_action_ci.yml)<br>[ci/gitlab-ci.yml](../../../../sources/yvgude__lean-ctx/ci/gitlab-ci.yml)<br>[.github/workflows/ci.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/ci.yml)<br>[.github/workflows/cla.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/cla.yml)<br>[.github/workflows/codeql.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/codeql.yml)<br>[.github/workflows/issue-reopen.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/issue-reopen.yml) |
+| Containers / deploy | 1 | [cloud-infra/Dockerfile.cloud-api](../../../../sources/yvgude__lean-ctx/cloud-infra/Dockerfile.cloud-api) |
+| Security / policy | 64 | [SECURITY.md](../../../../sources/yvgude__lean-ctx/SECURITY.md)<br>[rust/tests/compliance_frameworks.rs](../../../../sources/yvgude__lean-ctx/rust/tests/compliance_frameworks.rs)<br>[rust/tests/p4_adaptive_mode_policy_eval.rs](../../../../sources/yvgude__lean-ctx/rust/tests/p4_adaptive_mode_policy_eval.rs)<br>[rust/tests/ro_config_sandbox.rs](../../../../sources/yvgude__lean-ctx/rust/tests/ro_config_sandbox.rs)<br>[rust/tests/secret_scan_artifacts.rs](../../../../sources/yvgude__lean-ctx/rust/tests/secret_scan_artifacts.rs)<br>[rust/tests/security_hardening.rs](../../../../sources/yvgude__lean-ctx/rust/tests/security_hardening.rs) |
+| Agent instructions | 7 | [AGENTS.md](../../../../sources/yvgude__lean-ctx/AGENTS.md)<br>[rust/AGENTS.md](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md)<br>[rust/AGENTS.md.lean-ctx.bak](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md.lean-ctx.bak)<br>[rust/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/CLAUDE.md)<br>[rust/src/templates/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/src/templates/CLAUDE.md)<br>[rust/examples/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/examples/CLAUDE.md) |
+
+
+## Risks and Follow-up Checks
+
+| Risk category | Findings |
+| --- | --- |
+| architecture | many top-level directories; module boundaries need review |
+| operation | none |
+| security | none |
+| evidenceGaps | dependency cue weak in root manifests |
+
+
+## Reading Plan
+
+1. Start from key references: `rust/tests/mcp_manifest_up_to_date.rs`, `rust/tests/mcp_optout_281.rs`, `rust/tests/p4_docker_claude_mcp_selfheal_eval.rs`.
+2. Trace execution through entrypoints: `rust/src/main.rs`, `rust/src/tools/server.rs`, `rust/src/cli/dispatch/server.rs`.
+3. Map agent/tool runtime through: `AGENTS.md`, `skills/lean-ctx/SKILL.md`, `skills/lean-ctx/scripts/install.sh`.
+4. Inspect retrieval/memory/indexing through: `rust/tests/embedding_download_test.py`, `rust/tests/graph_export_contract.rs`, `rust/tests/index_scoping_scenarios.rs`.
+5. Verify behavior through test/eval files: `rust/tests/adversarial_compression.rs`, `rust/tests/archive_expand_tests.rs`, `rust/tests/autonomy_tests.rs`.
+
+## Existing Repository Insight
+
+에이전트 하네스/MCP 관점에서 Control what your AI can see. LeanCTX Lean Context is the context intelligence layer for AI agents — one local Rust bina. 핵심 구조 신호는 Rust, Makefile, README.md, AGENTS.md, LICENSE, ci이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+
+## Existing Assessment
+
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.

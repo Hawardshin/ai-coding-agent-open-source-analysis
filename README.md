@@ -26,7 +26,8 @@ This repository is meant to be read directly through GitHub or a local checkout.
 | [reports/by-topic/README.md](reports/by-topic/README.md) | Topic-first report navigation. |
 | [reports/tables/README.md](reports/tables/README.md) | Table-first report navigation and CSV exports. |
 | [reports/repository-insights/README.md](reports/repository-insights/README.md) | Repository-by-repository insights, risks, evidence level, and next-read links. |
-| [reports/source-deep-dives/README.md](reports/source-deep-dives/README.md) | Topic-wise source-path evidence extracted from local clones. |
+| [reports/source-deep-dives/README.md](reports/source-deep-dives/README.md) | Source-path evidence extracted from local clones, with topic views and repository-level deep dives. |
+| [reports/source-deep-dives/repositories/README.md](reports/source-deep-dives/repositories/README.md) | Canonical per-repository deep dives for every locally cloned source repository. |
 | [reports/categories/README.md](reports/categories/README.md) | Artifact-level categories for repositories, papers, presentations, and references. |
 
 - `reports/categories/`: category-first reading folders for open source, research papers, conference materials, and trend references.
@@ -34,10 +35,11 @@ This repository is meant to be read directly through GitHub or a local checkout.
 - `reports/by-topic/`: topic-first report folders for source-scan, spec-driven, LLM wiki, Korean/global trending, conferences, research, and repository deep dives.
 - `reports/tables/`: table-first reading view with topic summary, folder summary, topic/type matrix, and links to CSV exports.
 - `reports/repository-insights/`: repository-by-repository insight report and role-based README pages.
-- `reports/source-deep-dives/`: topic-wise source deep-scan reports with concrete file-path evidence from local clones.
+- `reports/source-deep-dives/`: source deep-scan reports with concrete file-path evidence from local clones, including topic views and per-repository deep dives.
+- `reports/source-deep-dives/repositories/`: canonical per-repository deep dives sharded by hash for all analyzed local clones.
 - `reports/*/README.md`: folder-level navigation pages for major report groups such as `repositories`, `global-trending`, `korea-trending`, `llm-wiki`, `clone-structures`, `research`, and `spec-driven`.
 - `data/repository-insights.json`: complete repository-level insight records.
-- `data/source-deep-scan.json`: complete source-path-level deep scan records.
+- `data/source-deep-scan.json`: complete source-path-level deep scan records, including each repository's canonical deep-dive path.
 - `data/report-index.json`: complete report-level reading index across all Markdown reports.
 - `data/report-categories/*.json`: complete report membership lists for each report topic.
 - `data/report-tables/*.csv`: spreadsheet-friendly tables for topics, folders, topic/type matrix, and all reports.
@@ -79,7 +81,7 @@ This repository is meant to be read directly through GitHub or a local checkout.
 - `reports/by-topic/`: report-first reading index grouping every Markdown report by investigation line.
 - `reports/tables/`: tabular index and CSV entry points for scanning the full report structure.
 - `reports/repository-insights/`: role-based repository insight index with per-repo assessment rows.
-- `reports/source-deep-dives/`: source-path-level deep-scan reports grouped by topic.
+- `reports/source-deep-dives/`: source-path-level deep-scan reports grouped by topic and by canonical per-repository shard.
 - `scripts/`: local automation for metadata collection and cloning.
 
 ## Cross-Repository Reports

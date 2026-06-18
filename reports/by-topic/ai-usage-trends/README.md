@@ -1,6 +1,6 @@
 # AI Usage Trends
 
-Generated: 2026-06-18T14:54:26.642Z
+Generated: 2026-06-18T15:04:44.222Z
 
 Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals.
 

@@ -1,6 +1,6 @@
 # Spec-Driven and Requirements
 
-Generated: 2026-06-18T14:52:41.414Z
+Generated: 2026-06-18T15:04:28.365Z
 
 스펙 드리븐/요구사항 역할군에 속한 repository-level insight 목록입니다.
 

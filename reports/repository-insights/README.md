@@ -1,6 +1,6 @@
 # Repository Insights
 
-Generated: 2026-06-18T14:52:41.414Z
+Generated: 2026-06-18T15:04:28.365Z
 
 This report adds repository-level insight rows on top of the existing category, topic, and folder indexes.
 

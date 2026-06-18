@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T14:54:26.642Z",
+  "generatedAt": "2026-06-18T15:04:44.222Z",
   "slug": "llm-wiki",
   "title": "LLM Wiki, RAG, and Knowledge Bases",
   "description": "LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.",
-  "count": 242,
+  "count": 291,
   "reports": [
     {
       "id": "report:reports/llm-wiki/00-llm-wiki-100-summary.md",
@@ -85,10 +85,10 @@
       "id": "report:reports/categories/llm-wiki-rag-knowledge/README.md",
       "path": "reports/categories/llm-wiki-rag-knowledge/README.md",
       "title": "LLM Wiki, RAG, and Knowledge Bases",
-      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T14 52 38.646Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
+      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T15 04 26.653Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:52:39.277Z",
+      "updatedAt": "2026-06-18T15:04:27.286Z",
       "categories": [
         "category-guides",
         "llm-wiki"
@@ -99,10 +99,10 @@
       "id": "report:reports/repository-insights/by-role/llm-wiki-rag/README.md",
       "path": "reports/repository-insights/by-role/llm-wiki-rag/README.md",
       "title": "LLM Wiki, RAG, and Knowledge",
-      "summary": "LLM Wiki, RAG, and Knowledge Generated 2026 06 18T14 52 41.414Z LLM 위키/RAG/지식베이스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 레포 묶음입니다. 포함 범위 172 repositories, report link 172, local source 172. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
+      "summary": "LLM Wiki, RAG, and Knowledge Generated 2026 06 18T15 04 28.365Z LLM 위키/RAG/지식베이스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 레포 묶음입니다. 포함 범위 172 repositories, report link 172, local source 172. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:52:42.317Z",
+      "updatedAt": "2026-06-18T15:04:29.028Z",
       "categories": [
         "llm-wiki",
         "comparisons",
@@ -114,10 +114,10 @@
       "id": "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
       "path": "reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
       "title": "LLM Wiki, RAG, and Knowledge Source Deep Dive",
-      "summary": "LLM Wiki, RAG, and Knowledge Source Deep Dive Generated 2026 06 18T14 52 44.529Z LLM 위키/RAG/지식베이스 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 로컬 소스 레포 172개입니다. 포함 범위 ingestion, chunking, embedding, retrieval, memory, vector store 경로를 중심으로 key ",
+      "summary": "LLM Wiki, RAG, and Knowledge Source Deep Dive Generated 2026 06 18T15 04 30.215Z LLM 위키/RAG/지식베이스 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 로컬 소스 레포 172개입니다. 포함 범위 ingestion, chunking, embedding, retrieval, memory, vector store 경로를 중심으로 key ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T14:53:14.602Z",
+      "updatedAt": "2026-06-18T15:04:37.467Z",
       "categories": [
         "source-code-deep-dives",
         "llm-wiki",
@@ -1464,6 +1464,23 @@
       "priority": 116
     },
     {
+      "id": "report:reports/source-deep-dives/repositories/2/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "path": "reports/source-deep-dives/repositories/2/KalyanKS-NLP__rag-zero-to-hero-guide.md",
+      "title": "KalyanKS-NLP/rag-zero-to-hero-guide Source Deep Dive",
+      "summary": "KalyanKS NLP/rag zero to hero guide Source Deep Dive Generated 2026 06 18T15 04 30.215Z Comprehensive guide to learn RAG from basics to advanced. 요약 조사 단위 sources/KalyanKS NLP rag zero to hero guide 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 32 files, 6 ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.196Z",
+      "categories": [
+        "source-code-deep-dives",
+        "coding-agents",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 20
+    },
+    {
       "id": "report:reports/llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
       "path": "reports/llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
       "title": "KalyanKS-NLP/rag-zero-to-hero-guide 구조 분석",
@@ -1491,6 +1508,781 @@
         "repository-deep-dives"
       ],
       "priority": -4
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/0/jonfairbanks__local-rag.md",
+      "path": "reports/source-deep-dives/repositories/0/jonfairbanks__local-rag.md",
+      "title": "jonfairbanks/local-rag Source Deep Dive",
+      "summary": "jonfairbanks/local rag Source Deep Dive Generated 2026 06 18T15 04 30.215Z Ingest files for retrieval augmented generation RAG with open source Large Language Models LLMs , all without 3rd parties or sensitive data leaving your network. 요약 조사 단위 sources/jonfai",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:37.711Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md",
+      "path": "reports/source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md",
+      "title": "bripin123/rag-memory-epf-mcp Source Deep Dive",
+      "summary": "bripin123/rag memory epf mcp Source Deep Dive Generated 2026 06 18T15 04 30.215Z Project local RAG memory MCP server — knowledge graph + multilingual vector + FTS5 in a single SQLite file. Per project isolation, 30 MCP tools, codepoint safe chunking Korean/CJK",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.182Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/green-dalii__obsidian-llm-wiki.md",
+      "path": "reports/source-deep-dives/repositories/2/green-dalii__obsidian-llm-wiki.md",
+      "title": "green-dalii/obsidian-llm-wiki Source Deep Dive",
+      "summary": "green dalii/obsidian llm wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z Karpathy's LLM Wiki implementation multi page knowledge generation with entity/concept pages and conversational query. 요약 조사 단위 sources/green dalii obsidian llm wiki 로컬 클론을 실제 파일",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.175Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/linny006__rag-radar.md",
+      "path": "reports/source-deep-dives/repositories/2/linny006__rag-radar.md",
+      "title": "linny006/rag-radar Source Deep Dive",
+      "summary": "linny006/rag radar Source Deep Dive Generated 2026 06 18T15 04 30.215Z Live tracker of new RAG implementations, tools, and patterns — updated every 15 minutes 요약 조사 단위 sources/linny006 rag radar 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 10 files, 3 dire",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.200Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/microsoft__graphrag.md",
+      "path": "reports/source-deep-dives/repositories/2/microsoft__graphrag.md",
+      "title": "microsoft/graphrag Source Deep Dive",
+      "summary": "microsoft/graphrag Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 893 files, 227 directories. 요약 조사 단위 sources/microsoft graphrag 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 890 files, 226 directories, depth score 129, ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.057Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/NirDiamant__RAG_Techniques.md",
+      "path": "reports/source-deep-dives/repositories/2/NirDiamant__RAG_Techniques.md",
+      "title": "NirDiamant/RAG_Techniques Source Deep Dive",
+      "summary": "NirDiamant/RAG Techniques Source Deep Dive Generated 2026 06 18T15 04 30.215Z This repository showcases various advanced techniques for Retrieval Augmented Generation RAG systems. Each technique has a detailed notebook tutorial. 요약 조사 단위 sources/NirDiamant RAG",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.193Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/PlateerLab__document-adapter.md",
+      "path": "reports/source-deep-dives/repositories/2/PlateerLab__document-adapter.md",
+      "title": "PlateerLab/document-adapter Source Deep Dive",
+      "summary": "PlateerLab/document adapter Source Deep Dive Generated 2026 06 18T15 04 30.215Z LLM이 DOCX/PPTX/HWPX 문서를 직접 편집할 수 있게 해주는 통합 어댑터 + MCP 서버. Claude Desktop / Claude Code / Anthropic API Tool Use 호환. pip install document adapter 요약 조사 단위 sources/PlateerLab document",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.194Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/2/stanford-oval__WikiChat.md",
+      "path": "reports/source-deep-dives/repositories/2/stanford-oval__WikiChat.md",
+      "title": "stanford-oval/WikiChat Source Deep Dive",
+      "summary": "stanford oval/WikiChat Source Deep Dive Generated 2026 06 18T15 04 30.215Z WikiChat is an improved RAG. It stops the hallucination of large language models by retrieving data from a corpus. 요약 조사 단위 sources/stanford oval WikiChat 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 d",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.191Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/3/kokogo100__ragalgo-mcp-server.md",
+      "path": "reports/source-deep-dives/repositories/3/kokogo100__ragalgo-mcp-server.md",
+      "title": "kokogo100/ragalgo-mcp-server Source Deep Dive",
+      "summary": "kokogo100/ragalgo mcp server Source Deep Dive Generated 2026 06 18T15 04 30.215Z Dynamic RAG Engine for AI Reliability. We provide mathematically scored context & sanitized data to prevent hallucinations in both static & volatile domains starting with Korean F",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.461Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/3/rhkswnd0118-crypto__korean-rag-chatbot-boilerplate.md",
+      "path": "reports/source-deep-dives/repositories/3/rhkswnd0118-crypto__korean-rag-chatbot-boilerplate.md",
+      "title": "rhkswnd0118-crypto/korean-rag-chatbot-boilerplate Source Deep Dive",
+      "summary": "rhkswnd0118 crypto/korean rag chatbot boilerplate Source Deep Dive Generated 2026 06 18T15 04 30.215Z Korean enterprise RAG chatbot case study — built by a non engineer Sales Strategy with Claude Code. Vercel + Supabase + Anthropic. Includes ADRs and generaliz",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.490Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/4/GiovanniPasq__agentic-rag-for-dummies.md",
+      "path": "reports/source-deep-dives/repositories/4/GiovanniPasq__agentic-rag-for-dummies.md",
+      "title": "GiovanniPasq/agentic-rag-for-dummies Source Deep Dive",
+      "summary": "GiovanniPasq/agentic rag for dummies Source Deep Dive Generated 2026 06 18T15 04 30.215Z A modular Agentic RAG built with LangGraph — learn Retrieval Augmented Generation Agents in minutes. 요약 조사 단위 sources/GiovanniPasq agentic rag for dummies 로컬 클론을 실제 파일 트리 ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.729Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/4/HKUDS__LightRAG.md",
+      "path": "reports/source-deep-dives/repositories/4/HKUDS__LightRAG.md",
+      "title": "HKUDS/LightRAG Source Deep Dive",
+      "summary": "HKUDS/LightRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 679 files, 124 directories. 요약 조사 단위 sources/HKUDS LightRAG 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 679 files, 124 directories, depth score 132, key refe",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.549Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/4/infiniflow__ragflow.md",
+      "path": "reports/source-deep-dives/repositories/4/infiniflow__ragflow.md",
+      "title": "infiniflow/ragflow Source Deep Dive",
+      "summary": "infiniflow/ragflow Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 3628 files, 571 directories. 요약 조사 단위 sources/infiniflow ragflow 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 3,628 files, 571 directories, depth score 13",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.504Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/4/joungminsung__OpenDocuments.md",
+      "path": "reports/source-deep-dives/repositories/4/joungminsung__OpenDocuments.md",
+      "title": "joungminsung/OpenDocuments Source Deep Dive",
+      "summary": "joungminsung/OpenDocuments Source Deep Dive Generated 2026 06 18T15 04 30.215Z Self hosted RAG platform for AI document search across GitHub, Notion, Google Drive, local files, and web sources with citations. 요약 조사 단위 sources/joungminsung OpenDocuments 로컬 클론을 ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.665Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/4/minsung2da__stock-wiki.md",
+      "path": "reports/source-deep-dives/repositories/4/minsung2da__stock-wiki.md",
+      "title": "minsung2da/stock-wiki Source Deep Dive",
+      "summary": "minsung2da/stock wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z Claude Powered Korean Market Knowledge Base — Obsidian vault + Postgres/pgvector hybrid search + MCP server for Claude Code 요약 조사 단위 sources/minsung2da stock wiki 로컬 클론을 실제 파일 트리 기준으로 분석",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.667Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/4/openai__chatgpt-retrieval-plugin.md",
+      "path": "reports/source-deep-dives/repositories/4/openai__chatgpt-retrieval-plugin.md",
+      "title": "openai/chatgpt-retrieval-plugin Source Deep Dive",
+      "summary": "openai/chatgpt retrieval plugin Source Deep Dive Generated 2026 06 18T15 04 30.215Z The ChatGPT Retrieval Plugin lets you easily find personal or work documents by asking questions in natural language. 요약 조사 단위 sources/openai chatgpt retrieval plugin 로컬 클론을 실제",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.703Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/DEEP-PolyU__Awesome-GraphRAG.md",
+      "path": "reports/source-deep-dives/repositories/5/DEEP-PolyU__Awesome-GraphRAG.md",
+      "title": "DEEP-PolyU/Awesome-GraphRAG Source Deep Dive",
+      "summary": "DEEP PolyU/Awesome GraphRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z Awesome GraphRAG A curated list of resources surveys, papers, benchmarks, and opensource projects on graph based retrieval augmented generation. 요약 조사 단위 sources/DEEP PolyU Awesome",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.943Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/iammonth1997__paperwiki-research-compiler.md",
+      "path": "reports/source-deep-dives/repositories/5/iammonth1997__paperwiki-research-compiler.md",
+      "title": "iammonth1997/paperwiki-research-compiler Source Deep Dive",
+      "summary": "iammonth1997/paperwiki research compiler Source Deep Dive Generated 2026 06 18T15 04 30.215Z AI Research Wiki 2026 Auto Building Knowledge Base with Deep Citation Syntheses 요약 조사 단위 sources/iammonth1997 paperwiki research compiler 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.944Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/johnsonhk88__AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction.md",
+      "path": "reports/source-deep-dives/repositories/5/johnsonhk88__AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction.md",
+      "title": "johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction Source Deep Dive",
+      "summary": "johnsonhk88/AI Bank Statement Document Automation By LLM And Personal Finanical Analysis Prediction Source Deep Dive Generated 2026 06 18T15 04 30.215Z AI Bank Statement Document Automation By LLM model and Personal Finanical Analysis 요약 조사 단위 sources/johnsonh",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.933Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/line__abc-kmm-shared-storage.md",
+      "path": "reports/source-deep-dives/repositories/5/line__abc-kmm-shared-storage.md",
+      "title": "line/abc-kmm-shared-storage Source Deep Dive",
+      "summary": "line/abc kmm shared storage Source Deep Dive Generated 2026 06 18T15 04 30.215Z A local storage management library for Kotlin Multiplatform Mobile iOS and Android 요약 조사 단위 sources/line abc kmm shared storage 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 68 ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.943Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/Marker-Inc-Korea__AutoRAG.md",
+      "path": "reports/source-deep-dives/repositories/5/Marker-Inc-Korea__AutoRAG.md",
+      "title": "Marker-Inc-Korea/AutoRAG Source Deep Dive",
+      "summary": "Marker Inc Korea/AutoRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z AutoRAG An Open Source Framework for Retrieval Augmented Generation RAG Evaluation & Optimization with AutoML Style Automation 요약 조사 단위 sources/Marker Inc Korea AutoRAG 로컬 클론을 실제 파일 트",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.888Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/Neverdecel__CodeRAG.md",
+      "path": "reports/source-deep-dives/repositories/5/Neverdecel__CodeRAG.md",
+      "title": "Neverdecel/CodeRAG Source Deep Dive",
+      "summary": "Neverdecel/CodeRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local first, zero key semantic code search for large and custom codebases — hybrid vector + keyword retrieval with symbol aware chunking. Usable as a CLI, Python library, REST API, or web U",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.884Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/ProfessionalWiki__MediaWiki-MCP-Server.md",
+      "path": "reports/source-deep-dives/repositories/5/ProfessionalWiki__MediaWiki-MCP-Server.md",
+      "title": "ProfessionalWiki/MediaWiki-MCP-Server Source Deep Dive",
+      "summary": "ProfessionalWiki/MediaWiki MCP Server Source Deep Dive Generated 2026 06 18T15 04 30.215Z Model Context Protocol MCP Server to connect your AI with any MediaWiki 요약 조사 단위 sources/ProfessionalWiki MediaWiki MCP Server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.880Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/5/shinpr__mcp-local-rag.md",
+      "path": "reports/source-deep-dives/repositories/5/shinpr__mcp-local-rag.md",
+      "title": "shinpr/mcp-local-rag Source Deep Dive",
+      "summary": "shinpr/mcp local rag Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local first RAG server for developers. Semantic + keyword search for code and technical docs. Works with MCP or CLI. Fully private, zero setup. 요약 조사 단위 sources/shinpr mcp local rag 로컬 클론",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:38.908Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/6/1517005260__graph-rag-agent.md",
+      "path": "reports/source-deep-dives/repositories/6/1517005260__graph-rag-agent.md",
+      "title": "1517005260/graph-rag-agent Source Deep Dive",
+      "summary": "1517005260/graph rag agent Source Deep Dive Generated 2026 06 18T15 04 30.215Z 拼好RAG：手搓并融合了GraphRAG、LightRAG、Neo4j llm graph builder进行知识图谱构建以及搜索；整合DeepSearch技术实现私域RAG的推理；自制针对GraphRAG的评估框架 Integrate GraphRAG, LightRAG, and Neo4j llm graph builder for knowledge ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.120Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/6/Azure__gpt-rag-orchestrator.md",
+      "path": "reports/source-deep-dives/repositories/6/Azure__gpt-rag-orchestrator.md",
+      "title": "Azure/gpt-rag-orchestrator Source Deep Dive",
+      "summary": "Azure/gpt rag orchestrator Source Deep Dive Generated 2026 06 18T15 04 30.215Z The GPT RAG Orchestrator service is an agentic orchestration layer built on Microsoft Foundry Agent Service and the Microsoft Agent framework. It enables agent based RAG workflows b",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.090Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/6/naver__deep-image-retrieval.md",
+      "path": "reports/source-deep-dives/repositories/6/naver__deep-image-retrieval.md",
+      "title": "naver/deep-image-retrieval Source Deep Dive",
+      "summary": "naver/deep image retrieval Source Deep Dive Generated 2026 06 18T15 04 30.215Z End to end learning of deep visual representations for image retrieval 요약 조사 단위 sources/naver deep image retrieval 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 34 files, 6 direc",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.166Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/6/ssuksak__cheongyak-rag-mcp.md",
+      "path": "reports/source-deep-dives/repositories/6/ssuksak__cheongyak-rag-mcp.md",
+      "title": "ssuksak/cheongyak-rag-mcp Source Deep Dive",
+      "summary": "ssuksak/cheongyak rag mcp Source Deep Dive Generated 2026 06 18T15 04 30.215Z Korean housing subscription 청약 RAG MCP server Real time data from 청약홈 + PDF/HWP document Q&A 요약 조사 단위 sources/ssuksak cheongyak rag mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.157Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/7/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "path": "reports/source-deep-dives/repositories/7/SaiAkhil066__CORTEX-AI-SUPER-RAG.md",
+      "title": "SaiAkhil066/CORTEX-AI-SUPER-RAG Source Deep Dive",
+      "summary": "SaiAkhil066/CORTEX AI SUPER RAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z You upload a PDF. You ask a question. Cortex RAG retrieves, cross checks, reasons, and cites — entirely on your machine. No API key · No cloud upload · No subscription 요약 조사 단위",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.430Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/9/apecloud__ApeRAG.md",
+      "path": "reports/source-deep-dives/repositories/9/apecloud__ApeRAG.md",
+      "title": "apecloud/ApeRAG Source Deep Dive",
+      "summary": "apecloud/ApeRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z ApeRAG Production ready GraphRAG with multi modal indexing, AI agents, MCP support, and scalable K8s deployment 요약 조사 단위 sources/apecloud ApeRAG 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.718Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/9/explodinggradients__ragas.md",
+      "path": "reports/source-deep-dives/repositories/9/explodinggradients__ragas.md",
+      "title": "explodinggradients/ragas Source Deep Dive",
+      "summary": "explodinggradients/ragas Source Deep Dive Generated 2026 06 18T15 04 30.215Z Local clone structure analysis 694 files, 119 directories. 요약 조사 단위 sources/explodinggradients ragas 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 694 files, 119 directories, depth",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.748Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/9/HKUDS__VideoRAG.md",
+      "path": "reports/source-deep-dives/repositories/9/HKUDS__VideoRAG.md",
+      "title": "HKUDS/VideoRAG Source Deep Dive",
+      "summary": "HKUDS/VideoRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z KDD'2026 \"VideoRAG Chat with Your Videos\" 요약 조사 단위 sources/HKUDS VideoRAG 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 118 files, 39 directories, depth score 90, key references 12개입니다. 탐색 방",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.842Z",
+      "categories": [
+        "source-code-deep-dives",
+        "coding-agents",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/9/ohbryt__bb-wiki.md",
+      "path": "reports/source-deep-dives/repositories/9/ohbryt__bb-wiki.md",
+      "title": "ohbryt/bb-wiki Source Deep Dive",
+      "summary": "ohbryt/bb wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z Brown Biotech persistent knowledge base — Karpathy LLM Wiki × An Lab pedagogy × BB 14 query family. 4 섹션 judgment layer on all concept/entity pages. Synced to Obsidian ~/Documents/Obsidian Vaul",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.868Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/9/rage-rb__rage.md",
+      "path": "reports/source-deep-dives/repositories/9/rage-rb__rage.md",
+      "title": "rage-rb/rage Source Deep Dive",
+      "summary": "rage rb/rage Source Deep Dive Generated 2026 06 18T15 04 30.215Z Fiber based Ruby web framework combining Rails ergonomics with a unified runtime 요약 조사 단위 sources/rage rb rage 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 345 files, 90 directories, depth sc",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.816Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/9/zosmaai__pi-llm-wiki.md",
+      "path": "reports/source-deep-dives/repositories/9/zosmaai__pi-llm-wiki.md",
+      "title": "zosmaai/pi-llm-wiki Source Deep Dive",
+      "summary": "zosmaai/pi llm wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z Self maintaining, Obsidian compatible knowledge base for pi — turn raw sources into an interlinked wiki that compounds over time. Follows Karpathy's LLM Wiki pattern. 요약 조사 단위 sources/zosm",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:39.835Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/a/lyonzin__knowledge-rag.md",
+      "path": "reports/source-deep-dives/repositories/a/lyonzin__knowledge-rag.md",
+      "title": "lyonzin/knowledge-rag Source Deep Dive",
+      "summary": "lyonzin/knowledge rag Source Deep Dive Generated 2026 06 18T15 04 30.215Z knowledge rag Drop docs, search instantly from Claude Code — 12 MCP tools, 20 format parsers, hybrid search + reranking. Zero servers, zero API keys, 100% local. 요약 조사 단위 sources/lyonzin",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.063Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/b/jee3m__augmentative-knowledge-hooks.md",
+      "path": "reports/source-deep-dives/repositories/b/jee3m__augmentative-knowledge-hooks.md",
+      "title": "jee3m/augmentative-knowledge-hooks Source Deep Dive",
+      "summary": "jee3m/augmentative knowledge hooks Source Deep Dive Generated 2026 06 18T15 04 30.215Z Semantic Search for Pi 2026 Local Knowledge Base & AI Tool 요약 조사 단위 sources/jee3m augmentative knowledge hooks 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 4 files, 2 di",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.358Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/b/nashsu__llm_wiki.md",
+      "path": "reports/source-deep-dives/repositories/b/nashsu__llm_wiki.md",
+      "title": "nashsu/llm_wiki Source Deep Dive",
+      "summary": "nashsu/llm wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z LLM Wiki is a cross platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG retrieve and answer from sc",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.282Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/c/2betforyou__GraphRAG.md",
+      "path": "reports/source-deep-dives/repositories/c/2betforyou__GraphRAG.md",
+      "title": "2betforyou/GraphRAG Source Deep Dive",
+      "summary": "2betforyou/GraphRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z GraphRAG framework for Korean financial security regulatory interpretation 요약 조사 단위 sources/2betforyou GraphRAG 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 419 files, 40 directories, ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.570Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/c/OSU-NLP-Group__HippoRAG.md",
+      "path": "reports/source-deep-dives/repositories/c/OSU-NLP-Group__HippoRAG.md",
+      "title": "OSU-NLP-Group/HippoRAG Source Deep Dive",
+      "summary": "OSU NLP Group/HippoRAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z NeurIPS'24 HippoRAG is a novel RAG framework inspired by human long term memory that enables LLMs to continuously integrate knowledge across external documents. RAG + Knowledge Graphs +",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.573Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/c/simonsez9510__oh-my-wiki.md",
+      "path": "reports/source-deep-dives/repositories/c/simonsez9510__oh-my-wiki.md",
+      "title": "simonsez9510/oh-my-wiki Source Deep Dive",
+      "summary": "simonsez9510/oh my wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z 빈 옵시디언 vault를 5분 만에 LLM Wiki 시드로 부트스트랩하는 Claude Code 플러그인 원성묵 원장 강의 IP 요약 조사 단위 sources/simonsez9510 oh my wiki 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 29 files, 13 directorie",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.591Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/d/hjhun__llm-wiki.md",
+      "path": "reports/source-deep-dives/repositories/d/hjhun__llm-wiki.md",
+      "title": "hjhun/llm-wiki Source Deep Dive",
+      "summary": "hjhun/llm wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z hjhun/llm wiki 요약 조사 단위 sources/hjhun llm wiki 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 349 files, 157 directories, depth score 116, key references 12개입니다. 탐색 방식 Reading Plan을 먼저 보고, Ev",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.728Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/d/Samsung__KnowledgeSharingPlatform.md",
+      "path": "reports/source-deep-dives/repositories/d/Samsung__KnowledgeSharingPlatform.md",
+      "title": "Samsung/KnowledgeSharingPlatform Source Deep Dive",
+      "summary": "Samsung/KnowledgeSharingPlatform Source Deep Dive Generated 2026 06 18T15 04 30.215Z K Knowledge Sharing Platform 요약 조사 단위 sources/Samsung KnowledgeSharingPlatform 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,789 files, 239 directories, depth score 99, k",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.778Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/d/SamurAIGPT__llm-wiki-agent.md",
+      "path": "reports/source-deep-dives/repositories/d/SamurAIGPT__llm-wiki-agent.md",
+      "title": "SamurAIGPT/llm-wiki-agent Source Deep Dive",
+      "summary": "SamurAIGPT/llm wiki agent Source Deep Dive Generated 2026 06 18T15 04 30.215Z A personal knowledge base that builds and maintains itself. Drop in sources — Claude or Codex/Gemini reads them, extracts knowledge, and maintains a persistent interlinked wiki. Work",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.795Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/e/Azure__GPT-RAG.md",
+      "path": "reports/source-deep-dives/repositories/e/Azure__GPT-RAG.md",
+      "title": "Azure/GPT-RAG Source Deep Dive",
+      "summary": "Azure/GPT RAG Source Deep Dive Generated 2026 06 18T15 04 30.215Z Sharing the learning along the way we been gathering to enable Azure OpenAI at enterprise scale in a secure manner. GPT RAG core is a Retrieval Augmented Generation pattern running in Azure, usi",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:40.960Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/f/Ar9av__obsidian-wiki.md",
+      "path": "reports/source-deep-dives/repositories/f/Ar9av__obsidian-wiki.md",
+      "title": "Ar9av/obsidian-wiki Source Deep Dive",
+      "summary": "Ar9av/obsidian wiki Source Deep Dive Generated 2026 06 18T15 04 30.215Z Framework for AI agents to build and maintain a digital brain through Obsidian wiki using Karpathy's LLM Wiki pattern 요약 조사 단위 sources/Ar9av obsidian wiki 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:41.241Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/f/iikarus__Dragon-Brain.md",
+      "path": "reports/source-deep-dives/repositories/f/iikarus__Dragon-Brain.md",
+      "title": "iikarus/Dragon-Brain Source Deep Dive",
+      "summary": "iikarus/Dragon Brain Source Deep Dive Generated 2026 06 18T15 04 30.215Z Dragon Brain — persistent long term memory for AI agents via MCP Model Context Protocol . Knowledge graph FalkorDB + vector search Qdrant + CUDA GPU embeddings. Works with Claude, Gemini ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:41.129Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
+    },
+    {
+      "id": "report:reports/source-deep-dives/repositories/f/opendatalab__MinerU-Document-Explorer.md",
+      "path": "reports/source-deep-dives/repositories/f/opendatalab__MinerU-Document-Explorer.md",
+      "title": "opendatalab/MinerU-Document-Explorer Source Deep Dive",
+      "summary": "opendatalab/MinerU Document Explorer Source Deep Dive Generated 2026 06 18T15 04 30.215Z Agent native knowledge engine with MCP tools for document indexing, wiki organization, fast retrieval and deep reading across PDF/DOCX/PPTX/Markdown 요약 조사 단위 sources/opend",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T15:04:41.204Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": -5
     },
     {
       "id": "report:reports/clone-structures/explodinggradients__ragas.md",

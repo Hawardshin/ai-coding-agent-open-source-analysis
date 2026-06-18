@@ -1,6 +1,6 @@
 # Source Deep Dives by Topic
 
-Generated: 2026-06-18T14:52:44.529Z
+Generated: 2026-06-18T15:04:30.215Z
 
 ## 요약
 
@@ -22,6 +22,7 @@ Generated: 2026-06-18T14:52:44.529Z
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../README.md) | Source-path-level findings by topic. |
+| [Source Repository Deep Dives](../repositories/README.md) | One Markdown deep dive per cloned repository. |
 
 
 ## Topics

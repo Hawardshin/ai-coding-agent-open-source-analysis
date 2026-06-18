@@ -1,6 +1,6 @@
 # Adjacent AI Infrastructure Reports
 
-Generated: 2026-06-18T14:54:26.642Z
+Generated: 2026-06-18T15:04:44.222Z
 
 Context engineering, RAG, local LLM serving, vector databases, evals, observability, and harness infrastructure.
 

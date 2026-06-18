@@ -1,14 +1,14 @@
 # Presentations and Conferences
 
-Generated: 2026-06-18T14:54:26.642Z
+Generated: 2026-06-18T15:04:44.222Z
 
 Conference, talk, webinar, and presentation-method research.
 
 ## 요약
 
 - 조사 단위: `presentations-conferences` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 8 reports이며, 주요 보고서 유형은 presentation-report (5), category-guide (1), infrastructure-report (1), per-repository-report (1)입니다.
-- 주요 출처 폴더: presentations (5), adjacent-tech (1), categories (1), korea-trending/repositories (1).
+- 포함 범위: 9 reports이며, 주요 보고서 유형은 presentation-report (5), category-guide (1), infrastructure-report (1), per-repository-report (1), source-deep-dive-report (1)입니다.
+- 주요 출처 폴더: presentations (5), adjacent-tech (1), categories (1), korea-trending/repositories (1), source-deep-dives (1).
 
 ## 총평
 
@@ -29,7 +29,7 @@ Conference, talk, webinar, and presentation-method research.
 
 ## Counts
 
-- Reports: 8
+- Reports: 9
 - Data: [data/report-categories/presentations-conferences.json](../../../data/report-categories/presentations-conferences.json)
 
 ## Report Types
@@ -37,6 +37,7 @@ Conference, talk, webinar, and presentation-method research.
 - presentation-report: 5
 - category-guide: 1
 - infrastructure-report: 1
+- source-deep-dive-report: 1
 - per-repository-report: 1
 
 ## Source Folders
@@ -44,6 +45,7 @@ Conference, talk, webinar, and presentation-method research.
 - presentations: 5
 - categories: 1
 - adjacent-tech: 1
+- source-deep-dives: 1
 - korea-trending/repositories: 1
 
 ## Recommended Reading Path
@@ -57,6 +59,7 @@ Conference, talk, webinar, and presentation-method research.
 | [Conference Source Catalog](../../presentations/conference-source-catalog.md) | presentation-report | presentations | 142 |
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |
 | [Codex Conference Talk Playbook](../../presentations/codex-conference-talk-playbook.md) | presentation-report | presentations | 117 |
+| [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon Source Deep Dive](../../source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon](../../korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | per-repository-report | korea-trending/repositories | -29 |
 
 
@@ -71,4 +74,5 @@ Conference, talk, webinar, and presentation-method research.
 | [Conference Source Catalog](../../presentations/conference-source-catalog.md) | presentation-report | presentations | 142 |
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |
 | [Codex Conference Talk Playbook](../../presentations/codex-conference-talk-playbook.md) | presentation-report | presentations | 117 |
+| [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon Source Deep Dive](../../source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon](../../korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | per-repository-report | korea-trending/repositories | -29 |

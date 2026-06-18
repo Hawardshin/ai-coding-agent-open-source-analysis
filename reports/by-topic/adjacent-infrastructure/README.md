@@ -1,14 +1,14 @@
 # Adjacent AI Infrastructure
 
-Generated: 2026-06-18T14:54:26.642Z
+Generated: 2026-06-18T15:04:44.222Z
 
 Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.
 
 ## 요약
 
 - 조사 단위: `adjacent-infrastructure` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 15 reports이며, 주요 보고서 유형은 category-guide (4), infrastructure-report (4), per-repository-report (3), overview-report (2), clone-structure-report (1)입니다.
-- 주요 출처 폴더: adjacent-tech (4), categories (4), global-trending/repositories (3), clone-structures (1), repository-insights (1).
+- 포함 범위: 18 reports이며, 주요 보고서 유형은 category-guide (4), infrastructure-report (4), source-deep-dive-report (4), per-repository-report (3), overview-report (2)입니다.
+- 주요 출처 폴더: adjacent-tech (4), categories (4), source-deep-dives (4), global-trending/repositories (3), clone-structures (1).
 
 ## 총평
 
@@ -29,25 +29,25 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 
 ## Counts
 
-- Reports: 15
+- Reports: 18
 - Data: [data/report-categories/adjacent-infrastructure.json](../../../data/report-categories/adjacent-infrastructure.json)
 
 ## Report Types
 
 - infrastructure-report: 4
 - category-guide: 4
+- source-deep-dive-report: 4
 - per-repository-report: 3
 - overview-report: 2
-- source-deep-dive-report: 1
 - clone-structure-report: 1
 
 ## Source Folders
 
 - adjacent-tech: 4
 - categories: 4
+- source-deep-dives: 4
 - global-trending/repositories: 3
 - repository-insights: 1
-- source-deep-dives: 1
 - root: 1
 - clone-structures: 1
 
@@ -66,6 +66,9 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 | [Source Inventory](../../adjacent-tech-source-inventory.md) | overview-report | root | 118 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |
+| [vllm-project/vllm-ascend Source Deep Dive](../../source-deep-dives/repositories/2/vllm-project__vllm-ascend.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [vllm-project/vllm Source Deep Dive](../../source-deep-dives/repositories/6/vllm-project__vllm.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [waybarrios/vllm-mlx Source Deep Dive](../../source-deep-dives/repositories/e/waybarrios__vllm-mlx.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [vllm-project/vllm 구조 분석](../../clone-structures/vllm-project__vllm.md) | clone-structure-report | clone-structures | -28 |
 | [vllm-project/vllm-ascend](../../global-trending/repositories/vllm-project__vllm-ascend.md) | per-repository-report | global-trending/repositories | -29 |
 | [vllm-project/vllm](../../global-trending/repositories/vllm-project__vllm.md) | per-repository-report | global-trending/repositories | -29 |
@@ -87,6 +90,9 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 | [Source Inventory](../../adjacent-tech-source-inventory.md) | overview-report | root | 118 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |
+| [vllm-project/vllm-ascend Source Deep Dive](../../source-deep-dives/repositories/2/vllm-project__vllm-ascend.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [vllm-project/vllm Source Deep Dive](../../source-deep-dives/repositories/6/vllm-project__vllm.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [waybarrios/vllm-mlx Source Deep Dive](../../source-deep-dives/repositories/e/waybarrios__vllm-mlx.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [vllm-project/vllm 구조 분석](../../clone-structures/vllm-project__vllm.md) | clone-structure-report | clone-structures | -28 |
 | [vllm-project/vllm-ascend](../../global-trending/repositories/vllm-project__vllm-ascend.md) | per-repository-report | global-trending/repositories | -29 |
 | [vllm-project/vllm](../../global-trending/repositories/vllm-project__vllm.md) | per-repository-report | global-trending/repositories | -29 |

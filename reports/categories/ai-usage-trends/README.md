@@ -1,6 +1,6 @@
 # AI Usage Trends
 
-Generated: 2026-06-18T14:52:38.646Z
+Generated: 2026-06-18T15:04:26.653Z
 
 Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events.
 

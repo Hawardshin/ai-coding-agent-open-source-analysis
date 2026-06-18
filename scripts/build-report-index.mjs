@@ -321,6 +321,7 @@ async function listMarkdownFiles(dir, acc = []) {
 }
 
 function inferReportKind(filePath) {
+  if (filePath.includes("/source-deep-dives/")) return "source-deep-dive-report";
   if (filePath.includes("/repositories/")) return "per-repository-report";
   if (filePath.includes("/clone-structures/")) return "clone-structure-report";
   if (filePath.includes("/categories/")) return "category-guide";
@@ -334,7 +335,6 @@ function inferReportKind(filePath) {
   if (filePath.includes("/agent-harness/")) return "agent-harness-report";
   if (filePath.includes("/spec-driven/")) return "spec-driven-report";
   if (filePath.includes("/full-source-scan/")) return "source-scan-report";
-  if (filePath.includes("/source-deep-dives/")) return "source-deep-dive-report";
   return "overview-report";
 }
 
@@ -403,7 +403,7 @@ function renderReportTable(reports, baseDir, limit = Infinity) {
 }
 
 function csvValue(value) {
-  const text = String(value ?? "");
+  const text = String(value ?? "").trim();
   return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
 }
 
