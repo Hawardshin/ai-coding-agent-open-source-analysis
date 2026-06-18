@@ -1,6 +1,6 @@
 # 데이터 플랫폼/벡터 DB
 
-생성 시각: 2026-06-18T15:38:13.667Z
+생성 시각: 2026-06-18T15:43:30.239Z
 
 vector database, graph database, search engine, data store, embedding, indexing, retrieval infrastructure를 묶은 카테고리입니다.
 

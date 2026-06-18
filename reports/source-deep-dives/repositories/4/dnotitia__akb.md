@@ -1,6 +1,6 @@
 # dnotitia/akb 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 AKB — Agent Knowledgebase. Organizational memory for AI agents: vault-scoped docs / tables / files unified by URI graph, served over MCP.
 

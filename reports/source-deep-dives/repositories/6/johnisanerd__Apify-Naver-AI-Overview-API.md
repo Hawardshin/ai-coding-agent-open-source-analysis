@@ -1,6 +1,6 @@
 # johnisanerd/Apify-Naver-AI-Overview-API 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Naver AI Overview API on Apify (네이버 AI 브리핑 API): track Korea's Naver AI answers as clean JSON. A Python + MCP quick-start example. Monitor brand visibility and answer-engine-optimization (AEO) across Korean queries, and load it as an MCP tool in Claude, Cursor, and ChatGPT.
 

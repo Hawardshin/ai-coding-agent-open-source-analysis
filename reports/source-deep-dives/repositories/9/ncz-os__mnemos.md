@@ -1,6 +1,6 @@
 # ncz-os/mnemos 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Production-grade memory operating system for agentic AI. Interoperates with every major framework via MCP, OpenAI-compatible gateway, and native /v1/* REST — Claude Code, OpenClaw, ZeroClaw, Hermes, MemPalace, LangChain, LlamaIndex, CrewAI, AutoGen, Mem0, Letta, Zep. In production use since December 2025. Apache 2.0.
 

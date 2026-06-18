@@ -1,6 +1,6 @@
 # 데이터/벡터 플랫폼 소스 인사이트
 
-생성 시각: 2026-06-18T15:38:52.828Z
+생성 시각: 2026-06-18T15:43:43.893Z
 
 저장소, index, embedding/vector 경로, query engine, persistence
 

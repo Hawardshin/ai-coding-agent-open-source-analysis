@@ -1,6 +1,6 @@
 # apocas/restai 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 RESTai is an AIaaS (AI as a Service) open-source platform. Supports many public and local LLM suported by Ollama/vLLM/etc. Precise embeddings usage, tuning, analytics etc. Built-in image/audio generation with dynamic loading generators. Live chat deployment. Built-in block based graphical language. Prompt versioning and much more...
 

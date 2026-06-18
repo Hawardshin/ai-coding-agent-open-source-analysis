@@ -1,6 +1,6 @@
 # pna03100/hexa-swarm-template 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Claude-native enterprise delivery methodology — Copier template + hexaswarm-core CLI. 6-agent architecture, S1–S6 safety invariants, 28 production deployments. Korea × Japan APAC: LUMENRAI Corp × No.1 Solutions Sales Agency Agreement signed 2026-04-14 (Singapore law). Q2 2026 Korean on-premise AI launch. Claude Code Max-native.
 

@@ -1,6 +1,6 @@
 # CSOAI-ORG/korea-ai-basic-act-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Korea AI Basic Act — in force since 22 January 2026
 

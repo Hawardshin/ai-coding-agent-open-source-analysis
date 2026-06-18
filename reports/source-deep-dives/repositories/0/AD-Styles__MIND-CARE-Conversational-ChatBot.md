@@ -1,6 +1,6 @@
 # AD-Styles/MIND-CARE-Conversational-ChatBot 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 On-device HRI care system for seniors living alone — Korean voice dialogue, medical RAG, fall detection & emergency alerts, all on a single NVIDIA Jetson (ROS 2). / NVIDIA Jetson 기반 온디바이스 돌봄 로봇 — 음성 대화 · 의료 RAG · 낙상 감지 · 응급 알림.
 

@@ -1,6 +1,6 @@
 # sodam-ai/Langent-MCP_One-Click_Kit 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 내 문서(PDF·TXT·MD 등)를 AI가 읽고 검색하게 만들고 3D 지식 성운으로 시각화하는 Windows 원클릭 키트. MCP로 Claude·Cursor 등 AI 도구에 연결. 한/영 왕초보 가이드 포함.
 

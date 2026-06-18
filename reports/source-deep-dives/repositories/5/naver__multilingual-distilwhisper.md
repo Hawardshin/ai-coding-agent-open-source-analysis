@@ -1,6 +1,6 @@
 # naver/multilingual-distilwhisper 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 This repository contains all the code necessary for running the multilingual distilwhisper from Ferraz et al. 2024 IEEE ICASSP paper.
 

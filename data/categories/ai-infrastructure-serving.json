@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:38:13.667Z",
+  "generatedAt": "2026-06-18T15:43:30.239Z",
   "slug": "ai-infrastructure-serving",
   "title": "AI 인프라/서빙",
   "description": "LLM serving, inference engine, GPU, AI factory, training/inference infrastructure, Kubernetes, runtime, model deployment를 묶은 카테고리입니다.",

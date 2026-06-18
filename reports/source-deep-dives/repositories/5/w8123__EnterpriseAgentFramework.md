@@ -1,6 +1,6 @@
 # w8123/EnterpriseAgentFramework 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Enterprise AI Capability Platform for Java/Spring Boot. Register business APIs as governed AI capabilities, compose Agents with GraphSpec, Runtime, MCP/A2A/Gateway, RunOps and Trace. 企业智能体开发框架-把 Java 企业系统中的接口、领域方法、知识、模型和流程，沉淀为可治理、可编排、可开放的 AI 能力资产。
 

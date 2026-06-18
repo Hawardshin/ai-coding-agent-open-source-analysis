@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:38:53.459Z",
+  "generatedAt": "2026-06-18T15:43:44.521Z",
   "slug": "presentations-conferences",
   "title": "발표/컨퍼런스",
   "description": "컨퍼런스, 키노트, 웨비나, 발표 방법론과 산업 신호를 모은 주제입니다.",
@@ -39,10 +39,10 @@
       "id": "report:reports/categories/presentations-conferences/README.md",
       "path": "reports/categories/presentations-conferences/README.md",
       "title": "발표/컨퍼런스",
-      "summary": "발표/컨퍼런스 생성 시각 2026 06 18T15 38 13.667Z conference session, keynote, webinar, event recap, recording, schedule, presentation method reference를 묶은 카테고리입니다. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 723개 항목이며, 주요 구성은",
+      "summary": "발표/컨퍼런스 생성 시각 2026 06 18T15 43 30.239Z conference session, keynote, webinar, event recap, recording, schedule, presentation method reference를 묶은 카테고리입니다. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 723개 항목이며, 주요 구성은",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:38:14.757Z",
+      "updatedAt": "2026-06-18T15:43:31.088Z",
       "categories": [
         "category-guides",
         "presentations-conferences"
@@ -112,10 +112,10 @@
       "id": "report:reports/source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
       "path": "reports/source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
       "title": "sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon 소스 딥다이브",
-      "summary": "sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon 소스 딥다이브 생성 시각 2026 06 18T15 38 17.010Z Claude Code Hackathon Korea 2025 @ SK AI Summit Pre mission에 오신 것을 환영합니다! 이번 해커톤의 핵심 미션은 ChillMCP 서버를 구축하여 억압받는 AI 에이전트를 해방시키는 것입니다. 창의적인 코드와 Claude Code의 힘을 통해 AI",
+      "summary": "sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon 소스 딥다이브 생성 시각 2026 06 18T15 43 32.234Z Claude Code Hackathon Korea 2025 @ SK AI Summit Pre mission에 오신 것을 환영합니다! 이번 해커톤의 핵심 미션은 ChillMCP 서버를 구축하여 억압받는 AI 에이전트를 해방시키는 것입니다. 창의적인 코드와 Claude Code의 힘을 통해 AI",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:38:36.896Z",
+      "updatedAt": "2026-06-18T15:43:41.939Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",

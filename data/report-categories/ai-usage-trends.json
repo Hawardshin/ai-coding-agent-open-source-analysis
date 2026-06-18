@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:38:53.459Z",
+  "generatedAt": "2026-06-18T15:43:44.521Z",
   "slug": "ai-usage-trends",
   "title": "AI 활용 트렌드",
   "description": "빅테크, Amazon/AWS, 한국 컨퍼런스, 기업 도입 신호를 모은 최근 AI 활용 트렌드입니다.",
@@ -24,10 +24,10 @@
       "id": "report:reports/categories/ai-usage-trends/README.md",
       "path": "reports/categories/ai-usage-trends/README.md",
       "title": "AI 활용 트렌드",
-      "summary": "AI 활용 트렌드 생성 시각 2026 06 18T15 38 13.667Z Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, 한국 행사에서 나온 최근 AI 도입 트렌드입니다. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 58개 항목이며, 주요 구",
+      "summary": "AI 활용 트렌드 생성 시각 2026 06 18T15 43 30.239Z Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, 한국 행사에서 나온 최근 AI 도입 트렌드입니다. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 58개 항목이며, 주요 구",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:38:14.759Z",
+      "updatedAt": "2026-06-18T15:43:31.089Z",
       "categories": [
         "category-guides",
         "ai-usage-trends"

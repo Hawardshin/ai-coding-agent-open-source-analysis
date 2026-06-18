@@ -1,6 +1,6 @@
 # Samsung/kflat 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 KFLAT is a tool to serialize memory of selected variables from the running Linux kernel and organize it into a single memory block of consecutive addresses. It relies on recipes written in the code that specify the type and memory layout of the variables being serialized. After the flatten memory image is created KFLAT allows to re-instantiate the memory image into the process address space of a user-land program (most likely on other machine). KFLAT stores information about location of the pointers in the dumped memory block therefore it is enough to map the entire memory on the target machine and fix these parts of memory which constitute pointers to point to proper locations in the newly created memory block.
 

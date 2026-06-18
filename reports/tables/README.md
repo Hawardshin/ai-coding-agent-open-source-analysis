@@ -1,6 +1,6 @@
 # 표/CSV 중심 보고서 목차
 
-생성 시각: 2026-06-18T15:38:53.459Z
+생성 시각: 2026-06-18T15:43:44.521Z
 
 이 페이지는 개별 보고서를 열기 전에 전체 조사 구조를 표로 먼저 훑기 위한 입구입니다.
 
@@ -20,6 +20,7 @@
 | --- | --- |
 | [전체 시작 README](../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
 | [전체 보고서 읽기 지도](../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [전체 인사이트 지도](../insight-map/README.md) | 각 주제의 의미, 위치, 뽑아낼 인사이트를 한 문서에서 확인. |
 | [주제별 보고서 목차](../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
 | [표/CSV 목차](README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
 | [레포별 인사이트](../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
@@ -34,6 +35,8 @@
 | --- | --- |
 | [data/report-index.json](../../data/report-index.json) | 전체 보고서 JSON 인덱스. |
 | [data/report-tables/topics.csv](../../data/report-tables/topics.csv) | 주제 요약 표. |
+| [data/report-tables/insight-topic-map.csv](../../data/report-tables/insight-topic-map.csv) | 주제별 의미, 위치, 질문, 추출 인사이트 지도. |
+| [data/report-tables/source-insight-category-map.csv](../../data/report-tables/source-insight-category-map.csv) | 소스 인사이트 카테고리별 의미, 강점, 검증 포인트, 대표 레포. |
 | [data/report-tables/folders.csv](../../data/report-tables/folders.csv) | 폴더 요약 표. |
 | [data/report-tables/topic-kind-matrix.csv](../../data/report-tables/topic-kind-matrix.csv) | 주제 x 보고서 유형 매트릭스. |
 | [data/report-tables/reports.csv](../../data/report-tables/reports.csv) | 모든 색인 보고서의 평면 표. |

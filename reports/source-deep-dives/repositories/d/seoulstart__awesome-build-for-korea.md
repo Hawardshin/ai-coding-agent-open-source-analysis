@@ -1,6 +1,6 @@
 # seoulstart/awesome-build-for-korea 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Awesome resources to build products for the Korean market: APIs, MCP servers, SDKs, payments, maps, identity. For foreign and AI-assisted builders.
 

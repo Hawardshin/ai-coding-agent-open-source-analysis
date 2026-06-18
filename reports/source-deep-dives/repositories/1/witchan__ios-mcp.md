@@ -1,6 +1,6 @@
 # witchan/ios-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 iOS MCP: MCP management tool for jailbroken iPhones, enabling developers and AI agents to inspect and control devices.
 

@@ -7,6 +7,7 @@
 ## 요약
 
 - 시작점은 [reports/README.md](reports/README.md)입니다. 여기서 전체 보고서 지도, 주제별 목차, 폴더별 README 지도를 한 번에 볼 수 있습니다.
+- 각 주제의 의미, 위치, 뽑아낼 인사이트를 한 문서에서 보려면 [reports/insight-map/README.md](reports/insight-map/README.md)를 먼저 보면 됩니다.
 - 카테고리별 트렌드와 레포 특징 비교는 [reports/source-insights/README.md](reports/source-insights/README.md)가 가장 빠릅니다.
 - 실제 소스 파일 경로 근거는 [reports/source-deep-dives/README.md](reports/source-deep-dives/README.md)와 [reports/source-deep-dives/repositories/README.md](reports/source-deep-dives/repositories/README.md)에 모았습니다.
 - 오픈소스, 논문, 발표, 참고자료를 artifact 기준으로 보고 싶으면 [reports/categories/README.md](reports/categories/README.md)에서 시작하면 됩니다.
@@ -21,6 +22,7 @@
 | 바로가기 | 한눈에 볼 것 | 추천 상황 |
 | --- | --- | --- |
 | [전체 보고서 읽기 지도](reports/README.md) | 모든 보고서, 주제, 폴더 README 지도 | 처음 들어와서 전체 구조를 잡을 때 |
+| [전체 인사이트 지도](reports/insight-map/README.md) | 각 주제의 의미, 위치, 뽑아낼 인사이트 | 이 문서 하나로 전체 주제와 다음 행동을 알고 싶을 때 |
 | [주제별 보고서 목차](reports/by-topic/README.md) | 조사 질문별 보고서 묶음 | “스펙”, “LLM wiki”, “한국 트렌드”처럼 주제가 먼저일 때 |
 | [근거 카테고리 목차](reports/categories/README.md) | 오픈소스, 논문, 발표, 참고자료 분류 | 조사 근거와 대상 artifact를 먼저 확인할 때 |
 | [소스 트렌드 인사이트](reports/source-insights/README.md) | 카테고리별 트렌드, 대표 레포, 위험 신호 | 현재 트렌드와 비교 포인트를 빠르게 볼 때 |
@@ -48,13 +50,14 @@
 
 ## 추천 읽기 순서
 
-1. [전체 보고서 읽기 지도](reports/README.md)에서 전체 조사 구조를 봅니다.
-2. [소스 트렌드 인사이트](reports/source-insights/README.md)에서 카테고리별 현재 트렌드와 레포 특징을 훑습니다.
-3. [상세 비교 리포트](reports/source-insights/comparative-report.md)에서 카테고리 간 차이와 대표 레포 판단표를 봅니다.
-4. [근거 카테고리 목차](reports/categories/README.md)에서 오픈소스, 논문, 발표, 참고자료가 어떻게 묶였는지 확인합니다.
-5. 구현 근거가 필요한 카테고리는 [소스 딥다이브](reports/source-deep-dives/README.md)에서 실제 파일 경로를 확인합니다.
-6. 특정 레포를 깊게 볼 때는 [레포별 소스 딥다이브](reports/source-deep-dives/repositories/README.md)에서 해당 레포 문서로 들어갑니다.
-7. 많은 항목을 비교해야 할 때는 [표/CSV 목차](reports/tables/README.md)와 `data/report-tables/`를 사용합니다.
+1. [전체 인사이트 지도](reports/insight-map/README.md)에서 각 주제의 의미, 위치, 뽑아낼 인사이트를 먼저 잡습니다.
+2. [전체 보고서 읽기 지도](reports/README.md)에서 전체 조사 구조를 봅니다.
+3. [소스 트렌드 인사이트](reports/source-insights/README.md)에서 카테고리별 현재 트렌드와 레포 특징을 훑습니다.
+4. [상세 비교 리포트](reports/source-insights/comparative-report.md)에서 카테고리 간 차이와 대표 레포 판단표를 봅니다.
+5. [근거 카테고리 목차](reports/categories/README.md)에서 오픈소스, 논문, 발표, 참고자료가 어떻게 묶였는지 확인합니다.
+6. 구현 근거가 필요한 카테고리는 [소스 딥다이브](reports/source-deep-dives/README.md)에서 실제 파일 경로를 확인합니다.
+7. 특정 레포를 깊게 볼 때는 [레포별 소스 딥다이브](reports/source-deep-dives/repositories/README.md)에서 해당 레포 문서로 들어갑니다.
+8. 많은 항목을 비교해야 할 때는 [표/CSV 목차](reports/tables/README.md)와 `data/report-tables/`를 사용합니다.
 
 ## 주요 보고서 묶음
 

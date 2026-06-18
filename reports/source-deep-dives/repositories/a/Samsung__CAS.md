@@ -1,6 +1,6 @@
 # Samsung/CAS 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Code Aware Services (CAS) is a set of tools for extracting information from a (especially large) source code trees. It consists of Build Awareness Service (BAS) and Function/Type database (FTDB). BAS is a tool for extracting information how particular S/W image is created from ongoing builds. FTDB transforms predefined source code information (like information about functions and types) into easily accessible format (like JSON) which can be used by a number of applications.
 

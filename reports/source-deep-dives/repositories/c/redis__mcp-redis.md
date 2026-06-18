@@ -1,6 +1,6 @@
 # redis/mcp-redis 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search data in Redis efficiently
 

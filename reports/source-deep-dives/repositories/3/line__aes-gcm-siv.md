@@ -1,6 +1,6 @@
 # line/aes-gcm-siv 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 AES-GCM-SIV (RFC 8452) implementation for C, Android and Java, with hardware acceleration support.
 

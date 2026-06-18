@@ -1,6 +1,6 @@
 # kakaobrain/kor-nlu-datasets 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding
 

@@ -1,6 +1,6 @@
 # manojmallick/sigmap 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 97% token reduction for AI coding sessions — zero deps, 31 languages, MCP server
 

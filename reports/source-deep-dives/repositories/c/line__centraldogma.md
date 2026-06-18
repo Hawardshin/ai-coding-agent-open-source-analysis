@@ -1,6 +1,6 @@
 # line/centraldogma 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Highly-available version-controlled service configuration repository based on Git, ZooKeeper and HTTP/2
 

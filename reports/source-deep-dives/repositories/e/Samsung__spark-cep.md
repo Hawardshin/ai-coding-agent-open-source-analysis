@@ -1,6 +1,6 @@
 # Samsung/spark-cep 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Spark CEP is an extension of Spark Streaming to support SQL-based query processing
 

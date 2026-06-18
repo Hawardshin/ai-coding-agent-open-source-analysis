@@ -1,6 +1,6 @@
 # hskim-solv/BidMate-DocAgent 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 Agentic RAG for Korean RFP intelligence — extractive grounded-answer pipeline with metadata-first retrieval, comparison-aware balanced top-k, and bootstrap-CI eval rigor (ADR-driven).
 

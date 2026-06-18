@@ -9,6 +9,8 @@ const outputDataDir = path.join(root, "data", "report-categories");
 const outputDataTablesDir = path.join(root, "data", "report-tables");
 const outputReportDir = path.join(root, "reports", "by-topic");
 const outputReportTablesDir = path.join(root, "reports", "tables");
+const outputInsightMapDir = path.join(root, "reports", "insight-map");
+const sourceTrendInsightsFile = path.join(root, "data", "source-trend-insights.json");
 const outputReportsReadme = path.join(root, "reports", "README.md");
 
 const taxonomy = [
@@ -256,12 +258,132 @@ const folderGuides = [
 ];
 
 const generatedNavigationReadmes = new Set([
+  "reports/insight-map/README.md",
   "reports/tables/README.md",
   ...folderGuides.map((guide) => `${guide.dir}/README.md`)
 ]);
 
+const insightTopicGuides = {
+  "start-here": {
+    meaning: "레포 전체 조사를 처음 읽을 때 흐름을 잡는 입구입니다. 어떤 질문을 먼저 보고 어떤 보고서로 내려갈지 정합니다.",
+    primaryQuestion: "이 레포에서 먼저 무엇을 읽어야 하는가?",
+    extract: ["전체 조사 구조", "핵심 보고서 우선순위", "깊게 들어갈 다음 링크"],
+    output: "처음 10분 안에 읽을 순서와 핵심 위치를 결정합니다."
+  },
+  "category-guides": {
+    meaning: "오픈소스, 연구, 발표, 블로그, 트렌드 자료를 artifact 성격으로 묶은 근거 지도입니다.",
+    primaryQuestion: "각 근거는 어떤 종류이고 어떤 조사 질문을 뒷받침하는가?",
+    extract: ["근거 유형별 분포", "주제별 원천 자료 위치", "자료 신뢰도와 활용 범위"],
+    output: "분석의 근거가 어디에서 왔는지 추적합니다."
+  },
+  "full-source-scan": {
+    meaning: "사용자의 말과 실제 소스 파일, 심볼, 문맥을 연결하는 검색/인덱싱 방식에 대한 주제입니다.",
+    primaryQuestion: "코딩 에이전트는 어떤 파일을 찾아 읽고, 왜 그 파일이 답이라고 판단하는가?",
+    extract: ["파일 발견과 랭킹 축", "grep/symbol/AST/embedding의 역할", "문맥 예산과 증거 연결 방식"],
+    output: "전체 소스 스캔 시스템을 설계할 때 필요한 탐색 파이프라인을 뽑습니다."
+  },
+  "source-code-deep-dives": {
+    meaning: "로컬에 클론된 실제 레포에서 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로를 뽑은 구현 근거입니다.",
+    primaryQuestion: "README 설명이 아니라 실제 코드에서 어떤 구조가 확인되는가?",
+    extract: ["핵심 파일 경로", "구현 패턴과 feature bucket", "레포별 위험 신호와 검증 표면"],
+    output: "레포별로 바로 확인할 코드 근거와 구현 차이를 얻습니다."
+  },
+  "coding-agents": {
+    meaning: "Codex, Claude Code, Aider, OpenHands, Cline/Roo류 코딩 에이전트와 IDE 보조 도구를 비교하는 주제입니다.",
+    primaryQuestion: "코딩 에이전트 제품은 어떤 실행 루프와 코드 수정 표면을 가져야 하는가?",
+    extract: ["CLI/IDE 실행면", "파일 수정 및 diff 루프", "테스트/리뷰/sandbox 구조"],
+    output: "코딩 에이전트 제품 구조와 구현 후보를 비교합니다."
+  },
+  "agent-harness": {
+    meaning: "MCP, tool registry, hooks, skills, workflow orchestration처럼 에이전트 실행을 받치는 하네스 계층입니다.",
+    primaryQuestion: "LLM이 도구와 워크플로를 안전하게 실행하려면 어떤 하네스가 필요한가?",
+    extract: ["MCP/tool 연결", "hooks/skills/plugin 구조", "workflow orchestration과 권한 경계"],
+    output: "에이전트 런타임과 도구 실행 기반 설계 기준을 얻습니다."
+  },
+  "spec-driven": {
+    meaning: "요구사항, ADR, acceptance criteria, executable specs, SDD 도구를 장기 기억과 코드 변경에 연결하는 주제입니다.",
+    primaryQuestion: "스펙을 어떻게 뽑고 저장하고 테스트 trace와 연결해야 오래 기억되는가?",
+    extract: ["스펙 추출 방식", "요구사항-설계-테스트 추적성", "spec memory와 acceptance gate"],
+    output: "스펙 드리븐 개발 체계를 만들 때 필요한 산출물과 연결 규칙을 뽑습니다."
+  },
+  "llm-wiki": {
+    meaning: "LLM wiki, RAG, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 묶은 지식 지속성 주제입니다.",
+    primaryQuestion: "코드와 문서를 어떻게 수집하고 검색하고 출처와 함께 기억할 것인가?",
+    extract: ["ingestion/chunking pipeline", "embedding/vector/graph retrieval", "provenance와 knowledge update 방식"],
+    output: "LLM 지식베이스와 코드 위키를 설계할 때 필요한 파이프라인 차이를 비교합니다."
+  },
+  "presentations-conferences": {
+    meaning: "컨퍼런스, 키노트, 웨비나, 발표 자료에서 산업 신호와 구현 방향을 읽는 주제입니다.",
+    primaryQuestion: "최근 발표들이 AI 활용과 에이전트 설계에서 무엇을 강조하는가?",
+    extract: ["빅테크 발표 흐름", "Amazon/AWS와 기업 도입 신호", "한국/글로벌 컨퍼런스 차이"],
+    output: "논문/코드만으로 보이지 않는 산업 채택 방향을 보완합니다."
+  },
+  "ai-usage-trends": {
+    meaning: "기업, 빅테크, Amazon/AWS, 한국 컨퍼런스에서 나타나는 최근 AI 활용 트렌드입니다.",
+    primaryQuestion: "최근 6~12개월 AI 활용은 어떤 업무와 아키텍처로 이동하고 있는가?",
+    extract: ["agentic enterprise 흐름", "업무 자동화 적용 지점", "국내외 도입 방식 차이"],
+    output: "실제 제품/조직 적용 관점의 우선순위를 뽑습니다."
+  },
+  "global-trending-open-source": {
+    meaning: "전세계 AI/agent/RAG/devtool/security/infrastructure 오픈소스 트렌딩 코퍼스입니다.",
+    primaryQuestion: "글로벌에서 star velocity와 커뮤니티 신호가 강한 프로젝트는 무엇인가?",
+    extract: ["글로벌 인기 프로젝트", "언어/스택/카테고리 분포", "급상승 구현 패턴"],
+    output: "전세계 트렌드 기준의 후보군과 비교 대상을 뽑습니다."
+  },
+  "korea-trending-open-source": {
+    meaning: "한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 기술 블로그와 오픈소스 흐름입니다.",
+    primaryQuestion: "한국에서 실제 관심을 받고 있는 소스와 구현 주제는 무엇인가?",
+    extract: ["국내 트렌드 레포", "한국어/국내 도메인 MCP/RAG 흐름", "기업/커뮤니티별 기술 신호"],
+    output: "국내 맥락에서 우선 볼 프로젝트와 차별점을 뽑습니다."
+  },
+  "adjacent-infrastructure": {
+    meaning: "컨텍스트 엔지니어링, RAG 인프라, 벡터 DB, 로컬 LLM 서빙, 평가/관측성 같은 주변 스택입니다.",
+    primaryQuestion: "에이전트를 제품화하려면 주변 인프라에서 무엇을 갖춰야 하는가?",
+    extract: ["컨텍스트/메모리 계층", "서빙과 벡터 인프라", "eval/observability 연결"],
+    output: "에이전트 외부 의존 스택과 운영 준비도를 판단합니다."
+  },
+  "clone-structure-inventory": {
+    meaning: "로컬에 클론한 upstream 소스의 물리 구조, manifest, source directory, entrypoint 목록입니다.",
+    primaryQuestion: "분석 대상 소스는 실제로 어디에 있고 어떤 구조를 갖는가?",
+    extract: ["로컬 소스 위치", "레포별 파일 구조", "entrypoint와 주요 디렉터리"],
+    output: "분석 근거가 되는 원본 소스 트리를 찾습니다."
+  },
+  "comparisons": {
+    meaning: "레포 간 taxonomy, 기능 비교, 유사도 cluster, 카테고리 차이를 보는 비교 지도입니다.",
+    primaryQuestion: "비슷해 보이는 프로젝트들은 무엇이 다르고 어느 카테고리에 속하는가?",
+    extract: ["기능별 비교", "유사군과 차이점", "카테고리 간 설계 거리"],
+    output: "후보 프로젝트를 비교하고 선택 기준을 세웁니다."
+  },
+  "research-foundations": {
+    meaning: "논문, 근거자료, 이론 충돌, 연구 종합 보고서를 묶은 학술/공신력 근거 주제입니다.",
+    primaryQuestion: "코드와 트렌드를 설명하는 연구적 근거는 무엇인가?",
+    extract: ["핵심 논문과 이론", "상충되는 관점", "실무 설계로 옮길 수 있는 원칙"],
+    output: "주장과 설계 판단의 근거 수준을 보강합니다."
+  },
+  "source-catalogs-and-inventories": {
+    meaning: "조사에 사용한 원천 목록, evidence ledger, clone inventory, source catalog입니다.",
+    primaryQuestion: "자료 목록과 출처를 빠짐없이 추적하려면 어디를 봐야 하는가?",
+    extract: ["전체 자료 목록", "클론/근거 인벤토리", "데이터 파일 위치"],
+    output: "분석 대상과 근거 목록의 누락 여부를 확인합니다."
+  },
+  "repository-deep-dives": {
+    meaning: "핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다.",
+    primaryQuestion: "특정 레포 하나를 깊게 볼 때 어떤 요약과 근거가 있는가?",
+    extract: ["레포별 총평", "구현 특징과 위험 신호", "다음에 볼 소스/보고서 링크"],
+    output: "개별 레포를 선택하거나 제외할 판단 근거를 뽑습니다."
+  }
+};
+
 function safeArray(value) {
   return Array.isArray(value) ? value : [];
+}
+
+async function readJsonIfExists(file) {
+  try {
+    return JSON.parse(await readFile(file, "utf8"));
+  } catch {
+    return null;
+  }
 }
 
 function slugify(value) {
@@ -289,6 +411,19 @@ function tableText(value) {
     .replace(/\s+/g, " ")
     .replaceAll("|", "\\|")
     .trim();
+}
+
+function externalLink(label, url) {
+  return url ? `[${tableText(label)}](${url})` : tableText(label);
+}
+
+function inlineList(items) {
+  return safeArray(items).map(tableText).join("<br>");
+}
+
+function bulletList(items) {
+  const list = safeArray(items).filter(Boolean);
+  return list.length ? list.map((item) => `- ${tableText(item)}`).join("\n") : "- 없음";
 }
 
 function renderMarkdown(content) {
@@ -382,6 +517,7 @@ function renderNavigationBlock(baseDir) {
 | --- | --- |
 | ${linkFrom(baseDir, "README.md", "전체 시작 README")} | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
 | ${linkFrom(baseDir, "reports/README.md", "전체 보고서 읽기 지도")} | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| ${linkFrom(baseDir, "reports/insight-map/README.md", "전체 인사이트 지도")} | 각 주제의 의미, 위치, 뽑아낼 인사이트를 한 문서에서 확인. |
 | ${linkFrom(baseDir, "reports/by-topic/README.md", "주제별 보고서 목차")} | 조사 질문 기준으로 보고서를 찾는 입구. |
 | ${linkFrom(baseDir, "reports/tables/README.md", "표/CSV 목차")} | 표로 빠르게 훑고 CSV로 비교하는 입구. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "레포별 인사이트")} | 레포별 총평, 위험 신호, 다음에 볼 링크. |
@@ -669,6 +805,8 @@ ${renderNavigationBlock(baseDir)}
 | --- | --- |
 | ${linkFrom(baseDir, "data/report-index.json", "data/report-index.json")} | 전체 보고서 JSON 인덱스. |
 | ${linkFrom(baseDir, "data/report-tables/topics.csv", "data/report-tables/topics.csv")} | 주제 요약 표. |
+| ${linkFrom(baseDir, "data/report-tables/insight-topic-map.csv", "data/report-tables/insight-topic-map.csv")} | 주제별 의미, 위치, 질문, 추출 인사이트 지도. |
+| ${linkFrom(baseDir, "data/report-tables/source-insight-category-map.csv", "data/report-tables/source-insight-category-map.csv")} | 소스 인사이트 카테고리별 의미, 강점, 검증 포인트, 대표 레포. |
 | ${linkFrom(baseDir, "data/report-tables/folders.csv", "data/report-tables/folders.csv")} | 폴더 요약 표. |
 | ${linkFrom(baseDir, "data/report-tables/topic-kind-matrix.csv", "data/report-tables/topic-kind-matrix.csv")} | 주제 x 보고서 유형 매트릭스. |
 | ${linkFrom(baseDir, "data/report-tables/reports.csv", "data/report-tables/reports.csv")} | 모든 색인 보고서의 평면 표. |
@@ -702,7 +840,204 @@ ${reportRows}
 `;
 }
 
-function buildTableFiles(reportIndex, categories, folderSummaries) {
+function topicGuide(category) {
+  return insightTopicGuides[category.slug] || {
+    meaning: category.description,
+    primaryQuestion: `${category.title} 주제에서 어떤 판단을 내려야 하는가?`,
+    extract: [category.description, "관련 보고서 위치", "대표 데이터와 다음 링크"],
+    output: "해당 주제의 보고서와 근거를 빠르게 찾습니다."
+  };
+}
+
+function topicReadmePath(category) {
+  return `reports/by-topic/${category.slug}/README.md`;
+}
+
+function topicDataPath(category) {
+  return `data/report-categories/${category.slug}.json`;
+}
+
+function topReportLinksForTopic(category, baseDir, limit = 3) {
+  return sortReports(category.reports)
+    .slice(0, limit)
+    .map((report) => linkFrom(baseDir, report.path, report.title))
+    .join("<br>") || "없음";
+}
+
+function relatedTopicsFor(category, categories, limit = 5) {
+  const ids = new Set(category.reports.map((report) => report.id));
+  return categories
+    .filter((candidate) => candidate.slug !== category.slug)
+    .map((candidate) => ({
+      slug: candidate.slug,
+      title: candidate.title,
+      count: candidate.reports.filter((report) => ids.has(report.id)).length
+    }))
+    .filter((candidate) => candidate.count > 0)
+    .sort((a, b) => b.count - a.count || a.title.localeCompare(b.title))
+    .slice(0, limit);
+}
+
+function renderTopicInsightTable(categories, baseDir) {
+  const rows = categories
+    .sort((a, b) => b.count - a.count || a.title.localeCompare(b.title))
+    .map((category) => {
+      const guide = topicGuide(category);
+      const where = [
+        linkFrom(baseDir, topicReadmePath(category), "주제 README"),
+        linkFrom(baseDir, topicDataPath(category), "데이터")
+      ].join("<br>");
+      return `| ${linkFrom(baseDir, topicReadmePath(category), category.title)} | ${category.count} | ${tableText(guide.meaning)} | ${where} | ${inlineList(guide.extract)} | ${tableText(guide.output)} |`;
+    })
+    .join("\n");
+  return `| 주제 | 보고서 수 | 의미 | 어디에 있음 | 뽑아낼 인사이트 | 최종 활용 |
+| --- | ---: | --- | --- | --- | --- |
+${rows}
+`;
+}
+
+function renderTopicInsightDetail(category, categories, baseDir) {
+  const guide = topicGuide(category);
+  const related = relatedTopicsFor(category, categories)
+    .map((topic) => `${linkFrom(baseDir, topicReadmePath(topic), topic.title)} (${topic.count})`)
+    .join(", ") || "없음";
+  const byKind = countsBy(category.reports, (report) => report.kind);
+  const byFolder = countsBy(category.reports, (report) => report.folder);
+  return `### ${category.title}
+
+${guide.meaning}
+
+| 항목 | 내용 |
+| --- | --- |
+| 이 주제가 답하는 질문 | ${tableText(guide.primaryQuestion)} |
+| 위치 | ${linkFrom(baseDir, topicReadmePath(category), "주제 README")} / ${linkFrom(baseDir, topicDataPath(category), "JSON 데이터")} |
+| 보고서 수 | ${category.reports.length} |
+| 주요 보고서 유형 | ${tableText(topEntries(byKind, 5) || "없음")} |
+| 주요 폴더 | ${tableText(topEntries(byFolder, 5) || "없음")} |
+| 먼저 볼 보고서 | ${topReportLinksForTopic(category, baseDir, 5)} |
+| 같이 볼 주제 | ${related} |
+| 최종 활용 | ${tableText(guide.output)} |
+
+뽑아낼 인사이트:
+
+${bulletList(guide.extract)}
+`;
+}
+
+function renderSourceCategoryInsightTable(sourceTrendData, baseDir) {
+  const categories = safeArray(sourceTrendData?.categories);
+  if (!categories.length) return "_소스 인사이트 데이터가 아직 없습니다._\n";
+  const rows = categories
+    .sort((a, b) => b.count - a.count || a.korean.localeCompare(b.korean))
+    .map((category) => {
+      const profile = category.comparisonProfile || {};
+      const representative = category.topRepositories?.[0];
+      const categoryLink = linkFrom(baseDir, `reports/source-insights/by-category/${category.slug}/README.md`, category.korean);
+      const representativeLink = representative?.url ? externalLink(representative.name, representative.url) : tableText(representative?.name || "없음");
+      const location = [
+        linkFrom(baseDir, `reports/source-insights/by-category/${category.slug}/README.md`, "카테고리 README"),
+        linkFrom(baseDir, "reports/source-insights/comparative-report.md", "상세 비교")
+      ].join("<br>");
+      return `| ${categoryLink} | ${category.count} | ${tableText(profile.useCase || category.lens)} | ${location} | ${tableText(profile.strength || category.insights?.[0])} | ${tableText(profile.gap || "대표 레포별 위험 신호 확인")} | ${representativeLink} |`;
+    })
+    .join("\n");
+  return `| 소스 인사이트 카테고리 | 레포 수 | 의미 | 어디에 있음 | 강점 인사이트 | 검증 포인트 | 대표 레포 |
+| --- | ---: | --- | --- | --- | --- | --- |
+${rows}
+`;
+}
+
+function renderSourceCategoryInsightDetail(category, baseDir) {
+  const profile = category.comparisonProfile || {};
+  const repos = safeArray(category.repoComparisons).slice(0, 8).map((repo) => {
+    const name = repo.url ? externalLink(repo.name, repo.url) : tableText(repo.name);
+    const links = [
+      repo.sourceDeepDivePath ? linkFrom(baseDir, repo.sourceDeepDivePath, "소스 딥다이브") : null,
+      repo.reportPath ? linkFrom(baseDir, repo.reportPath, "보고서") : null
+    ].filter(Boolean).join(" / ");
+    return `| ${repo.rank} | ${name} | ${repo.compareScore} | ${repo.trendScore} | ${tableText(repo.reason)} | ${tableText(repo.position)} | ${links} |`;
+  }).join("\n");
+  return `### ${category.korean}
+
+${profile.useCase || category.lens}
+
+| 항목 | 내용 |
+| --- | --- |
+| 위치 | ${linkFrom(baseDir, `reports/source-insights/by-category/${category.slug}/README.md`, "카테고리 README")} / ${linkFrom(baseDir, "reports/source-insights/comparative-report.md", "상세 비교 리포트")} |
+| 레포 수 | ${category.count} |
+| 트렌드 연결 | ${category.trendRepoCount} |
+| 글로벌 / 한국 | ${category.globalTrendCount} / ${category.koreaTrendCount} |
+| 강점 | ${tableText(profile.strength || "없음")} |
+| 약점/검증 | ${tableText(profile.gap || "대표 레포별 위험 신호 확인")} |
+| 대표 feature | ${tableText(profile.featureSummary || "없음")} |
+| 대표 bucket | ${tableText(profile.bucketSummary || "없음")} |
+| 결론 | ${tableText(profile.decision || category.insights?.[0] || "없음")} |
+
+대표 레포:
+
+| 순위 | 레포 | 비교 점수 | 트렌드 점수 | 왜 봐야 하나 | 카테고리 안에서의 위치 | 링크 |
+| ---: | --- | ---: | ---: | --- | --- | --- |
+${repos || "| - | 없음 | - | - | - | - | - |"}
+`;
+}
+
+function renderInsightMapReadme(reportIndex, categories, sourceTrendData) {
+  const baseDir = "reports/insight-map";
+  const sourceCategories = safeArray(sourceTrendData?.categories);
+  const totalMemberships = categories.reduce((sum, category) => sum + category.reports.length, 0);
+  return `# 전체 인사이트 지도
+
+생성 시각: ${generatedAt}
+
+이 문서는 “각 주제가 어디에 있고, 무슨 의미이며, 어떤 인사이트를 뽑아야 하는지”를 한 곳에서 보기 위한 최상위 지도입니다. 깊은 폴더를 먼저 열지 말고, 이 문서에서 주제의 의미와 위치를 잡은 뒤 필요한 보고서로 들어가면 됩니다.
+
+## 요약
+
+- 조사 단위: ${categories.length}개 보고서 주제, ${sourceCategories.length}개 소스 인사이트 카테고리, ${reportIndex.reports.length.toLocaleString("en-US")}개 Markdown 보고서입니다.
+- 포함 범위: 주제 멤버십 ${totalMemberships.toLocaleString("en-US")}개, 소스 스캔 레포 ${sourceTrendData?.totals?.repositories?.toLocaleString("en-US") || "0"}개를 한 문서에서 연결합니다.
+- 탐색 방식: 먼저 “보고서 주제 전체 지도”에서 질문의 의미를 잡고, “소스 인사이트 카테고리 지도”에서 실제 구현 비교로 내려갑니다.
+
+## 총평
+
+이 레포의 인사이트는 세 층으로 읽어야 합니다. 첫째, 보고서 주제는 왜 조사했는지를 설명합니다. 둘째, 소스 인사이트 카테고리는 실제 클론 소스에서 무엇이 반복되는지를 보여줍니다. 셋째, 레포별 딥다이브는 특정 프로젝트를 선택하거나 제외할 근거를 줍니다. 이 문서 하나를 기준점으로 삼으면 각 주제의 의미, 위치, 추출해야 할 판단이 끊기지 않습니다.
+
+${renderNavigationBlock(baseDir)}
+
+## 이 문서에서 바로 판단할 것
+
+| 질문 | 바로 볼 위치 | 뽑을 결론 |
+| --- | --- | --- |
+| 전체 구조가 뭔가? | ${linkFrom(baseDir, "reports/README.md", "전체 보고서 읽기 지도")} | 조사 범위, 주제 수, 폴더별 역할 |
+| 특정 주제가 어디 있나? | ${linkFrom(baseDir, "reports/by-topic/README.md", "주제별 보고서 목차")} | 주제 README와 JSON 데이터 위치 |
+| 구현 차이는 어디서 보나? | ${linkFrom(baseDir, "reports/source-insights/comparative-report.md", "상세 비교 리포트")} | 카테고리별 강점, 약점, 대표 레포 |
+| 실제 파일 근거는 어디 있나? | ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "소스 딥다이브")} | entrypoint, runtime, retrieval, spec, eval, security 경로 |
+| 많은 항목을 표로 보려면? | ${linkFrom(baseDir, "reports/tables/README.md", "표/CSV 목차")} | CSV 기반 필터링과 비교 |
+
+## 보고서 주제 전체 지도
+
+${renderTopicInsightTable(categories, baseDir)}
+
+## 소스 인사이트 카테고리 지도
+
+${renderSourceCategoryInsightTable(sourceTrendData, baseDir)}
+
+## 주제별 상세 해석
+
+${categories
+  .sort((a, b) => b.reports.length - a.reports.length || a.title.localeCompare(b.title))
+  .map((category) => renderTopicInsightDetail(category, categories, baseDir))
+  .join("\n")}
+
+## 소스 인사이트 카테고리별 상세 해석
+
+${sourceCategories
+  .sort((a, b) => b.count - a.count || a.korean.localeCompare(b.korean))
+  .map((category) => renderSourceCategoryInsightDetail(category, baseDir))
+  .join("\n")}
+`;
+}
+
+function buildTableFiles(reportIndex, categories, folderSummaries, sourceTrendData) {
   const topicRows = categories.map((category) => ({
     topic: category.title,
     slug: category.slug,
@@ -711,6 +1046,40 @@ function buildTableFiles(reportIndex, categories, folderSummaries) {
     data: `data/report-categories/${category.slug}.json`,
     description: category.description
   }));
+  const insightTopicRows = categories.map((category) => {
+    const guide = topicGuide(category);
+    return {
+      topic: category.title,
+      slug: category.slug,
+      reports: category.reports.length,
+      meaning: guide.meaning,
+      primary_question: guide.primaryQuestion,
+      extract_insights: safeArray(guide.extract).join("; "),
+      output: guide.output,
+      readme: topicReadmePath(category),
+      data: topicDataPath(category),
+      first_reports: sortReports(category.reports).slice(0, 5).map((report) => report.path).join("; ")
+    };
+  });
+  const sourceCategoryRows = safeArray(sourceTrendData?.categories).map((category) => {
+    const profile = category.comparisonProfile || {};
+    const representative = category.topRepositories?.[0];
+    return {
+      category: category.korean,
+      slug: category.slug,
+      repositories: category.count,
+      trend_linked: category.trendRepoCount,
+      global: category.globalTrendCount,
+      korea: category.koreaTrendCount,
+      meaning: profile.useCase || category.lens,
+      strength: profile.strength,
+      gap: profile.gap,
+      decision: profile.decision,
+      representative_repo: representative?.name || "",
+      readme: `reports/source-insights/by-category/${category.slug}/README.md`,
+      comparative_report: "reports/source-insights/comparative-report.md"
+    };
+  });
   const folderRows = folderSummaries.map((folder) => ({
     folder: folder.dir,
     readme: folder.readmePath,
@@ -744,6 +1113,16 @@ function buildTableFiles(reportIndex, categories, folderSummaries) {
       name: "topics.csv",
       headers: ["topic", "slug", "reports", "readme", "data", "description"],
       rows: topicRows
+    },
+    {
+      name: "insight-topic-map.csv",
+      headers: ["topic", "slug", "reports", "meaning", "primary_question", "extract_insights", "output", "readme", "data", "first_reports"],
+      rows: insightTopicRows
+    },
+    {
+      name: "source-insight-category-map.csv",
+      headers: ["category", "slug", "repositories", "trend_linked", "global", "korea", "meaning", "strength", "gap", "decision", "representative_repo", "readme", "comparative_report"],
+      rows: sourceCategoryRows
     },
     {
       name: "folders.csv",
@@ -805,6 +1184,7 @@ function renderReportsReadme(reportIndex, categorySummaries, folderSummaries) {
 | 이동 | 여기서 볼 것 |
 | --- | --- |
 | ${linkFrom("reports", "reports/by-topic/start-here/README.md", "먼저 읽기")} | 주요 조사 흐름을 처음부터 잡는 순서. |
+| ${linkFrom("reports", "reports/insight-map/README.md", "전체 인사이트 지도")} | 각 주제의 의미, 위치, 뽑아낼 인사이트를 한 문서에서 확인. |
 | ${linkFrom("reports", "reports/by-topic/README.md", "주제별 보고서 목차")} | 모든 Markdown 보고서를 조사 질문 기준으로 탐색. |
 | ${linkFrom("reports", "reports/tables/README.md", "표/CSV 목차")} | 표, CSV, 주제/유형 matrix 중심 탐색. |
 | ${linkFrom("reports", "reports/repository-insights/README.md", "레포별 인사이트")} | 레포별 총평, 위험, 근거, 다음 읽기 링크. |
@@ -831,12 +1211,13 @@ ${renderFolderMap(folderSummaries, "reports")}
 
 ## 읽는 순서
 
-1. ${linkFrom("reports", "reports/categories/README.md", "reports/categories/README.md")}에서 조사 대상과 근거 카테고리를 먼저 봅니다.
-2. ${linkFrom("reports", "reports/by-topic/README.md", "reports/by-topic/README.md")}에서 질문별 보고서 묶음을 확인합니다.
-3. 구현 근거가 필요하면 ${linkFrom("reports", "reports/source-deep-dives/README.md", "reports/source-deep-dives/README.md")}에서 소스 경로를 봅니다.
-4. 넓게 비교해야 하면 ${linkFrom("reports", "reports/tables/README.md", "reports/tables/README.md")}에서 표와 CSV를 봅니다.
-5. 실제 폴더 위치를 이미 알면 위의 폴더별 README 지도를 사용합니다.
-6. 완전한 기계 판독 목록은 \`data/report-index.json\`, \`data/report-categories/*.json\`, \`data/report-tables/*.csv\`를 사용합니다.
+1. ${linkFrom("reports", "reports/insight-map/README.md", "reports/insight-map/README.md")}에서 각 주제의 의미와 위치를 먼저 잡습니다.
+2. ${linkFrom("reports", "reports/categories/README.md", "reports/categories/README.md")}에서 조사 대상과 근거 카테고리를 봅니다.
+3. ${linkFrom("reports", "reports/by-topic/README.md", "reports/by-topic/README.md")}에서 질문별 보고서 묶음을 확인합니다.
+4. 구현 근거가 필요하면 ${linkFrom("reports", "reports/source-deep-dives/README.md", "reports/source-deep-dives/README.md")}에서 소스 경로를 봅니다.
+5. 넓게 비교해야 하면 ${linkFrom("reports", "reports/tables/README.md", "reports/tables/README.md")}에서 표와 CSV를 봅니다.
+6. 실제 폴더 위치를 이미 알면 위의 폴더별 README 지도를 사용합니다.
+7. 완전한 기계 판독 목록은 \`data/report-index.json\`, \`data/report-categories/*.json\`, \`data/report-tables/*.csv\`를 사용합니다.
 `;
 }
 
@@ -868,10 +1249,12 @@ async function main() {
   await rm(outputDataDir, { recursive: true, force: true });
   await rm(outputReportDir, { recursive: true, force: true });
   await rm(outputReportTablesDir, { recursive: true, force: true });
+  await rm(outputInsightMapDir, { recursive: true, force: true });
   await mkdir(outputDataDir, { recursive: true });
   await mkdir(outputDataTablesDir, { recursive: true });
   await mkdir(outputReportDir, { recursive: true });
   await mkdir(outputReportTablesDir, { recursive: true });
+  await mkdir(outputInsightMapDir, { recursive: true });
 
   const categorySummaries = [];
   const categories = [];
@@ -917,15 +1300,17 @@ async function main() {
     reports
   };
   const folderSummaries = buildFolderSummaries(reports, categories);
+  const sourceTrendData = await readJsonIfExists(sourceTrendInsightsFile);
 
   await writeFile(outputDataFile, JSON.stringify(reportIndex, null, 2));
-  for (const tableFile of buildTableFiles(reportIndex, categories, folderSummaries)) {
+  for (const tableFile of buildTableFiles(reportIndex, categories, folderSummaries, sourceTrendData)) {
     await writeFile(path.join(outputDataTablesDir, tableFile.name), renderCsv(tableFile.headers, tableFile.rows));
   }
   for (const folder of folderSummaries) {
     await mkdir(path.join(root, folder.dir), { recursive: true });
     await writeFile(path.join(root, folder.readmePath), renderMarkdown(renderFolderReadme(folder, folder.reports, categories)));
   }
+  await writeFile(path.join(outputInsightMapDir, "README.md"), renderMarkdown(renderInsightMapReadme(reportIndex, categories, sourceTrendData)));
   await writeFile(path.join(outputReportDir, "README.md"), renderMarkdown(renderByTopicIndex(categorySummaries)));
   await writeFile(path.join(outputReportTablesDir, "README.md"), renderMarkdown(renderTablesReadme(reportIndex, categories, folderSummaries)));
   await writeFile(outputReportsReadme, renderMarkdown(renderReportsReadme({ ...reportIndex, categories }, categorySummaries, folderSummaries)));

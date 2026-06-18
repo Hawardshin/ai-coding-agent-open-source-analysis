@@ -1,6 +1,6 @@
 # 전체 보고서 읽기 지도
 
-생성 시각: 2026-06-18T15:38:53.459Z
+생성 시각: 2026-06-18T15:43:44.521Z
 
 이 페이지는 GitHub나 로컬 checkout에서 레포를 그대로 읽기 위한 최상위 보고서 지도입니다. 배포용 웹 UI는 제거되어 있으므로, 이 README와 하위 카테고리/표/JSON 인덱스를 기준으로 탐색하면 됩니다.
 
@@ -28,6 +28,7 @@
 | 이동 | 여기서 볼 것 |
 | --- | --- |
 | [먼저 읽기](by-topic/start-here/README.md) | 주요 조사 흐름을 처음부터 잡는 순서. |
+| [전체 인사이트 지도](insight-map/README.md) | 각 주제의 의미, 위치, 뽑아낼 인사이트를 한 문서에서 확인. |
 | [주제별 보고서 목차](by-topic/README.md) | 모든 Markdown 보고서를 조사 질문 기준으로 탐색. |
 | [표/CSV 목차](tables/README.md) | 표, CSV, 주제/유형 matrix 중심 탐색. |
 | [레포별 인사이트](repository-insights/README.md) | 레포별 총평, 위험, 근거, 다음 읽기 링크. |
@@ -143,9 +144,10 @@
 
 ## 읽는 순서
 
-1. [reports/categories/README.md](categories/README.md)에서 조사 대상과 근거 카테고리를 먼저 봅니다.
-2. [reports/by-topic/README.md](by-topic/README.md)에서 질문별 보고서 묶음을 확인합니다.
-3. 구현 근거가 필요하면 [reports/source-deep-dives/README.md](source-deep-dives/README.md)에서 소스 경로를 봅니다.
-4. 넓게 비교해야 하면 [reports/tables/README.md](tables/README.md)에서 표와 CSV를 봅니다.
-5. 실제 폴더 위치를 이미 알면 위의 폴더별 README 지도를 사용합니다.
-6. 완전한 기계 판독 목록은 `data/report-index.json`, `data/report-categories/*.json`, `data/report-tables/*.csv`를 사용합니다.
+1. [reports/insight-map/README.md](insight-map/README.md)에서 각 주제의 의미와 위치를 먼저 잡습니다.
+2. [reports/categories/README.md](categories/README.md)에서 조사 대상과 근거 카테고리를 봅니다.
+3. [reports/by-topic/README.md](by-topic/README.md)에서 질문별 보고서 묶음을 확인합니다.
+4. 구현 근거가 필요하면 [reports/source-deep-dives/README.md](source-deep-dives/README.md)에서 소스 경로를 봅니다.
+5. 넓게 비교해야 하면 [reports/tables/README.md](tables/README.md)에서 표와 CSV를 봅니다.
+6. 실제 폴더 위치를 이미 알면 위의 폴더별 README 지도를 사용합니다.
+7. 완전한 기계 판독 목록은 `data/report-index.json`, `data/report-categories/*.json`, `data/report-tables/*.csv`를 사용합니다.

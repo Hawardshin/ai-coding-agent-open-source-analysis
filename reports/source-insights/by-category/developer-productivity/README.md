@@ -1,6 +1,6 @@
 # 개발 생산성/DevTools 소스 인사이트
 
-생성 시각: 2026-06-18T15:38:52.828Z
+생성 시각: 2026-06-18T15:43:43.893Z
 
 CLI/devtool entrypoint, SDK 형태, CI/build script, automation
 

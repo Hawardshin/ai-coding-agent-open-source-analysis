@@ -1,6 +1,6 @@
 # 평가/관측/품질
 
-생성 시각: 2026-06-18T15:38:13.667Z
+생성 시각: 2026-06-18T15:43:30.239Z
 
 prompt/agent eval, tracing, observability, quality gate, benchmark, testing, monitoring, reliability system을 묶은 카테고리입니다.
 

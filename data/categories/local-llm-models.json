@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:38:13.667Z",
+  "generatedAt": "2026-06-18T15:43:30.239Z",
   "slug": "local-llm-models",
   "title": "로컬 LLM/모델",
   "description": "local model runtime, open model, model optimization, transformers, small model, edge inference, model-serving UI를 묶은 카테고리입니다.",

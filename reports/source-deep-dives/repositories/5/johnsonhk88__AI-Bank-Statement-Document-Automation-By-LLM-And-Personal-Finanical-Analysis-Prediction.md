@@ -1,6 +1,6 @@
 # johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction 소스 딥다이브
 
-생성 시각: 2026-06-18T15:38:17.010Z
+생성 시각: 2026-06-18T15:43:32.234Z
 
 AI Bank Statement Document Automation By LLM model and Personal Finanical Analysis
 
