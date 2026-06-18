@@ -13,6 +13,7 @@
     "analyze:global-trending": "node scripts/analyze-global-trending-repositories.mjs",
     "collect:agent-harness-materials": "node scripts/collect-agent-harness-materials.mjs",
     "collect:conference-presentations": "node scripts/collect-conference-presentation-materials.mjs",
+    "collect:ai-usage-trends": "node scripts/collect-ai-usage-trend-conferences.mjs",
     "build:web": "node scripts/build-web-index.mjs"
   }
 }

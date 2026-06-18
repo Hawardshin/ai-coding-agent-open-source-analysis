@@ -348,6 +348,51 @@ async function addConferencePresentationDocs(docs) {
   }
 }
 
+async function addAiUsageTrendConferenceDocs(docs) {
+  const corpusPath = path.join(root, "data/reference-index/ai-usage-trend-conferences-6-12mo.json");
+  if (!existsSync(corpusPath)) return;
+  const data = JSON.parse(await readFile(corpusPath, "utf8"));
+  for (const material of safeArray(data.materials)) {
+    const tags = safeArray(material.trendTags);
+    const content = [
+      material.title,
+      material.summary,
+      material.company,
+      material.event,
+      material.regionGroup,
+      material.country,
+      material.source,
+      material.sourceType,
+      material.materialType,
+      material.eventDate,
+      tags.join(", "),
+      material.url
+    ].filter(Boolean).join("\n");
+
+    docs.push({
+      id: `material:ai-usage-trend:${material.id}`,
+      type: "trend-reference",
+      category: "ai-usage-trend-conferences-6-12mo",
+      tags,
+      title: material.title || "Untitled AI usage trend source",
+      path: "data/reference-index/ai-usage-trend-conferences-6-12mo.json",
+      url: material.url || null,
+      source: material.source || null,
+      company: material.company || null,
+      event: material.event || null,
+      eventDate: material.eventDate || null,
+      regionGroup: material.regionGroup || null,
+      country: material.country || null,
+      materialType: material.materialType || null,
+      sourceType: material.sourceType || null,
+      inRequestedWindow: Boolean(material.inRequestedWindow),
+      score: material.score || 0,
+      summary: material.summary || tags.join(", ") || "Recent AI usage conference/trend source",
+      content
+    });
+  }
+}
+
 async function addDataFileDocs(docs) {
   const dataFiles = await listFiles(path.join(root, "data"), (file) => file.endsWith(".json"));
   for (const file of dataFiles.sort()) {
@@ -386,10 +431,11 @@ await addKoreaTrendingRepoDocs(docs);
 await addGlobalTrendingRepoDocs(docs);
 await addAgentHarnessMaterialDocs(docs);
 await addConferencePresentationDocs(docs);
+await addAiUsageTrendConferenceDocs(docs);
 await addDataFileDocs(docs);
 
 docs.sort((a, b) => {
-  const typeOrder = { report: 0, repository: 1, presentation: 2, paper: 3, data: 4 };
+  const typeOrder = { report: 0, repository: 1, presentation: 2, "trend-reference": 3, paper: 4, data: 5 };
   return (typeOrder[a.type] ?? 9) - (typeOrder[b.type] ?? 9) || a.title.localeCompare(b.title);
 });
 
@@ -486,6 +532,16 @@ function topConferencePresentationMaterials(limit = 8) {
     .map((material) => material.title);
 }
 
+function topAiUsageTrendSources(limit = 8) {
+  const corpusPath = path.join(root, "data/reference-index/ai-usage-trend-conferences-6-12mo.json");
+  if (!existsSync(corpusPath)) return [];
+  const data = JSON.parse(awaitReadFile(corpusPath));
+  return safeArray(data.materials)
+    .sort((a, b) => (b.score || 0) - (a.score || 0) || b.eventDate.localeCompare(a.eventDate))
+    .slice(0, limit)
+    .map((material) => `${material.company}: ${material.title}`);
+}
+
 const trends = [
   {
     title: "Claude/Codex harness",
@@ -500,6 +556,13 @@ const trends = [
     query: "conference presentation claude code codex agent harness mcp evals sandbox live demo workshop",
     category: "agent-harness-conference-presentations",
     repos: topConferencePresentationMaterials()
+  },
+  {
+    title: "AI usage trends 6-12mo",
+    summary: "Amazon/AWS, Microsoft, Google, NVIDIA, Meta, Apple, Salesforce, NAVER, Samsung, SK 등 최근 컨퍼런스 기반 AI 활용 트렌드",
+    query: "amazon aws microsoft google nvidia samsung naver sk korea agentic ai enterprise ai conference 2025 2026",
+    category: "ai-usage-trend-conferences-6-12mo",
+    repos: topAiUsageTrendSources()
   },
   {
     title: "Global-trending OSS",

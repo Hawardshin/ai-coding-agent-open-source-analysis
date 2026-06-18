@@ -1,17 +1,18 @@
 {
-  "generatedAt": "2026-06-18T03:37:34.152Z",
-  "totalDocuments": 5048,
+  "generatedAt": "2026-06-18T07:29:30.061Z",
+  "totalDocuments": 5110,
   "byType": {
-    "report": 1386,
+    "report": 1388,
     "repository": 1120,
     "presentation": 665,
+    "trend-reference": 58,
     "paper": 650,
-    "data": 27,
+    "data": 29,
     "material": 1200
   },
   "byCategory": {
     "repository-analysis": 1130,
-    "report": 237,
+    "report": 239,
     "research": 4,
     "adjacent-tech": 4,
     "comparison": 2,
@@ -23,6 +24,7 @@
     "llm-wiki-open-source": 100,
     "spec-driven-open-source": 20,
     "agent-harness-conference-presentations": 665,
+    "ai-usage-trend-conferences-6-12mo": 58,
     "agent-memory": 76,
     "context-engineering": 10,
     "software-repair": 30,
@@ -42,7 +44,7 @@
     "program-synthesis": 13,
     "spec-driven-ai": 8,
     "software-agents": 38,
-    "data": 27,
+    "data": 29,
     "claude-codex-agent-harness": 1200
   }
 }
