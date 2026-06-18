@@ -1,6 +1,6 @@
 # Reports Reading Index
 
-Generated: 2026-06-18T13:48:32.937Z
+Generated: 2026-06-18T13:52:58.361Z
 
 This is the entry point for reading the repository directly from GitHub or a local checkout. Deployment-specific web UI has been removed; use these category pages and JSON indexes instead.
 
@@ -8,8 +8,19 @@ This is the entry point for reading the repository directly from GitHub or a loc
 
 - Markdown reports indexed: 1405
 - Topic categories: 17
+- Folder README guides: 16
 - Data index: [data/report-index.json](../data/report-index.json)
 - Topic data folder: [data/report-categories/](../data/report-categories)
+- Table data folder: [data/report-tables/](../data/report-tables)
+
+## Navigation Map
+
+| Entry | Use it for |
+| --- | --- |
+| [Start Here](by-topic/start-here/README.md) | First-pass reading order across the major investigations. |
+| [Reports by Topic](by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](tables/README.md) | Table-first scanning, CSV exports, and topic/type matrices. |
+| [Artifact Categories](categories/README.md) | Artifact-level categories across repositories, research, presentations, and trend sources. |
 
 ## Start Here
 
@@ -94,9 +105,32 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [AI Usage Trends](by-topic/ai-usage-trends/README.md) | 3 | Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals. |
 | [Full Source Scan and Code Retrieval](by-topic/full-source-scan/README.md) | 3 | How coding agents discover, index, search, and read source code. |
 
+## Folder README Map
+
+| Folder README | Reports | Role | Main report types |
+| --- | ---: | --- | --- |
+| [global-trending](global-trending/README.md) | 501 | Worldwide open source trend corpus. | per-repository-report (500), global-trending-report (1) |
+| [korea-trending](korea-trending/README.md) | 501 | Korean open source trend corpus. | per-repository-report (500), korea-trending-report (1) |
+| [global-trending/repositories](global-trending/repositories/README.md) | 500 | Repository-by-repository global trend drilldown. | per-repository-report (500) |
+| [korea-trending/repositories](korea-trending/repositories/README.md) | 500 | Repository-by-repository Korea trend drilldown. | per-repository-report (500) |
+| [llm-wiki](llm-wiki/README.md) | 203 | Knowledge-base and retrieval project analysis. | llm-wiki-report (103), per-repository-report (100) |
+| [clone-structures](clone-structures/README.md) | 127 | Physical source tree analysis for cloned open source projects. | clone-structure-report (127) |
+| [llm-wiki/code-level-repositories](llm-wiki/code-level-repositories/README.md) | 100 | Detailed code-path drilldown for LLM wiki projects. | llm-wiki-report (100) |
+| [llm-wiki/repositories](llm-wiki/repositories/README.md) | 100 | Repository summaries for the LLM wiki corpus. | per-repository-report (100) |
+| [repositories](repositories/README.md) | 30 | Core 30-project analysis. | per-repository-report (30) |
+| [presentations](presentations/README.md) | 5 | Talk, presentation, and industry signal catalog. | presentation-report (5) |
+| [adjacent-tech](adjacent-tech/README.md) | 4 | Adjacent stack synthesis and source maps. | infrastructure-report (4) |
+| [research](research/README.md) | 4 | Paper, evidence, and theory synthesis. | research-synthesis (4) |
+| [agent-harness](agent-harness/README.md) | 2 | Agent execution and harness research. | agent-harness-report (2) |
+| [comparisons](comparisons/README.md) | 2 | Project-to-project comparison and relationship maps. | comparison-report (2) |
+| [full-source-scan](full-source-scan/README.md) | 1 | Source discovery and code retrieval mechanics. | source-scan-report (1) |
+| [spec-driven](spec-driven/README.md) | 1 | Spec-driven development and requirements analysis. | spec-driven-report (1) |
+
+
 ## Practical Reading Order
 
 1. Open [reports/categories/README.md](categories/README.md) for artifact-level categories.
 2. Open [reports/by-topic/README.md](by-topic/README.md) for report-level categories.
-3. Use per-topic pages under `reports/by-topic/` to drill into specific investigations.
-4. Use `data/report-index.json` and `data/report-categories/*.json` when you need complete machine-readable membership.
+3. Open [reports/tables/README.md](tables/README.md) when you need spreadsheet-style tables.
+4. Use the folder README map above when you know the physical report folder.
+5. Use `data/report-index.json`, `data/report-categories/*.json`, and `data/report-tables/*.csv` when you need complete machine-readable membership.

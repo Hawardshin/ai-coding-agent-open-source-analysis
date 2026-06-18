@@ -1,8 +1,11 @@
 # Reports by Topic
 
-Generated: 2026-06-18T13:48:32.937Z
+Generated: 2026-06-18T13:52:58.361Z
 
 This folder groups the repository's Markdown reports by investigation line. Original reports remain in their existing locations; these pages are reading indexes.
+
+- Top report index: [reports/README.md](../README.md)
+- Table index: [reports/tables/README.md](../tables/README.md)
 
 | Topic | Reports | Description | Data |
 | --- | ---: | --- | --- |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:48:32.937Z",
+  "generatedAt": "2026-06-18T13:52:58.361Z",
   "slug": "adjacent-infrastructure",
   "title": "Adjacent AI Infrastructure",
   "description": "Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.",

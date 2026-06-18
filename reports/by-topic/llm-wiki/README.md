@@ -1,8 +1,14 @@
 # LLM Wiki, RAG, and Knowledge Bases
 
-Generated: 2026-06-18T13:48:32.937Z
+Generated: 2026-06-18T13:52:58.361Z
 
 LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.
+
+## Navigation
+
+- Top report index: [reports/README.md](../../README.md)
+- Topic index: [reports/by-topic/README.md](../README.md)
+- Table index: [reports/tables/README.md](../../tables/README.md)
 
 ## Counts
 

@@ -1,8 +1,14 @@
 # Comparisons and Similarity Maps
 
-Generated: 2026-06-18T13:48:32.937Z
+Generated: 2026-06-18T13:52:58.361Z
 
 Cross-repository comparisons, taxonomy matrices, and similarity clusters.
+
+## Navigation
+
+- Top report index: [reports/README.md](../../README.md)
+- Topic index: [reports/by-topic/README.md](../README.md)
+- Table index: [reports/tables/README.md](../../tables/README.md)
 
 ## Counts
 
