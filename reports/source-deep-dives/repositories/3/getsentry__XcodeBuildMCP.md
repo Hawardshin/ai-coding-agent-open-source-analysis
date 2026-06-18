@@ -1,6 +1,6 @@
 # getsentry/XcodeBuildMCP 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.
 

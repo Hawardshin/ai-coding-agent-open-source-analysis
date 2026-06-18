@@ -1,6 +1,6 @@
 # bagidea/bagidea-office 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 A living AI-agent office on your desktop wallpaper — Claude Code agents that walk, work, delegate, learn & hold meetings. Per-agent swappable models (Claude/GLM/DeepSeek/Qwen/Kimi/OpenAI/Gemini/Groq/Ollama…), workflows, plugins, voice & Telegram/Discord/LINE. Open source.
 

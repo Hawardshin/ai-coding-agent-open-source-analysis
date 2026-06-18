@@ -1,6 +1,6 @@
 # lxxzdrgnl/SAJUGURI 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 AI-Powered Saju(Korean Astrology) Analysis Service (Built with LLM & RAG)
 

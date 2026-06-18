@@ -1,6 +1,6 @@
 # whdrnr2583-cmd/koreanpulse 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 English-first Korean equity intelligence MCP — DART filings, foreign-holder 5%-rule flows, activist filings, KRX news. For Claude Desktop / Cursor / FastMCP trading agents.
 

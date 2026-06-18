@@ -1,6 +1,6 @@
 # dream8837z/hwp-hwpx-proposal-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 An AI agent specialized in drafting Korean proposals (.hwp / .hwpx) — reads, writes, and edits Hancom Office files while strictly adhering to predefined formatting rules: character width, letter spacing, margins, line spacing, fonts, font sizes, and bullet styles.
 

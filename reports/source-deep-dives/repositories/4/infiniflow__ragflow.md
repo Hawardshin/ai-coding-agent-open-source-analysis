@@ -1,6 +1,6 @@
 # infiniflow/ragflow 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Local clone structure analysis: 3628 files, 571 directories.
 

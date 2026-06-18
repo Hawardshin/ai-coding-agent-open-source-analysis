@@ -1,6 +1,6 @@
 # adminhelper/saju-engine 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 결정론 만세력 사주(四柱)·궁합 보고서를 단청 HTML로 생성하는 Claude Code 플러그인 — Deterministic Korean Four-Pillars (Saju) report generator: engine + MCP + diviner skill
 

@@ -1,6 +1,6 @@
 # psychofict/hwpkit 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Read, fill, and edit Korean HWP (Hancom Office) documents in Python. Extract text for LLM / RAG pipelines, fill government & university forms programmatically, and rewrite the binary without corrupting it.
 

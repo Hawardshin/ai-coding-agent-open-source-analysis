@@ -1,6 +1,6 @@
 # AI 활용 트렌드
 
-생성 시각: 2026-06-18T15:31:33.431Z
+생성 시각: 2026-06-18T15:38:13.667Z
 
 Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, 한국 행사에서 나온 최근 AI 도입 트렌드입니다.
 

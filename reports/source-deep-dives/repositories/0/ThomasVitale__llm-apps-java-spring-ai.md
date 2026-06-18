@@ -1,6 +1,6 @@
 # ThomasVitale/llm-apps-java-spring-ai 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Samples showing how to build Java applications powered by Generative AI and LLMs using Spring AI and Spring Boot.
 

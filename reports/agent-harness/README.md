@@ -1,6 +1,6 @@
 # 에이전트 하네스 보고서
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 Claude Code, Codex, harness 구성, MCP, hooks, skills, orchestration 자료를 묶은 보고서입니다.
 

@@ -1,6 +1,6 @@
 # 스펙 드리븐/요구사항
 
-생성 시각: 2026-06-18T15:31:33.431Z
+생성 시각: 2026-06-18T15:38:13.667Z
 
 spec-driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contract, formal specification을 묶은 카테고리입니다.
 

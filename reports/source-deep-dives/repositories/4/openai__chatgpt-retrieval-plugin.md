@@ -1,6 +1,6 @@
 # openai/chatgpt-retrieval-plugin 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 The ChatGPT Retrieval Plugin lets you easily find personal or work documents by asking questions in natural language.
 

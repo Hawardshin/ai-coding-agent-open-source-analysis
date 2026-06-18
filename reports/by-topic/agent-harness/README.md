@@ -1,6 +1,6 @@
 # 에이전트 하네스/MCP/오케스트레이션
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 MCP, tool registry, hooks, skills, orchestration, workflow 실행 기반을 보는 주제입니다.
 

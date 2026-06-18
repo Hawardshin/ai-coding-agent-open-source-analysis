@@ -1,6 +1,6 @@
 # rhkswnd0118-crypto/korean-rag-chatbot-boilerplate 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Korean enterprise RAG chatbot case study — built by a non-engineer (Sales Strategy) with Claude Code. Vercel + Supabase + Anthropic. Includes ADRs and generalized boilerplate.
 

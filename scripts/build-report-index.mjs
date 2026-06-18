@@ -675,6 +675,7 @@ ${renderNavigationBlock(baseDir)}
 | ${linkFrom(baseDir, "data/report-tables/repository-insights.csv", "data/report-tables/repository-insights.csv")} | 레포별 인사이트, 위험, 근거, 다음 링크. |
 | ${linkFrom(baseDir, "data/report-tables/source-deep-scan.csv", "data/report-tables/source-deep-scan.csv")} | 소스 경로 deep scan row와 구현 신호. |
 | ${linkFrom(baseDir, "data/report-tables/source-category-insights.csv", "data/report-tables/source-category-insights.csv")} | 카테고리별 트렌드, feature, bucket, dependency, risk 집계. |
+| ${linkFrom(baseDir, "data/report-tables/source-category-comparisons.csv", "data/report-tables/source-category-comparisons.csv")} | 카테고리별 강점/약점/대표 레포/판단 비교 표. |
 | ${linkFrom(baseDir, "data/report-tables/source-repo-feature-comparison.csv", "data/report-tables/source-repo-feature-comparison.csv")} | 레포별 소스 특징 비교 매트릭스. |
 
 ## 주제 요약 표

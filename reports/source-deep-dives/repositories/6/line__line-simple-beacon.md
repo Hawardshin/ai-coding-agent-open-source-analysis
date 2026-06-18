@@ -1,6 +1,6 @@
 # line/line-simple-beacon 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 LINE Simple Beacon is a specification for beacon hardware for LINE Bot developers.
 

@@ -1,6 +1,6 @@
 # kakao/n2 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 TOROS N2 - lightweight approximate Nearest Neighbor library which runs fast even with large datasets
 

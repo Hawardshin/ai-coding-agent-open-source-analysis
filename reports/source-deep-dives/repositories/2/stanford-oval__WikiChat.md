@@ -1,6 +1,6 @@
 # stanford-oval/WikiChat 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 WikiChat is an improved RAG. It stops the hallucination of large language models by retrieving data from a corpus.
 

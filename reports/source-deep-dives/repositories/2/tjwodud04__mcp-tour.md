@@ -1,6 +1,6 @@
 # tjwodud04/mcp-tour 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 MCP integration for Korea Tourism Organization's API using Claude Desktop App with help from Cursor
 

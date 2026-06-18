@@ -1,6 +1,6 @@
 # green-dalii/obsidian-llm-wiki 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Karpathy's LLM Wiki implementation - multi-page knowledge generation with entity/concept pages and conversational query.
 

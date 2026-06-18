@@ -1,6 +1,6 @@
 # LLM 위키/RAG/지식베이스
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 보는 주제입니다.
 

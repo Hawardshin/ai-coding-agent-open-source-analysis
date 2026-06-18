@@ -1,13 +1,13 @@
 # 주제별 보고서 목차
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 이 폴더는 레포의 Markdown 보고서를 조사 질문별로 다시 묶은 읽기용 목차입니다. 원본 보고서는 기존 위치에 그대로 두고, 이 페이지들은 하이퍼링크로 따라가기 쉽게 만든 보고서 지도입니다.
 
 ## 요약
 
 - 조사 단위: 전체 Markdown 보고서를 18개 주제로 다시 묶은 상위 목차입니다.
-- 포함 범위: 6,770개 보고서의 주제 멤버십을 보여줍니다. 한 보고서는 여러 주제에 동시에 들어갈 수 있습니다.
+- 포함 범위: 6,772개 보고서의 주제 멤버십을 보여줍니다. 한 보고서는 여러 주제에 동시에 들어갈 수 있습니다.
 - 탐색 방식: 아래 표에서 주제 README로 들어가면 해당 주제의 요약, 총평, 추천 읽기 경로, 전체 보고서 목록을 볼 수 있습니다.
 
 ## 총평
@@ -33,8 +33,8 @@
 | 주제 | 보고서 수 | 설명 | 데이터 |
 | --- | ---: | --- | --- |
 | [레포별 딥다이브](repository-deep-dives/README.md) | 2434 | 핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다. | [데이터](../../data/report-categories/repository-deep-dives.json) |
-| [비교/유사도 지도](comparisons/README.md) | 1194 | 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다. | [데이터](../../data/report-categories/comparisons.json) |
-| [소스 코드 딥다이브](source-code-deep-dives/README.md) | 1186 | 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다. | [데이터](../../data/report-categories/source-code-deep-dives.json) |
+| [비교/유사도 지도](comparisons/README.md) | 1195 | 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다. | [데이터](../../data/report-categories/comparisons.json) |
+| [소스 코드 딥다이브](source-code-deep-dives/README.md) | 1187 | 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다. | [데이터](../../data/report-categories/source-code-deep-dives.json) |
 | [글로벌 트렌딩 오픈소스](global-trending-open-source/README.md) | 502 | 전세계 트렌딩 오픈소스 코퍼스와 레포별 보고서를 묶은 주제입니다. | [데이터](../../data/report-categories/global-trending-open-source.json) |
 | [한국 트렌딩 오픈소스](korea-trending-open-source/README.md) | 502 | 한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 트렌드 보고서를 묶은 주제입니다. | [데이터](../../data/report-categories/korea-trending-open-source.json) |
 | [LLM 위키/RAG/지식베이스](llm-wiki/README.md) | 292 | LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 보는 주제입니다. | [데이터](../../data/report-categories/llm-wiki.json) |

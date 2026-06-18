@@ -1,6 +1,6 @@
 # jingcheng-chen/rhinomcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 RhinoMCP connects Rhino 3D to AI Agent through the Model Context Protocol (MCP)
 

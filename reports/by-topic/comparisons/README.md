@@ -1,14 +1,14 @@
 # 비교/유사도 지도
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다.
 
 ## 요약
 
 - 조사 단위: `comparisons` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 1,194개 보고서이며, 주요 보고서 유형은 source-deep-dive-report (1165), source-insight-report (12), overview-report (11), comparison-report (2), llm-wiki-report (2)입니다.
-- 주요 출처 폴더: source-deep-dives (1165), repository-insights (12), source-insights (12), comparisons (2), global-trending/repositories (1).
+- 포함 범위: 1,195개 보고서이며, 주요 보고서 유형은 source-deep-dive-report (1165), source-insight-report (13), overview-report (11), comparison-report (2), llm-wiki-report (2)입니다.
+- 주요 출처 폴더: source-deep-dives (1165), source-insights (13), repository-insights (12), comparisons (2), global-trending/repositories (1).
 
 ## 총평
 
@@ -30,13 +30,13 @@
 
 ## 범위
 
-- 보고서 수: 1194
+- 보고서 수: 1195
 - 데이터: [data/report-categories/comparisons.json](../../../data/report-categories/comparisons.json)
 
 ## 보고서 유형
 
 - source-deep-dive-report: 1165
-- source-insight-report: 12
+- source-insight-report: 13
 - overview-report: 11
 - comparison-report: 2
 - llm-wiki-report: 2
@@ -46,8 +46,8 @@
 ## 출처 폴더
 
 - source-deep-dives: 1165
+- source-insights: 13
 - repository-insights: 12
-- source-insights: 12
 - comparisons: 2
 - llm-wiki/01-llm-wiki-100-selection-and-patterns.md: 1
 - llm-wiki/02-code-level-pipeline-comparison.md: 1
@@ -133,6 +133,7 @@
 | [LLM 위키/RAG/지식베이스 소스 인사이트](../../source-insights/by-category/llm-wiki-rag/README.md) | source-insight-report | source-insights | 155 |
 | [보안/거버넌스/안전 소스 인사이트](../../source-insights/by-category/security-governance/README.md) | source-insight-report | source-insights | 155 |
 | [스펙 드리븐/요구사항 소스 인사이트](../../source-insights/by-category/spec-driven/README.md) | source-insight-report | source-insights | 155 |
+| [소스 인사이트 상세 비교 리포트](../../source-insights/comparative-report.md) | source-insight-report | source-insights | 117 |
 | [레포별 소스 딥다이브](../../source-deep-dives/repositories/README.md) | source-deep-dive-report | source-deep-dives | 36 |
 | [레포별 소스 딥다이브: Shard 0](../../source-deep-dives/repositories/0/README.md) | source-deep-dive-report | source-deep-dives | 35 |
 | [레포별 소스 딥다이브: Shard 1](../../source-deep-dives/repositories/1/README.md) | source-deep-dive-report | source-deep-dives | 35 |

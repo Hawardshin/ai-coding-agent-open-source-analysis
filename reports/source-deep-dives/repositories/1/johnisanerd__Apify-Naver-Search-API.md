@@ -1,6 +1,6 @@
 # johnisanerd/Apify-Naver-Search-API 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Naver Search API on Apify: a Python + MCP quick-start example. Search Korea's Naver across web, news, image, video, and shopping and get clean structured JSON. Call it from Python (uv) or load it as an MCP tool in Claude Cowork, Claude Code, Claude.ai, Cursor, and ChatGPT.
 

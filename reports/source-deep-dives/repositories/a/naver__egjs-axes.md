@@ -1,6 +1,6 @@
 # naver/egjs-axes 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 A module used to change the information of user action entered by various input devices such as touch screen or mouse into the logical virtual coordinates.
 

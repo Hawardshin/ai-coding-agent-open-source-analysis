@@ -1,6 +1,6 @@
 # 보안/거버넌스/안전 소스 인사이트
 
-생성 시각: 2026-06-18T15:31:47.340Z
+생성 시각: 2026-06-18T15:38:52.828Z
 
 sandbox, permission, policy, auth, guardrail, secret handling
 
@@ -24,6 +24,7 @@ sandbox, permission, policy, auth, guardrail, secret handling
 | [레포별 소스 딥다이브](../../../source-deep-dives/repositories/README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
 | [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 역할군 페이지. |
 | [소스 트렌드 인사이트](../../README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
+| [상세 비교 리포트](../../comparative-report.md) | 카테고리 간 차이와 대표 레포 판단표. |
 | [카테고리별 소스 인사이트](../README.md) | 카테고리 기준의 소스 인사이트 페이지. |
 | [표/CSV 목차](../../../tables/README.md) | CSV와 표 중심 탐색. |
 
@@ -35,6 +36,19 @@ sandbox, permission, policy, auth, guardrail, secret handling
 - RAG, memory, vector/index 경로가 60%에서 보입니다. 저장소별 차이는 vector store보다 ingestion/chunking/eval 연결 방식에서 갈립니다.
 - spec/requirements/ADR 경로가 60%에서 잡힙니다. spec-driven 관점에서는 문서 존재보다 acceptance/test trace까지 연결되는지가 핵심입니다.
 - test/eval 표면이 90%로 높습니다. production reference로 볼 때 검증 harness와 CI를 먼저 비교하는 편이 좋습니다.
+
+## 이 카테고리 비교 총평
+
+| 항목 | 판단 |
+| --- | --- |
+| 읽는 목적 | sandbox, permission, policy, guardrail, secret handling을 agent 실행 안정성 관점에서 본다. |
+| 강점 | 트렌드 연결률 90%로 현재성 강함; test/eval coverage 90% |
+| 약점/검증 포인트 | 중앙 소스 깊이 75로 직접 확인 필요 |
+| 대표 feature | tests-evals 100%, agent-runtime 60%, retrieval-memory 60%, spec-artifacts 60%, security-policy 50% |
+| 대표 bucket | docs 100%, eval 90%, ci 80%, config 80%, agentRuntime 60% |
+| 대표 언어 | Go 2, Python 2, TypeScript 2 |
+| 소스 근거 위치 | 소스 근거가 평균보다 얕음, 레포당 핵심 참조 6.8개 |
+| 결론 | sandbox, permission, policy, guardrail, secret handling을 agent 실행 안정성 관점에서 본다. 먼저 perplexityai/bumblebee를 구조 기준점으로 보고, 현재성은 perplexityai/bumblebee와 대조한다. |
 
 ## 트렌드/소스 지표
 
@@ -144,6 +158,22 @@ _감지된 신호가 없습니다._
 | [naver/disco](https://github.com/naver/disco) | 보안/거버넌스/안전 | 205 | 72 | 75 | Python | agent-runtime, spec-artifacts, tests-evals, model-runtime | 스펙/요구사항 산출물과 테스트 추적을 같이 볼 수 있는 레포 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/f/naver__disco.md) / [보고서](../../../korea-trending/repositories/naver__disco.md) / [소스](../../../../sources/naver__disco) |
 | [line/seed](https://github.com/line/seed) | 보안/거버넌스/안전 | 205 | 70 | 61 | Makefile | retrieval-memory, spec-artifacts, tests-evals, security-policy | RAG/memory 구현과 검증 표면을 같이 가진 지식 시스템형 레포 | 15000개 파일에서 스캔이 잘림, entrypoint 경로가 명확하지 않음, test/eval 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/2/line__seed.md) / [보고서](../../../korea-trending/repositories/line__seed.md) / [소스](../../../../sources/line__seed) |
 | [line/webauthn-kotlin](https://github.com/line/webauthn-kotlin) | 보안/거버넌스/안전 | 168 | 69 | 24 | Kotlin | tests-evals | tests-evals | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/6/line__webauthn-kotlin.md) / [보고서](../../../korea-trending/repositories/line__webauthn-kotlin.md) / [소스](../../../../sources/line__webauthn-kotlin) |
+
+
+## 대표 레포 판단표
+
+| 순위 | 레포 | 비교 점수 | 트렌드 점수 | 언어 | 왜 봐야 하나 | 카테고리 안에서의 위치 | 위험/확인 | 링크 |
+| ---: | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 1 | [perplexityai/bumblebee](https://github.com/perplexityai/bumblebee) | 417 | 177 | Go | MCP/tool 연결 방식, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 대표 feature 일치: agent-runtime, tests-evals | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/8/perplexityai__bumblebee.md) / [보고서](../../../global-trending/repositories/perplexityai__bumblebee.md) / [소스](../../../../sources/perplexityai__bumblebee) |
+| 2 | [Samsung/CredSweeper](https://github.com/Samsung/CredSweeper) | 336 | 104 | Python | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/2/Samsung__CredSweeper.md) / [보고서](../../../korea-trending/repositories/Samsung__CredSweeper.md) / [소스](../../../../sources/Samsung__CredSweeper) |
+| 3 | [toss/use-funnel](https://github.com/toss/use-funnel) | 317 | 103 | TypeScript | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/6/toss__use-funnel.md) / [보고서](../../../korea-trending/repositories/toss__use-funnel.md) / [소스](../../../../sources/toss__use-funnel) |
+| 4 | [line/line-fido2-server](https://github.com/line/line-fido2-server) | 293 | 105 | Java | retrieval/memory 구조, 검증 표면, 보안/정책 표면, 배포 구조 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 대표 feature 일치: retrieval-memory, tests-evals; 확인 필요: entrypoint 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/d/line__line-fido2-server.md) / [보고서](../../../korea-trending/repositories/line__line-fido2-server.md) / [소스](../../../../sources/line__line-fido2-server) |
+| 5 | [daangn/graplix](https://github.com/daangn/graplix) | 281 | 84 | TypeScript | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, agent-native 개발 지시문 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/7/daangn__graplix.md) / [보고서](../../../korea-trending/repositories/daangn__graplix.md) / [소스](../../../../sources/daangn__graplix) |
+| 6 | [line/garr](https://github.com/line/garr) | 212 | 80 | Go | 검증 표면 | 확인 필요: entrypoint 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/9/line__garr.md) / [보고서](../../../korea-trending/repositories/line__garr.md) / [소스](../../../../sources/line__garr) |
+| 7 | [naver/disco](https://github.com/naver/disco) | 205 | 72 | Python | spec/요구사항 산출물, 검증 표면 | 대표 feature 일치: agent-runtime, spec-artifacts, tests-evals; 확인 필요: entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/f/naver__disco.md) / [보고서](../../../korea-trending/repositories/naver__disco.md) / [소스](../../../../sources/naver__disco) |
+| 8 | [line/seed](https://github.com/line/seed) | 205 | 70 | Makefile | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 대표 feature 일치: retrieval-memory, spec-artifacts, tests-evals; 확인 필요: 15000개 파일에서 스캔이 잘림, entrypoint 경로가 명확하지 않음 | 15000개 파일에서 스캔이 잘림, entrypoint 경로가 명확하지 않음, test/eval 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/2/line__seed.md) / [보고서](../../../korea-trending/repositories/line__seed.md) / [소스](../../../../sources/line__seed) |
+| 9 | [line/webauthn-kotlin](https://github.com/line/webauthn-kotlin) | 168 | 69 | Kotlin | 검증 표면 | 확인 필요: entrypoint 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/6/line__webauthn-kotlin.md) / [보고서](../../../korea-trending/repositories/line__webauthn-kotlin.md) / [소스](../../../../sources/line__webauthn-kotlin) |
+| 10 | [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | 156 | 0 | unknown | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 소스 깊이 우위; 핵심 파일 참조 충분; 대표 feature 일치: agent-runtime, retrieval-memory, spec-artifacts; 확인 필요: entrypoint 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/b/guardrails-ai__guardrails.md) / [보고서](../../../clone-structures/guardrails-ai__guardrails.md) / [소스](../../../../sources/guardrails-ai__guardrails) |
 
 
 ## 상위 레포 비교

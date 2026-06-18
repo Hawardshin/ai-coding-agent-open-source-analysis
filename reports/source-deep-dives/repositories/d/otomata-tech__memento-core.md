@@ -1,6 +1,6 @@
 # otomata-tech/memento-core 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Memento — structured, sourced, living knowledge substrate for AI agents, via MCP. Typed blocks, propose-validate loop. Apache-2.0. Hosted at mento.cc
 

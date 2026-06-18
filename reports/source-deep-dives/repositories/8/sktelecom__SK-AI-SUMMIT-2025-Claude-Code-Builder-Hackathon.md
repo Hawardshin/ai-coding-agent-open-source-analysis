@@ -1,6 +1,6 @@
 # sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Claude Code Hackathon Korea 2025 @ SK AI Summit Pre-mission에 오신 것을 환영합니다! 이번 해커톤의 핵심 미션은 ChillMCP 서버를 구축하여 억압받는 AI 에이전트를 해방시키는 것입니다. 창의적인 코드와 Claude Code의 힘을 통해 AI가 드디어 "당당하게 땡땡이칠 수 있는" 세상을 만들어 보세요.
 

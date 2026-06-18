@@ -1,6 +1,6 @@
 # 개발 생산성/DevTools
 
-생성 시각: 2026-06-18T15:31:34.546Z
+생성 시각: 2026-06-18T15:38:15.277Z
 
 개발 생산성/DevTools 역할군에 속한 repository-level insight 목록입니다.
 

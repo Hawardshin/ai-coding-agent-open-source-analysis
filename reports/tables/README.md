@@ -1,13 +1,13 @@
 # 표/CSV 중심 보고서 목차
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 이 페이지는 개별 보고서를 열기 전에 전체 조사 구조를 표로 먼저 훑기 위한 입구입니다.
 
 ## 요약
 
 - 조사 단위: 보고서, 주제, 폴더, 보고서 유형을 표와 CSV로 정리한 탐색 허브입니다.
-- 포함 범위: 2,594개 보고서, 18개 주제, 16개 폴더 README 지도입니다.
+- 포함 범위: 2,595개 보고서, 18개 주제, 16개 폴더 README 지도입니다.
 - 데이터 파일: topic/folder/type matrix/all reports CSV를 제공하므로 GitHub 화면과 스프레드시트 양쪽에서 탐색할 수 있습니다.
 
 ## 총평
@@ -40,6 +40,7 @@
 | [data/report-tables/repository-insights.csv](../../data/report-tables/repository-insights.csv) | 레포별 인사이트, 위험, 근거, 다음 링크. |
 | [data/report-tables/source-deep-scan.csv](../../data/report-tables/source-deep-scan.csv) | 소스 경로 deep scan row와 구현 신호. |
 | [data/report-tables/source-category-insights.csv](../../data/report-tables/source-category-insights.csv) | 카테고리별 트렌드, feature, bucket, dependency, risk 집계. |
+| [data/report-tables/source-category-comparisons.csv](../../data/report-tables/source-category-comparisons.csv) | 카테고리별 강점/약점/대표 레포/판단 비교 표. |
 | [data/report-tables/source-repo-feature-comparison.csv](../../data/report-tables/source-repo-feature-comparison.csv) | 레포별 소스 특징 비교 매트릭스. |
 
 ## 주제 요약 표
@@ -47,8 +48,8 @@
 | 주제 | 보고서 수 | 설명 | 데이터 |
 | --- | ---: | --- | --- |
 | [레포별 딥다이브](../by-topic/repository-deep-dives/README.md) | 2434 | 핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다. | [json](../../data/report-categories/repository-deep-dives.json) |
-| [비교/유사도 지도](../by-topic/comparisons/README.md) | 1194 | 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다. | [json](../../data/report-categories/comparisons.json) |
-| [소스 코드 딥다이브](../by-topic/source-code-deep-dives/README.md) | 1186 | 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다. | [json](../../data/report-categories/source-code-deep-dives.json) |
+| [비교/유사도 지도](../by-topic/comparisons/README.md) | 1195 | 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다. | [json](../../data/report-categories/comparisons.json) |
+| [소스 코드 딥다이브](../by-topic/source-code-deep-dives/README.md) | 1187 | 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다. | [json](../../data/report-categories/source-code-deep-dives.json) |
 | [글로벌 트렌딩 오픈소스](../by-topic/global-trending-open-source/README.md) | 502 | 전세계 트렌딩 오픈소스 코퍼스와 레포별 보고서를 묶은 주제입니다. | [json](../../data/report-categories/global-trending-open-source.json) |
 | [한국 트렌딩 오픈소스](../by-topic/korea-trending-open-source/README.md) | 502 | 한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 트렌드 보고서를 묶은 주제입니다. | [json](../../data/report-categories/korea-trending-open-source.json) |
 | [LLM 위키/RAG/지식베이스](../by-topic/llm-wiki/README.md) | 292 | LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 보는 주제입니다. | [json](../../data/report-categories/llm-wiki.json) |
@@ -91,8 +92,8 @@
 | 주제 | 보고서 수 | agent-harness-report | category-guide | clone-structure-report | comparison-report | global-trending-report | infrastructure-report | korea-trending-report | llm-wiki-report | overview-report | per-repository-report | presentation-report | research-synthesis | source-deep-dive-report | source-insight-report | source-scan-report | spec-driven-report |
 | --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 레포별 딥다이브 | 2434 | 0 | 0 | 127 | 0 | 0 | 0 | 0 | 0 | 11 | 1130 | 0 | 0 | 1165 | 0 | 0 | 1 |
-| 비교/유사도 지도 | 1194 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 11 | 1 | 0 | 0 | 1165 | 12 | 0 | 1 |
-| 소스 코드 딥다이브 | 1186 | 0 | 2 | 0 | 1 | 0 | 1 | 1 | 2 | 2 | 0 | 0 | 0 | 1165 | 12 | 0 | 0 |
+| 비교/유사도 지도 | 1195 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 11 | 1 | 0 | 0 | 1165 | 13 | 0 | 1 |
+| 소스 코드 딥다이브 | 1187 | 0 | 2 | 0 | 1 | 0 | 1 | 1 | 2 | 2 | 0 | 0 | 0 | 1165 | 13 | 0 | 0 |
 | 글로벌 트렌딩 오픈소스 | 502 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 500 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 한국 트렌딩 오픈소스 | 502 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 500 | 0 | 0 | 0 | 0 | 0 | 0 |
 | LLM 위키/RAG/지식베이스 | 292 | 0 | 1 | 4 | 0 | 0 | 4 | 0 | 103 | 1 | 128 | 0 | 0 | 50 | 1 | 0 | 0 |

@@ -1,6 +1,6 @@
 # 데이터/벡터 플랫폼 소스 인사이트
 
-생성 시각: 2026-06-18T15:31:47.340Z
+생성 시각: 2026-06-18T15:38:52.828Z
 
 저장소, index, embedding/vector 경로, query engine, persistence
 
@@ -24,6 +24,7 @@
 | [레포별 소스 딥다이브](../../../source-deep-dives/repositories/README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
 | [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 역할군 페이지. |
 | [소스 트렌드 인사이트](../../README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
+| [상세 비교 리포트](../../comparative-report.md) | 카테고리 간 차이와 대표 레포 판단표. |
 | [카테고리별 소스 인사이트](../README.md) | 카테고리 기준의 소스 인사이트 페이지. |
 | [표/CSV 목차](../../../tables/README.md) | CSV와 표 중심 탐색. |
 
@@ -37,6 +38,19 @@
 - test/eval 표면이 100%로 높습니다. production reference로 볼 때 검증 harness와 CI를 먼저 비교하는 편이 좋습니다.
 - container/deploy 경로가 71%에서 확인됩니다. 로컬 데모형보다 운영 배포형 레포 비중이 높습니다.
 - AGENTS/CLAUDE/Codex/Cursor류 instruction 파일이 29%에서 보여 agent-native 개발 방식이 이미 레포 구조에 들어와 있습니다.
+
+## 이 카테고리 비교 총평
+
+| 항목 | 판단 |
+| --- | --- |
+| 읽는 목적 | embedding/vector/index/query persistence 구조를 고를 때 쓴다. |
+| 강점 | test/eval coverage 100%; retrieval/memory 경로 100%; 배포/컨테이너 경로 71% |
+| 약점/검증 포인트 | 큰 구조적 공백은 표면상 작지만, 대표 레포별 위험 신호를 확인해야 함 |
+| 대표 feature | retrieval-memory 100%, tests-evals 100%, cli-first 86%, spec-artifacts 86%, agent-runtime 71% |
+| 대표 bucket | config 100%, docs 100%, eval 100%, retrieval 100%, ci 86% |
+| 대표 언어 | unknown 2, C++ 1, Go 1 |
+| 소스 근거 위치 | 소스 근거가 평균 이상, 레포당 핵심 참조 11.6개 |
+| 결론 | embedding/vector/index/query persistence 구조를 고를 때 쓴다. 먼저 milvus-io/milvus를 구조 기준점으로 보고, 현재성은 milvus-io/milvus와 대조한다. |
 
 ## 트렌드/소스 지표
 
@@ -142,6 +156,19 @@ _감지된 신호가 없습니다._
 | [Ontos-AI/knowhere](https://github.com/Ontos-AI/knowhere) | 데이터/벡터 플랫폼 | 454 | 155 | 1502 | Python | monorepo, cli-first, api/server, agent-runtime, mcp/protocol, retrieval-memory, spec-artifacts, tests-evals, security-policy, container-deploy | MCP/tool runtime가 실제 소스 경로로 확인되는 agent harness형 레포 | 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/0/Ontos-AI__knowhere.md) / [보고서](../../../global-trending/repositories/Ontos-AI__knowhere.md) / [소스](../../../../sources/Ontos-AI__knowhere) |
 | [kakao/actionbase](https://github.com/kakao/actionbase) | 데이터/벡터 플랫폼 | 350 | 101 | 220 | Kotlin | cli-first, api/server, agent-runtime, retrieval-memory, spec-artifacts, tests-evals, security-policy, container-deploy | RAG/memory 구현과 검증 표면을 같이 가진 지식 시스템형 레포 | 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/c/kakao__actionbase.md) / [보고서](../../../korea-trending/repositories/kakao__actionbase.md) / [소스](../../../../sources/kakao__actionbase) |
 | [Samsung/CAS](https://github.com/Samsung/CAS) | 데이터/벡터 플랫폼 | 288 | 73 | 62 | C++ | monorepo, cli-first, api/server, agent-runtime, mcp/protocol, retrieval-memory, spec-artifacts, tests-evals, web-runtime | MCP/tool runtime가 실제 소스 경로로 확인되는 agent harness형 레포 | CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/a/Samsung__CAS.md) / [보고서](../../../korea-trending/repositories/Samsung__CAS.md) / [소스](../../../../sources/Samsung__CAS) |
+
+
+## 대표 레포 판단표
+
+| 순위 | 레포 | 비교 점수 | 트렌드 점수 | 언어 | 왜 봐야 하나 | 카테고리 안에서의 위치 | 위험/확인 | 링크 |
+| ---: | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 1 | [milvus-io/milvus](https://github.com/milvus-io/milvus) | 552 | 209 | Go | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/6/milvus-io__milvus.md) / [보고서](../../../global-trending/repositories/milvus-io__milvus.md) / [소스](../../../../sources/milvus-io__milvus) |
+| 2 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | 520 | 193 | Rust | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/1/qdrant__qdrant.md) / [보고서](../../../global-trending/repositories/qdrant__qdrant.md) / [소스](../../../../sources/qdrant__qdrant) |
+| 3 | [Ontos-AI/knowhere](https://github.com/Ontos-AI/knowhere) | 454 | 155 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/0/Ontos-AI__knowhere.md) / [보고서](../../../global-trending/repositories/Ontos-AI__knowhere.md) / [소스](../../../../sources/Ontos-AI__knowhere) |
+| 4 | [kakao/actionbase](https://github.com/kakao/actionbase) | 350 | 101 | Kotlin | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/c/kakao__actionbase.md) / [보고서](../../../korea-trending/repositories/kakao__actionbase.md) / [소스](../../../../sources/kakao__actionbase) |
+| 5 | [Samsung/CAS](https://github.com/Samsung/CAS) | 288 | 73 | C++ | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 핵심 파일 참조 충분; 대표 feature 일치: cli-first, retrieval-memory, spec-artifacts; 확인 필요: CI 경로가 명확하지 않음 | CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/a/Samsung__CAS.md) / [보고서](../../../korea-trending/repositories/Samsung__CAS.md) / [소스](../../../../sources/Samsung__CAS) |
+| 6 | [timescale/pgvectorscale](https://github.com/timescale/pgvectorscale) | 120 | 0 | unknown | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 핵심 파일 참조 충분; 대표 feature 일치: cli-first, retrieval-memory, spec-artifacts | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/1/timescale__pgvectorscale.md) / [보고서](../../../clone-structures/timescale__pgvectorscale.md) / [소스](../../../../sources/timescale__pgvectorscale) |
+| 7 | [pgvector/pgvector](https://github.com/pgvector/pgvector) | 97 | 0 | unknown | retrieval/memory 구조, 검증 표면, 배포 구조 | 대표 feature 일치: retrieval-memory, tests-evals; 확인 필요: entrypoint 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/e/pgvector__pgvector.md) / [보고서](../../../clone-structures/pgvector__pgvector.md) / [소스](../../../../sources/pgvector__pgvector) |
 
 
 ## 상위 레포 비교

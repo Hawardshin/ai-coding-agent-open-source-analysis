@@ -2,7 +2,7 @@ topic,slug,reports,readme,data,description
 먼저 읽기,start-here,21,reports/by-topic/start-here/README.md,data/report-categories/start-here.json,전체 조사 흐름과 핵심 시작점을 빠르게 잡는 상위 지도입니다.
 카테고리별 근거,category-guides,18,reports/by-topic/category-guides/README.md,data/report-categories/category-guides.json,"오픈소스, 연구, 발표, 트렌드 근거를 artifact 기준으로 묶은 분류 지도입니다."
 전체 소스 스캔/코드 검색,full-source-scan,3,reports/by-topic/full-source-scan/README.md,data/report-categories/full-source-scan.json,코딩 에이전트가 소스를 발견하고 인덱싱하고 사용자 의도와 코드 위치를 연결하는 방식입니다.
-소스 코드 딥다이브,source-code-deep-dives,1186,reports/by-topic/source-code-deep-dives/README.md,data/report-categories/source-code-deep-dives.json,"로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다."
+소스 코드 딥다이브,source-code-deep-dives,1187,reports/by-topic/source-code-deep-dives/README.md,data/report-categories/source-code-deep-dives.json,"로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다."
 코딩 에이전트/IDE,coding-agents,124,reports/by-topic/coding-agents/README.md,data/report-categories/coding-agents.json,"터미널 에이전트, IDE 에이전트, 코드 리뷰 에이전트, 코딩 보조 도구를 묶은 주제입니다."
 에이전트 하네스/MCP/오케스트레이션,agent-harness,281,reports/by-topic/agent-harness/README.md,data/report-categories/agent-harness.json,"MCP, tool registry, hooks, skills, orchestration, workflow 실행 기반을 보는 주제입니다."
 스펙 드리븐/요구사항,spec-driven,42,reports/by-topic/spec-driven/README.md,data/report-categories/spec-driven.json,"스펙 추출, 요구사항, 추적성, acceptance criteria, SDD 근거를 보는 주제입니다."
@@ -13,7 +13,7 @@ AI 활용 트렌드,ai-usage-trends,3,reports/by-topic/ai-usage-trends/README.md
 한국 트렌딩 오픈소스,korea-trending-open-source,502,reports/by-topic/korea-trending-open-source/README.md,data/report-categories/korea-trending-open-source.json,"한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 트렌드 보고서를 묶은 주제입니다."
 인접 AI 인프라,adjacent-infrastructure,18,reports/by-topic/adjacent-infrastructure/README.md,data/report-categories/adjacent-infrastructure.json,"컨텍스트 엔지니어링, RAG 인프라, 벡터 DB, 로컬 LLM 서빙, 평가/관측성을 보는 주제입니다."
 클론 구조/인벤토리,clone-structure-inventory,128,reports/by-topic/clone-structure-inventory/README.md,data/report-categories/clone-structure-inventory.json,"로컬 클론 목록, 구조 분석, manifest, source directory, 레포별 구조 보고서입니다."
-비교/유사도 지도,comparisons,1194,reports/by-topic/comparisons/README.md,data/report-categories/comparisons.json,"레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다."
+비교/유사도 지도,comparisons,1195,reports/by-topic/comparisons/README.md,data/report-categories/comparisons.json,"레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다."
 연구 근거,research-foundations,7,reports/by-topic/research-foundations/README.md,data/report-categories/research-foundations.json,"논문, 근거자료, 충돌 이론, 연구 종합 보고서를 모은 주제입니다."
 소스 카탈로그/인벤토리,source-catalogs-and-inventories,6,reports/by-topic/source-catalogs-and-inventories/README.md,data/report-categories/source-catalogs-and-inventories.json,"조사에 사용한 소스 카탈로그, 인벤토리, 클론 목록, evidence ledger입니다."
 레포별 딥다이브,repository-deep-dives,2434,reports/by-topic/repository-deep-dives/README.md,data/report-categories/repository-deep-dives.json,"핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다."

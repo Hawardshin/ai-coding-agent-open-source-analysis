@@ -1,6 +1,6 @@
 # line/line-bot-mcp-server 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 MCP server that integrates the LINE Messaging API to connect an AI Agent to the LINE Official Account.
 

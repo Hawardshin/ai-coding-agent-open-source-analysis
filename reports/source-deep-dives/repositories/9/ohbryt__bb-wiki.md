@@ -1,6 +1,6 @@
 # ohbryt/bb-wiki 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Brown Biotech persistent knowledge base — Karpathy LLM-Wiki × An Lab pedagogy × BB 14 query family. 4-섹션 judgment layer on all concept/entity pages. Synced to Obsidian ~/Documents/Obsidian Vault/brown-biotech.
 

@@ -1,6 +1,6 @@
 # kakaobrain/helo-word 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Team Kakao&Brain's Grammatical Error Correction System for the ACL 2019 BEA Shared Task
 

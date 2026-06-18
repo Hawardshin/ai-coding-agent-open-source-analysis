@@ -1,6 +1,6 @@
 # Samsung/Dexter 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Dexter is a static analysis platform to find and remove defects efficiently and immediately during the coding-time.
 

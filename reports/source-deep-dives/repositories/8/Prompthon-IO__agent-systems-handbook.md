@@ -1,6 +1,6 @@
 # Prompthon-IO/agent-systems-handbook 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 A practical AI agents handbook covering agent systems, agentic workflows, LangGraph, MCP/A2A, context engineering, agent memory, evaluation, observability, and multi-agent architecture. Current trend focus: agent runtime cost controls, emerging agent runtimes, and production AI workflow patterns.
 

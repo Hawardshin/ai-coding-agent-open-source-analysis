@@ -1,6 +1,6 @@
 # 평가/관측/품질 소스 인사이트
 
-생성 시각: 2026-06-18T15:31:47.340Z
+생성 시각: 2026-06-18T15:38:52.828Z
 
 평가 suite, benchmark harness, tracing, observability, quality gate
 
@@ -24,6 +24,7 @@
 | [레포별 소스 딥다이브](../../../source-deep-dives/repositories/README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
 | [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 역할군 페이지. |
 | [소스 트렌드 인사이트](../../README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
+| [상세 비교 리포트](../../comparative-report.md) | 카테고리 간 차이와 대표 레포 판단표. |
 | [카테고리별 소스 인사이트](../README.md) | 카테고리 기준의 소스 인사이트 페이지. |
 | [표/CSV 목차](../../../tables/README.md) | CSV와 표 중심 탐색. |
 
@@ -38,6 +39,19 @@
 - test/eval 표면이 100%로 높습니다. production reference로 볼 때 검증 harness와 CI를 먼저 비교하는 편이 좋습니다.
 - container/deploy 경로가 37%에서 확인됩니다. 로컬 데모형보다 운영 배포형 레포 비중이 높습니다.
 - AGENTS/CLAUDE/Codex/Cursor류 instruction 파일이 44%에서 보여 agent-native 개발 방식이 이미 레포 구조에 들어와 있습니다.
+
+## 이 카테고리 비교 총평
+
+| 항목 | 판단 |
+| --- | --- |
+| 읽는 목적 | agent/RAG 품질을 운영 중에 측정하고 회귀를 막는 평가/관측성 구조 비교에 쓴다. |
+| 강점 | test/eval coverage 100%; retrieval/memory 경로 74% |
+| 약점/검증 포인트 | 큰 구조적 공백은 표면상 작지만, 대표 레포별 위험 신호를 확인해야 함 |
+| 대표 feature | tests-evals 100%, retrieval-memory 74%, spec-artifacts 74%, agent-runtime 70%, security-policy 63% |
+| 대표 bucket | docs 100%, eval 100%, config 89%, retrieval 74%, spec 74% |
+| 대표 언어 | Python 8, unknown 8, TypeScript 4 |
+| 소스 근거 위치 | 소스 근거가 평균보다 얕음, 레포당 핵심 참조 9.4개 |
+| 결론 | agent/RAG 품질을 운영 중에 측정하고 회귀를 막는 평가/관측성 구조 비교에 쓴다. 먼저 mock-server/mockserver-monorepo를 구조 기준점으로 보고, 현재성은 mock-server/mockserver-monorepo와 대조한다. |
 
 ## 트렌드/소스 지표
 
@@ -160,6 +174,30 @@ _감지된 신호가 없습니다._
 | [cykim05/heard](https://github.com/cykim05/heard) | 평가/관측/품질 | 181 | 74 | 0 | Python | agent-runtime, spec-artifacts, tests-evals, model-runtime | 스펙/요구사항 산출물과 테스트 추적을 같이 볼 수 있는 레포 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/f/cykim05__heard.md) / [보고서](../../../korea-trending/repositories/cykim05__heard.md) / [소스](../../../../sources/cykim05__heard) |
 | [Samsung/360tools](https://github.com/Samsung/360tools) | 평가/관측/품질 | 172 | 75 | 117 | C | tests-evals | tests-evals | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/3/Samsung__360tools.md) / [보고서](../../../korea-trending/repositories/Samsung__360tools.md) / [소스](../../../../sources/Samsung__360tools) |
 | [naver-ai/MM-JudgeBias](https://github.com/naver-ai/MM-JudgeBias) | 평가/관측/품질 | 169 | 72 | 9 | Python | spec-artifacts, tests-evals | 스펙/요구사항 산출물과 테스트 추적을 같이 볼 수 있는 레포 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/7/naver-ai__MM-JudgeBias.md) / [보고서](../../../korea-trending/repositories/naver-ai__MM-JudgeBias.md) / [소스](../../../../sources/naver-ai__MM-JudgeBias) |
+
+
+## 대표 레포 판단표
+
+| 순위 | 레포 | 비교 점수 | 트렌드 점수 | 언어 | 왜 봐야 하나 | 카테고리 안에서의 위치 | 위험/확인 | 링크 |
+| ---: | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 1 | [mock-server/mockserver-monorepo](https://github.com/mock-server/mockserver-monorepo) | 470 | 160 | Java | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/4/mock-server__mockserver-monorepo.md) / [보고서](../../../global-trending/repositories/mock-server__mockserver-monorepo.md) / [소스](../../../../sources/mock-server__mockserver-monorepo) |
+| 2 | [MCPJam/inspector](https://github.com/MCPJam/inspector) | 448 | 149 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/8/MCPJam__inspector.md) / [보고서](../../../global-trending/repositories/MCPJam__inspector.md) / [소스](../../../../sources/MCPJam__inspector) |
+| 3 | [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp) | 423 | 140 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/7/getsentry__sentry-mcp.md) / [보고서](../../../global-trending/repositories/getsentry__sentry-mcp.md) / [소스](../../../../sources/getsentry__sentry-mcp) |
+| 4 | [responsibleai/ASSERT](https://github.com/responsibleai/ASSERT) | 406 | 135 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/d/responsibleai__ASSERT.md) / [보고서](../../../global-trending/repositories/responsibleai__ASSERT.md) / [소스](../../../../sources/responsibleai__ASSERT) |
+| 5 | [hexo-ai/sia](https://github.com/hexo-ai/sia) | 399 | 145 | Python | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 대표 feature 일치: agent-runtime, retrieval-memory, spec-artifacts | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/a/hexo-ai__sia.md) / [보고서](../../../global-trending/repositories/hexo-ai__sia.md) / [소스](../../../../sources/hexo-ai__sia) |
+| 6 | [line/promgen](https://github.com/line/promgen) | 375 | 120 | JavaScript | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/3/line__promgen.md) / [보고서](../../../korea-trending/repositories/line__promgen.md) / [소스](../../../../sources/line__promgen) |
+| 7 | [microsoft/RAMPART](https://github.com/microsoft/RAMPART) | 374 | 139 | Python | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 대표 feature 일치: agent-runtime, retrieval-memory, spec-artifacts; 확인 필요: entrypoint 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/9/microsoft__RAMPART.md) / [보고서](../../../global-trending/repositories/microsoft__RAMPART.md) / [소스](../../../../sources/microsoft__RAMPART) |
+| 8 | [toss/frontend-fundamentals](https://github.com/toss/frontend-fundamentals) | 370 | 107 | TypeScript | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/0/toss__frontend-fundamentals.md) / [보고서](../../../korea-trending/repositories/toss__frontend-fundamentals.md) / [소스](../../../../sources/toss__frontend-fundamentals) |
+| 9 | [naver/fixture-monkey](https://github.com/naver/fixture-monkey) | 338 | 112 | Java | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, agent-native 개발 지시문 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 대표 feature 일치: agent-runtime, retrieval-memory, spec-artifacts; 확인 필요: entrypoint 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/e/naver__fixture-monkey.md) / [보고서](../../../korea-trending/repositories/naver__fixture-monkey.md) / [소스](../../../../sources/naver__fixture-monkey) |
+| 10 | [naver/lispe](https://github.com/naver/lispe) | 327 | 100 | C | retrieval/memory 구조, 검증 표면, 배포 구조 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/f/naver__lispe.md) / [보고서](../../../korea-trending/repositories/naver__lispe.md) / [소스](../../../../sources/naver__lispe) |
+| 11 | [Samsung/qaboard](https://github.com/Samsung/qaboard) | 282 | 77 | JavaScript | retrieval/memory 구조, 검증 표면, 보안/정책 표면, 배포 구조 | 카테고리 중앙값보다 비교 점수 높음; 소스 깊이 우위; 핵심 파일 참조 충분; 대표 feature 일치: retrieval-memory, tests-evals | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/6/Samsung__qaboard.md) / [보고서](../../../korea-trending/repositories/Samsung__qaboard.md) / [소스](../../../../sources/Samsung__qaboard) |
+| 12 | [Samsung/cotopaxi](https://github.com/Samsung/cotopaxi) | 259 | 85 | Python | spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 대표 feature 일치: agent-runtime, spec-artifacts, tests-evals; 확인 필요: entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/2/Samsung__cotopaxi.md) / [보고서](../../../korea-trending/repositories/Samsung__cotopaxi.md) / [소스](../../../../sources/Samsung__cotopaxi) |
+| 13 | [Samsung/ADBI](https://github.com/Samsung/ADBI) | 243 | 85 | C | spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 대표 feature 일치: spec-artifacts, tests-evals; 확인 필요: entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/d/Samsung__ADBI.md) / [보고서](../../../korea-trending/repositories/Samsung__ADBI.md) / [소스](../../../../sources/Samsung__ADBI) |
+| 14 | [line/liff-mock](https://github.com/line/liff-mock) | 238 | 69 | TypeScript | retrieval/memory 구조, 검증 표면, 보안/정책 표면 | 카테고리 중앙값보다 비교 점수 높음; 대표 feature 일치: retrieval-memory, tests-evals | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/3/line__liff-mock.md) / [보고서](../../../korea-trending/repositories/line__liff-mock.md) / [소스](../../../../sources/line__liff-mock) |
+| 15 | [lumatic2/korean-tax-accounting-ax-benchmark](https://github.com/lumatic2/korean-tax-accounting-ax-benchmark) | 227 | 90 | Python | retrieval/memory 구조, spec/요구사항 산출물, 검증 표면, 보안/정책 표면 | 트렌드 점수 우위; 대표 feature 일치: agent-runtime, retrieval-memory, spec-artifacts; 확인 필요: entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/4/lumatic2__korean-tax-accounting-ax-benchmark.md) / [보고서](../../../korea-trending/repositories/lumatic2__korean-tax-accounting-ax-benchmark.md) / [소스](../../../../sources/lumatic2__korean-tax-accounting-ax-benchmark) |
+| 16 | [kakaobrain/kor-nlu-datasets](https://github.com/kakaobrain/kor-nlu-datasets) | 221 | 107 | unknown | 검증 표면 | 트렌드 점수 우위; 확인 필요: entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/c/kakaobrain__kor-nlu-datasets.md) / [보고서](../../../korea-trending/repositories/kakaobrain__kor-nlu-datasets.md) / [소스](../../../../sources/kakaobrain__kor-nlu-datasets) |
+| 17 | [kakaobrain/g2pm](https://github.com/kakaobrain/g2pm) | 193 | 85 | Python | 검증 표면 | 트렌드 점수 우위; 확인 필요: entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/2/kakaobrain__g2pm.md) / [보고서](../../../korea-trending/repositories/kakaobrain__g2pm.md) / [소스](../../../../sources/kakaobrain__g2pm) |
+| 18 | [cykim05/heard](https://github.com/cykim05/heard) | 181 | 74 | Python | spec/요구사항 산출물, 검증 표면 | 대표 feature 일치: agent-runtime, spec-artifacts, tests-evals; 확인 필요: entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | entrypoint 경로가 명확하지 않음, CI 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/f/cykim05__heard.md) / [보고서](../../../korea-trending/repositories/cykim05__heard.md) / [소스](../../../../sources/cykim05__heard) |
 
 
 ## 상위 레포 비교

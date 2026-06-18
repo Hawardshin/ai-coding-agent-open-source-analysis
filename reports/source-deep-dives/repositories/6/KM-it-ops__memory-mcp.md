@@ -1,6 +1,6 @@
 # KM-it-ops/memory-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Shared-brain MCP server: read/search/write one LLM-Wiki memory across Claude Code, Cursor & Codex (stdio + authenticated HTTP hub)
 

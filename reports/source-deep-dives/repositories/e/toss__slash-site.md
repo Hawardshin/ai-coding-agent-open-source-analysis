@@ -1,6 +1,6 @@
 # toss/slash-site 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 slash is a showcase platform that introduces and highlights Toss's open source projects
 

@@ -1,6 +1,6 @@
 # PlateerLab/document-adapter 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 LLM이 DOCX/PPTX/HWPX 문서를 직접 편집할 수 있게 해주는 통합 어댑터 + MCP 서버. Claude Desktop / Claude Code / Anthropic API Tool Use 호환. pip install document-adapter
 

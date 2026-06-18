@@ -1,6 +1,6 @@
 # existential-birds/beagle 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Claude Code plugin marketplace: 145 framework-aware code-review skills plus AI-writing detection, doc and test-plan generation, architectural analysis, and git workflows — for Python, Go, Rust, Elixir, React, Remix, iOS/Swift, and AI frameworks. Installable for Codex and other agents too.
 

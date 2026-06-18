@@ -1,6 +1,6 @@
 # zilliztech/claude-context 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Code search MCP for Claude Code. Make entire codebase the context for any coding agent.
 

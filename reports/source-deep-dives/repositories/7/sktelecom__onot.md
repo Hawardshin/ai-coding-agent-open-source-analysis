@@ -1,6 +1,6 @@
 # sktelecom/onot 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Generate open source software notices (OSS Notice) from SBOM documents — SPDX, CycloneDX, Excel → HTML/Text/Markdown/PDF. Offline, type-safe Python core with CLI, local API, and an installable desktop app.
 

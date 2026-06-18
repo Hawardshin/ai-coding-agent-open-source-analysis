@@ -1,14 +1,14 @@
 # 소스 코드 딥다이브
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다.
 
 ## 요약
 
 - 조사 단위: `source-code-deep-dives` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 1,186개 보고서이며, 주요 보고서 유형은 source-deep-dive-report (1165), source-insight-report (12), category-guide (2), llm-wiki-report (2), overview-report (2)입니다.
-- 주요 출처 폴더: source-deep-dives (1165), source-insights (12), categories (2), adjacent-tech (1), comparisons (1).
+- 포함 범위: 1,187개 보고서이며, 주요 보고서 유형은 source-deep-dive-report (1165), source-insight-report (13), category-guide (2), llm-wiki-report (2), overview-report (2)입니다.
+- 주요 출처 폴더: source-deep-dives (1165), source-insights (13), categories (2), adjacent-tech (1), comparisons (1).
 
 ## 총평
 
@@ -30,13 +30,13 @@
 
 ## 범위
 
-- 보고서 수: 1186
+- 보고서 수: 1187
 - 데이터: [data/report-categories/source-code-deep-dives.json](../../../data/report-categories/source-code-deep-dives.json)
 
 ## 보고서 유형
 
 - source-deep-dive-report: 1165
-- source-insight-report: 12
+- source-insight-report: 13
 - llm-wiki-report: 2
 - category-guide: 2
 - overview-report: 2
@@ -47,7 +47,7 @@
 ## 출처 폴더
 
 - source-deep-dives: 1165
-- source-insights: 12
+- source-insights: 13
 - categories: 2
 - comparisons: 1
 - llm-wiki/00-llm-wiki-100-summary.md: 1
@@ -130,6 +130,7 @@
 | [스펙 드리븐/요구사항 소스 인사이트](../../source-insights/by-category/spec-driven/README.md) | source-insight-report | source-insights | 155 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
+| [소스 인사이트 상세 비교 리포트](../../source-insights/comparative-report.md) | source-insight-report | source-insights | 117 |
 | [레포별 소스 딥다이브](../../source-deep-dives/repositories/README.md) | source-deep-dive-report | source-deep-dives | 36 |
 | [레포별 소스 딥다이브: Shard 0](../../source-deep-dives/repositories/0/README.md) | source-deep-dive-report | source-deep-dives | 35 |
 | [레포별 소스 딥다이브: Shard 1](../../source-deep-dives/repositories/1/README.md) | source-deep-dive-report | source-deep-dives | 35 |

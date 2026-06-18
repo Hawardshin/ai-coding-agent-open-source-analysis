@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T15:31:47.876Z",
+  "generatedAt": "2026-06-18T15:38:53.459Z",
   "slug": "global-trending-open-source",
   "title": "글로벌 트렌딩 오픈소스",
   "description": "전세계 트렌딩 오픈소스 코퍼스와 레포별 보고서를 묶은 주제입니다.",
@@ -23,10 +23,10 @@
       "id": "report:reports/categories/global-ai-open-source/README.md",
       "path": "reports/categories/global-ai-open-source/README.md",
       "title": "글로벌 AI 오픈소스",
-      "summary": "글로벌 AI 오픈소스 생성 시각 2026 06 18T15 31 33.431Z 글로벌 트렌딩 AI, LLM, agent, RAG, devtool, security, infrastructure 오픈소스 레포를 묶은 카테고리입니다. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519개 항목이며, 주요 구성은 repository 519 입니다. 연결 보고서 glo",
+      "summary": "글로벌 AI 오픈소스 생성 시각 2026 06 18T15 38 13.667Z 글로벌 트렌딩 AI, LLM, agent, RAG, devtool, security, infrastructure 오픈소스 레포를 묶은 카테고리입니다. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519개 항목이며, 주요 구성은 repository 519 입니다. 연결 보고서 glo",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:31:34.260Z",
+      "updatedAt": "2026-06-18T15:38:14.734Z",
       "categories": [
         "category-guides",
         "source-code-deep-dives",

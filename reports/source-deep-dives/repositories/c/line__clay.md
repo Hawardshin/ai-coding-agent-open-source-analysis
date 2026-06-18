@@ -1,6 +1,6 @@
 # line/clay 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Clay is an Android library project that provides image trimming which is originally an UI component of LINE Creators Studio
 

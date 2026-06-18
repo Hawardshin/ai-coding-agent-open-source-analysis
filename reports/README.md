@@ -1,13 +1,13 @@
 # 전체 보고서 읽기 지도
 
-생성 시각: 2026-06-18T15:31:47.876Z
+생성 시각: 2026-06-18T15:38:53.459Z
 
 이 페이지는 GitHub나 로컬 checkout에서 레포를 그대로 읽기 위한 최상위 보고서 지도입니다. 배포용 웹 UI는 제거되어 있으므로, 이 README와 하위 카테고리/표/JSON 인덱스를 기준으로 탐색하면 됩니다.
 
 ## 요약
 
 - 조사 단위: 레포에 커밋된 모든 Markdown 보고서의 최상위 읽기 지도입니다.
-- 포함 범위: 2,594개 보고서, 18개 보고서 주제, 16개 폴더 README 지도입니다.
+- 포함 범위: 2,595개 보고서, 18개 보고서 주제, 16개 폴더 README 지도입니다.
 - 탐색 방식: 먼저 읽기로 전체 흐름을 잡고, 주제별 목차로 조사에 들어가며, 폴더별 README 지도로 실제 폴더 구조를 따라갑니다.
 
 ## 총평
@@ -16,7 +16,7 @@
 
 ## 범위
 
-- 색인된 Markdown 보고서: 2594
+- 색인된 Markdown 보고서: 2595
 - 보고서 주제: 18
 - 폴더 README 지도: 16
 - 데이터 인덱스: [data/report-index.json](../data/report-index.json)
@@ -101,8 +101,8 @@
 | 주제 | 보고서 수 | 설명 |
 | --- | ---: | --- |
 | [레포별 딥다이브](by-topic/repository-deep-dives/README.md) | 2434 | 핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다. |
-| [비교/유사도 지도](by-topic/comparisons/README.md) | 1194 | 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다. |
-| [소스 코드 딥다이브](by-topic/source-code-deep-dives/README.md) | 1186 | 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다. |
+| [비교/유사도 지도](by-topic/comparisons/README.md) | 1195 | 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다. |
+| [소스 코드 딥다이브](by-topic/source-code-deep-dives/README.md) | 1187 | 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다. |
 | [글로벌 트렌딩 오픈소스](by-topic/global-trending-open-source/README.md) | 502 | 전세계 트렌딩 오픈소스 코퍼스와 레포별 보고서를 묶은 주제입니다. |
 | [한국 트렌딩 오픈소스](by-topic/korea-trending-open-source/README.md) | 502 | 한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 트렌드 보고서를 묶은 주제입니다. |
 | [LLM 위키/RAG/지식베이스](by-topic/llm-wiki/README.md) | 292 | LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 보는 주제입니다. |

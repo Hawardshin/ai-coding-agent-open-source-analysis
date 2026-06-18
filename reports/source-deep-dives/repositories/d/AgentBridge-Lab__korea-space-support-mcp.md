@@ -1,6 +1,6 @@
 # AgentBridge-Lab/korea-space-support-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 한국 우주·항공·국방우주 정부 R&D 지원사업 공고 데이터셋 — 크롤러·분류기·MCP·REST API
 

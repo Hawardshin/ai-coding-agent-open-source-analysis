@@ -1,6 +1,6 @@
 # linkonai2026-kr/kochunk 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Korean-first text chunking toolkit for RAG: sentence-correct (Kiwi), token-budgeted, structure-preserving, with a built-in quality-diagnostics harness and CLI.
 

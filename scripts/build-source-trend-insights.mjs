@@ -12,10 +12,11 @@ const outputReportDir = path.join(root, "reports", "source-insights");
 const outputByCategoryDir = path.join(outputReportDir, "by-category");
 const outputCategoryCsv = path.join(root, "data", "report-tables", "source-category-insights.csv");
 const outputRepoCsv = path.join(root, "data", "report-tables", "source-repo-feature-comparison.csv");
+const outputComparisonCsv = path.join(root, "data", "report-tables", "source-category-comparisons.csv");
 
 const categories = [
   { slug: "coding-agent-ide", title: "코딩 에이전트/IDE", korean: "코딩 에이전트/IDE", lens: "CLI/IDE 실행면, 코드 수정 루프, 샌드박스, 에이전트 지시문" },
-  { slug: "agent-harness-mcp", title: "에이전트 하네스/MCP", korean: "에이전트 하네스/MCP", lens: "MCP, 도구 등록부, workflow/orchestration, hooks/skills" },
+  { slug: "agent-harness-mcp", title: "에이전트 하네스/MCP", korean: "에이전트 하네스/MCP", lens: "MCP, 도구 등록부, 워크플로 오케스트레이션, hooks/skills" },
   { slug: "llm-wiki-rag", title: "LLM 위키/RAG/지식베이스", korean: "LLM 위키/RAG/지식베이스", lens: "수집, chunking, embedding, retrieval, memory, vector store" },
   { slug: "spec-driven", title: "스펙 드리븐/요구사항", korean: "스펙 드리븐/요구사항", lens: "요구사항, ADR, 설계 문서, 스펙 산출물, acceptance/test trace" },
   { slug: "eval-observability", title: "평가/관측/품질", korean: "평가/관측/품질", lens: "평가 suite, benchmark harness, tracing, observability, quality gate" },
@@ -138,6 +139,15 @@ function pct(value, total) {
   return `${Math.round((value / total) * 100)}%`;
 }
 
+function ratio(value, total) {
+  if (!total) return 0;
+  return number(value) / total;
+}
+
+function pctRatio(value) {
+  return `${Math.round(number(value) * 100)}%`;
+}
+
 function number(value) {
   return Number(value || 0);
 }
@@ -148,6 +158,12 @@ function sum(values) {
 
 function max(values) {
   return values.reduce((acc, value) => Math.max(acc, number(value)), 0);
+}
+
+function truncateText(value, maxLength = 120) {
+  const text = tableText(value);
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength - 1)}…`;
 }
 
 function commandCategories(row) {
@@ -319,6 +335,229 @@ function categoryNarrative(category, rows, aggregate) {
   return [...new Set(insights)].slice(0, 8);
 }
 
+const categoryUseCases = {
+  "coding-agent-ide": "코딩 에이전트 제품/IDE 루프를 설계할 때 참고 구현 후보로 본다.",
+  "agent-harness-mcp": "MCP, 도구 등록부, 워크플로 오케스트레이션, hooks/skills를 실제 제품 구조에 넣을 때 기준 카테고리로 본다.",
+  "llm-wiki-rag": "문서/코드 지식을 수집하고 검색하고 기억으로 유지하는 RAG/knowledge architecture 비교에 쓴다.",
+  "spec-driven": "요구사항, 설계 문서, acceptance/test trace를 장기 기억으로 남기는 방식 비교에 쓴다.",
+  "eval-observability": "agent/RAG 품질을 운영 중에 측정하고 회귀를 막는 평가/관측성 구조 비교에 쓴다.",
+  "ai-infrastructure-serving": "모델 서빙, API, 컨테이너, 배포, runtime adapter를 운영 기준으로 비교할 때 쓴다.",
+  "data-vector-platform": "embedding/vector/index/query persistence 구조를 고를 때 쓴다.",
+  "security-governance": "sandbox, permission, policy, guardrail, secret handling을 agent 실행 안정성 관점에서 본다.",
+  "developer-productivity": "CLI, SDK, 자동화, CI, code search를 개발자 workflow로 묶는 방식을 비교한다.",
+  "general-ai-open-source": "넓은 AI 오픈소스 후보를 탐색하되, 특정 설계 패턴은 더 세부 카테고리와 대조해서 읽는다."
+};
+
+function categoryCoverage(summary, bucket) {
+  return ratio(summary.bucketCoverage?.[bucket], summary.count);
+}
+
+function featureCoverage(summary, feature) {
+  return ratio(summary.featureCounts?.[feature], summary.count);
+}
+
+function perRepo(value, summary) {
+  return summary.count ? (number(value) / summary.count).toFixed(1) : "0.0";
+}
+
+function topFeaturePhrase(summary, limit = 3) {
+  const entries = topEntries(summary.featureCounts, limit);
+  if (!entries.length) return "강한 feature 신호 없음";
+  return entries.map((entry) => `${entry.key} ${pct(entry.count, summary.count)}`).join(", ");
+}
+
+function topBucketPhrase(summary, limit = 3) {
+  const entries = topEntries(summary.bucketCoverage, limit);
+  if (!entries.length) return "강한 bucket 신호 없음";
+  return entries.map((entry) => `${entry.key} ${pct(entry.count, summary.count)}`).join(", ");
+}
+
+function topLanguagePhrase(summary, limit = 3) {
+  const entries = topEntries(summary.languages, limit);
+  if (!entries.length) return "언어 신호 없음";
+  return entries.map((entry) => `${entry.key} ${entry.count}`).join(", ");
+}
+
+function categoryStrength(summary) {
+  const parts = [];
+  const trendRatio = ratio(summary.trendRepoCount, summary.count);
+  if (trendRatio >= 0.85) parts.push(`트렌드 연결률 ${pctRatio(trendRatio)}로 현재성 강함`);
+  if (categoryCoverage(summary, "eval") >= 0.7) parts.push(`test/eval coverage ${pctRatio(categoryCoverage(summary, "eval"))}`);
+  if (categoryCoverage(summary, "mcp") >= 0.5) parts.push(`MCP/tool 경로 ${pctRatio(categoryCoverage(summary, "mcp"))}`);
+  if (categoryCoverage(summary, "retrieval") >= 0.65) parts.push(`retrieval/memory 경로 ${pctRatio(categoryCoverage(summary, "retrieval"))}`);
+  if (categoryCoverage(summary, "container") >= 0.5) parts.push(`배포/컨테이너 경로 ${pctRatio(categoryCoverage(summary, "container"))}`);
+  if (categoryCoverage(summary, "instruction") >= 0.45) parts.push(`agent instruction 파일 ${pctRatio(categoryCoverage(summary, "instruction"))}`);
+  if (featureCoverage(summary, "cli-first") >= 0.6) parts.push(`CLI 사용면이 강함`);
+  if (featureCoverage(summary, "api/server") >= 0.55) parts.push(`API/server 표면이 강함`);
+  return parts.slice(0, 3).join("; ") || `${topFeaturePhrase(summary, 2)}가 주요 강점`;
+}
+
+function categoryGap(summary) {
+  const gaps = [];
+  const trendRatio = ratio(summary.trendRepoCount, summary.count);
+  if (trendRatio < 0.25) gaps.push(`트렌드 연결률 ${pctRatio(trendRatio)}라 현재성 검증 필요`);
+  if (categoryCoverage(summary, "security") < 0.25) gaps.push(`security/policy 경로 ${pctRatio(categoryCoverage(summary, "security"))}`);
+  if (categoryCoverage(summary, "eval") < 0.45) gaps.push(`test/eval 경로 ${pctRatio(categoryCoverage(summary, "eval"))}`);
+  if (categoryCoverage(summary, "ci") < 0.45) gaps.push(`CI 경로 ${pctRatio(categoryCoverage(summary, "ci"))}`);
+  if (summary.sourceDepthMedian < 80) gaps.push(`중앙 소스 깊이 ${summary.sourceDepthMedian}로 직접 확인 필요`);
+  if (summary.keyReferenceTotal / Math.max(summary.count, 1) < 6) gaps.push(`레포당 핵심 참조 ${perRepo(summary.keyReferenceTotal, summary)}개`);
+  return gaps.slice(0, 3).join("; ") || "큰 구조적 공백은 표면상 작지만, 대표 레포별 위험 신호를 확인해야 함";
+}
+
+function categoryDecision(summary) {
+  const useCase = categoryUseCases[summary.slug] || "동일 유형 레포 비교의 기준점으로 쓴다.";
+  const firstRepo = summary.topRepositories[0]?.name || "대표 레포 없음";
+  const topTrend = summary.topTrendRepositories[0]?.name || firstRepo;
+  return `${useCase} 먼저 ${firstRepo}를 구조 기준점으로 보고, 현재성은 ${topTrend}와 대조한다.`;
+}
+
+function categoryProfile(summary, allSummaries) {
+  const averageDepth = median(allSummaries.map((item) => item.sourceDepthMedian));
+  const topFeature = topEntries(summary.featureCounts, 1)[0]?.key || "feature 신호 약함";
+  const topBucket = topEntries(summary.bucketCoverage, 1)[0]?.key || "bucket 신호 약함";
+  const referenceDensity = Number(perRepo(summary.keyReferenceTotal, summary));
+  const depthPosition = summary.sourceDepthMedian >= averageDepth ? "소스 근거가 평균 이상" : "소스 근거가 평균보다 얕음";
+  return {
+    useCase: categoryUseCases[summary.slug] || "동일 유형 레포 비교의 기준점으로 쓴다.",
+    strength: categoryStrength(summary),
+    gap: categoryGap(summary),
+    decision: categoryDecision(summary),
+    topFeature,
+    topBucket,
+    topLanguages: topLanguagePhrase(summary),
+    featureSummary: topFeaturePhrase(summary, 5),
+    bucketSummary: topBucketPhrase(summary, 5),
+    referenceDensity,
+    depthPosition,
+    trendHeat: pct(summary.trendRepoCount, summary.count)
+  };
+}
+
+function repoPosition(row, summary) {
+  const notes = [];
+  if (row.compareScore >= summary.compareScoreMedian) notes.push("카테고리 중앙값보다 비교 점수 높음");
+  if (row.trendScore >= summary.trendScoreMedian && row.trendScore > 0) notes.push("트렌드 점수 우위");
+  if (row.sourceDepthScore >= summary.sourceDepthMedian) notes.push("소스 깊이 우위");
+  if (row.keyReferenceCount >= Math.max(8, summary.keyReferenceMedian)) notes.push("핵심 파일 참조 충분");
+  const topFeatures = new Set(topEntries(summary.featureCounts, 4).map((entry) => entry.key));
+  const matchedFeatures = row.featureTags.filter((tag) => topFeatures.has(tag));
+  if (matchedFeatures.length >= 2) notes.push(`대표 feature 일치: ${matchedFeatures.slice(0, 3).join(", ")}`);
+  if (row.risks.length) notes.push(`확인 필요: ${row.risks.slice(0, 2).join(", ")}`);
+  return notes.slice(0, 4).join("; ") || "대표성은 있으나 추가 소스 확인 필요";
+}
+
+function repoReadReason(row) {
+  const reasons = [];
+  if (row.featureTags.includes("mcp/protocol")) reasons.push("MCP/tool 연결 방식");
+  if (row.featureTags.includes("retrieval-memory")) reasons.push("retrieval/memory 구조");
+  if (row.featureTags.includes("spec-artifacts")) reasons.push("spec/요구사항 산출물");
+  if (row.featureTags.includes("tests-evals")) reasons.push("검증 표면");
+  if (row.featureTags.includes("security-policy")) reasons.push("보안/정책 표면");
+  if (row.featureTags.includes("container-deploy")) reasons.push("배포 구조");
+  if (row.featureTags.includes("agent-instructions")) reasons.push("agent-native 개발 지시문");
+  return reasons.slice(0, 4).join(", ") || row.standout;
+}
+
+function buildRepoComparisons(summary, limit = 18) {
+  const selected = [...summary.topRepositories]
+    .sort((a, b) => b.compareScore - a.compareScore || b.trendScore - a.trendScore || b.stars - a.stars)
+    .slice(0, limit);
+  return selected.map((row, index) => ({
+    rank: index + 1,
+    name: row.name,
+    url: row.url,
+    compareScore: row.compareScore,
+    trendScore: row.trendScore,
+    stars: row.stars,
+    language: row.language,
+    reason: repoReadReason(row),
+    position: repoPosition(row, summary),
+    risk: row.risks.slice(0, 3).join(", ") || "큰 위험 신호 없음",
+    sourceDeepDivePath: row.sourceDeepDivePath,
+    reportPath: row.reportPath,
+    localPath: row.localPath
+  }));
+}
+
+const comparisonMetrics = [
+  { key: "trend", label: "트렌드 연결률", value: (summary) => ratio(summary.trendRepoCount, summary.count), render: (value) => pctRatio(value) },
+  { key: "global", label: "글로벌 비중", value: (summary) => ratio(summary.globalTrendCount, summary.count), render: (value) => pctRatio(value) },
+  { key: "korea", label: "한국 비중", value: (summary) => ratio(summary.koreaTrendCount, summary.count), render: (value) => pctRatio(value) },
+  { key: "mcp", label: "MCP 경로", value: (summary) => categoryCoverage(summary, "mcp"), render: (value) => pctRatio(value) },
+  { key: "retrieval", label: "retrieval 경로", value: (summary) => categoryCoverage(summary, "retrieval"), render: (value) => pctRatio(value) },
+  { key: "spec", label: "spec 경로", value: (summary) => categoryCoverage(summary, "spec"), render: (value) => pctRatio(value) },
+  { key: "eval", label: "test/eval 경로", value: (summary) => categoryCoverage(summary, "eval"), render: (value) => pctRatio(value) },
+  { key: "security", label: "security 경로", value: (summary) => categoryCoverage(summary, "security"), render: (value) => pctRatio(value) },
+  { key: "container", label: "배포 경로", value: (summary) => categoryCoverage(summary, "container"), render: (value) => pctRatio(value) },
+  { key: "instruction", label: "instruction 경로", value: (summary) => categoryCoverage(summary, "instruction"), render: (value) => pctRatio(value) },
+  { key: "depth", label: "소스 깊이 중앙값", value: (summary) => summary.sourceDepthMedian / 126, render: (_value, summary) => String(summary.sourceDepthMedian) },
+  { key: "refs", label: "레포당 핵심 참조", value: (summary) => Math.min(1, number(perRepo(summary.keyReferenceTotal, summary)) / 12), render: (_value, summary) => perRepo(summary.keyReferenceTotal, summary) }
+];
+
+function buildPairwiseComparisons(summaries) {
+  const pairs = [];
+  for (let i = 0; i < summaries.length; i += 1) {
+    for (let j = i + 1; j < summaries.length; j += 1) {
+      const left = summaries[i];
+      const right = summaries[j];
+      const metricDiffs = comparisonMetrics
+        .map((metric) => {
+          const leftValue = metric.value(left);
+          const rightValue = metric.value(right);
+          return {
+            key: metric.key,
+            label: metric.label,
+            leftValue,
+            rightValue,
+            diff: leftValue - rightValue,
+            leftRendered: metric.render(leftValue, left),
+            rightRendered: metric.render(rightValue, right)
+          };
+        })
+        .sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff));
+      const main = metricDiffs.slice(0, 3);
+      const score = Math.round(main.reduce((acc, item) => acc + Math.abs(item.diff), 0) * 100);
+      const contrast = main.map((item) => `${item.label}: ${left.korean} ${item.leftRendered} vs ${right.korean} ${item.rightRendered}`).join("; ");
+      const leftFeature = left.comparisonProfile?.topFeature || topEntries(left.featureCounts, 1)[0]?.key || "feature";
+      const rightFeature = right.comparisonProfile?.topFeature || topEntries(right.featureCounts, 1)[0]?.key || "feature";
+      const decision = `${left.korean}: ${leftFeature} 중심, ${right.korean}: ${rightFeature} 중심으로 보면 차이가 빨리 보입니다.`;
+      pairs.push({
+        left: left.slug,
+        leftKorean: left.korean,
+        right: right.slug,
+        rightKorean: right.korean,
+        score,
+        contrast,
+        decision,
+        mainAxes: main.map((item) => item.label)
+      });
+    }
+  }
+  return pairs.sort((a, b) => b.score - a.score || a.leftKorean.localeCompare(b.leftKorean));
+}
+
+function enrichComparativeInsights(summaries) {
+  for (const summary of summaries) {
+    summary.comparisonProfile = categoryProfile(summary, summaries);
+    summary.repoComparisons = buildRepoComparisons(summary);
+  }
+  return {
+    pairwise: buildPairwiseComparisons(summaries),
+    categoryDecisions: summaries.map((summary) => ({
+      slug: summary.slug,
+      korean: summary.korean,
+      useCase: summary.comparisonProfile.useCase,
+      strength: summary.comparisonProfile.strength,
+      gap: summary.comparisonProfile.gap,
+      decision: summary.comparisonProfile.decision,
+      representativeRepo: summary.topRepositories[0]?.name || "",
+      trendHeat: summary.comparisonProfile.trendHeat,
+      featureSummary: summary.comparisonProfile.featureSummary,
+      bucketSummary: summary.comparisonProfile.bucketSummary
+    }))
+  };
+}
+
 function aggregateCategory(category, rows) {
   const patternCounts = {};
   const featureCounts = {};
@@ -354,8 +593,10 @@ function aggregateCategory(category, rows) {
     starsMedian: median(rows.map((row) => row.stars)),
     trendScoreMax: max(rows.map((row) => row.trendScore)),
     trendScoreMedian: median(rows.map((row) => row.trendScore)),
+    compareScoreMedian: median(rows.map((row) => row.compareScore)),
     fileCountMedian: median(rows.map((row) => row.fileCount)),
     keyReferenceTotal: sum(rows.map((row) => row.keyReferenceCount)),
+    keyReferenceMedian: median(rows.map((row) => row.keyReferenceCount)),
     sourceDepthMedian: median(rows.map((row) => row.sourceDepthScore)),
     languages: countBy(rows, (row) => row.language),
     maturity: countBy(rows, (row) => row.maturity),
@@ -387,6 +628,7 @@ function renderNavigation(baseDir) {
 | ${linkFrom(baseDir, "reports/source-deep-dives/repositories/README.md", "레포별 소스 딥다이브")} | 로컬 클론 1개당 1개 Markdown 딥다이브. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "레포별 인사이트")} | 레포별 총평과 역할군 페이지. |
 | ${linkFrom(baseDir, "reports/source-insights/README.md", "소스 트렌드 인사이트")} | 카테고리별 트렌드와 레포별 특징 비교. |
+| ${linkFrom(baseDir, "reports/source-insights/comparative-report.md", "상세 비교 리포트")} | 카테고리 간 차이와 대표 레포 판단표. |
 | ${linkFrom(baseDir, "reports/source-insights/by-category/README.md", "카테고리별 소스 인사이트")} | 카테고리 기준의 소스 인사이트 페이지. |
 | ${linkFrom(baseDir, "reports/tables/README.md", "표/CSV 목차")} | CSV와 표 중심 탐색. |
 `;
@@ -444,6 +686,105 @@ function renderCategorySummaryBlocks(summaries, baseDir) {
     .join("\n");
 }
 
+function renderCategoryDecisionTable(summaries, baseDir) {
+  const rows = summaries
+    .sort((a, b) => b.count - a.count || a.korean.localeCompare(b.korean))
+    .map((summary) => {
+      const profile = summary.comparisonProfile;
+      const repo = summary.topRepositories[0];
+      const repoLink = repo?.url ? externalLink(repo.name, repo.url) : tableText(repo?.name || "없음");
+      const detail = linkFrom(baseDir, `reports/source-insights/by-category/${summary.slug}/README.md`, summary.korean);
+      return `| ${detail} | ${profile.useCase} | ${profile.strength} | ${profile.gap} | ${repoLink} | ${profile.decision} |`;
+    })
+    .join("\n");
+  return `| 카테고리 | 읽는 목적 | 강점 | 약점/검증 포인트 | 대표 레포 | 판단 |
+| --- | --- | --- | --- | --- | --- |
+${rows}
+`;
+}
+
+function renderPairwiseComparisonTable(pairs, baseDir, limit = 20) {
+  const rows = pairs.slice(0, limit)
+    .map((pair) => {
+      const left = linkFrom(baseDir, `reports/source-insights/by-category/${pair.left}/README.md`, pair.leftKorean);
+      const right = linkFrom(baseDir, `reports/source-insights/by-category/${pair.right}/README.md`, pair.rightKorean);
+      return `| ${left} ↔ ${right} | ${pair.score} | ${pair.contrast} | ${pair.decision} |`;
+    })
+    .join("\n");
+  return `| 비교 | 차이 점수 | 가장 갈리는 축 | 읽는 판단 |
+| --- | ---: | --- | --- |
+${rows}
+`;
+}
+
+function renderRepoDecisionTable(repoComparisons, baseDir, limit = 18) {
+  const rows = repoComparisons.slice(0, limit).map((repo) => {
+    const name = repo.url ? externalLink(repo.name, repo.url) : tableText(repo.name);
+    const links = [
+      repo.sourceDeepDivePath ? linkFrom(baseDir, repo.sourceDeepDivePath, "소스 딥다이브") : null,
+      repo.reportPath ? linkFrom(baseDir, repo.reportPath, "보고서") : null,
+      repo.localPath ? linkFrom(baseDir, repo.localPath, "소스") : null
+    ].filter(Boolean).join(" / ");
+    return `| ${repo.rank} | ${name} | ${repo.compareScore} | ${repo.trendScore} | ${tableText(repo.language)} | ${tableText(repo.reason)} | ${tableText(repo.position)} | ${tableText(repo.risk)} | ${links} |`;
+  }).join("\n");
+  return `| 순위 | 레포 | 비교 점수 | 트렌드 점수 | 언어 | 왜 봐야 하나 | 카테고리 안에서의 위치 | 위험/확인 | 링크 |
+| ---: | --- | ---: | ---: | --- | --- | --- | --- | --- |
+${rows}
+`;
+}
+
+function renderComparativeReport(data) {
+  const baseDir = "reports/source-insights";
+  const topPair = data.comparativeInsights.pairwise[0];
+  return `# 소스 인사이트 상세 비교 리포트
+
+생성 시각: ${generatedAt}
+
+## 요약
+
+- 조사 단위: ${data.categories.length}개 카테고리와 ${data.repositories.length.toLocaleString("en-US")}개 레포를 같은 축으로 비교한 판단형 리포트입니다.
+- 비교 축: 트렌드 연결률, 글로벌/한국 비중, MCP/retrieval/spec/eval/security/container/instruction coverage, 소스 깊이, 레포당 핵심 참조입니다.
+- 가장 큰 차이가 나는 쌍: ${topPair ? `${topPair.leftKorean} ↔ ${topPair.rightKorean}` : "없음"}입니다.
+
+## 총평
+
+이 리포트는 “어느 카테고리를 먼저 봐야 하는가”, “각 카테고리에서 대표 레포는 무엇인가”, “서로 무엇이 다르게 구현되는가”를 한 번에 보도록 만든 생성형 비교 보고서입니다. 단순 star 순위가 아니라 실제 소스에서 확인된 feature/bucket/위험 신호를 기준으로 판단합니다.
+
+${renderNavigation(baseDir)}
+
+## 읽는 법
+
+- 차이 점수는 두 카테고리의 트렌드 연결률, 지역 비중, MCP/retrieval/spec/eval/security/container/instruction coverage, 소스 깊이, 핵심 참조 밀도 차이를 합친 값입니다. 점수가 클수록 같은 AI 오픈소스라도 설계 초점이 멀리 떨어져 있습니다.
+- 대표 레포는 star만으로 고르지 않고, trendScore, compareScore, source depth, key source reference, 실제 파일 bucket을 같이 본 후보입니다.
+- 강점은 카테고리 안에서 많이 반복되는 구현 표면입니다. 약점/검증 포인트는 실제 적용 전에 직접 확인해야 하는 공백입니다.
+- 레포별 판단표의 “왜 봐야 하나”는 그 레포에서 확인된 MCP, retrieval, spec, eval, security, CLI, 배포 같은 구조 신호를 사람이 읽기 좋은 문장으로 압축한 것입니다.
+
+## 카테고리 의사결정 표
+
+${renderCategoryDecisionTable(data.categories, baseDir)}
+
+## 카테고리 간 차이 전체 비교
+
+${renderPairwiseComparisonTable(data.comparativeInsights.pairwise, baseDir, 45)}
+
+## 카테고리별 대표 레포 판단표
+
+${data.categories.map((summary) => `### ${summary.korean}
+
+${summary.comparisonProfile.decision}
+
+${renderRepoDecisionTable(summary.repoComparisons, baseDir, 12)}
+`).join("\n")}
+
+## 읽는 결론
+
+1. 에이전트 실행 구조를 보려면 에이전트 하네스/MCP와 코딩 에이전트/IDE를 먼저 비교합니다.
+2. 지식 지속성은 LLM 위키/RAG/지식베이스와 데이터/벡터 플랫폼을 같이 읽어야 ingestion과 storage의 책임 분리가 보입니다.
+3. 운영 품질은 평가/관측/품질, 보안/거버넌스/안전, AI 인프라/서빙을 함께 봐야 검증, 권한, 배포 표면이 이어집니다.
+4. 스펙 드리븐/요구사항은 아직 트렌드 연결이 약하므로, 대표 레포의 문서와 테스트 trace를 직접 확인하는 방식이 더 중요합니다.
+`;
+}
+
 function renderMainReadme(data) {
   const baseDir = "reports/source-insights";
   return `# 소스 트렌드 인사이트
@@ -470,6 +811,14 @@ ${renderExternalTrendSources()}
 
 ${renderCategoryTable(data.categories, baseDir)}
 
+## 카테고리 의사결정 비교
+
+${renderCategoryDecisionTable(data.categories, baseDir)}
+
+## 가장 차이가 큰 카테고리 비교
+
+${renderPairwiseComparisonTable(data.comparativeInsights.pairwise, baseDir, 12)}
+
 ## 카테고리별 핵심 포인트
 
 ${renderCategorySummaryBlocks(data.categories, baseDir)}
@@ -484,6 +833,7 @@ ${renderRepositoryComparisonTable(data.repositories, baseDir, 120)}
 | --- | --- |
 | ${linkFrom(baseDir, "data/source-trend-insights.json", "data/source-trend-insights.json")} | 전체 카테고리 집계와 레포 비교 row. |
 | ${linkFrom(baseDir, "data/report-tables/source-category-insights.csv", "data/report-tables/source-category-insights.csv")} | 스프레드시트용 카테고리 인사이트 표. |
+| ${linkFrom(baseDir, "data/report-tables/source-category-comparisons.csv", "data/report-tables/source-category-comparisons.csv")} | 카테고리별 강점/약점/판단 비교 표. |
 | ${linkFrom(baseDir, "data/report-tables/source-repo-feature-comparison.csv", "data/report-tables/source-repo-feature-comparison.csv")} | 스프레드시트용 전체 레포 feature 비교 표. |
 `;
 }
@@ -505,6 +855,10 @@ function renderByCategoryIndex(summaries) {
 카테고리별 페이지는 같은 유형의 레포를 서로 비교하기 위한 입구입니다. 전체 순위는 source-insights 메인 README가 빠르고, 특정 주제의 설계 패턴과 대표 레포를 고를 때는 이 인덱스에서 내려가는 편이 좋습니다.
 
 ${renderNavigation(baseDir)}
+
+## 카테고리 의사결정 비교
+
+${renderCategoryDecisionTable(summaries, baseDir)}
 
 ## 카테고리
 
@@ -553,6 +907,19 @@ ${renderNavigation(baseDir)}
 
 ${renderInsightList(summary.insights)}
 
+## 이 카테고리 비교 총평
+
+| 항목 | 판단 |
+| --- | --- |
+| 읽는 목적 | ${summary.comparisonProfile.useCase} |
+| 강점 | ${summary.comparisonProfile.strength} |
+| 약점/검증 포인트 | ${summary.comparisonProfile.gap} |
+| 대표 feature | ${summary.comparisonProfile.featureSummary} |
+| 대표 bucket | ${summary.comparisonProfile.bucketSummary} |
+| 대표 언어 | ${summary.comparisonProfile.topLanguages} |
+| 소스 근거 위치 | ${summary.comparisonProfile.depthPosition}, 레포당 핵심 참조 ${summary.comparisonProfile.referenceDensity}개 |
+| 결론 | ${summary.comparisonProfile.decision} |
+
 ## 트렌드/소스 지표
 
 | 항목 | 값 |
@@ -583,6 +950,10 @@ ${renderCountTable(summary.riskCounts, "위험 카테고리")}
 ## 상위 트렌드 레포
 
 ${renderRepositoryComparisonTable(summary.topTrendRepositories.length ? summary.topTrendRepositories : summary.topRepositories, baseDir, 40)}
+
+## 대표 레포 판단표
+
+${renderRepoDecisionTable(summary.repoComparisons, baseDir, 18)}
 
 ## 상위 레포 비교
 
@@ -616,6 +987,27 @@ function categoryCsvRows(summaries) {
     dominantCommands: topEntryText(summary.commandCounts, 8),
     dominantRisks: topEntryText(summary.riskCounts, 8),
     firstInsight: summary.insights[0]
+  }));
+}
+
+function categoryComparisonCsvRows(summaries) {
+  return summaries.map((summary) => ({
+    slug: summary.slug,
+    korean: summary.korean,
+    repositories: summary.count,
+    trendHeat: summary.comparisonProfile.trendHeat,
+    useCase: summary.comparisonProfile.useCase,
+    strength: summary.comparisonProfile.strength,
+    gap: summary.comparisonProfile.gap,
+    decision: summary.comparisonProfile.decision,
+    representativeRepo: summary.topRepositories[0]?.name || "",
+    topFeature: summary.comparisonProfile.topFeature,
+    topBucket: summary.comparisonProfile.topBucket,
+    topLanguages: summary.comparisonProfile.topLanguages,
+    featureSummary: summary.comparisonProfile.featureSummary,
+    bucketSummary: summary.comparisonProfile.bucketSummary,
+    referenceDensity: summary.comparisonProfile.referenceDensity,
+    depthPosition: summary.comparisonProfile.depthPosition
   }));
 }
 
@@ -662,6 +1054,7 @@ async function main() {
     .map((category) => aggregateCategory(category, repositories.filter((row) => row.role === category.slug)))
     .filter((summary) => summary.count > 0)
     .sort((a, b) => b.count - a.count || a.korean.localeCompare(b.korean));
+  const comparativeInsights = enrichComparativeInsights(categorySummaries);
 
   const output = {
     generatedAt,
@@ -675,6 +1068,7 @@ async function main() {
       koreaTrendRepositories: repositories.filter((row) => row.trendScopes.includes("korea")).length,
       keyReferences: sum(repositories.map((row) => row.keyReferenceCount))
     },
+    comparativeInsights,
     categories: categorySummaries,
     repositories
   };
@@ -690,6 +1084,10 @@ async function main() {
     "maxTrendScore", "medianTrendScore", "totalStars", "medianStars", "keyReferences", "medianSourceDepth",
     "dominantFeatures", "dominantBuckets", "dominantDependencies", "dominantCommands", "dominantRisks", "firstInsight"
   ], categoryCsvRows(categorySummaries)));
+  await writeFile(outputComparisonCsv, renderCsv([
+    "slug", "korean", "repositories", "trendHeat", "useCase", "strength", "gap", "decision", "representativeRepo",
+    "topFeature", "topBucket", "topLanguages", "featureSummary", "bucketSummary", "referenceDensity", "depthPosition"
+  ], categoryComparisonCsvRows(categorySummaries)));
   await writeFile(outputRepoCsv, renderCsv([
     "name", "url", "category", "categoryKorean", "region", "language", "stars", "forks", "trendScore", "trendScopes",
     "compareScore", "maturity", "evidence", "fileCount", "dirCount", "sourceDepthScore", "keyReferenceCount",
@@ -698,6 +1096,7 @@ async function main() {
   ], repoCsvRows(repositories)));
 
   await writeFile(path.join(outputReportDir, "README.md"), renderMarkdown(renderMainReadme(output)));
+  await writeFile(path.join(outputReportDir, "comparative-report.md"), renderMarkdown(renderComparativeReport(output)));
   await writeFile(path.join(outputByCategoryDir, "README.md"), renderMarkdown(renderByCategoryIndex(categorySummaries)));
   for (const summary of categorySummaries) {
     const dir = path.join(outputByCategoryDir, summary.slug);

@@ -1,6 +1,6 @@
 # line/abc-def 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 ABC Def is an efficient design system using a three-tier token structure and Headless UI to create web components with consistent design and flexible customization.
 

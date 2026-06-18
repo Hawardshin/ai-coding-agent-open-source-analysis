@@ -1,6 +1,6 @@
 # line/liff-mock 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 LIFF Mock is a LIFF Plugin that make testing your LIFF app easy.
 

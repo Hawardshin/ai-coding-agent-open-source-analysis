@@ -1,6 +1,6 @@
 # line/webauthn-kotlin 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 WebAuthn Kotlin is an open-source toolkit for secure, password-less authentication in mobile apps. Developed in Kotlin, it integrates seamlessly with native Android apps, adhering to WebAuthn 2.0 standards for enhanced security and user experience.
 

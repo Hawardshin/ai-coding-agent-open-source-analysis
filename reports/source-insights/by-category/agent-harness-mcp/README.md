@@ -1,8 +1,8 @@
 # 에이전트 하네스/MCP 소스 인사이트
 
-생성 시각: 2026-06-18T15:31:47.340Z
+생성 시각: 2026-06-18T15:38:52.828Z
 
-MCP, 도구 등록부, workflow/orchestration, hooks/skills
+MCP, 도구 등록부, 워크플로 오케스트레이션, hooks/skills
 
 ## 요약
 
@@ -24,6 +24,7 @@ MCP, 도구 등록부, workflow/orchestration, hooks/skills
 | [레포별 소스 딥다이브](../../../source-deep-dives/repositories/README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
 | [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 역할군 페이지. |
 | [소스 트렌드 인사이트](../../README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
+| [상세 비교 리포트](../../comparative-report.md) | 카테고리 간 차이와 대표 레포 판단표. |
 | [카테고리별 소스 인사이트](../README.md) | 카테고리 기준의 소스 인사이트 페이지. |
 | [표/CSV 목차](../../../tables/README.md) | CSV와 표 중심 탐색. |
 
@@ -38,6 +39,19 @@ MCP, 도구 등록부, workflow/orchestration, hooks/skills
 - test/eval 표면이 90%로 높습니다. production reference로 볼 때 검증 harness와 CI를 먼저 비교하는 편이 좋습니다.
 - container/deploy 경로가 57%에서 확인됩니다. 로컬 데모형보다 운영 배포형 레포 비중이 높습니다.
 - AGENTS/CLAUDE/Codex/Cursor류 instruction 파일이 64%에서 보여 agent-native 개발 방식이 이미 레포 구조에 들어와 있습니다.
+
+## 이 카테고리 비교 총평
+
+| 항목 | 판단 |
+| --- | --- |
+| 읽는 목적 | MCP, 도구 등록부, 워크플로 오케스트레이션, hooks/skills를 실제 제품 구조에 넣을 때 기준 카테고리로 본다. |
+| 강점 | test/eval coverage 90%; MCP/tool 경로 76%; retrieval/memory 경로 84% |
+| 약점/검증 포인트 | 큰 구조적 공백은 표면상 작지만, 대표 레포별 위험 신호를 확인해야 함 |
+| 대표 feature | agent-runtime 94%, tests-evals 91%, retrieval-memory 84%, mcp/protocol 80%, security-policy 79% |
+| 대표 bucket | docs 100%, config 92%, eval 90%, agentRuntime 89%, retrieval 84% |
+| 대표 언어 | Python 175, TypeScript 133, unknown 59 |
+| 소스 근거 위치 | 소스 근거가 평균 이상, 레포당 핵심 참조 10.7개 |
+| 결론 | MCP, 도구 등록부, 워크플로 오케스트레이션, hooks/skills를 실제 제품 구조에 넣을 때 기준 카테고리로 본다. 먼저 mem0ai/mem0를 구조 기준점으로 보고, 현재성은 mem0ai/mem0와 대조한다. |
 
 ## 트렌드/소스 지표
 
@@ -165,6 +179,30 @@ _감지된 신호가 없습니다._
 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | 에이전트 하네스/MCP | 530 | 207 | 5246 | C | cli-first, api/server, agent-runtime, mcp/protocol, retrieval-memory, spec-artifacts, tests-evals, security-policy, container-deploy | MCP/tool runtime가 실제 소스 경로로 확인되는 agent harness형 레포 | 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/1/DeusData__codebase-memory-mcp.md) / [보고서](../../../global-trending/repositories/DeusData__codebase-memory-mcp.md) / [소스](../../../../sources/DeusData__codebase-memory-mcp) |
 | [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) | 에이전트 하네스/MCP | 528 | 207 | 15139 | TypeScript | cli-first, api/server, agent-runtime, mcp/protocol, retrieval-memory, spec-artifacts, tests-evals, security-policy, agent-instructions, web-runtime | MCP/tool runtime가 실제 소스 경로로 확인되는 agent harness형 레포 | 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/7/GLips__Figma-Context-MCP.md) / [보고서](../../../global-trending/repositories/GLips__Figma-Context-MCP.md) / [소스](../../../../sources/GLips__Figma-Context-MCP) |
 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | 에이전트 하네스/MCP | 519 | 210 | 133037 | Python | agent-runtime, mcp/protocol, spec-artifacts, tests-evals, security-policy, container-deploy | MCP/tool runtime가 실제 소스 경로로 확인되는 agent harness형 레포 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/f/anthropics__claude-code.md) / [보고서](../../../global-trending/repositories/anthropics__claude-code.md) / [소스](../../../../sources/anthropics__claude-code) |
+
+
+## 대표 레포 판단표
+
+| 순위 | 레포 | 비교 점수 | 트렌드 점수 | 언어 | 왜 봐야 하나 | 카테고리 안에서의 위치 | 위험/확인 | 링크 |
+| ---: | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 1 | [mem0ai/mem0](https://github.com/mem0ai/mem0) | 616 | 250 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/f/mem0ai__mem0.md) / [보고서](../../../global-trending/repositories/mem0ai__mem0.md) / [소스](../../../../sources/mem0ai__mem0) |
+| 2 | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 600 | 238 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/a/langchain-ai__langchain.md) / [보고서](../../../global-trending/repositories/langchain-ai__langchain.md) / [소스](../../../../sources/langchain-ai__langchain) |
+| 3 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | 598 | 249 | MDX | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | entrypoint 경로가 명확하지 않음 | [소스 딥다이브](../../../source-deep-dives/repositories/b/deepset-ai__haystack.md) / [보고서](../../../global-trending/repositories/deepset-ai__haystack.md) / [소스](../../../../sources/deepset-ai__haystack) |
+| 4 | [langgenius/dify](https://github.com/langgenius/dify) | 595 | 230 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/6/langgenius__dify.md) / [보고서](../../../global-trending/repositories/langgenius__dify.md) / [소스](../../../../sources/langgenius__dify) |
+| 5 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | 584 | 230 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/4/run-llama__llama_index.md) / [보고서](../../../global-trending/repositories/run-llama__llama_index.md) / [소스](../../../../sources/run-llama__llama_index) |
+| 6 | [mudler/LocalAI](https://github.com/mudler/LocalAI) | 575 | 222 | Go | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/5/mudler__LocalAI.md) / [보고서](../../../global-trending/repositories/mudler__LocalAI.md) / [소스](../../../../sources/mudler__LocalAI) |
+| 7 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 568 | 210 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/9/anomalyco__opencode.md) / [보고서](../../../global-trending/repositories/anomalyco__opencode.md) / [소스](../../../../sources/anomalyco__opencode) |
+| 8 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 567 | 215 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/2/ruvnet__ruflo.md) / [보고서](../../../global-trending/repositories/ruvnet__ruflo.md) / [소스](../../../../sources/ruvnet__ruflo) |
+| 9 | [mastra-ai/mastra](https://github.com/mastra-ai/mastra) | 563 | 217 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/0/mastra-ai__mastra.md) / [보고서](../../../global-trending/repositories/mastra-ai__mastra.md) / [소스](../../../../sources/mastra-ai__mastra) |
+| 10 | [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) | 557 | 221 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/a/EverMind-AI__EverOS.md) / [보고서](../../../global-trending/repositories/EverMind-AI__EverOS.md) / [소스](../../../../sources/EverMind-AI__EverOS) |
+| 11 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 556 | 208 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/4/crewAIInc__crewAI.md) / [보고서](../../../global-trending/repositories/crewAIInc__crewAI.md) / [소스](../../../../sources/crewAIInc__crewAI) |
+| 12 | [google/adk-python](https://github.com/google/adk-python) | 551 | 210 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/4/google__adk-python.md) / [보고서](../../../global-trending/repositories/google__adk-python.md) / [소스](../../../../sources/google__adk-python) |
+| 13 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 550 | 211 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/5/modelcontextprotocol__servers.md) / [보고서](../../../global-trending/repositories/modelcontextprotocol__servers.md) / [소스](../../../../sources/modelcontextprotocol__servers) |
+| 14 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 550 | 202 | Python | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/4/bytedance__deer-flow.md) / [보고서](../../../global-trending/repositories/bytedance__deer-flow.md) / [소스](../../../../sources/bytedance__deer-flow) |
+| 15 | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | 550 | 200 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/a/google-gemini__gemini-cli.md) / [보고서](../../../global-trending/repositories/google-gemini__gemini-cli.md) / [소스](../../../../sources/google-gemini__gemini-cli) |
+| 16 | [openai/codex](https://github.com/openai/codex) | 549 | 200 | Rust | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/9/openai__codex.md) / [보고서](../../../global-trending/repositories/openai__codex.md) / [소스](../../../../sources/openai__codex) |
+| 17 | [danny-avila/LibreChat](https://github.com/danny-avila/LibreChat) | 546 | 202 | TypeScript | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/5/danny-avila__LibreChat.md) / [보고서](../../../global-trending/repositories/danny-avila__LibreChat.md) / [소스](../../../../sources/danny-avila__LibreChat) |
+| 18 | [aaif-goose/goose](https://github.com/aaif-goose/goose) | 545 | 200 | Rust | MCP/tool 연결 방식, retrieval/memory 구조, spec/요구사항 산출물, 검증 표면 | 카테고리 중앙값보다 비교 점수 높음; 트렌드 점수 우위; 소스 깊이 우위; 핵심 파일 참조 충분 | 큰 위험 신호 없음 | [소스 딥다이브](../../../source-deep-dives/repositories/3/aaif-goose__goose.md) / [보고서](../../../global-trending/repositories/aaif-goose__goose.md) / [소스](../../../../sources/aaif-goose__goose) |
 
 
 ## 상위 레포 비교

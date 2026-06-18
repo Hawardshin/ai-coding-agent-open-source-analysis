@@ -1,6 +1,6 @@
 # hypn4/tossinvest-mcp 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 MCP server for Toss Securities (토스증권) Open API: Korean stock (KRX) quotes, holdings, orders & technical analysis for Claude and other AI agents. Read-only by default.
 

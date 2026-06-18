@@ -1,6 +1,6 @@
 # 발표/컨퍼런스
 
-생성 시각: 2026-06-18T15:31:33.431Z
+생성 시각: 2026-06-18T15:38:13.667Z
 
 conference session, keynote, webinar, event recap, recording, schedule, presentation-method reference를 묶은 카테고리입니다.
 

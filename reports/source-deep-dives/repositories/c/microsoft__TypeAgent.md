@@ -1,6 +1,6 @@
 # microsoft/TypeAgent 소스 딥다이브
 
-생성 시각: 2026-06-18T15:31:35.584Z
+생성 시각: 2026-06-18T15:38:17.010Z
 
 Sample code that explores an architecture for using language models to build a personal agent that can work with application agents.
 
