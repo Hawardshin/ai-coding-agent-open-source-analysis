@@ -1,6 +1,6 @@
 # raullenchai/Rapid-MLX Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 The fastest local AI engine for Apple Silicon. 4.2x faster than Ollama, 0.08s cached TTFT, 100% tool calling. 17 tool parsers, prompt cache, reasoning separation, cloud routing. Drop-in OpenAI replacement. Works with Claude Code, Cursor, Aider.
 
@@ -25,6 +25,7 @@ AI 인프라/서빙 관점에서 cli-first, api/server, agent/tool runtime 구�
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

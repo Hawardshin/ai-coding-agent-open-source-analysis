@@ -1,6 +1,6 @@
 # mock-server/mockserver-monorepo Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 MockServer is an HTTP(S) mock server and proxy for testing that lets you mock APIs, inspect and modify live traffic, and inject failures. It supports HTTP/1.1, HTTP/2, gRPC, WebSockets, TCP and more on a single port, with additional support for HTTP/3, message brokers, and AI/LLM APIs.
 
@@ -25,6 +25,7 @@ MockServer is an HTTP(S) mock server and proxy for testing that lets you mock AP
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

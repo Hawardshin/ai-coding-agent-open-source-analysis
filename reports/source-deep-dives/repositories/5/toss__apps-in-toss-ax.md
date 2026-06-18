@@ -1,6 +1,6 @@
 # toss/apps-in-toss-ax Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 An AI-powered MCP/CLI toolkit for AppsInToss mini-app development, designed to assist the entire workflow from documentation and code examples to project scaffolding, building, and deployment
 
@@ -25,6 +25,7 @@ An AI-powered MCP/CLI toolkit for AppsInToss mini-app development, designed to a
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

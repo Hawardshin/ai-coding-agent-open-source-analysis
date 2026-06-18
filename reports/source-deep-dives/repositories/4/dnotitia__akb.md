@@ -1,6 +1,6 @@
 # dnotitia/akb Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 AKB — Agent Knowledgebase. Organizational memory for AI agents: vault-scoped docs / tables / files unified by URI graph, served over MCP.
 
@@ -25,6 +25,7 @@ AKB — Agent Knowledgebase. Organizational memory for AI agents: vault-scoped d
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

@@ -1,6 +1,6 @@
 # johnisanerd/Apify-Naver-Search-API Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Naver Search API on Apify: a Python + MCP quick-start example. Search Korea's Naver across web, news, image, video, and shopping and get clean structured JSON. Call it from Python (uv) or load it as an MCP tool in Claude Cowork, Claude Code, Claude.ai, Cursor, and ChatGPT.
 
@@ -25,6 +25,7 @@ Naver Search API on Apify: a Python + MCP quick-start example. Search Korea's Na
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

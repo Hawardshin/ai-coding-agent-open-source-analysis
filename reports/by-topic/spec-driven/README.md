@@ -1,13 +1,13 @@
 # Spec-Driven and Requirements
 
-Generated: 2026-06-18T15:04:44.222Z
+Generated: 2026-06-18T15:13:01.107Z
 
 Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.
 
 ## 요약
 
 - 조사 단위: `spec-driven` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 41 reports이며, 주요 보고서 유형은 source-deep-dive-report (19), clone-structure-report (15), per-repository-report (3), spec-driven-report (2), category-guide (1)입니다.
+- 포함 범위: 42 reports이며, 주요 보고서 유형은 source-deep-dive-report (19), clone-structure-report (15), per-repository-report (3), spec-driven-report (2), category-guide (1)입니다.
 - 주요 출처 폴더: source-deep-dives (19), clone-structures (15), korea-trending/repositories (2), categories (1), global-trending/repositories (1).
 
 ## 총평
@@ -24,12 +24,13 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
+| [Source Trend Insights](../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 41
+- Reports: 42
 - Data: [data/report-categories/spec-driven.json](../../../data/report-categories/spec-driven.json)
 
 ## Report Types
@@ -39,6 +40,7 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 - per-repository-report: 3
 - spec-driven-report: 2
 - category-guide: 1
+- source-insight-report: 1
 - overview-report: 1
 
 ## Source Folders
@@ -49,6 +51,7 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 - spec-driven: 1
 - categories: 1
 - repository-insights: 1
+- source-insights: 1
 - root: 1
 - global-trending/repositories: 1
 
@@ -60,6 +63,7 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [Spec-Driven and Requirements](../../categories/spec-driven-requirements/README.md) | category-guide | categories | 156 |
 | [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
 | [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Spec-Driven and Requirements Source Insights](../../source-insights/by-category/spec-driven/README.md) | source-insight-report | source-insights | 155 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
 | [Engineering4AI/awesome-spec-driven-development Source Deep Dive](../../source-deep-dives/repositories/0/Engineering4AI__awesome-spec-driven-development.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [IBM/iac-spec-kit Source Deep Dive](../../source-deep-dives/repositories/0/IBM__iac-spec-kit.md) | source-deep-dive-report | source-deep-dives | -5 |
@@ -85,7 +89,6 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [Engineering4AI/awesome-spec-driven-development 구조 분석](../../clone-structures/Engineering4AI__awesome-spec-driven-development.md) | clone-structure-report | clone-structures | -28 |
 | [fabriqaai/specs.md 구조 분석](../../clone-structures/fabriqaai__specs.md.md) | clone-structure-report | clone-structures | -28 |
 | [Fission-AI/OpenSpec 구조 분석](../../clone-structures/Fission-AI__OpenSpec.md) | clone-structure-report | clone-structures | -28 |
-| [formulahendry/mcp-server-spec-driven-development 구조 분석](../../clone-structures/formulahendry__mcp-server-spec-driven-development.md) | clone-structure-report | clone-structures | -28 |
 
 
 ## All Reports
@@ -96,6 +99,7 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [Spec-Driven and Requirements](../../categories/spec-driven-requirements/README.md) | category-guide | categories | 156 |
 | [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
 | [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Spec-Driven and Requirements Source Insights](../../source-insights/by-category/spec-driven/README.md) | source-insight-report | source-insights | 155 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
 | [Engineering4AI/awesome-spec-driven-development Source Deep Dive](../../source-deep-dives/repositories/0/Engineering4AI__awesome-spec-driven-development.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [IBM/iac-spec-kit Source Deep Dive](../../source-deep-dives/repositories/0/IBM__iac-spec-kit.md) | source-deep-dive-report | source-deep-dives | -5 |

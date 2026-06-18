@@ -1,13 +1,13 @@
 # Agent Harness, MCP, and Orchestration
 
-Generated: 2026-06-18T15:04:44.222Z
+Generated: 2026-06-18T15:13:01.107Z
 
 Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.
 
 ## 요약
 
 - 조사 단위: `agent-harness` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 280 reports이며, 주요 보고서 유형은 source-deep-dive-report (135), per-repository-report (130), clone-structure-report (5), agent-harness-report (2), category-guide (2)입니다.
+- 포함 범위: 281 reports이며, 주요 보고서 유형은 source-deep-dive-report (135), per-repository-report (130), clone-structure-report (5), agent-harness-report (2), category-guide (2)입니다.
 - 주요 출처 폴더: source-deep-dives (135), global-trending/repositories (82), korea-trending/repositories (46), clone-structures (5), adjacent-tech (2).
 
 ## 총평
@@ -24,12 +24,13 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
+| [Source Trend Insights](../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 280
+- Reports: 281
 - Data: [data/report-categories/agent-harness.json](../../../data/report-categories/agent-harness.json)
 
 ## Report Types
@@ -43,6 +44,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 - llm-wiki-report: 2
 - presentation-report: 1
 - overview-report: 1
+- source-insight-report: 1
 
 ## Source Folders
 
@@ -57,6 +59,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 - llm-wiki/repositories: 2
 - presentations: 1
 - repository-insights: 1
+- source-insights: 1
 
 ## Recommended Reading Path
 
@@ -69,6 +72,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [MCP, Tools, and Protocols](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
 | [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Agent Harness and MCP Source Insights](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [jee3m/augmentative-knowledge-hooks 코드 레벨 분석](../../llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
@@ -91,7 +95,6 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [aliyun/alibabacloud-dataworks-mcp-server Source Deep Dive](../../source-deep-dives/repositories/2/aliyun__alibabacloud-dataworks-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [bripin123/rag-memory-epf-mcp Source Deep Dive](../../source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [ceaksan/mcp-code-search Source Deep Dive](../../source-deep-dives/repositories/2/ceaksan__mcp-code-search.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [dream8837z/hwp-hwpx-proposal-mcp Source Deep Dive](../../source-deep-dives/repositories/2/dream8837z__hwp-hwpx-proposal-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
 
 
 ## All Reports
@@ -105,6 +108,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [MCP, Tools, and Protocols](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
 | [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Agent Harness and MCP Source Insights](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [jee3m/augmentative-knowledge-hooks 코드 레벨 분석](../../llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |

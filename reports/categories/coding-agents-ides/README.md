@@ -1,6 +1,6 @@
 # Coding Agents and IDEs
 
-Generated: 2026-06-18T15:04:26.653Z
+Generated: 2026-06-18T15:12:39.601Z
 
 Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows.
 

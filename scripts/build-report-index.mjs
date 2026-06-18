@@ -52,9 +52,9 @@ const taxonomy = [
   {
     slug: "source-code-deep-dives",
     title: "Source Code Deep Dives",
-    description: "Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.",
-    keywords: ["source deep scan", "entrypoint", "runtime", "source path", "implementation evidence", "소스"],
-    pathRules: [/^reports\/source-deep-dives\//, /source-deep-scan/]
+    description: "Local source scans and source-derived insights with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.",
+    keywords: ["source deep scan", "source insight", "entrypoint", "runtime", "source path", "implementation evidence", "소스"],
+    pathRules: [/^reports\/source-deep-dives\//, /^reports\/source-insights\//, /source-deep-scan/, /source-trend-insights/]
   },
   {
     slug: "coding-agents",
@@ -131,7 +131,7 @@ const taxonomy = [
     title: "Comparisons and Similarity Maps",
     description: "Cross-repository comparisons, taxonomy matrices, and similarity clusters.",
     keywords: ["comparison", "compare", "taxonomy", "cluster", "matrix", "similarity", "비교"],
-    pathRules: [/^reports\/comparisons\//, /^reports\/repository-insights\//, /^reports\/source-deep-dives\//]
+    pathRules: [/^reports\/comparisons\//, /^reports\/repository-insights\//, /^reports\/source-deep-dives\//, /^reports\/source-insights\//]
   },
   {
     slug: "research-foundations",
@@ -321,6 +321,7 @@ async function listMarkdownFiles(dir, acc = []) {
 }
 
 function inferReportKind(filePath) {
+  if (filePath.includes("/source-insights/")) return "source-insight-report";
   if (filePath.includes("/source-deep-dives/")) return "source-deep-dive-report";
   if (filePath.includes("/repositories/")) return "per-repository-report";
   if (filePath.includes("/clone-structures/")) return "clone-structure-report";
@@ -385,6 +386,7 @@ function renderNavigationBlock(baseDir) {
 | ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
 | ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
+| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 `;
 }
@@ -674,6 +676,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
 | ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
+| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 
 ## Data Files
@@ -687,6 +690,8 @@ This page is the table-first view of the repository. Use it when you want to sca
 | ${linkFrom(baseDir, "data/report-tables/reports.csv", "data/report-tables/reports.csv")} | Flat table for every indexed report. |
 | ${linkFrom(baseDir, "data/report-tables/repository-insights.csv", "data/report-tables/repository-insights.csv")} | Repository-by-repository insights, risks, evidence, and next-read links. |
 | ${linkFrom(baseDir, "data/report-tables/source-deep-scan.csv", "data/report-tables/source-deep-scan.csv")} | Source-path-level deep scan rows, key file references, and implementation signals. |
+| ${linkFrom(baseDir, "data/report-tables/source-category-insights.csv", "data/report-tables/source-category-insights.csv")} | Category-level trend, feature, bucket, dependency, and risk aggregates from source evidence. |
+| ${linkFrom(baseDir, "data/report-tables/source-repo-feature-comparison.csv", "data/report-tables/source-repo-feature-comparison.csv")} | Repository-by-repository source feature comparison matrix. |
 
 ## Topic Summary Table
 

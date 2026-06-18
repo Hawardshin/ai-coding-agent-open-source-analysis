@@ -1,6 +1,6 @@
 # scvcoder/korean-law-alio-mcp Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 (개요) 국가법령정보센터와 알리오의 공공기관 내부규정을 검색·비교·분석하는 MCP. (도구) 법제처 87 + ALIO 공공기관 규정 23 = 110개 MCP 도구. (데이터) 1,600 법률, 10,000 행정규칙, 수만건 판례, 344개 공공기관 35,000 내부규정.
 
@@ -25,6 +25,7 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

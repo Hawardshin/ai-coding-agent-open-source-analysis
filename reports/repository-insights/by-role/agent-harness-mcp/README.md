@@ -1,6 +1,6 @@
 # Agent Harness and MCP
 
-Generated: 2026-06-18T15:04:28.365Z
+Generated: 2026-06-18T15:12:42.018Z
 
 에이전트 하네스/MCP 역할군에 속한 repository-level insight 목록입니다.
 
@@ -23,6 +23,7 @@ Generated: 2026-06-18T15:04:28.365Z
 | [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../README.md) | Repository-by-repository insights and role pages. |
 | [Source Deep Dives](../../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 | [Artifact Categories](../../../categories/README.md) | Artifact-level category index. |
 
 

@@ -1,13 +1,13 @@
 # Reports Reading Index
 
-Generated: 2026-06-18T15:04:44.222Z
+Generated: 2026-06-18T15:13:01.107Z
 
 This is the entry point for reading the repository directly from GitHub or a local checkout. Deployment-specific web UI has been removed; use these category pages and JSON indexes instead.
 
 ## 요약
 
 - 조사 단위: 레포에 커밋된 모든 Markdown 보고서의 최상위 읽기 지도입니다.
-- 포함 범위: 2,582 reports, 18 report topics, 16 folder README guides입니다.
+- 포함 범위: 2,594 reports, 18 report topics, 16 folder README guides입니다.
 - 탐색 방식: Start Here로 전체 흐름을 잡고, Topics로 주제별 조사에 들어가며, Folder README Map으로 실제 폴더 구조를 따라갑니다.
 
 ## 총평
@@ -16,7 +16,7 @@ This is the entry point for reading the repository directly from GitHub or a loc
 
 ## Scope
 
-- Markdown reports indexed: 2582
+- Markdown reports indexed: 2594
 - Topic categories: 18
 - Folder README guides: 16
 - Data index: [data/report-index.json](../data/report-index.json)
@@ -84,6 +84,7 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [Repository Insights](repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
 | [Source Deep Dives](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
+| [Source Trend Insights](source-insights/README.md) | source-insight-report | source-insights | 157 |
 | [Agent Harness and Orchestration](categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
 | [AI Infrastructure and Serving](categories/ai-infrastructure-serving/README.md) | category-guide | categories | 156 |
 | [AI Usage Trends](categories/ai-usage-trends/README.md) | category-guide | categories | 156 |
@@ -93,7 +94,6 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [Developer Productivity and DevTools](categories/developer-productivity-devtools/README.md) | category-guide | categories | 156 |
 | [Evals, Observability, and Quality](categories/evals-observability-quality/README.md) | category-guide | categories | 156 |
 | [Global AI Open Source](categories/global-ai-open-source/README.md) | category-guide | categories | 156 |
-| [Korean AI and Open Source](categories/korean-ai-open-source/README.md) | category-guide | categories | 156 |
 
 
 ## Topics
@@ -101,17 +101,17 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | Topic | Reports | Description |
 | --- | ---: | --- |
 | [Repository Deep Dives](by-topic/repository-deep-dives/README.md) | 2434 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. |
-| [Comparisons and Similarity Maps](by-topic/comparisons/README.md) | 1182 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. |
-| [Source Code Deep Dives](by-topic/source-code-deep-dives/README.md) | 1171 | Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence. |
+| [Comparisons and Similarity Maps](by-topic/comparisons/README.md) | 1194 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. |
+| [Source Code Deep Dives](by-topic/source-code-deep-dives/README.md) | 1183 | Local source scans and source-derived insights with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence. |
 | [Global Trending Open Source](by-topic/global-trending-open-source/README.md) | 502 | Global trending open-source corpus and per-repository reports. |
 | [Korea Trending Open Source](by-topic/korea-trending-open-source/README.md) | 502 | Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports. |
-| [LLM Wiki, RAG, and Knowledge Bases](by-topic/llm-wiki/README.md) | 291 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. |
-| [Agent Harness, MCP, and Orchestration](by-topic/agent-harness/README.md) | 280 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. |
+| [LLM Wiki, RAG, and Knowledge Bases](by-topic/llm-wiki/README.md) | 292 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. |
+| [Agent Harness, MCP, and Orchestration](by-topic/agent-harness/README.md) | 281 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. |
 | [Clone Structure and Inventory](by-topic/clone-structure-inventory/README.md) | 128 | Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports. |
-| [Coding Agents and IDEs](by-topic/coding-agents/README.md) | 124 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. |
-| [Spec-Driven and Requirements](by-topic/spec-driven/README.md) | 41 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. |
+| [Coding Agents and IDEs](by-topic/coding-agents/README.md) | 125 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. |
+| [Spec-Driven and Requirements](by-topic/spec-driven/README.md) | 42 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. |
 | [Start Here](by-topic/start-here/README.md) | 21 | High-level maps and entry points for reading the repository. |
-| [Adjacent AI Infrastructure](by-topic/adjacent-infrastructure/README.md) | 18 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. |
+| [Adjacent AI Infrastructure](by-topic/adjacent-infrastructure/README.md) | 19 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. |
 | [Category Guides](by-topic/category-guides/README.md) | 18 | Generated category pages that group open-source, research, presentation, and trend artifacts. |
 | [Presentations and Conferences](by-topic/presentations-conferences/README.md) | 9 | Conference, talk, webinar, and presentation-method research. |
 | [Research Foundations](by-topic/research-foundations/README.md) | 6 | Evidence catalogs, conflicting theories, source catalogs, and research synthesis. |

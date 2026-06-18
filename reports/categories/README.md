@@ -1,6 +1,6 @@
 # Category Index
 
-Generated: 2026-06-18T15:04:26.653Z
+Generated: 2026-06-18T15:12:39.601Z
 
 This folder reorganizes the repository's scattered open-source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the original data, reports, and cloned source directories.
 

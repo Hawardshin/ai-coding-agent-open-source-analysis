@@ -1,14 +1,14 @@
 # Comparisons and Similarity Maps
 
-Generated: 2026-06-18T15:04:44.222Z
+Generated: 2026-06-18T15:13:01.107Z
 
 Cross-repository comparisons, taxonomy matrices, and similarity clusters.
 
 ## 요약
 
 - 조사 단위: `comparisons` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 1,182 reports이며, 주요 보고서 유형은 source-deep-dive-report (1165), overview-report (11), comparison-report (2), llm-wiki-report (2), per-repository-report (1)입니다.
-- 주요 출처 폴더: source-deep-dives (1165), repository-insights (12), comparisons (2), global-trending/repositories (1), llm-wiki/01-llm-wiki-100-selection-and-patterns.md (1).
+- 포함 범위: 1,194 reports이며, 주요 보고서 유형은 source-deep-dive-report (1165), source-insight-report (12), overview-report (11), comparison-report (2), llm-wiki-report (2)입니다.
+- 주요 출처 폴더: source-deep-dives (1165), repository-insights (12), source-insights (12), comparisons (2), global-trending/repositories (1).
 
 ## 총평
 
@@ -24,17 +24,19 @@ Cross-repository comparisons, taxonomy matrices, and similarity clusters.
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
+| [Source Trend Insights](../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 1182
+- Reports: 1194
 - Data: [data/report-categories/comparisons.json](../../../data/report-categories/comparisons.json)
 
 ## Report Types
 
 - source-deep-dive-report: 1165
+- source-insight-report: 12
 - overview-report: 11
 - comparison-report: 2
 - llm-wiki-report: 2
@@ -45,6 +47,7 @@ Cross-repository comparisons, taxonomy matrices, and similarity clusters.
 
 - source-deep-dives: 1165
 - repository-insights: 12
+- source-insights: 12
 - comparisons: 2
 - llm-wiki/01-llm-wiki-100-selection-and-patterns.md: 1
 - llm-wiki/02-code-level-pipeline-comparison.md: 1
@@ -60,8 +63,10 @@ Cross-repository comparisons, taxonomy matrices, and similarity clusters.
 | [LLM Wiki 100 Code-Level Pipeline Comparison](../../llm-wiki/02-code-level-pipeline-comparison.md) | llm-wiki-report | llm-wiki/02-code-level-pipeline-comparison.md | 182 |
 | [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
+| [Source Trend Insights](../../source-insights/README.md) | source-insight-report | source-insights | 157 |
 | [Repository Insights by Role](../../repository-insights/by-role/README.md) | overview-report | repository-insights | 156 |
 | [Source Deep Dives by Topic](../../source-deep-dives/by-topic/README.md) | source-deep-dive-report | source-deep-dives | 156 |
+| [Source Insights by Category](../../source-insights/by-category/README.md) | source-insight-report | source-insights | 156 |
 | [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [AI Infrastructure and Serving](../../repository-insights/by-role/ai-infrastructure-serving/README.md) | overview-report | repository-insights | 155 |
 | [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
@@ -82,8 +87,6 @@ Cross-repository comparisons, taxonomy matrices, and similarity clusters.
 | [LLM Wiki, RAG, and Knowledge Source Deep Dive](../../source-deep-dives/by-topic/llm-wiki-rag/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Security, Governance, and Safety Source Deep Dive](../../source-deep-dives/by-topic/security-governance/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | 155 |
-| [Source Repository Deep Dives](../../source-deep-dives/repositories/README.md) | source-deep-dive-report | source-deep-dives | 36 |
-| [Source Repository Deep Dives: Shard 0](../../source-deep-dives/repositories/0/README.md) | source-deep-dive-report | source-deep-dives | 35 |
 
 
 ## All Reports
@@ -96,8 +99,10 @@ Cross-repository comparisons, taxonomy matrices, and similarity clusters.
 | [LLM Wiki 100 Code-Level Pipeline Comparison](../../llm-wiki/02-code-level-pipeline-comparison.md) | llm-wiki-report | llm-wiki/02-code-level-pipeline-comparison.md | 182 |
 | [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
+| [Source Trend Insights](../../source-insights/README.md) | source-insight-report | source-insights | 157 |
 | [Repository Insights by Role](../../repository-insights/by-role/README.md) | overview-report | repository-insights | 156 |
 | [Source Deep Dives by Topic](../../source-deep-dives/by-topic/README.md) | source-deep-dive-report | source-deep-dives | 156 |
+| [Source Insights by Category](../../source-insights/by-category/README.md) | source-insight-report | source-insights | 156 |
 | [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [AI Infrastructure and Serving](../../repository-insights/by-role/ai-infrastructure-serving/README.md) | overview-report | repository-insights | 155 |
 | [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
@@ -118,6 +123,16 @@ Cross-repository comparisons, taxonomy matrices, and similarity clusters.
 | [LLM Wiki, RAG, and Knowledge Source Deep Dive](../../source-deep-dives/by-topic/llm-wiki-rag/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Security, Governance, and Safety Source Deep Dive](../../source-deep-dives/by-topic/security-governance/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Agent Harness and MCP Source Insights](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
+| [AI Infrastructure and Serving Source Insights](../../source-insights/by-category/ai-infrastructure-serving/README.md) | source-insight-report | source-insights | 155 |
+| [Coding Agent and IDE Source Insights](../../source-insights/by-category/coding-agent-ide/README.md) | source-insight-report | source-insights | 155 |
+| [Data and Vector Platforms Source Insights](../../source-insights/by-category/data-vector-platform/README.md) | source-insight-report | source-insights | 155 |
+| [Developer Productivity and DevTools Source Insights](../../source-insights/by-category/developer-productivity/README.md) | source-insight-report | source-insights | 155 |
+| [Evals, Observability, and Quality Source Insights](../../source-insights/by-category/eval-observability/README.md) | source-insight-report | source-insights | 155 |
+| [General AI Open Source Source Insights](../../source-insights/by-category/general-ai-open-source/README.md) | source-insight-report | source-insights | 155 |
+| [LLM Wiki, RAG, and Knowledge Source Insights](../../source-insights/by-category/llm-wiki-rag/README.md) | source-insight-report | source-insights | 155 |
+| [Security, Governance, and Safety Source Insights](../../source-insights/by-category/security-governance/README.md) | source-insight-report | source-insights | 155 |
+| [Spec-Driven and Requirements Source Insights](../../source-insights/by-category/spec-driven/README.md) | source-insight-report | source-insights | 155 |
 | [Source Repository Deep Dives](../../source-deep-dives/repositories/README.md) | source-deep-dive-report | source-deep-dives | 36 |
 | [Source Repository Deep Dives: Shard 0](../../source-deep-dives/repositories/0/README.md) | source-deep-dive-report | source-deep-dives | 35 |
 | [Source Repository Deep Dives: Shard 1](../../source-deep-dives/repositories/1/README.md) | source-deep-dive-report | source-deep-dives | 35 |

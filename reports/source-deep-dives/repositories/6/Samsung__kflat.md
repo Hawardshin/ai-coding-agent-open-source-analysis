@@ -1,6 +1,6 @@
 # Samsung/kflat Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 KFLAT is a tool to serialize memory of selected variables from the running Linux kernel and organize it into a single memory block of consecutive addresses. It relies on recipes written in the code that specify the type and memory layout of the variables being serialized. After the flatten memory image is created KFLAT allows to re-instantiate the memory image into the process address space of a user-land program (most likely on other machine). KFLAT stores information about location of the pointers in the dumped memory block therefore it is enough to map the entire memory on the target machine and fix these parts of memory which constitute pointers to point to proper locations in the newly created memory block.
 
@@ -25,6 +25,7 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

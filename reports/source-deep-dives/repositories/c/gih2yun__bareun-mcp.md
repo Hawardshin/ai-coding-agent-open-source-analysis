@@ -1,6 +1,6 @@
 # gih2yun/bareun-mcp Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Korean NLP & spell/grammar checking MCP server (Bareun) — remote streamable-HTTP at api.bareun.ai/mcp
 
@@ -25,6 +25,7 @@ Korean NLP & spell/grammar checking MCP server (Bareun) — remote streamable-HT
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

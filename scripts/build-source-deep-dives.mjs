@@ -733,6 +733,7 @@ function renderNavigation(baseDir) {
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository assessment rows. |
 | ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Source-path-level findings by topic. |
 | ${linkFrom(baseDir, "reports/source-deep-dives/repositories/README.md", "Source Repository Deep Dives")} | One Markdown deep dive per cloned repository. |
+| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
 `;
 }
 

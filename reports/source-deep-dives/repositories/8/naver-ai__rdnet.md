@@ -1,6 +1,6 @@
 # naver-ai/rdnet Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 [ECCV2024] Official implementation of paper, "DenseNets Reloaded: Paradigm Shift Beyond ResNets and ViTs".
 
@@ -25,6 +25,7 @@ Generated: 2026-06-18T15:04:30.215Z
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

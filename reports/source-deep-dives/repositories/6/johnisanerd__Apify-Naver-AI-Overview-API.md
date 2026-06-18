@@ -1,6 +1,6 @@
 # johnisanerd/Apify-Naver-AI-Overview-API Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Naver AI Overview API on Apify (네이버 AI 브리핑 API): track Korea's Naver AI answers as clean JSON. A Python + MCP quick-start example. Monitor brand visibility and answer-engine-optimization (AEO) across Korean queries, and load it as an MCP tool in Claude, Cursor, and ChatGPT.
 
@@ -25,6 +25,7 @@ Naver AI Overview API on Apify (네이버 AI 브리핑 API): track Korea's Naver
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

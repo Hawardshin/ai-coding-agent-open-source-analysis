@@ -1,6 +1,6 @@
 # MUSE-CODE-SPACE/SLMAgent Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 🎓 로컬 SLM(소형 언어 모델) AI 에이전트를 프레임워크 없이 밑바닥부터 만드는 교육용 강좌 · Ollama + qwen2.5 · 100% 오프라인 · 학습 앱 LLM Master 실습 코스
 
@@ -25,6 +25,7 @@ AI 인프라/서빙 관점에서 cli-first, agent/tool runtime, retrieval/vector
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

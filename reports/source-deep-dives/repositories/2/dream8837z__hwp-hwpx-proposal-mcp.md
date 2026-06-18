@@ -1,6 +1,6 @@
 # dream8837z/hwp-hwpx-proposal-mcp Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 An AI agent specialized in drafting Korean proposals (.hwp / .hwpx) — reads, writes, and edits Hancom Office files while strictly adhering to predefined formatting rules: character width, letter spacing, margins, line spacing, fonts, font sizes, and bullet styles.
 
@@ -25,6 +25,7 @@ An AI agent specialized in drafting Korean proposals (.hwp / .hwpx) — reads, w
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

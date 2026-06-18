@@ -1,6 +1,6 @@
 # MelonS/MelonS-Agents Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 An agent that builds, plays, and verifies its own game ? a colony-sim prototype gated by 15-scenario input-level repro tests + isolated-grader rubric verdicts ? plus production media skills: music-video (60s 9:16 shorts, beat-aligned, genre-aware) and Korean job-board digest. agentskills.io-spec compliant. v0.4.0.
 
@@ -25,6 +25,7 @@ AI 인프라/서빙 관점에서 agent/tool runtime, retrieval/vector path, spec
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

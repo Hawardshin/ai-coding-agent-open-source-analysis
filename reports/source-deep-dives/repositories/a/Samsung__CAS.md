@@ -1,6 +1,6 @@
 # Samsung/CAS Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Code Aware Services (CAS) is a set of tools for extracting information from a (especially large) source code trees. It consists of Build Awareness Service (BAS) and Function/Type database (FTDB). BAS is a tool for extracting information how particular S/W image is created from ongoing builds. FTDB transforms predefined source code information (like information about functions and types) into easily accessible format (like JSON) which can be used by a number of applications.
 
@@ -25,6 +25,7 @@ Code Aware Services (CAS) is a set of tools for extracting information from a (e
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

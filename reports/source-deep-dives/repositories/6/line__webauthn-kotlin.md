@@ -1,6 +1,6 @@
 # line/webauthn-kotlin Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 WebAuthn Kotlin is an open-source toolkit for secure, password-less authentication in mobile apps. Developed in Kotlin, it integrates seamlessly with native Android apps, adhering to WebAuthn 2.0 standards for enhanced security and user experience.
 
@@ -25,6 +25,7 @@ WebAuthn Kotlin is an open-source toolkit for secure, password-less authenticati
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

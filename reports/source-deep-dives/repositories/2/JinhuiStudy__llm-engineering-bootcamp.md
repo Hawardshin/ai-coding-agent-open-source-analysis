@@ -1,6 +1,6 @@
 # JinhuiStudy/llm-engineering-bootcamp Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 14-day hardcore LLM engineering bootcamp curriculum — Prompt / Structured Output / Tool Use / RAG / Eval / Agent / MCP / Observability / Production. Free resources, self-hostable, Korean+English.
 
@@ -25,6 +25,7 @@ Generated: 2026-06-18T15:04:30.215Z
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

@@ -1,6 +1,6 @@
 # Korean AI and Open Source
 
-Generated: 2026-06-18T15:04:26.653Z
+Generated: 2026-06-18T15:12:39.601Z
 
 Korea-trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals.
 

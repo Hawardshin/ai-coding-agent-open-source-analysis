@@ -1,14 +1,14 @@
 # Source Code Deep Dives
 
-Generated: 2026-06-18T15:04:44.222Z
+Generated: 2026-06-18T15:13:01.107Z
 
-Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.
+Local source scans and source-derived insights with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.
 
 ## 요약
 
 - 조사 단위: `source-code-deep-dives` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 1,171 reports이며, 주요 보고서 유형은 source-deep-dive-report (1165), llm-wiki-report (2), comparison-report (1), infrastructure-report (1), korea-trending-report (1)입니다.
-- 주요 출처 폴더: source-deep-dives (1165), adjacent-tech (1), comparisons (1), korea-trending (1), llm-wiki/00-llm-wiki-100-summary.md (1).
+- 포함 범위: 1,183 reports이며, 주요 보고서 유형은 source-deep-dive-report (1165), source-insight-report (12), llm-wiki-report (2), comparison-report (1), infrastructure-report (1)입니다.
+- 주요 출처 폴더: source-deep-dives (1165), source-insights (12), adjacent-tech (1), comparisons (1), korea-trending (1).
 
 ## 총평
 
@@ -24,17 +24,19 @@ Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, s
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
+| [Source Trend Insights](../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 1171
+- Reports: 1183
 - Data: [data/report-categories/source-code-deep-dives.json](../../../data/report-categories/source-code-deep-dives.json)
 
 ## Report Types
 
 - source-deep-dive-report: 1165
+- source-insight-report: 12
 - llm-wiki-report: 2
 - comparison-report: 1
 - korea-trending-report: 1
@@ -44,6 +46,7 @@ Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, s
 ## Source Folders
 
 - source-deep-dives: 1165
+- source-insights: 12
 - comparisons: 1
 - llm-wiki/00-llm-wiki-100-summary.md: 1
 - llm-wiki/01-llm-wiki-100-selection-and-patterns.md: 1
@@ -60,7 +63,9 @@ Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, s
 | [LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약](../../llm-wiki/01-llm-wiki-100-selection-and-patterns.md) | llm-wiki-report | llm-wiki/01-llm-wiki-100-selection-and-patterns.md | 182 |
 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](../../korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | 157 |
 | [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
+| [Source Trend Insights](../../source-insights/README.md) | source-insight-report | source-insights | 157 |
 | [Source Deep Dives by Topic](../../source-deep-dives/by-topic/README.md) | source-deep-dive-report | source-deep-dives | 156 |
+| [Source Insights by Category](../../source-insights/by-category/README.md) | source-insight-report | source-insights | 156 |
 | [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [AI Infrastructure and Serving Source Deep Dive](../../source-deep-dives/by-topic/ai-infrastructure-serving/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Coding Agent and IDE Source Deep Dive](../../source-deep-dives/by-topic/coding-agent-ide/README.md) | source-deep-dive-report | source-deep-dives | 155 |
@@ -71,20 +76,18 @@ Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, s
 | [LLM Wiki, RAG, and Knowledge Source Deep Dive](../../source-deep-dives/by-topic/llm-wiki-rag/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Security, Governance, and Safety Source Deep Dive](../../source-deep-dives/by-topic/security-governance/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Agent Harness and MCP Source Insights](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
+| [AI Infrastructure and Serving Source Insights](../../source-insights/by-category/ai-infrastructure-serving/README.md) | source-insight-report | source-insights | 155 |
+| [Coding Agent and IDE Source Insights](../../source-insights/by-category/coding-agent-ide/README.md) | source-insight-report | source-insights | 155 |
+| [Data and Vector Platforms Source Insights](../../source-insights/by-category/data-vector-platform/README.md) | source-insight-report | source-insights | 155 |
+| [Developer Productivity and DevTools Source Insights](../../source-insights/by-category/developer-productivity/README.md) | source-insight-report | source-insights | 155 |
+| [Evals, Observability, and Quality Source Insights](../../source-insights/by-category/eval-observability/README.md) | source-insight-report | source-insights | 155 |
+| [General AI Open Source Source Insights](../../source-insights/by-category/general-ai-open-source/README.md) | source-insight-report | source-insights | 155 |
+| [LLM Wiki, RAG, and Knowledge Source Insights](../../source-insights/by-category/llm-wiki-rag/README.md) | source-insight-report | source-insights | 155 |
+| [Security, Governance, and Safety Source Insights](../../source-insights/by-category/security-governance/README.md) | source-insight-report | source-insights | 155 |
+| [Spec-Driven and Requirements Source Insights](../../source-insights/by-category/spec-driven/README.md) | source-insight-report | source-insights | 155 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
-| [Source Repository Deep Dives](../../source-deep-dives/repositories/README.md) | source-deep-dive-report | source-deep-dives | 36 |
-| [Source Repository Deep Dives: Shard 0](../../source-deep-dives/repositories/0/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 1](../../source-deep-dives/repositories/1/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 2](../../source-deep-dives/repositories/2/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 3](../../source-deep-dives/repositories/3/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 4](../../source-deep-dives/repositories/4/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 5](../../source-deep-dives/repositories/5/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 6](../../source-deep-dives/repositories/6/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 7](../../source-deep-dives/repositories/7/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 8](../../source-deep-dives/repositories/8/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard 9](../../source-deep-dives/repositories/9/README.md) | source-deep-dive-report | source-deep-dives | 35 |
-| [Source Repository Deep Dives: Shard a](../../source-deep-dives/repositories/a/README.md) | source-deep-dive-report | source-deep-dives | 35 |
 
 
 ## All Reports
@@ -96,7 +99,9 @@ Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, s
 | [LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약](../../llm-wiki/01-llm-wiki-100-selection-and-patterns.md) | llm-wiki-report | llm-wiki/01-llm-wiki-100-selection-and-patterns.md | 182 |
 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](../../korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | 157 |
 | [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
+| [Source Trend Insights](../../source-insights/README.md) | source-insight-report | source-insights | 157 |
 | [Source Deep Dives by Topic](../../source-deep-dives/by-topic/README.md) | source-deep-dive-report | source-deep-dives | 156 |
+| [Source Insights by Category](../../source-insights/by-category/README.md) | source-insight-report | source-insights | 156 |
 | [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [AI Infrastructure and Serving Source Deep Dive](../../source-deep-dives/by-topic/ai-infrastructure-serving/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Coding Agent and IDE Source Deep Dive](../../source-deep-dives/by-topic/coding-agent-ide/README.md) | source-deep-dive-report | source-deep-dives | 155 |
@@ -107,6 +112,16 @@ Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, s
 | [LLM Wiki, RAG, and Knowledge Source Deep Dive](../../source-deep-dives/by-topic/llm-wiki-rag/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Security, Governance, and Safety Source Deep Dive](../../source-deep-dives/by-topic/security-governance/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Agent Harness and MCP Source Insights](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
+| [AI Infrastructure and Serving Source Insights](../../source-insights/by-category/ai-infrastructure-serving/README.md) | source-insight-report | source-insights | 155 |
+| [Coding Agent and IDE Source Insights](../../source-insights/by-category/coding-agent-ide/README.md) | source-insight-report | source-insights | 155 |
+| [Data and Vector Platforms Source Insights](../../source-insights/by-category/data-vector-platform/README.md) | source-insight-report | source-insights | 155 |
+| [Developer Productivity and DevTools Source Insights](../../source-insights/by-category/developer-productivity/README.md) | source-insight-report | source-insights | 155 |
+| [Evals, Observability, and Quality Source Insights](../../source-insights/by-category/eval-observability/README.md) | source-insight-report | source-insights | 155 |
+| [General AI Open Source Source Insights](../../source-insights/by-category/general-ai-open-source/README.md) | source-insight-report | source-insights | 155 |
+| [LLM Wiki, RAG, and Knowledge Source Insights](../../source-insights/by-category/llm-wiki-rag/README.md) | source-insight-report | source-insights | 155 |
+| [Security, Governance, and Safety Source Insights](../../source-insights/by-category/security-governance/README.md) | source-insight-report | source-insights | 155 |
+| [Spec-Driven and Requirements Source Insights](../../source-insights/by-category/spec-driven/README.md) | source-insight-report | source-insights | 155 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [Source Repository Deep Dives](../../source-deep-dives/repositories/README.md) | source-deep-dive-report | source-deep-dives | 36 |

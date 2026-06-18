@@ -1,6 +1,6 @@
 # microsoft/BitNet Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Local clone structure analysis: 71 files, 15 directories.
 
@@ -25,6 +25,7 @@ AI 인프라/서빙 관점에서 retrieval/vector path, spec/docs-driven, eval/t
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

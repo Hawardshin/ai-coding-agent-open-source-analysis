@@ -1,6 +1,6 @@
 # pna03100/hexa-swarm-template Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Claude-native enterprise delivery methodology — Copier template + hexaswarm-core CLI. 6-agent architecture, S1–S6 safety invariants, 28 production deployments. Korea × Japan APAC: LUMENRAI Corp × No.1 Solutions Sales Agency Agreement signed 2026-04-14 (Singapore law). Q2 2026 Korean on-premise AI launch. Claude Code Max-native.
 
@@ -25,6 +25,7 @@ Claude-native enterprise delivery methodology — Copier template + hexaswarm-co
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

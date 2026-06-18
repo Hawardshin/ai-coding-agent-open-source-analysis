@@ -1,6 +1,6 @@
 # Samsung/SamsungAutomationStudio Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Samsung Automation Studio is to provide development tools and execution environment that can easily configure application logic by connecting both Samsung service and 3rd party service. This project is to share the node for open source NodeRED developed by Samsung Automation Studio team to the community. If you are using nodered, you can easily install the node we provide. And you can use Samsung's IoT and AI-related services more easily, and you can have an extended experience in conjunction with your own services.
 
@@ -25,6 +25,7 @@ Samsung Automation Studio is to provide development tools and execution environm
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

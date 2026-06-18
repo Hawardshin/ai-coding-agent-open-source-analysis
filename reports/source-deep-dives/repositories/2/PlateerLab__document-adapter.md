@@ -1,6 +1,6 @@
 # PlateerLab/document-adapter Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 LLM이 DOCX/PPTX/HWPX 문서를 직접 편집할 수 있게 해주는 통합 어댑터 + MCP 서버. Claude Desktop / Claude Code / Anthropic API Tool Use 호환. pip install document-adapter
 
@@ -25,6 +25,7 @@ LLM이 DOCX/PPTX/HWPX 문서를 직접 편집할 수 있게 해주는 통합 어
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

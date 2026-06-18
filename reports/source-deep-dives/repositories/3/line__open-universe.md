@@ -1,6 +1,6 @@
 # line/open-universe Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Open implementation of UNIVERSE and UNIVERSE++ diffusion-based speech enhancement models.
 
@@ -25,6 +25,7 @@ Open implementation of UNIVERSE and UNIVERSE++ diffusion-based speech enhancemen
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

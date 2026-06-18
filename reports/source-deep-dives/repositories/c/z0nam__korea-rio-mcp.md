@@ -1,6 +1,6 @@
 # z0nam/korea-rio-mcp Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 Regional Input-Output economic-impact analysis as an MCP server, built on Bank of Korea regional IO tables. Computes production/value-added/employment induced effects (in-region vs out-of-region) for Claude Code, Codex, Gemini CLI.
 
@@ -25,6 +25,7 @@ Regional Input-Output economic-impact analysis as an MCP server, built on Bank o
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

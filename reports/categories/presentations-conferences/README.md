@@ -1,6 +1,6 @@
 # Presentations and Conferences
 
-Generated: 2026-06-18T15:04:26.653Z
+Generated: 2026-06-18T15:12:39.601Z
 
 Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation-method references.
 

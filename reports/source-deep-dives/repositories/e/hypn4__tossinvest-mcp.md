@@ -1,6 +1,6 @@
 # hypn4/tossinvest-mcp Source Deep Dive
 
-Generated: 2026-06-18T15:04:30.215Z
+Generated: 2026-06-18T15:12:44.535Z
 
 MCP server for Toss Securities (토스증권) Open API: Korean stock (KRX) quotes, holdings, orders & technical analysis for Claude and other AI agents. Read-only by default.
 
@@ -25,6 +25,7 @@ MCP server for Toss Securities (토스증권) Open API: Korean stock (KRX) quote
 | [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
 | [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
 | [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
+| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 
 
 ## Repository Context

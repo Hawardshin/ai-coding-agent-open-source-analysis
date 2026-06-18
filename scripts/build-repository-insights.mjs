@@ -487,6 +487,7 @@ function renderNavigation(baseDir) {
 | ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights and role pages. |
 | ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
+| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level category index. |
 `;
 }

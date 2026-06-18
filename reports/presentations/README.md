@@ -1,6 +1,6 @@
 # Presentation and Conference Reports
 
-Generated: 2026-06-18T15:04:44.222Z
+Generated: 2026-06-18T15:13:01.107Z
 
 Conference, presentation, Amazon/AWS, big-tech, Korea, and AI usage trend materials.
 
@@ -24,6 +24,7 @@ Conference, presentation, Amazon/AWS, big-tech, Korea, and AI usage trend materi
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
+| [Source Trend Insights](../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
