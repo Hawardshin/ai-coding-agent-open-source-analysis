@@ -25,13 +25,16 @@ This repository is meant to be read directly through GitHub or a local checkout.
 | [reports/README.md](reports/README.md) | Main reading map for every report, including start-here, topics, and folder README links. |
 | [reports/by-topic/README.md](reports/by-topic/README.md) | Topic-first report navigation. |
 | [reports/tables/README.md](reports/tables/README.md) | Table-first report navigation and CSV exports. |
+| [reports/repository-insights/README.md](reports/repository-insights/README.md) | Repository-by-repository insights, risks, evidence level, and next-read links. |
 | [reports/categories/README.md](reports/categories/README.md) | Artifact-level categories for repositories, papers, presentations, and references. |
 
 - `reports/categories/`: category-first reading folders for open source, research papers, conference materials, and trend references.
 - `reports/README.md`: report-first reading entry point for every Markdown report in this repository.
 - `reports/by-topic/`: topic-first report folders for source-scan, spec-driven, LLM wiki, Korean/global trending, conferences, research, and repository deep dives.
 - `reports/tables/`: table-first reading view with topic summary, folder summary, topic/type matrix, and links to CSV exports.
+- `reports/repository-insights/`: repository-by-repository insight report and role-based README pages.
 - `reports/*/README.md`: folder-level navigation pages for major report groups such as `repositories`, `global-trending`, `korea-trending`, `llm-wiki`, `clone-structures`, `research`, and `spec-driven`.
+- `data/repository-insights.json`: complete repository-level insight records.
 - `data/report-index.json`: complete report-level reading index across all Markdown reports.
 - `data/report-categories/*.json`: complete report membership lists for each report topic.
 - `data/report-tables/*.csv`: spreadsheet-friendly tables for topics, folders, topic/type matrix, and all reports.
@@ -70,6 +73,7 @@ This repository is meant to be read directly through GitHub or a local checkout.
 - `reports/categories/`: category-first reading index with links back to data, reports, and cloned source directories.
 - `reports/by-topic/`: report-first reading index grouping every Markdown report by investigation line.
 - `reports/tables/`: tabular index and CSV entry points for scanning the full report structure.
+- `reports/repository-insights/`: role-based repository insight index with per-repo assessment rows.
 - `scripts/`: local automation for metadata collection and cloning.
 
 ## Cross-Repository Reports

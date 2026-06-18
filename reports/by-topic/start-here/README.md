@@ -1,13 +1,13 @@
 # Start Here
 
-Generated: 2026-06-18T13:59:01.143Z
+Generated: 2026-06-18T14:32:17.400Z
 
 High-level maps and entry points for reading the repository.
 
 ## 요약
 
 - 조사 단위: `start-here` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 19 reports이며, 주요 보고서 유형은 llm-wiki-report (3), overview-report (3), research-synthesis (3), comparison-report (2), presentation-report (2)입니다.
+- 포함 범위: 20 reports이며, 주요 보고서 유형은 overview-report (4), llm-wiki-report (3), research-synthesis (3), comparison-report (2), presentation-report (2)입니다.
 - 주요 출처 폴더: research (3), root (3), comparisons (2), presentations (2), adjacent-tech (1).
 
 ## 총평
@@ -22,19 +22,20 @@ High-level maps and entry points for reading the repository.
 | [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 19
+- Reports: 20
 - Data: [data/report-categories/start-here.json](../../../data/report-categories/start-here.json)
 
 ## Report Types
 
+- overview-report: 4
 - llm-wiki-report: 3
 - research-synthesis: 3
-- overview-report: 3
 - comparison-report: 2
 - presentation-report: 2
 - category-guide: 1
@@ -59,6 +60,7 @@ High-level maps and entry points for reading the repository.
 - agent-harness: 1
 - global-trending: 1
 - korea-trending: 1
+- repository-insights: 1
 
 ## Recommended Reading Path
 
@@ -79,6 +81,7 @@ High-level maps and entry points for reading the repository.
 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](../../korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | 157 |
 | [Agent Harness Conference and Presentation Patterns](../../presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
+| [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](../../research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
 | [127개 로컬 클론 구조 분석 총괄](../../clone-structure-analysis-127.md) | overview-report | root | 143 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
@@ -104,6 +107,7 @@ High-level maps and entry points for reading the repository.
 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](../../korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | 157 |
 | [Agent Harness Conference and Presentation Patterns](../../presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
+| [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](../../research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
 | [127개 로컬 클론 구조 분석 총괄](../../clone-structure-analysis-127.md) | overview-report | root | 143 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |

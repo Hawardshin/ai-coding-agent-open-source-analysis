@@ -1,13 +1,13 @@
 # Repository Deep Dives
 
-Generated: 2026-06-18T13:59:01.143Z
+Generated: 2026-06-18T14:32:17.400Z
 
 Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures.
 
 ## 요약
 
 - 조사 단위: `repository-deep-dives` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 1,257 reports이며, 주요 보고서 유형은 per-repository-report (1130), clone-structure-report (127)입니다.
+- 포함 범위: 1,269 reports이며, 주요 보고서 유형은 per-repository-report (1130), clone-structure-report (127), overview-report (11), spec-driven-report (1)입니다.
 - 주요 출처 폴더: global-trending/repositories (500), korea-trending/repositories (500), clone-structures (127), llm-wiki/repositories (100), repositories (30).
 
 ## 총평
@@ -22,18 +22,21 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 | [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 1257
+- Reports: 1269
 - Data: [data/report-categories/repository-deep-dives.json](../../../data/report-categories/repository-deep-dives.json)
 
 ## Report Types
 
 - per-repository-report: 1130
 - clone-structure-report: 127
+- overview-report: 11
+- spec-driven-report: 1
 
 ## Source Folders
 
@@ -42,11 +45,24 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 - clone-structures: 127
 - llm-wiki/repositories: 100
 - repositories: 30
+- repository-insights: 12
 
 ## Recommended Reading Path
 
 | Report | Type | Folder | Priority |
 | --- | --- | --- | ---: |
+| [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
+| [Repository Insights by Role](../../repository-insights/by-role/README.md) | overview-report | repository-insights | 156 |
+| [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
+| [AI Infrastructure and Serving](../../repository-insights/by-role/ai-infrastructure-serving/README.md) | overview-report | repository-insights | 155 |
+| [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
+| [Data and Vector Platforms](../../repository-insights/by-role/data-vector-platform/README.md) | overview-report | repository-insights | 155 |
+| [Developer Productivity and DevTools](../../repository-insights/by-role/developer-productivity/README.md) | overview-report | repository-insights | 155 |
+| [Evals, Observability, and Quality](../../repository-insights/by-role/eval-observability/README.md) | overview-report | repository-insights | 155 |
+| [General AI Open Source](../../repository-insights/by-role/general-ai-open-source/README.md) | overview-report | repository-insights | 155 |
+| [LLM Wiki, RAG, and Knowledge](../../repository-insights/by-role/llm-wiki-rag/README.md) | overview-report | repository-insights | 155 |
+| [Security, Governance, and Safety](../../repository-insights/by-role/security-governance/README.md) | overview-report | repository-insights | 155 |
+| [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
 | [run-llama/llama_index 구조 분석](../../clone-structures/run-llama__llama_index.md) | clone-structure-report | clone-structures | -3 |
 | [cocoindex-io/cocoindex-code](../../global-trending/repositories/cocoindex-io__cocoindex-code.md) | per-repository-report | global-trending/repositories | -4 |
 | [run-llama/llama_index](../../global-trending/repositories/run-llama__llama_index.md) | per-repository-report | global-trending/repositories | -4 |
@@ -65,24 +81,24 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 | [anomalyco/opencode 구조 분석](../../clone-structures/anomalyco__opencode.md) | clone-structure-report | clone-structures | -28 |
 | [ariel-frischer/autospec 구조 분석](../../clone-structures/ariel-frischer__autospec.md) | clone-structure-report | clone-structures | -28 |
 | [Arize-ai/phoenix 구조 분석](../../clone-structures/Arize-ai__phoenix.md) | clone-structure-report | clone-structures | -28 |
-| [awslabs/aidlc-workflows 구조 분석](../../clone-structures/awslabs__aidlc-workflows.md) | clone-structure-report | clone-structures | -28 |
-| [bartolli/codanna 구조 분석](../../clone-structures/bartolli__codanna.md) | clone-structure-report | clone-structures | -28 |
-| [BerriAI/litellm 구조 분석](../../clone-structures/BerriAI__litellm.md) | clone-structure-report | clone-structures | -28 |
-| [bloopai/bloop 구조 분석](../../clone-structures/BloopAI__bloop.md) | clone-structure-report | clone-structures | -28 |
-| [bmad-code-org/BMAD-METHOD 구조 분석](../../clone-structures/bmad-code-org__BMAD-METHOD.md) | clone-structure-report | clone-structures | -28 |
-| [browser-use/browser-use 구조 분석](../../clone-structures/browser-use__browser-use.md) | clone-structure-report | clone-structures | -28 |
-| [buildermethods/agent-os 구조 분석](../../clone-structures/buildermethods__agent-os.md) | clone-structure-report | clone-structures | -28 |
-| [can1357/oh-my-pi 구조 분석](../../clone-structures/can1357__oh-my-pi.md) | clone-structure-report | clone-structures | -28 |
-| [ceaksan/mcp-code-search 구조 분석](../../clone-structures/ceaksan__mcp-code-search.md) | clone-structure-report | clone-structures | -28 |
-| [chroma-core/chroma 구조 분석](../../clone-structures/chroma-core__chroma.md) | clone-structure-report | clone-structures | -28 |
-| [cline/cline 구조 분석](../../clone-structures/cline__cline.md) | clone-structure-report | clone-structures | -28 |
-| [codervisor/leanspec 구조 분석](../../clone-structures/codervisor__leanspec.md) | clone-structure-report | clone-structures | -28 |
 
 
 ## All Reports
 
 | Report | Type | Folder | Priority |
 | --- | --- | --- | ---: |
+| [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
+| [Repository Insights by Role](../../repository-insights/by-role/README.md) | overview-report | repository-insights | 156 |
+| [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
+| [AI Infrastructure and Serving](../../repository-insights/by-role/ai-infrastructure-serving/README.md) | overview-report | repository-insights | 155 |
+| [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
+| [Data and Vector Platforms](../../repository-insights/by-role/data-vector-platform/README.md) | overview-report | repository-insights | 155 |
+| [Developer Productivity and DevTools](../../repository-insights/by-role/developer-productivity/README.md) | overview-report | repository-insights | 155 |
+| [Evals, Observability, and Quality](../../repository-insights/by-role/eval-observability/README.md) | overview-report | repository-insights | 155 |
+| [General AI Open Source](../../repository-insights/by-role/general-ai-open-source/README.md) | overview-report | repository-insights | 155 |
+| [LLM Wiki, RAG, and Knowledge](../../repository-insights/by-role/llm-wiki-rag/README.md) | overview-report | repository-insights | 155 |
+| [Security, Governance, and Safety](../../repository-insights/by-role/security-governance/README.md) | overview-report | repository-insights | 155 |
+| [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
 | [run-llama/llama_index 구조 분석](../../clone-structures/run-llama__llama_index.md) | clone-structure-report | clone-structures | -3 |
 | [cocoindex-io/cocoindex-code](../../global-trending/repositories/cocoindex-io__cocoindex-code.md) | per-repository-report | global-trending/repositories | -4 |
 | [run-llama/llama_index](../../global-trending/repositories/run-llama__llama_index.md) | per-repository-report | global-trending/repositories | -4 |

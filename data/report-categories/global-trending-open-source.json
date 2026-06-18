@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:59:01.143Z",
+  "generatedAt": "2026-06-18T14:32:17.400Z",
   "slug": "global-trending-open-source",
   "title": "Global Trending Open Source",
   "description": "Global trending open-source corpus and per-repository reports.",
@@ -23,10 +23,10 @@
       "id": "report:reports/categories/global-ai-open-source/README.md",
       "path": "reports/categories/global-ai-open-source/README.md",
       "title": "Global AI Open Source",
-      "summary": "Global AI Open Source Generated 2026 06 18T13 58 59.186Z Global trending AI, LLM, agent, RAG, devtool, security, and infrastructure open source repositories. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519 entries이며, 주요",
+      "summary": "Global AI Open Source Generated 2026 06 18T14 32 13.515Z Global trending AI, LLM, agent, RAG, devtool, security, and infrastructure open source repositories. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519 entries이며, 주요",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:58:59.869Z",
+      "updatedAt": "2026-06-18T14:32:14.221Z",
       "categories": [
         "category-guides",
         "global-trending-open-source"

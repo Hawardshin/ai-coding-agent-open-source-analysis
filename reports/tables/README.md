@@ -1,13 +1,13 @@
 # Report Tables
 
-Generated: 2026-06-18T13:59:01.143Z
+Generated: 2026-06-18T14:32:17.400Z
 
 This page is the table-first view of the repository. Use it when you want to scan the full investigation structure before opening individual reports.
 
 ## 요약
 
 - 조사 단위: 보고서, 주제, 폴더, 보고서 유형을 표와 CSV로 정리한 탐색 허브입니다.
-- 포함 범위: 1,405 reports, 17 topics, 16 folder README guides입니다.
+- 포함 범위: 1,417 reports, 17 topics, 16 folder README guides입니다.
 - 데이터 파일: topic/folder/type matrix/all reports CSV를 제공하므로 GitHub 화면과 스프레드시트 양쪽에서 탐색할 수 있습니다.
 
 ## 총평
@@ -21,6 +21,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | [Repository README](../../README.md) | Repo-wide orientation and top-level data/report structure. |
 | [Reports Reading Index](../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 ## Data Files
@@ -32,26 +33,27 @@ This page is the table-first view of the repository. Use it when you want to sca
 | [data/report-tables/folders.csv](../../data/report-tables/folders.csv) | Folder summary table. |
 | [data/report-tables/topic-kind-matrix.csv](../../data/report-tables/topic-kind-matrix.csv) | Topic x report-type matrix. |
 | [data/report-tables/reports.csv](../../data/report-tables/reports.csv) | Flat table for every indexed report. |
+| [data/report-tables/repository-insights.csv](../../data/report-tables/repository-insights.csv) | Repository-by-repository insights, risks, evidence, and next-read links. |
 
 ## Topic Summary Table
 
 | Topic | Reports | Description | Data |
 | --- | ---: | --- | --- |
-| [Repository Deep Dives](../by-topic/repository-deep-dives/README.md) | 1257 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. | [json](../../data/report-categories/repository-deep-dives.json) |
+| [Repository Deep Dives](../by-topic/repository-deep-dives/README.md) | 1269 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. | [json](../../data/report-categories/repository-deep-dives.json) |
 | [Global Trending Open Source](../by-topic/global-trending-open-source/README.md) | 502 | Global trending open-source corpus and per-repository reports. | [json](../../data/report-categories/global-trending-open-source.json) |
 | [Korea Trending Open Source](../by-topic/korea-trending-open-source/README.md) | 502 | Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports. | [json](../../data/report-categories/korea-trending-open-source.json) |
-| [LLM Wiki, RAG, and Knowledge Bases](../by-topic/llm-wiki/README.md) | 240 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. | [json](../../data/report-categories/llm-wiki.json) |
-| [Agent Harness, MCP, and Orchestration](../by-topic/agent-harness/README.md) | 144 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. | [json](../../data/report-categories/agent-harness.json) |
+| [LLM Wiki, RAG, and Knowledge Bases](../by-topic/llm-wiki/README.md) | 241 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. | [json](../../data/report-categories/llm-wiki.json) |
+| [Agent Harness, MCP, and Orchestration](../by-topic/agent-harness/README.md) | 145 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. | [json](../../data/report-categories/agent-harness.json) |
 | [Clone Structure and Inventory](../by-topic/clone-structure-inventory/README.md) | 128 | Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports. | [json](../../data/report-categories/clone-structure-inventory.json) |
-| [Coding Agents and IDEs](../by-topic/coding-agents/README.md) | 84 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. | [json](../../data/report-categories/coding-agents.json) |
-| [Spec-Driven and Requirements](../by-topic/spec-driven/README.md) | 21 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. | [json](../../data/report-categories/spec-driven.json) |
-| [Start Here](../by-topic/start-here/README.md) | 19 | High-level maps and entry points for reading the repository. | [json](../../data/report-categories/start-here.json) |
+| [Coding Agents and IDEs](../by-topic/coding-agents/README.md) | 85 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. | [json](../../data/report-categories/coding-agents.json) |
+| [Spec-Driven and Requirements](../by-topic/spec-driven/README.md) | 22 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. | [json](../../data/report-categories/spec-driven.json) |
+| [Start Here](../by-topic/start-here/README.md) | 20 | High-level maps and entry points for reading the repository. | [json](../../data/report-categories/start-here.json) |
 | [Category Guides](../by-topic/category-guides/README.md) | 18 | Generated category pages that group open-source, research, presentation, and trend artifacts. | [json](../../data/report-categories/category-guides.json) |
-| [Adjacent AI Infrastructure](../by-topic/adjacent-infrastructure/README.md) | 13 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. | [json](../../data/report-categories/adjacent-infrastructure.json) |
+| [Comparisons and Similarity Maps](../by-topic/comparisons/README.md) | 17 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. | [json](../../data/report-categories/comparisons.json) |
+| [Adjacent AI Infrastructure](../by-topic/adjacent-infrastructure/README.md) | 14 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. | [json](../../data/report-categories/adjacent-infrastructure.json) |
 | [Presentations and Conferences](../by-topic/presentations-conferences/README.md) | 8 | Conference, talk, webinar, and presentation-method research. | [json](../../data/report-categories/presentations-conferences.json) |
 | [Research Foundations](../by-topic/research-foundations/README.md) | 6 | Evidence catalogs, conflicting theories, source catalogs, and research synthesis. | [json](../../data/report-categories/research-foundations.json) |
 | [Source Catalogs and Inventories](../by-topic/source-catalogs-and-inventories/README.md) | 6 | Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations. | [json](../../data/report-categories/source-catalogs-and-inventories.json) |
-| [Comparisons and Similarity Maps](../by-topic/comparisons/README.md) | 5 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. | [json](../../data/report-categories/comparisons.json) |
 | [AI Usage Trends](../by-topic/ai-usage-trends/README.md) | 3 | Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals. | [json](../../data/report-categories/ai-usage-trends.json) |
 | [Full Source Scan and Code Retrieval](../by-topic/full-source-scan/README.md) | 3 | How coding agents discover, index, search, and read source code. | [json](../../data/report-categories/full-source-scan.json) |
 
@@ -80,21 +82,21 @@ This page is the table-first view of the repository. Use it when you want to sca
 
 | Topic | Reports | agent-harness-report | category-guide | clone-structure-report | comparison-report | global-trending-report | infrastructure-report | korea-trending-report | llm-wiki-report | overview-report | per-repository-report | presentation-report | research-synthesis | source-scan-report | spec-driven-report |
 | --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Repository Deep Dives | 1257 | 0 | 0 | 127 | 0 | 0 | 0 | 0 | 0 | 0 | 1130 | 0 | 0 | 0 | 0 |
+| Repository Deep Dives | 1269 | 0 | 0 | 127 | 0 | 0 | 0 | 0 | 0 | 11 | 1130 | 0 | 0 | 0 | 1 |
 | Global Trending Open Source | 502 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 500 | 0 | 0 | 0 | 0 |
 | Korea Trending Open Source | 502 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 500 | 0 | 0 | 0 | 0 |
-| LLM Wiki, RAG, and Knowledge Bases | 240 | 0 | 1 | 4 | 0 | 0 | 4 | 0 | 103 | 0 | 128 | 0 | 0 | 0 | 0 |
-| Agent Harness, MCP, and Orchestration | 144 | 2 | 2 | 5 | 0 | 0 | 2 | 0 | 2 | 0 | 130 | 1 | 0 | 0 | 0 |
+| LLM Wiki, RAG, and Knowledge Bases | 241 | 0 | 1 | 4 | 0 | 0 | 4 | 0 | 103 | 1 | 128 | 0 | 0 | 0 | 0 |
+| Agent Harness, MCP, and Orchestration | 145 | 2 | 2 | 5 | 0 | 0 | 2 | 0 | 2 | 1 | 130 | 1 | 0 | 0 | 0 |
 | Clone Structure and Inventory | 128 | 0 | 0 | 127 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
-| Coding Agents and IDEs | 84 | 2 | 2 | 10 | 0 | 0 | 0 | 0 | 3 | 1 | 64 | 1 | 1 | 0 | 0 |
-| Spec-Driven and Requirements | 21 | 0 | 1 | 15 | 0 | 0 | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 1 |
-| Start Here | 19 | 1 | 1 | 0 | 2 | 1 | 1 | 1 | 3 | 3 | 0 | 2 | 3 | 0 | 1 |
+| Coding Agents and IDEs | 85 | 2 | 2 | 10 | 0 | 0 | 0 | 0 | 3 | 2 | 64 | 1 | 1 | 0 | 0 |
+| Spec-Driven and Requirements | 22 | 0 | 1 | 15 | 0 | 0 | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 2 |
+| Start Here | 20 | 1 | 1 | 0 | 2 | 1 | 1 | 1 | 3 | 4 | 0 | 2 | 3 | 0 | 1 |
 | Category Guides | 18 | 0 | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Adjacent AI Infrastructure | 13 | 0 | 4 | 1 | 0 | 0 | 4 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 |
+| Comparisons and Similarity Maps | 17 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 11 | 1 | 0 | 0 | 0 | 1 |
+| Adjacent AI Infrastructure | 14 | 0 | 4 | 1 | 0 | 0 | 4 | 0 | 0 | 2 | 3 | 0 | 0 | 0 | 0 |
 | Presentations and Conferences | 8 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 5 | 0 | 0 | 0 |
 | Research Foundations | 6 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 4 | 0 | 0 |
 | Source Catalogs and Inventories | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 2 | 0 | 0 | 0 |
-| Comparisons and Similarity Maps | 5 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
 | AI Usage Trends | 3 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
 | Full Source Scan and Code Retrieval | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 1 | 0 |
 
@@ -120,6 +122,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](../korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | Start Here, Korea Trending Open Source |
 | [Agent Harness Conference and Presentation Patterns](../presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | Start Here, Agent Harness, MCP, and Orchestration, Presentations and Conferences |
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | Start Here, Presentations and Conferences, AI Usage Trends |
+| [Repository Insights](../repository-insights/README.md) | overview-report | repository-insights | Start Here, Comparisons and Similarity Maps, Repository Deep Dives |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](../research/01-agent-trends-2026.md) | research-synthesis | research | Start Here, Research Foundations |
 | [Agent Harness and Orchestration](../categories/agent-harness-orchestration/README.md) | category-guide | categories | Category Guides, Agent Harness, MCP, and Orchestration |
 | [AI Infrastructure and Serving](../categories/ai-infrastructure-serving/README.md) | category-guide | categories | Category Guides, Adjacent AI Infrastructure |
@@ -138,6 +141,17 @@ This page is the table-first view of the repository. Use it when you want to sca
 | [Research Papers and Evidence](../categories/research-papers/README.md) | category-guide | categories | Category Guides, Coding Agents and IDEs |
 | [Security, Governance, and Safety](../categories/security-governance-safety/README.md) | category-guide | categories | Category Guides |
 | [Spec-Driven and Requirements](../categories/spec-driven-requirements/README.md) | category-guide | categories | Category Guides, Spec-Driven and Requirements |
+| [Repository Insights by Role](../repository-insights/by-role/README.md) | overview-report | repository-insights | Comparisons and Similarity Maps, Repository Deep Dives |
+| [Agent Harness and MCP](../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | Agent Harness, MCP, and Orchestration, Comparisons and Similarity Maps, Repository Deep Dives |
+| [AI Infrastructure and Serving](../repository-insights/by-role/ai-infrastructure-serving/README.md) | overview-report | repository-insights | Comparisons and Similarity Maps, Repository Deep Dives |
+| [Coding Agent and IDE](../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | Coding Agents and IDEs, Comparisons and Similarity Maps, Repository Deep Dives |
+| [Data and Vector Platforms](../repository-insights/by-role/data-vector-platform/README.md) | overview-report | repository-insights | Comparisons and Similarity Maps, Repository Deep Dives |
+| [Developer Productivity and DevTools](../repository-insights/by-role/developer-productivity/README.md) | overview-report | repository-insights | Comparisons and Similarity Maps, Repository Deep Dives |
+| [Evals, Observability, and Quality](../repository-insights/by-role/eval-observability/README.md) | overview-report | repository-insights | Adjacent AI Infrastructure, Comparisons and Similarity Maps, Repository Deep Dives |
+| [General AI Open Source](../repository-insights/by-role/general-ai-open-source/README.md) | overview-report | repository-insights | Comparisons and Similarity Maps, Repository Deep Dives |
+| [LLM Wiki, RAG, and Knowledge](../repository-insights/by-role/llm-wiki-rag/README.md) | overview-report | repository-insights | LLM Wiki, RAG, and Knowledge Bases, Comparisons and Similarity Maps, Repository Deep Dives |
+| [Security, Governance, and Safety](../repository-insights/by-role/security-governance/README.md) | overview-report | repository-insights | Comparisons and Similarity Maps, Repository Deep Dives |
+| [Spec-Driven and Requirements](../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | Spec-Driven and Requirements, Comparisons and Similarity Maps, Repository Deep Dives |
 | [127개 로컬 클론 구조 분석 총괄](../clone-structure-analysis-127.md) | overview-report | root | Start Here, Clone Structure and Inventory |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | Start Here, Full Source Scan and Code Retrieval |
 | [Codex Harness Setup Guide from Claude Code Patterns](../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | Coding Agents and IDEs, Agent Harness, MCP, and Orchestration |
@@ -171,15 +185,3 @@ This page is the table-first view of the repository. Use it when you want to sca
 | [enescingoz/awesome-n8n-templates 코드 레벨 분석](../llm-wiki/code-level-repositories/enescingoz__awesome-n8n-templates.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
 | [eugeniughelbur/obsidian-second-brain 코드 레벨 분석](../llm-wiki/code-level-repositories/eugeniughelbur__obsidian-second-brain.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
 | [FalkorDB/FalkorDB 코드 레벨 분석](../llm-wiki/code-level-repositories/FalkorDB__FalkorDB.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [getzep/graphiti 코드 레벨 분석](../llm-wiki/code-level-repositories/getzep__graphiti.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [GiovanniPasq/agentic-rag-for-dummies 코드 레벨 분석](../llm-wiki/code-level-repositories/GiovanniPasq__agentic-rag-for-dummies.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [green-dalii/obsidian-llm-wiki 코드 레벨 분석](../llm-wiki/code-level-repositories/green-dalii__obsidian-llm-wiki.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [hjhun/llm-wiki 코드 레벨 분석](../llm-wiki/code-level-repositories/hjhun__llm-wiki.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [HKUDS/LightRAG 코드 레벨 분석](../llm-wiki/code-level-repositories/HKUDS__LightRAG.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [HKUDS/VideoRAG 코드 레벨 분석](../llm-wiki/code-level-repositories/HKUDS__VideoRAG.md) | llm-wiki-report | llm-wiki/code-level-repositories | Coding Agents and IDEs, LLM Wiki, RAG, and Knowledge Bases |
-| [HKUST-KnowComp/AutoSchemaKG 코드 레벨 분석](../llm-wiki/code-level-repositories/HKUST-KnowComp__AutoSchemaKG.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [IAAR-Shanghai/Awesome-AI-Memory 코드 레벨 분석](../llm-wiki/code-level-repositories/IAAR-Shanghai__Awesome-AI-Memory.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [iammonth1997/paperwiki-research-compiler 코드 레벨 분석](../llm-wiki/code-level-repositories/iammonth1997__paperwiki-research-compiler.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [iikarus/Dragon-Brain 코드 레벨 분석](../llm-wiki/code-level-repositories/iikarus__Dragon-Brain.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [infiniflow/ragflow 코드 레벨 분석](../llm-wiki/code-level-repositories/infiniflow__ragflow.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |
-| [InternLM/HuixiangDou 코드 레벨 분석](../llm-wiki/code-level-repositories/InternLM__HuixiangDou.md) | llm-wiki-report | llm-wiki/code-level-repositories | LLM Wiki, RAG, and Knowledge Bases |

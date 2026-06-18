@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T13:59:01.143Z",
+  "generatedAt": "2026-06-18T14:32:17.400Z",
   "slug": "agent-harness",
   "title": "Agent Harness, MCP, and Orchestration",
   "description": "Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.",
-  "count": 144,
+  "count": 145,
   "reports": [
     {
       "id": "report:reports/adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md",
@@ -55,10 +55,10 @@
       "id": "report:reports/categories/agent-harness-orchestration/README.md",
       "path": "reports/categories/agent-harness-orchestration/README.md",
       "title": "Agent Harness and Orchestration",
-      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 58 59.186Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고",
+      "summary": "Agent Harness and Orchestration Generated 2026 06 18T14 32 13.515Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:58:59.777Z",
+      "updatedAt": "2026-06-18T14:32:14.109Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -69,15 +69,30 @@
       "id": "report:reports/categories/mcp-tools-protocols/README.md",
       "path": "reports/categories/mcp-tools-protocols/README.md",
       "title": "MCP, Tools, and Protocols",
-      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 58 59.186Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
+      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T14 32 13.515Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:58:59.784Z",
+      "updatedAt": "2026-06-18T14:32:14.116Z",
       "categories": [
         "category-guides",
         "agent-harness"
       ],
       "priority": 156
+    },
+    {
+      "id": "report:reports/repository-insights/by-role/agent-harness-mcp/README.md",
+      "path": "reports/repository-insights/by-role/agent-harness-mcp/README.md",
+      "title": "Agent Harness and MCP",
+      "summary": "Agent Harness and MCP Generated 2026 06 18T14 32 15.396Z 에이전트 하네스/MCP 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 레포 묶음입니다. 포함 범위 514 repositories, report link 513, local source 514. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 ",
+      "kind": "overview-report",
+      "folder": "repository-insights",
+      "updatedAt": "2026-06-18T14:32:15.945Z",
+      "categories": [
+        "agent-harness",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
     },
     {
       "id": "report:reports/agent-harness/codex-harness-setup-guide.md",

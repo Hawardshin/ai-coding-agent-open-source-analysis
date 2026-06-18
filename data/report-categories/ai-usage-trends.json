@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:59:01.143Z",
+  "generatedAt": "2026-06-18T14:32:17.400Z",
   "slug": "ai-usage-trends",
   "title": "AI Usage Trends",
   "description": "Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals.",
@@ -24,10 +24,10 @@
       "id": "report:reports/categories/ai-usage-trends/README.md",
       "path": "reports/categories/ai-usage-trends/README.md",
       "title": "AI Usage Trends",
-      "summary": "AI Usage Trends Generated 2026 06 18T13 58 59.186Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참",
+      "summary": "AI Usage Trends Generated 2026 06 18T14 32 13.515Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:58:59.882Z",
+      "updatedAt": "2026-06-18T14:32:14.235Z",
       "categories": [
         "category-guides",
         "ai-usage-trends"

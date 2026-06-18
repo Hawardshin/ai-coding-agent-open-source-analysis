@@ -1,6 +1,6 @@
 # Full Source Scan and Code Retrieval
 
-Generated: 2026-06-18T13:59:01.143Z
+Generated: 2026-06-18T14:32:17.400Z
 
 How coding agents discover, index, search, and read source code.
 
@@ -22,6 +22,7 @@ How coding agents discover, index, search, and read source code.
 | [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 

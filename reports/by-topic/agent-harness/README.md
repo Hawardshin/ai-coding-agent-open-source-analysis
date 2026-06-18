@@ -1,13 +1,13 @@
 # Agent Harness, MCP, and Orchestration
 
-Generated: 2026-06-18T13:59:01.143Z
+Generated: 2026-06-18T14:32:17.400Z
 
 Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.
 
 ## 요약
 
 - 조사 단위: `agent-harness` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 144 reports이며, 주요 보고서 유형은 per-repository-report (130), clone-structure-report (5), agent-harness-report (2), category-guide (2), infrastructure-report (2)입니다.
+- 포함 범위: 145 reports이며, 주요 보고서 유형은 per-repository-report (130), clone-structure-report (5), agent-harness-report (2), category-guide (2), infrastructure-report (2)입니다.
 - 주요 출처 폴더: global-trending/repositories (82), korea-trending/repositories (46), clone-structures (5), adjacent-tech (2), agent-harness (2).
 
 ## 총평
@@ -22,12 +22,13 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 144
+- Reports: 145
 - Data: [data/report-categories/agent-harness.json](../../../data/report-categories/agent-harness.json)
 
 ## Report Types
@@ -39,6 +40,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 - category-guide: 2
 - llm-wiki-report: 2
 - presentation-report: 1
+- overview-report: 1
 
 ## Source Folders
 
@@ -51,6 +53,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 - llm-wiki/code-level-repositories: 2
 - llm-wiki/repositories: 2
 - presentations: 1
+- repository-insights: 1
 
 ## Recommended Reading Path
 
@@ -61,6 +64,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [Agent Harness Conference and Presentation Patterns](../../presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
 | [Agent Harness and Orchestration](../../categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
 | [MCP, Tools, and Protocols](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
+| [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [jee3m/augmentative-knowledge-hooks 코드 레벨 분석](../../llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
@@ -85,7 +89,6 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [cbcoutinho/nextcloud-mcp-server](../../global-trending/repositories/cbcoutinho__nextcloud-mcp-server.md) | per-repository-report | global-trending/repositories | -29 |
 | [ChiR24/Unreal_mcp](../../global-trending/repositories/ChiR24__Unreal_mcp.md) | per-repository-report | global-trending/repositories | -29 |
 | [cisco-ai-defense/mcp-scanner](../../global-trending/repositories/cisco-ai-defense__mcp-scanner.md) | per-repository-report | global-trending/repositories | -29 |
-| [containers/kubernetes-mcp-server](../../global-trending/repositories/containers__kubernetes-mcp-server.md) | per-repository-report | global-trending/repositories | -29 |
 
 
 ## All Reports
@@ -97,6 +100,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 | [Agent Harness Conference and Presentation Patterns](../../presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
 | [Agent Harness and Orchestration](../../categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
 | [MCP, Tools, and Protocols](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
+| [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [jee3m/augmentative-knowledge-hooks 코드 레벨 분석](../../llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |

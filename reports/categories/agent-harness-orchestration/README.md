@@ -1,6 +1,6 @@
 # Agent Harness and Orchestration
 
-Generated: 2026-06-18T13:58:59.186Z
+Generated: 2026-06-18T14:32:13.515Z
 
 Agent harnesses, multi-agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks.
 
@@ -22,6 +22,7 @@ Agent harnesses, multi-agent runtimes, skills, tools, workflows, task orchestrat
 | [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
 
 

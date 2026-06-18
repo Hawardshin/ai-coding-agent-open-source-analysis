@@ -1,14 +1,14 @@
 # Adjacent AI Infrastructure
 
-Generated: 2026-06-18T13:59:01.143Z
+Generated: 2026-06-18T14:32:17.400Z
 
 Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.
 
 ## 요약
 
 - 조사 단위: `adjacent-infrastructure` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 13 reports이며, 주요 보고서 유형은 category-guide (4), infrastructure-report (4), per-repository-report (3), clone-structure-report (1), overview-report (1)입니다.
-- 주요 출처 폴더: adjacent-tech (4), categories (4), global-trending/repositories (3), clone-structures (1), root (1).
+- 포함 범위: 14 reports이며, 주요 보고서 유형은 category-guide (4), infrastructure-report (4), per-repository-report (3), overview-report (2), clone-structure-report (1)입니다.
+- 주요 출처 폴더: adjacent-tech (4), categories (4), global-trending/repositories (3), clone-structures (1), repository-insights (1).
 
 ## 총평
 
@@ -22,12 +22,13 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 | [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 13
+- Reports: 14
 - Data: [data/report-categories/adjacent-infrastructure.json](../../../data/report-categories/adjacent-infrastructure.json)
 
 ## Report Types
@@ -35,7 +36,7 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 - infrastructure-report: 4
 - category-guide: 4
 - per-repository-report: 3
-- overview-report: 1
+- overview-report: 2
 - clone-structure-report: 1
 
 ## Source Folders
@@ -43,6 +44,7 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 - adjacent-tech: 4
 - categories: 4
 - global-trending/repositories: 3
+- repository-insights: 1
 - root: 1
 - clone-structures: 1
 
@@ -56,6 +58,7 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 | [Data Platforms and Vector Databases](../../categories/data-platforms-vector-databases/README.md) | category-guide | categories | 156 |
 | [Evals, Observability, and Quality](../../categories/evals-observability-quality/README.md) | category-guide | categories | 156 |
 | [Local LLMs and Models](../../categories/local-llm-models/README.md) | category-guide | categories | 156 |
+| [Evals, Observability, and Quality](../../repository-insights/by-role/eval-observability/README.md) | overview-report | repository-insights | 155 |
 | [Source Inventory](../../adjacent-tech-source-inventory.md) | overview-report | root | 118 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |
@@ -75,6 +78,7 @@ Context engineering, RAG infrastructure, vector databases, local LLM serving, ev
 | [Data Platforms and Vector Databases](../../categories/data-platforms-vector-databases/README.md) | category-guide | categories | 156 |
 | [Evals, Observability, and Quality](../../categories/evals-observability-quality/README.md) | category-guide | categories | 156 |
 | [Local LLMs and Models](../../categories/local-llm-models/README.md) | category-guide | categories | 156 |
+| [Evals, Observability, and Quality](../../repository-insights/by-role/eval-observability/README.md) | overview-report | repository-insights | 155 |
 | [Source Inventory](../../adjacent-tech-source-inventory.md) | overview-report | root | 118 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |

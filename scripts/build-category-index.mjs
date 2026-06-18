@@ -574,6 +574,7 @@ function navigationBlock(fromDir) {
 | ${pathLink("Reports Reading Index", "reports/README.md", fromDir)} | Main report navigation, start-here path, topics, and folder map. |
 | ${pathLink("Reports by Topic", "reports/by-topic/README.md", fromDir)} | Topic-first navigation across all Markdown reports. |
 | ${pathLink("Report Tables", "reports/tables/README.md", fromDir)} | Table-first view and CSV exports. |
+| ${pathLink("Repository Insights", "reports/repository-insights/README.md", fromDir)} | Repository-by-repository insights, risks, and next-read links. |
 | ${pathLink("Artifact Categories", "reports/categories/README.md", fromDir)} | Artifact-level category index for repositories, papers, presentations, and references. |
 `;
 }

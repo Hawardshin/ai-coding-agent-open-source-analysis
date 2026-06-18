@@ -30,7 +30,8 @@ const taxonomy = [
       /^reports\/llm-wiki\/0[0-2]-/,
       /^reports\/presentations\/0[0-1]-/,
       /^reports\/research\/0[1-3]-/,
-      /^reports\/spec-driven\/00-/
+      /^reports\/spec-driven\/00-/,
+      /^reports\/repository-insights\/README\.md$/
     ]
   },
   {
@@ -122,7 +123,7 @@ const taxonomy = [
     title: "Comparisons and Similarity Maps",
     description: "Cross-repository comparisons, taxonomy matrices, and similarity clusters.",
     keywords: ["comparison", "compare", "taxonomy", "cluster", "matrix", "similarity", "비교"],
-    pathRules: [/^reports\/comparisons\//]
+    pathRules: [/^reports\/comparisons\//, /^reports\/repository-insights\//]
   },
   {
     slug: "research-foundations",
@@ -143,7 +144,7 @@ const taxonomy = [
     title: "Repository Deep Dives",
     description: "Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures.",
     keywords: [],
-    pathRules: [/\/repositories\//, /^reports\/clone-structures\//]
+    pathRules: [/\/repositories\//, /^reports\/clone-structures\//, /^reports\/repository-insights\//]
   }
 ];
 
@@ -369,6 +370,7 @@ function renderNavigationBlock(baseDir) {
 | ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
 | ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
 | ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
+| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 `;
 }
@@ -654,6 +656,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
 | ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
 | ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
+| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 
 ## Data Files
@@ -665,6 +668,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | ${linkFrom(baseDir, "data/report-tables/folders.csv", "data/report-tables/folders.csv")} | Folder summary table. |
 | ${linkFrom(baseDir, "data/report-tables/topic-kind-matrix.csv", "data/report-tables/topic-kind-matrix.csv")} | Topic x report-type matrix. |
 | ${linkFrom(baseDir, "data/report-tables/reports.csv", "data/report-tables/reports.csv")} | Flat table for every indexed report. |
+| ${linkFrom(baseDir, "data/report-tables/repository-insights.csv", "data/report-tables/repository-insights.csv")} | Repository-by-repository insights, risks, evidence, and next-read links. |
 
 ## Topic Summary Table
 
@@ -795,6 +799,7 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | ${linkFrom("reports", "reports/by-topic/start-here/README.md", "Start Here")} | First-pass reading order across the major investigations. |
 | ${linkFrom("reports", "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
 | ${linkFrom("reports", "reports/tables/README.md", "Report Tables")} | Table-first scanning, CSV exports, and topic/type matrices. |
+| ${linkFrom("reports", "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, evidence, and next-read links. |
 | ${linkFrom("reports", "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, research, presentations, and trend sources. |
 
 ## Start Here
@@ -851,7 +856,6 @@ async function collectReports() {
 async function main() {
   const reports = await collectReports();
   await rm(outputDataDir, { recursive: true, force: true });
-  await rm(outputDataTablesDir, { recursive: true, force: true });
   await rm(outputReportDir, { recursive: true, force: true });
   await rm(outputReportTablesDir, { recursive: true, force: true });
   await mkdir(outputDataDir, { recursive: true });

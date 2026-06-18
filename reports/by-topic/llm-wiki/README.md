@@ -1,13 +1,13 @@
 # LLM Wiki, RAG, and Knowledge Bases
 
-Generated: 2026-06-18T13:59:01.143Z
+Generated: 2026-06-18T14:32:17.400Z
 
 LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.
 
 ## 요약
 
 - 조사 단위: `llm-wiki` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 240 reports이며, 주요 보고서 유형은 per-repository-report (128), llm-wiki-report (103), clone-structure-report (4), infrastructure-report (4), category-guide (1)입니다.
+- 포함 범위: 241 reports이며, 주요 보고서 유형은 per-repository-report (128), llm-wiki-report (103), clone-structure-report (4), infrastructure-report (4), category-guide (1)입니다.
 - 주요 출처 폴더: llm-wiki/code-level-repositories (100), llm-wiki/repositories (100), korea-trending/repositories (15), global-trending/repositories (13), adjacent-tech (4).
 
 ## 총평
@@ -22,12 +22,13 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 | [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 240
+- Reports: 241
 - Data: [data/report-categories/llm-wiki.json](../../../data/report-categories/llm-wiki.json)
 
 ## Report Types
@@ -37,6 +38,7 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 - infrastructure-report: 4
 - clone-structure-report: 4
 - category-guide: 1
+- overview-report: 1
 
 ## Source Folders
 
@@ -50,6 +52,7 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 - llm-wiki/01-llm-wiki-100-selection-and-patterns.md: 1
 - llm-wiki/02-code-level-pipeline-comparison.md: 1
 - categories: 1
+- repository-insights: 1
 
 ## Recommended Reading Path
 
@@ -61,6 +64,7 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 | [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](../../adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md) | infrastructure-report | adjacent-tech | 157 |
 | [컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석](../../adjacent-tech/02-repository-analysis-50.md) | infrastructure-report | adjacent-tech | 157 |
 | [LLM Wiki, RAG, and Knowledge Bases](../../categories/llm-wiki-rag-knowledge/README.md) | category-guide | categories | 156 |
+| [LLM Wiki, RAG, and Knowledge](../../repository-insights/by-role/llm-wiki-rag/README.md) | overview-report | repository-insights | 155 |
 | [KalyanKS-NLP/rag-zero-to-hero-guide 코드 레벨 분석](../../llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | llm-wiki-report | llm-wiki/code-level-repositories | 141 |
 | [VectifyAI/PageIndex 코드 레벨 분석](../../llm-wiki/code-level-repositories/VectifyAI__PageIndex.md) | llm-wiki-report | llm-wiki/code-level-repositories | 141 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
@@ -84,7 +88,6 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 | [eugeniughelbur/obsidian-second-brain 코드 레벨 분석](../../llm-wiki/code-level-repositories/eugeniughelbur__obsidian-second-brain.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [FalkorDB/FalkorDB 코드 레벨 분석](../../llm-wiki/code-level-repositories/FalkorDB__FalkorDB.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [getzep/graphiti 코드 레벨 분석](../../llm-wiki/code-level-repositories/getzep__graphiti.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
-| [GiovanniPasq/agentic-rag-for-dummies 코드 레벨 분석](../../llm-wiki/code-level-repositories/GiovanniPasq__agentic-rag-for-dummies.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 
 
 ## All Reports
@@ -97,6 +100,7 @@ LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenanc
 | [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](../../adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md) | infrastructure-report | adjacent-tech | 157 |
 | [컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석](../../adjacent-tech/02-repository-analysis-50.md) | infrastructure-report | adjacent-tech | 157 |
 | [LLM Wiki, RAG, and Knowledge Bases](../../categories/llm-wiki-rag-knowledge/README.md) | category-guide | categories | 156 |
+| [LLM Wiki, RAG, and Knowledge](../../repository-insights/by-role/llm-wiki-rag/README.md) | overview-report | repository-insights | 155 |
 | [KalyanKS-NLP/rag-zero-to-hero-guide 코드 레벨 분석](../../llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | llm-wiki-report | llm-wiki/code-level-repositories | 141 |
 | [VectifyAI/PageIndex 코드 레벨 분석](../../llm-wiki/code-level-repositories/VectifyAI__PageIndex.md) | llm-wiki-report | llm-wiki/code-level-repositories | 141 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |

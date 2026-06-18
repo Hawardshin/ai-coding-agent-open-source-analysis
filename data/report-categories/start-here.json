@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-18T13:59:01.143Z",
+  "generatedAt": "2026-06-18T14:32:17.400Z",
   "slug": "start-here",
   "title": "Start Here",
   "description": "High-level maps and entry points for reading the repository.",
-  "count": 19,
+  "count": 20,
   "reports": [
     {
       "id": "report:reports/categories/README.md",
       "path": "reports/categories/README.md",
       "title": "Category Index",
-      "summary": "Category Index Generated 2026 06 18T13 58 59.186Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
+      "summary": "Category Index Generated 2026 06 18T14 32 13.515Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:58:59.912Z",
+      "updatedAt": "2026-06-18T14:32:14.265Z",
       "categories": [
         "start-here",
         "category-guides"
@@ -221,6 +221,21 @@
         "start-here",
         "presentations-conferences",
         "ai-usage-trends"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/repository-insights/README.md",
+      "path": "reports/repository-insights/README.md",
+      "title": "Repository Insights",
+      "summary": "Repository Insights Generated 2026 06 18T14 32 15.396Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
+      "kind": "overview-report",
+      "folder": "repository-insights",
+      "updatedAt": "2026-06-18T14:32:15.933Z",
+      "categories": [
+        "start-here",
+        "comparisons",
+        "repository-deep-dives"
       ],
       "priority": 157
     },
