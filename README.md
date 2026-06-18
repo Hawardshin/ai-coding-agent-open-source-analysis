@@ -6,16 +6,14 @@ The source repositories are cloned locally under `sources/` for inspection and e
 
 The repository now also includes a second research track for adjacent AI infrastructure: context engineering, RAG, vLLM/local LLM serving, vector databases, evaluation, observability, and agent harness tooling.
 
-## Web Research Browser
+## Repository Reading Index
 
-This repository can be deployed as a static Vercel site for reading and searching the collected reports, open-source metadata, and evidence corpus.
+This repository is meant to be read directly through GitHub or a local checkout. Deployment-specific GitHub Pages, Vercel, and static web-browser files have been removed.
 
-- `web/`: static browser UI.
-- `scripts/build-web-index.mjs`: builds `web/assets/search-index.json` from `README.md`, `reports/**/*.md`, and selected `data/*.json` files.
-- `npm run build:web`: regenerate the browser search index.
-- GitHub Pages target: `https://hawardshin.github.io/ai-coding-agent-open-source-analysis/`.
-- `.github/workflows/pages.yml`: deploys `web/` to GitHub Pages on every `main` push.
-- `npx -y vercel@latest --prod --yes`: deploy the static browser to Vercel when the local Vercel CLI is authenticated.
+- `reports/categories/`: category-first reading folders for open source, research papers, conference materials, and trend references.
+- `data/category-index.json`: complete normalized category index across all collected artifacts.
+- `data/categories/*.json`: complete membership lists for each category.
+- `npm run build:categories`: regenerate the category index and category README files after changing source data.
 
 ## Structure
 
@@ -30,6 +28,8 @@ This repository can be deployed as a static Vercel site for reading and searchin
 - `data/clone-structure-analysis-127.json`: current structural analysis for all 127 locally cloned repositories.
 - `data/spec-driven-repositories.json`: 20 selected spec-driven/open-source workflow repositories cloned and inspected locally.
 - `data/spec-driven-evidence-corpus-500.json`: reproducible OpenAlex evidence corpus for spec-driven development, requirements engineering, traceability, executable specs, and agent memory research.
+- `data/category-index.json`: unified category index covering open-source repositories, research papers, reference materials, conference sessions, and trend sources.
+- `data/categories/`: per-category data files for complete membership lists.
 - `reports/00-source-inventory.md`: clone inventory summary table.
 - `reports/adjacent-tech-source-inventory.md`: clone inventory summary for the 50 adjacent-stack repositories.
 - `reports/current-clone-inventory-107.md`: current clone inventory summary for 107 open source repositories.
@@ -41,8 +41,8 @@ This repository can be deployed as a static Vercel site for reading and searchin
 - `reports/research/`: 2026 agent/harness/context/evaluation research synthesis, source catalog, and conflicting theories.
 - `reports/adjacent-tech/`: context engineering, RAG, local LLM, vector DB, evaluation, and harness reports.
 - `reports/clone-structures/`: generated per-repository structure reports for all 127 local clones.
+- `reports/categories/`: category-first reading index with links back to data, reports, and cloned source directories.
 - `scripts/`: local automation for metadata collection and cloning.
-- `web/`: Vercel-ready static research browser.
 
 ## Cross-Repository Reports
 

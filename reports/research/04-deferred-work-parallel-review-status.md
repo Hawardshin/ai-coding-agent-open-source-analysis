@@ -15,7 +15,7 @@
 | 사용자 말과 소스 연결 | Aider repo map, Continue retrieval, Roo code index, Gemini/Qwen tools, Codex file search | 사용자 발화에서 path token, identifier, natural-language query, recent file, spec search hint를 뽑아 후보 파일/심볼/chunk로 연결하는 공통 알고리즘 정리 |
 | spec-driven/spec extraction | 기존 650개 연구 코퍼스, 20개 spec-driven repo, 100개 LLM wiki repo | 요구사항 추출, ambiguity/conflict detection, acceptance criteria, trace graph, spec memory view를 하나의 설계로 합성 |
 | LLM wiki 100개 | `data/llm-wiki-repositories.json`, `data/llm-wiki-structure-analysis-100.json`, `reports/llm-wiki/repositories/*` | 100개 후보 클론/구조 분석은 완료 상태임을 재확인. 추가로 code-level deep compare가 다음 과제임을 표시 |
-| 웹 열람 | `web/`, `scripts/build-web-index.mjs`, GitHub Pages workflow, `vercel.json` | 새 문서가 검색/카테고리 인덱스에 들어가도록 웹 인덱스 재빌드 대상에 포함 |
+| 레포 직접 열람 | `reports/categories/`, `data/category-index.json`, `data/categories/*.json` | 웹 배포 표면은 제거하고, GitHub/local checkout에서 카테고리별로 읽는 구조로 정리 |
 
 ## 2. 핵심 결론
 
@@ -67,5 +67,4 @@
 | --- | --- | --- |
 | LLM wiki 100개 code-level deep compare | 현재는 구조/manifest 중심 분석이다. 실제 품질은 ingestion, retrieval, update, provenance 구현에서 갈린다. | `reports/llm-wiki/02-code-level-pipeline-comparison.md` |
 | spec trace schema 초안 작성 | spec memory를 실제 도구로 만들려면 JSON schema가 필요하다. | `specs/schema/trace.schema.json` |
-| 웹 UI 검색성 점검 | 웹 검색/필터가 큰 문서 수에서도 잘 작동해야 한다. | Playwright smoke test 또는 static JS check |
-| Vercel prod 배포 검증 | `vercel.json`은 존재하지만 실제 prod URL은 인증/프로젝트 연결 상태에 의존한다. | Vercel deployment URL 기록 |
+| 카테고리 색인 품질 점검 | 레포 직접 열람 구조에서는 카테고리 과분류/미분류가 UX를 좌우한다. | `npm run build:categories` 후 category counts와 상위 항목 샘플 점검 |

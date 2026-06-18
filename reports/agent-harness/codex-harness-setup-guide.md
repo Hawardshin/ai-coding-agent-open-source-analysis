@@ -18,8 +18,8 @@ Create `AGENTS.md` at the repo root. Keep it short and operational.
 
 ## Verification
 - For JavaScript/TypeScript changes, run npm test or the nearest package test command.
-- For docs/data changes, run npm run build:web.
-- Do not mark work complete until generated files and web index counts match the requested scope.
+- For docs/data category changes, run npm run build:categories.
+- Do not mark work complete until generated category files and report counts match the requested scope.
 
 ## Safety
 - Do not commit secrets, credentials, auth tokens, or local Codex state.

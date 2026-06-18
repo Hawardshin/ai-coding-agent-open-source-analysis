@@ -1,6 +1,0 @@
-{
-  "buildCommand": "npm run build:web",
-  "outputDirectory": "web",
-  "cleanUrls": true,
-  "trailingSlash": false
-}
