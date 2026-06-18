@@ -14,6 +14,7 @@
     "collect:agent-harness-materials": "node scripts/collect-agent-harness-materials.mjs",
     "collect:conference-presentations": "node scripts/collect-conference-presentation-materials.mjs",
     "collect:ai-usage-trends": "node scripts/collect-ai-usage-trend-conferences.mjs",
+    "build:categories": "node scripts/build-category-index.mjs",
     "build:web": "node scripts/build-web-index.mjs"
   }
 }

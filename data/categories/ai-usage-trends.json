@@ -1,0 +1,2580 @@
+{
+  "generatedAt": "2026-06-18T13:38:56.297Z",
+  "slug": "ai-usage-trends",
+  "title": "AI Usage Trends",
+  "description": "Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events.",
+  "counts": {
+    "total": 58,
+    "trend-reference": 58
+  },
+  "items": [
+    {
+      "id": "trend-reference:samsung-ai-forum-2025-youtube-sessions",
+      "kind": "trend-reference",
+      "title": "13 online sessions from Samsung AI Forum 2025 are now available",
+      "name": null,
+      "url": "https://developer.samsung.com/sdp/news/en/2025/10/16/catch-13-insightful-sessions-from-samsung-ai-forum-2025-on-youtube",
+      "summary": "Samsung described the online forum theme as Generative to Agentic AI, with on-device AI and productivity-oriented agents.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "developer-productivity-devtools",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "generative-to-agentic-ai",
+        "on-device-ai",
+        "productivity",
+        "ai-agent",
+        "recording-index",
+        "Samsung",
+        "Samsung AI Forum 2025",
+        "Samsung Developer"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Samsung AI Forum 2025",
+      "eventDate": "2025-09-16",
+      "company": "Samsung",
+      "score": 125
+    },
+    {
+      "id": "trend-reference:microsoft-ai-tour-seoul-2026",
+      "kind": "trend-reference",
+      "title": "Microsoft AI Tour in Seoul",
+      "name": null,
+      "url": "https://aitour.microsoft.com/flow/microsoft/seoul26/landingpage/page/cityhome",
+      "summary": "Seoul stop for Microsoft AI Tour focused on AI frontier strategy, Copilot, Azure AI, and practical enterprise adoption.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "security-governance-safety",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "copilot",
+        "azure-ai",
+        "hands-on",
+        "governance",
+        "event-page",
+        "Microsoft",
+        "Microsoft AI Tour Seoul 2026",
+        "Microsoft AI Tour"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Microsoft AI Tour Seoul 2026",
+      "eventDate": "2026-03-26",
+      "company": "Microsoft",
+      "score": 125
+    },
+    {
+      "id": "trend-reference:microsoft-ai-tour-seoul-thelec",
+      "kind": "trend-reference",
+      "title": "Microsoft AI Tour resources",
+      "name": null,
+      "url": "https://adoption.microsoft.com/en-us/ai-tour/",
+      "summary": "Microsoft AI Tour resource hub describes expert-led sessions, hands-on demos, and deep dives into Copilot and Azure AI for responsible organizational adoption.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "security-governance-safety",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "copilot",
+        "azure-ai",
+        "case-studies",
+        "security-governance",
+        "event-resource-hub",
+        "Microsoft",
+        "Microsoft AI Tour Seoul 2026",
+        "Microsoft Adoption"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Microsoft AI Tour Seoul 2026",
+      "eventDate": "2026-03-26",
+      "company": "Microsoft",
+      "score": 125
+    },
+    {
+      "id": "trend-reference:samsung-ai-forum-2025-open",
+      "kind": "trend-reference",
+      "title": "Samsung Electronics opens Samsung AI Forum 2025",
+      "name": null,
+      "url": "https://news.samsung.com/global/samsung-electronics-opens-samsung-ai-forum-2025",
+      "summary": "Samsung AI Forum 2025 gathered research and industry speakers around breakthroughs in AI and future research directions.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "on-device-ai",
+        "semiconductor-ai",
+        "generative-ai",
+        "event-announcement",
+        "Samsung",
+        "Samsung AI Forum 2025",
+        "Samsung Newsroom"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Samsung AI Forum 2025",
+      "eventDate": "2025-09-15",
+      "company": "Samsung",
+      "score": 125
+    },
+    {
+      "id": "trend-reference:aws-reinvent-2025-agentcore-deep-dive",
+      "kind": "trend-reference",
+      "title": "Architecting scalable and secure agentic AI applications with Amazon Bedrock AgentCore",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=wqmeZOT6mmc",
+      "summary": "Technical session for AgentCore architecture, ReAct loops, runtime isolation, and production agent deployment.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory",
+        "security-governance-safety",
+        "ai-infrastructure-serving"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "security",
+        "runtime",
+        "agentcore",
+        "production-architecture",
+        "technical-session-recording",
+        "Amazon/AWS",
+        "AWS re:Invent 2025",
+        "AWS Events YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS re:Invent 2025",
+      "eventDate": "2025-12-04",
+      "company": "Amazon/AWS",
+      "score": 120
+    },
+    {
+      "id": "trend-reference:aws-ai-data-conference-2026-agentic",
+      "kind": "trend-reference",
+      "title": "AWS AI and Data Conference 2026",
+      "name": null,
+      "url": "https://aws.amazon.com/uki/cloud-services/aws-events/ai-and-data-conference-2026/",
+      "summary": "AWS framed streaming, messaging, and Amazon Connect as infrastructure for responsive agentic AI experiences.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "data-streaming",
+        "messaging",
+        "customer-experience",
+        "enterprise-ai",
+        "conference-page",
+        "Amazon/AWS",
+        "AWS AI and Data Conference 2026",
+        "AWS"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS AI and Data Conference 2026",
+      "eventDate": "2026-03-01",
+      "company": "Amazon/AWS",
+      "score": 120
+    },
+    {
+      "id": "trend-reference:aws-reinvent-2025-ai-news",
+      "kind": "trend-reference",
+      "title": "Frontier agents, Trainium chips, and Amazon Nova: key announcements from AWS re:Invent 2025",
+      "name": null,
+      "url": "https://www.aboutamazon.com/news/aws/aws-re-invent-2025-ai-news-updates",
+      "summary": "AWS grouped re:Invent AI launches around agents, Nova models, Trainium infrastructure, AgentCore, and AI Factories.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "ai-infrastructure-serving",
+        "local-llm-models"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "frontier-agents",
+        "ai-infrastructure",
+        "custom-models",
+        "agentcore",
+        "trainium",
+        "ai-factories",
+        "event-news-roundup",
+        "Amazon/AWS",
+        "AWS re:Invent 2025",
+        "About Amazon"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS re:Invent 2025",
+      "eventDate": "2025-12-04",
+      "company": "Amazon/AWS",
+      "score": 120
+    },
+    {
+      "id": "trend-reference:aws-reinvent-2025-agentcore-memory",
+      "kind": "trend-reference",
+      "title": "Make agents remember with Amazon Bedrock AgentCore Memory",
+      "name": null,
+      "url": "https://www.youtube.com/results?search_query=AWS+re%3AInvent+2025+Make+agents+remember+Amazon+Bedrock+AgentCore+Memory",
+      "summary": "Agent memory became a first-class managed capability in AWS's agent infrastructure message.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "llm-wiki-rag-knowledge",
+        "context-memory"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "memory",
+        "context",
+        "personalization",
+        "session-search",
+        "Amazon/AWS",
+        "AWS re:Invent 2025",
+        "AWS Events YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS re:Invent 2025",
+      "eventDate": "2025-12-04",
+      "company": "Amazon/AWS",
+      "score": 120
+    },
+    {
+      "id": "trend-reference:aws-summit-ny-2025-agentcore-announcements",
+      "kind": "trend-reference",
+      "title": "Top announcements of AWS Summit New York 2025",
+      "name": null,
+      "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2025/",
+      "summary": "AWS introduced Amazon Bedrock AgentCore as managed infrastructure to deploy and operate AI agents securely at scale.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory",
+        "security-governance-safety"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "enterprise-ai",
+        "agent-platform",
+        "memory",
+        "identity",
+        "tool-use",
+        "announcement-roundup",
+        "Amazon/AWS",
+        "AWS Summit New York 2025",
+        "AWS Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS Summit New York 2025",
+      "eventDate": "2025-07-16",
+      "company": "Amazon/AWS",
+      "score": 120
+    },
+    {
+      "id": "trend-reference:google-workspace-next-2026",
+      "kind": "trend-reference",
+      "title": "10 more announcements from Google Workspace at Cloud Next '26",
+      "name": null,
+      "url": "https://workspace.google.com/blog/product-announcements/10-more-announcements-workspace-at-next-2026",
+      "summary": "Workspace announcements show AI moving into everyday work surfaces, including skills and interactive data capabilities.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "workspace",
+        "agentic-skills",
+        "data-visualization",
+        "productivity-ai",
+        "product-announcement",
+        "Google Cloud",
+        "Google Cloud Next 2026",
+        "Google Workspace Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google Cloud Next 2026",
+      "eventDate": "2026-04-23",
+      "company": "Google Cloud",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:salesforce-agentforce-360-updates",
+      "kind": "trend-reference",
+      "title": "Agentforce 360 announcements",
+      "name": null,
+      "url": "https://www.salesforce.com/agentforce/what-is-new/",
+      "summary": "Agentforce 360 updates show enterprise agents moving toward low-code builders, voice, multimodal document extraction, and multi-agent teams.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agent-builder",
+        "voice-agents",
+        "multi-agent-orchestration",
+        "data-360",
+        "low-code",
+        "product-announcement",
+        "Salesforce",
+        "Dreamforce 2025 and Agentforce 360"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Dreamforce 2025 and Agentforce 360",
+      "eventDate": "2025-10-15",
+      "company": "Salesforce",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:nvidia-gtc-2026",
+      "kind": "trend-reference",
+      "title": "Best of NVIDIA GTC 2026",
+      "name": null,
+      "url": "https://www.nvidia.com/gtc/",
+      "summary": "GTC 2026 highlights agentic AI, inference, physical AI, robotics, AI factories, and open models.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "ai-infrastructure-serving",
+        "local-llm-models"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "physical-ai",
+        "robotics",
+        "ai-factories",
+        "inference",
+        "open-models",
+        "conference-hub",
+        "NVIDIA",
+        "NVIDIA GTC 2026"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "NVIDIA GTC 2026",
+      "eventDate": "2026-03-19",
+      "company": "NVIDIA",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:naver-dan25-business-agents",
+      "kind": "trend-reference",
+      "title": "Beyond Tools, Toward a Trusted Partner: The New Era of Business Agents",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=1B4J4ZAV-hA",
+      "summary": "NAVER session title is a strong signal that business agents are being framed as trusted work partners.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "business-agents",
+        "enterprise-ai",
+        "agentic-ai",
+        "session-recording",
+        "NAVER",
+        "DAN25",
+        "TEAM NAVER YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "DAN25",
+      "eventDate": "2025-11-06",
+      "company": "NAVER",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:naver-dan25-sessions",
+      "kind": "trend-reference",
+      "title": "DAN25 sessions",
+      "name": null,
+      "url": "https://dan.naver.com/25/sessions",
+      "summary": "NAVER's DAN25 session catalog is a primary source for On-Service AI, AI agents, search/recommendation, and ecosystem AI.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "llm-wiki-rag-knowledge",
+        "context-memory",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "service-ai",
+        "ai-agents",
+        "search",
+        "commerce",
+        "llm",
+        "vlm",
+        "conference-schedule",
+        "NAVER",
+        "DAN25"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "DAN25",
+      "eventDate": "2025-11-06",
+      "company": "NAVER",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:sk-ai-summit-2025-agentic-youtube",
+      "kind": "trend-reference",
+      "title": "First Steps to Agentic AI: Industry-Specific Opportunities and Practical Guide",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=gn0pXvZdg6o",
+      "summary": "SK AI Summit session title directly addresses industry-specific opportunities and practical agentic AI adoption.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "industry-use-cases",
+        "practical-guide",
+        "session-recording",
+        "SK",
+        "SK AI Summit 2025",
+        "SK AI Summit YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "SK AI Summit 2025",
+      "eventDate": "2025-11-04",
+      "company": "SK",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:google-cloud-next-2026-news",
+      "kind": "trend-reference",
+      "title": "Google Cloud Next 2026: News and updates",
+      "name": null,
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/",
+      "summary": "Google positioned the agentic enterprise as a roadmap across Gemini Enterprise Agent Platform and AI infrastructure.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-enterprise",
+        "gemini-enterprise-agent-platform",
+        "tpu",
+        "ai-infrastructure",
+        "event-news-roundup",
+        "Google Cloud",
+        "Google Cloud Next 2026",
+        "Google Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google Cloud Next 2026",
+      "eventDate": "2026-04-22",
+      "company": "Google Cloud",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:microsoft-build-2026-official",
+      "kind": "trend-reference",
+      "title": "Microsoft Build 2026",
+      "name": null,
+      "url": "https://news.microsoft.com/build-2026/",
+      "summary": "Build 2026 centered on Foundry updates, AI agent deployment, GitHub app for agentic development, and agentic SDLC security.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "security-governance-safety",
+        "ai-infrastructure-serving",
+        "local-llm-models"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "foundry",
+        "github-copilot",
+        "agentic-development",
+        "security",
+        "model-lifecycle",
+        "event-hub",
+        "Microsoft",
+        "Microsoft Build 2026",
+        "Microsoft News"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Microsoft Build 2026",
+      "eventDate": "2026-06-02",
+      "company": "Microsoft",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:microsoft-build-2026-work-iq",
+      "kind": "trend-reference",
+      "title": "Microsoft Build 2026: Be yourself at work",
+      "name": null,
+      "url": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "summary": "Microsoft introduced context layers such as Microsoft IQ and Work IQ to ground agents in enterprise work data.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "work-iq",
+        "context-layer",
+        "copilot-studio",
+        "foundry",
+        "enterprise-knowledge",
+        "keynote-analysis",
+        "Microsoft",
+        "Microsoft Build 2026",
+        "Microsoft Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Microsoft Build 2026",
+      "eventDate": "2026-06-02",
+      "company": "Microsoft",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:naver-dan25-clova-highlights",
+      "kind": "trend-reference",
+      "title": "NAVER Cloud's DAN25 highlights: AI, a shared endeavor for all",
+      "name": null,
+      "url": "https://clova.ai/en/tech-blog/naver-clouds-dan25-highlights-ai-a-shared-endeavor-for-all",
+      "summary": "NAVER reported DAN25 attendance and framed AI as an ecosystem-wide service transformation.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "on-service-ai",
+        "ai-agents",
+        "enterprise-ai",
+        "ecosystem",
+        "event-recap",
+        "NAVER",
+        "DAN25",
+        "NAVER Cloud / CLOVA"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "DAN25",
+      "eventDate": "2025-11-06",
+      "company": "NAVER",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:salesforce-dreamforce-2025-takeaways",
+      "kind": "trend-reference",
+      "title": "The biggest news from Dreamforce to you",
+      "name": null,
+      "url": "https://www.salesforce.com/news/stories/the-biggest-news-of-dreamforce-to-you/",
+      "summary": "Salesforce's Dreamforce news hub links the 2025 Agentforce 360, Data 360 context, Google Gemini integration, and enterprise agent announcements.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentforce-360",
+        "data-360",
+        "voice-agents",
+        "context",
+        "enterprise-ai",
+        "gemini-enterprise",
+        "event-news-hub",
+        "Salesforce",
+        "Dreamforce 2025",
+        "Salesforce News"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Dreamforce 2025",
+      "eventDate": "2025-10-15",
+      "company": "Salesforce",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:microsoft-copilot-studio-may-2026",
+      "kind": "trend-reference",
+      "title": "What's new in Copilot Studio",
+      "name": null,
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+      "summary": "Copilot Studio updates show computer use, prompt nodes, model selection, and workflow automation entering enterprise agent products.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "security-governance-safety",
+        "developer-productivity-devtools",
+        "local-llm-models"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "computer-use",
+        "agentic-ai",
+        "copilot-studio",
+        "workflow-automation",
+        "governance",
+        "product-release-notes",
+        "Microsoft",
+        "Microsoft Build 2026",
+        "Microsoft Learn"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Microsoft Build 2026",
+      "eventDate": "2026-05-31",
+      "company": "Microsoft",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:github-universe-2025-schedule",
+      "kind": "trend-reference",
+      "title": "Your guide to GitHub Universe 2025: The schedule just launched",
+      "name": null,
+      "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2025-the-schedule-just-launched/",
+      "summary": "Universe 2025 schedule highlighted vibe coding, automation at scale, and AI-driven security.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "security-governance-safety",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "coding-agents",
+        "vibe-coding",
+        "automation",
+        "ai-security",
+        "developer-tools",
+        "schedule-announcement",
+        "GitHub",
+        "GitHub Universe 2025",
+        "GitHub Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "GitHub Universe 2025",
+      "eventDate": "2025-10-28",
+      "company": "GitHub",
+      "score": 110
+    },
+    {
+      "id": "trend-reference:aws-reinvent-2025-media-agentic-ai",
+      "kind": "trend-reference",
+      "title": "Agentic AI headlines AWS re:Invent 2025 across media and entertainment",
+      "name": null,
+      "url": "https://aws.amazon.com/blogs/media/agentic-ai-headlines-aws-reinvent-2025-across-media-and-entertainment/",
+      "summary": "AWS highlighted agentic media workflows, video highlights, human feedback loops, and GenAI analytics sessions.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "media",
+        "human-feedback",
+        "workflow-orchestration",
+        "industry-ai",
+        "industry-session-guide",
+        "Amazon/AWS",
+        "AWS re:Invent 2025",
+        "AWS Media Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS re:Invent 2025",
+      "eventDate": "2025-12-02",
+      "company": "Amazon/AWS",
+      "score": 105
+    },
+    {
+      "id": "trend-reference:ai-summit-seoul-2026-official",
+      "kind": "trend-reference",
+      "title": "AI Summit Seoul & EXPO 2026",
+      "name": null,
+      "url": "https://www.aisummitseoul.com/",
+      "summary": "Although the 2026 event is slightly outside the cutoff, the active CFP page reflects Korea's current agentic/enterprise/infrastructure AI agenda.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "enterprise-ai",
+        "ai-infrastructure",
+        "industry-applications",
+        "conference-page",
+        "AI Summit Seoul",
+        "AI Summit Seoul & Expo 2026"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AI Summit Seoul & Expo 2026",
+      "eventDate": "2026-08-19",
+      "company": "AI Summit Seoul",
+      "score": 105
+    },
+    {
+      "id": "trend-reference:aboutamazon-aws-summit-agentic-ai-2025",
+      "kind": "trend-reference",
+      "title": "AWS announces new innovations for building AI agents at AWS Summit New York 2025",
+      "name": null,
+      "url": "https://www.aboutamazon.com/news/aws/aws-summit-agentic-ai-innovations-2025",
+      "summary": "Amazon positioned AgentCore, marketplace listings, and agentic AI investment as the next enterprise AI buildout.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "agent-platform",
+        "enterprise-adoption",
+        "marketplace",
+        "investment",
+        "news-announcement",
+        "Amazon/AWS",
+        "AWS Summit New York 2025",
+        "About Amazon"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS Summit New York 2025",
+      "eventDate": "2025-07-16",
+      "company": "Amazon/AWS",
+      "score": 105
+    },
+    {
+      "id": "trend-reference:aws-summit-ny-2025-keynote",
+      "kind": "trend-reference",
+      "title": "AWS Summit New York City 2025 keynote",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=2890bEb61qQ",
+      "summary": "Keynote from AWS Agentic AI leadership, useful for tracking how AWS framed agents for builders and enterprises.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "enterprise-ai",
+        "developer-platform",
+        "recording",
+        "Amazon/AWS",
+        "AWS Summit New York 2025",
+        "AWS Events YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS Summit New York 2025",
+      "eventDate": "2025-07-16",
+      "company": "Amazon/AWS",
+      "score": 105
+    },
+    {
+      "id": "trend-reference:aws-summit-ny-2026",
+      "kind": "trend-reference",
+      "title": "AWS Summit New York City 2026",
+      "name": null,
+      "url": "https://aws.amazon.com/events/summits/new-york/",
+      "summary": "AWS Summit New York 2026 describes hands-on cloud and AI innovation from agentic AI to serverless computing.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "hands-on",
+        "enterprise-ai",
+        "cloud-ai",
+        "conference-page",
+        "Amazon/AWS",
+        "AWS Summit New York City 2026",
+        "AWS"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS Summit New York City 2026",
+      "eventDate": "2026-06-17",
+      "company": "Amazon/AWS",
+      "score": 105
+    },
+    {
+      "id": "trend-reference:aws-summit-seoul-2026",
+      "kind": "trend-reference",
+      "title": "AWS Summit Seoul 2026 kicks off with agentic AI and physical AI roadmap",
+      "name": null,
+      "url": "https://www.asiae.co.kr/en/article/IT/2026052007280509092",
+      "summary": "Korean coverage says AWS Summit Seoul emphasized agentic AI, physical AI, and Korean enterprise infrastructure readiness.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "physical-ai",
+        "enterprise-ai",
+        "infrastructure",
+        "event-report",
+        "Amazon/AWS",
+        "AWS Summit Seoul 2026",
+        "Asia Economy"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS Summit Seoul 2026",
+      "eventDate": "2026-05-20",
+      "company": "Amazon/AWS",
+      "score": 105
+    },
+    {
+      "id": "trend-reference:semicon-korea-ai-summit-2026",
+      "kind": "trend-reference",
+      "title": "AI Summit - SEMICON Korea",
+      "name": null,
+      "url": "https://www.semiconkorea.org/en/conference/technology/ai-summit",
+      "summary": "SEMICON Korea's AI Summit is a useful Korean signal for AI in semiconductor and manufacturing ecosystems.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "local-llm-models",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "semiconductor-ai",
+        "ai-infrastructure",
+        "edge-ai",
+        "manufacturing",
+        "conference-track",
+        "SEMICON Korea",
+        "SEMICON Korea AI Summit 2026"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "SEMICON Korea AI Summit 2026",
+      "eventDate": "2026-02-11",
+      "company": "SEMICON Korea",
+      "score": 100
+    },
+    {
+      "id": "trend-reference:sk-ai-summit-2025-official",
+      "kind": "trend-reference",
+      "title": "SK hosts SK AI Summit 2025",
+      "name": null,
+      "url": "https://eng.sk.com/news/sk-hosts-sk-ai-summit-2025-with-vision-to-solve-ai-challenges-through-memory-infrastructure-and-advanced-ai-solutions",
+      "summary": "SK framed the summit around AI Now & Next, memory infrastructure, and advanced AI solutions.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "context-memory",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "ai-infrastructure",
+        "memory",
+        "advanced-ai-solutions",
+        "ai-economy",
+        "event-news",
+        "SK",
+        "SK AI Summit 2025"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "SK AI Summit 2025",
+      "eventDate": "2025-11-03",
+      "company": "SK",
+      "score": 100
+    },
+    {
+      "id": "trend-reference:google-io-2026-announcements",
+      "kind": "trend-reference",
+      "title": "100 things we announced at I/O 2026",
+      "name": null,
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "summary": "Google's I/O list centered on new models, agents, and tools for building, search, creation, discovery, shopping, and productivity.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "llm-wiki-rag-knowledge",
+        "developer-productivity-devtools",
+        "local-llm-models"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "gemini",
+        "agents",
+        "consumer-ai",
+        "developer-tools",
+        "search",
+        "creation",
+        "announcement-list",
+        "Google",
+        "Google I/O 2026",
+        "Google Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google I/O 2026",
+      "eventDate": "2026-05-20",
+      "company": "Google",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:salesforce-dreamforce-2025-agentforce-keynote",
+      "kind": "trend-reference",
+      "title": "Agentforce Keynote: Become an Agentic Enterprise",
+      "name": null,
+      "url": "https://www.salesforce.com/plus/experience/dreamforce_2025/series/agentforce_at_dreamforce_2025/episode/episode-s1e3",
+      "summary": "Dreamforce framed AI agents as a customer-success operating model, not only a chatbot feature.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "local-llm-models"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-enterprise",
+        "agentforce",
+        "customer-success",
+        "enterprise-agents",
+        "crm",
+        "keynote-recording",
+        "Salesforce",
+        "Dreamforce 2025",
+        "Salesforce+"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Dreamforce 2025",
+      "eventDate": "2025-10-15",
+      "company": "Salesforce",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:google-cloud-next-2026-agentic-ai-track",
+      "kind": "trend-reference",
+      "title": "Agentic AI: Google Cloud Next 2026",
+      "name": null,
+      "url": "https://www.googlecloudevents.com/next-vegas/agentic-ai",
+      "summary": "Track page focuses on creating, sharing, and running custom AI agents through Gemini Enterprise.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "gemini-enterprise",
+        "custom-agents",
+        "workplace-ai",
+        "conference-track",
+        "Google Cloud",
+        "Google Cloud Next 2026",
+        "Google Cloud Events"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google Cloud Next 2026",
+      "eventDate": "2026-04-22",
+      "company": "Google Cloud",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:google-io-2026-developer-keynote-news",
+      "kind": "trend-reference",
+      "title": "All the news from the Google I/O 2026 Developer keynote",
+      "name": null,
+      "url": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+      "summary": "Google described a shift from AI assistants to agents that navigate complex workflows, with Gemini 3.5 and Antigravity 2.0.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "developer-tools",
+        "agents",
+        "gemini",
+        "antigravity",
+        "agent-platform",
+        "workflow-automation",
+        "developer-keynote-roundup",
+        "Google",
+        "Google I/O 2026",
+        "Google Developers Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google I/O 2026",
+      "eventDate": "2026-05-20",
+      "company": "Google",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:anthropic-code-with-claude",
+      "kind": "trend-reference",
+      "title": "Code with Claude developer conference",
+      "name": null,
+      "url": "https://claude.com/code-with-claude",
+      "summary": "Anthropic's developer conference format emphasizes hands-on Claude Code workshops, live demos, and builder deep-dives.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "coding-agents-ides",
+        "agent-harness-orchestration",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "coding-agents",
+        "claude-code",
+        "hands-on-workshops",
+        "developer-tools",
+        "live-demo",
+        "conference-page",
+        "Anthropic",
+        "Code with Claude"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Code with Claude",
+      "eventDate": "2026-05-06",
+      "company": "Anthropic",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:google-io-2026-developer-keynote-video",
+      "kind": "trend-reference",
+      "title": "Developer Keynote at Google I/O 2026",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=aqmpZocmR8o",
+      "summary": "Developer keynote includes building agents and Antigravity sections, useful for developer workflow trend analysis.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "coding-agents-ides",
+        "agent-harness-orchestration",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "developer-tools",
+        "building-agents",
+        "antigravity",
+        "gemini-api",
+        "keynote-recording",
+        "Google",
+        "Google I/O 2026",
+        "Google Developers YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google I/O 2026",
+      "eventDate": "2026-05-20",
+      "company": "Google",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:microsoft-ai-tour-hong-kong-2026",
+      "kind": "trend-reference",
+      "title": "From AI experiments to frontier success",
+      "name": null,
+      "url": "https://news.microsoft.com/source/asia/2026/04/22/from-ai-experiments-to-frontier-success-microsoft-brings-agentic-ai-to-hong-kong-organizations/",
+      "summary": "Microsoft framed agentic AI adoption around measurable business value: employee experience, customer engagement, process reshaping, and innovation.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "business-value",
+        "frontier-success",
+        "customer-engagement",
+        "process-automation",
+        "event-recap",
+        "Microsoft",
+        "Microsoft AI Tour Hong Kong 2026",
+        "Microsoft Source Asia"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Microsoft AI Tour Hong Kong 2026",
+      "eventDate": "2026-04-22",
+      "company": "Microsoft",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:google-cloud-next-2026-keynote",
+      "kind": "trend-reference",
+      "title": "Google Cloud Next '26 Keynote: Building the Agentic Enterprise",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=lsqPct4NnNs",
+      "summary": "Official keynote recording framed the end of AI experimentation and the start of agentic transformation.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-enterprise",
+        "gemini",
+        "enterprise-ai",
+        "ai-transformation",
+        "keynote-recording",
+        "Google Cloud",
+        "Google Cloud Next 2026",
+        "Google Cloud YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google Cloud Next 2026",
+      "eventDate": "2026-04-22",
+      "company": "Google Cloud",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:openai-codex-at-devday-2025",
+      "kind": "trend-reference",
+      "title": "How Codex ran OpenAI DevDay 2025",
+      "name": null,
+      "url": "https://developers.openai.com/blog/codex-at-devday",
+      "summary": "OpenAI's case study shows Codex used for demos, booth apps, docs, code review, and parallel event execution.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "coding-agents-ides",
+        "agent-harness-orchestration",
+        "llm-wiki-rag-knowledge",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "coding-agents",
+        "developer-tools",
+        "parallel-work",
+        "demo-production",
+        "docs-automation",
+        "technical-blog",
+        "OpenAI",
+        "OpenAI DevDay 2025",
+        "OpenAI Developers"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "OpenAI DevDay 2025",
+      "eventDate": "2025-10-06",
+      "company": "OpenAI",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:openai-devday-2025",
+      "kind": "trend-reference",
+      "title": "OpenAI DevDay 2025",
+      "name": null,
+      "url": "https://openai.com/devday/",
+      "summary": "OpenAI DevDay is a key signal for agent/app developer platforms, Codex workflows, and production demos.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "coding-agents-ides",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "developer-platform",
+        "agentkit",
+        "codex",
+        "realtime",
+        "apps",
+        "conference-page",
+        "OpenAI",
+        "OpenAI DevDay 2025"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "OpenAI DevDay 2025",
+      "eventDate": "2025-10-06",
+      "company": "OpenAI",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:github-agent-hq-2025",
+      "kind": "trend-reference",
+      "title": "Welcome home, agents",
+      "name": null,
+      "url": "https://github.blog/news-insights/company-news/welcome-home-agents/",
+      "summary": "GitHub positioned Agent HQ as a place to orchestrate coding agents across developer workflows.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "coding-agents-ides",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agent-orchestration",
+        "coding-agents",
+        "multi-agent",
+        "developer-workflow",
+        "github",
+        "announcement",
+        "GitHub",
+        "GitHub Universe 2025",
+        "GitHub Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "GitHub Universe 2025",
+      "eventDate": "2025-10-28",
+      "company": "GitHub",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:google-cloud-next-2026-welcome",
+      "kind": "trend-reference",
+      "title": "Welcome to Google Cloud Next '26",
+      "name": null,
+      "url": "https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next26",
+      "summary": "Google Cloud emphasized Agentic Taskforce, Agentic Defense, Gemini Enterprise, Workspace, and customer-experience AI.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "agentic-ai",
+        "gemini-enterprise",
+        "agentic-defense",
+        "workspace",
+        "customer-experience",
+        "event-announcement",
+        "Google Cloud",
+        "Google Cloud Next 2026",
+        "Google Cloud Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Google Cloud Next 2026",
+      "eventDate": "2026-04-22",
+      "company": "Google Cloud",
+      "score": 95
+    },
+    {
+      "id": "trend-reference:aws-reinvent-2025-dev-track",
+      "kind": "trend-reference",
+      "title": "Breakout Sessions and Code Talks from AWS re:Invent 2025",
+      "name": null,
+      "url": "https://dev.to/aws/dev-track-spotlight-breakout-sessions-code-talks-from-aws-reinvent-2025-3om7",
+      "summary": "Developer track grouped GenAI and agentic AI with Kiro, Amazon Q Developer, multi-agent systems, and agent security.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "spec-driven-requirements",
+        "context-memory",
+        "evals-observability-quality",
+        "security-governance-safety",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "developer-tools",
+        "coding-agents",
+        "kiro",
+        "amazon-q",
+        "strands-agents",
+        "security",
+        "observability",
+        "session-guide",
+        "Amazon/AWS",
+        "AWS re:Invent 2025",
+        "AWS Community Builders"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AWS re:Invent 2025",
+      "eventDate": "2025-12-04",
+      "company": "Amazon/AWS",
+      "score": 90
+    },
+    {
+      "id": "trend-reference:icml-2026-seoul",
+      "kind": "trend-reference",
+      "title": "ICML 2026 Seoul",
+      "name": null,
+      "url": "https://icml.cc/",
+      "summary": "ICML 2026 is just outside the period but matters because Seoul becomes a global ML research hub in the immediate next cycle.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "local-llm-models",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "research",
+        "machine-learning",
+        "foundation-models",
+        "agents",
+        "research-conference-page",
+        "ICML",
+        "ICML 2026"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "ICML 2026",
+      "eventDate": "2026-07-06",
+      "company": "ICML",
+      "score": 90
+    },
+    {
+      "id": "trend-reference:nvidia-gtc-2026-robotics-digital-twins",
+      "kind": "trend-reference",
+      "title": "AI Agents, Robotics, and Digital Twins",
+      "name": null,
+      "url": "https://www.nvidia.com/en-us/on-demand/session/gtc26-s81674/",
+      "summary": "Session connects AI agents, robotics, and digital twins into a manufacturing and autonomous-system stack.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "context-memory",
+        "ai-infrastructure-serving"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "physical-ai",
+        "robotics",
+        "digital-twins",
+        "manufacturing",
+        "autonomous-systems",
+        "session-page",
+        "NVIDIA",
+        "NVIDIA GTC 2026",
+        "NVIDIA On-Demand"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "NVIDIA GTC 2026",
+      "eventDate": "2026-03-19",
+      "company": "NVIDIA",
+      "score": 85
+    },
+    {
+      "id": "trend-reference:nvidia-gtc-2026-ai-factories",
+      "kind": "trend-reference",
+      "title": "Building and Scaling AI Factories with Digital Twins and Robotics",
+      "name": null,
+      "url": "https://www.nvidia.com/en-us/on-demand/session/gtc26-s81508/",
+      "summary": "GTC session shows AI factories as a production-grade pattern combining simulation, robotics, and data-center scale AI.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "context-memory",
+        "ai-infrastructure-serving"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "ai-factories",
+        "digital-twins",
+        "robotics",
+        "manufacturing-ai",
+        "physical-ai",
+        "session-page",
+        "NVIDIA",
+        "NVIDIA GTC 2026",
+        "NVIDIA On-Demand"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "NVIDIA GTC 2026",
+      "eventDate": "2026-03-19",
+      "company": "NVIDIA",
+      "score": 85
+    },
+    {
+      "id": "trend-reference:apple-wwdc26-dub-dub-daily",
+      "kind": "trend-reference",
+      "title": "Dub Dub Daily: Day 2 - WWDC26",
+      "name": null,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/397/",
+      "summary": "Apple Developer session index helps track how Apple translates AI announcements into developer guidance.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "context-memory",
+        "developer-productivity-devtools"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "developer-tools",
+        "apple-intelligence",
+        "on-device-ai",
+        "platform-ai",
+        "developer-video",
+        "Apple",
+        "WWDC 2026",
+        "Apple Developer"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "WWDC 2026",
+      "eventDate": "2026-06-09",
+      "company": "Apple",
+      "score": 85
+    },
+    {
+      "id": "trend-reference:nvidia-gtc-2026-live-updates",
+      "kind": "trend-reference",
+      "title": "NVIDIA GTC 2026: Live updates on what's next in AI",
+      "name": null,
+      "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+      "summary": "NVIDIA's live updates track keynote news, demos, and breakout themes around accelerated AI and physical AI.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "ai-infrastructure-serving"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "ai-infrastructure",
+        "physical-ai",
+        "robotics",
+        "simulation",
+        "enterprise-ai",
+        "event-news",
+        "NVIDIA",
+        "NVIDIA GTC 2026",
+        "NVIDIA Blog"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "NVIDIA GTC 2026",
+      "eventDate": "2026-03-19",
+      "company": "NVIDIA",
+      "score": 85
+    },
+    {
+      "id": "trend-reference:samsung-research-saif-2025",
+      "kind": "trend-reference",
+      "title": "Samsung AI Forum 2025",
+      "name": null,
+      "url": "https://research.samsung.com/saif",
+      "summary": "Samsung Research agenda includes knowledge graphs, diffusion language models, adversarial safety, and productivity benchmarks.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "llm-wiki-rag-knowledge",
+        "evals-observability-quality",
+        "security-governance-safety",
+        "developer-productivity-devtools",
+        "local-llm-models",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "knowledge-graph",
+        "diffusion-language-models",
+        "generative-ai-safety",
+        "productivity-evals",
+        "conference-page",
+        "Samsung",
+        "Samsung AI Forum 2025",
+        "Samsung Research"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Samsung AI Forum 2025",
+      "eventDate": "2025-09-16",
+      "company": "Samsung",
+      "score": 85
+    },
+    {
+      "id": "trend-reference:sk-ai-summit-2025-recap",
+      "kind": "trend-reference",
+      "title": "The SK AI Summit 2025 concluded with strong industry participation",
+      "name": null,
+      "url": "https://www.sktelecom.com/en/feature/feature_detail.do?currentPage=1&idx=40&keyword=&type=",
+      "summary": "SKT recap emphasizes global ecosystem speakers and the future of the AI-driven economy.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "ai-infrastructure-serving",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "global-ai-ecosystem",
+        "nvidia",
+        "anthropic",
+        "crusoe",
+        "ai-economy",
+        "event-recap",
+        "SK Telecom / SK",
+        "SK AI Summit 2025",
+        "SK Telecom"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "SK AI Summit 2025",
+      "eventDate": "2025-11-04",
+      "company": "SK Telecom / SK",
+      "score": 85
+    },
+    {
+      "id": "trend-reference:apple-wwdc-2026-keynote",
+      "kind": "trend-reference",
+      "title": "WWDC 2026 keynote introducing Siri AI",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=hF8swzNR1-o",
+      "summary": "Apple's WWDC26 AI signal is privacy-first personal context, on-device models, Private Cloud Compute, and Siri as an AI interface.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "context-memory",
+        "local-llm-models"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "consumer-ai",
+        "on-device-ai",
+        "private-cloud-compute",
+        "siri",
+        "personal-context",
+        "multimodal-ai",
+        "keynote-recording",
+        "Apple",
+        "WWDC 2026",
+        "Apple YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "WWDC 2026",
+      "eventDate": "2026-06-08",
+      "company": "Apple",
+      "score": 85
+    },
+    {
+      "id": "trend-reference:agentcon-seoul-2026",
+      "kind": "trend-reference",
+      "title": "AgentCon Seoul",
+      "name": null,
+      "url": "https://www.communitydays.org/event/2026-04-16/agentcon-seoul",
+      "summary": "AgentCon Seoul is part of the AI Agents World Tour and signals Korean developer interest in building agents.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "ai-agents",
+        "developer-community",
+        "agent-builders",
+        "developer-conference-page",
+        "Global AI Community Seoul",
+        "AgentCon Seoul 2026",
+        "Community Days / Global AI Community"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AgentCon Seoul 2026",
+      "eventDate": "2026-04-16",
+      "company": "Global AI Community Seoul",
+      "score": 80
+    },
+    {
+      "id": "trend-reference:naver-kakao-agents-koreatechtoday",
+      "kind": "trend-reference",
+      "title": "From LLMs to Agents: Naver and Kakao enter next phase of AI competition",
+      "name": null,
+      "url": "https://koreatechtoday.com/from-llms-to-agents-naver-and-kakao-enter-next-phase-of-ai-competition/",
+      "summary": "Trend analysis describes Korea's major internet companies moving from LLMs toward agents that plan and execute tasks.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "platforms",
+        "consumer-ai",
+        "service-rollout",
+        "trend-report",
+        "NAVER / Kakao",
+        "Korea platform AI trend",
+        "KoreaTechToday"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Korea platform AI trend",
+      "eventDate": "2026-01-01",
+      "company": "NAVER / Kakao",
+      "score": 80
+    },
+    {
+      "id": "trend-reference:ai-summit-seoul-2025-technode",
+      "kind": "trend-reference",
+      "title": "Global AI Conference: The 8th AI Summit Seoul & EXPO 2025",
+      "name": null,
+      "url": "https://technode.global/event/global-ai-conference-the-8th-ai-summit-seoul-expo-2025/",
+      "summary": "Listing frames the event from industrial AI and AX to AI agents and agentic AI.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "industrial-ai",
+        "ai-agents",
+        "agentic-ai",
+        "ax",
+        "event-listing",
+        "AI Summit Seoul",
+        "AI Summit Seoul & Expo 2025",
+        "TechNode Global"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AI Summit Seoul & Expo 2025",
+      "eventDate": "2025-11-10",
+      "company": "AI Summit Seoul",
+      "score": 80
+    },
+    {
+      "id": "trend-reference:naver-dan25-agent-n-koreatimes",
+      "kind": "trend-reference",
+      "title": "Naver to debut agentic AI service Agent N next year",
+      "name": null,
+      "url": "https://www.koreatimes.co.kr/business/tech-science/20251106/naver-to-debut-agentic-ai-service-agent-n-next-year",
+      "summary": "Korean coverage says NAVER used DAN25 to present Agent N and agentic AI direction for services.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "llm-wiki-rag-knowledge",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "search",
+        "super-app",
+        "consumer-ai",
+        "event-report",
+        "NAVER",
+        "DAN25",
+        "The Korea Times"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "DAN25",
+      "eventDate": "2025-11-06",
+      "company": "NAVER",
+      "score": 80
+    },
+    {
+      "id": "trend-reference:naver-kakao-agentic-ai-2026-koreatimes",
+      "kind": "trend-reference",
+      "title": "Naver, Kakao gear up for agentic AI era in 2026",
+      "name": null,
+      "url": "https://www.koreatimes.co.kr/business/tech-science/20260102/naver-kakao-gear-up-for-agentic-ai-era-in-2026",
+      "summary": "Korean platform trend coverage says NAVER and Kakao are moving search and messaging toward agentic AI in 2026.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "agent-harness-orchestration",
+        "llm-wiki-rag-knowledge",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "agentic-ai",
+        "search",
+        "messaging",
+        "super-app",
+        "consumer-ai",
+        "trend-report",
+        "NAVER / Kakao",
+        "Korea platform AI trend",
+        "The Korea Times"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Korea platform AI trend",
+      "eventDate": "2026-01-02",
+      "company": "NAVER / Kakao",
+      "score": 80
+    },
+    {
+      "id": "trend-reference:meta-connect-2025-keynote",
+      "kind": "trend-reference",
+      "title": "Meta Connect 2025 opening keynote",
+      "name": null,
+      "url": "https://www.youtube.com/watch?v=80s0chTOsK0",
+      "summary": "Meta Connect 2025 is useful as a signal that consumer AI is moving into glasses and embodied personal assistants.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "ai-wearables",
+        "ai-glasses",
+        "consumer-ai",
+        "multimodal-ai",
+        "metaverse",
+        "keynote-recording",
+        "Meta",
+        "Meta Connect 2025",
+        "Meta YouTube"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "Meta Connect 2025",
+      "eventDate": "2025-09-17",
+      "company": "Meta",
+      "score": 70
+    },
+    {
+      "id": "trend-reference:aaai-summer-symposium-seoul-2026",
+      "kind": "trend-reference",
+      "title": "AAAI 2026 Summer Symposium Series in Seoul",
+      "name": null,
+      "url": "https://aaai.org/conference/summer-symposia/suss26/",
+      "summary": "The AAAI Summer Symposium in Seoul is just after the cutoff and adds a near-term research-community signal.",
+      "categories": [
+        "presentations-conferences",
+        "ai-usage-trends",
+        "korean-ai-open-source"
+      ],
+      "sourceDatasets": [
+        "ai-usage-trend-conferences"
+      ],
+      "sourcePaths": [
+        "data/reference-index/ai-usage-trend-conferences-6-12mo.json"
+      ],
+      "originTags": [
+        "korea",
+        "research",
+        "ai-community",
+        "symposium",
+        "research-symposium-page",
+        "AAAI",
+        "AAAI 2026 Summer Symposium Series"
+      ],
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "license": null,
+      "updatedAt": null,
+      "localPath": null,
+      "reportPath": null,
+      "year": null,
+      "citedByCount": 0,
+      "event": "AAAI 2026 Summer Symposium Series",
+      "eventDate": "2026-06-22",
+      "company": "AAAI",
+      "score": 65
+    }
+  ]
+}

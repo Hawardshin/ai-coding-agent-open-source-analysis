@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-18T07:29:30.061Z",
-  "totalDocuments": 5110,
+  "generatedAt": "2026-06-18T13:39:03.613Z",
+  "totalDocuments": 5146,
   "byType": {
-    "report": 1388,
+    "report": 1406,
     "repository": 1120,
     "presentation": 665,
     "trend-reference": 58,
     "paper": 650,
-    "data": 29,
+    "data": 47,
     "material": 1200
   },
   "byCategory": {
@@ -16,6 +16,7 @@
     "research": 4,
     "adjacent-tech": 4,
     "comparison": 2,
+    "category-index": 18,
     "overview": 1,
     "spec-driven": 6,
     "source-scan": 2,
@@ -44,7 +45,7 @@
     "program-synthesis": 13,
     "spec-driven-ai": 8,
     "software-agents": 38,
-    "data": 29,
+    "data": 47,
     "claude-codex-agent-harness": 1200
   }
 }

@@ -1,5 +1,21 @@
 [
   {
+    "title": "Category index",
+    "summary": "오픈소스, 연구, 발표, 트렌드 자료를 카테고리별 폴더와 데이터 파일로 다시 묶은 통합 색인",
+    "query": "category index taxonomy open source research presentations agent rag mcp evals security korea",
+    "category": "category-index",
+    "repos": [
+      "Agent Harness and Orchestration (2650)",
+      "LLM Wiki, RAG, and Knowledge Bases (1729)",
+      "Coding Agents and IDEs (1417)",
+      "Developer Productivity and DevTools (1307)",
+      "Context and Memory (1178)",
+      "Presentations and Conferences (723)",
+      "Spec-Driven and Requirements (696)",
+      "Local LLMs and Models (692)"
+    ]
+  },
+  {
     "title": "Claude/Codex harness",
     "summary": "Claude Code 사용 사례, CLAUDE.md/AGENTS.md, MCP, hooks, Codex config/action/exec 세팅 자료 1000+",
     "query": "claude code codex harness AGENTS.md CLAUDE.md MCP hooks config.toml codex exec github action",

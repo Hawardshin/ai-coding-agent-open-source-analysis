@@ -39,6 +39,7 @@ function excerpt(text, max = 360) {
 
 function categoryFromPath(filePath) {
   if (filePath === "README.md") return "overview";
+  if (filePath.includes("/categories/")) return "category-index";
   if (filePath.includes("/repositories/")) return "repository-analysis";
   if (filePath.includes("/comparisons/")) return "comparison";
   if (filePath.includes("/research/")) return "research";
@@ -542,7 +543,24 @@ function topAiUsageTrendSources(limit = 8) {
     .map((material) => `${material.company}: ${material.title}`);
 }
 
+function topCategoryFolders(limit = 8) {
+  const indexPath = path.join(root, "data/category-index.json");
+  if (!existsSync(indexPath)) return [];
+  const data = JSON.parse(awaitReadFile(indexPath));
+  return safeArray(data.categories)
+    .sort((a, b) => (b.counts?.total || 0) - (a.counts?.total || 0) || a.title.localeCompare(b.title))
+    .slice(0, limit)
+    .map((category) => `${category.title} (${category.counts?.total || 0})`);
+}
+
 const trends = [
+  {
+    title: "Category index",
+    summary: "오픈소스, 연구, 발표, 트렌드 자료를 카테고리별 폴더와 데이터 파일로 다시 묶은 통합 색인",
+    query: "category index taxonomy open source research presentations agent rag mcp evals security korea",
+    category: "category-index",
+    repos: topCategoryFolders()
+  },
   {
     title: "Claude/Codex harness",
     summary: "Claude Code 사용 사례, CLAUDE.md/AGENTS.md, MCP, hooks, Codex config/action/exec 세팅 자료 1000+",
