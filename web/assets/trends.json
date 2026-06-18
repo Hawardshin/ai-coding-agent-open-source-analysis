@@ -16,6 +16,22 @@
     ]
   },
   {
+    "title": "Talks/conferences",
+    "summary": "Claude Code, Codex, AI Engineer, Interrupt, GitHub Universe, CNCF Agentics Day 발표/세션/웹세미나 메타데이터",
+    "query": "conference presentation claude code codex agent harness mcp evals sandbox live demo workshop",
+    "category": "agent-harness-conference-presentations",
+    "repos": [
+      "How to Build Quality Gates into Agentic Coding Workflows",
+      "Total Recall: Agent Memory and Harness Engineering",
+      "AI Engineer World's Fair 2026 schedule",
+      "DevDay talk about Codex",
+      "How Codex ran OpenAI DevDay 2025",
+      "500 Skills, Zero Fine-Tuning: LinkedIn's Playbook for AI Agents That Actually Know Your Codebase",
+      "Agentic vs. Vector Search: An Eval-Driven Approach to Coding Agent Performance",
+      "AI-Native Organisations runs on Skills: How to Extract, Structure, evaluate and Scale Them"
+    ]
+  },
+  {
     "title": "Global-trending OSS",
     "summary": "GitHub Search, seed repositories, OSSInsight/Octoverse/HN/report signals 기반 500개 글로벌 오픈소스",
     "query": "global trending open source ai agents mcp rag local llm devtools security observability database",

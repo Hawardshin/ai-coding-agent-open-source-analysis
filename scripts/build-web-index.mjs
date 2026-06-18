@@ -303,6 +303,51 @@ async function addAgentHarnessMaterialDocs(docs) {
   }
 }
 
+async function addConferencePresentationDocs(docs) {
+  const corpusPath = path.join(root, "data/reference-index/agent-harness-conference-sources.json");
+  if (!existsSync(corpusPath)) return;
+  const data = JSON.parse(await readFile(corpusPath, "utf8"));
+  for (const material of safeArray(data.materials)) {
+    const categories = safeArray(material.categories);
+    const tags = safeArray(material.tags);
+    const speakers = safeArray(material.speakers);
+    const content = [
+      material.title,
+      material.summary,
+      material.event,
+      material.source,
+      material.materialType,
+      material.format,
+      material.track,
+      speakers.join(", "),
+      tags.join(", "),
+      categories.join(", "),
+      material.url
+    ].filter(Boolean).join("\n");
+
+    docs.push({
+      id: `material:conference-presentation:${material.id}`,
+      type: "presentation",
+      category: "agent-harness-conference-presentations",
+      categories,
+      tags,
+      title: material.title || "Untitled conference material",
+      path: "data/reference-index/agent-harness-conference-sources.json",
+      url: material.url || null,
+      source: material.source || null,
+      event: material.event || null,
+      materialType: material.materialType || null,
+      format: material.format || null,
+      track: material.track || null,
+      speakers,
+      startsAt: material.startsAt || null,
+      score: material.score || 0,
+      summary: material.summary || categories.join(", ") || "Agent harness conference/presentation material",
+      content
+    });
+  }
+}
+
 async function addDataFileDocs(docs) {
   const dataFiles = await listFiles(path.join(root, "data"), (file) => file.endsWith(".json"));
   for (const file of dataFiles.sort()) {
@@ -340,10 +385,11 @@ await addLlmWikiRepoDocs(docs);
 await addKoreaTrendingRepoDocs(docs);
 await addGlobalTrendingRepoDocs(docs);
 await addAgentHarnessMaterialDocs(docs);
+await addConferencePresentationDocs(docs);
 await addDataFileDocs(docs);
 
 docs.sort((a, b) => {
-  const typeOrder = { report: 0, repository: 1, paper: 2, data: 3 };
+  const typeOrder = { report: 0, repository: 1, presentation: 2, paper: 3, data: 4 };
   return (typeOrder[a.type] ?? 9) - (typeOrder[b.type] ?? 9) || a.title.localeCompare(b.title);
 });
 
@@ -430,6 +476,16 @@ function topAgentHarnessMaterials(limit = 8) {
     .map((material) => material.repository || material.title);
 }
 
+function topConferencePresentationMaterials(limit = 8) {
+  const corpusPath = path.join(root, "data/reference-index/agent-harness-conference-sources.json");
+  if (!existsSync(corpusPath)) return [];
+  const data = JSON.parse(awaitReadFile(corpusPath));
+  return safeArray(data.materials)
+    .sort((a, b) => (b.score || 0) - (a.score || 0) || a.title.localeCompare(b.title))
+    .slice(0, limit)
+    .map((material) => material.title);
+}
+
 const trends = [
   {
     title: "Claude/Codex harness",
@@ -437,6 +493,13 @@ const trends = [
     query: "claude code codex harness AGENTS.md CLAUDE.md MCP hooks config.toml codex exec github action",
     category: "claude-codex-agent-harness",
     repos: topAgentHarnessMaterials()
+  },
+  {
+    title: "Talks/conferences",
+    summary: "Claude Code, Codex, AI Engineer, Interrupt, GitHub Universe, CNCF Agentics Day 발표/세션/웹세미나 메타데이터",
+    query: "conference presentation claude code codex agent harness mcp evals sandbox live demo workshop",
+    category: "agent-harness-conference-presentations",
+    repos: topConferencePresentationMaterials()
   },
   {
     title: "Global-trending OSS",
