@@ -1,6 +1,6 @@
 # Global Trending Open Source
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Global trending open-source corpus and per-repository reports.
 
@@ -23,6 +23,7 @@ Global trending open-source corpus and per-repository reports.
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -585,4 +586,3 @@ Global trending open-source corpus and per-repository reports.
 | [Zoo-Code-Org/Zoo-Code](../../global-trending/repositories/Zoo-Code-Org__Zoo-Code.md) | per-repository-report | global-trending/repositories | -29 |
 | [zubair-trabzada/geo-seo-claude](../../global-trending/repositories/zubair-trabzada__geo-seo-claude.md) | per-repository-report | global-trending/repositories | -29 |
 | [zzet/gortex](../../global-trending/repositories/zzet__gortex.md) | per-repository-report | global-trending/repositories | -29 |
-

@@ -1,6 +1,6 @@
 # Source Catalogs and Inventories
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations.
 
@@ -23,6 +23,7 @@ Source catalogs, inventory files, clone lists, and evidence ledgers used by the 
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -63,4 +64,3 @@ Source catalogs, inventory files, clone lists, and evidence ledgers used by the 
 | [Source Inventory](../../adjacent-tech-source-inventory.md) | overview-report | root | 118 |
 | [Current Clone Inventory: 107 Open Source Repositories](../../current-clone-inventory-107.md) | overview-report | root | 118 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
-

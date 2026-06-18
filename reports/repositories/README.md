@@ -1,6 +1,6 @@
 # Core Repository Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Primary deep dives for the original AI coding agent, IDE agent, browser agent, MCP, and framework repositories.
 
@@ -23,6 +23,7 @@ Primary deep dives for the original AI coding agent, IDE agent, browser agent, M
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -113,4 +114,3 @@ Primary deep dives for the original AI coding agent, IDE agent, browser agent, M
 | [upstash/context7 분석 보고서](upstash-context7.md) | per-repository-report | repositories | -28 |
 | [Yeachan-Heo/oh-my-claudecode 분석 보고서](Yeachan-Heo-oh-my-claudecode.md) | per-repository-report | repositories | -28 |
 | [Yeachan-Heo/oh-my-codex 심층 분석](Yeachan-Heo-oh-my-codex.md) | per-repository-report | repositories | -28 |
-

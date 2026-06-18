@@ -1,6 +1,6 @@
 # Clone Structure and Inventory
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports.
 
@@ -23,6 +23,7 @@ Clone inventories, structural analysis, manifests, source directories, and per-r
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -209,4 +210,3 @@ Clone inventories, structural analysis, manifests, source directories, and per-r
 | [xorbitsai/inference 구조 분석](../../clone-structures/xorbitsai__inference.md) | clone-structure-report | clone-structures | -28 |
 | [Yeachan-Heo/oh-my-claudecode 구조 분석](../../clone-structures/Yeachan-Heo__oh-my-claudecode.md) | clone-structure-report | clone-structures | -28 |
 | [Yeachan-Heo/oh-my-codex 구조 분석](../../clone-structures/Yeachan-Heo__oh-my-codex.md) | clone-structure-report | clone-structures | -28 |
-

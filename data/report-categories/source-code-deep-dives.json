@@ -1,0 +1,287 @@
+{
+  "generatedAt": "2026-06-18T14:54:26.642Z",
+  "slug": "source-code-deep-dives",
+  "title": "Source Code Deep Dives",
+  "description": "Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.",
+  "count": 18,
+  "reports": [
+    {
+      "id": "report:reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
+      "path": "reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
+      "title": "30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서",
+      "summary": "30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서 기준일 2026 06 11 KST. 기반 자료 reports/repositories/ .md 30개 상세 분석, data/source inventory.json , data/project comparison matrix.json . 이 문서는 각 레포지토리의 세부 구현을 반복하지 않고, 사용자가 실제 설계 판단을 할 때 필요한 비교 축으로 재배열한다. 핵심 결론은 다음과 같다. 1. 이 30개는 모두",
+      "kind": "comparison-report",
+      "folder": "comparisons",
+      "updatedAt": "2026-06-10T22:18:41.682Z",
+      "categories": [
+        "start-here",
+        "source-code-deep-dives",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/00-llm-wiki-100-summary.md",
+      "path": "reports/llm-wiki/00-llm-wiki-100-summary.md",
+      "title": "LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄",
+      "summary": "LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄 생성일 2026 06 17T22 56 52.162Z 검증 범위 target group filter llm wiki 100 실제 로컬 클론 100개 데이터 파일에 명시된 target 100개 target 중 로컬 클론 누락 0개 레포별 상세 보고서 reports/llm wiki/repositories/ .md 구조 데이터 data/llm wiki structure analysis 100.json 로",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/00-llm-wiki-100-summary.md",
+      "updatedAt": "2026-06-17T22:57:02.870Z",
+      "categories": [
+        "start-here",
+        "source-code-deep-dives",
+        "llm-wiki"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "path": "reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "title": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약",
+      "summary": "LLM 위키 / AI 지식베이스 오픈소스 100개 비교 요약 생성일 2026 06 17T22 58 03.126Z 산출물 후보 수집 데이터 data/llm wiki repositories.json 구조 분석 데이터 data/llm wiki structure analysis 100.json 총괄 구조 분석 reports/llm wiki/00 llm wiki 100 summary.md 레포별 구조 분석 reports/llm wiki/repositories/ .md 수",
+      "kind": "llm-wiki-report",
+      "folder": "llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+      "updatedAt": "2026-06-17T22:58:03.138Z",
+      "categories": [
+        "start-here",
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons"
+      ],
+      "priority": 182
+    },
+    {
+      "id": "report:reports/korea-trending/00-korea-open-source-trend-report-2026-06-18.md",
+      "path": "reports/korea-trending/00-korea-open-source-trend-report-2026-06-18.md",
+      "title": "한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석",
+      "summary": "한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석 생성일 2026 06 18T00 02 16.992Z 검증 범위 선정 저장소 500개 로컬 클론 성공 500개 로컬 클론 실패 0개 저장소별 상세 보고서 reports/korea trending/repositories/ .md 구조/신호 데이터 data/korea trending analysis 500.json 클론 상태 데이터 data/korea trending clone status 500.json 수집 기준",
+      "kind": "korea-trending-report",
+      "folder": "korea-trending",
+      "updatedAt": "2026-06-18T00:02:33.882Z",
+      "categories": [
+        "start-here",
+        "source-code-deep-dives",
+        "korea-trending-open-source"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/source-deep-dives/README.md",
+      "path": "reports/source-deep-dives/README.md",
+      "title": "Source Deep Dives",
+      "summary": "Source Deep Dives Generated 2026 06 18T14 52 44.529Z This report adds topic first, source path level evidence extracted from the locally cloned repositories under sources/ . 요약 조사 단위 로컬 clone 1,136개를 실제 파일 트리 기준으로 다시 스캔한 source deep scan 보고서입니다. 포함 범위 file/dir",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.569Z",
+      "categories": [
+        "start-here",
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/README.md",
+      "path": "reports/source-deep-dives/by-topic/README.md",
+      "title": "Source Deep Dives by Topic",
+      "summary": "Source Deep Dives by Topic Generated 2026 06 18T14 52 44.529Z 요약 조사 단위 source deep scan rows를 역할/주제별 README로 나눈 목차입니다. 포함 범위 1,136 repositories across 10 topic groups. 탐색 방식 주제 README로 들어가면 해당 주제의 파일 경로 근거, deep source insight, risk를 한 표에서 볼 수 있습니다. 총평 주제별 dee",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.570Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
+      "path": "reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
+      "title": "Agent Harness and MCP Source Deep Dive",
+      "summary": "Agent Harness and MCP Source Deep Dive Generated 2026 06 18T14 52 44.529Z 에이전트 하네스/MCP 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 로컬 소스 레포 514개입니다. 포함 범위 MCP 서버/클라이언트, tool registry, workflow/orchestration, hooks/skills 경로를 중심으로 key sour",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.595Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/ai-infrastructure-serving/README.md",
+      "path": "reports/source-deep-dives/by-topic/ai-infrastructure-serving/README.md",
+      "title": "AI Infrastructure and Serving Source Deep Dive",
+      "summary": "AI Infrastructure and Serving Source Deep Dive Generated 2026 06 18T14 52 44.529Z AI 인프라/서빙 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 ai infrastructure serving 역할로 분류된 로컬 소스 레포 75개입니다. 포함 범위 model serving, API server, deployment, Docker/Kubernetes, runtime adapt",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.608Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+      "path": "reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+      "title": "Coding Agent and IDE Source Deep Dive",
+      "summary": "Coding Agent and IDE Source Deep Dive Generated 2026 06 18T14 52 44.529Z 코딩 에이전트/IDE 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 coding agent ide 역할로 분류된 로컬 소스 레포 9개입니다. 포함 범위 CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문 경로를 중심으로 key source reference 106개를 추출했습니다. 탐색",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.571Z",
+      "categories": [
+        "source-code-deep-dives",
+        "coding-agents",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/data-vector-platform/README.md",
+      "path": "reports/source-deep-dives/by-topic/data-vector-platform/README.md",
+      "title": "Data and Vector Platforms Source Deep Dive",
+      "summary": "Data and Vector Platforms Source Deep Dive Generated 2026 06 18T14 52 44.529Z 데이터/벡터 플랫폼 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 data vector platform 역할로 분류된 로컬 소스 레포 7개입니다. 포함 범위 storage, index, embedding/vector path, query engine, persistence 경로를 중심으로 key so",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.608Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/developer-productivity/README.md",
+      "path": "reports/source-deep-dives/by-topic/developer-productivity/README.md",
+      "title": "Developer Productivity and DevTools Source Deep Dive",
+      "summary": "Developer Productivity and DevTools Source Deep Dive Generated 2026 06 18T14 52 44.529Z 개발 생산성/DevTools 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 developer productivity 역할로 분류된 로컬 소스 레포 49개입니다. 포함 범위 CLI/devtool entrypoints, SDK shape, CI/build scripts, automati",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.611Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/eval-observability/README.md",
+      "path": "reports/source-deep-dives/by-topic/eval-observability/README.md",
+      "title": "Evals, Observability, and Quality Source Deep Dive",
+      "summary": "Evals, Observability, and Quality Source Deep Dive Generated 2026 06 18T14 52 44.529Z 평가/관측/품질 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 eval observability 역할로 분류된 로컬 소스 레포 27개입니다. 포함 범위 eval suites, benchmark harness, tracing, observability, quality gates 경로를 중",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.604Z",
+      "categories": [
+        "source-code-deep-dives",
+        "adjacent-infrastructure",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/general-ai-open-source/README.md",
+      "path": "reports/source-deep-dives/by-topic/general-ai-open-source/README.md",
+      "title": "General AI Open Source Source Deep Dive",
+      "summary": "General AI Open Source Source Deep Dive Generated 2026 06 18T14 52 44.529Z 일반 AI 오픈소스 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 general ai open source 역할로 분류된 로컬 소스 레포 268개입니다. 포함 범위 main architecture, dependency stack, tests, deployment, docs 경로를 중심으로 key sourc",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.620Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+      "path": "reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+      "title": "LLM Wiki, RAG, and Knowledge Source Deep Dive",
+      "summary": "LLM Wiki, RAG, and Knowledge Source Deep Dive Generated 2026 06 18T14 52 44.529Z LLM 위키/RAG/지식베이스 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 로컬 소스 레포 172개입니다. 포함 범위 ingestion, chunking, embedding, retrieval, memory, vector store 경로를 중심으로 key ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.602Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/security-governance/README.md",
+      "path": "reports/source-deep-dives/by-topic/security-governance/README.md",
+      "title": "Security, Governance, and Safety Source Deep Dive",
+      "summary": "Security, Governance, and Safety Source Deep Dive Generated 2026 06 18T14 52 44.529Z 보안/거버넌스/안전 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 security governance 역할로 분류된 로컬 소스 레포 10개입니다. 포함 범위 sandbox, permission, policy, auth, guardrail, secret handling 경로를 중심으로 ke",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.609Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
+      "path": "reports/source-deep-dives/by-topic/spec-driven/README.md",
+      "title": "Spec-Driven and Requirements Source Deep Dive",
+      "summary": "Spec Driven and Requirements Source Deep Dive Generated 2026 06 18T14 52 44.529Z 스펙 드리븐/요구사항 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 spec driven 역할로 분류된 로컬 소스 레포 5개입니다. 포함 범위 requirements, ADR, design docs, spec artifacts, acceptance/test trace 경로를 중심으로 key so",
+      "kind": "spec-driven-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.603Z",
+      "categories": [
+        "source-code-deep-dives",
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/full-source-scan-research-summary-2026-06-18.md",
+      "path": "reports/full-source-scan-research-summary-2026-06-18.md",
+      "title": "전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약",
+      "summary": "전체 소스 스캔과 사용자 의도 코드 연결 방식 리서치 요약 기준일 2026 06 18 KST. 이 문서는 기존 reports/ 의 30개 코딩 에이전트 상세 분석, 50개 adjacent stack 분석, 새로 추가한 27개 클론 인벤토리, OpenAI/Anthropic 공식 문서, 대표 오픈소스 구현을 묶어 정리한다. 결론부터 말하면, Codex와 Claude Code류의 핵심은 \"전체 소스를 모델 프롬프트에 한 번에 넣기\"가 아니라 탐색 도구 + 축약 ind",
+      "kind": "overview-report",
+      "folder": "root",
+      "updatedAt": "2026-06-17T22:19:43.192Z",
+      "categories": [
+        "start-here",
+        "full-source-scan",
+        "source-code-deep-dives"
+      ],
+      "priority": 143
+    },
+    {
+      "id": "report:reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "path": "reports/adjacent-tech/03-official-docs-and-source-map.md",
+      "title": "공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness",
+      "summary": "공식 문서와 소스맵 Context Engineering, RAG, Local LLM, Agent Harness 기준일 2026 06 13 KST. 대상 새로 clone한 50개 레포지토리와 공식 문서. 목적 \"공식 문서가 말하는 설계 철학\"과 \"clone된 코드에서 확인할 위치\"를 연결한다. 1. 공식 문서에서 확인한 큰 흐름 Context engineering은 prompt 작성이 아니라 runtime context 운영이다 Anthropic의 context ",
+      "kind": "infrastructure-report",
+      "folder": "adjacent-tech",
+      "updatedAt": "2026-06-12T16:07:03.248Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "llm-wiki",
+        "adjacent-infrastructure"
+      ],
+      "priority": 117
+    }
+  ]
+}

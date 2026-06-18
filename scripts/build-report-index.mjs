@@ -31,7 +31,8 @@ const taxonomy = [
       /^reports\/presentations\/0[0-1]-/,
       /^reports\/research\/0[1-3]-/,
       /^reports\/spec-driven\/00-/,
-      /^reports\/repository-insights\/README\.md$/
+      /^reports\/repository-insights\/README\.md$/,
+      /^reports\/source-deep-dives\/README\.md$/
     ]
   },
   {
@@ -47,6 +48,13 @@ const taxonomy = [
     description: "How coding agents discover, index, search, and read source code.",
     keywords: ["source scan", "repo map", "symbol graph", "code search", "file discovery"],
     pathRules: [/^reports\/full-source-scan\//, /^reports\/full-source-scan-research-summary/, /^reports\/00-source-inventory\.md$/]
+  },
+  {
+    slug: "source-code-deep-dives",
+    title: "Source Code Deep Dives",
+    description: "Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.",
+    keywords: ["source deep scan", "entrypoint", "runtime", "source path", "implementation evidence", "소스"],
+    pathRules: [/^reports\/source-deep-dives\//, /source-deep-scan/]
   },
   {
     slug: "coding-agents",
@@ -123,7 +131,7 @@ const taxonomy = [
     title: "Comparisons and Similarity Maps",
     description: "Cross-repository comparisons, taxonomy matrices, and similarity clusters.",
     keywords: ["comparison", "compare", "taxonomy", "cluster", "matrix", "similarity", "비교"],
-    pathRules: [/^reports\/comparisons\//, /^reports\/repository-insights\//]
+    pathRules: [/^reports\/comparisons\//, /^reports\/repository-insights\//, /^reports\/source-deep-dives\//]
   },
   {
     slug: "research-foundations",
@@ -144,7 +152,7 @@ const taxonomy = [
     title: "Repository Deep Dives",
     description: "Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures.",
     keywords: [],
-    pathRules: [/\/repositories\//, /^reports\/clone-structures\//, /^reports\/repository-insights\//]
+    pathRules: [/\/repositories\//, /^reports\/clone-structures\//, /^reports\/repository-insights\//, /^reports\/source-deep-dives\//]
   }
 ];
 
@@ -283,6 +291,10 @@ function tableText(value) {
     .trim();
 }
 
+function renderMarkdown(content) {
+  return `${content.trimEnd()}\n`;
+}
+
 function titleFromMarkdown(content, fallback) {
   const heading = content.match(/^#\s+(.+)$/m);
   return heading ? heading[1].trim() : fallback;
@@ -322,6 +334,7 @@ function inferReportKind(filePath) {
   if (filePath.includes("/agent-harness/")) return "agent-harness-report";
   if (filePath.includes("/spec-driven/")) return "spec-driven-report";
   if (filePath.includes("/full-source-scan/")) return "source-scan-report";
+  if (filePath.includes("/source-deep-dives/")) return "source-deep-dive-report";
   return "overview-report";
 }
 
@@ -371,6 +384,7 @@ function renderNavigationBlock(baseDir) {
 | ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
 | ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 `;
 }
@@ -591,6 +605,8 @@ This folder groups the repository's Markdown reports by investigation line. Orig
 | ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
 | ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
 | ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
+| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 
 | Topic | Reports | Description | Data |
@@ -657,6 +673,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
 | ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
 | ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
 | ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 
 ## Data Files
@@ -669,6 +686,7 @@ This page is the table-first view of the repository. Use it when you want to sca
 | ${linkFrom(baseDir, "data/report-tables/topic-kind-matrix.csv", "data/report-tables/topic-kind-matrix.csv")} | Topic x report-type matrix. |
 | ${linkFrom(baseDir, "data/report-tables/reports.csv", "data/report-tables/reports.csv")} | Flat table for every indexed report. |
 | ${linkFrom(baseDir, "data/report-tables/repository-insights.csv", "data/report-tables/repository-insights.csv")} | Repository-by-repository insights, risks, evidence, and next-read links. |
+| ${linkFrom(baseDir, "data/report-tables/source-deep-scan.csv", "data/report-tables/source-deep-scan.csv")} | Source-path-level deep scan rows, key file references, and implementation signals. |
 
 ## Topic Summary Table
 
@@ -800,6 +818,7 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | ${linkFrom("reports", "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
 | ${linkFrom("reports", "reports/tables/README.md", "Report Tables")} | Table-first scanning, CSV exports, and topic/type matrices. |
 | ${linkFrom("reports", "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, evidence, and next-read links. |
+| ${linkFrom("reports", "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
 | ${linkFrom("reports", "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, research, presentations, and trend sources. |
 
 ## Start Here
@@ -824,9 +843,10 @@ ${renderFolderMap(folderSummaries, "reports")}
 
 1. Open ${linkFrom("reports", "reports/categories/README.md", "reports/categories/README.md")} for artifact-level categories.
 2. Open ${linkFrom("reports", "reports/by-topic/README.md", "reports/by-topic/README.md")} for report-level categories.
-3. Open ${linkFrom("reports", "reports/tables/README.md", "reports/tables/README.md")} when you need spreadsheet-style tables.
-4. Use the folder README map above when you know the physical report folder.
-5. Use \`data/report-index.json\`, \`data/report-categories/*.json\`, and \`data/report-tables/*.csv\` when you need complete machine-readable membership.
+3. Open ${linkFrom("reports", "reports/source-deep-dives/README.md", "reports/source-deep-dives/README.md")} when you need source-path-level implementation evidence.
+4. Open ${linkFrom("reports", "reports/tables/README.md", "reports/tables/README.md")} when you need spreadsheet-style tables.
+5. Use the folder README map above when you know the physical report folder.
+6. Use \`data/report-index.json\`, \`data/report-categories/*.json\`, and \`data/report-tables/*.csv\` when you need complete machine-readable membership.
 `;
 }
 
@@ -879,7 +899,7 @@ async function main() {
     const reportPath = `reports/by-topic/${category.slug}/README.md`;
     await writeFile(path.join(outputDataDir, `${category.slug}.json`), JSON.stringify(categoryData, null, 2));
     await mkdir(path.join(outputReportDir, category.slug), { recursive: true });
-    await writeFile(path.join(outputReportDir, category.slug, "README.md"), renderCategoryReadme(category, categoryReports));
+    await writeFile(path.join(outputReportDir, category.slug, "README.md"), renderMarkdown(renderCategoryReadme(category, categoryReports)));
     categories.push(categoryData);
     categorySummaries.push({
       slug: category.slug,
@@ -914,11 +934,11 @@ async function main() {
   }
   for (const folder of folderSummaries) {
     await mkdir(path.join(root, folder.dir), { recursive: true });
-    await writeFile(path.join(root, folder.readmePath), renderFolderReadme(folder, folder.reports, categories));
+    await writeFile(path.join(root, folder.readmePath), renderMarkdown(renderFolderReadme(folder, folder.reports, categories)));
   }
-  await writeFile(path.join(outputReportDir, "README.md"), renderByTopicIndex(categorySummaries));
-  await writeFile(path.join(outputReportTablesDir, "README.md"), renderTablesReadme(reportIndex, categories, folderSummaries));
-  await writeFile(outputReportsReadme, renderReportsReadme({ ...reportIndex, categories }, categorySummaries, folderSummaries));
+  await writeFile(path.join(outputReportDir, "README.md"), renderMarkdown(renderByTopicIndex(categorySummaries)));
+  await writeFile(path.join(outputReportTablesDir, "README.md"), renderMarkdown(renderTablesReadme(reportIndex, categories, folderSummaries)));
+  await writeFile(outputReportsReadme, renderMarkdown(renderReportsReadme({ ...reportIndex, categories }, categorySummaries, folderSummaries)));
 
   console.error(`reports indexed: ${reports.length}`);
   console.error(`report topics: ${categorySummaries.length}`);

@@ -1,6 +1,6 @@
 # LLM Wiki and Knowledge Base Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 LLM wiki, RAG, GraphRAG, document knowledge base, code-level pipeline, and provenance reports.
 
@@ -12,7 +12,7 @@ LLM wiki, RAG, GraphRAG, document knowledge base, code-level pipeline, and prove
 
 ## 총평
 
-이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 6개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
+이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 7개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
 
 ## Navigation
 
@@ -23,6 +23,7 @@ LLM wiki, RAG, GraphRAG, document knowledge base, code-level pipeline, and prove
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -45,6 +46,7 @@ LLM wiki, RAG, GraphRAG, document knowledge base, code-level pipeline, and prove
 | [Agent Harness, MCP, and Orchestration](../by-topic/agent-harness/README.md) | 4 |
 | [Start Here](../by-topic/start-here/README.md) | 3 |
 | [Comparisons and Similarity Maps](../by-topic/comparisons/README.md) | 2 |
+| [Source Code Deep Dives](../by-topic/source-code-deep-dives/README.md) | 2 |
 
 
 ## Recommended Reading Path
@@ -290,4 +292,3 @@ LLM wiki, RAG, GraphRAG, document knowledge base, code-level pipeline, and prove
 | [zhimaAi/ChatClaw 구조 분석](repositories/zhimaAi__ChatClaw.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zhitongblog/solomd 구조 분석](repositories/zhitongblog__solomd.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zosmaai/pi-llm-wiki 구조 분석](repositories/zosmaai__pi-llm-wiki.md) | per-repository-report | llm-wiki/repositories | -29 |
-

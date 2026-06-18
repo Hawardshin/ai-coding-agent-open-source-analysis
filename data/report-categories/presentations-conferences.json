@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "slug": "presentations-conferences",
   "title": "Presentations and Conferences",
   "description": "Conference, talk, webinar, and presentation-method research.",
@@ -39,10 +39,10 @@
       "id": "report:reports/categories/presentations-conferences/README.md",
       "path": "reports/categories/presentations-conferences/README.md",
       "title": "Presentations and Conferences",
-      "summary": "Presentations and Conferences Generated 2026 06 18T14 32 13.515Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다",
+      "summary": "Presentations and Conferences Generated 2026 06 18T14 52 38.646Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.234Z",
+      "updatedAt": "2026-06-18T14:52:39.354Z",
       "categories": [
         "category-guides",
         "presentations-conferences"

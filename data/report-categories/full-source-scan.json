@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "slug": "full-source-scan",
   "title": "Full Source Scan and Code Retrieval",
   "description": "How coding agents discover, index, search, and read source code.",
@@ -43,7 +43,8 @@
       "updatedAt": "2026-06-17T22:19:43.192Z",
       "categories": [
         "start-here",
-        "full-source-scan"
+        "full-source-scan",
+        "source-code-deep-dives"
       ],
       "priority": 143
     }

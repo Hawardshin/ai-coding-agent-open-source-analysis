@@ -1,6 +1,6 @@
 # Clone Structure Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Generated structural reports for locally cloned repositories, including manifests, source directories, and notable entry points.
 
@@ -23,6 +23,7 @@ Generated structural reports for locally cloned repositories, including manifest
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -215,4 +216,3 @@ Generated structural reports for locally cloned repositories, including manifest
 | [xorbitsai/inference 구조 분석](xorbitsai__inference.md) | clone-structure-report | clone-structures | -28 |
 | [Yeachan-Heo/oh-my-claudecode 구조 분석](Yeachan-Heo__oh-my-claudecode.md) | clone-structure-report | clone-structures | -28 |
 | [Yeachan-Heo/oh-my-codex 구조 분석](Yeachan-Heo__oh-my-codex.md) | clone-structure-report | clone-structures | -28 |
-

@@ -1,13 +1,13 @@
 # Repository Deep Dives
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures.
 
 ## 요약
 
 - 조사 단위: `repository-deep-dives` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 1,269 reports이며, 주요 보고서 유형은 per-repository-report (1130), clone-structure-report (127), overview-report (11), spec-driven-report (1)입니다.
+- 포함 범위: 1,281 reports이며, 주요 보고서 유형은 per-repository-report (1130), clone-structure-report (127), overview-report (11), source-deep-dive-report (11), spec-driven-report (2)입니다.
 - 주요 출처 폴더: global-trending/repositories (500), korea-trending/repositories (500), clone-structures (127), llm-wiki/repositories (100), repositories (30).
 
 ## 총평
@@ -23,12 +23,13 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 1269
+- Reports: 1281
 - Data: [data/report-categories/repository-deep-dives.json](../../../data/report-categories/repository-deep-dives.json)
 
 ## Report Types
@@ -36,7 +37,8 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 - per-repository-report: 1130
 - clone-structure-report: 127
 - overview-report: 11
-- spec-driven-report: 1
+- source-deep-dive-report: 11
+- spec-driven-report: 2
 
 ## Source Folders
 
@@ -46,13 +48,16 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 - llm-wiki/repositories: 100
 - repositories: 30
 - repository-insights: 12
+- source-deep-dives: 12
 
 ## Recommended Reading Path
 
 | Report | Type | Folder | Priority |
 | --- | --- | --- | ---: |
 | [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
+| [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
 | [Repository Insights by Role](../../repository-insights/by-role/README.md) | overview-report | repository-insights | 156 |
+| [Source Deep Dives by Topic](../../source-deep-dives/by-topic/README.md) | source-deep-dive-report | source-deep-dives | 156 |
 | [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [AI Infrastructure and Serving](../../repository-insights/by-role/ai-infrastructure-serving/README.md) | overview-report | repository-insights | 155 |
 | [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
@@ -63,24 +68,22 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 | [LLM Wiki, RAG, and Knowledge](../../repository-insights/by-role/llm-wiki-rag/README.md) | overview-report | repository-insights | 155 |
 | [Security, Governance, and Safety](../../repository-insights/by-role/security-governance/README.md) | overview-report | repository-insights | 155 |
 | [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
+| [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [AI Infrastructure and Serving Source Deep Dive](../../source-deep-dives/by-topic/ai-infrastructure-serving/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Coding Agent and IDE Source Deep Dive](../../source-deep-dives/by-topic/coding-agent-ide/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Data and Vector Platforms Source Deep Dive](../../source-deep-dives/by-topic/data-vector-platform/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Developer Productivity and DevTools Source Deep Dive](../../source-deep-dives/by-topic/developer-productivity/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Evals, Observability, and Quality Source Deep Dive](../../source-deep-dives/by-topic/eval-observability/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [General AI Open Source Source Deep Dive](../../source-deep-dives/by-topic/general-ai-open-source/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [LLM Wiki, RAG, and Knowledge Source Deep Dive](../../source-deep-dives/by-topic/llm-wiki-rag/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Security, Governance, and Safety Source Deep Dive](../../source-deep-dives/by-topic/security-governance/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | spec-driven-report | source-deep-dives | 155 |
 | [run-llama/llama_index 구조 분석](../../clone-structures/run-llama__llama_index.md) | clone-structure-report | clone-structures | -3 |
 | [cocoindex-io/cocoindex-code](../../global-trending/repositories/cocoindex-io__cocoindex-code.md) | per-repository-report | global-trending/repositories | -4 |
 | [run-llama/llama_index](../../global-trending/repositories/run-llama__llama_index.md) | per-repository-report | global-trending/repositories | -4 |
 | [bits-bytes-nn/omnisummary](../../korea-trending/repositories/bits-bytes-nn__omnisummary.md) | per-repository-report | korea-trending/repositories | -4 |
 | [naver/naver-openapi-guide](../../korea-trending/repositories/naver__naver-openapi-guide.md) | per-repository-report | korea-trending/repositories | -4 |
 | [toss/yarn-plugin-catalogs](../../korea-trending/repositories/toss__yarn-plugin-catalogs.md) | per-repository-report | korea-trending/repositories | -4 |
-| [KalyanKS-NLP/rag-zero-to-hero-guide 구조 분석](../../llm-wiki/repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | per-repository-report | llm-wiki/repositories | -4 |
-| [VectifyAI/PageIndex 구조 분석](../../llm-wiki/repositories/VectifyAI__PageIndex.md) | per-repository-report | llm-wiki/repositories | -4 |
-| [aaif-goose/goose 구조 분석](../../clone-structures/aaif-goose__goose.md) | clone-structure-report | clone-structures | -28 |
-| [addyosmani/agent-skills 구조 분석](../../clone-structures/addyosmani__agent-skills.md) | clone-structure-report | clone-structures | -28 |
-| [agenta-ai/agenta 구조 분석](../../clone-structures/agenta-ai__agenta.md) | clone-structure-report | clone-structures | -28 |
-| [agno-agi/agno 구조 분석](../../clone-structures/agno-agi__agno.md) | clone-structure-report | clone-structures | -28 |
-| [Aider-AI/aider 구조 분석](../../clone-structures/Aider-AI__aider.md) | clone-structure-report | clone-structures | -28 |
-| [All-Hands-AI/OpenHands 구조 분석](../../clone-structures/All-Hands-AI__OpenHands.md) | clone-structure-report | clone-structures | -28 |
-| [amaynez/kiro-style-sdd 구조 분석](../../clone-structures/amaynez__kiro-style-sdd.md) | clone-structure-report | clone-structures | -28 |
-| [anomalyco/opencode 구조 분석](../../clone-structures/anomalyco__opencode.md) | clone-structure-report | clone-structures | -28 |
-| [ariel-frischer/autospec 구조 분석](../../clone-structures/ariel-frischer__autospec.md) | clone-structure-report | clone-structures | -28 |
-| [Arize-ai/phoenix 구조 분석](../../clone-structures/Arize-ai__phoenix.md) | clone-structure-report | clone-structures | -28 |
 
 
 ## All Reports
@@ -88,7 +91,9 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 | Report | Type | Folder | Priority |
 | --- | --- | --- | ---: |
 | [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
+| [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
 | [Repository Insights by Role](../../repository-insights/by-role/README.md) | overview-report | repository-insights | 156 |
+| [Source Deep Dives by Topic](../../source-deep-dives/by-topic/README.md) | source-deep-dive-report | source-deep-dives | 156 |
 | [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
 | [AI Infrastructure and Serving](../../repository-insights/by-role/ai-infrastructure-serving/README.md) | overview-report | repository-insights | 155 |
 | [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
@@ -99,6 +104,16 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 | [LLM Wiki, RAG, and Knowledge](../../repository-insights/by-role/llm-wiki-rag/README.md) | overview-report | repository-insights | 155 |
 | [Security, Governance, and Safety](../../repository-insights/by-role/security-governance/README.md) | overview-report | repository-insights | 155 |
 | [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
+| [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [AI Infrastructure and Serving Source Deep Dive](../../source-deep-dives/by-topic/ai-infrastructure-serving/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Coding Agent and IDE Source Deep Dive](../../source-deep-dives/by-topic/coding-agent-ide/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Data and Vector Platforms Source Deep Dive](../../source-deep-dives/by-topic/data-vector-platform/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Developer Productivity and DevTools Source Deep Dive](../../source-deep-dives/by-topic/developer-productivity/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Evals, Observability, and Quality Source Deep Dive](../../source-deep-dives/by-topic/eval-observability/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [General AI Open Source Source Deep Dive](../../source-deep-dives/by-topic/general-ai-open-source/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [LLM Wiki, RAG, and Knowledge Source Deep Dive](../../source-deep-dives/by-topic/llm-wiki-rag/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Security, Governance, and Safety Source Deep Dive](../../source-deep-dives/by-topic/security-governance/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | spec-driven-report | source-deep-dives | 155 |
 | [run-llama/llama_index 구조 분석](../../clone-structures/run-llama__llama_index.md) | clone-structure-report | clone-structures | -3 |
 | [cocoindex-io/cocoindex-code](../../global-trending/repositories/cocoindex-io__cocoindex-code.md) | per-repository-report | global-trending/repositories | -4 |
 | [run-llama/llama_index](../../global-trending/repositories/run-llama__llama_index.md) | per-repository-report | global-trending/repositories | -4 |
@@ -1356,4 +1371,3 @@ Detailed per-repository reports across core agents, global trending, Korea trend
 | [zhimaAi/ChatClaw 구조 분석](../../llm-wiki/repositories/zhimaAi__ChatClaw.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zhitongblog/solomd 구조 분석](../../llm-wiki/repositories/zhitongblog__solomd.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zosmaai/pi-llm-wiki 구조 분석](../../llm-wiki/repositories/zosmaai__pi-llm-wiki.md) | per-repository-report | llm-wiki/repositories | -29 |
-

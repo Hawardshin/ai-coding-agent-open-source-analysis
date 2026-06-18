@@ -1,6 +1,6 @@
 # Korea Trending Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Korean developer community trend synthesis plus per-repository reports for the collected 500-item Korea corpus.
 
@@ -12,7 +12,7 @@ Korean developer community trend synthesis plus per-repository reports for the c
 
 ## 총평
 
-이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 8개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
+이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 9개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
 
 ## Navigation
 
@@ -23,6 +23,7 @@ Korean developer community trend synthesis plus per-repository reports for the c
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -46,6 +47,7 @@ Korean developer community trend synthesis plus per-repository reports for the c
 | [Coding Agents and IDEs](../by-topic/coding-agents/README.md) | 5 |
 | [Spec-Driven and Requirements](../by-topic/spec-driven/README.md) | 2 |
 | [Presentations and Conferences](../by-topic/presentations-conferences/README.md) | 1 |
+| [Source Code Deep Dives](../by-topic/source-code-deep-dives/README.md) | 1 |
 | [Start Here](../by-topic/start-here/README.md) | 1 |
 
 
@@ -590,4 +592,3 @@ Korean developer community trend synthesis plus per-repository reports for the c
 | [yjhann33-design/korea-stock-insight-mcp](repositories/yjhann33-design__korea-stock-insight-mcp.md) | per-repository-report | korea-trending/repositories | -29 |
 | [z0nam/korea-rio-mcp](repositories/z0nam__korea-rio-mcp.md) | per-repository-report | korea-trending/repositories | -29 |
 | [zzet/gortex](repositories/zzet__gortex.md) | per-repository-report | korea-trending/repositories | -29 |
-

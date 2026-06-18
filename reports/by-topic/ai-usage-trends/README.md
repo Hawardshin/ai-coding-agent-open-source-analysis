@@ -1,6 +1,6 @@
 # AI Usage Trends
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals.
 
@@ -23,6 +23,7 @@ Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterp
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -57,4 +58,3 @@ Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterp
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
 | [AI Usage Trends](../../categories/ai-usage-trends/README.md) | category-guide | categories | 156 |
 | [AI Usage Trend Conference Source Catalog](../../presentations/ai-usage-trend-source-catalog-6-12mo.md) | presentation-report | presentations | 142 |
-

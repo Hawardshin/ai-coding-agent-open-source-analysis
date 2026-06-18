@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "slug": "coding-agents",
   "title": "Coding Agents and IDEs",
   "description": "Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.",
-  "count": 85,
+  "count": 86,
   "reports": [
     {
       "id": "report:reports/research/02-evidence-catalog-100-sources.md",
@@ -39,10 +39,10 @@
       "id": "report:reports/categories/coding-agents-ides/README.md",
       "path": "reports/categories/coding-agents-ides/README.md",
       "title": "Coding Agents and IDEs",
-      "summary": "Coding Agents and IDEs Generated 2026 06 18T14 32 13.515Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 ",
+      "summary": "Coding Agents and IDEs Generated 2026 06 18T14 52 38.646Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.082Z",
+      "updatedAt": "2026-06-18T14:52:39.223Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -53,10 +53,10 @@
       "id": "report:reports/categories/research-papers/README.md",
       "path": "reports/categories/research-papers/README.md",
       "title": "Research Papers and Evidence",
-      "summary": "Research Papers and Evidence Generated 2026 06 18T14 32 13.515Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
+      "summary": "Research Papers and Evidence Generated 2026 06 18T14 52 38.646Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.229Z",
+      "updatedAt": "2026-06-18T14:52:39.348Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -67,11 +67,27 @@
       "id": "report:reports/repository-insights/by-role/coding-agent-ide/README.md",
       "path": "reports/repository-insights/by-role/coding-agent-ide/README.md",
       "title": "Coding Agent and IDE",
-      "summary": "Coding Agent and IDE Generated 2026 06 18T14 32 15.396Z 코딩 에이전트/IDE 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 coding agent ide 역할로 분류된 레포 묶음입니다. 포함 범위 9 repositories, report link 9, local source 9. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 repor",
+      "summary": "Coding Agent and IDE Generated 2026 06 18T14 52 41.414Z 코딩 에이전트/IDE 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 coding agent ide 역할로 분류된 레포 묶음입니다. 포함 범위 9 repositories, report link 9, local source 9. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 repor",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.957Z",
+      "updatedAt": "2026-06-18T14:52:42.322Z",
       "categories": [
+        "coding-agents",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+      "path": "reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+      "title": "Coding Agent and IDE Source Deep Dive",
+      "summary": "Coding Agent and IDE Source Deep Dive Generated 2026 06 18T14 52 44.529Z 코딩 에이전트/IDE 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 coding agent ide 역할로 분류된 로컬 소스 레포 9개입니다. 포함 범위 CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문 경로를 중심으로 key source reference 106개를 추출했습니다. 탐색",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.571Z",
+      "categories": [
+        "source-code-deep-dives",
         "coding-agents",
         "comparisons",
         "repository-deep-dives"

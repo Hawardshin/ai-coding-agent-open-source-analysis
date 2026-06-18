@@ -1,13 +1,13 @@
 # Start Here
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 High-level maps and entry points for reading the repository.
 
 ## 요약
 
 - 조사 단위: `start-here` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 20 reports이며, 주요 보고서 유형은 overview-report (4), llm-wiki-report (3), research-synthesis (3), comparison-report (2), presentation-report (2)입니다.
+- 포함 범위: 21 reports이며, 주요 보고서 유형은 overview-report (4), llm-wiki-report (3), research-synthesis (3), comparison-report (2), presentation-report (2)입니다.
 - 주요 출처 폴더: research (3), root (3), comparisons (2), presentations (2), adjacent-tech (1).
 
 ## 총평
@@ -23,12 +23,13 @@ High-level maps and entry points for reading the repository.
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 20
+- Reports: 21
 - Data: [data/report-categories/start-here.json](../../../data/report-categories/start-here.json)
 
 ## Report Types
@@ -44,6 +45,7 @@ High-level maps and entry points for reading the repository.
 - agent-harness-report: 1
 - global-trending-report: 1
 - korea-trending-report: 1
+- source-deep-dive-report: 1
 
 ## Source Folders
 
@@ -61,6 +63,7 @@ High-level maps and entry points for reading the repository.
 - global-trending: 1
 - korea-trending: 1
 - repository-insights: 1
+- source-deep-dives: 1
 
 ## Recommended Reading Path
 
@@ -83,6 +86,7 @@ High-level maps and entry points for reading the repository.
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
 | [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](../../research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
+| [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
 | [127개 로컬 클론 구조 분석 총괄](../../clone-structure-analysis-127.md) | overview-report | root | 143 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 | [AI 에이전트 설계의 충돌 이론과 보류된 질문](../../research/03-conflicting-theories-and-open-questions.md) | research-synthesis | research | 117 |
@@ -109,7 +113,7 @@ High-level maps and entry points for reading the repository.
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](../../presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
 | [Repository Insights](../../repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](../../research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
+| [Source Deep Dives](../../source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
 | [127개 로컬 클론 구조 분석 총괄](../../clone-structure-analysis-127.md) | overview-report | root | 143 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](../../full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 | [AI 에이전트 설계의 충돌 이론과 보류된 질문](../../research/03-conflicting-theories-and-open-questions.md) | research-synthesis | research | 117 |
-

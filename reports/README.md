@@ -1,13 +1,13 @@
 # Reports Reading Index
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 This is the entry point for reading the repository directly from GitHub or a local checkout. Deployment-specific web UI has been removed; use these category pages and JSON indexes instead.
 
 ## 요약
 
 - 조사 단위: 레포에 커밋된 모든 Markdown 보고서의 최상위 읽기 지도입니다.
-- 포함 범위: 1,417 reports, 17 report topics, 16 folder README guides입니다.
+- 포함 범위: 1,429 reports, 18 report topics, 16 folder README guides입니다.
 - 탐색 방식: Start Here로 전체 흐름을 잡고, Topics로 주제별 조사에 들어가며, Folder README Map으로 실제 폴더 구조를 따라갑니다.
 
 ## 총평
@@ -16,8 +16,8 @@ This is the entry point for reading the repository directly from GitHub or a loc
 
 ## Scope
 
-- Markdown reports indexed: 1417
-- Topic categories: 17
+- Markdown reports indexed: 1429
+- Topic categories: 18
 - Folder README guides: 16
 - Data index: [data/report-index.json](../data/report-index.json)
 - Topic data folder: [data/report-categories/](../data/report-categories)
@@ -31,6 +31,7 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [Reports by Topic](by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](tables/README.md) | Table-first scanning, CSV exports, and topic/type matrices. |
 | [Repository Insights](repository-insights/README.md) | Repository-by-repository insights, risks, evidence, and next-read links. |
+| [Source Deep Dives](source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](categories/README.md) | Artifact-level categories across repositories, research, presentations, and trend sources. |
 
 ## Start Here
@@ -54,9 +55,9 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
 | [Repository Insights](repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
+| [Source Deep Dives](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
 | [127개 로컬 클론 구조 분석 총괄](clone-structure-analysis-127.md) | overview-report | root | 143 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
-| [AI 에이전트 설계의 충돌 이론과 보류된 질문](research/03-conflicting-theories-and-open-questions.md) | research-synthesis | research | 117 |
 
 
 ## High-Signal Overview Reports
@@ -82,6 +83,7 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
 | [Repository Insights](repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
+| [Source Deep Dives](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
 | [Agent Harness and Orchestration](categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
 | [AI Infrastructure and Serving](categories/ai-infrastructure-serving/README.md) | category-guide | categories | 156 |
 | [AI Usage Trends](categories/ai-usage-trends/README.md) | category-guide | categories | 156 |
@@ -92,25 +94,25 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [Evals, Observability, and Quality](categories/evals-observability-quality/README.md) | category-guide | categories | 156 |
 | [Global AI Open Source](categories/global-ai-open-source/README.md) | category-guide | categories | 156 |
 | [Korean AI and Open Source](categories/korean-ai-open-source/README.md) | category-guide | categories | 156 |
-| [LLM Wiki, RAG, and Knowledge Bases](categories/llm-wiki-rag-knowledge/README.md) | category-guide | categories | 156 |
 
 
 ## Topics
 
 | Topic | Reports | Description |
 | --- | ---: | --- |
-| [Repository Deep Dives](by-topic/repository-deep-dives/README.md) | 1269 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. |
+| [Repository Deep Dives](by-topic/repository-deep-dives/README.md) | 1281 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. |
 | [Global Trending Open Source](by-topic/global-trending-open-source/README.md) | 502 | Global trending open-source corpus and per-repository reports. |
 | [Korea Trending Open Source](by-topic/korea-trending-open-source/README.md) | 502 | Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports. |
-| [LLM Wiki, RAG, and Knowledge Bases](by-topic/llm-wiki/README.md) | 241 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. |
-| [Agent Harness, MCP, and Orchestration](by-topic/agent-harness/README.md) | 145 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. |
+| [LLM Wiki, RAG, and Knowledge Bases](by-topic/llm-wiki/README.md) | 242 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. |
+| [Agent Harness, MCP, and Orchestration](by-topic/agent-harness/README.md) | 146 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. |
 | [Clone Structure and Inventory](by-topic/clone-structure-inventory/README.md) | 128 | Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports. |
-| [Coding Agents and IDEs](by-topic/coding-agents/README.md) | 85 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. |
-| [Spec-Driven and Requirements](by-topic/spec-driven/README.md) | 22 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. |
-| [Start Here](by-topic/start-here/README.md) | 20 | High-level maps and entry points for reading the repository. |
+| [Coding Agents and IDEs](by-topic/coding-agents/README.md) | 86 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. |
+| [Comparisons and Similarity Maps](by-topic/comparisons/README.md) | 29 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. |
+| [Spec-Driven and Requirements](by-topic/spec-driven/README.md) | 23 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. |
+| [Start Here](by-topic/start-here/README.md) | 21 | High-level maps and entry points for reading the repository. |
 | [Category Guides](by-topic/category-guides/README.md) | 18 | Generated category pages that group open-source, research, presentation, and trend artifacts. |
-| [Comparisons and Similarity Maps](by-topic/comparisons/README.md) | 17 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. |
-| [Adjacent AI Infrastructure](by-topic/adjacent-infrastructure/README.md) | 14 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. |
+| [Source Code Deep Dives](by-topic/source-code-deep-dives/README.md) | 18 | Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence. |
+| [Adjacent AI Infrastructure](by-topic/adjacent-infrastructure/README.md) | 15 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. |
 | [Presentations and Conferences](by-topic/presentations-conferences/README.md) | 8 | Conference, talk, webinar, and presentation-method research. |
 | [Research Foundations](by-topic/research-foundations/README.md) | 6 | Evidence catalogs, conflicting theories, source catalogs, and research synthesis. |
 | [Source Catalogs and Inventories](by-topic/source-catalogs-and-inventories/README.md) | 6 | Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations. |
@@ -143,6 +145,7 @@ This is the entry point for reading the repository directly from GitHub or a loc
 
 1. Open [reports/categories/README.md](categories/README.md) for artifact-level categories.
 2. Open [reports/by-topic/README.md](by-topic/README.md) for report-level categories.
-3. Open [reports/tables/README.md](tables/README.md) when you need spreadsheet-style tables.
-4. Use the folder README map above when you know the physical report folder.
-5. Use `data/report-index.json`, `data/report-categories/*.json`, and `data/report-tables/*.csv` when you need complete machine-readable membership.
+3. Open [reports/source-deep-dives/README.md](source-deep-dives/README.md) when you need source-path-level implementation evidence.
+4. Open [reports/tables/README.md](tables/README.md) when you need spreadsheet-style tables.
+5. Use the folder README map above when you know the physical report folder.
+6. Use `data/report-index.json`, `data/report-categories/*.json`, and `data/report-tables/*.csv` when you need complete machine-readable membership.

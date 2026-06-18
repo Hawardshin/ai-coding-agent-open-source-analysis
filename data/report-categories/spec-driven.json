@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "slug": "spec-driven",
   "title": "Spec-Driven and Requirements",
   "description": "Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.",
-  "count": 22,
+  "count": 23,
   "reports": [
     {
       "id": "report:reports/spec-driven/00-spec-extraction-and-spec-memory-synthesis.md",
@@ -23,10 +23,10 @@
       "id": "report:reports/categories/spec-driven-requirements/README.md",
       "path": "reports/categories/spec-driven-requirements/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 32 13.515Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 52 38.646Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.125Z",
+      "updatedAt": "2026-06-18T14:52:39.261Z",
       "categories": [
         "category-guides",
         "spec-driven"
@@ -37,11 +37,27 @@
       "id": "report:reports/repository-insights/by-role/spec-driven/README.md",
       "path": "reports/repository-insights/by-role/spec-driven/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 32 15.396Z 스펙 드리븐/요구사항 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 spec driven 역할로 분류된 레포 묶음입니다. 포함 범위 5 repositories, report link 5, local source 5. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 re",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 52 41.414Z 스펙 드리븐/요구사항 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 spec driven 역할로 분류된 레포 묶음입니다. 포함 범위 5 repositories, report link 5, local source 5. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 re",
       "kind": "spec-driven-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.958Z",
+      "updatedAt": "2026-06-18T14:52:42.323Z",
       "categories": [
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
+      "path": "reports/source-deep-dives/by-topic/spec-driven/README.md",
+      "title": "Spec-Driven and Requirements Source Deep Dive",
+      "summary": "Spec Driven and Requirements Source Deep Dive Generated 2026 06 18T14 52 44.529Z 스펙 드리븐/요구사항 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 spec driven 역할로 분류된 로컬 소스 레포 5개입니다. 포함 범위 requirements, ADR, design docs, spec artifacts, acceptance/test trace 경로를 중심으로 key so",
+      "kind": "spec-driven-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.603Z",
+      "categories": [
+        "source-code-deep-dives",
         "spec-driven",
         "comparisons",
         "repository-deep-dives"

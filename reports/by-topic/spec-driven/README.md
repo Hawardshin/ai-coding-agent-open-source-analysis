@@ -1,13 +1,13 @@
 # Spec-Driven and Requirements
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.
 
 ## 요약
 
 - 조사 단위: `spec-driven` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 22 reports이며, 주요 보고서 유형은 clone-structure-report (15), per-repository-report (3), spec-driven-report (2), category-guide (1), overview-report (1)입니다.
+- 포함 범위: 23 reports이며, 주요 보고서 유형은 clone-structure-report (15), per-repository-report (3), spec-driven-report (3), category-guide (1), overview-report (1)입니다.
 - 주요 출처 폴더: clone-structures (15), korea-trending/repositories (2), categories (1), global-trending/repositories (1), repository-insights (1).
 
 ## 총평
@@ -23,19 +23,20 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 22
+- Reports: 23
 - Data: [data/report-categories/spec-driven.json](../../../data/report-categories/spec-driven.json)
 
 ## Report Types
 
 - clone-structure-report: 15
+- spec-driven-report: 3
 - per-repository-report: 3
-- spec-driven-report: 2
 - category-guide: 1
 - overview-report: 1
 
@@ -46,6 +47,7 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 - spec-driven: 1
 - categories: 1
 - repository-insights: 1
+- source-deep-dives: 1
 - root: 1
 - global-trending/repositories: 1
 
@@ -56,6 +58,7 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [Spec-Driven Development: 스펙 추출과 스펙 메모리 합성 보고서](../../spec-driven/00-spec-extraction-and-spec-memory-synthesis.md) | spec-driven-report | spec-driven | 182 |
 | [Spec-Driven and Requirements](../../categories/spec-driven-requirements/README.md) | category-guide | categories | 156 |
 | [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
+| [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | spec-driven-report | source-deep-dives | 155 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
 | [amaynez/kiro-style-sdd 구조 분석](../../clone-structures/amaynez__kiro-style-sdd.md) | clone-structure-report | clone-structures | -28 |
 | [ariel-frischer/autospec 구조 분석](../../clone-structures/ariel-frischer__autospec.md) | clone-structure-report | clone-structures | -28 |
@@ -84,6 +87,7 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [Spec-Driven Development: 스펙 추출과 스펙 메모리 합성 보고서](../../spec-driven/00-spec-extraction-and-spec-memory-synthesis.md) | spec-driven-report | spec-driven | 182 |
 | [Spec-Driven and Requirements](../../categories/spec-driven-requirements/README.md) | category-guide | categories | 156 |
 | [Spec-Driven and Requirements](../../repository-insights/by-role/spec-driven/README.md) | spec-driven-report | repository-insights | 155 |
+| [Spec-Driven and Requirements Source Deep Dive](../../source-deep-dives/by-topic/spec-driven/README.md) | spec-driven-report | source-deep-dives | 155 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
 | [amaynez/kiro-style-sdd 구조 분석](../../clone-structures/amaynez__kiro-style-sdd.md) | clone-structure-report | clone-structures | -28 |
 | [ariel-frischer/autospec 구조 분석](../../clone-structures/ariel-frischer__autospec.md) | clone-structure-report | clone-structures | -28 |
@@ -103,4 +107,3 @@ Spec extraction, requirements, traceability, acceptance criteria, and SDD eviden
 | [MCPJam/inspector](../../global-trending/repositories/MCPJam__inspector.md) | per-repository-report | global-trending/repositories | -29 |
 | [kakao/hbase-region-inspector](../../korea-trending/repositories/kakao__hbase-region-inspector.md) | per-repository-report | korea-trending/repositories | -29 |
 | [line/liff-inspector](../../korea-trending/repositories/line__liff-inspector.md) | per-repository-report | korea-trending/repositories | -29 |
-

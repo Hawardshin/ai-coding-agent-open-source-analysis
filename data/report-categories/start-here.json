@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "slug": "start-here",
   "title": "Start Here",
   "description": "High-level maps and entry points for reading the repository.",
-  "count": 20,
+  "count": 21,
   "reports": [
     {
       "id": "report:reports/categories/README.md",
       "path": "reports/categories/README.md",
       "title": "Category Index",
-      "summary": "Category Index Generated 2026 06 18T14 32 13.515Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
+      "summary": "Category Index Generated 2026 06 18T14 52 38.646Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.265Z",
+      "updatedAt": "2026-06-18T14:52:39.384Z",
       "categories": [
         "start-here",
         "category-guides"
@@ -29,6 +29,7 @@
       "updatedAt": "2026-06-10T22:18:41.682Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "comparisons"
       ],
       "priority": 182
@@ -57,6 +58,7 @@
       "updatedAt": "2026-06-17T22:57:02.870Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "llm-wiki"
       ],
       "priority": 182
@@ -71,6 +73,7 @@
       "updatedAt": "2026-06-17T22:58:03.138Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "llm-wiki",
         "comparisons"
       ],
@@ -190,6 +193,7 @@
       "updatedAt": "2026-06-18T00:02:33.882Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "korea-trending-open-source"
       ],
       "priority": 157
@@ -228,10 +232,10 @@
       "id": "report:reports/repository-insights/README.md",
       "path": "reports/repository-insights/README.md",
       "title": "Repository Insights",
-      "summary": "Repository Insights Generated 2026 06 18T14 32 15.396Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
+      "summary": "Repository Insights Generated 2026 06 18T14 52 41.414Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.933Z",
+      "updatedAt": "2026-06-18T14:52:42.295Z",
       "categories": [
         "start-here",
         "comparisons",
@@ -250,6 +254,22 @@
       "categories": [
         "start-here",
         "research-foundations"
+      ],
+      "priority": 157
+    },
+    {
+      "id": "report:reports/source-deep-dives/README.md",
+      "path": "reports/source-deep-dives/README.md",
+      "title": "Source Deep Dives",
+      "summary": "Source Deep Dives Generated 2026 06 18T14 52 44.529Z This report adds topic first, source path level evidence extracted from the locally cloned repositories under sources/ . 요약 조사 단위 로컬 clone 1,136개를 실제 파일 트리 기준으로 다시 스캔한 source deep scan 보고서입니다. 포함 범위 file/dir",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.569Z",
+      "categories": [
+        "start-here",
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
       ],
       "priority": 157
     },
@@ -277,7 +297,8 @@
       "updatedAt": "2026-06-17T22:19:43.192Z",
       "categories": [
         "start-here",
-        "full-source-scan"
+        "full-source-scan",
+        "source-code-deep-dives"
       ],
       "priority": 143
     },

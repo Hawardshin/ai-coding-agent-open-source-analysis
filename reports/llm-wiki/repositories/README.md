@@ -1,6 +1,6 @@
 # LLM Wiki Repository Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Per-repository structural reports for selected LLM wiki and knowledge-base projects.
 
@@ -23,6 +23,7 @@ Per-repository structural reports for selected LLM wiki and knowledge-base proje
 | [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -185,4 +186,3 @@ Per-repository structural reports for selected LLM wiki and knowledge-base proje
 | [zhimaAi/ChatClaw 구조 분석](zhimaAi__ChatClaw.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zhitongblog/solomd 구조 분석](zhitongblog__solomd.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [zosmaai/pi-llm-wiki 구조 분석](zosmaai__pi-llm-wiki.md) | per-repository-report | llm-wiki/repositories | -29 |
-

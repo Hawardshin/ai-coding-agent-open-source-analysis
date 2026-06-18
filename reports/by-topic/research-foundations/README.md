@@ -1,6 +1,6 @@
 # Research Foundations
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Evidence catalogs, conflicting theories, source catalogs, and research synthesis.
 
@@ -23,6 +23,7 @@ Evidence catalogs, conflicting theories, source catalogs, and research synthesis
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -65,4 +66,3 @@ Evidence catalogs, conflicting theories, source catalogs, and research synthesis
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |
 | [AI 에이전트 설계의 충돌 이론과 보류된 질문](../../research/03-conflicting-theories-and-open-questions.md) | research-synthesis | research | 117 |
 | [Deferred Work Parallel Review Status](../../research/04-deferred-work-parallel-review-status.md) | research-synthesis | research | 117 |
-

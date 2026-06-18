@@ -1,6 +1,6 @@
 # Presentations and Conferences
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Conference, talk, webinar, and presentation-method research.
 
@@ -23,6 +23,7 @@ Conference, talk, webinar, and presentation-method research.
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -71,4 +72,3 @@ Conference, talk, webinar, and presentation-method research.
 | [2026 최신 자료 레이더: 논문, 빅테크 발표, 에이전트/RAG/로컬 LLM 트렌드](../../adjacent-tech/04-latest-research-and-industry-radar-2026.md) | infrastructure-report | adjacent-tech | 117 |
 | [Codex Conference Talk Playbook](../../presentations/codex-conference-talk-playbook.md) | presentation-report | presentations | 117 |
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon](../../korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | per-repository-report | korea-trending/repositories | -29 |
-

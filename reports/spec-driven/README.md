@@ -1,6 +1,6 @@
 # Spec-Driven Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Spec extraction, requirements, traceability, executable specs, SDD tooling, and spec memory research.
 
@@ -23,6 +23,7 @@ Spec extraction, requirements, traceability, executable specs, SDD tooling, and 
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -55,4 +56,3 @@ Spec extraction, requirements, traceability, executable specs, SDD tooling, and 
 | Report | Type | Folder | Priority |
 | --- | --- | --- | ---: |
 | [Spec-Driven Development: 스펙 추출과 스펙 메모리 합성 보고서](00-spec-extraction-and-spec-memory-synthesis.md) | spec-driven-report | spec-driven | 182 |
-

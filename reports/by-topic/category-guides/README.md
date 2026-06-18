@@ -1,6 +1,6 @@
 # Category Guides
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Generated category pages that group open-source, research, presentation, and trend artifacts.
 
@@ -23,6 +23,7 @@ Generated category pages that group open-source, research, presentation, and tre
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -85,4 +86,3 @@ Generated category pages that group open-source, research, presentation, and tre
 | [Research Papers and Evidence](../../categories/research-papers/README.md) | category-guide | categories | 156 |
 | [Security, Governance, and Safety](../../categories/security-governance-safety/README.md) | category-guide | categories | 156 |
 | [Spec-Driven and Requirements](../../categories/spec-driven-requirements/README.md) | category-guide | categories | 156 |
-

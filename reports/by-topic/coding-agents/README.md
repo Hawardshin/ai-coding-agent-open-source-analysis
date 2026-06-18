@@ -1,13 +1,13 @@
 # Coding Agents and IDEs
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.
 
 ## 요약
 
 - 조사 단위: `coding-agents` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 85 reports이며, 주요 보고서 유형은 per-repository-report (64), clone-structure-report (10), llm-wiki-report (3), agent-harness-report (2), category-guide (2)입니다.
+- 포함 범위: 86 reports이며, 주요 보고서 유형은 per-repository-report (64), clone-structure-report (10), llm-wiki-report (3), agent-harness-report (2), category-guide (2)입니다.
 - 주요 출처 폴더: repositories (30), global-trending/repositories (26), clone-structures (10), korea-trending/repositories (5), llm-wiki/code-level-repositories (3).
 
 ## 총평
@@ -23,12 +23,13 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
 ## Counts
 
-- Reports: 85
+- Reports: 86
 - Data: [data/report-categories/coding-agents.json](../../../data/report-categories/coding-agents.json)
 
 ## Report Types
@@ -40,6 +41,7 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 - category-guide: 2
 - overview-report: 2
 - research-synthesis: 1
+- source-deep-dive-report: 1
 - presentation-report: 1
 
 ## Source Folders
@@ -54,6 +56,7 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 - categories: 2
 - research: 1
 - repository-insights: 1
+- source-deep-dives: 1
 - root: 1
 - presentations: 1
 
@@ -66,6 +69,7 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 | [Coding Agents and IDEs](../../categories/coding-agents-ides/README.md) | category-guide | categories | 156 |
 | [Research Papers and Evidence](../../categories/research-papers/README.md) | category-guide | categories | 156 |
 | [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
+| [Coding Agent and IDE Source Deep Dive](../../source-deep-dives/by-topic/coding-agent-ide/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [KalyanKS-NLP/rag-zero-to-hero-guide 코드 레벨 분석](../../llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | llm-wiki-report | llm-wiki/code-level-repositories | 141 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
@@ -90,7 +94,6 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 | [All-Hands-AI/OpenHands 심층 분석](../../repositories/all-hands-ai-openhands.md) | per-repository-report | repositories | -28 |
 | [anomalyco/opencode 심층 분석](../../repositories/anomalyco-opencode.md) | per-repository-report | repositories | -28 |
 | [browser-use/browser-use 심층 분석](../../repositories/browser-use-browser-use.md) | per-repository-report | repositories | -28 |
-| [cline/cline 심층 분석](../../repositories/cline-cline.md) | per-repository-report | repositories | -28 |
 
 
 ## All Reports
@@ -102,6 +105,7 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 | [Coding Agents and IDEs](../../categories/coding-agents-ides/README.md) | category-guide | categories | 156 |
 | [Research Papers and Evidence](../../categories/research-papers/README.md) | category-guide | categories | 156 |
 | [Coding Agent and IDE](../../repository-insights/by-role/coding-agent-ide/README.md) | overview-report | repository-insights | 155 |
+| [Coding Agent and IDE Source Deep Dive](../../source-deep-dives/by-topic/coding-agent-ide/README.md) | source-deep-dive-report | source-deep-dives | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [KalyanKS-NLP/rag-zero-to-hero-guide 코드 레벨 분석](../../llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md) | llm-wiki-report | llm-wiki/code-level-repositories | 141 |
 | [Spec-Driven Development Evidence Corpus 500+](../../spec-driven-evidence-corpus-500.md) | overview-report | root | 118 |
@@ -182,4 +186,3 @@ Core coding-agent repositories, terminal agents, IDE agents, and code-review age
 | [sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon](../../korea-trending/repositories/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md) | per-repository-report | korea-trending/repositories | -29 |
 | [AgriciDaniel/claude-obsidian 구조 분석](../../llm-wiki/repositories/AgriciDaniel__claude-obsidian.md) | per-repository-report | llm-wiki/repositories | -29 |
 | [HKUDS/VideoRAG 구조 분석](../../llm-wiki/repositories/HKUDS__VideoRAG.md) | per-repository-report | llm-wiki/repositories | -29 |
-

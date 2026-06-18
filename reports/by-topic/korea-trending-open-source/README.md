@@ -1,6 +1,6 @@
 # Korea Trending Open Source
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports.
 
@@ -23,6 +23,7 @@ Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports.
 | [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -585,4 +586,3 @@ Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports.
 | [yjhann33-design/korea-stock-insight-mcp](../../korea-trending/repositories/yjhann33-design__korea-stock-insight-mcp.md) | per-repository-report | korea-trending/repositories | -29 |
 | [z0nam/korea-rio-mcp](../../korea-trending/repositories/z0nam__korea-rio-mcp.md) | per-repository-report | korea-trending/repositories | -29 |
 | [zzet/gortex](../../korea-trending/repositories/zzet__gortex.md) | per-repository-report | korea-trending/repositories | -29 |
-

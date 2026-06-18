@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "slug": "korea-trending-open-source",
   "title": "Korea Trending Open Source",
   "description": "Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports.",
@@ -15,6 +15,7 @@
       "updatedAt": "2026-06-18T00:02:33.882Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "korea-trending-open-source"
       ],
       "priority": 157
@@ -23,10 +24,10 @@
       "id": "report:reports/categories/korean-ai-open-source/README.md",
       "path": "reports/categories/korean-ai-open-source/README.md",
       "title": "Korean AI and Open Source",
-      "summary": "Korean AI and Open Source Generated 2026 06 18T14 32 13.515Z Korea trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals. 요약 조사 단위 korean ai open source artifact 카테고리에 속한 오픈소스, 논문, 발",
+      "summary": "Korean AI and Open Source Generated 2026 06 18T14 52 38.646Z Korea trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals. 요약 조사 단위 korean ai open source artifact 카테고리에 속한 오픈소스, 논문, 발",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.215Z",
+      "updatedAt": "2026-06-18T14:52:39.335Z",
       "categories": [
         "category-guides",
         "korea-trending-open-source"

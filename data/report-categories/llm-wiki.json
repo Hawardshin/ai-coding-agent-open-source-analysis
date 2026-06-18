@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "slug": "llm-wiki",
   "title": "LLM Wiki, RAG, and Knowledge Bases",
   "description": "LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.",
-  "count": 241,
+  "count": 242,
   "reports": [
     {
       "id": "report:reports/llm-wiki/00-llm-wiki-100-summary.md",
@@ -15,6 +15,7 @@
       "updatedAt": "2026-06-17T22:57:02.870Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "llm-wiki"
       ],
       "priority": 182
@@ -29,6 +30,7 @@
       "updatedAt": "2026-06-17T22:58:03.138Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "llm-wiki",
         "comparisons"
       ],
@@ -83,10 +85,10 @@
       "id": "report:reports/categories/llm-wiki-rag-knowledge/README.md",
       "path": "reports/categories/llm-wiki-rag-knowledge/README.md",
       "title": "LLM Wiki, RAG, and Knowledge Bases",
-      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T14 32 13.515Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
+      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T14 52 38.646Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.141Z",
+      "updatedAt": "2026-06-18T14:52:39.277Z",
       "categories": [
         "category-guides",
         "llm-wiki"
@@ -97,11 +99,27 @@
       "id": "report:reports/repository-insights/by-role/llm-wiki-rag/README.md",
       "path": "reports/repository-insights/by-role/llm-wiki-rag/README.md",
       "title": "LLM Wiki, RAG, and Knowledge",
-      "summary": "LLM Wiki, RAG, and Knowledge Generated 2026 06 18T14 32 15.396Z LLM 위키/RAG/지식베이스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 레포 묶음입니다. 포함 범위 172 repositories, report link 172, local source 172. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
+      "summary": "LLM Wiki, RAG, and Knowledge Generated 2026 06 18T14 52 41.414Z LLM 위키/RAG/지식베이스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 레포 묶음입니다. 포함 범위 172 repositories, report link 172, local source 172. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.952Z",
+      "updatedAt": "2026-06-18T14:52:42.317Z",
       "categories": [
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+      "path": "reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+      "title": "LLM Wiki, RAG, and Knowledge Source Deep Dive",
+      "summary": "LLM Wiki, RAG, and Knowledge Source Deep Dive Generated 2026 06 18T14 52 44.529Z LLM 위키/RAG/지식베이스 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 로컬 소스 레포 172개입니다. 포함 범위 ingestion, chunking, embedding, retrieval, memory, vector store 경로를 중심으로 key ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.602Z",
+      "categories": [
+        "source-code-deep-dives",
         "llm-wiki",
         "comparisons",
         "repository-deep-dives"
@@ -144,6 +162,7 @@
       "folder": "adjacent-tech",
       "updatedAt": "2026-06-12T16:07:03.248Z",
       "categories": [
+        "source-code-deep-dives",
         "agent-harness",
         "llm-wiki",
         "adjacent-infrastructure"

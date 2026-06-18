@@ -1,6 +1,6 @@
 # MCP, Tools, and Protocols
 
-Generated: 2026-06-18T14:32:13.515Z
+Generated: 2026-06-18T14:52:38.646Z
 
 Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool-calling infrastructure.
 
@@ -23,6 +23,7 @@ Model Context Protocol servers, tool registries, gateways, connectors, protocol 
 | [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
 
 

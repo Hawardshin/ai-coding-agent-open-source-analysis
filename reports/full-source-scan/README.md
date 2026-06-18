@@ -1,6 +1,6 @@
 # Full Source Scan Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 How coding agents discover files, search symbols, connect user intent to source code, and decide what to read.
 
@@ -23,6 +23,7 @@ How coding agents discover files, search symbols, connect user intent to source 
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -54,4 +55,3 @@ How coding agents discover files, search symbols, connect user intent to source 
 | Report | Type | Folder | Priority |
 | --- | --- | --- | ---: |
 | [Full Source Scan Deep Dive: 필요한 파일을 찾고 읽는 구현 로직](02-file-discovery-reading-implementation-deep-dive.md) | source-scan-report | full-source-scan | 157 |
-

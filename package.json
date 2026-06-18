@@ -16,7 +16,8 @@
     "collect:ai-usage-trends": "node scripts/collect-ai-usage-trend-conferences.mjs",
     "build:categories": "node scripts/build-category-index.mjs",
     "build:repo-insights": "node scripts/build-repository-insights.mjs",
+    "build:source-deep-dives": "node scripts/build-source-deep-dives.mjs",
     "build:report-index": "node scripts/build-report-index.mjs",
-    "build:indexes": "npm run build:categories && npm run build:repo-insights && npm run build:report-index"
+    "build:indexes": "npm run build:categories && npm run build:repo-insights && npm run build:source-deep-dives && npm run build:report-index"
   }
 }

@@ -1,6 +1,6 @@
 # Comparison Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Cross-project taxonomy, feature comparison, and similarity cluster reports.
 
@@ -12,7 +12,7 @@ Cross-project taxonomy, feature comparison, and similarity cluster reports.
 
 ## 총평
 
-이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 2개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
+이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 3개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
 
 ## Navigation
 
@@ -23,6 +23,7 @@ Cross-project taxonomy, feature comparison, and similarity cluster reports.
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -41,6 +42,7 @@ Cross-project taxonomy, feature comparison, and similarity cluster reports.
 | --- | ---: |
 | [Comparisons and Similarity Maps](../by-topic/comparisons/README.md) | 2 |
 | [Start Here](../by-topic/start-here/README.md) | 2 |
+| [Source Code Deep Dives](../by-topic/source-code-deep-dives/README.md) | 1 |
 
 
 ## Recommended Reading Path
@@ -57,4 +59,3 @@ Cross-project taxonomy, feature comparison, and similarity cluster reports.
 | --- | --- | --- | ---: |
 | [30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서](01-project-taxonomy-and-feature-comparison.md) | comparison-report | comparisons | 182 |
 | [유사군별 비교와 관계 지도](02-similarity-clusters.md) | comparison-report | comparisons | 182 |
-

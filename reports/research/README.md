@@ -1,6 +1,6 @@
 # Research Reports
 
-Generated: 2026-06-18T14:32:17.400Z
+Generated: 2026-06-18T14:54:26.642Z
 
 Research synthesis, evidence catalogs, conflicting theories, and open questions.
 
@@ -23,6 +23,7 @@ Research synthesis, evidence catalogs, conflicting theories, and open questions.
 | [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
 | [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
+| [Source Deep Dives](../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 
@@ -62,4 +63,3 @@ Research synthesis, evidence catalogs, conflicting theories, and open questions.
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](01-agent-trends-2026.md) | research-synthesis | research | 157 |
 | [AI 에이전트 설계의 충돌 이론과 보류된 질문](03-conflicting-theories-and-open-questions.md) | research-synthesis | research | 117 |
 | [Deferred Work Parallel Review Status](04-deferred-work-parallel-review-status.md) | research-synthesis | research | 117 |
-

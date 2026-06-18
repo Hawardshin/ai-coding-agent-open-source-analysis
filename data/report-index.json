@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-18T14:32:17.400Z",
+  "generatedAt": "2026-06-18T14:54:26.642Z",
   "description": "Report-level reading index for all Markdown reports in this repository.",
   "counts": {
-    "reports": 1417,
+    "reports": 1429,
     "byKind": {
       "category-guide": 18,
       "comparison-report": 2,
       "llm-wiki-report": 103,
       "research-synthesis": 4,
-      "spec-driven-report": 2,
+      "spec-driven-report": 3,
       "overview-report": 17,
       "infrastructure-report": 4,
       "agent-harness-report": 2,
@@ -16,6 +16,7 @@
       "global-trending-report": 1,
       "korea-trending-report": 1,
       "presentation-report": 5,
+      "source-deep-dive-report": 11,
       "clone-structure-report": 127,
       "per-repository-report": 1130
     },
@@ -35,6 +36,7 @@
       "korea-trending": 1,
       "presentations": 5,
       "repository-insights": 12,
+      "source-deep-dives": 12,
       "llm-wiki/code-level-repositories": 100,
       "clone-structures": 127,
       "global-trending/repositories": 500,
@@ -66,6 +68,19 @@
         "symbol graph",
         "code search",
         "file discovery"
+      ]
+    },
+    {
+      "slug": "source-code-deep-dives",
+      "title": "Source Code Deep Dives",
+      "description": "Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.",
+      "keywords": [
+        "source deep scan",
+        "entrypoint",
+        "runtime",
+        "source path",
+        "implementation evidence",
+        "소스"
       ]
     },
     {
@@ -233,7 +248,7 @@
       "slug": "start-here",
       "title": "Start Here",
       "description": "High-level maps and entry points for reading the repository.",
-      "count": 20,
+      "count": 21,
       "dataPath": "data/report-categories/start-here.json",
       "reportPath": "reports/by-topic/start-here/README.md",
       "reports": [
@@ -254,6 +269,7 @@
         "report:reports/presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md",
         "report:reports/repository-insights/README.md",
         "report:reports/research/01-agent-trends-2026.md",
+        "report:reports/source-deep-dives/README.md",
         "report:reports/clone-structure-analysis-127.md",
         "report:reports/full-source-scan-research-summary-2026-06-18.md",
         "report:reports/research/03-conflicting-theories-and-open-questions.md"
@@ -301,10 +317,38 @@
       ]
     },
     {
+      "slug": "source-code-deep-dives",
+      "title": "Source Code Deep Dives",
+      "description": "Topic-wise local source scans with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.",
+      "count": 18,
+      "dataPath": "data/report-categories/source-code-deep-dives.json",
+      "reportPath": "reports/by-topic/source-code-deep-dives/README.md",
+      "reports": [
+        "report:reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
+        "report:reports/llm-wiki/00-llm-wiki-100-summary.md",
+        "report:reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
+        "report:reports/korea-trending/00-korea-open-source-trend-report-2026-06-18.md",
+        "report:reports/source-deep-dives/README.md",
+        "report:reports/source-deep-dives/by-topic/README.md",
+        "report:reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
+        "report:reports/source-deep-dives/by-topic/ai-infrastructure-serving/README.md",
+        "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+        "report:reports/source-deep-dives/by-topic/data-vector-platform/README.md",
+        "report:reports/source-deep-dives/by-topic/developer-productivity/README.md",
+        "report:reports/source-deep-dives/by-topic/eval-observability/README.md",
+        "report:reports/source-deep-dives/by-topic/general-ai-open-source/README.md",
+        "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+        "report:reports/source-deep-dives/by-topic/security-governance/README.md",
+        "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
+        "report:reports/full-source-scan-research-summary-2026-06-18.md",
+        "report:reports/adjacent-tech/03-official-docs-and-source-map.md"
+      ]
+    },
+    {
       "slug": "coding-agents",
       "title": "Coding Agents and IDEs",
       "description": "Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.",
-      "count": 85,
+      "count": 86,
       "dataPath": "data/report-categories/coding-agents.json",
       "reportPath": "reports/by-topic/coding-agents/README.md",
       "reports": [
@@ -313,6 +357,7 @@
         "report:reports/categories/coding-agents-ides/README.md",
         "report:reports/categories/research-papers/README.md",
         "report:reports/repository-insights/by-role/coding-agent-ide/README.md",
+        "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
         "report:reports/agent-harness/codex-harness-setup-guide.md",
         "report:reports/llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
         "report:reports/spec-driven-evidence-corpus-500.md",
@@ -399,7 +444,7 @@
       "slug": "agent-harness",
       "title": "Agent Harness, MCP, and Orchestration",
       "description": "Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.",
-      "count": 145,
+      "count": 146,
       "dataPath": "data/report-categories/agent-harness.json",
       "reportPath": "reports/by-topic/agent-harness/README.md",
       "reports": [
@@ -409,6 +454,7 @@
         "report:reports/categories/agent-harness-orchestration/README.md",
         "report:reports/categories/mcp-tools-protocols/README.md",
         "report:reports/repository-insights/by-role/agent-harness-mcp/README.md",
+        "report:reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
         "report:reports/agent-harness/codex-harness-setup-guide.md",
         "report:reports/adjacent-tech/03-official-docs-and-source-map.md",
         "report:reports/llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md",
@@ -554,13 +600,14 @@
       "slug": "spec-driven",
       "title": "Spec-Driven and Requirements",
       "description": "Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.",
-      "count": 22,
+      "count": 23,
       "dataPath": "data/report-categories/spec-driven.json",
       "reportPath": "reports/by-topic/spec-driven/README.md",
       "reports": [
         "report:reports/spec-driven/00-spec-extraction-and-spec-memory-synthesis.md",
         "report:reports/categories/spec-driven-requirements/README.md",
         "report:reports/repository-insights/by-role/spec-driven/README.md",
+        "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
         "report:reports/spec-driven-evidence-corpus-500.md",
         "report:reports/clone-structures/amaynez__kiro-style-sdd.md",
         "report:reports/clone-structures/ariel-frischer__autospec.md",
@@ -586,7 +633,7 @@
       "slug": "llm-wiki",
       "title": "LLM Wiki, RAG, and Knowledge Bases",
       "description": "LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.",
-      "count": 241,
+      "count": 242,
       "dataPath": "data/report-categories/llm-wiki.json",
       "reportPath": "reports/by-topic/llm-wiki/README.md",
       "reports": [
@@ -597,6 +644,7 @@
         "report:reports/adjacent-tech/02-repository-analysis-50.md",
         "report:reports/categories/llm-wiki-rag-knowledge/README.md",
         "report:reports/repository-insights/by-role/llm-wiki-rag/README.md",
+        "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
         "report:reports/llm-wiki/code-level-repositories/KalyanKS-NLP__rag-zero-to-hero-guide.md",
         "report:reports/llm-wiki/code-level-repositories/VectifyAI__PageIndex.md",
         "report:reports/adjacent-tech/03-official-docs-and-source-map.md",
@@ -1892,7 +1940,7 @@
       "slug": "adjacent-infrastructure",
       "title": "Adjacent AI Infrastructure",
       "description": "Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.",
-      "count": 14,
+      "count": 15,
       "dataPath": "data/report-categories/adjacent-infrastructure.json",
       "reportPath": "reports/by-topic/adjacent-infrastructure/README.md",
       "reports": [
@@ -1903,6 +1951,7 @@
         "report:reports/categories/evals-observability-quality/README.md",
         "report:reports/categories/local-llm-models/README.md",
         "report:reports/repository-insights/by-role/eval-observability/README.md",
+        "report:reports/source-deep-dives/by-topic/eval-observability/README.md",
         "report:reports/adjacent-tech-source-inventory.md",
         "report:reports/adjacent-tech/03-official-docs-and-source-map.md",
         "report:reports/adjacent-tech/04-latest-research-and-industry-radar-2026.md",
@@ -2054,7 +2103,7 @@
       "slug": "comparisons",
       "title": "Comparisons and Similarity Maps",
       "description": "Cross-repository comparisons, taxonomy matrices, and similarity clusters.",
-      "count": 17,
+      "count": 29,
       "dataPath": "data/report-categories/comparisons.json",
       "reportPath": "reports/by-topic/comparisons/README.md",
       "reports": [
@@ -2063,7 +2112,9 @@
         "report:reports/llm-wiki/01-llm-wiki-100-selection-and-patterns.md",
         "report:reports/llm-wiki/02-code-level-pipeline-comparison.md",
         "report:reports/repository-insights/README.md",
+        "report:reports/source-deep-dives/README.md",
         "report:reports/repository-insights/by-role/README.md",
+        "report:reports/source-deep-dives/by-topic/README.md",
         "report:reports/repository-insights/by-role/agent-harness-mcp/README.md",
         "report:reports/repository-insights/by-role/ai-infrastructure-serving/README.md",
         "report:reports/repository-insights/by-role/coding-agent-ide/README.md",
@@ -2074,6 +2125,16 @@
         "report:reports/repository-insights/by-role/llm-wiki-rag/README.md",
         "report:reports/repository-insights/by-role/security-governance/README.md",
         "report:reports/repository-insights/by-role/spec-driven/README.md",
+        "report:reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
+        "report:reports/source-deep-dives/by-topic/ai-infrastructure-serving/README.md",
+        "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+        "report:reports/source-deep-dives/by-topic/data-vector-platform/README.md",
+        "report:reports/source-deep-dives/by-topic/developer-productivity/README.md",
+        "report:reports/source-deep-dives/by-topic/eval-observability/README.md",
+        "report:reports/source-deep-dives/by-topic/general-ai-open-source/README.md",
+        "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+        "report:reports/source-deep-dives/by-topic/security-governance/README.md",
+        "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
         "report:reports/global-trending/repositories/matrixorigin__matrixone.md"
       ]
     },
@@ -2113,12 +2174,14 @@
       "slug": "repository-deep-dives",
       "title": "Repository Deep Dives",
       "description": "Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures.",
-      "count": 1269,
+      "count": 1281,
       "dataPath": "data/report-categories/repository-deep-dives.json",
       "reportPath": "reports/by-topic/repository-deep-dives/README.md",
       "reports": [
         "report:reports/repository-insights/README.md",
+        "report:reports/source-deep-dives/README.md",
         "report:reports/repository-insights/by-role/README.md",
+        "report:reports/source-deep-dives/by-topic/README.md",
         "report:reports/repository-insights/by-role/agent-harness-mcp/README.md",
         "report:reports/repository-insights/by-role/ai-infrastructure-serving/README.md",
         "report:reports/repository-insights/by-role/coding-agent-ide/README.md",
@@ -2129,6 +2192,16 @@
         "report:reports/repository-insights/by-role/llm-wiki-rag/README.md",
         "report:reports/repository-insights/by-role/security-governance/README.md",
         "report:reports/repository-insights/by-role/spec-driven/README.md",
+        "report:reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
+        "report:reports/source-deep-dives/by-topic/ai-infrastructure-serving/README.md",
+        "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+        "report:reports/source-deep-dives/by-topic/data-vector-platform/README.md",
+        "report:reports/source-deep-dives/by-topic/developer-productivity/README.md",
+        "report:reports/source-deep-dives/by-topic/eval-observability/README.md",
+        "report:reports/source-deep-dives/by-topic/general-ai-open-source/README.md",
+        "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+        "report:reports/source-deep-dives/by-topic/security-governance/README.md",
+        "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
         "report:reports/clone-structures/run-llama__llama_index.md",
         "report:reports/global-trending/repositories/cocoindex-io__cocoindex-code.md",
         "report:reports/global-trending/repositories/run-llama__llama_index.md",
@@ -3394,10 +3467,10 @@
       "id": "report:reports/categories/README.md",
       "path": "reports/categories/README.md",
       "title": "Category Index",
-      "summary": "Category Index Generated 2026 06 18T14 32 13.515Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
+      "summary": "Category Index Generated 2026 06 18T14 52 38.646Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.265Z",
+      "updatedAt": "2026-06-18T14:52:39.384Z",
       "categories": [
         "start-here",
         "category-guides"
@@ -3414,6 +3487,7 @@
       "updatedAt": "2026-06-10T22:18:41.682Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "comparisons"
       ],
       "priority": 182
@@ -3442,6 +3516,7 @@
       "updatedAt": "2026-06-17T22:57:02.870Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "llm-wiki"
       ],
       "priority": 182
@@ -3456,6 +3531,7 @@
       "updatedAt": "2026-06-17T22:58:03.138Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "llm-wiki",
         "comparisons"
       ],
@@ -3602,6 +3678,7 @@
       "updatedAt": "2026-06-18T00:02:33.882Z",
       "categories": [
         "start-here",
+        "source-code-deep-dives",
         "korea-trending-open-source"
       ],
       "priority": 157
@@ -3640,10 +3717,10 @@
       "id": "report:reports/repository-insights/README.md",
       "path": "reports/repository-insights/README.md",
       "title": "Repository Insights",
-      "summary": "Repository Insights Generated 2026 06 18T14 32 15.396Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
+      "summary": "Repository Insights Generated 2026 06 18T14 52 41.414Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.933Z",
+      "updatedAt": "2026-06-18T14:52:42.295Z",
       "categories": [
         "start-here",
         "comparisons",
@@ -3666,13 +3743,29 @@
       "priority": 157
     },
     {
+      "id": "report:reports/source-deep-dives/README.md",
+      "path": "reports/source-deep-dives/README.md",
+      "title": "Source Deep Dives",
+      "summary": "Source Deep Dives Generated 2026 06 18T14 52 44.529Z This report adds topic first, source path level evidence extracted from the locally cloned repositories under sources/ . 요약 조사 단위 로컬 clone 1,136개를 실제 파일 트리 기준으로 다시 스캔한 source deep scan 보고서입니다. 포함 범위 file/dir",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.569Z",
+      "categories": [
+        "start-here",
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 157
+    },
+    {
       "id": "report:reports/categories/agent-harness-orchestration/README.md",
       "path": "reports/categories/agent-harness-orchestration/README.md",
       "title": "Agent Harness and Orchestration",
-      "summary": "Agent Harness and Orchestration Generated 2026 06 18T14 32 13.515Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고",
+      "summary": "Agent Harness and Orchestration Generated 2026 06 18T14 52 38.646Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.109Z",
+      "updatedAt": "2026-06-18T14:52:39.245Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -3683,10 +3776,10 @@
       "id": "report:reports/categories/ai-infrastructure-serving/README.md",
       "path": "reports/categories/ai-infrastructure-serving/README.md",
       "title": "AI Infrastructure and Serving",
-      "summary": "AI Infrastructure and Serving Generated 2026 06 18T14 32 13.515Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. 요약 조사 단위 ai infrastructure serving artifact 카테고리에 속한 오픈소스, 논문, 발",
+      "summary": "AI Infrastructure and Serving Generated 2026 06 18T14 52 38.646Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. 요약 조사 단위 ai infrastructure serving artifact 카테고리에 속한 오픈소스, 논문, 발",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.169Z",
+      "updatedAt": "2026-06-18T14:52:39.307Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -3697,10 +3790,10 @@
       "id": "report:reports/categories/ai-usage-trends/README.md",
       "path": "reports/categories/ai-usage-trends/README.md",
       "title": "AI Usage Trends",
-      "summary": "AI Usage Trends Generated 2026 06 18T14 32 13.515Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참",
+      "summary": "AI Usage Trends Generated 2026 06 18T14 52 38.646Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.235Z",
+      "updatedAt": "2026-06-18T14:52:39.355Z",
       "categories": [
         "category-guides",
         "ai-usage-trends"
@@ -3711,10 +3804,10 @@
       "id": "report:reports/categories/coding-agents-ides/README.md",
       "path": "reports/categories/coding-agents-ides/README.md",
       "title": "Coding Agents and IDEs",
-      "summary": "Coding Agents and IDEs Generated 2026 06 18T14 32 13.515Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 ",
+      "summary": "Coding Agents and IDEs Generated 2026 06 18T14 52 38.646Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.082Z",
+      "updatedAt": "2026-06-18T14:52:39.223Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -3725,10 +3818,10 @@
       "id": "report:reports/categories/context-memory/README.md",
       "path": "reports/categories/context-memory/README.md",
       "title": "Context and Memory",
-      "summary": "Context and Memory Generated 2026 06 18T14 32 13.515Z Long term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems. 요약 조사 단위 context memory artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 1,178 entr",
+      "summary": "Context and Memory Generated 2026 06 18T14 52 38.646Z Long term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems. 요약 조사 단위 context memory artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 1,178 entr",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.151Z",
+      "updatedAt": "2026-06-18T14:52:39.288Z",
       "categories": [
         "category-guides"
       ],
@@ -3738,10 +3831,10 @@
       "id": "report:reports/categories/data-platforms-vector-databases/README.md",
       "path": "reports/categories/data-platforms-vector-databases/README.md",
       "title": "Data Platforms and Vector Databases",
-      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T14 32 13.515Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. 요약 조사 단위 data platforms vector databases artifact 카테고리에 속한 오픈소스, 논문, 발표/트",
+      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T14 52 38.646Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. 요약 조사 단위 data platforms vector databases artifact 카테고리에 속한 오픈소스, 논문, 발표/트",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.172Z",
+      "updatedAt": "2026-06-18T14:52:39.310Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -3752,10 +3845,10 @@
       "id": "report:reports/categories/developer-productivity-devtools/README.md",
       "path": "reports/categories/developer-productivity-devtools/README.md",
       "title": "Developer Productivity and DevTools",
-      "summary": "Developer Productivity and DevTools Generated 2026 06 18T14 32 13.515Z Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems. 요약 조사 단위 developer productivity devtools artifact 카테고리에 속한 오픈소스,",
+      "summary": "Developer Productivity and DevTools Generated 2026 06 18T14 52 38.646Z Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems. 요약 조사 단위 developer productivity devtools artifact 카테고리에 속한 오픈소스,",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.190Z",
+      "updatedAt": "2026-06-18T14:52:39.321Z",
       "categories": [
         "category-guides"
       ],
@@ -3765,10 +3858,10 @@
       "id": "report:reports/categories/evals-observability-quality/README.md",
       "path": "reports/categories/evals-observability-quality/README.md",
       "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T14 32 13.515Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. 요약 조사 단위 evals observability quality artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T14 52 38.646Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. 요약 조사 단위 evals observability quality artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.160Z",
+      "updatedAt": "2026-06-18T14:52:39.296Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -3779,10 +3872,10 @@
       "id": "report:reports/categories/global-ai-open-source/README.md",
       "path": "reports/categories/global-ai-open-source/README.md",
       "title": "Global AI Open Source",
-      "summary": "Global AI Open Source Generated 2026 06 18T14 32 13.515Z Global trending AI, LLM, agent, RAG, devtool, security, and infrastructure open source repositories. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519 entries이며, 주요",
+      "summary": "Global AI Open Source Generated 2026 06 18T14 52 38.646Z Global trending AI, LLM, agent, RAG, devtool, security, and infrastructure open source repositories. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519 entries이며, 주요",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.221Z",
+      "updatedAt": "2026-06-18T14:52:39.341Z",
       "categories": [
         "category-guides",
         "global-trending-open-source"
@@ -3793,10 +3886,10 @@
       "id": "report:reports/categories/korean-ai-open-source/README.md",
       "path": "reports/categories/korean-ai-open-source/README.md",
       "title": "Korean AI and Open Source",
-      "summary": "Korean AI and Open Source Generated 2026 06 18T14 32 13.515Z Korea trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals. 요약 조사 단위 korean ai open source artifact 카테고리에 속한 오픈소스, 논문, 발",
+      "summary": "Korean AI and Open Source Generated 2026 06 18T14 52 38.646Z Korea trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals. 요약 조사 단위 korean ai open source artifact 카테고리에 속한 오픈소스, 논문, 발",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.215Z",
+      "updatedAt": "2026-06-18T14:52:39.335Z",
       "categories": [
         "category-guides",
         "korea-trending-open-source"
@@ -3807,10 +3900,10 @@
       "id": "report:reports/categories/llm-wiki-rag-knowledge/README.md",
       "path": "reports/categories/llm-wiki-rag-knowledge/README.md",
       "title": "LLM Wiki, RAG, and Knowledge Bases",
-      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T14 32 13.515Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
+      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T14 52 38.646Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.141Z",
+      "updatedAt": "2026-06-18T14:52:39.277Z",
       "categories": [
         "category-guides",
         "llm-wiki"
@@ -3821,10 +3914,10 @@
       "id": "report:reports/categories/local-llm-models/README.md",
       "path": "reports/categories/local-llm-models/README.md",
       "title": "Local LLMs and Models",
-      "summary": "Local LLMs and Models Generated 2026 06 18T14 32 13.515Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. 요약 조사 단위 local llm models artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 6",
+      "summary": "Local LLMs and Models Generated 2026 06 18T14 52 38.646Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. 요약 조사 단위 local llm models artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 6",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.206Z",
+      "updatedAt": "2026-06-18T14:52:39.329Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -3835,10 +3928,10 @@
       "id": "report:reports/categories/mcp-tools-protocols/README.md",
       "path": "reports/categories/mcp-tools-protocols/README.md",
       "title": "MCP, Tools, and Protocols",
-      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T14 32 13.515Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
+      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T14 52 38.646Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.116Z",
+      "updatedAt": "2026-06-18T14:52:39.252Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -3849,10 +3942,10 @@
       "id": "report:reports/categories/presentations-conferences/README.md",
       "path": "reports/categories/presentations-conferences/README.md",
       "title": "Presentations and Conferences",
-      "summary": "Presentations and Conferences Generated 2026 06 18T14 32 13.515Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다",
+      "summary": "Presentations and Conferences Generated 2026 06 18T14 52 38.646Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.234Z",
+      "updatedAt": "2026-06-18T14:52:39.354Z",
       "categories": [
         "category-guides",
         "presentations-conferences"
@@ -3863,10 +3956,10 @@
       "id": "report:reports/categories/research-papers/README.md",
       "path": "reports/categories/research-papers/README.md",
       "title": "Research Papers and Evidence",
-      "summary": "Research Papers and Evidence Generated 2026 06 18T14 32 13.515Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
+      "summary": "Research Papers and Evidence Generated 2026 06 18T14 52 38.646Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.229Z",
+      "updatedAt": "2026-06-18T14:52:39.348Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -3877,10 +3970,10 @@
       "id": "report:reports/categories/security-governance-safety/README.md",
       "path": "reports/categories/security-governance-safety/README.md",
       "title": "Security, Governance, and Safety",
-      "summary": "Security, Governance, and Safety Generated 2026 06 18T14 32 13.515Z Sandboxing, policy, governance, guardrails, prompt injection defense, supply chain security, identity, audit, and safe agent execution. 요약 조사 단위 security governance safety artifact 카테고리에 속한 오픈",
+      "summary": "Security, Governance, and Safety Generated 2026 06 18T14 52 38.646Z Sandboxing, policy, governance, guardrails, prompt injection defense, supply chain security, identity, audit, and safe agent execution. 요약 조사 단위 security governance safety artifact 카테고리에 속한 오픈",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.166Z",
+      "updatedAt": "2026-06-18T14:52:39.303Z",
       "categories": [
         "category-guides"
       ],
@@ -3890,10 +3983,10 @@
       "id": "report:reports/categories/spec-driven-requirements/README.md",
       "path": "reports/categories/spec-driven-requirements/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 32 13.515Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 52 38.646Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T14:32:14.125Z",
+      "updatedAt": "2026-06-18T14:52:39.261Z",
       "categories": [
         "category-guides",
         "spec-driven"
@@ -3904,11 +3997,26 @@
       "id": "report:reports/repository-insights/by-role/README.md",
       "path": "reports/repository-insights/by-role/README.md",
       "title": "Repository Insights by Role",
-      "summary": "Repository Insights by Role Generated 2026 06 18T14 32 15.396Z 요약 조사 단위 repository insights를 역할군별로 나눈 하위 목차입니다. 포함 범위 1,136 repositories across 10 possible role groups. 탐색 방식 역할 README로 들어가면 해당 역할군 레포의 insight, risk, report/source 링크를 한 표에서 볼 수 있습니다. 총평 역할별 페이",
+      "summary": "Repository Insights by Role Generated 2026 06 18T14 52 41.414Z 요약 조사 단위 repository insights를 역할군별로 나눈 하위 목차입니다. 포함 범위 1,136 repositories across 10 possible role groups. 탐색 방식 역할 README로 들어가면 해당 역할군 레포의 insight, risk, report/source 링크를 한 표에서 볼 수 있습니다. 총평 역할별 페이",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.934Z",
+      "updatedAt": "2026-06-18T14:52:42.296Z",
       "categories": [
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 156
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/README.md",
+      "path": "reports/source-deep-dives/by-topic/README.md",
+      "title": "Source Deep Dives by Topic",
+      "summary": "Source Deep Dives by Topic Generated 2026 06 18T14 52 44.529Z 요약 조사 단위 source deep scan rows를 역할/주제별 README로 나눈 목차입니다. 포함 범위 1,136 repositories across 10 topic groups. 탐색 방식 주제 README로 들어가면 해당 주제의 파일 경로 근거, deep source insight, risk를 한 표에서 볼 수 있습니다. 총평 주제별 dee",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.570Z",
+      "categories": [
+        "source-code-deep-dives",
         "comparisons",
         "repository-deep-dives"
       ],
@@ -3918,10 +4026,10 @@
       "id": "report:reports/repository-insights/by-role/agent-harness-mcp/README.md",
       "path": "reports/repository-insights/by-role/agent-harness-mcp/README.md",
       "title": "Agent Harness and MCP",
-      "summary": "Agent Harness and MCP Generated 2026 06 18T14 32 15.396Z 에이전트 하네스/MCP 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 레포 묶음입니다. 포함 범위 514 repositories, report link 513, local source 514. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 ",
+      "summary": "Agent Harness and MCP Generated 2026 06 18T14 52 41.414Z 에이전트 하네스/MCP 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 레포 묶음입니다. 포함 범위 514 repositories, report link 513, local source 514. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 ",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.945Z",
+      "updatedAt": "2026-06-18T14:52:42.307Z",
       "categories": [
         "agent-harness",
         "comparisons",
@@ -3933,10 +4041,10 @@
       "id": "report:reports/repository-insights/by-role/ai-infrastructure-serving/README.md",
       "path": "reports/repository-insights/by-role/ai-infrastructure-serving/README.md",
       "title": "AI Infrastructure and Serving",
-      "summary": "AI Infrastructure and Serving Generated 2026 06 18T14 32 15.396Z AI 인프라/서빙 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 ai infrastructure serving 역할로 분류된 레포 묶음입니다. 포함 범위 75 repositories, report link 75, local source 75. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후",
+      "summary": "AI Infrastructure and Serving Generated 2026 06 18T14 52 41.414Z AI 인프라/서빙 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 ai infrastructure serving 역할로 분류된 레포 묶음입니다. 포함 범위 75 repositories, report link 75, local source 75. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.954Z",
+      "updatedAt": "2026-06-18T14:52:42.319Z",
       "categories": [
         "comparisons",
         "repository-deep-dives"
@@ -3947,10 +4055,10 @@
       "id": "report:reports/repository-insights/by-role/coding-agent-ide/README.md",
       "path": "reports/repository-insights/by-role/coding-agent-ide/README.md",
       "title": "Coding Agent and IDE",
-      "summary": "Coding Agent and IDE Generated 2026 06 18T14 32 15.396Z 코딩 에이전트/IDE 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 coding agent ide 역할로 분류된 레포 묶음입니다. 포함 범위 9 repositories, report link 9, local source 9. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 repor",
+      "summary": "Coding Agent and IDE Generated 2026 06 18T14 52 41.414Z 코딩 에이전트/IDE 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 coding agent ide 역할로 분류된 레포 묶음입니다. 포함 범위 9 repositories, report link 9, local source 9. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 repor",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.957Z",
+      "updatedAt": "2026-06-18T14:52:42.322Z",
       "categories": [
         "coding-agents",
         "comparisons",
@@ -3962,10 +4070,10 @@
       "id": "report:reports/repository-insights/by-role/data-vector-platform/README.md",
       "path": "reports/repository-insights/by-role/data-vector-platform/README.md",
       "title": "Data and Vector Platforms",
-      "summary": "Data and Vector Platforms Generated 2026 06 18T14 32 15.396Z 데이터/벡터 플랫폼 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 data vector platform 역할로 분류된 레포 묶음입니다. 포함 범위 7 repositories, report link 7, local source 7. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본",
+      "summary": "Data and Vector Platforms Generated 2026 06 18T14 52 41.414Z 데이터/벡터 플랫폼 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 data vector platform 역할로 분류된 레포 묶음입니다. 포함 범위 7 repositories, report link 7, local source 7. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.958Z",
+      "updatedAt": "2026-06-18T14:52:42.323Z",
       "categories": [
         "comparisons",
         "repository-deep-dives"
@@ -3976,10 +4084,10 @@
       "id": "report:reports/repository-insights/by-role/developer-productivity/README.md",
       "path": "reports/repository-insights/by-role/developer-productivity/README.md",
       "title": "Developer Productivity and DevTools",
-      "summary": "Developer Productivity and DevTools Generated 2026 06 18T14 32 15.396Z 개발 생산성/DevTools 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 developer productivity 역할로 분류된 레포 묶음입니다. 포함 범위 49 repositories, report link 49, local source 49. 탐색 방식 Insight로 읽을 이유를 확인하고,",
+      "summary": "Developer Productivity and DevTools Generated 2026 06 18T14 52 41.414Z 개발 생산성/DevTools 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 developer productivity 역할로 분류된 레포 묶음입니다. 포함 범위 49 repositories, report link 49, local source 49. 탐색 방식 Insight로 읽을 이유를 확인하고,",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.955Z",
+      "updatedAt": "2026-06-18T14:52:42.320Z",
       "categories": [
         "comparisons",
         "repository-deep-dives"
@@ -3990,10 +4098,10 @@
       "id": "report:reports/repository-insights/by-role/eval-observability/README.md",
       "path": "reports/repository-insights/by-role/eval-observability/README.md",
       "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T14 32 15.396Z 평가/관측/품질 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 eval observability 역할로 분류된 레포 묶음입니다. 포함 범위 27 repositories, report link 27, local source 27. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T14 52 41.414Z 평가/관측/품질 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 eval observability 역할로 분류된 레포 묶음입니다. 포함 범위 27 repositories, report link 27, local source 27. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.956Z",
+      "updatedAt": "2026-06-18T14:52:42.321Z",
       "categories": [
         "adjacent-infrastructure",
         "comparisons",
@@ -4005,10 +4113,10 @@
       "id": "report:reports/repository-insights/by-role/general-ai-open-source/README.md",
       "path": "reports/repository-insights/by-role/general-ai-open-source/README.md",
       "title": "General AI Open Source",
-      "summary": "General AI Open Source Generated 2026 06 18T14 32 15.396Z 일반 AI 오픈소스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 general ai open source 역할로 분류된 레포 묶음입니다. 포함 범위 268 repositories, report link 268, local source 268. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포",
+      "summary": "General AI Open Source Generated 2026 06 18T14 52 41.414Z 일반 AI 오픈소스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 general ai open source 역할로 분류된 레포 묶음입니다. 포함 범위 268 repositories, report link 268, local source 268. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.950Z",
+      "updatedAt": "2026-06-18T14:52:42.314Z",
       "categories": [
         "comparisons",
         "repository-deep-dives"
@@ -4019,10 +4127,10 @@
       "id": "report:reports/repository-insights/by-role/llm-wiki-rag/README.md",
       "path": "reports/repository-insights/by-role/llm-wiki-rag/README.md",
       "title": "LLM Wiki, RAG, and Knowledge",
-      "summary": "LLM Wiki, RAG, and Knowledge Generated 2026 06 18T14 32 15.396Z LLM 위키/RAG/지식베이스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 레포 묶음입니다. 포함 범위 172 repositories, report link 172, local source 172. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
+      "summary": "LLM Wiki, RAG, and Knowledge Generated 2026 06 18T14 52 41.414Z LLM 위키/RAG/지식베이스 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 레포 묶음입니다. 포함 범위 172 repositories, report link 172, local source 172. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.952Z",
+      "updatedAt": "2026-06-18T14:52:42.317Z",
       "categories": [
         "llm-wiki",
         "comparisons",
@@ -4034,10 +4142,10 @@
       "id": "report:reports/repository-insights/by-role/security-governance/README.md",
       "path": "reports/repository-insights/by-role/security-governance/README.md",
       "title": "Security, Governance, and Safety",
-      "summary": "Security, Governance, and Safety Generated 2026 06 18T14 32 15.396Z 보안/거버넌스/안전 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 security governance 역할로 분류된 레포 묶음입니다. 포함 범위 10 repositories, report link 10, local source 10. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 ",
+      "summary": "Security, Governance, and Safety Generated 2026 06 18T14 52 41.414Z 보안/거버넌스/안전 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 security governance 역할로 분류된 레포 묶음입니다. 포함 범위 10 repositories, report link 10, local source 10. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 ",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.957Z",
+      "updatedAt": "2026-06-18T14:52:42.322Z",
       "categories": [
         "comparisons",
         "repository-deep-dives"
@@ -4048,11 +4156,166 @@
       "id": "report:reports/repository-insights/by-role/spec-driven/README.md",
       "path": "reports/repository-insights/by-role/spec-driven/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 32 15.396Z 스펙 드리븐/요구사항 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 spec driven 역할로 분류된 레포 묶음입니다. 포함 범위 5 repositories, report link 5, local source 5. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 re",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T14 52 41.414Z 스펙 드리븐/요구사항 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 spec driven 역할로 분류된 레포 묶음입니다. 포함 범위 5 repositories, report link 5, local source 5. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 re",
       "kind": "spec-driven-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T14:32:15.958Z",
+      "updatedAt": "2026-06-18T14:52:42.323Z",
       "categories": [
+        "spec-driven",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
+      "path": "reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
+      "title": "Agent Harness and MCP Source Deep Dive",
+      "summary": "Agent Harness and MCP Source Deep Dive Generated 2026 06 18T14 52 44.529Z 에이전트 하네스/MCP 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 로컬 소스 레포 514개입니다. 포함 범위 MCP 서버/클라이언트, tool registry, workflow/orchestration, hooks/skills 경로를 중심으로 key sour",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.595Z",
+      "categories": [
+        "source-code-deep-dives",
+        "agent-harness",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/ai-infrastructure-serving/README.md",
+      "path": "reports/source-deep-dives/by-topic/ai-infrastructure-serving/README.md",
+      "title": "AI Infrastructure and Serving Source Deep Dive",
+      "summary": "AI Infrastructure and Serving Source Deep Dive Generated 2026 06 18T14 52 44.529Z AI 인프라/서빙 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 ai infrastructure serving 역할로 분류된 로컬 소스 레포 75개입니다. 포함 범위 model serving, API server, deployment, Docker/Kubernetes, runtime adapt",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.608Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+      "path": "reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
+      "title": "Coding Agent and IDE Source Deep Dive",
+      "summary": "Coding Agent and IDE Source Deep Dive Generated 2026 06 18T14 52 44.529Z 코딩 에이전트/IDE 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 coding agent ide 역할로 분류된 로컬 소스 레포 9개입니다. 포함 범위 CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문 경로를 중심으로 key source reference 106개를 추출했습니다. 탐색",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.571Z",
+      "categories": [
+        "source-code-deep-dives",
+        "coding-agents",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/data-vector-platform/README.md",
+      "path": "reports/source-deep-dives/by-topic/data-vector-platform/README.md",
+      "title": "Data and Vector Platforms Source Deep Dive",
+      "summary": "Data and Vector Platforms Source Deep Dive Generated 2026 06 18T14 52 44.529Z 데이터/벡터 플랫폼 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 data vector platform 역할로 분류된 로컬 소스 레포 7개입니다. 포함 범위 storage, index, embedding/vector path, query engine, persistence 경로를 중심으로 key so",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.608Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/developer-productivity/README.md",
+      "path": "reports/source-deep-dives/by-topic/developer-productivity/README.md",
+      "title": "Developer Productivity and DevTools Source Deep Dive",
+      "summary": "Developer Productivity and DevTools Source Deep Dive Generated 2026 06 18T14 52 44.529Z 개발 생산성/DevTools 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 developer productivity 역할로 분류된 로컬 소스 레포 49개입니다. 포함 범위 CLI/devtool entrypoints, SDK shape, CI/build scripts, automati",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.611Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/eval-observability/README.md",
+      "path": "reports/source-deep-dives/by-topic/eval-observability/README.md",
+      "title": "Evals, Observability, and Quality Source Deep Dive",
+      "summary": "Evals, Observability, and Quality Source Deep Dive Generated 2026 06 18T14 52 44.529Z 평가/관측/품질 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 eval observability 역할로 분류된 로컬 소스 레포 27개입니다. 포함 범위 eval suites, benchmark harness, tracing, observability, quality gates 경로를 중",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.604Z",
+      "categories": [
+        "source-code-deep-dives",
+        "adjacent-infrastructure",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/general-ai-open-source/README.md",
+      "path": "reports/source-deep-dives/by-topic/general-ai-open-source/README.md",
+      "title": "General AI Open Source Source Deep Dive",
+      "summary": "General AI Open Source Source Deep Dive Generated 2026 06 18T14 52 44.529Z 일반 AI 오픈소스 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 general ai open source 역할로 분류된 로컬 소스 레포 268개입니다. 포함 범위 main architecture, dependency stack, tests, deployment, docs 경로를 중심으로 key sourc",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.620Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+      "path": "reports/source-deep-dives/by-topic/llm-wiki-rag/README.md",
+      "title": "LLM Wiki, RAG, and Knowledge Source Deep Dive",
+      "summary": "LLM Wiki, RAG, and Knowledge Source Deep Dive Generated 2026 06 18T14 52 44.529Z LLM 위키/RAG/지식베이스 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 llm wiki rag 역할로 분류된 로컬 소스 레포 172개입니다. 포함 범위 ingestion, chunking, embedding, retrieval, memory, vector store 경로를 중심으로 key ",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.602Z",
+      "categories": [
+        "source-code-deep-dives",
+        "llm-wiki",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/security-governance/README.md",
+      "path": "reports/source-deep-dives/by-topic/security-governance/README.md",
+      "title": "Security, Governance, and Safety Source Deep Dive",
+      "summary": "Security, Governance, and Safety Source Deep Dive Generated 2026 06 18T14 52 44.529Z 보안/거버넌스/안전 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 security governance 역할로 분류된 로컬 소스 레포 10개입니다. 포함 범위 sandbox, permission, policy, auth, guardrail, secret handling 경로를 중심으로 ke",
+      "kind": "source-deep-dive-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.609Z",
+      "categories": [
+        "source-code-deep-dives",
+        "comparisons",
+        "repository-deep-dives"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "report:reports/source-deep-dives/by-topic/spec-driven/README.md",
+      "path": "reports/source-deep-dives/by-topic/spec-driven/README.md",
+      "title": "Spec-Driven and Requirements Source Deep Dive",
+      "summary": "Spec Driven and Requirements Source Deep Dive Generated 2026 06 18T14 52 44.529Z 스펙 드리븐/요구사항 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 spec driven 역할로 분류된 로컬 소스 레포 5개입니다. 포함 범위 requirements, ADR, design docs, spec artifacts, acceptance/test trace 경로를 중심으로 key so",
+      "kind": "spec-driven-report",
+      "folder": "source-deep-dives",
+      "updatedAt": "2026-06-18T14:53:14.603Z",
+      "categories": [
+        "source-code-deep-dives",
         "spec-driven",
         "comparisons",
         "repository-deep-dives"
@@ -4083,7 +4346,8 @@
       "updatedAt": "2026-06-17T22:19:43.192Z",
       "categories": [
         "start-here",
-        "full-source-scan"
+        "full-source-scan",
+        "source-code-deep-dives"
       ],
       "priority": 143
     },
@@ -4209,6 +4473,7 @@
       "folder": "adjacent-tech",
       "updatedAt": "2026-06-12T16:07:03.248Z",
       "categories": [
+        "source-code-deep-dives",
         "agent-harness",
         "llm-wiki",
         "adjacent-infrastructure"

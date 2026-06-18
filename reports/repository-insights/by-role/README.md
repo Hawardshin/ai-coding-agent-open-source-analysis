@@ -1,6 +1,6 @@
 # Repository Insights by Role
 
-Generated: 2026-06-18T14:32:15.396Z
+Generated: 2026-06-18T14:52:41.414Z
 
 ## 요약
 
@@ -20,6 +20,7 @@ Generated: 2026-06-18T14:32:15.396Z
 | [Reports Reading Index](../../README.md) | Main report navigation and folder map. |
 | [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
 | [Repository Insights](../README.md) | Repository-by-repository insights and role pages. |
+| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
 | [Artifact Categories](../../categories/README.md) | Artifact-level category index. |
 
 
