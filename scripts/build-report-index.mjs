@@ -360,6 +360,19 @@ function linkFrom(baseDir, target, label) {
   return `[${tableText(label)}](${relative})`;
 }
 
+function renderNavigationBlock(baseDir) {
+  return `## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
+| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
+| ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
+| ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
+| ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
+`;
+}
+
 function sortReports(reports) {
   return [...reports].sort((a, b) => b.priority - a.priority || a.path.localeCompare(b.path));
 }
@@ -401,6 +414,10 @@ function topEntries(counts, limit = 5) {
     .join(", ");
 }
 
+function reportCountText(count) {
+  return `${count.toLocaleString("en-US")} reports`;
+}
+
 function reportsForFolderGuide(guide, reports) {
   const prefix = `${guide.dir}/`;
   return reports.filter((report) => report.path.startsWith(prefix));
@@ -423,17 +440,24 @@ function topicIntersectionSummary(folderReports, categories, baseDir) {
 function renderFolderReadme(guide, reports, categories) {
   const byKind = countsBy(reports, (report) => report.kind);
   const baseDir = guide.dir;
+  const relatedTopicCount = categories.filter((category) => reports.some((report) => report.categories.includes(category.slug))).length;
   return `# ${guide.title}
 
 Generated: ${generatedAt}
 
 ${guide.description}
 
-## Navigation
+## 요약
 
-- Top report index: ${linkFrom(baseDir, "reports/README.md", "reports/README.md")}
-- Topic index: ${linkFrom(baseDir, "reports/by-topic/README.md", "reports/by-topic/README.md")}
-- Table index: ${linkFrom(baseDir, "reports/tables/README.md", "reports/tables/README.md")}
+- 조사 단위: \`${guide.dir}\` 물리 폴더에 모인 보고서 묶음입니다.
+- 포함 범위: ${reportCountText(reports.length)}이며, 주요 유형은 ${tableText(topEntries(byKind, 5) || "none")}입니다.
+- 탐색 방식: 아래 Navigation에서 상위 인덱스로 이동하거나, Related Topic Pages에서 같은 보고서를 주제 기준으로 다시 볼 수 있습니다.
+
+## 총평
+
+이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 ${relatedTopicCount}개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
+
+${renderNavigationBlock(baseDir)}
 
 ## Folder Summary
 
@@ -493,17 +517,25 @@ function renderCategoryReadme(category, reports) {
   const baseDir = `reports/by-topic/${category.slug}`;
   const byKind = countsBy(reports, (report) => report.kind);
   const byFolder = countsBy(reports, (report) => report.folder);
+  const dominantFolders = topEntries(byFolder, 5) || "none";
+  const dominantKinds = topEntries(byKind, 5) || "none";
   return `# ${category.title}
 
 Generated: ${generatedAt}
 
 ${category.description}
 
-## Navigation
+## 요약
 
-- Top report index: ${linkFrom(baseDir, "reports/README.md", "reports/README.md")}
-- Topic index: ${linkFrom(baseDir, "reports/by-topic/README.md", "reports/by-topic/README.md")}
-- Table index: ${linkFrom(baseDir, "reports/tables/README.md", "reports/tables/README.md")}
+- 조사 단위: \`${category.slug}\` 주제에 속한 보고서 묶음입니다.
+- 포함 범위: ${reportCountText(reports.length)}이며, 주요 보고서 유형은 ${tableText(dominantKinds)}입니다.
+- 주요 출처 폴더: ${tableText(dominantFolders)}.
+
+## 총평
+
+이 README는 같은 주제에 흩어진 보고서를 한 번에 따라가도록 만든 주제형 입구입니다. Recommended Reading Path는 먼저 읽을 보고서를 우선순위로 보여주고, All Reports는 빠짐없는 전체 목록을 제공합니다. 같은 보고서가 여러 주제에 걸칠 수 있으므로, 큰 흐름은 이 페이지에서 보고 세부 파일 위치는 Folder 값으로 확인하는 방식이 좋습니다.
+
+${renderNavigationBlock(baseDir)}
 
 ## Counts
 
@@ -539,6 +571,16 @@ function renderByTopicIndex(categorySummaries) {
 Generated: ${generatedAt}
 
 This folder groups the repository's Markdown reports by investigation line. Original reports remain in their existing locations; these pages are reading indexes.
+
+## 요약
+
+- 조사 단위: 전체 Markdown 보고서를 ${categorySummaries.length}개 주제로 다시 묶은 상위 목차입니다.
+- 포함 범위: ${reportCountText(categorySummaries.reduce((sum, category) => sum + category.count, 0))}의 주제 멤버십을 보여줍니다. 한 보고서는 여러 주제에 동시에 들어갈 수 있습니다.
+- 탐색 방식: 아래 표에서 주제 README로 들어가면 해당 주제의 요약, 총평, 추천 읽기 경로, 전체 보고서 목록을 볼 수 있습니다.
+
+## 총평
+
+주제별 README는 “무엇을 알고 싶은가”에서 출발할 때 가장 빠른 길입니다. 레포 위치를 이미 알고 있다면 폴더 README를 쓰고, 전체를 표로 훑고 싶다면 Report Tables를 쓰면 됩니다.
 
 ## Navigation
 
@@ -594,6 +636,16 @@ function renderTablesReadme(reportIndex, categories, folderSummaries) {
 Generated: ${generatedAt}
 
 This page is the table-first view of the repository. Use it when you want to scan the full investigation structure before opening individual reports.
+
+## 요약
+
+- 조사 단위: 보고서, 주제, 폴더, 보고서 유형을 표와 CSV로 정리한 탐색 허브입니다.
+- 포함 범위: ${reportCountText(reportIndex.reports.length)}, ${categories.length} topics, ${folderSummaries.length} folder README guides입니다.
+- 데이터 파일: topic/folder/type matrix/all reports CSV를 제공하므로 GitHub 화면과 스프레드시트 양쪽에서 탐색할 수 있습니다.
+
+## 총평
+
+이 README는 읽기보다는 비교와 찾기에 최적화된 입구입니다. 빠른 구조 파악은 Topic Summary Table과 Folder Summary Table을 먼저 보고, 특정 보고서 찾기는 \`data/report-tables/reports.csv\`를 쓰는 방식이 가장 효율적입니다.
 
 ## Navigation
 
@@ -716,6 +768,16 @@ function renderReportsReadme(reportIndex, categorySummaries, folderSummaries) {
 Generated: ${generatedAt}
 
 This is the entry point for reading the repository directly from GitHub or a local checkout. Deployment-specific web UI has been removed; use these category pages and JSON indexes instead.
+
+## 요약
+
+- 조사 단위: 레포에 커밋된 모든 Markdown 보고서의 최상위 읽기 지도입니다.
+- 포함 범위: ${reportCountText(reportIndex.reports.length)}, ${categorySummaries.length} report topics, ${folderSummaries.length} folder README guides입니다.
+- 탐색 방식: Start Here로 전체 흐름을 잡고, Topics로 주제별 조사에 들어가며, Folder README Map으로 실제 폴더 구조를 따라갑니다.
+
+## 총평
+
+이 README 하나를 시작점으로 삼으면 레포 전체 조사를 끊긴 링크 없이 따라갈 수 있습니다. 주제 중심으로 볼 때는 Reports by Topic, 물리 구조 중심으로 볼 때는 Folder README Map, 정량 비교가 필요할 때는 Report Tables를 쓰는 구성이 가장 읽기 쉽습니다.
 
 ## Scope
 

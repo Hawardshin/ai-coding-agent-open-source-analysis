@@ -1,8 +1,18 @@
 # Reports Reading Index
 
-Generated: 2026-06-18T13:55:58.476Z
+Generated: 2026-06-18T13:59:01.143Z
 
 This is the entry point for reading the repository directly from GitHub or a local checkout. Deployment-specific web UI has been removed; use these category pages and JSON indexes instead.
+
+## 요약
+
+- 조사 단위: 레포에 커밋된 모든 Markdown 보고서의 최상위 읽기 지도입니다.
+- 포함 범위: 1,405 reports, 17 report topics, 16 folder README guides입니다.
+- 탐색 방식: Start Here로 전체 흐름을 잡고, Topics로 주제별 조사에 들어가며, Folder README Map으로 실제 폴더 구조를 따라갑니다.
+
+## 총평
+
+이 README 하나를 시작점으로 삼으면 레포 전체 조사를 끊긴 링크 없이 따라갈 수 있습니다. 주제 중심으로 볼 때는 Reports by Topic, 물리 구조 중심으로 볼 때는 Folder README Map, 정량 비교가 필요할 때는 Report Tables를 쓰는 구성이 가장 읽기 쉽습니다.
 
 ## Scope
 

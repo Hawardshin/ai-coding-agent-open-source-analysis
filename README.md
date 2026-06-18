@@ -6,6 +6,16 @@ The source repositories are cloned locally under `sources/` for inspection and e
 
 The repository now also includes a second research track for adjacent AI infrastructure: context engineering, RAG, vLLM/local LLM serving, vector databases, evaluation, observability, and agent harness tooling.
 
+## 요약
+
+- 이 레포는 AI 코딩 에이전트, 전체 소스 스캔, spec-driven development, LLM wiki/RAG, 한국/글로벌 오픈소스 트렌드, 발표/연구 근거를 한곳에 모은 조사 저장소입니다.
+- 모든 주요 조사 폴더는 README를 가지고 있으며, README 안의 하이퍼링크를 따라가면 주제별/폴더별/카테고리별/표 중심으로 같은 자료를 탐색할 수 있습니다.
+- 시작점은 [reports/README.md](reports/README.md)이고, 표 중심 탐색은 [reports/tables/README.md](reports/tables/README.md), artifact 기준 탐색은 [reports/categories/README.md](reports/categories/README.md)입니다.
+
+## 총평
+
+전체 구조는 “보고서 읽기 지도”, “주제별 README”, “폴더별 README”, “artifact 카테고리”, “CSV 표”의 다섯 축으로 정리했습니다. 따라서 하나의 README에서 막히지 않고 다음 README로 이동하면서, 요약과 총평을 먼저 보고 세부 보고서로 내려가는 방식으로 읽는 것이 가장 효율적입니다.
+
 ## Repository Reading Index
 
 This repository is meant to be read directly through GitHub or a local checkout. Deployment-specific GitHub Pages, Vercel, and static web-browser files have been removed.

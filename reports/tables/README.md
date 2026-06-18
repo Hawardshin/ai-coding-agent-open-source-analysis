@@ -1,8 +1,18 @@
 # Report Tables
 
-Generated: 2026-06-18T13:55:58.476Z
+Generated: 2026-06-18T13:59:01.143Z
 
 This page is the table-first view of the repository. Use it when you want to scan the full investigation structure before opening individual reports.
+
+## 요약
+
+- 조사 단위: 보고서, 주제, 폴더, 보고서 유형을 표와 CSV로 정리한 탐색 허브입니다.
+- 포함 범위: 1,405 reports, 17 topics, 16 folder README guides입니다.
+- 데이터 파일: topic/folder/type matrix/all reports CSV를 제공하므로 GitHub 화면과 스프레드시트 양쪽에서 탐색할 수 있습니다.
+
+## 총평
+
+이 README는 읽기보다는 비교와 찾기에 최적화된 입구입니다. 빠른 구조 파악은 Topic Summary Table과 Folder Summary Table을 먼저 보고, 특정 보고서 찾기는 `data/report-tables/reports.csv`를 쓰는 방식이 가장 효율적입니다.
 
 ## Navigation
 

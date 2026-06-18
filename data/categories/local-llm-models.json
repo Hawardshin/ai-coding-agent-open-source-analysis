@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:55:56.390Z",
+  "generatedAt": "2026-06-18T13:58:59.186Z",
   "slug": "local-llm-models",
   "title": "Local LLMs and Models",
   "description": "Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model-serving UIs.",

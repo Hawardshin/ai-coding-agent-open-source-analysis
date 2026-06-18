@@ -1,8 +1,18 @@
 # Reports by Topic
 
-Generated: 2026-06-18T13:55:58.476Z
+Generated: 2026-06-18T13:59:01.143Z
 
 This folder groups the repository's Markdown reports by investigation line. Original reports remain in their existing locations; these pages are reading indexes.
+
+## 요약
+
+- 조사 단위: 전체 Markdown 보고서를 17개 주제로 다시 묶은 상위 목차입니다.
+- 포함 범위: 2,959 reports의 주제 멤버십을 보여줍니다. 한 보고서는 여러 주제에 동시에 들어갈 수 있습니다.
+- 탐색 방식: 아래 표에서 주제 README로 들어가면 해당 주제의 요약, 총평, 추천 읽기 경로, 전체 보고서 목록을 볼 수 있습니다.
+
+## 총평
+
+주제별 README는 “무엇을 알고 싶은가”에서 출발할 때 가장 빠른 길입니다. 레포 위치를 이미 알고 있다면 폴더 README를 쓰고, 전체를 표로 훑고 싶다면 Report Tables를 쓰면 됩니다.
 
 ## Navigation
 

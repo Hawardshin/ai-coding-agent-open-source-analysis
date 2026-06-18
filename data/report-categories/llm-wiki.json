@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:55:58.476Z",
+  "generatedAt": "2026-06-18T13:59:01.143Z",
   "slug": "llm-wiki",
   "title": "LLM Wiki, RAG, and Knowledge Bases",
   "description": "LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.",
@@ -83,10 +83,10 @@
       "id": "report:reports/categories/llm-wiki-rag-knowledge/README.md",
       "path": "reports/categories/llm-wiki-rag-knowledge/README.md",
       "title": "LLM Wiki, RAG, and Knowledge Bases",
-      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T13 55 56.390Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. Navigation Entry Use it for Repository README ../../../README.m",
+      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T13 58 59.186Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:57.008Z",
+      "updatedAt": "2026-06-18T13:58:59.808Z",
       "categories": [
         "category-guides",
         "llm-wiki"

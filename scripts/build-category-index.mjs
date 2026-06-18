@@ -585,6 +585,18 @@ function relatedTopicLinks(categorySlug, fromDir) {
     .join(", ");
 }
 
+function itemCountText(count) {
+  return `${count.toLocaleString("en-US")} entries`;
+}
+
+function topKindText(counts, limit = 5) {
+  return Object.entries(counts)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, limit)
+    .map(([kind, count]) => `${kind} (${count})`)
+    .join(", ");
+}
+
 function renderItemTable(items, fromDir, limit = 40) {
   const rows = sortItems(items).slice(0, limit).map((item) => {
     const title = markdownLink(item.title, item.url);
@@ -618,6 +630,16 @@ function renderCategoryReadme(category, items) {
 Generated: ${generatedAt}
 
 ${category.description}
+
+## 요약
+
+- 조사 단위: \`${category.slug}\` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
+- 포함 범위: ${itemCountText(items.length)}이며, 주요 구성은 ${tableText(topKindText(counts) || "none")}입니다.
+- 연결 보고서: ${relatedTopicLinks(category.slug, fromDir) || "none"}.
+
+## 총평
+
+이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
 ${navigationBlock(fromDir)}
 
@@ -671,6 +693,16 @@ function renderRootReadme(categorySummaries, totals) {
 Generated: ${generatedAt}
 
 This folder reorganizes the repository's scattered open-source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the original data, reports, and cloned source directories.
+
+## 요약
+
+- 조사 단위: 전체 조사 근거를 artifact 기준으로 분류한 상위 목차입니다.
+- 포함 범위: ${itemCountText(totals.totalItems)}, ${categorySummaries.length} category folders입니다.
+- 탐색 방식: 아래 Categories 표에서 카테고리 README로 들어가면 요약, 총평, 주요 오픈소스, 연구, 발표, 참고자료를 볼 수 있습니다.
+
+## 총평
+
+이 README는 “무슨 근거와 대상이 모였는가”를 파악하는 데 가장 적합합니다. 보고서 자체를 읽으려면 Reports Reading Index로, 표와 CSV로 비교하려면 Report Tables로 이동하면 됩니다.
 
 ${navigationBlock("reports/categories")}
 

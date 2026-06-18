@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:55:58.476Z",
+  "generatedAt": "2026-06-18T13:59:01.143Z",
   "slug": "spec-driven",
   "title": "Spec-Driven and Requirements",
   "description": "Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.",
@@ -23,10 +23,10 @@
       "id": "report:reports/categories/spec-driven-requirements/README.md",
       "path": "reports/categories/spec-driven-requirements/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T13 55 56.390Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. Navigation Entry Use it for Repository README ../../../READ",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T13 58 59.186Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:56.992Z",
+      "updatedAt": "2026-06-18T13:58:59.793Z",
       "categories": [
         "category-guides",
         "spec-driven"

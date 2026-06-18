@@ -1,8 +1,18 @@
 # Category Index
 
-Generated: 2026-06-18T13:55:56.390Z
+Generated: 2026-06-18T13:58:59.186Z
 
 This folder reorganizes the repository's scattered open-source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the original data, reports, and cloned source directories.
+
+## 요약
+
+- 조사 단위: 전체 조사 근거를 artifact 기준으로 분류한 상위 목차입니다.
+- 포함 범위: 3,709 entries, 17 category folders입니다.
+- 탐색 방식: 아래 Categories 표에서 카테고리 README로 들어가면 요약, 총평, 주요 오픈소스, 연구, 발표, 참고자료를 볼 수 있습니다.
+
+## 총평
+
+이 README는 “무슨 근거와 대상이 모였는가”를 파악하는 데 가장 적합합니다. 보고서 자체를 읽으려면 Reports Reading Index로, 표와 CSV로 비교하려면 Report Tables로 이동하면 됩니다.
 
 ## Navigation
 

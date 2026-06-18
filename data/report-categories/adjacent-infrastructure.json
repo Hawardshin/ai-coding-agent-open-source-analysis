@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:55:58.476Z",
+  "generatedAt": "2026-06-18T13:59:01.143Z",
   "slug": "adjacent-infrastructure",
   "title": "Adjacent AI Infrastructure",
   "description": "Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.",
@@ -39,10 +39,10 @@
       "id": "report:reports/categories/ai-infrastructure-serving/README.md",
       "path": "reports/categories/ai-infrastructure-serving/README.md",
       "title": "AI Infrastructure and Serving",
-      "summary": "AI Infrastructure and Serving Generated 2026 06 18T13 55 56.390Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. Navigation Entry Use it for Repository README ../../../README.md",
+      "summary": "AI Infrastructure and Serving Generated 2026 06 18T13 58 59.186Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. 요약 조사 단위 ai infrastructure serving artifact 카테고리에 속한 오픈소스, 논문, 발",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:57.037Z",
+      "updatedAt": "2026-06-18T13:58:59.836Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -53,10 +53,10 @@
       "id": "report:reports/categories/data-platforms-vector-databases/README.md",
       "path": "reports/categories/data-platforms-vector-databases/README.md",
       "title": "Data Platforms and Vector Databases",
-      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T13 55 56.390Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. Navigation Entry Use it for Repository README ../../../README.md Repo wid",
+      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T13 58 59.186Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. 요약 조사 단위 data platforms vector databases artifact 카테고리에 속한 오픈소스, 논문, 발표/트",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:57.040Z",
+      "updatedAt": "2026-06-18T13:58:59.839Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -67,10 +67,10 @@
       "id": "report:reports/categories/evals-observability-quality/README.md",
       "path": "reports/categories/evals-observability-quality/README.md",
       "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T13 55 56.390Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. Navigation Entry Use it for Repository README ../../../README.md Repo ",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T13 58 59.186Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. 요약 조사 단위 evals observability quality artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:57.027Z",
+      "updatedAt": "2026-06-18T13:58:59.827Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -81,10 +81,10 @@
       "id": "report:reports/categories/local-llm-models/README.md",
       "path": "reports/categories/local-llm-models/README.md",
       "title": "Local LLMs and Models",
-      "summary": "Local LLMs and Models Generated 2026 06 18T13 55 56.390Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. Navigation Entry Use it for Repository README ../../../README.md Repo wide orient",
+      "summary": "Local LLMs and Models Generated 2026 06 18T13 58 59.186Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. 요약 조사 단위 local llm models artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 6",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:57.058Z",
+      "updatedAt": "2026-06-18T13:58:59.858Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"

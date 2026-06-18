@@ -1,8 +1,18 @@
 # AI Infrastructure and Serving
 
-Generated: 2026-06-18T13:55:56.390Z
+Generated: 2026-06-18T13:58:59.186Z
 
 LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment.
+
+## 요약
+
+- 조사 단위: `ai-infrastructure-serving` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
+- 포함 범위: 244 entries이며, 주요 구성은 repository (147), conference-reference (38), research-paper (32), reference-material (19), trend-reference (8)입니다.
+- 연결 보고서: [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md).
+
+## 총평
+
+이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
 ## Navigation
 

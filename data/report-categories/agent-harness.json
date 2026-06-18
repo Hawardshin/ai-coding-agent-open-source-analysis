@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:55:58.476Z",
+  "generatedAt": "2026-06-18T13:59:01.143Z",
   "slug": "agent-harness",
   "title": "Agent Harness, MCP, and Orchestration",
   "description": "Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.",
@@ -55,10 +55,10 @@
       "id": "report:reports/categories/agent-harness-orchestration/README.md",
       "path": "reports/categories/agent-harness-orchestration/README.md",
       "title": "Agent Harness and Orchestration",
-      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 55 56.390Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. Navigation Entry Use it for Repository README ../../../README.md Repo wide ",
+      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 58 59.186Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:56.975Z",
+      "updatedAt": "2026-06-18T13:58:59.777Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -69,10 +69,10 @@
       "id": "report:reports/categories/mcp-tools-protocols/README.md",
       "path": "reports/categories/mcp-tools-protocols/README.md",
       "title": "MCP, Tools, and Protocols",
-      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 55 56.390Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. Navigation Entry Use it for Repository README ../../../README.md Repo wide orien",
+      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 58 59.186Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:55:56.983Z",
+      "updatedAt": "2026-06-18T13:58:59.784Z",
       "categories": [
         "category-guides",
         "agent-harness"
