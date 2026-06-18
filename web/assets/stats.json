@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-18T00:02:49.944Z",
-  "totalDocuments": 2170,
+  "generatedAt": "2026-06-18T00:38:38.806Z",
+  "totalDocuments": 3175,
   "byType": {
-    "report": 880,
-    "repository": 620,
+    "report": 1381,
+    "repository": 1120,
     "paper": 650,
-    "data": 20
+    "data": 24
   },
   "byCategory": {
-    "repository-analysis": 630,
-    "report": 231,
+    "repository-analysis": 1130,
+    "report": 232,
     "research": 4,
     "adjacent-tech": 4,
     "comparison": 2,
@@ -17,6 +17,7 @@
     "spec-driven": 6,
     "source-scan": 2,
     "korea-trending-open-source": 500,
+    "global-trending-open-source": 500,
     "llm-wiki-open-source": 100,
     "spec-driven-open-source": 20,
     "agent-memory": 76,
@@ -38,6 +39,6 @@
     "program-synthesis": 13,
     "spec-driven-ai": 8,
     "software-agents": 38,
-    "data": 20
+    "data": 24
   }
 }

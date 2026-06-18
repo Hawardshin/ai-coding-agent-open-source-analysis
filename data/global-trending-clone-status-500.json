@@ -1,0 +1,4515 @@
+{
+  "generatedAt": "2026-06-18T00:36:16.858Z",
+  "startedAt": "2026-06-18T00:36:08.828Z",
+  "done": true,
+  "inputFile": "data/global-trending-repositories-500.json",
+  "targetCount": 500,
+  "completedCount": 500,
+  "okCount": 500,
+  "failedCount": 0,
+  "concurrency": 8,
+  "timeoutMs": 180000,
+  "results": [
+    {
+      "index": 1,
+      "name": "mem0ai/mem0",
+      "url": "https://github.com/mem0ai/mem0",
+      "localPath": "sources/mem0ai__mem0",
+      "status": "existing",
+      "head": "06d33f6",
+      "durationMs": 95
+    },
+    {
+      "index": 2,
+      "name": "deepset-ai/haystack",
+      "url": "https://github.com/deepset-ai/haystack",
+      "localPath": "sources/deepset-ai__haystack",
+      "status": "existing",
+      "head": "acbf725",
+      "durationMs": 309
+    },
+    {
+      "index": 3,
+      "name": "Mintplex-Labs/anything-llm",
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "localPath": "sources/Mintplex-Labs__anything-llm",
+      "status": "existing",
+      "head": "25fa615",
+      "durationMs": 87
+    },
+    {
+      "index": 4,
+      "name": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "localPath": "sources/langchain-ai__langchain",
+      "status": "existing",
+      "head": "0392b6b",
+      "durationMs": 128
+    },
+    {
+      "index": 5,
+      "name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "localPath": "sources/langgenius__dify",
+      "status": "existing",
+      "head": "f0b34bd",
+      "durationMs": 542
+    },
+    {
+      "index": 6,
+      "name": "run-llama/llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "localPath": "sources/run-llama__llama_index",
+      "status": "existing",
+      "head": "d8d7ffb",
+      "durationMs": 366
+    },
+    {
+      "index": 7,
+      "name": "langchain4j/langchain4j",
+      "url": "https://github.com/langchain4j/langchain4j",
+      "localPath": "sources/langchain4j__langchain4j",
+      "status": "existing",
+      "head": "21d9ee3",
+      "durationMs": 155
+    },
+    {
+      "index": 8,
+      "name": "mudler/LocalAI",
+      "url": "https://github.com/mudler/LocalAI",
+      "localPath": "sources/mudler__LocalAI",
+      "status": "existing",
+      "head": "4ce0f61",
+      "durationMs": 113
+    },
+    {
+      "index": 9,
+      "name": "EverMind-AI/EverOS",
+      "url": "https://github.com/EverMind-AI/EverOS",
+      "localPath": "sources/EverMind-AI__EverOS",
+      "status": "existing",
+      "head": "dc02b2f",
+      "durationMs": 56
+    },
+    {
+      "index": 10,
+      "name": "mastra-ai/mastra",
+      "url": "https://github.com/mastra-ai/mastra",
+      "localPath": "sources/mastra-ai__mastra",
+      "status": "existing",
+      "head": "8b4e030",
+      "durationMs": 386
+    },
+    {
+      "index": 11,
+      "name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "localPath": "sources/ruvnet__ruflo",
+      "status": "existing",
+      "head": "f8fbb00",
+      "durationMs": 198
+    },
+    {
+      "index": 12,
+      "name": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "localPath": "sources/modelcontextprotocol__servers",
+      "status": "existing",
+      "head": "275175c",
+      "durationMs": 40
+    },
+    {
+      "index": 13,
+      "name": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "localPath": "sources/github__github-mcp-server",
+      "status": "existing",
+      "head": "4f73cfd",
+      "durationMs": 50
+    },
+    {
+      "index": 14,
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "localPath": "sources/anomalyco__opencode",
+      "status": "existing",
+      "head": "4c9abff",
+      "durationMs": 225
+    },
+    {
+      "index": 15,
+      "name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "localPath": "sources/anthropics__claude-code",
+      "status": "existing",
+      "head": "0047022",
+      "durationMs": 40
+    },
+    {
+      "index": 16,
+      "name": "google/adk-python",
+      "url": "https://github.com/google/adk-python",
+      "localPath": "sources/google__adk-python",
+      "status": "existing",
+      "head": "c303c62",
+      "durationMs": 119
+    },
+    {
+      "index": 17,
+      "name": "rocketride-org/rocketride-server",
+      "url": "https://github.com/rocketride-org/rocketride-server",
+      "localPath": "sources/rocketride-org__rocketride-server",
+      "status": "existing",
+      "head": "bc36b63",
+      "durationMs": 146
+    },
+    {
+      "index": 18,
+      "name": "milvus-io/milvus",
+      "url": "https://github.com/milvus-io/milvus",
+      "localPath": "sources/milvus-io__milvus",
+      "status": "existing",
+      "head": "14c4cf6",
+      "durationMs": 212
+    },
+    {
+      "index": 19,
+      "name": "crewAIInc/crewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "localPath": "sources/crewAIInc__crewAI",
+      "status": "existing",
+      "head": "da8fe8c",
+      "durationMs": 134
+    },
+    {
+      "index": 20,
+      "name": "GLips/Figma-Context-MCP",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "localPath": "sources/GLips__Figma-Context-MCP",
+      "status": "existing",
+      "head": "22426e6",
+      "durationMs": 39
+    },
+    {
+      "index": 21,
+      "name": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "localPath": "sources/DeusData__codebase-memory-mcp",
+      "status": "existing",
+      "head": "e599df1",
+      "durationMs": 112
+    },
+    {
+      "index": 22,
+      "name": "MervinPraison/PraisonAI",
+      "url": "https://github.com/MervinPraison/PraisonAI",
+      "localPath": "sources/MervinPraison__PraisonAI",
+      "status": "existing",
+      "head": "846568c",
+      "durationMs": 191
+    },
+    {
+      "index": 23,
+      "name": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "localPath": "sources/bytedance__deer-flow",
+      "status": "existing",
+      "head": "0bbbbc0",
+      "durationMs": 78
+    },
+    {
+      "index": 24,
+      "name": "danny-avila/LibreChat",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "localPath": "sources/danny-avila__LibreChat",
+      "status": "existing",
+      "head": "6055ad0",
+      "durationMs": 148
+    },
+    {
+      "index": 25,
+      "name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "localPath": "sources/google-gemini__gemini-cli",
+      "status": "existing",
+      "head": "1d2adf7",
+      "durationMs": 164
+    },
+    {
+      "index": 26,
+      "name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "localPath": "sources/openai__codex",
+      "status": "existing",
+      "head": "d2f6d23",
+      "durationMs": 226
+    },
+    {
+      "index": 27,
+      "name": "cline/cline",
+      "url": "https://github.com/cline/cline",
+      "localPath": "sources/cline__cline",
+      "status": "existing",
+      "head": "7d11935",
+      "durationMs": 184
+    },
+    {
+      "index": 28,
+      "name": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "localPath": "sources/aaif-goose__goose",
+      "status": "existing",
+      "head": "d2ab786",
+      "durationMs": 137
+    },
+    {
+      "index": 29,
+      "name": "open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "localPath": "sources/open-webui__open-webui",
+      "status": "existing",
+      "head": "02dc3e6",
+      "durationMs": 199
+    },
+    {
+      "index": 30,
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "localPath": "sources/Panniantong__Agent-Reach",
+      "status": "existing",
+      "head": "22d7f03",
+      "durationMs": 47
+    },
+    {
+      "index": 31,
+      "name": "Kiln-AI/Kiln",
+      "url": "https://github.com/Kiln-AI/Kiln",
+      "localPath": "sources/Kiln-AI__Kiln",
+      "status": "existing",
+      "head": "ea0d075",
+      "durationMs": 105
+    },
+    {
+      "index": 32,
+      "name": "gustavoeenriquez/MakerAi",
+      "url": "https://github.com/gustavoeenriquez/MakerAi",
+      "localPath": "sources/gustavoeenriquez__MakerAi",
+      "status": "existing",
+      "head": "a2f0610",
+      "durationMs": 91
+    },
+    {
+      "index": 33,
+      "name": "CaviraOSS/OpenMemory",
+      "url": "https://github.com/CaviraOSS/OpenMemory",
+      "localPath": "sources/CaviraOSS__OpenMemory",
+      "status": "existing",
+      "head": "9e1f764",
+      "durationMs": 55
+    },
+    {
+      "index": 34,
+      "name": "microsoft/skills",
+      "url": "https://github.com/microsoft/skills",
+      "localPath": "sources/microsoft__skills",
+      "status": "existing",
+      "head": "c5c544a",
+      "durationMs": 105
+    },
+    {
+      "index": 35,
+      "name": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "localPath": "sources/infiniflow__ragflow",
+      "status": "existing",
+      "head": "d32e05d",
+      "durationMs": 162
+    },
+    {
+      "index": 36,
+      "name": "FlowiseAI/Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "localPath": "sources/FlowiseAI__Flowise",
+      "status": "existing",
+      "head": "d071868",
+      "durationMs": 109
+    },
+    {
+      "index": 37,
+      "name": "mindsdb/minds",
+      "url": "https://github.com/mindsdb/minds",
+      "localPath": "sources/mindsdb__minds",
+      "status": "existing",
+      "head": "081f6d7",
+      "durationMs": 47
+    },
+    {
+      "index": 38,
+      "name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "localPath": "sources/volcengine__OpenViking",
+      "status": "existing",
+      "head": "88e5db2",
+      "durationMs": 117
+    },
+    {
+      "index": 39,
+      "name": "NirDiamant/GenAI_Agents",
+      "url": "https://github.com/NirDiamant/GenAI_Agents",
+      "localPath": "sources/NirDiamant__GenAI_Agents",
+      "status": "existing",
+      "head": "2376537",
+      "durationMs": 59
+    },
+    {
+      "index": 40,
+      "name": "gptme/gptme",
+      "url": "https://github.com/gptme/gptme",
+      "localPath": "sources/gptme__gptme",
+      "status": "existing",
+      "head": "83dbacf",
+      "durationMs": 76
+    },
+    {
+      "index": 41,
+      "name": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "localPath": "sources/vllm-project__vllm",
+      "status": "existing",
+      "head": "a30addc",
+      "durationMs": 193
+    },
+    {
+      "index": 42,
+      "name": "chopratejas/headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "localPath": "sources/chopratejas__headroom",
+      "status": "existing",
+      "head": "b0cd032",
+      "durationMs": 130
+    },
+    {
+      "index": 43,
+      "name": "NirDiamant/agents-towards-production",
+      "url": "https://github.com/NirDiamant/agents-towards-production",
+      "localPath": "sources/NirDiamant__agents-towards-production",
+      "status": "existing",
+      "head": "0dee56a",
+      "durationMs": 48
+    },
+    {
+      "index": 44,
+      "name": "stackql/stackql",
+      "url": "https://github.com/stackql/stackql",
+      "localPath": "sources/stackql__stackql",
+      "status": "existing",
+      "head": "c4e1950",
+      "durationMs": 63
+    },
+    {
+      "index": 45,
+      "name": "langchain-ai/langgraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "localPath": "sources/langchain-ai__langgraph",
+      "status": "existing",
+      "head": "d57a74f",
+      "durationMs": 51
+    },
+    {
+      "index": 46,
+      "name": "qdrant/qdrant",
+      "url": "https://github.com/qdrant/qdrant",
+      "localPath": "sources/qdrant__qdrant",
+      "status": "existing",
+      "head": "44ad62f",
+      "durationMs": 92
+    },
+    {
+      "index": 47,
+      "name": "mezmo/aura",
+      "url": "https://github.com/mezmo/aura",
+      "localPath": "sources/mezmo__aura",
+      "status": "existing",
+      "head": "0c337b6",
+      "durationMs": 46
+    },
+    {
+      "index": 48,
+      "name": "plastic-labs/honcho",
+      "url": "https://github.com/plastic-labs/honcho",
+      "localPath": "sources/plastic-labs__honcho",
+      "status": "existing",
+      "head": "99cbebe",
+      "durationMs": 55
+    },
+    {
+      "index": 49,
+      "name": "NevaMind-AI/memU",
+      "url": "https://github.com/NevaMind-AI/memU",
+      "localPath": "sources/NevaMind-AI__memU",
+      "status": "existing",
+      "head": "f4e82ce",
+      "durationMs": 46
+    },
+    {
+      "index": 50,
+      "name": "xerrors/Yuxi",
+      "url": "https://github.com/xerrors/Yuxi",
+      "localPath": "sources/xerrors__Yuxi",
+      "status": "existing",
+      "head": "15c9281",
+      "durationMs": 50
+    },
+    {
+      "index": 51,
+      "name": "the-open-agent/openagent",
+      "url": "https://github.com/the-open-agent/openagent",
+      "localPath": "sources/the-open-agent__openagent",
+      "status": "existing",
+      "head": "b705d33",
+      "durationMs": 50
+    },
+    {
+      "index": 52,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "localPath": "sources/affaan-m__ECC",
+      "status": "existing",
+      "head": "ceca288",
+      "durationMs": 158
+    },
+    {
+      "index": 53,
+      "name": "cheshire-cat-ai/core",
+      "url": "https://github.com/cheshire-cat-ai/core",
+      "localPath": "sources/cheshire-cat-ai__core",
+      "status": "existing",
+      "head": "375bca4",
+      "durationMs": 37
+    },
+    {
+      "index": 54,
+      "name": "dappros/ethora",
+      "url": "https://github.com/dappros/ethora",
+      "localPath": "sources/dappros__ethora",
+      "status": "existing",
+      "head": "2823ba8",
+      "durationMs": 33
+    },
+    {
+      "index": 55,
+      "name": "patchy631/ai-engineering-hub",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "localPath": "sources/patchy631__ai-engineering-hub",
+      "status": "existing",
+      "head": "cfd74dc",
+      "durationMs": 80
+    },
+    {
+      "index": 56,
+      "name": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "localPath": "sources/ggml-org__llama.cpp",
+      "status": "existing",
+      "head": "ebc1077",
+      "durationMs": 121
+    },
+    {
+      "index": 57,
+      "name": "stacklok/toolhive",
+      "url": "https://github.com/stacklok/toolhive",
+      "localPath": "sources/stacklok__toolhive",
+      "status": "existing",
+      "head": "bcc9081",
+      "durationMs": 121
+    },
+    {
+      "index": 58,
+      "name": "DemonDamon/AgenticX",
+      "url": "https://github.com/DemonDamon/AgenticX",
+      "localPath": "sources/DemonDamon__AgenticX",
+      "status": "existing",
+      "head": "fb929d8",
+      "durationMs": 137
+    },
+    {
+      "index": 59,
+      "name": "comet-ml/opik",
+      "url": "https://github.com/comet-ml/opik",
+      "localPath": "sources/comet-ml__opik",
+      "status": "existing",
+      "head": "69842d4",
+      "durationMs": 378
+    },
+    {
+      "index": 60,
+      "name": "mark3labs/mcp-go",
+      "url": "https://github.com/mark3labs/mcp-go",
+      "localPath": "sources/mark3labs__mcp-go",
+      "status": "existing",
+      "head": "43c2ca0",
+      "durationMs": 42
+    },
+    {
+      "index": 61,
+      "name": "modelcontextprotocol/csharp-sdk",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+      "localPath": "sources/modelcontextprotocol__csharp-sdk",
+      "status": "existing",
+      "head": "f93df7e",
+      "durationMs": 58
+    },
+    {
+      "index": 62,
+      "name": "hashgraph-online/hol-guard",
+      "url": "https://github.com/hashgraph-online/hol-guard",
+      "localPath": "sources/hashgraph-online__hol-guard",
+      "status": "existing",
+      "head": "4d4bf52",
+      "durationMs": 66
+    },
+    {
+      "index": 63,
+      "name": "brycewang-stanford/StatsPAI",
+      "url": "https://github.com/brycewang-stanford/StatsPAI",
+      "localPath": "sources/brycewang-stanford__StatsPAI",
+      "status": "existing",
+      "head": "562c7ae",
+      "durationMs": 97
+    },
+    {
+      "index": 64,
+      "name": "AstrBotDevs/AstrBot",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "localPath": "sources/AstrBotDevs__AstrBot",
+      "status": "existing",
+      "head": "2c8f38c",
+      "durationMs": 69
+    },
+    {
+      "index": 65,
+      "name": "dynamiq-ai/dynamiq",
+      "url": "https://github.com/dynamiq-ai/dynamiq",
+      "localPath": "sources/dynamiq-ai__dynamiq",
+      "status": "existing",
+      "head": "e3ab45b",
+      "durationMs": 69
+    },
+    {
+      "index": 66,
+      "name": "Azure-Samples/azure-ai-travel-agents",
+      "url": "https://github.com/Azure-Samples/azure-ai-travel-agents",
+      "localPath": "sources/Azure-Samples__azure-ai-travel-agents",
+      "status": "existing",
+      "head": "a66e229",
+      "durationMs": 77
+    },
+    {
+      "index": 67,
+      "name": "mcp-use/mcp-use",
+      "url": "https://github.com/mcp-use/mcp-use",
+      "localPath": "sources/mcp-use__mcp-use",
+      "status": "existing",
+      "head": "e0280d1",
+      "durationMs": 116
+    },
+    {
+      "index": 68,
+      "name": "crmne/ruby_llm",
+      "url": "https://github.com/crmne/ruby_llm",
+      "localPath": "sources/crmne__ruby_llm",
+      "status": "existing",
+      "head": "55987a8",
+      "durationMs": 96
+    },
+    {
+      "index": 69,
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "localPath": "sources/firecrawl__firecrawl",
+      "status": "existing",
+      "head": "1448133",
+      "durationMs": 107
+    },
+    {
+      "index": 70,
+      "name": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "localPath": "sources/upstash__context7",
+      "status": "existing",
+      "head": "1f6212b",
+      "durationMs": 60
+    },
+    {
+      "index": 71,
+      "name": "agno-agi/agno",
+      "url": "https://github.com/agno-agi/agno",
+      "localPath": "sources/agno-agi__agno",
+      "status": "existing",
+      "head": "3adb736",
+      "durationMs": 167
+    },
+    {
+      "index": 72,
+      "name": "pingcap/tidb",
+      "url": "https://github.com/pingcap/tidb",
+      "localPath": "sources/pingcap__tidb",
+      "status": "existing",
+      "head": "ca9ab98",
+      "durationMs": 240
+    },
+    {
+      "index": 73,
+      "name": "openai/openai-agents-python",
+      "url": "https://github.com/openai/openai-agents-python",
+      "localPath": "sources/openai__openai-agents-python",
+      "status": "existing",
+      "head": "c359c20",
+      "durationMs": 64
+    },
+    {
+      "index": 74,
+      "name": "zilliztech/claude-context",
+      "url": "https://github.com/zilliztech/claude-context",
+      "localPath": "sources/zilliztech__claude-context",
+      "status": "existing",
+      "head": "b2b4ca4",
+      "durationMs": 38
+    },
+    {
+      "index": 75,
+      "name": "omnigent-ai/omnigent",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "localPath": "sources/omnigent-ai__omnigent",
+      "status": "existing",
+      "head": "0cf2a7b",
+      "durationMs": 87
+    },
+    {
+      "index": 76,
+      "name": "lyonzin/knowledge-rag",
+      "url": "https://github.com/lyonzin/knowledge-rag",
+      "localPath": "sources/lyonzin__knowledge-rag",
+      "status": "existing",
+      "head": "56a2529",
+      "durationMs": 36
+    },
+    {
+      "index": 77,
+      "name": "MinishLab/semble",
+      "url": "https://github.com/MinishLab/semble",
+      "localPath": "sources/MinishLab__semble",
+      "status": "existing",
+      "head": "eacbe43",
+      "durationMs": 36
+    },
+    {
+      "index": 78,
+      "name": "jacob-bd/notebooklm-mcp-cli",
+      "url": "https://github.com/jacob-bd/notebooklm-mcp-cli",
+      "localPath": "sources/jacob-bd__notebooklm-mcp-cli",
+      "status": "existing",
+      "head": "78b3d28",
+      "durationMs": 39
+    },
+    {
+      "index": 79,
+      "name": "trpc-group/trpc-agent-go",
+      "url": "https://github.com/trpc-group/trpc-agent-go",
+      "localPath": "sources/trpc-group__trpc-agent-go",
+      "status": "existing",
+      "head": "43b120c",
+      "durationMs": 142
+    },
+    {
+      "index": 80,
+      "name": "zhayujie/CowAgent",
+      "url": "https://github.com/zhayujie/CowAgent",
+      "localPath": "sources/zhayujie__CowAgent",
+      "status": "existing",
+      "head": "0137346",
+      "durationMs": 51
+    },
+    {
+      "index": 81,
+      "name": "InsForge/InsForge",
+      "url": "https://github.com/InsForge/InsForge",
+      "localPath": "sources/InsForge__InsForge",
+      "status": "existing",
+      "head": "8ded63d",
+      "durationMs": 72
+    },
+    {
+      "index": 82,
+      "name": "getsentry/XcodeBuildMCP",
+      "url": "https://github.com/getsentry/XcodeBuildMCP",
+      "localPath": "sources/getsentry__XcodeBuildMCP",
+      "status": "existing",
+      "head": "5127139",
+      "durationMs": 69
+    },
+    {
+      "index": 83,
+      "name": "perplexityai/bumblebee",
+      "url": "https://github.com/perplexityai/bumblebee",
+      "localPath": "sources/perplexityai__bumblebee",
+      "status": "existing",
+      "head": "bf685dd",
+      "durationMs": 37
+    },
+    {
+      "index": 84,
+      "name": "raullenchai/Rapid-MLX",
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "localPath": "sources/raullenchai__Rapid-MLX",
+      "status": "existing",
+      "head": "9e6d06e",
+      "durationMs": 62
+    },
+    {
+      "index": 85,
+      "name": "alibaizhanov/mengram",
+      "url": "https://github.com/alibaizhanov/mengram",
+      "localPath": "sources/alibaizhanov__mengram",
+      "status": "existing",
+      "head": "5a0c0e2",
+      "durationMs": 50
+    },
+    {
+      "index": 86,
+      "name": "facebookresearch/faiss",
+      "url": "https://github.com/facebookresearch/faiss",
+      "localPath": "sources/facebookresearch__faiss",
+      "status": "existing",
+      "head": "20afed0",
+      "durationMs": 68
+    },
+    {
+      "index": 87,
+      "name": "MODSetter/SurfSense",
+      "url": "https://github.com/MODSetter/SurfSense",
+      "localPath": "sources/MODSetter__SurfSense",
+      "status": "existing",
+      "head": "77688ac",
+      "durationMs": 136
+    },
+    {
+      "index": 88,
+      "name": "pipeshub-ai/pipeshub-ai",
+      "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+      "localPath": "sources/pipeshub-ai__pipeshub-ai",
+      "status": "existing",
+      "head": "8f818e2",
+      "durationMs": 121
+    },
+    {
+      "index": 89,
+      "name": "oleksiijko/pmb",
+      "url": "https://github.com/oleksiijko/pmb",
+      "localPath": "sources/oleksiijko__pmb",
+      "status": "existing",
+      "head": "50bd371",
+      "durationMs": 48
+    },
+    {
+      "index": 90,
+      "name": "optave/ops-codegraph-tool",
+      "url": "https://github.com/optave/ops-codegraph-tool",
+      "localPath": "sources/optave__ops-codegraph-tool",
+      "status": "existing",
+      "head": "8b6ebe4",
+      "durationMs": 65
+    },
+    {
+      "index": 91,
+      "name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "localPath": "sources/thedotmack__claude-mem",
+      "status": "existing",
+      "head": "aafbb3a",
+      "durationMs": 57
+    },
+    {
+      "index": 92,
+      "name": "safishamsi/graphify",
+      "url": "https://github.com/safishamsi/graphify",
+      "localPath": "sources/safishamsi__graphify",
+      "status": "existing",
+      "head": "9e0b876",
+      "durationMs": 52
+    },
+    {
+      "index": 93,
+      "name": "Aider-AI/aider",
+      "url": "https://github.com/Aider-AI/aider",
+      "localPath": "sources/Aider-AI__aider",
+      "status": "existing",
+      "head": "5dc9490",
+      "durationMs": 55
+    },
+    {
+      "index": 94,
+      "name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "localPath": "sources/abhigyanpatwari__GitNexus",
+      "status": "existing",
+      "head": "78e5ff3",
+      "durationMs": 160
+    },
+    {
+      "index": 95,
+      "name": "NirDiamant/RAG_Techniques",
+      "url": "https://github.com/NirDiamant/RAG_Techniques",
+      "localPath": "sources/NirDiamant__RAG_Techniques",
+      "status": "existing",
+      "head": "991e16c",
+      "durationMs": 38
+    },
+    {
+      "index": 96,
+      "name": "HKUDS/DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "localPath": "sources/HKUDS__DeepTutor",
+      "status": "existing",
+      "head": "1bf11d1",
+      "durationMs": 69
+    },
+    {
+      "index": 97,
+      "name": "gastownhall/beads",
+      "url": "https://github.com/gastownhall/beads",
+      "localPath": "sources/gastownhall__beads",
+      "status": "existing",
+      "head": "8d24ad7",
+      "durationMs": 97
+    },
+    {
+      "index": 98,
+      "name": "enescingoz/awesome-n8n-templates",
+      "url": "https://github.com/enescingoz/awesome-n8n-templates",
+      "localPath": "sources/enescingoz__awesome-n8n-templates",
+      "status": "existing",
+      "head": "03a6552",
+      "durationMs": 46
+    },
+    {
+      "index": 99,
+      "name": "activepieces/activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "localPath": "sources/activepieces__activepieces",
+      "status": "existing",
+      "head": "499a2983",
+      "durationMs": 669
+    },
+    {
+      "index": 100,
+      "name": "evalstate/fast-agent",
+      "url": "https://github.com/evalstate/fast-agent",
+      "localPath": "sources/evalstate__fast-agent",
+      "status": "existing",
+      "head": "82e1330",
+      "durationMs": 89
+    },
+    {
+      "index": 101,
+      "name": "moorcheh-ai/memanto",
+      "url": "https://github.com/moorcheh-ai/memanto",
+      "localPath": "sources/moorcheh-ai__memanto",
+      "status": "existing",
+      "head": "c39af7a",
+      "durationMs": 47
+    },
+    {
+      "index": 102,
+      "name": "vstorm-co/pydantic-ai-backend",
+      "url": "https://github.com/vstorm-co/pydantic-ai-backend",
+      "localPath": "sources/vstorm-co__pydantic-ai-backend",
+      "status": "existing",
+      "head": "65ab78d",
+      "durationMs": 45
+    },
+    {
+      "index": 103,
+      "name": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "localPath": "sources/ollama__ollama",
+      "status": "existing",
+      "head": "12e0437",
+      "durationMs": 75
+    },
+    {
+      "index": 104,
+      "name": "promptfoo/promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "localPath": "sources/promptfoo__promptfoo",
+      "status": "existing",
+      "head": "30dc14b",
+      "durationMs": 195
+    },
+    {
+      "index": 105,
+      "name": "agentgateway/agentgateway",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "localPath": "sources/agentgateway__agentgateway",
+      "status": "existing",
+      "head": "3965abc",
+      "durationMs": 93
+    },
+    {
+      "index": 106,
+      "name": "letta-ai/letta-code",
+      "url": "https://github.com/letta-ai/letta-code",
+      "localPath": "sources/letta-ai__letta-code",
+      "status": "existing",
+      "head": "47f9b32",
+      "durationMs": 68
+    },
+    {
+      "index": 107,
+      "name": "matrixorigin/matrixone",
+      "url": "https://github.com/matrixorigin/matrixone",
+      "localPath": "sources/matrixorigin__matrixone",
+      "status": "existing",
+      "head": "629f58d",
+      "durationMs": 206
+    },
+    {
+      "index": 108,
+      "name": "agents-flex/agents-flex",
+      "url": "https://github.com/agents-flex/agents-flex",
+      "localPath": "sources/agents-flex__agents-flex",
+      "status": "existing",
+      "head": "5058a7a",
+      "durationMs": 56
+    },
+    {
+      "index": 109,
+      "name": "fdueblab/Micro-Agent",
+      "url": "https://github.com/fdueblab/Micro-Agent",
+      "localPath": "sources/fdueblab__Micro-Agent",
+      "status": "existing",
+      "head": "a7a055c",
+      "durationMs": 39
+    },
+    {
+      "index": 110,
+      "name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "localPath": "sources/heygen-com__hyperframes",
+      "status": "existing",
+      "head": "e57e75b",
+      "durationMs": 144
+    },
+    {
+      "index": 111,
+      "name": "can1357/oh-my-pi",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "localPath": "sources/can1357__oh-my-pi",
+      "status": "existing",
+      "head": "7251ca1",
+      "durationMs": 160
+    },
+    {
+      "index": 112,
+      "name": "olimorris/codecompanion.nvim",
+      "url": "https://github.com/olimorris/codecompanion.nvim",
+      "localPath": "sources/olimorris__codecompanion.nvim",
+      "status": "existing",
+      "head": "31ac84a",
+      "durationMs": 60
+    },
+    {
+      "index": 113,
+      "name": "entireio/cli",
+      "url": "https://github.com/entireio/cli",
+      "localPath": "sources/entireio__cli",
+      "status": "existing",
+      "head": "cc4be77",
+      "durationMs": 68
+    },
+    {
+      "index": 114,
+      "name": "0xMassi/webclaw",
+      "url": "https://github.com/0xMassi/webclaw",
+      "localPath": "sources/0xMassi__webclaw",
+      "status": "existing",
+      "head": "3caca67",
+      "durationMs": 43
+    },
+    {
+      "index": 115,
+      "name": "Eric-Terminal/ETOS-LLM-Studio",
+      "url": "https://github.com/Eric-Terminal/ETOS-LLM-Studio",
+      "localPath": "sources/Eric-Terminal__ETOS-LLM-Studio",
+      "status": "existing",
+      "head": "5093a29",
+      "durationMs": 83
+    },
+    {
+      "index": 116,
+      "name": "caura-ai/caura-memclaw",
+      "url": "https://github.com/caura-ai/caura-memclaw",
+      "localPath": "sources/caura-ai__caura-memclaw",
+      "status": "existing",
+      "head": "eae40c8",
+      "durationMs": 63
+    },
+    {
+      "index": 117,
+      "name": "containers/ramalama",
+      "url": "https://github.com/containers/ramalama",
+      "localPath": "sources/containers__ramalama",
+      "status": "existing",
+      "head": "94abb03",
+      "durationMs": 50
+    },
+    {
+      "index": 118,
+      "name": "cisco-ai-defense/mcp-scanner",
+      "url": "https://github.com/cisco-ai-defense/mcp-scanner",
+      "localPath": "sources/cisco-ai-defense__mcp-scanner",
+      "status": "existing",
+      "head": "67475ef",
+      "durationMs": 49
+    },
+    {
+      "index": 119,
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "localPath": "sources/Significant-Gravitas__AutoGPT",
+      "status": "existing",
+      "head": "ba178a7",
+      "durationMs": 249
+    },
+    {
+      "index": 120,
+      "name": "OpenHands/OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "localPath": "sources/OpenHands__OpenHands",
+      "status": "existing",
+      "head": "f27d34c",
+      "durationMs": 132
+    },
+    {
+      "index": 121,
+      "name": "topoteretes/cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "localPath": "sources/topoteretes__cognee",
+      "status": "existing",
+      "head": "1000441",
+      "durationMs": 125
+    },
+    {
+      "index": 122,
+      "name": "osaurus-ai/osaurus",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "localPath": "sources/osaurus-ai__osaurus",
+      "status": "existing",
+      "head": "9124d69",
+      "durationMs": 121
+    },
+    {
+      "index": 123,
+      "name": "microsoft/mcp",
+      "url": "https://github.com/microsoft/mcp",
+      "localPath": "sources/microsoft__mcp",
+      "status": "existing",
+      "head": "7a3ba50",
+      "durationMs": 263
+    },
+    {
+      "index": 124,
+      "name": "cbcoutinho/nextcloud-mcp-server",
+      "url": "https://github.com/cbcoutinho/nextcloud-mcp-server",
+      "localPath": "sources/cbcoutinho__nextcloud-mcp-server",
+      "status": "existing",
+      "head": "ccc3f42",
+      "durationMs": 61
+    },
+    {
+      "index": 125,
+      "name": "microsoft/autogen",
+      "url": "https://github.com/microsoft/autogen",
+      "localPath": "sources/microsoft__autogen",
+      "status": "existing",
+      "head": "027ecf0",
+      "durationMs": 138
+    },
+    {
+      "index": 126,
+      "name": "dataelement/bisheng",
+      "url": "https://github.com/dataelement/bisheng",
+      "localPath": "sources/dataelement__bisheng",
+      "status": "existing",
+      "head": "9eb9328",
+      "durationMs": 160
+    },
+    {
+      "index": 127,
+      "name": "kenn-io/agentsview",
+      "url": "https://github.com/kenn-io/agentsview",
+      "localPath": "sources/kenn-io__agentsview",
+      "status": "existing",
+      "head": "99a23c0",
+      "durationMs": 76
+    },
+    {
+      "index": 128,
+      "name": "waybarrios/vllm-mlx",
+      "url": "https://github.com/waybarrios/vllm-mlx",
+      "localPath": "sources/waybarrios__vllm-mlx",
+      "status": "existing",
+      "head": "a48c86c",
+      "durationMs": 59
+    },
+    {
+      "index": 129,
+      "name": "Softeria/ms-365-mcp-server",
+      "url": "https://github.com/Softeria/ms-365-mcp-server",
+      "localPath": "sources/Softeria__ms-365-mcp-server",
+      "status": "existing",
+      "head": "ae40eb9",
+      "durationMs": 52
+    },
+    {
+      "index": 130,
+      "name": "TensorBlock/awesome-mcp-servers",
+      "url": "https://github.com/TensorBlock/awesome-mcp-servers",
+      "localPath": "sources/TensorBlock__awesome-mcp-servers",
+      "status": "existing",
+      "head": "ebad379",
+      "durationMs": 274
+    },
+    {
+      "index": 131,
+      "name": "zzet/gortex",
+      "url": "https://github.com/zzet/gortex",
+      "localPath": "sources/zzet__gortex",
+      "status": "existing",
+      "head": "ed483c7",
+      "durationMs": 109
+    },
+    {
+      "index": 132,
+      "name": "ruvnet/agent-harness-generator",
+      "url": "https://github.com/ruvnet/agent-harness-generator",
+      "localPath": "sources/ruvnet__agent-harness-generator",
+      "status": "existing",
+      "head": "b2506a1",
+      "durationMs": 77
+    },
+    {
+      "index": 133,
+      "name": "nanocoai/nanoclaw",
+      "url": "https://github.com/nanocoai/nanoclaw",
+      "localPath": "sources/nanocoai__nanoclaw",
+      "status": "existing",
+      "head": "ee7f891",
+      "durationMs": 66
+    },
+    {
+      "index": 134,
+      "name": "mozilla-ai/llamafile",
+      "url": "https://github.com/mozilla-ai/llamafile",
+      "localPath": "sources/mozilla-ai__llamafile",
+      "status": "existing",
+      "head": "6395110",
+      "durationMs": 58
+    },
+    {
+      "index": 135,
+      "name": "opensquilla/opensquilla",
+      "url": "https://github.com/opensquilla/opensquilla",
+      "localPath": "sources/opensquilla__opensquilla",
+      "status": "existing",
+      "head": "c81acb4",
+      "durationMs": 77
+    },
+    {
+      "index": 136,
+      "name": "oracle-devrel/oracle-ai-developer-hub",
+      "url": "https://github.com/oracle-devrel/oracle-ai-developer-hub",
+      "localPath": "sources/oracle-devrel__oracle-ai-developer-hub",
+      "status": "existing",
+      "head": "4f1aadb",
+      "durationMs": 92
+    },
+    {
+      "index": 137,
+      "name": "codecentric/c4-genai-suite",
+      "url": "https://github.com/codecentric/c4-genai-suite",
+      "localPath": "sources/codecentric__c4-genai-suite",
+      "status": "existing",
+      "head": "1b2d1f5",
+      "durationMs": 74
+    },
+    {
+      "index": 138,
+      "name": "modelcontextprotocol/python-sdk",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "localPath": "sources/modelcontextprotocol__python-sdk",
+      "status": "existing",
+      "head": "734746a",
+      "durationMs": 48
+    },
+    {
+      "index": 139,
+      "name": "IBM/AssetOpsBench",
+      "url": "https://github.com/IBM/AssetOpsBench",
+      "localPath": "sources/IBM__AssetOpsBench",
+      "status": "existing",
+      "head": "f8e4e7b",
+      "durationMs": 40
+    },
+    {
+      "index": 140,
+      "name": "heymrun/heym",
+      "url": "https://github.com/heymrun/heym",
+      "localPath": "sources/heymrun__heym",
+      "status": "existing",
+      "head": "f9c4e1a",
+      "durationMs": 55
+    },
+    {
+      "index": 141,
+      "name": "askimo-ai/askimo",
+      "url": "https://github.com/askimo-ai/askimo",
+      "localPath": "sources/askimo-ai__askimo",
+      "status": "existing",
+      "head": "77e829b",
+      "durationMs": 53
+    },
+    {
+      "index": 142,
+      "name": "simstudioai/sim",
+      "url": "https://github.com/simstudioai/sim",
+      "localPath": "sources/simstudioai__sim",
+      "status": "existing",
+      "head": "56a88a2",
+      "durationMs": 336
+    },
+    {
+      "index": 143,
+      "name": "screenpipe/screenpipe",
+      "url": "https://github.com/screenpipe/screenpipe",
+      "localPath": "sources/screenpipe__screenpipe",
+      "status": "existing",
+      "head": "b67578c",
+      "durationMs": 91
+    },
+    {
+      "index": 144,
+      "name": "TencentCloud/TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "localPath": "sources/TencentCloud__TencentDB-Agent-Memory",
+      "status": "existing",
+      "head": "ee76536",
+      "durationMs": 38
+    },
+    {
+      "index": 145,
+      "name": "alvinreal/awesome-opensource-ai",
+      "url": "https://github.com/alvinreal/awesome-opensource-ai",
+      "localPath": "sources/alvinreal__awesome-opensource-ai",
+      "status": "existing",
+      "head": "d4e66a7",
+      "durationMs": 32
+    },
+    {
+      "index": 146,
+      "name": "yomorun/yomo",
+      "url": "https://github.com/yomorun/yomo",
+      "localPath": "sources/yomorun__yomo",
+      "status": "existing",
+      "head": "6d92a9d",
+      "durationMs": 35
+    },
+    {
+      "index": 147,
+      "name": "axoviq-ai/synthadoc",
+      "url": "https://github.com/axoviq-ai/synthadoc",
+      "localPath": "sources/axoviq-ai__synthadoc",
+      "status": "existing",
+      "head": "1d99102",
+      "durationMs": 45
+    },
+    {
+      "index": 148,
+      "name": "GlitterKill/sdl-mcp",
+      "url": "https://github.com/GlitterKill/sdl-mcp",
+      "localPath": "sources/GlitterKill__sdl-mcp",
+      "status": "existing",
+      "head": "0a256da",
+      "durationMs": 84
+    },
+    {
+      "index": 149,
+      "name": "ProfessionalWiki/MediaWiki-MCP-Server",
+      "url": "https://github.com/ProfessionalWiki/MediaWiki-MCP-Server",
+      "localPath": "sources/ProfessionalWiki__MediaWiki-MCP-Server",
+      "status": "existing",
+      "head": "4bbb3c5",
+      "durationMs": 46
+    },
+    {
+      "index": 150,
+      "name": "modelcontextprotocol/typescript-sdk",
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+      "localPath": "sources/modelcontextprotocol__typescript-sdk",
+      "status": "existing",
+      "head": "5e0249f",
+      "durationMs": 58
+    },
+    {
+      "index": 151,
+      "name": "alibaba/zvec",
+      "url": "https://github.com/alibaba/zvec",
+      "localPath": "sources/alibaba__zvec",
+      "status": "existing",
+      "head": "85cd08d",
+      "durationMs": 70
+    },
+    {
+      "index": 152,
+      "name": "awslabs/mcp",
+      "url": "https://github.com/awslabs/mcp",
+      "localPath": "sources/awslabs__mcp",
+      "status": "existing",
+      "head": "ea55b31",
+      "durationMs": 133
+    },
+    {
+      "index": 153,
+      "name": "modelcontextprotocol/modelcontextprotocol",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "localPath": "sources/modelcontextprotocol__modelcontextprotocol",
+      "status": "existing",
+      "head": "2fb207d",
+      "durationMs": 56
+    },
+    {
+      "index": 154,
+      "name": "UnicomAI/wanwu",
+      "url": "https://github.com/UnicomAI/wanwu",
+      "localPath": "sources/UnicomAI__wanwu",
+      "status": "existing",
+      "head": "43d7f07",
+      "durationMs": 164
+    },
+    {
+      "index": 155,
+      "name": "jonigl/mcp-client-for-ollama",
+      "url": "https://github.com/jonigl/mcp-client-for-ollama",
+      "localPath": "sources/jonigl__mcp-client-for-ollama",
+      "status": "existing",
+      "head": "53eebf9",
+      "durationMs": 36
+    },
+    {
+      "index": 156,
+      "name": "askalf/dario",
+      "url": "https://github.com/askalf/dario",
+      "localPath": "sources/askalf__dario",
+      "status": "existing",
+      "head": "9963d35",
+      "durationMs": 41
+    },
+    {
+      "index": 157,
+      "name": "dnotitia/akb",
+      "url": "https://github.com/dnotitia/akb",
+      "localPath": "sources/dnotitia__akb",
+      "status": "existing",
+      "head": "bac4527",
+      "durationMs": 51
+    },
+    {
+      "index": 158,
+      "name": "FoundationAgents/MetaGPT",
+      "url": "https://github.com/FoundationAgents/MetaGPT",
+      "localPath": "sources/FoundationAgents__MetaGPT",
+      "status": "existing",
+      "head": "11cdf46",
+      "durationMs": 72
+    },
+    {
+      "index": 159,
+      "name": "charmbracelet/crush",
+      "url": "https://github.com/charmbracelet/crush",
+      "localPath": "sources/charmbracelet__crush",
+      "status": "existing",
+      "head": "46c1799",
+      "durationMs": 63
+    },
+    {
+      "index": 160,
+      "name": "agent0ai/agent-zero",
+      "url": "https://github.com/agent0ai/agent-zero",
+      "localPath": "sources/agent0ai__agent-zero",
+      "status": "existing",
+      "head": "f9d8167",
+      "durationMs": 88
+    },
+    {
+      "index": 161,
+      "name": "livekit/agents",
+      "url": "https://github.com/livekit/agents",
+      "localPath": "sources/livekit__agents",
+      "status": "existing",
+      "head": "645d50f",
+      "durationMs": 82
+    },
+    {
+      "index": 162,
+      "name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "localPath": "sources/calesthio__OpenMontage",
+      "status": "existing",
+      "head": "9066dcb",
+      "durationMs": 78
+    },
+    {
+      "index": 163,
+      "name": "alpic-ai/skybridge",
+      "url": "https://github.com/alpic-ai/skybridge",
+      "localPath": "sources/alpic-ai__skybridge",
+      "status": "existing",
+      "head": "7bca125",
+      "durationMs": 55
+    },
+    {
+      "index": 164,
+      "name": "preset-io/agor",
+      "url": "https://github.com/preset-io/agor",
+      "localPath": "sources/preset-io__agor",
+      "status": "existing",
+      "head": "7e902cd",
+      "durationMs": 116
+    },
+    {
+      "index": 165,
+      "name": "cortexkit/aft",
+      "url": "https://github.com/cortexkit/aft",
+      "localPath": "sources/cortexkit__aft",
+      "status": "existing",
+      "head": "230d49e",
+      "durationMs": 111
+    },
+    {
+      "index": 166,
+      "name": "dcostenco/prism-coder",
+      "url": "https://github.com/dcostenco/prism-coder",
+      "localPath": "sources/dcostenco__prism-coder",
+      "status": "existing",
+      "head": "897edb9",
+      "durationMs": 82
+    },
+    {
+      "index": 167,
+      "name": "pydantic/pydantic-ai",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "localPath": "sources/pydantic__pydantic-ai",
+      "status": "existing",
+      "head": "3c98a10",
+      "durationMs": 119
+    },
+    {
+      "index": 168,
+      "name": "langchain-ai/open-swe",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "localPath": "sources/langchain-ai__open-swe",
+      "status": "existing",
+      "head": "7dd758f",
+      "durationMs": 61
+    },
+    {
+      "index": 169,
+      "name": "LearningCircuit/local-deep-research",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "localPath": "sources/LearningCircuit__local-deep-research",
+      "status": "existing",
+      "head": "c964494",
+      "durationMs": 125
+    },
+    {
+      "index": 170,
+      "name": "Andyyyy64/whichllm",
+      "url": "https://github.com/Andyyyy64/whichllm",
+      "localPath": "sources/Andyyyy64__whichllm",
+      "status": "existing",
+      "head": "1fc2891",
+      "durationMs": 49
+    },
+    {
+      "index": 171,
+      "name": "utensils/mcp-nixos",
+      "url": "https://github.com/utensils/mcp-nixos",
+      "localPath": "sources/utensils__mcp-nixos",
+      "status": "existing",
+      "head": "0ef99b6",
+      "durationMs": 39
+    },
+    {
+      "index": 172,
+      "name": "apocas/restai",
+      "url": "https://github.com/apocas/restai",
+      "localPath": "sources/apocas__restai",
+      "status": "existing",
+      "head": "2bb9f23",
+      "durationMs": 56
+    },
+    {
+      "index": 173,
+      "name": "chatwoot/chatwoot",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "localPath": "sources/chatwoot__chatwoot",
+      "status": "existing",
+      "head": "f991876",
+      "durationMs": 249
+    },
+    {
+      "index": 174,
+      "name": "StarTrail-org/LEANN",
+      "url": "https://github.com/StarTrail-org/LEANN",
+      "localPath": "sources/StarTrail-org__LEANN",
+      "status": "existing",
+      "head": "cfb1382",
+      "durationMs": 41
+    },
+    {
+      "index": 175,
+      "name": "microsoft/agent-framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "localPath": "sources/microsoft__agent-framework",
+      "status": "existing",
+      "head": "26a0a7e",
+      "durationMs": 168
+    },
+    {
+      "index": 176,
+      "name": "memgraph/memgraph",
+      "url": "https://github.com/memgraph/memgraph",
+      "localPath": "sources/memgraph__memgraph",
+      "status": "existing",
+      "head": "1d5910b",
+      "durationMs": 196
+    },
+    {
+      "index": 177,
+      "name": "wanxingai/LightAgent",
+      "url": "https://github.com/wanxingai/LightAgent",
+      "localPath": "sources/wanxingai__LightAgent",
+      "status": "existing",
+      "head": "eb5f2e6",
+      "durationMs": 40
+    },
+    {
+      "index": 178,
+      "name": "fujibee/agmsg",
+      "url": "https://github.com/fujibee/agmsg",
+      "localPath": "sources/fujibee__agmsg",
+      "status": "existing",
+      "head": "f6c0ed3",
+      "durationMs": 39
+    },
+    {
+      "index": 179,
+      "name": "secure-agentic-framework/saf-mcp",
+      "url": "https://github.com/secure-agentic-framework/saf-mcp",
+      "localPath": "sources/secure-agentic-framework__saf-mcp",
+      "status": "existing",
+      "head": "f2f5a7b",
+      "durationMs": 46
+    },
+    {
+      "index": 180,
+      "name": "w8123/EnterpriseAgentFramework",
+      "url": "https://github.com/w8123/EnterpriseAgentFramework",
+      "localPath": "sources/w8123__EnterpriseAgentFramework",
+      "status": "existing",
+      "head": "69880f9",
+      "durationMs": 69
+    },
+    {
+      "index": 181,
+      "name": "Fergana-Labs/stash",
+      "url": "https://github.com/Fergana-Labs/stash",
+      "localPath": "sources/Fergana-Labs__stash",
+      "status": "existing",
+      "head": "8edb7e8",
+      "durationMs": 60
+    },
+    {
+      "index": 182,
+      "name": "mock-server/mockserver-monorepo",
+      "url": "https://github.com/mock-server/mockserver-monorepo",
+      "localPath": "sources/mock-server__mockserver-monorepo",
+      "status": "existing",
+      "head": "c6d4c9a",
+      "durationMs": 157
+    },
+    {
+      "index": 183,
+      "name": "infiniflow/infinity",
+      "url": "https://github.com/infiniflow/infinity",
+      "localPath": "sources/infiniflow__infinity",
+      "status": "existing",
+      "head": "ef18b5e",
+      "durationMs": 134
+    },
+    {
+      "index": 184,
+      "name": "LazyAGI/LazyLLM",
+      "url": "https://github.com/LazyAGI/LazyLLM",
+      "localPath": "sources/LazyAGI__LazyLLM",
+      "status": "existing",
+      "head": "eed3b5c",
+      "durationMs": 68
+    },
+    {
+      "index": 185,
+      "name": "ai-boost/awesome-harness-engineering",
+      "url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "localPath": "sources/ai-boost__awesome-harness-engineering",
+      "status": "existing",
+      "head": "22fa932",
+      "durationMs": 38
+    },
+    {
+      "index": 186,
+      "name": "aws/agent-toolkit-for-aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "localPath": "sources/aws__agent-toolkit-for-aws",
+      "status": "existing",
+      "head": "9ad8fe7",
+      "durationMs": 57
+    },
+    {
+      "index": 187,
+      "name": "OpenOSINT/OpenOSINT",
+      "url": "https://github.com/OpenOSINT/OpenOSINT",
+      "localPath": "sources/OpenOSINT__OpenOSINT",
+      "status": "existing",
+      "head": "7795746",
+      "durationMs": 48
+    },
+    {
+      "index": 188,
+      "name": "johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction",
+      "url": "https://github.com/johnsonhk88/AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction",
+      "localPath": "sources/johnsonhk88__AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction",
+      "status": "existing",
+      "head": "832f4f0",
+      "durationMs": 39
+    },
+    {
+      "index": 189,
+      "name": "freee/freee-mcp",
+      "url": "https://github.com/freee/freee-mcp",
+      "localPath": "sources/freee__freee-mcp",
+      "status": "existing",
+      "head": "7140ab5",
+      "durationMs": 44
+    },
+    {
+      "index": 190,
+      "name": "juyterman1000/entroly",
+      "url": "https://github.com/juyterman1000/entroly",
+      "localPath": "sources/juyterman1000__entroly",
+      "status": "existing",
+      "head": "ad9e2b2",
+      "durationMs": 50
+    },
+    {
+      "index": 191,
+      "name": "Denis2054/Context-Engineering-for-Multi-Agent-Systems",
+      "url": "https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems",
+      "localPath": "sources/Denis2054__Context-Engineering-for-Multi-Agent-Systems",
+      "status": "existing",
+      "head": "e248d6d",
+      "durationMs": 38
+    },
+    {
+      "index": 192,
+      "name": "ozgurcd/gograph",
+      "url": "https://github.com/ozgurcd/gograph",
+      "localPath": "sources/ozgurcd__gograph",
+      "status": "existing",
+      "head": "c9f18c0",
+      "durationMs": 41
+    },
+    {
+      "index": 193,
+      "name": "vectorize-io/hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "localPath": "sources/vectorize-io__hindsight",
+      "status": "existing",
+      "head": "65862c4",
+      "durationMs": 87
+    },
+    {
+      "index": 194,
+      "name": "2FastLabs/agent-squad",
+      "url": "https://github.com/2FastLabs/agent-squad",
+      "localPath": "sources/2FastLabs__agent-squad",
+      "status": "existing",
+      "head": "db10bf5",
+      "durationMs": 45
+    },
+    {
+      "index": 195,
+      "name": "vasu-devs/JustHireMe",
+      "url": "https://github.com/vasu-devs/JustHireMe",
+      "localPath": "sources/vasu-devs__JustHireMe",
+      "status": "existing",
+      "head": "5f67a69",
+      "durationMs": 44
+    },
+    {
+      "index": 196,
+      "name": "LetsFG/LetsFG",
+      "url": "https://github.com/LetsFG/LetsFG",
+      "localPath": "sources/LetsFG__LetsFG",
+      "status": "existing",
+      "head": "7531bb0",
+      "durationMs": 37
+    },
+    {
+      "index": 197,
+      "name": "aws/bedrock-agentcore-sdk-python",
+      "url": "https://github.com/aws/bedrock-agentcore-sdk-python",
+      "localPath": "sources/aws__bedrock-agentcore-sdk-python",
+      "status": "existing",
+      "head": "e873597",
+      "durationMs": 37
+    },
+    {
+      "index": 198,
+      "name": "existential-birds/beagle",
+      "url": "https://github.com/existential-birds/beagle",
+      "localPath": "sources/existential-birds__beagle",
+      "status": "existing",
+      "head": "3e9214c",
+      "durationMs": 48
+    },
+    {
+      "index": 199,
+      "name": "nanbingxyz/5ire",
+      "url": "https://github.com/nanbingxyz/5ire",
+      "localPath": "sources/nanbingxyz__5ire",
+      "status": "existing",
+      "head": "c7fabb9",
+      "durationMs": 45
+    },
+    {
+      "index": 200,
+      "name": "jingcheng-chen/rhinomcp",
+      "url": "https://github.com/jingcheng-chen/rhinomcp",
+      "localPath": "sources/jingcheng-chen__rhinomcp",
+      "status": "existing",
+      "head": "02ab3dd",
+      "durationMs": 40
+    },
+    {
+      "index": 201,
+      "name": "opensolon/solon-ai",
+      "url": "https://github.com/opensolon/solon-ai",
+      "localPath": "sources/opensolon__solon-ai",
+      "status": "existing",
+      "head": "68c57d7",
+      "durationMs": 57
+    },
+    {
+      "index": 202,
+      "name": "awslabs/run-model-context-protocol-servers-with-aws-lambda",
+      "url": "https://github.com/awslabs/run-model-context-protocol-servers-with-aws-lambda",
+      "localPath": "sources/awslabs__run-model-context-protocol-servers-with-aws-lambda",
+      "status": "existing",
+      "head": "fcfba7a",
+      "durationMs": 39
+    },
+    {
+      "index": 203,
+      "name": "mnemon-dev/mnemon",
+      "url": "https://github.com/mnemon-dev/mnemon",
+      "localPath": "sources/mnemon-dev__mnemon",
+      "status": "existing",
+      "head": "80e9cd7",
+      "durationMs": 43
+    },
+    {
+      "index": 204,
+      "name": "Prompthon-IO/agent-systems-handbook",
+      "url": "https://github.com/Prompthon-IO/agent-systems-handbook",
+      "localPath": "sources/Prompthon-IO__agent-systems-handbook",
+      "status": "existing",
+      "head": "047b70d",
+      "durationMs": 42
+    },
+    {
+      "index": 205,
+      "name": "JKHeadley/instar",
+      "url": "https://github.com/JKHeadley/instar",
+      "localPath": "sources/JKHeadley__instar",
+      "status": "existing",
+      "head": "c0e5377",
+      "durationMs": 225
+    },
+    {
+      "index": 206,
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "localPath": "sources/stablyai__orca",
+      "status": "existing",
+      "head": "3eb0dbd",
+      "durationMs": 186
+    },
+    {
+      "index": 207,
+      "name": "generalaction/emdash",
+      "url": "https://github.com/generalaction/emdash",
+      "localPath": "sources/generalaction__emdash",
+      "status": "existing",
+      "head": "2c4b10a",
+      "durationMs": 75
+    },
+    {
+      "index": 208,
+      "name": "modelcontextprotocol/go-sdk",
+      "url": "https://github.com/modelcontextprotocol/go-sdk",
+      "localPath": "sources/modelcontextprotocol__go-sdk",
+      "status": "existing",
+      "head": "71ffcb4",
+      "durationMs": 38
+    },
+    {
+      "index": 209,
+      "name": "makenotion/notion-mcp-server",
+      "url": "https://github.com/makenotion/notion-mcp-server",
+      "localPath": "sources/makenotion__notion-mcp-server",
+      "status": "existing",
+      "head": "df04d3f",
+      "durationMs": 34
+    },
+    {
+      "index": 210,
+      "name": "codeaholicguy/ai-devkit",
+      "url": "https://github.com/codeaholicguy/ai-devkit",
+      "localPath": "sources/codeaholicguy__ai-devkit",
+      "status": "existing",
+      "head": "cba13c7",
+      "durationMs": 50
+    },
+    {
+      "index": 211,
+      "name": "line/line-bot-mcp-server",
+      "url": "https://github.com/line/line-bot-mcp-server",
+      "localPath": "sources/line__line-bot-mcp-server",
+      "status": "existing",
+      "head": "bfbbdab",
+      "durationMs": 38
+    },
+    {
+      "index": 212,
+      "name": "modelcontextprotocol/rust-sdk",
+      "url": "https://github.com/modelcontextprotocol/rust-sdk",
+      "localPath": "sources/modelcontextprotocol__rust-sdk",
+      "status": "existing",
+      "head": "5d00e20",
+      "durationMs": 39
+    },
+    {
+      "index": 213,
+      "name": "giancarloerra/SocratiCode",
+      "url": "https://github.com/giancarloerra/SocratiCode",
+      "localPath": "sources/giancarloerra__SocratiCode",
+      "status": "existing",
+      "head": "b2f368b",
+      "durationMs": 38
+    },
+    {
+      "index": 214,
+      "name": "vstorm-co/full-stack-ai-agent-template",
+      "url": "https://github.com/vstorm-co/full-stack-ai-agent-template",
+      "localPath": "sources/vstorm-co__full-stack-ai-agent-template",
+      "status": "existing",
+      "head": "d97d291",
+      "durationMs": 52
+    },
+    {
+      "index": 215,
+      "name": "ory/lumen",
+      "url": "https://github.com/ory/lumen",
+      "localPath": "sources/ory__lumen",
+      "status": "existing",
+      "head": "d0dee0e",
+      "durationMs": 46
+    },
+    {
+      "index": 216,
+      "name": "vercel/ai",
+      "url": "https://github.com/vercel/ai",
+      "localPath": "sources/vercel__ai",
+      "status": "existing",
+      "head": "53394b4",
+      "durationMs": 225
+    },
+    {
+      "index": 217,
+      "name": "cocoindex-io/cocoindex-code",
+      "url": "https://github.com/cocoindex-io/cocoindex-code",
+      "localPath": "sources/cocoindex-io__cocoindex-code",
+      "status": "existing",
+      "head": "c98f8cc",
+      "durationMs": 34
+    },
+    {
+      "index": 218,
+      "name": "Dicklesworthstone/mcp_agent_mail",
+      "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+      "localPath": "sources/Dicklesworthstone__mcp_agent_mail",
+      "status": "existing",
+      "head": "b18d925",
+      "durationMs": 39
+    },
+    {
+      "index": 219,
+      "name": "Ontos-AI/knowhere",
+      "url": "https://github.com/Ontos-AI/knowhere",
+      "localPath": "sources/Ontos-AI__knowhere",
+      "status": "existing",
+      "head": "10e1a1d",
+      "durationMs": 93
+    },
+    {
+      "index": 220,
+      "name": "liaotxcn/Weave",
+      "url": "https://github.com/liaotxcn/Weave",
+      "localPath": "sources/liaotxcn__Weave",
+      "status": "existing",
+      "head": "687a080",
+      "durationMs": 40
+    },
+    {
+      "index": 221,
+      "name": "apify/crawlee",
+      "url": "https://github.com/apify/crawlee",
+      "localPath": "sources/apify__crawlee",
+      "status": "existing",
+      "head": "4225a19",
+      "durationMs": 105
+    },
+    {
+      "index": 222,
+      "name": "Kilo-Org/kilocode",
+      "url": "https://github.com/Kilo-Org/kilocode",
+      "localPath": "sources/Kilo-Org__kilocode",
+      "status": "existing",
+      "head": "5637375",
+      "durationMs": 243
+    },
+    {
+      "index": 223,
+      "name": "Light-Heart-Labs/DreamServer",
+      "url": "https://github.com/Light-Heart-Labs/DreamServer",
+      "localPath": "sources/Light-Heart-Labs__DreamServer",
+      "status": "existing",
+      "head": "f23c5a3",
+      "durationMs": 75
+    },
+    {
+      "index": 224,
+      "name": "semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "localPath": "sources/semantica-agi__semantica",
+      "status": "existing",
+      "head": "0765cfe",
+      "durationMs": 59
+    },
+    {
+      "index": 225,
+      "name": "hexabot-ai/Hexabot",
+      "url": "https://github.com/hexabot-ai/Hexabot",
+      "localPath": "sources/hexabot-ai__Hexabot",
+      "status": "existing",
+      "head": "19c1ab6",
+      "durationMs": 73
+    },
+    {
+      "index": 226,
+      "name": "lightonai/next-plaid",
+      "url": "https://github.com/lightonai/next-plaid",
+      "localPath": "sources/lightonai__next-plaid",
+      "status": "existing",
+      "head": "7e772cf",
+      "durationMs": 38
+    },
+    {
+      "index": 227,
+      "name": "Cranot/roam-code",
+      "url": "https://github.com/Cranot/roam-code",
+      "localPath": "sources/Cranot__roam-code",
+      "status": "existing",
+      "head": "36b8ccd",
+      "durationMs": 147
+    },
+    {
+      "index": 228,
+      "name": "sirkirby/unifi-mcp",
+      "url": "https://github.com/sirkirby/unifi-mcp",
+      "localPath": "sources/sirkirby__unifi-mcp",
+      "status": "existing",
+      "head": "43b8ea9",
+      "durationMs": 61
+    },
+    {
+      "index": 229,
+      "name": "boshu2/agentops",
+      "url": "https://github.com/boshu2/agentops",
+      "localPath": "sources/boshu2__agentops",
+      "status": "existing",
+      "head": "011c061",
+      "durationMs": 173
+    },
+    {
+      "index": 230,
+      "name": "CoWork-OS/CoWork-OS",
+      "url": "https://github.com/CoWork-OS/CoWork-OS",
+      "localPath": "sources/CoWork-OS__CoWork-OS",
+      "status": "existing",
+      "head": "924fd80",
+      "durationMs": 133
+    },
+    {
+      "index": 231,
+      "name": "schmitech/orbit",
+      "url": "https://github.com/schmitech/orbit",
+      "localPath": "sources/schmitech__orbit",
+      "status": "existing",
+      "head": "184dcae",
+      "durationMs": 81
+    },
+    {
+      "index": 232,
+      "name": "netboxlabs/netbox-mcp-server",
+      "url": "https://github.com/netboxlabs/netbox-mcp-server",
+      "localPath": "sources/netboxlabs__netbox-mcp-server",
+      "status": "existing",
+      "head": "8d02e9a",
+      "durationMs": 41
+    },
+    {
+      "index": 233,
+      "name": "manaflow-ai/cmux",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "localPath": "sources/manaflow-ai__cmux",
+      "status": "existing",
+      "head": "90f77dd",
+      "durationMs": 208
+    },
+    {
+      "index": 234,
+      "name": "googleapis/mcp-toolbox",
+      "url": "https://github.com/googleapis/mcp-toolbox",
+      "localPath": "sources/googleapis__mcp-toolbox",
+      "status": "existing",
+      "head": "2dada83",
+      "durationMs": 107
+    },
+    {
+      "index": 235,
+      "name": "awslabs/aidlc-workflows",
+      "url": "https://github.com/awslabs/aidlc-workflows",
+      "localPath": "sources/awslabs__aidlc-workflows",
+      "status": "existing",
+      "head": "31edd16",
+      "durationMs": 71
+    },
+    {
+      "index": 236,
+      "name": "yvgude/lean-ctx",
+      "url": "https://github.com/yvgude/lean-ctx",
+      "localPath": "sources/yvgude__lean-ctx",
+      "status": "existing",
+      "head": "40098dc",
+      "durationMs": 91
+    },
+    {
+      "index": 237,
+      "name": "superlinked/sie",
+      "url": "https://github.com/superlinked/sie",
+      "localPath": "sources/superlinked__sie",
+      "status": "existing",
+      "head": "0ab32f3",
+      "durationMs": 65
+    },
+    {
+      "index": 238,
+      "name": "neuron-core/neuron-ai",
+      "url": "https://github.com/neuron-core/neuron-ai",
+      "localPath": "sources/neuron-core__neuron-ai",
+      "status": "existing",
+      "head": "3f94684",
+      "durationMs": 56
+    },
+    {
+      "index": 239,
+      "name": "inkeep/agents",
+      "url": "https://github.com/inkeep/agents",
+      "localPath": "sources/inkeep__agents",
+      "status": "existing",
+      "head": "a15fdca",
+      "durationMs": 186
+    },
+    {
+      "index": 240,
+      "name": "shinpr/mcp-local-rag",
+      "url": "https://github.com/shinpr/mcp-local-rag",
+      "localPath": "sources/shinpr__mcp-local-rag",
+      "status": "existing",
+      "head": "95e39ea",
+      "durationMs": 38
+    },
+    {
+      "index": 241,
+      "name": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "localPath": "sources/Egonex-AI__Understand-Anything",
+      "status": "existing",
+      "head": "ba9ba1f",
+      "durationMs": 46
+    },
+    {
+      "index": 242,
+      "name": "santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "localPath": "sources/santifer__career-ops",
+      "status": "existing",
+      "head": "349bacc",
+      "durationMs": 41
+    },
+    {
+      "index": 243,
+      "name": "webiny/webiny-js",
+      "url": "https://github.com/webiny/webiny-js",
+      "localPath": "sources/webiny__webiny-js",
+      "status": "existing",
+      "head": "eda614bf",
+      "durationMs": 446
+    },
+    {
+      "index": 244,
+      "name": "0xPlaygrounds/rig",
+      "url": "https://github.com/0xPlaygrounds/rig",
+      "localPath": "sources/0xPlaygrounds__rig",
+      "status": "existing",
+      "head": "586f543",
+      "durationMs": 83
+    },
+    {
+      "index": 245,
+      "name": "embabel/embabel-agent",
+      "url": "https://github.com/embabel/embabel-agent",
+      "localPath": "sources/embabel__embabel-agent",
+      "status": "existing",
+      "head": "e339213",
+      "durationMs": 111
+    },
+    {
+      "index": 246,
+      "name": "homeassistant-ai/ha-mcp",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "localPath": "sources/homeassistant-ai__ha-mcp",
+      "status": "existing",
+      "head": "b2a8ead",
+      "durationMs": 72
+    },
+    {
+      "index": 247,
+      "name": "i-am-bee/beeai-framework",
+      "url": "https://github.com/i-am-bee/beeai-framework",
+      "localPath": "sources/i-am-bee__beeai-framework",
+      "status": "existing",
+      "head": "08ea885",
+      "durationMs": 75
+    },
+    {
+      "index": 248,
+      "name": "neomjs/neo",
+      "url": "https://github.com/neomjs/neo",
+      "localPath": "sources/neomjs__neo",
+      "status": "existing",
+      "head": "2032eb22",
+      "durationMs": 638
+    },
+    {
+      "index": 249,
+      "name": "SciSharp/BotSharp",
+      "url": "https://github.com/SciSharp/BotSharp",
+      "localPath": "sources/SciSharp__BotSharp",
+      "status": "existing",
+      "head": "014d98a",
+      "durationMs": 98
+    },
+    {
+      "index": 250,
+      "name": "NVIDIA-AI-Blueprints/video-search-and-summarization",
+      "url": "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization",
+      "localPath": "sources/NVIDIA-AI-Blueprints__video-search-and-summarization",
+      "status": "existing",
+      "head": "01990363",
+      "durationMs": 721
+    },
+    {
+      "index": 251,
+      "name": "activeloopai/hivemind",
+      "url": "https://github.com/activeloopai/hivemind",
+      "localPath": "sources/activeloopai__hivemind",
+      "status": "existing",
+      "head": "94b66dd",
+      "durationMs": 55
+    },
+    {
+      "index": 252,
+      "name": "mathomhaus/guild",
+      "url": "https://github.com/mathomhaus/guild",
+      "localPath": "sources/mathomhaus__guild",
+      "status": "existing",
+      "head": "548877b",
+      "durationMs": 49
+    },
+    {
+      "index": 253,
+      "name": "tableau/tableau-mcp",
+      "url": "https://github.com/tableau/tableau-mcp",
+      "localPath": "sources/tableau__tableau-mcp",
+      "status": "existing",
+      "head": "82ee0e6",
+      "durationMs": 56
+    },
+    {
+      "index": 254,
+      "name": "kelos-dev/kelos",
+      "url": "https://github.com/kelos-dev/kelos",
+      "localPath": "sources/kelos-dev__kelos",
+      "status": "existing",
+      "head": "cf0f76b",
+      "durationMs": 43
+    },
+    {
+      "index": 255,
+      "name": "stacklok/toolhive-studio",
+      "url": "https://github.com/stacklok/toolhive-studio",
+      "localPath": "sources/stacklok__toolhive-studio",
+      "status": "existing",
+      "head": "cf2dff1",
+      "durationMs": 62
+    },
+    {
+      "index": 256,
+      "name": "tornikebolokadze1-cyber/awesome-ai-pulse-georgia",
+      "url": "https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia",
+      "localPath": "sources/tornikebolokadze1-cyber__awesome-ai-pulse-georgia",
+      "status": "existing",
+      "head": "e81fb79",
+      "durationMs": 36
+    },
+    {
+      "index": 257,
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "localPath": "sources/nilbuild__developer-roadmap",
+      "status": "existing",
+      "head": "9c5e7e5",
+      "durationMs": 407
+    },
+    {
+      "index": 258,
+      "name": "zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "localPath": "sources/zed-industries__zed",
+      "status": "existing",
+      "head": "362035d",
+      "durationMs": 156
+    },
+    {
+      "index": 259,
+      "name": "toeverything/AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "localPath": "sources/toeverything__AFFiNE",
+      "status": "existing",
+      "head": "13d9fe5",
+      "durationMs": 297
+    },
+    {
+      "index": 260,
+      "name": "camel-ai/camel",
+      "url": "https://github.com/camel-ai/camel",
+      "localPath": "sources/camel-ai__camel",
+      "status": "existing",
+      "head": "51ae9bb",
+      "durationMs": 113
+    },
+    {
+      "index": 261,
+      "name": "langchain-ai/langgraphjs",
+      "url": "https://github.com/langchain-ai/langgraphjs",
+      "localPath": "sources/langchain-ai__langgraphjs",
+      "status": "existing",
+      "head": "e6082e0",
+      "durationMs": 95
+    },
+    {
+      "index": 262,
+      "name": "matevip/mateclaw",
+      "url": "https://github.com/matevip/mateclaw",
+      "localPath": "sources/matevip__mateclaw",
+      "status": "existing",
+      "head": "8f8d43d",
+      "durationMs": 138
+    },
+    {
+      "index": 263,
+      "name": "paperboytm/spool",
+      "url": "https://github.com/paperboytm/spool",
+      "localPath": "sources/paperboytm__spool",
+      "status": "existing",
+      "head": "2aa829c",
+      "durationMs": 55
+    },
+    {
+      "index": 264,
+      "name": "okx/agent-trade-kit",
+      "url": "https://github.com/okx/agent-trade-kit",
+      "localPath": "sources/okx__agent-trade-kit",
+      "status": "existing",
+      "head": "df755fe",
+      "durationMs": 44
+    },
+    {
+      "index": 265,
+      "name": "griddynamics/rosetta",
+      "url": "https://github.com/griddynamics/rosetta",
+      "localPath": "sources/griddynamics__rosetta",
+      "status": "existing",
+      "head": "64aaa29",
+      "durationMs": 98
+    },
+    {
+      "index": 266,
+      "name": "agentlas-ai/Hephaestus",
+      "url": "https://github.com/agentlas-ai/Hephaestus",
+      "localPath": "sources/agentlas-ai__Hephaestus",
+      "status": "existing",
+      "head": "fd34db7",
+      "durationMs": 51
+    },
+    {
+      "index": 267,
+      "name": "karpathy/nanochat",
+      "url": "https://github.com/karpathy/nanochat",
+      "localPath": "sources/karpathy__nanochat",
+      "status": "existing",
+      "head": "dc54a1a",
+      "durationMs": 35
+    },
+    {
+      "index": 268,
+      "name": "continuedev/continue",
+      "url": "https://github.com/continuedev/continue",
+      "localPath": "sources/continuedev__continue",
+      "status": "existing",
+      "head": "eaa23c5",
+      "durationMs": 122
+    },
+    {
+      "index": 269,
+      "name": "dyad-sh/dyad",
+      "url": "https://github.com/dyad-sh/dyad",
+      "localPath": "sources/dyad-sh__dyad",
+      "status": "existing",
+      "head": "3afa402",
+      "durationMs": 82
+    },
+    {
+      "index": 270,
+      "name": "getmaxun/maxun",
+      "url": "https://github.com/getmaxun/maxun",
+      "localPath": "sources/getmaxun__maxun",
+      "status": "existing",
+      "head": "d581502",
+      "durationMs": 39
+    },
+    {
+      "index": 271,
+      "name": "Natively-AI-assistant/natively-cluely-ai-assistant",
+      "url": "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant",
+      "localPath": "sources/Natively-AI-assistant__natively-cluely-ai-assistant",
+      "status": "existing",
+      "head": "33feffb",
+      "durationMs": 72
+    },
+    {
+      "index": 272,
+      "name": "justrach/codedb",
+      "url": "https://github.com/justrach/codedb",
+      "localPath": "sources/justrach__codedb",
+      "status": "existing",
+      "head": "9dca2a5",
+      "durationMs": 55
+    },
+    {
+      "index": 273,
+      "name": "manojmallick/sigmap",
+      "url": "https://github.com/manojmallick/sigmap",
+      "localPath": "sources/manojmallick__sigmap",
+      "status": "existing",
+      "head": "827ba38",
+      "durationMs": 48
+    },
+    {
+      "index": 274,
+      "name": "JSONbored/awesome-claude",
+      "url": "https://github.com/JSONbored/awesome-claude",
+      "localPath": "sources/JSONbored__awesome-claude",
+      "status": "existing",
+      "head": "3064468",
+      "durationMs": 81
+    },
+    {
+      "index": 275,
+      "name": "airbytehq/airbyte-agent-sdk",
+      "url": "https://github.com/airbytehq/airbyte-agent-sdk",
+      "localPath": "sources/airbytehq__airbyte-agent-sdk",
+      "status": "existing",
+      "head": "11da5e3",
+      "durationMs": 49
+    },
+    {
+      "index": 276,
+      "name": "alexgreensh/repo-forensics",
+      "url": "https://github.com/alexgreensh/repo-forensics",
+      "localPath": "sources/alexgreensh__repo-forensics",
+      "status": "existing",
+      "head": "a0d82f9",
+      "durationMs": 39
+    },
+    {
+      "index": 277,
+      "name": "redis/redis",
+      "url": "https://github.com/redis/redis",
+      "localPath": "sources/redis__redis",
+      "status": "existing",
+      "head": "44a6a9f",
+      "durationMs": 74
+    },
+    {
+      "index": 278,
+      "name": "chroma-core/chroma",
+      "url": "https://github.com/chroma-core/chroma",
+      "localPath": "sources/chroma-core__chroma",
+      "status": "existing",
+      "head": "b8bf764",
+      "durationMs": 96
+    },
+    {
+      "index": 279,
+      "name": "nashsu/llm_wiki",
+      "url": "https://github.com/nashsu/llm_wiki",
+      "localPath": "sources/nashsu__llm_wiki",
+      "status": "existing",
+      "head": "d0437e8",
+      "durationMs": 45
+    },
+    {
+      "index": 280,
+      "name": "adbar/trafilatura",
+      "url": "https://github.com/adbar/trafilatura",
+      "localPath": "sources/adbar__trafilatura",
+      "status": "existing",
+      "head": "32b4050",
+      "durationMs": 69
+    },
+    {
+      "index": 281,
+      "name": "MCPJam/inspector",
+      "url": "https://github.com/MCPJam/inspector",
+      "localPath": "sources/MCPJam__inspector",
+      "status": "existing",
+      "head": "d8fefbf",
+      "durationMs": 92
+    },
+    {
+      "index": 282,
+      "name": "jgravelle/jcodemunch-mcp",
+      "url": "https://github.com/jgravelle/jcodemunch-mcp",
+      "localPath": "sources/jgravelle__jcodemunch-mcp",
+      "status": "existing",
+      "head": "64027a4",
+      "durationMs": 47
+    },
+    {
+      "index": 283,
+      "name": "containers/kubernetes-mcp-server",
+      "url": "https://github.com/containers/kubernetes-mcp-server",
+      "localPath": "sources/containers__kubernetes-mcp-server",
+      "status": "existing",
+      "head": "1d3eb28",
+      "durationMs": 49
+    },
+    {
+      "index": 284,
+      "name": "google/adk-docs",
+      "url": "https://github.com/google/adk-docs",
+      "localPath": "sources/google__adk-docs",
+      "status": "existing",
+      "head": "7e15976",
+      "durationMs": 122
+    },
+    {
+      "index": 285,
+      "name": "zhuyansen/agent-skills-hub",
+      "url": "https://github.com/zhuyansen/agent-skills-hub",
+      "localPath": "sources/zhuyansen__agent-skills-hub",
+      "status": "existing",
+      "head": "b05615f",
+      "durationMs": 40
+    },
+    {
+      "index": 286,
+      "name": "barry-ran/QuickDesk",
+      "url": "https://github.com/barry-ran/QuickDesk",
+      "localPath": "sources/barry-ran__QuickDesk",
+      "status": "existing",
+      "head": "30718d7",
+      "durationMs": 38
+    },
+    {
+      "index": 287,
+      "name": "google-marketing-solutions/google_ads_mcp",
+      "url": "https://github.com/google-marketing-solutions/google_ads_mcp",
+      "localPath": "sources/google-marketing-solutions__google_ads_mcp",
+      "status": "existing",
+      "head": "940959e",
+      "durationMs": 34
+    },
+    {
+      "index": 288,
+      "name": "bagidea/bagidea-office",
+      "url": "https://github.com/bagidea/bagidea-office",
+      "localPath": "sources/bagidea__bagidea-office",
+      "status": "existing",
+      "head": "00a8a93",
+      "durationMs": 77
+    },
+    {
+      "index": 289,
+      "name": "lemonade-sdk/lemonade",
+      "url": "https://github.com/lemonade-sdk/lemonade",
+      "localPath": "sources/lemonade-sdk__lemonade",
+      "status": "existing",
+      "head": "8e3e0b6",
+      "durationMs": 42
+    },
+    {
+      "index": 290,
+      "name": "griptape-ai/griptape",
+      "url": "https://github.com/griptape-ai/griptape",
+      "localPath": "sources/griptape-ai__griptape",
+      "status": "existing",
+      "head": "fd03641",
+      "durationMs": 77
+    },
+    {
+      "index": 291,
+      "name": "datopian/portaljs",
+      "url": "https://github.com/datopian/portaljs",
+      "localPath": "sources/datopian__portaljs",
+      "status": "existing",
+      "head": "cda774b",
+      "durationMs": 106
+    },
+    {
+      "index": 292,
+      "name": "Dicklesworthstone/coding_agent_session_search",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search",
+      "localPath": "sources/Dicklesworthstone__coding_agent_session_search",
+      "status": "existing",
+      "head": "9b221db",
+      "durationMs": 134
+    },
+    {
+      "index": 293,
+      "name": "helixml/helix",
+      "url": "https://github.com/helixml/helix",
+      "localPath": "sources/helixml__helix",
+      "status": "existing",
+      "head": "085c905",
+      "durationMs": 108
+    },
+    {
+      "index": 294,
+      "name": "GeminiLight/MindOS",
+      "url": "https://github.com/GeminiLight/MindOS",
+      "localPath": "sources/GeminiLight__MindOS",
+      "status": "existing",
+      "head": "d434bb2",
+      "durationMs": 102
+    },
+    {
+      "index": 295,
+      "name": "winstonkoh87/Athena-Public",
+      "url": "https://github.com/winstonkoh87/Athena-Public",
+      "localPath": "sources/winstonkoh87__Athena-Public",
+      "status": "existing",
+      "head": "6be8f38",
+      "durationMs": 66
+    },
+    {
+      "index": 296,
+      "name": "intuit/quickbooks-online-mcp-server",
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "localPath": "sources/intuit__quickbooks-online-mcp-server",
+      "status": "existing",
+      "head": "def3687",
+      "durationMs": 50
+    },
+    {
+      "index": 297,
+      "name": "borghei/Claude-Skills",
+      "url": "https://github.com/borghei/Claude-Skills",
+      "localPath": "sources/borghei__Claude-Skills",
+      "status": "existing",
+      "head": "13332d2",
+      "durationMs": 115
+    },
+    {
+      "index": 298,
+      "name": "Neverdecel/CodeRAG",
+      "url": "https://github.com/Neverdecel/CodeRAG",
+      "localPath": "sources/Neverdecel__CodeRAG",
+      "status": "existing",
+      "head": "cd744b6",
+      "durationMs": 41
+    },
+    {
+      "index": 299,
+      "name": "rush-db/rushdb",
+      "url": "https://github.com/rush-db/rushdb",
+      "localPath": "sources/rush-db__rushdb",
+      "status": "existing",
+      "head": "03edf8b",
+      "durationMs": 70
+    },
+    {
+      "index": 300,
+      "name": "SocketDev/socket-mcp",
+      "url": "https://github.com/SocketDev/socket-mcp",
+      "localPath": "sources/SocketDev__socket-mcp",
+      "status": "existing",
+      "head": "750761a",
+      "durationMs": 91
+    },
+    {
+      "index": 301,
+      "name": "LMCache/LMCache",
+      "url": "https://github.com/LMCache/LMCache",
+      "localPath": "sources/LMCache__LMCache",
+      "status": "existing",
+      "head": "e1fdbc6",
+      "durationMs": 81
+    },
+    {
+      "index": 302,
+      "name": "nex-crm/wuphf",
+      "url": "https://github.com/nex-crm/wuphf",
+      "localPath": "sources/nex-crm__wuphf",
+      "status": "existing",
+      "head": "a582774",
+      "durationMs": 120
+    },
+    {
+      "index": 303,
+      "name": "modelcontextprotocol/quickstart-resources",
+      "url": "https://github.com/modelcontextprotocol/quickstart-resources",
+      "localPath": "sources/modelcontextprotocol__quickstart-resources",
+      "status": "existing",
+      "head": "2497b1d",
+      "durationMs": 38
+    },
+    {
+      "index": 304,
+      "name": "truffle-ai/dexto",
+      "url": "https://github.com/truffle-ai/dexto",
+      "localPath": "sources/truffle-ai__dexto",
+      "status": "existing",
+      "head": "5500bad",
+      "durationMs": 83
+    },
+    {
+      "index": 305,
+      "name": "giselles-ai/giselle",
+      "url": "https://github.com/giselles-ai/giselle",
+      "localPath": "sources/giselles-ai__giselle",
+      "status": "existing",
+      "head": "dc097df",
+      "durationMs": 90
+    },
+    {
+      "index": 306,
+      "name": "Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
+      "url": "https://github.com/Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server",
+      "localPath": "sources/Shelpuk-AI-Technology-Consulting__kindly-web-search-mcp-server",
+      "status": "existing",
+      "head": "2b76afb",
+      "durationMs": 46
+    },
+    {
+      "index": 307,
+      "name": "rebel0789/codexpro",
+      "url": "https://github.com/rebel0789/codexpro",
+      "localPath": "sources/rebel0789__codexpro",
+      "status": "existing",
+      "head": "76ed1eb",
+      "durationMs": 36
+    },
+    {
+      "index": 308,
+      "name": "DAWNCR0W/affine-mcp-server",
+      "url": "https://github.com/DAWNCR0W/affine-mcp-server",
+      "localPath": "sources/DAWNCR0W__affine-mcp-server",
+      "status": "existing",
+      "head": "50f8853",
+      "durationMs": 39
+    },
+    {
+      "index": 309,
+      "name": "kubeflow/mcp-apache-spark-history-server",
+      "url": "https://github.com/kubeflow/mcp-apache-spark-history-server",
+      "localPath": "sources/kubeflow__mcp-apache-spark-history-server",
+      "status": "existing",
+      "head": "ef9b081",
+      "durationMs": 49
+    },
+    {
+      "index": 310,
+      "name": "Dicklesworthstone/meta_skill",
+      "url": "https://github.com/Dicklesworthstone/meta_skill",
+      "localPath": "sources/Dicklesworthstone__meta_skill",
+      "status": "existing",
+      "head": "c60d6c1",
+      "durationMs": 68
+    },
+    {
+      "index": 311,
+      "name": "nomic-ai/gpt4all",
+      "url": "https://github.com/nomic-ai/gpt4all",
+      "localPath": "sources/nomic-ai__gpt4all",
+      "status": "existing",
+      "head": "b666d16",
+      "durationMs": 62
+    },
+    {
+      "index": 312,
+      "name": "iOfficeAI/AionUi",
+      "url": "https://github.com/iOfficeAI/AionUi",
+      "localPath": "sources/iOfficeAI__AionUi",
+      "status": "existing",
+      "head": "9e6a072",
+      "durationMs": 99
+    },
+    {
+      "index": 313,
+      "name": "microsoft/mcp-for-beginners",
+      "url": "https://github.com/microsoft/mcp-for-beginners",
+      "localPath": "sources/microsoft__mcp-for-beginners",
+      "status": "existing",
+      "head": "fb2321e1",
+      "durationMs": 603
+    },
+    {
+      "index": 314,
+      "name": "xorbitsai/inference",
+      "url": "https://github.com/xorbitsai/inference",
+      "localPath": "sources/xorbitsai__inference",
+      "status": "existing",
+      "head": "1fbae04",
+      "durationMs": 88
+    },
+    {
+      "index": 315,
+      "name": "di-sukharev/opencommit",
+      "url": "https://github.com/di-sukharev/opencommit",
+      "localPath": "sources/di-sukharev__opencommit",
+      "status": "existing",
+      "head": "85c7715",
+      "durationMs": 40
+    },
+    {
+      "index": 316,
+      "name": "agentscope-ai/agentscope-java",
+      "url": "https://github.com/agentscope-ai/agentscope-java",
+      "localPath": "sources/agentscope-ai__agentscope-java",
+      "status": "existing",
+      "head": "9120dc0",
+      "durationMs": 112
+    },
+    {
+      "index": 317,
+      "name": "yologdev/yoyo-evolve",
+      "url": "https://github.com/yologdev/yoyo-evolve",
+      "localPath": "sources/yologdev__yoyo-evolve",
+      "status": "existing",
+      "head": "64ccdef",
+      "durationMs": 36
+    },
+    {
+      "index": 318,
+      "name": "openakita/openakita",
+      "url": "https://github.com/openakita/openakita",
+      "localPath": "sources/openakita__openakita",
+      "status": "existing",
+      "head": "c23b4c0",
+      "durationMs": 117
+    },
+    {
+      "index": 319,
+      "name": "datagouv/datagouv-mcp",
+      "url": "https://github.com/datagouv/datagouv-mcp",
+      "localPath": "sources/datagouv__datagouv-mcp",
+      "status": "existing",
+      "head": "88375fa",
+      "durationMs": 34
+    },
+    {
+      "index": 320,
+      "name": "modelcontextprotocol/kotlin-sdk",
+      "url": "https://github.com/modelcontextprotocol/kotlin-sdk",
+      "localPath": "sources/modelcontextprotocol__kotlin-sdk",
+      "status": "existing",
+      "head": "75a944f",
+      "durationMs": 48
+    },
+    {
+      "index": 321,
+      "name": "your-papa/obsidian-Smart2Brain",
+      "url": "https://github.com/your-papa/obsidian-Smart2Brain",
+      "localPath": "sources/your-papa__obsidian-Smart2Brain",
+      "status": "existing",
+      "head": "bb410b2",
+      "durationMs": 49
+    },
+    {
+      "index": 322,
+      "name": "redis/mcp-redis",
+      "url": "https://github.com/redis/mcp-redis",
+      "localPath": "sources/redis__mcp-redis",
+      "status": "existing",
+      "head": "e3ed320",
+      "durationMs": 36
+    },
+    {
+      "index": 323,
+      "name": "proffesor-for-testing/agentic-qe",
+      "url": "https://github.com/proffesor-for-testing/agentic-qe",
+      "localPath": "sources/proffesor-for-testing__agentic-qe",
+      "status": "existing",
+      "head": "e664f3e",
+      "durationMs": 155
+    },
+    {
+      "index": 324,
+      "name": "StarRocks/mcp-server-starrocks",
+      "url": "https://github.com/StarRocks/mcp-server-starrocks",
+      "localPath": "sources/StarRocks__mcp-server-starrocks",
+      "status": "existing",
+      "head": "75bc4a9",
+      "durationMs": 36
+    },
+    {
+      "index": 325,
+      "name": "Glade-tool/glade-mcp",
+      "url": "https://github.com/Glade-tool/glade-mcp",
+      "localPath": "sources/Glade-tool__glade-mcp",
+      "status": "existing",
+      "head": "4d07c86",
+      "durationMs": 59
+    },
+    {
+      "index": 326,
+      "name": "SikamikanikoBG/homelab-monitor",
+      "url": "https://github.com/SikamikanikoBG/homelab-monitor",
+      "localPath": "sources/SikamikanikoBG__homelab-monitor",
+      "status": "existing",
+      "head": "b35f3d4",
+      "durationMs": 45
+    },
+    {
+      "index": 327,
+      "name": "nirholas/three.ws",
+      "url": "https://github.com/nirholas/three.ws",
+      "localPath": "sources/nirholas__three.ws",
+      "status": "existing",
+      "head": "7596224",
+      "durationMs": 217
+    },
+    {
+      "index": 328,
+      "name": "henomis/phero",
+      "url": "https://github.com/henomis/phero",
+      "localPath": "sources/henomis__phero",
+      "status": "existing",
+      "head": "342f10b",
+      "durationMs": 47
+    },
+    {
+      "index": 329,
+      "name": "zubair-trabzada/geo-seo-claude",
+      "url": "https://github.com/zubair-trabzada/geo-seo-claude",
+      "localPath": "sources/zubair-trabzada__geo-seo-claude",
+      "status": "existing",
+      "head": "9eec32f",
+      "durationMs": 37
+    },
+    {
+      "index": 330,
+      "name": "hexo-ai/sia",
+      "url": "https://github.com/hexo-ai/sia",
+      "localPath": "sources/hexo-ai__sia",
+      "status": "existing",
+      "head": "6ad5ad7",
+      "durationMs": 38
+    },
+    {
+      "index": 331,
+      "name": "tuya/TuyaOpen",
+      "url": "https://github.com/tuya/TuyaOpen",
+      "localPath": "sources/tuya__TuyaOpen",
+      "status": "existing",
+      "head": "a245349",
+      "durationMs": 418
+    },
+    {
+      "index": 332,
+      "name": "espressif/esp-claw",
+      "url": "https://github.com/espressif/esp-claw",
+      "localPath": "sources/espressif__esp-claw",
+      "status": "existing",
+      "head": "f6ac698",
+      "durationMs": 68
+    },
+    {
+      "index": 333,
+      "name": "numtide/llm-agents.nix",
+      "url": "https://github.com/numtide/llm-agents.nix",
+      "localPath": "sources/numtide__llm-agents.nix",
+      "status": "existing",
+      "head": "8345e98",
+      "durationMs": 48
+    },
+    {
+      "index": 334,
+      "name": "bitbonsai/mcpvault",
+      "url": "https://github.com/bitbonsai/mcpvault",
+      "localPath": "sources/bitbonsai__mcpvault",
+      "status": "existing",
+      "head": "b9ea91a",
+      "durationMs": 36
+    },
+    {
+      "index": 335,
+      "name": "robotmcp/ros-mcp-server",
+      "url": "https://github.com/robotmcp/ros-mcp-server",
+      "localPath": "sources/robotmcp__ros-mcp-server",
+      "status": "existing",
+      "head": "0eb504a",
+      "durationMs": 43
+    },
+    {
+      "index": 336,
+      "name": "WordPress/mcp-adapter",
+      "url": "https://github.com/WordPress/mcp-adapter",
+      "localPath": "sources/WordPress__mcp-adapter",
+      "status": "existing",
+      "head": "529b9e9",
+      "durationMs": 38
+    },
+    {
+      "index": 337,
+      "name": "tinyfish-io/agentql-mcp",
+      "url": "https://github.com/tinyfish-io/agentql-mcp",
+      "localPath": "sources/tinyfish-io__agentql-mcp",
+      "status": "existing",
+      "head": "4acd231",
+      "durationMs": 34
+    },
+    {
+      "index": 338,
+      "name": "artokun/comfyui-mcp",
+      "url": "https://github.com/artokun/comfyui-mcp",
+      "localPath": "sources/artokun__comfyui-mcp",
+      "status": "existing",
+      "head": "248011a",
+      "durationMs": 42
+    },
+    {
+      "index": 339,
+      "name": "joshuaswarren/remnic",
+      "url": "https://github.com/joshuaswarren/remnic",
+      "localPath": "sources/joshuaswarren__remnic",
+      "status": "existing",
+      "head": "37e9d68",
+      "durationMs": 92
+    },
+    {
+      "index": 340,
+      "name": "archcore-ai/cli",
+      "url": "https://github.com/archcore-ai/cli",
+      "localPath": "sources/archcore-ai__cli",
+      "status": "existing",
+      "head": "c79cb91",
+      "durationMs": 45
+    },
+    {
+      "index": 341,
+      "name": "project-nomos/nomos",
+      "url": "https://github.com/project-nomos/nomos",
+      "localPath": "sources/project-nomos__nomos",
+      "status": "existing",
+      "head": "34d6619",
+      "durationMs": 50
+    },
+    {
+      "index": 342,
+      "name": "RunanywhereAI/runanywhere-sdks",
+      "url": "https://github.com/RunanywhereAI/runanywhere-sdks",
+      "localPath": "sources/RunanywhereAI__runanywhere-sdks",
+      "status": "existing",
+      "head": "c272a1f",
+      "durationMs": 159
+    },
+    {
+      "index": 343,
+      "name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "localPath": "sources/MadsLorentzen__ai-job-search",
+      "status": "existing",
+      "head": "37a0eed",
+      "durationMs": 40
+    },
+    {
+      "index": 344,
+      "name": "av/harbor",
+      "url": "https://github.com/av/harbor",
+      "localPath": "sources/av__harbor",
+      "status": "existing",
+      "head": "4f3e97a",
+      "durationMs": 85
+    },
+    {
+      "index": 345,
+      "name": "open-mercato/open-mercato",
+      "url": "https://github.com/open-mercato/open-mercato",
+      "localPath": "sources/open-mercato__open-mercato",
+      "status": "existing",
+      "head": "0d2e1ca",
+      "durationMs": 282
+    },
+    {
+      "index": 346,
+      "name": "mongodb-js/mongodb-mcp-server",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "localPath": "sources/mongodb-js__mongodb-mcp-server",
+      "status": "existing",
+      "head": "4ad6ce3",
+      "durationMs": 50
+    },
+    {
+      "index": 347,
+      "name": "modelstudioai/cli",
+      "url": "https://github.com/modelstudioai/cli",
+      "localPath": "sources/modelstudioai__cli",
+      "status": "existing",
+      "head": "0cd0daa",
+      "durationMs": 42
+    },
+    {
+      "index": 348,
+      "name": "us/crw",
+      "url": "https://github.com/us/crw",
+      "localPath": "sources/us__crw",
+      "status": "existing",
+      "head": "06acb83",
+      "durationMs": 49
+    },
+    {
+      "index": 349,
+      "name": "awkoy/notion-mcp-server",
+      "url": "https://github.com/awkoy/notion-mcp-server",
+      "localPath": "sources/awkoy__notion-mcp-server",
+      "status": "existing",
+      "head": "717cd58",
+      "durationMs": 47
+    },
+    {
+      "index": 350,
+      "name": "grafana/loki-mcp",
+      "url": "https://github.com/grafana/loki-mcp",
+      "localPath": "sources/grafana__loki-mcp",
+      "status": "existing",
+      "head": "c814856",
+      "durationMs": 39
+    },
+    {
+      "index": 351,
+      "name": "vishalsachdev/canvas-mcp",
+      "url": "https://github.com/vishalsachdev/canvas-mcp",
+      "localPath": "sources/vishalsachdev__canvas-mcp",
+      "status": "existing",
+      "head": "20da02d",
+      "durationMs": 43
+    },
+    {
+      "index": 352,
+      "name": "alfredolopez80/multi-agent-ralph-loop",
+      "url": "https://github.com/alfredolopez80/multi-agent-ralph-loop",
+      "localPath": "sources/alfredolopez80__multi-agent-ralph-loop",
+      "status": "existing",
+      "head": "3191af6",
+      "durationMs": 67
+    },
+    {
+      "index": 353,
+      "name": "Mybono/ai-orchestrator",
+      "url": "https://github.com/Mybono/ai-orchestrator",
+      "localPath": "sources/Mybono__ai-orchestrator",
+      "status": "existing",
+      "head": "03bb0a5",
+      "durationMs": 48
+    },
+    {
+      "index": 354,
+      "name": "kvcache-ai/Mooncake",
+      "url": "https://github.com/kvcache-ai/Mooncake",
+      "localPath": "sources/kvcache-ai__Mooncake",
+      "status": "existing",
+      "head": "8b884bc",
+      "durationMs": 73
+    },
+    {
+      "index": 355,
+      "name": "Bitterbot-AI/bitterbot-desktop",
+      "url": "https://github.com/Bitterbot-AI/bitterbot-desktop",
+      "localPath": "sources/Bitterbot-AI__bitterbot-desktop",
+      "status": "existing",
+      "head": "6c995e3",
+      "durationMs": 143
+    },
+    {
+      "index": 356,
+      "name": "tickernelz/opencode-mem",
+      "url": "https://github.com/tickernelz/opencode-mem",
+      "localPath": "sources/tickernelz__opencode-mem",
+      "status": "existing",
+      "head": "eeeed35",
+      "durationMs": 39
+    },
+    {
+      "index": 357,
+      "name": "PurpleDoubleD/locally-uncensored",
+      "url": "https://github.com/PurpleDoubleD/locally-uncensored",
+      "localPath": "sources/PurpleDoubleD__locally-uncensored",
+      "status": "existing",
+      "head": "9594a1b",
+      "durationMs": 43
+    },
+    {
+      "index": 358,
+      "name": "403errors/repomind",
+      "url": "https://github.com/403errors/repomind",
+      "localPath": "sources/403errors__repomind",
+      "status": "existing",
+      "head": "74da759",
+      "durationMs": 47
+    },
+    {
+      "index": 359,
+      "name": "tanaikech/ggsrun",
+      "url": "https://github.com/tanaikech/ggsrun",
+      "localPath": "sources/tanaikech__ggsrun",
+      "status": "existing",
+      "head": "9d0a52a",
+      "durationMs": 36
+    },
+    {
+      "index": 360,
+      "name": "code-forge-temple/agentic-signal",
+      "url": "https://github.com/code-forge-temple/agentic-signal",
+      "localPath": "sources/code-forge-temple__agentic-signal",
+      "status": "existing",
+      "head": "dea6dd0",
+      "durationMs": 55
+    },
+    {
+      "index": 361,
+      "name": "simota/agent-skills",
+      "url": "https://github.com/simota/agent-skills",
+      "localPath": "sources/simota__agent-skills",
+      "status": "existing",
+      "head": "b27a274",
+      "durationMs": 70
+    },
+    {
+      "index": 362,
+      "name": "tobocop2/lilbee",
+      "url": "https://github.com/tobocop2/lilbee",
+      "localPath": "sources/tobocop2__lilbee",
+      "status": "existing",
+      "head": "b7167f3",
+      "durationMs": 57
+    },
+    {
+      "index": 363,
+      "name": "TabbyML/tabby",
+      "url": "https://github.com/TabbyML/tabby",
+      "localPath": "sources/TabbyML__tabby",
+      "status": "existing",
+      "head": "e8608d6",
+      "durationMs": 95
+    },
+    {
+      "index": 364,
+      "name": "gpustack/gpustack",
+      "url": "https://github.com/gpustack/gpustack",
+      "localPath": "sources/gpustack__gpustack",
+      "status": "existing",
+      "head": "88bd070",
+      "durationMs": 68
+    },
+    {
+      "index": 365,
+      "name": "opensolon/solon",
+      "url": "https://github.com/opensolon/solon",
+      "localPath": "sources/opensolon__solon",
+      "status": "existing",
+      "head": "1aedef9",
+      "durationMs": 123
+    },
+    {
+      "index": 366,
+      "name": "wassim249/fastapi-langgraph-agent-production-ready-template",
+      "url": "https://github.com/wassim249/fastapi-langgraph-agent-production-ready-template",
+      "localPath": "sources/wassim249__fastapi-langgraph-agent-production-ready-template",
+      "status": "existing",
+      "head": "36e9c33",
+      "durationMs": 35
+    },
+    {
+      "index": 367,
+      "name": "kubeai-project/kubeai",
+      "url": "https://github.com/kubeai-project/kubeai",
+      "localPath": "sources/kubeai-project__kubeai",
+      "status": "existing",
+      "head": "caa8250",
+      "durationMs": 44
+    },
+    {
+      "index": 368,
+      "name": "Zoo-Code-Org/Zoo-Code",
+      "url": "https://github.com/Zoo-Code-Org/Zoo-Code",
+      "localPath": "sources/Zoo-Code-Org__Zoo-Code",
+      "status": "existing",
+      "head": "e80039b",
+      "durationMs": 106
+    },
+    {
+      "index": 369,
+      "name": "microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator",
+      "url": "https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator",
+      "localPath": "sources/microsoft__Multi-Agent-Custom-Automation-Engine-Solution-Accelerator",
+      "status": "existing",
+      "head": "bf9162d",
+      "durationMs": 45
+    },
+    {
+      "index": 370,
+      "name": "bosun-ai/swiftide",
+      "url": "https://github.com/bosun-ai/swiftide",
+      "localPath": "sources/bosun-ai__swiftide",
+      "status": "existing",
+      "head": "e5fb532",
+      "durationMs": 51
+    },
+    {
+      "index": 371,
+      "name": "0xranx/OpenContext",
+      "url": "https://github.com/0xranx/OpenContext",
+      "localPath": "sources/0xranx__OpenContext",
+      "status": "existing",
+      "head": "0649e71",
+      "durationMs": 46
+    },
+    {
+      "index": 372,
+      "name": "henrydaum/second-brain",
+      "url": "https://github.com/henrydaum/second-brain",
+      "localPath": "sources/henrydaum__second-brain",
+      "status": "existing",
+      "head": "8294a5d",
+      "durationMs": 45
+    },
+    {
+      "index": 373,
+      "name": "zhitongblog/solomd",
+      "url": "https://github.com/zhitongblog/solomd",
+      "localPath": "sources/zhitongblog__solomd",
+      "status": "existing",
+      "head": "65f2b77",
+      "durationMs": 68
+    },
+    {
+      "index": 374,
+      "name": "Goldentrii/AgentRecall-MCP",
+      "url": "https://github.com/Goldentrii/AgentRecall-MCP",
+      "localPath": "sources/Goldentrii__AgentRecall-MCP",
+      "status": "existing",
+      "head": "b6808dc",
+      "durationMs": 52
+    },
+    {
+      "index": 375,
+      "name": "synapseorch-ai/synapse-ai",
+      "url": "https://github.com/synapseorch-ai/synapse-ai",
+      "localPath": "sources/synapseorch-ai__synapse-ai",
+      "status": "existing",
+      "head": "2c3a394",
+      "durationMs": 47
+    },
+    {
+      "index": 376,
+      "name": "yoloshii/ClawMem",
+      "url": "https://github.com/yoloshii/ClawMem",
+      "localPath": "sources/yoloshii__ClawMem",
+      "status": "existing",
+      "head": "8016a44",
+      "durationMs": 40
+    },
+    {
+      "index": 377,
+      "name": "strands-agents/evals",
+      "url": "https://github.com/strands-agents/evals",
+      "localPath": "sources/strands-agents__evals",
+      "status": "existing",
+      "head": "164cdb7",
+      "durationMs": 46
+    },
+    {
+      "index": 378,
+      "name": "makoMakoGo/fish-claude",
+      "url": "https://github.com/makoMakoGo/fish-claude",
+      "localPath": "sources/makoMakoGo__fish-claude",
+      "status": "existing",
+      "head": "43b3479",
+      "durationMs": 40
+    },
+    {
+      "index": 379,
+      "name": "OctagonAI/octagon-mcp-server",
+      "url": "https://github.com/OctagonAI/octagon-mcp-server",
+      "localPath": "sources/OctagonAI__octagon-mcp-server",
+      "status": "existing",
+      "head": "d262fe9",
+      "durationMs": 42
+    },
+    {
+      "index": 380,
+      "name": "introfini/ZotSeek",
+      "url": "https://github.com/introfini/ZotSeek",
+      "localPath": "sources/introfini__ZotSeek",
+      "status": "existing",
+      "head": "dea5fa0",
+      "durationMs": 43
+    },
+    {
+      "index": 381,
+      "name": "vespa-engine/vespa",
+      "url": "https://github.com/vespa-engine/vespa",
+      "localPath": "sources/vespa-engine__vespa",
+      "status": "existing",
+      "head": "4f988370",
+      "durationMs": 490
+    },
+    {
+      "index": 382,
+      "name": "HelixDB/helix-db",
+      "url": "https://github.com/HelixDB/helix-db",
+      "localPath": "sources/HelixDB__helix-db",
+      "status": "existing",
+      "head": "37bd438",
+      "durationMs": 44
+    },
+    {
+      "index": 383,
+      "name": "spiceai/spiceai",
+      "url": "https://github.com/spiceai/spiceai",
+      "localPath": "sources/spiceai__spiceai",
+      "status": "existing",
+      "head": "c6c7198",
+      "durationMs": 842
+    },
+    {
+      "index": 384,
+      "name": "bgauryy/octocode",
+      "url": "https://github.com/bgauryy/octocode",
+      "localPath": "sources/bgauryy__octocode",
+      "status": "existing",
+      "head": "4071676",
+      "durationMs": 77
+    },
+    {
+      "index": 385,
+      "name": "modelcontextprotocol/ruby-sdk",
+      "url": "https://github.com/modelcontextprotocol/ruby-sdk",
+      "localPath": "sources/modelcontextprotocol__ruby-sdk",
+      "status": "existing",
+      "head": "c8e0cd9",
+      "durationMs": 45
+    },
+    {
+      "index": 386,
+      "name": "orneryd/NornicDB",
+      "url": "https://github.com/orneryd/NornicDB",
+      "localPath": "sources/orneryd__NornicDB",
+      "status": "existing",
+      "head": "f1fb4be",
+      "durationMs": 112
+    },
+    {
+      "index": 387,
+      "name": "witchan/ios-mcp",
+      "url": "https://github.com/witchan/ios-mcp",
+      "localPath": "sources/witchan__ios-mcp",
+      "status": "existing",
+      "head": "6f20c55",
+      "durationMs": 46
+    },
+    {
+      "index": 388,
+      "name": "puppyone-ai/puppyone",
+      "url": "https://github.com/puppyone-ai/puppyone",
+      "localPath": "sources/puppyone-ai__puppyone",
+      "status": "existing",
+      "head": "f07c94b",
+      "durationMs": 112
+    },
+    {
+      "index": 389,
+      "name": "tetherto/qvac",
+      "url": "https://github.com/tetherto/qvac",
+      "localPath": "sources/tetherto__qvac",
+      "status": "existing",
+      "head": "d7ac230",
+      "durationMs": 148
+    },
+    {
+      "index": 390,
+      "name": "gollem-dev/gollem",
+      "url": "https://github.com/gollem-dev/gollem",
+      "localPath": "sources/gollem-dev__gollem",
+      "status": "existing",
+      "head": "f5dd652",
+      "durationMs": 43
+    },
+    {
+      "index": 391,
+      "name": "CodeBendKit/codeseek",
+      "url": "https://github.com/CodeBendKit/codeseek",
+      "localPath": "sources/CodeBendKit__codeseek",
+      "status": "existing",
+      "head": "f11acd1",
+      "durationMs": 43
+    },
+    {
+      "index": 392,
+      "name": "Filippo-Venturini/ctxvault",
+      "url": "https://github.com/Filippo-Venturini/ctxvault",
+      "localPath": "sources/Filippo-Venturini__ctxvault",
+      "status": "existing",
+      "head": "48cf603",
+      "durationMs": 40
+    },
+    {
+      "index": 393,
+      "name": "PaddlePaddle/FastDeploy",
+      "url": "https://github.com/PaddlePaddle/FastDeploy",
+      "localPath": "sources/PaddlePaddle__FastDeploy",
+      "status": "existing",
+      "head": "6076add",
+      "durationMs": 108
+    },
+    {
+      "index": 394,
+      "name": "taishi-i/awesome-ChatGPT-repositories",
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+      "localPath": "sources/taishi-i__awesome-ChatGPT-repositories",
+      "status": "existing",
+      "head": "18128d9",
+      "durationMs": 35
+    },
+    {
+      "index": 395,
+      "name": "ThousandBirdsInc/chidori",
+      "url": "https://github.com/ThousandBirdsInc/chidori",
+      "localPath": "sources/ThousandBirdsInc__chidori",
+      "status": "existing",
+      "head": "83d040f",
+      "durationMs": 39
+    },
+    {
+      "index": 396,
+      "name": "ZHangZHengEric/Sage",
+      "url": "https://github.com/ZHangZHengEric/Sage",
+      "localPath": "sources/ZHangZHengEric__Sage",
+      "status": "existing",
+      "head": "a14d9b9",
+      "durationMs": 82
+    },
+    {
+      "index": 397,
+      "name": "EmbeddedLLM/JamAIBase",
+      "url": "https://github.com/EmbeddedLLM/JamAIBase",
+      "localPath": "sources/EmbeddedLLM__JamAIBase",
+      "status": "existing",
+      "head": "91e2743",
+      "durationMs": 61
+    },
+    {
+      "index": 398,
+      "name": "asklokesh/loki-mode",
+      "url": "https://github.com/asklokesh/loki-mode",
+      "localPath": "sources/asklokesh__loki-mode",
+      "status": "existing",
+      "head": "4acc5d2",
+      "durationMs": 130
+    },
+    {
+      "index": 399,
+      "name": "sashiko-dev/sashiko",
+      "url": "https://github.com/sashiko-dev/sashiko",
+      "localPath": "sources/sashiko-dev__sashiko",
+      "status": "existing",
+      "head": "47e7035",
+      "durationMs": 49
+    },
+    {
+      "index": 400,
+      "name": "jonfairbanks/local-rag",
+      "url": "https://github.com/jonfairbanks/local-rag",
+      "localPath": "sources/jonfairbanks__local-rag",
+      "status": "existing",
+      "head": "8277066",
+      "durationMs": 38
+    },
+    {
+      "index": 401,
+      "name": "getsentry/sentry-mcp",
+      "url": "https://github.com/getsentry/sentry-mcp",
+      "localPath": "sources/getsentry__sentry-mcp",
+      "status": "existing",
+      "head": "5dee0fc",
+      "durationMs": 60
+    },
+    {
+      "index": 402,
+      "name": "ChiR24/Unreal_mcp",
+      "url": "https://github.com/ChiR24/Unreal_mcp",
+      "localPath": "sources/ChiR24__Unreal_mcp",
+      "status": "existing",
+      "head": "e1ceb64",
+      "durationMs": 83
+    },
+    {
+      "index": 403,
+      "name": "BjornMelin/docmind-ai-llm",
+      "url": "https://github.com/BjornMelin/docmind-ai-llm",
+      "localPath": "sources/BjornMelin__docmind-ai-llm",
+      "status": "existing",
+      "head": "9e6cbec",
+      "durationMs": 58
+    },
+    {
+      "index": 404,
+      "name": "reshaprio/reshapr",
+      "url": "https://github.com/reshaprio/reshapr",
+      "localPath": "sources/reshaprio__reshapr",
+      "status": "existing",
+      "head": "3166e1c",
+      "durationMs": 60
+    },
+    {
+      "index": 405,
+      "name": "Wide-Moat/open-computer-use",
+      "url": "https://github.com/Wide-Moat/open-computer-use",
+      "localPath": "sources/Wide-Moat__open-computer-use",
+      "status": "existing",
+      "head": "d7c182f",
+      "durationMs": 62
+    },
+    {
+      "index": 406,
+      "name": "hwdsl2/self-hosted-ai-stack",
+      "url": "https://github.com/hwdsl2/self-hosted-ai-stack",
+      "localPath": "sources/hwdsl2__self-hosted-ai-stack",
+      "status": "existing",
+      "head": "0c58b52",
+      "durationMs": 40
+    },
+    {
+      "index": 407,
+      "name": "MarcoPorcellato/matryca-plumber",
+      "url": "https://github.com/MarcoPorcellato/matryca-plumber",
+      "localPath": "sources/MarcoPorcellato__matryca-plumber",
+      "status": "existing",
+      "head": "5f2d75a",
+      "durationMs": 58
+    },
+    {
+      "index": 408,
+      "name": "skyzh/tiny-llm",
+      "url": "https://github.com/skyzh/tiny-llm",
+      "localPath": "sources/skyzh__tiny-llm",
+      "status": "existing",
+      "head": "efb0c89",
+      "durationMs": 42
+    },
+    {
+      "index": 409,
+      "name": "memohai/Memoh",
+      "url": "https://github.com/memohai/Memoh",
+      "localPath": "sources/memohai__Memoh",
+      "status": "existing",
+      "head": "ed28f16",
+      "durationMs": 95
+    },
+    {
+      "index": 410,
+      "name": "liaohch3/claude-tap",
+      "url": "https://github.com/liaohch3/claude-tap",
+      "localPath": "sources/liaohch3__claude-tap",
+      "status": "existing",
+      "head": "8759349",
+      "durationMs": 54
+    },
+    {
+      "index": 411,
+      "name": "C0nw0nk/Nginx-Lua-Anti-DDoS",
+      "url": "https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS",
+      "localPath": "sources/C0nw0nk__Nginx-Lua-Anti-DDoS",
+      "status": "existing",
+      "head": "4ea0fe2",
+      "durationMs": 37
+    },
+    {
+      "index": 412,
+      "name": "ThomasVitale/llm-apps-java-spring-ai",
+      "url": "https://github.com/ThomasVitale/llm-apps-java-spring-ai",
+      "localPath": "sources/ThomasVitale__llm-apps-java-spring-ai",
+      "status": "existing",
+      "head": "a38e592",
+      "durationMs": 52
+    },
+    {
+      "index": 413,
+      "name": "memex-lab/memex",
+      "url": "https://github.com/memex-lab/memex",
+      "localPath": "sources/memex-lab__memex",
+      "status": "existing",
+      "head": "c2d2349",
+      "durationMs": 67
+    },
+    {
+      "index": 414,
+      "name": "microsoft/RAMPART",
+      "url": "https://github.com/microsoft/RAMPART",
+      "localPath": "sources/microsoft__RAMPART",
+      "status": "existing",
+      "head": "52a269a",
+      "durationMs": 40
+    },
+    {
+      "index": 415,
+      "name": "marcusquinn/aidevops",
+      "url": "https://github.com/marcusquinn/aidevops",
+      "localPath": "sources/marcusquinn__aidevops",
+      "status": "existing",
+      "head": "433ebe3",
+      "durationMs": 184
+    },
+    {
+      "index": 416,
+      "name": "SheikhSheave/Claude-Code-CLI-Reference",
+      "url": "https://github.com/SheikhSheave/Claude-Code-CLI-Reference",
+      "localPath": "sources/SheikhSheave__Claude-Code-CLI-Reference",
+      "status": "existing",
+      "head": "63f62bf",
+      "durationMs": 41
+    },
+    {
+      "index": 417,
+      "name": "shivasurya/code-pathfinder",
+      "url": "https://github.com/shivasurya/code-pathfinder",
+      "localPath": "sources/shivasurya__code-pathfinder",
+      "status": "existing",
+      "head": "460d0d3",
+      "durationMs": 100
+    },
+    {
+      "index": 418,
+      "name": "Dicklesworthstone/mcp_agent_mail_rust",
+      "url": "https://github.com/Dicklesworthstone/mcp_agent_mail_rust",
+      "localPath": "sources/Dicklesworthstone__mcp_agent_mail_rust",
+      "status": "existing",
+      "head": "59b9349",
+      "durationMs": 159
+    },
+    {
+      "index": 419,
+      "name": "ZenSystemAI/Zengram",
+      "url": "https://github.com/ZenSystemAI/Zengram",
+      "localPath": "sources/ZenSystemAI__Zengram",
+      "status": "existing",
+      "head": "bda6179",
+      "durationMs": 37
+    },
+    {
+      "index": 420,
+      "name": "blockscout/mcp-server",
+      "url": "https://github.com/blockscout/mcp-server",
+      "localPath": "sources/blockscout__mcp-server",
+      "status": "existing",
+      "head": "2ed7f05",
+      "durationMs": 42
+    },
+    {
+      "index": 421,
+      "name": "Agent-Hellboy/mcp-server-fuzzer",
+      "url": "https://github.com/Agent-Hellboy/mcp-server-fuzzer",
+      "localPath": "sources/Agent-Hellboy__mcp-server-fuzzer",
+      "status": "existing",
+      "head": "249f9e9",
+      "durationMs": 46
+    },
+    {
+      "index": 422,
+      "name": "areal-project/AReaL",
+      "url": "https://github.com/areal-project/AReaL",
+      "localPath": "sources/areal-project__AReaL",
+      "status": "existing",
+      "head": "13353cc",
+      "durationMs": 83
+    },
+    {
+      "index": 423,
+      "name": "SaiAkhil066/CORTEX-AI-SUPER-RAG",
+      "url": "https://github.com/SaiAkhil066/CORTEX-AI-SUPER-RAG",
+      "localPath": "sources/SaiAkhil066__CORTEX-AI-SUPER-RAG",
+      "status": "existing",
+      "head": "fba31cb",
+      "durationMs": 50
+    },
+    {
+      "index": 424,
+      "name": "BuilderIO/skills",
+      "url": "https://github.com/BuilderIO/skills",
+      "localPath": "sources/BuilderIO__skills",
+      "status": "existing",
+      "head": "a072671",
+      "durationMs": 52
+    },
+    {
+      "index": 425,
+      "name": "microsoft/TypeAgent",
+      "url": "https://github.com/microsoft/TypeAgent",
+      "localPath": "sources/microsoft__TypeAgent",
+      "status": "existing",
+      "head": "804ba17",
+      "durationMs": 161
+    },
+    {
+      "index": 426,
+      "name": "dbt-labs/dbt-mcp",
+      "url": "https://github.com/dbt-labs/dbt-mcp",
+      "localPath": "sources/dbt-labs__dbt-mcp",
+      "status": "existing",
+      "head": "2a7af75",
+      "durationMs": 49
+    },
+    {
+      "index": 427,
+      "name": "SearchSavior/OpenArc",
+      "url": "https://github.com/SearchSavior/OpenArc",
+      "localPath": "sources/SearchSavior__OpenArc",
+      "status": "existing",
+      "head": "0a6552b",
+      "durationMs": 66
+    },
+    {
+      "index": 428,
+      "name": "Palm1r/QodeAssist",
+      "url": "https://github.com/Palm1r/QodeAssist",
+      "localPath": "sources/Palm1r__QodeAssist",
+      "status": "existing",
+      "head": "34ce787",
+      "durationMs": 66
+    },
+    {
+      "index": 429,
+      "name": "Signet-AI/signetai",
+      "url": "https://github.com/Signet-AI/signetai",
+      "localPath": "sources/Signet-AI__signetai",
+      "status": "existing",
+      "head": "b26e372",
+      "durationMs": 103
+    },
+    {
+      "index": 430,
+      "name": "markus-global/markus",
+      "url": "https://github.com/markus-global/markus",
+      "localPath": "sources/markus-global__markus",
+      "status": "existing",
+      "head": "afffbcb",
+      "durationMs": 70
+    },
+    {
+      "index": 431,
+      "name": "jonigl/ollama-mcp-bridge",
+      "url": "https://github.com/jonigl/ollama-mcp-bridge",
+      "localPath": "sources/jonigl__ollama-mcp-bridge",
+      "status": "existing",
+      "head": "dda3a52",
+      "durationMs": 53
+    },
+    {
+      "index": 432,
+      "name": "QuivrHQ/quivr",
+      "url": "https://github.com/QuivrHQ/quivr",
+      "localPath": "sources/QuivrHQ__quivr",
+      "status": "existing",
+      "head": "947a785",
+      "durationMs": 41
+    },
+    {
+      "index": 433,
+      "name": "NVIDIA/Model-Optimizer",
+      "url": "https://github.com/NVIDIA/Model-Optimizer",
+      "localPath": "sources/NVIDIA__Model-Optimizer",
+      "status": "existing",
+      "head": "769ea5f",
+      "durationMs": 74
+    },
+    {
+      "index": 434,
+      "name": "vllm-project/vllm-ascend",
+      "url": "https://github.com/vllm-project/vllm-ascend",
+      "localPath": "sources/vllm-project__vllm-ascend",
+      "status": "existing",
+      "head": "350d1f0",
+      "durationMs": 94
+    },
+    {
+      "index": 435,
+      "name": "genomoncology/biomcp",
+      "url": "https://github.com/genomoncology/biomcp",
+      "localPath": "sources/genomoncology__biomcp",
+      "status": "existing",
+      "head": "b8710d7",
+      "durationMs": 60
+    },
+    {
+      "index": 436,
+      "name": "UI5/mcp-server",
+      "url": "https://github.com/UI5/mcp-server",
+      "localPath": "sources/UI5__mcp-server",
+      "status": "existing",
+      "head": "35924f7",
+      "durationMs": 45
+    },
+    {
+      "index": 437,
+      "name": "spences10/mcpick",
+      "url": "https://github.com/spences10/mcpick",
+      "localPath": "sources/spences10__mcpick",
+      "status": "existing",
+      "head": "8a98c28",
+      "durationMs": 37
+    },
+    {
+      "index": 438,
+      "name": "brycewang-stanford/Awesome-Journal-Skills",
+      "url": "https://github.com/brycewang-stanford/Awesome-Journal-Skills",
+      "localPath": "sources/brycewang-stanford__Awesome-Journal-Skills",
+      "status": "existing",
+      "head": "6a9a500",
+      "durationMs": 195
+    },
+    {
+      "index": 439,
+      "name": "sgl-project/sglang",
+      "url": "https://github.com/sgl-project/sglang",
+      "localPath": "sources/sgl-project__sglang",
+      "status": "existing",
+      "head": "9f6b233",
+      "durationMs": 231
+    },
+    {
+      "index": 440,
+      "name": "Azure/GPT-RAG",
+      "url": "https://github.com/Azure/GPT-RAG",
+      "localPath": "sources/Azure__GPT-RAG",
+      "status": "existing",
+      "head": "fbf50c4",
+      "durationMs": 38
+    },
+    {
+      "index": 441,
+      "name": "eastreams/loong",
+      "url": "https://github.com/eastreams/loong",
+      "localPath": "sources/eastreams__loong",
+      "status": "existing",
+      "head": "e68e32a",
+      "durationMs": 107
+    },
+    {
+      "index": 442,
+      "name": "hi-godot/godot-ai",
+      "url": "https://github.com/hi-godot/godot-ai",
+      "localPath": "sources/hi-godot__godot-ai",
+      "status": "existing",
+      "head": "7b69b51",
+      "durationMs": 51
+    },
+    {
+      "index": 443,
+      "name": "hybridgroup/yzma",
+      "url": "https://github.com/hybridgroup/yzma",
+      "localPath": "sources/hybridgroup__yzma",
+      "status": "existing",
+      "head": "acc4f5c",
+      "durationMs": 39
+    },
+    {
+      "index": 444,
+      "name": "usemoss/moss",
+      "url": "https://github.com/usemoss/moss",
+      "localPath": "sources/usemoss__moss",
+      "status": "existing",
+      "head": "ac6b047",
+      "durationMs": 69
+    },
+    {
+      "index": 445,
+      "name": "zolotukhin/zinc",
+      "url": "https://github.com/zolotukhin/zinc",
+      "localPath": "sources/zolotukhin__zinc",
+      "status": "existing",
+      "head": "e76c44d",
+      "durationMs": 65
+    },
+    {
+      "index": 446,
+      "name": "Rose22/openlumara",
+      "url": "https://github.com/Rose22/openlumara",
+      "localPath": "sources/Rose22__openlumara",
+      "status": "existing",
+      "head": "54093a1",
+      "durationMs": 43
+    },
+    {
+      "index": 447,
+      "name": "clay-good/OpenLore",
+      "url": "https://github.com/clay-good/OpenLore",
+      "localPath": "sources/clay-good__OpenLore",
+      "status": "existing",
+      "head": "3af3046",
+      "durationMs": 50
+    },
+    {
+      "index": 448,
+      "name": "SyntheticAutonomicMind/CLIO",
+      "url": "https://github.com/SyntheticAutonomicMind/CLIO",
+      "localPath": "sources/SyntheticAutonomicMind__CLIO",
+      "status": "existing",
+      "head": "141e118",
+      "durationMs": 52
+    },
+    {
+      "index": 449,
+      "name": "mordang7/ContextKeep",
+      "url": "https://github.com/mordang7/ContextKeep",
+      "localPath": "sources/mordang7__ContextKeep",
+      "status": "existing",
+      "head": "95fd19a",
+      "durationMs": 38
+    },
+    {
+      "index": 450,
+      "name": "EfficientContext/ContextPilot",
+      "url": "https://github.com/EfficientContext/ContextPilot",
+      "localPath": "sources/EfficientContext__ContextPilot",
+      "status": "existing",
+      "head": "1fa0a14",
+      "durationMs": 44
+    },
+    {
+      "index": 451,
+      "name": "vuetifyjs/mcp",
+      "url": "https://github.com/vuetifyjs/mcp",
+      "localPath": "sources/vuetifyjs__mcp",
+      "status": "existing",
+      "head": "a9ff9d7",
+      "durationMs": 45
+    },
+    {
+      "index": 452,
+      "name": "netresearch/jira-skill",
+      "url": "https://github.com/netresearch/jira-skill",
+      "localPath": "sources/netresearch__jira-skill",
+      "status": "existing",
+      "head": "e7bdc42",
+      "durationMs": 40
+    },
+    {
+      "index": 453,
+      "name": "cheahjs/free-llm-api-resources",
+      "url": "https://github.com/cheahjs/free-llm-api-resources",
+      "localPath": "sources/cheahjs__free-llm-api-resources",
+      "status": "existing",
+      "head": "f12df9c",
+      "durationMs": 41
+    },
+    {
+      "index": 454,
+      "name": "apache/devlake",
+      "url": "https://github.com/apache/devlake",
+      "localPath": "sources/apache__devlake",
+      "status": "existing",
+      "head": "46c5c51",
+      "durationMs": 161
+    },
+    {
+      "index": 455,
+      "name": "SpharxTeam/AgentOS",
+      "url": "https://github.com/SpharxTeam/AgentOS",
+      "localPath": "sources/SpharxTeam__AgentOS",
+      "status": "existing",
+      "head": "2f42f57",
+      "durationMs": 95
+    },
+    {
+      "index": 456,
+      "name": "videosdk-live/agents",
+      "url": "https://github.com/videosdk-live/agents",
+      "localPath": "sources/videosdk-live__agents",
+      "status": "existing",
+      "head": "a4e6da1",
+      "durationMs": 48
+    },
+    {
+      "index": 457,
+      "name": "Ingenimax/agent-sdk-go",
+      "url": "https://github.com/Ingenimax/agent-sdk-go",
+      "localPath": "sources/Ingenimax__agent-sdk-go",
+      "status": "existing",
+      "head": "8f1af56",
+      "durationMs": 53
+    },
+    {
+      "index": 458,
+      "name": "boldsoftware/shelley",
+      "url": "https://github.com/boldsoftware/shelley",
+      "localPath": "sources/boldsoftware__shelley",
+      "status": "existing",
+      "head": "189020c",
+      "durationMs": 52
+    },
+    {
+      "index": 459,
+      "name": "hoangsonww/Claude-Code-Agent-Monitor",
+      "url": "https://github.com/hoangsonww/Claude-Code-Agent-Monitor",
+      "localPath": "sources/hoangsonww__Claude-Code-Agent-Monitor",
+      "status": "existing",
+      "head": "1a21bb9",
+      "durationMs": 73
+    },
+    {
+      "index": 460,
+      "name": "Muvon/octocode",
+      "url": "https://github.com/Muvon/octocode",
+      "localPath": "sources/Muvon__octocode",
+      "status": "existing",
+      "head": "b5170d4",
+      "durationMs": 42
+    },
+    {
+      "index": 461,
+      "name": "oracle/mcp",
+      "url": "https://github.com/oracle/mcp",
+      "localPath": "sources/oracle__mcp",
+      "status": "existing",
+      "head": "36d4ea0",
+      "durationMs": 48
+    },
+    {
+      "index": 462,
+      "name": "scrypster/muninndb",
+      "url": "https://github.com/scrypster/muninndb",
+      "localPath": "sources/scrypster__muninndb",
+      "status": "existing",
+      "head": "b9c6119",
+      "durationMs": 65
+    },
+    {
+      "index": 463,
+      "name": "Ikalus1988/MisakaNet",
+      "url": "https://github.com/Ikalus1988/MisakaNet",
+      "localPath": "sources/Ikalus1988__MisakaNet",
+      "status": "existing",
+      "head": "4b60218",
+      "durationMs": 55
+    },
+    {
+      "index": 464,
+      "name": "Power-Agent/PowerMCP",
+      "url": "https://github.com/Power-Agent/PowerMCP",
+      "localPath": "sources/Power-Agent__PowerMCP",
+      "status": "existing",
+      "head": "cc99f34",
+      "durationMs": 83
+    },
+    {
+      "index": 465,
+      "name": "responsibleai/ASSERT",
+      "url": "https://github.com/responsibleai/ASSERT",
+      "localPath": "sources/responsibleai__ASSERT",
+      "status": "existing",
+      "head": "b819ce5",
+      "durationMs": 51
+    },
+    {
+      "index": 466,
+      "name": "yotsuda/PowerShell.MCP",
+      "url": "https://github.com/yotsuda/PowerShell.MCP",
+      "localPath": "sources/yotsuda__PowerShell.MCP",
+      "status": "existing",
+      "head": "1b7734d",
+      "durationMs": 41
+    },
+    {
+      "index": 467,
+      "name": "WolframResearch/AgentTools",
+      "url": "https://github.com/WolframResearch/AgentTools",
+      "localPath": "sources/WolframResearch__AgentTools",
+      "status": "existing",
+      "head": "375c931",
+      "durationMs": 42
+    },
+    {
+      "index": 468,
+      "name": "kvcache-ai/ktransformers",
+      "url": "https://github.com/kvcache-ai/ktransformers",
+      "localPath": "sources/kvcache-ai__ktransformers",
+      "status": "existing",
+      "head": "0f2e790",
+      "durationMs": 61
+    },
+    {
+      "index": 469,
+      "name": "jundot/omlx",
+      "url": "https://github.com/jundot/omlx",
+      "localPath": "sources/jundot__omlx",
+      "status": "existing",
+      "head": "13abe21",
+      "durationMs": 51
+    },
+    {
+      "index": 470,
+      "name": "unum-cloud/USearch",
+      "url": "https://github.com/unum-cloud/USearch",
+      "localPath": "sources/unum-cloud__USearch",
+      "status": "existing",
+      "head": "9fd6b01",
+      "durationMs": 39
+    },
+    {
+      "index": 471,
+      "name": "theJayTea/WritingTools",
+      "url": "https://github.com/theJayTea/WritingTools",
+      "localPath": "sources/theJayTea__WritingTools",
+      "status": "existing",
+      "head": "4ed1fba",
+      "durationMs": 43
+    },
+    {
+      "index": 472,
+      "name": "theopenco/llmgateway",
+      "url": "https://github.com/theopenco/llmgateway",
+      "localPath": "sources/theopenco__llmgateway",
+      "status": "existing",
+      "head": "c866341",
+      "durationMs": 118
+    },
+    {
+      "index": 473,
+      "name": "future-agi/future-agi",
+      "url": "https://github.com/future-agi/future-agi",
+      "localPath": "sources/future-agi__future-agi",
+      "status": "existing",
+      "head": "2cf0532",
+      "durationMs": 269
+    },
+    {
+      "index": 474,
+      "name": "AxDSan/mnemosyne",
+      "url": "https://github.com/AxDSan/mnemosyne",
+      "localPath": "sources/AxDSan__mnemosyne",
+      "status": "existing",
+      "head": "1ec7c17",
+      "durationMs": 45
+    },
+    {
+      "index": 475,
+      "name": "GCWing/BitFun",
+      "url": "https://github.com/GCWing/BitFun",
+      "localPath": "sources/GCWing__BitFun",
+      "status": "existing",
+      "head": "617086b",
+      "durationMs": 136
+    },
+    {
+      "index": 476,
+      "name": "OpenCSGs/csghub-server",
+      "url": "https://github.com/OpenCSGs/csghub-server",
+      "localPath": "sources/OpenCSGs__csghub-server",
+      "status": "existing",
+      "head": "e18f201",
+      "durationMs": 101
+    },
+    {
+      "index": 477,
+      "name": "BuilderIO/agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "localPath": "sources/BuilderIO__agent-native",
+      "status": "existing",
+      "head": "db8a4e0",
+      "durationMs": 202
+    },
+    {
+      "index": 478,
+      "name": "svkozak/pi-acp",
+      "url": "https://github.com/svkozak/pi-acp",
+      "localPath": "sources/svkozak__pi-acp",
+      "status": "existing",
+      "head": "49d6ec8",
+      "durationMs": 36
+    },
+    {
+      "index": 479,
+      "name": "microsoft/aitour26-WRK540-unlock-your-agents-potential-with-model-context-protocol",
+      "url": "https://github.com/microsoft/aitour26-WRK540-unlock-your-agents-potential-with-model-context-protocol",
+      "localPath": "sources/microsoft__aitour26-WRK540-unlock-your-agents-potential-with-model-context-protocol",
+      "status": "existing",
+      "head": "35232f7",
+      "durationMs": 47
+    },
+    {
+      "index": 480,
+      "name": "thushan/olla",
+      "url": "https://github.com/thushan/olla",
+      "localPath": "sources/thushan__olla",
+      "status": "existing",
+      "head": "e1e4442",
+      "durationMs": 64
+    },
+    {
+      "index": 481,
+      "name": "mobitouchOS/MaIN.NET",
+      "url": "https://github.com/mobitouchOS/MaIN.NET",
+      "localPath": "sources/mobitouchOS__MaIN.NET",
+      "status": "existing",
+      "head": "4dc0cb1",
+      "durationMs": 49
+    },
+    {
+      "index": 482,
+      "name": "Aimino-Tech/opendocswork-mcp",
+      "url": "https://github.com/Aimino-Tech/opendocswork-mcp",
+      "localPath": "sources/Aimino-Tech__opendocswork-mcp",
+      "status": "existing",
+      "head": "945ab3d",
+      "durationMs": 36
+    },
+    {
+      "index": 483,
+      "name": "Scottcjn/iota-agent-mcp",
+      "url": "https://github.com/Scottcjn/iota-agent-mcp",
+      "localPath": "sources/Scottcjn__iota-agent-mcp",
+      "status": "existing",
+      "head": "d177b15",
+      "durationMs": 41
+    },
+    {
+      "index": 484,
+      "name": "tomtom-international/tomtom-maps-mcp",
+      "url": "https://github.com/tomtom-international/tomtom-maps-mcp",
+      "localPath": "sources/tomtom-international__tomtom-maps-mcp",
+      "status": "existing",
+      "head": "b2499e2",
+      "durationMs": 63
+    },
+    {
+      "index": 485,
+      "name": "markhuangai/dense-mem",
+      "url": "https://github.com/markhuangai/dense-mem",
+      "localPath": "sources/markhuangai__dense-mem",
+      "status": "existing",
+      "head": "b94f9ec",
+      "durationMs": 71
+    },
+    {
+      "index": 486,
+      "name": "ncz-os/mnemos",
+      "url": "https://github.com/ncz-os/mnemos",
+      "localPath": "sources/ncz-os__mnemos",
+      "status": "existing",
+      "head": "547148d",
+      "durationMs": 85
+    },
+    {
+      "index": 487,
+      "name": "cloudwego/eino",
+      "url": "https://github.com/cloudwego/eino",
+      "localPath": "sources/cloudwego__eino",
+      "status": "existing",
+      "head": "e8832e2",
+      "durationMs": 79
+    },
+    {
+      "index": 488,
+      "name": "microsoft/DiskANN",
+      "url": "https://github.com/microsoft/DiskANN",
+      "localPath": "sources/microsoft__DiskANN",
+      "status": "existing",
+      "head": "3aa44ac",
+      "durationMs": 91
+    },
+    {
+      "index": 489,
+      "name": "rage-rb/rage",
+      "url": "https://github.com/rage-rb/rage",
+      "localPath": "sources/rage-rb__rage",
+      "status": "existing",
+      "head": "df25a97",
+      "durationMs": 70
+    },
+    {
+      "index": 490,
+      "name": "aws-samples/generative-ai-use-cases",
+      "url": "https://github.com/aws-samples/generative-ai-use-cases",
+      "localPath": "sources/aws-samples__generative-ai-use-cases",
+      "status": "existing",
+      "head": "abe7375",
+      "durationMs": 67
+    },
+    {
+      "index": 491,
+      "name": "RobotecAI/rai",
+      "url": "https://github.com/RobotecAI/rai",
+      "localPath": "sources/RobotecAI__rai",
+      "status": "existing",
+      "head": "137f555",
+      "durationMs": 54
+    },
+    {
+      "index": 492,
+      "name": "speakeasy-api/speakeasy",
+      "url": "https://github.com/speakeasy-api/speakeasy",
+      "localPath": "sources/speakeasy-api__speakeasy",
+      "status": "existing",
+      "head": "49d1c26",
+      "durationMs": 50
+    },
+    {
+      "index": 493,
+      "name": "stefanoamorelli/sec-edgar-mcp",
+      "url": "https://github.com/stefanoamorelli/sec-edgar-mcp",
+      "localPath": "sources/stefanoamorelli__sec-edgar-mcp",
+      "status": "existing",
+      "head": "c9726ad",
+      "durationMs": 39
+    },
+    {
+      "index": 494,
+      "name": "SonarSource/sonarqube-cli",
+      "url": "https://github.com/SonarSource/sonarqube-cli",
+      "localPath": "sources/SonarSource__sonarqube-cli",
+      "status": "existing",
+      "head": "5b60e24",
+      "durationMs": 45
+    },
+    {
+      "index": 495,
+      "name": "NickCirv/engram",
+      "url": "https://github.com/NickCirv/engram",
+      "localPath": "sources/NickCirv__engram",
+      "status": "existing",
+      "head": "1547c23",
+      "durationMs": 40
+    },
+    {
+      "index": 496,
+      "name": "AgentEvalHQ/AgentEval",
+      "url": "https://github.com/AgentEvalHQ/AgentEval",
+      "localPath": "sources/AgentEvalHQ__AgentEval",
+      "status": "existing",
+      "head": "871dff7",
+      "durationMs": 57
+    },
+    {
+      "index": 497,
+      "name": "Azure/gpt-rag-orchestrator",
+      "url": "https://github.com/Azure/gpt-rag-orchestrator",
+      "localPath": "sources/Azure__gpt-rag-orchestrator",
+      "status": "existing",
+      "head": "eb99535",
+      "durationMs": 35
+    },
+    {
+      "index": 498,
+      "name": "Jovancoding/Network-AI",
+      "url": "https://github.com/Jovancoding/Network-AI",
+      "localPath": "sources/Jovancoding__Network-AI",
+      "status": "existing",
+      "head": "344fb17",
+      "durationMs": 35
+    },
+    {
+      "index": 499,
+      "name": "aliyun/alibabacloud-dataworks-mcp-server",
+      "url": "https://github.com/aliyun/alibabacloud-dataworks-mcp-server",
+      "localPath": "sources/aliyun__alibabacloud-dataworks-mcp-server",
+      "status": "existing",
+      "head": "348888e",
+      "durationMs": 34
+    },
+    {
+      "index": 500,
+      "name": "oumi-ai/oumi",
+      "url": "https://github.com/oumi-ai/oumi",
+      "localPath": "sources/oumi-ai__oumi",
+      "status": "cloned",
+      "mode": "partial",
+      "head": "1b27caa",
+      "durationMs": 2307
+    }
+  ]
+}

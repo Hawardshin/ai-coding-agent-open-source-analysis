@@ -8,6 +8,9 @@
     "collect:korea-trending": "node scripts/collect-korea-trending-repositories.mjs",
     "clone:korea-trending": "node scripts/clone-korea-trending-sources.mjs",
     "analyze:korea-trending": "node scripts/analyze-korea-trending-repositories.mjs",
+    "collect:global-trending": "node scripts/collect-global-trending-repositories.mjs",
+    "clone:global-trending": "node scripts/clone-global-trending-sources.mjs",
+    "analyze:global-trending": "node scripts/analyze-global-trending-repositories.mjs",
     "build:web": "node scripts/build-web-index.mjs"
   }
 }

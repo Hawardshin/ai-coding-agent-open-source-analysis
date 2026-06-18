@@ -1,5 +1,21 @@
 [
   {
+    "title": "Global-trending OSS",
+    "summary": "GitHub Search, seed repositories, OSSInsight/Octoverse/HN/report signals 기반 500개 글로벌 오픈소스",
+    "query": "global trending open source ai agents mcp rag local llm devtools security observability database",
+    "category": "global-trending-open-source",
+    "repos": [
+      "mem0ai/mem0",
+      "deepset-ai/haystack",
+      "ruvnet/ruflo",
+      "langgenius/dify",
+      "mudler/LocalAI",
+      "volcengine/OpenViking",
+      "infiniflow/ragflow",
+      "MervinPraison/PraisonAI"
+    ]
+  },
+  {
     "title": "Korea-trending OSS",
     "summary": "GeekNews, 국내 기술블로그, LinkedIn 공개 검색 신호 기반 500개 오픈소스",
     "query": "korea korean geeknews mcp rag llm wiki local llm toss naver kakao line",

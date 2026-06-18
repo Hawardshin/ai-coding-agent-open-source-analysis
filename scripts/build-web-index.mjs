@@ -223,6 +223,49 @@ async function addKoreaTrendingRepoDocs(docs) {
   }
 }
 
+async function addGlobalTrendingRepoDocs(docs) {
+  const analysisPath = path.join(root, "data/global-trending-analysis-500.json");
+  const repoPath = path.join(root, "data/global-trending-repositories-500.json");
+  if (!existsSync(repoPath)) return;
+  const repoData = JSON.parse(await readFile(repoPath, "utf8"));
+  const analysisData = existsSync(analysisPath) ? JSON.parse(await readFile(analysisPath, "utf8")) : { analyses: [] };
+  const analysisByName = new Map(safeArray(analysisData.analyses).map((analysis) => [analysis.name, analysis]));
+
+  for (const repo of safeArray(repoData.repositories)) {
+    const analysis = analysisByName.get(repo.name) || {};
+    const signals = safeArray(analysis.detectedSignals).filter((signal) => signal.present).map((signal) => signal.label);
+    const categories = safeArray(analysis.categories);
+    const stacks = safeArray(analysis.stacks);
+    const content = [
+      repo.name,
+      repo.description,
+      categories.join(", "),
+      stacks.join(", "),
+      signals.join(", "),
+      safeArray(repo.tags).join(", "),
+      safeArray(repo.matchedLabels).join(", "),
+      repo.localPath,
+      analysis.readme?.excerpt
+    ].filter(Boolean).join("\n");
+
+    docs.push({
+      id: `repo:global-trending:${repo.name}`,
+      type: "repository",
+      category: "global-trending-open-source",
+      title: repo.name,
+      path: analysis.reportPath || repo.localPath,
+      url: repo.url || null,
+      stars: repo.stars || 0,
+      forks: repo.forks || 0,
+      language: repo.language || null,
+      license: repo.license || null,
+      updatedAt: repo.pushedAt || repo.updatedAt || null,
+      summary: repo.description || categories.join(", ") || "Global-trending open source repository",
+      content
+    });
+  }
+}
+
 async function addDataFileDocs(docs) {
   const dataFiles = await listFiles(path.join(root, "data"), (file) => file.endsWith(".json"));
   for (const file of dataFiles.sort()) {
@@ -258,6 +301,7 @@ await addEvidenceDocs(docs);
 await addSpecRepoDocs(docs);
 await addLlmWikiRepoDocs(docs);
 await addKoreaTrendingRepoDocs(docs);
+await addGlobalTrendingRepoDocs(docs);
 await addDataFileDocs(docs);
 
 docs.sort((a, b) => {
@@ -328,7 +372,24 @@ function topKoreaTrendingRepos(limit = 8) {
     .map((repo) => repo.name);
 }
 
+function topGlobalTrendingRepos(limit = 8) {
+  const analysisPath = path.join(root, "data/global-trending-analysis-500.json");
+  if (!existsSync(analysisPath)) return [];
+  const data = JSON.parse(awaitReadFile(analysisPath));
+  return safeArray(data.analyses)
+    .sort((a, b) => (b.priorityScore || 0) - (a.priorityScore || 0) || (b.stars || 0) - (a.stars || 0))
+    .slice(0, limit)
+    .map((repo) => repo.name);
+}
+
 const trends = [
+  {
+    title: "Global-trending OSS",
+    summary: "GitHub Search, seed repositories, OSSInsight/Octoverse/HN/report signals 기반 500개 글로벌 오픈소스",
+    query: "global trending open source ai agents mcp rag local llm devtools security observability database",
+    category: "global-trending-open-source",
+    repos: topGlobalTrendingRepos()
+  },
   {
     title: "Korea-trending OSS",
     summary: "GeekNews, 국내 기술블로그, LinkedIn 공개 검색 신호 기반 500개 오픈소스",

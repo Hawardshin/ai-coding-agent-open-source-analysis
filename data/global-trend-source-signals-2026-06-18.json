@@ -1,0 +1,326 @@
+{
+  "generatedAt": "2026-06-18T00:28:10.373Z",
+  "trendSources": [
+    {
+      "source": "GitHub Trending",
+      "title": "Trending repositories on GitHub today",
+      "url": "https://github.com/trending",
+      "observedSignals": [
+        "codebase-memory-mcp",
+        "agent-reach",
+        "cloud-native",
+        "support-ops",
+        "agentic-video"
+      ],
+      "seedRepos": [
+        "DeusData/codebase-memory-mcp",
+        "Panniantong/Agent-Reach",
+        "meshery/meshery",
+        "chatwoot/chatwoot",
+        "calesthio/OpenMontage"
+      ]
+    },
+    {
+      "source": "OSSInsight",
+      "title": "Trending AI Repositories on GitHub - real-time rankings",
+      "url": "https://ossinsight.io/trending/ai",
+      "observedSignals": [
+        "ai-agents",
+        "coding-agents",
+        "mcp-servers",
+        "rag",
+        "inference",
+        "vector-db",
+        "vibe-coding"
+      ]
+    },
+    {
+      "source": "GitHub Octoverse 2025",
+      "title": "AI, agents, and typed languages driving open source shifts",
+      "url": "https://octoverse.github.com/",
+      "observedSignals": [
+        "ai",
+        "agents",
+        "typescript",
+        "typed-languages",
+        "global-open-source-growth"
+      ]
+    },
+    {
+      "source": "Vela Partners",
+      "title": "19 Emerging Trends Reshaping Open-Source AI Infrastructure in 2026",
+      "url": "https://vela.partners/blog/emerging-open-source-ai-infrastructure-trends-2026",
+      "observedSignals": [
+        "ai-infrastructure",
+        "recent-star-growth",
+        "agents",
+        "data-infra",
+        "observability"
+      ],
+      "notes": "The report says it scanned 854 repositories with significant 90-day traction."
+    },
+    {
+      "source": "LangChain",
+      "title": "The best AI agent frameworks in 2026",
+      "url": "https://www.langchain.com/resources/ai-agent-frameworks",
+      "observedSignals": [
+        "langchain",
+        "langgraph",
+        "crewai",
+        "microsoft-agent-framework",
+        "llamaindex-workflows",
+        "google-adk",
+        "openai-agents-sdk",
+        "mastra"
+      ]
+    },
+    {
+      "source": "Firecrawl",
+      "title": "Best GitHub repositories for AI developers to star in 2026",
+      "url": "https://www.firecrawl.dev/blog/best-github-repos",
+      "observedSignals": [
+        "supply-chain-scanning",
+        "web-context",
+        "system-design",
+        "developer-roadmap",
+        "claude-skills",
+        "llm-training"
+      ]
+    },
+    {
+      "source": "ITPro",
+      "title": "MCP and AGENTS.md donated to Linux Foundation / Agentic AI Foundation",
+      "url": "https://www.itpro.com/software/open-source/anthropic-says-mcp-will-stay-open-neutral-and-community-driven-after-donating-project-to-linux-foundation",
+      "observedSignals": [
+        "mcp",
+        "agents-md",
+        "agentic-ai-foundation",
+        "open-standards",
+        "agent-interoperability"
+      ]
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN / open-source AI agent projects",
+      "url": "https://news.ycombinator.com/",
+      "observedSignals": [
+        "show-hn",
+        "developer-tools",
+        "ai-agents",
+        "open-source-launches"
+      ],
+      "notes": "HN is used as a qualitative launch/momentum signal, not a complete repository ranking."
+    }
+  ],
+  "githubSearchQueries": [
+    {
+      "label": "ai-agent-framework",
+      "q": "ai agent framework pushed:>2025-09-01 stars:>50",
+      "sort": "updated",
+      "weight": 28
+    },
+    {
+      "label": "coding-agent",
+      "q": "coding agent pushed:>2025-09-01 stars:>50",
+      "sort": "updated",
+      "weight": 30
+    },
+    {
+      "label": "mcp-server",
+      "q": "mcp server pushed:>2025-09-01 stars:>20",
+      "sort": "updated",
+      "weight": 30
+    },
+    {
+      "label": "model-context-protocol",
+      "q": "model context protocol pushed:>2025-09-01 stars:>20",
+      "sort": "updated",
+      "weight": 30
+    },
+    {
+      "label": "rag",
+      "q": "rag pushed:>2025-09-01 stars:>50",
+      "sort": "updated",
+      "weight": 25
+    },
+    {
+      "label": "llm-app",
+      "q": "llm application pushed:>2025-09-01 stars:>50",
+      "sort": "updated",
+      "weight": 20
+    },
+    {
+      "label": "local-llm",
+      "q": "local llm pushed:>2025-09-01 stars:>50",
+      "sort": "updated",
+      "weight": 22
+    },
+    {
+      "label": "llm-inference",
+      "q": "llm inference pushed:>2025-01-01 stars:>100",
+      "sort": "updated",
+      "weight": 20
+    },
+    {
+      "label": "vector-db",
+      "q": "vector database pushed:>2025-01-01 stars:>100",
+      "sort": "updated",
+      "weight": 18
+    },
+    {
+      "label": "agent-memory",
+      "q": "agent memory pushed:>2025-01-01 stars:>20",
+      "sort": "updated",
+      "weight": 22
+    },
+    {
+      "label": "code-search",
+      "q": "code search pushed:>2025-01-01 stars:>100",
+      "sort": "updated",
+      "weight": 17
+    },
+    {
+      "label": "developer-tools",
+      "q": "developer tools pushed:>2026-01-01 stars:>100",
+      "sort": "updated",
+      "weight": 15
+    }
+  ],
+  "globalOrgNames": [
+    "openai",
+    "modelcontextprotocol",
+    "anthropics",
+    "google-gemini",
+    "microsoft",
+    "github",
+    "langchain-ai",
+    "run-llama",
+    "crewAIInc",
+    "agno-agi",
+    "All-Hands-AI",
+    "cline",
+    "RooCodeInc",
+    "TabbyML",
+    "ollama",
+    "ggml-org",
+    "vllm-project",
+    "sgl-project",
+    "huggingface",
+    "langgenius",
+    "open-webui",
+    "infiniflow",
+    "mem0ai",
+    "qdrant",
+    "milvus-io",
+    "weaviate",
+    "chroma-core",
+    "lancedb",
+    "elastic",
+    "opensearch-project",
+    "opentelemetry",
+    "prometheus",
+    "grafana",
+    "kubernetes",
+    "helm",
+    "envoyproxy",
+    "istio",
+    "supabase",
+    "vercel",
+    "cloudflare",
+    "astral-sh",
+    "oven-sh",
+    "denoland",
+    "rust-lang",
+    "pytorch",
+    "tensorflow",
+    "fastapi",
+    "apache",
+    "getsentry"
+  ],
+  "seedRepos": [
+    "DeusData/codebase-memory-mcp",
+    "Panniantong/Agent-Reach",
+    "meshery/meshery",
+    "chatwoot/chatwoot",
+    "calesthio/OpenMontage",
+    "Significant-Gravitas/AutoGPT",
+    "ollama/ollama",
+    "langchain-ai/langchain",
+    "langgenius/dify",
+    "open-webui/open-webui",
+    "ggml-org/llama.cpp",
+    "nomic-ai/gpt4all",
+    "zed-industries/zed",
+    "infiniflow/ragflow",
+    "All-Hands-AI/OpenHands",
+    "modelcontextprotocol/servers",
+    "FoundationAgents/MetaGPT",
+    "toeverything/AFFiNE",
+    "vllm-project/vllm",
+    "anomalyco/opencode",
+    "google-gemini/gemini-cli",
+    "cline/cline",
+    "microsoft/autogen",
+    "Mintplex-Labs/anything-llm",
+    "openai/codex",
+    "anthropics/claude-code",
+    "run-llama/llama_index",
+    "FlowiseAI/Flowise",
+    "milvus-io/milvus",
+    "mem0ai/mem0",
+    "crewAIInc/crewAI",
+    "facebookresearch/faiss",
+    "mudler/LocalAI",
+    "paul-gauthier/aider",
+    "agno-agi/agno",
+    "TabbyML/tabby",
+    "continuedev/continue",
+    "upstash/context7",
+    "qdrant/qdrant",
+    "block/goose",
+    "chroma-core/chroma",
+    "deepset-ai/haystack",
+    "Mozilla-Ocho/llamafile",
+    "github/github-mcp-server",
+    "openai/openai-agents-python",
+    "mastra-ai/mastra",
+    "google/adk-python",
+    "firecrawl/firecrawl",
+    "perplexityai/bumblebee",
+    "karpathy/nanochat",
+    "kamranahmedse/developer-roadmap"
+  ],
+  "excludedReposForClone": [
+    {
+      "name": "torvalds/linux",
+      "reason": "Very large repository; not needed for this trend corpus."
+    },
+    {
+      "name": "chromium/chromium",
+      "reason": "Very large repository; not needed for this trend corpus."
+    },
+    {
+      "name": "llvm/llvm-project",
+      "reason": "Very large repository; not needed for this trend corpus."
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "reason": "Very large repository; covered by org metadata but excluded to keep clone corpus reproducible."
+    },
+    {
+      "name": "microsoft/vscode",
+      "reason": "Very large repository; covered by adjacent agent/code tooling repositories."
+    }
+  ],
+  "method": {
+    "ranking": "trendScore = GitHub Trending sightings + source/query weights + recency + stars/forks + topic signal - archived/fork/very-large penalties",
+    "targetCount": 500,
+    "caveats": [
+      "GitHub Trending HTML is volatile and may differ by time of day.",
+      "OSSInsight, Octoverse, Vela, LangChain, Firecrawl, ITPro, and HN are used as qualitative trend sources rather than a single authoritative ranking.",
+      "The corpus favors cloneable repositories and excludes several extremely large repositories to keep the 500-repository local corpus reproducible.",
+      "This run disabled live GitHub Trending scraping; GitHub Trending is retained as a qualitative source signal, while GitHub Search and seed repositories supply repository-level candidates."
+    ],
+    "trendingScrapeEnabled": false
+  }
+}
