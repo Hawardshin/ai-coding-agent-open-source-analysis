@@ -180,6 +180,49 @@ async function addLlmWikiRepoDocs(docs) {
   }
 }
 
+async function addKoreaTrendingRepoDocs(docs) {
+  const analysisPath = path.join(root, "data/korea-trending-analysis-500.json");
+  const repoPath = path.join(root, "data/korea-trending-repositories-500.json");
+  if (!existsSync(repoPath)) return;
+  const repoData = JSON.parse(await readFile(repoPath, "utf8"));
+  const analysisData = existsSync(analysisPath) ? JSON.parse(await readFile(analysisPath, "utf8")) : { analyses: [] };
+  const analysisByName = new Map(safeArray(analysisData.analyses).map((analysis) => [analysis.name, analysis]));
+
+  for (const repo of safeArray(repoData.repositories)) {
+    const analysis = analysisByName.get(repo.name) || {};
+    const signals = safeArray(analysis.detectedSignals).filter((signal) => signal.present).map((signal) => signal.label);
+    const categories = safeArray(analysis.categories);
+    const stacks = safeArray(analysis.stacks);
+    const content = [
+      repo.name,
+      repo.description,
+      categories.join(", "),
+      stacks.join(", "),
+      signals.join(", "),
+      safeArray(repo.tags).join(", "),
+      safeArray(repo.matchedLabels).join(", "),
+      repo.localPath,
+      analysis.readme?.excerpt
+    ].filter(Boolean).join("\n");
+
+    docs.push({
+      id: `repo:korea-trending:${repo.name}`,
+      type: "repository",
+      category: "korea-trending-open-source",
+      title: repo.name,
+      path: analysis.reportPath || repo.localPath,
+      url: repo.url || null,
+      stars: repo.stars || 0,
+      forks: repo.forks || 0,
+      language: repo.language || null,
+      license: repo.license || null,
+      updatedAt: repo.pushedAt || repo.updatedAt || null,
+      summary: repo.description || categories.join(", ") || "Korea-trending open source repository",
+      content
+    });
+  }
+}
+
 async function addDataFileDocs(docs) {
   const dataFiles = await listFiles(path.join(root, "data"), (file) => file.endsWith(".json"));
   for (const file of dataFiles.sort()) {
@@ -214,6 +257,7 @@ await addMarkdownDocs(docs);
 await addEvidenceDocs(docs);
 await addSpecRepoDocs(docs);
 await addLlmWikiRepoDocs(docs);
+await addKoreaTrendingRepoDocs(docs);
 await addDataFileDocs(docs);
 
 docs.sort((a, b) => {
@@ -274,7 +318,24 @@ function topLlmWikiRepos(limit = 6) {
     .map((repo) => repo.name);
 }
 
+function topKoreaTrendingRepos(limit = 8) {
+  const analysisPath = path.join(root, "data/korea-trending-analysis-500.json");
+  if (!existsSync(analysisPath)) return [];
+  const data = JSON.parse(awaitReadFile(analysisPath));
+  return safeArray(data.analyses)
+    .sort((a, b) => (b.priorityScore || 0) - (a.priorityScore || 0) || (b.stars || 0) - (a.stars || 0))
+    .slice(0, limit)
+    .map((repo) => repo.name);
+}
+
 const trends = [
+  {
+    title: "Korea-trending OSS",
+    summary: "GeekNews, 국내 기술블로그, LinkedIn 공개 검색 신호 기반 500개 오픈소스",
+    query: "korea korean geeknews mcp rag llm wiki local llm toss naver kakao line",
+    category: "korea-trending-open-source",
+    repos: topKoreaTrendingRepos()
+  },
   {
     title: "Spec-driven / SDD",
     summary: "requirements, design, tasks, Kiro, Spec Kit, OpenSpec 계열",

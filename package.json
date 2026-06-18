@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "analyze:llm-wiki-code": "node scripts/analyze-llm-wiki-code-level.mjs",
+    "collect:korea-trending": "node scripts/collect-korea-trending-repositories.mjs",
+    "clone:korea-trending": "node scripts/clone-korea-trending-sources.mjs",
+    "analyze:korea-trending": "node scripts/analyze-korea-trending-repositories.mjs",
     "build:web": "node scripts/build-web-index.mjs"
   }
 }

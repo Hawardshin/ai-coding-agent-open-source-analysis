@@ -1,0 +1,4520 @@
+{
+  "generatedAt": "2026-06-17T23:58:13.195Z",
+  "startedAt": "2026-06-17T23:58:05.773Z",
+  "done": true,
+  "inputFile": "data/korea-trending-repositories-500.json",
+  "targetCount": 500,
+  "completedCount": 500,
+  "okCount": 500,
+  "failedCount": 0,
+  "concurrency": 8,
+  "timeoutMs": 180000,
+  "results": [
+    {
+      "index": 1,
+      "name": "Marker-Inc-Korea/AutoRAG",
+      "url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+      "localPath": "sources/Marker-Inc-Korea__AutoRAG",
+      "status": "existing",
+      "head": "e0a717b",
+      "durationMs": 57
+    },
+    {
+      "index": 2,
+      "name": "toss/es-toolkit",
+      "url": "https://github.com/toss/es-toolkit",
+      "localPath": "sources/toss__es-toolkit",
+      "status": "existing",
+      "head": "7655f5e",
+      "durationMs": 140
+    },
+    {
+      "index": 3,
+      "name": "line/centraldogma",
+      "url": "https://github.com/line/centraldogma",
+      "localPath": "sources/line__centraldogma",
+      "status": "existing",
+      "head": "9e7b7f6",
+      "durationMs": 65
+    },
+    {
+      "index": 4,
+      "name": "joungminsung/OpenDocuments",
+      "url": "https://github.com/joungminsung/OpenDocuments",
+      "localPath": "sources/joungminsung__OpenDocuments",
+      "status": "existing",
+      "head": "cec84ab",
+      "durationMs": 50
+    },
+    {
+      "index": 5,
+      "name": "line/line-bot-mcp-server",
+      "url": "https://github.com/line/line-bot-mcp-server",
+      "localPath": "sources/line__line-bot-mcp-server",
+      "status": "existing",
+      "head": "bfbbdab",
+      "durationMs": 35
+    },
+    {
+      "index": 6,
+      "name": "naver/arcus",
+      "url": "https://github.com/naver/arcus",
+      "localPath": "sources/naver__arcus",
+      "status": "existing",
+      "head": "51e471b",
+      "durationMs": 41
+    },
+    {
+      "index": 7,
+      "name": "line/armeria",
+      "url": "https://github.com/line/armeria",
+      "localPath": "sources/line__armeria",
+      "status": "existing",
+      "head": "d92d219",
+      "durationMs": 156
+    },
+    {
+      "index": 8,
+      "name": "toss/es-hangul",
+      "url": "https://github.com/toss/es-hangul",
+      "localPath": "sources/toss__es-hangul",
+      "status": "existing",
+      "head": "738c8c7",
+      "durationMs": 40
+    },
+    {
+      "index": 9,
+      "name": "line/line-bot-sdk-python",
+      "url": "https://github.com/line/line-bot-sdk-python",
+      "localPath": "sources/line__line-bot-sdk-python",
+      "status": "existing",
+      "head": "854c356",
+      "durationMs": 53
+    },
+    {
+      "index": 10,
+      "name": "naver/nbase-arc",
+      "url": "https://github.com/naver/nbase-arc",
+      "localPath": "sources/naver__nbase-arc",
+      "status": "existing",
+      "head": "5cc17be",
+      "durationMs": 61
+    },
+    {
+      "index": 11,
+      "name": "naver/billboard.js",
+      "url": "https://github.com/naver/billboard.js",
+      "localPath": "sources/naver__billboard.js",
+      "status": "existing",
+      "head": "488b1ad",
+      "durationMs": 48
+    },
+    {
+      "index": 12,
+      "name": "line/line-bot-sdk-nodejs",
+      "url": "https://github.com/line/line-bot-sdk-nodejs",
+      "localPath": "sources/line__line-bot-sdk-nodejs",
+      "status": "existing",
+      "head": "375db1d",
+      "durationMs": 54
+    },
+    {
+      "index": 13,
+      "name": "line/webpack.kr",
+      "url": "https://github.com/line/webpack.kr",
+      "localPath": "sources/line__webpack.kr",
+      "status": "existing",
+      "head": "808080d",
+      "durationMs": 49
+    },
+    {
+      "index": 14,
+      "name": "line/promgen",
+      "url": "https://github.com/line/promgen",
+      "localPath": "sources/line__promgen",
+      "status": "existing",
+      "head": "1d5b85a",
+      "durationMs": 44
+    },
+    {
+      "index": 15,
+      "name": "line/line-bot-sdk-go",
+      "url": "https://github.com/line/line-bot-sdk-go",
+      "localPath": "sources/line__line-bot-sdk-go",
+      "status": "existing",
+      "head": "758848d",
+      "durationMs": 49
+    },
+    {
+      "index": 16,
+      "name": "line/line-bot-sdk-php",
+      "url": "https://github.com/line/line-bot-sdk-php",
+      "localPath": "sources/line__line-bot-sdk-php",
+      "status": "existing",
+      "head": "7d796fb",
+      "durationMs": 85
+    },
+    {
+      "index": 17,
+      "name": "sillok-os/sillok",
+      "url": "https://github.com/sillok-os/sillok",
+      "localPath": "sources/sillok-os__sillok",
+      "status": "existing",
+      "head": "d34d8ba",
+      "durationMs": 39
+    },
+    {
+      "index": 18,
+      "name": "kakaobrain/kogpt",
+      "url": "https://github.com/kakaobrain/kogpt",
+      "localPath": "sources/kakaobrain__kogpt",
+      "status": "existing",
+      "head": "f49f59a",
+      "durationMs": 32
+    },
+    {
+      "index": 19,
+      "name": "Samsung/TizenRT",
+      "url": "https://github.com/Samsung/TizenRT",
+      "localPath": "sources/Samsung__TizenRT",
+      "status": "existing",
+      "head": "97cef2f8",
+      "durationMs": 856
+    },
+    {
+      "index": 20,
+      "name": "line/line-bot-sdk-java",
+      "url": "https://github.com/line/line-bot-sdk-java",
+      "localPath": "sources/line__line-bot-sdk-java",
+      "status": "existing",
+      "head": "08cd3af",
+      "durationMs": 54
+    },
+    {
+      "index": 21,
+      "name": "naver/kapture",
+      "url": "https://github.com/naver/kapture",
+      "localPath": "sources/naver__kapture",
+      "status": "existing",
+      "head": "8225b77",
+      "durationMs": 49
+    },
+    {
+      "index": 22,
+      "name": "naver/fe-news",
+      "url": "https://github.com/naver/fe-news",
+      "localPath": "sources/naver__fe-news",
+      "status": "existing",
+      "head": "fcff20b",
+      "durationMs": 35
+    },
+    {
+      "index": 23,
+      "name": "Samsung/rlottie",
+      "url": "https://github.com/Samsung/rlottie",
+      "localPath": "sources/Samsung__rlottie",
+      "status": "existing",
+      "head": "bf689b7",
+      "durationMs": 43
+    },
+    {
+      "index": 24,
+      "name": "toss/suspensive",
+      "url": "https://github.com/toss/suspensive",
+      "localPath": "sources/toss__suspensive",
+      "status": "existing",
+      "head": "38703d1",
+      "durationMs": 45
+    },
+    {
+      "index": 25,
+      "name": "line/kotlin-jdsl",
+      "url": "https://github.com/line/kotlin-jdsl",
+      "localPath": "sources/line__kotlin-jdsl",
+      "status": "existing",
+      "head": "dcd0e28",
+      "durationMs": 55
+    },
+    {
+      "index": 26,
+      "name": "woowacourse/woowacourse-docs",
+      "url": "https://github.com/woowacourse/woowacourse-docs",
+      "localPath": "sources/woowacourse__woowacourse-docs",
+      "status": "existing",
+      "head": "1a2ba89",
+      "durationMs": 37
+    },
+    {
+      "index": 27,
+      "name": "daangn/websites",
+      "url": "https://github.com/daangn/websites",
+      "localPath": "sources/daangn__websites",
+      "status": "existing",
+      "head": "0cc78d7",
+      "durationMs": 40
+    },
+    {
+      "index": 28,
+      "name": "sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon",
+      "url": "https://github.com/sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon",
+      "localPath": "sources/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon",
+      "status": "existing",
+      "head": "41750f4",
+      "durationMs": 32
+    },
+    {
+      "index": 29,
+      "name": "line/line-bot-sdk-ruby",
+      "url": "https://github.com/line/line-bot-sdk-ruby",
+      "localPath": "sources/line__line-bot-sdk-ruby",
+      "status": "existing",
+      "head": "f5fb344",
+      "durationMs": 89
+    },
+    {
+      "index": 30,
+      "name": "naver/fixture-monkey",
+      "url": "https://github.com/naver/fixture-monkey",
+      "localPath": "sources/naver__fixture-monkey",
+      "status": "existing",
+      "head": "d337a72",
+      "durationMs": 84
+    },
+    {
+      "index": 31,
+      "name": "naver/egjs-flicking",
+      "url": "https://github.com/naver/egjs-flicking",
+      "localPath": "sources/naver__egjs-flicking",
+      "status": "existing",
+      "head": "07a9353",
+      "durationMs": 96
+    },
+    {
+      "index": 32,
+      "name": "toss/overlay-kit",
+      "url": "https://github.com/toss/overlay-kit",
+      "localPath": "sources/toss__overlay-kit",
+      "status": "existing",
+      "head": "8f0e59c",
+      "durationMs": 39
+    },
+    {
+      "index": 33,
+      "name": "naver/egjs-infinitegrid",
+      "url": "https://github.com/naver/egjs-infinitegrid",
+      "localPath": "sources/naver__egjs-infinitegrid",
+      "status": "existing",
+      "head": "818c85a",
+      "durationMs": 104
+    },
+    {
+      "index": 34,
+      "name": "naver/splade",
+      "url": "https://github.com/naver/splade",
+      "localPath": "sources/naver__splade",
+      "status": "existing",
+      "head": "8dcd33a",
+      "durationMs": 73
+    },
+    {
+      "index": 35,
+      "name": "naver/scavenger",
+      "url": "https://github.com/naver/scavenger",
+      "localPath": "sources/naver__scavenger",
+      "status": "existing",
+      "head": "b0ab3c5",
+      "durationMs": 97
+    },
+    {
+      "index": 36,
+      "name": "toss/granite",
+      "url": "https://github.com/toss/granite",
+      "localPath": "sources/toss__granite",
+      "status": "existing",
+      "head": "28340a9",
+      "durationMs": 115
+    },
+    {
+      "index": 37,
+      "name": "line/lighthouse",
+      "url": "https://github.com/line/lighthouse",
+      "localPath": "sources/line__lighthouse",
+      "status": "existing",
+      "head": "d095eaa",
+      "durationMs": 64
+    },
+    {
+      "index": 38,
+      "name": "daangn/stackflow",
+      "url": "https://github.com/daangn/stackflow",
+      "localPath": "sources/daangn__stackflow",
+      "status": "existing",
+      "head": "efa5a4e",
+      "durationMs": 130
+    },
+    {
+      "index": 39,
+      "name": "naver/egjs",
+      "url": "https://github.com/naver/egjs",
+      "localPath": "sources/naver__egjs",
+      "status": "existing",
+      "head": "24f2bac",
+      "durationMs": 61
+    },
+    {
+      "index": 40,
+      "name": "line/decaton",
+      "url": "https://github.com/line/decaton",
+      "localPath": "sources/line__decaton",
+      "status": "existing",
+      "head": "0f446fa",
+      "durationMs": 62
+    },
+    {
+      "index": 41,
+      "name": "Samsung/escargot",
+      "url": "https://github.com/Samsung/escargot",
+      "localPath": "sources/Samsung__escargot",
+      "status": "existing",
+      "head": "2dee22f",
+      "durationMs": 65
+    },
+    {
+      "index": 42,
+      "name": "line/line-sdk-ios-swift",
+      "url": "https://github.com/line/line-sdk-ios-swift",
+      "localPath": "sources/line__line-sdk-ios-swift",
+      "status": "existing",
+      "head": "642f38e",
+      "durationMs": 60
+    },
+    {
+      "index": 43,
+      "name": "line/abc-user-feedback",
+      "url": "https://github.com/line/abc-user-feedback",
+      "localPath": "sources/line__abc-user-feedback",
+      "status": "existing",
+      "head": "b4e0d10",
+      "durationMs": 68
+    },
+    {
+      "index": 44,
+      "name": "toss/frontend-fundamentals",
+      "url": "https://github.com/toss/frontend-fundamentals",
+      "localPath": "sources/toss__frontend-fundamentals",
+      "status": "existing",
+      "head": "161d3d6",
+      "durationMs": 49
+    },
+    {
+      "index": 45,
+      "name": "naver/deep-image-retrieval",
+      "url": "https://github.com/naver/deep-image-retrieval",
+      "localPath": "sources/naver__deep-image-retrieval",
+      "status": "existing",
+      "head": "610247f",
+      "durationMs": 40
+    },
+    {
+      "index": 46,
+      "name": "kakaobrain/kor-nlu-datasets",
+      "url": "https://github.com/kakaobrain/kor-nlu-datasets",
+      "localPath": "sources/kakaobrain__kor-nlu-datasets",
+      "status": "existing",
+      "head": "0df0fe7",
+      "durationMs": 36
+    },
+    {
+      "index": 47,
+      "name": "naver/bergen",
+      "url": "https://github.com/naver/bergen",
+      "localPath": "sources/naver__bergen",
+      "status": "existing",
+      "head": "eb8ec04",
+      "durationMs": 56
+    },
+    {
+      "index": 48,
+      "name": "daangn/seed-design",
+      "url": "https://github.com/daangn/seed-design",
+      "localPath": "sources/daangn__seed-design",
+      "status": "existing",
+      "head": "979aeb8",
+      "durationMs": 125
+    },
+    {
+      "index": 49,
+      "name": "naver/anny",
+      "url": "https://github.com/naver/anny",
+      "localPath": "sources/naver__anny",
+      "status": "existing",
+      "head": "e53d4b8",
+      "durationMs": 89
+    },
+    {
+      "index": 50,
+      "name": "kakao/khaiii",
+      "url": "https://github.com/kakao/khaiii",
+      "localPath": "sources/kakao__khaiii",
+      "status": "existing",
+      "head": "3d0c894",
+      "durationMs": 31
+    },
+    {
+      "index": 51,
+      "name": "naver/dust3r",
+      "url": "https://github.com/naver/dust3r",
+      "localPath": "sources/naver__dust3r",
+      "status": "existing",
+      "head": "4c24a6e",
+      "durationMs": 35
+    },
+    {
+      "index": 52,
+      "name": "line/line-fido2-server",
+      "url": "https://github.com/line/line-fido2-server",
+      "localPath": "sources/line__line-fido2-server",
+      "status": "existing",
+      "head": "1c5b7e0",
+      "durationMs": 39
+    },
+    {
+      "index": 53,
+      "name": "Samsung/ONE",
+      "url": "https://github.com/Samsung/ONE",
+      "localPath": "sources/Samsung__ONE",
+      "status": "existing",
+      "head": "de7f4736",
+      "durationMs": 426
+    },
+    {
+      "index": 54,
+      "name": "naver-ai/rope-vit",
+      "url": "https://github.com/naver-ai/rope-vit",
+      "localPath": "sources/naver-ai__rope-vit",
+      "status": "existing",
+      "head": "48d8df5",
+      "durationMs": 44
+    },
+    {
+      "index": 55,
+      "name": "naver/egjs-agent",
+      "url": "https://github.com/naver/egjs-agent",
+      "localPath": "sources/naver__egjs-agent",
+      "status": "existing",
+      "head": "6852f91",
+      "durationMs": 45
+    },
+    {
+      "index": 56,
+      "name": "naver/mast3r",
+      "url": "https://github.com/naver/mast3r",
+      "localPath": "sources/naver__mast3r",
+      "status": "existing",
+      "head": "f5209af",
+      "durationMs": 43
+    },
+    {
+      "index": 57,
+      "name": "toss/react-simplikit",
+      "url": "https://github.com/toss/react-simplikit",
+      "localPath": "sources/toss__react-simplikit",
+      "status": "existing",
+      "head": "f02a0b3",
+      "durationMs": 92
+    },
+    {
+      "index": 58,
+      "name": "Samsung/CredSweeper",
+      "url": "https://github.com/Samsung/CredSweeper",
+      "localPath": "sources/Samsung__CredSweeper",
+      "status": "existing",
+      "head": "8a706aa",
+      "durationMs": 70
+    },
+    {
+      "index": 59,
+      "name": "koi2026/opentax",
+      "url": "https://github.com/koi2026/opentax",
+      "localPath": "sources/koi2026__opentax",
+      "status": "existing",
+      "head": "38c49cb",
+      "durationMs": 50
+    },
+    {
+      "index": 60,
+      "name": "bripin123/rag-memory-epf-mcp",
+      "url": "https://github.com/bripin123/rag-memory-epf-mcp",
+      "localPath": "sources/bripin123__rag-memory-epf-mcp",
+      "status": "existing",
+      "head": "58283cd",
+      "durationMs": 44
+    },
+    {
+      "index": 61,
+      "name": "toss/technical-writing",
+      "url": "https://github.com/toss/technical-writing",
+      "localPath": "sources/toss__technical-writing",
+      "status": "existing",
+      "head": "68ba335",
+      "durationMs": 49
+    },
+    {
+      "index": 62,
+      "name": "toss/use-funnel",
+      "url": "https://github.com/toss/use-funnel",
+      "localPath": "sources/toss__use-funnel",
+      "status": "existing",
+      "head": "26a9aa7",
+      "durationMs": 46
+    },
+    {
+      "index": 63,
+      "name": "naver-ai/korean-safety-benchmarks",
+      "url": "https://github.com/naver-ai/korean-safety-benchmarks",
+      "localPath": "sources/naver-ai__korean-safety-benchmarks",
+      "status": "existing",
+      "head": "e32837c",
+      "durationMs": 44
+    },
+    {
+      "index": 64,
+      "name": "line/line-openapi",
+      "url": "https://github.com/line/line-openapi",
+      "localPath": "sources/line__line-openapi",
+      "status": "existing",
+      "head": "779d8ca",
+      "durationMs": 37
+    },
+    {
+      "index": 65,
+      "name": "Samsung/netcoredbg",
+      "url": "https://github.com/Samsung/netcoredbg",
+      "localPath": "sources/Samsung__netcoredbg",
+      "status": "existing",
+      "head": "8b8b222",
+      "durationMs": 53
+    },
+    {
+      "index": 66,
+      "name": "line/line-sdk-android",
+      "url": "https://github.com/line/line-sdk-android",
+      "localPath": "sources/line__line-sdk-android",
+      "status": "existing",
+      "head": "f18f8e2",
+      "durationMs": 50
+    },
+    {
+      "index": 67,
+      "name": "Samsung/Tizen.NET",
+      "url": "https://github.com/Samsung/Tizen.NET",
+      "localPath": "sources/Samsung__Tizen.NET",
+      "status": "existing",
+      "head": "712c484",
+      "durationMs": 61
+    },
+    {
+      "index": 68,
+      "name": "kakao/actionbase",
+      "url": "https://github.com/kakao/actionbase",
+      "localPath": "sources/kakao__actionbase",
+      "status": "existing",
+      "head": "b2b82be",
+      "durationMs": 78
+    },
+    {
+      "index": 69,
+      "name": "kakao/kakao_flutter_sdk",
+      "url": "https://github.com/kakao/kakao_flutter_sdk",
+      "localPath": "sources/kakao__kakao_flutter_sdk",
+      "status": "existing",
+      "head": "a88d025",
+      "durationMs": 57
+    },
+    {
+      "index": 70,
+      "name": "minsung2da/stock-wiki",
+      "url": "https://github.com/minsung2da/stock-wiki",
+      "localPath": "sources/minsung2da__stock-wiki",
+      "status": "existing",
+      "head": "276adf9",
+      "durationMs": 55
+    },
+    {
+      "index": 71,
+      "name": "naver/lispe",
+      "url": "https://github.com/naver/lispe",
+      "localPath": "sources/naver__lispe",
+      "status": "existing",
+      "head": "1db2766",
+      "durationMs": 51
+    },
+    {
+      "index": 72,
+      "name": "woowacourse/service-apply",
+      "url": "https://github.com/woowacourse/service-apply",
+      "localPath": "sources/woowacourse__service-apply",
+      "status": "existing",
+      "head": "19c9327",
+      "durationMs": 54
+    },
+    {
+      "index": 73,
+      "name": "toss/es-git",
+      "url": "https://github.com/toss/es-git",
+      "localPath": "sources/toss__es-git",
+      "status": "existing",
+      "head": "2222d34",
+      "durationMs": 63
+    },
+    {
+      "index": 74,
+      "name": "naver/searchad-apidoc",
+      "url": "https://github.com/naver/searchad-apidoc",
+      "localPath": "sources/naver__searchad-apidoc",
+      "status": "existing",
+      "head": "0aa7a76",
+      "durationMs": 37
+    },
+    {
+      "index": 75,
+      "name": "nhn/tui.editor",
+      "url": "https://github.com/nhn/tui.editor",
+      "localPath": "sources/nhn__tui.editor",
+      "status": "existing",
+      "head": "0c5c11b",
+      "durationMs": 50
+    },
+    {
+      "index": 76,
+      "name": "nhn/tui.calendar",
+      "url": "https://github.com/nhn/tui.calendar",
+      "localPath": "sources/nhn__tui.calendar",
+      "status": "existing",
+      "head": "b53e765",
+      "durationMs": 60
+    },
+    {
+      "index": 77,
+      "name": "nhn/tui.image-editor",
+      "url": "https://github.com/nhn/tui.image-editor",
+      "localPath": "sources/nhn__tui.image-editor",
+      "status": "existing",
+      "head": "9ee993e",
+      "durationMs": 50
+    },
+    {
+      "index": 78,
+      "name": "nhn/tui.grid",
+      "url": "https://github.com/nhn/tui.grid",
+      "localPath": "sources/nhn__tui.grid",
+      "status": "existing",
+      "head": "bc8e102",
+      "durationMs": 47
+    },
+    {
+      "index": 79,
+      "name": "Samsung/jalangi2",
+      "url": "https://github.com/Samsung/jalangi2",
+      "localPath": "sources/Samsung__jalangi2",
+      "status": "existing",
+      "head": "bc87928",
+      "durationMs": 73
+    },
+    {
+      "index": 80,
+      "name": "naver/naver-openapi-guide",
+      "url": "https://github.com/naver/naver-openapi-guide",
+      "localPath": "sources/naver__naver-openapi-guide",
+      "status": "existing",
+      "head": "64d4ea8",
+      "durationMs": 55
+    },
+    {
+      "index": 81,
+      "name": "MosslandOpenDevs/alpha",
+      "url": "https://github.com/MosslandOpenDevs/alpha",
+      "localPath": "sources/MosslandOpenDevs__alpha",
+      "status": "existing",
+      "head": "254640c",
+      "durationMs": 38
+    },
+    {
+      "index": 82,
+      "name": "nhn/tui.chart",
+      "url": "https://github.com/nhn/tui.chart",
+      "localPath": "sources/nhn__tui.chart",
+      "status": "existing",
+      "head": "e70ec64",
+      "durationMs": 57
+    },
+    {
+      "index": 83,
+      "name": "naver/kapture-localization",
+      "url": "https://github.com/naver/kapture-localization",
+      "localPath": "sources/naver__kapture-localization",
+      "status": "existing",
+      "head": "f3bbdcd",
+      "durationMs": 47
+    },
+    {
+      "index": 84,
+      "name": "Samsung/TizenFX",
+      "url": "https://github.com/Samsung/TizenFX",
+      "localPath": "sources/Samsung__TizenFX",
+      "status": "existing",
+      "head": "78f0332",
+      "durationMs": 302
+    },
+    {
+      "index": 85,
+      "name": "naver/prism-live-studio",
+      "url": "https://github.com/naver/prism-live-studio",
+      "localPath": "sources/naver__prism-live-studio",
+      "status": "existing",
+      "head": "0045e11",
+      "durationMs": 274
+    },
+    {
+      "index": 86,
+      "name": "MUSE-CODE-SPACE/SLMAgent",
+      "url": "https://github.com/MUSE-CODE-SPACE/SLMAgent",
+      "localPath": "sources/MUSE-CODE-SPACE__SLMAgent",
+      "status": "existing",
+      "head": "fa96c93",
+      "durationMs": 36
+    },
+    {
+      "index": 87,
+      "name": "kakaobrain/fast-autoaugment",
+      "url": "https://github.com/kakaobrain/fast-autoaugment",
+      "localPath": "sources/kakaobrain__fast-autoaugment",
+      "status": "existing",
+      "head": "2424224",
+      "durationMs": 36
+    },
+    {
+      "index": 88,
+      "name": "naver/roma",
+      "url": "https://github.com/naver/roma",
+      "localPath": "sources/naver__roma",
+      "status": "existing",
+      "head": "b146419",
+      "durationMs": 35
+    },
+    {
+      "index": 89,
+      "name": "naver/arcus-memcached",
+      "url": "https://github.com/naver/arcus-memcached",
+      "localPath": "sources/naver__arcus-memcached",
+      "status": "existing",
+      "head": "05d6169",
+      "durationMs": 43
+    },
+    {
+      "index": 90,
+      "name": "daangn/ventyd",
+      "url": "https://github.com/daangn/ventyd",
+      "localPath": "sources/daangn__ventyd",
+      "status": "existing",
+      "head": "e8c859a",
+      "durationMs": 39
+    },
+    {
+      "index": 91,
+      "name": "daangn/normalize-cjk",
+      "url": "https://github.com/daangn/normalize-cjk",
+      "localPath": "sources/daangn__normalize-cjk",
+      "status": "existing",
+      "head": "192a3ed",
+      "durationMs": 41
+    },
+    {
+      "index": 92,
+      "name": "nhn/fe.javascript",
+      "url": "https://github.com/nhn/fe.javascript",
+      "localPath": "sources/nhn__fe.javascript",
+      "status": "existing",
+      "head": "fc0100e",
+      "durationMs": 36
+    },
+    {
+      "index": 93,
+      "name": "naver-ai/seoul-world-model",
+      "url": "https://github.com/naver-ai/seoul-world-model",
+      "localPath": "sources/naver-ai__seoul-world-model",
+      "status": "existing",
+      "head": "48a254e",
+      "durationMs": 43
+    },
+    {
+      "index": 94,
+      "name": "line/line-liff-v2-starter",
+      "url": "https://github.com/line/line-liff-v2-starter",
+      "localPath": "sources/line__line-liff-v2-starter",
+      "status": "existing",
+      "head": "a5bc549",
+      "durationMs": 59
+    },
+    {
+      "index": 95,
+      "name": "line/flutter_line_sdk",
+      "url": "https://github.com/line/flutter_line_sdk",
+      "localPath": "sources/line__flutter_line_sdk",
+      "status": "existing",
+      "head": "8be122c",
+      "durationMs": 54
+    },
+    {
+      "index": 96,
+      "name": "daangn/autopprof",
+      "url": "https://github.com/daangn/autopprof",
+      "localPath": "sources/daangn__autopprof",
+      "status": "existing",
+      "head": "f87ad09",
+      "durationMs": 55
+    },
+    {
+      "index": 97,
+      "name": "naver/spring-batch-plus",
+      "url": "https://github.com/naver/spring-batch-plus",
+      "localPath": "sources/naver__spring-batch-plus",
+      "status": "existing",
+      "head": "e1966e0",
+      "durationMs": 65
+    },
+    {
+      "index": 98,
+      "name": "kakaobrain/kortok",
+      "url": "https://github.com/kakaobrain/kortok",
+      "localPath": "sources/kakaobrain__kortok",
+      "status": "existing",
+      "head": "8fb223b",
+      "durationMs": 53
+    },
+    {
+      "index": 99,
+      "name": "line/gradle-scripts",
+      "url": "https://github.com/line/gradle-scripts",
+      "localPath": "sources/line__gradle-scripts",
+      "status": "existing",
+      "head": "0b74d94",
+      "durationMs": 42
+    },
+    {
+      "index": 100,
+      "name": "mezmo/aura",
+      "url": "https://github.com/mezmo/aura",
+      "localPath": "sources/mezmo__aura",
+      "status": "existing",
+      "head": "0c337b6",
+      "durationMs": 43
+    },
+    {
+      "index": 101,
+      "name": "kakaobrain/rq-vae-transformer",
+      "url": "https://github.com/kakaobrain/rq-vae-transformer",
+      "localPath": "sources/kakaobrain__rq-vae-transformer",
+      "status": "existing",
+      "head": "341395e",
+      "durationMs": 42
+    },
+    {
+      "index": 102,
+      "name": "Samsung/veles",
+      "url": "https://github.com/Samsung/veles",
+      "localPath": "sources/Samsung__veles",
+      "status": "existing",
+      "head": "96218b8",
+      "durationMs": 53
+    },
+    {
+      "index": 103,
+      "name": "toss/nestjs-aop",
+      "url": "https://github.com/toss/nestjs-aop",
+      "localPath": "sources/toss__nestjs-aop",
+      "status": "existing",
+      "head": "efc0422",
+      "durationMs": 39
+    },
+    {
+      "index": 104,
+      "name": "woowacourse/back-end-roadmap",
+      "url": "https://github.com/woowacourse/back-end-roadmap",
+      "localPath": "sources/woowacourse__back-end-roadmap",
+      "status": "existing",
+      "head": "92351e2",
+      "durationMs": 36
+    },
+    {
+      "index": 105,
+      "name": "naver/croco",
+      "url": "https://github.com/naver/croco",
+      "localPath": "sources/naver__croco",
+      "status": "existing",
+      "head": "5d4dbc9",
+      "durationMs": 37
+    },
+    {
+      "index": 106,
+      "name": "naver/multi-hmr",
+      "url": "https://github.com/naver/multi-hmr",
+      "localPath": "sources/naver__multi-hmr",
+      "status": "existing",
+      "head": "651fb41",
+      "durationMs": 38
+    },
+    {
+      "index": 107,
+      "name": "naver/egjs-conveyer",
+      "url": "https://github.com/naver/egjs-conveyer",
+      "localPath": "sources/naver__egjs-conveyer",
+      "status": "existing",
+      "head": "f621444",
+      "durationMs": 58
+    },
+    {
+      "index": 108,
+      "name": "line/abc-def",
+      "url": "https://github.com/line/abc-def",
+      "localPath": "sources/line__abc-def",
+      "status": "existing",
+      "head": "16790d2",
+      "durationMs": 71
+    },
+    {
+      "index": 109,
+      "name": "naver/arcus-java-client",
+      "url": "https://github.com/naver/arcus-java-client",
+      "localPath": "sources/naver__arcus-java-client",
+      "status": "existing",
+      "head": "07888ec",
+      "durationMs": 51
+    },
+    {
+      "index": 110,
+      "name": "kakaobrain/torchgpipe",
+      "url": "https://github.com/kakaobrain/torchgpipe",
+      "localPath": "sources/kakaobrain__torchgpipe",
+      "status": "existing",
+      "head": "a1b4ee2",
+      "durationMs": 39
+    },
+    {
+      "index": 111,
+      "name": "woowacourse/prolog",
+      "url": "https://github.com/woowacourse/prolog",
+      "localPath": "sources/woowacourse__prolog",
+      "status": "existing",
+      "head": "9cc7090",
+      "durationMs": 59
+    },
+    {
+      "index": 112,
+      "name": "kakao/web2app",
+      "url": "https://github.com/kakao/web2app",
+      "localPath": "sources/kakao__web2app",
+      "status": "existing",
+      "head": "30d8908",
+      "durationMs": 36
+    },
+    {
+      "index": 113,
+      "name": "Samsung/CredData",
+      "url": "https://github.com/Samsung/CredData",
+      "localPath": "sources/Samsung__CredData",
+      "status": "existing",
+      "head": "f1de3f8",
+      "durationMs": 46
+    },
+    {
+      "index": 114,
+      "name": "kakaobrain/jejueo",
+      "url": "https://github.com/kakaobrain/jejueo",
+      "localPath": "sources/kakaobrain__jejueo",
+      "status": "existing",
+      "head": "0ab5333",
+      "durationMs": 37
+    },
+    {
+      "index": 115,
+      "name": "Samsung/walrus",
+      "url": "https://github.com/Samsung/walrus",
+      "localPath": "sources/Samsung__walrus",
+      "status": "existing",
+      "head": "c5f4941",
+      "durationMs": 42
+    },
+    {
+      "index": 116,
+      "name": "toss/apps-in-toss-ax",
+      "url": "https://github.com/toss/apps-in-toss-ax",
+      "localPath": "sources/toss__apps-in-toss-ax",
+      "status": "existing",
+      "head": "72412bb",
+      "durationMs": 36
+    },
+    {
+      "index": 117,
+      "name": "sodam-ai/Langent-MCP_One-Click_Kit",
+      "url": "https://github.com/sodam-ai/Langent-MCP_One-Click_Kit",
+      "localPath": "sources/sodam-ai__Langent-MCP_One-Click_Kit",
+      "status": "existing",
+      "head": "5fffb4a",
+      "durationMs": 32
+    },
+    {
+      "index": 118,
+      "name": "naver/sqlova",
+      "url": "https://github.com/naver/sqlova",
+      "localPath": "sources/naver__sqlova",
+      "status": "existing",
+      "head": "fc68af6",
+      "durationMs": 35
+    },
+    {
+      "index": 119,
+      "name": "naver-ai/StyleKeeper",
+      "url": "https://github.com/naver-ai/StyleKeeper",
+      "localPath": "sources/naver-ai__StyleKeeper",
+      "status": "existing",
+      "head": "ac1219c",
+      "durationMs": 35
+    },
+    {
+      "index": 120,
+      "name": "kakao/recoteam",
+      "url": "https://github.com/kakao/recoteam",
+      "localPath": "sources/kakao__recoteam",
+      "status": "existing",
+      "head": "65fc78e",
+      "durationMs": 37
+    },
+    {
+      "index": 121,
+      "name": "naver/spring-jdbc-plus",
+      "url": "https://github.com/naver/spring-jdbc-plus",
+      "localPath": "sources/naver__spring-jdbc-plus",
+      "status": "existing",
+      "head": "e57f513",
+      "durationMs": 43
+    },
+    {
+      "index": 122,
+      "name": "naver/tamgu",
+      "url": "https://github.com/naver/tamgu",
+      "localPath": "sources/naver__tamgu",
+      "status": "existing",
+      "head": "23baa39",
+      "durationMs": 82
+    },
+    {
+      "index": 123,
+      "name": "modu-ai/cowork-plugins",
+      "url": "https://github.com/modu-ai/cowork-plugins",
+      "localPath": "sources/modu-ai__cowork-plugins",
+      "status": "existing",
+      "head": "ddde655",
+      "durationMs": 65
+    },
+    {
+      "index": 124,
+      "name": "johnisanerd/Apify-Naver-AI-Overview-API",
+      "url": "https://github.com/johnisanerd/Apify-Naver-AI-Overview-API",
+      "localPath": "sources/johnisanerd__Apify-Naver-AI-Overview-API",
+      "status": "existing",
+      "head": "c18cbb2",
+      "durationMs": 33
+    },
+    {
+      "index": 125,
+      "name": "johnisanerd/Apify-Naver-Search-API",
+      "url": "https://github.com/johnisanerd/Apify-Naver-Search-API",
+      "localPath": "sources/johnisanerd__Apify-Naver-Search-API",
+      "status": "existing",
+      "head": "8f1b0cd",
+      "durationMs": 37
+    },
+    {
+      "index": 126,
+      "name": "workbookbulb863/korean-law-alio-mcp",
+      "url": "https://github.com/workbookbulb863/korean-law-alio-mcp",
+      "localPath": "sources/workbookbulb863__korean-law-alio-mcp",
+      "status": "existing",
+      "head": "010cec0",
+      "durationMs": 40
+    },
+    {
+      "index": 127,
+      "name": "aesthetic-legalism5470/korean-dart-mcp",
+      "url": "https://github.com/aesthetic-legalism5470/korean-dart-mcp",
+      "localPath": "sources/aesthetic-legalism5470__korean-dart-mcp",
+      "status": "existing",
+      "head": "f3296c8",
+      "durationMs": 38
+    },
+    {
+      "index": 128,
+      "name": "OldTemple91/korea-filings-api",
+      "url": "https://github.com/OldTemple91/korea-filings-api",
+      "localPath": "sources/OldTemple91__korea-filings-api",
+      "status": "existing",
+      "head": "8b0be0e",
+      "durationMs": 44
+    },
+    {
+      "index": 129,
+      "name": "CSOAI-ORG/korea-ai-basic-act-mcp",
+      "url": "https://github.com/CSOAI-ORG/korea-ai-basic-act-mcp",
+      "localPath": "sources/CSOAI-ORG__korea-ai-basic-act-mcp",
+      "status": "existing",
+      "head": "2e9384f",
+      "durationMs": 41
+    },
+    {
+      "index": 130,
+      "name": "hosungseo/agent-ready-check",
+      "url": "https://github.com/hosungseo/agent-ready-check",
+      "localPath": "sources/hosungseo__agent-ready-check",
+      "status": "existing",
+      "head": "41a6b6f",
+      "durationMs": 40
+    },
+    {
+      "index": 131,
+      "name": "dangamsoft/cafe-mcp",
+      "url": "https://github.com/dangamsoft/cafe-mcp",
+      "localPath": "sources/dangamsoft__cafe-mcp",
+      "status": "existing",
+      "head": "218360f",
+      "durationMs": 40
+    },
+    {
+      "index": 132,
+      "name": "chrisryugj/korean-law-mcp",
+      "url": "https://github.com/chrisryugj/korean-law-mcp",
+      "localPath": "sources/chrisryugj__korean-law-mcp",
+      "status": "existing",
+      "head": "7cb7db0",
+      "durationMs": 42
+    },
+    {
+      "index": 133,
+      "name": "naver/biobert-pretrained",
+      "url": "https://github.com/naver/biobert-pretrained",
+      "localPath": "sources/naver__biobert-pretrained",
+      "status": "existing",
+      "head": "b2be838",
+      "durationMs": 36
+    },
+    {
+      "index": 134,
+      "name": "naver/must3r",
+      "url": "https://github.com/naver/must3r",
+      "localPath": "sources/naver__must3r",
+      "status": "existing",
+      "head": "0c0d76b",
+      "durationMs": 42
+    },
+    {
+      "index": 135,
+      "name": "Samsung/Tizen-CSharp-Samples",
+      "url": "https://github.com/Samsung/Tizen-CSharp-Samples",
+      "localPath": "sources/Samsung__Tizen-CSharp-Samples",
+      "status": "existing",
+      "head": "1683d6d",
+      "durationMs": 257
+    },
+    {
+      "index": 136,
+      "name": "naver-ai/pcme",
+      "url": "https://github.com/naver-ai/pcme",
+      "localPath": "sources/naver-ai__pcme",
+      "status": "existing",
+      "head": "4947684",
+      "durationMs": 39
+    },
+    {
+      "index": 137,
+      "name": "line/liff-playground",
+      "url": "https://github.com/line/liff-playground",
+      "localPath": "sources/line__liff-playground",
+      "status": "existing",
+      "head": "f5ab823",
+      "durationMs": 40
+    },
+    {
+      "index": 138,
+      "name": "naver/cover-checker",
+      "url": "https://github.com/naver/cover-checker",
+      "localPath": "sources/naver__cover-checker",
+      "status": "existing",
+      "head": "8e32012",
+      "durationMs": 40
+    },
+    {
+      "index": 139,
+      "name": "kakao/varlog",
+      "url": "https://github.com/kakao/varlog",
+      "localPath": "sources/kakao__varlog",
+      "status": "existing",
+      "head": "6a885fb",
+      "durationMs": 236
+    },
+    {
+      "index": 140,
+      "name": "woowacourse/react-payments",
+      "url": "https://github.com/woowacourse/react-payments",
+      "localPath": "sources/woowacourse__react-payments",
+      "status": "existing",
+      "head": "8d4c2c7",
+      "durationMs": 39
+    },
+    {
+      "index": 141,
+      "name": "rawdev/MemoryWeft",
+      "url": "https://github.com/rawdev/MemoryWeft",
+      "localPath": "sources/rawdev__MemoryWeft",
+      "status": "existing",
+      "head": "7d29ffa",
+      "durationMs": 44
+    },
+    {
+      "index": 142,
+      "name": "kakao/buffalo",
+      "url": "https://github.com/kakao/buffalo",
+      "localPath": "sources/kakao__buffalo",
+      "status": "existing",
+      "head": "130b90a",
+      "durationMs": 47
+    },
+    {
+      "index": 143,
+      "name": "naver-ai/ZIM",
+      "url": "https://github.com/naver-ai/ZIM",
+      "localPath": "sources/naver-ai__ZIM",
+      "status": "existing",
+      "head": "392e613",
+      "durationMs": 38
+    },
+    {
+      "index": 144,
+      "name": "naver/cgd",
+      "url": "https://github.com/naver/cgd",
+      "localPath": "sources/naver__cgd",
+      "status": "existing",
+      "head": "52c2984",
+      "durationMs": 43
+    },
+    {
+      "index": 145,
+      "name": "lumatic2/korean-tax-accounting-ax-benchmark",
+      "url": "https://github.com/lumatic2/korean-tax-accounting-ax-benchmark",
+      "localPath": "sources/lumatic2__korean-tax-accounting-ax-benchmark",
+      "status": "existing",
+      "head": "09b8485",
+      "durationMs": 41
+    },
+    {
+      "index": 146,
+      "name": "UrRafiFirdaus/ComfyUI_FL-HeartMuLa",
+      "url": "https://github.com/UrRafiFirdaus/ComfyUI_FL-HeartMuLa",
+      "localPath": "sources/UrRafiFirdaus__ComfyUI_FL-HeartMuLa",
+      "status": "existing",
+      "head": "7006fe7",
+      "durationMs": 265
+    },
+    {
+      "index": 147,
+      "name": "kakaobrain/karlo",
+      "url": "https://github.com/kakaobrain/karlo",
+      "localPath": "sources/kakaobrain__karlo",
+      "status": "existing",
+      "head": "3c68a50",
+      "durationMs": 46
+    },
+    {
+      "index": 148,
+      "name": "kakaobrain/mindall-e",
+      "url": "https://github.com/kakaobrain/mindall-e",
+      "localPath": "sources/kakaobrain__mindall-e",
+      "status": "existing",
+      "head": "e548007",
+      "durationMs": 42
+    },
+    {
+      "index": 149,
+      "name": "kakao/n2",
+      "url": "https://github.com/kakao/n2",
+      "localPath": "sources/kakao__n2",
+      "status": "existing",
+      "head": "20b02de",
+      "durationMs": 58
+    },
+    {
+      "index": 150,
+      "name": "naver/egjs-view360",
+      "url": "https://github.com/naver/egjs-view360",
+      "localPath": "sources/naver__egjs-view360",
+      "status": "existing",
+      "head": "4c09a72",
+      "durationMs": 65
+    },
+    {
+      "index": 151,
+      "name": "naver/r2d2",
+      "url": "https://github.com/naver/r2d2",
+      "localPath": "sources/naver__r2d2",
+      "status": "existing",
+      "head": "0ff8f6a",
+      "durationMs": 46
+    },
+    {
+      "index": 152,
+      "name": "Samsung/GearVRf",
+      "url": "https://github.com/Samsung/GearVRf",
+      "localPath": "sources/Samsung__GearVRf",
+      "status": "existing",
+      "head": "2cf6e14",
+      "durationMs": 127
+    },
+    {
+      "index": 153,
+      "name": "Samsung/Wits",
+      "url": "https://github.com/Samsung/Wits",
+      "localPath": "sources/Samsung__Wits",
+      "status": "existing",
+      "head": "b59d7e6",
+      "durationMs": 36
+    },
+    {
+      "index": 154,
+      "name": "line/stellite",
+      "url": "https://github.com/line/stellite",
+      "localPath": "sources/line__stellite",
+      "status": "existing",
+      "head": "5bd1c1f",
+      "durationMs": 48
+    },
+    {
+      "index": 155,
+      "name": "line/jnotebook_reader",
+      "url": "https://github.com/line/jnotebook_reader",
+      "localPath": "sources/line__jnotebook_reader",
+      "status": "existing",
+      "head": "80c9178",
+      "durationMs": 35
+    },
+    {
+      "index": 156,
+      "name": "daangn/betterkoreankotlin",
+      "url": "https://github.com/daangn/betterkoreankotlin",
+      "localPath": "sources/daangn__betterkoreankotlin",
+      "status": "existing",
+      "head": "dfaba15",
+      "durationMs": 41
+    },
+    {
+      "index": 157,
+      "name": "naver-ai/chacha-chatbot",
+      "url": "https://github.com/naver-ai/chacha-chatbot",
+      "localPath": "sources/naver-ai__chacha-chatbot",
+      "status": "existing",
+      "head": "52c88f3",
+      "durationMs": 38
+    },
+    {
+      "index": 158,
+      "name": "kakao/kakao-ios-sdk",
+      "url": "https://github.com/kakao/kakao-ios-sdk",
+      "localPath": "sources/kakao__kakao-ios-sdk",
+      "status": "existing",
+      "head": "2a68ca0",
+      "durationMs": 38
+    },
+    {
+      "index": 159,
+      "name": "scvcoder/korean-law-alio-mcp",
+      "url": "https://github.com/scvcoder/korean-law-alio-mcp",
+      "localPath": "sources/scvcoder__korean-law-alio-mcp",
+      "status": "existing",
+      "head": "09a00ac",
+      "durationMs": 40
+    },
+    {
+      "index": 160,
+      "name": "hypn4/tossinvest-mcp",
+      "url": "https://github.com/hypn4/tossinvest-mcp",
+      "localPath": "sources/hypn4__tossinvest-mcp",
+      "status": "existing",
+      "head": "4d1100f",
+      "durationMs": 38
+    },
+    {
+      "index": 161,
+      "name": "treesoop/hwp-mcp",
+      "url": "https://github.com/treesoop/hwp-mcp",
+      "localPath": "sources/treesoop__hwp-mcp",
+      "status": "existing",
+      "head": "087c829",
+      "durationMs": 41
+    },
+    {
+      "index": 162,
+      "name": "naver-ai/StyleMapGAN",
+      "url": "https://github.com/naver-ai/StyleMapGAN",
+      "localPath": "sources/naver-ai__StyleMapGAN",
+      "status": "existing",
+      "head": "3a70e07",
+      "durationMs": 43
+    },
+    {
+      "index": 163,
+      "name": "toss/h6s",
+      "url": "https://github.com/toss/h6s",
+      "localPath": "sources/toss__h6s",
+      "status": "existing",
+      "head": "668be4b",
+      "durationMs": 118
+    },
+    {
+      "index": 164,
+      "name": "naver/egjs-grid",
+      "url": "https://github.com/naver/egjs-grid",
+      "localPath": "sources/naver__egjs-grid",
+      "status": "existing",
+      "head": "814b172",
+      "durationMs": 48
+    },
+    {
+      "index": 165,
+      "name": "naver-ai/tc-clip",
+      "url": "https://github.com/naver-ai/tc-clip",
+      "localPath": "sources/naver-ai__tc-clip",
+      "status": "existing",
+      "head": "8728fe4",
+      "durationMs": 38
+    },
+    {
+      "index": 166,
+      "name": "kakaobrain/brain-agent",
+      "url": "https://github.com/kakaobrain/brain-agent",
+      "localPath": "sources/kakaobrain__brain-agent",
+      "status": "existing",
+      "head": "bee5549",
+      "durationMs": 35
+    },
+    {
+      "index": 167,
+      "name": "line/centraldogma-go",
+      "url": "https://github.com/line/centraldogma-go",
+      "localPath": "sources/line__centraldogma-go",
+      "status": "existing",
+      "head": "016c8c7",
+      "durationMs": 35
+    },
+    {
+      "index": 168,
+      "name": "line/line-developers-docs-source",
+      "url": "https://github.com/line/line-developers-docs-source",
+      "localPath": "sources/line__line-developers-docs-source",
+      "status": "existing",
+      "head": "a96b194",
+      "durationMs": 50
+    },
+    {
+      "index": 169,
+      "name": "naver-ai/DenseDiffusion",
+      "url": "https://github.com/naver-ai/DenseDiffusion",
+      "localPath": "sources/naver-ai__DenseDiffusion",
+      "status": "existing",
+      "head": "54a2ea6",
+      "durationMs": 35
+    },
+    {
+      "index": 170,
+      "name": "nhn/gpm.unity",
+      "url": "https://github.com/nhn/gpm.unity",
+      "localPath": "sources/nhn__gpm.unity",
+      "status": "existing",
+      "head": "7db950f",
+      "durationMs": 53
+    },
+    {
+      "index": 171,
+      "name": "naver/smarteditor2",
+      "url": "https://github.com/naver/smarteditor2",
+      "localPath": "sources/naver__smarteditor2",
+      "status": "existing",
+      "head": "cf6070f",
+      "durationMs": 44
+    },
+    {
+      "index": 172,
+      "name": "line/apng-drawable",
+      "url": "https://github.com/line/apng-drawable",
+      "localPath": "sources/line__apng-drawable",
+      "status": "existing",
+      "head": "da13784",
+      "durationMs": 39
+    },
+    {
+      "index": 173,
+      "name": "naver/tldr",
+      "url": "https://github.com/naver/tldr",
+      "localPath": "sources/naver__tldr",
+      "status": "existing",
+      "head": "bcbd043",
+      "durationMs": 36
+    },
+    {
+      "index": 174,
+      "name": "toss/docflow",
+      "url": "https://github.com/toss/docflow",
+      "localPath": "sources/toss__docflow",
+      "status": "existing",
+      "head": "f16ab5e",
+      "durationMs": 42
+    },
+    {
+      "index": 175,
+      "name": "naver-ai/relabel_imagenet",
+      "url": "https://github.com/naver-ai/relabel_imagenet",
+      "localPath": "sources/naver-ai__relabel_imagenet",
+      "status": "existing",
+      "head": "3d4824f",
+      "durationMs": 39
+    },
+    {
+      "index": 176,
+      "name": "kakaobrain/word2word",
+      "url": "https://github.com/kakaobrain/word2word",
+      "localPath": "sources/kakaobrain__word2word",
+      "status": "existing",
+      "head": "7aa4809",
+      "durationMs": 31
+    },
+    {
+      "index": 177,
+      "name": "kakaobrain/g2pm",
+      "url": "https://github.com/kakaobrain/g2pm",
+      "localPath": "sources/kakaobrain__g2pm",
+      "status": "existing",
+      "head": "170526e",
+      "durationMs": 44
+    },
+    {
+      "index": 178,
+      "name": "Samsung/cotopaxi",
+      "url": "https://github.com/Samsung/cotopaxi",
+      "localPath": "sources/Samsung__cotopaxi",
+      "status": "existing",
+      "head": "d19178b",
+      "durationMs": 146
+    },
+    {
+      "index": 179,
+      "name": "Samsung/ADBI",
+      "url": "https://github.com/Samsung/ADBI",
+      "localPath": "sources/Samsung__ADBI",
+      "status": "existing",
+      "head": "3e424c4",
+      "durationMs": 54
+    },
+    {
+      "index": 180,
+      "name": "kakao/kanana",
+      "url": "https://github.com/kakao/kanana",
+      "localPath": "sources/kakao__kanana",
+      "status": "existing",
+      "head": "f064aae",
+      "durationMs": 46
+    },
+    {
+      "index": 181,
+      "name": "naver/naveridlogin-sdk-android",
+      "url": "https://github.com/naver/naveridlogin-sdk-android",
+      "localPath": "sources/naver__naveridlogin-sdk-android",
+      "status": "existing",
+      "head": "e94ae7a",
+      "durationMs": 62
+    },
+    {
+      "index": 182,
+      "name": "Samsung/SamsungAutomationStudio",
+      "url": "https://github.com/Samsung/SamsungAutomationStudio",
+      "localPath": "sources/Samsung__SamsungAutomationStudio",
+      "status": "existing",
+      "head": "f28a88c",
+      "durationMs": 55
+    },
+    {
+      "index": 183,
+      "name": "line/aes-gcm-siv",
+      "url": "https://github.com/line/aes-gcm-siv",
+      "localPath": "sources/line__aes-gcm-siv",
+      "status": "existing",
+      "head": "3fd1653",
+      "durationMs": 64
+    },
+    {
+      "index": 184,
+      "name": "gustavoeenriquez/MakerAi",
+      "url": "https://github.com/gustavoeenriquez/MakerAi",
+      "localPath": "sources/gustavoeenriquez__MakerAi",
+      "status": "existing",
+      "head": "a2f0610",
+      "durationMs": 97
+    },
+    {
+      "index": 185,
+      "name": "Samsung/TizenTVApps",
+      "url": "https://github.com/Samsung/TizenTVApps",
+      "localPath": "sources/Samsung__TizenTVApps",
+      "status": "existing",
+      "head": "7150e2f",
+      "durationMs": 69
+    },
+    {
+      "index": 186,
+      "name": "naver/pow3r",
+      "url": "https://github.com/naver/pow3r",
+      "localPath": "sources/naver__pow3r",
+      "status": "existing",
+      "head": "25d7bb6",
+      "durationMs": 50
+    },
+    {
+      "index": 187,
+      "name": "naver/egjs-axes",
+      "url": "https://github.com/naver/egjs-axes",
+      "localPath": "sources/naver__egjs-axes",
+      "status": "existing",
+      "head": "d529450",
+      "durationMs": 58
+    },
+    {
+      "index": 188,
+      "name": "daangn/graplix",
+      "url": "https://github.com/daangn/graplix",
+      "localPath": "sources/daangn__graplix",
+      "status": "existing",
+      "head": "822a57d",
+      "durationMs": 49
+    },
+    {
+      "index": 189,
+      "name": "line/abc-virtual-background-maker",
+      "url": "https://github.com/line/abc-virtual-background-maker",
+      "localPath": "sources/line__abc-virtual-background-maker",
+      "status": "existing",
+      "head": "c52cc2c",
+      "durationMs": 49
+    },
+    {
+      "index": 190,
+      "name": "daangn/minimemcached",
+      "url": "https://github.com/daangn/minimemcached",
+      "localPath": "sources/daangn__minimemcached",
+      "status": "existing",
+      "head": "3472169",
+      "durationMs": 49
+    },
+    {
+      "index": 191,
+      "name": "sktelecom/sktelecom.github.io",
+      "url": "https://github.com/sktelecom/sktelecom.github.io",
+      "localPath": "sources/sktelecom__sktelecom.github.io",
+      "status": "existing",
+      "head": "a18908f",
+      "durationMs": 50
+    },
+    {
+      "index": 192,
+      "name": "nashsu/llm_wiki",
+      "url": "https://github.com/nashsu/llm_wiki",
+      "localPath": "sources/nashsu__llm_wiki",
+      "status": "existing",
+      "head": "d0437e8",
+      "durationMs": 57
+    },
+    {
+      "index": 193,
+      "name": "JinhuiStudy/llm-engineering-bootcamp",
+      "url": "https://github.com/JinhuiStudy/llm-engineering-bootcamp",
+      "localPath": "sources/JinhuiStudy__llm-engineering-bootcamp",
+      "status": "existing",
+      "head": "48e1f59",
+      "durationMs": 44
+    },
+    {
+      "index": 194,
+      "name": "kakaobrain/torchlars",
+      "url": "https://github.com/kakaobrain/torchlars",
+      "localPath": "sources/kakaobrain__torchlars",
+      "status": "existing",
+      "head": "3b3d7e9",
+      "durationMs": 34
+    },
+    {
+      "index": 195,
+      "name": "naver-ai/vidt",
+      "url": "https://github.com/naver-ai/vidt",
+      "localPath": "sources/naver-ai__vidt",
+      "status": "existing",
+      "head": "a8c48b5",
+      "durationMs": 39
+    },
+    {
+      "index": 196,
+      "name": "naver/hackday-conventions-java",
+      "url": "https://github.com/naver/hackday-conventions-java",
+      "localPath": "sources/naver__hackday-conventions-java",
+      "status": "existing",
+      "head": "1f277f7",
+      "durationMs": 33
+    },
+    {
+      "index": 197,
+      "name": "kakao/FunctionChat-Bench",
+      "url": "https://github.com/kakao/FunctionChat-Bench",
+      "localPath": "sources/kakao__FunctionChat-Bench",
+      "status": "existing",
+      "head": "5ddb0b5",
+      "durationMs": 39
+    },
+    {
+      "index": 198,
+      "name": "daangn/kinesumer",
+      "url": "https://github.com/daangn/kinesumer",
+      "localPath": "sources/daangn__kinesumer",
+      "status": "existing",
+      "head": "a377be6",
+      "durationMs": 32
+    },
+    {
+      "index": 199,
+      "name": "daangn/gorean",
+      "url": "https://github.com/daangn/gorean",
+      "localPath": "sources/daangn__gorean",
+      "status": "existing",
+      "head": "aef2d3d",
+      "durationMs": 33
+    },
+    {
+      "index": 200,
+      "name": "Samsung/LPVS",
+      "url": "https://github.com/Samsung/LPVS",
+      "localPath": "sources/Samsung__LPVS",
+      "status": "existing",
+      "head": "2ebf092",
+      "durationMs": 37
+    },
+    {
+      "index": 201,
+      "name": "Samsung/Universum",
+      "url": "https://github.com/Samsung/Universum",
+      "localPath": "sources/Samsung__Universum",
+      "status": "existing",
+      "head": "49a16a5",
+      "durationMs": 33
+    },
+    {
+      "index": 202,
+      "name": "Samsung/TICO",
+      "url": "https://github.com/Samsung/TICO",
+      "localPath": "sources/Samsung__TICO",
+      "status": "existing",
+      "head": "5555056",
+      "durationMs": 49
+    },
+    {
+      "index": 203,
+      "name": "seung23/lawtutor-mcp",
+      "url": "https://github.com/seung23/lawtutor-mcp",
+      "localPath": "sources/seung23__lawtutor-mcp",
+      "status": "existing",
+      "head": "e9aca7e",
+      "durationMs": 36
+    },
+    {
+      "index": 204,
+      "name": "naver/android-imagecropview",
+      "url": "https://github.com/naver/android-imagecropview",
+      "localPath": "sources/naver__android-imagecropview",
+      "status": "existing",
+      "head": "40e0bff",
+      "durationMs": 37
+    },
+    {
+      "index": 205,
+      "name": "naver/panst3r",
+      "url": "https://github.com/naver/panst3r",
+      "localPath": "sources/naver__panst3r",
+      "status": "existing",
+      "head": "0253909",
+      "durationMs": 37
+    },
+    {
+      "index": 206,
+      "name": "toss/yarn-plugin-catalogs",
+      "url": "https://github.com/toss/yarn-plugin-catalogs",
+      "localPath": "sources/toss__yarn-plugin-catalogs",
+      "status": "existing",
+      "head": "455a5fe",
+      "durationMs": 41
+    },
+    {
+      "index": 207,
+      "name": "naver/anny-fit",
+      "url": "https://github.com/naver/anny-fit",
+      "localPath": "sources/naver__anny-fit",
+      "status": "existing",
+      "head": "b03ec19",
+      "durationMs": 45
+    },
+    {
+      "index": 208,
+      "name": "trpc-group/trpc-agent-go",
+      "url": "https://github.com/trpc-group/trpc-agent-go",
+      "localPath": "sources/trpc-group__trpc-agent-go",
+      "status": "existing",
+      "head": "43b120c",
+      "durationMs": 132
+    },
+    {
+      "index": 209,
+      "name": "hyperconnect/TC-ResNet",
+      "url": "https://github.com/hyperconnect/TC-ResNet",
+      "localPath": "sources/hyperconnect__TC-ResNet",
+      "status": "existing",
+      "head": "8ccbff3",
+      "durationMs": 52
+    },
+    {
+      "index": 210,
+      "name": "line/feature-flag-android",
+      "url": "https://github.com/line/feature-flag-android",
+      "localPath": "sources/line__feature-flag-android",
+      "status": "existing",
+      "head": "db3dc4c",
+      "durationMs": 57
+    },
+    {
+      "index": 211,
+      "name": "naver-ai/seit",
+      "url": "https://github.com/naver-ai/seit",
+      "localPath": "sources/naver-ai__seit",
+      "status": "existing",
+      "head": "39b7a4a",
+      "durationMs": 60
+    },
+    {
+      "index": 212,
+      "name": "woowacourse/javascript-lotto",
+      "url": "https://github.com/woowacourse/javascript-lotto",
+      "localPath": "sources/woowacourse__javascript-lotto",
+      "status": "existing",
+      "head": "b879bcf",
+      "durationMs": 49
+    },
+    {
+      "index": 213,
+      "name": "naver-ai/muco",
+      "url": "https://github.com/naver-ai/muco",
+      "localPath": "sources/naver-ai__muco",
+      "status": "existing",
+      "head": "604da53",
+      "durationMs": 57
+    },
+    {
+      "index": 214,
+      "name": "woowacourse/java-coupon",
+      "url": "https://github.com/woowacourse/java-coupon",
+      "localPath": "sources/woowacourse__java-coupon",
+      "status": "existing",
+      "head": "af48d71",
+      "durationMs": 57
+    },
+    {
+      "index": 215,
+      "name": "KM-it-ops/memory-mcp",
+      "url": "https://github.com/KM-it-ops/memory-mcp",
+      "localPath": "sources/KM-it-ops__memory-mcp",
+      "status": "cloned",
+      "mode": "partial",
+      "head": "6ce088b",
+      "durationMs": 1120
+    },
+    {
+      "index": 216,
+      "name": "line/garr",
+      "url": "https://github.com/line/garr",
+      "localPath": "sources/line__garr",
+      "status": "existing",
+      "head": "cd7c766",
+      "durationMs": 40
+    },
+    {
+      "index": 217,
+      "name": "toss/tossface",
+      "url": "https://github.com/toss/tossface",
+      "localPath": "sources/toss__tossface",
+      "status": "existing",
+      "head": "37720aa",
+      "durationMs": 112
+    },
+    {
+      "index": 218,
+      "name": "naver-ai/pit",
+      "url": "https://github.com/naver-ai/pit",
+      "localPath": "sources/naver-ai__pit",
+      "status": "existing",
+      "head": "9d97a62",
+      "durationMs": 32
+    },
+    {
+      "index": 219,
+      "name": "naver/egjs-view3d",
+      "url": "https://github.com/naver/egjs-view3d",
+      "localPath": "sources/naver__egjs-view3d",
+      "status": "existing",
+      "head": "6914eca",
+      "durationMs": 55
+    },
+    {
+      "index": 220,
+      "name": "line/line-login-starter",
+      "url": "https://github.com/line/line-login-starter",
+      "localPath": "sources/line__line-login-starter",
+      "status": "existing",
+      "head": "35e2714",
+      "durationMs": 33
+    },
+    {
+      "index": 221,
+      "name": "toss/apps-in-toss-examples",
+      "url": "https://github.com/toss/apps-in-toss-examples",
+      "localPath": "sources/toss__apps-in-toss-examples",
+      "status": "existing",
+      "head": "ed2ffdb",
+      "durationMs": 53
+    },
+    {
+      "index": 222,
+      "name": "hyperconnect/HypeUI",
+      "url": "https://github.com/hyperconnect/HypeUI",
+      "localPath": "sources/hyperconnect__HypeUI",
+      "status": "existing",
+      "head": "49709c8",
+      "durationMs": 35
+    },
+    {
+      "index": 223,
+      "name": "line/line-sdk-unity",
+      "url": "https://github.com/line/line-sdk-unity",
+      "localPath": "sources/line__line-sdk-unity",
+      "status": "existing",
+      "head": "b7925f2",
+      "durationMs": 37
+    },
+    {
+      "index": 224,
+      "name": "line/create-liff-app",
+      "url": "https://github.com/line/create-liff-app",
+      "localPath": "sources/line__create-liff-app",
+      "status": "existing",
+      "head": "6fb6601",
+      "durationMs": 38
+    },
+    {
+      "index": 225,
+      "name": "Samsung/mTower",
+      "url": "https://github.com/Samsung/mTower",
+      "localPath": "sources/Samsung__mTower",
+      "status": "existing",
+      "head": "0cf7c56",
+      "durationMs": 45
+    },
+    {
+      "index": 226,
+      "name": "naver/lobster",
+      "url": "https://github.com/naver/lobster",
+      "localPath": "sources/naver__lobster",
+      "status": "existing",
+      "head": "a62de38",
+      "durationMs": 40
+    },
+    {
+      "index": 227,
+      "name": "naver/artemis",
+      "url": "https://github.com/naver/artemis",
+      "localPath": "sources/naver__artemis",
+      "status": "existing",
+      "head": "f36f779",
+      "durationMs": 33
+    },
+    {
+      "index": 228,
+      "name": "naver-ai/sommelier",
+      "url": "https://github.com/naver-ai/sommelier",
+      "localPath": "sources/naver-ai__sommelier",
+      "status": "existing",
+      "head": "4d94098",
+      "durationMs": 32
+    },
+    {
+      "index": 229,
+      "name": "kakao/OrchestrationBench",
+      "url": "https://github.com/kakao/OrchestrationBench",
+      "localPath": "sources/kakao__OrchestrationBench",
+      "status": "existing",
+      "head": "f3596da",
+      "durationMs": 42
+    },
+    {
+      "index": 230,
+      "name": "daangn/betterkorean",
+      "url": "https://github.com/daangn/betterkorean",
+      "localPath": "sources/daangn__betterkorean",
+      "status": "existing",
+      "head": "4cca276",
+      "durationMs": 33
+    },
+    {
+      "index": 231,
+      "name": "naver-ai/KoNET",
+      "url": "https://github.com/naver-ai/KoNET",
+      "localPath": "sources/naver-ai__KoNET",
+      "status": "existing",
+      "head": "23df8c6",
+      "durationMs": 32
+    },
+    {
+      "index": 232,
+      "name": "woowacourse/java-blackjack",
+      "url": "https://github.com/woowacourse/java-blackjack",
+      "localPath": "sources/woowacourse__java-blackjack",
+      "status": "existing",
+      "head": "549740e",
+      "durationMs": 31
+    },
+    {
+      "index": 233,
+      "name": "line/headver",
+      "url": "https://github.com/line/headver",
+      "localPath": "sources/line__headver",
+      "status": "existing",
+      "head": "6ed9316",
+      "durationMs": 33
+    },
+    {
+      "index": 234,
+      "name": "naver/claf",
+      "url": "https://github.com/naver/claf",
+      "localPath": "sources/naver__claf",
+      "status": "existing",
+      "head": "6f45b1e",
+      "durationMs": 46
+    },
+    {
+      "index": 235,
+      "name": "Samsung/KnowledgeSharingPlatform",
+      "url": "https://github.com/Samsung/KnowledgeSharingPlatform",
+      "localPath": "sources/Samsung__KnowledgeSharingPlatform",
+      "status": "existing",
+      "head": "14ca0c2",
+      "durationMs": 67
+    },
+    {
+      "index": 236,
+      "name": "nhn/tui.jsdoc-template",
+      "url": "https://github.com/nhn/tui.jsdoc-template",
+      "localPath": "sources/nhn__tui.jsdoc-template",
+      "status": "existing",
+      "head": "13a8d08",
+      "durationMs": 33
+    },
+    {
+      "index": 237,
+      "name": "line/line-things-starter",
+      "url": "https://github.com/line/line-things-starter",
+      "localPath": "sources/line__line-things-starter",
+      "status": "existing",
+      "head": "6b4b6af",
+      "durationMs": 32
+    },
+    {
+      "index": 238,
+      "name": "naver-ai/pcmepp",
+      "url": "https://github.com/naver-ai/pcmepp",
+      "localPath": "sources/naver-ai__pcmepp",
+      "status": "existing",
+      "head": "8829c0d",
+      "durationMs": 32
+    },
+    {
+      "index": 239,
+      "name": "naver-ai/carecall-corpus",
+      "url": "https://github.com/naver-ai/carecall-corpus",
+      "localPath": "sources/naver-ai__carecall-corpus",
+      "status": "existing",
+      "head": "033f6cf",
+      "durationMs": 33
+    },
+    {
+      "index": 240,
+      "name": "naver-ai/hypermix",
+      "url": "https://github.com/naver-ai/hypermix",
+      "localPath": "sources/naver-ai__hypermix",
+      "status": "existing",
+      "head": "b36fa71",
+      "durationMs": 32
+    },
+    {
+      "index": 241,
+      "name": "naver/egjs-persist",
+      "url": "https://github.com/naver/egjs-persist",
+      "localPath": "sources/naver__egjs-persist",
+      "status": "existing",
+      "head": "0d06d5d",
+      "durationMs": 32
+    },
+    {
+      "index": 242,
+      "name": "naver/multi-hmr2",
+      "url": "https://github.com/naver/multi-hmr2",
+      "localPath": "sources/naver__multi-hmr2",
+      "status": "existing",
+      "head": "1a1b92f",
+      "durationMs": 33
+    },
+    {
+      "index": 243,
+      "name": "naver-ai/KoBBQ",
+      "url": "https://github.com/naver-ai/KoBBQ",
+      "localPath": "sources/naver-ai__KoBBQ",
+      "status": "existing",
+      "head": "0dd165a",
+      "durationMs": 32
+    },
+    {
+      "index": 244,
+      "name": "sktelecom/onot",
+      "url": "https://github.com/sktelecom/onot",
+      "localPath": "sources/sktelecom__onot",
+      "status": "existing",
+      "head": "3ae3ac9",
+      "durationMs": 37
+    },
+    {
+      "index": 245,
+      "name": "kokogo100/ragalgo-mcp-server",
+      "url": "https://github.com/kokogo100/ragalgo-mcp-server",
+      "localPath": "sources/kokogo100__ragalgo-mcp-server",
+      "status": "existing",
+      "head": "05fa836",
+      "durationMs": 32
+    },
+    {
+      "index": 246,
+      "name": "hyperconnect/MMNet",
+      "url": "https://github.com/hyperconnect/MMNet",
+      "localPath": "sources/hyperconnect__MMNet",
+      "status": "existing",
+      "head": "aa423b5",
+      "durationMs": 37
+    },
+    {
+      "index": 247,
+      "name": "nhn/socket.io-client-unity3d",
+      "url": "https://github.com/nhn/socket.io-client-unity3d",
+      "localPath": "sources/nhn__socket.io-client-unity3d",
+      "status": "existing",
+      "head": "1be12d3",
+      "durationMs": 46
+    },
+    {
+      "index": 248,
+      "name": "line/armeria-examples",
+      "url": "https://github.com/line/armeria-examples",
+      "localPath": "sources/line__armeria-examples",
+      "status": "existing",
+      "head": "badcd0b",
+      "durationMs": 41
+    },
+    {
+      "index": 249,
+      "name": "daangn/KarrotListKit",
+      "url": "https://github.com/daangn/KarrotListKit",
+      "localPath": "sources/daangn__KarrotListKit",
+      "status": "existing",
+      "head": "d608169",
+      "durationMs": 35
+    },
+    {
+      "index": 250,
+      "name": "naver-ai/eccv-caption",
+      "url": "https://github.com/naver-ai/eccv-caption",
+      "localPath": "sources/naver-ai__eccv-caption",
+      "status": "existing",
+      "head": "65ec1c4",
+      "durationMs": 33
+    },
+    {
+      "index": 251,
+      "name": "woowacourse/perf-basecamp",
+      "url": "https://github.com/woowacourse/perf-basecamp",
+      "localPath": "sources/woowacourse__perf-basecamp",
+      "status": "existing",
+      "head": "d76b13d",
+      "durationMs": 33
+    },
+    {
+      "index": 252,
+      "name": "Samsung/TAU-Design-Editor",
+      "url": "https://github.com/Samsung/TAU-Design-Editor",
+      "localPath": "sources/Samsung__TAU-Design-Editor",
+      "status": "existing",
+      "head": "bb3bebf",
+      "durationMs": 89
+    },
+    {
+      "index": 253,
+      "name": "kakao/olive-cli",
+      "url": "https://github.com/kakao/olive-cli",
+      "localPath": "sources/kakao__olive-cli",
+      "status": "existing",
+      "head": "754ce16",
+      "durationMs": 32
+    },
+    {
+      "index": 254,
+      "name": "woowacourse/tecoble",
+      "url": "https://github.com/woowacourse/tecoble",
+      "localPath": "sources/woowacourse__tecoble",
+      "status": "existing",
+      "head": "cabee91",
+      "durationMs": 63
+    },
+    {
+      "index": 255,
+      "name": "line/rules_apple_line",
+      "url": "https://github.com/line/rules_apple_line",
+      "localPath": "sources/line__rules_apple_line",
+      "status": "existing",
+      "head": "63f50b2",
+      "durationMs": 39
+    },
+    {
+      "index": 256,
+      "name": "naver/pr-stats",
+      "url": "https://github.com/naver/pr-stats",
+      "localPath": "sources/naver__pr-stats",
+      "status": "existing",
+      "head": "cb9b122",
+      "durationMs": 42
+    },
+    {
+      "index": 257,
+      "name": "naver/posescript",
+      "url": "https://github.com/naver/posescript",
+      "localPath": "sources/naver__posescript",
+      "status": "existing",
+      "head": "15c8958",
+      "durationMs": 37
+    },
+    {
+      "index": 258,
+      "name": "line/lich",
+      "url": "https://github.com/line/lich",
+      "localPath": "sources/line__lich",
+      "status": "existing",
+      "head": "2fc3ac0",
+      "durationMs": 45
+    },
+    {
+      "index": 259,
+      "name": "kakaobrain/autoclint",
+      "url": "https://github.com/kakaobrain/autoclint",
+      "localPath": "sources/kakaobrain__autoclint",
+      "status": "existing",
+      "head": "585dfbc",
+      "durationMs": 36
+    },
+    {
+      "index": 260,
+      "name": "Samsung/UTopia",
+      "url": "https://github.com/Samsung/UTopia",
+      "localPath": "sources/Samsung__UTopia",
+      "status": "existing",
+      "head": "4c0cdac",
+      "durationMs": 44
+    },
+    {
+      "index": 261,
+      "name": "woowacourse/java-baseball-precourse",
+      "url": "https://github.com/woowacourse/java-baseball-precourse",
+      "localPath": "sources/woowacourse__java-baseball-precourse",
+      "status": "existing",
+      "head": "94764a7",
+      "durationMs": 35
+    },
+    {
+      "index": 262,
+      "name": "Samsung/qaboard",
+      "url": "https://github.com/Samsung/qaboard",
+      "localPath": "sources/Samsung__qaboard",
+      "status": "existing",
+      "head": "9485201",
+      "durationMs": 51
+    },
+    {
+      "index": 263,
+      "name": "Samsung/lwnode",
+      "url": "https://github.com/Samsung/lwnode",
+      "localPath": "sources/Samsung__lwnode",
+      "status": "existing",
+      "head": "b3de7be5",
+      "durationMs": 685
+    },
+    {
+      "index": 264,
+      "name": "naver/arcus-spring",
+      "url": "https://github.com/naver/arcus-spring",
+      "localPath": "sources/naver__arcus-spring",
+      "status": "existing",
+      "head": "a736985",
+      "durationMs": 40
+    },
+    {
+      "index": 265,
+      "name": "majiayu000/remem",
+      "url": "https://github.com/majiayu000/remem",
+      "localPath": "sources/majiayu000__remem",
+      "status": "cloned",
+      "mode": "partial",
+      "head": "f00d1e4",
+      "durationMs": 1779
+    },
+    {
+      "index": 266,
+      "name": "toss/yarn-plugin-workspace-since",
+      "url": "https://github.com/toss/yarn-plugin-workspace-since",
+      "localPath": "sources/toss__yarn-plugin-workspace-since",
+      "status": "existing",
+      "head": "81eb4a0",
+      "durationMs": 71
+    },
+    {
+      "index": 267,
+      "name": "kakaobrain/sparse-detr",
+      "url": "https://github.com/kakaobrain/sparse-detr",
+      "localPath": "sources/kakaobrain__sparse-detr",
+      "status": "existing",
+      "head": "f40632c",
+      "durationMs": 39
+    },
+    {
+      "index": 268,
+      "name": "Samsung/cordova-plugin-toast",
+      "url": "https://github.com/Samsung/cordova-plugin-toast",
+      "localPath": "sources/Samsung__cordova-plugin-toast",
+      "status": "existing",
+      "head": "89236a6",
+      "durationMs": 62
+    },
+    {
+      "index": 269,
+      "name": "line/line-simple-beacon",
+      "url": "https://github.com/line/line-simple-beacon",
+      "localPath": "sources/line__line-simple-beacon",
+      "status": "existing",
+      "head": "b6e0f78",
+      "durationMs": 41
+    },
+    {
+      "index": 270,
+      "name": "Samsung/ClickAgent",
+      "url": "https://github.com/Samsung/ClickAgent",
+      "localPath": "sources/Samsung__ClickAgent",
+      "status": "existing",
+      "head": "2903d06",
+      "durationMs": 44
+    },
+    {
+      "index": 271,
+      "name": "line/abc-kmm-shared-storage",
+      "url": "https://github.com/line/abc-kmm-shared-storage",
+      "localPath": "sources/line__abc-kmm-shared-storage",
+      "status": "existing",
+      "head": "3e700b8",
+      "durationMs": 43
+    },
+    {
+      "index": 272,
+      "name": "naver/p2pcp",
+      "url": "https://github.com/naver/p2pcp",
+      "localPath": "sources/naver__p2pcp",
+      "status": "existing",
+      "head": "f1fa29c",
+      "durationMs": 39
+    },
+    {
+      "index": 273,
+      "name": "Samsung/Vyond",
+      "url": "https://github.com/Samsung/Vyond",
+      "localPath": "sources/Samsung__Vyond",
+      "status": "existing",
+      "head": "c4c2d0a19",
+      "durationMs": 2656
+    },
+    {
+      "index": 274,
+      "name": "ai-frendly-datahub/KoreanNLPMCPRadar",
+      "url": "https://github.com/ai-frendly-datahub/KoreanNLPMCPRadar",
+      "localPath": "sources/ai-frendly-datahub__KoreanNLPMCPRadar",
+      "status": "existing",
+      "head": "085969b",
+      "durationMs": 42
+    },
+    {
+      "index": 275,
+      "name": "axoviq-ai/synthadoc",
+      "url": "https://github.com/axoviq-ai/synthadoc",
+      "localPath": "sources/axoviq-ai__synthadoc",
+      "status": "existing",
+      "head": "1d99102",
+      "durationMs": 44
+    },
+    {
+      "index": 276,
+      "name": "MarcoYou/open-proxy-mcp",
+      "url": "https://github.com/MarcoYou/open-proxy-mcp",
+      "localPath": "sources/MarcoYou__open-proxy-mcp",
+      "status": "existing",
+      "head": "2eb3efe",
+      "durationMs": 61
+    },
+    {
+      "index": 277,
+      "name": "LimEulYoung/legal_mcp",
+      "url": "https://github.com/LimEulYoung/legal_mcp",
+      "localPath": "sources/LimEulYoung__legal_mcp",
+      "status": "existing",
+      "head": "cbc827b",
+      "durationMs": 34
+    },
+    {
+      "index": 278,
+      "name": "gracebereblue-cpu/-mcp",
+      "url": "https://github.com/gracebereblue-cpu/-mcp",
+      "localPath": "sources/gracebereblue-cpu__-mcp",
+      "status": "existing",
+      "head": null,
+      "durationMs": 30
+    },
+    {
+      "index": 279,
+      "name": "JunsikChoi/korea-cli",
+      "url": "https://github.com/JunsikChoi/korea-cli",
+      "localPath": "sources/JunsikChoi__korea-cli",
+      "status": "existing",
+      "head": "d234cd3",
+      "durationMs": 40
+    },
+    {
+      "index": 280,
+      "name": "CharlesLee1991/bmp-ai-air",
+      "url": "https://github.com/CharlesLee1991/bmp-ai-air",
+      "localPath": "sources/CharlesLee1991__bmp-ai-air",
+      "status": "existing",
+      "head": "c42d244",
+      "durationMs": 35
+    },
+    {
+      "index": 281,
+      "name": "seoulstart/awesome-build-for-korea",
+      "url": "https://github.com/seoulstart/awesome-build-for-korea",
+      "localPath": "sources/seoulstart__awesome-build-for-korea",
+      "status": "existing",
+      "head": "c2882b4",
+      "durationMs": 44
+    },
+    {
+      "index": 282,
+      "name": "jinmyungjong/korean-law-mcp",
+      "url": "https://github.com/jinmyungjong/korean-law-mcp",
+      "localPath": "sources/jinmyungjong__korean-law-mcp",
+      "status": "existing",
+      "head": "6a33a1c",
+      "durationMs": 41
+    },
+    {
+      "index": 283,
+      "name": "chrisryugj/korean-dart-mcp",
+      "url": "https://github.com/chrisryugj/korean-dart-mcp",
+      "localPath": "sources/chrisryugj__korean-dart-mcp",
+      "status": "existing",
+      "head": "c1671ce",
+      "durationMs": 37
+    },
+    {
+      "index": 284,
+      "name": "kakaobrain/hotr",
+      "url": "https://github.com/kakaobrain/hotr",
+      "localPath": "sources/kakaobrain__hotr",
+      "status": "existing",
+      "head": "d3cb632",
+      "durationMs": 35
+    },
+    {
+      "index": 285,
+      "name": "naver-ai/egtr",
+      "url": "https://github.com/naver-ai/egtr",
+      "localPath": "sources/naver-ai__egtr",
+      "status": "existing",
+      "head": "7f87450",
+      "durationMs": 32
+    },
+    {
+      "index": 286,
+      "name": "kakaobrain/bassl",
+      "url": "https://github.com/kakaobrain/bassl",
+      "localPath": "sources/kakaobrain__bassl",
+      "status": "existing",
+      "head": "0651dd6",
+      "durationMs": 34
+    },
+    {
+      "index": 287,
+      "name": "naver-ai/model-stock",
+      "url": "https://github.com/naver-ai/model-stock",
+      "localPath": "sources/naver-ai__model-stock",
+      "status": "existing",
+      "head": "d9e19d1",
+      "durationMs": 30
+    },
+    {
+      "index": 288,
+      "name": "naver/cfcs",
+      "url": "https://github.com/naver/cfcs",
+      "localPath": "sources/naver__cfcs",
+      "status": "existing",
+      "head": "798b4fb",
+      "durationMs": 34
+    },
+    {
+      "index": 289,
+      "name": "Samsung/360tools",
+      "url": "https://github.com/Samsung/360tools",
+      "localPath": "sources/Samsung__360tools",
+      "status": "existing",
+      "head": "54845f0",
+      "durationMs": 35
+    },
+    {
+      "index": 290,
+      "name": "naver/dune",
+      "url": "https://github.com/naver/dune",
+      "localPath": "sources/naver__dune",
+      "status": "existing",
+      "head": "1e1a111",
+      "durationMs": 34
+    },
+    {
+      "index": 291,
+      "name": "daangn/icona",
+      "url": "https://github.com/daangn/icona",
+      "localPath": "sources/daangn__icona",
+      "status": "existing",
+      "head": "909fc3a",
+      "durationMs": 73
+    },
+    {
+      "index": 292,
+      "name": "daangn/SushiBelt",
+      "url": "https://github.com/daangn/SushiBelt",
+      "localPath": "sources/daangn__SushiBelt",
+      "status": "existing",
+      "head": "fa4745c",
+      "durationMs": 33
+    },
+    {
+      "index": 293,
+      "name": "JRs-Master/firebat",
+      "url": "https://github.com/JRs-Master/firebat",
+      "localPath": "sources/JRs-Master__firebat",
+      "status": "existing",
+      "head": "a08aefa",
+      "durationMs": 48
+    },
+    {
+      "index": 294,
+      "name": "nirholas/three.ws",
+      "url": "https://github.com/nirholas/three.ws",
+      "localPath": "sources/nirholas__three.ws",
+      "status": "existing",
+      "head": "7596224",
+      "durationMs": 183
+    },
+    {
+      "index": 295,
+      "name": "rocketride-org/rocketride-server",
+      "url": "https://github.com/rocketride-org/rocketride-server",
+      "localPath": "sources/rocketride-org__rocketride-server",
+      "status": "existing",
+      "head": "bc36b63",
+      "durationMs": 113
+    },
+    {
+      "index": 296,
+      "name": "hwan96-ai/genai-case-study-showcase",
+      "url": "https://github.com/hwan96-ai/genai-case-study-showcase",
+      "localPath": "sources/hwan96-ai__genai-case-study-showcase",
+      "status": "existing",
+      "head": "7c8ed7d",
+      "durationMs": 32
+    },
+    {
+      "index": 297,
+      "name": "lowtidebuild/data-protection-agent",
+      "url": "https://github.com/lowtidebuild/data-protection-agent",
+      "localPath": "sources/lowtidebuild__data-protection-agent",
+      "status": "existing",
+      "head": "4797b78",
+      "durationMs": 104
+    },
+    {
+      "index": 298,
+      "name": "Samsung/ioter",
+      "url": "https://github.com/Samsung/ioter",
+      "localPath": "sources/Samsung__ioter",
+      "status": "existing",
+      "head": "6927b3e",
+      "durationMs": 39
+    },
+    {
+      "index": 299,
+      "name": "nhn/toast-ui.doc",
+      "url": "https://github.com/nhn/toast-ui.doc",
+      "localPath": "sources/nhn__toast-ui.doc",
+      "status": "existing",
+      "head": "603b6d6",
+      "durationMs": 35
+    },
+    {
+      "index": 300,
+      "name": "kakao/awesome-tech-newletters",
+      "url": "https://github.com/kakao/awesome-tech-newletters",
+      "localPath": "sources/kakao__awesome-tech-newletters",
+      "status": "existing",
+      "head": "9e6408f",
+      "durationMs": 32
+    },
+    {
+      "index": 301,
+      "name": "kakao/hbase-tools",
+      "url": "https://github.com/kakao/hbase-tools",
+      "localPath": "sources/kakao__hbase-tools",
+      "status": "existing",
+      "head": "233e9ab",
+      "durationMs": 35
+    },
+    {
+      "index": 302,
+      "name": "naver/zeplin-flutter-gen",
+      "url": "https://github.com/naver/zeplin-flutter-gen",
+      "localPath": "sources/naver__zeplin-flutter-gen",
+      "status": "existing",
+      "head": "62935b3",
+      "durationMs": 33
+    },
+    {
+      "index": 303,
+      "name": "woowacourse/java-http",
+      "url": "https://github.com/woowacourse/java-http",
+      "localPath": "sources/woowacourse__java-http",
+      "status": "existing",
+      "head": "5cc3e7b",
+      "durationMs": 38
+    },
+    {
+      "index": 304,
+      "name": "naver/nam-sdk-android",
+      "url": "https://github.com/naver/nam-sdk-android",
+      "localPath": "sources/naver__nam-sdk-android",
+      "status": "existing",
+      "head": "acde280",
+      "durationMs": 37
+    },
+    {
+      "index": 305,
+      "name": "toss/apps-in-toss-unity-sdk",
+      "url": "https://github.com/toss/apps-in-toss-unity-sdk",
+      "localPath": "sources/toss__apps-in-toss-unity-sdk",
+      "status": "existing",
+      "head": "4c5a03d",
+      "durationMs": 49
+    },
+    {
+      "index": 306,
+      "name": "AD-Styles/MIND-CARE-Conversational-ChatBot",
+      "url": "https://github.com/AD-Styles/MIND-CARE-Conversational-ChatBot",
+      "localPath": "sources/AD-Styles__MIND-CARE-Conversational-ChatBot",
+      "status": "existing",
+      "head": "cc80a9e",
+      "durationMs": 35
+    },
+    {
+      "index": 307,
+      "name": "kimsanguine/AI_Human",
+      "url": "https://github.com/kimsanguine/AI_Human",
+      "localPath": "sources/kimsanguine__AI_Human",
+      "status": "existing",
+      "head": "81874ba",
+      "durationMs": 44
+    },
+    {
+      "index": 308,
+      "name": "eremes81/game-design-ai-practice-id",
+      "url": "https://github.com/eremes81/game-design-ai-practice-id",
+      "localPath": "sources/eremes81__game-design-ai-practice-id",
+      "status": "existing",
+      "head": "83f7df8",
+      "durationMs": 33
+    },
+    {
+      "index": 309,
+      "name": "eremes81/game-design-ai-practice-th",
+      "url": "https://github.com/eremes81/game-design-ai-practice-th",
+      "localPath": "sources/eremes81__game-design-ai-practice-th",
+      "status": "existing",
+      "head": "f5b8bc6",
+      "durationMs": 33
+    },
+    {
+      "index": 310,
+      "name": "devswha/patina",
+      "url": "https://github.com/devswha/patina",
+      "localPath": "sources/devswha__patina",
+      "status": "existing",
+      "head": "4d48f8f",
+      "durationMs": 62
+    },
+    {
+      "index": 311,
+      "name": "HwangChanho/syncfortune",
+      "url": "https://github.com/HwangChanho/syncfortune",
+      "localPath": "sources/HwangChanho__syncfortune",
+      "status": "existing",
+      "head": "aec0383",
+      "durationMs": 57
+    },
+    {
+      "index": 312,
+      "name": "bits-bytes-nn/omnisummary",
+      "url": "https://github.com/bits-bytes-nn/omnisummary",
+      "localPath": "sources/bits-bytes-nn__omnisummary",
+      "status": "existing",
+      "head": "661c80a",
+      "durationMs": 55
+    },
+    {
+      "index": 313,
+      "name": "caramador83/harness-100",
+      "url": "https://github.com/caramador83/harness-100",
+      "localPath": "sources/caramador83__harness-100",
+      "status": "existing",
+      "head": "e0a804a",
+      "durationMs": 92
+    },
+    {
+      "index": 314,
+      "name": "chrisryugj/Docufinder",
+      "url": "https://github.com/chrisryugj/Docufinder",
+      "localPath": "sources/chrisryugj__Docufinder",
+      "status": "existing",
+      "head": "a6c0292",
+      "durationMs": 46
+    },
+    {
+      "index": 315,
+      "name": "lxxzdrgnl/SAJUGURI",
+      "url": "https://github.com/lxxzdrgnl/SAJUGURI",
+      "localPath": "sources/lxxzdrgnl__SAJUGURI",
+      "status": "existing",
+      "head": "cbd888a",
+      "durationMs": 45
+    },
+    {
+      "index": 316,
+      "name": "psychofict/hwpkit",
+      "url": "https://github.com/psychofict/hwpkit",
+      "localPath": "sources/psychofict__hwpkit",
+      "status": "existing",
+      "head": "a3a5725",
+      "durationMs": 32
+    },
+    {
+      "index": 317,
+      "name": "2betforyou/FinSec-LLM-PostTraining",
+      "url": "https://github.com/2betforyou/FinSec-LLM-PostTraining",
+      "localPath": "sources/2betforyou__FinSec-LLM-PostTraining",
+      "status": "existing",
+      "head": "a8c9234",
+      "durationMs": 34
+    },
+    {
+      "index": 318,
+      "name": "cykim05/heard",
+      "url": "https://github.com/cykim05/heard",
+      "localPath": "sources/cykim05__heard",
+      "status": "existing",
+      "head": "0a01d77",
+      "durationMs": 34
+    },
+    {
+      "index": 319,
+      "name": "chrisryugj/lexdiff",
+      "url": "https://github.com/chrisryugj/lexdiff",
+      "localPath": "sources/chrisryugj__lexdiff",
+      "status": "existing",
+      "head": "e541791",
+      "durationMs": 52
+    },
+    {
+      "index": 320,
+      "name": "naver-ai/rdnet",
+      "url": "https://github.com/naver-ai/rdnet",
+      "localPath": "sources/naver-ai__rdnet",
+      "status": "existing",
+      "head": "6739093",
+      "durationMs": 34
+    },
+    {
+      "index": 321,
+      "name": "naver-ai/BlendNeRF",
+      "url": "https://github.com/naver-ai/BlendNeRF",
+      "localPath": "sources/naver-ai__BlendNeRF",
+      "status": "existing",
+      "head": "404622d",
+      "durationMs": 50
+    },
+    {
+      "index": 322,
+      "name": "line/clay",
+      "url": "https://github.com/line/clay",
+      "localPath": "sources/line__clay",
+      "status": "existing",
+      "head": "6867c1a",
+      "durationMs": 50
+    },
+    {
+      "index": 323,
+      "name": "naver/gdc",
+      "url": "https://github.com/naver/gdc",
+      "localPath": "sources/naver__gdc",
+      "status": "existing",
+      "head": "a59c5b7",
+      "durationMs": 58
+    },
+    {
+      "index": 324,
+      "name": "kakao/hbase-region-inspector",
+      "url": "https://github.com/kakao/hbase-region-inspector",
+      "localPath": "sources/kakao__hbase-region-inspector",
+      "status": "existing",
+      "head": "9c7d789",
+      "durationMs": 48
+    },
+    {
+      "index": 325,
+      "name": "nhn/toast-haste.framework",
+      "url": "https://github.com/nhn/toast-haste.framework",
+      "localPath": "sources/nhn__toast-haste.framework",
+      "status": "existing",
+      "head": "934509f",
+      "durationMs": 46
+    },
+    {
+      "index": 326,
+      "name": "nhn/tui.date-picker",
+      "url": "https://github.com/nhn/tui.date-picker",
+      "localPath": "sources/nhn__tui.date-picker",
+      "status": "existing",
+      "head": "30a4e21",
+      "durationMs": 34
+    },
+    {
+      "index": 327,
+      "name": "nhn/tui.code-snippet",
+      "url": "https://github.com/nhn/tui.code-snippet",
+      "localPath": "sources/nhn__tui.code-snippet",
+      "status": "existing",
+      "head": "3a88801",
+      "durationMs": 38
+    },
+    {
+      "index": 328,
+      "name": "line/liff-inspector",
+      "url": "https://github.com/line/liff-inspector",
+      "localPath": "sources/line__liff-inspector",
+      "status": "existing",
+      "head": "4bc92a2",
+      "durationMs": 31
+    },
+    {
+      "index": 329,
+      "name": "Samsung/CAS",
+      "url": "https://github.com/Samsung/CAS",
+      "localPath": "sources/Samsung__CAS",
+      "status": "existing",
+      "head": "4448ff8",
+      "durationMs": 41
+    },
+    {
+      "index": 330,
+      "name": "daangn/lynx-console",
+      "url": "https://github.com/daangn/lynx-console",
+      "localPath": "sources/daangn__lynx-console",
+      "status": "existing",
+      "head": "9f59a09",
+      "durationMs": 38
+    },
+    {
+      "index": 331,
+      "name": "hmmhmmhm/daiso-mcp",
+      "url": "https://github.com/hmmhmmhm/daiso-mcp",
+      "localPath": "sources/hmmhmmhm__daiso-mcp",
+      "status": "existing",
+      "head": "8b78570",
+      "durationMs": 41
+    },
+    {
+      "index": 332,
+      "name": "Beever-AI/beever-atlas",
+      "url": "https://github.com/Beever-AI/beever-atlas",
+      "localPath": "sources/Beever-AI__beever-atlas",
+      "status": "existing",
+      "head": "4e47057",
+      "durationMs": 54
+    },
+    {
+      "index": 333,
+      "name": "tjwodud04/mcp-tour",
+      "url": "https://github.com/tjwodud04/mcp-tour",
+      "localPath": "sources/tjwodud04__mcp-tour",
+      "status": "existing",
+      "head": "8712ff7",
+      "durationMs": 36
+    },
+    {
+      "index": 334,
+      "name": "whdrnr2583-cmd/koreanpulse",
+      "url": "https://github.com/whdrnr2583-cmd/koreanpulse",
+      "localPath": "sources/whdrnr2583-cmd__koreanpulse",
+      "status": "existing",
+      "head": "9245ee4",
+      "durationMs": 35
+    },
+    {
+      "index": 335,
+      "name": "latemonk/agent-store-skills",
+      "url": "https://github.com/latemonk/agent-store-skills",
+      "localPath": "sources/latemonk__agent-store-skills",
+      "status": "existing",
+      "head": "b0772e1",
+      "durationMs": 32
+    },
+    {
+      "index": 336,
+      "name": "loved0543-dotcom/kdata-gate-mcp",
+      "url": "https://github.com/loved0543-dotcom/kdata-gate-mcp",
+      "localPath": "sources/loved0543-dotcom__kdata-gate-mcp",
+      "status": "existing",
+      "head": "35c1d8a",
+      "durationMs": 33
+    },
+    {
+      "index": 337,
+      "name": "swarmclawai/swarmvault",
+      "url": "https://github.com/swarmclawai/swarmvault",
+      "localPath": "sources/swarmclawai__swarmvault",
+      "status": "existing",
+      "head": "4ce0c7c",
+      "durationMs": 41
+    },
+    {
+      "index": 338,
+      "name": "everynation/kimchisushi-mcp",
+      "url": "https://github.com/everynation/kimchisushi-mcp",
+      "localPath": "sources/everynation__kimchisushi-mcp",
+      "status": "existing",
+      "head": "b906d01",
+      "durationMs": 36
+    },
+    {
+      "index": 339,
+      "name": "civilian7/korean-people-persona",
+      "url": "https://github.com/civilian7/korean-people-persona",
+      "localPath": "sources/civilian7__korean-people-persona",
+      "status": "existing",
+      "head": "9012d29",
+      "durationMs": 33
+    },
+    {
+      "index": 340,
+      "name": "DECK6/korea-mice-safety-agent",
+      "url": "https://github.com/DECK6/korea-mice-safety-agent",
+      "localPath": "sources/DECK6__korea-mice-safety-agent",
+      "status": "existing",
+      "head": "2546865",
+      "durationMs": 39
+    },
+    {
+      "index": 341,
+      "name": "naver/fire",
+      "url": "https://github.com/naver/fire",
+      "localPath": "sources/naver__fire",
+      "status": "existing",
+      "head": "d150290",
+      "durationMs": 35
+    },
+    {
+      "index": 342,
+      "name": "line/abc-kmm-location",
+      "url": "https://github.com/line/abc-kmm-location",
+      "localPath": "sources/line__abc-kmm-location",
+      "status": "existing",
+      "head": "5637d4e",
+      "durationMs": 36
+    },
+    {
+      "index": 343,
+      "name": "kakao/kafka-connect-web",
+      "url": "https://github.com/kakao/kafka-connect-web",
+      "localPath": "sources/kakao__kafka-connect-web",
+      "status": "existing",
+      "head": "ba3298d",
+      "durationMs": 33
+    },
+    {
+      "index": 344,
+      "name": "line/open-universe",
+      "url": "https://github.com/line/open-universe",
+      "localPath": "sources/line__open-universe",
+      "status": "existing",
+      "head": "939dd3c",
+      "durationMs": 34
+    },
+    {
+      "index": 345,
+      "name": "kakao/network-node-manager",
+      "url": "https://github.com/kakao/network-node-manager",
+      "localPath": "sources/kakao__network-node-manager",
+      "status": "existing",
+      "head": "78fa549",
+      "durationMs": 32
+    },
+    {
+      "index": 346,
+      "name": "nhn/tui.tree",
+      "url": "https://github.com/nhn/tui.tree",
+      "localPath": "sources/nhn__tui.tree",
+      "status": "existing",
+      "head": "35e8457",
+      "durationMs": 32
+    },
+    {
+      "index": 347,
+      "name": "kakaobrain/helo-word",
+      "url": "https://github.com/kakaobrain/helo-word",
+      "localPath": "sources/kakaobrain__helo-word",
+      "status": "existing",
+      "head": "4836d26",
+      "durationMs": 33
+    },
+    {
+      "index": 348,
+      "name": "naver/dope",
+      "url": "https://github.com/naver/dope",
+      "localPath": "sources/naver__dope",
+      "status": "existing",
+      "head": "992359a",
+      "durationMs": 34
+    },
+    {
+      "index": 349,
+      "name": "naver/ludvig",
+      "url": "https://github.com/naver/ludvig",
+      "localPath": "sources/naver__ludvig",
+      "status": "existing",
+      "head": "4461fc5",
+      "durationMs": 104
+    },
+    {
+      "index": 350,
+      "name": "naver/disco",
+      "url": "https://github.com/naver/disco",
+      "localPath": "sources/naver__disco",
+      "status": "existing",
+      "head": "5ea6fde",
+      "durationMs": 34
+    },
+    {
+      "index": 351,
+      "name": "daangn/greenhouse-js",
+      "url": "https://github.com/daangn/greenhouse-js",
+      "localPath": "sources/daangn__greenhouse-js",
+      "status": "existing",
+      "head": "2a474b3",
+      "durationMs": 36
+    },
+    {
+      "index": 352,
+      "name": "naver-ai/MM-JudgeBias",
+      "url": "https://github.com/naver-ai/MM-JudgeBias",
+      "localPath": "sources/naver-ai__MM-JudgeBias",
+      "status": "existing",
+      "head": "f0df841",
+      "durationMs": 34
+    },
+    {
+      "index": 353,
+      "name": "hjhun/llm-wiki",
+      "url": "https://github.com/hjhun/llm-wiki",
+      "localPath": "sources/hjhun__llm-wiki",
+      "status": "existing",
+      "head": "5b4817e",
+      "durationMs": 42
+    },
+    {
+      "index": 354,
+      "name": "MarcoPorcellato/matryca-plumber",
+      "url": "https://github.com/MarcoPorcellato/matryca-plumber",
+      "localPath": "sources/MarcoPorcellato__matryca-plumber",
+      "status": "existing",
+      "head": "5f2d75a",
+      "durationMs": 38
+    },
+    {
+      "index": 355,
+      "name": "w8123/EnterpriseAgentFramework",
+      "url": "https://github.com/w8123/EnterpriseAgentFramework",
+      "localPath": "sources/w8123__EnterpriseAgentFramework",
+      "status": "existing",
+      "head": "69880f9",
+      "durationMs": 60
+    },
+    {
+      "index": 356,
+      "name": "wb04307201/spring-ai-loom-agent",
+      "url": "https://github.com/wb04307201/spring-ai-loom-agent",
+      "localPath": "sources/wb04307201__spring-ai-loom-agent",
+      "status": "existing",
+      "head": "2d4b0b6",
+      "durationMs": 36
+    },
+    {
+      "index": 357,
+      "name": "gih2yun/bareun-mcp",
+      "url": "https://github.com/gih2yun/bareun-mcp",
+      "localPath": "sources/gih2yun__bareun-mcp",
+      "status": "existing",
+      "head": "df41414",
+      "durationMs": 33
+    },
+    {
+      "index": 358,
+      "name": "SonAIengine/ku-portal-mcp",
+      "url": "https://github.com/SonAIengine/ku-portal-mcp",
+      "localPath": "sources/SonAIengine__ku-portal-mcp",
+      "status": "existing",
+      "head": "588d6b6",
+      "durationMs": 33
+    },
+    {
+      "index": 359,
+      "name": "dongdorrong/korean-law-mcp-lab",
+      "url": "https://github.com/dongdorrong/korean-law-mcp-lab",
+      "localPath": "sources/dongdorrong__korean-law-mcp-lab",
+      "status": "existing",
+      "head": "1180973",
+      "durationMs": 33
+    },
+    {
+      "index": 360,
+      "name": "MICONNM/openclaw-consensus-mcp",
+      "url": "https://github.com/MICONNM/openclaw-consensus-mcp",
+      "localPath": "sources/MICONNM__openclaw-consensus-mcp",
+      "status": "existing",
+      "head": "8f02319",
+      "durationMs": 32
+    },
+    {
+      "index": 361,
+      "name": "stephano0308-cloud/korean-law-mcp",
+      "url": "https://github.com/stephano0308-cloud/korean-law-mcp",
+      "localPath": "sources/stephano0308-cloud__korean-law-mcp",
+      "status": "existing",
+      "head": "1fc52c2",
+      "durationMs": 33
+    },
+    {
+      "index": 362,
+      "name": "line/LibriTTS-P",
+      "url": "https://github.com/line/LibriTTS-P",
+      "localPath": "sources/line__LibriTTS-P",
+      "status": "existing",
+      "head": "e79ba68",
+      "durationMs": 35
+    },
+    {
+      "index": 363,
+      "name": "naver-ai/c3-gan",
+      "url": "https://github.com/naver-ai/c3-gan",
+      "localPath": "sources/naver-ai__c3-gan",
+      "status": "existing",
+      "head": "079087d",
+      "durationMs": 35
+    },
+    {
+      "index": 364,
+      "name": "kakaobrain/flame",
+      "url": "https://github.com/kakaobrain/flame",
+      "localPath": "sources/kakaobrain__flame",
+      "status": "existing",
+      "head": "e36da3e",
+      "durationMs": 33
+    },
+    {
+      "index": 365,
+      "name": "naver-ai/cl-vs-mim",
+      "url": "https://github.com/naver-ai/cl-vs-mim",
+      "localPath": "sources/naver-ai__cl-vs-mim",
+      "status": "existing",
+      "head": "eafe516",
+      "durationMs": 31
+    },
+    {
+      "index": 366,
+      "name": "kakaobrain/scrl",
+      "url": "https://github.com/kakaobrain/scrl",
+      "localPath": "sources/kakaobrain__scrl",
+      "status": "existing",
+      "head": "62730fb",
+      "durationMs": 32
+    },
+    {
+      "index": 367,
+      "name": "hyperconnect/LADE",
+      "url": "https://github.com/hyperconnect/LADE",
+      "localPath": "sources/hyperconnect__LADE",
+      "status": "existing",
+      "head": "5db5d13",
+      "durationMs": 31
+    },
+    {
+      "index": 368,
+      "name": "toss/toss-ui",
+      "url": "https://github.com/toss/toss-ui",
+      "localPath": "sources/toss__toss-ui",
+      "status": "existing",
+      "head": "fdeee4e",
+      "durationMs": 75
+    },
+    {
+      "index": 369,
+      "name": "naver-ai/RapFlow-TTS",
+      "url": "https://github.com/naver-ai/RapFlow-TTS",
+      "localPath": "sources/naver-ai__RapFlow-TTS",
+      "status": "existing",
+      "head": "899e0ea",
+      "durationMs": 32
+    },
+    {
+      "index": 370,
+      "name": "naver/notify-pr-review",
+      "url": "https://github.com/naver/notify-pr-review",
+      "localPath": "sources/naver__notify-pr-review",
+      "status": "existing",
+      "head": "02cceb8",
+      "durationMs": 43
+    },
+    {
+      "index": 371,
+      "name": "Samsung/create-tizen-app",
+      "url": "https://github.com/Samsung/create-tizen-app",
+      "localPath": "sources/Samsung__create-tizen-app",
+      "status": "existing",
+      "head": "59fd718",
+      "durationMs": 32
+    },
+    {
+      "index": 372,
+      "name": "toss/packlint",
+      "url": "https://github.com/toss/packlint",
+      "localPath": "sources/toss__packlint",
+      "status": "existing",
+      "head": "2bf98e0",
+      "durationMs": 37
+    },
+    {
+      "index": 373,
+      "name": "naver/multilingual-distilwhisper",
+      "url": "https://github.com/naver/multilingual-distilwhisper",
+      "localPath": "sources/naver__multilingual-distilwhisper",
+      "status": "existing",
+      "head": "1e68c61",
+      "durationMs": 33
+    },
+    {
+      "index": 374,
+      "name": "naver/nam-sdk-ios",
+      "url": "https://github.com/naver/nam-sdk-ios",
+      "localPath": "sources/naver__nam-sdk-ios",
+      "status": "existing",
+      "head": "7101cca",
+      "durationMs": 185
+    },
+    {
+      "index": 375,
+      "name": "mcpads/create-retro-game-kr-patch",
+      "url": "https://github.com/mcpads/create-retro-game-kr-patch",
+      "localPath": "sources/mcpads__create-retro-game-kr-patch",
+      "status": "existing",
+      "head": "74ebdf4",
+      "durationMs": 30
+    },
+    {
+      "index": 376,
+      "name": "hskim-solv/BidMate-DocAgent",
+      "url": "https://github.com/hskim-solv/BidMate-DocAgent",
+      "localPath": "sources/hskim-solv__BidMate-DocAgent",
+      "status": "existing",
+      "head": "c9b475b",
+      "durationMs": 62
+    },
+    {
+      "index": 377,
+      "name": "PlateerLab/document-adapter",
+      "url": "https://github.com/PlateerLab/document-adapter",
+      "localPath": "sources/PlateerLab__document-adapter",
+      "status": "existing",
+      "head": "2d2d36b",
+      "durationMs": 33
+    },
+    {
+      "index": 378,
+      "name": "GSL-R/arona-soul-agent-memory",
+      "url": "https://github.com/GSL-R/arona-soul-agent-memory",
+      "localPath": "sources/GSL-R__arona-soul-agent-memory",
+      "status": "existing",
+      "head": "b2a97b4",
+      "durationMs": 29
+    },
+    {
+      "index": 379,
+      "name": "tok-it/detoks",
+      "url": "https://github.com/tok-it/detoks",
+      "localPath": "sources/tok-it__detoks",
+      "status": "existing",
+      "head": "a40f243",
+      "durationMs": 45
+    },
+    {
+      "index": 380,
+      "name": "naver/PoseGPT",
+      "url": "https://github.com/naver/PoseGPT",
+      "localPath": "sources/naver__PoseGPT",
+      "status": "existing",
+      "head": "bb2045c",
+      "durationMs": 34
+    },
+    {
+      "index": 381,
+      "name": "naver/sling",
+      "url": "https://github.com/naver/sling",
+      "localPath": "sources/naver__sling",
+      "status": "existing",
+      "head": "5671cd44",
+      "durationMs": 670
+    },
+    {
+      "index": 382,
+      "name": "naver-ai/GGDR",
+      "url": "https://github.com/naver-ai/GGDR",
+      "localPath": "sources/naver-ai__GGDR",
+      "status": "existing",
+      "head": "7071792",
+      "durationMs": 34
+    },
+    {
+      "index": 383,
+      "name": "naver/shine",
+      "url": "https://github.com/naver/shine",
+      "localPath": "sources/naver__shine",
+      "status": "existing",
+      "head": "825a6f7",
+      "durationMs": 50
+    },
+    {
+      "index": 384,
+      "name": "kakao/detek",
+      "url": "https://github.com/kakao/detek",
+      "localPath": "sources/kakao__detek",
+      "status": "existing",
+      "head": "4fef4b3",
+      "durationMs": 31
+    },
+    {
+      "index": 385,
+      "name": "line/gradle-multi-project-support",
+      "url": "https://github.com/line/gradle-multi-project-support",
+      "localPath": "sources/line__gradle-multi-project-support",
+      "status": "existing",
+      "head": "81ad9da",
+      "durationMs": 32
+    },
+    {
+      "index": 386,
+      "name": "naver/guitar",
+      "url": "https://github.com/naver/guitar",
+      "localPath": "sources/naver__guitar",
+      "status": "existing",
+      "head": "acd047c",
+      "durationMs": 41
+    },
+    {
+      "index": 387,
+      "name": "Samsung/restful",
+      "url": "https://github.com/Samsung/restful",
+      "localPath": "sources/Samsung__restful",
+      "status": "existing",
+      "head": "cebf532",
+      "durationMs": 36
+    },
+    {
+      "index": 388,
+      "name": "line/seed",
+      "url": "https://github.com/line/seed",
+      "localPath": "sources/line__seed",
+      "status": "existing",
+      "head": "ea7a320d",
+      "durationMs": 792
+    },
+    {
+      "index": 389,
+      "name": "daangn/urlpack",
+      "url": "https://github.com/daangn/urlpack",
+      "localPath": "sources/daangn__urlpack",
+      "status": "existing",
+      "head": "7b0d424",
+      "durationMs": 37
+    },
+    {
+      "index": 390,
+      "name": "naver/naveridlogin-sdk-ios",
+      "url": "https://github.com/naver/naveridlogin-sdk-ios",
+      "localPath": "sources/naver__naveridlogin-sdk-ios",
+      "status": "existing",
+      "head": "554b8c0",
+      "durationMs": 33
+    },
+    {
+      "index": 391,
+      "name": "daangn/cjk-slug",
+      "url": "https://github.com/daangn/cjk-slug",
+      "localPath": "sources/daangn__cjk-slug",
+      "status": "existing",
+      "head": "d7ef08e",
+      "durationMs": 29
+    },
+    {
+      "index": 392,
+      "name": "naver-ai/prolip",
+      "url": "https://github.com/naver-ai/prolip",
+      "localPath": "sources/naver-ai__prolip",
+      "status": "existing",
+      "head": "59f6324",
+      "durationMs": 31
+    },
+    {
+      "index": 393,
+      "name": "line/kubectl-kustomize",
+      "url": "https://github.com/line/kubectl-kustomize",
+      "localPath": "sources/line__kubectl-kustomize",
+      "status": "existing",
+      "head": "f77efa4",
+      "durationMs": 28
+    },
+    {
+      "index": 394,
+      "name": "woowacourse/java-subway-map-precourse",
+      "url": "https://github.com/woowacourse/java-subway-map-precourse",
+      "localPath": "sources/woowacourse__java-subway-map-precourse",
+      "status": "existing",
+      "head": "f428576",
+      "durationMs": 34
+    },
+    {
+      "index": 395,
+      "name": "Samsung/kflat",
+      "url": "https://github.com/Samsung/kflat",
+      "localPath": "sources/Samsung__kflat",
+      "status": "existing",
+      "head": "8651be4",
+      "durationMs": 35
+    },
+    {
+      "index": 396,
+      "name": "woowacourse/java-racingcar-precourse",
+      "url": "https://github.com/woowacourse/java-racingcar-precourse",
+      "localPath": "sources/woowacourse__java-racingcar-precourse",
+      "status": "existing",
+      "head": "e170f9e",
+      "durationMs": 44
+    },
+    {
+      "index": 397,
+      "name": "woowacourse/java-pairmatching-precourse",
+      "url": "https://github.com/woowacourse/java-pairmatching-precourse",
+      "localPath": "sources/woowacourse__java-pairmatching-precourse",
+      "status": "existing",
+      "head": "6aa2570",
+      "durationMs": 32
+    },
+    {
+      "index": 398,
+      "name": "woowacourse/java-chess",
+      "url": "https://github.com/woowacourse/java-chess",
+      "localPath": "sources/woowacourse__java-chess",
+      "status": "existing",
+      "head": "43ccafe",
+      "durationMs": 42
+    },
+    {
+      "index": 399,
+      "name": "Eric-Terminal/ETOS-LLM-Studio",
+      "url": "https://github.com/Eric-Terminal/ETOS-LLM-Studio",
+      "localPath": "sources/Eric-Terminal__ETOS-LLM-Studio",
+      "status": "existing",
+      "head": "5093a29",
+      "durationMs": 86
+    },
+    {
+      "index": 400,
+      "name": "2betforyou/GraphRAG",
+      "url": "https://github.com/2betforyou/GraphRAG",
+      "localPath": "sources/2betforyou__GraphRAG",
+      "status": "existing",
+      "head": "4cbe4fb",
+      "durationMs": 58
+    },
+    {
+      "index": 401,
+      "name": "linkonai2026-kr/kochunk",
+      "url": "https://github.com/linkonai2026-kr/kochunk",
+      "localPath": "sources/linkonai2026-kr__kochunk",
+      "status": "existing",
+      "head": "a09d618",
+      "durationMs": 34
+    },
+    {
+      "index": 402,
+      "name": "Samsung/meminsight",
+      "url": "https://github.com/Samsung/meminsight",
+      "localPath": "sources/Samsung__meminsight",
+      "status": "existing",
+      "head": "74061aa",
+      "durationMs": 44
+    },
+    {
+      "index": 403,
+      "name": "daangn/plantae",
+      "url": "https://github.com/daangn/plantae",
+      "localPath": "sources/daangn__plantae",
+      "status": "existing",
+      "head": "183c57d",
+      "durationMs": 71
+    },
+    {
+      "index": 404,
+      "name": "nhn/tui.color-picker",
+      "url": "https://github.com/nhn/tui.color-picker",
+      "localPath": "sources/nhn__tui.color-picker",
+      "status": "existing",
+      "head": "77bd256",
+      "durationMs": 36
+    },
+    {
+      "index": 405,
+      "name": "daangn/metabridge",
+      "url": "https://github.com/daangn/metabridge",
+      "localPath": "sources/daangn__metabridge",
+      "status": "existing",
+      "head": "c492c2a",
+      "durationMs": 67
+    },
+    {
+      "index": 406,
+      "name": "Samsung/Dexter",
+      "url": "https://github.com/Samsung/Dexter",
+      "localPath": "sources/Samsung__Dexter",
+      "status": "existing",
+      "head": "1730882",
+      "durationMs": 128
+    },
+    {
+      "index": 407,
+      "name": "Samsung/microbit",
+      "url": "https://github.com/Samsung/microbit",
+      "localPath": "sources/Samsung__microbit",
+      "status": "existing",
+      "head": "36892bf",
+      "durationMs": 199
+    },
+    {
+      "index": 408,
+      "name": "naver/d-day-labeler",
+      "url": "https://github.com/naver/d-day-labeler",
+      "localPath": "sources/naver__d-day-labeler",
+      "status": "existing",
+      "head": "0bb221f",
+      "durationMs": 34
+    },
+    {
+      "index": 409,
+      "name": "Samsung/ONE-vscode",
+      "url": "https://github.com/Samsung/ONE-vscode",
+      "localPath": "sources/Samsung__ONE-vscode",
+      "status": "existing",
+      "head": "ebdb6fa",
+      "durationMs": 44
+    },
+    {
+      "index": 410,
+      "name": "line/liff-mock",
+      "url": "https://github.com/line/liff-mock",
+      "localPath": "sources/line__liff-mock",
+      "status": "existing",
+      "head": "3d0c863",
+      "durationMs": 40
+    },
+    {
+      "index": 411,
+      "name": "woowacourse/javascript-baseball-precourse",
+      "url": "https://github.com/woowacourse/javascript-baseball-precourse",
+      "localPath": "sources/woowacourse__javascript-baseball-precourse",
+      "status": "existing",
+      "head": "10f5976",
+      "durationMs": 34
+    },
+    {
+      "index": 412,
+      "name": "naver/image-sprite-webpack-plugin",
+      "url": "https://github.com/naver/image-sprite-webpack-plugin",
+      "localPath": "sources/naver__image-sprite-webpack-plugin",
+      "status": "existing",
+      "head": "e5d495f",
+      "durationMs": 35
+    },
+    {
+      "index": 413,
+      "name": "line/webauthn-kotlin",
+      "url": "https://github.com/line/webauthn-kotlin",
+      "localPath": "sources/line__webauthn-kotlin",
+      "status": "existing",
+      "head": "6090dbe",
+      "durationMs": 40
+    },
+    {
+      "index": 414,
+      "name": "woowacourse/java-racingcar",
+      "url": "https://github.com/woowacourse/java-racingcar",
+      "localPath": "sources/woowacourse__java-racingcar",
+      "status": "existing",
+      "head": "398b573",
+      "durationMs": 53
+    },
+    {
+      "index": 415,
+      "name": "woowacourse/java-jdbc",
+      "url": "https://github.com/woowacourse/java-jdbc",
+      "localPath": "sources/woowacourse__java-jdbc",
+      "status": "existing",
+      "head": "555788a",
+      "durationMs": 39
+    },
+    {
+      "index": 416,
+      "name": "bagidea/bagidea-office",
+      "url": "https://github.com/bagidea/bagidea-office",
+      "localPath": "sources/bagidea__bagidea-office",
+      "status": "existing",
+      "head": "00a8a93",
+      "durationMs": 76
+    },
+    {
+      "index": 417,
+      "name": "tobocop2/lilbee",
+      "url": "https://github.com/tobocop2/lilbee",
+      "localPath": "sources/tobocop2__lilbee",
+      "status": "existing",
+      "head": "b7167f3",
+      "durationMs": 51
+    },
+    {
+      "index": 418,
+      "name": "jnMetaCode/agency-orchestrator",
+      "url": "https://github.com/jnMetaCode/agency-orchestrator",
+      "localPath": "sources/jnMetaCode__agency-orchestrator",
+      "status": "existing",
+      "head": "494a739",
+      "durationMs": 62
+    },
+    {
+      "index": 419,
+      "name": "zzet/gortex",
+      "url": "https://github.com/zzet/gortex",
+      "localPath": "sources/zzet__gortex",
+      "status": "existing",
+      "head": "ed483c7",
+      "durationMs": 103
+    },
+    {
+      "index": 420,
+      "name": "labring/FastGPT",
+      "url": "https://github.com/labring/FastGPT",
+      "localPath": "sources/labring__FastGPT",
+      "status": "existing",
+      "head": "ffa1037",
+      "durationMs": 217
+    },
+    {
+      "index": 421,
+      "name": "Azure-Samples/azure-ai-travel-agents",
+      "url": "https://github.com/Azure-Samples/azure-ai-travel-agents",
+      "localPath": "sources/Azure-Samples__azure-ai-travel-agents",
+      "status": "existing",
+      "head": "a66e229",
+      "durationMs": 61
+    },
+    {
+      "index": 422,
+      "name": "henomis/phero",
+      "url": "https://github.com/henomis/phero",
+      "localPath": "sources/henomis__phero",
+      "status": "existing",
+      "head": "342f10b",
+      "durationMs": 49
+    },
+    {
+      "index": 423,
+      "name": "ajgarciaj/NaViL",
+      "url": "https://github.com/ajgarciaj/NaViL",
+      "localPath": "sources/ajgarciaj__NaViL",
+      "status": "existing",
+      "head": "ee1fda0",
+      "durationMs": 38
+    },
+    {
+      "index": 424,
+      "name": "MelonS/MelonS-Agents",
+      "url": "https://github.com/MelonS/MelonS-Agents",
+      "localPath": "sources/MelonS__MelonS-Agents",
+      "status": "existing",
+      "head": "800653e",
+      "durationMs": 190
+    },
+    {
+      "index": 425,
+      "name": "farmbit-mdk/korea-market-data-mcp",
+      "url": "https://github.com/farmbit-mdk/korea-market-data-mcp",
+      "localPath": "sources/farmbit-mdk__korea-market-data-mcp",
+      "status": "existing",
+      "head": "bdc90f5",
+      "durationMs": 40
+    },
+    {
+      "index": 426,
+      "name": "JeongSeongMok/tossinvest-openapi-mcp",
+      "url": "https://github.com/JeongSeongMok/tossinvest-openapi-mcp",
+      "localPath": "sources/JeongSeongMok__tossinvest-openapi-mcp",
+      "status": "existing",
+      "head": "eb5cceb",
+      "durationMs": 36
+    },
+    {
+      "index": 427,
+      "name": "AgentBridge-Lab/korea-space-support-mcp",
+      "url": "https://github.com/AgentBridge-Lab/korea-space-support-mcp",
+      "localPath": "sources/AgentBridge-Lab__korea-space-support-mcp",
+      "status": "existing",
+      "head": "420220b",
+      "durationMs": 36
+    },
+    {
+      "index": 428,
+      "name": "jayjodev/vivory-mcp",
+      "url": "https://github.com/jayjodev/vivory-mcp",
+      "localPath": "sources/jayjodev__vivory-mcp",
+      "status": "existing",
+      "head": "23372b7",
+      "durationMs": 35
+    },
+    {
+      "index": 429,
+      "name": "simonsez9510/oh-my-wiki",
+      "url": "https://github.com/simonsez9510/oh-my-wiki",
+      "localPath": "sources/simonsez9510__oh-my-wiki",
+      "status": "existing",
+      "head": "27b1197",
+      "durationMs": 32
+    },
+    {
+      "index": 430,
+      "name": "adminhelper/saju-engine",
+      "url": "https://github.com/adminhelper/saju-engine",
+      "localPath": "sources/adminhelper__saju-engine",
+      "status": "existing",
+      "head": "a2242ed",
+      "durationMs": 35
+    },
+    {
+      "index": 431,
+      "name": "ai-screams/HwpForge",
+      "url": "https://github.com/ai-screams/HwpForge",
+      "localPath": "sources/ai-screams__HwpForge",
+      "status": "existing",
+      "head": "bfaa28f",
+      "durationMs": 51
+    },
+    {
+      "index": 432,
+      "name": "z0nam/korea-rio-mcp",
+      "url": "https://github.com/z0nam/korea-rio-mcp",
+      "localPath": "sources/z0nam__korea-rio-mcp",
+      "status": "existing",
+      "head": "90e6034",
+      "durationMs": 32
+    },
+    {
+      "index": 433,
+      "name": "jung-jin-lee/paldo-mcp",
+      "url": "https://github.com/jung-jin-lee/paldo-mcp",
+      "localPath": "sources/jung-jin-lee__paldo-mcp",
+      "status": "existing",
+      "head": "e4e5665",
+      "durationMs": 36
+    },
+    {
+      "index": 434,
+      "name": "dream8837z/hwp-hwpx-proposal-mcp",
+      "url": "https://github.com/dream8837z/hwp-hwpx-proposal-mcp",
+      "localPath": "sources/dream8837z__hwp-hwpx-proposal-mcp",
+      "status": "existing",
+      "head": "fcf642f",
+      "durationMs": 35
+    },
+    {
+      "index": 435,
+      "name": "yjhann33-design/korea-stock-insight-mcp",
+      "url": "https://github.com/yjhann33-design/korea-stock-insight-mcp",
+      "localPath": "sources/yjhann33-design__korea-stock-insight-mcp",
+      "status": "existing",
+      "head": "7084e6c",
+      "durationMs": 34
+    },
+    {
+      "index": 436,
+      "name": "Samsung/ChromiumGStreamerBackend",
+      "url": "https://github.com/Samsung/ChromiumGStreamerBackend",
+      "localPath": "sources/Samsung__ChromiumGStreamerBackend",
+      "status": "existing",
+      "head": "820d17430",
+      "durationMs": 3656
+    },
+    {
+      "index": 437,
+      "name": "naver-ai/usdm",
+      "url": "https://github.com/naver-ai/usdm",
+      "localPath": "sources/naver-ai__usdm",
+      "status": "existing",
+      "head": "71f0911",
+      "durationMs": 34
+    },
+    {
+      "index": 438,
+      "name": "daangn/codepocket",
+      "url": "https://github.com/daangn/codepocket",
+      "localPath": "sources/daangn__codepocket",
+      "status": "existing",
+      "head": "8fcb5e8",
+      "durationMs": 37
+    },
+    {
+      "index": 439,
+      "name": "naver-ai/calm",
+      "url": "https://github.com/naver-ai/calm",
+      "localPath": "sources/naver-ai__calm",
+      "status": "existing",
+      "head": "0ebb8a5",
+      "durationMs": 38
+    },
+    {
+      "index": 440,
+      "name": "line/promptttspp",
+      "url": "https://github.com/line/promptttspp",
+      "localPath": "sources/line__promptttspp",
+      "status": "existing",
+      "head": "a78fe65",
+      "durationMs": 36
+    },
+    {
+      "index": 441,
+      "name": "naver-ai/PfLayer",
+      "url": "https://github.com/naver-ai/PfLayer",
+      "localPath": "sources/naver-ai__PfLayer",
+      "status": "existing",
+      "head": "008a096",
+      "durationMs": 35
+    },
+    {
+      "index": 442,
+      "name": "naver-ai/w-ood",
+      "url": "https://github.com/naver-ai/w-ood",
+      "localPath": "sources/naver-ai__w-ood",
+      "status": "existing",
+      "head": "0cb2f77",
+      "durationMs": 33
+    },
+    {
+      "index": 443,
+      "name": "kakaobrain/solvent",
+      "url": "https://github.com/kakaobrain/solvent",
+      "localPath": "sources/kakaobrain__solvent",
+      "status": "existing",
+      "head": "7ff81c4",
+      "durationMs": 40
+    },
+    {
+      "index": 444,
+      "name": "Samsung/HbbPlayer",
+      "url": "https://github.com/Samsung/HbbPlayer",
+      "localPath": "sources/Samsung__HbbPlayer",
+      "status": "existing",
+      "head": "5bdd5f1",
+      "durationMs": 31
+    },
+    {
+      "index": 445,
+      "name": "Samsung/Chromium",
+      "url": "https://github.com/Samsung/Chromium",
+      "localPath": "sources/Samsung__Chromium",
+      "status": "existing",
+      "head": "b5897ef",
+      "durationMs": 31
+    },
+    {
+      "index": 446,
+      "name": "nhn/tui.pagination",
+      "url": "https://github.com/nhn/tui.pagination",
+      "localPath": "sources/nhn__tui.pagination",
+      "status": "existing",
+      "head": "092c83f",
+      "durationMs": 34
+    },
+    {
+      "index": 447,
+      "name": "Samsung/TAU",
+      "url": "https://github.com/Samsung/TAU",
+      "localPath": "sources/Samsung__TAU",
+      "status": "existing",
+      "head": "633273f",
+      "durationMs": 198
+    },
+    {
+      "index": 448,
+      "name": "line/line-things-dev-board",
+      "url": "https://github.com/line/line-things-dev-board",
+      "localPath": "sources/line__line-things-dev-board",
+      "status": "existing",
+      "head": "18820af",
+      "durationMs": 36
+    },
+    {
+      "index": 449,
+      "name": "nhn/tui.eslint.config",
+      "url": "https://github.com/nhn/tui.eslint.config",
+      "localPath": "sources/nhn__tui.eslint.config",
+      "status": "existing",
+      "head": "dd8540d",
+      "durationMs": 36
+    },
+    {
+      "index": 450,
+      "name": "woowacourse/java-subway-path-precourse",
+      "url": "https://github.com/woowacourse/java-subway-path-precourse",
+      "localPath": "sources/woowacourse__java-subway-path-precourse",
+      "status": "existing",
+      "head": "e8afb13",
+      "durationMs": 36
+    },
+    {
+      "index": 451,
+      "name": "daangn/KarrotCodableKit",
+      "url": "https://github.com/daangn/KarrotCodableKit",
+      "localPath": "sources/daangn__KarrotCodableKit",
+      "status": "existing",
+      "head": "4aade81",
+      "durationMs": 42
+    },
+    {
+      "index": 452,
+      "name": "naver/pisco",
+      "url": "https://github.com/naver/pisco",
+      "localPath": "sources/naver__pisco",
+      "status": "existing",
+      "head": "e1250cc",
+      "durationMs": 31
+    },
+    {
+      "index": 453,
+      "name": "sktelecom/sbom-tools",
+      "url": "https://github.com/sktelecom/sbom-tools",
+      "localPath": "sources/sktelecom__sbom-tools",
+      "status": "existing",
+      "head": "92ab9ff",
+      "durationMs": 40
+    },
+    {
+      "index": 454,
+      "name": "daangn/search-ko-dic",
+      "url": "https://github.com/daangn/search-ko-dic",
+      "localPath": "sources/daangn__search-ko-dic",
+      "status": "existing",
+      "head": "7505be8",
+      "durationMs": 32
+    },
+    {
+      "index": 455,
+      "name": "hashgraph-online/hol-guard",
+      "url": "https://github.com/hashgraph-online/hol-guard",
+      "localPath": "sources/hashgraph-online__hol-guard",
+      "status": "existing",
+      "head": "4d4bf52",
+      "durationMs": 55
+    },
+    {
+      "index": 456,
+      "name": "ruvnet/agent-harness-generator",
+      "url": "https://github.com/ruvnet/agent-harness-generator",
+      "localPath": "sources/ruvnet__agent-harness-generator",
+      "status": "existing",
+      "head": "b2506a1",
+      "durationMs": 60
+    },
+    {
+      "index": 457,
+      "name": "0xMassi/webclaw",
+      "url": "https://github.com/0xMassi/webclaw",
+      "localPath": "sources/0xMassi__webclaw",
+      "status": "existing",
+      "head": "3caca67",
+      "durationMs": 41
+    },
+    {
+      "index": 458,
+      "name": "SikamikanikoBG/homelab-monitor",
+      "url": "https://github.com/SikamikanikoBG/homelab-monitor",
+      "localPath": "sources/SikamikanikoBG__homelab-monitor",
+      "status": "existing",
+      "head": "b35f3d4",
+      "durationMs": 38
+    },
+    {
+      "index": 459,
+      "name": "dcostenco/prism-coder",
+      "url": "https://github.com/dcostenco/prism-coder",
+      "localPath": "sources/dcostenco__prism-coder",
+      "status": "existing",
+      "head": "897edb9",
+      "durationMs": 46
+    },
+    {
+      "index": 460,
+      "name": "closermethod/apac-compliance-mcp",
+      "url": "https://github.com/closermethod/apac-compliance-mcp",
+      "localPath": "sources/closermethod__apac-compliance-mcp",
+      "status": "existing",
+      "head": "8c1a171",
+      "durationMs": 31
+    },
+    {
+      "index": 461,
+      "name": "pna03100/hexa-swarm-template",
+      "url": "https://github.com/pna03100/hexa-swarm-template",
+      "localPath": "sources/pna03100__hexa-swarm-template",
+      "status": "existing",
+      "head": "23296d7",
+      "durationMs": 39
+    },
+    {
+      "index": 462,
+      "name": "ssuksak/cheongyak-rag-mcp",
+      "url": "https://github.com/ssuksak/cheongyak-rag-mcp",
+      "localPath": "sources/ssuksak__cheongyak-rag-mcp",
+      "status": "existing",
+      "head": "0b6e0fb",
+      "durationMs": 32
+    },
+    {
+      "index": 463,
+      "name": "JAE-HUN-CHO/law-api-mcp-korea",
+      "url": "https://github.com/JAE-HUN-CHO/law-api-mcp-korea",
+      "localPath": "sources/JAE-HUN-CHO__law-api-mcp-korea",
+      "status": "existing",
+      "head": "3572432",
+      "durationMs": 51
+    },
+    {
+      "index": 464,
+      "name": "alice840126-ship-it/korean-law-mcp-setup",
+      "url": "https://github.com/alice840126-ship-it/korean-law-mcp-setup",
+      "localPath": "sources/alice840126-ship-it__korean-law-mcp-setup",
+      "status": "existing",
+      "head": "4db8aa8",
+      "durationMs": 32
+    },
+    {
+      "index": 465,
+      "name": "naver/garnet",
+      "url": "https://github.com/naver/garnet",
+      "localPath": "sources/naver__garnet",
+      "status": "existing",
+      "head": "c5a7adb",
+      "durationMs": 37
+    },
+    {
+      "index": 466,
+      "name": "naver/storybook-addon-preview",
+      "url": "https://github.com/naver/storybook-addon-preview",
+      "localPath": "sources/naver__storybook-addon-preview",
+      "status": "existing",
+      "head": "4a8664c",
+      "durationMs": 37
+    },
+    {
+      "index": 467,
+      "name": "naver/egjs-flicking-plugins",
+      "url": "https://github.com/naver/egjs-flicking-plugins",
+      "localPath": "sources/naver__egjs-flicking-plugins",
+      "status": "existing",
+      "head": "87671e2",
+      "durationMs": 39
+    },
+    {
+      "index": 468,
+      "name": "nhn/tui.time-picker",
+      "url": "https://github.com/nhn/tui.time-picker",
+      "localPath": "sources/nhn__tui.time-picker",
+      "status": "existing",
+      "head": "1f72f3e",
+      "durationMs": 34
+    },
+    {
+      "index": 469,
+      "name": "Samsung/spark-cep",
+      "url": "https://github.com/Samsung/spark-cep",
+      "localPath": "sources/Samsung__spark-cep",
+      "status": "existing",
+      "head": "c5a90e1",
+      "durationMs": 34
+    },
+    {
+      "index": 470,
+      "name": "Samsung/kv2streamer",
+      "url": "https://github.com/Samsung/kv2streamer",
+      "localPath": "sources/Samsung__kv2streamer",
+      "status": "existing",
+      "head": "786526a",
+      "durationMs": 35
+    },
+    {
+      "index": 471,
+      "name": "naver-ai/tobo",
+      "url": "https://github.com/naver-ai/tobo",
+      "localPath": "sources/naver-ai__tobo",
+      "status": "existing",
+      "head": "fa41194",
+      "durationMs": 37
+    },
+    {
+      "index": 472,
+      "name": "woowacourse/java-vendingmachine-precourse",
+      "url": "https://github.com/woowacourse/java-vendingmachine-precourse",
+      "localPath": "sources/woowacourse__java-vendingmachine-precourse",
+      "status": "existing",
+      "head": "6e84fc3",
+      "durationMs": 32
+    },
+    {
+      "index": 473,
+      "name": "woowacourse/java-lotto",
+      "url": "https://github.com/woowacourse/java-lotto",
+      "localPath": "sources/woowacourse__java-lotto",
+      "status": "existing",
+      "head": "811d045",
+      "durationMs": 34
+    },
+    {
+      "index": 474,
+      "name": "Samsung/MeziLang",
+      "url": "https://github.com/Samsung/MeziLang",
+      "localPath": "sources/Samsung__MeziLang",
+      "status": "existing",
+      "head": "89a1a86",
+      "durationMs": 36
+    },
+    {
+      "index": 475,
+      "name": "Kiln-AI/Kiln",
+      "url": "https://github.com/Kiln-AI/Kiln",
+      "localPath": "sources/Kiln-AI__Kiln",
+      "status": "existing",
+      "head": "ea0d075",
+      "durationMs": 94
+    },
+    {
+      "index": 476,
+      "name": "codecentric/c4-genai-suite",
+      "url": "https://github.com/codecentric/c4-genai-suite",
+      "localPath": "sources/codecentric__c4-genai-suite",
+      "status": "existing",
+      "head": "1b2d1f5",
+      "durationMs": 92
+    },
+    {
+      "index": 477,
+      "name": "askimo-ai/askimo",
+      "url": "https://github.com/askimo-ai/askimo",
+      "localPath": "sources/askimo-ai__askimo",
+      "status": "existing",
+      "head": "77e829b",
+      "durationMs": 53
+    },
+    {
+      "index": 478,
+      "name": "langchain4j/langchain4j",
+      "url": "https://github.com/langchain4j/langchain4j",
+      "localPath": "sources/langchain4j__langchain4j",
+      "status": "existing",
+      "head": "21d9ee3",
+      "durationMs": 150
+    },
+    {
+      "index": 479,
+      "name": "crmne/ruby_llm",
+      "url": "https://github.com/crmne/ruby_llm",
+      "localPath": "sources/crmne__ruby_llm",
+      "status": "existing",
+      "head": "55987a8",
+      "durationMs": 81
+    },
+    {
+      "index": 480,
+      "name": "thClaws/thClaws",
+      "url": "https://github.com/thClaws/thClaws",
+      "localPath": "sources/thClaws__thClaws",
+      "status": "existing",
+      "head": "195a25e",
+      "durationMs": 61
+    },
+    {
+      "index": 481,
+      "name": "1Panel-dev/MaxKB",
+      "url": "https://github.com/1Panel-dev/MaxKB",
+      "localPath": "sources/1Panel-dev__MaxKB",
+      "status": "existing",
+      "head": "a4c526e",
+      "durationMs": 102
+    },
+    {
+      "index": 482,
+      "name": "junkai-li/NetCoreKevin",
+      "url": "https://github.com/junkai-li/NetCoreKevin",
+      "localPath": "sources/junkai-li__NetCoreKevin",
+      "status": "existing",
+      "head": "846fc9d",
+      "durationMs": 61
+    },
+    {
+      "index": 483,
+      "name": "sungjin9288/design-ai",
+      "url": "https://github.com/sungjin9288/design-ai",
+      "localPath": "sources/sungjin9288__design-ai",
+      "status": "existing",
+      "head": "ca6915f",
+      "durationMs": 52
+    },
+    {
+      "index": 484,
+      "name": "naver/egjs-imready",
+      "url": "https://github.com/naver/egjs-imready",
+      "localPath": "sources/naver__egjs-imready",
+      "status": "existing",
+      "head": "afaae6e",
+      "durationMs": 41
+    },
+    {
+      "index": 485,
+      "name": "line/conditional",
+      "url": "https://github.com/line/conditional",
+      "localPath": "sources/line__conditional",
+      "status": "existing",
+      "head": "58f9929",
+      "durationMs": 36
+    },
+    {
+      "index": 486,
+      "name": "Samsung/Fluff",
+      "url": "https://github.com/Samsung/Fluff",
+      "localPath": "sources/Samsung__Fluff",
+      "status": "existing",
+      "head": "d8c95b6",
+      "durationMs": 38
+    },
+    {
+      "index": 487,
+      "name": "kakao/kafka-sink-connector",
+      "url": "https://github.com/kakao/kafka-sink-connector",
+      "localPath": "sources/kakao__kafka-sink-connector",
+      "status": "existing",
+      "head": "da676e5",
+      "durationMs": 33
+    },
+    {
+      "index": 488,
+      "name": "naver/hadoop",
+      "url": "https://github.com/naver/hadoop",
+      "localPath": "sources/naver__hadoop",
+      "status": "existing",
+      "head": "0c0a80f",
+      "durationMs": 195
+    },
+    {
+      "index": 489,
+      "name": "line/liff-cli",
+      "url": "https://github.com/line/liff-cli",
+      "localPath": "sources/line__liff-cli",
+      "status": "existing",
+      "head": "e01a502",
+      "durationMs": 35
+    },
+    {
+      "index": 490,
+      "name": "line/req-shield",
+      "url": "https://github.com/line/req-shield",
+      "localPath": "sources/line__req-shield",
+      "status": "existing",
+      "head": "2e254ef",
+      "durationMs": 41
+    },
+    {
+      "index": 491,
+      "name": "Samsung/gcutil",
+      "url": "https://github.com/Samsung/gcutil",
+      "localPath": "sources/Samsung__gcutil",
+      "status": "existing",
+      "head": "2ea9202",
+      "durationMs": 38
+    },
+    {
+      "index": 492,
+      "name": "naver/arcus-c-client",
+      "url": "https://github.com/naver/arcus-c-client",
+      "localPath": "sources/naver__arcus-c-client",
+      "status": "existing",
+      "head": "b1e1438",
+      "durationMs": 47
+    },
+    {
+      "index": 493,
+      "name": "hyperconnect/hyperconnect.github.io",
+      "url": "https://github.com/hyperconnect/hyperconnect.github.io",
+      "localPath": "sources/hyperconnect__hyperconnect.github.io",
+      "status": "existing",
+      "head": "2653943",
+      "durationMs": 57
+    },
+    {
+      "index": 494,
+      "name": "toss/slash-site",
+      "url": "https://github.com/toss/slash-site",
+      "localPath": "sources/toss__slash-site",
+      "status": "existing",
+      "head": "e871959",
+      "durationMs": 38
+    },
+    {
+      "index": 495,
+      "name": "naver/arcus-zookeeper",
+      "url": "https://github.com/naver/arcus-zookeeper",
+      "localPath": "sources/naver__arcus-zookeeper",
+      "status": "existing",
+      "head": "074deb8",
+      "durationMs": 64
+    },
+    {
+      "index": 496,
+      "name": "woowacourse/java-mvc",
+      "url": "https://github.com/woowacourse/java-mvc",
+      "localPath": "sources/woowacourse__java-mvc",
+      "status": "existing",
+      "head": "75de864",
+      "durationMs": 38
+    },
+    {
+      "index": 497,
+      "name": "agentgateway/agentgateway",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "localPath": "sources/agentgateway__agentgateway",
+      "status": "cloned",
+      "mode": "partial",
+      "head": "3965abc",
+      "durationMs": 2798
+    },
+    {
+      "index": 498,
+      "name": "sanonone/kektordb",
+      "url": "https://github.com/sanonone/kektordb",
+      "localPath": "sources/sanonone__kektordb",
+      "status": "cloned",
+      "mode": "partial",
+      "head": "a4d12ac",
+      "durationMs": 2680
+    },
+    {
+      "index": 499,
+      "name": "code-forge-temple/agentic-signal",
+      "url": "https://github.com/code-forge-temple/agentic-signal",
+      "localPath": "sources/code-forge-temple__agentic-signal",
+      "status": "cloned",
+      "mode": "partial",
+      "head": "dea6dd0",
+      "durationMs": 1450
+    },
+    {
+      "index": 500,
+      "name": "rhkswnd0118-crypto/korean-rag-chatbot-boilerplate",
+      "url": "https://github.com/rhkswnd0118-crypto/korean-rag-chatbot-boilerplate",
+      "localPath": "sources/rhkswnd0118-crypto__korean-rag-chatbot-boilerplate",
+      "status": "cloned",
+      "mode": "partial",
+      "head": "7ba9430",
+      "durationMs": 1111
+    }
+  ]
+}

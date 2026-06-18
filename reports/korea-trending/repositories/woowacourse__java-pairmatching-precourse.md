@@ -1,0 +1,115 @@
+# woowacourse/java-pairmatching-precourse
+
+생성일: 2026-06-18T00:02:16.992Z
+
+## 기본 정보
+
+| key | value |
+| --- | --- |
+| GitHub | https://github.com/woowacourse/java-pairmatching-precourse |
+| local path | sources/woowacourse__java-pairmatching-precourse |
+| HEAD | 6aa2570 |
+| stars/forks | 28 / 495 |
+| language | Java |
+| license |  |
+| pushedAt | 2023-12-15T09:28:53Z |
+| trendScore / priorityScore | 70 / 140 |
+
+
+## 한줄 해석
+
+- 한국어/한국 도메인 또는 한국 기업 오픈소스 신호가 있어 국내 적용 가능성을 보기 좋다.
+- 프런트엔드/DX 신호가 있어 실사용 개발자 경험 또는 SDK 문서화 수준을 확인할 가치가 있다.
+
+
+## 감지된 트렌드 신호
+
+| signal | matches | evidence |
+| --- | --- | --- |
+| Frontend / developer experience | 3 | README.md |
+| Korean language / Korea domain | 1 | README.md |
+
+
+## 분류와 스택
+
+| key | value |
+| --- | --- |
+| categories | frontend-dx, korea-signal |
+| stacks | Java/Kotlin |
+| capabilities |  |
+
+
+## 구조 요약
+
+| key | value |
+| --- | --- |
+| files | 13 |
+| manifests | 2 |
+| docs | 3 |
+| tests | 1 |
+| ci/ops | 0 |
+| spec artifacts | 0 |
+| agent instruction files | 0 |
+
+
+## README 신호
+
+| key | value |
+| --- | --- |
+| file | README.md |
+| title | 미션 - 페어매칭관리 애플리케이션 |
+| headings | 미션 - 페어매칭관리 애플리케이션 / 🔍 진행방식 / ✉️ 미션 제출 방법 / ✔️ 과제 제출 전 체크리스트 - 0점 방지 / 🚀 기능 요구사항 / 도메인 설명 / 페어 매칭 기능 / 페어 조회 기능 / 💾 사전 제공 정보 / 과정 |
+| excerpt | 미션 페어매칭관리 애플리케이션 🔍 진행방식 미션은 기능 요구사항, 프로그래밍 요구사항, 과제 진행 요구사항 세 가지로 구성되어 있다. 세 개의 요구사항을 만족하기 위해 노력한다. 특히 기능을 구현하기 전에 기능 목록을 만들고, 기능 단위로 커밋 하는 방식으로 진행한다. 기능 요구사항에 기재되지 않은 내용은 스스로 판단하여 구현한다. ✉️ 미션 제출 방법 미션 구현을 완료한 후 GitHub을 통해 제출해야 한다. GitHub을 활용한 제출 방법은 프리코스 과제 제출 문서 https //github.com/woowacourse/woowacourse docs/tree/master/precourse 를 참고해 제출한다. GitHub에 미션을 제출한 후 우아한테크코스 지원 플랫폼 https //apply.techcourse.co.kr 에 접속하여 프리코스 과제를 제출한다. 자세한 방법은 링크 https //github.com/woowacourse/woowacourse docs/tree/master/precourse 제출 가이드 를 참고한다. Pull Request만 보내고, 지원 플랫폼에서 과제를 제출하지 않으면 최종 제출하지 않은 것으로 처리되니 주의한다. ✔️ 과제 제출 전 체크리스트 0점 방지 터미널에서 java version 을 실행해 자바 8인지 확인한다. 또는 Eclipse, IntelliJ IDEA와 같은 IDE의 자바 8로 실 |
+
+
+## 주요 파일
+
+### Manifests
+
+- README.md
+- build.gradle
+
+
+### Spec / Docs / Prompt Artifacts
+
+_없음_
+
+
+### Agent Instruction Files
+
+_없음_
+
+
+## 상위 디렉터리
+
+| dir | count |
+| --- | --- |
+| src | 4 |
+| gradle | 2 |
+| .gitignore | 1 |
+| build.gradle | 1 |
+| gradle.properties | 1 |
+| gradlew | 1 |
+| gradlew.bat | 1 |
+| README.md | 1 |
+| settings.gradle | 1 |
+
+
+## 확장자 분포
+
+| ext | count |
+| --- | --- |
+| .md | 3 |
+| .gradle | 2 |
+| .java | 2 |
+| .properties | 2 |
+| [no-ext] | 2 |
+| .bat | 1 |
+| .jar | 1 |
+
+
+## 다음 심층 분석 포인트
+
+- README와 manifest에서 실제 실행 경로를 확인한다.
+- 감지된 evidence 파일을 기준으로 MCP/RAG/agent 흐름의 엔트리포인트를 추적한다.
+- 스펙/문서 산출물이 있으면 요구사항-설계-작업 분해가 코드 변경과 어떻게 연결되는지 확인한다.

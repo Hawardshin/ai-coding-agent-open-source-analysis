@@ -1,5 +1,21 @@
 [
   {
+    "title": "Korea-trending OSS",
+    "summary": "GeekNews, 국내 기술블로그, LinkedIn 공개 검색 신호 기반 500개 오픈소스",
+    "query": "korea korean geeknews mcp rag llm wiki local llm toss naver kakao line",
+    "category": "korea-trending-open-source",
+    "repos": [
+      "Marker-Inc-Korea/AutoRAG",
+      "toss/es-toolkit",
+      "line/centraldogma",
+      "joungminsung/OpenDocuments",
+      "line/armeria",
+      "line/line-bot-mcp-server",
+      "naver/fe-news",
+      "line/line-bot-sdk-python"
+    ]
+  },
+  {
     "title": "Spec-driven / SDD",
     "summary": "requirements, design, tasks, Kiro, Spec Kit, OpenSpec 계열",
     "query": "spec requirements design tasks kiro openspec",
