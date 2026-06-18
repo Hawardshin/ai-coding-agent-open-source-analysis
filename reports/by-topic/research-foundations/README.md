@@ -1,6 +1,6 @@
 # Research Foundations
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 Evidence catalogs, conflicting theories, source catalogs, and research synthesis.
 

@@ -1,8 +1,19 @@
 # Korean AI and Open Source
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Korea-trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Korea-trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss
 - Presentations/conferences/trend references: 21
 - Reference materials: 0
 - Data file: [data/categories/korean-ai-open-source.json](../../../data/categories/korean-ai-open-source.json)
+- Related report topics: [korea-trending-open-source](../../by-topic/korea-trending-open-source/README.md)
 
 ## Type Breakdown
 

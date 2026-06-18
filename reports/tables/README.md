@@ -1,8 +1,17 @@
 # Report Tables
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 This page is the table-first view of the repository. Use it when you want to scan the full investigation structure before opening individual reports.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 ## Data Files
 

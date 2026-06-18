@@ -115,6 +115,26 @@ const taxonomy = [
 
 const taxonomyBySlug = new Map(taxonomy.map((category) => [category.slug, category]));
 
+const categoryTopicMap = {
+  "coding-agents-ides": ["coding-agents", "repository-deep-dives"],
+  "agent-harness-orchestration": ["agent-harness", "coding-agents"],
+  "mcp-tools-protocols": ["agent-harness"],
+  "spec-driven-requirements": ["spec-driven"],
+  "llm-wiki-rag-knowledge": ["llm-wiki"],
+  "context-memory": ["llm-wiki", "adjacent-infrastructure"],
+  "evals-observability-quality": ["adjacent-infrastructure", "agent-harness"],
+  "security-governance-safety": ["agent-harness"],
+  "ai-infrastructure-serving": ["adjacent-infrastructure"],
+  "data-platforms-vector-databases": ["adjacent-infrastructure", "llm-wiki"],
+  "developer-productivity-devtools": ["coding-agents", "full-source-scan"],
+  "local-llm-models": ["adjacent-infrastructure"],
+  "korean-ai-open-source": ["korea-trending-open-source"],
+  "global-ai-open-source": ["global-trending-open-source"],
+  "research-papers": ["research-foundations"],
+  "presentations-conferences": ["presentations-conferences"],
+  "ai-usage-trends": ["ai-usage-trends", "presentations-conferences"]
+};
+
 function safeArray(value) {
   return Array.isArray(value) ? value : [];
 }
@@ -545,6 +565,26 @@ function pathLink(label, target, fromDir) {
   return `[${tableText(label)}](${relative})`;
 }
 
+function navigationBlock(fromDir) {
+  return `## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| ${pathLink("Repository README", "README.md", fromDir)} | Repo-wide orientation and top-level data/report structure. |
+| ${pathLink("Reports Reading Index", "reports/README.md", fromDir)} | Main report navigation, start-here path, topics, and folder map. |
+| ${pathLink("Reports by Topic", "reports/by-topic/README.md", fromDir)} | Topic-first navigation across all Markdown reports. |
+| ${pathLink("Report Tables", "reports/tables/README.md", fromDir)} | Table-first view and CSV exports. |
+| ${pathLink("Artifact Categories", "reports/categories/README.md", fromDir)} | Artifact-level category index for repositories, papers, presentations, and references. |
+`;
+}
+
+function relatedTopicLinks(categorySlug, fromDir) {
+  return safeArray(categoryTopicMap[categorySlug])
+    .map((topicSlug) => pathLink(topicSlug, `reports/by-topic/${topicSlug}/README.md`, fromDir))
+    .filter(Boolean)
+    .join(", ");
+}
+
 function renderItemTable(items, fromDir, limit = 40) {
   const rows = sortItems(items).slice(0, limit).map((item) => {
     const title = markdownLink(item.title, item.url);
@@ -579,6 +619,8 @@ Generated: ${generatedAt}
 
 ${category.description}
 
+${navigationBlock(fromDir)}
+
 ## Counts
 
 - Total categorized entries: ${items.length}
@@ -587,6 +629,7 @@ ${category.description}
 - Presentations/conferences/trend references: ${presentations.length}
 - Reference materials: ${references.length}
 - Data file: ${pathLink(`data/categories/${category.slug}.json`, `data/categories/${category.slug}.json`, fromDir)}
+- Related report topics: ${relatedTopicLinks(category.slug, fromDir) || "none"}
 
 ## Type Breakdown
 
@@ -618,7 +661,8 @@ function renderRootReadme(categorySummaries, totals) {
     .map((category) => {
       const folder = `[folder](${category.slug}/README.md)`;
       const data = `[data](../../data/categories/${category.slug}.json)`;
-      return `| ${category.title} | ${category.counts.total} | ${category.counts.repository || 0} | ${category.counts["research-paper"] || 0} | ${(category.counts["conference-reference"] || 0) + (category.counts["trend-reference"] || 0)} | ${folder} / ${data} |`;
+      const topics = relatedTopicLinks(category.slug, "reports/categories");
+      return `| ${category.title} | ${category.counts.total} | ${category.counts.repository || 0} | ${category.counts["research-paper"] || 0} | ${(category.counts["conference-reference"] || 0) + (category.counts["trend-reference"] || 0)} | ${topics || "none"} | ${folder} / ${data} |`;
     })
     .join("\n");
 
@@ -627,6 +671,8 @@ function renderRootReadme(categorySummaries, totals) {
 Generated: ${generatedAt}
 
 This folder reorganizes the repository's scattered open-source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the original data, reports, and cloned source directories.
+
+${navigationBlock("reports/categories")}
 
 ## Totals
 
@@ -639,8 +685,8 @@ This folder reorganizes the repository's scattered open-source, research, presen
 
 ## Categories
 
-| Category | Total | Repos | Papers | Presentations | Links |
-| --- | ---: | ---: | ---: | ---: | --- |
+| Category | Total | Repos | Papers | Presentations | Related report topics | Links |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
 ${rows}
 
 ## Data Files

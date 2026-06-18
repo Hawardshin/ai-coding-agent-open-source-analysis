@@ -1,8 +1,19 @@
 # Coding Agents and IDEs
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding
 - Presentations/conferences/trend references: 30
 - Reference materials: 1200
 - Data file: [data/categories/coding-agents-ides.json](../../../data/categories/coding-agents-ides.json)
+- Related report topics: [coding-agents](../../by-topic/coding-agents/README.md), [repository-deep-dives](../../by-topic/repository-deep-dives/README.md)
 
 ## Type Breakdown
 

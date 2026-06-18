@@ -1,6 +1,6 @@
 # Full Source Scan and Code Retrieval
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 How coding agents discover, index, search, and read source code.
 

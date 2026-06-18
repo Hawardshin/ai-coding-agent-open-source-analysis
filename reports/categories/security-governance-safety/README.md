@@ -1,8 +1,19 @@
 # Security, Governance, and Safety
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-chain security, identity, audit, and safe agent execution.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-cha
 - Presentations/conferences/trend references: 65
 - Reference materials: 158
 - Data file: [data/categories/security-governance-safety.json](../../../data/categories/security-governance-safety.json)
+- Related report topics: [agent-harness](../../by-topic/agent-harness/README.md)
 
 ## Type Breakdown
 

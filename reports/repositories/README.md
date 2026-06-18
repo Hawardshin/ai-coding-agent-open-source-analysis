@@ -1,6 +1,6 @@
 # Core Repository Reports
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 Primary deep dives for the original AI coding agent, IDE agent, browser agent, MCP, and framework repositories.
 

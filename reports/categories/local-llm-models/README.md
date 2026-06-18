@@ -1,8 +1,19 @@
 # Local LLMs and Models
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model-serving UIs.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Local model runtimes, open models, model optimization, transformers, small model
 - Presentations/conferences/trend references: 50
 - Reference materials: 39
 - Data file: [data/categories/local-llm-models.json](../../../data/categories/local-llm-models.json)
+- Related report topics: [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md)
 
 ## Type Breakdown
 

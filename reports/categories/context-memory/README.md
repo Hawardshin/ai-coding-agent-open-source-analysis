@@ -1,8 +1,19 @@
 # Context and Memory
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Long-term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Long-term memory, session state, context engineering, recall, persistence, perso
 - Presentations/conferences/trend references: 625
 - Reference materials: 101
 - Data file: [data/categories/context-memory.json](../../../data/categories/context-memory.json)
+- Related report topics: [llm-wiki](../../by-topic/llm-wiki/README.md), [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md)
 
 ## Type Breakdown
 

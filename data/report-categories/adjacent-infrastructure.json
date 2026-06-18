@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:52:58.361Z",
+  "generatedAt": "2026-06-18T13:55:58.476Z",
   "slug": "adjacent-infrastructure",
   "title": "Adjacent AI Infrastructure",
   "description": "Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.",
@@ -39,10 +39,10 @@
       "id": "report:reports/categories/ai-infrastructure-serving/README.md",
       "path": "reports/categories/ai-infrastructure-serving/README.md",
       "title": "AI Infrastructure and Serving",
-      "summary": "AI Infrastructure and Serving Generated 2026 06 18T13 38 56.297Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. Counts Total categorized entries 244 Repositories 147 Research p",
+      "summary": "AI Infrastructure and Serving Generated 2026 06 18T13 55 56.390Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. Navigation Entry Use it for Repository README ../../../README.md",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "updatedAt": "2026-06-18T13:55:57.037Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -53,10 +53,10 @@
       "id": "report:reports/categories/data-platforms-vector-databases/README.md",
       "path": "reports/categories/data-platforms-vector-databases/README.md",
       "title": "Data Platforms and Vector Databases",
-      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T13 38 56.297Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. Counts Total categorized entries 200 Repositories 145 Research papers 44 ",
+      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T13 55 56.390Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. Navigation Entry Use it for Repository README ../../../README.md Repo wid",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "updatedAt": "2026-06-18T13:55:57.040Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -67,10 +67,10 @@
       "id": "report:reports/categories/evals-observability-quality/README.md",
       "path": "reports/categories/evals-observability-quality/README.md",
       "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T13 38 56.297Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. Counts Total categorized entries 648 Repositories 141 Research papers ",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T13 55 56.390Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. Navigation Entry Use it for Repository README ../../../README.md Repo ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "updatedAt": "2026-06-18T13:55:57.027Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -81,10 +81,10 @@
       "id": "report:reports/categories/local-llm-models/README.md",
       "path": "reports/categories/local-llm-models/README.md",
       "title": "Local LLMs and Models",
-      "summary": "Local LLMs and Models Generated 2026 06 18T13 38 56.297Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. Counts Total categorized entries 692 Repositories 313 Research papers 290 Present",
+      "summary": "Local LLMs and Models Generated 2026 06 18T13 55 56.390Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. Navigation Entry Use it for Repository README ../../../README.md Repo wide orient",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "updatedAt": "2026-06-18T13:55:57.058Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"

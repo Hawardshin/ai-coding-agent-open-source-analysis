@@ -1,8 +1,19 @@
 # Agent Harness and Orchestration
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Agent harnesses, multi-agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Agent harnesses, multi-agent runtimes, skills, tools, workflows, task orchestrat
 - Presentations/conferences/trend references: 713
 - Reference materials: 1200
 - Data file: [data/categories/agent-harness-orchestration.json](../../../data/categories/agent-harness-orchestration.json)
+- Related report topics: [agent-harness](../../by-topic/agent-harness/README.md), [coding-agents](../../by-topic/coding-agents/README.md)
 
 ## Type Breakdown
 

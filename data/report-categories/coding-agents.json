@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:52:58.361Z",
+  "generatedAt": "2026-06-18T13:55:58.476Z",
   "slug": "coding-agents",
   "title": "Coding Agents and IDEs",
   "description": "Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.",
@@ -39,10 +39,10 @@
       "id": "report:reports/categories/coding-agents-ides/README.md",
       "path": "reports/categories/coding-agents-ides/README.md",
       "title": "Coding Agents and IDEs",
-      "summary": "Coding Agents and IDEs Generated 2026 06 18T13 38 56.297Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. Counts Total categorized entries 1417 Repositories 174 Research papers 13 Presenta",
+      "summary": "Coding Agents and IDEs Generated 2026 06 18T13 55 56.390Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. Navigation Entry Use it for Repository README ../../../README.md Repo wide orienta",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "updatedAt": "2026-06-18T13:55:56.954Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -53,10 +53,10 @@
       "id": "report:reports/categories/research-papers/README.md",
       "path": "reports/categories/research-papers/README.md",
       "title": "Research Papers and Evidence",
-      "summary": "Research Papers and Evidence Generated 2026 06 18T13 38 56.297Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. Counts Total categorized entries 650 Repositories 0 Research papers 650 Pres",
+      "summary": "Research Papers and Evidence Generated 2026 06 18T13 55 56.390Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. Navigation Entry Use it for Repository README ../../../README.md Repo wide o",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "updatedAt": "2026-06-18T13:55:57.076Z",
       "categories": [
         "category-guides",
         "coding-agents"

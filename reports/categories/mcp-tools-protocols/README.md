@@ -1,8 +1,19 @@
 # MCP, Tools, and Protocols
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool-calling infrastructure.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Model Context Protocol servers, tool registries, gateways, connectors, protocol 
 - Presentations/conferences/trend references: 29
 - Reference materials: 183
 - Data file: [data/categories/mcp-tools-protocols.json](../../../data/categories/mcp-tools-protocols.json)
+- Related report topics: [agent-harness](../../by-topic/agent-harness/README.md)
 
 ## Type Breakdown
 

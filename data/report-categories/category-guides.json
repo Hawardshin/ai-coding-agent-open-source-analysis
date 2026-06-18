@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:52:58.361Z",
+  "generatedAt": "2026-06-18T13:55:58.476Z",
   "slug": "category-guides",
   "title": "Category Guides",
   "description": "Generated category pages that group open-source, research, presentation, and trend artifacts.",
@@ -9,10 +9,10 @@
       "id": "report:reports/categories/README.md",
       "path": "reports/categories/README.md",
       "title": "Category Index",
-      "summary": "Category Index Generated 2026 06 18T13 38 56.297Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
+      "summary": "Category Index Generated 2026 06 18T13 55 56.390Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.603Z",
+      "updatedAt": "2026-06-18T13:55:57.112Z",
       "categories": [
         "start-here",
         "category-guides"
@@ -23,10 +23,10 @@
       "id": "report:reports/categories/agent-harness-orchestration/README.md",
       "path": "reports/categories/agent-harness-orchestration/README.md",
       "title": "Agent Harness and Orchestration",
-      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 38 56.297Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. Counts Total categorized entries 2650 Repositories 575 Research papers 162 ",
+      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 55 56.390Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. Navigation Entry Use it for Repository README ../../../README.md Repo wide ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.603Z",
+      "updatedAt": "2026-06-18T13:55:56.975Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -37,10 +37,10 @@
       "id": "report:reports/categories/ai-infrastructure-serving/README.md",
       "path": "reports/categories/ai-infrastructure-serving/README.md",
       "title": "AI Infrastructure and Serving",
-      "summary": "AI Infrastructure and Serving Generated 2026 06 18T13 38 56.297Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. Counts Total categorized entries 244 Repositories 147 Research p",
+      "summary": "AI Infrastructure and Serving Generated 2026 06 18T13 55 56.390Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. Navigation Entry Use it for Repository README ../../../README.md",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "updatedAt": "2026-06-18T13:55:57.037Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -51,10 +51,10 @@
       "id": "report:reports/categories/ai-usage-trends/README.md",
       "path": "reports/categories/ai-usage-trends/README.md",
       "title": "AI Usage Trends",
-      "summary": "AI Usage Trends Generated 2026 06 18T13 38 56.297Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. Counts Total categorized entries 58 Repositories 0 Research pa",
+      "summary": "AI Usage Trends Generated 2026 06 18T13 55 56.390Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. Navigation Entry Use it for Repository README ../../../README.",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "updatedAt": "2026-06-18T13:55:57.083Z",
       "categories": [
         "category-guides",
         "ai-usage-trends"
@@ -65,10 +65,10 @@
       "id": "report:reports/categories/coding-agents-ides/README.md",
       "path": "reports/categories/coding-agents-ides/README.md",
       "title": "Coding Agents and IDEs",
-      "summary": "Coding Agents and IDEs Generated 2026 06 18T13 38 56.297Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. Counts Total categorized entries 1417 Repositories 174 Research papers 13 Presenta",
+      "summary": "Coding Agents and IDEs Generated 2026 06 18T13 55 56.390Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. Navigation Entry Use it for Repository README ../../../README.md Repo wide orienta",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.604Z",
+      "updatedAt": "2026-06-18T13:55:56.954Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -79,10 +79,10 @@
       "id": "report:reports/categories/context-memory/README.md",
       "path": "reports/categories/context-memory/README.md",
       "title": "Context and Memory",
-      "summary": "Context and Memory Generated 2026 06 18T13 38 56.297Z Long term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems. Counts Total categorized entries 1178 Repositories 287 Research papers 165 Presentations",
+      "summary": "Context and Memory Generated 2026 06 18T13 55 56.390Z Long term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems. Navigation Entry Use it for Repository README ../../../README.md Repo wide orientation a",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "updatedAt": "2026-06-18T13:55:57.019Z",
       "categories": [
         "category-guides"
       ],
@@ -92,10 +92,10 @@
       "id": "report:reports/categories/data-platforms-vector-databases/README.md",
       "path": "reports/categories/data-platforms-vector-databases/README.md",
       "title": "Data Platforms and Vector Databases",
-      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T13 38 56.297Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. Counts Total categorized entries 200 Repositories 145 Research papers 44 ",
+      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T13 55 56.390Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. Navigation Entry Use it for Repository README ../../../README.md Repo wid",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "updatedAt": "2026-06-18T13:55:57.040Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -106,10 +106,10 @@
       "id": "report:reports/categories/developer-productivity-devtools/README.md",
       "path": "reports/categories/developer-productivity-devtools/README.md",
       "title": "Developer Productivity and DevTools",
-      "summary": "Developer Productivity and DevTools Generated 2026 06 18T13 38 56.297Z Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems. Counts Total categorized entries 1307 Repositories 321 Research ",
+      "summary": "Developer Productivity and DevTools Generated 2026 06 18T13 55 56.390Z Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems. Navigation Entry Use it for Repository README ../../../README.md",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "updatedAt": "2026-06-18T13:55:57.050Z",
       "categories": [
         "category-guides"
       ],
@@ -119,10 +119,10 @@
       "id": "report:reports/categories/evals-observability-quality/README.md",
       "path": "reports/categories/evals-observability-quality/README.md",
       "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T13 38 56.297Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. Counts Total categorized entries 648 Repositories 141 Research papers ",
+      "summary": "Evals, Observability, and Quality Generated 2026 06 18T13 55 56.390Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. Navigation Entry Use it for Repository README ../../../README.md Repo ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.605Z",
+      "updatedAt": "2026-06-18T13:55:57.027Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -133,10 +133,10 @@
       "id": "report:reports/categories/global-ai-open-source/README.md",
       "path": "reports/categories/global-ai-open-source/README.md",
       "title": "Global AI Open Source",
-      "summary": "Global AI Open Source Generated 2026 06 18T13 38 56.297Z Global trending AI, LLM, agent, RAG, devtool, security, and infrastructure open source repositories. Counts Total categorized entries 519 Repositories 519 Research papers 0 Presentations/conferences/tren",
+      "summary": "Global AI Open Source Generated 2026 06 18T13 55 56.390Z Global trending AI, LLM, agent, RAG, devtool, security, and infrastructure open source repositories. Navigation Entry Use it for Repository README ../../../README.md Repo wide orientation and top level d",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "updatedAt": "2026-06-18T13:55:57.069Z",
       "categories": [
         "category-guides",
         "global-trending-open-source"
@@ -147,10 +147,10 @@
       "id": "report:reports/categories/korean-ai-open-source/README.md",
       "path": "reports/categories/korean-ai-open-source/README.md",
       "title": "Korean AI and Open Source",
-      "summary": "Korean AI and Open Source Generated 2026 06 18T13 38 56.297Z Korea trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals. Counts Total categorized entries 602 Repositories 581 Resear",
+      "summary": "Korean AI and Open Source Generated 2026 06 18T13 55 56.390Z Korea trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals. Navigation Entry Use it for Repository README ../../../READM",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "updatedAt": "2026-06-18T13:55:57.064Z",
       "categories": [
         "category-guides",
         "korea-trending-open-source"
@@ -161,10 +161,10 @@
       "id": "report:reports/categories/llm-wiki-rag-knowledge/README.md",
       "path": "reports/categories/llm-wiki-rag-knowledge/README.md",
       "title": "LLM Wiki, RAG, and Knowledge Bases",
-      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T13 38 56.297Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. Counts Total categorized entries 1729 Repositories 407 Research",
+      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T13 55 56.390Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. Navigation Entry Use it for Repository README ../../../README.m",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "updatedAt": "2026-06-18T13:55:57.008Z",
       "categories": [
         "category-guides",
         "llm-wiki"
@@ -175,10 +175,10 @@
       "id": "report:reports/categories/local-llm-models/README.md",
       "path": "reports/categories/local-llm-models/README.md",
       "title": "Local LLMs and Models",
-      "summary": "Local LLMs and Models Generated 2026 06 18T13 38 56.297Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. Counts Total categorized entries 692 Repositories 313 Research papers 290 Present",
+      "summary": "Local LLMs and Models Generated 2026 06 18T13 55 56.390Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. Navigation Entry Use it for Repository README ../../../README.md Repo wide orient",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "updatedAt": "2026-06-18T13:55:57.058Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -189,10 +189,10 @@
       "id": "report:reports/categories/mcp-tools-protocols/README.md",
       "path": "reports/categories/mcp-tools-protocols/README.md",
       "title": "MCP, Tools, and Protocols",
-      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 38 56.297Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. Counts Total categorized entries 649 Repositories 427 Research papers 10 Present",
+      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 55 56.390Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. Navigation Entry Use it for Repository README ../../../README.md Repo wide orien",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "updatedAt": "2026-06-18T13:55:56.983Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -203,10 +203,10 @@
       "id": "report:reports/categories/presentations-conferences/README.md",
       "path": "reports/categories/presentations-conferences/README.md",
       "title": "Presentations and Conferences",
-      "summary": "Presentations and Conferences Generated 2026 06 18T13 38 56.297Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. Counts Total categorized entries 723 Repositories 0 Research papers 0 Presentatio",
+      "summary": "Presentations and Conferences Generated 2026 06 18T13 55 56.390Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. Navigation Entry Use it for Repository README ../../../README.md Repo wide orient",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "updatedAt": "2026-06-18T13:55:57.082Z",
       "categories": [
         "category-guides",
         "presentations-conferences"
@@ -217,10 +217,10 @@
       "id": "report:reports/categories/research-papers/README.md",
       "path": "reports/categories/research-papers/README.md",
       "title": "Research Papers and Evidence",
-      "summary": "Research Papers and Evidence Generated 2026 06 18T13 38 56.297Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. Counts Total categorized entries 650 Repositories 0 Research papers 650 Pres",
+      "summary": "Research Papers and Evidence Generated 2026 06 18T13 55 56.390Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. Navigation Entry Use it for Repository README ../../../README.md Repo wide o",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "updatedAt": "2026-06-18T13:55:57.076Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -231,10 +231,10 @@
       "id": "report:reports/categories/security-governance-safety/README.md",
       "path": "reports/categories/security-governance-safety/README.md",
       "title": "Security, Governance, and Safety",
-      "summary": "Security, Governance, and Safety Generated 2026 06 18T13 38 56.297Z Sandboxing, policy, governance, guardrails, prompt injection defense, supply chain security, identity, audit, and safe agent execution. Counts Total categorized entries 467 Repositories 125 Re",
+      "summary": "Security, Governance, and Safety Generated 2026 06 18T13 55 56.390Z Sandboxing, policy, governance, guardrails, prompt injection defense, supply chain security, identity, audit, and safe agent execution. Navigation Entry Use it for Repository README ../../../R",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "updatedAt": "2026-06-18T13:55:57.033Z",
       "categories": [
         "category-guides"
       ],
@@ -244,10 +244,10 @@
       "id": "report:reports/categories/spec-driven-requirements/README.md",
       "path": "reports/categories/spec-driven-requirements/README.md",
       "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T13 38 56.297Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. Counts Total categorized entries 696 Repositories 27 Resear",
+      "summary": "Spec Driven and Requirements Generated 2026 06 18T13 55 56.390Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. Navigation Entry Use it for Repository README ../../../READ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.607Z",
+      "updatedAt": "2026-06-18T13:55:56.992Z",
       "categories": [
         "category-guides",
         "spec-driven"

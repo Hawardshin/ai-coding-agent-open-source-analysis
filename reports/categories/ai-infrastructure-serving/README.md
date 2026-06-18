@@ -1,8 +1,19 @@
 # AI Infrastructure and Serving
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ LLM serving, inference engines, GPUs, AI factories, training/inference infrastru
 - Presentations/conferences/trend references: 46
 - Reference materials: 19
 - Data file: [data/categories/ai-infrastructure-serving.json](../../../data/categories/ai-infrastructure-serving.json)
+- Related report topics: [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md)
 
 ## Type Breakdown
 

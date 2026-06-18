@@ -1,8 +1,19 @@
 # Data Platforms and Vector Databases
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Vector databases, graph databases, search engines, data stores, embeddings, inde
 - Presentations/conferences/trend references: 4
 - Reference materials: 7
 - Data file: [data/categories/data-platforms-vector-databases.json](../../../data/categories/data-platforms-vector-databases.json)
+- Related report topics: [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md), [llm-wiki](../../by-topic/llm-wiki/README.md)
 
 ## Type Breakdown
 

@@ -540,8 +540,14 @@ Generated: ${generatedAt}
 
 This folder groups the repository's Markdown reports by investigation line. Original reports remain in their existing locations; these pages are reading indexes.
 
-- Top report index: ${linkFrom(baseDir, "reports/README.md", "reports/README.md")}
-- Table index: ${linkFrom(baseDir, "reports/tables/README.md", "reports/tables/README.md")}
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
+| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
+| ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
+| ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 
 | Topic | Reports | Description | Data |
 | --- | ---: | --- | --- |
@@ -588,6 +594,15 @@ function renderTablesReadme(reportIndex, categories, folderSummaries) {
 Generated: ${generatedAt}
 
 This page is the table-first view of the repository. Use it when you want to scan the full investigation structure before opening individual reports.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
+| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
+| ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
+| ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
 
 ## Data Files
 

@@ -1,8 +1,19 @@
 # LLM Wiki, RAG, and Knowledge Bases
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 LLM-maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source-aware knowledge systems.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ LLM-maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, 
 - Presentations/conferences/trend references: 32
 - Reference materials: 1156
 - Data file: [data/categories/llm-wiki-rag-knowledge.json](../../../data/categories/llm-wiki-rag-knowledge.json)
+- Related report topics: [llm-wiki](../../by-topic/llm-wiki/README.md)
 
 ## Type Breakdown
 

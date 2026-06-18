@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:52:58.361Z",
+  "generatedAt": "2026-06-18T13:55:58.476Z",
   "slug": "agent-harness",
   "title": "Agent Harness, MCP, and Orchestration",
   "description": "Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.",
@@ -55,10 +55,10 @@
       "id": "report:reports/categories/agent-harness-orchestration/README.md",
       "path": "reports/categories/agent-harness-orchestration/README.md",
       "title": "Agent Harness and Orchestration",
-      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 38 56.297Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. Counts Total categorized entries 2650 Repositories 575 Research papers 162 ",
+      "summary": "Agent Harness and Orchestration Generated 2026 06 18T13 55 56.390Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. Navigation Entry Use it for Repository README ../../../README.md Repo wide ",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.603Z",
+      "updatedAt": "2026-06-18T13:55:56.975Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -69,10 +69,10 @@
       "id": "report:reports/categories/mcp-tools-protocols/README.md",
       "path": "reports/categories/mcp-tools-protocols/README.md",
       "title": "MCP, Tools, and Protocols",
-      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 38 56.297Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. Counts Total categorized entries 649 Repositories 427 Research papers 10 Present",
+      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T13 55 56.390Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. Navigation Entry Use it for Repository README ../../../README.md Repo wide orien",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T13:43:12.606Z",
+      "updatedAt": "2026-06-18T13:55:56.983Z",
       "categories": [
         "category-guides",
         "agent-harness"

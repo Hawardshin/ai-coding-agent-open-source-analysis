@@ -1,8 +1,19 @@
 # Developer Productivity and DevTools
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelera
 - Presentations/conferences/trend references: 23
 - Reference materials: 916
 - Data file: [data/categories/developer-productivity-devtools.json](../../../data/categories/developer-productivity-devtools.json)
+- Related report topics: [coding-agents](../../by-topic/coding-agents/README.md), [full-source-scan](../../by-topic/full-source-scan/README.md)
 
 ## Type Breakdown
 

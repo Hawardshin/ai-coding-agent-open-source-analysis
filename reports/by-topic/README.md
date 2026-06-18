@@ -1,11 +1,17 @@
 # Reports by Topic
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 This folder groups the repository's Markdown reports by investigation line. Original reports remain in their existing locations; these pages are reading indexes.
 
-- Top report index: [reports/README.md](../README.md)
-- Table index: [reports/tables/README.md](../tables/README.md)
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Report Tables](../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
 
 | Topic | Reports | Description | Data |
 | --- | ---: | --- | --- |

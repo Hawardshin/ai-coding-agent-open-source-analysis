@@ -1,6 +1,6 @@
 # Category Guides
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 Generated category pages that group open-source, research, presentation, and trend artifacts.
 

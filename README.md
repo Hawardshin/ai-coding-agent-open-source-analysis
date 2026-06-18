@@ -10,6 +10,13 @@ The repository now also includes a second research track for adjacent AI infrast
 
 This repository is meant to be read directly through GitHub or a local checkout. Deployment-specific GitHub Pages, Vercel, and static web-browser files have been removed.
 
+| Start from | Use it for |
+| --- | --- |
+| [reports/README.md](reports/README.md) | Main reading map for every report, including start-here, topics, and folder README links. |
+| [reports/by-topic/README.md](reports/by-topic/README.md) | Topic-first report navigation. |
+| [reports/tables/README.md](reports/tables/README.md) | Table-first report navigation and CSV exports. |
+| [reports/categories/README.md](reports/categories/README.md) | Artifact-level categories for repositories, papers, presentations, and references. |
+
 - `reports/categories/`: category-first reading folders for open source, research papers, conference materials, and trend references.
 - `reports/README.md`: report-first reading entry point for every Markdown report in this repository.
 - `reports/by-topic/`: topic-first report folders for source-scan, spec-driven, LLM wiki, Korean/global trending, conferences, research, and repository deep dives.

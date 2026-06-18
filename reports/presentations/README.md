@@ -1,6 +1,6 @@
 # Presentation and Conference Reports
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 Conference, presentation, Amazon/AWS, big-tech, Korea, and AI usage trend materials.
 

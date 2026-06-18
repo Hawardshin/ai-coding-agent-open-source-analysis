@@ -1,6 +1,6 @@
 # Full Source Scan Reports
 
-Generated: 2026-06-18T13:52:58.361Z
+Generated: 2026-06-18T13:55:58.476Z
 
 How coding agents discover files, search symbols, connect user intent to source code, and decide what to read.
 

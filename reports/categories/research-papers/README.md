@@ -1,8 +1,19 @@
 # Research Papers and Evidence
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ OpenAlex papers, studies, requirements research, agent research, source scanning
 - Presentations/conferences/trend references: 0
 - Reference materials: 0
 - Data file: [data/categories/research-papers.json](../../../data/categories/research-papers.json)
+- Related report topics: [research-foundations](../../by-topic/research-foundations/README.md)
 
 ## Type Breakdown
 

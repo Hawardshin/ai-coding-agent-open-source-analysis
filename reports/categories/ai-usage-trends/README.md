@@ -1,8 +1,19 @@
 # AI Usage Trends
 
-Generated: 2026-06-18T13:38:56.297Z
+Generated: 2026-06-18T13:55:56.390Z
 
 Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events.
+
+## Navigation
+
+| Entry | Use it for |
+| --- | --- |
+| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
+| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
+| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
+| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
+| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+
 
 ## Counts
 
@@ -12,6 +23,7 @@ Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce
 - Presentations/conferences/trend references: 58
 - Reference materials: 0
 - Data file: [data/categories/ai-usage-trends.json](../../../data/categories/ai-usage-trends.json)
+- Related report topics: [ai-usage-trends](../../by-topic/ai-usage-trends/README.md), [presentations-conferences](../../by-topic/presentations-conferences/README.md)
 
 ## Type Breakdown
 
