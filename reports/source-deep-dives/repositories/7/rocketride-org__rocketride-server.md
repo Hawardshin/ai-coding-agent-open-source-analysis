@@ -1,63 +1,63 @@
-# rocketride-org/rocketride-server Source Deep Dive
+# rocketride-org/rocketride-server 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.
 
 ## 요약
 
-- 조사 단위: `sources/rocketride-org__rocketride-server` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 3,515 files, 785 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/rocketride-org__rocketride-server` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 3,515 files, 785 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/client-mcp/pyproject.toml, packages/client-mcp/tests/conftest.py, packages/client-mcp/tests/test_config.py이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/client-mcp/pyproject.toml, packages/client-mcp/tests/conftest.py, packages/client-mcp/tests/test_config.py이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | rocketride-org/rocketride-server |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | rocketride-org/rocketride-server |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | korea |
 | Language | Python |
 | Stars | 3866 |
 | Forks | 1234 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/rocketride-org__rocketride-server](../../../../sources/rocketride-org__rocketride-server) |
-| Existing report | [reports/global-trending/repositories/rocketride-org__rocketride-server.md](../../../global-trending/repositories/rocketride-org__rocketride-server.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/rocketride-org__rocketride-server](../../../../sources/rocketride-org__rocketride-server) |
+| 기존 보고서 | [reports/global-trending/repositories/rocketride-org__rocketride-server.md](../../../global-trending/repositories/rocketride-org__rocketride-server.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 3515 / 785 |
-| Max observed depth | 13 |
-| Top directories | .claude, .devcontainer, .github, apps, deploy, docker, docs, examples, images, nodes, packages, patches, pipelines, scripts, test, testdata, tools |
-| Top extensions | .py: 949, .hpp: 451, .cpp: 334, .tsx: 287, .ts: 239, .md: 209, .json: 206, .h: 180, .txt: 154, .svg: 141, .js: 65, (none): 34 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 3515 / 785 |
+| 관측 최대 깊이 | 13 |
+| 상위 디렉터리 | .claude, .devcontainer, .github, apps, deploy, docker, docs, examples, images, nodes, packages, patches, pipelines, scripts, test, testdata, tools |
+| 상위 확장자 | .py: 949, .hpp: 451, .cpp: 334, .tsx: 287, .ts: 239, .md: 209, .json: 206, .h: 180, .txt: 154, .svg: 141, .js: 65, (none): 34 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/ai | packages workspace | 63 |
 | packages/shared-ui | packages workspace | 58 |
@@ -79,31 +79,31 @@ High-performance AI pipeline engine with a C++ core and 50+ Python-extensible no
 | examples | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | prepare | lefthook install --force |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [packages/client-mcp/pyproject.toml](../../../../sources/rocketride-org__rocketride-server/packages/client-mcp/pyproject.toml) | mcp signal |
 | mcp | [packages/client-mcp/tests/conftest.py](../../../../sources/rocketride-org__rocketride-server/packages/client-mcp/tests/conftest.py) | mcp signal |
@@ -119,9 +119,9 @@ High-performance AI pipeline engine with a C++ core and 50+ Python-extensible no
 | entrypoints | [packages/client-python/src/rocketride/cli/main.py](../../../../sources/rocketride-org__rocketride-server/packages/client-python/src/rocketride/cli/main.py) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 263 | [tools/contract_checks/src/contract_checks/__main__.py](../../../../sources/rocketride-org__rocketride-server/tools/contract_checks/src/contract_checks/__main__.py)<br>[scripts/lib/server.js](../../../../sources/rocketride-org__rocketride-server/scripts/lib/server.js)<br>[packages/shared-ui/src/index.ts](../../../../sources/rocketride-org__rocketride-server/packages/shared-ui/src/index.ts)<br>[packages/client-python/src/rocketride/cli/main.py](../../../../sources/rocketride-org__rocketride-server/packages/client-python/src/rocketride/cli/main.py)<br>[packages/client-mcp/src/rocketride_mcp/__main__.py](../../../../sources/rocketride-org__rocketride-server/packages/client-mcp/src/rocketride_mcp/__main__.py)<br>[packages/client-mcp/src/rocketride_mcp/server.py](../../../../sources/rocketride-org__rocketride-server/packages/client-mcp/src/rocketride_mcp/server.py)<br>[packages/ai/src/ai/web/server.py](../../../../sources/rocketride-org__rocketride-server/packages/ai/src/ai/web/server.py)<br>[apps/world-ui/src/AppDescriptor.ts](../../../../sources/rocketride-org__rocketride-server/apps/world-ui/src/AppDescriptor.ts) |
 | agentRuntime | 423 | [AGENTS.md](../../../../sources/rocketride-org__rocketride-server/AGENTS.md)<br>[tools/sync_models/README.md](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/README.md)<br>[tools/sync_models/requirements.txt](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/requirements.txt)<br>[tools/sync_models/test/__init__.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/__init__.py)<br>[tools/sync_models/test/conftest.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/conftest.py)<br>[tools/sync_models/test/markers.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/markers.py)<br>[tools/sync_models/test/test_baidu_qianfan_provider.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_baidu_qianfan_provider.py)<br>[tools/sync_models/test/test_sync_live.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_sync_live.py) |
@@ -137,39 +137,39 @@ High-performance AI pipeline engine with a C++ core and 50+ Python-extensible no
 | config | 158 | [package.json](../../../../sources/rocketride-org__rocketride-server/package.json)<br>[pnpm-workspace.yaml](../../../../sources/rocketride-org__rocketride-server/pnpm-workspace.yaml)<br>[pyproject.toml](../../../../sources/rocketride-org__rocketride-server/pyproject.toml)<br>[tsconfig.json](../../../../sources/rocketride-org__rocketride-server/tsconfig.json)<br>[tools/sync_models/requirements.txt](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/requirements.txt)<br>[tools/contract_checks/requirements.txt](../../../../sources/rocketride-org__rocketride-server/tools/contract_checks/requirements.txt)<br>[packages/shared-ui/package.json](../../../../sources/rocketride-org__rocketride-server/packages/shared-ui/package.json)<br>[packages/shared-ui/tsconfig.json](../../../../sources/rocketride-org__rocketride-server/packages/shared-ui/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 444 | [tools/sync_models/test/__init__.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/__init__.py)<br>[tools/sync_models/test/conftest.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/conftest.py)<br>[tools/sync_models/test/markers.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/markers.py)<br>[tools/sync_models/test/test_baidu_qianfan_provider.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_baidu_qianfan_provider.py)<br>[tools/sync_models/test/test_sync_live.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_sync_live.py)<br>[tools/sync_models/test/test_sync_logic.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_sync_logic.py) |
-| CI workflows | 19 | [.github/workflows/_build.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_build.yaml)<br>[.github/workflows/_docker.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_docker.yaml)<br>[.github/workflows/_init.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_init.yaml)<br>[.github/workflows/_release.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_release.yaml)<br>[.github/workflows/check-externals.yml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/check-externals.yml)<br>[.github/workflows/ci.yml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/ci.yml) |
-| Containers / deploy | 26 | [docker/docker-compose.override.yml](../../../../sources/rocketride-org__rocketride-server/docker/docker-compose.override.yml)<br>[docker/docker-compose.yml](../../../../sources/rocketride-org__rocketride-server/docker/docker-compose.yml)<br>[docker/Dockerfile.engine](../../../../sources/rocketride-org__rocketride-server/docker/Dockerfile.engine)<br>[docker/Dockerfile.engine.dockerignore](../../../../sources/rocketride-org__rocketride-server/docker/Dockerfile.engine.dockerignore)<br>[docker/Dockerfile.mcp](../../../../sources/rocketride-org__rocketride-server/docker/Dockerfile.mcp)<br>[deploy/helm/ARCHITECTURE.md](../../../../sources/rocketride-org__rocketride-server/deploy/helm/ARCHITECTURE.md) |
-| Security / policy | 18 | [SECURITY.md](../../../../sources/rocketride-org__rocketride-server/SECURITY.md)<br>[scripts/audit-icons.mjs](../../../../sources/rocketride-org__rocketride-server/scripts/audit-icons.mjs)<br>[packages/server/engine-lib/engLib/store/endpoints/filesys/base/Permission.hpp](../../../../sources/rocketride-org__rocketride-server/packages/server/engine-lib/engLib/store/endpoints/filesys/base/Permission.hpp)<br>[packages/server/engine-core/apLib/util/Guard.hpp](../../../../sources/rocketride-org__rocketride-server/packages/server/engine-core/apLib/util/Guard.hpp)<br>[packages/docs/content-static/evaluate/security.md](../../../../sources/rocketride-org__rocketride-server/packages/docs/content-static/evaluate/security.md)<br>[packages/docs/content-static/concepts/security-model.md](../../../../sources/rocketride-org__rocketride-server/packages/docs/content-static/concepts/security-model.md) |
-| Agent instructions | 5 | [AGENTS.md](../../../../sources/rocketride-org__rocketride-server/AGENTS.md)<br>[docs/stubs/AGENTS.md](../../../../sources/rocketride-org__rocketride-server/docs/stubs/AGENTS.md)<br>[docs/stubs/CLAUDE.md](../../../../sources/rocketride-org__rocketride-server/docs/stubs/CLAUDE.md)<br>[docs/stubs/copilot-instructions.md](../../../../sources/rocketride-org__rocketride-server/docs/stubs/copilot-instructions.md)<br>[.claude/CLAUDE.md](../../../../sources/rocketride-org__rocketride-server/.claude/CLAUDE.md) |
+| 테스트/평가 | 444 | [tools/sync_models/test/__init__.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/__init__.py)<br>[tools/sync_models/test/conftest.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/conftest.py)<br>[tools/sync_models/test/markers.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/markers.py)<br>[tools/sync_models/test/test_baidu_qianfan_provider.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_baidu_qianfan_provider.py)<br>[tools/sync_models/test/test_sync_live.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_sync_live.py)<br>[tools/sync_models/test/test_sync_logic.py](../../../../sources/rocketride-org__rocketride-server/tools/sync_models/test/test_sync_logic.py) |
+| CI workflow | 19 | [.github/workflows/_build.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_build.yaml)<br>[.github/workflows/_docker.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_docker.yaml)<br>[.github/workflows/_init.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_init.yaml)<br>[.github/workflows/_release.yaml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/_release.yaml)<br>[.github/workflows/check-externals.yml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/check-externals.yml)<br>[.github/workflows/ci.yml](../../../../sources/rocketride-org__rocketride-server/.github/workflows/ci.yml) |
+| 컨테이너/배포 | 26 | [docker/docker-compose.override.yml](../../../../sources/rocketride-org__rocketride-server/docker/docker-compose.override.yml)<br>[docker/docker-compose.yml](../../../../sources/rocketride-org__rocketride-server/docker/docker-compose.yml)<br>[docker/Dockerfile.engine](../../../../sources/rocketride-org__rocketride-server/docker/Dockerfile.engine)<br>[docker/Dockerfile.engine.dockerignore](../../../../sources/rocketride-org__rocketride-server/docker/Dockerfile.engine.dockerignore)<br>[docker/Dockerfile.mcp](../../../../sources/rocketride-org__rocketride-server/docker/Dockerfile.mcp)<br>[deploy/helm/ARCHITECTURE.md](../../../../sources/rocketride-org__rocketride-server/deploy/helm/ARCHITECTURE.md) |
+| 보안/정책 | 18 | [SECURITY.md](../../../../sources/rocketride-org__rocketride-server/SECURITY.md)<br>[scripts/audit-icons.mjs](../../../../sources/rocketride-org__rocketride-server/scripts/audit-icons.mjs)<br>[packages/server/engine-lib/engLib/store/endpoints/filesys/base/Permission.hpp](../../../../sources/rocketride-org__rocketride-server/packages/server/engine-lib/engLib/store/endpoints/filesys/base/Permission.hpp)<br>[packages/server/engine-core/apLib/util/Guard.hpp](../../../../sources/rocketride-org__rocketride-server/packages/server/engine-core/apLib/util/Guard.hpp)<br>[packages/docs/content-static/evaluate/security.md](../../../../sources/rocketride-org__rocketride-server/packages/docs/content-static/evaluate/security.md)<br>[packages/docs/content-static/concepts/security-model.md](../../../../sources/rocketride-org__rocketride-server/packages/docs/content-static/concepts/security-model.md) |
+| 에이전트 지시문 | 5 | [AGENTS.md](../../../../sources/rocketride-org__rocketride-server/AGENTS.md)<br>[docs/stubs/AGENTS.md](../../../../sources/rocketride-org__rocketride-server/docs/stubs/AGENTS.md)<br>[docs/stubs/CLAUDE.md](../../../../sources/rocketride-org__rocketride-server/docs/stubs/CLAUDE.md)<br>[docs/stubs/copilot-instructions.md](../../../../sources/rocketride-org__rocketride-server/docs/stubs/copilot-instructions.md)<br>[.claude/CLAUDE.md](../../../../sources/rocketride-org__rocketride-server/.claude/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/client-mcp/pyproject.toml`, `packages/client-mcp/tests/conftest.py`, `packages/client-mcp/tests/test_config.py`.
-2. Trace execution through entrypoints: `tools/contract_checks/src/contract_checks/__main__.py`, `scripts/lib/server.js`, `packages/shared-ui/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tools/sync_models/README.md`, `tools/sync_models/requirements.txt`.
-4. Inspect retrieval/memory/indexing through: `tools/sync_models/src/providers/embedding_openai.py`, `scripts/lib/index.js`, `packages/shared-ui/index.ts`.
-5. Verify behavior through test/eval files: `tools/sync_models/test/__init__.py`, `tools/sync_models/test/conftest.py`, `tools/sync_models/test/markers.py`.
+1. 핵심 참조에서 시작: `packages/client-mcp/pyproject.toml`, `packages/client-mcp/tests/conftest.py`, `packages/client-mcp/tests/test_config.py`.
+2. entrypoint를 따라 실행 흐름 확인: `tools/contract_checks/src/contract_checks/__main__.py`, `scripts/lib/server.js`, `packages/shared-ui/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tools/sync_models/README.md`, `tools/sync_models/requirements.txt`.
+4. retrieval/memory/indexing 확인: `tools/sync_models/src/providers/embedding_openai.py`, `scripts/lib/index.js`, `packages/shared-ui/index.ts`.
+5. test/eval 파일로 동작 검증: `tools/sync_models/test/__init__.py`, `tools/sync_models/test/conftest.py`, `tools/sync_models/test/markers.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 High performance AI pipeline engine with a C++ core and 50+ Python extensible nodes. Build, debug, and scale LLM workflo. 핵심 구조 신호는 Python, package.json, pyproject.toml, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 High performance AI pipeline engine with a C++ core and 50+ Python extensible nodes. Build, debug, and scale LLM workflo. 핵심 구조 신호는 Python, package.json, pyproject.toml, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

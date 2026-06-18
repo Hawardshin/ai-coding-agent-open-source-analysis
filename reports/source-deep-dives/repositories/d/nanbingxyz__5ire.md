@@ -1,63 +1,63 @@
-# nanbingxyz/5ire Source Deep Dive
+# nanbingxyz/5ire 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 5ire is a cross-platform desktop AI assistant, MCP client. It compatible with major service providers, supports local knowledge base and tools via model context protocol servers .
 
 ## 요약
 
-- 조사 단위: `sources/nanbingxyz__5ire` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 478 files, 85 directories, depth score 118, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/nanbingxyz__5ire` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 478 files, 85 directories, depth score 112, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 mcp=test/utils/mcp.test.ts, src/mcp.config.ts, src/utils/mcp.ts이고, 의존성 단서는 modelcontextprotocol, next, react, electron, transformers, llama, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 mcp=test/utils/mcp.test.ts, src/mcp.config.ts, src/utils/mcp.ts이고, 의존성 단서는 modelcontextprotocol, next, react, electron, transformers, llama, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | nanbingxyz/5ire |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | nanbingxyz/5ire |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | korea |
 | Language | TypeScript |
 | Stars | 5247 |
 | Forks | 407 |
 | License | NOASSERTION |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/nanbingxyz__5ire](../../../../sources/nanbingxyz__5ire) |
-| Existing report | [reports/global-trending/repositories/nanbingxyz__5ire.md](../../../global-trending/repositories/nanbingxyz__5ire.md) |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/nanbingxyz__5ire](../../../../sources/nanbingxyz__5ire) |
+| 기존 보고서 | [reports/global-trending/repositories/nanbingxyz__5ire.md](../../../global-trending/repositories/nanbingxyz__5ire.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 478 / 85 |
-| Max observed depth | 7 |
-| Top directories | .erb, .github, .husky, docs, drizzle, patches, public, scripts, src, test |
-| Top extensions | .ts: 203, .tsx: 107, .json: 26, .woff2: 22, .ttf: 20, .woff: 20, .png: 19, .sql: 12, .scss: 11, .md: 9, .js: 5, (none): 5 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, ui/extension surface |
+| 파일 / 디렉터리 | 478 / 85 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .erb, .github, .husky, docs, drizzle, patches, public, scripts, src, test |
+| 상위 확장자 | .ts: 203, .tsx: 107, .json: 26, .woff2: 22, .ttf: 20, .woff: 20, .png: 19, .sql: 12, .scss: 11, .md: 9, .js: 5, (none): 5 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, ui/extension surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 90 |
 | docs | documentation surface | 3 |
@@ -69,9 +69,9 @@ Generated: 2026-06-18T15:12:44.535Z
 | test | validation surface | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | postinstall | patch-package && node ./node_modules/electron/install.js && npm run install:deps |
 | build | package.json | install:deps | electron-builder install-app-deps |
@@ -90,24 +90,24 @@ Generated: 2026-06-18T15:12:44.535Z
 | utility | package.json | generate:drizzle | drizzle-kit generate |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | transformers, llama |
 | webRuntime | next, react |
 | developerSurface | electron |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [test/utils/mcp.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/mcp.test.ts) | mcp signal |
 | mcp | [src/mcp.config.ts](../../../../sources/nanbingxyz__5ire/src/mcp.config.ts) | mcp signal |
@@ -123,9 +123,9 @@ Generated: 2026-06-18T15:12:44.535Z
 | ci | [.github/workflows/auto-release.yml](../../../../sources/nanbingxyz__5ire/.github/workflows/auto-release.yml) | ci support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1 | [src/main/main.ts](../../../../sources/nanbingxyz__5ire/src/main/main.ts) |
 | agentRuntime | 40 | [src/renderer/pages/tool/index.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/index.tsx)<br>[src/renderer/pages/tool/InstallDialog.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/InstallDialog.tsx)<br>[src/renderer/pages/tool/MarketDrawer.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/MarketDrawer.tsx)<br>[src/renderer/pages/tool/NewButton.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/NewButton.tsx)<br>[src/renderer/pages/tool/ServerBrowser.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/ServerBrowser.tsx)<br>[src/renderer/pages/tool/ServerDeleteConfirm.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/ServerDeleteConfirm.tsx)<br>[src/renderer/pages/tool/ServerEditDialog.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/ServerEditDialog.tsx)<br>[src/renderer/pages/tool/ServerGrid.tsx](../../../../sources/nanbingxyz__5ire/src/renderer/pages/tool/ServerGrid.tsx) |
@@ -135,45 +135,45 @@ Generated: 2026-06-18T15:12:44.535Z
 | eval | 30 | [test/utils/command-line.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/command-line.test.ts)<br>[test/utils/mcp.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/mcp.test.ts)<br>[test/utils/token.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/token.test.ts)<br>[test/utils/util.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/util.test.ts)<br>[test/utils/validators.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/validators.test.ts)<br>[test/resource/test.csv](../../../../sources/nanbingxyz__5ire/test/resource/test.csv)<br>[test/resource/test.htm](../../../../sources/nanbingxyz__5ire/test/resource/test.htm)<br>[test/resource/test.html](../../../../sources/nanbingxyz__5ire/test/resource/test.html) |
 | security | 1 | [src/types/auth.d.ts](../../../../sources/nanbingxyz__5ire/src/types/auth.d.ts) |
 | ci | 2 | [.github/workflows/auto-release.yml](../../../../sources/nanbingxyz__5ire/.github/workflows/auto-release.yml)<br>[.github/workflows/daily-summary.yml](../../../../sources/nanbingxyz__5ire/.github/workflows/daily-summary.yml) |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 2 | [README.md](../../../../sources/nanbingxyz__5ire/README.md)<br>[docs/ARCHITECTURE.md](../../../../sources/nanbingxyz__5ire/docs/ARCHITECTURE.md) |
 | config | 2 | [package.json](../../../../sources/nanbingxyz__5ire/package.json)<br>[tsconfig.json](../../../../sources/nanbingxyz__5ire/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 30 | [test/utils/command-line.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/command-line.test.ts)<br>[test/utils/mcp.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/mcp.test.ts)<br>[test/utils/token.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/token.test.ts)<br>[test/utils/util.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/util.test.ts)<br>[test/utils/validators.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/validators.test.ts)<br>[test/resource/test.csv](../../../../sources/nanbingxyz__5ire/test/resource/test.csv) |
-| CI workflows | 2 | [.github/workflows/auto-release.yml](../../../../sources/nanbingxyz__5ire/.github/workflows/auto-release.yml)<br>[.github/workflows/daily-summary.yml](../../../../sources/nanbingxyz__5ire/.github/workflows/daily-summary.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 1 | [src/types/auth.d.ts](../../../../sources/nanbingxyz__5ire/src/types/auth.d.ts) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 30 | [test/utils/command-line.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/command-line.test.ts)<br>[test/utils/mcp.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/mcp.test.ts)<br>[test/utils/token.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/token.test.ts)<br>[test/utils/util.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/util.test.ts)<br>[test/utils/validators.test.ts](../../../../sources/nanbingxyz__5ire/test/utils/validators.test.ts)<br>[test/resource/test.csv](../../../../sources/nanbingxyz__5ire/test/resource/test.csv) |
+| CI workflow | 2 | [.github/workflows/auto-release.yml](../../../../sources/nanbingxyz__5ire/.github/workflows/auto-release.yml)<br>[.github/workflows/daily-summary.yml](../../../../sources/nanbingxyz__5ire/.github/workflows/daily-summary.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 1 | [src/types/auth.d.ts](../../../../sources/nanbingxyz__5ire/src/types/auth.d.ts) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | agent instruction files not obvious |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | agent instruction 파일이 명확하지 않음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `test/utils/mcp.test.ts`, `src/mcp.config.ts`, `src/utils/mcp.ts`.
-2. Trace execution through entrypoints: `src/main/main.ts`.
-3. Map agent/tool runtime through: `src/renderer/pages/tool/index.tsx`, `src/renderer/pages/tool/InstallDialog.tsx`, `src/renderer/pages/tool/MarketDrawer.tsx`.
-4. Inspect retrieval/memory/indexing through: `test/main/knowledge.spec.ts`, `src/types/knowledge.d.ts`, `src/renderer/index.ejs`.
-5. Verify behavior through test/eval files: `test/utils/command-line.test.ts`, `test/utils/mcp.test.ts`, `test/utils/token.test.ts`.
+1. 핵심 참조에서 시작: `test/utils/mcp.test.ts`, `src/mcp.config.ts`, `src/utils/mcp.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `src/main/main.ts`.
+3. agent/tool runtime 매핑: `src/renderer/pages/tool/index.tsx`, `src/renderer/pages/tool/InstallDialog.tsx`, `src/renderer/pages/tool/MarketDrawer.tsx`.
+4. retrieval/memory/indexing 확인: `test/main/knowledge.spec.ts`, `src/types/knowledge.d.ts`, `src/renderer/index.ejs`.
+5. test/eval 파일로 동작 검증: `test/utils/command-line.test.ts`, `test/utils/mcp.test.ts`, `test/utils/token.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 5ire is a cross platform desktop AI assistant, MCP client. It compatible with major service providers, supports local kn. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, modelcontextprotocol, next이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 5ire is a cross platform desktop AI assistant, MCP client. It compatible with major service providers, supports local kn. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, modelcontextprotocol, next이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

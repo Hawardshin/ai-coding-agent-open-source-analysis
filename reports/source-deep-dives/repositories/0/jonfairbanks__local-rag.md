@@ -1,63 +1,63 @@
-# jonfairbanks/local-rag Source Deep Dive
+# jonfairbanks/local-rag 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Ingest files for retrieval augmented generation (RAG) with open-source Large Language Models (LLMs), all without 3rd parties or sensitive data leaving your network.
 
 ## 요약
 
-- 조사 단위: `sources/jonfairbanks__local-rag` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 58 files, 10 directories, depth score 100, key references 11개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/jonfairbanks__local-rag` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 58 files, 10 directories, depth score 94, key references 11개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-AI 인프라/서빙 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=main.py이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 11개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+AI 인프라/서빙 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=main.py이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 11개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | jonfairbanks/local-rag |
-| Topic | AI Infrastructure and Serving / AI 인프라/서빙 |
+| 레포 | jonfairbanks/local-rag |
+| 주제 | AI 인프라/서빙 / AI 인프라/서빙 |
 | Region | global |
 | Language | Python |
 | Stars | 747 |
 | Forks | 91 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/jonfairbanks__local-rag](../../../../sources/jonfairbanks__local-rag) |
-| Existing report | [reports/global-trending/repositories/jonfairbanks__local-rag.md](../../../global-trending/repositories/jonfairbanks__local-rag.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/jonfairbanks__local-rag](../../../../sources/jonfairbanks__local-rag) |
+| 기존 보고서 | [reports/global-trending/repositories/jonfairbanks__local-rag.md](../../../global-trending/repositories/jonfairbanks__local-rag.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 58 / 10 |
-| Max observed depth | 3 |
-| Top directories | .github, .streamlit, components, docs, tests, utils |
-| Top extensions | .py: 27, .md: 13, (none): 6, .yml: 4, .yaml: 2, .gif: 1, .html: 1, .lock: 1, .png: 1, .toml: 1, .yml-rocm: 1 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 58 / 10 |
+| 관측 최대 깊이 | 3 |
+| 상위 디렉터리 | .github, .streamlit, components, docs, tests, utils |
+| 상위 확장자 | .py: 27, .md: 13, (none): 6, .yml: 4, .yaml: 2, .gif: 1, .html: 1, .lock: 1, .png: 1, .toml: 1, .yml-rocm: 1 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 10 |
 | docs | documentation surface | 8 |
@@ -66,29 +66,29 @@ AI 인프라/서빙 관점에서 cli-first, agent/tool runtime, retrieval/vector
 | utils | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [main.py](../../../../sources/jonfairbanks__local-rag/main.py) | entrypoints signal |
 | container | [docker-compose.yml](../../../../sources/jonfairbanks__local-rag/docker-compose.yml) | container signal |
@@ -103,57 +103,57 @@ _No command surface extracted from root manifests._
 | instruction | [AGENTS.md](../../../../sources/jonfairbanks__local-rag/AGENTS.md) | instruction support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1 | [main.py](../../../../sources/jonfairbanks__local-rag/main.py) |
 | agentRuntime | 1 | [AGENTS.md](../../../../sources/jonfairbanks__local-rag/AGENTS.md) |
-| mcp | 0 | not obvious |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 3 | [utils/llama_index.py](../../../../sources/jonfairbanks__local-rag/utils/llama_index.py)<br>[utils/rag_pipeline.py](../../../../sources/jonfairbanks__local-rag/utils/rag_pipeline.py)<br>[utils/browser_storage_component/index.html](../../../../sources/jonfairbanks__local-rag/utils/browser_storage_component/index.html) |
-| spec | 0 | not obvious |
+| spec | 0 | 명확하지 않음 |
 | eval | 9 | [tests/test_browser_settings.py](../../../../sources/jonfairbanks__local-rag/tests/test_browser_settings.py)<br>[tests/test_github_repo.py](../../../../sources/jonfairbanks__local-rag/tests/test_github_repo.py)<br>[tests/test_import_boundaries.py](../../../../sources/jonfairbanks__local-rag/tests/test_import_boundaries.py)<br>[tests/test_local_files.py](../../../../sources/jonfairbanks__local-rag/tests/test_local_files.py)<br>[tests/test_ollama.py](../../../../sources/jonfairbanks__local-rag/tests/test_ollama.py)<br>[tests/test_page_state.py](../../../../sources/jonfairbanks__local-rag/tests/test_page_state.py)<br>[tests/test_security_controls.py](../../../../sources/jonfairbanks__local-rag/tests/test_security_controls.py)<br>[tests/test_settings_tab.py](../../../../sources/jonfairbanks__local-rag/tests/test_settings_tab.py) |
 | security | 2 | [SECURITY.md](../../../../sources/jonfairbanks__local-rag/SECURITY.md)<br>[tests/test_security_controls.py](../../../../sources/jonfairbanks__local-rag/tests/test_security_controls.py) |
 | ci | 4 | [.github/workflows/dependabot-auto-merge.yml](../../../../sources/jonfairbanks__local-rag/.github/workflows/dependabot-auto-merge.yml)<br>[.github/workflows/issue-attachments.yaml](../../../../sources/jonfairbanks__local-rag/.github/workflows/issue-attachments.yaml)<br>[.github/workflows/main.yaml](../../../../sources/jonfairbanks__local-rag/.github/workflows/main.yaml)<br>[.github/workflows/quality.yml](../../../../sources/jonfairbanks__local-rag/.github/workflows/quality.yml) |
 | container | 3 | [docker-compose.yml](../../../../sources/jonfairbanks__local-rag/docker-compose.yml)<br>[docker-compose.yml-rocm](../../../../sources/jonfairbanks__local-rag/docker-compose.yml-rocm)<br>[Dockerfile](../../../../sources/jonfairbanks__local-rag/Dockerfile) |
 | instruction | 1 | [AGENTS.md](../../../../sources/jonfairbanks__local-rag/AGENTS.md) |
 | docs | 8 | [README.md](../../../../sources/jonfairbanks__local-rag/README.md)<br>[docs/contributing.md](../../../../sources/jonfairbanks__local-rag/docs/contributing.md)<br>[docs/pipeline.md](../../../../sources/jonfairbanks__local-rag/docs/pipeline.md)<br>[docs/resources.md](../../../../sources/jonfairbanks__local-rag/docs/resources.md)<br>[docs/setup.md](../../../../sources/jonfairbanks__local-rag/docs/setup.md)<br>[docs/todo.md](../../../../sources/jonfairbanks__local-rag/docs/todo.md)<br>[docs/troubleshooting.md](../../../../sources/jonfairbanks__local-rag/docs/troubleshooting.md)<br>[docs/usage.md](../../../../sources/jonfairbanks__local-rag/docs/usage.md) |
-| config | 0 | not obvious |
+| config | 0 | 명확하지 않음 |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 9 | [tests/test_browser_settings.py](../../../../sources/jonfairbanks__local-rag/tests/test_browser_settings.py)<br>[tests/test_github_repo.py](../../../../sources/jonfairbanks__local-rag/tests/test_github_repo.py)<br>[tests/test_import_boundaries.py](../../../../sources/jonfairbanks__local-rag/tests/test_import_boundaries.py)<br>[tests/test_local_files.py](../../../../sources/jonfairbanks__local-rag/tests/test_local_files.py)<br>[tests/test_ollama.py](../../../../sources/jonfairbanks__local-rag/tests/test_ollama.py)<br>[tests/test_page_state.py](../../../../sources/jonfairbanks__local-rag/tests/test_page_state.py) |
-| CI workflows | 4 | [.github/workflows/dependabot-auto-merge.yml](../../../../sources/jonfairbanks__local-rag/.github/workflows/dependabot-auto-merge.yml)<br>[.github/workflows/issue-attachments.yaml](../../../../sources/jonfairbanks__local-rag/.github/workflows/issue-attachments.yaml)<br>[.github/workflows/main.yaml](../../../../sources/jonfairbanks__local-rag/.github/workflows/main.yaml)<br>[.github/workflows/quality.yml](../../../../sources/jonfairbanks__local-rag/.github/workflows/quality.yml) |
-| Containers / deploy | 3 | [docker-compose.yml](../../../../sources/jonfairbanks__local-rag/docker-compose.yml)<br>[docker-compose.yml-rocm](../../../../sources/jonfairbanks__local-rag/docker-compose.yml-rocm)<br>[Dockerfile](../../../../sources/jonfairbanks__local-rag/Dockerfile) |
-| Security / policy | 2 | [SECURITY.md](../../../../sources/jonfairbanks__local-rag/SECURITY.md)<br>[tests/test_security_controls.py](../../../../sources/jonfairbanks__local-rag/tests/test_security_controls.py) |
-| Agent instructions | 1 | [AGENTS.md](../../../../sources/jonfairbanks__local-rag/AGENTS.md) |
+| 테스트/평가 | 9 | [tests/test_browser_settings.py](../../../../sources/jonfairbanks__local-rag/tests/test_browser_settings.py)<br>[tests/test_github_repo.py](../../../../sources/jonfairbanks__local-rag/tests/test_github_repo.py)<br>[tests/test_import_boundaries.py](../../../../sources/jonfairbanks__local-rag/tests/test_import_boundaries.py)<br>[tests/test_local_files.py](../../../../sources/jonfairbanks__local-rag/tests/test_local_files.py)<br>[tests/test_ollama.py](../../../../sources/jonfairbanks__local-rag/tests/test_ollama.py)<br>[tests/test_page_state.py](../../../../sources/jonfairbanks__local-rag/tests/test_page_state.py) |
+| CI workflow | 4 | [.github/workflows/dependabot-auto-merge.yml](../../../../sources/jonfairbanks__local-rag/.github/workflows/dependabot-auto-merge.yml)<br>[.github/workflows/issue-attachments.yaml](../../../../sources/jonfairbanks__local-rag/.github/workflows/issue-attachments.yaml)<br>[.github/workflows/main.yaml](../../../../sources/jonfairbanks__local-rag/.github/workflows/main.yaml)<br>[.github/workflows/quality.yml](../../../../sources/jonfairbanks__local-rag/.github/workflows/quality.yml) |
+| 컨테이너/배포 | 3 | [docker-compose.yml](../../../../sources/jonfairbanks__local-rag/docker-compose.yml)<br>[docker-compose.yml-rocm](../../../../sources/jonfairbanks__local-rag/docker-compose.yml-rocm)<br>[Dockerfile](../../../../sources/jonfairbanks__local-rag/Dockerfile) |
+| 보안/정책 | 2 | [SECURITY.md](../../../../sources/jonfairbanks__local-rag/SECURITY.md)<br>[tests/test_security_controls.py](../../../../sources/jonfairbanks__local-rag/tests/test_security_controls.py) |
+| 에이전트 지시문 | 1 | [AGENTS.md](../../../../sources/jonfairbanks__local-rag/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `main.py`, `docker-compose.yml`, `docker-compose.yml-rocm`.
-2. Trace execution through entrypoints: `main.py`.
-3. Map agent/tool runtime through: `AGENTS.md`.
-4. Inspect retrieval/memory/indexing through: `utils/llama_index.py`, `utils/rag_pipeline.py`, `utils/browser_storage_component/index.html`.
-5. Verify behavior through test/eval files: `tests/test_browser_settings.py`, `tests/test_github_repo.py`, `tests/test_import_boundaries.py`.
+1. 핵심 참조에서 시작: `main.py`, `docker-compose.yml`, `docker-compose.yml-rocm`.
+2. entrypoint를 따라 실행 흐름 확인: `main.py`.
+3. agent/tool runtime 매핑: `AGENTS.md`.
+4. retrieval/memory/indexing 확인: `utils/llama_index.py`, `utils/rag_pipeline.py`, `utils/browser_storage_component/index.html`.
+5. test/eval 파일로 동작 검증: `tests/test_browser_settings.py`, `tests/test_github_repo.py`, `tests/test_import_boundaries.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-AI 인프라/서빙 관점에서 Ingest files for retrieval augmented generation RAG with open source Large Language Models LLMs , all without 3rd partie. 핵심 구조 신호는 Python, Dockerfile, docker-compose.yml, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+AI 인프라/서빙 관점에서 Ingest files for retrieval augmented generation RAG with open source Large Language Models LLMs , all without 3rd partie. 핵심 구조 신호는 Python, Dockerfile, docker-compose.yml, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 AI 인프라/서빙 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 AI 인프라/서빙 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

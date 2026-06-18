@@ -1,63 +1,63 @@
-# GlitterKill/sdl-mcp Source Deep Dive
+# GlitterKill/sdl-mcp 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Symbol Delta Ledger (SDL-MCP) gives coding agents the right code context, not your entire repo. It turns sprawling codebases into compact, high-signal context that saves tokens, speeds up workflows, and improves agent output.
 
 ## 요약
 
-- 조사 단위: `sources/GlitterKill__sdl-mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,707 files, 194 directories, depth score 128, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/GlitterKill__sdl-mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,707 files, 194 directories, depth score 122, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/MCP_TOOL_TESTS_SUMMARY.md, tests/unit/mcp-action-search.test.ts, tests/unit/mcp-buffer-tool.test.ts이고, 의존성 단서는 modelcontextprotocol, vscode, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/MCP_TOOL_TESTS_SUMMARY.md, tests/unit/mcp-action-search.test.ts, tests/unit/mcp-buffer-tool.test.ts이고, 의존성 단서는 modelcontextprotocol, vscode, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | GlitterKill/sdl-mcp |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | GlitterKill/sdl-mcp |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 369 |
 | Forks | 22 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/GlitterKill__sdl-mcp](../../../../sources/GlitterKill__sdl-mcp) |
-| Existing report | [reports/global-trending/repositories/GlitterKill__sdl-mcp.md](../../../global-trending/repositories/GlitterKill__sdl-mcp.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/GlitterKill__sdl-mcp](../../../../sources/GlitterKill__sdl-mcp) |
+| 기존 보고서 | [reports/global-trending/repositories/GlitterKill__sdl-mcp.md](../../../global-trending/repositories/GlitterKill__sdl-mcp.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1707 / 194 |
-| Max observed depth | 6 |
-| Top directories | .agents, .benchmark, .github, benchmarks, config, devdocs, dist-tests, docs, examples, grammar-wrappers, migrations, native, packages, scripts, sdl-mcp-vscode, src, templates, tests |
-| Top extensions | .ts: 1150, .json: 129, .md: 102, .rs: 77, .js: 54, .map: 30, .mjs: 30, (none): 28, .py: 11, .webp: 11, .java: 9, .yml: 7 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 1707 / 194 |
+| 관측 최대 깊이 | 6 |
+| 상위 디렉터리 | .agents, .benchmark, .github, benchmarks, config, devdocs, dist-tests, docs, examples, grammar-wrappers, migrations, native, packages, scripts, sdl-mcp-vscode, src, templates, tests |
+| 상위 확장자 | .ts: 1150, .json: 129, .md: 102, .rs: 77, .js: 54, .map: 30, .mjs: 30, (none): 28, .py: 11, .webp: 11, .java: 9, .yml: 7 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 155 |
 | src | source boundary | 33 |
@@ -79,9 +79,9 @@ Symbol Delta Ledger (SDL-MCP) gives coding agents the right code context, not yo
 | templates | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | postinstall | node scripts/postinstall.mjs |
 | build | package.json | clean:dist | node scripts/clean-dist.mjs |
@@ -125,24 +125,24 @@ Symbol Delta Ledger (SDL-MCP) gives coding agents the right code context, not yo
 | build | package.json | prepare-release | node scripts/prepare-release.mjs |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
 | developerSurface | vscode |
 | observability | opentelemetry |
-| browserAutomation | none |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [tests/MCP_TOOL_TESTS_SUMMARY.md](../../../../sources/GlitterKill__sdl-mcp/tests/MCP_TOOL_TESTS_SUMMARY.md) | mcp signal |
 | mcp | [tests/unit/mcp-action-search.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/mcp-action-search.test.ts) | mcp signal |
@@ -158,9 +158,9 @@ Symbol Delta Ledger (SDL-MCP) gives coding agents the right code context, not yo
 | instruction | [templates/AGENTS.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/AGENTS.md.template) | instruction signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 3 | [tests/stress/fixtures/src/go/server.go](../../../../sources/GlitterKill__sdl-mcp/tests/stress/fixtures/src/go/server.go)<br>[src/main.ts](../../../../sources/GlitterKill__sdl-mcp/src/main.ts)<br>[src/server.ts](../../../../sources/GlitterKill__sdl-mcp/src/server.ts) |
 | agentRuntime | 121 | [CONTEXT.md](../../../../sources/GlitterKill__sdl-mcp/CONTEXT.md)<br>[skills-lock.json](../../../../sources/GlitterKill__sdl-mcp/skills-lock.json)<br>[tests/AGENTS.md](../../../../sources/GlitterKill__sdl-mcp/tests/AGENTS.md)<br>[tests/runner.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/runner.test.ts)<br>[tests/unit/agent-executor-cache-hits.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/agent-executor-cache-hits.test.ts)<br>[tests/unit/agent-feedback-query-regression.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/agent-feedback-query-regression.test.ts)<br>[tests/unit/context-raw-token-baseline.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/context-raw-token-baseline.test.ts)<br>[tests/unit/context-response-artifacts.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/context-response-artifacts.test.ts) |
@@ -170,45 +170,45 @@ Symbol Delta Ledger (SDL-MCP) gives coding agents the right code context, not yo
 | eval | 875 | [tsconfig.test-runner.json](../../../../sources/GlitterKill__sdl-mcp/tsconfig.test-runner.json)<br>[tsconfig.test.json](../../../../sources/GlitterKill__sdl-mcp/tsconfig.test.json)<br>[tests/AGENTS.md](../../../../sources/GlitterKill__sdl-mcp/tests/AGENTS.md)<br>[tests/blastRadius.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/blastRadius.test.ts)<br>[tests/cache.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/cache.test.ts)<br>[tests/generate-summary.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/generate-summary.test.ts)<br>[tests/MCP_TOOL_TESTS_SUMMARY.md](../../../../sources/GlitterKill__sdl-mcp/tests/MCP_TOOL_TESTS_SUMMARY.md)<br>[tests/metrics-cache.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/metrics-cache.test.ts) |
 | security | 25 | [tests/unit/audit-fixes-2026-03-30.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/audit-fixes-2026-03-30.test.ts)<br>[tests/unit/mcp-code-need-window-policy.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/mcp-code-need-window-policy.test.ts)<br>[tests/unit/policy-engine.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy-engine.test.ts)<br>[tests/unit/runtime-policy.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/runtime-policy.test.ts)<br>[tests/unit/policy/code-access.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy/code-access.test.ts)<br>[tests/unit/policy/runtime.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy/runtime.test.ts)<br>[tests/unit/agent/context-seeding-policy.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/agent/context-seeding-policy.test.ts)<br>[tests/integration/audit-buffer-end-hook-drain.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/integration/audit-buffer-end-hook-drain.test.ts) |
 | ci | 6 | [.github/workflows/ci.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/ci.yml)<br>[.github/workflows/jekyll-gh-pages.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/jekyll-gh-pages.yml)<br>[.github/workflows/publish-grammar-wrappers.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-grammar-wrappers.yml)<br>[.github/workflows/publish-ladybug.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-ladybug.yml)<br>[.github/workflows/publish-native.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-native.yml)<br>[.github/workflows/release-publish.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/release-publish.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 4 | [tests/AGENTS.md](../../../../sources/GlitterKill__sdl-mcp/tests/AGENTS.md)<br>[templates/AGENTS.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/AGENTS.md.template)<br>[templates/CLAUDE.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/CLAUDE.md.template)<br>[templates/GEMINI.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/GEMINI.md.template) |
 | docs | 89 | [README.md](../../../../sources/GlitterKill__sdl-mcp/README.md)<br>[tests/harness/README-ADAPTER-HARNESS.md](../../../../sources/GlitterKill__sdl-mcp/tests/harness/README-ADAPTER-HARNESS.md)<br>[tests/harness/README.md](../../../../sources/GlitterKill__sdl-mcp/tests/harness/README.md)<br>[templates/plugin-template/README.md](../../../../sources/GlitterKill__sdl-mcp/templates/plugin-template/README.md)<br>[sdl-mcp-vscode/README.md](../../../../sources/GlitterKill__sdl-mcp/sdl-mcp-vscode/README.md)<br>[scripts/golden/README.md](../../../../sources/GlitterKill__sdl-mcp/scripts/golden/README.md)<br>[packages/kuzu-split/out/ladybug/README.md](../../../../sources/GlitterKill__sdl-mcp/packages/kuzu-split/out/ladybug/README.md)<br>[grammar-wrappers/README.md](../../../../sources/GlitterKill__sdl-mcp/grammar-wrappers/README.md) |
 | config | 33 | [package.json](../../../../sources/GlitterKill__sdl-mcp/package.json)<br>[tsconfig.json](../../../../sources/GlitterKill__sdl-mcp/tsconfig.json)<br>[tests/stress/fixtures/package.json](../../../../sources/GlitterKill__sdl-mcp/tests/stress/fixtures/package.json)<br>[tests/stress/fixtures/tsconfig.json](../../../../sources/GlitterKill__sdl-mcp/tests/stress/fixtures/tsconfig.json)<br>[tests/fixtures/clustered-repo/package.json](../../../../sources/GlitterKill__sdl-mcp/tests/fixtures/clustered-repo/package.json)<br>[tests/fixtures/clustered-repo/tsconfig.json](../../../../sources/GlitterKill__sdl-mcp/tests/fixtures/clustered-repo/tsconfig.json)<br>[templates/plugin-template/package.json](../../../../sources/GlitterKill__sdl-mcp/templates/plugin-template/package.json)<br>[templates/plugin-template/tsconfig.json](../../../../sources/GlitterKill__sdl-mcp/templates/plugin-template/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 875 | [tsconfig.test-runner.json](../../../../sources/GlitterKill__sdl-mcp/tsconfig.test-runner.json)<br>[tsconfig.test.json](../../../../sources/GlitterKill__sdl-mcp/tsconfig.test.json)<br>[tests/AGENTS.md](../../../../sources/GlitterKill__sdl-mcp/tests/AGENTS.md)<br>[tests/blastRadius.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/blastRadius.test.ts)<br>[tests/cache.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/cache.test.ts)<br>[tests/generate-summary.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/generate-summary.test.ts) |
-| CI workflows | 6 | [.github/workflows/ci.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/ci.yml)<br>[.github/workflows/jekyll-gh-pages.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/jekyll-gh-pages.yml)<br>[.github/workflows/publish-grammar-wrappers.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-grammar-wrappers.yml)<br>[.github/workflows/publish-ladybug.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-ladybug.yml)<br>[.github/workflows/publish-native.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-native.yml)<br>[.github/workflows/release-publish.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/release-publish.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 25 | [tests/unit/audit-fixes-2026-03-30.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/audit-fixes-2026-03-30.test.ts)<br>[tests/unit/mcp-code-need-window-policy.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/mcp-code-need-window-policy.test.ts)<br>[tests/unit/policy-engine.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy-engine.test.ts)<br>[tests/unit/runtime-policy.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/runtime-policy.test.ts)<br>[tests/unit/policy/code-access.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy/code-access.test.ts)<br>[tests/unit/policy/runtime.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy/runtime.test.ts) |
-| Agent instructions | 4 | [tests/AGENTS.md](../../../../sources/GlitterKill__sdl-mcp/tests/AGENTS.md)<br>[templates/AGENTS.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/AGENTS.md.template)<br>[templates/CLAUDE.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/CLAUDE.md.template)<br>[templates/GEMINI.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/GEMINI.md.template) |
+| 테스트/평가 | 875 | [tsconfig.test-runner.json](../../../../sources/GlitterKill__sdl-mcp/tsconfig.test-runner.json)<br>[tsconfig.test.json](../../../../sources/GlitterKill__sdl-mcp/tsconfig.test.json)<br>[tests/AGENTS.md](../../../../sources/GlitterKill__sdl-mcp/tests/AGENTS.md)<br>[tests/blastRadius.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/blastRadius.test.ts)<br>[tests/cache.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/cache.test.ts)<br>[tests/generate-summary.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/generate-summary.test.ts) |
+| CI workflow | 6 | [.github/workflows/ci.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/ci.yml)<br>[.github/workflows/jekyll-gh-pages.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/jekyll-gh-pages.yml)<br>[.github/workflows/publish-grammar-wrappers.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-grammar-wrappers.yml)<br>[.github/workflows/publish-ladybug.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-ladybug.yml)<br>[.github/workflows/publish-native.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/publish-native.yml)<br>[.github/workflows/release-publish.yml](../../../../sources/GlitterKill__sdl-mcp/.github/workflows/release-publish.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 25 | [tests/unit/audit-fixes-2026-03-30.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/audit-fixes-2026-03-30.test.ts)<br>[tests/unit/mcp-code-need-window-policy.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/mcp-code-need-window-policy.test.ts)<br>[tests/unit/policy-engine.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy-engine.test.ts)<br>[tests/unit/runtime-policy.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/runtime-policy.test.ts)<br>[tests/unit/policy/code-access.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy/code-access.test.ts)<br>[tests/unit/policy/runtime.test.ts](../../../../sources/GlitterKill__sdl-mcp/tests/unit/policy/runtime.test.ts) |
+| 에이전트 지시문 | 4 | [tests/AGENTS.md](../../../../sources/GlitterKill__sdl-mcp/tests/AGENTS.md)<br>[templates/AGENTS.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/AGENTS.md.template)<br>[templates/CLAUDE.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/CLAUDE.md.template)<br>[templates/GEMINI.md.template](../../../../sources/GlitterKill__sdl-mcp/templates/GEMINI.md.template) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/MCP_TOOL_TESTS_SUMMARY.md`, `tests/unit/mcp-action-search.test.ts`, `tests/unit/mcp-buffer-tool.test.ts`.
-2. Trace execution through entrypoints: `tests/stress/fixtures/src/go/server.go`, `src/main.ts`, `src/server.ts`.
-3. Map agent/tool runtime through: `CONTEXT.md`, `skills-lock.json`, `tests/AGENTS.md`.
-4. Inspect retrieval/memory/indexing through: `tests/unit/cli-index-command.test.ts`, `tests/unit/deferred-index-bootstrap.test.ts`, `tests/unit/doctor-live-index-status.test.ts`.
-5. Verify behavior through test/eval files: `tsconfig.test-runner.json`, `tsconfig.test.json`, `tests/AGENTS.md`.
+1. 핵심 참조에서 시작: `tests/MCP_TOOL_TESTS_SUMMARY.md`, `tests/unit/mcp-action-search.test.ts`, `tests/unit/mcp-buffer-tool.test.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `tests/stress/fixtures/src/go/server.go`, `src/main.ts`, `src/server.ts`.
+3. agent/tool runtime 매핑: `CONTEXT.md`, `skills-lock.json`, `tests/AGENTS.md`.
+4. retrieval/memory/indexing 확인: `tests/unit/cli-index-command.test.ts`, `tests/unit/deferred-index-bootstrap.test.ts`, `tests/unit/doctor-live-index-status.test.ts`.
+5. test/eval 파일로 동작 검증: `tsconfig.test-runner.json`, `tsconfig.test.json`, `tests/AGENTS.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Symbol Delta Ledger SDL MCP gives coding agents the right code context, not your entire repo. It turns sprawling codebas. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, modelcontextprotocol, vscode이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Symbol Delta Ledger SDL MCP gives coding agents the right code context, not your entire repo. It turns sprawling codebas. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, modelcontextprotocol, vscode이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

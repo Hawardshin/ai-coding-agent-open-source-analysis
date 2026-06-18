@@ -1,43 +1,43 @@
-# Context and Memory
+# 컨텍스트/메모리
 
-Generated: 2026-06-18T15:12:39.601Z
+생성 시각: 2026-06-18T15:31:33.431Z
 
-Long-term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems.
+long-term memory, session state, context engineering, recall, persistence, personalization, agent memory system을 묶은 카테고리입니다.
 
 ## 요약
 
 - 조사 단위: `context-memory` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
-- 포함 범위: 1,178 entries이며, 주요 구성은 conference-reference (610), repository (287), research-paper (165), reference-material (101), trend-reference (15)입니다.
+- 포함 범위: 1,178개 항목이며, 주요 구성은 conference-reference (610), repository (287), research-paper (165), reference-material (101), trend-reference (15)입니다.
 - 연결 보고서: [llm-wiki](../../by-topic/llm-wiki/README.md), [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md).
 
 ## 총평
 
 이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
-| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [근거 카테고리](../README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
-## Counts
+## 범위
 
-- Total categorized entries: 1178
-- Repositories: 287
-- Research papers: 165
-- Presentations/conferences/trend references: 625
-- Reference materials: 101
-- Data file: [data/categories/context-memory.json](../../../data/categories/context-memory.json)
-- Related report topics: [llm-wiki](../../by-topic/llm-wiki/README.md), [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md)
+- 전체 분류 항목: 1178
+- 오픈소스/레포: 287
+- 논문/연구자료: 165
+- 발표/컨퍼런스/트렌드 자료: 625
+- 참고자료: 101
+- 데이터 파일: [data/categories/context-memory.json](../../../data/categories/context-memory.json)
+- 연결된 보고서 주제: [llm-wiki](../../by-topic/llm-wiki/README.md), [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md)
 
-## Type Breakdown
+## 유형별 구성
 
 - conference-reference: 610
 - repository: 287
@@ -45,60 +45,60 @@ Long-term memory, session state, context engineering, recall, persistence, perso
 - reference-material: 101
 - trend-reference: 15
 
-## Top Open Source
+## 주요 오픈소스
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | repository | TypeScript, 59994 stars | 422.2 | [source](../../../sources/ruvnet__ruflo) / [report](../../global-trending/repositories/ruvnet__ruflo.md) |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | repository | JavaScript, 217294 stars | 413.8 | [source](../../../sources/affaan-m__ECC) / [report](../../global-trending/repositories/affaan-m__ECC.md) |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | repository | Python, 71423 stars | 411.9 | [source](../../../sources/bytedance__deer-flow) / [report](../../global-trending/repositories/bytedance__deer-flow.md) |
-| [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) | repository | Python, 7691 stars | 397.0 | [source](../../../sources/EverMind-AI__EverOS) / [report](../../global-trending/repositories/EverMind-AI__EverOS.md) |
-| [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) | repository | TypeScript, 15139 stars | 393.3 | [source](../../../sources/GLips__Figma-Context-MCP) / [report](../../global-trending/repositories/GLips__Figma-Context-MCP.md) |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | repository | Python, 83034 stars | 392.2 | [source](../../../sources/infiniflow__ragflow) / [report](../../global-trending/repositories/infiniflow__ragflow.md) |
-| [chopratejas/headroom](https://github.com/chopratejas/headroom) | repository | Python, 31580 stars | 391.5 | [source](../../../sources/chopratejas__headroom) / [report](../../global-trending/repositories/chopratejas__headroom.md) |
-| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | repository | Python, 25770 stars | 389.4 | [source](../../../sources/volcengine__OpenViking) / [report](../../global-trending/repositories/volcengine__OpenViking.md) |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | repository | JavaScript, 82994 stars | 387.2 | [source](../../../sources/thedotmack__claude-mem) / [report](../../global-trending/repositories/thedotmack__claude-mem.md) |
-| [pingcap/tidb](https://github.com/pingcap/tidb) | repository | Go, 40171 stars | 381.1 | [source](../../../sources/pingcap__tidb) / [report](../../global-trending/repositories/pingcap__tidb.md) |
-| [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | repository | Python, 45383 stars | 380.0 | [source](../../../sources/zhayujie__CowAgent) / [report](../../global-trending/repositories/zhayujie__CowAgent.md) |
-| [MervinPraison/PraisonAI](https://github.com/MervinPraison/PraisonAI) | repository | Python, 8173 stars | 379.9 | [source](../../../sources/MervinPraison__PraisonAI) / [report](../../global-trending/repositories/MervinPraison__PraisonAI.md) |
-| [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | repository | C, 5246 stars | 377.2 | [source](../../../sources/DeusData__codebase-memory-mcp) / [report](../../global-trending/repositories/DeusData__codebase-memory-mcp.md) |
-| [nashsu/llm_wiki](https://github.com/nashsu/llm_wiki) | repository | TypeScript, 11795 stars | 370.5 | [source](../../../sources/nashsu__llm_wiki) / [report](../../global-trending/repositories/nashsu__llm_wiki.md) |
-| [gastownhall/beads](https://github.com/gastownhall/beads) | repository | Go, 24595 stars | 368.7 | [source](../../../sources/gastownhall__beads) / [report](../../global-trending/repositories/gastownhall__beads.md) |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | repository | Python, 58803 stars | 366.9 | [source](../../../sources/mem0ai__mem0) / [report](../../global-trending/repositories/mem0ai__mem0.md) |
-| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | repository | TypeScript, 29904 stars | 363.6 | [source](../../../sources/nanocoai__nanoclaw) / [report](../../global-trending/repositories/nanocoai__nanoclaw.md) |
-| [CaviraOSS/OpenMemory](https://github.com/CaviraOSS/OpenMemory) | repository | TypeScript, 4243 stars | 363.0 | [source](../../../sources/CaviraOSS__OpenMemory) / [report](../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
-| [gptme/gptme](https://github.com/gptme/gptme) | repository | Python, 4332 stars | 362.3 | [source](../../../sources/gptme__gptme) / [report](../../global-trending/repositories/gptme__gptme.md) |
-| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | repository | TypeScript, 11880 stars | 361.6 | [source](../../../sources/zilliztech__claude-context) / [report](../../global-trending/repositories/zilliztech__claude-context.md) |
-| [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use) | repository | TypeScript, 10115 stars | 361.2 | [source](../../../sources/mcp-use__mcp-use) / [report](../../global-trending/repositories/mcp-use__mcp-use.md) |
-| [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | repository | Go, 8809 stars | 361.1 | [source](../../../sources/mark3labs__mcp-go) / [report](../../global-trending/repositories/mark3labs__mcp-go.md) |
-| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | repository | Python, 5239 stars | 360.2 | [source](../../../sources/plastic-labs__honcho) / [report](../../global-trending/repositories/plastic-labs__honcho.md) |
-| [redis/redis](https://github.com/redis/redis) | repository | C, 74920 stars | 359.6 | [source](../../../sources/redis__redis) / [report](../../global-trending/repositories/redis__redis.md) |
-| [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk) | repository | Python, 23356 stars | 358.9 | [source](../../../sources/modelcontextprotocol__python-sdk) / [report](../../global-trending/repositories/modelcontextprotocol__python-sdk.md) |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | repository | Python, 17885 stars | 358.8 | [source](../../../sources/topoteretes__cognee) / [report](../../global-trending/repositories/topoteretes__cognee.md) |
-| [the-open-agent/openagent](https://github.com/the-open-agent/openagent) | repository | Go, 5266 stars | 358.3 | [source](../../../sources/the-open-agent__openagent) / [report](../../global-trending/repositories/the-open-agent__openagent.md) |
-| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | repository | Rust, 19349 stars | 355.0 | [source](../../../sources/screenpipe__screenpipe) / [report](../../global-trending/repositories/screenpipe__screenpipe.md) |
-| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | repository | MDX, 25594 stars | 354.3 | [source](../../../sources/deepset-ai__haystack) / [report](../../global-trending/repositories/deepset-ai__haystack.md) |
-| [modelcontextprotocol/csharp-sdk](https://github.com/modelcontextprotocol/csharp-sdk) | repository | C#, 4335 stars | 350.3 | [source](../../../sources/modelcontextprotocol__csharp-sdk) / [report](../../global-trending/repositories/modelcontextprotocol__csharp-sdk.md) |
-| [getsentry/XcodeBuildMCP](https://github.com/getsentry/XcodeBuildMCP) | repository | TypeScript, 5921 stars | 349.0 | [source](../../../sources/getsentry__XcodeBuildMCP) / [report](../../global-trending/repositories/getsentry__XcodeBuildMCP.md) |
-| [MinishLab/semble](https://github.com/MinishLab/semble) | repository | Python, 5231 stars | 348.1 | [source](../../../sources/MinishLab__semble) / [report](../../global-trending/repositories/MinishLab__semble.md) |
-| [modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk) | repository | TypeScript, 12685 stars | 347.6 | [source](../../../sources/modelcontextprotocol__typescript-sdk) / [report](../../global-trending/repositories/modelcontextprotocol__typescript-sdk.md) |
-| [jacob-bd/notebooklm-mcp-cli](https://github.com/jacob-bd/notebooklm-mcp-cli) | repository | Python, 4941 stars | 347.3 | [source](../../../sources/jacob-bd__notebooklm-mcp-cli) / [report](../../global-trending/repositories/jacob-bd__notebooklm-mcp-cli.md) |
-| [microsoft/autogen](https://github.com/microsoft/autogen) | repository | Python, 59042 stars | 347.0 | [source](../../../sources/microsoft__autogen) / [report](../../global-trending/repositories/microsoft__autogen.md) |
-| [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | repository | Python, 16520 stars | 346.6 | [source](../../../sources/vectorize-io__hindsight) / [report](../../global-trending/repositories/vectorize-io__hindsight.md) |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | repository | C++, 10812 stars | 345.2 | [source](../../../sources/alibaba__zvec) / [report](../../global-trending/repositories/alibaba__zvec.md) |
-| [osaurus-ai/osaurus](https://github.com/osaurus-ai/osaurus) | repository | Swift, 5927 stars | 342.1 | [source](../../../sources/osaurus-ai__osaurus) / [report](../../global-trending/repositories/osaurus-ai__osaurus.md) |
-| [modelcontextprotocol/modelcontextprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | repository | TypeScript, 8418 stars | 341.4 | [source](../../../sources/modelcontextprotocol__modelcontextprotocol) / [report](../../global-trending/repositories/modelcontextprotocol__modelcontextprotocol.md) |
-| [agno-agi/agno](https://github.com/agno-agi/agno) | repository | Python, 40751 stars | 341.4 | [source](../../../sources/agno-agi__agno) / [report](../../global-trending/repositories/agno-agi__agno.md) |
-| [stacklok/toolhive](https://github.com/stacklok/toolhive) | repository | Go, 1889 stars | 338.7 | [source](../../../sources/stacklok__toolhive) / [report](../../global-trending/repositories/stacklok__toolhive.md) |
-| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | repository | TypeScript, 5871 stars | 336.9 | [source](../../../sources/TencentCloud__TencentDB-Agent-Memory) / [report](../../global-trending/repositories/TencentCloud__TencentDB-Agent-Memory.md) |
-| [stackql/stackql](https://github.com/stackql/stackql) | repository | Go, 862 stars | 336.8 | [source](../../../sources/stackql__stackql) / [report](../../global-trending/repositories/stackql__stackql.md) |
-| [opensquilla/opensquilla](https://github.com/opensquilla/opensquilla) | repository | Python, 4296 stars | 334.2 | [source](../../../sources/opensquilla__opensquilla) / [report](../../global-trending/repositories/opensquilla__opensquilla.md) |
-| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | repository | Jupyter Notebook, 16551 stars | 333.7 | [source](../../../sources/microsoft__mcp-for-beginners) / [report](../../global-trending/repositories/microsoft__mcp-for-beginners.md) |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | repository | TypeScript, 59994 stars | 422.2 | [소스](../../../sources/ruvnet__ruflo) / [보고서](../../global-trending/repositories/ruvnet__ruflo.md) |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | repository | JavaScript, 217294 stars | 413.8 | [소스](../../../sources/affaan-m__ECC) / [보고서](../../global-trending/repositories/affaan-m__ECC.md) |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | repository | Python, 71423 stars | 411.9 | [소스](../../../sources/bytedance__deer-flow) / [보고서](../../global-trending/repositories/bytedance__deer-flow.md) |
+| [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) | repository | Python, 7691 stars | 397.0 | [소스](../../../sources/EverMind-AI__EverOS) / [보고서](../../global-trending/repositories/EverMind-AI__EverOS.md) |
+| [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) | repository | TypeScript, 15139 stars | 393.3 | [소스](../../../sources/GLips__Figma-Context-MCP) / [보고서](../../global-trending/repositories/GLips__Figma-Context-MCP.md) |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | repository | Python, 83034 stars | 392.2 | [소스](../../../sources/infiniflow__ragflow) / [보고서](../../global-trending/repositories/infiniflow__ragflow.md) |
+| [chopratejas/headroom](https://github.com/chopratejas/headroom) | repository | Python, 31580 stars | 391.5 | [소스](../../../sources/chopratejas__headroom) / [보고서](../../global-trending/repositories/chopratejas__headroom.md) |
+| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | repository | Python, 25770 stars | 389.4 | [소스](../../../sources/volcengine__OpenViking) / [보고서](../../global-trending/repositories/volcengine__OpenViking.md) |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | repository | JavaScript, 82994 stars | 387.2 | [소스](../../../sources/thedotmack__claude-mem) / [보고서](../../global-trending/repositories/thedotmack__claude-mem.md) |
+| [pingcap/tidb](https://github.com/pingcap/tidb) | repository | Go, 40171 stars | 381.1 | [소스](../../../sources/pingcap__tidb) / [보고서](../../global-trending/repositories/pingcap__tidb.md) |
+| [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | repository | Python, 45383 stars | 380.0 | [소스](../../../sources/zhayujie__CowAgent) / [보고서](../../global-trending/repositories/zhayujie__CowAgent.md) |
+| [MervinPraison/PraisonAI](https://github.com/MervinPraison/PraisonAI) | repository | Python, 8173 stars | 379.9 | [소스](../../../sources/MervinPraison__PraisonAI) / [보고서](../../global-trending/repositories/MervinPraison__PraisonAI.md) |
+| [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | repository | C, 5246 stars | 377.2 | [소스](../../../sources/DeusData__codebase-memory-mcp) / [보고서](../../global-trending/repositories/DeusData__codebase-memory-mcp.md) |
+| [nashsu/llm_wiki](https://github.com/nashsu/llm_wiki) | repository | TypeScript, 11795 stars | 370.5 | [소스](../../../sources/nashsu__llm_wiki) / [보고서](../../global-trending/repositories/nashsu__llm_wiki.md) |
+| [gastownhall/beads](https://github.com/gastownhall/beads) | repository | Go, 24595 stars | 368.7 | [소스](../../../sources/gastownhall__beads) / [보고서](../../global-trending/repositories/gastownhall__beads.md) |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | repository | Python, 58803 stars | 366.9 | [소스](../../../sources/mem0ai__mem0) / [보고서](../../global-trending/repositories/mem0ai__mem0.md) |
+| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | repository | TypeScript, 29904 stars | 363.6 | [소스](../../../sources/nanocoai__nanoclaw) / [보고서](../../global-trending/repositories/nanocoai__nanoclaw.md) |
+| [CaviraOSS/OpenMemory](https://github.com/CaviraOSS/OpenMemory) | repository | TypeScript, 4243 stars | 363.0 | [소스](../../../sources/CaviraOSS__OpenMemory) / [보고서](../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
+| [gptme/gptme](https://github.com/gptme/gptme) | repository | Python, 4332 stars | 362.3 | [소스](../../../sources/gptme__gptme) / [보고서](../../global-trending/repositories/gptme__gptme.md) |
+| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | repository | TypeScript, 11880 stars | 361.6 | [소스](../../../sources/zilliztech__claude-context) / [보고서](../../global-trending/repositories/zilliztech__claude-context.md) |
+| [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use) | repository | TypeScript, 10115 stars | 361.2 | [소스](../../../sources/mcp-use__mcp-use) / [보고서](../../global-trending/repositories/mcp-use__mcp-use.md) |
+| [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | repository | Go, 8809 stars | 361.1 | [소스](../../../sources/mark3labs__mcp-go) / [보고서](../../global-trending/repositories/mark3labs__mcp-go.md) |
+| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | repository | Python, 5239 stars | 360.2 | [소스](../../../sources/plastic-labs__honcho) / [보고서](../../global-trending/repositories/plastic-labs__honcho.md) |
+| [redis/redis](https://github.com/redis/redis) | repository | C, 74920 stars | 359.6 | [소스](../../../sources/redis__redis) / [보고서](../../global-trending/repositories/redis__redis.md) |
+| [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk) | repository | Python, 23356 stars | 358.9 | [소스](../../../sources/modelcontextprotocol__python-sdk) / [보고서](../../global-trending/repositories/modelcontextprotocol__python-sdk.md) |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | repository | Python, 17885 stars | 358.8 | [소스](../../../sources/topoteretes__cognee) / [보고서](../../global-trending/repositories/topoteretes__cognee.md) |
+| [the-open-agent/openagent](https://github.com/the-open-agent/openagent) | repository | Go, 5266 stars | 358.3 | [소스](../../../sources/the-open-agent__openagent) / [보고서](../../global-trending/repositories/the-open-agent__openagent.md) |
+| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | repository | Rust, 19349 stars | 355.0 | [소스](../../../sources/screenpipe__screenpipe) / [보고서](../../global-trending/repositories/screenpipe__screenpipe.md) |
+| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | repository | MDX, 25594 stars | 354.3 | [소스](../../../sources/deepset-ai__haystack) / [보고서](../../global-trending/repositories/deepset-ai__haystack.md) |
+| [modelcontextprotocol/csharp-sdk](https://github.com/modelcontextprotocol/csharp-sdk) | repository | C#, 4335 stars | 350.3 | [소스](../../../sources/modelcontextprotocol__csharp-sdk) / [보고서](../../global-trending/repositories/modelcontextprotocol__csharp-sdk.md) |
+| [getsentry/XcodeBuildMCP](https://github.com/getsentry/XcodeBuildMCP) | repository | TypeScript, 5921 stars | 349.0 | [소스](../../../sources/getsentry__XcodeBuildMCP) / [보고서](../../global-trending/repositories/getsentry__XcodeBuildMCP.md) |
+| [MinishLab/semble](https://github.com/MinishLab/semble) | repository | Python, 5231 stars | 348.1 | [소스](../../../sources/MinishLab__semble) / [보고서](../../global-trending/repositories/MinishLab__semble.md) |
+| [modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk) | repository | TypeScript, 12685 stars | 347.6 | [소스](../../../sources/modelcontextprotocol__typescript-sdk) / [보고서](../../global-trending/repositories/modelcontextprotocol__typescript-sdk.md) |
+| [jacob-bd/notebooklm-mcp-cli](https://github.com/jacob-bd/notebooklm-mcp-cli) | repository | Python, 4941 stars | 347.3 | [소스](../../../sources/jacob-bd__notebooklm-mcp-cli) / [보고서](../../global-trending/repositories/jacob-bd__notebooklm-mcp-cli.md) |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | repository | Python, 59042 stars | 347.0 | [소스](../../../sources/microsoft__autogen) / [보고서](../../global-trending/repositories/microsoft__autogen.md) |
+| [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | repository | Python, 16520 stars | 346.6 | [소스](../../../sources/vectorize-io__hindsight) / [보고서](../../global-trending/repositories/vectorize-io__hindsight.md) |
+| [alibaba/zvec](https://github.com/alibaba/zvec) | repository | C++, 10812 stars | 345.2 | [소스](../../../sources/alibaba__zvec) / [보고서](../../global-trending/repositories/alibaba__zvec.md) |
+| [osaurus-ai/osaurus](https://github.com/osaurus-ai/osaurus) | repository | Swift, 5927 stars | 342.1 | [소스](../../../sources/osaurus-ai__osaurus) / [보고서](../../global-trending/repositories/osaurus-ai__osaurus.md) |
+| [modelcontextprotocol/modelcontextprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | repository | TypeScript, 8418 stars | 341.4 | [소스](../../../sources/modelcontextprotocol__modelcontextprotocol) / [보고서](../../global-trending/repositories/modelcontextprotocol__modelcontextprotocol.md) |
+| [agno-agi/agno](https://github.com/agno-agi/agno) | repository | Python, 40751 stars | 341.4 | [소스](../../../sources/agno-agi__agno) / [보고서](../../global-trending/repositories/agno-agi__agno.md) |
+| [stacklok/toolhive](https://github.com/stacklok/toolhive) | repository | Go, 1889 stars | 338.7 | [소스](../../../sources/stacklok__toolhive) / [보고서](../../global-trending/repositories/stacklok__toolhive.md) |
+| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | repository | TypeScript, 5871 stars | 336.9 | [소스](../../../sources/TencentCloud__TencentDB-Agent-Memory) / [보고서](../../global-trending/repositories/TencentCloud__TencentDB-Agent-Memory.md) |
+| [stackql/stackql](https://github.com/stackql/stackql) | repository | Go, 862 stars | 336.8 | [소스](../../../sources/stackql__stackql) / [보고서](../../global-trending/repositories/stackql__stackql.md) |
+| [opensquilla/opensquilla](https://github.com/opensquilla/opensquilla) | repository | Python, 4296 stars | 334.2 | [소스](../../../sources/opensquilla__opensquilla) / [보고서](../../global-trending/repositories/opensquilla__opensquilla.md) |
+| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | repository | Jupyter Notebook, 16551 stars | 333.7 | [소스](../../../sources/microsoft__mcp-for-beginners) / [보고서](../../global-trending/repositories/microsoft__mcp-for-beginners.md) |
 
 
-## Top Research
+## 주요 연구/논문
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Naming the pain in requirements engineering](https://doi.org/10.1007/s10664-016-9451-7) | research-paper | 2016 | 351.9 |  |
 | [The Crowd in Requirements Engineering: The Landscape and Challenges](https://doi.org/10.1109/ms.2017.33) | research-paper | 2017 | 293.4 |  |
@@ -127,9 +127,9 @@ Long-term memory, session state, context engineering, recall, persistence, perso
 | [FinMem: A Performance-Enhanced LLM Trading Agent with Layered Memory and Character Design](https://doi.org/10.1609/aaaiss.v3i1.31290) | research-paper | 2024 | 87.3 |  |
 
 
-## Top Presentations and Conference References
+## 주요 발표/컨퍼런스 자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [How to Build Quality Gates into Agentic Coding Workflows](https://www.ai.engineer/schedule) | conference-reference |  | 125.0 |  |
 | [Total Recall: Agent Memory and Harness Engineering](https://www.ai.engineer/schedule) | conference-reference |  | 125.0 |  |
@@ -168,9 +168,9 @@ Long-term memory, session state, context engineering, recall, persistence, perso
 | [Hill-climbing Skills: How to Improve Agents Without Touching the Model](https://www.ai.engineer/schedule) | conference-reference |  | 105.0 |  |
 
 
-## Top Reference Materials
+## 주요 참고자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Catch security issues as Claude writes code](https://code.claude.com/docs/en/security-guidance.md) | reference-material |  | 970.0 |  |
 | [Channels reference](https://code.claude.com/docs/en/channels-reference.md) | reference-material |  | 970.0 |  |
@@ -199,4 +199,4 @@ Long-term memory, session state, context engineering, recall, persistence, perso
 | [Subagents in the SDK](https://code.claude.com/docs/en/agent-sdk/subagents.md) | reference-material |  | 970.0 |  |
 
 
-Complete category membership is stored in [data/categories/context-memory.json](../../../data/categories/context-memory.json).
+전체 카테고리 멤버십은 [data/categories/context-memory.json](../../../data/categories/context-memory.json)에 저장됩니다.

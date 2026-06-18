@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "research-papers",
-  "title": "Research Papers and Evidence",
-  "description": "OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries.",
+  "title": "논문/연구 근거",
+  "description": "OpenAlex 논문, 연구, 요구사항 연구, agent 연구, source scanning 연구, evidence corpus 항목을 묶은 카테고리입니다.",
   "counts": {
     "total": 650,
     "research-paper": 650

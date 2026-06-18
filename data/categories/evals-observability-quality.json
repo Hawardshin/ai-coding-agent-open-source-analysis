@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "evals-observability-quality",
-  "title": "Evals, Observability, and Quality",
-  "description": "Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems.",
+  "title": "평가/관측/품질",
+  "description": "prompt/agent eval, tracing, observability, quality gate, benchmark, testing, monitoring, reliability system을 묶은 카테고리입니다.",
   "counts": {
     "total": 648,
     "reference-material": 108,

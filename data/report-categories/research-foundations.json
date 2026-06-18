@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T15:13:01.107Z",
+  "generatedAt": "2026-06-18T15:31:47.876Z",
   "slug": "research-foundations",
-  "title": "Research Foundations",
-  "description": "Evidence catalogs, conflicting theories, source catalogs, and research synthesis.",
-  "count": 6,
+  "title": "연구 근거",
+  "description": "논문, 근거자료, 충돌 이론, 연구 종합 보고서를 모은 주제입니다.",
+  "count": 7,
   "reports": [
     {
       "id": "report:reports/research/02-evidence-catalog-100-sources.md",
@@ -33,6 +33,20 @@
         "research-foundations"
       ],
       "priority": 157
+    },
+    {
+      "id": "report:reports/categories/research-papers/README.md",
+      "path": "reports/categories/research-papers/README.md",
+      "title": "논문/연구 근거",
+      "summary": "논문/연구 근거 생성 시각 2026 06 18T15 31 33.431Z OpenAlex 논문, 연구, 요구사항 연구, agent 연구, source scanning 연구, evidence corpus 항목을 묶은 카테고리입니다. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 650개 항목이며, 주요 구성은 research paper 650 입니다. 연결 보고서 rese",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T15:31:34.268Z",
+      "categories": [
+        "category-guides",
+        "research-foundations"
+      ],
+      "priority": 156
     },
     {
       "id": "report:reports/spec-driven-evidence-corpus-500.md",

@@ -1,63 +1,63 @@
-# theJayTea/WritingTools Source Deep Dive
+# theJayTea/WritingTools 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 The world's smartest system-wide grammar assistant; a better version of the Apple Intelligence Writing Tools. Works on Windows, Linux, & macOS, with the free Gemini API, local LLMs, & more.
 
 ## 요약
 
-- 조사 단위: `sources/theJayTea__WritingTools` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 204 files, 46 directories, depth score 63, key references 6개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/theJayTea__WritingTools` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 204 files, 46 directories, depth score 57, key references 6개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-개발 생산성/DevTools 관점에서 cli-first, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 entrypoints=Windows_and_Linux/main.py이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 운영 보조 파일은 추가 확인 필요이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 6개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+개발 생산성/DevTools 관점에서 cli-first, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 entrypoints=Windows_and_Linux/main.py이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 운영 보조 파일은 추가 확인 필요이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 6개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | theJayTea/WritingTools |
-| Topic | Developer Productivity and DevTools / 개발 생산성/DevTools |
+| 레포 | theJayTea/WritingTools |
+| 주제 | 개발 생산성/DevTools / 개발 생산성/DevTools |
 | Region | global |
 | Language | Swift |
 | Stars | 2307 |
 | Forks | 142 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/theJayTea__WritingTools](../../../../sources/theJayTea__WritingTools) |
-| Existing report | [reports/global-trending/repositories/theJayTea__WritingTools.md](../../../global-trending/repositories/theJayTea__WritingTools.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/theJayTea__WritingTools](../../../../sources/theJayTea__WritingTools) |
+| 기존 보고서 | [reports/global-trending/repositories/theJayTea__WritingTools.md](../../../global-trending/repositories/theJayTea__WritingTools.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 204 / 46 |
-| Max observed depth | 7 |
-| Top directories | .github, macOS, README's Linked Content, Windows_and_Linux |
-| Top extensions | .swift: 88, .png: 62, .py: 13, .json: 7, .pot: 7, .md: 5, .txt: 3, (none): 3, .mo: 2, .mp4: 2, .po: 2, .entitlements: 1 |
-| Source patterns | cli-first, spec/docs-driven |
+| 파일 / 디렉터리 | 204 / 46 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .github, macOS, README's Linked Content, Windows_and_Linux |
+| 상위 확장자 | .swift: 88, .png: 62, .py: 13, .json: 7, .pot: 7, .md: 5, .txt: 3, (none): 3, .mo: 2, .mp4: 2, .po: 2, .entitlements: 1 |
+| 소스 패턴 | cli-first, spec/docs-driven |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | .github | ci surface | 1 |
 | macOS | top-level component | 1 |
@@ -65,29 +65,29 @@ The world's smartest system-wide grammar assistant; a better version of the Appl
 | Windows_and_Linux | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [Windows_and_Linux/main.py](../../../../sources/theJayTea__WritingTools/Windows_and_Linux/main.py) | entrypoints signal |
 | config | [Windows_and_Linux/requirements.txt](../../../../sources/theJayTea__WritingTools/Windows_and_Linux/requirements.txt) | config signal |
@@ -97,54 +97,54 @@ _No command surface extracted from root manifests._
 | docs | [README's Linked Content/To Compile the Application Yourself.md](../../../../sources/theJayTea__WritingTools/README's Linked Content/To Compile the Application Yourself.md) | docs signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1 | [Windows_and_Linux/main.py](../../../../sources/theJayTea__WritingTools/Windows_and_Linux/main.py) |
-| agentRuntime | 0 | not obvious |
-| mcp | 0 | not obvious |
-| retrieval | 0 | not obvious |
+| agentRuntime | 0 | 명확하지 않음 |
+| mcp | 0 | 명확하지 않음 |
+| retrieval | 0 | 명확하지 않음 |
 | spec | 1 | [Windows_and_Linux/requirements.txt](../../../../sources/theJayTea__WritingTools/Windows_and_Linux/requirements.txt) |
-| eval | 0 | not obvious |
-| security | 0 | not obvious |
-| ci | 0 | not obvious |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| eval | 0 | 명확하지 않음 |
+| security | 0 | 명확하지 않음 |
+| ci | 0 | 명확하지 않음 |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 6 | [README.md](../../../../sources/theJayTea__WritingTools/README.md)<br>[README's Linked Content/Demo - Summaries.mp4](../../../../sources/theJayTea__WritingTools/README's Linked Content/Demo - Summaries.mp4)<br>[README's Linked Content/Demo.mp4](../../../../sources/theJayTea__WritingTools/README's Linked Content/Demo.mp4)<br>[README's Linked Content/To Compile the Application Yourself.md](../../../../sources/theJayTea__WritingTools/README's Linked Content/To Compile the Application Yourself.md)<br>[README's Linked Content/To Run Writing Tools Directly from the Source Code.md](../../../../sources/theJayTea__WritingTools/README's Linked Content/To Run Writing Tools Directly from the Source Code.md)<br>[macOS/README.md](../../../../sources/theJayTea__WritingTools/macOS/README.md) |
 | config | 1 | [Windows_and_Linux/requirements.txt](../../../../sources/theJayTea__WritingTools/Windows_and_Linux/requirements.txt) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 0 | not obvious |
-| CI workflows | 0 | not obvious |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 0 | not obvious |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 0 | 명확하지 않음 |
+| CI workflow | 0 | 명확하지 않음 |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 0 | 명확하지 않음 |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | CI workflow path not obvious; container/deploy path not obvious; test/eval path not obvious |
-| security | security/policy surface not obvious |
+| architecture | 없음 |
+| operation | CI workflow 경로가 명확하지 않음; container/deploy 경로가 명확하지 않음; test/eval 경로가 명확하지 않음 |
+| security | security/policy 표면이 명확하지 않음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `Windows_and_Linux/main.py`, `Windows_and_Linux/requirements.txt`, `README.md`.
-2. Trace execution through entrypoints: `Windows_and_Linux/main.py`.
+1. 핵심 참조에서 시작: `Windows_and_Linux/main.py`, `Windows_and_Linux/requirements.txt`, `README.md`.
+2. entrypoint를 따라 실행 흐름 확인: `Windows_and_Linux/main.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-개발 생산성/DevTools 관점에서 The world's smartest system wide grammar assistant; a better version of the Apple Intelligence Writing Tools. Works on W. 핵심 구조 신호는 Swift, README.md, LICENSE, ci, docs이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+개발 생산성/DevTools 관점에서 The world's smartest system wide grammar assistant; a better version of the Apple Intelligence Writing Tools. Works on W. 핵심 구조 신호는 Swift, README.md, LICENSE, ci, docs이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

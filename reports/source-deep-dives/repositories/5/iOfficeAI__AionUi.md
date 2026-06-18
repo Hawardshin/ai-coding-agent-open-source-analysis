@@ -1,63 +1,63 @@
-# iOfficeAI/AionUi Source Deep Dive
+# iOfficeAI/AionUi 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!
 
 ## 요약
 
-- 조사 단위: `sources/iOfficeAI__AionUi` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,759 files, 386 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/iOfficeAI__AionUi` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,759 files, 386 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/e2e/specs/ext-mcp.e2e.ts, scripts/build-mcp-servers.js, packages/desktop/src/renderer/services/i18n/locales/zh-TW/mcp.json이고, 의존성 단서는 openai, anthropic, modelcontextprotocol, express, next, react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/e2e/specs/ext-mcp.e2e.ts, scripts/build-mcp-servers.js, packages/desktop/src/renderer/services/i18n/locales/zh-TW/mcp.json이고, 의존성 단서는 openai, anthropic, modelcontextprotocol, express, next, react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | iOfficeAI/AionUi |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | iOfficeAI/AionUi |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 28443 |
 | Forks | 2798 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/iOfficeAI__AionUi](../../../../sources/iOfficeAI__AionUi) |
-| Existing report | [reports/global-trending/repositories/iOfficeAI__AionUi.md](../../../global-trending/repositories/iOfficeAI__AionUi.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/iOfficeAI__AionUi](../../../../sources/iOfficeAI__AionUi) |
+| 기존 보고서 | [reports/global-trending/repositories/iOfficeAI__AionUi.md](../../../global-trending/repositories/iOfficeAI__AionUi.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1759 / 386 |
-| Max observed depth | 11 |
-| Top directories | .aionui, .claude, .gemini, .github, .specify, docs, examples, homebrew, mobile, packages, patches, public, resources, scripts, tests |
-| Top extensions | .ts: 753, .tsx: 365, .json: 240, .md: 122, (none): 47, .svg: 44, .css: 40, .png: 40, .js: 30, .yml: 23, .gif: 19, .sh: 11 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 1759 / 386 |
+| 관측 최대 깊이 | 11 |
+| 상위 디렉터리 | .aionui, .claude, .gemini, .github, .specify, docs, examples, homebrew, mobile, packages, patches, public, resources, scripts, tests |
+| 상위 확장자 | .ts: 753, .tsx: 365, .json: 240, .md: 122, (none): 47, .svg: 44, .css: 40, .png: 40, .js: 30, .yml: 23, .gif: 19, .sh: 11 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 91 |
 | packages/desktop | packages workspace | 75 |
@@ -78,9 +78,9 @@ Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | dev | electron-vite dev --config packages/desktop/electron.vite.config.ts |
 | serve-dev | package.json | start | electron-vite dev --config packages/desktop/electron.vite.config.ts |
@@ -124,24 +124,24 @@ Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code
 | serve-dev | package.json | debug:perf | cross-env ACP_PERF=1 PERF_MONITOR=1 bun start |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | express, next, react |
 | developerSurface | vscode, electron |
-| observability | none |
+| observability | 없음 |
 | browserAutomation | playwright |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [tests/e2e/specs/ext-mcp.e2e.ts](../../../../sources/iOfficeAI__AionUi/tests/e2e/specs/ext-mcp.e2e.ts) | mcp signal |
 | mcp | [scripts/build-mcp-servers.js](../../../../sources/iOfficeAI__AionUi/scripts/build-mcp-servers.js) | mcp signal |
@@ -157,9 +157,9 @@ Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code
 | entrypoints | [packages/web-cli/bin/aionui-web.js](../../../../sources/iOfficeAI__AionUi/packages/web-cli/bin/aionui-web.js) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 8 | [packages/web-host/tests/fixtures/renderer/assets/main.js](../../../../sources/iOfficeAI__AionUi/packages/web-host/tests/fixtures/renderer/assets/main.js)<br>[packages/web-host/src/index.ts](../../../../sources/iOfficeAI__AionUi/packages/web-host/src/index.ts)<br>[packages/web-cli/src/index.ts](../../../../sources/iOfficeAI__AionUi/packages/web-cli/src/index.ts)<br>[packages/web-cli/bin/aionui-web.js](../../../../sources/iOfficeAI__AionUi/packages/web-cli/bin/aionui-web.js)<br>[packages/desktop/src/index.ts](../../../../sources/iOfficeAI__AionUi/packages/desktop/src/index.ts)<br>[packages/desktop/src/renderer/main.tsx](../../../../sources/iOfficeAI__AionUi/packages/desktop/src/renderer/main.tsx)<br>[packages/desktop/src/preload/main.ts](../../../../sources/iOfficeAI__AionUi/packages/desktop/src/preload/main.ts)<br>[packages/desktop/src/common/adapter/main.ts](../../../../sources/iOfficeAI__AionUi/packages/desktop/src/common/adapter/main.ts) |
 | agentRuntime | 226 | [AGENTS.md](../../../../sources/iOfficeAI__AionUi/AGENTS.md)<br>[tests/unit/skills/SkillsHubSettings.dom.test.tsx](../../../../sources/iOfficeAI__AionUi/tests/unit/skills/SkillsHubSettings.dom.test.tsx)<br>[tests/unit/skills/skillSuggestParser.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/skills/skillSuggestParser.test.ts)<br>[tests/unit/skills/useAssistantSkillsIntegration.dom.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/skills/useAssistantSkillsIntegration.dom.test.ts)<br>[tests/unit/renderer/hooks/teamCreateModal.dom.test.tsx](../../../../sources/iOfficeAI__AionUi/tests/unit/renderer/hooks/teamCreateModal.dom.test.tsx)<br>[tests/unit/renderer/hooks/useManagedAgents.dom.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/renderer/hooks/useManagedAgents.dom.test.ts)<br>[tests/e2e/specs/agent-settings-detection.e2e.ts](../../../../sources/iOfficeAI__AionUi/tests/e2e/specs/agent-settings-detection.e2e.ts)<br>[tests/e2e/features/settings/skills/.gitkeep](../../../../sources/iOfficeAI__AionUi/tests/e2e/features/settings/skills/.gitkeep) |
@@ -175,39 +175,39 @@ Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code
 | config | 11 | [Makefile](../../../../sources/iOfficeAI__AionUi/Makefile)<br>[package.json](../../../../sources/iOfficeAI__AionUi/package.json)<br>[tsconfig.json](../../../../sources/iOfficeAI__AionUi/tsconfig.json)<br>[packages/web-host/package.json](../../../../sources/iOfficeAI__AionUi/packages/web-host/package.json)<br>[packages/web-host/tsconfig.json](../../../../sources/iOfficeAI__AionUi/packages/web-host/tsconfig.json)<br>[packages/web-cli/package.json](../../../../sources/iOfficeAI__AionUi/packages/web-cli/package.json)<br>[packages/web-cli/tsconfig.json](../../../../sources/iOfficeAI__AionUi/packages/web-cli/tsconfig.json)<br>[packages/shared-scripts/package.json](../../../../sources/iOfficeAI__AionUi/packages/shared-scripts/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 406 | [tests/vitest.dom.setup.ts](../../../../sources/iOfficeAI__AionUi/tests/vitest.dom.setup.ts)<br>[tests/vitest.setup.ts](../../../../sources/iOfficeAI__AionUi/tests/vitest.setup.ts)<br>[tests/unit/acpConfigOptions.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/acpConfigOptions.test.ts)<br>[tests/unit/gpuRecovery.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/gpuRecovery.test.ts)<br>[tests/unit/messageFiles.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/messageFiles.test.ts)<br>[tests/unit/persistOnQuit.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/persistOnQuit.test.ts) |
-| CI workflows | 13 | [.github/workflows/_build-reusable.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/_build-reusable.yml)<br>[.github/workflows/build-and-release.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/build-and-release.yml)<br>[.github/workflows/build-manual.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/build-manual.yml)<br>[.github/workflows/bump-homebrew.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/bump-homebrew.yml)<br>[.github/workflows/gpt-pr-assessment.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/gpt-pr-assessment.yml)<br>[.github/workflows/gpt-review.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/gpt-review.yml) |
-| Containers / deploy | 1 | [Dockerfile](../../../../sources/iOfficeAI__AionUi/Dockerfile) |
-| Security / policy | 1 | [tests/e2e/features/conversations/aionrs/permission-modes.e2e.ts](../../../../sources/iOfficeAI__AionUi/tests/e2e/features/conversations/aionrs/permission-modes.e2e.ts) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/iOfficeAI__AionUi/AGENTS.md)<br>[CLAUDE.md](../../../../sources/iOfficeAI__AionUi/CLAUDE.md) |
+| 테스트/평가 | 406 | [tests/vitest.dom.setup.ts](../../../../sources/iOfficeAI__AionUi/tests/vitest.dom.setup.ts)<br>[tests/vitest.setup.ts](../../../../sources/iOfficeAI__AionUi/tests/vitest.setup.ts)<br>[tests/unit/acpConfigOptions.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/acpConfigOptions.test.ts)<br>[tests/unit/gpuRecovery.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/gpuRecovery.test.ts)<br>[tests/unit/messageFiles.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/messageFiles.test.ts)<br>[tests/unit/persistOnQuit.test.ts](../../../../sources/iOfficeAI__AionUi/tests/unit/persistOnQuit.test.ts) |
+| CI workflow | 13 | [.github/workflows/_build-reusable.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/_build-reusable.yml)<br>[.github/workflows/build-and-release.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/build-and-release.yml)<br>[.github/workflows/build-manual.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/build-manual.yml)<br>[.github/workflows/bump-homebrew.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/bump-homebrew.yml)<br>[.github/workflows/gpt-pr-assessment.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/gpt-pr-assessment.yml)<br>[.github/workflows/gpt-review.yml](../../../../sources/iOfficeAI__AionUi/.github/workflows/gpt-review.yml) |
+| 컨테이너/배포 | 1 | [Dockerfile](../../../../sources/iOfficeAI__AionUi/Dockerfile) |
+| 보안/정책 | 1 | [tests/e2e/features/conversations/aionrs/permission-modes.e2e.ts](../../../../sources/iOfficeAI__AionUi/tests/e2e/features/conversations/aionrs/permission-modes.e2e.ts) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/iOfficeAI__AionUi/AGENTS.md)<br>[CLAUDE.md](../../../../sources/iOfficeAI__AionUi/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/e2e/specs/ext-mcp.e2e.ts`, `scripts/build-mcp-servers.js`, `packages/desktop/src/renderer/services/i18n/locales/zh-TW/mcp.json`.
-2. Trace execution through entrypoints: `packages/web-host/tests/fixtures/renderer/assets/main.js`, `packages/web-host/src/index.ts`, `packages/web-cli/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tests/unit/skills/SkillsHubSettings.dom.test.tsx`, `tests/unit/skills/skillSuggestParser.test.ts`.
-4. Inspect retrieval/memory/indexing through: `tests/fixtures/fake-acp-cli/index.js`, `tests/e2e/helpers/index.ts`, `tests/e2e/helpers/bridge/index.ts`.
-5. Verify behavior through test/eval files: `tests/vitest.dom.setup.ts`, `tests/vitest.setup.ts`, `tests/unit/acpConfigOptions.test.ts`.
+1. 핵심 참조에서 시작: `tests/e2e/specs/ext-mcp.e2e.ts`, `scripts/build-mcp-servers.js`, `packages/desktop/src/renderer/services/i18n/locales/zh-TW/mcp.json`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/web-host/tests/fixtures/renderer/assets/main.js`, `packages/web-host/src/index.ts`, `packages/web-cli/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tests/unit/skills/SkillsHubSettings.dom.test.tsx`, `tests/unit/skills/skillSuggestParser.test.ts`.
+4. retrieval/memory/indexing 확인: `tests/fixtures/fake-acp-cli/index.js`, `tests/e2e/helpers/index.ts`, `tests/e2e/helpers/bridge/index.ts`.
+5. test/eval 파일로 동작 검증: `tests/vitest.dom.setup.ts`, `tests/vitest.setup.ts`, `tests/unit/acpConfigOptions.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Free, local, open source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ mo. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, Makefile, README.md, AGENTS.md이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Free, local, open source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ mo. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, Makefile, README.md, AGENTS.md이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

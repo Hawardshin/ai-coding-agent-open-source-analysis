@@ -1,63 +1,63 @@
-# promptfoo/promptfoo Source Deep Dive
+# promptfoo/promptfoo 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 5400 files, 1002 directories.
 
 ## 요약
 
-- 조사 단위: `sources/promptfoo__promptfoo` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 5,398 files, 1,001 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/promptfoo__promptfoo` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 5,398 files, 1,001 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=test/smoke/mcp.test.ts, test/redteam/plugins/mcp.test.ts, test/providers/openai/responses/mcp.test.ts이고, 의존성 단서는 openai, anthropic, claude, express, commander, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=test/smoke/mcp.test.ts, test/redteam/plugins/mcp.test.ts, test/providers/openai/responses/mcp.test.ts이고, 의존성 단서는 openai, anthropic, claude, express, commander, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | promptfoo/promptfoo |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | promptfoo/promptfoo |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 22326 |
 | Forks | 1995 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | deep-source+report |
-| Source | [sources/promptfoo__promptfoo](../../../../sources/promptfoo__promptfoo) |
-| Existing report | [reports/global-trending/repositories/promptfoo__promptfoo.md](../../../global-trending/repositories/promptfoo__promptfoo.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/promptfoo__promptfoo](../../../../sources/promptfoo__promptfoo) |
+| 기존 보고서 | [reports/global-trending/repositories/promptfoo__promptfoo.md](../../../global-trending/repositories/promptfoo__promptfoo.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 5398 / 1001 |
-| Max observed depth | 10 |
-| Top directories | .agents, .claude, .claude-plugin, .cursor, .devcontainer, .github, .husky, architecture, code-scan-action, docs, drizzle, examples, helm, plugins, scripts, site, src, test, tools |
-| Top extensions | .ts: 1950, .md: 833, .tsx: 631, .yaml: 625, .png: 367, .json: 164, .jpg: 109, .js: 106, .py: 103, .svg: 89, .txt: 85, .css: 75 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 5398 / 1001 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .agents, .claude, .claude-plugin, .cursor, .devcontainer, .github, .husky, architecture, code-scan-action, docs, drizzle, examples, helm, plugins, scripts, site, src, test, tools |
+| 상위 확장자 | .ts: 1950, .md: 833, .tsx: 631, .yaml: 625, .png: 367, .json: 164, .jpg: 109, .js: 106, .py: 103, .svg: 89, .txt: 85, .css: 75 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 94 |
 | docs | documentation surface | 4 |
@@ -79,9 +79,9 @@ Local clone structure analysis: 5400 files, 1002 directories.
 | examples/openai-agents | examples workspace | 2 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | audit:fix | npm audit fix && npm audit fix --prefix src/app && npm audit fix --prefix site |
 | utility | package.json | architecture:baseline | tsx scripts/regenerateEdgeBaseline.ts |
@@ -125,24 +125,24 @@ Local clone structure analysis: 5400 files, 1002 directories.
 | test | package.json | test:app:browser | npm --prefix src/app run test:browser -- |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic, claude |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | express |
 | developerSurface | commander |
 | observability | opentelemetry |
 | browserAutomation | playwright, puppeteer |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [test/smoke/mcp.test.ts](../../../../sources/promptfoo__promptfoo/test/smoke/mcp.test.ts) | mcp signal |
 | mcp | [test/redteam/plugins/mcp.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/mcp.test.ts) | mcp signal |
@@ -158,9 +158,9 @@ Local clone structure analysis: 5400 files, 1002 directories.
 | entrypoints | [src/index.ts](../../../../sources/promptfoo__promptfoo/src/index.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 28 | [test/util/server.test.ts](../../../../sources/promptfoo__promptfoo/test/util/server.test.ts)<br>[test/server/server.test.ts](../../../../sources/promptfoo__promptfoo/test/server/server.test.ts)<br>[test/commands/mcp/server.test.ts](../../../../sources/promptfoo__promptfoo/test/commands/mcp/server.test.ts)<br>[src/index.ts](../../../../sources/promptfoo__promptfoo/src/index.ts)<br>[src/main.ts](../../../../sources/promptfoo__promptfoo/src/main.ts)<br>[src/util/server.ts](../../../../sources/promptfoo__promptfoo/src/util/server.ts)<br>[src/types/api/server.ts](../../../../sources/promptfoo__promptfoo/src/types/api/server.ts)<br>[src/server/server.ts](../../../../sources/promptfoo__promptfoo/src/server/server.ts) |
 | agentRuntime | 303 | [AGENTS.md](../../../../sources/promptfoo__promptfoo/AGENTS.md)<br>[tools/biome/no-direct-process-env-mutation.grit](../../../../sources/promptfoo__promptfoo/tools/biome/no-direct-process-env-mutation.grit)<br>[test/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/AGENTS.md)<br>[test/util/agent/agentClient.test.ts](../../../../sources/promptfoo__promptfoo/test/util/agent/agentClient.test.ts)<br>[test/util/agent/fsOperations.test.ts](../../../../sources/promptfoo__promptfoo/test/util/agent/fsOperations.test.ts)<br>[test/util/agent/targetLink.test.ts](../../../../sources/promptfoo__promptfoo/test/util/agent/targetLink.test.ts)<br>[test/smoke/fixtures/providers/skill-metadata-esm.mjs](../../../../sources/promptfoo__promptfoo/test/smoke/fixtures/providers/skill-metadata-esm.mjs)<br>[test/smoke/fixtures/configs/skill-used-provider-esm.yaml](../../../../sources/promptfoo__promptfoo/test/smoke/fixtures/configs/skill-used-provider-esm.yaml) |
@@ -176,39 +176,39 @@ Local clone structure analysis: 5400 files, 1002 directories.
 | config | 52 | [package.json](../../../../sources/promptfoo__promptfoo/package.json)<br>[pnpm-workspace.yaml](../../../../sources/promptfoo__promptfoo/pnpm-workspace.yaml)<br>[tsconfig.json](../../../../sources/promptfoo__promptfoo/tsconfig.json)<br>[test/smoke/fixtures/providers/go.mod](../../../../sources/promptfoo__promptfoo/test/smoke/fixtures/providers/go.mod)<br>[test/smoke/fixtures/frontend-ts-provider/tsconfig.json](../../../../sources/promptfoo__promptfoo/test/smoke/fixtures/frontend-ts-provider/tsconfig.json)<br>[src/golang/go.mod](../../../../sources/promptfoo__promptfoo/src/golang/go.mod)<br>[src/app/package.json](../../../../sources/promptfoo__promptfoo/src/app/package.json)<br>[src/app/tsconfig.json](../../../../sources/promptfoo__promptfoo/src/app/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 1708 | [test/account.test.ts](../../../../sources/promptfoo__promptfoo/test/account.test.ts)<br>[test/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/AGENTS.md)<br>[test/cache.test.ts](../../../../sources/promptfoo__promptfoo/test/cache.test.ts)<br>[test/CLAUDE.md](../../../../sources/promptfoo__promptfoo/test/CLAUDE.md)<br>[test/config-schema.test.ts](../../../../sources/promptfoo__promptfoo/test/config-schema.test.ts)<br>[test/constants.test.ts](../../../../sources/promptfoo__promptfoo/test/constants.test.ts) |
-| CI workflows | 16 | [site/docs/integrations/azure-pipelines.md](../../../../sources/promptfoo__promptfoo/site/docs/integrations/azure-pipelines.md)<br>[site/docs/integrations/jenkins.md](../../../../sources/promptfoo__promptfoo/site/docs/integrations/jenkins.md)<br>[code-scan-action/.github/workflows/test-event.json](../../../../sources/promptfoo__promptfoo/code-scan-action/.github/workflows/test-event.json)<br>[code-scan-action/.github/workflows/test-scan.yml](../../../../sources/promptfoo__promptfoo/code-scan-action/.github/workflows/test-scan.yml)<br>[.github/workflows/deploy-launcher.yml](../../../../sources/promptfoo__promptfoo/.github/workflows/deploy-launcher.yml)<br>[.github/workflows/docker.yml](../../../../sources/promptfoo__promptfoo/.github/workflows/docker.yml) |
-| Containers / deploy | 22 | [Dockerfile](../../../../sources/promptfoo__promptfoo/Dockerfile)<br>[site/static/img/blog/grok-4-political-bias/charts/contrarian-scatter.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/contrarian-scatter.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/extremism-comparison.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/extremism-comparison.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/judge-agreement-heatmap.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/judge-agreement-heatmap.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/musk-bias-comparison.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/musk-bias-comparison.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/political-bias-likert-scale.png](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/political-bias-likert-scale.png) |
-| Security / policy | 218 | [SECURITY.md](../../../../sources/promptfoo__promptfoo/SECURITY.md)<br>[test/util/oauth.test.ts](../../../../sources/promptfoo__promptfoo/test/util/oauth.test.ts)<br>[test/redteam/plugins/policy.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/policy.test.ts)<br>[test/redteam/plugins/rbac.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/rbac.test.ts)<br>[test/redteam/plugins/policy/utils.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/policy/utils.test.ts)<br>[test/redteam/plugins/policy/validators.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/policy/validators.test.ts) |
-| Agent instructions | 43 | [AGENTS.md](../../../../sources/promptfoo__promptfoo/AGENTS.md)<br>[CLAUDE.md](../../../../sources/promptfoo__promptfoo/CLAUDE.md)<br>[test/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/AGENTS.md)<br>[test/CLAUDE.md](../../../../sources/promptfoo__promptfoo/test/CLAUDE.md)<br>[test/fixtures/agent-skills/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/fixtures/agent-skills/AGENTS.md)<br>[test/agentSkills/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/agentSkills/AGENTS.md) |
+| 테스트/평가 | 1708 | [test/account.test.ts](../../../../sources/promptfoo__promptfoo/test/account.test.ts)<br>[test/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/AGENTS.md)<br>[test/cache.test.ts](../../../../sources/promptfoo__promptfoo/test/cache.test.ts)<br>[test/CLAUDE.md](../../../../sources/promptfoo__promptfoo/test/CLAUDE.md)<br>[test/config-schema.test.ts](../../../../sources/promptfoo__promptfoo/test/config-schema.test.ts)<br>[test/constants.test.ts](../../../../sources/promptfoo__promptfoo/test/constants.test.ts) |
+| CI workflow | 16 | [site/docs/integrations/azure-pipelines.md](../../../../sources/promptfoo__promptfoo/site/docs/integrations/azure-pipelines.md)<br>[site/docs/integrations/jenkins.md](../../../../sources/promptfoo__promptfoo/site/docs/integrations/jenkins.md)<br>[code-scan-action/.github/workflows/test-event.json](../../../../sources/promptfoo__promptfoo/code-scan-action/.github/workflows/test-event.json)<br>[code-scan-action/.github/workflows/test-scan.yml](../../../../sources/promptfoo__promptfoo/code-scan-action/.github/workflows/test-scan.yml)<br>[.github/workflows/deploy-launcher.yml](../../../../sources/promptfoo__promptfoo/.github/workflows/deploy-launcher.yml)<br>[.github/workflows/docker.yml](../../../../sources/promptfoo__promptfoo/.github/workflows/docker.yml) |
+| 컨테이너/배포 | 22 | [Dockerfile](../../../../sources/promptfoo__promptfoo/Dockerfile)<br>[site/static/img/blog/grok-4-political-bias/charts/contrarian-scatter.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/contrarian-scatter.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/extremism-comparison.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/extremism-comparison.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/judge-agreement-heatmap.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/judge-agreement-heatmap.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/musk-bias-comparison.jpg](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/musk-bias-comparison.jpg)<br>[site/static/img/blog/grok-4-political-bias/charts/political-bias-likert-scale.png](../../../../sources/promptfoo__promptfoo/site/static/img/blog/grok-4-political-bias/charts/political-bias-likert-scale.png) |
+| 보안/정책 | 218 | [SECURITY.md](../../../../sources/promptfoo__promptfoo/SECURITY.md)<br>[test/util/oauth.test.ts](../../../../sources/promptfoo__promptfoo/test/util/oauth.test.ts)<br>[test/redteam/plugins/policy.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/policy.test.ts)<br>[test/redteam/plugins/rbac.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/rbac.test.ts)<br>[test/redteam/plugins/policy/utils.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/policy/utils.test.ts)<br>[test/redteam/plugins/policy/validators.test.ts](../../../../sources/promptfoo__promptfoo/test/redteam/plugins/policy/validators.test.ts) |
+| 에이전트 지시문 | 43 | [AGENTS.md](../../../../sources/promptfoo__promptfoo/AGENTS.md)<br>[CLAUDE.md](../../../../sources/promptfoo__promptfoo/CLAUDE.md)<br>[test/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/AGENTS.md)<br>[test/CLAUDE.md](../../../../sources/promptfoo__promptfoo/test/CLAUDE.md)<br>[test/fixtures/agent-skills/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/fixtures/agent-skills/AGENTS.md)<br>[test/agentSkills/AGENTS.md](../../../../sources/promptfoo__promptfoo/test/agentSkills/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `test/smoke/mcp.test.ts`, `test/redteam/plugins/mcp.test.ts`, `test/providers/openai/responses/mcp.test.ts`.
-2. Trace execution through entrypoints: `test/util/server.test.ts`, `test/server/server.test.ts`, `test/commands/mcp/server.test.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tools/biome/no-direct-process-env-mutation.grit`, `test/AGENTS.md`.
-4. Inspect retrieval/memory/indexing through: `test/index.test.ts`, `test/util/exportToFile/index.test.ts`, `test/types/index.test.ts`.
-5. Verify behavior through test/eval files: `test/account.test.ts`, `test/AGENTS.md`, `test/cache.test.ts`.
+1. 핵심 참조에서 시작: `test/smoke/mcp.test.ts`, `test/redteam/plugins/mcp.test.ts`, `test/providers/openai/responses/mcp.test.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `test/util/server.test.ts`, `test/server/server.test.ts`, `test/commands/mcp/server.test.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tools/biome/no-direct-process-env-mutation.grit`, `test/AGENTS.md`.
+4. retrieval/memory/indexing 확인: `test/index.test.ts`, `test/util/exportToFile/index.test.ts`, `test/types/index.test.ts`.
+5. test/eval 파일로 동작 검증: `test/account.test.ts`, `test/AGENTS.md`, `test/cache.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 5400 files, 1002 directories.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, AGENTS.md, CLAUDE.md이며, deep-source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 5400 files, 1002 directories.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, AGENTS.md, CLAUDE.md이며, 심층 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

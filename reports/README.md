@@ -1,44 +1,43 @@
-# Reports Reading Index
+# 전체 보고서 읽기 지도
 
-Generated: 2026-06-18T15:13:01.107Z
+생성 시각: 2026-06-18T15:31:47.876Z
 
-This is the entry point for reading the repository directly from GitHub or a local checkout. Deployment-specific web UI has been removed; use these category pages and JSON indexes instead.
+이 페이지는 GitHub나 로컬 checkout에서 레포를 그대로 읽기 위한 최상위 보고서 지도입니다. 배포용 웹 UI는 제거되어 있으므로, 이 README와 하위 카테고리/표/JSON 인덱스를 기준으로 탐색하면 됩니다.
 
 ## 요약
 
 - 조사 단위: 레포에 커밋된 모든 Markdown 보고서의 최상위 읽기 지도입니다.
-- 포함 범위: 2,594 reports, 18 report topics, 16 folder README guides입니다.
-- 탐색 방식: Start Here로 전체 흐름을 잡고, Topics로 주제별 조사에 들어가며, Folder README Map으로 실제 폴더 구조를 따라갑니다.
+- 포함 범위: 2,594개 보고서, 18개 보고서 주제, 16개 폴더 README 지도입니다.
+- 탐색 방식: 먼저 읽기로 전체 흐름을 잡고, 주제별 목차로 조사에 들어가며, 폴더별 README 지도로 실제 폴더 구조를 따라갑니다.
 
 ## 총평
 
-이 README 하나를 시작점으로 삼으면 레포 전체 조사를 끊긴 링크 없이 따라갈 수 있습니다. 주제 중심으로 볼 때는 Reports by Topic, 물리 구조 중심으로 볼 때는 Folder README Map, 정량 비교가 필요할 때는 Report Tables를 쓰는 구성이 가장 읽기 쉽습니다.
+이 README 하나를 시작점으로 삼으면 레포 전체 조사를 끊긴 링크 없이 따라갈 수 있습니다. 주제 중심으로 볼 때는 주제별 보고서 목차, 물리 구조 중심으로 볼 때는 폴더별 README 지도, 정량 비교가 필요할 때는 표/CSV 목차를 쓰는 구성이 가장 읽기 쉽습니다.
 
-## Scope
+## 범위
 
-- Markdown reports indexed: 2594
-- Topic categories: 18
-- Folder README guides: 16
-- Data index: [data/report-index.json](../data/report-index.json)
-- Topic data folder: [data/report-categories/](../data/report-categories)
-- Table data folder: [data/report-tables/](../data/report-tables)
+- 색인된 Markdown 보고서: 2594
+- 보고서 주제: 18
+- 폴더 README 지도: 16
+- 데이터 인덱스: [data/report-index.json](../data/report-index.json)
+- 주제 데이터 폴더: [data/report-categories/](../data/report-categories)
+- 표 데이터 폴더: [data/report-tables/](../data/report-tables)
 
-## Navigation Map
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Start Here](by-topic/start-here/README.md) | First-pass reading order across the major investigations. |
-| [Reports by Topic](by-topic/README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](tables/README.md) | Table-first scanning, CSV exports, and topic/type matrices. |
-| [Repository Insights](repository-insights/README.md) | Repository-by-repository insights, risks, evidence, and next-read links. |
-| [Source Deep Dives](source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Artifact Categories](categories/README.md) | Artifact-level categories across repositories, research, presentations, and trend sources. |
+| [먼저 읽기](by-topic/start-here/README.md) | 주요 조사 흐름을 처음부터 잡는 순서. |
+| [주제별 보고서 목차](by-topic/README.md) | 모든 Markdown 보고서를 조사 질문 기준으로 탐색. |
+| [표/CSV 목차](tables/README.md) | 표, CSV, 주제/유형 matrix 중심 탐색. |
+| [레포별 인사이트](repository-insights/README.md) | 레포별 총평, 위험, 근거, 다음 읽기 링크. |
+| [소스 딥다이브](source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [근거 카테고리](categories/README.md) | 오픈소스, 논문, 발표, 트렌드 출처의 artifact 분류. |
 
-## Start Here
+## 먼저 읽기
 
-| Report | Type | Folder | Priority |
+| 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
-| [Category Index](categories/README.md) | category-guide | categories | 182 |
 | [30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서](comparisons/01-project-taxonomy-and-feature-comparison.md) | comparison-report | comparisons | 182 |
 | [유사군별 비교와 관계 지도](comparisons/02-similarity-clusters.md) | comparison-report | comparisons | 182 |
 | [LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄](llm-wiki/00-llm-wiki-100-summary.md) | llm-wiki-report | llm-wiki/00-llm-wiki-100-summary.md | 182 |
@@ -49,22 +48,22 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [Source Inventory](00-source-inventory.md) | overview-report | root | 158 |
 | [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md) | infrastructure-report | adjacent-tech | 157 |
 | [Claude Code / Codex Harness Materials 1000+ Corpus](agent-harness/00-claude-code-codex-harness-materials-1000.md) | agent-harness-report | agent-harness | 157 |
+| [근거 카테고리 목차](categories/README.md) | category-guide | categories | 157 |
 | [Global Trending Open Source 500 Analysis](global-trending/00-global-open-source-trend-report-2026-06-18.md) | global-trending-report | global-trending | 157 |
 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | 157 |
 | [Agent Harness Conference and Presentation Patterns](presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
-| [Repository Insights](repository-insights/README.md) | overview-report | repository-insights | 157 |
+| [레포별 인사이트](repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
-| [Source Deep Dives](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
+| [소스 딥다이브](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
 | [127개 로컬 클론 구조 분석 총괄](clone-structure-analysis-127.md) | overview-report | root | 143 |
 | [전체 소스 스캔과 사용자 의도-코드 연결 방식 리서치 요약](full-source-scan-research-summary-2026-06-18.md) | overview-report | root | 143 |
 
 
-## High-Signal Overview Reports
+## 핵심 총괄 보고서
 
-| Report | Type | Folder | Priority |
+| 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
-| [Category Index](categories/README.md) | category-guide | categories | 182 |
 | [30개 오픈소스 AI 코딩/에이전트 프로젝트 비교 분류 보고서](comparisons/01-project-taxonomy-and-feature-comparison.md) | comparison-report | comparisons | 182 |
 | [유사군별 비교와 관계 지도](comparisons/02-similarity-clusters.md) | comparison-report | comparisons | 182 |
 | [LLM 위키 / AI 지식베이스 오픈소스 100개 구조 분석 총괄](llm-wiki/00-llm-wiki-100-summary.md) | llm-wiki-report | llm-wiki/00-llm-wiki-100-summary.md | 182 |
@@ -76,76 +75,77 @@ This is the entry point for reading the repository directly from GitHub or a loc
 | [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md) | infrastructure-report | adjacent-tech | 157 |
 | [컨텍스트/RAG/vLLM/local LLM/하네스 50개 레포지토리 상세 분석](adjacent-tech/02-repository-analysis-50.md) | infrastructure-report | adjacent-tech | 157 |
 | [Claude Code / Codex Harness Materials 1000+ Corpus](agent-harness/00-claude-code-codex-harness-materials-1000.md) | agent-harness-report | agent-harness | 157 |
+| [근거 카테고리 목차](categories/README.md) | category-guide | categories | 157 |
 | [Full Source Scan Deep Dive: 필요한 파일을 찾고 읽는 구현 로직](full-source-scan/02-file-discovery-reading-implementation-deep-dive.md) | source-scan-report | full-source-scan | 157 |
 | [Global Trending Open Source 500 Analysis](global-trending/00-global-open-source-trend-report-2026-06-18.md) | global-trending-report | global-trending | 157 |
 | [한국 개발자 커뮤니티 트렌딩 오픈소스 500개 분석](korea-trending/00-korea-open-source-trend-report-2026-06-18.md) | korea-trending-report | korea-trending | 157 |
 | [Agent Harness Conference and Presentation Patterns](presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
 | [AI Usage Trend Conferences: Big Tech, Amazon/AWS, Global and Korea](presentations/01-ai-usage-trends-bigtech-korea-6-12mo.md) | presentation-report | presentations | 157 |
-| [Repository Insights](repository-insights/README.md) | overview-report | repository-insights | 157 |
+| [레포별 인사이트](repository-insights/README.md) | overview-report | repository-insights | 157 |
 | [2026 AI 코딩 에이전트 설계 트렌드 종합 보고서](research/01-agent-trends-2026.md) | research-synthesis | research | 157 |
-| [Source Deep Dives](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
-| [Source Trend Insights](source-insights/README.md) | source-insight-report | source-insights | 157 |
-| [Agent Harness and Orchestration](categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
-| [AI Infrastructure and Serving](categories/ai-infrastructure-serving/README.md) | category-guide | categories | 156 |
-| [AI Usage Trends](categories/ai-usage-trends/README.md) | category-guide | categories | 156 |
-| [Coding Agents and IDEs](categories/coding-agents-ides/README.md) | category-guide | categories | 156 |
-| [Context and Memory](categories/context-memory/README.md) | category-guide | categories | 156 |
-| [Data Platforms and Vector Databases](categories/data-platforms-vector-databases/README.md) | category-guide | categories | 156 |
-| [Developer Productivity and DevTools](categories/developer-productivity-devtools/README.md) | category-guide | categories | 156 |
-| [Evals, Observability, and Quality](categories/evals-observability-quality/README.md) | category-guide | categories | 156 |
-| [Global AI Open Source](categories/global-ai-open-source/README.md) | category-guide | categories | 156 |
+| [소스 딥다이브](source-deep-dives/README.md) | source-deep-dive-report | source-deep-dives | 157 |
+| [소스 트렌드 인사이트](source-insights/README.md) | source-insight-report | source-insights | 157 |
+| [에이전트 하네스/오케스트레이션](categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
+| [AI 인프라/서빙](categories/ai-infrastructure-serving/README.md) | category-guide | categories | 156 |
+| [AI 활용 트렌드](categories/ai-usage-trends/README.md) | category-guide | categories | 156 |
+| [코딩 에이전트/IDE](categories/coding-agents-ides/README.md) | category-guide | categories | 156 |
+| [컨텍스트/메모리](categories/context-memory/README.md) | category-guide | categories | 156 |
+| [데이터 플랫폼/벡터 DB](categories/data-platforms-vector-databases/README.md) | category-guide | categories | 156 |
+| [개발 생산성/DevTools](categories/developer-productivity-devtools/README.md) | category-guide | categories | 156 |
+| [평가/관측/품질](categories/evals-observability-quality/README.md) | category-guide | categories | 156 |
+| [글로벌 AI 오픈소스](categories/global-ai-open-source/README.md) | category-guide | categories | 156 |
 
 
-## Topics
+## 주제별 목차
 
-| Topic | Reports | Description |
+| 주제 | 보고서 수 | 설명 |
 | --- | ---: | --- |
-| [Repository Deep Dives](by-topic/repository-deep-dives/README.md) | 2434 | Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures. |
-| [Comparisons and Similarity Maps](by-topic/comparisons/README.md) | 1194 | Cross-repository comparisons, taxonomy matrices, and similarity clusters. |
-| [Source Code Deep Dives](by-topic/source-code-deep-dives/README.md) | 1183 | Local source scans and source-derived insights with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence. |
-| [Global Trending Open Source](by-topic/global-trending-open-source/README.md) | 502 | Global trending open-source corpus and per-repository reports. |
-| [Korea Trending Open Source](by-topic/korea-trending-open-source/README.md) | 502 | Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports. |
-| [LLM Wiki, RAG, and Knowledge Bases](by-topic/llm-wiki/README.md) | 292 | LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports. |
-| [Agent Harness, MCP, and Orchestration](by-topic/agent-harness/README.md) | 281 | Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure. |
-| [Clone Structure and Inventory](by-topic/clone-structure-inventory/README.md) | 128 | Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports. |
-| [Coding Agents and IDEs](by-topic/coding-agents/README.md) | 125 | Core coding-agent repositories, terminal agents, IDE agents, and code-review agents. |
-| [Spec-Driven and Requirements](by-topic/spec-driven/README.md) | 42 | Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence. |
-| [Start Here](by-topic/start-here/README.md) | 21 | High-level maps and entry points for reading the repository. |
-| [Adjacent AI Infrastructure](by-topic/adjacent-infrastructure/README.md) | 19 | Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability. |
-| [Category Guides](by-topic/category-guides/README.md) | 18 | Generated category pages that group open-source, research, presentation, and trend artifacts. |
-| [Presentations and Conferences](by-topic/presentations-conferences/README.md) | 9 | Conference, talk, webinar, and presentation-method research. |
-| [Research Foundations](by-topic/research-foundations/README.md) | 6 | Evidence catalogs, conflicting theories, source catalogs, and research synthesis. |
-| [Source Catalogs and Inventories](by-topic/source-catalogs-and-inventories/README.md) | 6 | Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations. |
-| [AI Usage Trends](by-topic/ai-usage-trends/README.md) | 3 | Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals. |
-| [Full Source Scan and Code Retrieval](by-topic/full-source-scan/README.md) | 3 | How coding agents discover, index, search, and read source code. |
+| [레포별 딥다이브](by-topic/repository-deep-dives/README.md) | 2434 | 핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다. |
+| [비교/유사도 지도](by-topic/comparisons/README.md) | 1194 | 레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다. |
+| [소스 코드 딥다이브](by-topic/source-code-deep-dives/README.md) | 1186 | 로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다. |
+| [글로벌 트렌딩 오픈소스](by-topic/global-trending-open-source/README.md) | 502 | 전세계 트렌딩 오픈소스 코퍼스와 레포별 보고서를 묶은 주제입니다. |
+| [한국 트렌딩 오픈소스](by-topic/korea-trending-open-source/README.md) | 502 | 한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 트렌드 보고서를 묶은 주제입니다. |
+| [LLM 위키/RAG/지식베이스](by-topic/llm-wiki/README.md) | 292 | LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 보는 주제입니다. |
+| [에이전트 하네스/MCP/오케스트레이션](by-topic/agent-harness/README.md) | 281 | MCP, tool registry, hooks, skills, orchestration, workflow 실행 기반을 보는 주제입니다. |
+| [클론 구조/인벤토리](by-topic/clone-structure-inventory/README.md) | 128 | 로컬 클론 목록, 구조 분석, manifest, source directory, 레포별 구조 보고서입니다. |
+| [코딩 에이전트/IDE](by-topic/coding-agents/README.md) | 124 | 터미널 에이전트, IDE 에이전트, 코드 리뷰 에이전트, 코딩 보조 도구를 묶은 주제입니다. |
+| [스펙 드리븐/요구사항](by-topic/spec-driven/README.md) | 42 | 스펙 추출, 요구사항, 추적성, acceptance criteria, SDD 근거를 보는 주제입니다. |
+| [먼저 읽기](by-topic/start-here/README.md) | 21 | 전체 조사 흐름과 핵심 시작점을 빠르게 잡는 상위 지도입니다. |
+| [인접 AI 인프라](by-topic/adjacent-infrastructure/README.md) | 18 | 컨텍스트 엔지니어링, RAG 인프라, 벡터 DB, 로컬 LLM 서빙, 평가/관측성을 보는 주제입니다. |
+| [카테고리별 근거](by-topic/category-guides/README.md) | 18 | 오픈소스, 연구, 발표, 트렌드 근거를 artifact 기준으로 묶은 분류 지도입니다. |
+| [발표/컨퍼런스](by-topic/presentations-conferences/README.md) | 9 | 컨퍼런스, 키노트, 웨비나, 발표 방법론과 산업 신호를 모은 주제입니다. |
+| [연구 근거](by-topic/research-foundations/README.md) | 7 | 논문, 근거자료, 충돌 이론, 연구 종합 보고서를 모은 주제입니다. |
+| [소스 카탈로그/인벤토리](by-topic/source-catalogs-and-inventories/README.md) | 6 | 조사에 사용한 소스 카탈로그, 인벤토리, 클론 목록, evidence ledger입니다. |
+| [AI 활용 트렌드](by-topic/ai-usage-trends/README.md) | 3 | 빅테크, Amazon/AWS, 한국 컨퍼런스, 기업 도입 신호를 모은 최근 AI 활용 트렌드입니다. |
+| [전체 소스 스캔/코드 검색](by-topic/full-source-scan/README.md) | 3 | 코딩 에이전트가 소스를 발견하고 인덱싱하고 사용자 의도와 코드 위치를 연결하는 방식입니다. |
 
-## Folder README Map
+## 폴더별 README 지도
 
-| Folder README | Reports | Role | Main report types |
+| 폴더 README | 보고서 수 | 역할 | 주요 보고서 유형 |
 | --- | ---: | --- | --- |
-| [global-trending](global-trending/README.md) | 501 | Worldwide open source trend corpus. | per-repository-report (500), global-trending-report (1) |
-| [korea-trending](korea-trending/README.md) | 501 | Korean open source trend corpus. | per-repository-report (500), korea-trending-report (1) |
-| [global-trending/repositories](global-trending/repositories/README.md) | 500 | Repository-by-repository global trend drilldown. | per-repository-report (500) |
-| [korea-trending/repositories](korea-trending/repositories/README.md) | 500 | Repository-by-repository Korea trend drilldown. | per-repository-report (500) |
-| [llm-wiki](llm-wiki/README.md) | 203 | Knowledge-base and retrieval project analysis. | llm-wiki-report (103), per-repository-report (100) |
-| [clone-structures](clone-structures/README.md) | 127 | Physical source tree analysis for cloned open source projects. | clone-structure-report (127) |
-| [llm-wiki/code-level-repositories](llm-wiki/code-level-repositories/README.md) | 100 | Detailed code-path drilldown for LLM wiki projects. | llm-wiki-report (100) |
-| [llm-wiki/repositories](llm-wiki/repositories/README.md) | 100 | Repository summaries for the LLM wiki corpus. | per-repository-report (100) |
-| [repositories](repositories/README.md) | 30 | Core 30-project analysis. | per-repository-report (30) |
-| [presentations](presentations/README.md) | 5 | Talk, presentation, and industry signal catalog. | presentation-report (5) |
-| [adjacent-tech](adjacent-tech/README.md) | 4 | Adjacent stack synthesis and source maps. | infrastructure-report (4) |
-| [research](research/README.md) | 4 | Paper, evidence, and theory synthesis. | research-synthesis (4) |
-| [agent-harness](agent-harness/README.md) | 2 | Agent execution and harness research. | agent-harness-report (2) |
-| [comparisons](comparisons/README.md) | 2 | Project-to-project comparison and relationship maps. | comparison-report (2) |
-| [full-source-scan](full-source-scan/README.md) | 1 | Source discovery and code retrieval mechanics. | source-scan-report (1) |
-| [spec-driven](spec-driven/README.md) | 1 | Spec-driven development and requirements analysis. | spec-driven-report (1) |
+| [global-trending](global-trending/README.md) | 501 | 전세계 오픈소스 트렌드 코퍼스. | per-repository-report (500), global-trending-report (1) |
+| [korea-trending](korea-trending/README.md) | 501 | 한국 오픈소스 트렌드 코퍼스. | per-repository-report (500), korea-trending-report (1) |
+| [global-trending/repositories](global-trending/repositories/README.md) | 500 | 글로벌 트렌드 레포별 딥다이브. | per-repository-report (500) |
+| [korea-trending/repositories](korea-trending/repositories/README.md) | 500 | 한국 트렌드 레포별 딥다이브. | per-repository-report (500) |
+| [llm-wiki](llm-wiki/README.md) | 203 | 지식베이스와 retrieval 프로젝트 분석. | llm-wiki-report (103), per-repository-report (100) |
+| [clone-structures](clone-structures/README.md) | 127 | 클론된 오픈소스의 물리 소스 트리 분석. | clone-structure-report (127) |
+| [llm-wiki/code-level-repositories](llm-wiki/code-level-repositories/README.md) | 100 | LLM wiki 프로젝트의 상세 코드 경로 딥다이브. | llm-wiki-report (100) |
+| [llm-wiki/repositories](llm-wiki/repositories/README.md) | 100 | LLM wiki 코퍼스 레포 요약. | per-repository-report (100) |
+| [repositories](repositories/README.md) | 30 | 핵심 30개 프로젝트 분석. | per-repository-report (30) |
+| [presentations](presentations/README.md) | 5 | 발표와 산업 신호 카탈로그. | presentation-report (5) |
+| [adjacent-tech](adjacent-tech/README.md) | 4 | 인접 스택 종합과 소스맵. | infrastructure-report (4) |
+| [research](research/README.md) | 4 | 논문, 근거, 이론 종합. | research-synthesis (4) |
+| [agent-harness](agent-harness/README.md) | 2 | 에이전트 실행과 하네스 연구. | agent-harness-report (2) |
+| [comparisons](comparisons/README.md) | 2 | 프로젝트 간 비교와 관계 지도. | comparison-report (2) |
+| [full-source-scan](full-source-scan/README.md) | 1 | 소스 발견과 코드 검색 메커니즘. | source-scan-report (1) |
+| [spec-driven](spec-driven/README.md) | 1 | 스펙 드리븐 개발과 요구사항 분석. | spec-driven-report (1) |
 
 
-## Practical Reading Order
+## 읽는 순서
 
-1. Open [reports/categories/README.md](categories/README.md) for artifact-level categories.
-2. Open [reports/by-topic/README.md](by-topic/README.md) for report-level categories.
-3. Open [reports/source-deep-dives/README.md](source-deep-dives/README.md) when you need source-path-level implementation evidence.
-4. Open [reports/tables/README.md](tables/README.md) when you need spreadsheet-style tables.
-5. Use the folder README map above when you know the physical report folder.
-6. Use `data/report-index.json`, `data/report-categories/*.json`, and `data/report-tables/*.csv` when you need complete machine-readable membership.
+1. [reports/categories/README.md](categories/README.md)에서 조사 대상과 근거 카테고리를 먼저 봅니다.
+2. [reports/by-topic/README.md](by-topic/README.md)에서 질문별 보고서 묶음을 확인합니다.
+3. 구현 근거가 필요하면 [reports/source-deep-dives/README.md](source-deep-dives/README.md)에서 소스 경로를 봅니다.
+4. 넓게 비교해야 하면 [reports/tables/README.md](tables/README.md)에서 표와 CSV를 봅니다.
+5. 실제 폴더 위치를 이미 알면 위의 폴더별 README 지도를 사용합니다.
+6. 완전한 기계 판독 목록은 `data/report-index.json`, `data/report-categories/*.json`, `data/report-tables/*.csv`를 사용합니다.

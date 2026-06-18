@@ -1,63 +1,63 @@
-# sungjin9288/design-ai Source Deep Dive
+# sungjin9288/design-ai 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Model-agnostic design knowledge base + skill system for AI coding agents (Korean-market-fluent)
 
 ## 요약
 
-- 조사 단위: `sources/sungjin9288__design-ai` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 599 files, 72 directories, depth score 120, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/sungjin9288__design-ai` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 599 files, 72 directories, depth score 114, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 retrieval=vscode-extension/test/integration/suite/index.ts, tools/extractors/component_index.py, knowledge/COVERAGE.md이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 retrieval=vscode-extension/test/integration/suite/index.ts, tools/extractors/component_index.py, knowledge/COVERAGE.md이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | sungjin9288/design-ai |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | sungjin9288/design-ai |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | korea |
 | Language | Python |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | emerging |
-| Evidence | source+report |
-| Source | [sources/sungjin9288__design-ai](../../../../sources/sungjin9288__design-ai) |
-| Existing report | [reports/korea-trending/repositories/sungjin9288__design-ai.md](../../../korea-trending/repositories/sungjin9288__design-ai.md) |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 초기 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/sungjin9288__design-ai](../../../../sources/sungjin9288__design-ai) |
+| 기존 보고서 | [reports/korea-trending/repositories/sungjin9288__design-ai.md](../../../korea-trending/repositories/sungjin9288__design-ai.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 599 / 72 |
-| Max observed depth | 5 |
-| Top directories | .claude-plugin, .github, agents, cli, commands, docs, examples, Formula, knowledge, skills, tools, vscode-extension |
-| Top extensions | .md: 448, .mjs: 68, .py: 33, .json: 11, .ts: 9, (none): 6, .yml: 5, .sh: 4, .html: 3, .svg: 3, .tsx: 3, .css: 2 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 599 / 72 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | .claude-plugin, .github, agents, cli, commands, docs, examples, Formula, knowledge, skills, tools, vscode-extension |
+| 상위 확장자 | .md: 448, .mjs: 68, .py: 33, .json: 11, .ts: 9, (none): 6, .yml: 5, .sh: 4, .html: 3, .svg: 3, .tsx: 3, .css: 2 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 38 |
 | examples/print-business-card-spec.md | examples workspace | 2 |
@@ -76,9 +76,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | vscode-extension | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | test | package.json | test | node --test cli/lib/*.test.mjs |
 | utility | package.json | audit | python3 -B tools/audit/run-all.py |
@@ -103,24 +103,24 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | entrypoint | package.json bin | design-ai.mjs | cli/bin/design-ai.mjs |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [vscode-extension/test/integration/suite/index.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/suite/index.ts) | retrieval signal |
 | retrieval | [tools/extractors/component_index.py](../../../../sources/sungjin9288__design-ai/tools/extractors/component_index.py) | retrieval signal |
@@ -136,9 +136,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | eval | [vscode-extension/test/integration/runTest.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/runTest.ts) | eval signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1 | [cli/bin/design-ai.mjs](../../../../sources/sungjin9288__design-ai/cli/bin/design-ai.mjs) |
 | agentRuntime | 100 | [AGENTS.ko.md](../../../../sources/sungjin9288__design-ai/AGENTS.ko.md)<br>[AGENTS.md](../../../../sources/sungjin9288__design-ai/AGENTS.md)<br>[tools/build-docs.sh](../../../../sources/sungjin9288__design-ai/tools/build-docs.sh)<br>[tools/clone-refs.sh](../../../../sources/sungjin9288__design-ai/tools/clone-refs.sh)<br>[tools/preview/README.md](../../../../sources/sungjin9288__design-ai/tools/preview/README.md)<br>[tools/preview/render-tokens.py](../../../../sources/sungjin9288__design-ai/tools/preview/render-tokens.py)<br>[tools/migrations/add-version-frontmatter.py](../../../../sources/sungjin9288__design-ai/tools/migrations/add-version-frontmatter.py)<br>[tools/migrations/bump-last-updated.py](../../../../sources/sungjin9288__design-ai/tools/migrations/bump-last-updated.py) |
@@ -148,45 +148,45 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | eval | 43 | [vscode-extension/test/lib.test.mjs](../../../../sources/sungjin9288__design-ai/vscode-extension/test/lib.test.mjs)<br>[vscode-extension/test/README.md](../../../../sources/sungjin9288__design-ai/vscode-extension/test/README.md)<br>[vscode-extension/test/integration/runTest.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/runTest.ts)<br>[vscode-extension/test/integration/tsconfig.json](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/tsconfig.json)<br>[vscode-extension/test/integration/suite/extension.test.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/suite/extension.test.ts)<br>[vscode-extension/test/integration/suite/index.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/suite/index.ts)<br>[tools/extractors/component_spec_conflict_check.py](../../../../sources/sungjin9288__design-ai/tools/extractors/component_spec_conflict_check.py)<br>[tools/extractors/component_spec_reconcile.py](../../../../sources/sungjin9288__design-ai/tools/extractors/component_spec_reconcile.py) |
 | security | 25 | [tools/audit/changelog-generate.py](../../../../sources/sungjin9288__design-ai/tools/audit/changelog-generate.py)<br>[tools/audit/check-coverage.py](../../../../sources/sungjin9288__design-ai/tools/audit/check-coverage.py)<br>[tools/audit/doctor_assertions.py](../../../../sources/sungjin9288__design-ai/tools/audit/doctor_assertions.py)<br>[tools/audit/example-qa.py](../../../../sources/sungjin9288__design-ai/tools/audit/example-qa.py)<br>[tools/audit/frontmatter-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/frontmatter-check.py)<br>[tools/audit/integration-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/integration-check.py)<br>[tools/audit/korean-copy-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/korean-copy-check.py)<br>[tools/audit/link-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/link-check.py) |
 | ci | 4 | [.github/workflows/audit.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/audit.yml)<br>[.github/workflows/docs.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/docs.yml)<br>[.github/workflows/publish.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/publish.yml)<br>[.github/workflows/release.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/release.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 2 | [AGENTS.md](../../../../sources/sungjin9288__design-ai/AGENTS.md)<br>[CLAUDE.md](../../../../sources/sungjin9288__design-ai/CLAUDE.md) |
 | docs | 74 | [mkdocs.yml](../../../../sources/sungjin9288__design-ai/mkdocs.yml)<br>[README.ko.md](../../../../sources/sungjin9288__design-ai/README.ko.md)<br>[README.md](../../../../sources/sungjin9288__design-ai/README.md)<br>[vscode-extension/README.md](../../../../sources/sungjin9288__design-ai/vscode-extension/README.md)<br>[vscode-extension/test/README.md](../../../../sources/sungjin9288__design-ai/vscode-extension/test/README.md)<br>[tools/preview/README.md](../../../../sources/sungjin9288__design-ai/tools/preview/README.md)<br>[tools/figma-plugin/README.md](../../../../sources/sungjin9288__design-ai/tools/figma-plugin/README.md)<br>[skills/README.md](../../../../sources/sungjin9288__design-ai/skills/README.md) |
 | config | 6 | [package.json](../../../../sources/sungjin9288__design-ai/package.json)<br>[vscode-extension/package.json](../../../../sources/sungjin9288__design-ai/vscode-extension/package.json)<br>[vscode-extension/tsconfig.json](../../../../sources/sungjin9288__design-ai/vscode-extension/tsconfig.json)<br>[vscode-extension/test/integration/tsconfig.json](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/tsconfig.json)<br>[tools/extractors/ts-ast/package.json](../../../../sources/sungjin9288__design-ai/tools/extractors/ts-ast/package.json)<br>[docs/requirements.txt](../../../../sources/sungjin9288__design-ai/docs/requirements.txt) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 43 | [vscode-extension/test/lib.test.mjs](../../../../sources/sungjin9288__design-ai/vscode-extension/test/lib.test.mjs)<br>[vscode-extension/test/README.md](../../../../sources/sungjin9288__design-ai/vscode-extension/test/README.md)<br>[vscode-extension/test/integration/runTest.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/runTest.ts)<br>[vscode-extension/test/integration/tsconfig.json](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/tsconfig.json)<br>[vscode-extension/test/integration/suite/extension.test.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/suite/extension.test.ts)<br>[vscode-extension/test/integration/suite/index.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/suite/index.ts) |
-| CI workflows | 4 | [.github/workflows/audit.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/audit.yml)<br>[.github/workflows/docs.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/docs.yml)<br>[.github/workflows/publish.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/publish.yml)<br>[.github/workflows/release.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/release.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 25 | [tools/audit/changelog-generate.py](../../../../sources/sungjin9288__design-ai/tools/audit/changelog-generate.py)<br>[tools/audit/check-coverage.py](../../../../sources/sungjin9288__design-ai/tools/audit/check-coverage.py)<br>[tools/audit/doctor_assertions.py](../../../../sources/sungjin9288__design-ai/tools/audit/doctor_assertions.py)<br>[tools/audit/example-qa.py](../../../../sources/sungjin9288__design-ai/tools/audit/example-qa.py)<br>[tools/audit/frontmatter-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/frontmatter-check.py)<br>[tools/audit/integration-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/integration-check.py) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/sungjin9288__design-ai/AGENTS.md)<br>[CLAUDE.md](../../../../sources/sungjin9288__design-ai/CLAUDE.md) |
+| 테스트/평가 | 43 | [vscode-extension/test/lib.test.mjs](../../../../sources/sungjin9288__design-ai/vscode-extension/test/lib.test.mjs)<br>[vscode-extension/test/README.md](../../../../sources/sungjin9288__design-ai/vscode-extension/test/README.md)<br>[vscode-extension/test/integration/runTest.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/runTest.ts)<br>[vscode-extension/test/integration/tsconfig.json](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/tsconfig.json)<br>[vscode-extension/test/integration/suite/extension.test.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/suite/extension.test.ts)<br>[vscode-extension/test/integration/suite/index.ts](../../../../sources/sungjin9288__design-ai/vscode-extension/test/integration/suite/index.ts) |
+| CI workflow | 4 | [.github/workflows/audit.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/audit.yml)<br>[.github/workflows/docs.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/docs.yml)<br>[.github/workflows/publish.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/publish.yml)<br>[.github/workflows/release.yml](../../../../sources/sungjin9288__design-ai/.github/workflows/release.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 25 | [tools/audit/changelog-generate.py](../../../../sources/sungjin9288__design-ai/tools/audit/changelog-generate.py)<br>[tools/audit/check-coverage.py](../../../../sources/sungjin9288__design-ai/tools/audit/check-coverage.py)<br>[tools/audit/doctor_assertions.py](../../../../sources/sungjin9288__design-ai/tools/audit/doctor_assertions.py)<br>[tools/audit/example-qa.py](../../../../sources/sungjin9288__design-ai/tools/audit/example-qa.py)<br>[tools/audit/frontmatter-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/frontmatter-check.py)<br>[tools/audit/integration-check.py](../../../../sources/sungjin9288__design-ai/tools/audit/integration-check.py) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/sungjin9288__design-ai/AGENTS.md)<br>[CLAUDE.md](../../../../sources/sungjin9288__design-ai/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `vscode-extension/test/integration/suite/index.ts`, `tools/extractors/component_index.py`, `knowledge/COVERAGE.md`.
-2. Trace execution through entrypoints: `cli/bin/design-ai.mjs`.
-3. Map agent/tool runtime through: `AGENTS.ko.md`, `AGENTS.md`, `tools/build-docs.sh`.
-4. Inspect retrieval/memory/indexing through: `vscode-extension/test/integration/suite/index.ts`, `tools/extractors/component_index.py`, `knowledge/COVERAGE.md`.
-5. Verify behavior through test/eval files: `vscode-extension/test/lib.test.mjs`, `vscode-extension/test/README.md`, `vscode-extension/test/integration/runTest.ts`.
+1. 핵심 참조에서 시작: `vscode-extension/test/integration/suite/index.ts`, `tools/extractors/component_index.py`, `knowledge/COVERAGE.md`.
+2. entrypoint를 따라 실행 흐름 확인: `cli/bin/design-ai.mjs`.
+3. agent/tool runtime 매핑: `AGENTS.ko.md`, `AGENTS.md`, `tools/build-docs.sh`.
+4. retrieval/memory/indexing 확인: `vscode-extension/test/integration/suite/index.ts`, `tools/extractors/component_index.py`, `knowledge/COVERAGE.md`.
+5. test/eval 파일로 동작 검증: `vscode-extension/test/lib.test.mjs`, `vscode-extension/test/README.md`, `vscode-extension/test/integration/runTest.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Model agnostic design knowledge base + skill system for AI coding agents Korean market fluent. 핵심 구조 신호는 Python, package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, source+report 근거 수준으로 emerging 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Model agnostic design knowledge base + skill system for AI coding agents Korean market fluent. 핵심 구조 신호는 Python, package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, 소스+보고서 근거 수준으로 초기 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

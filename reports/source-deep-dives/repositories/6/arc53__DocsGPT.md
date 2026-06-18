@@ -1,63 +1,63 @@
-# arc53/DocsGPT Source Deep Dive
+# arc53/DocsGPT 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Private AI platform for agents, assistants and enterprise search. Built-in Agent Builder, Deep research, Document analysis, Multi-model support, and API connectivity for agents.
 
 ## 요약
 
-- 조사 단위: `sources/arc53__DocsGPT` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,380 files, 200 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/arc53__DocsGPT` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,380 files, 200 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=tests/test_memory_tool.py, tests/worker/test_ingest_checkpoint.py, tests/worker/test_ingest_connector.py이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=tests/test_memory_tool.py, tests/worker/test_ingest_checkpoint.py, tests/worker/test_ingest_connector.py이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | arc53/DocsGPT |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | arc53/DocsGPT |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | korea |
 | Language | Python |
 | Stars | 17938 |
 | Forks | 2062 |
 | License | MIT |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/arc53__DocsGPT](../../../../sources/arc53__DocsGPT) |
-| Existing report | [reports/llm-wiki/repositories/arc53__DocsGPT.md](../../../llm-wiki/repositories/arc53__DocsGPT.md) |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/arc53__DocsGPT](../../../../sources/arc53__DocsGPT) |
+| 기존 보고서 | [reports/llm-wiki/repositories/arc53__DocsGPT.md](../../../llm-wiki/repositories/arc53__DocsGPT.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1380 / 200 |
-| Max observed depth | 6 |
-| Top directories | .devcontainer, .github, application, deployment, docs, extensions, frontend, scripts, tests |
-| Top extensions | .py: 761, .tsx: 137, .ts: 129, .svg: 108, .mdx: 39, .yaml: 37, .json: 26, .md: 21, .yml: 20, .txt: 17, (none): 16, .png: 13 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 1380 / 200 |
+| 관측 최대 깊이 | 6 |
+| 상위 디렉터리 | .devcontainer, .github, application, deployment, docs, extensions, frontend, scripts, tests |
+| 상위 확장자 | .py: 761, .tsx: 137, .ts: 129, .svg: 108, .mdx: 39, .yaml: 37, .json: 26, .md: 21, .yml: 20, .txt: 17, (none): 16, .png: 13 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 159 |
 | docs | documentation surface | 36 |
@@ -70,29 +70,29 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [tests/test_memory_tool.py](../../../../sources/arc53__DocsGPT/tests/test_memory_tool.py) | retrieval signal |
 | retrieval | [tests/worker/test_ingest_checkpoint.py](../../../../sources/arc53__DocsGPT/tests/worker/test_ingest_checkpoint.py) | retrieval signal |
@@ -108,9 +108,9 @@ _No command surface extracted from root manifests._
 | docs | [tests/e2e/fixtures/docs/corrupt.pdf](../../../../sources/arc53__DocsGPT/tests/e2e/fixtures/docs/corrupt.pdf) | docs signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 7 | [frontend/src/App.tsx](../../../../sources/arc53__DocsGPT/frontend/src/App.tsx)<br>[frontend/src/index.css](../../../../sources/arc53__DocsGPT/frontend/src/index.css)<br>[frontend/src/main.tsx](../../../../sources/arc53__DocsGPT/frontend/src/main.tsx)<br>[extensions/react-widget/src/App.tsx](../../../../sources/arc53__DocsGPT/extensions/react-widget/src/App.tsx)<br>[extensions/react-widget/src/index.html](../../../../sources/arc53__DocsGPT/extensions/react-widget/src/index.html)<br>[extensions/react-widget/src/index.ts](../../../../sources/arc53__DocsGPT/extensions/react-widget/src/index.ts)<br>[extensions/react-widget/src/main.tsx](../../../../sources/arc53__DocsGPT/extensions/react-widget/src/main.tsx) |
 | agentRuntime | 196 | [AGENTS.md](../../../../sources/arc53__DocsGPT/AGENTS.md)<br>[tests/e2e/specs/tier-b/agent-preview.spec.ts](../../../../sources/arc53__DocsGPT/tests/e2e/specs/tier-b/agent-preview.spec.ts)<br>[tests/e2e/specs/tier-b/workflow-builder.spec.ts](../../../../sources/arc53__DocsGPT/tests/e2e/specs/tier-b/workflow-builder.spec.ts)<br>[tests/e2e/specs/tier-a/agent-pin.spec.ts](../../../../sources/arc53__DocsGPT/tests/e2e/specs/tier-a/agent-pin.spec.ts)<br>[tests/e2e/specs/tier-a/agent-share-user.spec.ts](../../../../sources/arc53__DocsGPT/tests/e2e/specs/tier-a/agent-share-user.spec.ts)<br>[tests/e2e/specs/tier-a/agents.spec.ts](../../../../sources/arc53__DocsGPT/tests/e2e/specs/tier-a/agents.spec.ts)<br>[tests/e2e/specs/tier-a/tools.spec.ts](../../../../sources/arc53__DocsGPT/tests/e2e/specs/tier-a/tools.spec.ts)<br>[tests/e2e/helpers/agents.ts](../../../../sources/arc53__DocsGPT/tests/e2e/helpers/agents.ts) |
@@ -126,39 +126,39 @@ _No command surface extracted from root manifests._
 | config | 9 | [tests/requirements.txt](../../../../sources/arc53__DocsGPT/tests/requirements.txt)<br>[tests/e2e/package.json](../../../../sources/arc53__DocsGPT/tests/e2e/package.json)<br>[tests/e2e/tsconfig.json](../../../../sources/arc53__DocsGPT/tests/e2e/tsconfig.json)<br>[frontend/package.json](../../../../sources/arc53__DocsGPT/frontend/package.json)<br>[frontend/tsconfig.json](../../../../sources/arc53__DocsGPT/frontend/tsconfig.json)<br>[extensions/react-widget/package.json](../../../../sources/arc53__DocsGPT/extensions/react-widget/package.json)<br>[extensions/react-widget/tsconfig.json](../../../../sources/arc53__DocsGPT/extensions/react-widget/tsconfig.json)<br>[docs/package.json](../../../../sources/arc53__DocsGPT/docs/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 456 | [tests/__init__.py](../../../../sources/arc53__DocsGPT/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/arc53__DocsGPT/tests/conftest.py)<br>[tests/QA_TESTS.md](../../../../sources/arc53__DocsGPT/tests/QA_TESTS.md)<br>[tests/requirements.txt](../../../../sources/arc53__DocsGPT/tests/requirements.txt)<br>[tests/test_agent_token_tracking.py](../../../../sources/arc53__DocsGPT/tests/test_agent_token_tracking.py)<br>[tests/test_app_routes.py](../../../../sources/arc53__DocsGPT/tests/test_app_routes.py) |
-| CI workflows | 14 | [.github/workflows/backend-release.yml](../../../../sources/arc53__DocsGPT/.github/workflows/backend-release.yml)<br>[.github/workflows/bandit.yaml](../../../../sources/arc53__DocsGPT/.github/workflows/bandit.yaml)<br>[.github/workflows/ci.yml](../../../../sources/arc53__DocsGPT/.github/workflows/ci.yml)<br>[.github/workflows/cife.yml](../../../../sources/arc53__DocsGPT/.github/workflows/cife.yml)<br>[.github/workflows/docker-develop-build.yml](../../../../sources/arc53__DocsGPT/.github/workflows/docker-develop-build.yml)<br>[.github/workflows/docker-develop-fe-build.yml](../../../../sources/arc53__DocsGPT/.github/workflows/docker-develop-fe-build.yml) |
-| Containers / deploy | 26 | [frontend/Dockerfile](../../../../sources/arc53__DocsGPT/frontend/Dockerfile)<br>[deployment/docker-compose-azure.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-azure.yaml)<br>[deployment/docker-compose-dev.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-dev.yaml)<br>[deployment/docker-compose-hub.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-hub.yaml)<br>[deployment/docker-compose-local.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-local.yaml)<br>[deployment/docker-compose.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose.yaml) |
-| Security / policy | 32 | [SECURITY.md](../../../../sources/arc53__DocsGPT/SECURITY.md)<br>[tests/test_auth.py](../../../../sources/arc53__DocsGPT/tests/test_auth.py)<br>[tests/test_zip_extraction_security.py](../../../../sources/arc53__DocsGPT/tests/test_zip_extraction_security.py)<br>[tests/security/__init__.py](../../../../sources/arc53__DocsGPT/tests/security/__init__.py)<br>[tests/security/test_encryption.py](../../../../sources/arc53__DocsGPT/tests/security/test_encryption.py)<br>[tests/security/test_safe_url.py](../../../../sources/arc53__DocsGPT/tests/security/test_safe_url.py) |
-| Agent instructions | 1 | [AGENTS.md](../../../../sources/arc53__DocsGPT/AGENTS.md) |
+| 테스트/평가 | 456 | [tests/__init__.py](../../../../sources/arc53__DocsGPT/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/arc53__DocsGPT/tests/conftest.py)<br>[tests/QA_TESTS.md](../../../../sources/arc53__DocsGPT/tests/QA_TESTS.md)<br>[tests/requirements.txt](../../../../sources/arc53__DocsGPT/tests/requirements.txt)<br>[tests/test_agent_token_tracking.py](../../../../sources/arc53__DocsGPT/tests/test_agent_token_tracking.py)<br>[tests/test_app_routes.py](../../../../sources/arc53__DocsGPT/tests/test_app_routes.py) |
+| CI workflow | 14 | [.github/workflows/backend-release.yml](../../../../sources/arc53__DocsGPT/.github/workflows/backend-release.yml)<br>[.github/workflows/bandit.yaml](../../../../sources/arc53__DocsGPT/.github/workflows/bandit.yaml)<br>[.github/workflows/ci.yml](../../../../sources/arc53__DocsGPT/.github/workflows/ci.yml)<br>[.github/workflows/cife.yml](../../../../sources/arc53__DocsGPT/.github/workflows/cife.yml)<br>[.github/workflows/docker-develop-build.yml](../../../../sources/arc53__DocsGPT/.github/workflows/docker-develop-build.yml)<br>[.github/workflows/docker-develop-fe-build.yml](../../../../sources/arc53__DocsGPT/.github/workflows/docker-develop-fe-build.yml) |
+| 컨테이너/배포 | 26 | [frontend/Dockerfile](../../../../sources/arc53__DocsGPT/frontend/Dockerfile)<br>[deployment/docker-compose-azure.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-azure.yaml)<br>[deployment/docker-compose-dev.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-dev.yaml)<br>[deployment/docker-compose-hub.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-hub.yaml)<br>[deployment/docker-compose-local.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose-local.yaml)<br>[deployment/docker-compose.yaml](../../../../sources/arc53__DocsGPT/deployment/docker-compose.yaml) |
+| 보안/정책 | 32 | [SECURITY.md](../../../../sources/arc53__DocsGPT/SECURITY.md)<br>[tests/test_auth.py](../../../../sources/arc53__DocsGPT/tests/test_auth.py)<br>[tests/test_zip_extraction_security.py](../../../../sources/arc53__DocsGPT/tests/test_zip_extraction_security.py)<br>[tests/security/__init__.py](../../../../sources/arc53__DocsGPT/tests/security/__init__.py)<br>[tests/security/test_encryption.py](../../../../sources/arc53__DocsGPT/tests/security/test_encryption.py)<br>[tests/security/test_safe_url.py](../../../../sources/arc53__DocsGPT/tests/security/test_safe_url.py) |
+| 에이전트 지시문 | 1 | [AGENTS.md](../../../../sources/arc53__DocsGPT/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/test_memory_tool.py`, `tests/worker/test_ingest_checkpoint.py`, `tests/worker/test_ingest_connector.py`.
-2. Trace execution through entrypoints: `frontend/src/App.tsx`, `frontend/src/index.css`, `frontend/src/main.tsx`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tests/e2e/specs/tier-b/agent-preview.spec.ts`, `tests/e2e/specs/tier-b/workflow-builder.spec.ts`.
-4. Inspect retrieval/memory/indexing through: `tests/test_memory_tool.py`, `tests/worker/test_ingest_checkpoint.py`, `tests/worker/test_ingest_connector.py`.
-5. Verify behavior through test/eval files: `tests/__init__.py`, `tests/conftest.py`, `tests/QA_TESTS.md`.
+1. 핵심 참조에서 시작: `tests/test_memory_tool.py`, `tests/worker/test_ingest_checkpoint.py`, `tests/worker/test_ingest_connector.py`.
+2. entrypoint를 따라 실행 흐름 확인: `frontend/src/App.tsx`, `frontend/src/index.css`, `frontend/src/main.tsx`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tests/e2e/specs/tier-b/agent-preview.spec.ts`, `tests/e2e/specs/tier-b/workflow-builder.spec.ts`.
+4. retrieval/memory/indexing 확인: `tests/test_memory_tool.py`, `tests/worker/test_ingest_checkpoint.py`, `tests/worker/test_ingest_connector.py`.
+5. test/eval 파일로 동작 검증: `tests/__init__.py`, `tests/conftest.py`, `tests/QA_TESTS.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Private AI platform for agents, assistants and enterprise search. Built in Agent Builder, Deep research, Document analys. 핵심 구조 신호는 Python, README.md, AGENTS.md, LICENSE, tests, ci이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Private AI platform for agents, assistants and enterprise search. Built in Agent Builder, Deep research, Document analys. 핵심 구조 신호는 Python, README.md, AGENTS.md, LICENSE, tests, ci이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

@@ -14,8 +14,8 @@ const outputReportsReadme = path.join(root, "reports", "README.md");
 const taxonomy = [
   {
     slug: "start-here",
-    title: "Start Here",
-    description: "High-level maps and entry points for reading the repository.",
+    title: "먼저 읽기",
+    description: "전체 조사 흐름과 핵심 시작점을 빠르게 잡는 상위 지도입니다.",
     keywords: [],
     pathRules: [
       /^reports\/categories\/README\.md$/,
@@ -37,120 +37,120 @@ const taxonomy = [
   },
   {
     slug: "category-guides",
-    title: "Category Guides",
-    description: "Generated category pages that group open-source, research, presentation, and trend artifacts.",
+    title: "카테고리별 근거",
+    description: "오픈소스, 연구, 발표, 트렌드 근거를 artifact 기준으로 묶은 분류 지도입니다.",
     keywords: [],
     pathRules: [/^reports\/categories\//]
   },
   {
     slug: "full-source-scan",
-    title: "Full Source Scan and Code Retrieval",
-    description: "How coding agents discover, index, search, and read source code.",
+    title: "전체 소스 스캔/코드 검색",
+    description: "코딩 에이전트가 소스를 발견하고 인덱싱하고 사용자 의도와 코드 위치를 연결하는 방식입니다.",
     keywords: ["source scan", "repo map", "symbol graph", "code search", "file discovery"],
     pathRules: [/^reports\/full-source-scan\//, /^reports\/full-source-scan-research-summary/, /^reports\/00-source-inventory\.md$/]
   },
   {
     slug: "source-code-deep-dives",
-    title: "Source Code Deep Dives",
-    description: "Local source scans and source-derived insights with entrypoint, runtime, retrieval, spec, eval, security, CI, and container path evidence.",
+    title: "소스 코드 딥다이브",
+    description: "로컬 클론에서 뽑은 entrypoint, runtime, retrieval, spec, eval, security, CI/container 경로 근거입니다.",
     keywords: ["source deep scan", "source insight", "entrypoint", "runtime", "source path", "implementation evidence", "소스"],
     pathRules: [/^reports\/source-deep-dives\//, /^reports\/source-insights\//, /source-deep-scan/, /source-trend-insights/]
   },
   {
     slug: "coding-agents",
-    title: "Coding Agents and IDEs",
-    description: "Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.",
+    title: "코딩 에이전트/IDE",
+    description: "터미널 에이전트, IDE 에이전트, 코드 리뷰 에이전트, 코딩 보조 도구를 묶은 주제입니다.",
     keywords: ["codex", "claude", "aider", "openhands", "cline", "roo", "gemini", "coding agent", "ide", "code review"],
     pathRules: [/^reports\/repositories\//, /^reports\/agent-harness\//]
   },
   {
     slug: "agent-harness",
-    title: "Agent Harness, MCP, and Orchestration",
-    description: "Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.",
+    title: "에이전트 하네스/MCP/오케스트레이션",
+    description: "MCP, tool registry, hooks, skills, orchestration, workflow 실행 기반을 보는 주제입니다.",
     keywords: ["harness", "mcp", "orchestration", "skills", "hooks", "tool-calling", "agent workflow"],
     pathRules: [/^reports\/agent-harness\//]
   },
   {
     slug: "spec-driven",
-    title: "Spec-Driven and Requirements",
-    description: "Spec extraction, requirements, traceability, acceptance criteria, and SDD evidence.",
+    title: "스펙 드리븐/요구사항",
+    description: "스펙 추출, 요구사항, 추적성, acceptance criteria, SDD 근거를 보는 주제입니다.",
     keywords: ["spec", "requirements", "traceability", "acceptance", "sdd", "kiro", "openspec"],
     pathRules: [/spec-driven/, /spec-driven-evidence/]
   },
   {
     slug: "llm-wiki",
-    title: "LLM Wiki, RAG, and Knowledge Bases",
-    description: "LLM wiki, GraphRAG, document knowledge base, ingestion, retrieval, and provenance reports.",
+    title: "LLM 위키/RAG/지식베이스",
+    description: "LLM wiki, GraphRAG, 문서 지식베이스, ingestion, retrieval, provenance를 보는 주제입니다.",
     keywords: ["llm wiki", "wiki", "rag", "graphrag", "knowledge", "document", "retrieval"],
     pathRules: [/^reports\/llm-wiki\//]
   },
   {
     slug: "presentations-conferences",
-    title: "Presentations and Conferences",
-    description: "Conference, talk, webinar, and presentation-method research.",
+    title: "발표/컨퍼런스",
+    description: "컨퍼런스, 키노트, 웨비나, 발표 방법론과 산업 신호를 모은 주제입니다.",
     keywords: ["conference", "presentation", "keynote", "summit", "devday", "webinar", "발표"],
     pathRules: [/^reports\/presentations\//]
   },
   {
     slug: "ai-usage-trends",
-    title: "AI Usage Trends",
-    description: "Recent AI usage trends from big-tech, Amazon/AWS, Korean conferences, and enterprise adoption signals.",
+    title: "AI 활용 트렌드",
+    description: "빅테크, Amazon/AWS, 한국 컨퍼런스, 기업 도입 신호를 모은 최근 AI 활용 트렌드입니다.",
     keywords: ["ai usage", "agentic enterprise", "enterprise adoption"],
     pathRules: [/ai-usage-trends/, /bigtech-korea/, /^reports\/categories\/ai-usage-trends\//]
   },
   {
     slug: "global-trending-open-source",
-    title: "Global Trending Open Source",
-    description: "Global trending open-source corpus and per-repository reports.",
+    title: "글로벌 트렌딩 오픈소스",
+    description: "전세계 트렌딩 오픈소스 코퍼스와 레포별 보고서를 묶은 주제입니다.",
     keywords: [],
     pathRules: [/^reports\/global-trending\//, /^reports\/categories\/global-ai-open-source\//]
   },
   {
     slug: "korea-trending-open-source",
-    title: "Korea Trending Open Source",
-    description: "Korean open-source corpus, Korean AI/MCP/RAG projects, and Korean trend reports.",
+    title: "한국 트렌딩 오픈소스",
+    description: "한국 개발자 커뮤니티, 한국 AI/MCP/RAG 프로젝트, 국내 트렌드 보고서를 묶은 주제입니다.",
     keywords: ["한국 개발자 커뮤니티"],
     pathRules: [/^reports\/korea-trending\//, /^reports\/categories\/korean-ai-open-source\//]
   },
   {
     slug: "adjacent-infrastructure",
-    title: "Adjacent AI Infrastructure",
-    description: "Context engineering, RAG infrastructure, vector databases, local LLM serving, evals, and observability.",
+    title: "인접 AI 인프라",
+    description: "컨텍스트 엔지니어링, RAG 인프라, 벡터 DB, 로컬 LLM 서빙, 평가/관측성을 보는 주제입니다.",
     keywords: ["vllm", "local llm", "vector database", "observability", "eval harness"],
     pathRules: [/^reports\/adjacent-tech/, /^reports\/adjacent-tech-source-inventory/, /^reports\/categories\/ai-infrastructure-serving\//, /^reports\/categories\/data-platforms-vector-databases\//]
   },
   {
     slug: "clone-structure-inventory",
-    title: "Clone Structure and Inventory",
-    description: "Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports.",
+    title: "클론 구조/인벤토리",
+    description: "로컬 클론 목록, 구조 분석, manifest, source directory, 레포별 구조 보고서입니다.",
     keywords: ["source dirs"],
     pathRules: [/^reports\/clone-structures\//, /^reports\/clone-structure-analysis-127\.md$/, /^reports\/current-clone-inventory\.md$/]
   },
   {
     slug: "comparisons",
-    title: "Comparisons and Similarity Maps",
-    description: "Cross-repository comparisons, taxonomy matrices, and similarity clusters.",
+    title: "비교/유사도 지도",
+    description: "레포 간 비교, taxonomy matrix, similarity cluster를 보는 주제입니다.",
     keywords: ["comparison", "compare", "taxonomy", "cluster", "matrix", "similarity", "비교"],
     pathRules: [/^reports\/comparisons\//, /^reports\/repository-insights\//, /^reports\/source-deep-dives\//, /^reports\/source-insights\//]
   },
   {
     slug: "research-foundations",
-    title: "Research Foundations",
-    description: "Evidence catalogs, conflicting theories, source catalogs, and research synthesis.",
+    title: "연구 근거",
+    description: "논문, 근거자료, 충돌 이론, 연구 종합 보고서를 모은 주제입니다.",
     keywords: ["evidence catalog", "research synthesis", "근거자료", "논문"],
     pathRules: [/^reports\/research\//, /evidence-corpus/, /^reports\/categories\/research-evidence\//]
   },
   {
     slug: "source-catalogs-and-inventories",
-    title: "Source Catalogs and Inventories",
-    description: "Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations.",
+    title: "소스 카탈로그/인벤토리",
+    description: "조사에 사용한 소스 카탈로그, 인벤토리, 클론 목록, evidence ledger입니다.",
     keywords: ["source catalog", "source inventory", "evidence corpus", "clone inventory"],
     pathRules: [/source-inventory/, /source-catalog/, /current-clone-inventory/, /evidence-corpus/, /clone-inventory/]
   },
   {
     slug: "repository-deep-dives",
-    title: "Repository Deep Dives",
-    description: "Detailed per-repository reports across core agents, global trending, Korea trending, LLM wiki, and clone structures.",
+    title: "레포별 딥다이브",
+    description: "핵심 에이전트, 글로벌/한국 트렌딩, LLM wiki, 클론 구조의 레포별 상세 보고서입니다.",
     keywords: [],
     pathRules: [/\/repositories\//, /^reports\/clone-structures\//, /^reports\/repository-insights\//, /^reports\/source-deep-dives\//]
   }
@@ -159,99 +159,99 @@ const taxonomy = [
 const folderGuides = [
   {
     dir: "reports/adjacent-tech",
-    title: "Adjacent AI Infrastructure Reports",
-    description: "Context engineering, RAG, local LLM serving, vector databases, evals, observability, and harness infrastructure.",
-    role: "Adjacent stack synthesis and source maps."
+    title: "인접 AI 인프라 보고서",
+    description: "컨텍스트 엔지니어링, RAG, 로컬 LLM 서빙, 벡터 DB, 평가, 관측성, 하네스 인프라를 묶은 보고서입니다.",
+    role: "인접 스택 종합과 소스맵."
   },
   {
     dir: "reports/agent-harness",
-    title: "Agent Harness Reports",
-    description: "Claude Code, Codex, harness setup, MCP, hooks, skills, and orchestration materials.",
-    role: "Agent execution and harness research."
+    title: "에이전트 하네스 보고서",
+    description: "Claude Code, Codex, harness 구성, MCP, hooks, skills, orchestration 자료를 묶은 보고서입니다.",
+    role: "에이전트 실행과 하네스 연구."
   },
   {
     dir: "reports/clone-structures",
-    title: "Clone Structure Reports",
-    description: "Generated structural reports for locally cloned repositories, including manifests, source directories, and notable entry points.",
-    role: "Physical source tree analysis for cloned open source projects."
+    title: "클론 구조 보고서",
+    description: "로컬 클론의 manifest, source directory, 주요 entrypoint를 정리한 구조 보고서입니다.",
+    role: "클론된 오픈소스의 물리 소스 트리 분석."
   },
   {
     dir: "reports/comparisons",
-    title: "Comparison Reports",
-    description: "Cross-project taxonomy, feature comparison, and similarity cluster reports.",
-    role: "Project-to-project comparison and relationship maps."
+    title: "비교 보고서",
+    description: "프로젝트 간 taxonomy, 기능 비교, 유사도 cluster를 정리한 보고서입니다.",
+    role: "프로젝트 간 비교와 관계 지도."
   },
   {
     dir: "reports/full-source-scan",
-    title: "Full Source Scan Reports",
-    description: "How coding agents discover files, search symbols, connect user intent to source code, and decide what to read.",
-    role: "Source discovery and code retrieval mechanics."
+    title: "전체 소스 스캔 보고서",
+    description: "코딩 에이전트가 파일을 찾고, symbol을 검색하고, 사용자 의도와 소스 코드를 연결하는 방식을 다룹니다.",
+    role: "소스 발견과 코드 검색 메커니즘."
   },
   {
     dir: "reports/global-trending",
-    title: "Global Trending Reports",
-    description: "Global open source trend synthesis plus per-repository reports for the collected 500-item global corpus.",
-    role: "Worldwide open source trend corpus."
+    title: "글로벌 트렌딩 보고서",
+    description: "500개 글로벌 코퍼스의 오픈소스 트렌드 종합과 레포별 보고서입니다.",
+    role: "전세계 오픈소스 트렌드 코퍼스."
   },
   {
     dir: "reports/global-trending/repositories",
-    title: "Global Trending Repository Reports",
-    description: "Per-repository report table for the global trending open source corpus.",
-    role: "Repository-by-repository global trend drilldown."
+    title: "글로벌 트렌딩 레포별 보고서",
+    description: "글로벌 트렌딩 오픈소스 코퍼스의 레포별 보고서 표입니다.",
+    role: "글로벌 트렌드 레포별 딥다이브."
   },
   {
     dir: "reports/korea-trending",
-    title: "Korea Trending Reports",
-    description: "Korean developer community trend synthesis plus per-repository reports for the collected 500-item Korea corpus.",
-    role: "Korean open source trend corpus."
+    title: "한국 트렌딩 보고서",
+    description: "한국 개발자 커뮤니티 트렌드 종합과 500개 한국 코퍼스의 레포별 보고서입니다.",
+    role: "한국 오픈소스 트렌드 코퍼스."
   },
   {
     dir: "reports/korea-trending/repositories",
-    title: "Korea Trending Repository Reports",
-    description: "Per-repository report table for the Korea trending open source corpus.",
-    role: "Repository-by-repository Korea trend drilldown."
+    title: "한국 트렌딩 레포별 보고서",
+    description: "한국 트렌딩 오픈소스 코퍼스의 레포별 보고서 표입니다.",
+    role: "한국 트렌드 레포별 딥다이브."
   },
   {
     dir: "reports/llm-wiki",
-    title: "LLM Wiki and Knowledge Base Reports",
-    description: "LLM wiki, RAG, GraphRAG, document knowledge base, code-level pipeline, and provenance reports.",
-    role: "Knowledge-base and retrieval project analysis."
+    title: "LLM 위키/지식베이스 보고서",
+    description: "LLM wiki, RAG, GraphRAG, 문서 지식베이스, code-level pipeline, provenance 보고서입니다.",
+    role: "지식베이스와 retrieval 프로젝트 분석."
   },
   {
     dir: "reports/llm-wiki/code-level-repositories",
-    title: "LLM Wiki Code-Level Repository Reports",
-    description: "Code-level implementation reports for LLM wiki, RAG, document pipeline, and memory projects.",
-    role: "Detailed code-path drilldown for LLM wiki projects."
+    title: "LLM 위키 코드 레벨 레포 보고서",
+    description: "LLM wiki, RAG, 문서 파이프라인, memory 프로젝트의 코드 레벨 구현 보고서입니다.",
+    role: "LLM wiki 프로젝트의 상세 코드 경로 딥다이브."
   },
   {
     dir: "reports/llm-wiki/repositories",
-    title: "LLM Wiki Repository Reports",
-    description: "Per-repository structural reports for selected LLM wiki and knowledge-base projects.",
-    role: "Repository summaries for the LLM wiki corpus."
+    title: "LLM 위키 레포별 보고서",
+    description: "선정된 LLM wiki/지식베이스 프로젝트의 레포별 구조 보고서입니다.",
+    role: "LLM wiki 코퍼스 레포 요약."
   },
   {
     dir: "reports/presentations",
-    title: "Presentation and Conference Reports",
-    description: "Conference, presentation, Amazon/AWS, big-tech, Korea, and AI usage trend materials.",
-    role: "Talk, presentation, and industry signal catalog."
+    title: "발표/컨퍼런스 보고서",
+    description: "컨퍼런스, 발표, Amazon/AWS, 빅테크, 한국, AI 활용 트렌드 자료입니다.",
+    role: "발표와 산업 신호 카탈로그."
   },
   {
     dir: "reports/repositories",
-    title: "Core Repository Reports",
-    description: "Primary deep dives for the original AI coding agent, IDE agent, browser agent, MCP, and framework repositories.",
-    role: "Core 30-project analysis."
+    title: "핵심 레포 보고서",
+    description: "원래 조사한 AI 코딩 에이전트, IDE 에이전트, 브라우저 에이전트, MCP, 프레임워크 레포의 주요 딥다이브입니다.",
+    role: "핵심 30개 프로젝트 분석."
   },
   {
     dir: "reports/research",
-    title: "Research Reports",
-    description: "Research synthesis, evidence catalogs, conflicting theories, and open questions.",
-    role: "Paper, evidence, and theory synthesis."
+    title: "연구 보고서",
+    description: "연구 종합, 근거 카탈로그, 충돌 이론, 남은 질문을 정리한 보고서입니다.",
+    role: "논문, 근거, 이론 종합."
   },
   {
     dir: "reports/spec-driven",
-    title: "Spec-Driven Reports",
-    description: "Spec extraction, requirements, traceability, executable specs, SDD tooling, and spec memory research.",
-    role: "Spec-driven development and requirements analysis."
+    title: "스펙 드리븐 보고서",
+    description: "스펙 추출, 요구사항, 추적성, executable specs, SDD tooling, spec memory 연구입니다.",
+    role: "스펙 드리븐 개발과 요구사항 분석."
   }
 ];
 
@@ -376,18 +376,18 @@ function linkFrom(baseDir, target, label) {
 }
 
 function renderNavigationBlock(baseDir) {
-  return `## Navigation
+  return `## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
-| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
-| ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
-| ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
-| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
-| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
-| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
-| ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
+| ${linkFrom(baseDir, "README.md", "전체 시작 README")} | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| ${linkFrom(baseDir, "reports/README.md", "전체 보고서 읽기 지도")} | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| ${linkFrom(baseDir, "reports/by-topic/README.md", "주제별 보고서 목차")} | 조사 질문 기준으로 보고서를 찾는 입구. |
+| ${linkFrom(baseDir, "reports/tables/README.md", "표/CSV 목차")} | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| ${linkFrom(baseDir, "reports/repository-insights/README.md", "레포별 인사이트")} | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "소스 딥다이브")} | 로컬 클론에서 뽑은 파일 경로 근거. |
+| ${linkFrom(baseDir, "reports/source-insights/README.md", "소스 트렌드 인사이트")} | 카테고리별 트렌드와 레포별 특징 비교. |
+| ${linkFrom(baseDir, "reports/categories/README.md", "근거 카테고리")} | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 `;
 }
 
@@ -400,8 +400,8 @@ function renderReportTable(reports, baseDir, limit = Infinity) {
     const title = linkFrom(baseDir, report.path, report.title);
     return `| ${title} | ${tableText(report.kind)} | ${tableText(report.folder)} | ${report.priority} |`;
   });
-  if (!rows.length) return "_No reports indexed._\n";
-  return `| Report | Type | Folder | Priority |\n| --- | --- | --- | ---: |\n${rows.join("\n")}\n`;
+  if (!rows.length) return "_색인된 보고서가 없습니다._\n";
+  return `| 보고서 | 유형 | 폴더 | 우선순위 |\n| --- | --- | --- | ---: |\n${rows.join("\n")}\n`;
 }
 
 function csvValue(value) {
@@ -433,7 +433,7 @@ function topEntries(counts, limit = 5) {
 }
 
 function reportCountText(count) {
-  return `${count.toLocaleString("en-US")} reports`;
+  return `${count.toLocaleString("en-US")}개 보고서`;
 }
 
 function reportsForFolderGuide(guide, reports) {
@@ -451,8 +451,8 @@ function topicIntersectionSummary(folderReports, categories, baseDir) {
     .sort((a, b) => b.count - a.count || a.title.localeCompare(b.title))
     .map((category) => `| ${linkFrom(baseDir, `reports/by-topic/${category.slug}/README.md`, category.title)} | ${category.count} |`)
     .join("\n");
-  if (!rows) return "_No related topic pages._\n";
-  return `| Topic | Reports in this folder |\n| --- | ---: |\n${rows}\n`;
+  if (!rows) return "_연결된 주제 페이지가 없습니다._\n";
+  return `| 주제 | 이 폴더의 보고서 수 |\n| --- | ---: |\n${rows}\n`;
 }
 
 function renderFolderReadme(guide, reports, categories) {
@@ -461,40 +461,40 @@ function renderFolderReadme(guide, reports, categories) {
   const relatedTopicCount = categories.filter((category) => reports.some((report) => report.categories.includes(category.slug))).length;
   return `# ${guide.title}
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ${guide.description}
 
 ## 요약
 
 - 조사 단위: \`${guide.dir}\` 물리 폴더에 모인 보고서 묶음입니다.
-- 포함 범위: ${reportCountText(reports.length)}이며, 주요 유형은 ${tableText(topEntries(byKind, 5) || "none")}입니다.
-- 탐색 방식: 아래 Navigation에서 상위 인덱스로 이동하거나, Related Topic Pages에서 같은 보고서를 주제 기준으로 다시 볼 수 있습니다.
+- 포함 범위: ${reportCountText(reports.length)}이며, 주요 유형은 ${tableText(topEntries(byKind, 5) || "없음")}입니다.
+- 탐색 방식: 아래 바로가기에서 상위 인덱스로 이동하거나, 관련 주제 페이지에서 같은 보고서를 주제 기준으로 다시 볼 수 있습니다.
 
 ## 총평
 
-이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 Recommended Reading Path로 핵심 보고서를 훑고, 필요하면 All Reports in This Folder에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 ${relatedTopicCount}개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
+이 README는 원본 보고서를 옮기지 않고 폴더 단위로 읽는 입구입니다. 먼저 추천 읽기 경로로 핵심 보고서를 훑고, 필요하면 폴더 전체 보고서에서 개별 조사로 내려가는 흐름이 가장 안정적입니다. 관련 주제 페이지 ${relatedTopicCount}개와 연결되어 있어 폴더 기준과 주제 기준을 오가며 볼 수 있습니다.
 
 ${renderNavigationBlock(baseDir)}
 
-## Folder Summary
+## 폴더 요약
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Folder | \`${guide.dir}\` |
-| Role | ${tableText(guide.role)} |
-| Reports | ${reports.length} |
-| Main report types | ${tableText(topEntries(byKind, 8) || "none")} |
+| 폴더 | \`${guide.dir}\` |
+| 역할 | ${tableText(guide.role)} |
+| 보고서 수 | ${reports.length} |
+| 주요 보고서 유형 | ${tableText(topEntries(byKind, 8) || "없음")} |
 
-## Related Topic Pages
+## 관련 주제 페이지
 
 ${topicIntersectionSummary(reports, categories, baseDir)}
 
-## Recommended Reading Path
+## 추천 읽기 경로
 
 ${renderReportTable(reports, baseDir, 30)}
 
-## All Reports in This Folder
+## 폴더 전체 보고서
 
 ${renderReportTable(reports, baseDir)}
 `;
@@ -526,20 +526,20 @@ function buildFolderSummaries(reports, categories) {
 function renderFolderMap(folderSummaries, baseDir) {
   const rows = folderSummaries
     .sort((a, b) => b.count - a.count || a.dir.localeCompare(b.dir))
-    .map((folder) => `| ${linkFrom(baseDir, folder.readmePath, folder.dir.replace(/^reports\//, ""))} | ${folder.count} | ${tableText(folder.role)} | ${tableText(topEntries(folder.byKind, 4) || "none")} |`)
+    .map((folder) => `| ${linkFrom(baseDir, folder.readmePath, folder.dir.replace(/^reports\//, ""))} | ${folder.count} | ${tableText(folder.role)} | ${tableText(topEntries(folder.byKind, 4) || "없음")} |`)
     .join("\n");
-  return `| Folder README | Reports | Role | Main report types |\n| --- | ---: | --- | --- |\n${rows}\n`;
+  return `| 폴더 README | 보고서 수 | 역할 | 주요 보고서 유형 |\n| --- | ---: | --- | --- |\n${rows}\n`;
 }
 
 function renderCategoryReadme(category, reports) {
   const baseDir = `reports/by-topic/${category.slug}`;
   const byKind = countsBy(reports, (report) => report.kind);
   const byFolder = countsBy(reports, (report) => report.folder);
-  const dominantFolders = topEntries(byFolder, 5) || "none";
-  const dominantKinds = topEntries(byKind, 5) || "none";
+  const dominantFolders = topEntries(byFolder, 5) || "없음";
+  const dominantKinds = topEntries(byKind, 5) || "없음";
   return `# ${category.title}
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ${category.description}
 
@@ -551,28 +551,28 @@ ${category.description}
 
 ## 총평
 
-이 README는 같은 주제에 흩어진 보고서를 한 번에 따라가도록 만든 주제형 입구입니다. Recommended Reading Path는 먼저 읽을 보고서를 우선순위로 보여주고, All Reports는 빠짐없는 전체 목록을 제공합니다. 같은 보고서가 여러 주제에 걸칠 수 있으므로, 큰 흐름은 이 페이지에서 보고 세부 파일 위치는 Folder 값으로 확인하는 방식이 좋습니다.
+이 README는 같은 주제에 흩어진 보고서를 한 번에 따라가도록 만든 주제형 입구입니다. 추천 읽기 경로는 먼저 읽을 보고서를 우선순위로 보여주고, 전체 보고서는 빠짐없는 목록을 제공합니다. 같은 보고서가 여러 주제에 걸칠 수 있으므로, 큰 흐름은 이 페이지에서 보고 세부 파일 위치는 폴더 값을 확인하는 방식이 좋습니다.
 
 ${renderNavigationBlock(baseDir)}
 
-## Counts
+## 범위
 
-- Reports: ${reports.length}
-- Data: ${linkFrom(baseDir, `data/report-categories/${category.slug}.json`, `data/report-categories/${category.slug}.json`)}
+- 보고서 수: ${reports.length}
+- 데이터: ${linkFrom(baseDir, `data/report-categories/${category.slug}.json`, `data/report-categories/${category.slug}.json`)}
 
-## Report Types
+## 보고서 유형
 
-${Object.entries(byKind).sort((a, b) => b[1] - a[1]).map(([kind, count]) => `- ${kind}: ${count}`).join("\n") || "- none"}
+${Object.entries(byKind).sort((a, b) => b[1] - a[1]).map(([kind, count]) => `- ${kind}: ${count}`).join("\n") || "- 없음"}
 
-## Source Folders
+## 출처 폴더
 
-${Object.entries(byFolder).sort((a, b) => b[1] - a[1]).slice(0, 20).map(([folder, count]) => `- ${folder}: ${count}`).join("\n") || "- none"}
+${Object.entries(byFolder).sort((a, b) => b[1] - a[1]).slice(0, 20).map(([folder, count]) => `- ${folder}: ${count}`).join("\n") || "- 없음"}
 
-## Recommended Reading Path
+## 추천 읽기 경로
 
 ${renderReportTable(reports, baseDir, 30)}
 
-## All Reports
+## 전체 보고서
 
 ${renderReportTable(reports, baseDir)}
 `;
@@ -582,13 +582,13 @@ function renderByTopicIndex(categorySummaries) {
   const baseDir = "reports/by-topic";
   const rows = categorySummaries
     .sort((a, b) => b.count - a.count || a.title.localeCompare(b.title))
-    .map((category) => `| ${linkFrom(baseDir, category.reportPath, category.title)} | ${category.count} | ${tableText(category.description)} | ${linkFrom(baseDir, category.dataPath, "data")} |`)
+    .map((category) => `| ${linkFrom(baseDir, category.reportPath, category.title)} | ${category.count} | ${tableText(category.description)} | ${linkFrom(baseDir, category.dataPath, "데이터")} |`)
     .join("\n");
-  return `# Reports by Topic
+  return `# 주제별 보고서 목차
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
-This folder groups the repository's Markdown reports by investigation line. Original reports remain in their existing locations; these pages are reading indexes.
+이 폴더는 레포의 Markdown 보고서를 조사 질문별로 다시 묶은 읽기용 목차입니다. 원본 보고서는 기존 위치에 그대로 두고, 이 페이지들은 하이퍼링크로 따라가기 쉽게 만든 보고서 지도입니다.
 
 ## 요약
 
@@ -598,20 +598,13 @@ This folder groups the repository's Markdown reports by investigation line. Orig
 
 ## 총평
 
-주제별 README는 “무엇을 알고 싶은가”에서 출발할 때 가장 빠른 길입니다. 레포 위치를 이미 알고 있다면 폴더 README를 쓰고, 전체를 표로 훑고 싶다면 Report Tables를 쓰면 됩니다.
+주제별 README는 “무엇을 알고 싶은가”에서 출발할 때 가장 빠른 길입니다. 레포 위치를 이미 알고 있다면 폴더 README를 쓰고, 전체를 표로 훑고 싶다면 표/CSV 목차를 쓰면 됩니다.
 
-## Navigation
+${renderNavigationBlock(baseDir)}
 
-| Entry | Use it for |
-| --- | --- |
-| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
-| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
-| ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
-| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
-| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
-| ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
+## 카테고리 한눈에 보기
 
-| Topic | Reports | Description | Data |
+| 주제 | 보고서 수 | 설명 | 데이터 |
 | --- | ---: | --- | --- |
 ${rows}
 `;
@@ -631,7 +624,8 @@ function renderTopicKindMatrix(categories) {
     })
     .sort((a, b) => b.Reports - a.Reports || a.Topic.localeCompare(b.Topic));
   const markdownRows = rows.map((row) => `| ${headers.map((header) => tableText(row[header])).join(" | ")} |`).join("\n");
-  return `| ${headers.map(tableText).join(" | ")} |\n| ${headers.map((header, index) => index === 1 ? "---:" : "---").join(" | ")} |\n${markdownRows}\n`;
+  const displayHeaders = headers.map((header) => header === "Topic" ? "주제" : header === "Reports" ? "보고서 수" : header);
+  return `| ${displayHeaders.map(tableText).join(" | ")} |\n| ${headers.map((header, index) => index === 1 ? "---:" : "---").join(" | ")} |\n${markdownRows}\n`;
 }
 
 function renderTablesReadme(reportIndex, categories, folderSummaries) {
@@ -651,67 +645,57 @@ function renderTablesReadme(reportIndex, categories, folderSummaries) {
     return `| ${linkFrom(baseDir, report.path, report.title)} | ${tableText(report.kind)} | ${tableText(report.folder)} | ${tableText(topicNames)} |`;
   }).join("\n");
 
-  return `# Report Tables
+  return `# 표/CSV 중심 보고서 목차
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
-This page is the table-first view of the repository. Use it when you want to scan the full investigation structure before opening individual reports.
+이 페이지는 개별 보고서를 열기 전에 전체 조사 구조를 표로 먼저 훑기 위한 입구입니다.
 
 ## 요약
 
 - 조사 단위: 보고서, 주제, 폴더, 보고서 유형을 표와 CSV로 정리한 탐색 허브입니다.
-- 포함 범위: ${reportCountText(reportIndex.reports.length)}, ${categories.length} topics, ${folderSummaries.length} folder README guides입니다.
+- 포함 범위: ${reportCountText(reportIndex.reports.length)}, ${categories.length}개 주제, ${folderSummaries.length}개 폴더 README 지도입니다.
 - 데이터 파일: topic/folder/type matrix/all reports CSV를 제공하므로 GitHub 화면과 스프레드시트 양쪽에서 탐색할 수 있습니다.
 
 ## 총평
 
-이 README는 읽기보다는 비교와 찾기에 최적화된 입구입니다. 빠른 구조 파악은 Topic Summary Table과 Folder Summary Table을 먼저 보고, 특정 보고서 찾기는 \`data/report-tables/reports.csv\`를 쓰는 방식이 가장 효율적입니다.
+이 README는 읽기보다는 비교와 찾기에 최적화된 입구입니다. 빠른 구조 파악은 주제 요약 표와 폴더 요약 표를 먼저 보고, 특정 보고서 찾기는 \`data/report-tables/reports.csv\`를 쓰는 방식이 가장 효율적입니다.
 
-## Navigation
+${renderNavigationBlock(baseDir)}
 
-| Entry | Use it for |
+## 데이터 파일
+
+| 파일 | 내용 |
 | --- | --- |
-| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
-| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, start-here path, topics, and folder map. |
-| ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
-| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, and next-read links. |
-| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
-| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
-| ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, papers, presentations, and references. |
+| ${linkFrom(baseDir, "data/report-index.json", "data/report-index.json")} | 전체 보고서 JSON 인덱스. |
+| ${linkFrom(baseDir, "data/report-tables/topics.csv", "data/report-tables/topics.csv")} | 주제 요약 표. |
+| ${linkFrom(baseDir, "data/report-tables/folders.csv", "data/report-tables/folders.csv")} | 폴더 요약 표. |
+| ${linkFrom(baseDir, "data/report-tables/topic-kind-matrix.csv", "data/report-tables/topic-kind-matrix.csv")} | 주제 x 보고서 유형 매트릭스. |
+| ${linkFrom(baseDir, "data/report-tables/reports.csv", "data/report-tables/reports.csv")} | 모든 색인 보고서의 평면 표. |
+| ${linkFrom(baseDir, "data/report-tables/repository-insights.csv", "data/report-tables/repository-insights.csv")} | 레포별 인사이트, 위험, 근거, 다음 링크. |
+| ${linkFrom(baseDir, "data/report-tables/source-deep-scan.csv", "data/report-tables/source-deep-scan.csv")} | 소스 경로 deep scan row와 구현 신호. |
+| ${linkFrom(baseDir, "data/report-tables/source-category-insights.csv", "data/report-tables/source-category-insights.csv")} | 카테고리별 트렌드, feature, bucket, dependency, risk 집계. |
+| ${linkFrom(baseDir, "data/report-tables/source-repo-feature-comparison.csv", "data/report-tables/source-repo-feature-comparison.csv")} | 레포별 소스 특징 비교 매트릭스. |
 
-## Data Files
+## 주제 요약 표
 
-| File | Contents |
-| --- | --- |
-| ${linkFrom(baseDir, "data/report-index.json", "data/report-index.json")} | Complete JSON index for all reports. |
-| ${linkFrom(baseDir, "data/report-tables/topics.csv", "data/report-tables/topics.csv")} | Topic summary table. |
-| ${linkFrom(baseDir, "data/report-tables/folders.csv", "data/report-tables/folders.csv")} | Folder summary table. |
-| ${linkFrom(baseDir, "data/report-tables/topic-kind-matrix.csv", "data/report-tables/topic-kind-matrix.csv")} | Topic x report-type matrix. |
-| ${linkFrom(baseDir, "data/report-tables/reports.csv", "data/report-tables/reports.csv")} | Flat table for every indexed report. |
-| ${linkFrom(baseDir, "data/report-tables/repository-insights.csv", "data/report-tables/repository-insights.csv")} | Repository-by-repository insights, risks, evidence, and next-read links. |
-| ${linkFrom(baseDir, "data/report-tables/source-deep-scan.csv", "data/report-tables/source-deep-scan.csv")} | Source-path-level deep scan rows, key file references, and implementation signals. |
-| ${linkFrom(baseDir, "data/report-tables/source-category-insights.csv", "data/report-tables/source-category-insights.csv")} | Category-level trend, feature, bucket, dependency, and risk aggregates from source evidence. |
-| ${linkFrom(baseDir, "data/report-tables/source-repo-feature-comparison.csv", "data/report-tables/source-repo-feature-comparison.csv")} | Repository-by-repository source feature comparison matrix. |
-
-## Topic Summary Table
-
-| Topic | Reports | Description | Data |
+| 주제 | 보고서 수 | 설명 | 데이터 |
 | --- | ---: | --- | --- |
 ${topicRows}
 
-## Folder Summary Table
+## 폴더 요약 표
 
-| Folder README | Reports | Role | Main related topics |
+| 폴더 README | 보고서 수 | 역할 | 주요 관련 주제 |
 | --- | ---: | --- | --- |
 ${folderRows}
 
-## Topic x Report-Type Matrix
+## 주제 x 보고서 유형 매트릭스
 
 ${renderTopicKindMatrix(categories)}
 
-## First 80 Reports by Reading Priority
+## 우선순위 상위 80개 보고서
 
-| Report | Type | Folder | Topics |
+| 보고서 | 유형 | 폴더 | 주제 |
 | --- | --- | --- | --- |
 ${reportRows}
 `;
@@ -790,68 +774,68 @@ function renderReportsReadme(reportIndex, categorySummaries, folderSummaries) {
     .map((category) => `| ${linkFrom("reports", category.reportPath, category.title)} | ${category.count} | ${tableText(category.description)} |`)
     .join("\n");
 
-  return `# Reports Reading Index
+  return `# 전체 보고서 읽기 지도
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
-This is the entry point for reading the repository directly from GitHub or a local checkout. Deployment-specific web UI has been removed; use these category pages and JSON indexes instead.
+이 페이지는 GitHub나 로컬 checkout에서 레포를 그대로 읽기 위한 최상위 보고서 지도입니다. 배포용 웹 UI는 제거되어 있으므로, 이 README와 하위 카테고리/표/JSON 인덱스를 기준으로 탐색하면 됩니다.
 
 ## 요약
 
 - 조사 단위: 레포에 커밋된 모든 Markdown 보고서의 최상위 읽기 지도입니다.
-- 포함 범위: ${reportCountText(reportIndex.reports.length)}, ${categorySummaries.length} report topics, ${folderSummaries.length} folder README guides입니다.
-- 탐색 방식: Start Here로 전체 흐름을 잡고, Topics로 주제별 조사에 들어가며, Folder README Map으로 실제 폴더 구조를 따라갑니다.
+- 포함 범위: ${reportCountText(reportIndex.reports.length)}, ${categorySummaries.length}개 보고서 주제, ${folderSummaries.length}개 폴더 README 지도입니다.
+- 탐색 방식: 먼저 읽기로 전체 흐름을 잡고, 주제별 목차로 조사에 들어가며, 폴더별 README 지도로 실제 폴더 구조를 따라갑니다.
 
 ## 총평
 
-이 README 하나를 시작점으로 삼으면 레포 전체 조사를 끊긴 링크 없이 따라갈 수 있습니다. 주제 중심으로 볼 때는 Reports by Topic, 물리 구조 중심으로 볼 때는 Folder README Map, 정량 비교가 필요할 때는 Report Tables를 쓰는 구성이 가장 읽기 쉽습니다.
+이 README 하나를 시작점으로 삼으면 레포 전체 조사를 끊긴 링크 없이 따라갈 수 있습니다. 주제 중심으로 볼 때는 주제별 보고서 목차, 물리 구조 중심으로 볼 때는 폴더별 README 지도, 정량 비교가 필요할 때는 표/CSV 목차를 쓰는 구성이 가장 읽기 쉽습니다.
 
-## Scope
+## 범위
 
-- Markdown reports indexed: ${reportIndex.reports.length}
-- Topic categories: ${categorySummaries.length}
-- Folder README guides: ${folderSummaries.length}
-- Data index: ${linkFrom("reports", "data/report-index.json", "data/report-index.json")}
-- Topic data folder: ${linkFrom("reports", "data/report-categories", "data/report-categories/")}
-- Table data folder: ${linkFrom("reports", "data/report-tables", "data/report-tables/")}
+- 색인된 Markdown 보고서: ${reportIndex.reports.length}
+- 보고서 주제: ${categorySummaries.length}
+- 폴더 README 지도: ${folderSummaries.length}
+- 데이터 인덱스: ${linkFrom("reports", "data/report-index.json", "data/report-index.json")}
+- 주제 데이터 폴더: ${linkFrom("reports", "data/report-categories", "data/report-categories/")}
+- 표 데이터 폴더: ${linkFrom("reports", "data/report-tables", "data/report-tables/")}
 
-## Navigation Map
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| ${linkFrom("reports", "reports/by-topic/start-here/README.md", "Start Here")} | First-pass reading order across the major investigations. |
-| ${linkFrom("reports", "reports/by-topic/README.md", "Reports by Topic")} | Topic-first navigation across all Markdown reports. |
-| ${linkFrom("reports", "reports/tables/README.md", "Report Tables")} | Table-first scanning, CSV exports, and topic/type matrices. |
-| ${linkFrom("reports", "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights, risks, evidence, and next-read links. |
-| ${linkFrom("reports", "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
-| ${linkFrom("reports", "reports/categories/README.md", "Artifact Categories")} | Artifact-level categories across repositories, research, presentations, and trend sources. |
+| ${linkFrom("reports", "reports/by-topic/start-here/README.md", "먼저 읽기")} | 주요 조사 흐름을 처음부터 잡는 순서. |
+| ${linkFrom("reports", "reports/by-topic/README.md", "주제별 보고서 목차")} | 모든 Markdown 보고서를 조사 질문 기준으로 탐색. |
+| ${linkFrom("reports", "reports/tables/README.md", "표/CSV 목차")} | 표, CSV, 주제/유형 matrix 중심 탐색. |
+| ${linkFrom("reports", "reports/repository-insights/README.md", "레포별 인사이트")} | 레포별 총평, 위험, 근거, 다음 읽기 링크. |
+| ${linkFrom("reports", "reports/source-deep-dives/README.md", "소스 딥다이브")} | 로컬 클론에서 뽑은 파일 경로 근거. |
+| ${linkFrom("reports", "reports/categories/README.md", "근거 카테고리")} | 오픈소스, 논문, 발표, 트렌드 출처의 artifact 분류. |
 
-## Start Here
+## 먼저 읽기
 
 ${renderReportTable(start, "reports", 20)}
 
-## High-Signal Overview Reports
+## 핵심 총괄 보고서
 
 ${renderReportTable(highSignal, "reports", 30)}
 
-## Topics
+## 주제별 목차
 
-| Topic | Reports | Description |
+| 주제 | 보고서 수 | 설명 |
 | --- | ---: | --- |
 ${rows}
 
-## Folder README Map
+## 폴더별 README 지도
 
 ${renderFolderMap(folderSummaries, "reports")}
 
-## Practical Reading Order
+## 읽는 순서
 
-1. Open ${linkFrom("reports", "reports/categories/README.md", "reports/categories/README.md")} for artifact-level categories.
-2. Open ${linkFrom("reports", "reports/by-topic/README.md", "reports/by-topic/README.md")} for report-level categories.
-3. Open ${linkFrom("reports", "reports/source-deep-dives/README.md", "reports/source-deep-dives/README.md")} when you need source-path-level implementation evidence.
-4. Open ${linkFrom("reports", "reports/tables/README.md", "reports/tables/README.md")} when you need spreadsheet-style tables.
-5. Use the folder README map above when you know the physical report folder.
-6. Use \`data/report-index.json\`, \`data/report-categories/*.json\`, and \`data/report-tables/*.csv\` when you need complete machine-readable membership.
+1. ${linkFrom("reports", "reports/categories/README.md", "reports/categories/README.md")}에서 조사 대상과 근거 카테고리를 먼저 봅니다.
+2. ${linkFrom("reports", "reports/by-topic/README.md", "reports/by-topic/README.md")}에서 질문별 보고서 묶음을 확인합니다.
+3. 구현 근거가 필요하면 ${linkFrom("reports", "reports/source-deep-dives/README.md", "reports/source-deep-dives/README.md")}에서 소스 경로를 봅니다.
+4. 넓게 비교해야 하면 ${linkFrom("reports", "reports/tables/README.md", "reports/tables/README.md")}에서 표와 CSV를 봅니다.
+5. 실제 폴더 위치를 이미 알면 위의 폴더별 README 지도를 사용합니다.
+6. 완전한 기계 판독 목록은 \`data/report-index.json\`, \`data/report-categories/*.json\`, \`data/report-tables/*.csv\`를 사용합니다.
 `;
 }
 

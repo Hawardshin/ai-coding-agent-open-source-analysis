@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:13:01.107Z",
+  "generatedAt": "2026-06-18T15:31:47.876Z",
   "slug": "source-catalogs-and-inventories",
-  "title": "Source Catalogs and Inventories",
-  "description": "Source catalogs, inventory files, clone lists, and evidence ledgers used by the investigations.",
+  "title": "소스 카탈로그/인벤토리",
+  "description": "조사에 사용한 소스 카탈로그, 인벤토리, 클론 목록, evidence ledger입니다.",
   "count": 6,
   "reports": [
     {

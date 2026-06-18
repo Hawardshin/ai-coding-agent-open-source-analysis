@@ -1,63 +1,63 @@
-# tobi/qmd Source Deep Dive
+# tobi/qmd 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local
 
 ## 요약
 
-- 조사 단위: `sources/tobi__qmd` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 154 files, 32 directories, depth score 117, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/tobi__qmd` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 154 files, 32 directories, depth score 111, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=example-index.yml, src/index.ts, finetune/eval_retrieval.py이고, 의존성 단서는 modelcontextprotocol, llama, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=example-index.yml, src/index.ts, finetune/eval_retrieval.py이고, 의존성 단서는 modelcontextprotocol, llama, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | tobi/qmd |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | tobi/qmd |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | korea |
 | Language | TypeScript |
 | Stars | 26713 |
 | Forks | 1673 |
 | License | MIT |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/tobi__qmd](../../../../sources/tobi__qmd) |
-| Existing report | [reports/llm-wiki/repositories/tobi__qmd.md](../../../llm-wiki/repositories/tobi__qmd.md) |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/tobi__qmd](../../../../sources/tobi__qmd) |
+| 기존 보고서 | [reports/llm-wiki/repositories/tobi__qmd.md](../../../llm-wiki/repositories/tobi__qmd.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 154 / 32 |
-| Max observed depth | 4 |
-| Top directories | .claude-plugin, .github, .pi, assets, bin, docs, finetune, scripts, skills, src, test |
-| Top extensions | .ts: 46, .py: 25, .md: 17, .jsonl: 15, (none): 10, .json: 9, .yaml: 7, .sh: 6, .mjs: 5, .yml: 4, .lock: 3, .txt: 3 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 154 / 32 |
+| 관측 최대 깊이 | 4 |
+| 상위 디렉터리 | .claude-plugin, .github, .pi, assets, bin, docs, finetune, scripts, skills, src, test |
+| 상위 확장자 | .ts: 46, .py: 25, .md: 17, .jsonl: 15, (none): 10, .json: 9, .yaml: 7, .sh: 6, .mjs: 5, .yml: 4, .lock: 3, .txt: 3 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 8 |
 | docs | documentation surface | 2 |
@@ -70,9 +70,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | test | validation surface | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | prepare | [ -d .git ] && ./scripts/install-hooks.sh \|\| true |
 | build | package.json | build | node scripts/build.mjs |
@@ -94,24 +94,24 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | entrypoint | package.json bin | qmd | bin/qmd |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | llama |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [example-index.yml](../../../../sources/tobi__qmd/example-index.yml) | retrieval signal |
 | retrieval | [src/index.ts](../../../../sources/tobi__qmd/src/index.ts) | retrieval signal |
@@ -127,9 +127,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | eval | [test/bench-score.test.ts](../../../../sources/tobi__qmd/test/bench-score.test.ts) | eval signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 3 | [src/index.ts](../../../../sources/tobi__qmd/src/index.ts)<br>[src/mcp/server.ts](../../../../sources/tobi__qmd/src/mcp/server.ts)<br>[bin/qmd](../../../../sources/tobi__qmd/bin/qmd) |
 | agentRuntime | 4 | [skills/release/SKILL.md](../../../../sources/tobi__qmd/skills/release/SKILL.md)<br>[skills/release/scripts/install-hooks.sh](../../../../sources/tobi__qmd/skills/release/scripts/install-hooks.sh)<br>[skills/qmd/SKILL.md](../../../../sources/tobi__qmd/skills/qmd/SKILL.md)<br>[skills/qmd/references/mcp-setup.md](../../../../sources/tobi__qmd/skills/qmd/references/mcp-setup.md) |
@@ -139,45 +139,45 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | eval | 49 | [test/ast-chunking.test.ts](../../../../sources/tobi__qmd/test/ast-chunking.test.ts)<br>[test/ast.test.ts](../../../../sources/tobi__qmd/test/ast.test.ts)<br>[test/bench-score.test.ts](../../../../sources/tobi__qmd/test/bench-score.test.ts)<br>[test/bin-wrapper.test.ts](../../../../sources/tobi__qmd/test/bin-wrapper.test.ts)<br>[test/cli-exit-lifecycle.test.ts](../../../../sources/tobi__qmd/test/cli-exit-lifecycle.test.ts)<br>[test/cli-lazy-llm-import.test.ts](../../../../sources/tobi__qmd/test/cli-lazy-llm-import.test.ts)<br>[test/cli.test.ts](../../../../sources/tobi__qmd/test/cli.test.ts)<br>[test/collections-config.test.ts](../../../../sources/tobi__qmd/test/collections-config.test.ts) |
 | security | 1 | [test/eval-docs/remote-work-policy.md](../../../../sources/tobi__qmd/test/eval-docs/remote-work-policy.md) |
 | ci | 3 | [.github/workflows/ci.yml](../../../../sources/tobi__qmd/.github/workflows/ci.yml)<br>[.github/workflows/nix.yml](../../../../sources/tobi__qmd/.github/workflows/nix.yml)<br>[.github/workflows/publish.yml](../../../../sources/tobi__qmd/.github/workflows/publish.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 2 | [CLAUDE.md](../../../../sources/tobi__qmd/CLAUDE.md)<br>[finetune/CLAUDE.md](../../../../sources/tobi__qmd/finetune/CLAUDE.md) |
 | docs | 4 | [README.md](../../../../sources/tobi__qmd/README.md)<br>[finetune/README.md](../../../../sources/tobi__qmd/finetune/README.md)<br>[finetune/experiments/grpo/README.md](../../../../sources/tobi__qmd/finetune/experiments/grpo/README.md)<br>[docs/SYNTAX.md](../../../../sources/tobi__qmd/docs/SYNTAX.md) |
 | config | 4 | [package.json](../../../../sources/tobi__qmd/package.json)<br>[tsconfig.json](../../../../sources/tobi__qmd/tsconfig.json)<br>[finetune/pyproject.toml](../../../../sources/tobi__qmd/finetune/pyproject.toml)<br>[finetune/uv.lock](../../../../sources/tobi__qmd/finetune/uv.lock) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 49 | [test/ast-chunking.test.ts](../../../../sources/tobi__qmd/test/ast-chunking.test.ts)<br>[test/ast.test.ts](../../../../sources/tobi__qmd/test/ast.test.ts)<br>[test/bench-score.test.ts](../../../../sources/tobi__qmd/test/bench-score.test.ts)<br>[test/bin-wrapper.test.ts](../../../../sources/tobi__qmd/test/bin-wrapper.test.ts)<br>[test/cli-exit-lifecycle.test.ts](../../../../sources/tobi__qmd/test/cli-exit-lifecycle.test.ts)<br>[test/cli-lazy-llm-import.test.ts](../../../../sources/tobi__qmd/test/cli-lazy-llm-import.test.ts) |
-| CI workflows | 3 | [.github/workflows/ci.yml](../../../../sources/tobi__qmd/.github/workflows/ci.yml)<br>[.github/workflows/nix.yml](../../../../sources/tobi__qmd/.github/workflows/nix.yml)<br>[.github/workflows/publish.yml](../../../../sources/tobi__qmd/.github/workflows/publish.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 1 | [test/eval-docs/remote-work-policy.md](../../../../sources/tobi__qmd/test/eval-docs/remote-work-policy.md) |
-| Agent instructions | 2 | [CLAUDE.md](../../../../sources/tobi__qmd/CLAUDE.md)<br>[finetune/CLAUDE.md](../../../../sources/tobi__qmd/finetune/CLAUDE.md) |
+| 테스트/평가 | 49 | [test/ast-chunking.test.ts](../../../../sources/tobi__qmd/test/ast-chunking.test.ts)<br>[test/ast.test.ts](../../../../sources/tobi__qmd/test/ast.test.ts)<br>[test/bench-score.test.ts](../../../../sources/tobi__qmd/test/bench-score.test.ts)<br>[test/bin-wrapper.test.ts](../../../../sources/tobi__qmd/test/bin-wrapper.test.ts)<br>[test/cli-exit-lifecycle.test.ts](../../../../sources/tobi__qmd/test/cli-exit-lifecycle.test.ts)<br>[test/cli-lazy-llm-import.test.ts](../../../../sources/tobi__qmd/test/cli-lazy-llm-import.test.ts) |
+| CI workflow | 3 | [.github/workflows/ci.yml](../../../../sources/tobi__qmd/.github/workflows/ci.yml)<br>[.github/workflows/nix.yml](../../../../sources/tobi__qmd/.github/workflows/nix.yml)<br>[.github/workflows/publish.yml](../../../../sources/tobi__qmd/.github/workflows/publish.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 1 | [test/eval-docs/remote-work-policy.md](../../../../sources/tobi__qmd/test/eval-docs/remote-work-policy.md) |
+| 에이전트 지시문 | 2 | [CLAUDE.md](../../../../sources/tobi__qmd/CLAUDE.md)<br>[finetune/CLAUDE.md](../../../../sources/tobi__qmd/finetune/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `example-index.yml`, `src/index.ts`, `finetune/eval_retrieval.py`.
-2. Trace execution through entrypoints: `src/index.ts`, `src/mcp/server.ts`, `bin/qmd`.
-3. Map agent/tool runtime through: `skills/release/SKILL.md`, `skills/release/scripts/install-hooks.sh`, `skills/qmd/SKILL.md`.
-4. Inspect retrieval/memory/indexing through: `example-index.yml`, `src/index.ts`, `finetune/eval_retrieval.py`.
-5. Verify behavior through test/eval files: `test/ast-chunking.test.ts`, `test/ast.test.ts`, `test/bench-score.test.ts`.
+1. 핵심 참조에서 시작: `example-index.yml`, `src/index.ts`, `finetune/eval_retrieval.py`.
+2. entrypoint를 따라 실행 흐름 확인: `src/index.ts`, `src/mcp/server.ts`, `bin/qmd`.
+3. agent/tool runtime 매핑: `skills/release/SKILL.md`, `skills/release/scripts/install-hooks.sh`, `skills/qmd/SKILL.md`.
+4. retrieval/memory/indexing 확인: `example-index.yml`, `src/index.ts`, `finetune/eval_retrieval.py`.
+5. test/eval 파일로 동작 검증: `test/ast-chunking.test.ts`, `test/ast.test.ts`, `test/bench-score.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while b. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, modelcontextprotocol이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while b. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, modelcontextprotocol이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

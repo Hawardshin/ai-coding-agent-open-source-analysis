@@ -1,63 +1,63 @@
-# langfuse/langfuse Source Deep Dive
+# langfuse/langfuse 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 3660 files, 1176 directories.
 
 ## 요약
 
-- 조사 단위: `sources/langfuse__langfuse` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 3,657 files, 1,175 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/langfuse__langfuse` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 3,657 files, 1,175 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=web/src/pages/api/public/mcp/index.ts, web/src/features/mcp/README.md, web/src/features/mcp/types.ts이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=web/src/pages/api/public/mcp/index.ts, web/src/features/mcp/README.md, web/src/features/mcp/types.ts이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | langfuse/langfuse |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | langfuse/langfuse |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | mixed |
-| Language | none |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | deep-source+report |
-| Source | [sources/langfuse__langfuse](../../../../sources/langfuse__langfuse) |
-| Existing report | [reports/clone-structures/langfuse__langfuse.md](../../../clone-structures/langfuse__langfuse.md) |
+| Language | 없음 |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/langfuse__langfuse](../../../../sources/langfuse__langfuse) |
+| 기존 보고서 | [reports/clone-structures/langfuse__langfuse.md](../../../clone-structures/langfuse__langfuse.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 3657 / 1175 |
-| Max observed depth | 10 |
-| Top directories | .agents, .devcontainer, .github, .husky, ee, fern, packages, patches, scripts, specs, web, worker |
-| Top extensions | .ts: 1794, .tsx: 827, .sql: 542, .md: 228, .json: 81, .yml: 78, .sh: 15, (none): 15, .mjs: 12, .svg: 10, .yaml: 10, .png: 9 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 3657 / 1175 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .agents, .devcontainer, .github, .husky, ee, fern, packages, patches, scripts, specs, web, worker |
+| 상위 확장자 | .ts: 1794, .tsx: 827, .sql: 542, .md: 228, .json: 81, .yml: 78, .sh: 15, (none): 15, .mjs: 12, .svg: 10, .yaml: 10, .png: 9 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | web | source boundary | 194 |
 | packages/shared | packages workspace | 12 |
@@ -75,9 +75,9 @@ Local clone structure analysis: 3660 files, 1176 directories.
 | worker | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | quality | package.json | agents:check | node scripts/agents/sync-agent-shims.mjs --check |
 | utility | package.json | agents:sync | node scripts/agents/sync-agent-shims.mjs |
@@ -114,24 +114,24 @@ Local clone structure analysis: 3660 files, 1176 directories.
 | utility | package.json | prepare | husky |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [web/src/pages/api/public/mcp/index.ts](../../../../sources/langfuse__langfuse/web/src/pages/api/public/mcp/index.ts) | mcp signal |
 | mcp | [web/src/features/mcp/README.md](../../../../sources/langfuse__langfuse/web/src/features/mcp/README.md) | mcp signal |
@@ -147,9 +147,9 @@ Local clone structure analysis: 3660 files, 1176 directories.
 | entrypoints | [packages/shared/src/index.ts](../../../../sources/langfuse__langfuse/packages/shared/src/index.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 7 | [worker/src/app.ts](../../../../sources/langfuse__langfuse/worker/src/app.ts)<br>[worker/src/index.ts](../../../../sources/langfuse__langfuse/worker/src/index.ts)<br>[web/.storybook/main.ts](../../../../sources/langfuse__langfuse/web/.storybook/main.ts)<br>[packages/shared/src/index.ts](../../../../sources/langfuse__langfuse/packages/shared/src/index.ts)<br>[packages/shared/src/features/monitors/server.ts](../../../../sources/langfuse__langfuse/packages/shared/src/features/monitors/server.ts)<br>[packages/eslint-plugin/src/index.ts](../../../../sources/langfuse__langfuse/packages/eslint-plugin/src/index.ts)<br>[ee/src/index.ts](../../../../sources/langfuse__langfuse/ee/src/index.ts) |
 | agentRuntime | 411 | [worker/AGENTS.md](../../../../sources/langfuse__langfuse/worker/AGENTS.md)<br>[web/AGENTS.md](../../../../sources/langfuse__langfuse/web/AGENTS.md)<br>[web/src/hooks/use-environment-filter-options-cache.tsx](../../../../sources/langfuse__langfuse/web/src/hooks/use-environment-filter-options-cache.tsx)<br>[web/src/hooks/use-mobile.tsx](../../../../sources/langfuse__langfuse/web/src/hooks/use-mobile.tsx)<br>[web/src/hooks/useClickWithoutSelection.ts](../../../../sources/langfuse__langfuse/web/src/hooks/useClickWithoutSelection.ts)<br>[web/src/hooks/useCollapsibleSystemPrompt.ts](../../../../sources/langfuse__langfuse/web/src/hooks/useCollapsibleSystemPrompt.ts)<br>[web/src/hooks/useCopyToClipboard.clienttest.ts](../../../../sources/langfuse__langfuse/web/src/hooks/useCopyToClipboard.clienttest.ts)<br>[web/src/hooks/useCopyToClipboard.ts](../../../../sources/langfuse__langfuse/web/src/hooks/useCopyToClipboard.ts) |
@@ -165,39 +165,39 @@ Local clone structure analysis: 3660 files, 1176 directories.
 | config | 16 | [package.json](../../../../sources/langfuse__langfuse/package.json)<br>[pnpm-workspace.yaml](../../../../sources/langfuse__langfuse/pnpm-workspace.yaml)<br>[turbo.json](../../../../sources/langfuse__langfuse/turbo.json)<br>[worker/package.json](../../../../sources/langfuse__langfuse/worker/package.json)<br>[worker/tsconfig.json](../../../../sources/langfuse__langfuse/worker/tsconfig.json)<br>[web/package.json](../../../../sources/langfuse__langfuse/web/package.json)<br>[web/tsconfig.json](../../../../sources/langfuse__langfuse/web/tsconfig.json)<br>[web/.storybook/tsconfig.json](../../../../sources/langfuse__langfuse/web/.storybook/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 624 | [.env.test.example](../../../../sources/langfuse__langfuse/.env.test.example)<br>[worker/src/services/IngestionService/tests/calculateTokenCost.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/calculateTokenCost.unit.test.ts)<br>[worker/src/services/IngestionService/tests/IngestionService.integration.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/IngestionService.integration.test.ts)<br>[worker/src/services/IngestionService/tests/IngestionService.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/IngestionService.unit.test.ts)<br>[worker/src/services/IngestionService/tests/utils.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/utils.unit.test.ts)<br>[worker/src/services/ClickhouseWriter/ClickhouseWriter.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/ClickhouseWriter/ClickhouseWriter.unit.test.ts) |
-| CI workflows | 25 | [.github/workflows/_deploy_ecs_service.yml](../../../../sources/langfuse__langfuse/.github/workflows/_deploy_ecs_service.yml)<br>[.github/workflows/ci.yml.template](../../../../sources/langfuse__langfuse/.github/workflows/ci.yml.template)<br>[.github/workflows/cla-assistant.yml](../../../../sources/langfuse__langfuse/.github/workflows/cla-assistant.yml)<br>[.github/workflows/claude-code-security-review.yml](../../../../sources/langfuse__langfuse/.github/workflows/claude-code-security-review.yml)<br>[.github/workflows/claude-review-maintainer-prs.yml](../../../../sources/langfuse__langfuse/.github/workflows/claude-review-maintainer-prs.yml)<br>[.github/workflows/codeql.yml](../../../../sources/langfuse__langfuse/.github/workflows/codeql.yml) |
-| Containers / deploy | 23 | [docker-compose.build.yml](../../../../sources/langfuse__langfuse/docker-compose.build.yml)<br>[docker-compose.dev-azure.yml](../../../../sources/langfuse__langfuse/docker-compose.dev-azure.yml)<br>[docker-compose.dev-redis-cluster.yml](../../../../sources/langfuse__langfuse/docker-compose.dev-redis-cluster.yml)<br>[docker-compose.dev.yml](../../../../sources/langfuse__langfuse/docker-compose.dev.yml)<br>[docker-compose.yml](../../../../sources/langfuse__langfuse/docker-compose.yml)<br>[worker/Dockerfile](../../../../sources/langfuse__langfuse/worker/Dockerfile) |
-| Security / policy | 80 | [SECURITY.md](../../../../sources/langfuse__langfuse/SECURITY.md)<br>[worker/src/__tests__/fetchLLMCompletion-bedrock-auth.test.ts](../../../../sources/langfuse__langfuse/worker/src/__tests__/fetchLLMCompletion-bedrock-auth.test.ts)<br>[web/types/next-auth.d.ts](../../../../sources/langfuse__langfuse/web/types/next-auth.d.ts)<br>[web/src/server/auth.ts](../../../../sources/langfuse__langfuse/web/src/server/auth.ts)<br>[web/src/pages/auth/enterprise-sso-required.tsx](../../../../sources/langfuse__langfuse/web/src/pages/auth/enterprise-sso-required.tsx)<br>[web/src/pages/auth/error.tsx](../../../../sources/langfuse__langfuse/web/src/pages/auth/error.tsx) |
-| Agent instructions | 10 | [worker/AGENTS.md](../../../../sources/langfuse__langfuse/worker/AGENTS.md)<br>[web/AGENTS.md](../../../../sources/langfuse__langfuse/web/AGENTS.md)<br>[web/CLAUDE.md](../../../../sources/langfuse__langfuse/web/CLAUDE.md)<br>[web/src/ee/features/in-app-agent/AGENTS.md](../../../../sources/langfuse__langfuse/web/src/ee/features/in-app-agent/AGENTS.md)<br>[web/.agents/skills/vercel-react-best-practices/AGENTS.md](../../../../sources/langfuse__langfuse/web/.agents/skills/vercel-react-best-practices/AGENTS.md)<br>[web/.agents/skills/vercel-composition-patterns/AGENTS.md](../../../../sources/langfuse__langfuse/web/.agents/skills/vercel-composition-patterns/AGENTS.md) |
+| 테스트/평가 | 624 | [.env.test.example](../../../../sources/langfuse__langfuse/.env.test.example)<br>[worker/src/services/IngestionService/tests/calculateTokenCost.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/calculateTokenCost.unit.test.ts)<br>[worker/src/services/IngestionService/tests/IngestionService.integration.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/IngestionService.integration.test.ts)<br>[worker/src/services/IngestionService/tests/IngestionService.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/IngestionService.unit.test.ts)<br>[worker/src/services/IngestionService/tests/utils.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/IngestionService/tests/utils.unit.test.ts)<br>[worker/src/services/ClickhouseWriter/ClickhouseWriter.unit.test.ts](../../../../sources/langfuse__langfuse/worker/src/services/ClickhouseWriter/ClickhouseWriter.unit.test.ts) |
+| CI workflow | 25 | [.github/workflows/_deploy_ecs_service.yml](../../../../sources/langfuse__langfuse/.github/workflows/_deploy_ecs_service.yml)<br>[.github/workflows/ci.yml.template](../../../../sources/langfuse__langfuse/.github/workflows/ci.yml.template)<br>[.github/workflows/cla-assistant.yml](../../../../sources/langfuse__langfuse/.github/workflows/cla-assistant.yml)<br>[.github/workflows/claude-code-security-review.yml](../../../../sources/langfuse__langfuse/.github/workflows/claude-code-security-review.yml)<br>[.github/workflows/claude-review-maintainer-prs.yml](../../../../sources/langfuse__langfuse/.github/workflows/claude-review-maintainer-prs.yml)<br>[.github/workflows/codeql.yml](../../../../sources/langfuse__langfuse/.github/workflows/codeql.yml) |
+| 컨테이너/배포 | 23 | [docker-compose.build.yml](../../../../sources/langfuse__langfuse/docker-compose.build.yml)<br>[docker-compose.dev-azure.yml](../../../../sources/langfuse__langfuse/docker-compose.dev-azure.yml)<br>[docker-compose.dev-redis-cluster.yml](../../../../sources/langfuse__langfuse/docker-compose.dev-redis-cluster.yml)<br>[docker-compose.dev.yml](../../../../sources/langfuse__langfuse/docker-compose.dev.yml)<br>[docker-compose.yml](../../../../sources/langfuse__langfuse/docker-compose.yml)<br>[worker/Dockerfile](../../../../sources/langfuse__langfuse/worker/Dockerfile) |
+| 보안/정책 | 80 | [SECURITY.md](../../../../sources/langfuse__langfuse/SECURITY.md)<br>[worker/src/__tests__/fetchLLMCompletion-bedrock-auth.test.ts](../../../../sources/langfuse__langfuse/worker/src/__tests__/fetchLLMCompletion-bedrock-auth.test.ts)<br>[web/types/next-auth.d.ts](../../../../sources/langfuse__langfuse/web/types/next-auth.d.ts)<br>[web/src/server/auth.ts](../../../../sources/langfuse__langfuse/web/src/server/auth.ts)<br>[web/src/pages/auth/enterprise-sso-required.tsx](../../../../sources/langfuse__langfuse/web/src/pages/auth/enterprise-sso-required.tsx)<br>[web/src/pages/auth/error.tsx](../../../../sources/langfuse__langfuse/web/src/pages/auth/error.tsx) |
+| 에이전트 지시문 | 10 | [worker/AGENTS.md](../../../../sources/langfuse__langfuse/worker/AGENTS.md)<br>[web/AGENTS.md](../../../../sources/langfuse__langfuse/web/AGENTS.md)<br>[web/CLAUDE.md](../../../../sources/langfuse__langfuse/web/CLAUDE.md)<br>[web/src/ee/features/in-app-agent/AGENTS.md](../../../../sources/langfuse__langfuse/web/src/ee/features/in-app-agent/AGENTS.md)<br>[web/.agents/skills/vercel-react-best-practices/AGENTS.md](../../../../sources/langfuse__langfuse/web/.agents/skills/vercel-react-best-practices/AGENTS.md)<br>[web/.agents/skills/vercel-composition-patterns/AGENTS.md](../../../../sources/langfuse__langfuse/web/.agents/skills/vercel-composition-patterns/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `web/src/pages/api/public/mcp/index.ts`, `web/src/features/mcp/README.md`, `web/src/features/mcp/types.ts`.
-2. Trace execution through entrypoints: `worker/src/app.ts`, `worker/src/index.ts`, `web/.storybook/main.ts`.
-3. Map agent/tool runtime through: `worker/AGENTS.md`, `web/AGENTS.md`, `web/src/hooks/use-environment-filter-options-cache.tsx`.
-4. Inspect retrieval/memory/indexing through: `worker/src/index.ts`, `worker/src/services/IngestionService/index.ts`, `worker/src/services/ClickhouseWriter/index.ts`.
-5. Verify behavior through test/eval files: `.env.test.example`, `worker/src/services/IngestionService/tests/calculateTokenCost.unit.test.ts`, `worker/src/services/IngestionService/tests/IngestionService.integration.test.ts`.
+1. 핵심 참조에서 시작: `web/src/pages/api/public/mcp/index.ts`, `web/src/features/mcp/README.md`, `web/src/features/mcp/types.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `worker/src/app.ts`, `worker/src/index.ts`, `web/.storybook/main.ts`.
+3. agent/tool runtime 매핑: `worker/AGENTS.md`, `web/AGENTS.md`, `web/src/hooks/use-environment-filter-options-cache.tsx`.
+4. retrieval/memory/indexing 확인: `worker/src/index.ts`, `worker/src/services/IngestionService/index.ts`, `worker/src/services/ClickhouseWriter/index.ts`.
+5. test/eval 파일로 동작 검증: `.env.test.example`, `worker/src/services/IngestionService/tests/calculateTokenCost.unit.test.ts`, `worker/src/services/IngestionService/tests/IngestionService.integration.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 3660 files, 1176 directories.. 핵심 구조 신호는 package.json, docker-compose.yml, README.md, LICENSE, tests, ci이며, deep-source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 3660 files, 1176 directories.. 핵심 구조 신호는 package.json, docker-compose.yml, README.md, LICENSE, tests, ci이며, 심층 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

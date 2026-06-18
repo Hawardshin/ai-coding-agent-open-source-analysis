@@ -1,59 +1,59 @@
-# AI Usage Trends
+# AI 활용 트렌드
 
-Generated: 2026-06-18T15:12:39.601Z
+생성 시각: 2026-06-18T15:31:33.431Z
 
-Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events.
+Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, 한국 행사에서 나온 최근 AI 도입 트렌드입니다.
 
 ## 요약
 
 - 조사 단위: `ai-usage-trends` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
-- 포함 범위: 58 entries이며, 주요 구성은 trend-reference (58)입니다.
+- 포함 범위: 58개 항목이며, 주요 구성은 trend-reference (58)입니다.
 - 연결 보고서: [ai-usage-trends](../../by-topic/ai-usage-trends/README.md), [presentations-conferences](../../by-topic/presentations-conferences/README.md).
 
 ## 총평
 
 이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
-| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [근거 카테고리](../README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
-## Counts
+## 범위
 
-- Total categorized entries: 58
-- Repositories: 0
-- Research papers: 0
-- Presentations/conferences/trend references: 58
-- Reference materials: 0
-- Data file: [data/categories/ai-usage-trends.json](../../../data/categories/ai-usage-trends.json)
-- Related report topics: [ai-usage-trends](../../by-topic/ai-usage-trends/README.md), [presentations-conferences](../../by-topic/presentations-conferences/README.md)
+- 전체 분류 항목: 58
+- 오픈소스/레포: 0
+- 논문/연구자료: 0
+- 발표/컨퍼런스/트렌드 자료: 58
+- 참고자료: 0
+- 데이터 파일: [data/categories/ai-usage-trends.json](../../../data/categories/ai-usage-trends.json)
+- 연결된 보고서 주제: [ai-usage-trends](../../by-topic/ai-usage-trends/README.md), [presentations-conferences](../../by-topic/presentations-conferences/README.md)
 
-## Type Breakdown
+## 유형별 구성
 
 - trend-reference: 58
 
-## Top Open Source
+## 주요 오픈소스
 
-_No indexed items in this section._
-
-
-## Top Research
-
-_No indexed items in this section._
+_이 섹션에 색인된 항목이 없습니다._
 
 
-## Top Presentations and Conference References
+## 주요 연구/논문
 
-| Item | Type | Metadata | Score | Local links |
+_이 섹션에 색인된 항목이 없습니다._
+
+
+## 주요 발표/컨퍼런스 자료
+
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [13 online sessions from Samsung AI Forum 2025 are now available](https://developer.samsung.com/sdp/news/en/2025/10/16/catch-13-insightful-sessions-from-samsung-ai-forum-2025-on-youtube) | trend-reference | 2025-09-16, Samsung | 125.0 |  |
 | [Microsoft AI Tour in Seoul](https://aitour.microsoft.com/flow/microsoft/seoul26/landingpage/page/cityhome) | trend-reference | 2026-03-26, Microsoft | 125.0 |  |
@@ -92,9 +92,9 @@ _No indexed items in this section._
 | [Code with Claude developer conference](https://claude.com/code-with-claude) | trend-reference | 2026-05-06, Anthropic | 95.0 |  |
 
 
-## Top Reference Materials
+## 주요 참고자료
 
-_No indexed items in this section._
+_이 섹션에 색인된 항목이 없습니다._
 
 
-Complete category membership is stored in [data/categories/ai-usage-trends.json](../../../data/categories/ai-usage-trends.json).
+전체 카테고리 멤버십은 [data/categories/ai-usage-trends.json](../../../data/categories/ai-usage-trends.json)에 저장됩니다.

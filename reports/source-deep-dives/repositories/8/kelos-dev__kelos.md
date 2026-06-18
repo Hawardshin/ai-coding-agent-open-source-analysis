@@ -1,63 +1,63 @@
-# kelos-dev/kelos Source Deep Dive
+# kelos-dev/kelos 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Kelos - The Kubernetes-native framework for orchestrating autonomous AI coding agents.
 
 ## 요약
 
-- 조사 단위: `sources/kelos-dev__kelos` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 416 files, 94 directories, depth score 114, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/kelos-dev__kelos` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 416 files, 94 directories, depth score 108, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-코딩 에이전트/IDE 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=hack/release-notes/main.go, cmd/kelos-webhook-server/main.go, cmd/kelos-spawner/main.go이고, 의존성 단서는 cobra, prometheus, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 coding-agent reference implementation이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+코딩 에이전트/IDE 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=hack/release-notes/main.go, cmd/kelos-webhook-server/main.go, cmd/kelos-spawner/main.go이고, 의존성 단서는 cobra, prometheus, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 코딩 에이전트 참고 구현이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | kelos-dev/kelos |
-| Topic | Coding Agent and IDE / 코딩 에이전트/IDE |
+| 레포 | kelos-dev/kelos |
+| 주제 | 코딩 에이전트/IDE / 코딩 에이전트/IDE |
 | Region | global |
 | Language | Go |
 | Stars | 222 |
 | Forks | 27 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/kelos-dev__kelos](../../../../sources/kelos-dev__kelos) |
-| Existing report | [reports/global-trending/repositories/kelos-dev__kelos.md](../../../global-trending/repositories/kelos-dev__kelos.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/kelos-dev__kelos](../../../../sources/kelos-dev__kelos) |
+| 기존 보고서 | [reports/global-trending/repositories/kelos-dev__kelos.md](../../../global-trending/repositories/kelos-dev__kelos.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 416 / 94 |
-| Max observed depth | 9 |
-| Top directories | .github, api, claude-code, cmd, codex, cursor, docs, examples, Formula, gemini, hack, internal, kanon-development, opencode, pkg, self-development, skills, test |
-| Top extensions | .go: 264, .yaml: 95, .md: 27, (none): 14, .sh: 12, .mod: 1, .rb: 1, .sum: 1, .txt: 1 |
-| Source patterns | cli-first, api/server, agent/tool runtime, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 416 / 94 |
+| 관측 최대 깊이 | 9 |
+| 상위 디렉터리 | .github, api, claude-code, cmd, codex, cursor, docs, examples, Formula, gemini, hack, internal, kanon-development, opencode, pkg, self-development, skills, test |
+| 상위 확장자 | .go: 264, .yaml: 95, .md: 27, (none): 14, .sh: 12, .mod: 1, .rb: 1, .sum: 1, .txt: 1 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 5 |
 | examples/02-task-with-workspace | examples workspace | 3 |
@@ -79,9 +79,9 @@ Kelos - The Kubernetes-native framework for orchestrating autonomous AI coding a
 | cmd | source boundary | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | utility | Makefile | all | make all |
@@ -105,24 +105,24 @@ Kelos - The Kubernetes-native framework for orchestrating autonomous AI coding a
 | container | Makefile | image | make image |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
 | developerSurface | cobra |
 | observability | prometheus |
-| browserAutomation | none |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [hack/release-notes/main.go](../../../../sources/kelos-dev__kelos/hack/release-notes/main.go) | entrypoints signal |
 | entrypoints | [cmd/kelos-webhook-server/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos-webhook-server/main.go) | entrypoints signal |
@@ -138,15 +138,15 @@ Kelos - The Kubernetes-native framework for orchestrating autonomous AI coding a
 | security | [internal/manifests/charts/kelos/templates/rbac.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/rbac.yaml) | security signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 9 | [hack/release-notes/main.go](../../../../sources/kelos-dev__kelos/hack/release-notes/main.go)<br>[cmd/kelos-webhook-server/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos-webhook-server/main.go)<br>[cmd/kelos-spawner/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos-spawner/main.go)<br>[cmd/kelos-slack-server/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos-slack-server/main.go)<br>[cmd/kelos-controller/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos-controller/main.go)<br>[cmd/kelos-codex-auth-refresh/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos-codex-auth-refresh/main.go)<br>[cmd/kelos-capture/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos-capture/main.go)<br>[cmd/kelos/main.go](../../../../sources/kelos-dev__kelos/cmd/kelos/main.go) |
 | agentRuntime | 12 | [AGENTS.md](../../../../sources/kelos-dev__kelos/AGENTS.md)<br>[tools.go](../../../../sources/kelos-dev__kelos/tools.go)<br>[test/e2e/skills_test.go](../../../../sources/kelos-dev__kelos/test/e2e/skills_test.go)<br>[skills/kelos/SKILL.md](../../../../sources/kelos-dev__kelos/skills/kelos/SKILL.md)<br>[skills/kelos/references/agentconfig.yaml](../../../../sources/kelos-dev__kelos/skills/kelos/references/agentconfig.yaml)<br>[skills/kelos/references/cli.md](../../../../sources/kelos-dev__kelos/skills/kelos/references/cli.md)<br>[skills/kelos/references/task.yaml](../../../../sources/kelos-dev__kelos/skills/kelos/references/task.yaml)<br>[skills/kelos/references/taskspawner.yaml](../../../../sources/kelos-dev__kelos/skills/kelos/references/taskspawner.yaml) |
 | mcp | 1 | [internal/cli/mcp_test.go](../../../../sources/kelos-dev__kelos/internal/cli/mcp_test.go) |
-| retrieval | 0 | not obvious |
-| spec | 0 | not obvious |
+| retrieval | 0 | 명확하지 않음 |
+| spec | 0 | 명확하지 않음 |
 | eval | 102 | [test/integration/cli_test.go](../../../../sources/kelos-dev__kelos/test/integration/cli_test.go)<br>[test/integration/completion_test.go](../../../../sources/kelos-dev__kelos/test/integration/completion_test.go)<br>[test/integration/conversion_test.go](../../../../sources/kelos-dev__kelos/test/integration/conversion_test.go)<br>[test/integration/install_script_test.go](../../../../sources/kelos-dev__kelos/test/integration/install_script_test.go)<br>[test/integration/metrics_test.go](../../../../sources/kelos-dev__kelos/test/integration/metrics_test.go)<br>[test/integration/suite_test.go](../../../../sources/kelos-dev__kelos/test/integration/suite_test.go)<br>[test/integration/task_test.go](../../../../sources/kelos-dev__kelos/test/integration/task_test.go)<br>[test/integration/taskspawner_test.go](../../../../sources/kelos-dev__kelos/test/integration/taskspawner_test.go) |
 | security | 21 | [test/e2e/codex_auth_refresher_test.go](../../../../sources/kelos-dev__kelos/test/e2e/codex_auth_refresher_test.go)<br>[internal/source/github_comment_policy_test.go](../../../../sources/kelos-dev__kelos/internal/source/github_comment_policy_test.go)<br>[internal/source/github_comment_policy.go](../../../../sources/kelos-dev__kelos/internal/source/github_comment_policy.go)<br>[internal/manifests/charts/kelos/templates/rbac.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/rbac.yaml)<br>[internal/controller/codex_auth_refresher_builder.go](../../../../sources/kelos-dev__kelos/internal/controller/codex_auth_refresher_builder.go)<br>[internal/controller/codex_auth_refresher_controller_test.go](../../../../sources/kelos-dev__kelos/internal/controller/codex_auth_refresher_controller_test.go)<br>[internal/controller/codex_auth_refresher_controller.go](../../../../sources/kelos-dev__kelos/internal/controller/codex_auth_refresher_controller.go)<br>[examples/09-bedrock-credentials/secret.yaml](../../../../sources/kelos-dev__kelos/examples/09-bedrock-credentials/secret.yaml) |
 | ci | 10 | [.github/workflows/ci.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/ci.yaml)<br>[.github/workflows/deploy-dev.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/deploy-dev.yaml)<br>[.github/workflows/e2e-anchor.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/e2e-anchor.yaml)<br>[.github/workflows/fork-e2e.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/fork-e2e.yaml)<br>[.github/workflows/label.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/label.yaml)<br>[.github/workflows/refresh-codex-auth.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/refresh-codex-auth.yaml)<br>[.github/workflows/release.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/release.yaml)<br>[.github/workflows/reusable-e2e.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/reusable-e2e.yaml) |
@@ -156,38 +156,38 @@ Kelos - The Kubernetes-native framework for orchestrating autonomous AI coding a
 | config | 2 | [go.mod](../../../../sources/kelos-dev__kelos/go.mod)<br>[Makefile](../../../../sources/kelos-dev__kelos/Makefile) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 102 | [test/integration/cli_test.go](../../../../sources/kelos-dev__kelos/test/integration/cli_test.go)<br>[test/integration/completion_test.go](../../../../sources/kelos-dev__kelos/test/integration/completion_test.go)<br>[test/integration/conversion_test.go](../../../../sources/kelos-dev__kelos/test/integration/conversion_test.go)<br>[test/integration/install_script_test.go](../../../../sources/kelos-dev__kelos/test/integration/install_script_test.go)<br>[test/integration/metrics_test.go](../../../../sources/kelos-dev__kelos/test/integration/metrics_test.go)<br>[test/integration/suite_test.go](../../../../sources/kelos-dev__kelos/test/integration/suite_test.go) |
-| CI workflows | 10 | [.github/workflows/ci.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/ci.yaml)<br>[.github/workflows/deploy-dev.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/deploy-dev.yaml)<br>[.github/workflows/e2e-anchor.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/e2e-anchor.yaml)<br>[.github/workflows/fork-e2e.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/fork-e2e.yaml)<br>[.github/workflows/label.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/label.yaml)<br>[.github/workflows/refresh-codex-auth.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/refresh-codex-auth.yaml) |
-| Containers / deploy | 28 | [opencode/Dockerfile](../../../../sources/kelos-dev__kelos/opencode/Dockerfile)<br>[internal/manifests/charts/kelos/Chart.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/Chart.yaml)<br>[internal/manifests/charts/kelos/README.md](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/README.md)<br>[internal/manifests/charts/kelos/values.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/values.yaml)<br>[internal/manifests/charts/kelos/templates/cronjob.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/cronjob.yaml)<br>[internal/manifests/charts/kelos/templates/deployment.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/deployment.yaml) |
-| Security / policy | 21 | [test/e2e/codex_auth_refresher_test.go](../../../../sources/kelos-dev__kelos/test/e2e/codex_auth_refresher_test.go)<br>[internal/source/github_comment_policy_test.go](../../../../sources/kelos-dev__kelos/internal/source/github_comment_policy_test.go)<br>[internal/source/github_comment_policy.go](../../../../sources/kelos-dev__kelos/internal/source/github_comment_policy.go)<br>[internal/manifests/charts/kelos/templates/rbac.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/rbac.yaml)<br>[internal/controller/codex_auth_refresher_builder.go](../../../../sources/kelos-dev__kelos/internal/controller/codex_auth_refresher_builder.go)<br>[internal/controller/codex_auth_refresher_controller_test.go](../../../../sources/kelos-dev__kelos/internal/controller/codex_auth_refresher_controller_test.go) |
-| Agent instructions | 1 | [AGENTS.md](../../../../sources/kelos-dev__kelos/AGENTS.md) |
+| 테스트/평가 | 102 | [test/integration/cli_test.go](../../../../sources/kelos-dev__kelos/test/integration/cli_test.go)<br>[test/integration/completion_test.go](../../../../sources/kelos-dev__kelos/test/integration/completion_test.go)<br>[test/integration/conversion_test.go](../../../../sources/kelos-dev__kelos/test/integration/conversion_test.go)<br>[test/integration/install_script_test.go](../../../../sources/kelos-dev__kelos/test/integration/install_script_test.go)<br>[test/integration/metrics_test.go](../../../../sources/kelos-dev__kelos/test/integration/metrics_test.go)<br>[test/integration/suite_test.go](../../../../sources/kelos-dev__kelos/test/integration/suite_test.go) |
+| CI workflow | 10 | [.github/workflows/ci.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/ci.yaml)<br>[.github/workflows/deploy-dev.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/deploy-dev.yaml)<br>[.github/workflows/e2e-anchor.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/e2e-anchor.yaml)<br>[.github/workflows/fork-e2e.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/fork-e2e.yaml)<br>[.github/workflows/label.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/label.yaml)<br>[.github/workflows/refresh-codex-auth.yaml](../../../../sources/kelos-dev__kelos/.github/workflows/refresh-codex-auth.yaml) |
+| 컨테이너/배포 | 28 | [opencode/Dockerfile](../../../../sources/kelos-dev__kelos/opencode/Dockerfile)<br>[internal/manifests/charts/kelos/Chart.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/Chart.yaml)<br>[internal/manifests/charts/kelos/README.md](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/README.md)<br>[internal/manifests/charts/kelos/values.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/values.yaml)<br>[internal/manifests/charts/kelos/templates/cronjob.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/cronjob.yaml)<br>[internal/manifests/charts/kelos/templates/deployment.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/deployment.yaml) |
+| 보안/정책 | 21 | [test/e2e/codex_auth_refresher_test.go](../../../../sources/kelos-dev__kelos/test/e2e/codex_auth_refresher_test.go)<br>[internal/source/github_comment_policy_test.go](../../../../sources/kelos-dev__kelos/internal/source/github_comment_policy_test.go)<br>[internal/source/github_comment_policy.go](../../../../sources/kelos-dev__kelos/internal/source/github_comment_policy.go)<br>[internal/manifests/charts/kelos/templates/rbac.yaml](../../../../sources/kelos-dev__kelos/internal/manifests/charts/kelos/templates/rbac.yaml)<br>[internal/controller/codex_auth_refresher_builder.go](../../../../sources/kelos-dev__kelos/internal/controller/codex_auth_refresher_builder.go)<br>[internal/controller/codex_auth_refresher_controller_test.go](../../../../sources/kelos-dev__kelos/internal/controller/codex_auth_refresher_controller_test.go) |
+| 에이전트 지시문 | 1 | [AGENTS.md](../../../../sources/kelos-dev__kelos/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `hack/release-notes/main.go`, `cmd/kelos-webhook-server/main.go`, `cmd/kelos-spawner/main.go`.
-2. Trace execution through entrypoints: `hack/release-notes/main.go`, `cmd/kelos-webhook-server/main.go`, `cmd/kelos-spawner/main.go`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tools.go`, `test/e2e/skills_test.go`.
-4. Verify behavior through test/eval files: `test/integration/cli_test.go`, `test/integration/completion_test.go`, `test/integration/conversion_test.go`.
+1. 핵심 참조에서 시작: `hack/release-notes/main.go`, `cmd/kelos-webhook-server/main.go`, `cmd/kelos-spawner/main.go`.
+2. entrypoint를 따라 실행 흐름 확인: `hack/release-notes/main.go`, `cmd/kelos-webhook-server/main.go`, `cmd/kelos-spawner/main.go`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tools.go`, `test/e2e/skills_test.go`.
+4. test/eval 파일로 동작 검증: `test/integration/cli_test.go`, `test/integration/completion_test.go`, `test/integration/conversion_test.go`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-코딩 에이전트/IDE 관점에서 Kelos The Kubernetes native framework for orchestrating autonomous AI coding agents.. 핵심 구조 신호는 Go, go.mod, Makefile, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+코딩 에이전트/IDE 관점에서 Kelos The Kubernetes native framework for orchestrating autonomous AI coding agents.. 핵심 구조 신호는 Go, go.mod, Makefile, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 코딩 에이전트/IDE 레포입니다. 활용 관점은 coding-agent reference implementation이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 코딩 에이전트/IDE 레포입니다. 활용 관점은 코딩 에이전트 참고 구현이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

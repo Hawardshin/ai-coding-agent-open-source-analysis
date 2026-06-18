@@ -1,63 +1,63 @@
-# theopenco/llmgateway Source Deep Dive
+# theopenco/llmgateway 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.
 
 ## 요약
 
-- 조사 단위: `sources/theopenco__llmgateway` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 2,536 files, 427 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/theopenco__llmgateway` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 2,536 files, 427 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json, apps/ui/src/components/mcp/mcp-content.tsx, apps/ui/src/app/mcp/page.tsx이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json, apps/ui/src/components/mcp/mcp-content.tsx, apps/ui/src/app/mcp/page.tsx이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | theopenco/llmgateway |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | theopenco/llmgateway |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 1316 |
 | Forks | 144 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/theopenco__llmgateway](../../../../sources/theopenco__llmgateway) |
-| Existing report | [reports/global-trending/repositories/theopenco__llmgateway.md](../../../global-trending/repositories/theopenco__llmgateway.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/theopenco__llmgateway](../../../../sources/theopenco__llmgateway) |
+| 기존 보고서 | [reports/global-trending/repositories/theopenco__llmgateway.md](../../../global-trending/repositories/theopenco__llmgateway.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 2536 / 427 |
-| Max observed depth | 11 |
-| Top directories | .agents, .claude, .devcontainer, .github, .husky, .run, apps, ee, http, infra, legal, packages, scripts, sql, vitest |
-| Top extensions | .tsx: 782, .ts: 628, .png: 292, .json: 242, .sql: 169, .md: 137, .mdx: 84, (none): 36, .yaml: 27, .mjs: 26, .svg: 26, .sh: 21 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 2536 / 427 |
+| 관측 최대 깊이 | 11 |
+| 상위 디렉터리 | .agents, .claude, .devcontainer, .github, .husky, .run, apps, ee, http, infra, legal, packages, scripts, sql, vitest |
+| 상위 확장자 | .tsx: 782, .ts: 628, .png: 292, .json: 242, .sql: 169, .md: 137, .mdx: 84, (none): 36, .yaml: 27, .mjs: 26, .svg: 26, .sh: 21 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | apps/ui | apps workspace | 63 |
 | apps/docs | apps workspace | 40 |
@@ -79,9 +79,9 @@ Route, manage, and analyze your LLM requests across multiple providers with a un
 | apps | source boundary | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | build | TURBO_TOKEN=turbotokenoss turbo run build 2>&1 |
 | build | package.json | build:ci | TURBO_TOKEN=turbotokenoss turbo run build --concurrency=1 2>&1 |
@@ -106,24 +106,24 @@ Route, manage, and analyze your LLM requests across multiple providers with a un
 | test | package.json | test:unit | pnpm build:core && vitest run --no-file-parallelism |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [.mcp.json](../../../../sources/theopenco__llmgateway/.mcp.json) | mcp signal |
 | mcp | [apps/ui/src/components/mcp/mcp-content.tsx](../../../../sources/theopenco__llmgateway/apps/ui/src/components/mcp/mcp-content.tsx) | mcp signal |
@@ -139,9 +139,9 @@ Route, manage, and analyze your LLM requests across multiple providers with a un
 | entrypoints | [packages/instrumentation/src/index.spec.ts](../../../../sources/theopenco__llmgateway/packages/instrumentation/src/index.spec.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1185 | [packages/shared/src/index.ts](../../../../sources/theopenco__llmgateway/packages/shared/src/index.ts)<br>[packages/models/src/index.ts](../../../../sources/theopenco__llmgateway/packages/models/src/index.ts)<br>[packages/logger/src/index.ts](../../../../sources/theopenco__llmgateway/packages/logger/src/index.ts)<br>[packages/instrumentation/src/index.spec.ts](../../../../sources/theopenco__llmgateway/packages/instrumentation/src/index.spec.ts)<br>[packages/instrumentation/src/index.ts](../../../../sources/theopenco__llmgateway/packages/instrumentation/src/index.ts)<br>[packages/db/src/index.ts](../../../../sources/theopenco__llmgateway/packages/db/src/index.ts)<br>[packages/cache/src/index.ts](../../../../sources/theopenco__llmgateway/packages/cache/src/index.ts)<br>[packages/actions/src/index.ts](../../../../sources/theopenco__llmgateway/packages/actions/src/index.ts) |
 | agentRuntime | 141 | [AGENTS.md](../../../../sources/theopenco__llmgateway/AGENTS.md)<br>[skills-lock.json](../../../../sources/theopenco__llmgateway/skills-lock.json)<br>[packages/shared/src/hooks/use-mobile.ts](../../../../sources/theopenco__llmgateway/packages/shared/src/hooks/use-mobile.ts)<br>[ee/admin/src/hooks/use-mobile.ts](../../../../sources/theopenco__llmgateway/ee/admin/src/hooks/use-mobile.ts)<br>[ee/admin/src/hooks/useUser.ts](../../../../sources/theopenco__llmgateway/ee/admin/src/hooks/useUser.ts)<br>[apps/ui/src/hooks/use-mobile.ts](../../../../sources/theopenco__llmgateway/apps/ui/src/hooks/use-mobile.ts)<br>[apps/ui/src/hooks/useApiKey.ts](../../../../sources/theopenco__llmgateway/apps/ui/src/hooks/useApiKey.ts)<br>[apps/ui/src/hooks/useChats.ts](../../../../sources/theopenco__llmgateway/apps/ui/src/hooks/useChats.ts) |
@@ -157,39 +157,39 @@ Route, manage, and analyze your LLM requests across multiple providers with a un
 | config | 40 | [package.json](../../../../sources/theopenco__llmgateway/package.json)<br>[pnpm-workspace.yaml](../../../../sources/theopenco__llmgateway/pnpm-workspace.yaml)<br>[tsconfig.json](../../../../sources/theopenco__llmgateway/tsconfig.json)<br>[turbo.json](../../../../sources/theopenco__llmgateway/turbo.json)<br>[packages/shared/package.json](../../../../sources/theopenco__llmgateway/packages/shared/package.json)<br>[packages/shared/tsconfig.json](../../../../sources/theopenco__llmgateway/packages/shared/tsconfig.json)<br>[packages/scripts/package.json](../../../../sources/theopenco__llmgateway/packages/scripts/package.json)<br>[packages/scripts/tsconfig.json](../../../../sources/theopenco__llmgateway/packages/scripts/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 146 | [vitest/test-database-setup.ts](../../../../sources/theopenco__llmgateway/vitest/test-database-setup.ts)<br>[scripts/benchmark.sh](../../../../sources/theopenco__llmgateway/scripts/benchmark.sh)<br>[scripts/test-ai-sdk.ts](../../../../sources/theopenco__llmgateway/scripts/test-ai-sdk.ts)<br>[scripts/test-openai-sdk.sh](../../../../sources/theopenco__llmgateway/scripts/test-openai-sdk.sh)<br>[packages/shared/src/avalanche.spec.ts](../../../../sources/theopenco__llmgateway/packages/shared/src/avalanche.spec.ts)<br>[packages/shared/src/coding-agents.spec.ts](../../../../sources/theopenco__llmgateway/packages/shared/src/coding-agents.spec.ts) |
-| CI workflows | 8 | [.github/workflows/autofix.yml](../../../../sources/theopenco__llmgateway/.github/workflows/autofix.yml)<br>[.github/workflows/ci.yml](../../../../sources/theopenco__llmgateway/.github/workflows/ci.yml)<br>[.github/workflows/e2e.yml](../../../../sources/theopenco__llmgateway/.github/workflows/e2e.yml)<br>[.github/workflows/image-actions.yml](../../../../sources/theopenco__llmgateway/.github/workflows/image-actions.yml)<br>[.github/workflows/images.yml](../../../../sources/theopenco__llmgateway/.github/workflows/images.yml)<br>[.github/workflows/pr.yml](../../../../sources/theopenco__llmgateway/.github/workflows/pr.yml) |
-| Containers / deploy | 32 | [docker-compose.yml](../../../../sources/theopenco__llmgateway/docker-compose.yml)<br>[infra/docker-compose.split.local.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.split.local.yml)<br>[infra/docker-compose.split.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.split.yml)<br>[infra/docker-compose.unified.local.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.unified.local.yml)<br>[infra/docker-compose.unified.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.unified.yml)<br>[infra/helm/README.md](../../../../sources/theopenco__llmgateway/infra/helm/README.md) |
-| Security / policy | 58 | [packages/models/src/compliance.spec.ts](../../../../sources/theopenco__llmgateway/packages/models/src/compliance.spec.ts)<br>[packages/db/migrations/1753733527_secret_spyke.sql](../../../../sources/theopenco__llmgateway/packages/db/migrations/1753733527_secret_spyke.sql)<br>[legal/DATA_RETENTION_POLICY.md](../../../../sources/theopenco__llmgateway/legal/DATA_RETENTION_POLICY.md)<br>[infra/helm/llmgateway/templates/secret.yaml](../../../../sources/theopenco__llmgateway/infra/helm/llmgateway/templates/secret.yaml)<br>[ee/audit/.lintstagedrc.json](../../../../sources/theopenco__llmgateway/ee/audit/.lintstagedrc.json)<br>[ee/audit/.prettierignore](../../../../sources/theopenco__llmgateway/ee/audit/.prettierignore) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/theopenco__llmgateway/AGENTS.md)<br>[apps/docs/content/learn/agents.mdx](../../../../sources/theopenco__llmgateway/apps/docs/content/learn/agents.mdx) |
+| 테스트/평가 | 146 | [vitest/test-database-setup.ts](../../../../sources/theopenco__llmgateway/vitest/test-database-setup.ts)<br>[scripts/benchmark.sh](../../../../sources/theopenco__llmgateway/scripts/benchmark.sh)<br>[scripts/test-ai-sdk.ts](../../../../sources/theopenco__llmgateway/scripts/test-ai-sdk.ts)<br>[scripts/test-openai-sdk.sh](../../../../sources/theopenco__llmgateway/scripts/test-openai-sdk.sh)<br>[packages/shared/src/avalanche.spec.ts](../../../../sources/theopenco__llmgateway/packages/shared/src/avalanche.spec.ts)<br>[packages/shared/src/coding-agents.spec.ts](../../../../sources/theopenco__llmgateway/packages/shared/src/coding-agents.spec.ts) |
+| CI workflow | 8 | [.github/workflows/autofix.yml](../../../../sources/theopenco__llmgateway/.github/workflows/autofix.yml)<br>[.github/workflows/ci.yml](../../../../sources/theopenco__llmgateway/.github/workflows/ci.yml)<br>[.github/workflows/e2e.yml](../../../../sources/theopenco__llmgateway/.github/workflows/e2e.yml)<br>[.github/workflows/image-actions.yml](../../../../sources/theopenco__llmgateway/.github/workflows/image-actions.yml)<br>[.github/workflows/images.yml](../../../../sources/theopenco__llmgateway/.github/workflows/images.yml)<br>[.github/workflows/pr.yml](../../../../sources/theopenco__llmgateway/.github/workflows/pr.yml) |
+| 컨테이너/배포 | 32 | [docker-compose.yml](../../../../sources/theopenco__llmgateway/docker-compose.yml)<br>[infra/docker-compose.split.local.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.split.local.yml)<br>[infra/docker-compose.split.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.split.yml)<br>[infra/docker-compose.unified.local.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.unified.local.yml)<br>[infra/docker-compose.unified.yml](../../../../sources/theopenco__llmgateway/infra/docker-compose.unified.yml)<br>[infra/helm/README.md](../../../../sources/theopenco__llmgateway/infra/helm/README.md) |
+| 보안/정책 | 58 | [packages/models/src/compliance.spec.ts](../../../../sources/theopenco__llmgateway/packages/models/src/compliance.spec.ts)<br>[packages/db/migrations/1753733527_secret_spyke.sql](../../../../sources/theopenco__llmgateway/packages/db/migrations/1753733527_secret_spyke.sql)<br>[legal/DATA_RETENTION_POLICY.md](../../../../sources/theopenco__llmgateway/legal/DATA_RETENTION_POLICY.md)<br>[infra/helm/llmgateway/templates/secret.yaml](../../../../sources/theopenco__llmgateway/infra/helm/llmgateway/templates/secret.yaml)<br>[ee/audit/.lintstagedrc.json](../../../../sources/theopenco__llmgateway/ee/audit/.lintstagedrc.json)<br>[ee/audit/.prettierignore](../../../../sources/theopenco__llmgateway/ee/audit/.prettierignore) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/theopenco__llmgateway/AGENTS.md)<br>[apps/docs/content/learn/agents.mdx](../../../../sources/theopenco__llmgateway/apps/docs/content/learn/agents.mdx) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `.mcp.json`, `apps/ui/src/components/mcp/mcp-content.tsx`, `apps/ui/src/app/mcp/page.tsx`.
-2. Trace execution through entrypoints: `packages/shared/src/index.ts`, `packages/models/src/index.ts`, `packages/logger/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `skills-lock.json`, `packages/shared/src/hooks/use-mobile.ts`.
-4. Inspect retrieval/memory/indexing through: `packages/shared/src/index.ts`, `packages/shared/src/components/index.tsx`, `packages/shared/src/components/ui/index.tsx`.
-5. Verify behavior through test/eval files: `vitest/test-database-setup.ts`, `scripts/benchmark.sh`, `scripts/test-ai-sdk.ts`.
+1. 핵심 참조에서 시작: `.mcp.json`, `apps/ui/src/components/mcp/mcp-content.tsx`, `apps/ui/src/app/mcp/page.tsx`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/shared/src/index.ts`, `packages/models/src/index.ts`, `packages/logger/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `skills-lock.json`, `packages/shared/src/hooks/use-mobile.ts`.
+4. retrieval/memory/indexing 확인: `packages/shared/src/index.ts`, `packages/shared/src/components/index.tsx`, `packages/shared/src/components/ui/index.tsx`.
+5. test/eval 파일로 동작 검증: `vitest/test-database-setup.ts`, `scripts/benchmark.sh`, `scripts/test-ai-sdk.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.. 핵심 구조 신호는 TypeScript, package.json, docker-compose.yml, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.. 핵심 구조 신호는 TypeScript, package.json, docker-compose.yml, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

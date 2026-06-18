@@ -1,63 +1,63 @@
-# jnMetaCode/agency-orchestrator Source Deep Dive
+# jnMetaCode/agency-orchestrator 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 🚀 One sentence → multi-AI-role collaboration → complete plan in minutes. Built on the agency-agents role library (216+ experts), zero-code YAML, web Studio + desktop app, 10 LLM providers (7 free). 基于 agency-agents 专家库，一句话调度多个 AI 专家自动协作，几分钟交付完整方案。
 
 ## 요약
 
-- 조사 단위: `sources/jnMetaCode__agency-orchestrator` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 920 files, 151 directories, depth score 125, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/jnMetaCode__agency-orchestrator` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 920 files, 151 directories, depth score 119, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=website/public/prompts/zh/specialized/specialized-mcp-builder.md, website/public/prompts/en/specialized/specialized-mcp-builder.md, test/mcp.ts이고, 의존성 단서는 anthropic, modelcontextprotocol, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=website/public/prompts/zh/specialized/specialized-mcp-builder.md, website/public/prompts/en/specialized/specialized-mcp-builder.md, test/mcp.ts이고, 의존성 단서는 anthropic, modelcontextprotocol, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | jnMetaCode/agency-orchestrator |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | jnMetaCode/agency-orchestrator |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | korea |
 | Language | TypeScript |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/jnMetaCode__agency-orchestrator](../../../../sources/jnMetaCode__agency-orchestrator) |
-| Existing report | [reports/korea-trending/repositories/jnMetaCode__agency-orchestrator.md](../../../korea-trending/repositories/jnMetaCode__agency-orchestrator.md) |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/jnMetaCode__agency-orchestrator](../../../../sources/jnMetaCode__agency-orchestrator) |
+| 기존 보고서 | [reports/korea-trending/repositories/jnMetaCode__agency-orchestrator.md](../../../korea-trending/repositories/jnMetaCode__agency-orchestrator.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 920 / 151 |
-| Max observed depth | 7 |
-| Top directories | .github, agency-agents, desktop, docs, eval, examples, integrations, scripts, src, test, web, website, workflows |
-| Top extensions | .md: 674, .ts: 85, .yaml: 56, .tsx: 51, .json: 11, .sh: 8, .png: 7, (none): 7, .yml: 6, .html: 3, .gif: 2, .js: 2 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 920 / 151 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .github, agency-agents, desktop, docs, eval, examples, integrations, scripts, src, test, web, website, workflows |
+| 상위 확장자 | .md: 674, .ts: 85, .yaml: 56, .tsx: 51, .json: 11, .sh: 8, .png: 7, (none): 7, .yml: 6, .html: 3, .gif: 2, .js: 2 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 8 |
 | src | source boundary | 8 |
@@ -75,9 +75,9 @@ Generated: 2026-06-18T15:12:44.535Z
 | workflows | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | build | tsc |
 | serve-dev | package.json | dev | tsc --watch |
@@ -91,24 +91,24 @@ Generated: 2026-06-18T15:12:44.535Z
 | entrypoint | package.json bin | cli.js | dist/cli.js |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | anthropic |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [website/public/prompts/zh/specialized/specialized-mcp-builder.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/specialized-mcp-builder.md) | mcp signal |
 | mcp | [website/public/prompts/en/specialized/specialized-mcp-builder.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/en/specialized/specialized-mcp-builder.md) | mcp signal |
@@ -124,9 +124,9 @@ Generated: 2026-06-18T15:12:44.535Z
 | entrypoints | [web/server.js](../../../../sources/jnMetaCode__agency-orchestrator/web/server.js) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 7 | [website/src/App.tsx](../../../../sources/jnMetaCode__agency-orchestrator/website/src/App.tsx)<br>[website/src/index.css](../../../../sources/jnMetaCode__agency-orchestrator/website/src/index.css)<br>[website/src/main.tsx](../../../../sources/jnMetaCode__agency-orchestrator/website/src/main.tsx)<br>[web/server.js](../../../../sources/jnMetaCode__agency-orchestrator/web/server.js)<br>[src/cli.ts](../../../../sources/jnMetaCode__agency-orchestrator/src/cli.ts)<br>[src/index.ts](../../../../sources/jnMetaCode__agency-orchestrator/src/index.ts)<br>[src/mcp/server.ts](../../../../sources/jnMetaCode__agency-orchestrator/src/mcp/server.ts) |
 | agentRuntime | 14 | [website/public/prompts/zh/specialized/agents-orchestrator.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/agents-orchestrator.md)<br>[website/public/prompts/en/specialized/agents-orchestrator.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/en/specialized/agents-orchestrator.md)<br>[src/core/executor.ts](../../../../sources/jnMetaCode__agency-orchestrator/src/core/executor.ts)<br>[src/agents/loader.ts](../../../../sources/jnMetaCode__agency-orchestrator/src/agents/loader.ts)<br>[integrations/deerflow/SKILL.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/deerflow/SKILL.md)<br>[integrations/cursor/workflow-runner.mdc](../../../../sources/jnMetaCode__agency-orchestrator/integrations/cursor/workflow-runner.mdc)<br>[integrations/antigravity/AGENTS.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/antigravity/AGENTS.md)<br>[agency-agents/strategy/coordination/agent-activation-prompts.md](../../../../sources/jnMetaCode__agency-orchestrator/agency-agents/strategy/coordination/agent-activation-prompts.md) |
@@ -136,45 +136,45 @@ Generated: 2026-06-18T15:12:44.535Z
 | eval | 39 | [EVAL_FINDINGS.md](../../../../sources/jnMetaCode__agency-orchestrator/EVAL_FINDINGS.md)<br>[website/public/prompts/zh/testing/testing-test-results-analyzer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/testing/testing-test-results-analyzer.md)<br>[website/public/prompts/en/testing/testing-test-results-analyzer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/en/testing/testing-test-results-analyzer.md)<br>[web/DESIGN-SPEC.md](../../../../sources/jnMetaCode__agency-orchestrator/web/DESIGN-SPEC.md)<br>[test/azure-compat.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/azure-compat.ts)<br>[test/cli-base.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/cli-base.ts)<br>[test/cli.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/cli.ts)<br>[test/compose-name.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/compose-name.ts) |
 | security | 20 | [workflows/dev/security-audit.yaml](../../../../sources/jnMetaCode__agency-orchestrator/workflows/dev/security-audit.yaml)<br>[workflows/dev/tech-debt-audit.yaml](../../../../sources/jnMetaCode__agency-orchestrator/workflows/dev/tech-debt-audit.yaml)<br>[website/public/prompts/zh/support/support-legal-compliance-checker.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/support/support-legal-compliance-checker.md)<br>[website/public/prompts/zh/specialized/blockchain-security-auditor.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/blockchain-security-auditor.md)<br>[website/public/prompts/zh/specialized/compliance-auditor.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/compliance-auditor.md)<br>[website/public/prompts/zh/specialized/healthcare-marketing-compliance.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/healthcare-marketing-compliance.md)<br>[website/public/prompts/zh/specialized/specialized-ai-policy-writer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/specialized-ai-policy-writer.md)<br>[website/public/prompts/zh/legal/legal-policy-writer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/legal/legal-policy-writer.md) |
 | ci | 3 | [agency-agents/.github/workflows/lint-agents.yml](../../../../sources/jnMetaCode__agency-orchestrator/agency-agents/.github/workflows/lint-agents.yml)<br>[.github/workflows/ci.yml](../../../../sources/jnMetaCode__agency-orchestrator/.github/workflows/ci.yml)<br>[.github/workflows/release-desktop.yml](../../../../sources/jnMetaCode__agency-orchestrator/.github/workflows/release-desktop.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 4 | [CLAUDE.md](../../../../sources/jnMetaCode__agency-orchestrator/CLAUDE.md)<br>[integrations/gemini-cli/GEMINI.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/gemini-cli/GEMINI.md)<br>[integrations/copilot/copilot-instructions.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/copilot/copilot-instructions.md)<br>[integrations/antigravity/AGENTS.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/antigravity/AGENTS.md) |
 | docs | 529 | [README.en.md](../../../../sources/jnMetaCode__agency-orchestrator/README.en.md)<br>[README.md](../../../../sources/jnMetaCode__agency-orchestrator/README.md)<br>[workflows/dev/readme-i18n.yaml](../../../../sources/jnMetaCode__agency-orchestrator/workflows/dev/readme-i18n.yaml)<br>[website/index.html](../../../../sources/jnMetaCode__agency-orchestrator/website/index.html)<br>[website/package-lock.json](../../../../sources/jnMetaCode__agency-orchestrator/website/package-lock.json)<br>[website/package.json](../../../../sources/jnMetaCode__agency-orchestrator/website/package.json)<br>[website/postcss.config.js](../../../../sources/jnMetaCode__agency-orchestrator/website/postcss.config.js)<br>[website/README.md](../../../../sources/jnMetaCode__agency-orchestrator/website/README.md) |
 | config | 5 | [package.json](../../../../sources/jnMetaCode__agency-orchestrator/package.json)<br>[tsconfig.json](../../../../sources/jnMetaCode__agency-orchestrator/tsconfig.json)<br>[website/package.json](../../../../sources/jnMetaCode__agency-orchestrator/website/package.json)<br>[website/tsconfig.json](../../../../sources/jnMetaCode__agency-orchestrator/website/tsconfig.json)<br>[desktop/package.json](../../../../sources/jnMetaCode__agency-orchestrator/desktop/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 39 | [EVAL_FINDINGS.md](../../../../sources/jnMetaCode__agency-orchestrator/EVAL_FINDINGS.md)<br>[website/public/prompts/zh/testing/testing-test-results-analyzer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/testing/testing-test-results-analyzer.md)<br>[website/public/prompts/en/testing/testing-test-results-analyzer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/en/testing/testing-test-results-analyzer.md)<br>[web/DESIGN-SPEC.md](../../../../sources/jnMetaCode__agency-orchestrator/web/DESIGN-SPEC.md)<br>[test/azure-compat.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/azure-compat.ts)<br>[test/cli-base.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/cli-base.ts) |
-| CI workflows | 3 | [agency-agents/.github/workflows/lint-agents.yml](../../../../sources/jnMetaCode__agency-orchestrator/agency-agents/.github/workflows/lint-agents.yml)<br>[.github/workflows/ci.yml](../../../../sources/jnMetaCode__agency-orchestrator/.github/workflows/ci.yml)<br>[.github/workflows/release-desktop.yml](../../../../sources/jnMetaCode__agency-orchestrator/.github/workflows/release-desktop.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 20 | [workflows/dev/security-audit.yaml](../../../../sources/jnMetaCode__agency-orchestrator/workflows/dev/security-audit.yaml)<br>[workflows/dev/tech-debt-audit.yaml](../../../../sources/jnMetaCode__agency-orchestrator/workflows/dev/tech-debt-audit.yaml)<br>[website/public/prompts/zh/support/support-legal-compliance-checker.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/support/support-legal-compliance-checker.md)<br>[website/public/prompts/zh/specialized/blockchain-security-auditor.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/blockchain-security-auditor.md)<br>[website/public/prompts/zh/specialized/compliance-auditor.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/compliance-auditor.md)<br>[website/public/prompts/zh/specialized/healthcare-marketing-compliance.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/healthcare-marketing-compliance.md) |
-| Agent instructions | 4 | [CLAUDE.md](../../../../sources/jnMetaCode__agency-orchestrator/CLAUDE.md)<br>[integrations/gemini-cli/GEMINI.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/gemini-cli/GEMINI.md)<br>[integrations/copilot/copilot-instructions.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/copilot/copilot-instructions.md)<br>[integrations/antigravity/AGENTS.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/antigravity/AGENTS.md) |
+| 테스트/평가 | 39 | [EVAL_FINDINGS.md](../../../../sources/jnMetaCode__agency-orchestrator/EVAL_FINDINGS.md)<br>[website/public/prompts/zh/testing/testing-test-results-analyzer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/testing/testing-test-results-analyzer.md)<br>[website/public/prompts/en/testing/testing-test-results-analyzer.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/en/testing/testing-test-results-analyzer.md)<br>[web/DESIGN-SPEC.md](../../../../sources/jnMetaCode__agency-orchestrator/web/DESIGN-SPEC.md)<br>[test/azure-compat.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/azure-compat.ts)<br>[test/cli-base.ts](../../../../sources/jnMetaCode__agency-orchestrator/test/cli-base.ts) |
+| CI workflow | 3 | [agency-agents/.github/workflows/lint-agents.yml](../../../../sources/jnMetaCode__agency-orchestrator/agency-agents/.github/workflows/lint-agents.yml)<br>[.github/workflows/ci.yml](../../../../sources/jnMetaCode__agency-orchestrator/.github/workflows/ci.yml)<br>[.github/workflows/release-desktop.yml](../../../../sources/jnMetaCode__agency-orchestrator/.github/workflows/release-desktop.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 20 | [workflows/dev/security-audit.yaml](../../../../sources/jnMetaCode__agency-orchestrator/workflows/dev/security-audit.yaml)<br>[workflows/dev/tech-debt-audit.yaml](../../../../sources/jnMetaCode__agency-orchestrator/workflows/dev/tech-debt-audit.yaml)<br>[website/public/prompts/zh/support/support-legal-compliance-checker.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/support/support-legal-compliance-checker.md)<br>[website/public/prompts/zh/specialized/blockchain-security-auditor.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/blockchain-security-auditor.md)<br>[website/public/prompts/zh/specialized/compliance-auditor.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/compliance-auditor.md)<br>[website/public/prompts/zh/specialized/healthcare-marketing-compliance.md](../../../../sources/jnMetaCode__agency-orchestrator/website/public/prompts/zh/specialized/healthcare-marketing-compliance.md) |
+| 에이전트 지시문 | 4 | [CLAUDE.md](../../../../sources/jnMetaCode__agency-orchestrator/CLAUDE.md)<br>[integrations/gemini-cli/GEMINI.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/gemini-cli/GEMINI.md)<br>[integrations/copilot/copilot-instructions.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/copilot/copilot-instructions.md)<br>[integrations/antigravity/AGENTS.md](../../../../sources/jnMetaCode__agency-orchestrator/integrations/antigravity/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `website/public/prompts/zh/specialized/specialized-mcp-builder.md`, `website/public/prompts/en/specialized/specialized-mcp-builder.md`, `test/mcp.ts`.
-2. Trace execution through entrypoints: `website/src/App.tsx`, `website/src/index.css`, `website/src/main.tsx`.
-3. Map agent/tool runtime through: `website/public/prompts/zh/specialized/agents-orchestrator.md`, `website/public/prompts/en/specialized/agents-orchestrator.md`, `src/core/executor.ts`.
-4. Inspect retrieval/memory/indexing through: `website/index.html`, `website/src/index.css`, `website/public/prompts/zh/specialized/identity-graph-operator.md`.
-5. Verify behavior through test/eval files: `EVAL_FINDINGS.md`, `website/public/prompts/zh/testing/testing-test-results-analyzer.md`, `website/public/prompts/en/testing/testing-test-results-analyzer.md`.
+1. 핵심 참조에서 시작: `website/public/prompts/zh/specialized/specialized-mcp-builder.md`, `website/public/prompts/en/specialized/specialized-mcp-builder.md`, `test/mcp.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `website/src/App.tsx`, `website/src/index.css`, `website/src/main.tsx`.
+3. agent/tool runtime 매핑: `website/public/prompts/zh/specialized/agents-orchestrator.md`, `website/public/prompts/en/specialized/agents-orchestrator.md`, `src/core/executor.ts`.
+4. retrieval/memory/indexing 확인: `website/index.html`, `website/src/index.css`, `website/public/prompts/zh/specialized/identity-graph-operator.md`.
+5. test/eval 파일로 동작 검증: `EVAL_FINDINGS.md`, `website/public/prompts/zh/testing/testing-test-results-analyzer.md`, `website/public/prompts/en/testing/testing-test-results-analyzer.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 🚀 One sentence → multi AI role collaboration → complete plan in minutes. Built on the agency agents role library 216+ e. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, anthropic이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 🚀 One sentence → multi AI role collaboration → complete plan in minutes. Built on the agency agents role library 216+ e. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, anthropic이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

@@ -1,39 +1,39 @@
-# Agent Harness, MCP, and Orchestration
+# 에이전트 하네스/MCP/오케스트레이션
 
-Generated: 2026-06-18T15:13:01.107Z
+생성 시각: 2026-06-18T15:31:47.876Z
 
-Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.
+MCP, tool registry, hooks, skills, orchestration, workflow 실행 기반을 보는 주제입니다.
 
 ## 요약
 
 - 조사 단위: `agent-harness` 주제에 속한 보고서 묶음입니다.
-- 포함 범위: 281 reports이며, 주요 보고서 유형은 source-deep-dive-report (135), per-repository-report (130), clone-structure-report (5), agent-harness-report (2), category-guide (2)입니다.
+- 포함 범위: 281개 보고서이며, 주요 보고서 유형은 source-deep-dive-report (135), per-repository-report (130), clone-structure-report (5), agent-harness-report (2), category-guide (2)입니다.
 - 주요 출처 폴더: source-deep-dives (135), global-trending/repositories (82), korea-trending/repositories (46), clone-structures (5), adjacent-tech (2).
 
 ## 총평
 
-이 README는 같은 주제에 흩어진 보고서를 한 번에 따라가도록 만든 주제형 입구입니다. Recommended Reading Path는 먼저 읽을 보고서를 우선순위로 보여주고, All Reports는 빠짐없는 전체 목록을 제공합니다. 같은 보고서가 여러 주제에 걸칠 수 있으므로, 큰 흐름은 이 페이지에서 보고 세부 파일 위치는 Folder 값으로 확인하는 방식이 좋습니다.
+이 README는 같은 주제에 흩어진 보고서를 한 번에 따라가도록 만든 주제형 입구입니다. 추천 읽기 경로는 먼저 읽을 보고서를 우선순위로 보여주고, 전체 보고서는 빠짐없는 목록을 제공합니다. 같은 보고서가 여러 주제에 걸칠 수 있으므로, 큰 흐름은 이 페이지에서 보고 세부 파일 위치는 폴더 값을 확인하는 방식이 좋습니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
-| [Reports by Topic](../README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Source Trend Insights](../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
-| [Artifact Categories](../../categories/README.md) | Artifact-level categories across repositories, papers, presentations, and references. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [소스 트렌드 인사이트](../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
+| [근거 카테고리](../../categories/README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
-## Counts
+## 범위
 
-- Reports: 281
-- Data: [data/report-categories/agent-harness.json](../../../data/report-categories/agent-harness.json)
+- 보고서 수: 281
+- 데이터: [data/report-categories/agent-harness.json](../../../data/report-categories/agent-harness.json)
 
-## Report Types
+## 보고서 유형
 
 - source-deep-dive-report: 135
 - per-repository-report: 130
@@ -46,7 +46,7 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 - overview-report: 1
 - source-insight-report: 1
 
-## Source Folders
+## 출처 폴더
 
 - source-deep-dives: 135
 - global-trending/repositories: 82
@@ -61,192 +61,192 @@ Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow
 - repository-insights: 1
 - source-insights: 1
 
-## Recommended Reading Path
+## 추천 읽기 경로
 
-| Report | Type | Folder | Priority |
+| 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
 | [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](../../adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md) | infrastructure-report | adjacent-tech | 157 |
 | [Claude Code / Codex Harness Materials 1000+ Corpus](../../agent-harness/00-claude-code-codex-harness-materials-1000.md) | agent-harness-report | agent-harness | 157 |
 | [Agent Harness Conference and Presentation Patterns](../../presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
-| [Agent Harness and Orchestration](../../categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
-| [MCP, Tools, and Protocols](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
-| [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
-| [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
-| [Agent Harness and MCP Source Insights](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
+| [에이전트 하네스/오케스트레이션](../../categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
+| [MCP/도구/프로토콜](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
+| [에이전트 하네스/MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
+| [에이전트 하네스/MCP 소스 딥다이브](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [에이전트 하네스/MCP 소스 인사이트](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [jee3m/augmentative-knowledge-hooks 코드 레벨 분석](../../llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [PleasePrompto/notebooklm-mcp 코드 레벨 분석](../../llm-wiki/code-level-repositories/PleasePrompto__notebooklm-mcp.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
-| [borghei/Claude-Skills Source Deep Dive](../../source-deep-dives/repositories/0/borghei__Claude-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Dicklesworthstone/mcp_agent_mail Source Deep Dive](../../source-deep-dives/repositories/0/Dicklesworthstone__mcp_agent_mail.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [PleasePrompto/notebooklm-mcp Source Deep Dive](../../source-deep-dives/repositories/0/PleasePrompto__notebooklm-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [stephano0308-cloud/korean-law-mcp Source Deep Dive](../../source-deep-dives/repositories/0/stephano0308-cloud__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [vishalsachdev/canvas-mcp Source Deep Dive](../../source-deep-dives/repositories/0/vishalsachdev__canvas-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [yjhann33-design/korea-stock-insight-mcp Source Deep Dive](../../source-deep-dives/repositories/0/yjhann33-design__korea-stock-insight-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [aesthetic-legalism5470/korean-dart-mcp Source Deep Dive](../../source-deep-dives/repositories/1/aesthetic-legalism5470__korean-dart-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [DeusData/codebase-memory-mcp Source Deep Dive](../../source-deep-dives/repositories/1/DeusData__codebase-memory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [dongdorrong/korean-law-mcp-lab Source Deep Dive](../../source-deep-dives/repositories/1/dongdorrong__korean-law-mcp-lab.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [everynation/kimchisushi-mcp Source Deep Dive](../../source-deep-dives/repositories/1/everynation__kimchisushi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [kubeflow/mcp-apache-spark-history-server Source Deep Dive](../../source-deep-dives/repositories/1/kubeflow__mcp-apache-spark-history-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [treesoop/hwp-mcp Source Deep Dive](../../source-deep-dives/repositories/1/treesoop__hwp-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [utensils/mcp-nixos Source Deep Dive](../../source-deep-dives/repositories/1/utensils__mcp-nixos.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [witchan/ios-mcp Source Deep Dive](../../source-deep-dives/repositories/1/witchan__ios-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [zhuyansen/agent-skills-hub Source Deep Dive](../../source-deep-dives/repositories/1/zhuyansen__agent-skills-hub.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [aliyun/alibabacloud-dataworks-mcp-server Source Deep Dive](../../source-deep-dives/repositories/2/aliyun__alibabacloud-dataworks-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [bripin123/rag-memory-epf-mcp Source Deep Dive](../../source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ceaksan/mcp-code-search Source Deep Dive](../../source-deep-dives/repositories/2/ceaksan__mcp-code-search.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [borghei/Claude-Skills 소스 딥다이브](../../source-deep-dives/repositories/0/borghei__Claude-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Dicklesworthstone/mcp_agent_mail 소스 딥다이브](../../source-deep-dives/repositories/0/Dicklesworthstone__mcp_agent_mail.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [PleasePrompto/notebooklm-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/PleasePrompto__notebooklm-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [stephano0308-cloud/korean-law-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/stephano0308-cloud__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [vishalsachdev/canvas-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/vishalsachdev__canvas-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [yjhann33-design/korea-stock-insight-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/yjhann33-design__korea-stock-insight-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [aesthetic-legalism5470/korean-dart-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/aesthetic-legalism5470__korean-dart-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [DeusData/codebase-memory-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/DeusData__codebase-memory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [dongdorrong/korean-law-mcp-lab 소스 딥다이브](../../source-deep-dives/repositories/1/dongdorrong__korean-law-mcp-lab.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [everynation/kimchisushi-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/everynation__kimchisushi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [kubeflow/mcp-apache-spark-history-server 소스 딥다이브](../../source-deep-dives/repositories/1/kubeflow__mcp-apache-spark-history-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [treesoop/hwp-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/treesoop__hwp-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [utensils/mcp-nixos 소스 딥다이브](../../source-deep-dives/repositories/1/utensils__mcp-nixos.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [witchan/ios-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/witchan__ios-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [zhuyansen/agent-skills-hub 소스 딥다이브](../../source-deep-dives/repositories/1/zhuyansen__agent-skills-hub.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [aliyun/alibabacloud-dataworks-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/2/aliyun__alibabacloud-dataworks-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [bripin123/rag-memory-epf-mcp 소스 딥다이브](../../source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ceaksan/mcp-code-search 소스 딥다이브](../../source-deep-dives/repositories/2/ceaksan__mcp-code-search.md) | source-deep-dive-report | source-deep-dives | -5 |
 
 
-## All Reports
+## 전체 보고서
 
-| Report | Type | Folder | Priority |
+| 보고서 | 유형 | 폴더 | 우선순위 |
 | --- | --- | --- | ---: |
 | [컨텍스트 엔지니어링, RAG, vLLM/local LLM, 에이전트 하네스 최신 트렌드 분석](../../adjacent-tech/01-context-rag-vllm-local-llm-harness-trends.md) | infrastructure-report | adjacent-tech | 157 |
 | [Claude Code / Codex Harness Materials 1000+ Corpus](../../agent-harness/00-claude-code-codex-harness-materials-1000.md) | agent-harness-report | agent-harness | 157 |
 | [Agent Harness Conference and Presentation Patterns](../../presentations/00-agent-harness-conference-presentation-patterns.md) | presentation-report | presentations | 157 |
-| [Agent Harness and Orchestration](../../categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
-| [MCP, Tools, and Protocols](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
-| [Agent Harness and MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
-| [Agent Harness and MCP Source Deep Dive](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
-| [Agent Harness and MCP Source Insights](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
+| [에이전트 하네스/오케스트레이션](../../categories/agent-harness-orchestration/README.md) | category-guide | categories | 156 |
+| [MCP/도구/프로토콜](../../categories/mcp-tools-protocols/README.md) | category-guide | categories | 156 |
+| [에이전트 하네스/MCP](../../repository-insights/by-role/agent-harness-mcp/README.md) | overview-report | repository-insights | 155 |
+| [에이전트 하네스/MCP 소스 딥다이브](../../source-deep-dives/by-topic/agent-harness-mcp/README.md) | source-deep-dive-report | source-deep-dives | 155 |
+| [에이전트 하네스/MCP 소스 인사이트](../../source-insights/by-category/agent-harness-mcp/README.md) | source-insight-report | source-insights | 155 |
 | [Codex Harness Setup Guide from Claude Code Patterns](../../agent-harness/codex-harness-setup-guide.md) | agent-harness-report | agent-harness | 142 |
 | [공식 문서와 소스맵: Context Engineering, RAG, Local LLM, Agent Harness](../../adjacent-tech/03-official-docs-and-source-map.md) | infrastructure-report | adjacent-tech | 117 |
 | [jee3m/augmentative-knowledge-hooks 코드 레벨 분석](../../llm-wiki/code-level-repositories/jee3m__augmentative-knowledge-hooks.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
 | [PleasePrompto/notebooklm-mcp 코드 레벨 분석](../../llm-wiki/code-level-repositories/PleasePrompto__notebooklm-mcp.md) | llm-wiki-report | llm-wiki/code-level-repositories | 116 |
-| [borghei/Claude-Skills Source Deep Dive](../../source-deep-dives/repositories/0/borghei__Claude-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Dicklesworthstone/mcp_agent_mail Source Deep Dive](../../source-deep-dives/repositories/0/Dicklesworthstone__mcp_agent_mail.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [PleasePrompto/notebooklm-mcp Source Deep Dive](../../source-deep-dives/repositories/0/PleasePrompto__notebooklm-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [stephano0308-cloud/korean-law-mcp Source Deep Dive](../../source-deep-dives/repositories/0/stephano0308-cloud__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [vishalsachdev/canvas-mcp Source Deep Dive](../../source-deep-dives/repositories/0/vishalsachdev__canvas-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [yjhann33-design/korea-stock-insight-mcp Source Deep Dive](../../source-deep-dives/repositories/0/yjhann33-design__korea-stock-insight-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [aesthetic-legalism5470/korean-dart-mcp Source Deep Dive](../../source-deep-dives/repositories/1/aesthetic-legalism5470__korean-dart-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [DeusData/codebase-memory-mcp Source Deep Dive](../../source-deep-dives/repositories/1/DeusData__codebase-memory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [dongdorrong/korean-law-mcp-lab Source Deep Dive](../../source-deep-dives/repositories/1/dongdorrong__korean-law-mcp-lab.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [everynation/kimchisushi-mcp Source Deep Dive](../../source-deep-dives/repositories/1/everynation__kimchisushi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [kubeflow/mcp-apache-spark-history-server Source Deep Dive](../../source-deep-dives/repositories/1/kubeflow__mcp-apache-spark-history-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [treesoop/hwp-mcp Source Deep Dive](../../source-deep-dives/repositories/1/treesoop__hwp-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [utensils/mcp-nixos Source Deep Dive](../../source-deep-dives/repositories/1/utensils__mcp-nixos.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [witchan/ios-mcp Source Deep Dive](../../source-deep-dives/repositories/1/witchan__ios-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [zhuyansen/agent-skills-hub Source Deep Dive](../../source-deep-dives/repositories/1/zhuyansen__agent-skills-hub.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [aliyun/alibabacloud-dataworks-mcp-server Source Deep Dive](../../source-deep-dives/repositories/2/aliyun__alibabacloud-dataworks-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [bripin123/rag-memory-epf-mcp Source Deep Dive](../../source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ceaksan/mcp-code-search Source Deep Dive](../../source-deep-dives/repositories/2/ceaksan__mcp-code-search.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [dream8837z/hwp-hwpx-proposal-mcp Source Deep Dive](../../source-deep-dives/repositories/2/dream8837z__hwp-hwpx-proposal-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Goldentrii/AgentRecall-MCP Source Deep Dive](../../source-deep-dives/repositories/2/Goldentrii__AgentRecall-MCP.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [hmmhmmhm/daiso-mcp Source Deep Dive](../../source-deep-dives/repositories/2/hmmhmmhm__daiso-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jgravelle/jcodemunch-mcp Source Deep Dive](../../source-deep-dives/repositories/2/jgravelle__jcodemunch-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [latemonk/agent-store-skills Source Deep Dive](../../source-deep-dives/repositories/2/latemonk__agent-store-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [loved0543-dotcom/kdata-gate-mcp Source Deep Dive](../../source-deep-dives/repositories/2/loved0543-dotcom__kdata-gate-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [robotmcp/ros-mcp-server Source Deep Dive](../../source-deep-dives/repositories/2/robotmcp__ros-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [sodam-ai/Langent-MCP_One-Click_Kit Source Deep Dive](../../source-deep-dives/repositories/2/sodam-ai__Langent-MCP_One-Click_Kit.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [tjwodud04/mcp-tour Source Deep Dive](../../source-deep-dives/repositories/2/tjwodud04__mcp-tour.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [UI5/mcp-server Source Deep Dive](../../source-deep-dives/repositories/2/UI5__mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [BuilderIO/skills Source Deep Dive](../../source-deep-dives/repositories/3/BuilderIO__skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [cisco-ai-defense/mcp-scanner Source Deep Dive](../../source-deep-dives/repositories/3/cisco-ai-defense__mcp-scanner.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [containers/kubernetes-mcp-server Source Deep Dive](../../source-deep-dives/repositories/3/containers__kubernetes-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Dicklesworthstone/mcp_agent_mail_rust Source Deep Dive](../../source-deep-dives/repositories/3/Dicklesworthstone__mcp_agent_mail_rust.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [getsentry/XcodeBuildMCP Source Deep Dive](../../source-deep-dives/repositories/3/getsentry__XcodeBuildMCP.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [googleapis/mcp-toolbox Source Deep Dive](../../source-deep-dives/repositories/3/googleapis__mcp-toolbox.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [gracebereblue-cpu/-mcp Source Deep Dive](../../source-deep-dives/repositories/3/gracebereblue-cpu__-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [kokogo100/ragalgo-mcp-server Source Deep Dive](../../source-deep-dives/repositories/3/kokogo100__ragalgo-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ruvnet/agent-harness-generator Source Deep Dive](../../source-deep-dives/repositories/3/ruvnet__agent-harness-generator.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Softeria/ms-365-mcp-server Source Deep Dive](../../source-deep-dives/repositories/3/Softeria__ms-365-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [dangamsoft/cafe-mcp Source Deep Dive](../../source-deep-dives/repositories/4/dangamsoft__cafe-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [dbt-labs/dbt-mcp Source Deep Dive](../../source-deep-dives/repositories/4/dbt-labs__dbt-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [farmbit-mdk/korea-market-data-mcp Source Deep Dive](../../source-deep-dives/repositories/4/farmbit-mdk__korea-market-data-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [intuit/quickbooks-online-mcp-server Source Deep Dive](../../source-deep-dives/repositories/4/intuit__quickbooks-online-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jung-jin-lee/paldo-mcp Source Deep Dive](../../source-deep-dives/repositories/4/jung-jin-lee__paldo-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [LimEulYoung/legal_mcp Source Deep Dive](../../source-deep-dives/repositories/4/LimEulYoung__legal_mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [vuetifyjs/mcp Source Deep Dive](../../source-deep-dives/repositories/4/vuetifyjs__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [workbookbulb863/korean-law-alio-mcp Source Deep Dive](../../source-deep-dives/repositories/4/workbookbulb863__korean-law-alio-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [yotsuda/PowerShell.MCP Source Deep Dive](../../source-deep-dives/repositories/4/yotsuda__PowerShell.MCP.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [bitbonsai/mcpvault Source Deep Dive](../../source-deep-dives/repositories/5/bitbonsai__mcpvault.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [brycewang-stanford/Awesome-Journal-Skills Source Deep Dive](../../source-deep-dives/repositories/5/brycewang-stanford__Awesome-Journal-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [chrisryugj/korean-law-mcp Source Deep Dive](../../source-deep-dives/repositories/5/chrisryugj__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [freee/freee-mcp Source Deep Dive](../../source-deep-dives/repositories/5/freee__freee-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [mark3labs/mcp-go Source Deep Dive](../../source-deep-dives/repositories/5/mark3labs__mcp-go.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ProfessionalWiki/MediaWiki-MCP-Server Source Deep Dive](../../source-deep-dives/repositories/5/ProfessionalWiki__MediaWiki-MCP-Server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [seung23/lawtutor-mcp Source Deep Dive](../../source-deep-dives/repositories/5/seung23__lawtutor-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server Source Deep Dive](../../source-deep-dives/repositories/5/Shelpuk-AI-Technology-Consulting__kindly-web-search-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [shinpr/mcp-local-rag Source Deep Dive](../../source-deep-dives/repositories/5/shinpr__mcp-local-rag.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [SonAIengine/ku-portal-mcp Source Deep Dive](../../source-deep-dives/repositories/5/SonAIengine__ku-portal-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ai-boost/awesome-harness-engineering Source Deep Dive](../../source-deep-dives/repositories/6/ai-boost__awesome-harness-engineering.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [KM-it-ops/memory-mcp Source Deep Dive](../../source-deep-dives/repositories/6/KM-it-ops__memory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Lumiaqian/openspec-mcp Source Deep Dive](../../source-deep-dives/repositories/6/Lumiaqian__openspec-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [microsoft/skills Source Deep Dive](../../source-deep-dives/repositories/6/microsoft__skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Scottcjn/iota-agent-mcp Source Deep Dive](../../source-deep-dives/repositories/6/Scottcjn__iota-agent-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [sirkirby/unifi-mcp Source Deep Dive](../../source-deep-dives/repositories/6/sirkirby__unifi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ssuksak/cheongyak-rag-mcp Source Deep Dive](../../source-deep-dives/repositories/6/ssuksak__cheongyak-rag-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [TensorBlock/awesome-mcp-servers Source Deep Dive](../../source-deep-dives/repositories/6/TensorBlock__awesome-mcp-servers.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [awkoy/notion-mcp-server Source Deep Dive](../../source-deep-dives/repositories/7/awkoy__notion-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [chrisryugj/korean-dart-mcp Source Deep Dive](../../source-deep-dives/repositories/7/chrisryugj__korean-dart-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [getsentry/sentry-mcp Source Deep Dive](../../source-deep-dives/repositories/7/getsentry__sentry-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [GLips/Figma-Context-MCP Source Deep Dive](../../source-deep-dives/repositories/7/GLips__Figma-Context-MCP.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jacob-bd/notebooklm-mcp-cli Source Deep Dive](../../source-deep-dives/repositories/7/jacob-bd__notebooklm-mcp-cli.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [scvcoder/korean-law-alio-mcp Source Deep Dive](../../source-deep-dives/repositories/7/scvcoder__korean-law-alio-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [SocketDev/socket-mcp Source Deep Dive](../../source-deep-dives/repositories/7/SocketDev__socket-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [cbcoutinho/nextcloud-mcp-server Source Deep Dive](../../source-deep-dives/repositories/8/cbcoutinho__nextcloud-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jingcheng-chen/rhinomcp Source Deep Dive](../../source-deep-dives/repositories/8/jingcheng-chen__rhinomcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jonigl/mcp-client-for-ollama Source Deep Dive](../../source-deep-dives/repositories/8/jonigl__mcp-client-for-ollama.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [MCPJam/inspector Source Deep Dive](../../source-deep-dives/repositories/8/MCPJam__inspector.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [spences10/mcpick Source Deep Dive](../../source-deep-dives/repositories/8/spences10__mcpick.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Agent-Hellboy/mcp-server-fuzzer Source Deep Dive](../../source-deep-dives/repositories/9/Agent-Hellboy__mcp-server-fuzzer.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [blockscout/mcp-server Source Deep Dive](../../source-deep-dives/repositories/9/blockscout__mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [GlitterKill/sdl-mcp Source Deep Dive](../../source-deep-dives/repositories/9/GlitterKill__sdl-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [JeongSeongMok/tossinvest-openapi-mcp Source Deep Dive](../../source-deep-dives/repositories/9/JeongSeongMok__tossinvest-openapi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [OctagonAI/octagon-mcp-server Source Deep Dive](../../source-deep-dives/repositories/9/OctagonAI__octagon-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [simota/agent-skills Source Deep Dive](../../source-deep-dives/repositories/9/simota__agent-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [alice840126-ship-it/korean-law-mcp-setup Source Deep Dive](../../source-deep-dives/repositories/a/alice840126-ship-it__korean-law-mcp-setup.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [artokun/comfyui-mcp Source Deep Dive](../../source-deep-dives/repositories/a/artokun__comfyui-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [awslabs/mcp Source Deep Dive](../../source-deep-dives/repositories/a/awslabs__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [DAWNCR0W/affine-mcp-server Source Deep Dive](../../source-deep-dives/repositories/a/DAWNCR0W__affine-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jayjodev/vivory-mcp Source Deep Dive](../../source-deep-dives/repositories/a/jayjodev__vivory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [makenotion/notion-mcp-server Source Deep Dive](../../source-deep-dives/repositories/a/makenotion__notion-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [microsoft/mcp Source Deep Dive](../../source-deep-dives/repositories/a/microsoft__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Power-Agent/PowerMCP Source Deep Dive](../../source-deep-dives/repositories/a/Power-Agent__PowerMCP.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Aimino-Tech/opendocswork-mcp Source Deep Dive](../../source-deep-dives/repositories/b/Aimino-Tech__opendocswork-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [caramador83/harness-100 Source Deep Dive](../../source-deep-dives/repositories/b/caramador83__harness-100.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [CSOAI-ORG/korea-ai-basic-act-mcp Source Deep Dive](../../source-deep-dives/repositories/b/CSOAI-ORG__korea-ai-basic-act-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [formulahendry/mcp-server-spec-driven-development Source Deep Dive](../../source-deep-dives/repositories/b/formulahendry__mcp-server-spec-driven-development.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [github/github-mcp-server Source Deep Dive](../../source-deep-dives/repositories/b/github__github-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [Glade-tool/glade-mcp Source Deep Dive](../../source-deep-dives/repositories/b/Glade-tool__glade-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jee3m/augmentative-knowledge-hooks Source Deep Dive](../../source-deep-dives/repositories/b/jee3m__augmentative-knowledge-hooks.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [kakao/OrchestrationBench Source Deep Dive](../../source-deep-dives/repositories/b/kakao__OrchestrationBench.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [line/line-bot-mcp-server Source Deep Dive](../../source-deep-dives/repositories/b/line__line-bot-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [MICONNM/openclaw-consensus-mcp Source Deep Dive](../../source-deep-dives/repositories/b/MICONNM__openclaw-consensus-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [microsoft/mcp-for-beginners Source Deep Dive](../../source-deep-dives/repositories/b/microsoft__mcp-for-beginners.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [secure-agentic-framework/saf-mcp Source Deep Dive](../../source-deep-dives/repositories/b/secure-agentic-framework__saf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [tomtom-international/tomtom-maps-mcp Source Deep Dive](../../source-deep-dives/repositories/b/tomtom-international__tomtom-maps-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [closermethod/apac-compliance-mcp Source Deep Dive](../../source-deep-dives/repositories/c/closermethod__apac-compliance-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [gih2yun/bareun-mcp Source Deep Dive](../../source-deep-dives/repositories/c/gih2yun__bareun-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [JAE-HUN-CHO/law-api-mcp-korea Source Deep Dive](../../source-deep-dives/repositories/c/JAE-HUN-CHO__law-api-mcp-korea.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [MarcoYou/open-proxy-mcp Source Deep Dive](../../source-deep-dives/repositories/c/MarcoYou__open-proxy-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [mcp-use/mcp-use Source Deep Dive](../../source-deep-dives/repositories/c/mcp-use__mcp-use.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [redis/mcp-redis Source Deep Dive](../../source-deep-dives/repositories/c/redis__mcp-redis.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [z0nam/korea-rio-mcp Source Deep Dive](../../source-deep-dives/repositories/c/z0nam__korea-rio-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [AgentBridge-Lab/korea-space-support-mcp Source Deep Dive](../../source-deep-dives/repositories/d/AgentBridge-Lab__korea-space-support-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [genomoncology/biomcp Source Deep Dive](../../source-deep-dives/repositories/d/genomoncology__biomcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jinmyungjong/korean-law-mcp Source Deep Dive](../../source-deep-dives/repositories/d/jinmyungjong__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [netboxlabs/netbox-mcp-server Source Deep Dive](../../source-deep-dives/repositories/d/netboxlabs__netbox-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [numman-ali/openskills Source Deep Dive](../../source-deep-dives/repositories/d/numman-ali__openskills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [stefanoamorelli/sec-edgar-mcp Source Deep Dive](../../source-deep-dives/repositories/d/stefanoamorelli__sec-edgar-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [addyosmani/agent-skills Source Deep Dive](../../source-deep-dives/repositories/e/addyosmani__agent-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ai-frendly-datahub/KoreanNLPMCPRadar Source Deep Dive](../../source-deep-dives/repositories/e/ai-frendly-datahub__KoreanNLPMCPRadar.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [datagouv/datagouv-mcp Source Deep Dive](../../source-deep-dives/repositories/e/datagouv__datagouv-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [google-marketing-solutions/google_ads_mcp Source Deep Dive](../../source-deep-dives/repositories/e/google-marketing-solutions__google_ads_mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [homeassistant-ai/ha-mcp Source Deep Dive](../../source-deep-dives/repositories/e/homeassistant-ai__ha-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [hypn4/tossinvest-mcp Source Deep Dive](../../source-deep-dives/repositories/e/hypn4__tossinvest-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [J-nowcow/awesome-korean-agent-skills Source Deep Dive](../../source-deep-dives/repositories/e/J-nowcow__awesome-korean-agent-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [mcpads/create-retro-game-kr-patch Source Deep Dive](../../source-deep-dives/repositories/e/mcpads__create-retro-game-kr-patch.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [mongodb-js/mongodb-mcp-server Source Deep Dive](../../source-deep-dives/repositories/e/mongodb-js__mongodb-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [oracle/mcp Source Deep Dive](../../source-deep-dives/repositories/e/oracle__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [ChiR24/Unreal_mcp Source Deep Dive](../../source-deep-dives/repositories/f/ChiR24__Unreal_mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [grafana/loki-mcp Source Deep Dive](../../source-deep-dives/repositories/f/grafana__loki-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [jonigl/ollama-mcp-bridge Source Deep Dive](../../source-deep-dives/repositories/f/jonigl__ollama-mcp-bridge.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [StarRocks/mcp-server-starrocks Source Deep Dive](../../source-deep-dives/repositories/f/StarRocks__mcp-server-starrocks.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [tableau/tableau-mcp Source Deep Dive](../../source-deep-dives/repositories/f/tableau__tableau-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [tinyfish-io/agentql-mcp Source Deep Dive](../../source-deep-dives/repositories/f/tinyfish-io__agentql-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
-| [WordPress/mcp-adapter Source Deep Dive](../../source-deep-dives/repositories/f/WordPress__mcp-adapter.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [borghei/Claude-Skills 소스 딥다이브](../../source-deep-dives/repositories/0/borghei__Claude-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Dicklesworthstone/mcp_agent_mail 소스 딥다이브](../../source-deep-dives/repositories/0/Dicklesworthstone__mcp_agent_mail.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [PleasePrompto/notebooklm-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/PleasePrompto__notebooklm-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [stephano0308-cloud/korean-law-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/stephano0308-cloud__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [vishalsachdev/canvas-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/vishalsachdev__canvas-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [yjhann33-design/korea-stock-insight-mcp 소스 딥다이브](../../source-deep-dives/repositories/0/yjhann33-design__korea-stock-insight-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [aesthetic-legalism5470/korean-dart-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/aesthetic-legalism5470__korean-dart-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [DeusData/codebase-memory-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/DeusData__codebase-memory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [dongdorrong/korean-law-mcp-lab 소스 딥다이브](../../source-deep-dives/repositories/1/dongdorrong__korean-law-mcp-lab.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [everynation/kimchisushi-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/everynation__kimchisushi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [kubeflow/mcp-apache-spark-history-server 소스 딥다이브](../../source-deep-dives/repositories/1/kubeflow__mcp-apache-spark-history-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [treesoop/hwp-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/treesoop__hwp-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [utensils/mcp-nixos 소스 딥다이브](../../source-deep-dives/repositories/1/utensils__mcp-nixos.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [witchan/ios-mcp 소스 딥다이브](../../source-deep-dives/repositories/1/witchan__ios-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [zhuyansen/agent-skills-hub 소스 딥다이브](../../source-deep-dives/repositories/1/zhuyansen__agent-skills-hub.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [aliyun/alibabacloud-dataworks-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/2/aliyun__alibabacloud-dataworks-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [bripin123/rag-memory-epf-mcp 소스 딥다이브](../../source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ceaksan/mcp-code-search 소스 딥다이브](../../source-deep-dives/repositories/2/ceaksan__mcp-code-search.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [dream8837z/hwp-hwpx-proposal-mcp 소스 딥다이브](../../source-deep-dives/repositories/2/dream8837z__hwp-hwpx-proposal-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Goldentrii/AgentRecall-MCP 소스 딥다이브](../../source-deep-dives/repositories/2/Goldentrii__AgentRecall-MCP.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [hmmhmmhm/daiso-mcp 소스 딥다이브](../../source-deep-dives/repositories/2/hmmhmmhm__daiso-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jgravelle/jcodemunch-mcp 소스 딥다이브](../../source-deep-dives/repositories/2/jgravelle__jcodemunch-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [latemonk/agent-store-skills 소스 딥다이브](../../source-deep-dives/repositories/2/latemonk__agent-store-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [loved0543-dotcom/kdata-gate-mcp 소스 딥다이브](../../source-deep-dives/repositories/2/loved0543-dotcom__kdata-gate-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [robotmcp/ros-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/2/robotmcp__ros-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [sodam-ai/Langent-MCP_One-Click_Kit 소스 딥다이브](../../source-deep-dives/repositories/2/sodam-ai__Langent-MCP_One-Click_Kit.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [tjwodud04/mcp-tour 소스 딥다이브](../../source-deep-dives/repositories/2/tjwodud04__mcp-tour.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [UI5/mcp-server 소스 딥다이브](../../source-deep-dives/repositories/2/UI5__mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [BuilderIO/skills 소스 딥다이브](../../source-deep-dives/repositories/3/BuilderIO__skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [cisco-ai-defense/mcp-scanner 소스 딥다이브](../../source-deep-dives/repositories/3/cisco-ai-defense__mcp-scanner.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [containers/kubernetes-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/3/containers__kubernetes-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Dicklesworthstone/mcp_agent_mail_rust 소스 딥다이브](../../source-deep-dives/repositories/3/Dicklesworthstone__mcp_agent_mail_rust.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [getsentry/XcodeBuildMCP 소스 딥다이브](../../source-deep-dives/repositories/3/getsentry__XcodeBuildMCP.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [googleapis/mcp-toolbox 소스 딥다이브](../../source-deep-dives/repositories/3/googleapis__mcp-toolbox.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [gracebereblue-cpu/-mcp 소스 딥다이브](../../source-deep-dives/repositories/3/gracebereblue-cpu__-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [kokogo100/ragalgo-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/3/kokogo100__ragalgo-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ruvnet/agent-harness-generator 소스 딥다이브](../../source-deep-dives/repositories/3/ruvnet__agent-harness-generator.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Softeria/ms-365-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/3/Softeria__ms-365-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [dangamsoft/cafe-mcp 소스 딥다이브](../../source-deep-dives/repositories/4/dangamsoft__cafe-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [dbt-labs/dbt-mcp 소스 딥다이브](../../source-deep-dives/repositories/4/dbt-labs__dbt-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [farmbit-mdk/korea-market-data-mcp 소스 딥다이브](../../source-deep-dives/repositories/4/farmbit-mdk__korea-market-data-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [intuit/quickbooks-online-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/4/intuit__quickbooks-online-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jung-jin-lee/paldo-mcp 소스 딥다이브](../../source-deep-dives/repositories/4/jung-jin-lee__paldo-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [LimEulYoung/legal_mcp 소스 딥다이브](../../source-deep-dives/repositories/4/LimEulYoung__legal_mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [vuetifyjs/mcp 소스 딥다이브](../../source-deep-dives/repositories/4/vuetifyjs__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [workbookbulb863/korean-law-alio-mcp 소스 딥다이브](../../source-deep-dives/repositories/4/workbookbulb863__korean-law-alio-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [yotsuda/PowerShell.MCP 소스 딥다이브](../../source-deep-dives/repositories/4/yotsuda__PowerShell.MCP.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [bitbonsai/mcpvault 소스 딥다이브](../../source-deep-dives/repositories/5/bitbonsai__mcpvault.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [brycewang-stanford/Awesome-Journal-Skills 소스 딥다이브](../../source-deep-dives/repositories/5/brycewang-stanford__Awesome-Journal-Skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [chrisryugj/korean-law-mcp 소스 딥다이브](../../source-deep-dives/repositories/5/chrisryugj__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [freee/freee-mcp 소스 딥다이브](../../source-deep-dives/repositories/5/freee__freee-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [mark3labs/mcp-go 소스 딥다이브](../../source-deep-dives/repositories/5/mark3labs__mcp-go.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ProfessionalWiki/MediaWiki-MCP-Server 소스 딥다이브](../../source-deep-dives/repositories/5/ProfessionalWiki__MediaWiki-MCP-Server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [seung23/lawtutor-mcp 소스 딥다이브](../../source-deep-dives/repositories/5/seung23__lawtutor-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/5/Shelpuk-AI-Technology-Consulting__kindly-web-search-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [shinpr/mcp-local-rag 소스 딥다이브](../../source-deep-dives/repositories/5/shinpr__mcp-local-rag.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [SonAIengine/ku-portal-mcp 소스 딥다이브](../../source-deep-dives/repositories/5/SonAIengine__ku-portal-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ai-boost/awesome-harness-engineering 소스 딥다이브](../../source-deep-dives/repositories/6/ai-boost__awesome-harness-engineering.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [KM-it-ops/memory-mcp 소스 딥다이브](../../source-deep-dives/repositories/6/KM-it-ops__memory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Lumiaqian/openspec-mcp 소스 딥다이브](../../source-deep-dives/repositories/6/Lumiaqian__openspec-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [microsoft/skills 소스 딥다이브](../../source-deep-dives/repositories/6/microsoft__skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Scottcjn/iota-agent-mcp 소스 딥다이브](../../source-deep-dives/repositories/6/Scottcjn__iota-agent-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [sirkirby/unifi-mcp 소스 딥다이브](../../source-deep-dives/repositories/6/sirkirby__unifi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ssuksak/cheongyak-rag-mcp 소스 딥다이브](../../source-deep-dives/repositories/6/ssuksak__cheongyak-rag-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [TensorBlock/awesome-mcp-servers 소스 딥다이브](../../source-deep-dives/repositories/6/TensorBlock__awesome-mcp-servers.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [awkoy/notion-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/7/awkoy__notion-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [chrisryugj/korean-dart-mcp 소스 딥다이브](../../source-deep-dives/repositories/7/chrisryugj__korean-dart-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [getsentry/sentry-mcp 소스 딥다이브](../../source-deep-dives/repositories/7/getsentry__sentry-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [GLips/Figma-Context-MCP 소스 딥다이브](../../source-deep-dives/repositories/7/GLips__Figma-Context-MCP.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jacob-bd/notebooklm-mcp-cli 소스 딥다이브](../../source-deep-dives/repositories/7/jacob-bd__notebooklm-mcp-cli.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [scvcoder/korean-law-alio-mcp 소스 딥다이브](../../source-deep-dives/repositories/7/scvcoder__korean-law-alio-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [SocketDev/socket-mcp 소스 딥다이브](../../source-deep-dives/repositories/7/SocketDev__socket-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [cbcoutinho/nextcloud-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/8/cbcoutinho__nextcloud-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jingcheng-chen/rhinomcp 소스 딥다이브](../../source-deep-dives/repositories/8/jingcheng-chen__rhinomcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jonigl/mcp-client-for-ollama 소스 딥다이브](../../source-deep-dives/repositories/8/jonigl__mcp-client-for-ollama.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [MCPJam/inspector 소스 딥다이브](../../source-deep-dives/repositories/8/MCPJam__inspector.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [spences10/mcpick 소스 딥다이브](../../source-deep-dives/repositories/8/spences10__mcpick.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Agent-Hellboy/mcp-server-fuzzer 소스 딥다이브](../../source-deep-dives/repositories/9/Agent-Hellboy__mcp-server-fuzzer.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [blockscout/mcp-server 소스 딥다이브](../../source-deep-dives/repositories/9/blockscout__mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [GlitterKill/sdl-mcp 소스 딥다이브](../../source-deep-dives/repositories/9/GlitterKill__sdl-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [JeongSeongMok/tossinvest-openapi-mcp 소스 딥다이브](../../source-deep-dives/repositories/9/JeongSeongMok__tossinvest-openapi-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [OctagonAI/octagon-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/9/OctagonAI__octagon-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [simota/agent-skills 소스 딥다이브](../../source-deep-dives/repositories/9/simota__agent-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [alice840126-ship-it/korean-law-mcp-setup 소스 딥다이브](../../source-deep-dives/repositories/a/alice840126-ship-it__korean-law-mcp-setup.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [artokun/comfyui-mcp 소스 딥다이브](../../source-deep-dives/repositories/a/artokun__comfyui-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [awslabs/mcp 소스 딥다이브](../../source-deep-dives/repositories/a/awslabs__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [DAWNCR0W/affine-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/a/DAWNCR0W__affine-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jayjodev/vivory-mcp 소스 딥다이브](../../source-deep-dives/repositories/a/jayjodev__vivory-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [makenotion/notion-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/a/makenotion__notion-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [microsoft/mcp 소스 딥다이브](../../source-deep-dives/repositories/a/microsoft__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Power-Agent/PowerMCP 소스 딥다이브](../../source-deep-dives/repositories/a/Power-Agent__PowerMCP.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Aimino-Tech/opendocswork-mcp 소스 딥다이브](../../source-deep-dives/repositories/b/Aimino-Tech__opendocswork-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [caramador83/harness-100 소스 딥다이브](../../source-deep-dives/repositories/b/caramador83__harness-100.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [CSOAI-ORG/korea-ai-basic-act-mcp 소스 딥다이브](../../source-deep-dives/repositories/b/CSOAI-ORG__korea-ai-basic-act-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [formulahendry/mcp-server-spec-driven-development 소스 딥다이브](../../source-deep-dives/repositories/b/formulahendry__mcp-server-spec-driven-development.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [github/github-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/b/github__github-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [Glade-tool/glade-mcp 소스 딥다이브](../../source-deep-dives/repositories/b/Glade-tool__glade-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jee3m/augmentative-knowledge-hooks 소스 딥다이브](../../source-deep-dives/repositories/b/jee3m__augmentative-knowledge-hooks.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [kakao/OrchestrationBench 소스 딥다이브](../../source-deep-dives/repositories/b/kakao__OrchestrationBench.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [line/line-bot-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/b/line__line-bot-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [MICONNM/openclaw-consensus-mcp 소스 딥다이브](../../source-deep-dives/repositories/b/MICONNM__openclaw-consensus-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [microsoft/mcp-for-beginners 소스 딥다이브](../../source-deep-dives/repositories/b/microsoft__mcp-for-beginners.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [secure-agentic-framework/saf-mcp 소스 딥다이브](../../source-deep-dives/repositories/b/secure-agentic-framework__saf-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [tomtom-international/tomtom-maps-mcp 소스 딥다이브](../../source-deep-dives/repositories/b/tomtom-international__tomtom-maps-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [closermethod/apac-compliance-mcp 소스 딥다이브](../../source-deep-dives/repositories/c/closermethod__apac-compliance-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [gih2yun/bareun-mcp 소스 딥다이브](../../source-deep-dives/repositories/c/gih2yun__bareun-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [JAE-HUN-CHO/law-api-mcp-korea 소스 딥다이브](../../source-deep-dives/repositories/c/JAE-HUN-CHO__law-api-mcp-korea.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [MarcoYou/open-proxy-mcp 소스 딥다이브](../../source-deep-dives/repositories/c/MarcoYou__open-proxy-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [mcp-use/mcp-use 소스 딥다이브](../../source-deep-dives/repositories/c/mcp-use__mcp-use.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [redis/mcp-redis 소스 딥다이브](../../source-deep-dives/repositories/c/redis__mcp-redis.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [z0nam/korea-rio-mcp 소스 딥다이브](../../source-deep-dives/repositories/c/z0nam__korea-rio-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [AgentBridge-Lab/korea-space-support-mcp 소스 딥다이브](../../source-deep-dives/repositories/d/AgentBridge-Lab__korea-space-support-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [genomoncology/biomcp 소스 딥다이브](../../source-deep-dives/repositories/d/genomoncology__biomcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jinmyungjong/korean-law-mcp 소스 딥다이브](../../source-deep-dives/repositories/d/jinmyungjong__korean-law-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [netboxlabs/netbox-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/d/netboxlabs__netbox-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [numman-ali/openskills 소스 딥다이브](../../source-deep-dives/repositories/d/numman-ali__openskills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [stefanoamorelli/sec-edgar-mcp 소스 딥다이브](../../source-deep-dives/repositories/d/stefanoamorelli__sec-edgar-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [addyosmani/agent-skills 소스 딥다이브](../../source-deep-dives/repositories/e/addyosmani__agent-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ai-frendly-datahub/KoreanNLPMCPRadar 소스 딥다이브](../../source-deep-dives/repositories/e/ai-frendly-datahub__KoreanNLPMCPRadar.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [datagouv/datagouv-mcp 소스 딥다이브](../../source-deep-dives/repositories/e/datagouv__datagouv-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [google-marketing-solutions/google_ads_mcp 소스 딥다이브](../../source-deep-dives/repositories/e/google-marketing-solutions__google_ads_mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [homeassistant-ai/ha-mcp 소스 딥다이브](../../source-deep-dives/repositories/e/homeassistant-ai__ha-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [hypn4/tossinvest-mcp 소스 딥다이브](../../source-deep-dives/repositories/e/hypn4__tossinvest-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [J-nowcow/awesome-korean-agent-skills 소스 딥다이브](../../source-deep-dives/repositories/e/J-nowcow__awesome-korean-agent-skills.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [mcpads/create-retro-game-kr-patch 소스 딥다이브](../../source-deep-dives/repositories/e/mcpads__create-retro-game-kr-patch.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [mongodb-js/mongodb-mcp-server 소스 딥다이브](../../source-deep-dives/repositories/e/mongodb-js__mongodb-mcp-server.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [oracle/mcp 소스 딥다이브](../../source-deep-dives/repositories/e/oracle__mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [ChiR24/Unreal_mcp 소스 딥다이브](../../source-deep-dives/repositories/f/ChiR24__Unreal_mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [grafana/loki-mcp 소스 딥다이브](../../source-deep-dives/repositories/f/grafana__loki-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [jonigl/ollama-mcp-bridge 소스 딥다이브](../../source-deep-dives/repositories/f/jonigl__ollama-mcp-bridge.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [StarRocks/mcp-server-starrocks 소스 딥다이브](../../source-deep-dives/repositories/f/StarRocks__mcp-server-starrocks.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [tableau/tableau-mcp 소스 딥다이브](../../source-deep-dives/repositories/f/tableau__tableau-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [tinyfish-io/agentql-mcp 소스 딥다이브](../../source-deep-dives/repositories/f/tinyfish-io__agentql-mcp.md) | source-deep-dive-report | source-deep-dives | -5 |
+| [WordPress/mcp-adapter 소스 딥다이브](../../source-deep-dives/repositories/f/WordPress__mcp-adapter.md) | source-deep-dive-report | source-deep-dives | -5 |
 | [addyosmani/agent-skills 구조 분석](../../clone-structures/addyosmani__agent-skills.md) | clone-structure-report | clone-structures | -28 |
 | [ceaksan/mcp-code-search 구조 분석](../../clone-structures/ceaksan__mcp-code-search.md) | clone-structure-report | clone-structures | -28 |
 | [formulahendry/mcp-server-spec-driven-development 구조 분석](../../clone-structures/formulahendry__mcp-server-spec-driven-development.md) | clone-structure-report | clone-structures | -28 |

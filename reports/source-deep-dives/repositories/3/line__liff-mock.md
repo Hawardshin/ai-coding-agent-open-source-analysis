@@ -1,63 +1,63 @@
-# line/liff-mock Source Deep Dive
+# line/liff-mock 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 LIFF Mock is a LIFF Plugin that make testing your LIFF app easy.
 
 ## 요약
 
-- 조사 단위: `sources/line__liff-mock` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 123 files, 10 directories, depth score 86, key references 11개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/line__liff-mock` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 123 files, 10 directories, depth score 80, key references 11개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-평가/관측/품질 관점에서 retrieval/vector path, eval/test harness, security/policy surface 구조로 읽힌다. 핵심 소스 근거는 eval=src/plugin.test.ts, src/shared.test.ts, src/store/GlobalStore.test.ts이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 11개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 quality and evaluation comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+평가/관측/품질 관점에서 retrieval/vector path, eval/test harness, security/policy surface 구조로 읽힌다. 핵심 소스 근거는 eval=src/plugin.test.ts, src/shared.test.ts, src/store/GlobalStore.test.ts이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 11개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 품질/평가 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | line/liff-mock |
-| Topic | Evals, Observability, and Quality / 평가/관측/품질 |
+| 레포 | line/liff-mock |
+| 주제 | 평가/관측/품질 / 평가/관측/품질 |
 | Region | korea |
 | Language | TypeScript |
 | Stars | 45 |
 | Forks | 6 |
 | License | Apache-2.0 |
-| Maturity | emerging |
-| Evidence | source+report |
-| Source | [sources/line__liff-mock](../../../../sources/line__liff-mock) |
-| Existing report | [reports/korea-trending/repositories/line__liff-mock.md](../../../korea-trending/repositories/line__liff-mock.md) |
+| 성숙도 | 초기 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/line__liff-mock](../../../../sources/line__liff-mock) |
+| 기존 보고서 | [reports/korea-trending/repositories/line__liff-mock.md](../../../korea-trending/repositories/line__liff-mock.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 123 / 10 |
-| Max observed depth | 4 |
-| Top directories | .github, examples, src |
-| Top extensions | .ts: 102, .json: 8, .js: 4, (none): 4, .html: 2, .md: 2, .yml: 1 |
-| Source patterns | retrieval/vector path, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 123 / 10 |
+| 관측 최대 깊이 | 4 |
+| 상위 디렉터리 | .github, examples, src |
+| 상위 확장자 | .ts: 102, .json: 8, .js: 4, (none): 4, .html: 2, .md: 2, .yml: 1 |
+| 소스 패턴 | retrieval/vector path, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 45 |
 | examples/npm-typescript-example | examples workspace | 5 |
@@ -66,9 +66,9 @@ LIFF Mock is a LIFF Plugin that make testing your LIFF app easy.
 | examples | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | clean | rm -rf dist |
 | quality | package.json | lint | eslint src |
@@ -87,24 +87,24 @@ LIFF Mock is a LIFF Plugin that make testing your LIFF app easy.
 | build | package.json | prepublishOnly | npm run code-check && npm run build:prod |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | eval | [src/plugin.test.ts](../../../../sources/line__liff-mock/src/plugin.test.ts) | eval signal |
 | eval | [src/shared.test.ts](../../../../sources/line__liff-mock/src/shared.test.ts) | eval signal |
@@ -119,56 +119,56 @@ LIFF Mock is a LIFF Plugin that make testing your LIFF app easy.
 | ci | [.github/workflows/code-check.yml](../../../../sources/line__liff-mock/.github/workflows/code-check.yml) | ci signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 2 | [src/index.ts](../../../../sources/line__liff-mock/src/index.ts)<br>[examples/npm-typescript-example/src/index.ts](../../../../sources/line__liff-mock/examples/npm-typescript-example/src/index.ts) |
-| agentRuntime | 0 | not obvious |
-| mcp | 0 | not obvious |
+| agentRuntime | 0 | 명확하지 않음 |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 5 | [src/index.ts](../../../../sources/line__liff-mock/src/index.ts)<br>[examples/npm-typescript-example/src/index.ts](../../../../sources/line__liff-mock/examples/npm-typescript-example/src/index.ts)<br>[examples/npm-typescript-example/public/index.html](../../../../sources/line__liff-mock/examples/npm-typescript-example/public/index.html)<br>[examples/cdn-example/index.html](../../../../sources/line__liff-mock/examples/cdn-example/index.html)<br>[examples/cdn-example/index.js](../../../../sources/line__liff-mock/examples/cdn-example/index.js) |
-| spec | 0 | not obvious |
+| spec | 0 | 명확하지 않음 |
 | eval | 48 | [src/plugin.test.ts](../../../../sources/line__liff-mock/src/plugin.test.ts)<br>[src/shared.test.ts](../../../../sources/line__liff-mock/src/shared.test.ts)<br>[src/store/GlobalStore.test.ts](../../../../sources/line__liff-mock/src/store/GlobalStore.test.ts)<br>[src/store/MockDataStore.test.ts](../../../../sources/line__liff-mock/src/store/MockDataStore.test.ts)<br>[src/api/_addListener.test.ts](../../../../sources/line__liff-mock/src/api/_addListener.test.ts)<br>[src/api/_call.test.ts](../../../../sources/line__liff-mock/src/api/_call.test.ts)<br>[src/api/_dispatchEvent.test.ts](../../../../sources/line__liff-mock/src/api/_dispatchEvent.test.ts)<br>[src/api/_postMessage.test.ts](../../../../sources/line__liff-mock/src/api/_postMessage.test.ts) |
 | security | 2 | [src/api/permission.test.ts](../../../../sources/line__liff-mock/src/api/permission.test.ts)<br>[src/api/permission.ts](../../../../sources/line__liff-mock/src/api/permission.ts) |
 | ci | 1 | [.github/workflows/code-check.yml](../../../../sources/line__liff-mock/.github/workflows/code-check.yml) |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 1 | [README.md](../../../../sources/line__liff-mock/README.md) |
 | config | 4 | [package.json](../../../../sources/line__liff-mock/package.json)<br>[tsconfig.json](../../../../sources/line__liff-mock/tsconfig.json)<br>[examples/npm-typescript-example/package.json](../../../../sources/line__liff-mock/examples/npm-typescript-example/package.json)<br>[examples/npm-typescript-example/tsconfig.json](../../../../sources/line__liff-mock/examples/npm-typescript-example/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 48 | [src/plugin.test.ts](../../../../sources/line__liff-mock/src/plugin.test.ts)<br>[src/shared.test.ts](../../../../sources/line__liff-mock/src/shared.test.ts)<br>[src/store/GlobalStore.test.ts](../../../../sources/line__liff-mock/src/store/GlobalStore.test.ts)<br>[src/store/MockDataStore.test.ts](../../../../sources/line__liff-mock/src/store/MockDataStore.test.ts)<br>[src/api/_addListener.test.ts](../../../../sources/line__liff-mock/src/api/_addListener.test.ts)<br>[src/api/_call.test.ts](../../../../sources/line__liff-mock/src/api/_call.test.ts) |
-| CI workflows | 1 | [.github/workflows/code-check.yml](../../../../sources/line__liff-mock/.github/workflows/code-check.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 2 | [src/api/permission.test.ts](../../../../sources/line__liff-mock/src/api/permission.test.ts)<br>[src/api/permission.ts](../../../../sources/line__liff-mock/src/api/permission.ts) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 48 | [src/plugin.test.ts](../../../../sources/line__liff-mock/src/plugin.test.ts)<br>[src/shared.test.ts](../../../../sources/line__liff-mock/src/shared.test.ts)<br>[src/store/GlobalStore.test.ts](../../../../sources/line__liff-mock/src/store/GlobalStore.test.ts)<br>[src/store/MockDataStore.test.ts](../../../../sources/line__liff-mock/src/store/MockDataStore.test.ts)<br>[src/api/_addListener.test.ts](../../../../sources/line__liff-mock/src/api/_addListener.test.ts)<br>[src/api/_call.test.ts](../../../../sources/line__liff-mock/src/api/_call.test.ts) |
+| CI workflow | 1 | [.github/workflows/code-check.yml](../../../../sources/line__liff-mock/.github/workflows/code-check.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 2 | [src/api/permission.test.ts](../../../../sources/line__liff-mock/src/api/permission.test.ts)<br>[src/api/permission.ts](../../../../sources/line__liff-mock/src/api/permission.ts) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `src/plugin.test.ts`, `src/shared.test.ts`, `src/store/GlobalStore.test.ts`.
-2. Trace execution through entrypoints: `src/index.ts`, `examples/npm-typescript-example/src/index.ts`.
-3. Inspect retrieval/memory/indexing through: `src/index.ts`, `examples/npm-typescript-example/src/index.ts`, `examples/npm-typescript-example/public/index.html`.
-4. Verify behavior through test/eval files: `src/plugin.test.ts`, `src/shared.test.ts`, `src/store/GlobalStore.test.ts`.
+1. 핵심 참조에서 시작: `src/plugin.test.ts`, `src/shared.test.ts`, `src/store/GlobalStore.test.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `src/index.ts`, `examples/npm-typescript-example/src/index.ts`.
+3. retrieval/memory/indexing 확인: `src/index.ts`, `examples/npm-typescript-example/src/index.ts`, `examples/npm-typescript-example/public/index.html`.
+4. test/eval 파일로 동작 검증: `src/plugin.test.ts`, `src/shared.test.ts`, `src/store/GlobalStore.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-평가/관측/품질 관점에서 LIFF Mock is a LIFF Plugin that make testing your LIFF app easy.. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, ci, docs이며, source+report 근거 수준으로 emerging 후보로 읽는 것이 좋습니다.
+평가/관측/품질 관점에서 LIFF Mock is a LIFF Plugin that make testing your LIFF app easy.. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, ci, docs이며, 소스+보고서 근거 수준으로 초기 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 평가/관측/품질 레포입니다. 활용 관점은 quality and evaluation comparison point이고, 후속 확인 포인트는 test signal not obvious, needs deeper structural scan입니다.
+korea 신호의 평가/관측/품질 레포입니다. 활용 관점은 품질/평가 비교 지점이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 더 깊은 구조 스캔 필요입니다.

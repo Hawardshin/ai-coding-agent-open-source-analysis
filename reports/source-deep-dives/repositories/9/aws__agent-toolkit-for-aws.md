@@ -1,63 +1,63 @@
-# aws/agent-toolkit-for-aws Source Deep Dive
+# aws/agent-toolkit-for-aws 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS
 
 ## 요약
 
-- 조사 단위: `sources/aws__agent-toolkit-for-aws` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 751 files, 240 directories, depth score 110, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/aws__agent-toolkit-for-aws` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 751 files, 240 directories, depth score 104, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 mcp=plugins/aws-data-analytics/.mcp.json, plugins/aws-core/.mcp.json, plugins/aws-agents-for-devsecops/.mcp.json이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 mcp=plugins/aws-data-analytics/.mcp.json, plugins/aws-core/.mcp.json, plugins/aws-agents-for-devsecops/.mcp.json이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | aws/agent-toolkit-for-aws |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | aws/agent-toolkit-for-aws |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | Python |
 | Stars | 900 |
 | Forks | 89 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/aws__agent-toolkit-for-aws](../../../../sources/aws__agent-toolkit-for-aws) |
-| Existing report | [reports/global-trending/repositories/aws__agent-toolkit-for-aws.md](../../../global-trending/repositories/aws__agent-toolkit-for-aws.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/aws__agent-toolkit-for-aws](../../../../sources/aws__agent-toolkit-for-aws) |
+| 기존 보고서 | [reports/global-trending/repositories/aws__agent-toolkit-for-aws.md](../../../global-trending/repositories/aws__agent-toolkit-for-aws.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 751 / 240 |
-| Max observed depth | 7 |
-| Top directories | .agents, .claude-plugin, .cursor-plugin, .github, plugins, rules, skills, tools |
-| Top extensions | .md: 666, .json: 25, .py: 22, .yml: 11, .ts: 10, (none): 6, .yaml: 4, .csv: 2, .js: 2, .sh: 2, .toml: 1 |
-| Source patterns | agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 751 / 240 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .agents, .claude-plugin, .cursor-plugin, .github, plugins, rules, skills, tools |
+| 상위 확장자 | .md: 666, .json: 25, .py: 22, .yml: 11, .ts: 10, (none): 6, .yaml: 4, .csv: 2, .js: 2, .sh: 2, .toml: 1 |
+| 소스 패턴 | agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | .github | ci surface | 1 |
 | plugins | top-level component | 1 |
@@ -66,29 +66,29 @@ Official, AWS-supported MCP servers, skills, and plugins to help AI agents build
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [plugins/aws-data-analytics/.mcp.json](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-data-analytics/.mcp.json) | mcp signal |
 | mcp | [plugins/aws-core/.mcp.json](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-core/.mcp.json) | mcp signal |
@@ -104,11 +104,11 @@ _No command surface extracted from root manifests._
 | eval | [skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py) | eval support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
 | agentRuntime | 694 | [tools/validate.py](../../../../sources/aws__agent-toolkit-for-aws/tools/validate.py)<br>[skills/README.md](../../../../sources/aws__agent-toolkit-for-aws/skills/README.md)<br>[skills/specialized-skills/system-table-skills/querying-aws-sagemaker-catalog/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/system-table-skills/querying-aws-sagemaker-catalog/SKILL.md)<br>[skills/specialized-skills/system-table-skills/querying-aws-s3/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/system-table-skills/querying-aws-s3/SKILL.md)<br>[skills/specialized-skills/system-table-skills/querying-aws-cloudwatch/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/system-table-skills/querying-aws-cloudwatch/SKILL.md)<br>[skills/specialized-skills/storage-skills/troubleshooting-s3-files/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/storage-skills/troubleshooting-s3-files/SKILL.md)<br>[skills/specialized-skills/storage-skills/troubleshooting-efs/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/storage-skills/troubleshooting-efs/SKILL.md)<br>[skills/specialized-skills/storage-skills/storing-and-querying-vectors/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/storage-skills/storing-and-querying-vectors/SKILL.md) |
 | mcp | 4 | [plugins/aws-data-analytics/.mcp.json](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-data-analytics/.mcp.json)<br>[plugins/aws-core/.mcp.json](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-core/.mcp.json)<br>[plugins/aws-agents-for-devsecops/.mcp.json](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-agents-for-devsecops/.mcp.json)<br>[plugins/aws-agents/.mcp.json](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-agents/.mcp.json) |
 | retrieval | 22 | [skills/specialized-skills/database-skills/amazon-keyspaces/scripts/calculator/index.ts](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-keyspaces/scripts/calculator/index.ts)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/monitoring/slot-memory-imbalance-detection.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/monitoring/slot-memory-imbalance-detection.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/genai/agent-memory.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/genai/agent-memory.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/genai/embedding-providers.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/genai/embedding-providers.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/genai/rag-retrieval.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/genai/rag-retrieval.md)<br>[skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/bigquery-ingest.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/bigquery-ingest.md)<br>[skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/dynamodb-ingest.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/dynamodb-ingest.md)<br>[skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/jdbc-ingest.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/jdbc-ingest.md) |
@@ -116,44 +116,44 @@ _No command surface extracted from root manifests._
 | eval | 30 | [skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py)<br>[skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md)<br>[skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md)<br>[skills/core-skills/aws-observability/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/SKILL.md)<br>[skills/core-skills/aws-observability/references/alarms.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/alarms.md)<br>[skills/core-skills/aws-observability/references/cloudtrail.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/cloudtrail.md)<br>[skills/core-skills/aws-observability/references/dashboards.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/dashboards.md)<br>[skills/core-skills/aws-observability/references/log-insights.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/log-insights.md) |
 | security | 39 | [skills/specialized-skills/storage-skills/securing-s3-buckets/references/audit-checklist.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/storage-skills/securing-s3-buckets/references/audit-checklist.md)<br>[skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/SKILL.md)<br>[skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/references/create-secrets-using-best-practices.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/references/create-secrets-using-best-practices.md)<br>[skills/specialized-skills/database-skills/amazon-keyspaces/references/security-considerations.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-keyspaces/references/security-considerations.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/scripts/security_audit.py](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/scripts/security_audit.py)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/config-guardrails.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/config-guardrails.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/encryption-defaults.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/encryption-defaults.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/vpc-patterns.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/vpc-patterns.md) |
 | ci | 7 | [.github/workflows/build.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/build.yml)<br>[.github/workflows/codeql.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/codeql.yml)<br>[.github/workflows/dependency-review.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/dependency-review.yml)<br>[.github/workflows/merge-prevention.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/merge-prevention.yml)<br>[.github/workflows/pull-request-lint.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/pull-request-lint.yml)<br>[.github/workflows/scorecard-analysis.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/scorecard-analysis.yml)<br>[.github/workflows/stale.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/stale.yml) |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 6 | [README.md](../../../../sources/aws__agent-toolkit-for-aws/README.md)<br>[skills/README.md](../../../../sources/aws__agent-toolkit-for-aws/skills/README.md)<br>[plugins/aws-data-analytics/README.md](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-data-analytics/README.md)<br>[plugins/aws-core/README.md](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-core/README.md)<br>[plugins/aws-agents-for-devsecops/README.md](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-agents-for-devsecops/README.md)<br>[plugins/aws-agents/README.md](../../../../sources/aws__agent-toolkit-for-aws/plugins/aws-agents/README.md) |
 | config | 1 | [skills/specialized-skills/database-skills/amazon-keyspaces/scripts/package.json](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-keyspaces/scripts/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 30 | [skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py)<br>[skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md)<br>[skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md)<br>[skills/core-skills/aws-observability/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/SKILL.md)<br>[skills/core-skills/aws-observability/references/alarms.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/alarms.md)<br>[skills/core-skills/aws-observability/references/cloudtrail.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/cloudtrail.md) |
-| CI workflows | 7 | [.github/workflows/build.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/build.yml)<br>[.github/workflows/codeql.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/codeql.yml)<br>[.github/workflows/dependency-review.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/dependency-review.yml)<br>[.github/workflows/merge-prevention.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/merge-prevention.yml)<br>[.github/workflows/pull-request-lint.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/pull-request-lint.yml)<br>[.github/workflows/scorecard-analysis.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/scorecard-analysis.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 39 | [skills/specialized-skills/storage-skills/securing-s3-buckets/references/audit-checklist.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/storage-skills/securing-s3-buckets/references/audit-checklist.md)<br>[skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/SKILL.md)<br>[skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/references/create-secrets-using-best-practices.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/references/create-secrets-using-best-practices.md)<br>[skills/specialized-skills/database-skills/amazon-keyspaces/references/security-considerations.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-keyspaces/references/security-considerations.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/scripts/security_audit.py](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/scripts/security_audit.py)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/config-guardrails.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/config-guardrails.md) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 30 | [skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py)<br>[skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md)<br>[skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md)<br>[skills/core-skills/aws-observability/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/SKILL.md)<br>[skills/core-skills/aws-observability/references/alarms.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/alarms.md)<br>[skills/core-skills/aws-observability/references/cloudtrail.md](../../../../sources/aws__agent-toolkit-for-aws/skills/core-skills/aws-observability/references/cloudtrail.md) |
+| CI workflow | 7 | [.github/workflows/build.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/build.yml)<br>[.github/workflows/codeql.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/codeql.yml)<br>[.github/workflows/dependency-review.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/dependency-review.yml)<br>[.github/workflows/merge-prevention.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/merge-prevention.yml)<br>[.github/workflows/pull-request-lint.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/pull-request-lint.yml)<br>[.github/workflows/scorecard-analysis.yml](../../../../sources/aws__agent-toolkit-for-aws/.github/workflows/scorecard-analysis.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 39 | [skills/specialized-skills/storage-skills/securing-s3-buckets/references/audit-checklist.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/storage-skills/securing-s3-buckets/references/audit-checklist.md)<br>[skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/SKILL.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/SKILL.md)<br>[skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/references/create-secrets-using-best-practices.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/security-and-identity-skills/creating-secrets-using-best-practices/references/create-secrets-using-best-practices.md)<br>[skills/specialized-skills/database-skills/amazon-keyspaces/references/security-considerations.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-keyspaces/references/security-considerations.md)<br>[skills/specialized-skills/database-skills/amazon-elasticache/scripts/security_audit.py](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/scripts/security_audit.py)<br>[skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/config-guardrails.md](../../../../sources/aws__agent-toolkit-for-aws/skills/specialized-skills/database-skills/amazon-elasticache/references/shared-security/config-guardrails.md) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | container/deploy path not obvious |
-| security | agent instruction files not obvious |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | agent instruction 파일이 명확하지 않음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `plugins/aws-data-analytics/.mcp.json`, `plugins/aws-core/.mcp.json`, `plugins/aws-agents-for-devsecops/.mcp.json`.
-2. Map agent/tool runtime through: `tools/validate.py`, `skills/README.md`, `skills/specialized-skills/system-table-skills/querying-aws-sagemaker-catalog/SKILL.md`.
-3. Inspect retrieval/memory/indexing through: `skills/specialized-skills/database-skills/amazon-keyspaces/scripts/calculator/index.ts`, `skills/specialized-skills/database-skills/amazon-elasticache/references/monitoring/slot-memory-imbalance-detection.md`, `skills/specialized-skills/database-skills/amazon-elasticache/references/genai/agent-memory.md`.
-4. Verify behavior through test/eval files: `skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py`, `skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md`, `skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md`.
+1. 핵심 참조에서 시작: `plugins/aws-data-analytics/.mcp.json`, `plugins/aws-core/.mcp.json`, `plugins/aws-agents-for-devsecops/.mcp.json`.
+2. agent/tool runtime 매핑: `tools/validate.py`, `skills/README.md`, `skills/specialized-skills/system-table-skills/querying-aws-sagemaker-catalog/SKILL.md`.
+3. retrieval/memory/indexing 확인: `skills/specialized-skills/database-skills/amazon-keyspaces/scripts/calculator/index.ts`, `skills/specialized-skills/database-skills/amazon-elasticache/references/monitoring/slot-memory-imbalance-detection.md`, `skills/specialized-skills/database-skills/amazon-elasticache/references/genai/agent-memory.md`.
+4. test/eval 파일로 동작 검증: `skills/specialized-skills/database-skills/amazon-elasticache/scripts/test_connection.py`, `skills/specialized-skills/analytics-skills/managing-amazon-msk/references/monitor-and-alarm.md`, `skills/specialized-skills/analytics-skills/ingesting-into-data-lake/references/data-quality-validation.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Official, AWS supported MCP servers, skills, and plugins to help AI agents build on AWS. 핵심 구조 신호는 Python, README.md, LICENSE, ci, docs이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Official, AWS supported MCP servers, skills, and plugins to help AI agents build on AWS. 핵심 구조 신호는 Python, README.md, LICENSE, ci, docs이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

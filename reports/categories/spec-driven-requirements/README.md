@@ -1,85 +1,85 @@
-# Spec-Driven and Requirements
+# 스펙 드리븐/요구사항
 
-Generated: 2026-06-18T15:12:39.601Z
+생성 시각: 2026-06-18T15:31:33.431Z
 
-Spec-driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications.
+spec-driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contract, formal specification을 묶은 카테고리입니다.
 
 ## 요약
 
 - 조사 단위: `spec-driven-requirements` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
-- 포함 범위: 696 entries이며, 주요 구성은 research-paper (650), repository (27), reference-material (18), trend-reference (1)입니다.
+- 포함 범위: 696개 항목이며, 주요 구성은 research-paper (650), repository (27), reference-material (18), trend-reference (1)입니다.
 - 연결 보고서: [spec-driven](../../by-topic/spec-driven/README.md).
 
 ## 총평
 
 이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
-| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [근거 카테고리](../README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
-## Counts
+## 범위
 
-- Total categorized entries: 696
-- Repositories: 27
-- Research papers: 650
-- Presentations/conferences/trend references: 1
-- Reference materials: 18
-- Data file: [data/categories/spec-driven-requirements.json](../../../data/categories/spec-driven-requirements.json)
-- Related report topics: [spec-driven](../../by-topic/spec-driven/README.md)
+- 전체 분류 항목: 696
+- 오픈소스/레포: 27
+- 논문/연구자료: 650
+- 발표/컨퍼런스/트렌드 자료: 1
+- 참고자료: 18
+- 데이터 파일: [data/categories/spec-driven-requirements.json](../../../data/categories/spec-driven-requirements.json)
+- 연결된 보고서 주제: [spec-driven](../../by-topic/spec-driven/README.md)
 
-## Type Breakdown
+## 유형별 구성
 
 - research-paper: 650
 - repository: 27
 - reference-material: 18
 - trend-reference: 1
 
-## Top Open Source
+## 주요 오픈소스
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
-| [agno-agi/agno](https://github.com/agno-agi/agno) | repository | Python, 40751 stars | 341.4 | [source](../../../sources/agno-agi__agno) / [report](../../global-trending/repositories/agno-agi__agno.md) |
-| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [source](../../../sources/gsd-build__get-shit-done) / [report](../../clone-structures/gsd-build__get-shit-done.md) |
-| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | repository | TypeScript, 7739 stars | 296.1 | [source](../../../sources/gsd-build__gsd-2) / [report](../../clone-structures/gsd-build__gsd-2.md) |
-| [potpie-ai/potpie](https://github.com/potpie-ai/potpie) | repository | Python, 5456 stars | 290.8 | [source](../../../sources/potpie-ai__potpie) / [report](../../clone-structures/potpie-ai__potpie.md) |
-| [asklokesh/loki-mode](https://github.com/asklokesh/loki-mode) | repository | Shell, 980 stars | 284.7 | [source](../../../sources/asklokesh__loki-mode) / [report](../../global-trending/repositories/asklokesh__loki-mode.md) |
-| [github/spec-kit](https://github.com/github/spec-kit) | repository | Python, 113352 stars | 256.9 | [source](../../../sources/github__spec-kit) / [report](../../clone-structures/github__spec-kit.md) |
-| [clay-good/OpenLore](https://github.com/clay-good/OpenLore) | repository | TypeScript, 175 stars | 254.6 | [source](../../../sources/clay-good__OpenLore) / [report](../../global-trending/repositories/clay-good__OpenLore.md) |
-| [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | repository | TypeScript, 55359 stars | 246.0 | [source](../../../sources/Fission-AI__OpenSpec) / [report](../../clone-structures/Fission-AI__OpenSpec.md) |
-| [codervisor/leanspec](https://github.com/codervisor/leanspec) | repository | Rust, 262 stars | 244.7 | [source](../../../sources/codervisor__leanspec) / [report](../../clone-structures/codervisor__leanspec.md) |
-| [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | repository | JavaScript, 49285 stars | 244.3 | [source](../../../sources/bmad-code-org__BMAD-METHOD) / [report](../../clone-structures/bmad-code-org__BMAD-METHOD.md) |
-| [zzet/gortex](https://github.com/zzet/gortex) | repository | Go, 492 stars | 223.3 | [source](../../../sources/zzet__gortex) / [report](../../global-trending/repositories/zzet__gortex.md) |
-| [buildermethods/agent-os](https://github.com/buildermethods/agent-os) | repository | Shell, 4894 stars | 209.1 | [source](../../../sources/buildermethods__agent-os) / [report](../../clone-structures/buildermethods__agent-os.md) |
-| [gotalab/cc-sdd](https://github.com/gotalab/cc-sdd) | repository | TypeScript, 3484 stars | 204.0 | [source](../../../sources/gotalab__cc-sdd) / [report](../../clone-structures/gotalab__cc-sdd.md) |
-| [formulahendry/mcp-server-spec-driven-development](https://github.com/formulahendry/mcp-server-spec-driven-development) | repository | TypeScript, 430 stars | 172.2 | [source](../../../sources/formulahendry__mcp-server-spec-driven-development) / [report](../../clone-structures/formulahendry__mcp-server-spec-driven-development.md) |
-| [https-deeplearning-ai/sc-spec-driven-development-files](https://github.com/https-deeplearning-ai/sc-spec-driven-development-files) | repository | TypeScript, 213 stars | 161.6 | [source](../../../sources/https-deeplearning-ai__sc-spec-driven-development-files) / [report](../../clone-structures/https-deeplearning-ai__sc-spec-driven-development-files.md) |
-| [Engineering4AI/awesome-spec-driven-development](https://github.com/Engineering4AI/awesome-spec-driven-development) | repository | 182 stars | 159.2 | [source](../../../sources/Engineering4AI__awesome-spec-driven-development) / [report](../../clone-structures/Engineering4AI__awesome-spec-driven-development.md) |
-| [fabriqaai/specs.md](https://github.com/fabriqaai/specs.md) | repository | TypeScript, 175 stars | 158.6 | [source](../../../sources/fabriqaai__specs.md) / [report](../../clone-structures/fabriqaai__specs.md.md) |
-| [ariel-frischer/autospec](https://github.com/ariel-frischer/autospec) | repository | Go, 136 stars | 154.8 | [source](../../../sources/ariel-frischer__autospec) / [report](../../clone-structures/ariel-frischer__autospec.md) |
-| [FredAntB/Spec-Driven-Development](https://github.com/FredAntB/Spec-Driven-Development) | repository | Python, 92 stars | 148.9 | [source](../../../sources/FredAntB__Spec-Driven-Development) / [report](../../clone-structures/FredAntB__Spec-Driven-Development.md) |
-| [amaynez/kiro-style-sdd](https://github.com/amaynez/kiro-style-sdd) | repository | JavaScript, 77 stars | 146.2 | [source](../../../sources/amaynez__kiro-style-sdd) / [report](../../clone-structures/amaynez__kiro-style-sdd.md) |
-| [IBM/iac-spec-kit](https://github.com/IBM/iac-spec-kit) | repository | Python, 68 stars | 144.4 | [source](../../../sources/IBM__iac-spec-kit) / [report](../../clone-structures/IBM__iac-spec-kit.md) |
-| [tesslio/spec-driven-development-tile](https://github.com/tesslio/spec-driven-development-tile) | repository | Shell, 40 stars | 136.4 | [source](../../../sources/tesslio__spec-driven-development-tile) / [report](../../clone-structures/tesslio__spec-driven-development-tile.md) |
-| [Lumiaqian/openspec-mcp](https://github.com/Lumiaqian/openspec-mcp) | repository | TypeScript, 25 stars | 129.5 | [source](../../../sources/Lumiaqian__openspec-mcp) / [report](../../clone-structures/Lumiaqian__openspec-mcp.md) |
-| [mreferre/ralph-loop-kiro-specs](https://github.com/mreferre/ralph-loop-kiro-specs) | repository | Shell, 10 stars | 116.5 | [source](../../../sources/mreferre__ralph-loop-kiro-specs) / [report](../../clone-structures/mreferre__ralph-loop-kiro-specs.md) |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | repository |  | 80.0 | [source](../../../sources/browser-use__browser-use) / [report](../../clone-structures/browser-use__browser-use.md) |
-| [doorman11991/smallcode](https://github.com/Doorman11991/smallcode.git) | repository |  | 60.0 | [source](../../../sources/Doorman11991__smallcode) / [report](../../clone-structures/doorman11991__smallcode.md) |
-| [mksglu/context-mode](https://github.com/mksglu/context-mode.git) | repository |  | 60.0 | [source](../../../sources/mksglu__context-mode) / [report](../../clone-structures/mksglu__context-mode.md) |
+| [agno-agi/agno](https://github.com/agno-agi/agno) | repository | Python, 40751 stars | 341.4 | [소스](../../../sources/agno-agi__agno) / [보고서](../../global-trending/repositories/agno-agi__agno.md) |
+| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [소스](../../../sources/gsd-build__get-shit-done) / [보고서](../../clone-structures/gsd-build__get-shit-done.md) |
+| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | repository | TypeScript, 7739 stars | 296.1 | [소스](../../../sources/gsd-build__gsd-2) / [보고서](../../clone-structures/gsd-build__gsd-2.md) |
+| [potpie-ai/potpie](https://github.com/potpie-ai/potpie) | repository | Python, 5456 stars | 290.8 | [소스](../../../sources/potpie-ai__potpie) / [보고서](../../clone-structures/potpie-ai__potpie.md) |
+| [asklokesh/loki-mode](https://github.com/asklokesh/loki-mode) | repository | Shell, 980 stars | 284.7 | [소스](../../../sources/asklokesh__loki-mode) / [보고서](../../global-trending/repositories/asklokesh__loki-mode.md) |
+| [github/spec-kit](https://github.com/github/spec-kit) | repository | Python, 113352 stars | 256.9 | [소스](../../../sources/github__spec-kit) / [보고서](../../clone-structures/github__spec-kit.md) |
+| [clay-good/OpenLore](https://github.com/clay-good/OpenLore) | repository | TypeScript, 175 stars | 254.6 | [소스](../../../sources/clay-good__OpenLore) / [보고서](../../global-trending/repositories/clay-good__OpenLore.md) |
+| [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | repository | TypeScript, 55359 stars | 246.0 | [소스](../../../sources/Fission-AI__OpenSpec) / [보고서](../../clone-structures/Fission-AI__OpenSpec.md) |
+| [codervisor/leanspec](https://github.com/codervisor/leanspec) | repository | Rust, 262 stars | 244.7 | [소스](../../../sources/codervisor__leanspec) / [보고서](../../clone-structures/codervisor__leanspec.md) |
+| [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD) | repository | JavaScript, 49285 stars | 244.3 | [소스](../../../sources/bmad-code-org__BMAD-METHOD) / [보고서](../../clone-structures/bmad-code-org__BMAD-METHOD.md) |
+| [zzet/gortex](https://github.com/zzet/gortex) | repository | Go, 492 stars | 223.3 | [소스](../../../sources/zzet__gortex) / [보고서](../../global-trending/repositories/zzet__gortex.md) |
+| [buildermethods/agent-os](https://github.com/buildermethods/agent-os) | repository | Shell, 4894 stars | 209.1 | [소스](../../../sources/buildermethods__agent-os) / [보고서](../../clone-structures/buildermethods__agent-os.md) |
+| [gotalab/cc-sdd](https://github.com/gotalab/cc-sdd) | repository | TypeScript, 3484 stars | 204.0 | [소스](../../../sources/gotalab__cc-sdd) / [보고서](../../clone-structures/gotalab__cc-sdd.md) |
+| [formulahendry/mcp-server-spec-driven-development](https://github.com/formulahendry/mcp-server-spec-driven-development) | repository | TypeScript, 430 stars | 172.2 | [소스](../../../sources/formulahendry__mcp-server-spec-driven-development) / [보고서](../../clone-structures/formulahendry__mcp-server-spec-driven-development.md) |
+| [https-deeplearning-ai/sc-spec-driven-development-files](https://github.com/https-deeplearning-ai/sc-spec-driven-development-files) | repository | TypeScript, 213 stars | 161.6 | [소스](../../../sources/https-deeplearning-ai__sc-spec-driven-development-files) / [보고서](../../clone-structures/https-deeplearning-ai__sc-spec-driven-development-files.md) |
+| [Engineering4AI/awesome-spec-driven-development](https://github.com/Engineering4AI/awesome-spec-driven-development) | repository | 182 stars | 159.2 | [소스](../../../sources/Engineering4AI__awesome-spec-driven-development) / [보고서](../../clone-structures/Engineering4AI__awesome-spec-driven-development.md) |
+| [fabriqaai/specs.md](https://github.com/fabriqaai/specs.md) | repository | TypeScript, 175 stars | 158.6 | [소스](../../../sources/fabriqaai__specs.md) / [보고서](../../clone-structures/fabriqaai__specs.md.md) |
+| [ariel-frischer/autospec](https://github.com/ariel-frischer/autospec) | repository | Go, 136 stars | 154.8 | [소스](../../../sources/ariel-frischer__autospec) / [보고서](../../clone-structures/ariel-frischer__autospec.md) |
+| [FredAntB/Spec-Driven-Development](https://github.com/FredAntB/Spec-Driven-Development) | repository | Python, 92 stars | 148.9 | [소스](../../../sources/FredAntB__Spec-Driven-Development) / [보고서](../../clone-structures/FredAntB__Spec-Driven-Development.md) |
+| [amaynez/kiro-style-sdd](https://github.com/amaynez/kiro-style-sdd) | repository | JavaScript, 77 stars | 146.2 | [소스](../../../sources/amaynez__kiro-style-sdd) / [보고서](../../clone-structures/amaynez__kiro-style-sdd.md) |
+| [IBM/iac-spec-kit](https://github.com/IBM/iac-spec-kit) | repository | Python, 68 stars | 144.4 | [소스](../../../sources/IBM__iac-spec-kit) / [보고서](../../clone-structures/IBM__iac-spec-kit.md) |
+| [tesslio/spec-driven-development-tile](https://github.com/tesslio/spec-driven-development-tile) | repository | Shell, 40 stars | 136.4 | [소스](../../../sources/tesslio__spec-driven-development-tile) / [보고서](../../clone-structures/tesslio__spec-driven-development-tile.md) |
+| [Lumiaqian/openspec-mcp](https://github.com/Lumiaqian/openspec-mcp) | repository | TypeScript, 25 stars | 129.5 | [소스](../../../sources/Lumiaqian__openspec-mcp) / [보고서](../../clone-structures/Lumiaqian__openspec-mcp.md) |
+| [mreferre/ralph-loop-kiro-specs](https://github.com/mreferre/ralph-loop-kiro-specs) | repository | Shell, 10 stars | 116.5 | [소스](../../../sources/mreferre__ralph-loop-kiro-specs) / [보고서](../../clone-structures/mreferre__ralph-loop-kiro-specs.md) |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | repository |  | 80.0 | [소스](../../../sources/browser-use__browser-use) / [보고서](../../clone-structures/browser-use__browser-use.md) |
+| [doorman11991/smallcode](https://github.com/Doorman11991/smallcode.git) | repository |  | 60.0 | [소스](../../../sources/Doorman11991__smallcode) / [보고서](../../clone-structures/doorman11991__smallcode.md) |
+| [mksglu/context-mode](https://github.com/mksglu/context-mode.git) | repository |  | 60.0 | [소스](../../../sources/mksglu__context-mode) / [보고서](../../clone-structures/mksglu__context-mode.md) |
 
 
-## Top Research
+## 주요 연구/논문
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Blockchain for Supply Chain Traceability: Business Requirements and Critical Success Factors](https://doi.org/10.1111/poms.13147) | research-paper | 2019 | 948.3 |  |
 | [Requirements engineering: fundamentals, principles, and techniques](https://doi.org/10.5860/choice.48-3304) | research-paper | 2011 | 701.7 |  |
@@ -108,16 +108,16 @@ Spec-driven development, requirements engineering, acceptance criteria, BDD/TDD,
 | [Requirements engineering education: a systematic mapping study](https://doi.org/10.1007/s00766-013-0192-5) | research-paper | 2013 | 224.5 |  |
 
 
-## Top Presentations and Conference References
+## 주요 발표/컨퍼런스 자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Breakout Sessions and Code Talks from AWS re:Invent 2025](https://dev.to/aws/dev-track-spotlight-breakout-sessions-code-talks-from-aws-reinvent-2025-3om7) | trend-reference | 2025-12-04, Amazon/AWS | 90.0 |  |
 
 
-## Top Reference Materials
+## 주요 참고자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Advanced setup](https://code.claude.com/docs/en/setup.md) | reference-material |  | 970.0 |  |
 | [Enterprise deployment overview](https://code.claude.com/docs/en/third-party-integrations.md) | reference-material |  | 970.0 |  |
@@ -139,4 +139,4 @@ Spec-driven development, requirements engineering, acceptance criteria, BDD/TDD,
 | [antonbabenko/deliberation](https://github.com/antonbabenko/deliberation) | reference-material |  | 134.0 |  |
 
 
-Complete category membership is stored in [data/categories/spec-driven-requirements.json](../../../data/categories/spec-driven-requirements.json).
+전체 카테고리 멤버십은 [data/categories/spec-driven-requirements.json](../../../data/categories/spec-driven-requirements.json)에 저장됩니다.

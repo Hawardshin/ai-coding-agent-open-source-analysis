@@ -1,63 +1,63 @@
-# Goldentrii/AgentRecall-MCP Source Deep Dive
+# Goldentrii/AgentRecall-MCP 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Persistent, correction-driven memory for AI agents. Cross-session, cross-platform (Claude Code, Codex, Gemini — any MCP client). Learns from mistakes, compresses context to save tokens, consolidates knowledge overnight. npm: agent-recall-mcp
 
 ## 요약
 
-- 조사 단위: `sources/Goldentrii__AgentRecall-MCP` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 363 files, 60 directories, depth score 124, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/Goldentrii__AgentRecall-MCP` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 363 files, 60 directories, depth score 118, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=wiki/MCP-Tools-Reference.md, packages/mcp-server/package.json, packages/mcp-server/README-pre-redesign.md이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=wiki/MCP-Tools-Reference.md, packages/mcp-server/package.json, packages/mcp-server/README-pre-redesign.md이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | Goldentrii/AgentRecall-MCP |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | Goldentrii/AgentRecall-MCP |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 303 |
 | Forks | 52 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/Goldentrii__AgentRecall-MCP](../../../../sources/Goldentrii__AgentRecall-MCP) |
-| Existing report | [reports/global-trending/repositories/Goldentrii__AgentRecall-MCP.md](../../../global-trending/repositories/Goldentrii__AgentRecall-MCP.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/Goldentrii__AgentRecall-MCP](../../../../sources/Goldentrii__AgentRecall-MCP) |
+| 기존 보고서 | [reports/global-trending/repositories/Goldentrii__AgentRecall-MCP.md](../../../global-trending/repositories/Goldentrii__AgentRecall-MCP.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 363 / 60 |
-| Max observed depth | 5 |
-| Top directories | .github, agent-prompts, benchmark, commands, docs, eval, integrations, packages, scripts, wiki |
-| Top extensions | .ts: 159, .md: 130, .mjs: 39, .json: 11, .woff2: 11, .html: 4, (none): 3, .js: 2, .sql: 2, .css: 1, .yml: 1 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 363 / 60 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | .github, agent-prompts, benchmark, commands, docs, eval, integrations, packages, scripts, wiki |
+| 상위 확장자 | .ts: 159, .md: 130, .mjs: 39, .json: 11, .woff2: 11, .html: 4, (none): 3, .js: 2, .sql: 2, .css: 1, .yml: 1 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/mcp-server | packages workspace | 86 |
 | docs | documentation surface | 47 |
@@ -75,9 +75,9 @@ Persistent, correction-driven memory for AI agents. Cross-session, cross-platfor
 | wiki | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | sync-readme | cp README.md packages/core/README.md && cp README.md packages/mcp-server/README.md && cp README.md packages/sdk/README.md && cp README.md packages/cli/README.md |
 | serve-dev | package.json | build | npm run build -w packages/core && npm run build -w packages/mcp-server && npm run build -w packages/sdk && npm run build -w packages/cli |
@@ -86,24 +86,24 @@ Persistent, correction-driven memory for AI agents. Cross-session, cross-platfor
 | serve-dev | package.json | lint | tsc --noEmit -p packages/core && tsc --noEmit -p packages/mcp-server && tsc --noEmit -p packages/sdk && tsc --noEmit -p packages/cli |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [wiki/MCP-Tools-Reference.md](../../../../sources/Goldentrii__AgentRecall-MCP/wiki/MCP-Tools-Reference.md) | mcp signal |
 | mcp | [packages/mcp-server/package.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/package.json) | mcp signal |
@@ -119,9 +119,9 @@ Persistent, correction-driven memory for AI agents. Cross-session, cross-platfor
 | entrypoints | [packages/core/src/index.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/src/index.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 5 | [packages/sdk/src/index.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/src/index.ts)<br>[packages/mcp-server/src/index.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/src/index.ts)<br>[packages/mcp-server/src/server.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/src/server.ts)<br>[packages/core/src/index.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/src/index.ts)<br>[packages/cli/src/index.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/cli/src/index.ts) |
 | agentRuntime | 132 | [AGENTS.md](../../../../sources/Goldentrii__AgentRecall-MCP/AGENTS.md)<br>[SKILL.md](../../../../sources/Goldentrii__AgentRecall-MCP/SKILL.md)<br>[packages/sdk/test/agent-recall.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/test/agent-recall.test.mjs)<br>[packages/sdk/src/agent-recall.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/src/agent-recall.ts)<br>[packages/mcp-server/src/tools/alignment-check.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/src/tools/alignment-check.ts)<br>[packages/mcp-server/src/tools/awareness-update.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/src/tools/awareness-update.ts)<br>[packages/mcp-server/src/tools/bootstrap.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/src/tools/bootstrap.ts)<br>[packages/mcp-server/src/tools/check-action.ts](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/src/tools/check-action.ts) |
@@ -131,45 +131,45 @@ Persistent, correction-driven memory for AI agents. Cross-session, cross-platfor
 | eval | 89 | [packages/sdk/test/agent-recall.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/test/agent-recall.test.mjs)<br>[packages/mcp-server/test/smoke.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/test/smoke.test.mjs)<br>[packages/core/test/associative-link.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/associative-link.test.mjs)<br>[packages/core/test/auto-name.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/auto-name.test.mjs)<br>[packages/core/test/awareness.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/awareness.test.mjs)<br>[packages/core/test/composite-tools.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/composite-tools.test.mjs)<br>[packages/core/test/config.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/config.test.mjs)<br>[packages/core/test/consistency.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/consistency.test.mjs) |
 | security | 3 | [docs/security/2026-05-08-audit-summary.md](../../../../sources/Goldentrii__AgentRecall-MCP/docs/security/2026-05-08-audit-summary.md)<br>[docs/review/2026-05-06-integration-audit.md](../../../../sources/Goldentrii__AgentRecall-MCP/docs/review/2026-05-06-integration-audit.md)<br>[benchmark/heeded-guard.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/benchmark/heeded-guard.mjs) |
 | ci | 1 | [.github/workflows/ci.yml](../../../../sources/Goldentrii__AgentRecall-MCP/.github/workflows/ci.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 2 | [AGENTS.md](../../../../sources/Goldentrii__AgentRecall-MCP/AGENTS.md)<br>[eval/seeds/migration/CLAUDE.md](../../../../sources/Goldentrii__AgentRecall-MCP/eval/seeds/migration/CLAUDE.md) |
 | docs | 44 | [README.md](../../../../sources/Goldentrii__AgentRecall-MCP/README.md)<br>[packages/sdk/README.md](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/README.md)<br>[packages/mcp-server/README-pre-redesign.md](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/README-pre-redesign.md)<br>[packages/mcp-server/README.md](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/README.md)<br>[packages/core/README-pre-redesign.md](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/README-pre-redesign.md)<br>[packages/core/README.md](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/README.md)<br>[packages/cli/README.md](../../../../sources/Goldentrii__AgentRecall-MCP/packages/cli/README.md)<br>[docs/commands.md](../../../../sources/Goldentrii__AgentRecall-MCP/docs/commands.md) |
 | config | 9 | [package.json](../../../../sources/Goldentrii__AgentRecall-MCP/package.json)<br>[packages/sdk/package.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/package.json)<br>[packages/sdk/tsconfig.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/tsconfig.json)<br>[packages/mcp-server/package.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/package.json)<br>[packages/mcp-server/tsconfig.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/tsconfig.json)<br>[packages/core/package.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/package.json)<br>[packages/core/tsconfig.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/tsconfig.json)<br>[packages/cli/package.json](../../../../sources/Goldentrii__AgentRecall-MCP/packages/cli/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 89 | [packages/sdk/test/agent-recall.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/test/agent-recall.test.mjs)<br>[packages/mcp-server/test/smoke.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/test/smoke.test.mjs)<br>[packages/core/test/associative-link.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/associative-link.test.mjs)<br>[packages/core/test/auto-name.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/auto-name.test.mjs)<br>[packages/core/test/awareness.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/awareness.test.mjs)<br>[packages/core/test/composite-tools.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/composite-tools.test.mjs) |
-| CI workflows | 1 | [.github/workflows/ci.yml](../../../../sources/Goldentrii__AgentRecall-MCP/.github/workflows/ci.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 3 | [docs/security/2026-05-08-audit-summary.md](../../../../sources/Goldentrii__AgentRecall-MCP/docs/security/2026-05-08-audit-summary.md)<br>[docs/review/2026-05-06-integration-audit.md](../../../../sources/Goldentrii__AgentRecall-MCP/docs/review/2026-05-06-integration-audit.md)<br>[benchmark/heeded-guard.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/benchmark/heeded-guard.mjs) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/Goldentrii__AgentRecall-MCP/AGENTS.md)<br>[eval/seeds/migration/CLAUDE.md](../../../../sources/Goldentrii__AgentRecall-MCP/eval/seeds/migration/CLAUDE.md) |
+| 테스트/평가 | 89 | [packages/sdk/test/agent-recall.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/sdk/test/agent-recall.test.mjs)<br>[packages/mcp-server/test/smoke.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/mcp-server/test/smoke.test.mjs)<br>[packages/core/test/associative-link.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/associative-link.test.mjs)<br>[packages/core/test/auto-name.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/auto-name.test.mjs)<br>[packages/core/test/awareness.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/awareness.test.mjs)<br>[packages/core/test/composite-tools.test.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/packages/core/test/composite-tools.test.mjs) |
+| CI workflow | 1 | [.github/workflows/ci.yml](../../../../sources/Goldentrii__AgentRecall-MCP/.github/workflows/ci.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 3 | [docs/security/2026-05-08-audit-summary.md](../../../../sources/Goldentrii__AgentRecall-MCP/docs/security/2026-05-08-audit-summary.md)<br>[docs/review/2026-05-06-integration-audit.md](../../../../sources/Goldentrii__AgentRecall-MCP/docs/review/2026-05-06-integration-audit.md)<br>[benchmark/heeded-guard.mjs](../../../../sources/Goldentrii__AgentRecall-MCP/benchmark/heeded-guard.mjs) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/Goldentrii__AgentRecall-MCP/AGENTS.md)<br>[eval/seeds/migration/CLAUDE.md](../../../../sources/Goldentrii__AgentRecall-MCP/eval/seeds/migration/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `wiki/MCP-Tools-Reference.md`, `packages/mcp-server/package.json`, `packages/mcp-server/README-pre-redesign.md`.
-2. Trace execution through entrypoints: `packages/sdk/src/index.ts`, `packages/mcp-server/src/index.ts`, `packages/mcp-server/src/server.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `SKILL.md`, `packages/sdk/test/agent-recall.test.mjs`.
-4. Inspect retrieval/memory/indexing through: `wiki/_Sidebar.md`, `wiki/Core-Concepts.md`, `wiki/FAQ.md`.
-5. Verify behavior through test/eval files: `packages/sdk/test/agent-recall.test.mjs`, `packages/mcp-server/test/smoke.test.mjs`, `packages/core/test/associative-link.test.mjs`.
+1. 핵심 참조에서 시작: `wiki/MCP-Tools-Reference.md`, `packages/mcp-server/package.json`, `packages/mcp-server/README-pre-redesign.md`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/sdk/src/index.ts`, `packages/mcp-server/src/index.ts`, `packages/mcp-server/src/server.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `SKILL.md`, `packages/sdk/test/agent-recall.test.mjs`.
+4. retrieval/memory/indexing 확인: `wiki/_Sidebar.md`, `wiki/Core-Concepts.md`, `wiki/FAQ.md`.
+5. test/eval 파일로 동작 검증: `packages/sdk/test/agent-recall.test.mjs`, `packages/mcp-server/test/smoke.test.mjs`, `packages/core/test/associative-link.test.mjs`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Persistent, correction driven memory for AI agents. Cross session, cross platform Claude Code, Codex, Gemini — any MCP c. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, LICENSE, ci이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Persistent, correction driven memory for AI agents. Cross session, cross platform Claude Code, Codex, Gemini — any MCP c. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, LICENSE, ci이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

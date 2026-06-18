@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "llm-wiki-rag-knowledge",
-  "title": "LLM Wiki, RAG, and Knowledge Bases",
-  "description": "LLM-maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source-aware knowledge systems.",
+  "title": "LLM 위키/RAG/지식베이스",
+  "description": "LLM-maintained wiki, RAG, GraphRAG, knowledge base, document chat, retrieval, notebook, source-aware knowledge system을 묶은 카테고리입니다.",
   "counts": {
     "total": 1729,
     "reference-material": 1156,

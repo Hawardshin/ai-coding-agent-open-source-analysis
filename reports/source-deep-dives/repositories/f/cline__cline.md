@@ -1,63 +1,63 @@
-# cline/cline Source Deep Dive
+# cline/cline 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 3383 files, 687 directories.
 
 ## 요약
 
-- 조사 단위: `sources/cline__cline` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 3,366 files, 683 directories, depth score 134, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/cline__cline` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 3,366 files, 683 directories, depth score 122, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=sdk/packages/core/src/extensions/mcp/client.ts, sdk/packages/core/src/extensions/mcp/config-loader.test.ts, sdk/packages/core/src/extensions/mcp/config-loader.ts이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=sdk/packages/core/src/extensions/mcp/client.ts, sdk/packages/core/src/extensions/mcp/config-loader.test.ts, sdk/packages/core/src/extensions/mcp/config-loader.ts이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | cline/cline |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | cline/cline |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 63454 |
 | Forks | 6712 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | deep-source+report |
-| Source | [sources/cline__cline](../../../../sources/cline__cline) |
-| Existing report | [reports/global-trending/repositories/cline__cline.md](../../../global-trending/repositories/cline__cline.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/cline__cline](../../../../sources/cline__cline) |
+| 기존 보고서 | [reports/global-trending/repositories/cline__cline.md](../../../global-trending/repositories/cline__cline.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 3366 / 683 |
-| Max observed depth | 11 |
-| Top directories | .agents, .changeset, .claude, .cline, .clinerules, .codex, .github, .greptile, .husky, .kanban, apps, assets, docs, evals, sdk |
-| Top extensions | .ts: 1957, .tsx: 574, .md: 160, .json: 156, .png: 122, .mdx: 109, .snap: 57, (none): 55, .mjs: 21, .proto: 21, .sh: 16, .py: 15 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 3366 / 683 |
+| 관측 최대 깊이 | 11 |
+| 상위 디렉터리 | .agents, .changeset, .claude, .cline, .clinerules, .codex, .github, .greptile, .husky, .kanban, apps, assets, docs, evals, sdk |
+| 상위 확장자 | .ts: 1957, .tsx: 574, .md: 160, .json: 156, .png: 122, .mdx: 109, .snap: 57, (none): 55, .mjs: 21, .proto: 21, .sh: 16, .py: 15 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | apps/vscode | apps workspace | 82 |
 | docs | documentation surface | 28 |
@@ -70,9 +70,9 @@ Local clone structure analysis: 3383 files, 687 directories.
 | sdk | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | prepare | husky |
 | build | package.json | build | bun run clean && bun install && bun run build:sdk && bun -F @cline/cli build |
@@ -99,24 +99,24 @@ Local clone structure analysis: 3383 files, 687 directories.
 | build | package.json | release | bun sdk/scripts/release.ts |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [sdk/packages/core/src/extensions/mcp/client.ts](../../../../sources/cline__cline/sdk/packages/core/src/extensions/mcp/client.ts) | mcp signal |
 | mcp | [sdk/packages/core/src/extensions/mcp/config-loader.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/extensions/mcp/config-loader.test.ts) | mcp signal |
@@ -132,9 +132,9 @@ Local clone structure analysis: 3383 files, 687 directories.
 | entrypoints | [sdk/packages/llms/src/index.browser.ts](../../../../sources/cline__cline/sdk/packages/llms/src/index.browser.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1596 | [sdk/packages/shared/src/index.browser.ts](../../../../sources/cline__cline/sdk/packages/shared/src/index.browser.ts)<br>[sdk/packages/shared/src/index.ts](../../../../sources/cline__cline/sdk/packages/shared/src/index.ts)<br>[sdk/packages/sdk/src/index.ts](../../../../sources/cline__cline/sdk/packages/sdk/src/index.ts)<br>[sdk/packages/llms/src/index.browser.ts](../../../../sources/cline__cline/sdk/packages/llms/src/index.browser.ts)<br>[sdk/packages/llms/src/index.ts](../../../../sources/cline__cline/sdk/packages/llms/src/index.ts)<br>[sdk/packages/core/src/index.ts](../../../../sources/cline__cline/sdk/packages/core/src/index.ts)<br>[sdk/packages/core/src/auth/server.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/auth/server.test.ts)<br>[sdk/packages/core/src/auth/server.ts](../../../../sources/cline__cline/sdk/packages/core/src/auth/server.ts) |
 | agentRuntime | 464 | [sdk/AGENTS.md](../../../../sources/cline__cline/sdk/AGENTS.md)<br>[sdk/packages/shared/src/agent.ts](../../../../sources/cline__cline/sdk/packages/shared/src/agent.ts)<br>[sdk/packages/shared/src/tools/create.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/tools/create.test.ts)<br>[sdk/packages/shared/src/tools/create.ts](../../../../sources/cline__cline/sdk/packages/shared/src/tools/create.ts)<br>[sdk/packages/shared/src/session/hook-context.ts](../../../../sources/cline__cline/sdk/packages/shared/src/session/hook-context.ts)<br>[sdk/packages/shared/src/llms/tools.ts](../../../../sources/cline__cline/sdk/packages/shared/src/llms/tools.ts)<br>[sdk/packages/shared/src/hooks/contracts.ts](../../../../sources/cline__cline/sdk/packages/shared/src/hooks/contracts.ts)<br>[sdk/packages/shared/src/hooks/events.ts](../../../../sources/cline__cline/sdk/packages/shared/src/hooks/events.ts) |
@@ -144,45 +144,45 @@ Local clone structure analysis: 3383 files, 687 directories.
 | eval | 671 | [sdk/packages/shared/src/vcr.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/vcr.test.ts)<br>[sdk/packages/shared/src/tools/create.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/tools/create.test.ts)<br>[sdk/packages/shared/src/storage/path-resolution.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/path-resolution.test.ts)<br>[sdk/packages/shared/src/storage/paths.home-dir.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/paths.home-dir.test.ts)<br>[sdk/packages/shared/src/storage/paths.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/paths.test.ts)<br>[sdk/packages/shared/src/services/telemetry.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/services/telemetry.test.ts)<br>[sdk/packages/shared/src/runtime/build-env.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/runtime/build-env.test.ts)<br>[sdk/packages/shared/src/runtime/cline-environment.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/runtime/cline-environment.test.ts) |
 | security | 56 | [SECURITY.md](../../../../sources/cline__cline/SECURITY.md)<br>[sdk/packages/shared/src/types/auth.ts](../../../../sources/cline__cline/sdk/packages/shared/src/types/auth.ts)<br>[sdk/packages/core/src/runtime/tools/subprocess-sandbox.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/tools/subprocess-sandbox.test.ts)<br>[sdk/packages/core/src/runtime/tools/subprocess-sandbox.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/tools/subprocess-sandbox.ts)<br>[sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.test.ts)<br>[sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.ts)<br>[sdk/packages/core/src/extensions/plugin/plugin-sandbox-bootstrap.ts](../../../../sources/cline__cline/sdk/packages/core/src/extensions/plugin/plugin-sandbox-bootstrap.ts)<br>[sdk/packages/core/src/extensions/plugin/plugin-sandbox.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/extensions/plugin/plugin-sandbox.test.ts) |
 | ci | 10 | [.github/workflows/cli-publish.yml](../../../../sources/cline__cline/.github/workflows/cli-publish.yml)<br>[.github/workflows/ext-jb-test-integration.yml](../../../../sources/cline__cline/.github/workflows/ext-jb-test-integration.yml)<br>[.github/workflows/ext-vscode-publish-nightly.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-publish-nightly.yml)<br>[.github/workflows/ext-vscode-publish-stable.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-publish-stable.yml)<br>[.github/workflows/ext-vscode-test-e2e.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-test-e2e.yml)<br>[.github/workflows/ext-vscode-test.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-test.yml)<br>[.github/workflows/repo-label-issues.yml](../../../../sources/cline__cline/.github/workflows/repo-label-issues.yml)<br>[.github/workflows/repo-stale-issues.yml](../../../../sources/cline__cline/.github/workflows/repo-stale-issues.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 5 | [CLAUDE.md](../../../../sources/cline__cline/CLAUDE.md)<br>[sdk/AGENTS.md](../../../../sources/cline__cline/sdk/AGENTS.md)<br>[sdk/packages/llms/AGENTS.md](../../../../sources/cline__cline/sdk/packages/llms/AGENTS.md)<br>[.github/copilot-instructions.md](../../../../sources/cline__cline/.github/copilot-instructions.md)<br>[.codex/environments/environment.toml](../../../../sources/cline__cline/.codex/environments/environment.toml) |
 | docs | 180 | [README.md](../../../../sources/cline__cline/README.md)<br>[sdk/README.md](../../../../sources/cline__cline/sdk/README.md)<br>[sdk/packages/README.md](../../../../sources/cline__cline/sdk/packages/README.md)<br>[sdk/packages/shared/README.md](../../../../sources/cline__cline/sdk/packages/shared/README.md)<br>[sdk/packages/llms/README.md](../../../../sources/cline__cline/sdk/packages/llms/README.md)<br>[sdk/packages/llms/src/tests/provider-vcr/README.md](../../../../sources/cline__cline/sdk/packages/llms/src/tests/provider-vcr/README.md)<br>[sdk/packages/llms/src/catalog/README.md](../../../../sources/cline__cline/sdk/packages/llms/src/catalog/README.md)<br>[sdk/packages/core/README.md](../../../../sources/cline__cline/sdk/packages/core/README.md) |
 | config | 60 | [package.json](../../../../sources/cline__cline/package.json)<br>[sdk/tsconfig.json](../../../../sources/cline__cline/sdk/tsconfig.json)<br>[sdk/packages/shared/package.json](../../../../sources/cline__cline/sdk/packages/shared/package.json)<br>[sdk/packages/shared/tsconfig.json](../../../../sources/cline__cline/sdk/packages/shared/tsconfig.json)<br>[sdk/packages/sdk/package.json](../../../../sources/cline__cline/sdk/packages/sdk/package.json)<br>[sdk/packages/sdk/tsconfig.json](../../../../sources/cline__cline/sdk/packages/sdk/tsconfig.json)<br>[sdk/packages/llms/package.json](../../../../sources/cline__cline/sdk/packages/llms/package.json)<br>[sdk/packages/llms/tsconfig.json](../../../../sources/cline__cline/sdk/packages/llms/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 671 | [sdk/packages/shared/src/vcr.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/vcr.test.ts)<br>[sdk/packages/shared/src/tools/create.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/tools/create.test.ts)<br>[sdk/packages/shared/src/storage/path-resolution.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/path-resolution.test.ts)<br>[sdk/packages/shared/src/storage/paths.home-dir.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/paths.home-dir.test.ts)<br>[sdk/packages/shared/src/storage/paths.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/paths.test.ts)<br>[sdk/packages/shared/src/services/telemetry.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/services/telemetry.test.ts) |
-| CI workflows | 10 | [.github/workflows/cli-publish.yml](../../../../sources/cline__cline/.github/workflows/cli-publish.yml)<br>[.github/workflows/ext-jb-test-integration.yml](../../../../sources/cline__cline/.github/workflows/ext-jb-test-integration.yml)<br>[.github/workflows/ext-vscode-publish-nightly.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-publish-nightly.yml)<br>[.github/workflows/ext-vscode-publish-stable.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-publish-stable.yml)<br>[.github/workflows/ext-vscode-test-e2e.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-test-e2e.yml)<br>[.github/workflows/ext-vscode-test.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-test.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 56 | [SECURITY.md](../../../../sources/cline__cline/SECURITY.md)<br>[sdk/packages/shared/src/types/auth.ts](../../../../sources/cline__cline/sdk/packages/shared/src/types/auth.ts)<br>[sdk/packages/core/src/runtime/tools/subprocess-sandbox.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/tools/subprocess-sandbox.test.ts)<br>[sdk/packages/core/src/runtime/tools/subprocess-sandbox.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/tools/subprocess-sandbox.ts)<br>[sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.test.ts)<br>[sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.ts) |
-| Agent instructions | 5 | [CLAUDE.md](../../../../sources/cline__cline/CLAUDE.md)<br>[sdk/AGENTS.md](../../../../sources/cline__cline/sdk/AGENTS.md)<br>[sdk/packages/llms/AGENTS.md](../../../../sources/cline__cline/sdk/packages/llms/AGENTS.md)<br>[.github/copilot-instructions.md](../../../../sources/cline__cline/.github/copilot-instructions.md)<br>[.codex/environments/environment.toml](../../../../sources/cline__cline/.codex/environments/environment.toml) |
+| 테스트/평가 | 671 | [sdk/packages/shared/src/vcr.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/vcr.test.ts)<br>[sdk/packages/shared/src/tools/create.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/tools/create.test.ts)<br>[sdk/packages/shared/src/storage/path-resolution.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/path-resolution.test.ts)<br>[sdk/packages/shared/src/storage/paths.home-dir.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/paths.home-dir.test.ts)<br>[sdk/packages/shared/src/storage/paths.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/storage/paths.test.ts)<br>[sdk/packages/shared/src/services/telemetry.test.ts](../../../../sources/cline__cline/sdk/packages/shared/src/services/telemetry.test.ts) |
+| CI workflow | 10 | [.github/workflows/cli-publish.yml](../../../../sources/cline__cline/.github/workflows/cli-publish.yml)<br>[.github/workflows/ext-jb-test-integration.yml](../../../../sources/cline__cline/.github/workflows/ext-jb-test-integration.yml)<br>[.github/workflows/ext-vscode-publish-nightly.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-publish-nightly.yml)<br>[.github/workflows/ext-vscode-publish-stable.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-publish-stable.yml)<br>[.github/workflows/ext-vscode-test-e2e.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-test-e2e.yml)<br>[.github/workflows/ext-vscode-test.yml](../../../../sources/cline__cline/.github/workflows/ext-vscode-test.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 56 | [SECURITY.md](../../../../sources/cline__cline/SECURITY.md)<br>[sdk/packages/shared/src/types/auth.ts](../../../../sources/cline__cline/sdk/packages/shared/src/types/auth.ts)<br>[sdk/packages/core/src/runtime/tools/subprocess-sandbox.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/tools/subprocess-sandbox.test.ts)<br>[sdk/packages/core/src/runtime/tools/subprocess-sandbox.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/tools/subprocess-sandbox.ts)<br>[sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.test.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.test.ts)<br>[sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.ts](../../../../sources/cline__cline/sdk/packages/core/src/runtime/orchestration/runtime-oauth-token-manager.ts) |
+| 에이전트 지시문 | 5 | [CLAUDE.md](../../../../sources/cline__cline/CLAUDE.md)<br>[sdk/AGENTS.md](../../../../sources/cline__cline/sdk/AGENTS.md)<br>[sdk/packages/llms/AGENTS.md](../../../../sources/cline__cline/sdk/packages/llms/AGENTS.md)<br>[.github/copilot-instructions.md](../../../../sources/cline__cline/.github/copilot-instructions.md)<br>[.codex/environments/environment.toml](../../../../sources/cline__cline/.codex/environments/environment.toml) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `sdk/packages/core/src/extensions/mcp/client.ts`, `sdk/packages/core/src/extensions/mcp/config-loader.test.ts`, `sdk/packages/core/src/extensions/mcp/config-loader.ts`.
-2. Trace execution through entrypoints: `sdk/packages/shared/src/index.browser.ts`, `sdk/packages/shared/src/index.ts`, `sdk/packages/sdk/src/index.ts`.
-3. Map agent/tool runtime through: `sdk/AGENTS.md`, `sdk/packages/shared/src/agent.ts`, `sdk/packages/shared/src/tools/create.test.ts`.
-4. Inspect retrieval/memory/indexing through: `sdk/packages/shared/src/index.browser.ts`, `sdk/packages/shared/src/index.ts`, `sdk/packages/shared/src/types/index.ts`.
-5. Verify behavior through test/eval files: `sdk/packages/shared/src/vcr.test.ts`, `sdk/packages/shared/src/tools/create.test.ts`, `sdk/packages/shared/src/storage/path-resolution.test.ts`.
+1. 핵심 참조에서 시작: `sdk/packages/core/src/extensions/mcp/client.ts`, `sdk/packages/core/src/extensions/mcp/config-loader.test.ts`, `sdk/packages/core/src/extensions/mcp/config-loader.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `sdk/packages/shared/src/index.browser.ts`, `sdk/packages/shared/src/index.ts`, `sdk/packages/sdk/src/index.ts`.
+3. agent/tool runtime 매핑: `sdk/AGENTS.md`, `sdk/packages/shared/src/agent.ts`, `sdk/packages/shared/src/tools/create.test.ts`.
+4. retrieval/memory/indexing 확인: `sdk/packages/shared/src/index.browser.ts`, `sdk/packages/shared/src/index.ts`, `sdk/packages/shared/src/types/index.ts`.
+5. test/eval 파일로 동작 검증: `sdk/packages/shared/src/vcr.test.ts`, `sdk/packages/shared/src/tools/create.test.ts`, `sdk/packages/shared/src/storage/path-resolution.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 3383 files, 687 directories.. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, tests이며, deep-source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 3383 files, 687 directories.. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, tests이며, 심층 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

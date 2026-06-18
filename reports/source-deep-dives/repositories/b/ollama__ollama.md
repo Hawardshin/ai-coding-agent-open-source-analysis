@@ -1,63 +1,63 @@
-# ollama/ollama Source Deep Dive
+# ollama/ollama 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 1233 files, 230 directories.
 
 ## 요약
 
-- 조사 단위: `sources/ollama__ollama` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,233 files, 230 directories, depth score 131, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/ollama__ollama` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,233 files, 230 directories, depth score 119, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=docs/images/cline-mcp.png, docs/images/codex-mcp.png, docs/images/goose-mcp-1.png이고, 의존성 단서는 cobra, ollama, llama, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=docs/images/cline-mcp.png, docs/images/codex-mcp.png, docs/images/goose-mcp-1.png이고, 의존성 단서는 cobra, ollama, llama, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | ollama/ollama |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | ollama/ollama |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | Go |
 | Stars | 174404 |
 | Forks | 16664 |
 | License | MIT |
-| Maturity | high-signal |
-| Evidence | deep-source+report |
-| Source | [sources/ollama__ollama](../../../../sources/ollama__ollama) |
-| Existing report | [reports/global-trending/repositories/ollama__ollama.md](../../../global-trending/repositories/ollama__ollama.md) |
+| 성숙도 | 고신호 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/ollama__ollama](../../../../sources/ollama__ollama) |
+| 기존 보고서 | [reports/global-trending/repositories/ollama__ollama.md](../../../global-trending/repositories/ollama__ollama.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1233 / 230 |
-| Max observed depth | 10 |
-| Top directories | .github, anthropic, api, app, auth, cmake, cmd, convert, discover, docs, envconfig, format, fs, harmony, integration, internal, kvcache, llama, llm, logutil |
-| Top extensions | .go: 730, (none): 82, .png: 62, .mdx: 55, .json: 45, .h: 44, .tsx: 39, .ts: 33, .md: 26, .gotmpl: 22, .svg: 16, .sh: 9 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 1233 / 230 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .github, anthropic, api, app, auth, cmake, cmd, convert, discover, docs, envconfig, format, fs, harmony, integration, internal, kvcache, llama, llm, logutil |
+| 상위 확장자 | .go: 730, (none): 82, .png: 62, .mdx: 55, .json: 45, .h: 44, .tsx: 39, .ts: 33, .md: 26, .gotmpl: 22, .svg: 16, .sh: 9 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 41 |
 | api | source boundary | 6 |
@@ -79,29 +79,29 @@ Local clone structure analysis: 1233 files, 230 directories.
 | integration | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | ollama, llama |
-| webRuntime | none |
+| webRuntime | 없음 |
 | developerSurface | cobra |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [docs/images/cline-mcp.png](../../../../sources/ollama__ollama/docs/images/cline-mcp.png) | mcp signal |
 | mcp | [docs/images/codex-mcp.png](../../../../sources/ollama__ollama/docs/images/codex-mcp.png) | mcp signal |
@@ -117,15 +117,15 @@ _No command surface extracted from root manifests._
 | entrypoints | [x/imagegen/server.go](../../../../sources/ollama__ollama/x/imagegen/server.go) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 17 | [main.go](../../../../sources/ollama__ollama/main.go)<br>[x/mlxrunner/server.go](../../../../sources/ollama__ollama/x/mlxrunner/server.go)<br>[x/mlxrunner/mlx/generator/main.go](../../../../sources/ollama__ollama/x/mlxrunner/mlx/generator/main.go)<br>[x/imagegen/server.go](../../../../sources/ollama__ollama/x/imagegen/server.go)<br>[x/imagegen/cmd/engine/main.go](../../../../sources/ollama__ollama/x/imagegen/cmd/engine/main.go)<br>[server/internal/registry/server.go](../../../../sources/ollama__ollama/server/internal/registry/server.go)<br>[llm/server.go](../../../../sources/ollama__ollama/llm/server.go)<br>[docs/tools/extract-examples/main.go](../../../../sources/ollama__ollama/docs/tools/extract-examples/main.go) |
 | agentRuntime | 58 | [AGENTS.md](../../../../sources/ollama__ollama/AGENTS.md)<br>[x/tools/bash.go](../../../../sources/ollama__ollama/x/tools/bash.go)<br>[x/tools/registry_test.go](../../../../sources/ollama__ollama/x/tools/registry_test.go)<br>[x/tools/registry.go](../../../../sources/ollama__ollama/x/tools/registry.go)<br>[x/tools/webfetch.go](../../../../sources/ollama__ollama/x/tools/webfetch.go)<br>[x/tools/websearch_test.go](../../../../sources/ollama__ollama/x/tools/websearch_test.go)<br>[x/tools/websearch.go](../../../../sources/ollama__ollama/x/tools/websearch.go)<br>[x/mlxrunner/runner.go](../../../../sources/ollama__ollama/x/mlxrunner/runner.go) |
 | mcp | 4 | [docs/images/cline-mcp.png](../../../../sources/ollama__ollama/docs/images/cline-mcp.png)<br>[docs/images/codex-mcp.png](../../../../sources/ollama__ollama/docs/images/codex-mcp.png)<br>[docs/images/goose-mcp-1.png](../../../../sources/ollama__ollama/docs/images/goose-mcp-1.png)<br>[docs/images/goose-mcp-2.png](../../../../sources/ollama__ollama/docs/images/goose-mcp-2.png) |
 | retrieval | 19 | [x/mlxrunner/status_memory_test.go](../../../../sources/ollama__ollama/x/mlxrunner/status_memory_test.go)<br>[x/mlxrunner/status_memory.go](../../../../sources/ollama__ollama/x/mlxrunner/status_memory.go)<br>[x/mlxrunner/model/embedding_test.go](../../../../sources/ollama__ollama/x/mlxrunner/model/embedding_test.go)<br>[x/mlxrunner/model/embedding.go](../../../../sources/ollama__ollama/x/mlxrunner/model/embedding.go)<br>[x/mlxrunner/mlx/memory.go](../../../../sources/ollama__ollama/x/mlxrunner/mlx/memory.go)<br>[x/mlxrunner/mlx/include/mlx/c/graph_utils.h](../../../../sources/ollama__ollama/x/mlxrunner/mlx/include/mlx/c/graph_utils.h)<br>[x/mlxrunner/mlx/include/mlx/c/memory.h](../../../../sources/ollama__ollama/x/mlxrunner/mlx/include/mlx/c/memory.h)<br>[x/mlxrunner/mlx/include/mlx/c/vector.h](../../../../sources/ollama__ollama/x/mlxrunner/mlx/include/mlx/c/vector.h) |
-| spec | 0 | not obvious |
+| spec | 0 | 명확하지 않음 |
 | eval | 291 | [x/transfer/transfer_test.go](../../../../sources/ollama__ollama/x/transfer/transfer_test.go)<br>[x/tools/registry_test.go](../../../../sources/ollama__ollama/x/tools/registry_test.go)<br>[x/tools/websearch_test.go](../../../../sources/ollama__ollama/x/tools/websearch_test.go)<br>[x/tokenizer/tokenizer_benchmark_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_benchmark_test.go)<br>[x/tokenizer/tokenizer_correctness_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_correctness_test.go)<br>[x/tokenizer/tokenizer_ggml_parity_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_ggml_parity_test.go)<br>[x/tokenizer/tokenizer_load_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_load_test.go)<br>[x/server/show_test.go](../../../../sources/ollama__ollama/x/server/show_test.go) |
 | security | 11 | [SECURITY.md](../../../../sources/ollama__ollama/SECURITY.md)<br>[server/auth_test.go](../../../../sources/ollama__ollama/server/auth_test.go)<br>[server/auth.go](../../../../sources/ollama__ollama/server/auth.go)<br>[internal/cloud/policy_test.go](../../../../sources/ollama__ollama/internal/cloud/policy_test.go)<br>[internal/cloud/policy.go](../../../../sources/ollama__ollama/internal/cloud/policy.go)<br>[auth/auth.go](../../../../sources/ollama__ollama/auth/auth.go)<br>[app/tools/cloud_policy_test.go](../../../../sources/ollama__ollama/app/tools/cloud_policy_test.go)<br>[app/tools/cloud_policy.go](../../../../sources/ollama__ollama/app/tools/cloud_policy.go) |
 | ci | 5 | [.github/workflows/latest.yaml](../../../../sources/ollama__ollama/.github/workflows/latest.yaml)<br>[.github/workflows/release.yaml](../../../../sources/ollama__ollama/.github/workflows/release.yaml)<br>[.github/workflows/test-install.yaml](../../../../sources/ollama__ollama/.github/workflows/test-install.yaml)<br>[.github/workflows/test-llamacpp-update.yaml](../../../../sources/ollama__ollama/.github/workflows/test-llamacpp-update.yaml)<br>[.github/workflows/test.yaml](../../../../sources/ollama__ollama/.github/workflows/test.yaml) |
@@ -135,39 +135,39 @@ _No command surface extracted from root manifests._
 | config | 3 | [go.mod](../../../../sources/ollama__ollama/go.mod)<br>[app/ui/app/package.json](../../../../sources/ollama__ollama/app/ui/app/package.json)<br>[app/ui/app/tsconfig.json](../../../../sources/ollama__ollama/app/ui/app/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 291 | [x/transfer/transfer_test.go](../../../../sources/ollama__ollama/x/transfer/transfer_test.go)<br>[x/tools/registry_test.go](../../../../sources/ollama__ollama/x/tools/registry_test.go)<br>[x/tools/websearch_test.go](../../../../sources/ollama__ollama/x/tools/websearch_test.go)<br>[x/tokenizer/tokenizer_benchmark_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_benchmark_test.go)<br>[x/tokenizer/tokenizer_correctness_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_correctness_test.go)<br>[x/tokenizer/tokenizer_ggml_parity_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_ggml_parity_test.go) |
-| CI workflows | 5 | [.github/workflows/latest.yaml](../../../../sources/ollama__ollama/.github/workflows/latest.yaml)<br>[.github/workflows/release.yaml](../../../../sources/ollama__ollama/.github/workflows/release.yaml)<br>[.github/workflows/test-install.yaml](../../../../sources/ollama__ollama/.github/workflows/test-install.yaml)<br>[.github/workflows/test-llamacpp-update.yaml](../../../../sources/ollama__ollama/.github/workflows/test-llamacpp-update.yaml)<br>[.github/workflows/test.yaml](../../../../sources/ollama__ollama/.github/workflows/test.yaml) |
-| Containers / deploy | 1 | [Dockerfile](../../../../sources/ollama__ollama/Dockerfile) |
-| Security / policy | 11 | [SECURITY.md](../../../../sources/ollama__ollama/SECURITY.md)<br>[server/auth_test.go](../../../../sources/ollama__ollama/server/auth_test.go)<br>[server/auth.go](../../../../sources/ollama__ollama/server/auth.go)<br>[internal/cloud/policy_test.go](../../../../sources/ollama__ollama/internal/cloud/policy_test.go)<br>[internal/cloud/policy.go](../../../../sources/ollama__ollama/internal/cloud/policy.go)<br>[auth/auth.go](../../../../sources/ollama__ollama/auth/auth.go) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/ollama__ollama/AGENTS.md)<br>[CLAUDE.md](../../../../sources/ollama__ollama/CLAUDE.md) |
+| 테스트/평가 | 291 | [x/transfer/transfer_test.go](../../../../sources/ollama__ollama/x/transfer/transfer_test.go)<br>[x/tools/registry_test.go](../../../../sources/ollama__ollama/x/tools/registry_test.go)<br>[x/tools/websearch_test.go](../../../../sources/ollama__ollama/x/tools/websearch_test.go)<br>[x/tokenizer/tokenizer_benchmark_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_benchmark_test.go)<br>[x/tokenizer/tokenizer_correctness_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_correctness_test.go)<br>[x/tokenizer/tokenizer_ggml_parity_test.go](../../../../sources/ollama__ollama/x/tokenizer/tokenizer_ggml_parity_test.go) |
+| CI workflow | 5 | [.github/workflows/latest.yaml](../../../../sources/ollama__ollama/.github/workflows/latest.yaml)<br>[.github/workflows/release.yaml](../../../../sources/ollama__ollama/.github/workflows/release.yaml)<br>[.github/workflows/test-install.yaml](../../../../sources/ollama__ollama/.github/workflows/test-install.yaml)<br>[.github/workflows/test-llamacpp-update.yaml](../../../../sources/ollama__ollama/.github/workflows/test-llamacpp-update.yaml)<br>[.github/workflows/test.yaml](../../../../sources/ollama__ollama/.github/workflows/test.yaml) |
+| 컨테이너/배포 | 1 | [Dockerfile](../../../../sources/ollama__ollama/Dockerfile) |
+| 보안/정책 | 11 | [SECURITY.md](../../../../sources/ollama__ollama/SECURITY.md)<br>[server/auth_test.go](../../../../sources/ollama__ollama/server/auth_test.go)<br>[server/auth.go](../../../../sources/ollama__ollama/server/auth.go)<br>[internal/cloud/policy_test.go](../../../../sources/ollama__ollama/internal/cloud/policy_test.go)<br>[internal/cloud/policy.go](../../../../sources/ollama__ollama/internal/cloud/policy.go)<br>[auth/auth.go](../../../../sources/ollama__ollama/auth/auth.go) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/ollama__ollama/AGENTS.md)<br>[CLAUDE.md](../../../../sources/ollama__ollama/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `docs/images/cline-mcp.png`, `docs/images/codex-mcp.png`, `docs/images/goose-mcp-1.png`.
-2. Trace execution through entrypoints: `main.go`, `x/mlxrunner/server.go`, `x/mlxrunner/mlx/generator/main.go`.
-3. Map agent/tool runtime through: `AGENTS.md`, `x/tools/bash.go`, `x/tools/registry_test.go`.
-4. Inspect retrieval/memory/indexing through: `x/mlxrunner/status_memory_test.go`, `x/mlxrunner/status_memory.go`, `x/mlxrunner/model/embedding_test.go`.
-5. Verify behavior through test/eval files: `x/transfer/transfer_test.go`, `x/tools/registry_test.go`, `x/tools/websearch_test.go`.
+1. 핵심 참조에서 시작: `docs/images/cline-mcp.png`, `docs/images/codex-mcp.png`, `docs/images/goose-mcp-1.png`.
+2. entrypoint를 따라 실행 흐름 확인: `main.go`, `x/mlxrunner/server.go`, `x/mlxrunner/mlx/generator/main.go`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `x/tools/bash.go`, `x/tools/registry_test.go`.
+4. retrieval/memory/indexing 확인: `x/mlxrunner/status_memory_test.go`, `x/mlxrunner/status_memory.go`, `x/mlxrunner/model/embedding_test.go`.
+5. test/eval 파일로 동작 검증: `x/transfer/transfer_test.go`, `x/tools/registry_test.go`, `x/tools/websearch_test.go`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 1233 files, 230 directories.. 핵심 구조 신호는 Go, go.mod, Dockerfile, README.md, AGENTS.md, CLAUDE.md이며, deep-source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 1233 files, 230 directories.. 핵심 구조 신호는 Go, go.mod, Dockerfile, README.md, AGENTS.md, CLAUDE.md이며, 심층 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 major metadata risk not obvious입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 큰 메타데이터 위험이 명확하지 않음입니다.

@@ -1,63 +1,63 @@
-# bartolli/codanna Source Deep Dive
+# bartolli/codanna 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 822 files, 201 directories.
 
 ## 요약
 
-- 조사 단위: `sources/bartolli__codanna` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 821 files, 197 directories, depth score 130, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/bartolli__codanna` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 821 files, 197 directories, depth score 118, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-평가/관측/품질 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 eval=tests/cli_tests.rs, tests/exploration_tests.rs, tests/integration_tests.rs이고, 의존성 단서는 mcp, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 quality and evaluation comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+평가/관측/품질 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 eval=tests/cli_tests.rs, tests/exploration_tests.rs, tests/integration_tests.rs이고, 의존성 단서는 mcp, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 품질/평가 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | bartolli/codanna |
-| Topic | Evals, Observability, and Quality / 평가/관측/품질 |
+| 레포 | bartolli/codanna |
+| 주제 | 평가/관측/품질 / 평가/관측/품질 |
 | Region | mixed |
-| Language | none |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | deep-source+report |
-| Source | [sources/bartolli__codanna](../../../../sources/bartolli__codanna) |
-| Existing report | [reports/clone-structures/bartolli__codanna.md](../../../clone-structures/bartolli__codanna.md) |
+| Language | 없음 |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/bartolli__codanna](../../../../sources/bartolli__codanna) |
+| 기존 보고서 | [reports/clone-structures/bartolli__codanna.md](../../../clone-structures/bartolli__codanna.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 821 / 197 |
-| Max observed depth | 10 |
-| Top directories | .github, benches, contributing, examples, scripts, src, tests |
-| Top extensions | .rs: 420, .tsx: 96, .ts: 49, .md: 48, .json: 28, .js: 27, .go: 21, .sh: 17, .txt: 15, .py: 12, .kt: 9, .php: 9 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 821 / 197 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .github, benches, contributing, examples, scripts, src, tests |
+| 상위 확장자 | .rs: 420, .tsx: 96, .ts: 49, .md: 48, .json: 28, .js: 27, .go: 21, .sh: 17, .txt: 15, .py: 12, .kt: 9, .php: 9 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 71 |
 | src | source boundary | 38 |
@@ -74,29 +74,29 @@ Local clone structure analysis: 822 files, 201 directories.
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | mcp |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | eval | [tests/cli_tests.rs](../../../../sources/bartolli__codanna/tests/cli_tests.rs) | eval signal |
 | eval | [tests/exploration_tests.rs](../../../../sources/bartolli__codanna/tests/exploration_tests.rs) | eval signal |
@@ -112,9 +112,9 @@ _No command surface extracted from root manifests._
 | config | [tests/fixtures/go/go.mod](../../../../sources/bartolli__codanna/tests/fixtures/go/go.mod) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 10 | [tests/fixtures/typescript_alias_test/src/app.ts](../../../../sources/bartolli__codanna/tests/fixtures/typescript_alias_test/src/app.ts)<br>[tests/fixtures/go/vendor_project/main.go](../../../../sources/bartolli__codanna/tests/fixtures/go/vendor_project/main.go)<br>[tests/fixtures/go/module_project/main.go](../../../../sources/bartolli__codanna/tests/fixtures/go/module_project/main.go)<br>[src/main.rs](../../../../sources/bartolli__codanna/src/main.rs)<br>[examples/typescript/src/main.ts](../../../../sources/bartolli__codanna/examples/typescript/src/main.ts)<br>[examples/rust/multi_module/main.rs](../../../../sources/bartolli__codanna/examples/rust/multi_module/main.rs)<br>[examples/python/main.py](../../../../sources/bartolli__codanna/examples/python/main.py)<br>[examples/javascript/vanilla/src/app.js](../../../../sources/bartolli__codanna/examples/javascript/vanilla/src/app.js) |
 | agentRuntime | 12 | [src/symbol/context.rs](../../../../sources/bartolli__codanna/src/symbol/context.rs)<br>[src/storage/memory.rs](../../../../sources/bartolli__codanna/src/storage/memory.rs)<br>[src/parsing/context.rs](../../../../sources/bartolli__codanna/src/parsing/context.rs)<br>[src/indexing/pipeline/stages/context.rs](../../../../sources/bartolli__codanna/src/indexing/pipeline/stages/context.rs)<br>[examples/typescript/react/src/hooks/use-config.ts](../../../../sources/bartolli__codanna/examples/typescript/react/src/hooks/use-config.ts)<br>[examples/typescript/react/src/hooks/use-media-query.tsx](../../../../sources/bartolli__codanna/examples/typescript/react/src/hooks/use-media-query.tsx)<br>[examples/typescript/react/src/hooks/useMatchMedia.ts](../../../../sources/bartolli__codanna/examples/typescript/react/src/hooks/useMatchMedia.ts)<br>[examples/kotlin/context_receiver.kt](../../../../sources/bartolli__codanna/examples/kotlin/context_receiver.kt) |
@@ -124,45 +124,45 @@ _No command surface extracted from root manifests._
 | eval | 213 | [tests/cli_tests.rs](../../../../sources/bartolli__codanna/tests/cli_tests.rs)<br>[tests/exploration_tests.rs](../../../../sources/bartolli__codanna/tests/exploration_tests.rs)<br>[tests/integration_tests.rs](../../../../sources/bartolli__codanna/tests/integration_tests.rs)<br>[tests/parsers_tests.rs](../../../../sources/bartolli__codanna/tests/parsers_tests.rs)<br>[tests/plugins_tests.rs](../../../../sources/bartolli__codanna/tests/plugins_tests.rs)<br>[tests/profiles_tests.rs](../../../../sources/bartolli__codanna/tests/profiles_tests.rs)<br>[tests/tui_tests.rs](../../../../sources/bartolli__codanna/tests/tui_tests.rs)<br>[tests/tui/progress_widgets.rs](../../../../sources/bartolli__codanna/tests/tui/progress_widgets.rs) |
 | security | 52 | [tests/exploration/abi15_grammar_audit/c.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/c.rs)<br>[tests/exploration/abi15_grammar_audit/clojure.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/clojure.rs)<br>[tests/exploration/abi15_grammar_audit/cpp.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/cpp.rs)<br>[tests/exploration/abi15_grammar_audit/csharp.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/csharp.rs)<br>[tests/exploration/abi15_grammar_audit/gdscript.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/gdscript.rs)<br>[tests/exploration/abi15_grammar_audit/go.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/go.rs)<br>[tests/exploration/abi15_grammar_audit/helpers.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/helpers.rs)<br>[tests/exploration/abi15_grammar_audit/java.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/java.rs) |
 | ci | 6 | [.github/workflows/autofix.yml](../../../../sources/bartolli__codanna/.github/workflows/autofix.yml)<br>[.github/workflows/brew-update.yml](../../../../sources/bartolli__codanna/.github/workflows/brew-update.yml)<br>[.github/workflows/full-test.yml](../../../../sources/bartolli__codanna/.github/workflows/full-test.yml)<br>[.github/workflows/pr-comment.yml](../../../../sources/bartolli__codanna/.github/workflows/pr-comment.yml)<br>[.github/workflows/quick-check.yml](../../../../sources/bartolli__codanna/.github/workflows/quick-check.yml)<br>[.github/workflows/release.yml](../../../../sources/bartolli__codanna/.github/workflows/release.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 1 | [CLAUDE.md.example](../../../../sources/bartolli__codanna/CLAUDE.md.example) |
 | docs | 6 | [README.md](../../../../sources/bartolli__codanna/README.md)<br>[tests/parsers/README.md](../../../../sources/bartolli__codanna/tests/parsers/README.md)<br>[examples/typescript/react/README.md](../../../../sources/bartolli__codanna/examples/typescript/react/README.md)<br>[contributing/README.md](../../../../sources/bartolli__codanna/contributing/README.md)<br>[contributing/tree-sitter/README.md](../../../../sources/bartolli__codanna/contributing/tree-sitter/README.md)<br>[contributing/development/README.md](../../../../sources/bartolli__codanna/contributing/development/README.md) |
 | config | 11 | [Cargo.lock](../../../../sources/bartolli__codanna/Cargo.lock)<br>[Cargo.toml](../../../../sources/bartolli__codanna/Cargo.toml)<br>[tests/fixtures/typescript_alias_test/tsconfig.json](../../../../sources/bartolli__codanna/tests/fixtures/typescript_alias_test/tsconfig.json)<br>[tests/fixtures/go/go.mod](../../../../sources/bartolli__codanna/tests/fixtures/go/go.mod)<br>[tests/fixtures/go/vendor_project/go.mod](../../../../sources/bartolli__codanna/tests/fixtures/go/vendor_project/go.mod)<br>[tests/fixtures/go/module_project/go.mod](../../../../sources/bartolli__codanna/tests/fixtures/go/module_project/go.mod)<br>[examples/typescript/tsconfig.json](../../../../sources/bartolli__codanna/examples/typescript/tsconfig.json)<br>[examples/typescript/react/package.json](../../../../sources/bartolli__codanna/examples/typescript/react/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 213 | [tests/cli_tests.rs](../../../../sources/bartolli__codanna/tests/cli_tests.rs)<br>[tests/exploration_tests.rs](../../../../sources/bartolli__codanna/tests/exploration_tests.rs)<br>[tests/integration_tests.rs](../../../../sources/bartolli__codanna/tests/integration_tests.rs)<br>[tests/parsers_tests.rs](../../../../sources/bartolli__codanna/tests/parsers_tests.rs)<br>[tests/plugins_tests.rs](../../../../sources/bartolli__codanna/tests/plugins_tests.rs)<br>[tests/profiles_tests.rs](../../../../sources/bartolli__codanna/tests/profiles_tests.rs) |
-| CI workflows | 6 | [.github/workflows/autofix.yml](../../../../sources/bartolli__codanna/.github/workflows/autofix.yml)<br>[.github/workflows/brew-update.yml](../../../../sources/bartolli__codanna/.github/workflows/brew-update.yml)<br>[.github/workflows/full-test.yml](../../../../sources/bartolli__codanna/.github/workflows/full-test.yml)<br>[.github/workflows/pr-comment.yml](../../../../sources/bartolli__codanna/.github/workflows/pr-comment.yml)<br>[.github/workflows/quick-check.yml](../../../../sources/bartolli__codanna/.github/workflows/quick-check.yml)<br>[.github/workflows/release.yml](../../../../sources/bartolli__codanna/.github/workflows/release.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 52 | [tests/exploration/abi15_grammar_audit/c.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/c.rs)<br>[tests/exploration/abi15_grammar_audit/clojure.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/clojure.rs)<br>[tests/exploration/abi15_grammar_audit/cpp.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/cpp.rs)<br>[tests/exploration/abi15_grammar_audit/csharp.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/csharp.rs)<br>[tests/exploration/abi15_grammar_audit/gdscript.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/gdscript.rs)<br>[tests/exploration/abi15_grammar_audit/go.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/go.rs) |
-| Agent instructions | 1 | [CLAUDE.md.example](../../../../sources/bartolli__codanna/CLAUDE.md.example) |
+| 테스트/평가 | 213 | [tests/cli_tests.rs](../../../../sources/bartolli__codanna/tests/cli_tests.rs)<br>[tests/exploration_tests.rs](../../../../sources/bartolli__codanna/tests/exploration_tests.rs)<br>[tests/integration_tests.rs](../../../../sources/bartolli__codanna/tests/integration_tests.rs)<br>[tests/parsers_tests.rs](../../../../sources/bartolli__codanna/tests/parsers_tests.rs)<br>[tests/plugins_tests.rs](../../../../sources/bartolli__codanna/tests/plugins_tests.rs)<br>[tests/profiles_tests.rs](../../../../sources/bartolli__codanna/tests/profiles_tests.rs) |
+| CI workflow | 6 | [.github/workflows/autofix.yml](../../../../sources/bartolli__codanna/.github/workflows/autofix.yml)<br>[.github/workflows/brew-update.yml](../../../../sources/bartolli__codanna/.github/workflows/brew-update.yml)<br>[.github/workflows/full-test.yml](../../../../sources/bartolli__codanna/.github/workflows/full-test.yml)<br>[.github/workflows/pr-comment.yml](../../../../sources/bartolli__codanna/.github/workflows/pr-comment.yml)<br>[.github/workflows/quick-check.yml](../../../../sources/bartolli__codanna/.github/workflows/quick-check.yml)<br>[.github/workflows/release.yml](../../../../sources/bartolli__codanna/.github/workflows/release.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 52 | [tests/exploration/abi15_grammar_audit/c.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/c.rs)<br>[tests/exploration/abi15_grammar_audit/clojure.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/clojure.rs)<br>[tests/exploration/abi15_grammar_audit/cpp.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/cpp.rs)<br>[tests/exploration/abi15_grammar_audit/csharp.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/csharp.rs)<br>[tests/exploration/abi15_grammar_audit/gdscript.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/gdscript.rs)<br>[tests/exploration/abi15_grammar_audit/go.rs](../../../../sources/bartolli__codanna/tests/exploration/abi15_grammar_audit/go.rs) |
+| 에이전트 지시문 | 1 | [CLAUDE.md.example](../../../../sources/bartolli__codanna/CLAUDE.md.example) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/cli_tests.rs`, `tests/exploration_tests.rs`, `tests/integration_tests.rs`.
-2. Trace execution through entrypoints: `tests/fixtures/typescript_alias_test/src/app.ts`, `tests/fixtures/go/vendor_project/main.go`, `tests/fixtures/go/module_project/main.go`.
-3. Map agent/tool runtime through: `src/symbol/context.rs`, `src/storage/memory.rs`, `src/parsing/context.rs`.
-4. Inspect retrieval/memory/indexing through: `tests/integration/embedding_model_comparison.rs`, `tests/cli/test_mcp_index_info_remote_status.rs`, `src/vector/clustering.rs`.
-5. Verify behavior through test/eval files: `tests/cli_tests.rs`, `tests/exploration_tests.rs`, `tests/integration_tests.rs`.
+1. 핵심 참조에서 시작: `tests/cli_tests.rs`, `tests/exploration_tests.rs`, `tests/integration_tests.rs`.
+2. entrypoint를 따라 실행 흐름 확인: `tests/fixtures/typescript_alias_test/src/app.ts`, `tests/fixtures/go/vendor_project/main.go`, `tests/fixtures/go/module_project/main.go`.
+3. agent/tool runtime 매핑: `src/symbol/context.rs`, `src/storage/memory.rs`, `src/parsing/context.rs`.
+4. retrieval/memory/indexing 확인: `tests/integration/embedding_model_comparison.rs`, `tests/cli/test_mcp_index_info_remote_status.rs`, `src/vector/clustering.rs`.
+5. test/eval 파일로 동작 검증: `tests/cli_tests.rs`, `tests/exploration_tests.rs`, `tests/integration_tests.rs`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-평가/관측/품질 관점에서 Local clone structure analysis 822 files, 201 directories.. 핵심 구조 신호는 Cargo.toml, README.md, LICENSE, mcp, tests, ci이며, deep-source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+평가/관측/품질 관점에서 Local clone structure analysis 822 files, 201 directories.. 핵심 구조 신호는 Cargo.toml, README.md, LICENSE, mcp, tests, ci이며, 심층 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-mixed 신호의 평가/관측/품질 레포입니다. 활용 관점은 quality and evaluation comparison point이고, 후속 확인 포인트는 license metadata missing입니다.
+mixed 신호의 평가/관측/품질 레포입니다. 활용 관점은 품질/평가 비교 지점이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

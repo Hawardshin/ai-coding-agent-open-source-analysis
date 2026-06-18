@@ -1,63 +1,63 @@
-# cloudwego/eino Source Deep Dive
+# cloudwego/eino 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 The ultimate LLM/AI application development framework in Go.
 
 ## 요약
 
-- 조사 단위: `sources/cloudwego__eino` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 382 files, 76 directories, depth score 90, key references 9개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/cloudwego__eino` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 382 files, 76 directories, depth score 84, key references 9개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-일반 AI 오픈소스 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 config=go.mod이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 9개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+일반 AI 오픈소스 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 config=go.mod이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 9개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | cloudwego/eino |
-| Topic | General AI Open Source / 일반 AI 오픈소스 |
+| 레포 | cloudwego/eino |
+| 주제 | 일반 AI 오픈소스 / 일반 AI 오픈소스 |
 | Region | global |
 | Language | Go |
 | Stars | 11850 |
 | Forks | 973 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/cloudwego__eino](../../../../sources/cloudwego__eino) |
-| Existing report | [reports/global-trending/repositories/cloudwego__eino.md](../../../global-trending/repositories/cloudwego__eino.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/cloudwego__eino](../../../../sources/cloudwego__eino) |
+| 기존 보고서 | [reports/global-trending/repositories/cloudwego__eino.md](../../../global-trending/repositories/cloudwego__eino.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 382 / 76 |
-| Max observed depth | 6 |
-| Top directories | .github, adk, callbacks, components, compose, examples, ext, flow, internal, schema, scripts, utils |
-| Top extensions | .go: 338, .png: 16, .md: 8, .bin: 4, .yml: 4, .sh: 2, .yaml: 2, (none): 2, .gif: 1, .json: 1, .mod: 1, .sum: 1 |
-| Source patterns | agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness |
+| 파일 / 디렉터리 | 382 / 76 |
+| 관측 최대 깊이 | 6 |
+| 상위 디렉터리 | .github, adk, callbacks, components, compose, examples, ext, flow, internal, schema, scripts, utils |
+| 상위 확장자 | .go: 338, .png: 16, .md: 8, .bin: 4, .yml: 4, .sh: 2, .yaml: 2, (none): 2, .gif: 1, .json: 1, .mod: 1, .sum: 1 |
+| 소스 패턴 | agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | .github | ci surface | 1 |
 | adk | top-level component | 1 |
@@ -73,29 +73,29 @@ The ultimate LLM/AI application development framework in Go.
 | utils | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | config | [go.mod](../../../../sources/cloudwego__eino/go.mod) | config signal |
 | docs | [README.md](../../../../sources/cloudwego__eino/README.md) | docs signal |
@@ -108,56 +108,56 @@ _No command surface extracted from root manifests._
 | ci | [.github/workflows/tag-notification.yml](../../../../sources/cloudwego__eino/.github/workflows/tag-notification.yml) | ci support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
 | agentRuntime | 55 | [schema/tool_test.go](../../../../sources/cloudwego__eino/schema/tool_test.go)<br>[schema/tool.go](../../../../sources/cloudwego__eino/schema/tool.go)<br>[internal/mock/adk/Agent_mock.go](../../../../sources/cloudwego__eino/internal/mock/adk/Agent_mock.go)<br>[flow/agent/agent_option.go](../../../../sources/cloudwego__eino/flow/agent/agent_option.go)<br>[flow/agent/utils.go](../../../../sources/cloudwego__eino/flow/agent/utils.go)<br>[flow/agent/react/callback.go](../../../../sources/cloudwego__eino/flow/agent/react/callback.go)<br>[flow/agent/react/doc.go](../../../../sources/cloudwego__eino/flow/agent/react/doc.go)<br>[flow/agent/react/option_test.go](../../../../sources/cloudwego__eino/flow/agent/react/option_test.go) |
-| mcp | 0 | not obvious |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 24 | [internal/mock/components/embedding/Embedding_mock.go](../../../../sources/cloudwego__eino/internal/mock/components/embedding/Embedding_mock.go)<br>[compose/component_to_graph_node.go](../../../../sources/cloudwego__eino/compose/component_to_graph_node.go)<br>[compose/generic_graph.go](../../../../sources/cloudwego__eino/compose/generic_graph.go)<br>[compose/graph_add_node_options.go](../../../../sources/cloudwego__eino/compose/graph_add_node_options.go)<br>[compose/graph_call_options_test.go](../../../../sources/cloudwego__eino/compose/graph_call_options_test.go)<br>[compose/graph_call_options.go](../../../../sources/cloudwego__eino/compose/graph_call_options.go)<br>[compose/graph_compile_options.go](../../../../sources/cloudwego__eino/compose/graph_compile_options.go)<br>[compose/graph_manager.go](../../../../sources/cloudwego__eino/compose/graph_manager.go) |
 | spec | 1 | [.github/static/img/eino/eino_architecture_overview.png](../../../../sources/cloudwego__eino/.github/static/img/eino/eino_architecture_overview.png) |
 | eval | 138 | [utils/callbacks/template_test.go](../../../../sources/cloudwego__eino/utils/callbacks/template_test.go)<br>[schema/agentic_message_test.go](../../../../sources/cloudwego__eino/schema/agentic_message_test.go)<br>[schema/document_test.go](../../../../sources/cloudwego__eino/schema/document_test.go)<br>[schema/message_parser_test.go](../../../../sources/cloudwego__eino/schema/message_parser_test.go)<br>[schema/message_test.go](../../../../sources/cloudwego__eino/schema/message_test.go)<br>[schema/serialization_test.go](../../../../sources/cloudwego__eino/schema/serialization_test.go)<br>[schema/stream_copy_external_test.go](../../../../sources/cloudwego__eino/schema/stream_copy_external_test.go)<br>[schema/stream_oneof_test.go](../../../../sources/cloudwego__eino/schema/stream_oneof_test.go) |
-| security | 0 | not obvious |
+| security | 0 | 명확하지 않음 |
 | ci | 3 | [.github/workflows/pr-check.yml](../../../../sources/cloudwego__eino/.github/workflows/pr-check.yml)<br>[.github/workflows/tag-notification.yml](../../../../sources/cloudwego__eino/.github/workflows/tag-notification.yml)<br>[.github/workflows/tests.yml](../../../../sources/cloudwego__eino/.github/workflows/tests.yml) |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 2 | [README.md](../../../../sources/cloudwego__eino/README.md)<br>[README.zh_CN.md](../../../../sources/cloudwego__eino/README.zh_CN.md) |
 | config | 1 | [go.mod](../../../../sources/cloudwego__eino/go.mod) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 138 | [utils/callbacks/template_test.go](../../../../sources/cloudwego__eino/utils/callbacks/template_test.go)<br>[schema/agentic_message_test.go](../../../../sources/cloudwego__eino/schema/agentic_message_test.go)<br>[schema/document_test.go](../../../../sources/cloudwego__eino/schema/document_test.go)<br>[schema/message_parser_test.go](../../../../sources/cloudwego__eino/schema/message_parser_test.go)<br>[schema/message_test.go](../../../../sources/cloudwego__eino/schema/message_test.go)<br>[schema/serialization_test.go](../../../../sources/cloudwego__eino/schema/serialization_test.go) |
-| CI workflows | 3 | [.github/workflows/pr-check.yml](../../../../sources/cloudwego__eino/.github/workflows/pr-check.yml)<br>[.github/workflows/tag-notification.yml](../../../../sources/cloudwego__eino/.github/workflows/tag-notification.yml)<br>[.github/workflows/tests.yml](../../../../sources/cloudwego__eino/.github/workflows/tests.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 0 | not obvious |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 138 | [utils/callbacks/template_test.go](../../../../sources/cloudwego__eino/utils/callbacks/template_test.go)<br>[schema/agentic_message_test.go](../../../../sources/cloudwego__eino/schema/agentic_message_test.go)<br>[schema/document_test.go](../../../../sources/cloudwego__eino/schema/document_test.go)<br>[schema/message_parser_test.go](../../../../sources/cloudwego__eino/schema/message_parser_test.go)<br>[schema/message_test.go](../../../../sources/cloudwego__eino/schema/message_test.go)<br>[schema/serialization_test.go](../../../../sources/cloudwego__eino/schema/serialization_test.go) |
+| CI workflow | 3 | [.github/workflows/pr-check.yml](../../../../sources/cloudwego__eino/.github/workflows/pr-check.yml)<br>[.github/workflows/tag-notification.yml](../../../../sources/cloudwego__eino/.github/workflows/tag-notification.yml)<br>[.github/workflows/tests.yml](../../../../sources/cloudwego__eino/.github/workflows/tests.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 0 | 명확하지 않음 |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | container/deploy path not obvious |
-| security | security/policy surface not obvious |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | security/policy 표면이 명확하지 않음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `go.mod`, `README.md`, `README.zh_CN.md`.
-2. Map agent/tool runtime through: `schema/tool_test.go`, `schema/tool.go`, `internal/mock/adk/Agent_mock.go`.
-3. Inspect retrieval/memory/indexing through: `internal/mock/components/embedding/Embedding_mock.go`, `compose/component_to_graph_node.go`, `compose/generic_graph.go`.
-4. Verify behavior through test/eval files: `utils/callbacks/template_test.go`, `schema/agentic_message_test.go`, `schema/document_test.go`.
+1. 핵심 참조에서 시작: `go.mod`, `README.md`, `README.zh_CN.md`.
+2. agent/tool runtime 매핑: `schema/tool_test.go`, `schema/tool.go`, `internal/mock/adk/Agent_mock.go`.
+3. retrieval/memory/indexing 확인: `internal/mock/components/embedding/Embedding_mock.go`, `compose/component_to_graph_node.go`, `compose/generic_graph.go`.
+4. test/eval 파일로 동작 검증: `utils/callbacks/template_test.go`, `schema/agentic_message_test.go`, `schema/document_test.go`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-일반 AI 오픈소스 관점에서 The ultimate LLM/AI application development framework in Go.. 핵심 구조 신호는 Go, go.mod, README.md, ci, docs이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+일반 AI 오픈소스 관점에서 The ultimate LLM/AI application development framework in Go.. 핵심 구조 신호는 Go, go.mod, README.md, ci, docs이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

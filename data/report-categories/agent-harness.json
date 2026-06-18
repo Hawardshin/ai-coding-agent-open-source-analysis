@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:13:01.107Z",
+  "generatedAt": "2026-06-18T15:31:47.876Z",
   "slug": "agent-harness",
-  "title": "Agent Harness, MCP, and Orchestration",
-  "description": "Agent harness materials, MCP tooling, orchestration, hooks, skills, and workflow infrastructure.",
+  "title": "에이전트 하네스/MCP/오케스트레이션",
+  "description": "MCP, tool registry, hooks, skills, orchestration, workflow 실행 기반을 보는 주제입니다.",
   "count": 281,
   "reports": [
     {
@@ -54,11 +54,11 @@
     {
       "id": "report:reports/categories/agent-harness-orchestration/README.md",
       "path": "reports/categories/agent-harness-orchestration/README.md",
-      "title": "Agent Harness and Orchestration",
-      "summary": "Agent Harness and Orchestration Generated 2026 06 18T15 12 39.601Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고",
+      "title": "에이전트 하네스/오케스트레이션",
+      "summary": "에이전트 하네스/오케스트레이션 생성 시각 2026 06 18T15 31 33.431Z agent harness, multi agent runtime, skills, tools, workflows, task orchestration, production agent framework를 묶은 카테고리입니다. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.200Z",
+      "updatedAt": "2026-06-18T15:31:34.155Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -68,11 +68,11 @@
     {
       "id": "report:reports/categories/mcp-tools-protocols/README.md",
       "path": "reports/categories/mcp-tools-protocols/README.md",
-      "title": "MCP, Tools, and Protocols",
-      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T15 12 39.601Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
+      "title": "MCP/도구/프로토콜",
+      "summary": "MCP/도구/프로토콜 생성 시각 2026 06 18T15 31 33.431Z Model Context Protocol 서버, tool registry, gateway, connector, protocol SDK, tool calling infrastructure를 묶은 카테고리입니다. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 649개 항목이며, 주요 구성은",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.207Z",
+      "updatedAt": "2026-06-18T15:31:34.163Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -82,11 +82,11 @@
     {
       "id": "report:reports/repository-insights/by-role/agent-harness-mcp/README.md",
       "path": "reports/repository-insights/by-role/agent-harness-mcp/README.md",
-      "title": "Agent Harness and MCP",
-      "summary": "Agent Harness and MCP Generated 2026 06 18T15 12 42.018Z 에이전트 하네스/MCP 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 레포 묶음입니다. 포함 범위 514 repositories, report link 513, local source 514. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 ",
+      "title": "에이전트 하네스/MCP",
+      "summary": "에이전트 하네스/MCP 생성 시각 2026 06 18T15 31 34.546Z 에이전트 하네스/MCP 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 레포 묶음입니다. 포함 범위 514개 레포, 보고서 링크 513, 로컬 소스 514. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 report/source 링크로 들어가면 됩니다. 총평",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T15:12:42.588Z",
+      "updatedAt": "2026-06-18T15:31:35.317Z",
       "categories": [
         "agent-harness",
         "comparisons",
@@ -97,11 +97,11 @@
     {
       "id": "report:reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
       "path": "reports/source-deep-dives/by-topic/agent-harness-mcp/README.md",
-      "title": "Agent Harness and MCP Source Deep Dive",
-      "summary": "Agent Harness and MCP Source Deep Dive Generated 2026 06 18T15 12 44.535Z 에이전트 하네스/MCP 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 로컬 소스 레포 514개입니다. 포함 범위 MCP 서버/클라이언트, tool registry, workflow/orchestration, hooks/skills 경로를 중심으로 key sour",
+      "title": "에이전트 하네스/MCP 소스 딥다이브",
+      "summary": "에이전트 하네스/MCP 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 에이전트 하네스/MCP 주제의 로컬 소스 심층 스캔 결과입니다. 요약 조사 단위 agent harness mcp 역할로 분류된 로컬 소스 레포 514개입니다. 포함 범위 MCP 서버/클라이언트, 도구 등록부, workflow/orchestration, hooks/skills 경로를 중심으로 key source reference 5,524개를 추출했습니다. 탐색 방식 소스",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.752Z",
+      "updatedAt": "2026-06-18T15:31:43.046Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -113,11 +113,11 @@
     {
       "id": "report:reports/source-insights/by-category/agent-harness-mcp/README.md",
       "path": "reports/source-insights/by-category/agent-harness-mcp/README.md",
-      "title": "Agent Harness and MCP Source Insights",
-      "summary": "Agent Harness and MCP Source Insights Generated 2026 06 18T15 12 59.248Z MCP, tool registry, workflow/orchestration, hooks/skills 요약 조사 단위 에이전트 하네스/MCP 카테고리에 속한 514개 source scanned 레포입니다. 포함 범위 trend linked 427개, key source reference 5524개, median source depth",
+      "title": "에이전트 하네스/MCP 소스 인사이트",
+      "summary": "에이전트 하네스/MCP 소스 인사이트 생성 시각 2026 06 18T15 31 47.340Z MCP, 도구 등록부, workflow/orchestration, hooks/skills 요약 조사 단위 에이전트 하네스/MCP 카테고리에 속한 514개 source scanned 레포입니다. 포함 범위 trend linked 427개, key source reference 5524개, median source depth 114입니다. 탐색 방식 카테고리 인사이트를 먼저",
       "kind": "source-insight-report",
       "folder": "source-insights",
-      "updatedAt": "2026-06-18T15:12:59.517Z",
+      "updatedAt": "2026-06-18T15:31:47.625Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -186,11 +186,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/borghei__Claude-Skills.md",
       "path": "reports/source-deep-dives/repositories/0/borghei__Claude-Skills.md",
-      "title": "borghei/Claude-Skills Source Deep Dive",
-      "summary": "borghei/Claude Skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z 338 AI skills across 16 domains. PM is the deepest 66 skills discovery, execution, strategy frameworks, GTM, Jira/Linear/Notion . Plus engineering, marketing, C level CAIO/CDO/CCO/GC/VPE",
+      "title": "borghei/Claude-Skills 소스 딥다이브",
+      "summary": "borghei/Claude Skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 338 AI skills across 16 domains. PM is the deepest 66 skills discovery, execution, strategy frameworks, GTM, Jira/Linear/Notion . Plus engineering, marketing, C level CAIO/CDO/CCO/GC/VPE , compliance",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.886Z",
+      "updatedAt": "2026-06-18T15:31:43.188Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -203,11 +203,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/Dicklesworthstone__mcp_agent_mail.md",
       "path": "reports/source-deep-dives/repositories/0/Dicklesworthstone__mcp_agent_mail.md",
-      "title": "Dicklesworthstone/mcp_agent_mail Source Deep Dive",
-      "summary": "Dicklesworthstone/mcp agent mail Source Deep Dive Generated 2026 06 18T15 12 44.535Z Asynchronous coordination layer for AI coding agents identities, inboxes, searchable threads, and advisory file leases over FastMCP + Git + SQLite 요약 조사 단위 sources/Dickleswort",
+      "title": "Dicklesworthstone/mcp_agent_mail 소스 딥다이브",
+      "summary": "Dicklesworthstone/mcp agent mail 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Asynchronous coordination layer for AI coding agents identities, inboxes, searchable threads, and advisory file leases over FastMCP + Git + SQLite 요약 조사 단위 sources/Dicklesworthstone mcp ag",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.915Z",
+      "updatedAt": "2026-06-18T15:31:43.226Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -219,11 +219,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/PleasePrompto__notebooklm-mcp.md",
       "path": "reports/source-deep-dives/repositories/0/PleasePrompto__notebooklm-mcp.md",
-      "title": "PleasePrompto/notebooklm-mcp Source Deep Dive",
-      "summary": "PleasePrompto/notebooklm mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server for NotebookLM Let your AI agents Claude Code, Codex research documentation directly with grounded, citation backed answers from Gemini. Persistent auth, library manage",
+      "title": "PleasePrompto/notebooklm-mcp 소스 딥다이브",
+      "summary": "PleasePrompto/notebooklm mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server for NotebookLM Let your AI agents Claude Code, Codex research documentation directly with grounded, citation backed answers from Gemini. Persistent auth, library management, cross c",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.023Z",
+      "updatedAt": "2026-06-18T15:31:43.331Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -235,11 +235,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/stephano0308-cloud__korean-law-mcp.md",
       "path": "reports/source-deep-dives/repositories/0/stephano0308-cloud__korean-law-mcp.md",
-      "title": "stephano0308-cloud/korean-law-mcp Source Deep Dive",
-      "summary": "stephano0308 cloud/korean law mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z stephano0308 cloud/korean law mcp 요약 조사 단위 sources/stephano0308 cloud korean law mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 27 files, 4 directories, depth score 78,",
+      "title": "stephano0308-cloud/korean-law-mcp 소스 딥다이브",
+      "summary": "stephano0308 cloud/korean law mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z stephano0308 cloud/korean law mcp 요약 조사 단위 sources/stephano0308 cloud korean law mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 27 files, 4 directories, depth score 72, key references 6개",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.018Z",
+      "updatedAt": "2026-06-18T15:31:43.327Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -251,11 +251,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/vishalsachdev__canvas-mcp.md",
       "path": "reports/source-deep-dives/repositories/0/vishalsachdev__canvas-mcp.md",
-      "title": "vishalsachdev/canvas-mcp Source Deep Dive",
-      "summary": "vishalsachdev/canvas mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Canvas LMS MCP server — 80+ tools and 5 agent skills for students & educators. Works with Claude, Cursor, Codex, and 40+ agents. v1.1.0 요약 조사 단위 sources/vishalsachdev canvas mcp 로컬 클론",
+      "title": "vishalsachdev/canvas-mcp 소스 딥다이브",
+      "summary": "vishalsachdev/canvas mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Canvas LMS MCP server — 80+ tools and 5 agent skills for students & educators. Works with Claude, Cursor, Codex, and 40+ agents. v1.1.0 요약 조사 단위 sources/vishalsachdev canvas mcp 로컬 클론을 실제 파일 트리 기준",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.972Z",
+      "updatedAt": "2026-06-18T15:31:43.281Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -267,11 +267,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/yjhann33-design__korea-stock-insight-mcp.md",
       "path": "reports/source-deep-dives/repositories/0/yjhann33-design__korea-stock-insight-mcp.md",
-      "title": "yjhann33-design/korea-stock-insight-mcp Source Deep Dive",
-      "summary": "yjhann33 design/korea stock insight mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server for Korean stock market analysis DART disclosures + KRX prices . English first, drop in for Claude Desktop / Cursor. 요약 조사 단위 sources/yjhann33 design korea s",
+      "title": "yjhann33-design/korea-stock-insight-mcp 소스 딥다이브",
+      "summary": "yjhann33 design/korea stock insight mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server for Korean stock market analysis DART disclosures + KRX prices . English first, drop in for Claude Desktop / Cursor. 요약 조사 단위 sources/yjhann33 design korea stock insight ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.028Z",
+      "updatedAt": "2026-06-18T15:31:43.336Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -283,11 +283,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/aesthetic-legalism5470__korean-dart-mcp.md",
       "path": "reports/source-deep-dives/repositories/1/aesthetic-legalism5470__korean-dart-mcp.md",
-      "title": "aesthetic-legalism5470/korean-dart-mcp Source Deep Dive",
-      "summary": "aesthetic legalism5470/korean dart mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Access OpenDART financial data and corporate filings via MCP. Analyze disclosures, financial statements, and XBRL data directly in your AI assistant. 요약 조사 단위 sources/ae",
+      "title": "aesthetic-legalism5470/korean-dart-mcp 소스 딥다이브",
+      "summary": "aesthetic legalism5470/korean dart mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Access OpenDART financial data and corporate filings via MCP. Analyze disclosures, financial statements, and XBRL data directly in your AI assistant. 요약 조사 단위 sources/aesthetic legal",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.238Z",
+      "updatedAt": "2026-06-18T15:31:43.548Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -299,11 +299,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/DeusData__codebase-memory-mcp.md",
       "path": "reports/source-deep-dives/repositories/1/DeusData__codebase-memory-mcp.md",
-      "title": "DeusData/codebase-memory-mcp Source Deep Dive",
-      "summary": "DeusData/codebase memory mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z High performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub ms queries, 99% fewer tokens.",
+      "title": "DeusData/codebase-memory-mcp 소스 딥다이브",
+      "summary": "DeusData/codebase memory mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z High performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub ms queries, 99% fewer tokens. Single stati",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.120Z",
+      "updatedAt": "2026-06-18T15:31:43.416Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -315,11 +315,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/dongdorrong__korean-law-mcp-lab.md",
       "path": "reports/source-deep-dives/repositories/1/dongdorrong__korean-law-mcp-lab.md",
-      "title": "dongdorrong/korean-law-mcp-lab Source Deep Dive",
-      "summary": "dongdorrong/korean law mcp lab Source Deep Dive Generated 2026 06 18T15 12 44.535Z dongdorrong/korean law mcp lab 요약 조사 단위 sources/dongdorrong korean law mcp lab 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 8 files, 3 directories, depth score 30, key refer",
+      "title": "dongdorrong/korean-law-mcp-lab 소스 딥다이브",
+      "summary": "dongdorrong/korean law mcp lab 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z dongdorrong/korean law mcp lab 요약 조사 단위 sources/dongdorrong korean law mcp lab 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 8 files, 3 directories, depth score 24, key references 2개입니다. 탐색 방식",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.254Z",
+      "updatedAt": "2026-06-18T15:31:43.563Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -331,11 +331,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/everynation__kimchisushi-mcp.md",
       "path": "reports/source-deep-dives/repositories/1/everynation__kimchisushi-mcp.md",
-      "title": "everynation/kimchisushi-mcp Source Deep Dive",
-      "summary": "everynation/kimchisushi mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Remote MCP server for kimchi sushi.com — Korea Japan bilingual community public posts/comments for AI agents 요약 조사 단위 sources/everynation kimchisushi mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레",
+      "title": "everynation/kimchisushi-mcp 소스 딥다이브",
+      "summary": "everynation/kimchisushi mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Remote MCP server for kimchi sushi.com — Korea Japan bilingual community public posts/comments for AI agents 요약 조사 단위 sources/everynation kimchisushi mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.255Z",
+      "updatedAt": "2026-06-18T15:31:43.565Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -347,11 +347,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/kubeflow__mcp-apache-spark-history-server.md",
       "path": "reports/source-deep-dives/repositories/1/kubeflow__mcp-apache-spark-history-server.md",
-      "title": "kubeflow/mcp-apache-spark-history-server Source Deep Dive",
-      "summary": "kubeflow/mcp apache spark history server Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP Server and CLI for Apache Spark History Server. Debug Spark applications from AI agents, scripts, or the terminal. 요약 조사 단위 sources/kubeflow mcp apache spark histo",
+      "title": "kubeflow/mcp-apache-spark-history-server 소스 딥다이브",
+      "summary": "kubeflow/mcp apache spark history server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP Server and CLI for Apache Spark History Server. Debug Spark applications from AI agents, scripts, or the terminal. 요약 조사 단위 sources/kubeflow mcp apache spark history server 로컬 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.178Z",
+      "updatedAt": "2026-06-18T15:31:43.482Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -363,11 +363,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/treesoop__hwp-mcp.md",
       "path": "reports/source-deep-dives/repositories/1/treesoop__hwp-mcp.md",
-      "title": "treesoop/hwp-mcp Source Deep Dive",
-      "summary": "treesoop/hwp mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server for reading and writing HWP/HWPX Korean Hangul documents — built on rhwp. 34 tools, Claude/Cursor/ChatGPT compatible. 요약 조사 단위 sources/treesoop hwp mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별",
+      "title": "treesoop/hwp-mcp 소스 딥다이브",
+      "summary": "treesoop/hwp mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server for reading and writing HWP/HWPX Korean Hangul documents — built on rhwp. 34 tools, Claude/Cursor/ChatGPT compatible. 요약 조사 단위 sources/treesoop hwp mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.239Z",
+      "updatedAt": "2026-06-18T15:31:43.550Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -379,11 +379,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/utensils__mcp-nixos.md",
       "path": "reports/source-deep-dives/repositories/1/utensils__mcp-nixos.md",
-      "title": "utensils/mcp-nixos Source Deep Dive",
-      "summary": "utensils/mcp nixos Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP NixOS Model Context Protocol Server for NixOS resources 요약 조사 단위 sources/utensils mcp nixos 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 95 files, 18 directories, depth score 101, k",
+      "title": "utensils/mcp-nixos 소스 딥다이브",
+      "summary": "utensils/mcp nixos 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP NixOS Model Context Protocol Server for NixOS resources 요약 조사 단위 sources/utensils mcp nixos 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 95 files, 18 directories, depth score 95, key references 12개입니",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.222Z",
+      "updatedAt": "2026-06-18T15:31:43.528Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -395,11 +395,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/witchan__ios-mcp.md",
       "path": "reports/source-deep-dives/repositories/1/witchan__ios-mcp.md",
-      "title": "witchan/ios-mcp Source Deep Dive",
-      "summary": "witchan/ios mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z iOS MCP MCP management tool for jailbroken iPhones, enabling developers and AI agents to inspect and control devices. 요약 조사 단위 sources/witchan ios mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다",
+      "title": "witchan/ios-mcp 소스 딥다이브",
+      "summary": "witchan/ios mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z iOS MCP MCP management tool for jailbroken iPhones, enabling developers and AI agents to inspect and control devices. 요약 조사 단위 sources/witchan ios mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 283 files,",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.242Z",
+      "updatedAt": "2026-06-18T15:31:43.553Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -411,11 +411,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/zhuyansen__agent-skills-hub.md",
       "path": "reports/source-deep-dives/repositories/1/zhuyansen__agent-skills-hub.md",
-      "title": "zhuyansen/agent-skills-hub Source Deep Dive",
-      "summary": "zhuyansen/agent skills hub Source Deep Dive Generated 2026 06 18T15 12 44.535Z Discover and compare open source Agent Skills, tools & MCP servers — with quality scoring, trending analysis, and automated GitHub sync 요약 조사 단위 sources/zhuyansen agent skills hub 로",
+      "title": "zhuyansen/agent-skills-hub 소스 딥다이브",
+      "summary": "zhuyansen/agent skills hub 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Discover and compare open source Agent Skills, tools & MCP servers — with quality scoring, trending analysis, and automated GitHub sync 요약 조사 단위 sources/zhuyansen agent skills hub 로컬 클론을 실제 파일 트",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.157Z",
+      "updatedAt": "2026-06-18T15:31:43.455Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -427,11 +427,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/aliyun__alibabacloud-dataworks-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/2/aliyun__alibabacloud-dataworks-mcp-server.md",
-      "title": "aliyun/alibabacloud-dataworks-mcp-server Source Deep Dive",
-      "summary": "aliyun/alibabacloud dataworks mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z A Model Context Protocol MCP server that provides tools for AI, allowing it to interact with the DataWorks Open API through a standardized interface. This implementati",
+      "title": "aliyun/alibabacloud-dataworks-mcp-server 소스 딥다이브",
+      "summary": "aliyun/alibabacloud dataworks mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A Model Context Protocol MCP server that provides tools for AI, allowing it to interact with the DataWorks Open API through a standardized interface. This implementation is based o",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.492Z",
+      "updatedAt": "2026-06-18T15:31:43.805Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -443,11 +443,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md",
       "path": "reports/source-deep-dives/repositories/2/bripin123__rag-memory-epf-mcp.md",
-      "title": "bripin123/rag-memory-epf-mcp Source Deep Dive",
-      "summary": "bripin123/rag memory epf mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Project local RAG memory MCP server — knowledge graph + multilingual vector + FTS5 in a single SQLite file. Per project isolation, 30 MCP tools, codepoint safe chunking Korean/CJK",
+      "title": "bripin123/rag-memory-epf-mcp 소스 딥다이브",
+      "summary": "bripin123/rag memory epf mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Project local RAG memory MCP server — knowledge graph + multilingual vector + FTS5 in a single SQLite file. Per project isolation, 30 MCP tools, codepoint safe chunking Korean/CJK/emoji . 요약 조",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.489Z",
+      "updatedAt": "2026-06-18T15:31:43.801Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -460,11 +460,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/ceaksan__mcp-code-search.md",
       "path": "reports/source-deep-dives/repositories/2/ceaksan__mcp-code-search.md",
-      "title": "ceaksan/mcp-code-search Source Deep Dive",
-      "summary": "ceaksan/mcp code search Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 23 files, 3 directories. 요약 조사 단위 sources/ceaksan mcp code search 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 23 files, 3 directories, depth score 7",
+      "title": "ceaksan/mcp-code-search 소스 딥다이브",
+      "summary": "ceaksan/mcp code search 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 23 files, 3 directories. 요약 조사 단위 sources/ceaksan mcp code search 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 23 files, 3 directories, depth score 64, key references ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.495Z",
+      "updatedAt": "2026-06-18T15:31:43.811Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -476,11 +476,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/dream8837z__hwp-hwpx-proposal-mcp.md",
       "path": "reports/source-deep-dives/repositories/2/dream8837z__hwp-hwpx-proposal-mcp.md",
-      "title": "dream8837z/hwp-hwpx-proposal-mcp Source Deep Dive",
-      "summary": "dream8837z/hwp hwpx proposal mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z An AI agent specialized in drafting Korean proposals .hwp / .hwpx — reads, writes, and edits Hancom Office files while strictly adhering to predefined formatting rules charact",
+      "title": "dream8837z/hwp-hwpx-proposal-mcp 소스 딥다이브",
+      "summary": "dream8837z/hwp hwpx proposal mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z An AI agent specialized in drafting Korean proposals .hwp / .hwpx — reads, writes, and edits Hancom Office files while strictly adhering to predefined formatting rules character width, let",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.507Z",
+      "updatedAt": "2026-06-18T15:31:43.818Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -492,11 +492,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/Goldentrii__AgentRecall-MCP.md",
       "path": "reports/source-deep-dives/repositories/2/Goldentrii__AgentRecall-MCP.md",
-      "title": "Goldentrii/AgentRecall-MCP Source Deep Dive",
-      "summary": "Goldentrii/AgentRecall MCP Source Deep Dive Generated 2026 06 18T15 12 44.535Z Persistent, correction driven memory for AI agents. Cross session, cross platform Claude Code, Codex, Gemini — any MCP client . Learns from mistakes, compresses context to save toke",
+      "title": "Goldentrii/AgentRecall-MCP 소스 딥다이브",
+      "summary": "Goldentrii/AgentRecall MCP 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Persistent, correction driven memory for AI agents. Cross session, cross platform Claude Code, Codex, Gemini — any MCP client . Learns from mistakes, compresses context to save tokens, consolida",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.410Z",
+      "updatedAt": "2026-06-18T15:31:43.714Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -508,11 +508,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/hmmhmmhm__daiso-mcp.md",
       "path": "reports/source-deep-dives/repositories/2/hmmhmmhm__daiso-mcp.md",
-      "title": "hmmhmmhm/daiso-mcp Source Deep Dive",
-      "summary": "hmmhmmhm/daiso mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 한국 로컬 리테일과 영화관 조회를 MCP, CLI, Codex Skill로 연결합니다. 요약 조사 단위 sources/hmmhmmhm daiso mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 576 files, 87 directories, depth score 113, key referen",
+      "title": "hmmhmmhm/daiso-mcp 소스 딥다이브",
+      "summary": "hmmhmmhm/daiso mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 한국 로컬 리테일과 영화관 조회를 MCP, CLI, Codex Skill로 연결합니다. 요약 조사 단위 sources/hmmhmmhm daiso mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 576 files, 87 directories, depth score 107, key references 12개입니다. 탐색 방식 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.452Z",
+      "updatedAt": "2026-06-18T15:31:43.764Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -524,11 +524,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/jgravelle__jcodemunch-mcp.md",
       "path": "reports/source-deep-dives/repositories/2/jgravelle__jcodemunch-mcp.md",
-      "title": "jgravelle/jcodemunch-mcp Source Deep Dive",
-      "summary": "jgravelle/jcodemunch mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z The leading, most token efficient MCP server for GitHub source code exploration via tree sitter AST parsing 요약 조사 단위 sources/jgravelle jcodemunch mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep",
+      "title": "jgravelle/jcodemunch-mcp 소스 딥다이브",
+      "summary": "jgravelle/jcodemunch mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The leading, most token efficient MCP server for GitHub source code exploration via tree sitter AST parsing 요약 조사 단위 sources/jgravelle jcodemunch mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 59",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.339Z",
+      "updatedAt": "2026-06-18T15:31:43.649Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -540,11 +540,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/latemonk__agent-store-skills.md",
       "path": "reports/source-deep-dives/repositories/2/latemonk__agent-store-skills.md",
-      "title": "latemonk/agent-store-skills Source Deep Dive",
-      "summary": "latemonk/agent store skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z Claude Skills for the Agent Store MCP connector Korean public & financial data 요약 조사 단위 sources/latemonk agent store skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 8 files",
+      "title": "latemonk/agent-store-skills 소스 딥다이브",
+      "summary": "latemonk/agent store skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Claude Skills for the Agent Store MCP connector Korean public & financial data 요약 조사 단위 sources/latemonk agent store skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 8 files, 7 directories, d",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.506Z",
+      "updatedAt": "2026-06-18T15:31:43.817Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -556,11 +556,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/loved0543-dotcom__kdata-gate-mcp.md",
       "path": "reports/source-deep-dives/repositories/2/loved0543-dotcom__kdata-gate-mcp.md",
-      "title": "loved0543-dotcom/kdata-gate-mcp Source Deep Dive",
-      "summary": "loved0543 dotcom/kdata gate mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server Korean market data K beauty/K food products, Naver trends, stocks, DART, real estate in English JSON for AI agents 요약 조사 단위 sources/loved0543 dotcom kdata gate mcp 로",
+      "title": "loved0543-dotcom/kdata-gate-mcp 소스 딥다이브",
+      "summary": "loved0543 dotcom/kdata gate mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server Korean market data K beauty/K food products, Naver trends, stocks, DART, real estate in English JSON for AI agents 요약 조사 단위 sources/loved0543 dotcom kdata gate mcp 로컬 클론을 실제 파일 트",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.505Z",
+      "updatedAt": "2026-06-18T15:31:43.815Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -572,11 +572,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/robotmcp__ros-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/2/robotmcp__ros-mcp-server.md",
-      "title": "robotmcp/ros-mcp-server Source Deep Dive",
-      "summary": "robotmcp/ros mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Connect AI models like Claude & GPT with robots using MCP and ROS. 요약 조사 단위 sources/robotmcp ros mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 208 files, 54 directories, ",
+      "title": "robotmcp/ros-mcp-server 소스 딥다이브",
+      "summary": "robotmcp/ros mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Connect AI models like Claude & GPT with robots using MCP and ROS. 요약 조사 단위 sources/robotmcp ros mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 208 files, 54 directories, depth score 101, k",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.472Z",
+      "updatedAt": "2026-06-18T15:31:43.785Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -588,11 +588,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/sodam-ai__Langent-MCP_One-Click_Kit.md",
       "path": "reports/source-deep-dives/repositories/2/sodam-ai__Langent-MCP_One-Click_Kit.md",
-      "title": "sodam-ai/Langent-MCP_One-Click_Kit Source Deep Dive",
-      "summary": "sodam ai/Langent MCP One Click Kit Source Deep Dive Generated 2026 06 18T15 12 44.535Z 내 문서 PDF·TXT·MD 등 를 AI가 읽고 검색하게 만들고 3D 지식 성운으로 시각화하는 Windows 원클릭 키트. MCP로 Claude·Cursor 등 AI 도구에 연결. 한/영 왕초보 가이드 포함. 요약 조사 단위 sources/sodam ai Langent MCP One Click Kit 로컬 클",
+      "title": "sodam-ai/Langent-MCP_One-Click_Kit 소스 딥다이브",
+      "summary": "sodam ai/Langent MCP One Click Kit 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 내 문서 PDF·TXT·MD 등 를 AI가 읽고 검색하게 만들고 3D 지식 성운으로 시각화하는 Windows 원클릭 키트. MCP로 Claude·Cursor 등 AI 도구에 연결. 한/영 왕초보 가이드 포함. 요약 조사 단위 sources/sodam ai Langent MCP One Click Kit 로컬 클론을 실제 파일 트리 기",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.507Z",
+      "updatedAt": "2026-06-18T15:31:43.818Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -604,11 +604,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/tjwodud04__mcp-tour.md",
       "path": "reports/source-deep-dives/repositories/2/tjwodud04__mcp-tour.md",
-      "title": "tjwodud04/mcp-tour Source Deep Dive",
-      "summary": "tjwodud04/mcp tour Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP integration for Korea Tourism Organization's API using Claude Desktop App with help from Cursor 요약 조사 단위 sources/tjwodud04 mcp tour 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 12 f",
+      "title": "tjwodud04/mcp-tour 소스 딥다이브",
+      "summary": "tjwodud04/mcp tour 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP integration for Korea Tourism Organization's API using Claude Desktop App with help from Cursor 요약 조사 단위 sources/tjwodud04 mcp tour 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 12 files, 2 directorie",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.501Z",
+      "updatedAt": "2026-06-18T15:31:43.812Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -620,11 +620,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/UI5__mcp-server.md",
       "path": "reports/source-deep-dives/repositories/2/UI5__mcp-server.md",
-      "title": "UI5/mcp-server Source Deep Dive",
-      "summary": "UI5/mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z The UI5 MCP server improves the developer experience when working with agentic AI and the UI5 framework. 요약 조사 단위 sources/UI5 mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 402 fil",
+      "title": "UI5/mcp-server 소스 딥다이브",
+      "summary": "UI5/mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The UI5 MCP server improves the developer experience when working with agentic AI and the UI5 framework. 요약 조사 단위 sources/UI5 mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 402 files, 171 directorie",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.443Z",
+      "updatedAt": "2026-06-18T15:31:43.756Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -636,11 +636,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/BuilderIO__skills.md",
       "path": "reports/source-deep-dives/repositories/3/BuilderIO__skills.md",
-      "title": "BuilderIO/skills Source Deep Dive",
-      "summary": "BuilderIO/skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z Skills for coding agents 요약 조사 단위 sources/BuilderIO skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 44 files, 28 directories, depth score 64, key references 8개입니다. 탐색 방식 Reading Plan을",
+      "title": "BuilderIO/skills 소스 딥다이브",
+      "summary": "BuilderIO/skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Skills for coding agents 요약 조사 단위 sources/BuilderIO skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 44 files, 28 directories, depth score 58, key references 8개입니다. 탐색 방식 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.794Z",
+      "updatedAt": "2026-06-18T15:31:44.113Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -652,11 +652,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/cisco-ai-defense__mcp-scanner.md",
       "path": "reports/source-deep-dives/repositories/3/cisco-ai-defense__mcp-scanner.md",
-      "title": "cisco-ai-defense/mcp-scanner Source Deep Dive",
-      "summary": "cisco ai defense/mcp scanner Source Deep Dive Generated 2026 06 18T15 12 44.535Z Scan MCP servers for potential threats & security findings. 요약 조사 단위 sources/cisco ai defense mcp scanner 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 408 files, 67 directorie",
+      "title": "cisco-ai-defense/mcp-scanner 소스 딥다이브",
+      "summary": "cisco ai defense/mcp scanner 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Scan MCP servers for potential threats & security findings. 요약 조사 단위 sources/cisco ai defense mcp scanner 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 408 files, 67 directories, depth score 111",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.731Z",
+      "updatedAt": "2026-06-18T15:31:44.047Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -668,11 +668,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/containers__kubernetes-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/3/containers__kubernetes-mcp-server.md",
-      "title": "containers/kubernetes-mcp-server Source Deep Dive",
-      "summary": "containers/kubernetes mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Model Context Protocol MCP server for Kubernetes and OpenShift 요약 조사 단위 sources/containers kubernetes mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 616 files, 19",
+      "title": "containers/kubernetes-mcp-server 소스 딥다이브",
+      "summary": "containers/kubernetes mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Model Context Protocol MCP server for Kubernetes and OpenShift 요약 조사 단위 sources/containers kubernetes mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 616 files, 198 directories, dep",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.690Z",
+      "updatedAt": "2026-06-18T15:31:44.008Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -684,11 +684,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/Dicklesworthstone__mcp_agent_mail_rust.md",
       "path": "reports/source-deep-dives/repositories/3/Dicklesworthstone__mcp_agent_mail_rust.md",
-      "title": "Dicklesworthstone/mcp_agent_mail_rust Source Deep Dive",
-      "summary": "Dicklesworthstone/mcp agent mail rust Source Deep Dive Generated 2026 06 18T15 12 44.535Z Rust MCP server for multi agent coordination 34 tools, Git backed archive, SQLite indexing, advisory file locks, and an interactive TUI console 요약 조사 단위 sources/Dickleswo",
+      "title": "Dicklesworthstone/mcp_agent_mail_rust 소스 딥다이브",
+      "summary": "Dicklesworthstone/mcp agent mail rust 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Rust MCP server for multi agent coordination 34 tools, Git backed archive, SQLite indexing, advisory file locks, and an interactive TUI console 요약 조사 단위 sources/Dicklesworthstone mcp ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.620Z",
+      "updatedAt": "2026-06-18T15:31:43.938Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -700,11 +700,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/getsentry__XcodeBuildMCP.md",
       "path": "reports/source-deep-dives/repositories/3/getsentry__XcodeBuildMCP.md",
-      "title": "getsentry/XcodeBuildMCP Source Deep Dive",
-      "summary": "getsentry/XcodeBuildMCP Source Deep Dive Generated 2026 06 18T15 12 44.535Z A Model Context Protocol MCP server and CLI that provides tools for agent use when working on iOS and macOS projects. 요약 조사 단위 sources/getsentry XcodeBuildMCP 로컬 클론을 실제 파일 트리 기준으로 분석한 ",
+      "title": "getsentry/XcodeBuildMCP 소스 딥다이브",
+      "summary": "getsentry/XcodeBuildMCP 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A Model Context Protocol MCP server and CLI that provides tools for agent use when working on iOS and macOS projects. 요약 조사 단위 sources/getsentry XcodeBuildMCP 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.718Z",
+      "updatedAt": "2026-06-18T15:31:44.032Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -716,11 +716,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/googleapis__mcp-toolbox.md",
       "path": "reports/source-deep-dives/repositories/3/googleapis__mcp-toolbox.md",
-      "title": "googleapis/mcp-toolbox Source Deep Dive",
-      "summary": "googleapis/mcp toolbox Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP Toolbox for Databases is an open source MCP server for databases. 요약 조사 단위 sources/googleapis mcp toolbox 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,741 files, 703 directori",
+      "title": "googleapis/mcp-toolbox 소스 딥다이브",
+      "summary": "googleapis/mcp toolbox 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP Toolbox for Databases is an open source MCP server for databases. 요약 조사 단위 sources/googleapis mcp toolbox 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,741 files, 703 directories, depth score 12",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.568Z",
+      "updatedAt": "2026-06-18T15:31:43.870Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -732,11 +732,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/gracebereblue-cpu__-mcp.md",
       "path": "reports/source-deep-dives/repositories/3/gracebereblue-cpu__-mcp.md",
-      "title": "gracebereblue-cpu/-mcp Source Deep Dive",
-      "summary": "gracebereblue cpu/ mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 공무원이 만든 법제처 MCP https //github.com/chrisryugj/korean law mcp 요약 조사 단위 sources/gracebereblue cpu mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 0 files, 0 directories, depth score ",
+      "title": "gracebereblue-cpu/-mcp 소스 딥다이브",
+      "summary": "gracebereblue cpu/ mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 공무원이 만든 법제처 MCP https //github.com/chrisryugj/korean law mcp 요약 조사 단위 sources/gracebereblue cpu mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 0 files, 0 directories, depth score 3, key references ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.801Z",
+      "updatedAt": "2026-06-18T15:31:44.119Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -748,11 +748,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/kokogo100__ragalgo-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/3/kokogo100__ragalgo-mcp-server.md",
-      "title": "kokogo100/ragalgo-mcp-server Source Deep Dive",
-      "summary": "kokogo100/ragalgo mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Dynamic RAG Engine for AI Reliability. We provide mathematically scored context & sanitized data to prevent hallucinations in both static & volatile domains starting with Korean F",
+      "title": "kokogo100/ragalgo-mcp-server 소스 딥다이브",
+      "summary": "kokogo100/ragalgo mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Dynamic RAG Engine for AI Reliability. We provide mathematically scored context & sanitized data to prevent hallucinations in both static & volatile domains starting with Korean Finance . 요약 조",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.769Z",
+      "updatedAt": "2026-06-18T15:31:44.089Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -765,11 +765,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/ruvnet__agent-harness-generator.md",
       "path": "reports/source-deep-dives/repositories/3/ruvnet__agent-harness-generator.md",
-      "title": "ruvnet/agent-harness-generator Source Deep Dive",
-      "summary": "ruvnet/agent harness generator Source Deep Dive Generated 2026 06 18T15 12 44.535Z 🛠️ The meta harness for AI agents — scaffold your own focused, branded agent harness with its own npx CLI, MCP server, memory, learning loop, and witness signed releases. Works",
+      "title": "ruvnet/agent-harness-generator 소스 딥다이브",
+      "summary": "ruvnet/agent harness generator 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 🛠️ The meta harness for AI agents — scaffold your own focused, branded agent harness with its own npx CLI, MCP server, memory, learning loop, and witness signed releases. Works with Claude ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.664Z",
+      "updatedAt": "2026-06-18T15:31:43.985Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -781,11 +781,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/3/Softeria__ms-365-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/3/Softeria__ms-365-mcp-server.md",
-      "title": "Softeria/ms-365-mcp-server Source Deep Dive",
-      "summary": "Softeria/ms 365 mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z A Model Context Protocol MCP server for interacting with Microsoft 365 and Office services through the Graph API 요약 조사 단위 sources/Softeria ms 365 mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한",
+      "title": "Softeria/ms-365-mcp-server 소스 딥다이브",
+      "summary": "Softeria/ms 365 mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A Model Context Protocol MCP server for interacting with Microsoft 365 and Office services through the Graph API 요약 조사 단위 sources/Softeria ms 365 mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.757Z",
+      "updatedAt": "2026-06-18T15:31:44.078Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -797,11 +797,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/dangamsoft__cafe-mcp.md",
       "path": "reports/source-deep-dives/repositories/4/dangamsoft__cafe-mcp.md",
-      "title": "dangamsoft/cafe-mcp Source Deep Dive",
-      "summary": "dangamsoft/cafe mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Korean Saju Four Pillars MCP server for Claude, ChatGPT, and AI agents 요약 조사 단위 sources/dangamsoft cafe mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 18 files, 4 directories, depth ",
+      "title": "dangamsoft/cafe-mcp 소스 딥다이브",
+      "summary": "dangamsoft/cafe mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Korean Saju Four Pillars MCP server for Claude, ChatGPT, and AI agents 요약 조사 단위 sources/dangamsoft cafe mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 18 files, 4 directories, depth score 57, key refe",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.060Z",
+      "updatedAt": "2026-06-18T15:31:44.398Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -813,11 +813,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/dbt-labs__dbt-mcp.md",
       "path": "reports/source-deep-dives/repositories/4/dbt-labs__dbt-mcp.md",
-      "title": "dbt-labs/dbt-mcp Source Deep Dive",
-      "summary": "dbt labs/dbt mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z A MCP Model Context Protocol server for interacting with dbt. 요약 조사 단위 sources/dbt labs dbt mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 507 files, 105 directories, depth score 129, k",
+      "title": "dbt-labs/dbt-mcp 소스 딥다이브",
+      "summary": "dbt labs/dbt mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A MCP Model Context Protocol server for interacting with dbt. 요약 조사 단위 sources/dbt labs dbt mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 507 files, 105 directories, depth score 123, key references 12개입",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.945Z",
+      "updatedAt": "2026-06-18T15:31:44.272Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -829,11 +829,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/farmbit-mdk__korea-market-data-mcp.md",
       "path": "reports/source-deep-dives/repositories/4/farmbit-mdk__korea-market-data-mcp.md",
-      "title": "farmbit-mdk/korea-market-data-mcp Source Deep Dive",
-      "summary": "farmbit mdk/korea market data mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Open source MCP server for reliable Korean stock, ETF, index, and market data access from AI agents, starting with Kiwoom Securities REST API. 요약 조사 단위 sources/farmbit mdk ko",
+      "title": "farmbit-mdk/korea-market-data-mcp 소스 딥다이브",
+      "summary": "farmbit mdk/korea market data mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Open source MCP server for reliable Korean stock, ETF, index, and market data access from AI agents, starting with Kiwoom Securities REST API. 요약 조사 단위 sources/farmbit mdk korea market da",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.006Z",
+      "updatedAt": "2026-06-18T15:31:44.344Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -845,11 +845,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/intuit__quickbooks-online-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/4/intuit__quickbooks-online-mcp-server.md",
-      "title": "intuit/quickbooks-online-mcp-server Source Deep Dive",
-      "summary": "intuit/quickbooks online mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, e",
+      "title": "intuit/quickbooks-online-mcp-server 소스 딥다이브",
+      "summary": "intuit/quickbooks online mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling devel",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.000Z",
+      "updatedAt": "2026-06-18T15:31:44.340Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -861,11 +861,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/jung-jin-lee__paldo-mcp.md",
       "path": "reports/source-deep-dives/repositories/4/jung-jin-lee__paldo-mcp.md",
-      "title": "jung-jin-lee/paldo-mcp Source Deep Dive",
-      "summary": "jung jin lee/paldo mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server exposing NVIDIA Nemotron Personas Korea 7M Korean synthetic personas to Claude Code 요약 조사 단위 sources/jung jin lee paldo mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 3",
+      "title": "jung-jin-lee/paldo-mcp 소스 딥다이브",
+      "summary": "jung jin lee/paldo mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server exposing NVIDIA Nemotron Personas Korea 7M Korean synthetic personas to Claude Code 요약 조사 단위 sources/jung jin lee paldo mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 38 files, 9 directo",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.057Z",
+      "updatedAt": "2026-06-18T15:31:44.394Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -877,11 +877,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/LimEulYoung__legal_mcp.md",
       "path": "reports/source-deep-dives/repositories/4/LimEulYoung__legal_mcp.md",
-      "title": "LimEulYoung/legal_mcp Source Deep Dive",
-      "summary": "LimEulYoung/legal mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Legal MCP Server for Korean law search 요약 조사 단위 sources/LimEulYoung legal mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 112 files, 12 directories, depth score 97, key references 1",
+      "title": "LimEulYoung/legal_mcp 소스 딥다이브",
+      "summary": "LimEulYoung/legal mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Legal MCP Server for Korean law search 요약 조사 단위 sources/LimEulYoung legal mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 112 files, 12 directories, depth score 91, key references 12개입니다. 탐색 방식 읽기 계획",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.036Z",
+      "updatedAt": "2026-06-18T15:31:44.372Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -893,11 +893,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/vuetifyjs__mcp.md",
       "path": "reports/source-deep-dives/repositories/4/vuetifyjs__mcp.md",
-      "title": "vuetifyjs/mcp Source Deep Dive",
-      "summary": "vuetifyjs/mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 🤖 A Model Context Protocol MCP library for use with Agentic chat bots 요약 조사 단위 sources/vuetifyjs mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 37 files, 12 directories, depth score 89, k",
+      "title": "vuetifyjs/mcp 소스 딥다이브",
+      "summary": "vuetifyjs/mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 🤖 A Model Context Protocol MCP library for use with Agentic chat bots 요약 조사 단위 sources/vuetifyjs mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 37 files, 12 directories, depth score 83, key references 12개입",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.042Z",
+      "updatedAt": "2026-06-18T15:31:44.380Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -909,11 +909,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/workbookbulb863__korean-law-alio-mcp.md",
       "path": "reports/source-deep-dives/repositories/4/workbookbulb863__korean-law-alio-mcp.md",
-      "title": "workbookbulb863/korean-law-alio-mcp Source Deep Dive",
-      "summary": "workbookbulb863/korean law alio mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Search and analyze Korean laws, administrative rules, and public institution regulations using 110 MCP tools to provide accurate legal data for AI models. 요약 조사 단위 sources/",
+      "title": "workbookbulb863/korean-law-alio-mcp 소스 딥다이브",
+      "summary": "workbookbulb863/korean law alio mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Search and analyze Korean laws, administrative rules, and public institution regulations using 110 MCP tools to provide accurate legal data for AI models. 요약 조사 단위 sources/workbookbulb8",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.989Z",
+      "updatedAt": "2026-06-18T15:31:44.327Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -925,11 +925,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/yotsuda__PowerShell.MCP.md",
       "path": "reports/source-deep-dives/repositories/4/yotsuda__PowerShell.MCP.md",
-      "title": "yotsuda/PowerShell.MCP Source Deep Dive",
-      "summary": "yotsuda/PowerShell.MCP Source Deep Dive Generated 2026 06 18T15 12 44.535Z The universal MCP server for Claude Code and other MCP compatible clients. One installation gives AI access to 10,000+ PowerShell modules and any CLI tool. You and AI collaborate in the",
+      "title": "yotsuda/PowerShell.MCP 소스 딥다이브",
+      "summary": "yotsuda/PowerShell.MCP 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The universal MCP server for Claude Code and other MCP compatible clients. One installation gives AI access to 10,000+ PowerShell modules and any CLI tool. You and AI collaborate in the same console",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.051Z",
+      "updatedAt": "2026-06-18T15:31:44.388Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -941,11 +941,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/bitbonsai__mcpvault.md",
       "path": "reports/source-deep-dives/repositories/5/bitbonsai__mcpvault.md",
-      "title": "bitbonsai/mcpvault Source Deep Dive",
-      "summary": "bitbonsai/mcpvault Source Deep Dive Generated 2026 06 18T15 12 44.535Z A lightweight Model Context Protocol MCP server for safe Obsidian vault access 요약 조사 단위 sources/bitbonsai mcpvault 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 107 files, 19 directories",
+      "title": "bitbonsai/mcpvault 소스 딥다이브",
+      "summary": "bitbonsai/mcpvault 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A lightweight Model Context Protocol MCP server for safe Obsidian vault access 요약 조사 단위 sources/bitbonsai mcpvault 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 107 files, 19 directories, depth score 102,",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.236Z",
+      "updatedAt": "2026-06-18T15:31:44.565Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -957,11 +957,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/brycewang-stanford__Awesome-Journal-Skills.md",
       "path": "reports/source-deep-dives/repositories/5/brycewang-stanford__Awesome-Journal-Skills.md",
-      "title": "brycewang-stanford/Awesome-Journal-Skills Source Deep Dive",
-      "summary": "brycewang stanford/Awesome Journal Skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z Journal specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜",
+      "title": "brycewang-stanford/Awesome-Journal-Skills 소스 딥다이브",
+      "summary": "brycewang stanford/Awesome Journal Skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Journal specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Clau",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.248Z",
+      "updatedAt": "2026-06-18T15:31:44.575Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -973,11 +973,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/chrisryugj__korean-law-mcp.md",
       "path": "reports/source-deep-dives/repositories/5/chrisryugj__korean-law-mcp.md",
-      "title": "chrisryugj/korean-law-mcp Source Deep Dive",
-      "summary": "chrisryugj/korean law mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 국가법령정보MCP v4.4 법제처 42개 API → 9개 MCP 도구. 법령·판례·조례·조약 + 다단계 리서치 legal research + 정밀분석 legal analysis 인용검증·판례생사·행위시법·영향그래프 42 Korean legal APIs → 9 MCP tools 요약 조사 단위 sources/chrisryugj",
+      "title": "chrisryugj/korean-law-mcp 소스 딥다이브",
+      "summary": "chrisryugj/korean law mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 국가법령정보MCP v4.4 법제처 42개 API → 9개 MCP 도구. 법령·판례·조례·조약 + 다단계 리서치 legal research + 정밀분석 legal analysis 인용검증·판례생사·행위시법·영향그래프 42 Korean legal APIs → 9 MCP tools 요약 조사 단위 sources/chrisryugj korean law m",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.188Z",
+      "updatedAt": "2026-06-18T15:31:44.512Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -989,11 +989,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/freee__freee-mcp.md",
       "path": "reports/source-deep-dives/repositories/5/freee__freee-mcp.md",
-      "title": "freee/freee-mcp Source Deep Dive",
-      "summary": "freee/freee mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Model Context Protocol MCP server for freee API integration 요약 조사 단위 sources/freee freee mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 310 files, 40 directories, depth score 120, key re",
+      "title": "freee/freee-mcp 소스 딥다이브",
+      "summary": "freee/freee mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Model Context Protocol MCP server for freee API integration 요약 조사 단위 sources/freee freee mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 310 files, 40 directories, depth score 114, key references 12개입니다. 탐",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.203Z",
+      "updatedAt": "2026-06-18T15:31:44.530Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1005,11 +1005,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/mark3labs__mcp-go.md",
       "path": "reports/source-deep-dives/repositories/5/mark3labs__mcp-go.md",
-      "title": "mark3labs/mcp-go Source Deep Dive",
-      "summary": "mark3labs/mcp go Source Deep Dive Generated 2026 06 18T15 12 44.535Z A Go implementation of the Model Context Protocol MCP , enabling seamless integration between LLM applications and external data sources and tools. 요약 조사 단위 sources/mark3labs mcp go 로컬 클론을 실제",
+      "title": "mark3labs/mcp-go 소스 딥다이브",
+      "summary": "mark3labs/mcp go 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A Go implementation of the Model Context Protocol MCP , enabling seamless integration between LLM applications and external data sources and tools. 요약 조사 단위 sources/mark3labs mcp go 로컬 클론을 실제 파일 트리 기준으로 분",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.230Z",
+      "updatedAt": "2026-06-18T15:31:44.559Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1021,11 +1021,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/ProfessionalWiki__MediaWiki-MCP-Server.md",
       "path": "reports/source-deep-dives/repositories/5/ProfessionalWiki__MediaWiki-MCP-Server.md",
-      "title": "ProfessionalWiki/MediaWiki-MCP-Server Source Deep Dive",
-      "summary": "ProfessionalWiki/MediaWiki MCP Server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Model Context Protocol MCP Server to connect your AI with any MediaWiki 요약 조사 단위 sources/ProfessionalWiki MediaWiki MCP Server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. ",
+      "title": "ProfessionalWiki/MediaWiki-MCP-Server 소스 딥다이브",
+      "summary": "ProfessionalWiki/MediaWiki MCP Server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Model Context Protocol MCP Server to connect your AI with any MediaWiki 요약 조사 단위 sources/ProfessionalWiki MediaWiki MCP Server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 306 files, 4",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.207Z",
+      "updatedAt": "2026-06-18T15:31:44.533Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1038,11 +1038,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/seung23__lawtutor-mcp.md",
       "path": "reports/source-deep-dives/repositories/5/seung23__lawtutor-mcp.md",
-      "title": "seung23/lawtutor-mcp Source Deep Dive",
-      "summary": "seung23/lawtutor mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Korean Administrative Law & Constitutional Law RAG MCP Server for 7급 공무원시험 요약 조사 단위 sources/seung23 lawtutor mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 97 files, 26 directories,",
+      "title": "seung23/lawtutor-mcp 소스 딥다이브",
+      "summary": "seung23/lawtutor mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Korean Administrative Law & Constitutional Law RAG MCP Server for 7급 공무원시험 요약 조사 단위 sources/seung23 lawtutor mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 97 files, 26 directories, depth score 109, ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.220Z",
+      "updatedAt": "2026-06-18T15:31:44.549Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1054,11 +1054,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/Shelpuk-AI-Technology-Consulting__kindly-web-search-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/5/Shelpuk-AI-Technology-Consulting__kindly-web-search-mcp-server.md",
-      "title": "Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server Source Deep Dive",
-      "summary": "Shelpuk AI Technology Consulting/kindly web search mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Kindly Web Search MCP Server Web search + robust content retrieval for AI coding tools Claude Code, Codex, Cursor, GitHub Copilot, Gemini, etc. an",
+      "title": "Shelpuk-AI-Technology-Consulting/kindly-web-search-mcp-server 소스 딥다이브",
+      "summary": "Shelpuk AI Technology Consulting/kindly web search mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Kindly Web Search MCP Server Web search + robust content retrieval for AI coding tools Claude Code, Codex, Cursor, GitHub Copilot, Gemini, etc. and AI agents C",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.254Z",
+      "updatedAt": "2026-06-18T15:31:44.581Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1070,11 +1070,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/shinpr__mcp-local-rag.md",
       "path": "reports/source-deep-dives/repositories/5/shinpr__mcp-local-rag.md",
-      "title": "shinpr/mcp-local-rag Source Deep Dive",
-      "summary": "shinpr/mcp local rag Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local first RAG server for developers. Semantic + keyword search for code and technical docs. Works with MCP or CLI. Fully private, zero setup. 요약 조사 단위 sources/shinpr mcp local rag 로컬 클론",
+      "title": "shinpr/mcp-local-rag 소스 딥다이브",
+      "summary": "shinpr/mcp local rag 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local first RAG server for developers. Semantic + keyword search for code and technical docs. Works with MCP or CLI. Fully private, zero setup. 요약 조사 단위 sources/shinpr mcp local rag 로컬 클론을 실제 파일 트리 기준",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.239Z",
+      "updatedAt": "2026-06-18T15:31:44.567Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1087,11 +1087,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/5/SonAIengine__ku-portal-mcp.md",
       "path": "reports/source-deep-dives/repositories/5/SonAIengine__ku-portal-mcp.md",
-      "title": "SonAIengine/ku-portal-mcp Source Deep Dive",
-      "summary": "SonAIengine/ku portal mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server for Korea University KUPID portal & Canvas LMS — notices, schedules, library seats, assignments, grades from Claude 요약 조사 단위 sources/SonAIengine ku portal mcp 로컬 클론을 실제 파일",
+      "title": "SonAIengine/ku-portal-mcp 소스 딥다이브",
+      "summary": "SonAIengine/ku portal mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server for Korea University KUPID portal & Canvas LMS — notices, schedules, library seats, assignments, grades from Claude 요약 조사 단위 sources/SonAIengine ku portal mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.260Z",
+      "updatedAt": "2026-06-18T15:31:44.587Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1103,11 +1103,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/ai-boost__awesome-harness-engineering.md",
       "path": "reports/source-deep-dives/repositories/6/ai-boost__awesome-harness-engineering.md",
-      "title": "ai-boost/awesome-harness-engineering Source Deep Dive",
-      "summary": "ai boost/awesome harness engineering Source Deep Dive Generated 2026 06 18T15 12 44.535Z Awesome list for AI agent harness engineering tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. 요약 조사 단위 sources/ai boost awesome harness",
+      "title": "ai-boost/awesome-harness-engineering 소스 딥다이브",
+      "summary": "ai boost/awesome harness engineering 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Awesome list for AI agent harness engineering tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. 요약 조사 단위 sources/ai boost awesome harness engineering ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.516Z",
+      "updatedAt": "2026-06-18T15:31:44.843Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1119,11 +1119,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/KM-it-ops__memory-mcp.md",
       "path": "reports/source-deep-dives/repositories/6/KM-it-ops__memory-mcp.md",
-      "title": "KM-it-ops/memory-mcp Source Deep Dive",
-      "summary": "KM it ops/memory mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Shared brain MCP server read/search/write one LLM Wiki memory across Claude Code, Cursor & Codex stdio + authenticated HTTP hub 요약 조사 단위 sources/KM it ops memory mcp 로컬 클론을 실제 파일 트리 기준으로 ",
+      "title": "KM-it-ops/memory-mcp 소스 딥다이브",
+      "summary": "KM it ops/memory mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Shared brain MCP server read/search/write one LLM Wiki memory across Claude Code, Cursor & Codex stdio + authenticated HTTP hub 요약 조사 단위 sources/KM it ops memory mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.499Z",
+      "updatedAt": "2026-06-18T15:31:44.828Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1135,11 +1135,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/Lumiaqian__openspec-mcp.md",
       "path": "reports/source-deep-dives/repositories/6/Lumiaqian__openspec-mcp.md",
-      "title": "Lumiaqian/openspec-mcp Source Deep Dive",
-      "summary": "Lumiaqian/openspec mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 74 files, 15 directories. 요약 조사 단위 sources/Lumiaqian openspec mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 74 files, 15 directories, depth score 1",
+      "title": "Lumiaqian/openspec-mcp 소스 딥다이브",
+      "summary": "Lumiaqian/openspec mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 74 files, 15 directories. 요약 조사 단위 sources/Lumiaqian openspec mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 74 files, 15 directories, depth score 93, key references ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.484Z",
+      "updatedAt": "2026-06-18T15:31:44.817Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1152,11 +1152,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/microsoft__skills.md",
       "path": "reports/source-deep-dives/repositories/6/microsoft__skills.md",
-      "title": "microsoft/skills Source Deep Dive",
-      "summary": "microsoft/skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z Skills, MCP servers, Custom Agents, Agents.md for SDKs to ground Coding Agents 요약 조사 단위 sources/microsoft skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,492 files, 670 directories,",
+      "title": "microsoft/skills 소스 딥다이브",
+      "summary": "microsoft/skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Skills, MCP servers, Custom Agents, Agents.md for SDKs to ground Coding Agents 요약 조사 단위 sources/microsoft skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,492 files, 670 directories, depth score 116, ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.443Z",
+      "updatedAt": "2026-06-18T15:31:44.771Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1168,11 +1168,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/Scottcjn__iota-agent-mcp.md",
       "path": "reports/source-deep-dives/repositories/6/Scottcjn__iota-agent-mcp.md",
-      "title": "Scottcjn/iota-agent-mcp Source Deep Dive",
-      "summary": "Scottcjn/iota agent mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server for IOTA blockchain — 20 tools for AI agent integration wallet, Move CLI, on chain queries via Model Context Protocol 요약 조사 단위 sources/Scottcjn iota agent mcp 로컬 클론을 실제 파일 트",
+      "title": "Scottcjn/iota-agent-mcp 소스 딥다이브",
+      "summary": "Scottcjn/iota agent mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server for IOTA blockchain — 20 tools for AI agent integration wallet, Move CLI, on chain queries via Model Context Protocol 요약 조사 단위 sources/Scottcjn iota agent mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.504Z",
+      "updatedAt": "2026-06-18T15:31:44.832Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1184,11 +1184,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/sirkirby__unifi-mcp.md",
       "path": "reports/source-deep-dives/repositories/6/sirkirby__unifi-mcp.md",
-      "title": "sirkirby/unifi-mcp Source Deep Dive",
-      "summary": "sirkirby/unifi mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP servers for the UniFi suite of applications, Network, Protect, Access, and Drive 요약 조사 단위 sources/sirkirby unifi mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,130 files, 208 di",
+      "title": "sirkirby/unifi-mcp 소스 딥다이브",
+      "summary": "sirkirby/unifi mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP servers for the UniFi suite of applications, Network, Protect, Access, and Drive 요약 조사 단위 sources/sirkirby unifi mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,130 files, 208 directories, depth s",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.401Z",
+      "updatedAt": "2026-06-18T15:31:44.698Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1200,11 +1200,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/ssuksak__cheongyak-rag-mcp.md",
       "path": "reports/source-deep-dives/repositories/6/ssuksak__cheongyak-rag-mcp.md",
-      "title": "ssuksak/cheongyak-rag-mcp Source Deep Dive",
-      "summary": "ssuksak/cheongyak rag mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Korean housing subscription 청약 RAG MCP server Real time data from 청약홈 + PDF/HWP document Q&A 요약 조사 단위 sources/ssuksak cheongyak rag mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 ",
+      "title": "ssuksak/cheongyak-rag-mcp 소스 딥다이브",
+      "summary": "ssuksak/cheongyak rag mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Korean housing subscription 청약 RAG MCP server Real time data from 청약홈 + PDF/HWP document Q&A 요약 조사 단위 sources/ssuksak cheongyak rag mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 19 files, 4 dir",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.501Z",
+      "updatedAt": "2026-06-18T15:31:44.830Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1217,11 +1217,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/TensorBlock__awesome-mcp-servers.md",
       "path": "reports/source-deep-dives/repositories/6/TensorBlock__awesome-mcp-servers.md",
-      "title": "TensorBlock/awesome-mcp-servers Source Deep Dive",
-      "summary": "TensorBlock/awesome mcp servers Source Deep Dive Generated 2026 06 18T15 12 44.535Z A comprehensive collection of Model Context Protocol MCP servers 요약 조사 단위 sources/TensorBlock awesome mcp servers 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 7,629 files, ",
+      "title": "TensorBlock/awesome-mcp-servers 소스 딥다이브",
+      "summary": "TensorBlock/awesome mcp servers 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A comprehensive collection of Model Context Protocol MCP servers 요약 조사 단위 sources/TensorBlock awesome mcp servers 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 7,629 files, 28 directories, de",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.455Z",
+      "updatedAt": "2026-06-18T15:31:44.782Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1233,11 +1233,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/awkoy__notion-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/7/awkoy__notion-mcp-server.md",
-      "title": "awkoy/notion-mcp-server Source Deep Dive",
-      "summary": "awkoy/notion mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Notion MCP server for Claude, Cursor, ChatGPT & Claude Desktop. Connect AI agents to Notion via Model Context Protocol — pages, databases, blocks, comments, files. 요약 조사 단위 sources/awk",
+      "title": "awkoy/notion-mcp-server 소스 딥다이브",
+      "summary": "awkoy/notion mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Notion MCP server for Claude, Cursor, ChatGPT & Claude Desktop. Connect AI agents to Notion via Model Context Protocol — pages, databases, blocks, comments, files. 요약 조사 단위 sources/awkoy notion mcp",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.779Z",
+      "updatedAt": "2026-06-18T15:31:45.079Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1249,11 +1249,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/chrisryugj__korean-dart-mcp.md",
       "path": "reports/source-deep-dives/repositories/7/chrisryugj__korean-dart-mcp.md",
-      "title": "chrisryugj/korean-dart-mcp Source Deep Dive",
-      "summary": "chrisryugj/korean dart mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z OpenDART 전자공시MCP 83개 API → 15 MCP 도구. 공시·재무·지분·XBRL + 버핏급 애널리스트 프레임 내부자 시그널·회계 리스크·퀄리티 체크리스트 + HWP/PDF 첨부 마크다운화 83 Korean DART disclosure APIs → 15 MCP tools with Buffett grade anal",
+      "title": "chrisryugj/korean-dart-mcp 소스 딥다이브",
+      "summary": "chrisryugj/korean dart mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z OpenDART 전자공시MCP 83개 API → 15 MCP 도구. 공시·재무·지분·XBRL + 버핏급 애널리스트 프레임 내부자 시그널·회계 리스크·퀄리티 체크리스트 + HWP/PDF 첨부 마크다운화 83 Korean DART disclosure APIs → 15 MCP tools with Buffett grade analyst frames 요약",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.803Z",
+      "updatedAt": "2026-06-18T15:31:45.106Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1265,11 +1265,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/getsentry__sentry-mcp.md",
       "path": "reports/source-deep-dives/repositories/7/getsentry__sentry-mcp.md",
-      "title": "getsentry/sentry-mcp Source Deep Dive",
-      "summary": "getsentry/sentry mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z An MCP server for interacting with Sentry via LLMs. 요약 조사 단위 sources/getsentry sentry mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 777 files, 135 directories, depth score 127, key",
+      "title": "getsentry/sentry-mcp 소스 딥다이브",
+      "summary": "getsentry/sentry mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z An MCP server for interacting with Sentry via LLMs. 요약 조사 단위 sources/getsentry sentry mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 777 files, 135 directories, depth score 121, key references 12개입니다",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.646Z",
+      "updatedAt": "2026-06-18T15:31:44.953Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1281,11 +1281,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/GLips__Figma-Context-MCP.md",
       "path": "reports/source-deep-dives/repositories/7/GLips__Figma-Context-MCP.md",
-      "title": "GLips/Figma-Context-MCP Source Deep Dive",
-      "summary": "GLips/Figma Context MCP Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server to provide Figma layout information to AI coding agents like Cursor 요약 조사 단위 sources/GLips Figma Context MCP 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 101 files, 21 d",
+      "title": "GLips/Figma-Context-MCP 소스 딥다이브",
+      "summary": "GLips/Figma Context MCP 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server to provide Figma layout information to AI coding agents like Cursor 요약 조사 단위 sources/GLips Figma Context MCP 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 101 files, 21 directories, depth ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.755Z",
+      "updatedAt": "2026-06-18T15:31:45.059Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1297,11 +1297,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/jacob-bd__notebooklm-mcp-cli.md",
       "path": "reports/source-deep-dives/repositories/7/jacob-bd__notebooklm-mcp-cli.md",
-      "title": "jacob-bd/notebooklm-mcp-cli Source Deep Dive",
-      "summary": "jacob bd/notebooklm mcp cli Source Deep Dive Generated 2026 06 18T15 12 44.535Z Programmatic access to Google NotebookLM — via command line interface CLI , Model Context Protocol MCP server, and AI agent skills. 요약 조사 단위 sources/jacob bd notebooklm mcp cli 로컬 ",
+      "title": "jacob-bd/notebooklm-mcp-cli 소스 딥다이브",
+      "summary": "jacob bd/notebooklm mcp cli 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Programmatic access to Google NotebookLM — via command line interface CLI , Model Context Protocol MCP server, and AI agent skills. 요약 조사 단위 sources/jacob bd notebooklm mcp cli 로컬 클론을 실제 파일 트리 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.788Z",
+      "updatedAt": "2026-06-18T15:31:45.090Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1313,11 +1313,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/scvcoder__korean-law-alio-mcp.md",
       "path": "reports/source-deep-dives/repositories/7/scvcoder__korean-law-alio-mcp.md",
-      "title": "scvcoder/korean-law-alio-mcp Source Deep Dive",
-      "summary": "scvcoder/korean law alio mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 개요 국가법령정보센터와 알리오의 공공기관 내부규정을 검색·비교·분석하는 MCP. 도구 법제처 87 + ALIO 공공기관 규정 23 = 110개 MCP 도구. 데이터 1,600 법률, 10,000 행정규칙, 수만건 판례, 344개 공공기관 35,000 내부규정. 요약 조사 단위 sources/scvcoder korean ",
+      "title": "scvcoder/korean-law-alio-mcp 소스 딥다이브",
+      "summary": "scvcoder/korean law alio mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 개요 국가법령정보센터와 알리오의 공공기관 내부규정을 검색·비교·분석하는 MCP. 도구 법제처 87 + ALIO 공공기관 규정 23 = 110개 MCP 도구. 데이터 1,600 법률, 10,000 행정규칙, 수만건 판례, 344개 공공기관 35,000 내부규정. 요약 조사 단위 sources/scvcoder korean law alio mcp ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.748Z",
+      "updatedAt": "2026-06-18T15:31:45.053Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1329,11 +1329,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/SocketDev__socket-mcp.md",
       "path": "reports/source-deep-dives/repositories/7/SocketDev__socket-mcp.md",
-      "title": "SocketDev/socket-mcp Source Deep Dive",
-      "summary": "SocketDev/socket mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Model Context Protocol server for socket.dev integration 요약 조사 단위 sources/SocketDev socket mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,820 files, 724 directories, depth score 1",
+      "title": "SocketDev/socket-mcp 소스 딥다이브",
+      "summary": "SocketDev/socket mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Model Context Protocol server for socket.dev integration 요약 조사 단위 sources/SocketDev socket mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,820 files, 724 directories, depth score 122, key references",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.631Z",
+      "updatedAt": "2026-06-18T15:31:44.944Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1345,11 +1345,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/8/cbcoutinho__nextcloud-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/8/cbcoutinho__nextcloud-mcp-server.md",
-      "title": "cbcoutinho/nextcloud-mcp-server Source Deep Dive",
-      "summary": "cbcoutinho/nextcloud mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Nextcloud MCP Server 요약 조사 단위 sources/cbcoutinho nextcloud mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 617 files, 83 directories, depth score 126, key reference",
+      "title": "cbcoutinho/nextcloud-mcp-server 소스 딥다이브",
+      "summary": "cbcoutinho/nextcloud mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Nextcloud MCP Server 요약 조사 단위 sources/cbcoutinho nextcloud mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 617 files, 83 directories, depth score 120, key references 12개입니다. 탐색 방식 읽기",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.931Z",
+      "updatedAt": "2026-06-18T15:31:45.234Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1361,11 +1361,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/8/jingcheng-chen__rhinomcp.md",
       "path": "reports/source-deep-dives/repositories/8/jingcheng-chen__rhinomcp.md",
-      "title": "jingcheng-chen/rhinomcp Source Deep Dive",
-      "summary": "jingcheng chen/rhinomcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z RhinoMCP connects Rhino 3D to AI Agent through the Model Context Protocol MCP 요약 조사 단위 sources/jingcheng chen rhinomcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 232 files, 23 di",
+      "title": "jingcheng-chen/rhinomcp 소스 딥다이브",
+      "summary": "jingcheng chen/rhinomcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z RhinoMCP connects Rhino 3D to AI Agent through the Model Context Protocol MCP 요약 조사 단위 sources/jingcheng chen rhinomcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 232 files, 23 directories, depth s",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.997Z",
+      "updatedAt": "2026-06-18T15:31:45.308Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1377,11 +1377,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/8/jonigl__mcp-client-for-ollama.md",
       "path": "reports/source-deep-dives/repositories/8/jonigl__mcp-client-for-ollama.md",
-      "title": "jonigl/mcp-client-for-ollama Source Deep Dive",
-      "summary": "jonigl/mcp client for ollama Source Deep Dive Generated 2026 06 18T15 12 44.535Z Harness the power of local LLMs with this TUI MCP Client for Ollama. Featuring all core MCP primitives tools, prompts, resources , agent mode, multi server, model switching, strea",
+      "title": "jonigl/mcp-client-for-ollama 소스 딥다이브",
+      "summary": "jonigl/mcp client for ollama 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Harness the power of local LLMs with this TUI MCP Client for Ollama. Featuring all core MCP primitives tools, prompts, resources , agent mode, multi server, model switching, streaming response",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.004Z",
+      "updatedAt": "2026-06-18T15:31:45.316Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1393,11 +1393,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/8/MCPJam__inspector.md",
       "path": "reports/source-deep-dives/repositories/8/MCPJam__inspector.md",
-      "title": "MCPJam/inspector Source Deep Dive",
-      "summary": "MCPJam/inspector Source Deep Dive Generated 2026 06 18T15 12 44.535Z Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps. 요약 조사 단위 sources/MCPJam inspector 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 2,723 f",
+      "title": "MCPJam/inspector 소스 딥다이브",
+      "summary": "MCPJam/inspector 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps. 요약 조사 단위 sources/MCPJam inspector 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 2,723 files, 366 director",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.856Z",
+      "updatedAt": "2026-06-18T15:31:45.149Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1410,11 +1410,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/8/spences10__mcpick.md",
       "path": "reports/source-deep-dives/repositories/8/spences10__mcpick.md",
-      "title": "spences10/mcpick Source Deep Dive",
-      "summary": "spences10/mcpick Source Deep Dive Generated 2026 06 18T15 12 44.535Z Claude Code extension manager — MCP servers, plugins skills, hooks, agents , and marketplaces 요약 조사 단위 sources/spences10 mcpick 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 81 files, 12 d",
+      "title": "spences10/mcpick 소스 딥다이브",
+      "summary": "spences10/mcpick 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Claude Code extension manager — MCP servers, plugins skills, hooks, agents , and marketplaces 요약 조사 단위 sources/spences10 mcpick 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 81 files, 12 directories, depth ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.990Z",
+      "updatedAt": "2026-06-18T15:31:45.301Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1426,11 +1426,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/Agent-Hellboy__mcp-server-fuzzer.md",
       "path": "reports/source-deep-dives/repositories/9/Agent-Hellboy__mcp-server-fuzzer.md",
-      "title": "Agent-Hellboy/mcp-server-fuzzer Source Deep Dive",
-      "summary": "Agent Hellboy/mcp server fuzzer Source Deep Dive Generated 2026 06 18T15 12 44.535Z A generic mcp server fuzzer 요약 조사 단위 sources/Agent Hellboy mcp server fuzzer 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 473 files, 74 directories, depth score 129, key re",
+      "title": "Agent-Hellboy/mcp-server-fuzzer 소스 딥다이브",
+      "summary": "Agent Hellboy/mcp server fuzzer 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A generic mcp server fuzzer 요약 조사 단위 sources/Agent Hellboy mcp server fuzzer 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 473 files, 74 directories, depth score 123, key references 12개입니다. 탐",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.081Z",
+      "updatedAt": "2026-06-18T15:31:45.396Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1442,11 +1442,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/blockscout__mcp-server.md",
       "path": "reports/source-deep-dives/repositories/9/blockscout__mcp-server.md",
-      "title": "blockscout/mcp-server Source Deep Dive",
-      "summary": "blockscout/mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Wraps Blockscout APIs and exposes blockchain data by Model Context Protocol 요약 조사 단위 sources/blockscout mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 272 files, 86 director",
+      "title": "blockscout/mcp-server 소스 딥다이브",
+      "summary": "blockscout/mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Wraps Blockscout APIs and exposes blockchain data by Model Context Protocol 요약 조사 단위 sources/blockscout mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 272 files, 86 directories, depth score 1",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.120Z",
+      "updatedAt": "2026-06-18T15:31:45.432Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1458,11 +1458,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/GlitterKill__sdl-mcp.md",
       "path": "reports/source-deep-dives/repositories/9/GlitterKill__sdl-mcp.md",
-      "title": "GlitterKill/sdl-mcp Source Deep Dive",
-      "summary": "GlitterKill/sdl mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Symbol Delta Ledger SDL MCP gives coding agents the right code context, not your entire repo. It turns sprawling codebases into compact, high signal context that saves tokens, speeds up wo",
+      "title": "GlitterKill/sdl-mcp 소스 딥다이브",
+      "summary": "GlitterKill/sdl mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Symbol Delta Ledger SDL MCP gives coding agents the right code context, not your entire repo. It turns sprawling codebases into compact, high signal context that saves tokens, speeds up workflows, and ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.110Z",
+      "updatedAt": "2026-06-18T15:31:45.425Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1474,11 +1474,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/JeongSeongMok__tossinvest-openapi-mcp.md",
       "path": "reports/source-deep-dives/repositories/9/JeongSeongMok__tossinvest-openapi-mcp.md",
-      "title": "JeongSeongMok/tossinvest-openapi-mcp Source Deep Dive",
-      "summary": "JeongSeongMok/tossinvest openapi mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 토스증권 Open API Toss Securities Open API 를 AI 에이전트가 쉽게 탐색·연동하도록 돕는 MCP 서버 stdio . Claude·Cursor·Codex 지원. 요약 조사 단위 sources/JeongSeongMok tossinvest openapi mcp 로컬 클론을 실제 파일 ",
+      "title": "JeongSeongMok/tossinvest-openapi-mcp 소스 딥다이브",
+      "summary": "JeongSeongMok/tossinvest openapi mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 토스증권 Open API Toss Securities Open API 를 AI 에이전트가 쉽게 탐색·연동하도록 돕는 MCP 서버 stdio . Claude·Cursor·Codex 지원. 요약 조사 단위 sources/JeongSeongMok tossinvest openapi mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.220Z",
+      "updatedAt": "2026-06-18T15:31:45.541Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1490,11 +1490,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/OctagonAI__octagon-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/9/OctagonAI__octagon-mcp-server.md",
-      "title": "OctagonAI/octagon-mcp-server Source Deep Dive",
-      "summary": "OctagonAI/octagon mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z An MCP server for public & prediction markets research. Ask natural language questions and get structured, source backed answers across SEC filings, earnings transcripts, company ",
+      "title": "OctagonAI/octagon-mcp-server 소스 딥다이브",
+      "summary": "OctagonAI/octagon mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z An MCP server for public & prediction markets research. Ask natural language questions and get structured, source backed answers across SEC filings, earnings transcripts, company financials, s",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.212Z",
+      "updatedAt": "2026-06-18T15:31:45.532Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1506,11 +1506,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/simota__agent-skills.md",
       "path": "reports/source-deep-dives/repositories/9/simota__agent-skills.md",
-      "title": "simota/agent-skills Source Deep Dive",
-      "summary": "simota/agent skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z 124 specialist AI agents for Claude Code / Codex CLI / Antigravity CLI agy . Anthropic Agent Skills spec aligned, gerund form descriptions, hub spoke orchestration via Nexus. Covers develo",
+      "title": "simota/agent-skills 소스 딥다이브",
+      "summary": "simota/agent skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 124 specialist AI agents for Claude Code / Codex CLI / Antigravity CLI agy . Anthropic Agent Skills spec aligned, gerund form descriptions, hub spoke orchestration via Nexus. Covers development, securi",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.065Z",
+      "updatedAt": "2026-06-18T15:31:45.377Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1522,11 +1522,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/alice840126-ship-it__korean-law-mcp-setup.md",
       "path": "reports/source-deep-dives/repositories/a/alice840126-ship-it__korean-law-mcp-setup.md",
-      "title": "alice840126-ship-it/korean-law-mcp-setup Source Deep Dive",
-      "summary": "alice840126 ship it/korean law mcp setup Source Deep Dive Generated 2026 06 18T15 12 44.535Z 한국 법령 MCP Claude Code 연동 세팅 요약 조사 단위 sources/alice840126 ship it korean law mcp setup 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 3 files, 0 directories, depth sc",
+      "title": "alice840126-ship-it/korean-law-mcp-setup 소스 딥다이브",
+      "summary": "alice840126 ship it/korean law mcp setup 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 한국 법령 MCP Claude Code 연동 세팅 요약 조사 단위 sources/alice840126 ship it korean law mcp setup 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 3 files, 0 directories, depth score 12, key refere",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.496Z",
+      "updatedAt": "2026-06-18T15:31:45.832Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1538,11 +1538,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/artokun__comfyui-mcp.md",
       "path": "reports/source-deep-dives/repositories/a/artokun__comfyui-mcp.md",
-      "title": "artokun/comfyui-mcp Source Deep Dive",
-      "summary": "artokun/comfyui mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Claude Code plugin + MCP server for ComfyUI — 88 tools, 14 AI skills Flux, WAN, LTX video, Qwen , live graph editing from your Claude session. Generate images & video, manage models and cu",
+      "title": "artokun/comfyui-mcp 소스 딥다이브",
+      "summary": "artokun/comfyui mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Claude Code plugin + MCP server for ComfyUI — 88 tools, 14 AI skills Flux, WAN, LTX video, Qwen , live graph editing from your Claude session. Generate images & video, manage models and custom nodes. 요",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.383Z",
+      "updatedAt": "2026-06-18T15:31:45.701Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1554,11 +1554,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/awslabs__mcp.md",
       "path": "reports/source-deep-dives/repositories/a/awslabs__mcp.md",
-      "title": "awslabs/mcp Source Deep Dive",
-      "summary": "awslabs/mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Open source MCP Servers for AWS 요약 조사 단위 sources/awslabs mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 3,547 files, 620 directories, depth score 132, key references 12개입니다. 탐색 방식 Reading Pl",
+      "title": "awslabs/mcp 소스 딥다이브",
+      "summary": "awslabs/mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Open source MCP Servers for AWS 요약 조사 단위 sources/awslabs mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 3,547 files, 620 directories, depth score 126, key references 12개입니다. 탐색 방식 읽기 계획을 먼저 보고, 근거 bucket과 핵심 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.291Z",
+      "updatedAt": "2026-06-18T15:31:45.589Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1570,11 +1570,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/DAWNCR0W__affine-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/a/DAWNCR0W__affine-mcp-server.md",
-      "title": "DAWNCR0W/affine-mcp-server Source Deep Dive",
-      "summary": "DAWNCR0W/affine mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Model Context Protocol server for AFFiNE. Connect AI assistants to AFFiNE workspaces, documents, databases, and collaboration APIs over stdio or HTTP. 요약 조사 단위 sources/DAWNCR0W affi",
+      "title": "DAWNCR0W/affine-mcp-server 소스 딥다이브",
+      "summary": "DAWNCR0W/affine mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Model Context Protocol server for AFFiNE. Connect AI assistants to AFFiNE workspaces, documents, databases, and collaboration APIs over stdio or HTTP. 요약 조사 단위 sources/DAWNCR0W affine mcp server",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.436Z",
+      "updatedAt": "2026-06-18T15:31:45.767Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1586,11 +1586,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/jayjodev__vivory-mcp.md",
       "path": "reports/source-deep-dives/repositories/a/jayjodev__vivory-mcp.md",
-      "title": "jayjodev/vivory-mcp Source Deep Dive",
-      "summary": "jayjodev/vivory mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Vivory MCP servers for Korean public data KOSIS, BoK ECOS, NEIS, LOCALDATA, etc. — Anthropic Model Context Protocol packages for AI agents. Powered by api.vivory.app. 요약 조사 단위 sources/jayj",
+      "title": "jayjodev/vivory-mcp 소스 딥다이브",
+      "summary": "jayjodev/vivory mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Vivory MCP servers for Korean public data KOSIS, BoK ECOS, NEIS, LOCALDATA, etc. — Anthropic Model Context Protocol packages for AI agents. Powered by api.vivory.app. 요약 조사 단위 sources/jayjodev vivory m",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.482Z",
+      "updatedAt": "2026-06-18T15:31:45.816Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1602,11 +1602,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/makenotion__notion-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/a/makenotion__notion-mcp-server.md",
-      "title": "makenotion/notion-mcp-server Source Deep Dive",
-      "summary": "makenotion/notion mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Official Notion MCP Server 요약 조사 단위 sources/makenotion notion mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 52 files, 15 directories, depth score 111, key references",
+      "title": "makenotion/notion-mcp-server 소스 딥다이브",
+      "summary": "makenotion/notion mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Official Notion MCP Server 요약 조사 단위 sources/makenotion notion mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 52 files, 15 directories, depth score 105, key references 12개입니다. 탐색 방식 읽기 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.439Z",
+      "updatedAt": "2026-06-18T15:31:45.769Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1618,11 +1618,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/microsoft__mcp.md",
       "path": "reports/source-deep-dives/repositories/a/microsoft__mcp.md",
-      "title": "microsoft/mcp Source Deep Dive",
-      "summary": "microsoft/mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Catalog of official Microsoft MCP Model Context Protocol server implementations for AI powered data access and tool integration 요약 조사 단위 sources/microsoft mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep d",
+      "title": "microsoft/mcp 소스 딥다이브",
+      "summary": "microsoft/mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Catalog of official Microsoft MCP Model Context Protocol server implementations for AI powered data access and tool integration 요약 조사 단위 sources/microsoft mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 4,83",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.300Z",
+      "updatedAt": "2026-06-18T15:31:45.597Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1634,11 +1634,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/Power-Agent__PowerMCP.md",
       "path": "reports/source-deep-dives/repositories/a/Power-Agent__PowerMCP.md",
-      "title": "Power-Agent/PowerMCP Source Deep Dive",
-      "summary": "Power Agent/PowerMCP Source Deep Dive Generated 2026 06 18T15 12 44.535Z PowerMCP is an open source collection of MCP servers for power system software like PowerWorld, PSSE and OpenDSS. These tools enable LLMs to directly interact with power system applicatio",
+      "title": "Power-Agent/PowerMCP 소스 딥다이브",
+      "summary": "Power Agent/PowerMCP 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z PowerMCP is an open source collection of MCP servers for power system software like PowerWorld, PSSE and OpenDSS. These tools enable LLMs to directly interact with power system applications, facilitat",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.429Z",
+      "updatedAt": "2026-06-18T15:31:45.761Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1650,11 +1650,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/Aimino-Tech__opendocswork-mcp.md",
       "path": "reports/source-deep-dives/repositories/b/Aimino-Tech__opendocswork-mcp.md",
-      "title": "Aimino-Tech/opendocswork-mcp Source Deep Dive",
-      "summary": "Aimino Tech/opendocswork mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Rust native MCP server for Office document processing Excel, Word, PowerPoint . Sub millisecond, local first, open source. 요약 조사 단위 sources/Aimino Tech opendocswork mcp 로컬 클론을 실제 ",
+      "title": "Aimino-Tech/opendocswork-mcp 소스 딥다이브",
+      "summary": "Aimino Tech/opendocswork mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Rust native MCP server for Office document processing Excel, Word, PowerPoint . Sub millisecond, local first, open source. 요약 조사 단위 sources/Aimino Tech opendocswork mcp 로컬 클론을 실제 파일 트리 기준으로 분석",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.679Z",
+      "updatedAt": "2026-06-18T15:31:46.027Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1666,11 +1666,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/caramador83__harness-100.md",
       "path": "reports/source-deep-dives/repositories/b/caramador83__harness-100.md",
-      "title": "caramador83/harness-100 Source Deep Dive",
-      "summary": "caramador83/harness 100 Source Deep Dive Generated 2026 06 18T15 12 44.535Z Build 100 Claude Code harnesses for agent teams, with Korean and English support, across 10 domains for production use 요약 조사 단위 sources/caramador83 harness 100 로컬 클론을 실제 파일 트리 기준으로 분석한",
+      "title": "caramador83/harness-100 소스 딥다이브",
+      "summary": "caramador83/harness 100 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Build 100 Claude Code harnesses for agent teams, with Korean and English support, across 10 domains for production use 요약 조사 단위 sources/caramador83 harness 100 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.689Z",
+      "updatedAt": "2026-06-18T15:31:46.034Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1682,11 +1682,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/CSOAI-ORG__korea-ai-basic-act-mcp.md",
       "path": "reports/source-deep-dives/repositories/b/CSOAI-ORG__korea-ai-basic-act-mcp.md",
-      "title": "CSOAI-ORG/korea-ai-basic-act-mcp Source Deep Dive",
-      "summary": "CSOAI ORG/korea ai basic act mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Korea AI Basic Act — in force since 22 January 2026 요약 조사 단위 sources/CSOAI ORG korea ai basic act mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 30 files, 5 directories,",
+      "title": "CSOAI-ORG/korea-ai-basic-act-mcp 소스 딥다이브",
+      "summary": "CSOAI ORG/korea ai basic act mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Korea AI Basic Act — in force since 22 January 2026 요약 조사 단위 sources/CSOAI ORG korea ai basic act mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 30 files, 5 directories, depth score 82, k",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.692Z",
+      "updatedAt": "2026-06-18T15:31:46.041Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1698,11 +1698,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/formulahendry__mcp-server-spec-driven-development.md",
       "path": "reports/source-deep-dives/repositories/b/formulahendry__mcp-server-spec-driven-development.md",
-      "title": "formulahendry/mcp-server-spec-driven-development Source Deep Dive",
-      "summary": "formulahendry/mcp server spec driven development Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 13 files, 2 directories. 요약 조사 단위 sources/formulahendry mcp server spec driven development 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep div",
+      "title": "formulahendry/mcp-server-spec-driven-development 소스 딥다이브",
+      "summary": "formulahendry/mcp server spec driven development 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 13 files, 2 directories. 요약 조사 단위 sources/formulahendry mcp server spec driven development 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 10 fil",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.706Z",
+      "updatedAt": "2026-06-18T15:31:46.060Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1715,11 +1715,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/github__github-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/b/github__github-mcp-server.md",
-      "title": "github/github-mcp-server Source Deep Dive",
-      "summary": "github/github mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z GitHub's official MCP Server 요약 조사 단위 sources/github github mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 490 files, 131 directories, depth score 122, key references 12개",
+      "title": "github/github-mcp-server 소스 딥다이브",
+      "summary": "github/github mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z GitHub's official MCP Server 요약 조사 단위 sources/github github mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 490 files, 131 directories, depth score 116, key references 12개입니다. 탐색 방식 읽기 계획을 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.594Z",
+      "updatedAt": "2026-06-18T15:31:45.936Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1731,11 +1731,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/Glade-tool__glade-mcp.md",
       "path": "reports/source-deep-dives/repositories/b/Glade-tool__glade-mcp.md",
-      "title": "Glade-tool/glade-mcp Source Deep Dive",
-      "summary": "Glade tool/glade mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Connect any MCP compatible AI client Claude Code, Cursor, Windsurf to Unity or Godot. 235+ granular tools, a Unity aware system prompt, game design document project context, script semant",
+      "title": "Glade-tool/glade-mcp 소스 딥다이브",
+      "summary": "Glade tool/glade mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Connect any MCP compatible AI client Claude Code, Cursor, Windsurf to Unity or Godot. 235+ granular tools, a Unity aware system prompt, game design document project context, script semantic search, an",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.676Z",
+      "updatedAt": "2026-06-18T15:31:46.023Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1747,11 +1747,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/jee3m__augmentative-knowledge-hooks.md",
       "path": "reports/source-deep-dives/repositories/b/jee3m__augmentative-knowledge-hooks.md",
-      "title": "jee3m/augmentative-knowledge-hooks Source Deep Dive",
-      "summary": "jee3m/augmentative knowledge hooks Source Deep Dive Generated 2026 06 18T15 12 44.535Z Semantic Search for Pi 2026 Local Knowledge Base & AI Tool 요약 조사 단위 sources/jee3m augmentative knowledge hooks 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 4 files, 2 di",
+      "title": "jee3m/augmentative-knowledge-hooks 소스 딥다이브",
+      "summary": "jee3m/augmentative knowledge hooks 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Semantic Search for Pi 2026 Local Knowledge Base & AI Tool 요약 조사 단위 sources/jee3m augmentative knowledge hooks 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 4 files, 2 directories, depth s",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.714Z",
+      "updatedAt": "2026-06-18T15:31:46.064Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1764,11 +1764,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/kakao__OrchestrationBench.md",
       "path": "reports/source-deep-dives/repositories/b/kakao__OrchestrationBench.md",
-      "title": "kakao/OrchestrationBench Source Deep Dive",
-      "summary": "kakao/OrchestrationBench Source Deep Dive Generated 2026 06 18T15 12 44.535Z kakao/OrchestrationBench 요약 조사 단위 sources/kakao OrchestrationBench 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 533 files, 16 directories, depth score 77, key references 8개입니다. 탐색",
+      "title": "kakao/OrchestrationBench 소스 딥다이브",
+      "summary": "kakao/OrchestrationBench 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z kakao/OrchestrationBench 요약 조사 단위 sources/kakao OrchestrationBench 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 533 files, 16 directories, depth score 71, key references 8개입니다. 탐색 방식 읽기 계획을 먼저 보고, ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.701Z",
+      "updatedAt": "2026-06-18T15:31:46.049Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1780,11 +1780,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/line__line-bot-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/b/line__line-bot-mcp-server.md",
-      "title": "line/line-bot-mcp-server Source Deep Dive",
-      "summary": "line/line bot mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server that integrates the LINE Messaging API to connect an AI Agent to the LINE Official Account. 요약 조사 단위 sources/line line bot mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive",
+      "title": "line/line-bot-mcp-server 소스 딥다이브",
+      "summary": "line/line bot mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server that integrates the LINE Messaging API to connect an AI Agent to the LINE Official Account. 요약 조사 단위 sources/line line bot mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 78 file",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.677Z",
+      "updatedAt": "2026-06-18T15:31:46.025Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1796,11 +1796,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/MICONNM__openclaw-consensus-mcp.md",
       "path": "reports/source-deep-dives/repositories/b/MICONNM__openclaw-consensus-mcp.md",
-      "title": "MICONNM/openclaw-consensus-mcp Source Deep Dive",
-      "summary": "MICONNM/openclaw consensus mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 9 LLM consensus MCP server. Built by 16yo Korean solo dev. 요약 조사 단위 sources/MICONNM openclaw consensus mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 24 files, 8 directori",
+      "title": "MICONNM/openclaw-consensus-mcp 소스 딥다이브",
+      "summary": "MICONNM/openclaw consensus mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 9 LLM consensus MCP server. Built by 16yo Korean solo dev. 요약 조사 단위 sources/MICONNM openclaw consensus mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 24 files, 8 directories, depth score 69",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.704Z",
+      "updatedAt": "2026-06-18T15:31:46.052Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1812,11 +1812,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/microsoft__mcp-for-beginners.md",
       "path": "reports/source-deep-dives/repositories/b/microsoft__mcp-for-beginners.md",
-      "title": "microsoft/mcp-for-beginners Source Deep Dive",
-      "summary": "microsoft/mcp for beginners Source Deep Dive Generated 2026 06 18T15 12 44.535Z This open source curriculum introduces the fundamentals of Model Context Protocol MCP through real world, cross language examples in .NET, Java, TypeScript, JavaScript, Rust and Py",
+      "title": "microsoft/mcp-for-beginners 소스 딥다이브",
+      "summary": "microsoft/mcp for beginners 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z This open source curriculum introduces the fundamentals of Model Context Protocol MCP through real world, cross language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designe",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.567Z",
+      "updatedAt": "2026-06-18T15:31:45.891Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1828,11 +1828,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/secure-agentic-framework__saf-mcp.md",
       "path": "reports/source-deep-dives/repositories/b/secure-agentic-framework__saf-mcp.md",
-      "title": "secure-agentic-framework/saf-mcp Source Deep Dive",
-      "summary": "secure agentic framework/saf mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z SAF MCP is a comprehensive security framework for documenting and mitigating threats in the AI Agent ecosystem. 요약 조사 단위 sources/secure agentic framework saf mcp 로컬 클론을 실제 파일 ",
+      "title": "secure-agentic-framework/saf-mcp 소스 딥다이브",
+      "summary": "secure agentic framework/saf mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z SAF MCP is a comprehensive security framework for documenting and mitigating threats in the AI Agent ecosystem. 요약 조사 단위 sources/secure agentic framework saf mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.700Z",
+      "updatedAt": "2026-06-18T15:31:46.049Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1844,11 +1844,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/tomtom-international__tomtom-maps-mcp.md",
       "path": "reports/source-deep-dives/repositories/b/tomtom-international__tomtom-maps-mcp.md",
-      "title": "tomtom-international/tomtom-maps-mcp Source Deep Dive",
-      "summary": "tomtom international/tomtom maps mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z A Model Context Protocol MCP server providing TomTom's location services, search, routing, and traffic data to AI agents. 요약 조사 단위 sources/tomtom international tomtom maps",
+      "title": "tomtom-international/tomtom-maps-mcp 소스 딥다이브",
+      "summary": "tomtom international/tomtom maps mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A Model Context Protocol MCP server providing TomTom's location services, search, routing, and traffic data to AI agents. 요약 조사 단위 sources/tomtom international tomtom maps mcp 로컬 클론을 실",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.576Z",
+      "updatedAt": "2026-06-18T15:31:45.901Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1860,11 +1860,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/closermethod__apac-compliance-mcp.md",
       "path": "reports/source-deep-dives/repositories/c/closermethod__apac-compliance-mcp.md",
-      "title": "closermethod/apac-compliance-mcp Source Deep Dive",
-      "summary": "closermethod/apac compliance mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z APAC sales + employment compliance MCP for AI agents. Singapore, Japan, Australia, India, Hong Kong, South Korea. PDPA, APP, employment law, B2B opt out rules. 요약 조사 단위 source",
+      "title": "closermethod/apac-compliance-mcp 소스 딥다이브",
+      "summary": "closermethod/apac compliance mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z APAC sales + employment compliance MCP for AI agents. Singapore, Japan, Australia, India, Hong Kong, South Korea. PDPA, APP, employment law, B2B opt out rules. 요약 조사 단위 sources/closermetho",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.950Z",
+      "updatedAt": "2026-06-18T15:31:46.311Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1876,11 +1876,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/gih2yun__bareun-mcp.md",
       "path": "reports/source-deep-dives/repositories/c/gih2yun__bareun-mcp.md",
-      "title": "gih2yun/bareun-mcp Source Deep Dive",
-      "summary": "gih2yun/bareun mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Korean NLP & spell/grammar checking MCP server Bareun — remote streamable HTTP at api.bareun.ai/mcp 요약 조사 단위 sources/gih2yun bareun mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 8 fi",
+      "title": "gih2yun/bareun-mcp 소스 딥다이브",
+      "summary": "gih2yun/bareun mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Korean NLP & spell/grammar checking MCP server Bareun — remote streamable HTTP at api.bareun.ai/mcp 요약 조사 단위 sources/gih2yun bareun mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 8 files, 1 directories",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.954Z",
+      "updatedAt": "2026-06-18T15:31:46.314Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1892,11 +1892,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/JAE-HUN-CHO__law-api-mcp-korea.md",
       "path": "reports/source-deep-dives/repositories/c/JAE-HUN-CHO__law-api-mcp-korea.md",
-      "title": "JAE-HUN-CHO/law-api-mcp-korea Source Deep Dive",
-      "summary": "JAE HUN CHO/law api mcp korea Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server for the Korean Ministry of Government Legislation MOLEG APIs, providing structured access to Korean laws, regulations, and legal documents for AI agents. 요약 조사 단위 sour",
+      "title": "JAE-HUN-CHO/law-api-mcp-korea 소스 딥다이브",
+      "summary": "JAE HUN CHO/law api mcp korea 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server for the Korean Ministry of Government Legislation MOLEG APIs, providing structured access to Korean laws, regulations, and legal documents for AI agents. 요약 조사 단위 sources/JAE HUN C",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.906Z",
+      "updatedAt": "2026-06-18T15:31:46.267Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1908,11 +1908,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/MarcoYou__open-proxy-mcp.md",
       "path": "reports/source-deep-dives/repositories/c/MarcoYou__open-proxy-mcp.md",
-      "title": "MarcoYou/open-proxy-mcp Source Deep Dive",
-      "summary": "MarcoYou/open proxy mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z AI powered MCP Model Context Protocol server that structures Korean AGM Annual General Meeting filings from DART into actionable, AI ready data. 요약 조사 단위 sources/MarcoYou open proxy mc",
+      "title": "MarcoYou/open-proxy-mcp 소스 딥다이브",
+      "summary": "MarcoYou/open proxy mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z AI powered MCP Model Context Protocol server that structures Korean AGM Annual General Meeting filings from DART into actionable, AI ready data. 요약 조사 단위 sources/MarcoYou open proxy mcp 로컬 클론을 실제 파",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.823Z",
+      "updatedAt": "2026-06-18T15:31:46.175Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1924,11 +1924,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/mcp-use__mcp-use.md",
       "path": "reports/source-deep-dives/repositories/c/mcp-use__mcp-use.md",
-      "title": "mcp-use/mcp-use Source Deep Dive",
-      "summary": "mcp use/mcp use Source Deep Dive Generated 2026 06 18T15 12 44.535Z The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents. 요약 조사 단위 sources/mcp use mcp use 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,662 files,",
+      "title": "mcp-use/mcp-use 소스 딥다이브",
+      "summary": "mcp use/mcp use 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents. 요약 조사 단위 sources/mcp use mcp use 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,662 files, 355 directories, ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.784Z",
+      "updatedAt": "2026-06-18T15:31:46.122Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1940,11 +1940,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/redis__mcp-redis.md",
       "path": "reports/source-deep-dives/repositories/c/redis__mcp-redis.md",
-      "title": "redis/mcp-redis Source Deep Dive",
-      "summary": "redis/mcp redis Source Deep Dive Generated 2026 06 18T15 12 44.535Z The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search data in Redis efficiently 요약 조사 단위 sources/redis mcp redis 로컬 클론을 실제 파일 트리 ",
+      "title": "redis/mcp-redis 소스 딥다이브",
+      "summary": "redis/mcp redis 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The official Redis MCP Server is a natural language interface designed for agentic applications to manage and search data in Redis efficiently 요약 조사 단위 sources/redis mcp redis 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.927Z",
+      "updatedAt": "2026-06-18T15:31:46.286Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1956,11 +1956,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/z0nam__korea-rio-mcp.md",
       "path": "reports/source-deep-dives/repositories/c/z0nam__korea-rio-mcp.md",
-      "title": "z0nam/korea-rio-mcp Source Deep Dive",
-      "summary": "z0nam/korea rio mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Regional Input Output economic impact analysis as an MCP server, built on Bank of Korea regional IO tables. Computes production/value added/employment induced effects in region vs out of r",
+      "title": "z0nam/korea-rio-mcp 소스 딥다이브",
+      "summary": "z0nam/korea rio mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Regional Input Output economic impact analysis as an MCP server, built on Bank of Korea regional IO tables. Computes production/value added/employment induced effects in region vs out of region for Cla",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.945Z",
+      "updatedAt": "2026-06-18T15:31:46.306Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1972,11 +1972,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/AgentBridge-Lab__korea-space-support-mcp.md",
       "path": "reports/source-deep-dives/repositories/d/AgentBridge-Lab__korea-space-support-mcp.md",
-      "title": "AgentBridge-Lab/korea-space-support-mcp Source Deep Dive",
-      "summary": "AgentBridge Lab/korea space support mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 한국 우주·항공·국방우주 정부 R&D 지원사업 공고 데이터셋 — 크롤러·분류기·MCP·REST API 요약 조사 단위 sources/AgentBridge Lab korea space support mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 92 fi",
+      "title": "AgentBridge-Lab/korea-space-support-mcp 소스 딥다이브",
+      "summary": "AgentBridge Lab/korea space support mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 한국 우주·항공·국방우주 정부 R&D 지원사업 공고 데이터셋 — 크롤러·분류기·MCP·REST API 요약 조사 단위 sources/AgentBridge Lab korea space support mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 92 files, 32 directorie",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.135Z",
+      "updatedAt": "2026-06-18T15:31:46.503Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -1988,11 +1988,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/genomoncology__biomcp.md",
       "path": "reports/source-deep-dives/repositories/d/genomoncology__biomcp.md",
-      "title": "genomoncology/biomcp Source Deep Dive",
-      "summary": "genomoncology/biomcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z BioMCP Biomedical Model Context Protocol 요약 조사 단위 sources/genomoncology biomcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,274 files, 370 directories, depth score 129, key referenc",
+      "title": "genomoncology/biomcp 소스 딥다이브",
+      "summary": "genomoncology/biomcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z BioMCP Biomedical Model Context Protocol 요약 조사 단위 sources/genomoncology biomcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,274 files, 370 directories, depth score 123, key references 12개입니다. 탐색 방식 읽",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.001Z",
+      "updatedAt": "2026-06-18T15:31:46.361Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2004,11 +2004,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/jinmyungjong__korean-law-mcp.md",
       "path": "reports/source-deep-dives/repositories/d/jinmyungjong__korean-law-mcp.md",
-      "title": "jinmyungjong/korean-law-mcp Source Deep Dive",
-      "summary": "jinmyungjong/korean law mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z 한국 법령 검색 MCP 서버 요약 조사 단위 sources/jinmyungjong korean law mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 3 files, 2 directories, depth score 39, key references 3개입니다. 탐색 방식 Re",
+      "title": "jinmyungjong/korean-law-mcp 소스 딥다이브",
+      "summary": "jinmyungjong/korean law mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 한국 법령 검색 MCP 서버 요약 조사 단위 sources/jinmyungjong korean law mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 3 files, 2 directories, depth score 33, key references 3개입니다. 탐색 방식 읽기 계획을 먼저 보고, 근거 buc",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.167Z",
+      "updatedAt": "2026-06-18T15:31:46.538Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2020,11 +2020,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/netboxlabs__netbox-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/d/netboxlabs__netbox-mcp-server.md",
-      "title": "netboxlabs/netbox-mcp-server Source Deep Dive",
-      "summary": "netboxlabs/netbox mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z Model Context Protocol MCP server for read only interaction with NetBox data in LLMs 요약 조사 단위 sources/netboxlabs netbox mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위",
+      "title": "netboxlabs/netbox-mcp-server 소스 딥다이브",
+      "summary": "netboxlabs/netbox mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Model Context Protocol MCP server for read only interaction with NetBox data in LLMs 요약 조사 단위 sources/netboxlabs netbox mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 47 files, 9 direc",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.133Z",
+      "updatedAt": "2026-06-18T15:31:46.501Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2036,11 +2036,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/numman-ali__openskills.md",
       "path": "reports/source-deep-dives/repositories/d/numman-ali__openskills.md",
-      "title": "numman-ali/openskills Source Deep Dive",
-      "summary": "numman ali/openskills Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 94 files, 22 directories. 요약 조사 단위 sources/numman ali openskills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 94 files, 22 directories, depth score 103",
+      "title": "numman-ali/openskills 소스 딥다이브",
+      "summary": "numman ali/openskills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 94 files, 22 directories. 요약 조사 단위 sources/numman ali openskills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 94 files, 22 directories, depth score 91, key references 10",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.134Z",
+      "updatedAt": "2026-06-18T15:31:46.508Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2052,11 +2052,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/stefanoamorelli__sec-edgar-mcp.md",
       "path": "reports/source-deep-dives/repositories/d/stefanoamorelli__sec-edgar-mcp.md",
-      "title": "stefanoamorelli/sec-edgar-mcp Source Deep Dive",
-      "summary": "stefanoamorelli/sec edgar mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z A SEC EDGAR MCP Model Context Protocol Server 요약 조사 단위 sources/stefanoamorelli sec edgar mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 75 files, 17 directories, depth scor",
+      "title": "stefanoamorelli/sec-edgar-mcp 소스 딥다이브",
+      "summary": "stefanoamorelli/sec edgar mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A SEC EDGAR MCP Model Context Protocol Server 요약 조사 단위 sources/stefanoamorelli sec edgar mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 75 files, 17 directories, depth score 104, key referen",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.123Z",
+      "updatedAt": "2026-06-18T15:31:46.492Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2068,11 +2068,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/addyosmani__agent-skills.md",
       "path": "reports/source-deep-dives/repositories/e/addyosmani__agent-skills.md",
-      "title": "addyosmani/agent-skills Source Deep Dive",
-      "summary": "addyosmani/agent skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 90 files, 40 directories. 요약 조사 단위 sources/addyosmani agent skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 90 files, 40 directories, depth score",
+      "title": "addyosmani/agent-skills 소스 딥다이브",
+      "summary": "addyosmani/agent skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 90 files, 40 directories. 요약 조사 단위 sources/addyosmani agent skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 90 files, 40 directories, depth score 74, key reference",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.323Z",
+      "updatedAt": "2026-06-18T15:31:46.701Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2084,11 +2084,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/ai-frendly-datahub__KoreanNLPMCPRadar.md",
       "path": "reports/source-deep-dives/repositories/e/ai-frendly-datahub__KoreanNLPMCPRadar.md",
-      "title": "ai-frendly-datahub/KoreanNLPMCPRadar Source Deep Dive",
-      "summary": "ai frendly datahub/KoreanNLPMCPRadar Source Deep Dive Generated 2026 06 18T15 12 44.535Z Korean NLP and language MCP radar 요약 조사 단위 sources/ai frendly datahub KoreanNLPMCPRadar 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 343 files, 57 directories, depth s",
+      "title": "ai-frendly-datahub/KoreanNLPMCPRadar 소스 딥다이브",
+      "summary": "ai frendly datahub/KoreanNLPMCPRadar 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Korean NLP and language MCP radar 요약 조사 단위 sources/ai frendly datahub KoreanNLPMCPRadar 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 343 files, 57 directories, depth score 107, key refe",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.290Z",
+      "updatedAt": "2026-06-18T15:31:46.662Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2100,11 +2100,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/datagouv__datagouv-mcp.md",
       "path": "reports/source-deep-dives/repositories/e/datagouv__datagouv-mcp.md",
-      "title": "datagouv/datagouv-mcp Source Deep Dive",
-      "summary": "datagouv/datagouv mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Official data.gouv.fr Model Context Protocol MCP server that allows AI chatbots to search, explore, and analyze datasets from the French national Open Data platform, directly through con",
+      "title": "datagouv/datagouv-mcp 소스 딥다이브",
+      "summary": "datagouv/datagouv mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Official data.gouv.fr Model Context Protocol MCP server that allows AI chatbots to search, explore, and analyze datasets from the French national Open Data platform, directly through conversation. 요약",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.316Z",
+      "updatedAt": "2026-06-18T15:31:46.691Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2116,11 +2116,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/google-marketing-solutions__google_ads_mcp.md",
       "path": "reports/source-deep-dives/repositories/e/google-marketing-solutions__google_ads_mcp.md",
-      "title": "google-marketing-solutions/google_ads_mcp Source Deep Dive",
-      "summary": "google marketing solutions/google ads mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z The Google Ads MCP Server is an implementation of the Model Context Protocol MCP that enables Large Language Models LLMs , such as Gemini, to interact directly with t",
+      "title": "google-marketing-solutions/google_ads_mcp 소스 딥다이브",
+      "summary": "google marketing solutions/google ads mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The Google Ads MCP Server is an implementation of the Model Context Protocol MCP that enables Large Language Models LLMs , such as Gemini, to interact directly with the Google Ads",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.322Z",
+      "updatedAt": "2026-06-18T15:31:46.696Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2132,11 +2132,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/homeassistant-ai__ha-mcp.md",
       "path": "reports/source-deep-dives/repositories/e/homeassistant-ai__ha-mcp.md",
-      "title": "homeassistant-ai/ha-mcp Source Deep Dive",
-      "summary": "homeassistant ai/ha mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z The Unofficial and Awesome Home Assistant MCP Server 요약 조사 단위 sources/homeassistant ai ha mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 822 files, 131 directories, depth score 1",
+      "title": "homeassistant-ai/ha-mcp 소스 딥다이브",
+      "summary": "homeassistant ai/ha mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The Unofficial and Awesome Home Assistant MCP Server 요약 조사 단위 sources/homeassistant ai ha mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 822 files, 131 directories, depth score 125, key references",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.231Z",
+      "updatedAt": "2026-06-18T15:31:46.607Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2148,11 +2148,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/hypn4__tossinvest-mcp.md",
       "path": "reports/source-deep-dives/repositories/e/hypn4__tossinvest-mcp.md",
-      "title": "hypn4/tossinvest-mcp Source Deep Dive",
-      "summary": "hypn4/tossinvest mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server for Toss Securities 토스증권 Open API Korean stock KRX quotes, holdings, orders & technical analysis for Claude and other AI agents. Read only by default. 요약 조사 단위 sources/hypn4 to",
+      "title": "hypn4/tossinvest-mcp 소스 딥다이브",
+      "summary": "hypn4/tossinvest mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server for Toss Securities 토스증권 Open API Korean stock KRX quotes, holdings, orders & technical analysis for Claude and other AI agents. Read only by default. 요약 조사 단위 sources/hypn4 tossinvest mcp ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.317Z",
+      "updatedAt": "2026-06-18T15:31:46.691Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2164,11 +2164,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/J-nowcow__awesome-korean-agent-skills.md",
       "path": "reports/source-deep-dives/repositories/e/J-nowcow__awesome-korean-agent-skills.md",
-      "title": "J-nowcow/awesome-korean-agent-skills Source Deep Dive",
-      "summary": "J nowcow/awesome korean agent skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local source directory present in this repository. 요약 조사 단위 sources/J nowcow awesome korean agent skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 60 files, 8 direc",
+      "title": "J-nowcow/awesome-korean-agent-skills 소스 딥다이브",
+      "summary": "J nowcow/awesome korean agent skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local source directory present in this repository. 요약 조사 단위 sources/J nowcow awesome korean agent skills 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 60 files, 8 directories, depth scor",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.340Z",
+      "updatedAt": "2026-06-18T15:31:46.712Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2180,11 +2180,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/mcpads__create-retro-game-kr-patch.md",
       "path": "reports/source-deep-dives/repositories/e/mcpads__create-retro-game-kr-patch.md",
-      "title": "mcpads/create-retro-game-kr-patch Source Deep Dive",
-      "summary": "mcpads/create retro game kr patch Source Deep Dive Generated 2026 06 18T15 12 44.535Z 레트로 게임 한글 패치 제작 전 파이프라인 Claude Code 스킬 · Claude Code skill for end to end Korean Hangul fan translation patches for retro games 요약 조사 단위 sources/mcpads create retro game kr p",
+      "title": "mcpads/create-retro-game-kr-patch 소스 딥다이브",
+      "summary": "mcpads/create retro game kr patch 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 레트로 게임 한글 패치 제작 전 파이프라인 Claude Code 스킬 · Claude Code skill for end to end Korean Hangul fan translation patches for retro games 요약 조사 단위 sources/mcpads create retro game kr patch 로컬 클론을 실",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.342Z",
+      "updatedAt": "2026-06-18T15:31:46.716Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2196,11 +2196,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/mongodb-js__mongodb-mcp-server.md",
       "path": "reports/source-deep-dives/repositories/e/mongodb-js__mongodb-mcp-server.md",
-      "title": "mongodb-js/mongodb-mcp-server Source Deep Dive",
-      "summary": "mongodb js/mongodb mcp server Source Deep Dive Generated 2026 06 18T15 12 44.535Z A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters. 요약 조사 단위 sources/mongodb js mongodb mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입",
+      "title": "mongodb-js/mongodb-mcp-server 소스 딥다이브",
+      "summary": "mongodb js/mongodb mcp server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters. 요약 조사 단위 sources/mongodb js mongodb mcp server 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 499 file",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.243Z",
+      "updatedAt": "2026-06-18T15:31:46.617Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2212,11 +2212,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/oracle__mcp.md",
       "path": "reports/source-deep-dives/repositories/e/oracle__mcp.md",
-      "title": "oracle/mcp Source Deep Dive",
-      "summary": "oracle/mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Repository containing MCP Model Context Protocol servers that provides a suite of tools for managing and interacting with Oracle products. 요약 조사 단위 sources/oracle mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 d",
+      "title": "oracle/mcp 소스 딥다이브",
+      "summary": "oracle/mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Repository containing MCP Model Context Protocol servers that provides a suite of tools for managing and interacting with Oracle products. 요약 조사 단위 sources/oracle mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.261Z",
+      "updatedAt": "2026-06-18T15:31:46.633Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2228,11 +2228,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/ChiR24__Unreal_mcp.md",
       "path": "reports/source-deep-dives/repositories/f/ChiR24__Unreal_mcp.md",
-      "title": "ChiR24/Unreal_mcp Source Deep Dive",
-      "summary": "ChiR24/Unreal mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z A comprehensive Model Context Protocol MCP server that enables AI assistants to control Unreal Engine through the native C++ Automation Bridge plugin. Built with TypeScript and C++. 요약 조사 단위",
+      "title": "ChiR24/Unreal_mcp 소스 딥다이브",
+      "summary": "ChiR24/Unreal mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A comprehensive Model Context Protocol MCP server that enables AI assistants to control Unreal Engine through the native C++ Automation Bridge plugin. Built with TypeScript and C++. 요약 조사 단위 sources/ChiR",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.436Z",
+      "updatedAt": "2026-06-18T15:31:46.801Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2244,11 +2244,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/grafana__loki-mcp.md",
       "path": "reports/source-deep-dives/repositories/f/grafana__loki-mcp.md",
-      "title": "grafana/loki-mcp Source Deep Dive",
-      "summary": "grafana/loki mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z An MCP Model Context Protocol Server for Grafana Loki 요약 조사 단위 sources/grafana loki mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 27 files, 15 directories, depth score 87, key referenc",
+      "title": "grafana/loki-mcp 소스 딥다이브",
+      "summary": "grafana/loki mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z An MCP Model Context Protocol Server for Grafana Loki 요약 조사 단위 sources/grafana loki mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 27 files, 15 directories, depth score 81, key references 12개입니다. 탐색 방식 읽",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.623Z",
+      "updatedAt": "2026-06-18T15:31:47.006Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2260,11 +2260,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/jonigl__ollama-mcp-bridge.md",
       "path": "reports/source-deep-dives/repositories/f/jonigl__ollama-mcp-bridge.md",
-      "title": "jonigl/ollama-mcp-bridge Source Deep Dive",
-      "summary": "jonigl/ollama mcp bridge Source Deep Dive Generated 2026 06 18T15 12 44.535Z Extend the Ollama API with dynamic AI tool integration from multiple MCP Model Context Protocol servers. Fully compatible, transparent, and developer friendly, ideal for building powe",
+      "title": "jonigl/ollama-mcp-bridge 소스 딥다이브",
+      "summary": "jonigl/ollama mcp bridge 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Extend the Ollama API with dynamic AI tool integration from multiple MCP Model Context Protocol servers. Fully compatible, transparent, and developer friendly, ideal for building powerful local LL",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.617Z",
+      "updatedAt": "2026-06-18T15:31:47.000Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2276,11 +2276,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/StarRocks__mcp-server-starrocks.md",
       "path": "reports/source-deep-dives/repositories/f/StarRocks__mcp-server-starrocks.md",
-      "title": "StarRocks/mcp-server-starrocks Source Deep Dive",
-      "summary": "StarRocks/mcp server starrocks Source Deep Dive Generated 2026 06 18T15 12 44.535Z StarRocks MCP Model Context Protocol Server 요약 조사 단위 sources/StarRocks mcp server starrocks 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 20 files, 5 directories, depth score",
+      "title": "StarRocks/mcp-server-starrocks 소스 딥다이브",
+      "summary": "StarRocks/mcp server starrocks 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z StarRocks MCP Model Context Protocol Server 요약 조사 단위 sources/StarRocks mcp server starrocks 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 20 files, 5 directories, depth score 80, key reference",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.630Z",
+      "updatedAt": "2026-06-18T15:31:47.009Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2292,11 +2292,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/tableau__tableau-mcp.md",
       "path": "reports/source-deep-dives/repositories/f/tableau__tableau-mcp.md",
-      "title": "tableau/tableau-mcp Source Deep Dive",
-      "summary": "tableau/tableau mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Tableau's official MCP Server. Helping Agents see and understand data. 요약 조사 단위 sources/tableau tableau mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 660 files, 126 directories, dep",
+      "title": "tableau/tableau-mcp 소스 딥다이브",
+      "summary": "tableau/tableau mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Tableau's official MCP Server. Helping Agents see and understand data. 요약 조사 단위 sources/tableau tableau mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 660 files, 126 directories, depth score 117, key ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.540Z",
+      "updatedAt": "2026-06-18T15:31:46.922Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2308,11 +2308,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/tinyfish-io__agentql-mcp.md",
       "path": "reports/source-deep-dives/repositories/f/tinyfish-io__agentql-mcp.md",
-      "title": "tinyfish-io/agentql-mcp Source Deep Dive",
-      "summary": "tinyfish io/agentql mcp Source Deep Dive Generated 2026 06 18T15 12 44.535Z Model Context Protocol server that integrates AgentQL's data extraction capabilities. 요약 조사 단위 sources/tinyfish io agentql mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 23 files",
+      "title": "tinyfish-io/agentql-mcp 소스 딥다이브",
+      "summary": "tinyfish io/agentql mcp 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Model Context Protocol server that integrates AgentQL's data extraction capabilities. 요약 조사 단위 sources/tinyfish io agentql mcp 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 23 files, 4 directories, d",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.643Z",
+      "updatedAt": "2026-06-18T15:31:47.024Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",
@@ -2324,11 +2324,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/WordPress__mcp-adapter.md",
       "path": "reports/source-deep-dives/repositories/f/WordPress__mcp-adapter.md",
-      "title": "WordPress/mcp-adapter Source Deep Dive",
-      "summary": "WordPress/mcp adapter Source Deep Dive Generated 2026 06 18T15 12 44.535Z An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically. 요약 ",
+      "title": "WordPress/mcp-adapter 소스 딥다이브",
+      "summary": "WordPress/mcp adapter 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke WordPress plugin, theme, and core abilities programmatically. 요약 조사 단위 sources",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.612Z",
+      "updatedAt": "2026-06-18T15:31:46.995Z",
       "categories": [
         "source-code-deep-dives",
         "agent-harness",

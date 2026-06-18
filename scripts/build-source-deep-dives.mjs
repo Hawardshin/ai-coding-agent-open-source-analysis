@@ -16,16 +16,16 @@ const maxDepth = 12;
 const sourceScanConcurrency = Number(process.env.SOURCE_DEEP_SCAN_CONCURRENCY || 12);
 
 const topicDefinitions = [
-  { slug: "coding-agent-ide", title: "Coding Agent and IDE", korean: "코딩 에이전트/IDE", focus: "CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문" },
-  { slug: "agent-harness-mcp", title: "Agent Harness and MCP", korean: "에이전트 하네스/MCP", focus: "MCP 서버/클라이언트, tool registry, workflow/orchestration, hooks/skills" },
-  { slug: "llm-wiki-rag", title: "LLM Wiki, RAG, and Knowledge", korean: "LLM 위키/RAG/지식베이스", focus: "ingestion, chunking, embedding, retrieval, memory, vector store" },
-  { slug: "spec-driven", title: "Spec-Driven and Requirements", korean: "스펙 드리븐/요구사항", focus: "requirements, ADR, design docs, spec artifacts, acceptance/test trace" },
-  { slug: "eval-observability", title: "Evals, Observability, and Quality", korean: "평가/관측/품질", focus: "eval suites, benchmark harness, tracing, observability, quality gates" },
-  { slug: "ai-infrastructure-serving", title: "AI Infrastructure and Serving", korean: "AI 인프라/서빙", focus: "model serving, API server, deployment, Docker/Kubernetes, runtime adapters" },
-  { slug: "data-vector-platform", title: "Data and Vector Platforms", korean: "데이터/벡터 플랫폼", focus: "storage, index, embedding/vector path, query engine, persistence" },
-  { slug: "security-governance", title: "Security, Governance, and Safety", korean: "보안/거버넌스/안전", focus: "sandbox, permission, policy, auth, guardrail, secret handling" },
-  { slug: "developer-productivity", title: "Developer Productivity and DevTools", korean: "개발 생산성/DevTools", focus: "CLI/devtool entrypoints, SDK shape, CI/build scripts, automation" },
-  { slug: "general-ai-open-source", title: "General AI Open Source", korean: "일반 AI 오픈소스", focus: "main architecture, dependency stack, tests, deployment, docs" }
+  { slug: "coding-agent-ide", title: "코딩 에이전트/IDE", korean: "코딩 에이전트/IDE", focus: "CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문" },
+  { slug: "agent-harness-mcp", title: "에이전트 하네스/MCP", korean: "에이전트 하네스/MCP", focus: "MCP 서버/클라이언트, 도구 등록부, workflow/orchestration, hooks/skills" },
+  { slug: "llm-wiki-rag", title: "LLM 위키/RAG/지식베이스", korean: "LLM 위키/RAG/지식베이스", focus: "수집, chunking, embedding, retrieval, memory, vector store" },
+  { slug: "spec-driven", title: "스펙 드리븐/요구사항", korean: "스펙 드리븐/요구사항", focus: "요구사항, ADR, 설계 문서, 스펙 산출물, acceptance/test trace" },
+  { slug: "eval-observability", title: "평가/관측/품질", korean: "평가/관측/품질", focus: "평가 suite, benchmark harness, tracing, observability, quality gate" },
+  { slug: "ai-infrastructure-serving", title: "AI 인프라/서빙", korean: "AI 인프라/서빙", focus: "모델 서빙, API server, 배포, Docker/Kubernetes, runtime adapter" },
+  { slug: "data-vector-platform", title: "데이터/벡터 플랫폼", korean: "데이터/벡터 플랫폼", focus: "저장소, index, embedding/vector 경로, query engine, persistence" },
+  { slug: "security-governance", title: "보안/거버넌스/안전", korean: "보안/거버넌스/안전", focus: "sandbox, permission, policy, auth, guardrail, secret handling" },
+  { slug: "developer-productivity", title: "개발 생산성/DevTools", korean: "개발 생산성/DevTools", focus: "CLI/devtool entrypoint, SDK 형태, CI/build script, automation" },
+  { slug: "general-ai-open-source", title: "일반 AI 오픈소스", korean: "일반 AI 오픈소스", focus: "주요 구조, 의존성 스택, 테스트, 배포, 문서" }
 ];
 
 const topicBySlug = new Map(topicDefinitions.map((topic) => [topic.slug, topic]));
@@ -395,18 +395,18 @@ function commandSummary(commands) {
 function riskCategories(rowLike, scan, references) {
   return {
     architecture: [
-      scan.topDirectories.length > 18 ? "many top-level directories; module boundaries need review" : null,
-      scan.truncated ? `large repository scan truncated at ${maxFilesPerRepo} files` : null,
-      !scan.bucketCounts.entrypoints ? "primary entrypoint not obvious from path scan" : null
+      scan.topDirectories.length > 18 ? "상위 디렉터리가 많아 모듈 경계 재확인 필요" : null,
+      scan.truncated ? `큰 레포라 ${maxFilesPerRepo}개 파일에서 스캔이 잘림` : null,
+      !scan.bucketCounts.entrypoints ? "path scan에서 primary entrypoint가 명확하지 않음" : null
     ].filter(Boolean),
     operation: [
-      !scan.bucketCounts.ci ? "CI workflow path not obvious" : null,
-      !scan.bucketCounts.container ? "container/deploy path not obvious" : null,
-      !scan.bucketCounts.eval ? "test/eval path not obvious" : null
+      !scan.bucketCounts.ci ? "CI workflow 경로가 명확하지 않음" : null,
+      !scan.bucketCounts.container ? "container/deploy 경로가 명확하지 않음" : null,
+      !scan.bucketCounts.eval ? "test/eval 경로가 명확하지 않음" : null
     ].filter(Boolean),
     security: [
-      scan.bucketCounts.security ? null : "security/policy surface not obvious",
-      rowLike.role === "agent-harness-mcp" && !scan.bucketCounts.instruction ? "agent instruction files not obvious" : null
+      scan.bucketCounts.security ? null : "security/policy 표면이 명확하지 않음",
+      rowLike.role === "agent-harness-mcp" && !scan.bucketCounts.instruction ? "agent instruction 파일이 명확하지 않음" : null
     ].filter(Boolean),
     evidenceGaps: [
       !references.length ? "no high-confidence key source references" : null,
@@ -477,7 +477,7 @@ function sourceDepthScore(repo, scan, references, patterns) {
 }
 
 function summarizePaths(paths, max = 3) {
-  if (!paths.length) return "not obvious";
+  if (!paths.length) return "명확하지 않음";
   return paths.slice(0, max).join(", ");
 }
 
@@ -488,21 +488,21 @@ function buildDeepInsight(repo, scan, manifests, patterns, references) {
   const primaryPaths = summarizePaths(scan.buckets[primaryBucket] || []);
   const operations = [
     scan.bucketCounts.eval ? "test/eval 경로가 보임" : null,
-    scan.bucketCounts.ci ? "CI workflow가 보임" : null,
-    scan.bucketCounts.container ? "container/deploy 파일이 보임" : null,
+    scan.bucketCounts.ci ? "CI 워크플로가 보임" : null,
+    scan.bucketCounts.container ? "컨테이너/배포 파일이 보임" : null,
     scan.bucketCounts.instruction ? "에이전트 지시문 파일이 보임" : null
   ].filter(Boolean).join(", ") || "운영 보조 파일은 추가 확인 필요";
-  const deps = manifests.dependencyCues.length ? manifests.dependencyCues.slice(0, 6).join(", ") : "dependency cue 약함";
+  const deps = manifests.dependencyCues.length ? manifests.dependencyCues.slice(0, 6).join(", ") : "의존성 단서 약함";
   return `${topic.korean} 관점에서 ${patterns.slice(0, 3).join(", ")} 구조로 읽힌다. 핵심 소스 근거는 ${primaryBucket}=${primaryPaths}이고, 의존성 단서는 ${deps}, 검증/운영 단서는 ${operations}이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 ${references.length}개 파일 경로를 직접 스캔해야 확인된다.`;
 }
 
 function buildSourceRisks(scan, references) {
   const risks = [];
-  if (scan.truncated) risks.push(`scan truncated at ${maxFilesPerRepo} files`);
-  if (!scan.bucketCounts.entrypoints) risks.push("entrypoint path not obvious");
-  if (!scan.bucketCounts.eval) risks.push("test/eval path not obvious");
-  if (!scan.bucketCounts.ci) risks.push("ci path not obvious");
-  if (!references.length) risks.push("no high-confidence source references");
+  if (scan.truncated) risks.push(`${maxFilesPerRepo}개 파일에서 스캔이 잘림`);
+  if (!scan.bucketCounts.entrypoints) risks.push("entrypoint 경로가 명확하지 않음");
+  if (!scan.bucketCounts.eval) risks.push("test/eval 경로가 명확하지 않음");
+  if (!scan.bucketCounts.ci) risks.push("CI 경로가 명확하지 않음");
+  if (!references.length) risks.push("신뢰도 높은 소스 참조 없음");
   return risks.slice(0, 5);
 }
 
@@ -597,7 +597,7 @@ function renderReferenceLinks(row, baseDir, limit = 5) {
     const target = `${row.localPath}/${ref.path}`;
     return `${linkFrom(baseDir, target, ref.path)} (${ref.bucket})`;
   });
-  return refs.length ? refs.join("<br>") : "not obvious";
+  return refs.length ? refs.join("<br>") : "명확하지 않음";
 }
 
 function formatSourcePath(row, baseDir, relativePath, label = relativePath) {
@@ -611,7 +611,7 @@ function formatSourcePath(row, baseDir, relativePath, label = relativePath) {
 
 function renderSourcePathList(row, baseDir, paths, limit = 12) {
   const selected = safeArray(paths).slice(0, limit);
-  if (!selected.length) return "not obvious";
+  if (!selected.length) return "명확하지 않음";
   return selected.map((filePath) => formatSourcePath(row, baseDir, filePath)).join("<br>");
 }
 
@@ -622,77 +622,77 @@ function topEntriesFromObject(object, limit = 12) {
 }
 
 function renderKeyValueTable(rows) {
-  return `| Field | Value |\n| --- | --- |\n${rows.map(([field, value]) => `| ${tableText(field)} | ${tableText(value || "none")} |`).join("\n")}\n`;
+  return `| 항목 | 값 |\n| --- | --- |\n${rows.map(([field, value]) => `| ${tableText(field)} | ${tableText(value || "없음")} |`).join("\n")}\n`;
 }
 
 function renderComponentTable(row) {
-  if (!row.components.length) return "_No module boundary signal extracted._\n";
-  return `| Component | Role | Signal count |\n| --- | --- | ---: |\n${row.components.map((item) => `| ${tableText(item.component)} | ${tableText(item.role)} | ${item.count} |`).join("\n")}\n`;
+  if (!row.components.length) return "_추출된 모듈 경계 신호가 없습니다._\n";
+  return `| 컴포넌트 | 역할 | 신호 수 |\n| --- | --- | ---: |\n${row.components.map((item) => `| ${tableText(item.component)} | ${tableText(item.role)} | ${item.count} |`).join("\n")}\n`;
 }
 
 function renderDependencyGroups(row) {
   const groups = Object.entries(row.dependencyGroups || {});
-  if (!groups.length) return "_No dependency groups extracted._\n";
-  return `| Group | Detected cues |\n| --- | --- |\n${groups.map(([group, cues]) => `| ${tableText(group)} | ${tableText(safeArray(cues).join(", ") || "none")} |`).join("\n")}\n`;
+  if (!groups.length) return "_추출된 의존성 그룹이 없습니다._\n";
+  return `| 그룹 | 감지된 단서 |\n| --- | --- |\n${groups.map(([group, cues]) => `| ${tableText(group)} | ${tableText(safeArray(cues).join(", ") || "없음")} |`).join("\n")}\n`;
 }
 
 function renderCommandTable(commands, limit = 40) {
   const selected = safeArray(commands).slice(0, limit);
-  if (!selected.length) return "_No command surface extracted from root manifests._\n";
-  return `| Category | Source | Name | Command |\n| --- | --- | --- | --- |\n${selected.map((item) => `| ${tableText(item.category)} | ${tableText(item.source)} | ${tableText(item.name)} | ${tableText(item.command)} |`).join("\n")}\n`;
+  if (!selected.length) return "_root manifest에서 추출된 command surface가 없습니다._\n";
+  return `| 카테고리 | 출처 | 이름 | 명령 |\n| --- | --- | --- | --- |\n${selected.map((item) => `| ${tableText(item.category)} | ${tableText(item.source)} | ${tableText(item.name)} | ${tableText(item.command)} |`).join("\n")}\n`;
 }
 
 function renderBucketEvidenceTable(row, baseDir) {
-  return `| Evidence bucket | Hits | Representative paths |\n| --- | ---: | --- |\n${bucketRules.map(([bucket]) => `| ${tableText(bucket)} | ${row.bucketCounts[bucket] || 0} | ${renderSourcePathList(row, baseDir, row.buckets[bucket], 8)} |`).join("\n")}\n`;
+  return `| 근거 bucket | Hit 수 | 대표 경로 |\n| --- | ---: | --- |\n${bucketRules.map(([bucket]) => `| ${tableText(bucket)} | ${row.bucketCounts[bucket] || 0} | ${renderSourcePathList(row, baseDir, row.buckets[bucket], 8)} |`).join("\n")}\n`;
 }
 
 function renderKeyReferencesTable(row, baseDir) {
-  if (!row.keySourceReferences.length) return "_No high-confidence key references extracted._\n";
-  return `| Bucket | Source path | Why it matters |\n| --- | --- | --- |\n${row.keySourceReferences.map((ref) => `| ${tableText(ref.bucket)} | ${formatSourcePath(row, baseDir, ref.path)} | ${tableText(ref.reason)} |`).join("\n")}\n`;
+  if (!row.keySourceReferences.length) return "_신뢰도 높은 핵심 참조가 추출되지 않았습니다._\n";
+  return `| Bucket | 소스 경로 | 중요한 이유 |\n| --- | --- | --- |\n${row.keySourceReferences.map((ref) => `| ${tableText(ref.bucket)} | ${formatSourcePath(row, baseDir, ref.path)} | ${tableText(ref.reason)} |`).join("\n")}\n`;
 }
 
 function renderRiskCategoryTable(row) {
   const rows = Object.entries(row.sourceRiskCategories || {}).map(([category, risks]) => {
-    const value = safeArray(risks).length ? safeArray(risks).join("; ") : "none";
+    const value = safeArray(risks).length ? safeArray(risks).join("; ") : "없음";
     return `| ${tableText(category)} | ${tableText(value)} |`;
   });
-  return `| Risk category | Findings |\n| --- | --- |\n${rows.join("\n")}\n`;
+  return `| 위험 카테고리 | 발견 사항 |\n| --- | --- |\n${rows.join("\n")}\n`;
 }
 
 function renderValidationSurface(row, baseDir) {
   const rows = [
-    ["Tests / evals", row.bucketCounts.eval, renderSourcePathList(row, baseDir, row.buckets.eval, 6)],
-    ["CI workflows", row.bucketCounts.ci, renderSourcePathList(row, baseDir, row.buckets.ci, 6)],
-    ["Containers / deploy", row.bucketCounts.container, renderSourcePathList(row, baseDir, row.buckets.container, 6)],
-    ["Security / policy", row.bucketCounts.security, renderSourcePathList(row, baseDir, row.buckets.security, 6)],
-    ["Agent instructions", row.bucketCounts.instruction, renderSourcePathList(row, baseDir, row.buckets.instruction, 6)]
+    ["테스트/평가", row.bucketCounts.eval, renderSourcePathList(row, baseDir, row.buckets.eval, 6)],
+    ["CI workflow", row.bucketCounts.ci, renderSourcePathList(row, baseDir, row.buckets.ci, 6)],
+    ["컨테이너/배포", row.bucketCounts.container, renderSourcePathList(row, baseDir, row.buckets.container, 6)],
+    ["보안/정책", row.bucketCounts.security, renderSourcePathList(row, baseDir, row.buckets.security, 6)],
+    ["에이전트 지시문", row.bucketCounts.instruction, renderSourcePathList(row, baseDir, row.buckets.instruction, 6)]
   ];
-  return `| Surface | Hits | Representative paths |\n| --- | ---: | --- |\n${rows.map(([surface, hits, paths]) => `| ${surface} | ${hits || 0} | ${paths} |`).join("\n")}\n`;
+  return `| 표면 | Hit 수 | 대표 경로 |\n| --- | ---: | --- |\n${rows.map(([surface, hits, paths]) => `| ${surface} | ${hits || 0} | ${paths} |`).join("\n")}\n`;
 }
 
 function renderReadingPlan(row) {
   const steps = [];
-  if (row.keySourceReferences.length) steps.push(`Start from key references: ${row.keySourceReferences.slice(0, 3).map((ref) => `\`${ref.path}\``).join(", ")}.`);
-  if (row.buckets.entrypoints?.length) steps.push(`Trace execution through entrypoints: ${row.buckets.entrypoints.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
-  if (row.buckets.agentRuntime?.length) steps.push(`Map agent/tool runtime through: ${row.buckets.agentRuntime.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
-  if (row.buckets.retrieval?.length) steps.push(`Inspect retrieval/memory/indexing through: ${row.buckets.retrieval.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
-  if (row.buckets.eval?.length) steps.push(`Verify behavior through test/eval files: ${row.buckets.eval.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
-  if (!steps.length) steps.push("Start with root manifests and README because specialized source buckets were weak.");
+  if (row.keySourceReferences.length) steps.push(`핵심 참조에서 시작: ${row.keySourceReferences.slice(0, 3).map((ref) => `\`${ref.path}\``).join(", ")}.`);
+  if (row.buckets.entrypoints?.length) steps.push(`entrypoint를 따라 실행 흐름 확인: ${row.buckets.entrypoints.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (row.buckets.agentRuntime?.length) steps.push(`agent/tool runtime 매핑: ${row.buckets.agentRuntime.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (row.buckets.retrieval?.length) steps.push(`retrieval/memory/indexing 확인: ${row.buckets.retrieval.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (row.buckets.eval?.length) steps.push(`test/eval 파일로 동작 검증: ${row.buckets.eval.slice(0, 3).map((item) => `\`${item}\``).join(", ")}.`);
+  if (!steps.length) steps.push("전문화된 source bucket 신호가 약하므로 root manifest와 README부터 확인합니다.");
   return steps.map((step, index) => `${index + 1}. ${step}`).join("\n");
 }
 
 function renderSourceTable(rows, baseDir, limit = Infinity) {
   const selected = rows.slice(0, limit);
-  if (!selected.length) return "_No source deep-scan rows indexed._\n";
+  if (!selected.length) return "_색인된 소스 심층 스캔 row가 없습니다._\n";
   const body = selected.map((row) => {
     const repo = externalOrText(row.name, row.url);
-    const deepDive = row.sourceDeepDivePath ? linkFrom(baseDir, row.sourceDeepDivePath, "deep dive") : "";
-    const source = linkFrom(baseDir, row.localPath, "source");
-    const report = row.reportPath ? linkFrom(baseDir, row.reportPath, "report") : "";
+    const deepDive = row.sourceDeepDivePath ? linkFrom(baseDir, row.sourceDeepDivePath, "딥다이브") : "";
+    const source = linkFrom(baseDir, row.localPath, "소스");
+    const report = row.reportPath ? linkFrom(baseDir, row.reportPath, "보고서") : "";
     const links = [deepDive, report, source].filter(Boolean).join(" / ");
-    return `| ${repo} | ${row.fileCount} / ${row.dirCount} | ${row.sourceDepthScore} | ${tableText(row.patterns.join(", "))} | ${renderReferenceLinks(row, baseDir, 4)} | ${tableText(row.deepInsight)} | ${tableText(row.sourceRisks.join(", ") || "none")} | ${links} |`;
+    return `| ${repo} | ${row.fileCount} / ${row.dirCount} | ${row.sourceDepthScore} | ${tableText(row.patterns.join(", "))} | ${renderReferenceLinks(row, baseDir, 4)} | ${tableText(row.deepInsight)} | ${tableText(row.sourceRisks.join(", ") || "없음")} | ${links} |`;
   }).join("\n");
-  return `| Repository | Files / Dirs | Depth score | Source pattern | Key source references | Deep source insight | Risks | Links |\n| --- | ---: | ---: | --- | --- | --- | --- | --- |\n${body}\n`;
+  return `| 레포 | 파일/디렉터리 | 깊이 점수 | 소스 패턴 | 핵심 소스 참조 | 소스 인사이트 | 위험 신호 | 링크 |\n| --- | ---: | ---: | --- | --- | --- | --- | --- |\n${body}\n`;
 }
 
 function renderTopicSummary(rows, baseDir) {
@@ -722,18 +722,18 @@ function renderBucketMatrix(rows) {
 }
 
 function renderNavigation(baseDir) {
-  return `## Navigation
+  return `## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
-| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation, topics, and folder map. |
-| ${linkFrom(baseDir, "reports/by-topic/README.md", "Reports by Topic")} | Topic-first report navigation. |
-| ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
-| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository assessment rows. |
-| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Source-path-level findings by topic. |
-| ${linkFrom(baseDir, "reports/source-deep-dives/repositories/README.md", "Source Repository Deep Dives")} | One Markdown deep dive per cloned repository. |
-| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
+| ${linkFrom(baseDir, "README.md", "전체 시작 README")} | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| ${linkFrom(baseDir, "reports/README.md", "전체 보고서 읽기 지도")} | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| ${linkFrom(baseDir, "reports/by-topic/README.md", "주제별 보고서 목차")} | 조사 질문 기준으로 보고서를 찾는 입구. |
+| ${linkFrom(baseDir, "reports/tables/README.md", "표/CSV 목차")} | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| ${linkFrom(baseDir, "reports/repository-insights/README.md", "레포별 인사이트")} | 레포별 총평과 위험 신호. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "소스 딥다이브")} | 주제별 소스 경로 근거. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/repositories/README.md", "레포별 소스 딥다이브")} | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| ${linkFrom(baseDir, "reports/source-insights/README.md", "소스 트렌드 인사이트")} | 카테고리별 트렌드와 레포별 특징 비교. |
 `;
 }
 
@@ -742,17 +742,17 @@ function renderMainReadme(rows) {
   const bucketTotals = aggregateBucketCounts(rows);
   const sourceReferenceCount = rows.reduce((sum, row) => sum + row.keySourceReferences.length, 0);
   const truncatedCount = rows.filter((row) => row.truncated).length;
-  return `# Source Deep Dives
+  return `# 소스 딥다이브
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
-This report adds topic-first, source-path-level evidence extracted from the locally cloned repositories under \`sources/\`.
+이 보고서는 \`sources/\` 아래 로컬 클론에서 추출한 소스 경로 수준의 근거를 주제별로 묶은 README입니다.
 
 ## 요약
 
-- 조사 단위: 로컬 clone ${rows.length.toLocaleString("en-US")}개를 실제 파일 트리 기준으로 다시 스캔한 source deep-scan 보고서입니다.
+- 조사 단위: 로컬 클론 ${rows.length.toLocaleString("en-US")}개를 실제 파일 트리 기준으로 다시 스캔한 소스 심층 스캔 보고서입니다.
 - 포함 범위: file/dir count, entrypoint, agent runtime, MCP, retrieval/vector, spec, eval/test, security, CI, container, instruction file 경로를 주제별로 묶었습니다.
-- 탐색 방식: 아래 Topic Index에서 주제를 고른 뒤, 각 레포 row의 Key source references를 따라가면 README만으로는 보이지 않는 구현 경로를 바로 확인할 수 있습니다.
+- 탐색 방식: 아래 주제별 목차에서 주제를 고른 뒤, 각 레포 row의 핵심 소스 참조를 따라가면 README만으로는 보이지 않는 구현 경로를 바로 확인할 수 있습니다.
 
 ## 총평
 
@@ -760,44 +760,44 @@ This report adds topic-first, source-path-level evidence extracted from the loca
 
 ${renderNavigation(baseDir)}
 
-## Coverage
+## 범위
 
-| Metric | Count |
+| 항목 | 수 |
 | --- | ---: |
-| Source-scanned repositories | ${rows.length} |
-| Key source references extracted | ${sourceReferenceCount} |
-| Truncated large scans | ${truncatedCount} |
-| Entrypoint path hits | ${bucketTotals.entrypoints} |
-| Agent/runtime path hits | ${bucketTotals.agentRuntime} |
-| MCP path hits | ${bucketTotals.mcp} |
-| Retrieval/vector path hits | ${bucketTotals.retrieval} |
-| Spec/requirements path hits | ${bucketTotals.spec} |
-| Eval/test path hits | ${bucketTotals.eval} |
-| Security/policy path hits | ${bucketTotals.security} |
-| Instruction file path hits | ${bucketTotals.instruction} |
+| 소스 스캔 레포 | ${rows.length} |
+| 추출된 핵심 소스 참조 | ${sourceReferenceCount} |
+| 큰 스캔에서 잘린 레포 | ${truncatedCount} |
+| Entrypoint 경로 hit | ${bucketTotals.entrypoints} |
+| Agent/runtime 경로 hit | ${bucketTotals.agentRuntime} |
+| MCP 경로 hit | ${bucketTotals.mcp} |
+| Retrieval/vector 경로 hit | ${bucketTotals.retrieval} |
+| Spec/requirements 경로 hit | ${bucketTotals.spec} |
+| Eval/test 경로 hit | ${bucketTotals.eval} |
+| Security/policy 경로 hit | ${bucketTotals.security} |
+| Instruction 파일 경로 hit | ${bucketTotals.instruction} |
 
-## Topic Index
+## 주제별 목차
 
-| Topic README | Repositories | Korean label | Source focus |
+| 주제 README | 레포 수 | 한국어 라벨 | 소스 초점 |
 | --- | ---: | --- | --- |
 ${renderTopicSummary(rows, baseDir)}
 
-## Repository Deep Dive Files
+## 레포별 딥다이브 파일
 
 - ${linkFrom(baseDir, "reports/source-deep-dives/repositories/README.md", "reports/source-deep-dives/repositories/README.md")}
-- 레포별 deep dive 파일은 주제별 shard 아래에 생성됩니다. 예: \`repositories/agent-harness-mcp/<owner__repo>.md\`.
+- 레포별 딥다이브 파일은 주제별 shard 아래에 생성됩니다. 예: \`repositories/agent-harness-mcp/<owner__repo>.md\`.
 
-## Source Pattern Matrix
+## 소스 패턴 매트릭스
 
-| Topic | Repos | Entrypoint | Agent runtime | MCP | Retrieval | Spec | Eval/Test | Security | Instruction | CI | Container |
+| 주제 | 레포 수 | Entrypoint | Agent runtime | MCP | Retrieval | Spec | Eval/Test | Security | Instruction | CI | Container |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 ${renderBucketMatrix(rows)}
 
-## Highest Source-Depth Findings
+## 소스 깊이 상위 인사이트
 
 ${renderSourceTable(rows, baseDir, 80)}
 
-## Data Files
+## 데이터 파일
 
 - ${linkFrom(baseDir, "data/source-deep-scan.json", "data/source-deep-scan.json")}
 - ${linkFrom(baseDir, "data/report-tables/source-deep-scan.csv", "data/report-tables/source-deep-scan.csv")}
@@ -806,25 +806,25 @@ ${renderSourceTable(rows, baseDir, 80)}
 
 function renderTopicIndex(rows) {
   const baseDir = "reports/source-deep-dives/by-topic";
-  return `# Source Deep Dives by Topic
+  return `# 주제별 소스 딥다이브
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ## 요약
 
-- 조사 단위: source deep-scan rows를 역할/주제별 README로 나눈 목차입니다.
-- 포함 범위: ${rows.length.toLocaleString("en-US")} repositories across ${topicDefinitions.length} topic groups.
+- 조사 단위: 소스 심층 스캔 row를 역할/주제별 README로 나눈 목차입니다.
+- 포함 범위: ${rows.length.toLocaleString("en-US")}개 레포, ${topicDefinitions.length}개 주제 그룹입니다.
 - 탐색 방식: 주제 README로 들어가면 해당 주제의 파일 경로 근거, deep source insight, risk를 한 표에서 볼 수 있습니다.
 
 ## 총평
 
-주제별 deep dive는 레포 이름보다 “무엇을 알고 싶은가”를 기준으로 읽을 때 효과적입니다. 예를 들어 MCP 구현만 보려면 Agent Harness and MCP, RAG 파이프라인만 보려면 LLM Wiki/RAG, 테스트와 관측성만 보려면 Evals/Observability에서 시작하면 됩니다.
+주제별 딥다이브는 레포 이름보다 “무엇을 알고 싶은가”를 기준으로 읽을 때 효과적입니다. 예를 들어 MCP 구현만 보려면 에이전트 하네스/MCP, RAG 파이프라인만 보려면 LLM 위키/RAG, 테스트와 관측성만 보려면 평가/관측/품질에서 시작하면 됩니다.
 
 ${renderNavigation(baseDir)}
 
-## Topics
+## 주제
 
-| Topic README | Repositories | Korean label | Source focus |
+| 주제 README | 레포 수 | 한국어 라벨 | 소스 초점 |
 | --- | ---: | --- | --- |
 ${renderTopicSummary(rows, baseDir)}
 `;
@@ -834,17 +834,17 @@ function renderTopicReadme(topic, rows) {
   const baseDir = `reports/source-deep-dives/by-topic/${topic.slug}`;
   const bucketTotals = aggregateBucketCounts(rows);
   const sourceReferenceCount = rows.reduce((sum, row) => sum + row.keySourceReferences.length, 0);
-  return `# ${topic.title} Source Deep Dive
+  return `# ${topic.title} 소스 딥다이브
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
-${topic.korean} 주제의 로컬 source deep-scan 결과입니다.
+${topic.korean} 주제의 로컬 소스 심층 스캔 결과입니다.
 
 ## 요약
 
 - 조사 단위: \`${topic.slug}\` 역할로 분류된 로컬 소스 레포 ${rows.length.toLocaleString("en-US")}개입니다.
 - 포함 범위: ${topic.focus} 경로를 중심으로 key source reference ${sourceReferenceCount.toLocaleString("en-US")}개를 추출했습니다.
-- 탐색 방식: Deep source insight를 먼저 읽고, Key source references의 파일 링크를 따라가면 소스를 봐야만 알 수 있는 구현 단서를 확인할 수 있습니다.
+- 탐색 방식: 소스 인사이트를 먼저 읽고, 핵심 소스 참조의 파일 링크를 따라가면 소스를 봐야만 알 수 있는 구현 단서를 확인할 수 있습니다.
 
 ## 총평
 
@@ -852,22 +852,22 @@ ${topic.korean} 주제의 로컬 source deep-scan 결과입니다.
 
 ${renderNavigation(baseDir)}
 
-## Topic Coverage
+## 주제 범위
 
-| Metric | Count |
+| 항목 | 수 |
 | --- | ---: |
-| Repositories | ${rows.length} |
-| Key source references | ${sourceReferenceCount} |
-| Entrypoint path hits | ${bucketTotals.entrypoints} |
-| Agent/runtime path hits | ${bucketTotals.agentRuntime} |
-| MCP path hits | ${bucketTotals.mcp} |
-| Retrieval/vector path hits | ${bucketTotals.retrieval} |
-| Spec/requirements path hits | ${bucketTotals.spec} |
-| Eval/test path hits | ${bucketTotals.eval} |
-| Security/policy path hits | ${bucketTotals.security} |
-| Instruction file path hits | ${bucketTotals.instruction} |
+| 레포 수 | ${rows.length} |
+| 핵심 소스 참조 | ${sourceReferenceCount} |
+| Entrypoint 경로 hit | ${bucketTotals.entrypoints} |
+| Agent/runtime 경로 hit | ${bucketTotals.agentRuntime} |
+| MCP 경로 hit | ${bucketTotals.mcp} |
+| Retrieval/vector 경로 hit | ${bucketTotals.retrieval} |
+| Spec/requirements 경로 hit | ${bucketTotals.spec} |
+| Eval/test 경로 hit | ${bucketTotals.eval} |
+| Security/policy 경로 hit | ${bucketTotals.security} |
+| Instruction 파일 경로 hit | ${bucketTotals.instruction} |
 
-## Repository Source Findings
+## 레포별 소스 인사이트
 
 ${renderSourceTable(rows, baseDir)}
 `;
@@ -888,35 +888,35 @@ function renderRepositoryIndex(rows) {
     .sort((a, b) => b.count - a.count || a.title.localeCompare(b.title))
     .map((topic) => `| ${linkFrom(baseDir, `reports/source-deep-dives/by-topic/${topic.slug}/README.md`, topic.title)} | ${topic.count} | ${tableText(topic.korean)} | ${tableText(topic.focus)} |`)
     .join("\n");
-  return `# Source Repository Deep Dives
+  return `# 레포별 소스 딥다이브
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ## 요약
 
-- 조사 단위: 로컬에 클론된 ${rows.length.toLocaleString("en-US")}개 소스 레포 각각의 독립 deep dive 파일입니다.
+- 조사 단위: 로컬에 클론된 ${rows.length.toLocaleString("en-US")}개 소스 레포 각각의 독립 딥다이브 파일입니다.
 - 포함 범위: 레포별 metadata, architecture map, entrypoint/run commands, dependency stack, evidence buckets, validation surface, risks, reading plan입니다.
-- 탐색 방식: Canonical Shards는 안정적인 실제 파일 위치이고, Topic Views는 같은 레포별 deep dive를 주제 기준으로 다시 보여주는 인덱스입니다.
+- 탐색 방식: canonical shard는 안정적인 실제 파일 위치이고, 주제별 view는 같은 레포별 딥다이브를 주제 기준으로 다시 보여주는 인덱스입니다.
 
 ## 총평
 
-이 폴더는 기존의 큰 표를 레포 단위 문서로 풀어낸 결과입니다. 대규모 비교는 상위 Source Deep Dives 표가 빠르고, 실제 구현을 따라 읽을 때는 이 레포별 파일이 더 적합합니다. 총 ${sourceReferenceCount.toLocaleString("en-US")}개의 key source reference가 각 보고서에 분산되어 있습니다.
+이 폴더는 기존의 큰 표를 레포 단위 문서로 풀어낸 결과입니다. 대규모 비교는 상위 소스 딥다이브 표가 빠르고, 실제 구현을 따라 읽을 때는 이 레포별 파일이 더 적합합니다. 총 ${sourceReferenceCount.toLocaleString("en-US")}개의 key source reference가 각 보고서에 분산되어 있습니다.
 
 ${renderNavigation(baseDir)}
 
-## Canonical Shards
+## Canonical Shard
 
-| Shard | Repository reports |
+| Shard | 레포 보고서 수 |
 | --- | ---: |
 ${shardRows}
 
-## Topic Views
+## 주제별 View
 
-| Topic view | Repository reports | Korean label | Source focus |
+| 주제 view | 레포 보고서 수 | 한국어 라벨 | 소스 초점 |
 | --- | ---: | --- | --- |
 ${topicRows}
 
-## Top 120 Repository Files
+## 상위 120개 레포 파일
 
 ${renderSourceTable(rows, baseDir, 120)}
 `;
@@ -925,23 +925,23 @@ ${renderSourceTable(rows, baseDir, 120)}
 function renderRepositoryShardIndex(shard, rows) {
   const baseDir = `reports/source-deep-dives/repositories/${shard}`;
   const sourceReferenceCount = rows.reduce((sum, row) => sum + row.keySourceReferences.length, 0);
-  return `# Source Repository Deep Dives: Shard ${shard}
+  return `# 레포별 소스 딥다이브: Shard ${shard}
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ## 요약
 
-- 조사 단위: canonical shard \`${shard}\`에 속한 레포별 source deep dive ${rows.length.toLocaleString("en-US")}개입니다.
-- 포함 범위: role과 무관하게 안정적인 파일 경로를 유지하는 레포별 deep dive 본문입니다.
-- 탐색 방식: 아래 표에서 deep dive 링크를 열면 해당 레포의 Architecture, How It Runs, Evidence Buckets, Validation Surface를 볼 수 있습니다.
+- 조사 단위: canonical shard \`${shard}\`에 속한 레포별 소스 딥다이브 ${rows.length.toLocaleString("en-US")}개입니다.
+- 포함 범위: 역할과 무관하게 안정적인 파일 경로를 유지하는 레포별 딥다이브 본문입니다.
+- 탐색 방식: 아래 표에서 딥다이브 링크를 열면 해당 레포의 구조, 실행 방식, 근거 bucket, 검증 표면을 볼 수 있습니다.
 
 ## 총평
 
-이 shard는 파일 시스템 규모를 고르게 나누기 위한 canonical 분할입니다. 주제별 비교는 Source Deep Dives by Topic을 쓰고, 본문 파일의 안정적인 위치는 이 shard 경로를 기준으로 삼으면 됩니다. 이 shard의 key source reference는 ${sourceReferenceCount.toLocaleString("en-US")}개입니다.
+이 shard는 파일 시스템 규모를 고르게 나누기 위한 canonical 분할입니다. 주제별 비교는 주제별 소스 딥다이브를 쓰고, 본문 파일의 안정적인 위치는 이 shard 경로를 기준으로 삼으면 됩니다. 이 shard의 key source reference는 ${sourceReferenceCount.toLocaleString("en-US")}개입니다.
 
 ${renderNavigation(baseDir)}
 
-## Repository Deep Dive Files
+## 레포별 딥다이브 파일
 
 ${renderSourceTable(rows, baseDir)}
 `;
@@ -951,19 +951,19 @@ function renderRepositoryDeepDive(row) {
   const baseDir = path.dirname(row.sourceDeepDivePath).replaceAll(path.sep, "/");
   const topic = topicBySlug.get(row.role) || topicBySlug.get("general-ai-open-source");
   const sourceLink = linkFrom(baseDir, row.localPath, row.localPath);
-  const reportLink = row.reportPath ? linkFrom(baseDir, row.reportPath, row.reportPath) : "none";
-  const extensionSummary = topEntriesFromObject(row.extensions, 12).map(([ext, count]) => `${ext}: ${count}`).join(", ") || "none";
-  return `# ${row.name} Source Deep Dive
+  const reportLink = row.reportPath ? linkFrom(baseDir, row.reportPath, row.reportPath) : "없음";
+  const extensionSummary = topEntriesFromObject(row.extensions, 12).map(([ext, count]) => `${ext}: ${count}`).join(", ") || "없음";
+  return `# ${row.name} 소스 딥다이브
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ${row.summary || row.title || row.name}
 
 ## 요약
 
-- 조사 단위: \`${row.localPath}\` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
+- 조사 단위: \`${row.localPath}\` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
 - 포함 범위: ${row.fileCount.toLocaleString("en-US")} files, ${row.dirCount.toLocaleString("en-US")} directories, depth score ${row.sourceDepthScore}, key references ${row.keySourceReferences.length}개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
@@ -971,71 +971,71 @@ ${row.deepInsight} 기존 레포 평가 관점은 ${row.strategy || "architectur
 
 ${renderNavigation(baseDir)}
 
-## Repository Context
+## 레포 컨텍스트
 
 ${renderKeyValueTable([
-    ["Repository", row.name],
-    ["Topic", `${topic.title} / ${row.roleKorean}`],
+    ["레포", row.name],
+    ["주제", `${topic.title} / ${row.roleKorean}`],
     ["Region", row.region],
     ["Language", row.language],
     ["Stars", row.stars],
     ["Forks", row.forks],
     ["License", row.license],
-    ["Maturity", row.maturity],
-    ["Evidence", row.evidence],
-    ["Source", sourceLink],
-    ["Existing report", reportLink]
+    ["성숙도", row.maturity],
+    ["근거 수준", row.evidence],
+    ["소스", sourceLink],
+    ["기존 보고서", reportLink]
   ])}
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | ${row.fileCount} / ${row.dirCount} |
-| Max observed depth | ${row.maxDepth} |
-| Top directories | ${tableText(row.topDirectories.slice(0, 20).join(", ") || "none")} |
-| Top extensions | ${tableText(extensionSummary)} |
-| Source patterns | ${tableText(row.patterns.join(", ") || "none")} |
+| 파일 / 디렉터리 | ${row.fileCount} / ${row.dirCount} |
+| 관측 최대 깊이 | ${row.maxDepth} |
+| 상위 디렉터리 | ${tableText(row.topDirectories.slice(0, 20).join(", ") || "없음")} |
+| 상위 확장자 | ${tableText(extensionSummary)} |
+| 소스 패턴 | ${tableText(row.patterns.join(", ") || "없음")} |
 
-### Components
+### 컴포넌트
 
 ${renderComponentTable(row)}
 
-## How It Runs
+## 실행 방식
 
 ${renderCommandTable(row.commands)}
 
-## Dependency Stack
+## 의존성 스택
 
 ${renderDependencyGroups(row)}
 
-## Key Source References
+## 핵심 소스 참조
 
 ${renderKeyReferencesTable(row, baseDir)}
 
-## Evidence Buckets
+## 근거 Bucket
 
 ${renderBucketEvidenceTable(row, baseDir)}
 
-## Validation Surface
+## 검증 표면
 
 ${renderValidationSurface(row, baseDir)}
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
 ${renderRiskCategoryTable(row)}
 
-## Reading Plan
+## 읽기 계획
 
 ${renderReadingPlan(row)}
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-${row.repositoryInsight || "No prior repository insight text."}
+${row.repositoryInsight || "기존 레포 인사이트가 없습니다."}
 
-## Existing Assessment
+## 기존 평가
 
-${row.repositoryAssessment || "No prior repository assessment text."}
+${row.repositoryAssessment || "기존 평가가 없습니다."}
 `;
 }
 
@@ -1083,7 +1083,7 @@ async function main() {
   const byTopic = countBy(rows, (row) => row.role);
   await writeFile(outputDataFile, JSON.stringify({
     generatedAt,
-    description: "Topic-wise local source deep scan with source-path-level evidence extracted from sources/.",
+    description: "sources/에서 추출한 소스 경로 수준 근거를 주제별로 묶은 로컬 소스 심층 스캔입니다.",
     count: rows.length,
     byTopic,
     bucketTotals: aggregateBucketCounts(rows),

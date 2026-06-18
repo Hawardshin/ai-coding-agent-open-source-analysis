@@ -1,63 +1,63 @@
-# sktelecom/sbom-tools Source Deep Dive
+# sktelecom/sbom-tools 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 BomLens — a local-first SBOM generator & open-source risk assessor (CycloneDX). Produce an SBOM, an open-source notice, and a security/license risk report from source code, containers, binaries, firmware, or an SBOM you received. CLI or web UI, no SaaS.
 
 ## 요약
 
-- 조사 단위: `sources/sktelecom__sbom-tools` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 269 files, 60 directories, depth score 111, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/sktelecom__sbom-tools` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 269 files, 60 directories, depth score 105, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-개발 생산성/DevTools 관점에서 cli-first, api/server, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=examples/rust/src/main.rs, examples/go/main.go, docker/web/server.py이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+개발 생산성/DevTools 관점에서 cli-first, api/server, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=examples/rust/src/main.rs, examples/go/main.go, docker/web/server.py이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | sktelecom/sbom-tools |
-| Topic | Developer Productivity and DevTools / 개발 생산성/DevTools |
+| 레포 | sktelecom/sbom-tools |
+| 주제 | 개발 생산성/DevTools / 개발 생산성/DevTools |
 | Region | korea |
 | Language | Shell |
 | Stars | 5 |
 | Forks | 1 |
 | License | Apache-2.0 |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/sktelecom__sbom-tools](../../../../sources/sktelecom__sbom-tools) |
-| Existing report | [reports/korea-trending/repositories/sktelecom__sbom-tools.md](../../../korea-trending/repositories/sktelecom__sbom-tools.md) |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/sktelecom__sbom-tools](../../../../sources/sktelecom__sbom-tools) |
+| 기존 보고서 | [reports/korea-trending/repositories/sktelecom__sbom-tools.md](../../../korea-trending/repositories/sktelecom__sbom-tools.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 269 / 60 |
-| Max observed depth | 8 |
-| Top directories | .github, docker, docs, electron, examples, overrides, scripts, tests |
-| Top extensions | .md: 79, .tsx: 32, .sh: 22, .txt: 22, .json: 18, .png: 17, (none): 15, .yml: 11, .ts: 9, .mjs: 6, .svg: 5, .html: 4 |
-| Source patterns | cli-first, api/server, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 269 / 60 |
+| 관측 최대 깊이 | 8 |
+| 상위 디렉터리 | .github, docker, docs, electron, examples, overrides, scripts, tests |
+| 상위 확장자 | .md: 79, .tsx: 32, .sh: 22, .txt: 22, .json: 18, .png: 17, (none): 15, .yml: 11, .ts: 9, .mjs: 6, .svg: 5, .html: 4 |
+| 소스 패턴 | cli-first, api/server, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 34 |
 | tests | validation surface | 23 |
@@ -79,29 +79,29 @@ BomLens — a local-first SBOM generator & open-source risk assessor (CycloneDX)
 | examples/test-all.sh | examples workspace | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [examples/rust/src/main.rs](../../../../sources/sktelecom__sbom-tools/examples/rust/src/main.rs) | entrypoints signal |
 | entrypoints | [examples/go/main.go](../../../../sources/sktelecom__sbom-tools/examples/go/main.go) | entrypoints signal |
@@ -117,56 +117,56 @@ _No command surface extracted from root manifests._
 | ci | [.github/workflows/docker-publish.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/docker-publish.yml) | ci signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 6 | [examples/rust/src/main.rs](../../../../sources/sktelecom__sbom-tools/examples/rust/src/main.rs)<br>[examples/go/main.go](../../../../sources/sktelecom__sbom-tools/examples/go/main.go)<br>[docker/web/server.py](../../../../sources/sktelecom__sbom-tools/docker/web/server.py)<br>[docker/web/frontend/src/App.tsx](../../../../sources/sktelecom__sbom-tools/docker/web/frontend/src/App.tsx)<br>[docker/web/frontend/src/index.css](../../../../sources/sktelecom__sbom-tools/docker/web/frontend/src/index.css)<br>[docker/web/frontend/src/main.tsx](../../../../sources/sktelecom__sbom-tools/docker/web/frontend/src/main.tsx) |
-| agentRuntime | 0 | not obvious |
-| mcp | 0 | not obvious |
+| agentRuntime | 0 | 명확하지 않음 |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 8 | [examples/php/index.php](../../../../sources/sktelecom__sbom-tools/examples/php/index.php)<br>[examples/nodejs/index.js](../../../../sources/sktelecom__sbom-tools/examples/nodejs/index.js)<br>[docs/index.ko.md](../../../../sources/sktelecom__sbom-tools/docs/index.ko.md)<br>[docs/index.md](../../../../sources/sktelecom__sbom-tools/docs/index.md)<br>[docs/images/web-ui-dependency-graph-en.png](../../../../sources/sktelecom__sbom-tools/docs/images/web-ui-dependency-graph-en.png)<br>[docs/images/web-ui-dependency-graph.png](../../../../sources/sktelecom__sbom-tools/docs/images/web-ui-dependency-graph.png)<br>[docker/web/frontend/index.html](../../../../sources/sktelecom__sbom-tools/docker/web/frontend/index.html)<br>[docker/web/frontend/src/index.css](../../../../sources/sktelecom__sbom-tools/docker/web/frontend/src/index.css) |
 | spec | 4 | [examples/python/requirements.txt](../../../../sources/sktelecom__sbom-tools/examples/python/requirements.txt)<br>[docs/internal/improvement-roadmap.md](../../../../sources/sktelecom__sbom-tools/docs/internal/improvement-roadmap.md)<br>[docs/concepts/architecture.ko.md](../../../../sources/sktelecom__sbom-tools/docs/concepts/architecture.ko.md)<br>[docs/concepts/architecture.md](../../../../sources/sktelecom__sbom-tools/docs/concepts/architecture.md) |
 | eval | 25 | [tests/check-examples-sync.sh](../../../../sources/sktelecom__sbom-tools/tests/check-examples-sync.sh)<br>[tests/compare-cdxgen-vs-docker.sh](../../../../sources/sktelecom__sbom-tools/tests/compare-cdxgen-vs-docker.sh)<br>[tests/en-screenshots-prompt.md](../../../../sources/sktelecom__sbom-tools/tests/en-screenshots-prompt.md)<br>[tests/test-e2e.sh](../../../../sources/sktelecom__sbom-tools/tests/test-e2e.sh)<br>[tests/test-examples-e2e.sh](../../../../sources/sktelecom__sbom-tools/tests/test-examples-e2e.sh)<br>[tests/test-postprocess.sh](../../../../sources/sktelecom__sbom-tools/tests/test-postprocess.sh)<br>[tests/test-scan.sh](../../../../sources/sktelecom__sbom-tools/tests/test-scan.sh)<br>[tests/test-windows.sh](../../../../sources/sktelecom__sbom-tools/tests/test-windows.sh) |
 | security | 3 | [SECURITY.en.md](../../../../sources/sktelecom__sbom-tools/SECURITY.en.md)<br>[SECURITY.md](../../../../sources/sktelecom__sbom-tools/SECURITY.md)<br>[docker/lib/scan-security.sh](../../../../sources/sktelecom__sbom-tools/docker/lib/scan-security.sh) |
 | ci | 8 | [.github/workflows/ci.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/codeql.yml)<br>[.github/workflows/desktop.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/desktop.yml)<br>[.github/workflows/docker-publish.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/docker-publish.yml)<br>[.github/workflows/docs.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/docs.yml)<br>[.github/workflows/examples.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/examples.yml)<br>[.github/workflows/release.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/release.yml)<br>[.github/workflows/scorecard.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/scorecard.yml) |
 | container | 3 | [examples/docker/Dockerfile](../../../../sources/sktelecom__sbom-tools/examples/docker/Dockerfile)<br>[docker/Dockerfile](../../../../sources/sktelecom__sbom-tools/docker/Dockerfile)<br>[docker/android/Dockerfile](../../../../sources/sktelecom__sbom-tools/docker/android/Dockerfile) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 87 | [mkdocs.yml](../../../../sources/sktelecom__sbom-tools/mkdocs.yml)<br>[README.md](../../../../sources/sktelecom__sbom-tools/README.md)<br>[examples/swift/README.md](../../../../sources/sktelecom__sbom-tools/examples/swift/README.md)<br>[examples/rust/README.md](../../../../sources/sktelecom__sbom-tools/examples/rust/README.md)<br>[examples/ruby/README.md](../../../../sources/sktelecom__sbom-tools/examples/ruby/README.md)<br>[examples/python/README.md](../../../../sources/sktelecom__sbom-tools/examples/python/README.md)<br>[examples/php/README.md](../../../../sources/sktelecom__sbom-tools/examples/php/README.md)<br>[examples/nodejs/README.md](../../../../sources/sktelecom__sbom-tools/examples/nodejs/README.md) |
 | config | 7 | [examples/rust/Cargo.toml](../../../../sources/sktelecom__sbom-tools/examples/rust/Cargo.toml)<br>[examples/python/requirements.txt](../../../../sources/sktelecom__sbom-tools/examples/python/requirements.txt)<br>[examples/nodejs/package.json](../../../../sources/sktelecom__sbom-tools/examples/nodejs/package.json)<br>[examples/go/go.mod](../../../../sources/sktelecom__sbom-tools/examples/go/go.mod)<br>[electron/package.json](../../../../sources/sktelecom__sbom-tools/electron/package.json)<br>[docker/web/frontend/package.json](../../../../sources/sktelecom__sbom-tools/docker/web/frontend/package.json)<br>[docker/web/frontend/tsconfig.json](../../../../sources/sktelecom__sbom-tools/docker/web/frontend/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 25 | [tests/check-examples-sync.sh](../../../../sources/sktelecom__sbom-tools/tests/check-examples-sync.sh)<br>[tests/compare-cdxgen-vs-docker.sh](../../../../sources/sktelecom__sbom-tools/tests/compare-cdxgen-vs-docker.sh)<br>[tests/en-screenshots-prompt.md](../../../../sources/sktelecom__sbom-tools/tests/en-screenshots-prompt.md)<br>[tests/test-e2e.sh](../../../../sources/sktelecom__sbom-tools/tests/test-e2e.sh)<br>[tests/test-examples-e2e.sh](../../../../sources/sktelecom__sbom-tools/tests/test-examples-e2e.sh)<br>[tests/test-postprocess.sh](../../../../sources/sktelecom__sbom-tools/tests/test-postprocess.sh) |
-| CI workflows | 8 | [.github/workflows/ci.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/codeql.yml)<br>[.github/workflows/desktop.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/desktop.yml)<br>[.github/workflows/docker-publish.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/docker-publish.yml)<br>[.github/workflows/docs.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/docs.yml)<br>[.github/workflows/examples.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/examples.yml) |
-| Containers / deploy | 3 | [examples/docker/Dockerfile](../../../../sources/sktelecom__sbom-tools/examples/docker/Dockerfile)<br>[docker/Dockerfile](../../../../sources/sktelecom__sbom-tools/docker/Dockerfile)<br>[docker/android/Dockerfile](../../../../sources/sktelecom__sbom-tools/docker/android/Dockerfile) |
-| Security / policy | 3 | [SECURITY.en.md](../../../../sources/sktelecom__sbom-tools/SECURITY.en.md)<br>[SECURITY.md](../../../../sources/sktelecom__sbom-tools/SECURITY.md)<br>[docker/lib/scan-security.sh](../../../../sources/sktelecom__sbom-tools/docker/lib/scan-security.sh) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 25 | [tests/check-examples-sync.sh](../../../../sources/sktelecom__sbom-tools/tests/check-examples-sync.sh)<br>[tests/compare-cdxgen-vs-docker.sh](../../../../sources/sktelecom__sbom-tools/tests/compare-cdxgen-vs-docker.sh)<br>[tests/en-screenshots-prompt.md](../../../../sources/sktelecom__sbom-tools/tests/en-screenshots-prompt.md)<br>[tests/test-e2e.sh](../../../../sources/sktelecom__sbom-tools/tests/test-e2e.sh)<br>[tests/test-examples-e2e.sh](../../../../sources/sktelecom__sbom-tools/tests/test-examples-e2e.sh)<br>[tests/test-postprocess.sh](../../../../sources/sktelecom__sbom-tools/tests/test-postprocess.sh) |
+| CI workflow | 8 | [.github/workflows/ci.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/codeql.yml)<br>[.github/workflows/desktop.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/desktop.yml)<br>[.github/workflows/docker-publish.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/docker-publish.yml)<br>[.github/workflows/docs.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/docs.yml)<br>[.github/workflows/examples.yml](../../../../sources/sktelecom__sbom-tools/.github/workflows/examples.yml) |
+| 컨테이너/배포 | 3 | [examples/docker/Dockerfile](../../../../sources/sktelecom__sbom-tools/examples/docker/Dockerfile)<br>[docker/Dockerfile](../../../../sources/sktelecom__sbom-tools/docker/Dockerfile)<br>[docker/android/Dockerfile](../../../../sources/sktelecom__sbom-tools/docker/android/Dockerfile) |
+| 보안/정책 | 3 | [SECURITY.en.md](../../../../sources/sktelecom__sbom-tools/SECURITY.en.md)<br>[SECURITY.md](../../../../sources/sktelecom__sbom-tools/SECURITY.md)<br>[docker/lib/scan-security.sh](../../../../sources/sktelecom__sbom-tools/docker/lib/scan-security.sh) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `examples/rust/src/main.rs`, `examples/go/main.go`, `docker/web/server.py`.
-2. Trace execution through entrypoints: `examples/rust/src/main.rs`, `examples/go/main.go`, `docker/web/server.py`.
-3. Inspect retrieval/memory/indexing through: `examples/php/index.php`, `examples/nodejs/index.js`, `docs/index.ko.md`.
-4. Verify behavior through test/eval files: `tests/check-examples-sync.sh`, `tests/compare-cdxgen-vs-docker.sh`, `tests/en-screenshots-prompt.md`.
+1. 핵심 참조에서 시작: `examples/rust/src/main.rs`, `examples/go/main.go`, `docker/web/server.py`.
+2. entrypoint를 따라 실행 흐름 확인: `examples/rust/src/main.rs`, `examples/go/main.go`, `docker/web/server.py`.
+3. retrieval/memory/indexing 확인: `examples/php/index.php`, `examples/nodejs/index.js`, `docs/index.ko.md`.
+4. test/eval 파일로 동작 검증: `tests/check-examples-sync.sh`, `tests/compare-cdxgen-vs-docker.sh`, `tests/en-screenshots-prompt.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-개발 생산성/DevTools 관점에서 BomLens — a local first SBOM generator & open source risk assessor CycloneDX . Produce an SBOM, an open source notice, a. 핵심 구조 신호는 Shell, README.md, LICENSE, tests, ci, docs이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+개발 생산성/DevTools 관점에서 BomLens — a local first SBOM generator & open source risk assessor CycloneDX . Produce an SBOM, an open source notice, a. 핵심 구조 신호는 Shell, README.md, LICENSE, tests, ci, docs이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

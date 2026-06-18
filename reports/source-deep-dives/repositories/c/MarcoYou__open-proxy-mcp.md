@@ -1,63 +1,63 @@
-# MarcoYou/open-proxy-mcp Source Deep Dive
+# MarcoYou/open-proxy-mcp 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 AI-powered MCP (Model Context Protocol) server that structures Korean AGM (Annual General Meeting) filings from DART into actionable, AI-ready data.
 
 ## 요약
 
-- 조사 단위: `sources/MarcoYou__open-proxy-mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 994 files, 84 directories, depth score 129, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/MarcoYou__open-proxy-mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 994 files, 84 directories, depth score 123, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 api/server, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 mcp=wiki/archive/entities/OpenProxy-MCP.md, powerpoint/open-proxy-mcp-tool-catalog.pdf, powerpoint/open-proxy-mcp-tool-catalog.pptx이고, 의존성 단서는 openai, anthropic, mcp, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 api/server, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 mcp=wiki/archive/entities/OpenProxy-MCP.md, powerpoint/open-proxy-mcp-tool-catalog.pdf, powerpoint/open-proxy-mcp-tool-catalog.pptx이고, 의존성 단서는 openai, anthropic, mcp, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | MarcoYou/open-proxy-mcp |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | MarcoYou/open-proxy-mcp |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | korea |
 | Language | Python |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/MarcoYou__open-proxy-mcp](../../../../sources/MarcoYou__open-proxy-mcp) |
-| Existing report | [reports/korea-trending/repositories/MarcoYou__open-proxy-mcp.md](../../../korea-trending/repositories/MarcoYou__open-proxy-mcp.md) |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/MarcoYou__open-proxy-mcp](../../../../sources/MarcoYou__open-proxy-mcp) |
+| 기존 보고서 | [reports/korea-trending/repositories/MarcoYou__open-proxy-mcp.md](../../../korea-trending/repositories/MarcoYou__open-proxy-mcp.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 994 / 84 |
-| Max observed depth | 7 |
-| Top directories | .github, docs, open_proxy_mcp, powerpoint, sample_universe, screenshot, scripts, tests, wiki |
-| Top extensions | .md: 371, .json: 349, .py: 163, .csv: 61, .html: 24, .png: 10, (none): 6, .toml: 2, .xlsx: 2, .yml: 2, .example: 1, .lock: 1 |
-| Source patterns | api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 994 / 84 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .github, docs, open_proxy_mcp, powerpoint, sample_universe, screenshot, scripts, tests, wiki |
+| 상위 확장자 | .md: 371, .json: 349, .py: 163, .csv: 61, .html: 24, .png: 10, (none): 6, .toml: 2, .xlsx: 2, .yml: 2, .example: 1, .lock: 1 |
+| 소스 패턴 | api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 23 |
 | tests | validation surface | 11 |
@@ -70,29 +70,29 @@ AI-powered MCP (Model Context Protocol) server that structures Korean AGM (Annua
 | wiki | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
 | agentProtocols | mcp |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [wiki/archive/entities/OpenProxy-MCP.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/archive/entities/OpenProxy-MCP.md) | mcp signal |
 | mcp | [powerpoint/open-proxy-mcp-tool-catalog.pdf](../../../../sources/MarcoYou__open-proxy-mcp/powerpoint/open-proxy-mcp-tool-catalog.pdf) | mcp signal |
@@ -108,9 +108,9 @@ _No command surface extracted from root manifests._
 | config | [pyproject.toml](../../../../sources/MarcoYou__open-proxy-mcp/pyproject.toml) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 2 | [open_proxy_mcp/__main__.py](../../../../sources/MarcoYou__open-proxy-mcp/open_proxy_mcp/__main__.py)<br>[open_proxy_mcp/server.py](../../../../sources/MarcoYou__open-proxy-mcp/open_proxy_mcp/server.py) |
 | agentRuntime | 76 | [AGENTS.md](../../../../sources/MarcoYou__open-proxy-mcp/AGENTS.md)<br>[wiki/tools/company.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/tools/company.md)<br>[wiki/tools/corp_gov_report.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/tools/corp_gov_report.md)<br>[wiki/tools/corporate_deals.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/tools/corporate_deals.md)<br>[wiki/tools/corporate_restructuring.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/tools/corporate_restructuring.md)<br>[wiki/tools/data_tool_disclosure_map.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/tools/data_tool_disclosure_map.md)<br>[wiki/tools/dilutive_issuance.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/tools/dilutive_issuance.md)<br>[wiki/tools/dividend.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/tools/dividend.md) |
@@ -126,39 +126,39 @@ _No command surface extracted from root manifests._
 | config | 2 | [pyproject.toml](../../../../sources/MarcoYou__open-proxy-mcp/pyproject.toml)<br>[uv.lock](../../../../sources/MarcoYou__open-proxy-mcp/uv.lock) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 24 | [wiki/archive/benchmark-personnel-results.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/archive/benchmark-personnel-results.md)<br>[wiki/architecture/parsing_success_rate_audit_spec.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/parsing_success_rate_audit_spec.md)<br>[wiki/architecture/proxy_advise_word_report_spec.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/proxy_advise_word_report_spec.md)<br>[wiki/architecture/audits/260528_proxy_advise_metric_gap_audit.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/audits/260528_proxy_advise_metric_gap_audit.md)<br>[wiki/architecture/audits/data/260615_coheld_integration_test.json](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/audits/data/260615_coheld_integration_test.json)<br>[wiki/architecture/audits/data/260615_director_eval_diagnosis_after.json](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/audits/data/260615_director_eval_diagnosis_after.json) |
-| CI workflows | 2 | [.github/workflows/deploy.yml](../../../../sources/MarcoYou__open-proxy-mcp/.github/workflows/deploy.yml)<br>[.github/workflows/wiki-lint.yml](../../../../sources/MarcoYou__open-proxy-mcp/.github/workflows/wiki-lint.yml) |
-| Containers / deploy | 1 | [Dockerfile](../../../../sources/MarcoYou__open-proxy-mcp/Dockerfile) |
-| Security / policy | 153 | [wiki/lessons/agenda-typed-status-audit-260615.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/lessons/agenda-typed-status-audit-260615.md)<br>[wiki/lessons/render-output-audit-260616.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/lessons/render-output-audit-260616.md)<br>[wiki/lessons/tool-coverage-audit-260612.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/lessons/tool-coverage-audit-260612.md)<br>[wiki/decisions/260429_0059_decision_voting-policy-consensus-matrix.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/decisions/260429_0059_decision_voting-policy-consensus-matrix.md)<br>[wiki/archive/services/policy_comparison.py](../../../../sources/MarcoYou__open-proxy-mcp/wiki/archive/services/policy_comparison.py)<br>[wiki/archive/audits/260411_2023_audit_personnel-벤치마크-v1.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/archive/audits/260411_2023_audit_personnel-벤치마크-v1.md) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/MarcoYou__open-proxy-mcp/AGENTS.md)<br>[CLAUDE.md](../../../../sources/MarcoYou__open-proxy-mcp/CLAUDE.md) |
+| 테스트/평가 | 24 | [wiki/archive/benchmark-personnel-results.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/archive/benchmark-personnel-results.md)<br>[wiki/architecture/parsing_success_rate_audit_spec.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/parsing_success_rate_audit_spec.md)<br>[wiki/architecture/proxy_advise_word_report_spec.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/proxy_advise_word_report_spec.md)<br>[wiki/architecture/audits/260528_proxy_advise_metric_gap_audit.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/audits/260528_proxy_advise_metric_gap_audit.md)<br>[wiki/architecture/audits/data/260615_coheld_integration_test.json](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/audits/data/260615_coheld_integration_test.json)<br>[wiki/architecture/audits/data/260615_director_eval_diagnosis_after.json](../../../../sources/MarcoYou__open-proxy-mcp/wiki/architecture/audits/data/260615_director_eval_diagnosis_after.json) |
+| CI workflow | 2 | [.github/workflows/deploy.yml](../../../../sources/MarcoYou__open-proxy-mcp/.github/workflows/deploy.yml)<br>[.github/workflows/wiki-lint.yml](../../../../sources/MarcoYou__open-proxy-mcp/.github/workflows/wiki-lint.yml) |
+| 컨테이너/배포 | 1 | [Dockerfile](../../../../sources/MarcoYou__open-proxy-mcp/Dockerfile) |
+| 보안/정책 | 153 | [wiki/lessons/agenda-typed-status-audit-260615.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/lessons/agenda-typed-status-audit-260615.md)<br>[wiki/lessons/render-output-audit-260616.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/lessons/render-output-audit-260616.md)<br>[wiki/lessons/tool-coverage-audit-260612.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/lessons/tool-coverage-audit-260612.md)<br>[wiki/decisions/260429_0059_decision_voting-policy-consensus-matrix.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/decisions/260429_0059_decision_voting-policy-consensus-matrix.md)<br>[wiki/archive/services/policy_comparison.py](../../../../sources/MarcoYou__open-proxy-mcp/wiki/archive/services/policy_comparison.py)<br>[wiki/archive/audits/260411_2023_audit_personnel-벤치마크-v1.md](../../../../sources/MarcoYou__open-proxy-mcp/wiki/archive/audits/260411_2023_audit_personnel-벤치마크-v1.md) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/MarcoYou__open-proxy-mcp/AGENTS.md)<br>[CLAUDE.md](../../../../sources/MarcoYou__open-proxy-mcp/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `wiki/archive/entities/OpenProxy-MCP.md`, `powerpoint/open-proxy-mcp-tool-catalog.pdf`, `powerpoint/open-proxy-mcp-tool-catalog.pptx`.
-2. Trace execution through entrypoints: `open_proxy_mcp/__main__.py`, `open_proxy_mcp/server.py`.
-3. Map agent/tool runtime through: `AGENTS.md`, `wiki/tools/company.md`, `wiki/tools/corp_gov_report.md`.
-4. Inspect retrieval/memory/indexing through: `wiki/index.md`, `wiki/log.md`, `wiki/WIKI_SCHEMA.md`.
-5. Verify behavior through test/eval files: `wiki/archive/benchmark-personnel-results.md`, `wiki/architecture/parsing_success_rate_audit_spec.md`, `wiki/architecture/proxy_advise_word_report_spec.md`.
+1. 핵심 참조에서 시작: `wiki/archive/entities/OpenProxy-MCP.md`, `powerpoint/open-proxy-mcp-tool-catalog.pdf`, `powerpoint/open-proxy-mcp-tool-catalog.pptx`.
+2. entrypoint를 따라 실행 흐름 확인: `open_proxy_mcp/__main__.py`, `open_proxy_mcp/server.py`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `wiki/tools/company.md`, `wiki/tools/corp_gov_report.md`.
+4. retrieval/memory/indexing 확인: `wiki/index.md`, `wiki/log.md`, `wiki/WIKI_SCHEMA.md`.
+5. test/eval 파일로 동작 검증: `wiki/archive/benchmark-personnel-results.md`, `wiki/architecture/parsing_success_rate_audit_spec.md`, `wiki/architecture/proxy_advise_word_report_spec.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 AI powered MCP Model Context Protocol server that structures Korean AGM Annual General Meeting filings from DART into ac. 핵심 구조 신호는 Python, pyproject.toml, Dockerfile, README.md, AGENTS.md, CLAUDE.md이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 AI powered MCP Model Context Protocol server that structures Korean AGM Annual General Meeting filings from DART into ac. 핵심 구조 신호는 Python, pyproject.toml, Dockerfile, README.md, AGENTS.md, CLAUDE.md이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

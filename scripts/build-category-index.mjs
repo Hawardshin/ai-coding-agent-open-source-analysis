@@ -11,104 +11,104 @@ const reportsCategoriesDir = path.join(root, "reports", "categories");
 const taxonomy = [
   {
     slug: "coding-agents-ides",
-    title: "Coding Agents and IDEs",
-    description: "Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows.",
+    title: "코딩 에이전트/IDE",
+    description: "Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, 코드 리뷰, 코딩 보조, agentic IDE workflow를 묶은 카테고리입니다.",
     keywords: ["codex", "claude code", "aider", "openhands", "cline", "roo", "gemini-cli", "gemini cli", "coding agent", "swe-agent", "open-swe", "code agent", "code review", "developer workflow", "ide", "vscode-copilot", "qwen-code", "tabby", "continue"]
   },
   {
     slug: "agent-harness-orchestration",
-    title: "Agent Harness and Orchestration",
-    description: "Agent harnesses, multi-agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks.",
+    title: "에이전트 하네스/오케스트레이션",
+    description: "agent harness, multi-agent runtime, skills, tools, workflows, task orchestration, production agent framework를 묶은 카테고리입니다.",
     keywords: ["agent", "agents", "harness", "orchestration", "workflow", "multi-agent", "multi agent", "skills", "tool use", "tool-use", "langgraph", "autogen", "crewai", "pydantic-ai", "mastra", "agentos", "agent os", "agentic"]
   },
   {
     slug: "mcp-tools-protocols",
-    title: "MCP, Tools, and Protocols",
-    description: "Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool-calling infrastructure.",
+    title: "MCP/도구/프로토콜",
+    description: "Model Context Protocol 서버, tool registry, gateway, connector, protocol SDK, tool-calling infrastructure를 묶은 카테고리입니다.",
     keywords: ["mcp", "model context protocol", "mcp-server", "mcp server", "tool server", "tooling layer", "gateway", "connector", "protocol"]
   },
   {
     slug: "spec-driven-requirements",
-    title: "Spec-Driven and Requirements",
-    description: "Spec-driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications.",
+    title: "스펙 드리븐/요구사항",
+    description: "spec-driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contract, formal specification을 묶은 카테고리입니다.",
     keywords: ["spec-driven", "spec driven", "requirements", "acceptance criteria", "traceability", "bdd", "tdd", "formal specification", "api contract", "openspec", "kiro", "spec-kit", "sdd", "prd"]
   },
   {
     slug: "llm-wiki-rag-knowledge",
-    title: "LLM Wiki, RAG, and Knowledge Bases",
-    description: "LLM-maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source-aware knowledge systems.",
+    title: "LLM 위키/RAG/지식베이스",
+    description: "LLM-maintained wiki, RAG, GraphRAG, knowledge base, document chat, retrieval, notebook, source-aware knowledge system을 묶은 카테고리입니다.",
     keywords: ["llm wiki", "wiki", "rag", "retrieval", "graphrag", "graph rag", "knowledge base", "knowledge graph", "document chat", "notebooklm", "docs", "search", "retrieval-augmented-generation"]
   },
   {
     slug: "context-memory",
-    title: "Context and Memory",
-    description: "Long-term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems.",
+    title: "컨텍스트/메모리",
+    description: "long-term memory, session state, context engineering, recall, persistence, personalization, agent memory system을 묶은 카테고리입니다.",
     keywords: ["memory", "long-term-memory", "context", "context engineering", "recall", "persistent", "persistence", "session", "personalization", "state-management", "zep", "mem0"]
   },
   {
     slug: "evals-observability-quality",
-    title: "Evals, Observability, and Quality",
-    description: "Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems.",
+    title: "평가/관측/품질",
+    description: "prompt/agent eval, tracing, observability, quality gate, benchmark, testing, monitoring, reliability system을 묶은 카테고리입니다.",
     keywords: ["eval", "evals", "evaluation", "benchmark", "observability", "tracing", "trace", "quality", "quality gate", "monitoring", "test", "testing", "promptfoo", "deepeval", "ragas", "langfuse", "phoenix", "trulens", "opik"]
   },
   {
     slug: "security-governance-safety",
-    title: "Security, Governance, and Safety",
-    description: "Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-chain security, identity, audit, and safe agent execution.",
+    title: "보안/거버넌스/안전",
+    description: "sandboxing, policy, governance, guardrail, prompt-injection defense, supply-chain security, identity, audit, safe agent execution을 묶은 카테고리입니다.",
     keywords: ["security", "sandbox", "safe", "safety", "governance", "guardrail", "guardrails", "policy", "prompt injection", "prompt-injection", "identity", "audit", "sbom", "fuzzer", "scanner", "permission", "risk"]
   },
   {
     slug: "ai-infrastructure-serving",
-    title: "AI Infrastructure and Serving",
-    description: "LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment.",
+    title: "AI 인프라/서빙",
+    description: "LLM serving, inference engine, GPU, AI factory, training/inference infrastructure, Kubernetes, runtime, model deployment를 묶은 카테고리입니다.",
     keywords: ["vllm", "inference", "serving", "llm serving", "text-generation-inference", "tgi", "sglang", "gpu", "trainium", "nvidia", "kubernetes", "runtime", "deployment", "ai factory", "ai-factories", "llama.cpp", "localai", "ollama"]
   },
   {
     slug: "data-platforms-vector-databases",
-    title: "Data Platforms and Vector Databases",
-    description: "Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure.",
+    title: "데이터 플랫폼/벡터 DB",
+    description: "vector database, graph database, search engine, data store, embedding, indexing, retrieval infrastructure를 묶은 카테고리입니다.",
     keywords: ["vector", "vector db", "database", "postgres", "pgvector", "qdrant", "milvus", "weaviate", "chroma", "lancedb", "redis", "vespa", "typesense", "faiss", "embedding", "indexing", "graph database"]
   },
   {
     slug: "developer-productivity-devtools",
-    title: "Developer Productivity and DevTools",
-    description: "Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems.",
+    title: "개발 생산성/DevTools",
+    description: "developer tooling, automation, CI, GitHub Actions, CLI, SDK, workflow accelerator, code search, productivity system을 묶은 카테고리입니다.",
     keywords: ["devtools", "developer-tools", "developer tools", "cli", "sdk", "github action", "github actions", "ci", "automation", "productivity", "code search", "repo map", "source indexing", "toolbox"]
   },
   {
     slug: "local-llm-models",
-    title: "Local LLMs and Models",
-    description: "Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model-serving UIs.",
+    title: "로컬 LLM/모델",
+    description: "local model runtime, open model, model optimization, transformers, small model, edge inference, model-serving UI를 묶은 카테고리입니다.",
     keywords: ["local llm", "local-llm", "open model", "open-models", "model", "models", "transformers", "bitnet", "llama", "mlx", "gguf", "gpt4all", "text-generation-webui", "edge-ai"]
   },
   {
     slug: "korean-ai-open-source",
-    title: "Korean AI and Open Source",
-    description: "Korea-trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals.",
+    title: "한국 AI/오픈소스",
+    description: "한국 트렌딩 레포, 한국 AI 서비스, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, 한국 RAG/MCP, 국내 컨퍼런스 신호를 묶은 카테고리입니다.",
     keywords: ["korea", "korean", "한국", "naver", "kakao", "samsung", "sktelecom", "sk telecom", "toss", "line", "nhn", "daangn", "kakaobrain", "seoul"]
   },
   {
     slug: "global-ai-open-source",
-    title: "Global AI Open Source",
-    description: "Global-trending AI, LLM, agent, RAG, devtool, security, and infrastructure open-source repositories.",
+    title: "글로벌 AI 오픈소스",
+    description: "글로벌 트렌딩 AI, LLM, agent, RAG, devtool, security, infrastructure 오픈소스 레포를 묶은 카테고리입니다.",
     keywords: ["global-trending", "global ai", "open source", "oss"]
   },
   {
     slug: "research-papers",
-    title: "Research Papers and Evidence",
-    description: "OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries.",
+    title: "논문/연구 근거",
+    description: "OpenAlex 논문, 연구, 요구사항 연구, agent 연구, source scanning 연구, evidence corpus 항목을 묶은 카테고리입니다.",
     keywords: ["paper", "research", "study", "journal", "conference paper", "openalex", "doi", "publication"]
   },
   {
     slug: "presentations-conferences",
-    title: "Presentations and Conferences",
-    description: "Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation-method references.",
+    title: "발표/컨퍼런스",
+    description: "conference session, keynote, webinar, event recap, recording, schedule, presentation-method reference를 묶은 카테고리입니다.",
     keywords: ["conference", "presentation", "keynote", "webinar", "recording", "session", "event", "summit", "devday", "re:invent", "gtc", "build", "cloud next", "dan25"]
   },
   {
     slug: "ai-usage-trends",
-    title: "AI Usage Trends",
-    description: "Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events.",
+    title: "AI 활용 트렌드",
+    description: "Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, 한국 행사에서 나온 최근 AI 도입 트렌드입니다.",
     keywords: ["ai usage trend", "agentic enterprise", "agentic-ai", "enterprise-ai", "physical-ai", "consumer-ai", "ai-infrastructure", "agentforce", "agentcore", "gemini enterprise", "copilot studio"]
   }
 ];
@@ -566,17 +566,17 @@ function pathLink(label, target, fromDir) {
 }
 
 function navigationBlock(fromDir) {
-  return `## Navigation
+  return `## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| ${pathLink("Repository README", "README.md", fromDir)} | Repo-wide orientation and top-level data/report structure. |
-| ${pathLink("Reports Reading Index", "reports/README.md", fromDir)} | Main report navigation, start-here path, topics, and folder map. |
-| ${pathLink("Reports by Topic", "reports/by-topic/README.md", fromDir)} | Topic-first navigation across all Markdown reports. |
-| ${pathLink("Report Tables", "reports/tables/README.md", fromDir)} | Table-first view and CSV exports. |
-| ${pathLink("Repository Insights", "reports/repository-insights/README.md", fromDir)} | Repository-by-repository insights, risks, and next-read links. |
-| ${pathLink("Source Deep Dives", "reports/source-deep-dives/README.md", fromDir)} | Topic-wise source-path evidence from local clones. |
-| ${pathLink("Artifact Categories", "reports/categories/README.md", fromDir)} | Artifact-level category index for repositories, papers, presentations, and references. |
+| ${pathLink("전체 시작 README", "README.md", fromDir)} | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| ${pathLink("전체 보고서 읽기 지도", "reports/README.md", fromDir)} | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| ${pathLink("주제별 보고서 목차", "reports/by-topic/README.md", fromDir)} | 조사 질문 기준으로 보고서를 찾는 입구. |
+| ${pathLink("표/CSV 목차", "reports/tables/README.md", fromDir)} | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| ${pathLink("레포별 인사이트", "reports/repository-insights/README.md", fromDir)} | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| ${pathLink("소스 딥다이브", "reports/source-deep-dives/README.md", fromDir)} | 로컬 클론에서 뽑은 파일 경로 근거. |
+| ${pathLink("근거 카테고리", "reports/categories/README.md", fromDir)} | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 `;
 }
 
@@ -588,7 +588,7 @@ function relatedTopicLinks(categorySlug, fromDir) {
 }
 
 function itemCountText(count) {
-  return `${count.toLocaleString("en-US")} entries`;
+  return `${count.toLocaleString("en-US")}개 항목`;
 }
 
 function topKindText(counts, limit = 5) {
@@ -610,13 +610,15 @@ function renderItemTable(items, fromDir, limit = 40) {
       item.eventDate,
       item.company
     ].filter(Boolean).join(", ");
-    const local = pathLink("source", item.localPath, fromDir);
-    const report = pathLink("report", item.reportPath, fromDir);
+    const local = pathLink("소스", item.localPath, fromDir);
+    const report = pathLink("보고서", item.reportPath, fromDir);
     const links = [local, report].filter(Boolean).join(" / ");
     return `| ${title} | ${tableText(item.kind)} | ${tableText(meta)} | ${score} | ${links} |`;
   });
-  if (!rows.length) return "_No indexed items in this section._\n";
-  return `| Item | Type | Metadata | Score | Local links |\n| --- | --- | --- | ---: | --- |\n${rows.join("\n")}\n`;
+  if (!rows.length) return "_이 섹션에 색인된 항목이 없습니다._\n";
+  return `| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
+| --- | --- | --- | ---: | --- |
+${rows.join("\n")}\n`;
 }
 
 function renderCategoryReadme(category, items) {
@@ -629,15 +631,15 @@ function renderCategoryReadme(category, items) {
 
   return `# ${category.title}
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ${category.description}
 
 ## 요약
 
 - 조사 단위: \`${category.slug}\` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
-- 포함 범위: ${itemCountText(items.length)}이며, 주요 구성은 ${tableText(topKindText(counts) || "none")}입니다.
-- 연결 보고서: ${relatedTopicLinks(category.slug, fromDir) || "none"}.
+- 포함 범위: ${itemCountText(items.length)}이며, 주요 구성은 ${tableText(topKindText(counts) || "없음")}입니다.
+- 연결 보고서: ${relatedTopicLinks(category.slug, fromDir) || "없음"}.
 
 ## 총평
 
@@ -645,37 +647,37 @@ ${category.description}
 
 ${navigationBlock(fromDir)}
 
-## Counts
+## 범위
 
-- Total categorized entries: ${items.length}
-- Repositories: ${repos.length}
-- Research papers: ${papers.length}
-- Presentations/conferences/trend references: ${presentations.length}
-- Reference materials: ${references.length}
-- Data file: ${pathLink(`data/categories/${category.slug}.json`, `data/categories/${category.slug}.json`, fromDir)}
-- Related report topics: ${relatedTopicLinks(category.slug, fromDir) || "none"}
+- 전체 분류 항목: ${items.length}
+- 오픈소스/레포: ${repos.length}
+- 논문/연구자료: ${papers.length}
+- 발표/컨퍼런스/트렌드 자료: ${presentations.length}
+- 참고자료: ${references.length}
+- 데이터 파일: ${pathLink(`data/categories/${category.slug}.json`, `data/categories/${category.slug}.json`, fromDir)}
+- 연결된 보고서 주제: ${relatedTopicLinks(category.slug, fromDir) || "없음"}
 
-## Type Breakdown
+## 유형별 구성
 
-${Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([kind, count]) => `- ${kind}: ${count}`).join("\n") || "- none"}
+${Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([kind, count]) => `- ${kind}: ${count}`).join("\n") || "- 없음"}
 
-## Top Open Source
+## 주요 오픈소스
 
 ${renderItemTable(repos, fromDir, 45)}
 
-## Top Research
+## 주요 연구/논문
 
 ${renderItemTable(papers, fromDir, 25)}
 
-## Top Presentations and Conference References
+## 주요 발표/컨퍼런스 자료
 
 ${renderItemTable(presentations, fromDir, 35)}
 
-## Top Reference Materials
+## 주요 참고자료
 
 ${renderItemTable(references, fromDir, 25)}
 
-Complete category membership is stored in ${pathLink(`data/categories/${category.slug}.json`, `data/categories/${category.slug}.json`, fromDir)}.
+전체 카테고리 멤버십은 ${pathLink(`data/categories/${category.slug}.json`, `data/categories/${category.slug}.json`, fromDir)}에 저장됩니다.
 `;
 }
 
@@ -683,56 +685,56 @@ function renderRootReadme(categorySummaries, totals) {
   const rows = categorySummaries
     .sort((a, b) => b.counts.total - a.counts.total || a.title.localeCompare(b.title))
     .map((category) => {
-      const folder = `[folder](${category.slug}/README.md)`;
-      const data = `[data](../../data/categories/${category.slug}.json)`;
+      const folder = `[폴더](${category.slug}/README.md)`;
+      const data = `[데이터](../../data/categories/${category.slug}.json)`;
       const topics = relatedTopicLinks(category.slug, "reports/categories");
-      return `| ${category.title} | ${category.counts.total} | ${category.counts.repository || 0} | ${category.counts["research-paper"] || 0} | ${(category.counts["conference-reference"] || 0) + (category.counts["trend-reference"] || 0)} | ${topics || "none"} | ${folder} / ${data} |`;
+      return `| ${category.title} | ${category.counts.total} | ${category.counts.repository || 0} | ${category.counts["research-paper"] || 0} | ${(category.counts["conference-reference"] || 0) + (category.counts["trend-reference"] || 0)} | ${topics || "없음"} | ${folder} / ${data} |`;
     })
     .join("\n");
 
-  return `# Category Index
+  return `# 근거 카테고리 목차
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
-This folder reorganizes the repository's scattered open-source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the original data, reports, and cloned source directories.
+이 폴더는 흩어져 있는 오픈소스, 연구, 발표, 트렌드 근거를 오래 유지할 수 있는 taxonomy로 다시 묶은 목차입니다. 원본 파일은 그대로 두고, 카테고리 README가 원본 데이터, 보고서, 클론 소스 위치로 연결합니다.
 
 ## 요약
 
 - 조사 단위: 전체 조사 근거를 artifact 기준으로 분류한 상위 목차입니다.
-- 포함 범위: ${itemCountText(totals.totalItems)}, ${categorySummaries.length} category folders입니다.
-- 탐색 방식: 아래 Categories 표에서 카테고리 README로 들어가면 요약, 총평, 주요 오픈소스, 연구, 발표, 참고자료를 볼 수 있습니다.
+- 포함 범위: ${itemCountText(totals.totalItems)}, ${categorySummaries.length}개 카테고리 폴더입니다.
+- 탐색 방식: 아래 카테고리 표에서 카테고리 README로 들어가면 요약, 총평, 주요 오픈소스, 연구, 발표, 참고자료를 볼 수 있습니다.
 
 ## 총평
 
-이 README는 “무슨 근거와 대상이 모였는가”를 파악하는 데 가장 적합합니다. 보고서 자체를 읽으려면 Reports Reading Index로, 표와 CSV로 비교하려면 Report Tables로 이동하면 됩니다.
+이 README는 “무슨 근거와 대상이 모였는가”를 파악하는 데 가장 적합합니다. 보고서 자체를 읽으려면 전체 보고서 읽기 지도로, 표와 CSV로 비교하려면 표/CSV 목차로 이동하면 됩니다.
 
 ${navigationBlock("reports/categories")}
 
-## Totals
+## 전체 규모
 
-- Unique normalized entries: ${totals.totalItems}
-- Repositories/open-source entries: ${totals.byKind.repository || 0}
-- Research papers: ${totals.byKind["research-paper"] || 0}
-- Conference/trend references: ${(totals.byKind["conference-reference"] || 0) + (totals.byKind["trend-reference"] || 0)}
-- Reference materials: ${totals.byKind["reference-material"] || 0}
-- Category folders: ${categorySummaries.length}
+- 고유 정규화 항목: ${totals.totalItems}
+- 오픈소스/레포 항목: ${totals.byKind.repository || 0}
+- 논문/연구자료: ${totals.byKind["research-paper"] || 0}
+- 컨퍼런스/트렌드 자료: ${(totals.byKind["conference-reference"] || 0) + (totals.byKind["trend-reference"] || 0)}
+- 참고자료: ${totals.byKind["reference-material"] || 0}
+- 카테고리 폴더: ${categorySummaries.length}
 
-## Categories
+## 카테고리 한눈에 보기
 
-| Category | Total | Repos | Papers | Presentations | Related report topics | Links |
+| 카테고리 | 전체 | 레포 | 논문 | 발표 | 연결된 보고서 주제 | 링크 |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
 ${rows}
 
-## Data Files
+## 데이터 파일
 
 - [data/category-index.json](../../data/category-index.json)
 - [data/categories/](../../data/categories/)
 
-## Notes
+## 메모
 
-- Items can belong to multiple categories when the source metadata supports it.
-- The category JSON files are the complete membership lists; markdown pages show top items and stable links for reading.
-- Existing files under \`data/\`, \`reports/\`, and \`sources/\` are not moved, so current web links and local paths remain valid.
+- 하나의 항목은 source metadata에 따라 여러 카테고리에 동시에 속할 수 있습니다.
+- category JSON 파일은 전체 멤버십이고, Markdown 페이지는 읽기 좋은 상위 항목과 안정 링크를 보여줍니다.
+- \`data/\`, \`reports/\`, \`sources/\` 아래 기존 파일은 이동하지 않으므로 현재 링크와 로컬 경로가 유지됩니다.
 `;
 }
 

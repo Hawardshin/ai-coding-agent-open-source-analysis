@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:13:01.107Z",
+  "generatedAt": "2026-06-18T15:31:47.876Z",
   "slug": "clone-structure-inventory",
-  "title": "Clone Structure and Inventory",
-  "description": "Clone inventories, structural analysis, manifests, source directories, and per-repository structure reports.",
+  "title": "클론 구조/인벤토리",
+  "description": "로컬 클론 목록, 구조 분석, manifest, source directory, 레포별 구조 보고서입니다.",
   "count": 128,
   "reports": [
     {

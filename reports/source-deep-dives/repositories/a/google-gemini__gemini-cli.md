@@ -1,63 +1,63 @@
-# google-gemini/gemini-cli Source Deep Dive
+# google-gemini/gemini-cli 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 2867 files, 267 directories.
 
 ## 요약
 
-- 조사 단위: `sources/google-gemini__gemini-cli` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 2,856 files, 263 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/google-gemini__gemini-cli` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 2,856 files, 263 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/test-utils/src/test-mcp-server-template.mjs, packages/test-utils/src/test-mcp-server.ts, packages/core/src/tools/list-mcp-resources.test.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/test-utils/src/test-mcp-server-template.mjs, packages/test-utils/src/test-mcp-server.ts, packages/core/src/tools/list-mcp-resources.test.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | google-gemini/gemini-cli |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | google-gemini/gemini-cli |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 105365 |
 | Forks | 14098 |
 | License | Apache-2.0 |
-| Maturity | high-signal |
-| Evidence | deep-source+report |
-| Source | [sources/google-gemini__gemini-cli](../../../../sources/google-gemini__gemini-cli) |
-| Existing report | [reports/global-trending/repositories/google-gemini__gemini-cli.md](../../../global-trending/repositories/google-gemini__gemini-cli.md) |
+| 성숙도 | 고신호 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/google-gemini__gemini-cli](../../../../sources/google-gemini__gemini-cli) |
+| 기존 보고서 | [reports/global-trending/repositories/google-gemini__gemini-cli.md](../../../global-trending/repositories/google-gemini__gemini-cli.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 2856 / 263 |
-| Max observed depth | 10 |
-| Top directories | .allstar, .gcp, .gemini, .github, .husky, docs, evals, integration-tests, memory-tests, packages, perf-tests, schemas, scripts, sea, third_party, tools |
-| Top extensions | .ts: 1694, .tsx: 418, .md: 156, .snap: 120, .svg: 98, .responses: 72, .yml: 64, .js: 57, .json: 53, .png: 25, .toml: 24, (none): 22 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 2856 / 263 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .allstar, .gcp, .gemini, .github, .husky, docs, evals, integration-tests, memory-tests, packages, perf-tests, schemas, scripts, sea, third_party, tools |
+| 상위 확장자 | .ts: 1694, .tsx: 418, .md: 156, .snap: 120, .svg: 98, .responses: 72, .yml: 64, .js: 57, .json: 53, .png: 25, .toml: 24, (none): 22 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/core | packages workspace | 110 |
 | docs | documentation surface | 31 |
@@ -79,9 +79,9 @@ Local clone structure analysis: 2867 files, 267 directories.
 | third_party | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | start | cross-env NODE_ENV=development node scripts/start.js |
 | serve-dev | package.json | start:prod | cross-env NODE_ENV=production node scripts/start.js |
@@ -125,24 +125,24 @@ Local clone structure analysis: 2867 files, 267 directories.
 | test | package.json | test:integration:sandbox:podman | cross-env GEMINI_SANDBOX=podman vitest run --root ./integration-tests |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [packages/test-utils/src/test-mcp-server-template.mjs](../../../../sources/google-gemini__gemini-cli/packages/test-utils/src/test-mcp-server-template.mjs) | mcp signal |
 | mcp | [packages/test-utils/src/test-mcp-server.ts](../../../../sources/google-gemini__gemini-cli/packages/test-utils/src/test-mcp-server.ts) | mcp signal |
@@ -158,9 +158,9 @@ Local clone structure analysis: 2867 files, 267 directories.
 | entrypoints | [packages/devtools/src/index.ts](../../../../sources/google-gemini__gemini-cli/packages/devtools/src/index.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 12 | [third_party/get-ripgrep/src/index.js](../../../../sources/google-gemini__gemini-cli/third_party/get-ripgrep/src/index.js)<br>[packages/test-utils/src/index.ts](../../../../sources/google-gemini__gemini-cli/packages/test-utils/src/index.ts)<br>[packages/sdk/src/index.ts](../../../../sources/google-gemini__gemini-cli/packages/sdk/src/index.ts)<br>[packages/devtools/src/index.ts](../../../../sources/google-gemini__gemini-cli/packages/devtools/src/index.ts)<br>[packages/devtools/client/src/App.tsx](../../../../sources/google-gemini__gemini-cli/packages/devtools/client/src/App.tsx)<br>[packages/devtools/client/src/main.tsx](../../../../sources/google-gemini__gemini-cli/packages/devtools/client/src/main.tsx)<br>[packages/core/src/index.test.ts](../../../../sources/google-gemini__gemini-cli/packages/core/src/index.test.ts)<br>[packages/core/src/index.ts](../../../../sources/google-gemini__gemini-cli/packages/core/src/index.ts) |
 | agentRuntime | 695 | [tools/gemini-cli-bot/ci-policy.toml](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/ci-policy.toml)<br>[tools/gemini-cli-bot/README.md](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/README.md)<br>[tools/gemini-cli-bot/metrics/history-helper.ts](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/metrics/history-helper.ts)<br>[tools/gemini-cli-bot/metrics/index.ts](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/metrics/index.ts)<br>[tools/gemini-cli-bot/metrics/types.ts](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/metrics/types.ts)<br>[tools/gemini-cli-bot/metrics/scripts/actions_spend.ts](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/metrics/scripts/actions_spend.ts)<br>[tools/gemini-cli-bot/metrics/scripts/backlog_age.ts](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/metrics/scripts/backlog_age.ts)<br>[tools/gemini-cli-bot/metrics/scripts/domain_expertise.ts](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/metrics/scripts/domain_expertise.ts) |
@@ -176,39 +176,39 @@ Local clone structure analysis: 2867 files, 267 directories.
 | config | 23 | [Makefile](../../../../sources/google-gemini__gemini-cli/Makefile)<br>[package.json](../../../../sources/google-gemini__gemini-cli/package.json)<br>[tsconfig.json](../../../../sources/google-gemini__gemini-cli/tsconfig.json)<br>[third_party/get-ripgrep/package.json](../../../../sources/google-gemini__gemini-cli/third_party/get-ripgrep/package.json)<br>[perf-tests/tsconfig.json](../../../../sources/google-gemini__gemini-cli/perf-tests/tsconfig.json)<br>[packages/vscode-ide-companion/package.json](../../../../sources/google-gemini__gemini-cli/packages/vscode-ide-companion/package.json)<br>[packages/vscode-ide-companion/tsconfig.json](../../../../sources/google-gemini__gemini-cli/packages/vscode-ide-companion/tsconfig.json)<br>[packages/test-utils/package.json](../../../../sources/google-gemini__gemini-cli/packages/test-utils/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 1278 | [sea/sea-launch.test.js](../../../../sources/google-gemini__gemini-cli/sea/sea-launch.test.js)<br>[scripts/eval_utils.js](../../../../sources/google-gemini__gemini-cli/scripts/eval_utils.js)<br>[scripts/run_eval_regression.js](../../../../sources/google-gemini__gemini-cli/scripts/run_eval_regression.js)<br>[scripts/seed-test-inbox.js](../../../../sources/google-gemini__gemini-cli/scripts/seed-test-inbox.js)<br>[scripts/test-windows-paths.js](../../../../sources/google-gemini__gemini-cli/scripts/test-windows-paths.js)<br>[scripts/tests/autogen.test.ts](../../../../sources/google-gemini__gemini-cli/scripts/tests/autogen.test.ts) |
-| CI workflows | 48 | [.github/workflows/agent-session-drift-check.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/agent-session-drift-check.yml)<br>[.github/workflows/build-unsigned-mac-binaries.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/build-unsigned-mac-binaries.yml)<br>[.github/workflows/chained_e2e.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/chained_e2e.yml)<br>[.github/workflows/ci.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/ci.yml)<br>[.github/workflows/community-report.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/community-report.yml)<br>[.github/workflows/deflake.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/deflake.yml) |
-| Containers / deploy | 4 | [Dockerfile](../../../../sources/google-gemini__gemini-cli/Dockerfile)<br>[.gcp/Dockerfile.development](../../../../sources/google-gemini__gemini-cli/.gcp/Dockerfile.development)<br>[.gcp/Dockerfile.development.dockerignore](../../../../sources/google-gemini__gemini-cli/.gcp/Dockerfile.development.dockerignore)<br>[.gcp/Dockerfile.gemini-code-builder](../../../../sources/google-gemini__gemini-cli/.gcp/Dockerfile.gemini-code-builder) |
-| Security / policy | 157 | [SECURITY.md](../../../../sources/google-gemini__gemini-cli/SECURITY.md)<br>[tools/gemini-cli-bot/ci-policy.toml](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/ci-policy.toml)<br>[scripts/build_sandbox.js](../../../../sources/google-gemini__gemini-cli/scripts/build_sandbox.js)<br>[scripts/sandbox_command.js](../../../../sources/google-gemini__gemini-cli/scripts/sandbox_command.js)<br>[packages/core/src/utils/oauth-flow.test.ts](../../../../sources/google-gemini__gemini-cli/packages/core/src/utils/oauth-flow.test.ts)<br>[packages/core/src/utils/oauth-flow.ts](../../../../sources/google-gemini__gemini-cli/packages/core/src/utils/oauth-flow.ts) |
-| Agent instructions | 8 | [GEMINI.md](../../../../sources/google-gemini__gemini-cli/GEMINI.md)<br>[packages/vscode-ide-companion/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/vscode-ide-companion/GEMINI.md)<br>[packages/test-utils/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/test-utils/GEMINI.md)<br>[packages/sdk/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/sdk/GEMINI.md)<br>[packages/devtools/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/devtools/GEMINI.md)<br>[packages/core/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/core/GEMINI.md) |
+| 테스트/평가 | 1278 | [sea/sea-launch.test.js](../../../../sources/google-gemini__gemini-cli/sea/sea-launch.test.js)<br>[scripts/eval_utils.js](../../../../sources/google-gemini__gemini-cli/scripts/eval_utils.js)<br>[scripts/run_eval_regression.js](../../../../sources/google-gemini__gemini-cli/scripts/run_eval_regression.js)<br>[scripts/seed-test-inbox.js](../../../../sources/google-gemini__gemini-cli/scripts/seed-test-inbox.js)<br>[scripts/test-windows-paths.js](../../../../sources/google-gemini__gemini-cli/scripts/test-windows-paths.js)<br>[scripts/tests/autogen.test.ts](../../../../sources/google-gemini__gemini-cli/scripts/tests/autogen.test.ts) |
+| CI workflow | 48 | [.github/workflows/agent-session-drift-check.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/agent-session-drift-check.yml)<br>[.github/workflows/build-unsigned-mac-binaries.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/build-unsigned-mac-binaries.yml)<br>[.github/workflows/chained_e2e.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/chained_e2e.yml)<br>[.github/workflows/ci.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/ci.yml)<br>[.github/workflows/community-report.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/community-report.yml)<br>[.github/workflows/deflake.yml](../../../../sources/google-gemini__gemini-cli/.github/workflows/deflake.yml) |
+| 컨테이너/배포 | 4 | [Dockerfile](../../../../sources/google-gemini__gemini-cli/Dockerfile)<br>[.gcp/Dockerfile.development](../../../../sources/google-gemini__gemini-cli/.gcp/Dockerfile.development)<br>[.gcp/Dockerfile.development.dockerignore](../../../../sources/google-gemini__gemini-cli/.gcp/Dockerfile.development.dockerignore)<br>[.gcp/Dockerfile.gemini-code-builder](../../../../sources/google-gemini__gemini-cli/.gcp/Dockerfile.gemini-code-builder) |
+| 보안/정책 | 157 | [SECURITY.md](../../../../sources/google-gemini__gemini-cli/SECURITY.md)<br>[tools/gemini-cli-bot/ci-policy.toml](../../../../sources/google-gemini__gemini-cli/tools/gemini-cli-bot/ci-policy.toml)<br>[scripts/build_sandbox.js](../../../../sources/google-gemini__gemini-cli/scripts/build_sandbox.js)<br>[scripts/sandbox_command.js](../../../../sources/google-gemini__gemini-cli/scripts/sandbox_command.js)<br>[packages/core/src/utils/oauth-flow.test.ts](../../../../sources/google-gemini__gemini-cli/packages/core/src/utils/oauth-flow.test.ts)<br>[packages/core/src/utils/oauth-flow.ts](../../../../sources/google-gemini__gemini-cli/packages/core/src/utils/oauth-flow.ts) |
+| 에이전트 지시문 | 8 | [GEMINI.md](../../../../sources/google-gemini__gemini-cli/GEMINI.md)<br>[packages/vscode-ide-companion/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/vscode-ide-companion/GEMINI.md)<br>[packages/test-utils/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/test-utils/GEMINI.md)<br>[packages/sdk/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/sdk/GEMINI.md)<br>[packages/devtools/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/devtools/GEMINI.md)<br>[packages/core/GEMINI.md](../../../../sources/google-gemini__gemini-cli/packages/core/GEMINI.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/test-utils/src/test-mcp-server-template.mjs`, `packages/test-utils/src/test-mcp-server.ts`, `packages/core/src/tools/list-mcp-resources.test.ts`.
-2. Trace execution through entrypoints: `third_party/get-ripgrep/src/index.js`, `packages/test-utils/src/index.ts`, `packages/sdk/src/index.ts`.
-3. Map agent/tool runtime through: `tools/gemini-cli-bot/ci-policy.toml`, `tools/gemini-cli-bot/README.md`, `tools/gemini-cli-bot/metrics/history-helper.ts`.
-4. Inspect retrieval/memory/indexing through: `tools/gemini-cli-bot/metrics/index.ts`, `tools/gemini-cli-bot/.gemini/skills/memory/SKILL.md`, `third_party/get-ripgrep/src/index.js`.
-5. Verify behavior through test/eval files: `sea/sea-launch.test.js`, `scripts/eval_utils.js`, `scripts/run_eval_regression.js`.
+1. 핵심 참조에서 시작: `packages/test-utils/src/test-mcp-server-template.mjs`, `packages/test-utils/src/test-mcp-server.ts`, `packages/core/src/tools/list-mcp-resources.test.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `third_party/get-ripgrep/src/index.js`, `packages/test-utils/src/index.ts`, `packages/sdk/src/index.ts`.
+3. agent/tool runtime 매핑: `tools/gemini-cli-bot/ci-policy.toml`, `tools/gemini-cli-bot/README.md`, `tools/gemini-cli-bot/metrics/history-helper.ts`.
+4. retrieval/memory/indexing 확인: `tools/gemini-cli-bot/metrics/index.ts`, `tools/gemini-cli-bot/.gemini/skills/memory/SKILL.md`, `third_party/get-ripgrep/src/index.js`.
+5. test/eval 파일로 동작 검증: `sea/sea-launch.test.js`, `scripts/eval_utils.js`, `scripts/run_eval_regression.js`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 2867 files, 267 directories.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, Makefile, README.md, LICENSE이며, deep-source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 2867 files, 267 directories.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, Makefile, README.md, LICENSE이며, 심층 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 major metadata risk not obvious입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 큰 메타데이터 위험이 명확하지 않음입니다.

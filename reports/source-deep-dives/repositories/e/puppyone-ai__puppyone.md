@@ -1,63 +1,63 @@
-# puppyone-ai/puppyone Source Deep Dive
+# puppyone-ai/puppyone 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Context drive for your AI agents
 
 ## 요약
 
-- 조사 단위: `sources/puppyone-ai__puppyone` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 3,009 files, 775 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/puppyone-ai__puppyone` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 3,009 files, 775 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 retrieval=tools/puppy_model/qllama/embedding.py, tools/puppy_model/examples/frontend_demo/index.html, supabase/migrations/20260526000000_version_text_index.sql이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 retrieval=tools/puppy_model/qllama/embedding.py, tools/puppy_model/examples/frontend_demo/index.html, supabase/migrations/20260526000000_version_text_index.sql이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | puppyone-ai/puppyone |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | puppyone-ai/puppyone |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | global |
 | Language | TypeScript |
 | Stars | 316 |
 | Forks | 50 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/puppyone-ai__puppyone](../../../../sources/puppyone-ai__puppyone) |
-| Existing report | [reports/global-trending/repositories/puppyone-ai__puppyone.md](../../../global-trending/repositories/puppyone-ai__puppyone.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/puppyone-ai__puppyone](../../../../sources/puppyone-ai__puppyone) |
+| 기존 보고서 | [reports/global-trending/repositories/puppyone-ai__puppyone.md](../../../global-trending/repositories/puppyone-ai__puppyone.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 3009 / 775 |
-| Max observed depth | 12 |
-| Top directories | .github, archived, assets, backend, cli, demo, desktop, docker, docs, e2e, frontend, packages, sandbox, scripts, skills, supabase, tests, tools |
-| Top extensions | .py: 1011, .tsx: 692, .ts: 326, .md: 266, .json: 163, .svg: 122, .png: 73, .sql: 73, .js: 52, .txt: 45, (none): 25, .mjs: 19 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 3009 / 775 |
+| 관측 최대 깊이 | 12 |
+| 상위 디렉터리 | .github, archived, assets, backend, cli, demo, desktop, docker, docs, e2e, frontend, packages, sandbox, scripts, skills, supabase, tests, tools |
+| 상위 확장자 | .py: 1011, .tsx: 692, .ts: 326, .md: 266, .json: 163, .svg: 122, .png: 73, .sql: 73, .js: 52, .txt: 45, (none): 25, .mjs: 19 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 58 |
 | tests | validation surface | 3 |
@@ -79,29 +79,29 @@ LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/s
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [tools/puppy_model/qllama/embedding.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_model/qllama/embedding.py) | retrieval signal |
 | retrieval | [tools/puppy_model/examples/frontend_demo/index.html](../../../../sources/puppyone-ai__puppyone/tools/puppy_model/examples/frontend_demo/index.html) | retrieval signal |
@@ -117,9 +117,9 @@ _No command surface extracted from root manifests._
 | docs | [tests/e2e/README.md](../../../../sources/puppyone-ai__puppyone/tests/e2e/README.md) | docs signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 12 | [tools/puppy_model/qllama/main.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_model/qllama/main.py)<br>[packages/editor-ui/src/index.ts](../../../../sources/puppyone-ai__puppyone/packages/editor-ui/src/index.ts)<br>[packages/data-ui/src/index.ts](../../../../sources/puppyone-ai__puppyone/packages/data-ui/src/index.ts)<br>[packages/data-core/src/index.ts](../../../../sources/puppyone-ai__puppyone/packages/data-core/src/index.ts)<br>[desktop/src-tauri/src/main.rs](../../../../sources/puppyone-ai__puppyone/desktop/src-tauri/src/main.rs)<br>[desktop/src-tauri/crates/recorder-core/src/lib.rs](../../../../sources/puppyone-ai__puppyone/desktop/src-tauri/crates/recorder-core/src/lib.rs)<br>[desktop/src/App.tsx](../../../../sources/puppyone-ai__puppyone/desktop/src/App.tsx)<br>[desktop/src/main.tsx](../../../../sources/puppyone-ai__puppyone/desktop/src/main.tsx) |
 | agentRuntime | 349 | [AGENTS.md](../../../../sources/puppyone-ai__puppyone/AGENTS.md)<br>[tools/puppy_utils/__init__.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_utils/__init__.py)<br>[tools/puppy_utils/config.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_utils/config.py)<br>[tools/puppy_utils/example.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_utils/example.py)<br>[tools/puppy_utils/logger.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_utils/logger.py)<br>[tools/puppy_utils/puppy_exception.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_utils/puppy_exception.py)<br>[tools/puppy_utils/README.md](../../../../sources/puppyone-ai__puppyone/tools/puppy_utils/README.md)<br>[tools/puppy_utils/setup.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_utils/setup.py) |
@@ -135,39 +135,39 @@ _No command surface extracted from root manifests._
 | config | 24 | [tools/puppy_model/requirements.txt](../../../../sources/puppyone-ai__puppyone/tools/puppy_model/requirements.txt)<br>[frontend/package.json](../../../../sources/puppyone-ai__puppyone/frontend/package.json)<br>[frontend/tsconfig.json](../../../../sources/puppyone-ai__puppyone/frontend/tsconfig.json)<br>[e2e/package.json](../../../../sources/puppyone-ai__puppyone/e2e/package.json)<br>[desktop/package.json](../../../../sources/puppyone-ai__puppyone/desktop/package.json)<br>[desktop/tsconfig.json](../../../../sources/puppyone-ai__puppyone/desktop/tsconfig.json)<br>[desktop/src-tauri/Cargo.lock](../../../../sources/puppyone-ai__puppyone/desktop/src-tauri/Cargo.lock)<br>[desktop/src-tauri/Cargo.toml](../../../../sources/puppyone-ai__puppyone/desktop/src-tauri/Cargo.toml) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 343 | [tools/puppy_model/examples/test_qllama.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_model/examples/test_qllama.py)<br>[tests/e2e/README.md](../../../../sources/puppyone-ai__puppyone/tests/e2e/README.md)<br>[supabase/tests/smoke_test_triggers.sql](../../../../sources/puppyone-ai__puppyone/supabase/tests/smoke_test_triggers.sql)<br>[scripts/archaeology/test-align-migration.sh](../../../../sources/puppyone-ai__puppyone/scripts/archaeology/test-align-migration.sh)<br>[sandbox/test-data.json](../../../../sources/puppyone-ai__puppyone/sandbox/test-data.json)<br>[sandbox/scope-sync-sidecar/tests/test_e2e_local.py](../../../../sources/puppyone-ai__puppyone/sandbox/scope-sync-sidecar/tests/test_e2e_local.py) |
-| CI workflows | 8 | [.github/workflows/e2e.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/e2e.yml)<br>[.github/workflows/frontend-build.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/frontend-build.yml)<br>[.github/workflows/main-release-gate.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/main-release-gate.yml)<br>[.github/workflows/migrate-production.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/migrate-production.yml)<br>[.github/workflows/migrate-staging.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/migrate-staging.yml)<br>[.github/workflows/post-deploy-stress.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/post-deploy-stress.yml) |
-| Containers / deploy | 9 | [docker-compose.yml](../../../../sources/puppyone-ai__puppyone/docker-compose.yml)<br>[sandbox/Dockerfile](../../../../sources/puppyone-ai__puppyone/sandbox/Dockerfile)<br>[sandbox/scope-fly/Dockerfile](../../../../sources/puppyone-ai__puppyone/sandbox/scope-fly/Dockerfile)<br>[frontend/Dockerfile.local](../../../../sources/puppyone-ai__puppyone/frontend/Dockerfile.local)<br>[docker/docker-compose.yml](../../../../sources/puppyone-ai__puppyone/docker/docker-compose.yml)<br>[desktop/cloud-source/frontend/Dockerfile.local](../../../../sources/puppyone-ai__puppyone/desktop/cloud-source/frontend/Dockerfile.local) |
-| Security / policy | 190 | [SECURITY.md](../../../../sources/puppyone-ai__puppyone/SECURITY.md)<br>[supabase/migrations/20260418010000_truncate_mut_audit_orphans.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260418010000_truncate_mut_audit_orphans.sql)<br>[supabase/migrations/20260427000000_oauth_state_csrf.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260427000000_oauth_state_csrf.sql)<br>[supabase/migrations/20260502000800_migrate_gateways_to_oauth.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260502000800_migrate_gateways_to_oauth.sql)<br>[supabase/migrations/20260527020000_connector_cli_fs_policy.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260527020000_connector_cli_fs_policy.sql)<br>[supabase/migrations/20260530000000_audit_logs_path_text.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260530000000_audit_logs_path_text.sql) |
-| Agent instructions | 5 | [AGENTS.md](../../../../sources/puppyone-ai__puppyone/AGENTS.md)<br>[CLAUDE.md](../../../../sources/puppyone-ai__puppyone/CLAUDE.md)<br>[backend/AGENTS.md](../../../../sources/puppyone-ai__puppyone/backend/AGENTS.md)<br>[backend/CLAUDE.md](../../../../sources/puppyone-ai__puppyone/backend/CLAUDE.md)<br>[backend/openspec/AGENTS.md](../../../../sources/puppyone-ai__puppyone/backend/openspec/AGENTS.md) |
+| 테스트/평가 | 343 | [tools/puppy_model/examples/test_qllama.py](../../../../sources/puppyone-ai__puppyone/tools/puppy_model/examples/test_qllama.py)<br>[tests/e2e/README.md](../../../../sources/puppyone-ai__puppyone/tests/e2e/README.md)<br>[supabase/tests/smoke_test_triggers.sql](../../../../sources/puppyone-ai__puppyone/supabase/tests/smoke_test_triggers.sql)<br>[scripts/archaeology/test-align-migration.sh](../../../../sources/puppyone-ai__puppyone/scripts/archaeology/test-align-migration.sh)<br>[sandbox/test-data.json](../../../../sources/puppyone-ai__puppyone/sandbox/test-data.json)<br>[sandbox/scope-sync-sidecar/tests/test_e2e_local.py](../../../../sources/puppyone-ai__puppyone/sandbox/scope-sync-sidecar/tests/test_e2e_local.py) |
+| CI workflow | 8 | [.github/workflows/e2e.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/e2e.yml)<br>[.github/workflows/frontend-build.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/frontend-build.yml)<br>[.github/workflows/main-release-gate.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/main-release-gate.yml)<br>[.github/workflows/migrate-production.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/migrate-production.yml)<br>[.github/workflows/migrate-staging.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/migrate-staging.yml)<br>[.github/workflows/post-deploy-stress.yml](../../../../sources/puppyone-ai__puppyone/.github/workflows/post-deploy-stress.yml) |
+| 컨테이너/배포 | 9 | [docker-compose.yml](../../../../sources/puppyone-ai__puppyone/docker-compose.yml)<br>[sandbox/Dockerfile](../../../../sources/puppyone-ai__puppyone/sandbox/Dockerfile)<br>[sandbox/scope-fly/Dockerfile](../../../../sources/puppyone-ai__puppyone/sandbox/scope-fly/Dockerfile)<br>[frontend/Dockerfile.local](../../../../sources/puppyone-ai__puppyone/frontend/Dockerfile.local)<br>[docker/docker-compose.yml](../../../../sources/puppyone-ai__puppyone/docker/docker-compose.yml)<br>[desktop/cloud-source/frontend/Dockerfile.local](../../../../sources/puppyone-ai__puppyone/desktop/cloud-source/frontend/Dockerfile.local) |
+| 보안/정책 | 190 | [SECURITY.md](../../../../sources/puppyone-ai__puppyone/SECURITY.md)<br>[supabase/migrations/20260418010000_truncate_mut_audit_orphans.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260418010000_truncate_mut_audit_orphans.sql)<br>[supabase/migrations/20260427000000_oauth_state_csrf.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260427000000_oauth_state_csrf.sql)<br>[supabase/migrations/20260502000800_migrate_gateways_to_oauth.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260502000800_migrate_gateways_to_oauth.sql)<br>[supabase/migrations/20260527020000_connector_cli_fs_policy.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260527020000_connector_cli_fs_policy.sql)<br>[supabase/migrations/20260530000000_audit_logs_path_text.sql](../../../../sources/puppyone-ai__puppyone/supabase/migrations/20260530000000_audit_logs_path_text.sql) |
+| 에이전트 지시문 | 5 | [AGENTS.md](../../../../sources/puppyone-ai__puppyone/AGENTS.md)<br>[CLAUDE.md](../../../../sources/puppyone-ai__puppyone/CLAUDE.md)<br>[backend/AGENTS.md](../../../../sources/puppyone-ai__puppyone/backend/AGENTS.md)<br>[backend/CLAUDE.md](../../../../sources/puppyone-ai__puppyone/backend/CLAUDE.md)<br>[backend/openspec/AGENTS.md](../../../../sources/puppyone-ai__puppyone/backend/openspec/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tools/puppy_model/qllama/embedding.py`, `tools/puppy_model/examples/frontend_demo/index.html`, `supabase/migrations/20260526000000_version_text_index.sql`.
-2. Trace execution through entrypoints: `tools/puppy_model/qllama/main.py`, `packages/editor-ui/src/index.ts`, `packages/data-ui/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tools/puppy_utils/__init__.py`, `tools/puppy_utils/config.py`.
-4. Inspect retrieval/memory/indexing through: `tools/puppy_model/qllama/embedding.py`, `tools/puppy_model/examples/frontend_demo/index.html`, `supabase/migrations/20260526000000_version_text_index.sql`.
-5. Verify behavior through test/eval files: `tools/puppy_model/examples/test_qllama.py`, `tests/e2e/README.md`, `supabase/tests/smoke_test_triggers.sql`.
+1. 핵심 참조에서 시작: `tools/puppy_model/qllama/embedding.py`, `tools/puppy_model/examples/frontend_demo/index.html`, `supabase/migrations/20260526000000_version_text_index.sql`.
+2. entrypoint를 따라 실행 흐름 확인: `tools/puppy_model/qllama/main.py`, `packages/editor-ui/src/index.ts`, `packages/data-ui/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tools/puppy_utils/__init__.py`, `tools/puppy_utils/config.py`.
+4. retrieval/memory/indexing 확인: `tools/puppy_model/qllama/embedding.py`, `tools/puppy_model/examples/frontend_demo/index.html`, `supabase/migrations/20260526000000_version_text_index.sql`.
+5. test/eval 파일로 동작 검증: `tools/puppy_model/examples/test_qllama.py`, `tests/e2e/README.md`, `supabase/tests/smoke_test_triggers.sql`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Context drive for your AI agents. 핵심 구조 신호는 TypeScript, docker-compose.yml, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Context drive for your AI agents. 핵심 구조 신호는 TypeScript, docker-compose.yml, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

@@ -1,63 +1,63 @@
-# JKHeadley/instar Source Deep Dive
+# JKHeadley/instar 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Persistent Claude Code agents with scheduling, sessions, memory, and Telegram.
 
 ## 요약
 
-- 조사 단위: `sources/JKHeadley__instar` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 7,871 files, 309 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/JKHeadley__instar` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 7,871 files, 309 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json, upgrades/job-mcp-access.eli16.md, upgrades/side-effects/feat-portability-codex-mcp.md이고, 의존성 단서는 modelcontextprotocol, express, commander, transformers, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json, upgrades/job-mcp-access.eli16.md, upgrades/side-effects/feat-portability-codex-mcp.md이고, 의존성 단서는 modelcontextprotocol, express, commander, transformers, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | JKHeadley/instar |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | JKHeadley/instar |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 68 |
 | Forks | 16 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/JKHeadley__instar](../../../../sources/JKHeadley__instar) |
-| Existing report | [reports/global-trending/repositories/JKHeadley__instar.md](../../../global-trending/repositories/JKHeadley__instar.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/JKHeadley__instar](../../../../sources/JKHeadley__instar) |
+| 기존 보고서 | [reports/global-trending/repositories/JKHeadley__instar.md](../../../global-trending/repositories/JKHeadley__instar.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 7871 / 309 |
-| Max observed depth | 7 |
-| Top directories | .claude, .github, .husky, .instar, .planning, assets, commitments, dashboard, docs, examples, feedback-front, packages, playbook-scripts, scripts, site, skills, specs, src, tests, upgrades |
-| Top extensions | .md: 3642, .ts: 3597, .json: 292, .txt: 69, .mjs: 61, .js: 54, .py: 40, .sh: 35, .png: 23, (none): 12, .yml: 8, .astro: 6 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 7871 / 309 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .claude, .github, .husky, .instar, .planning, assets, commitments, dashboard, docs, examples, feedback-front, packages, playbook-scripts, scripts, site, skills, specs, src, tests, upgrades |
+| 상위 확장자 | .md: 3642, .ts: 3597, .json: 292, .txt: 69, .mjs: 61, .js: 54, .py: 40, .sh: 35, .png: 23, (none): 12, .yml: 8, .astro: 6 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 62 |
 | docs | documentation surface | 17 |
@@ -78,9 +78,9 @@ Persistent Claude Code agents with scheduling, sessions, memory, and Telegram.
 | upgrades | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | generate:manifest | node scripts/generate-builtin-manifest.cjs |
 | build | package.json | build | node scripts/generate-builtin-manifest.cjs && tsc && chmod 0755 dist/cli.js && node scripts/sign-instar-lockfile.mjs |
@@ -118,24 +118,24 @@ Persistent Claude Code agents with scheduling, sessions, memory, and Telegram.
 | entrypoint | package.json bin | cli.js | dist/cli.js |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | transformers |
 | webRuntime | express |
 | developerSurface | commander |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [.mcp.json](../../../../sources/JKHeadley__instar/.mcp.json) | mcp signal |
 | mcp | [upgrades/job-mcp-access.eli16.md](../../../../sources/JKHeadley__instar/upgrades/job-mcp-access.eli16.md) | mcp signal |
@@ -151,9 +151,9 @@ Persistent Claude Code agents with scheduling, sessions, memory, and Telegram.
 | entrypoints | [src/commands/server.ts](../../../../sources/JKHeadley__instar/src/commands/server.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 7 | [tests/unit/server.test.ts](../../../../sources/JKHeadley__instar/tests/unit/server.test.ts)<br>[src/cli.ts](../../../../sources/JKHeadley__instar/src/cli.ts)<br>[src/index.ts](../../../../sources/JKHeadley__instar/src/index.ts)<br>[src/commands/server.ts](../../../../sources/JKHeadley__instar/src/commands/server.ts)<br>[scripts/attachments-sync/main.go](../../../../sources/JKHeadley__instar/scripts/attachments-sync/main.go)<br>[packages/threadline-mcp/server.json](../../../../sources/JKHeadley__instar/packages/threadline-mcp/server.json)<br>[packages/threadline-mcp/src/server.ts](../../../../sources/JKHeadley__instar/packages/threadline-mcp/src/server.ts) |
 | agentRuntime | 220 | [upgrades/context-wall-compact-escalation.eli16.md](../../../../sources/JKHeadley__instar/upgrades/context-wall-compact-escalation.eli16.md)<br>[upgrades/side-effects/agent-autonomy-principles.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agent-autonomy-principles.md)<br>[upgrades/side-effects/agent-data-spotlight-exclusion.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agent-data-spotlight-exclusion.md)<br>[upgrades/side-effects/agent-hard-sleep-controller.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agent-hard-sleep-controller.md)<br>[upgrades/side-effects/agent-hard-sleep-mechanism.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agent-hard-sleep-mechanism.md)<br>[upgrades/side-effects/agent-health-alert-authority-routing.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agent-health-alert-authority-routing.md)<br>[upgrades/side-effects/agent-owned-followthrough.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agent-owned-followthrough.md)<br>[upgrades/side-effects/agent-telegram-comms-primitive.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agent-telegram-comms-primitive.md) |
@@ -169,39 +169,39 @@ Persistent Claude Code agents with scheduling, sessions, memory, and Telegram.
 | config | 8 | [package.json](../../../../sources/JKHeadley__instar/package.json)<br>[tsconfig.json](../../../../sources/JKHeadley__instar/tsconfig.json)<br>[site/package.json](../../../../sources/JKHeadley__instar/site/package.json)<br>[site/tsconfig.json](../../../../sources/JKHeadley__instar/site/tsconfig.json)<br>[scripts/attachments-sync/go.mod](../../../../sources/JKHeadley__instar/scripts/attachments-sync/go.mod)<br>[packages/threadline-mcp/package.json](../../../../sources/JKHeadley__instar/packages/threadline-mcp/package.json)<br>[packages/threadline-mcp/tsconfig.json](../../../../sources/JKHeadley__instar/packages/threadline-mcp/tsconfig.json)<br>[feedback-front/package.json](../../../../sources/JKHeadley__instar/feedback-front/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 2667 | [upgrades/feedback-phase3-monitor.eli16.md](../../../../sources/JKHeadley__instar/upgrades/feedback-phase3-monitor.eli16.md)<br>[upgrades/mentor-tick-observability.eli16.md](../../../../sources/JKHeadley__instar/upgrades/mentor-tick-observability.eli16.md)<br>[upgrades/test-env-hermetic-reply-scripts.eli16.md](../../../../sources/JKHeadley__instar/upgrades/test-env-hermetic-reply-scripts.eli16.md)<br>[upgrades/watchdog-launchctl-test-guard.eli16.md](../../../../sources/JKHeadley__instar/upgrades/watchdog-launchctl-test-guard.eli16.md)<br>[upgrades/side-effects/a2a-inbound-gate-observability.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/a2a-inbound-gate-observability.md)<br>[upgrades/side-effects/agentmd-loader-200jobs-perf-benchmark.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agentmd-loader-200jobs-perf-benchmark.md) |
-| CI workflows | 8 | [.github/workflows/ci.yml](../../../../sources/JKHeadley__instar/.github/workflows/ci.yml)<br>[.github/workflows/decision-audit-gate.yml](../../../../sources/JKHeadley__instar/.github/workflows/decision-audit-gate.yml)<br>[.github/workflows/docs-coverage-weekly.yml](../../../../sources/JKHeadley__instar/.github/workflows/docs-coverage-weekly.yml)<br>[.github/workflows/eli16-pr-gate.yml](../../../../sources/JKHeadley__instar/.github/workflows/eli16-pr-gate.yml)<br>[.github/workflows/publish-threadline-mcp.yml](../../../../sources/JKHeadley__instar/.github/workflows/publish-threadline-mcp.yml)<br>[.github/workflows/publish.yml](../../../../sources/JKHeadley__instar/.github/workflows/publish.yml) |
-| Containers / deploy | 1 | [Dockerfile.relay](../../../../sources/JKHeadley__instar/Dockerfile.relay) |
-| Security / policy | 326 | [SECURITY.md](../../../../sources/JKHeadley__instar/SECURITY.md)<br>[upgrades/autoloop-gate-compliance.eli16.md](../../../../sources/JKHeadley__instar/upgrades/autoloop-gate-compliance.eli16.md)<br>[upgrades/commitment-bare-continuation-guard.eli16.md](../../../../sources/JKHeadley__instar/upgrades/commitment-bare-continuation-guard.eli16.md)<br>[upgrades/decision-audit-presence.eli16.md](../../../../sources/JKHeadley__instar/upgrades/decision-audit-presence.eli16.md)<br>[upgrades/decision-audit-self-commit.eli16.md](../../../../sources/JKHeadley__instar/upgrades/decision-audit-self-commit.eli16.md)<br>[upgrades/dev-preflight-new-surface-friction-guard.eli16.md](../../../../sources/JKHeadley__instar/upgrades/dev-preflight-new-surface-friction-guard.eli16.md) |
-| Agent instructions | 4 | [CLAUDE.md](../../../../sources/JKHeadley__instar/CLAUDE.md)<br>[tests/fixtures/test-repo/CLAUDE.md](../../../../sources/JKHeadley__instar/tests/fixtures/test-repo/CLAUDE.md)<br>[specs/frameworks/codex-cli/agents.md](../../../../sources/JKHeadley__instar/specs/frameworks/codex-cli/agents.md)<br>[specs/frameworks/claude-code/agents.md](../../../../sources/JKHeadley__instar/specs/frameworks/claude-code/agents.md) |
+| 테스트/평가 | 2667 | [upgrades/feedback-phase3-monitor.eli16.md](../../../../sources/JKHeadley__instar/upgrades/feedback-phase3-monitor.eli16.md)<br>[upgrades/mentor-tick-observability.eli16.md](../../../../sources/JKHeadley__instar/upgrades/mentor-tick-observability.eli16.md)<br>[upgrades/test-env-hermetic-reply-scripts.eli16.md](../../../../sources/JKHeadley__instar/upgrades/test-env-hermetic-reply-scripts.eli16.md)<br>[upgrades/watchdog-launchctl-test-guard.eli16.md](../../../../sources/JKHeadley__instar/upgrades/watchdog-launchctl-test-guard.eli16.md)<br>[upgrades/side-effects/a2a-inbound-gate-observability.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/a2a-inbound-gate-observability.md)<br>[upgrades/side-effects/agentmd-loader-200jobs-perf-benchmark.md](../../../../sources/JKHeadley__instar/upgrades/side-effects/agentmd-loader-200jobs-perf-benchmark.md) |
+| CI workflow | 8 | [.github/workflows/ci.yml](../../../../sources/JKHeadley__instar/.github/workflows/ci.yml)<br>[.github/workflows/decision-audit-gate.yml](../../../../sources/JKHeadley__instar/.github/workflows/decision-audit-gate.yml)<br>[.github/workflows/docs-coverage-weekly.yml](../../../../sources/JKHeadley__instar/.github/workflows/docs-coverage-weekly.yml)<br>[.github/workflows/eli16-pr-gate.yml](../../../../sources/JKHeadley__instar/.github/workflows/eli16-pr-gate.yml)<br>[.github/workflows/publish-threadline-mcp.yml](../../../../sources/JKHeadley__instar/.github/workflows/publish-threadline-mcp.yml)<br>[.github/workflows/publish.yml](../../../../sources/JKHeadley__instar/.github/workflows/publish.yml) |
+| 컨테이너/배포 | 1 | [Dockerfile.relay](../../../../sources/JKHeadley__instar/Dockerfile.relay) |
+| 보안/정책 | 326 | [SECURITY.md](../../../../sources/JKHeadley__instar/SECURITY.md)<br>[upgrades/autoloop-gate-compliance.eli16.md](../../../../sources/JKHeadley__instar/upgrades/autoloop-gate-compliance.eli16.md)<br>[upgrades/commitment-bare-continuation-guard.eli16.md](../../../../sources/JKHeadley__instar/upgrades/commitment-bare-continuation-guard.eli16.md)<br>[upgrades/decision-audit-presence.eli16.md](../../../../sources/JKHeadley__instar/upgrades/decision-audit-presence.eli16.md)<br>[upgrades/decision-audit-self-commit.eli16.md](../../../../sources/JKHeadley__instar/upgrades/decision-audit-self-commit.eli16.md)<br>[upgrades/dev-preflight-new-surface-friction-guard.eli16.md](../../../../sources/JKHeadley__instar/upgrades/dev-preflight-new-surface-friction-guard.eli16.md) |
+| 에이전트 지시문 | 4 | [CLAUDE.md](../../../../sources/JKHeadley__instar/CLAUDE.md)<br>[tests/fixtures/test-repo/CLAUDE.md](../../../../sources/JKHeadley__instar/tests/fixtures/test-repo/CLAUDE.md)<br>[specs/frameworks/codex-cli/agents.md](../../../../sources/JKHeadley__instar/specs/frameworks/codex-cli/agents.md)<br>[specs/frameworks/claude-code/agents.md](../../../../sources/JKHeadley__instar/specs/frameworks/claude-code/agents.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `.mcp.json`, `upgrades/job-mcp-access.eli16.md`, `upgrades/side-effects/feat-portability-codex-mcp.md`.
-2. Trace execution through entrypoints: `tests/unit/server.test.ts`, `src/cli.ts`, `src/index.ts`.
-3. Map agent/tool runtime through: `upgrades/context-wall-compact-escalation.eli16.md`, `upgrades/side-effects/agent-autonomy-principles.md`, `upgrades/side-effects/agent-data-spotlight-exclusion.md`.
-4. Inspect retrieval/memory/indexing through: `upgrades/side-effects/promptgate-auto-dismiss-memory.md`, `upgrades/side-effects/secret-retrieval-first-standard.md`, `upgrades/side-effects/semantic-memory-corruption-recovery.md`.
-5. Verify behavior through test/eval files: `upgrades/feedback-phase3-monitor.eli16.md`, `upgrades/mentor-tick-observability.eli16.md`, `upgrades/test-env-hermetic-reply-scripts.eli16.md`.
+1. 핵심 참조에서 시작: `.mcp.json`, `upgrades/job-mcp-access.eli16.md`, `upgrades/side-effects/feat-portability-codex-mcp.md`.
+2. entrypoint를 따라 실행 흐름 확인: `tests/unit/server.test.ts`, `src/cli.ts`, `src/index.ts`.
+3. agent/tool runtime 매핑: `upgrades/context-wall-compact-escalation.eli16.md`, `upgrades/side-effects/agent-autonomy-principles.md`, `upgrades/side-effects/agent-data-spotlight-exclusion.md`.
+4. retrieval/memory/indexing 확인: `upgrades/side-effects/promptgate-auto-dismiss-memory.md`, `upgrades/side-effects/secret-retrieval-first-standard.md`, `upgrades/side-effects/semantic-memory-corruption-recovery.md`.
+5. test/eval 파일로 동작 검증: `upgrades/feedback-phase3-monitor.eli16.md`, `upgrades/mentor-tick-observability.eli16.md`, `upgrades/test-env-hermetic-reply-scripts.eli16.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Persistent Claude Code agents with scheduling, sessions, memory, and Telegram.. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, modelcontextprotocol이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Persistent Claude Code agents with scheduling, sessions, memory, and Telegram.. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, modelcontextprotocol이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

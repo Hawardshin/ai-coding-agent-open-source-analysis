@@ -1,63 +1,63 @@
-# addyosmani/agent-skills Source Deep Dive
+# addyosmani/agent-skills 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 90 files, 40 directories.
 
 ## 요약
 
-- 조사 단위: `sources/addyosmani__agent-skills` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 90 files, 40 directories, depth score 86, key references 7개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/addyosmani__agent-skills` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 90 files, 40 directories, depth score 74, key references 7개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 agent/tool runtime, spec/docs-driven, eval/test harness 구조로 읽힌다. 핵심 소스 근거는 agentRuntime=AGENTS.md, skills/using-agent-skills/SKILL.md, skills/test-driven-development/SKILL.md이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 7개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 agent/tool runtime, spec/docs-driven, eval/test harness 구조로 읽힌다. 핵심 소스 근거는 agentRuntime=AGENTS.md, skills/using-agent-skills/SKILL.md, skills/test-driven-development/SKILL.md이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 7개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | addyosmani/agent-skills |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | addyosmani/agent-skills |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | mixed |
-| Language | none |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | deep-source+report |
-| Source | [sources/addyosmani__agent-skills](../../../../sources/addyosmani__agent-skills) |
-| Existing report | [reports/clone-structures/addyosmani__agent-skills.md](../../../clone-structures/addyosmani__agent-skills.md) |
+| Language | 없음 |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/addyosmani__agent-skills](../../../../sources/addyosmani__agent-skills) |
+| 기존 보고서 | [reports/clone-structures/addyosmani__agent-skills.md](../../../clone-structures/addyosmani__agent-skills.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 90 / 40 |
-| Max observed depth | 4 |
-| Top directories | .claude, .claude-plugin, .gemini, .github, .opencode, agents, commands, docs, hooks, references, scripts, skills |
-| Top extensions | .md: 59, .toml: 16, .sh: 7, .json: 4, (none): 2, .js: 1, .yml: 1 |
-| Source patterns | agent/tool runtime, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 90 / 40 |
+| 관측 최대 깊이 | 4 |
+| 상위 디렉터리 | .claude, .claude-plugin, .gemini, .github, .opencode, agents, commands, docs, hooks, references, scripts, skills |
+| 상위 확장자 | .md: 59, .toml: 16, .sh: 7, .json: 4, (none): 2, .js: 1, .yml: 1 |
+| 소스 패턴 | agent/tool runtime, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 13 |
 | .github | ci surface | 1 |
@@ -69,29 +69,29 @@ Local clone structure analysis: 90 files, 40 directories.
 | skills | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | agentRuntime | [AGENTS.md](../../../../sources/addyosmani__agent-skills/AGENTS.md) | agentRuntime signal |
 | agentRuntime | [skills/using-agent-skills/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/using-agent-skills/SKILL.md) | agentRuntime signal |
@@ -102,55 +102,55 @@ _No command surface extracted from root manifests._
 | ci | [.github/workflows/test-plugin-install.yml](../../../../sources/addyosmani__agent-skills/.github/workflows/test-plugin-install.yml) | ci support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
 | agentRuntime | 44 | [AGENTS.md](../../../../sources/addyosmani__agent-skills/AGENTS.md)<br>[skills/using-agent-skills/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/using-agent-skills/SKILL.md)<br>[skills/test-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/test-driven-development/SKILL.md)<br>[skills/spec-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/spec-driven-development/SKILL.md)<br>[skills/source-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/source-driven-development/SKILL.md)<br>[skills/shipping-and-launch/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/shipping-and-launch/SKILL.md)<br>[skills/security-and-hardening/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/security-and-hardening/SKILL.md)<br>[skills/planning-and-task-breakdown/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/planning-and-task-breakdown/SKILL.md) |
-| mcp | 0 | not obvious |
-| retrieval | 0 | not obvious |
+| mcp | 0 | 명확하지 않음 |
+| retrieval | 0 | 명확하지 않음 |
 | spec | 5 | [skills/spec-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/spec-driven-development/SKILL.md)<br>[skills/api-and-interface-design/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/api-and-interface-design/SKILL.md)<br>[commands/spec.toml](../../../../sources/addyosmani__agent-skills/commands/spec.toml)<br>[.gemini/commands/spec.toml](../../../../sources/addyosmani__agent-skills/.gemini/commands/spec.toml)<br>[.claude/commands/spec.md](../../../../sources/addyosmani__agent-skills/.claude/commands/spec.md) |
 | eval | 14 | [skills/test-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/test-driven-development/SKILL.md)<br>[skills/spec-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/spec-driven-development/SKILL.md)<br>[skills/observability-and-instrumentation/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/observability-and-instrumentation/SKILL.md)<br>[skills/code-review-and-quality/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/code-review-and-quality/SKILL.md)<br>[hooks/session-start-test.sh](../../../../sources/addyosmani__agent-skills/hooks/session-start-test.sh)<br>[hooks/simplify-ignore-test.sh](../../../../sources/addyosmani__agent-skills/hooks/simplify-ignore-test.sh)<br>[commands/spec.toml](../../../../sources/addyosmani__agent-skills/commands/spec.toml)<br>[commands/test.toml](../../../../sources/addyosmani__agent-skills/commands/test.toml) |
 | security | 3 | [skills/security-and-hardening/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/security-and-hardening/SKILL.md)<br>[references/security-checklist.md](../../../../sources/addyosmani__agent-skills/references/security-checklist.md)<br>[agents/security-auditor.md](../../../../sources/addyosmani__agent-skills/agents/security-auditor.md) |
 | ci | 1 | [.github/workflows/test-plugin-install.yml](../../../../sources/addyosmani__agent-skills/.github/workflows/test-plugin-install.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 3 | [AGENTS.md](../../../../sources/addyosmani__agent-skills/AGENTS.md)<br>[CLAUDE.md](../../../../sources/addyosmani__agent-skills/CLAUDE.md)<br>[docs/agents.md](../../../../sources/addyosmani__agent-skills/docs/agents.md) |
 | docs | 10 | [README.md](../../../../sources/addyosmani__agent-skills/README.md)<br>[docs/agents.md](../../../../sources/addyosmani__agent-skills/docs/agents.md)<br>[docs/antigravity-setup.md](../../../../sources/addyosmani__agent-skills/docs/antigravity-setup.md)<br>[docs/copilot-setup.md](../../../../sources/addyosmani__agent-skills/docs/copilot-setup.md)<br>[docs/cursor-setup.md](../../../../sources/addyosmani__agent-skills/docs/cursor-setup.md)<br>[docs/gemini-cli-setup.md](../../../../sources/addyosmani__agent-skills/docs/gemini-cli-setup.md)<br>[docs/getting-started.md](../../../../sources/addyosmani__agent-skills/docs/getting-started.md)<br>[docs/opencode-setup.md](../../../../sources/addyosmani__agent-skills/docs/opencode-setup.md) |
-| config | 0 | not obvious |
+| config | 0 | 명확하지 않음 |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 14 | [skills/test-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/test-driven-development/SKILL.md)<br>[skills/spec-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/spec-driven-development/SKILL.md)<br>[skills/observability-and-instrumentation/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/observability-and-instrumentation/SKILL.md)<br>[skills/code-review-and-quality/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/code-review-and-quality/SKILL.md)<br>[hooks/session-start-test.sh](../../../../sources/addyosmani__agent-skills/hooks/session-start-test.sh)<br>[hooks/simplify-ignore-test.sh](../../../../sources/addyosmani__agent-skills/hooks/simplify-ignore-test.sh) |
-| CI workflows | 1 | [.github/workflows/test-plugin-install.yml](../../../../sources/addyosmani__agent-skills/.github/workflows/test-plugin-install.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 3 | [skills/security-and-hardening/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/security-and-hardening/SKILL.md)<br>[references/security-checklist.md](../../../../sources/addyosmani__agent-skills/references/security-checklist.md)<br>[agents/security-auditor.md](../../../../sources/addyosmani__agent-skills/agents/security-auditor.md) |
-| Agent instructions | 3 | [AGENTS.md](../../../../sources/addyosmani__agent-skills/AGENTS.md)<br>[CLAUDE.md](../../../../sources/addyosmani__agent-skills/CLAUDE.md)<br>[docs/agents.md](../../../../sources/addyosmani__agent-skills/docs/agents.md) |
+| 테스트/평가 | 14 | [skills/test-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/test-driven-development/SKILL.md)<br>[skills/spec-driven-development/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/spec-driven-development/SKILL.md)<br>[skills/observability-and-instrumentation/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/observability-and-instrumentation/SKILL.md)<br>[skills/code-review-and-quality/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/code-review-and-quality/SKILL.md)<br>[hooks/session-start-test.sh](../../../../sources/addyosmani__agent-skills/hooks/session-start-test.sh)<br>[hooks/simplify-ignore-test.sh](../../../../sources/addyosmani__agent-skills/hooks/simplify-ignore-test.sh) |
+| CI workflow | 1 | [.github/workflows/test-plugin-install.yml](../../../../sources/addyosmani__agent-skills/.github/workflows/test-plugin-install.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 3 | [skills/security-and-hardening/SKILL.md](../../../../sources/addyosmani__agent-skills/skills/security-and-hardening/SKILL.md)<br>[references/security-checklist.md](../../../../sources/addyosmani__agent-skills/references/security-checklist.md)<br>[agents/security-auditor.md](../../../../sources/addyosmani__agent-skills/agents/security-auditor.md) |
+| 에이전트 지시문 | 3 | [AGENTS.md](../../../../sources/addyosmani__agent-skills/AGENTS.md)<br>[CLAUDE.md](../../../../sources/addyosmani__agent-skills/CLAUDE.md)<br>[docs/agents.md](../../../../sources/addyosmani__agent-skills/docs/agents.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | container/deploy path not obvious |
-| security | none |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `AGENTS.md`, `skills/using-agent-skills/SKILL.md`, `skills/test-driven-development/SKILL.md`.
-2. Map agent/tool runtime through: `AGENTS.md`, `skills/using-agent-skills/SKILL.md`, `skills/test-driven-development/SKILL.md`.
-3. Verify behavior through test/eval files: `skills/test-driven-development/SKILL.md`, `skills/spec-driven-development/SKILL.md`, `skills/observability-and-instrumentation/SKILL.md`.
+1. 핵심 참조에서 시작: `AGENTS.md`, `skills/using-agent-skills/SKILL.md`, `skills/test-driven-development/SKILL.md`.
+2. agent/tool runtime 매핑: `AGENTS.md`, `skills/using-agent-skills/SKILL.md`, `skills/test-driven-development/SKILL.md`.
+3. test/eval 파일로 동작 검증: `skills/test-driven-development/SKILL.md`, `skills/spec-driven-development/SKILL.md`, `skills/observability-and-instrumentation/SKILL.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 90 files, 40 directories.. 핵심 구조 신호는 README.md, AGENTS.md, CLAUDE.md, LICENSE, ci, docs이며, deep-source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 90 files, 40 directories.. 핵심 구조 신호는 README.md, AGENTS.md, CLAUDE.md, LICENSE, ci, docs이며, 심층 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing입니다.
+mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음입니다.

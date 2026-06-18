@@ -1,63 +1,63 @@
-# cbcoutinho/nextcloud-mcp-server Source Deep Dive
+# cbcoutinho/nextcloud-mcp-server 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Nextcloud MCP Server
 
 ## 요약
 
-- 조사 단위: `sources/cbcoutinho__nextcloud-mcp-server` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 617 files, 83 directories, depth score 126, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/cbcoutinho__nextcloud-mcp-server` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 617 files, 83 directories, depth score 120, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 retrieval=tools/rag_eval_cli.py, tests/unit/test_chunk_bbox_helper.py, tests/unit/test_chunk_context_offset_gate.py이고, 의존성 단서는 openai, anthropic, claude, mcp, langchain, next, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 retrieval=tools/rag_eval_cli.py, tests/unit/test_chunk_bbox_helper.py, tests/unit/test_chunk_context_offset_gate.py이고, 의존성 단서는 openai, anthropic, claude, mcp, langchain, next, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | cbcoutinho/nextcloud-mcp-server |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | cbcoutinho/nextcloud-mcp-server |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | global |
 | Language | Python |
 | Stars | 272 |
 | Forks | 45 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/cbcoutinho__nextcloud-mcp-server](../../../../sources/cbcoutinho__nextcloud-mcp-server) |
-| Existing report | [reports/global-trending/repositories/cbcoutinho__nextcloud-mcp-server.md](../../../global-trending/repositories/cbcoutinho__nextcloud-mcp-server.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/cbcoutinho__nextcloud-mcp-server](../../../../sources/cbcoutinho__nextcloud-mcp-server) |
+| 기존 보고서 | [reports/global-trending/repositories/cbcoutinho__nextcloud-mcp-server.md](../../../global-trending/repositories/cbcoutinho__nextcloud-mcp-server.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 617 / 83 |
-| Max observed depth | 5 |
-| Top directories | .claude, .github, alembic, app-hooks, claude-funnel, docs, infra, keycloak, mcpb, nextcloud_mcp_server, scripts, tests, third_party, tools |
-| Top extensions | .py: 443, .md: 71, .sh: 24, .yml: 16, .tf: 13, .json: 8, .png: 8, (none): 8, .html: 7, .conf: 2, .example: 2, .sample: 2 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy, ui/extension surface |
+| 파일 / 디렉터리 | 617 / 83 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | .claude, .github, alembic, app-hooks, claude-funnel, docs, infra, keycloak, mcpb, nextcloud_mcp_server, scripts, tests, third_party, tools |
+| 상위 확장자 | .py: 443, .md: 71, .sh: 24, .yml: 16, .tf: 13, .json: 8, .png: 8, (none): 8, .html: 7, .conf: 2, .example: 2, .sample: 2 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy, ui/extension surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 111 |
 | docs | documentation surface | 67 |
@@ -74,31 +74,31 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | pyproject.toml | nextcloud-mcp-server | nextcloud-mcp-server |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic, claude |
 | agentProtocols | mcp |
 | agentFrameworks | langchain |
 | vectorStores | qdrant |
-| modelRuntime | none |
+| modelRuntime | 없음 |
 | webRuntime | next |
 | developerSurface | click |
 | observability | opentelemetry, prometheus |
 | browserAutomation | playwright |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [tools/rag_eval_cli.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tools/rag_eval_cli.py) | retrieval signal |
 | retrieval | [tests/unit/test_chunk_bbox_helper.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_chunk_bbox_helper.py) | retrieval signal |
@@ -114,11 +114,11 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | config | [pyproject.toml](../../../../sources/cbcoutinho__nextcloud-mcp-server/pyproject.toml) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
 | agentRuntime | 8 | [tools/rag_eval_cli.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tools/rag_eval_cli.py)<br>[nextcloud_mcp_server/context.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/nextcloud_mcp_server/context.py)<br>[nextcloud_mcp_server/vector/queue/memory.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/nextcloud_mcp_server/vector/queue/memory.py)<br>[nextcloud_mcp_server/search/context.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/nextcloud_mcp_server/search/context.py)<br>[nextcloud_mcp_server/auth/context_helper.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/nextcloud_mcp_server/auth/context_helper.py)<br>[.claude/skills/pre-push-review/SKILL.md](../../../../sources/cbcoutinho__nextcloud-mcp-server/.claude/skills/pre-push-review/SKILL.md)<br>[.claude/hooks/sonar-secrets/build-scripts/pretool-secrets.sh](../../../../sources/cbcoutinho__nextcloud-mcp-server/.claude/hooks/sonar-secrets/build-scripts/pretool-secrets.sh)<br>[.claude/hooks/sonar-secrets/build-scripts/prompt-secrets.sh](../../../../sources/cbcoutinho__nextcloud-mcp-server/.claude/hooks/sonar-secrets/build-scripts/prompt-secrets.sh) |
 | mcp | 224 | [tests/server/test_calendar_events_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_calendar_events_mcp.py)<br>[tests/server/test_calendar_todos_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_calendar_todos_mcp.py)<br>[tests/server/test_collectives_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_collectives_mcp.py)<br>[tests/server/test_contacts_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_contacts_mcp.py)<br>[tests/server/test_cookbook_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_cookbook_mcp.py)<br>[tests/server/test_deck_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_deck_mcp.py)<br>[tests/server/test_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_mcp.py)<br>[tests/server/test_talk_mcp.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/server/test_talk_mcp.py) |
 | retrieval | 96 | [tools/rag_eval_cli.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tools/rag_eval_cli.py)<br>[tests/unit/test_chunk_bbox_helper.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_chunk_bbox_helper.py)<br>[tests/unit/test_chunk_context_offset_gate.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_chunk_context_offset_gate.py)<br>[tests/unit/test_embedding_metrics.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_embedding_metrics.py)<br>[tests/unit/test_embedding_service.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_embedding_service.py)<br>[tests/unit/test_ingest_queue_depth_metric.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_ingest_queue_depth_metric.py)<br>[tests/unit/test_management_chunk_context_endpoint.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_management_chunk_context_endpoint.py)<br>[tests/unit/test_vector_sync_purge_route.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_vector_sync_purge_route.py) |
@@ -132,38 +132,38 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, agent/tool runtime, retri
 | config | 2 | [pyproject.toml](../../../../sources/cbcoutinho__nextcloud-mcp-server/pyproject.toml)<br>[uv.lock](../../../../sources/cbcoutinho__nextcloud-mcp-server/uv.lock) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 278 | [tools/rag_eval_cli.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tools/rag_eval_cli.py)<br>[tests/__init__.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/conftest.py)<br>[tests/test_cli.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/test_cli.py)<br>[tests/test_models.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/test_models.py)<br>[tests/unit/__init__.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/__init__.py) |
-| CI workflows | 9 | [.github/workflows/bump-version.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/bump-version.yml)<br>[.github/workflows/claude-code-review.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/claude-code-review.yml)<br>[.github/workflows/claude.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/claude.yml)<br>[.github/workflows/docker-build-publish.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/docker-build-publish.yml)<br>[.github/workflows/pact-record-deployment.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/pact-record-deployment.yml)<br>[.github/workflows/pact.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/pact.yml) |
-| Containers / deploy | 3 | [docker-compose.ci.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/docker-compose.ci.yml)<br>[docker-compose.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/docker-compose.yml)<br>[Dockerfile](../../../../sources/cbcoutinho__nextcloud-mcp-server/Dockerfile) |
-| Security / policy | 68 | [env.sample.oauth-multi-user](../../../../sources/cbcoutinho__nextcloud-mcp-server/env.sample.oauth-multi-user)<br>[SECURITY.md](../../../../sources/cbcoutinho__nextcloud-mcp-server/SECURITY.md)<br>[tests/unit/test_app_password_loginname_auth.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_app_password_loginname_auth.py)<br>[tests/unit/test_auth_tools.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_auth_tools.py)<br>[tests/unit/test_basic_auth_middleware.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_basic_auth_middleware.py)<br>[tests/unit/test_browser_oauth_routes.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_browser_oauth_routes.py) |
-| Agent instructions | 1 | [CLAUDE.md](../../../../sources/cbcoutinho__nextcloud-mcp-server/CLAUDE.md) |
+| 테스트/평가 | 278 | [tools/rag_eval_cli.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tools/rag_eval_cli.py)<br>[tests/__init__.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/conftest.py)<br>[tests/test_cli.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/test_cli.py)<br>[tests/test_models.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/test_models.py)<br>[tests/unit/__init__.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/__init__.py) |
+| CI workflow | 9 | [.github/workflows/bump-version.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/bump-version.yml)<br>[.github/workflows/claude-code-review.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/claude-code-review.yml)<br>[.github/workflows/claude.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/claude.yml)<br>[.github/workflows/docker-build-publish.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/docker-build-publish.yml)<br>[.github/workflows/pact-record-deployment.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/pact-record-deployment.yml)<br>[.github/workflows/pact.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/.github/workflows/pact.yml) |
+| 컨테이너/배포 | 3 | [docker-compose.ci.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/docker-compose.ci.yml)<br>[docker-compose.yml](../../../../sources/cbcoutinho__nextcloud-mcp-server/docker-compose.yml)<br>[Dockerfile](../../../../sources/cbcoutinho__nextcloud-mcp-server/Dockerfile) |
+| 보안/정책 | 68 | [env.sample.oauth-multi-user](../../../../sources/cbcoutinho__nextcloud-mcp-server/env.sample.oauth-multi-user)<br>[SECURITY.md](../../../../sources/cbcoutinho__nextcloud-mcp-server/SECURITY.md)<br>[tests/unit/test_app_password_loginname_auth.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_app_password_loginname_auth.py)<br>[tests/unit/test_auth_tools.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_auth_tools.py)<br>[tests/unit/test_basic_auth_middleware.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_basic_auth_middleware.py)<br>[tests/unit/test_browser_oauth_routes.py](../../../../sources/cbcoutinho__nextcloud-mcp-server/tests/unit/test_browser_oauth_routes.py) |
+| 에이전트 지시문 | 1 | [CLAUDE.md](../../../../sources/cbcoutinho__nextcloud-mcp-server/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tools/rag_eval_cli.py`, `tests/unit/test_chunk_bbox_helper.py`, `tests/unit/test_chunk_context_offset_gate.py`.
-2. Map agent/tool runtime through: `tools/rag_eval_cli.py`, `nextcloud_mcp_server/context.py`, `nextcloud_mcp_server/vector/queue/memory.py`.
-3. Inspect retrieval/memory/indexing through: `tools/rag_eval_cli.py`, `tests/unit/test_chunk_bbox_helper.py`, `tests/unit/test_chunk_context_offset_gate.py`.
-4. Verify behavior through test/eval files: `tools/rag_eval_cli.py`, `tests/__init__.py`, `tests/conftest.py`.
+1. 핵심 참조에서 시작: `tools/rag_eval_cli.py`, `tests/unit/test_chunk_bbox_helper.py`, `tests/unit/test_chunk_context_offset_gate.py`.
+2. agent/tool runtime 매핑: `tools/rag_eval_cli.py`, `nextcloud_mcp_server/context.py`, `nextcloud_mcp_server/vector/queue/memory.py`.
+3. retrieval/memory/indexing 확인: `tools/rag_eval_cli.py`, `tests/unit/test_chunk_bbox_helper.py`, `tests/unit/test_chunk_context_offset_gate.py`.
+4. test/eval 파일로 동작 검증: `tools/rag_eval_cli.py`, `tests/__init__.py`, `tests/conftest.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Nextcloud MCP Server. 핵심 구조 신호는 Python, pyproject.toml, Dockerfile, docker-compose.yml, README.md, CLAUDE.md이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Nextcloud MCP Server. 핵심 구조 신호는 Python, pyproject.toml, Dockerfile, docker-compose.yml, README.md, CLAUDE.md이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

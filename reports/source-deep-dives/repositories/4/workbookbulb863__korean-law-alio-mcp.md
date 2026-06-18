@@ -1,63 +1,63 @@
-# workbookbulb863/korean-law-alio-mcp Source Deep Dive
+# workbookbulb863/korean-law-alio-mcp 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Search and analyze Korean laws, administrative rules, and public institution regulations using 110 MCP tools to provide accurate legal data for AI models.
 
 ## 요약
 
-- 조사 단위: `sources/workbookbulb863__korean-law-alio-mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 146 files, 13 directories, depth score 117, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/workbookbulb863__korean-law-alio-mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 146 files, 13 directories, depth score 111, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=test/index.mjs, src/index.ts, src/tools/knowledge-base.ts이고, 의존성 단서는 modelcontextprotocol, express, commander, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=test/index.mjs, src/index.ts, src/tools/knowledge-base.ts이고, 의존성 단서는 modelcontextprotocol, express, commander, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | workbookbulb863/korean-law-alio-mcp |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | workbookbulb863/korean-law-alio-mcp |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | korea |
 | Language | TypeScript |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/workbookbulb863__korean-law-alio-mcp](../../../../sources/workbookbulb863__korean-law-alio-mcp) |
-| Existing report | [reports/korea-trending/repositories/workbookbulb863__korean-law-alio-mcp.md](../../../korea-trending/repositories/workbookbulb863__korean-law-alio-mcp.md) |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/workbookbulb863__korean-law-alio-mcp](../../../../sources/workbookbulb863__korean-law-alio-mcp) |
+| 기존 보고서 | [reports/korea-trending/repositories/workbookbulb863__korean-law-alio-mcp.md](../../../korea-trending/repositories/workbookbulb863__korean-law-alio-mcp.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 146 / 13 |
-| Max observed depth | 4 |
-| Top directories | .claude-plugin, .github, docs, src, test |
-| Top extensions | .ts: 106, .md: 14, .mjs: 8, .json: 5, (none): 5, .cjs: 3, .example: 1, .png: 1, .toml: 1, .yml: 1, .zip: 1 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, containerized deploy |
+| 파일 / 디렉터리 | 146 / 13 |
+| 관측 최대 깊이 | 4 |
+| 상위 디렉터리 | .claude-plugin, .github, docs, src, test |
+| 상위 확장자 | .ts: 106, .md: 14, .mjs: 8, .json: 5, (none): 5, .cjs: 3, .example: 1, .png: 1, .toml: 1, .yml: 1, .zip: 1 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 48 |
 | docs | documentation surface | 5 |
@@ -65,9 +65,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | test | validation surface | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | build | tsc |
 | serve-dev | package.json | watch | tsc --watch |
@@ -86,24 +86,24 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | entrypoint | package.json bin | cli.js | build/cli.js |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | express |
 | developerSurface | commander |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [test/index.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/index.mjs) | retrieval signal |
 | retrieval | [src/index.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/index.ts) | retrieval signal |
@@ -119,9 +119,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | eval | [test/build.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/build.test.mjs) | eval signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 2 | [src/cli.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/cli.ts)<br>[src/index.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/index.ts) |
 | agentRuntime | 71 | [test/lib/runner.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/lib/runner.mjs)<br>[src/tool-registry.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tool-registry.ts)<br>[src/tools/admin-appeals.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tools/admin-appeals.ts)<br>[src/tools/admin-rule.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tools/admin-rule.ts)<br>[src/tools/advanced-search.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tools/advanced-search.ts)<br>[src/tools/annex.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tools/annex.ts)<br>[src/tools/article-compare.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tools/article-compare.ts)<br>[src/tools/article-detail.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tools/article-detail.ts) |
@@ -129,7 +129,7 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | retrieval | 4 | [test/index.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/index.mjs)<br>[src/index.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/index.ts)<br>[src/tools/knowledge-base.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/tools/knowledge-base.ts)<br>[src/lib/alio/index-loader.ts](../../../../sources/workbookbulb863__korean-law-alio-mcp/src/lib/alio/index-loader.ts) |
 | spec | 3 | [ROADMAP-UPSTREAM.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/ROADMAP-UPSTREAM.md)<br>[ROADMAP.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/ROADMAP.md)<br>[docs/ARCHITECTURE.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/docs/ARCHITECTURE.md) |
 | eval | 15 | [TEST-REPORT.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/TEST-REPORT.md)<br>[test/alio.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/alio.test.mjs)<br>[test/build.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/build.test.mjs)<br>[test/cli.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/cli.test.mjs)<br>[test/index.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/index.mjs)<br>[test/law.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/law.test.mjs)<br>[test/router.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/router.test.mjs)<br>[test/test-admin-rule.cjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/test-admin-rule.cjs) |
-| security | 0 | not obvious |
+| security | 0 | 명확하지 않음 |
 | ci | 1 | [.github/workflows/ci.yml](../../../../sources/workbookbulb863__korean-law-alio-mcp/.github/workflows/ci.yml) |
 | container | 1 | [Dockerfile](../../../../sources/workbookbulb863__korean-law-alio-mcp/Dockerfile) |
 | instruction | 1 | [CLAUDE.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/CLAUDE.md) |
@@ -137,39 +137,39 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | config | 2 | [package.json](../../../../sources/workbookbulb863__korean-law-alio-mcp/package.json)<br>[tsconfig.json](../../../../sources/workbookbulb863__korean-law-alio-mcp/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 15 | [TEST-REPORT.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/TEST-REPORT.md)<br>[test/alio.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/alio.test.mjs)<br>[test/build.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/build.test.mjs)<br>[test/cli.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/cli.test.mjs)<br>[test/index.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/index.mjs)<br>[test/law.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/law.test.mjs) |
-| CI workflows | 1 | [.github/workflows/ci.yml](../../../../sources/workbookbulb863__korean-law-alio-mcp/.github/workflows/ci.yml) |
-| Containers / deploy | 1 | [Dockerfile](../../../../sources/workbookbulb863__korean-law-alio-mcp/Dockerfile) |
-| Security / policy | 0 | not obvious |
-| Agent instructions | 1 | [CLAUDE.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/CLAUDE.md) |
+| 테스트/평가 | 15 | [TEST-REPORT.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/TEST-REPORT.md)<br>[test/alio.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/alio.test.mjs)<br>[test/build.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/build.test.mjs)<br>[test/cli.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/cli.test.mjs)<br>[test/index.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/index.mjs)<br>[test/law.test.mjs](../../../../sources/workbookbulb863__korean-law-alio-mcp/test/law.test.mjs) |
+| CI workflow | 1 | [.github/workflows/ci.yml](../../../../sources/workbookbulb863__korean-law-alio-mcp/.github/workflows/ci.yml) |
+| 컨테이너/배포 | 1 | [Dockerfile](../../../../sources/workbookbulb863__korean-law-alio-mcp/Dockerfile) |
+| 보안/정책 | 0 | 명확하지 않음 |
+| 에이전트 지시문 | 1 | [CLAUDE.md](../../../../sources/workbookbulb863__korean-law-alio-mcp/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | security/policy surface not obvious |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | security/policy 표면이 명확하지 않음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `test/index.mjs`, `src/index.ts`, `src/tools/knowledge-base.ts`.
-2. Trace execution through entrypoints: `src/cli.ts`, `src/index.ts`.
-3. Map agent/tool runtime through: `test/lib/runner.mjs`, `src/tool-registry.ts`, `src/tools/admin-appeals.ts`.
-4. Inspect retrieval/memory/indexing through: `test/index.mjs`, `src/index.ts`, `src/tools/knowledge-base.ts`.
-5. Verify behavior through test/eval files: `TEST-REPORT.md`, `test/alio.test.mjs`, `test/build.test.mjs`.
+1. 핵심 참조에서 시작: `test/index.mjs`, `src/index.ts`, `src/tools/knowledge-base.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `src/cli.ts`, `src/index.ts`.
+3. agent/tool runtime 매핑: `test/lib/runner.mjs`, `src/tool-registry.ts`, `src/tools/admin-appeals.ts`.
+4. retrieval/memory/indexing 확인: `test/index.mjs`, `src/index.ts`, `src/tools/knowledge-base.ts`.
+5. test/eval 파일로 동작 검증: `TEST-REPORT.md`, `test/alio.test.mjs`, `test/build.test.mjs`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Search and analyze Korean laws, administrative rules, and public institution regulations using 110 MCP tools to provide . 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, CLAUDE.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Search and analyze Korean laws, administrative rules, and public institution regulations using 110 MCP tools to provide . 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, CLAUDE.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

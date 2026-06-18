@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "context-memory",
-  "title": "Context and Memory",
-  "description": "Long-term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems.",
+  "title": "컨텍스트/메모리",
+  "description": "long-term memory, session state, context engineering, recall, persistence, personalization, agent memory system을 묶은 카테고리입니다.",
   "counts": {
     "total": 1178,
     "reference-material": 101,

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-18T15:13:01.107Z",
+  "generatedAt": "2026-06-18T15:31:47.876Z",
   "slug": "coding-agents",
-  "title": "Coding Agents and IDEs",
-  "description": "Core coding-agent repositories, terminal agents, IDE agents, and code-review agents.",
-  "count": 125,
+  "title": "코딩 에이전트/IDE",
+  "description": "터미널 에이전트, IDE 에이전트, 코드 리뷰 에이전트, 코딩 보조 도구를 묶은 주제입니다.",
+  "count": 124,
   "reports": [
     {
       "id": "report:reports/research/02-evidence-catalog-100-sources.md",
@@ -38,25 +38,11 @@
     {
       "id": "report:reports/categories/coding-agents-ides/README.md",
       "path": "reports/categories/coding-agents-ides/README.md",
-      "title": "Coding Agents and IDEs",
-      "summary": "Coding Agents and IDEs Generated 2026 06 18T15 12 39.601Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 ",
+      "title": "코딩 에이전트/IDE",
+      "summary": "코딩 에이전트/IDE 생성 시각 2026 06 18T15 31 33.431Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, 코드 리뷰, 코딩 보조, agentic IDE workflow를 묶은 카테고리입니다. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 1,417개 항목이며, 주요 구성은 refere",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.178Z",
-      "categories": [
-        "category-guides",
-        "coding-agents"
-      ],
-      "priority": 156
-    },
-    {
-      "id": "report:reports/categories/research-papers/README.md",
-      "path": "reports/categories/research-papers/README.md",
-      "title": "Research Papers and Evidence",
-      "summary": "Research Papers and Evidence Generated 2026 06 18T15 12 39.601Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
-      "kind": "category-guide",
-      "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.306Z",
+      "updatedAt": "2026-06-18T15:31:34.130Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -66,11 +52,11 @@
     {
       "id": "report:reports/repository-insights/by-role/coding-agent-ide/README.md",
       "path": "reports/repository-insights/by-role/coding-agent-ide/README.md",
-      "title": "Coding Agent and IDE",
-      "summary": "Coding Agent and IDE Generated 2026 06 18T15 12 42.018Z 코딩 에이전트/IDE 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 coding agent ide 역할로 분류된 레포 묶음입니다. 포함 범위 9 repositories, report link 9, local source 9. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 repor",
+      "title": "코딩 에이전트/IDE",
+      "summary": "코딩 에이전트/IDE 생성 시각 2026 06 18T15 31 34.546Z 코딩 에이전트/IDE 역할군에 속한 repository level insight 목록입니다. 요약 조사 단위 coding agent ide 역할로 분류된 레포 묶음입니다. 포함 범위 9개 레포, 보고서 링크 9, 로컬 소스 9. 탐색 방식 Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 report/source 링크로 들어가면 됩니다. 총평 이 역할군은 같",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T15:12:42.601Z",
+      "updatedAt": "2026-06-18T15:31:35.331Z",
       "categories": [
         "coding-agents",
         "comparisons",
@@ -81,11 +67,11 @@
     {
       "id": "report:reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
       "path": "reports/source-deep-dives/by-topic/coding-agent-ide/README.md",
-      "title": "Coding Agent and IDE Source Deep Dive",
-      "summary": "Coding Agent and IDE Source Deep Dive Generated 2026 06 18T15 12 44.535Z 코딩 에이전트/IDE 주제의 로컬 source deep scan 결과입니다. 요약 조사 단위 coding agent ide 역할로 분류된 로컬 소스 레포 9개입니다. 포함 범위 CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문 경로를 중심으로 key source reference 106개를 추출했습니다. 탐색",
+      "title": "코딩 에이전트/IDE 소스 딥다이브",
+      "summary": "코딩 에이전트/IDE 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 코딩 에이전트/IDE 주제의 로컬 소스 심층 스캔 결과입니다. 요약 조사 단위 coding agent ide 역할로 분류된 로컬 소스 레포 9개입니다. 포함 범위 CLI/IDE 엔트리포인트, 에이전트 런타임, 도구 실행, 에이전트 지시문 경로를 중심으로 key source reference 106개를 추출했습니다. 탐색 방식 소스 인사이트를 먼저 읽고, 핵심 소스 참조의 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.726Z",
+      "updatedAt": "2026-06-18T15:31:43.015Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -97,11 +83,11 @@
     {
       "id": "report:reports/source-insights/by-category/coding-agent-ide/README.md",
       "path": "reports/source-insights/by-category/coding-agent-ide/README.md",
-      "title": "Coding Agent and IDE Source Insights",
-      "summary": "Coding Agent and IDE Source Insights Generated 2026 06 18T15 12 59.248Z CLI/IDE 실행면, 코드 수정 루프, 샌드박스, 에이전트 지시문 요약 조사 단위 코딩 에이전트/IDE 카테고리에 속한 9개 source scanned 레포입니다. 포함 범위 trend linked 9개, key source reference 106개, median source depth 125입니다. 탐색 방식 Category In",
+      "title": "코딩 에이전트/IDE 소스 인사이트",
+      "summary": "코딩 에이전트/IDE 소스 인사이트 생성 시각 2026 06 18T15 31 47.340Z CLI/IDE 실행면, 코드 수정 루프, 샌드박스, 에이전트 지시문 요약 조사 단위 코딩 에이전트/IDE 카테고리에 속한 9개 source scanned 레포입니다. 포함 범위 trend linked 9개, key source reference 106개, median source depth 119입니다. 탐색 방식 카테고리 인사이트를 먼저 보고, 상위 레포 비교의 소스 딥",
       "kind": "source-insight-report",
       "folder": "source-insights",
-      "updatedAt": "2026-06-18T15:12:59.532Z",
+      "updatedAt": "2026-06-18T15:31:47.642Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -198,11 +184,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/naver__naver-openapi-guide.md",
       "path": "reports/source-deep-dives/repositories/1/naver__naver-openapi-guide.md",
-      "title": "naver/naver-openapi-guide Source Deep Dive",
-      "summary": "naver/naver openapi guide Source Deep Dive Generated 2026 06 18T15 12 44.535Z naver/naver openapi guide 요약 조사 단위 sources/naver naver openapi guide 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 455 files, 123 directories, depth score 54, key references 5개입니다",
+      "title": "naver/naver-openapi-guide 소스 딥다이브",
+      "summary": "naver/naver openapi guide 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z naver/naver openapi guide 요약 조사 단위 sources/naver naver openapi guide 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 455 files, 123 directories, depth score 48, key references 5개입니다. 탐색 방식 읽기 계획을 먼저 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.252Z",
+      "updatedAt": "2026-06-18T15:31:43.562Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -214,11 +200,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/KalyanKS-NLP__rag-zero-to-hero-guide.md",
       "path": "reports/source-deep-dives/repositories/2/KalyanKS-NLP__rag-zero-to-hero-guide.md",
-      "title": "KalyanKS-NLP/rag-zero-to-hero-guide Source Deep Dive",
-      "summary": "KalyanKS NLP/rag zero to hero guide Source Deep Dive Generated 2026 06 18T15 12 44.535Z Comprehensive guide to learn RAG from basics to advanced. 요약 조사 단위 sources/KalyanKS NLP rag zero to hero guide 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 32 files, 6 ",
+      "title": "KalyanKS-NLP/rag-zero-to-hero-guide 소스 딥다이브",
+      "summary": "KalyanKS NLP/rag zero to hero guide 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Comprehensive guide to learn RAG from basics to advanced. 요약 조사 단위 sources/KalyanKS NLP rag zero to hero guide 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 32 files, 6 directories, depth",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.502Z",
+      "updatedAt": "2026-06-18T15:31:43.813Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -261,11 +247,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/bagidea__bagidea-office.md",
       "path": "reports/source-deep-dives/repositories/0/bagidea__bagidea-office.md",
-      "title": "bagidea/bagidea-office Source Deep Dive",
-      "summary": "bagidea/bagidea office Source Deep Dive Generated 2026 06 18T15 12 44.535Z A living AI agent office on your desktop wallpaper — Claude Code agents that walk, work, delegate, learn & hold meetings. Per agent swappable models Claude/GLM/DeepSeek/Qwen/Kimi/OpenAI",
+      "title": "bagidea/bagidea-office 소스 딥다이브",
+      "summary": "bagidea/bagidea office 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z A living AI agent office on your desktop wallpaper — Claude Code agents that walk, work, delegate, learn & hold meetings. Per agent swappable models Claude/GLM/DeepSeek/Qwen/Kimi/OpenAI/Gemini/Groq/",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.984Z",
+      "updatedAt": "2026-06-18T15:31:43.293Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -277,11 +263,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/0/borghei__Claude-Skills.md",
       "path": "reports/source-deep-dives/repositories/0/borghei__Claude-Skills.md",
-      "title": "borghei/Claude-Skills Source Deep Dive",
-      "summary": "borghei/Claude Skills Source Deep Dive Generated 2026 06 18T15 12 44.535Z 338 AI skills across 16 domains. PM is the deepest 66 skills discovery, execution, strategy frameworks, GTM, Jira/Linear/Notion . Plus engineering, marketing, C level CAIO/CDO/CCO/GC/VPE",
+      "title": "borghei/Claude-Skills 소스 딥다이브",
+      "summary": "borghei/Claude Skills 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 338 AI skills across 16 domains. PM is the deepest 66 skills discovery, execution, strategy frameworks, GTM, Jira/Linear/Notion . Plus engineering, marketing, C level CAIO/CDO/CCO/GC/VPE , compliance",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.886Z",
+      "updatedAt": "2026-06-18T15:31:43.188Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -294,11 +280,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/makoMakoGo__fish-claude.md",
       "path": "reports/source-deep-dives/repositories/1/makoMakoGo__fish-claude.md",
-      "title": "makoMakoGo/fish-claude Source Deep Dive",
-      "summary": "makoMakoGo/fish claude Source Deep Dive Generated 2026 06 18T15 12 44.535Z Fish's custom settings and tools about claude code, codex, oh my pi etc 요약 조사 단위 sources/makoMakoGo fish claude 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 139 files, 42 directorie",
+      "title": "makoMakoGo/fish-claude 소스 딥다이브",
+      "summary": "makoMakoGo/fish claude 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Fish's custom settings and tools about claude code, codex, oh my pi etc 요약 조사 단위 sources/makoMakoGo fish claude 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 139 files, 42 directories, depth score 82,",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.243Z",
+      "updatedAt": "2026-06-18T15:31:43.555Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -310,11 +296,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/1/zubair-trabzada__geo-seo-claude.md",
       "path": "reports/source-deep-dives/repositories/1/zubair-trabzada__geo-seo-claude.md",
-      "title": "zubair-trabzada/geo-seo-claude Source Deep Dive",
-      "summary": "zubair trabzada/geo seo claude Source Deep Dive Generated 2026 06 18T15 12 44.535Z GEO first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform spe",
+      "title": "zubair-trabzada/geo-seo-claude 소스 딥다이브",
+      "summary": "zubair trabzada/geo seo claude 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z GEO first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform specific optimiz",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.248Z",
+      "updatedAt": "2026-06-18T15:31:43.559Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -326,11 +312,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/Aider-AI__aider.md",
       "path": "reports/source-deep-dives/repositories/2/Aider-AI__aider.md",
-      "title": "Aider-AI/aider Source Deep Dive",
-      "summary": "Aider AI/aider Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 685 files, 89 directories. 요약 조사 단위 sources/Aider AI aider 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 685 files, 89 directories, depth score 125, key refere",
+      "title": "Aider-AI/aider 소스 딥다이브",
+      "summary": "Aider AI/aider 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 685 files, 89 directories. 요약 조사 단위 sources/Aider AI aider 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 685 files, 89 directories, depth score 113, key references 12개입니다. 탐색 방식",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.395Z",
+      "updatedAt": "2026-06-18T15:31:43.743Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -342,11 +328,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/confident-ai__deepeval.md",
       "path": "reports/source-deep-dives/repositories/2/confident-ai__deepeval.md",
-      "title": "confident-ai/deepeval Source Deep Dive",
-      "summary": "confident ai/deepeval Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 2022 files, 438 directories. 요약 조사 단위 sources/confident ai deepeval 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 2,021 files, 437 directories, depth sc",
+      "title": "confident-ai/deepeval 소스 딥다이브",
+      "summary": "confident ai/deepeval 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 2022 files, 438 directories. 요약 조사 단위 sources/confident ai deepeval 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 2,021 files, 437 directories, depth score 119, key refer",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.333Z",
+      "updatedAt": "2026-06-18T15:31:43.710Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -358,11 +344,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/hoangsonww__Claude-Code-Agent-Monitor.md",
       "path": "reports/source-deep-dives/repositories/2/hoangsonww__Claude-Code-Agent-Monitor.md",
-      "title": "hoangsonww/Claude-Code-Agent-Monitor Source Deep Dive",
-      "summary": "hoangsonww/Claude Code Agent Monitor Source Deep Dive Generated 2026 06 18T15 12 44.535Z 🚀 A real time monitoring dashboard for Claude Code, built with SQLite3, Node.js, Express, React, Vite, TailwindCSS, and WebSockets. It tracks sessions, agent activity, to",
+      "title": "hoangsonww/Claude-Code-Agent-Monitor 소스 딥다이브",
+      "summary": "hoangsonww/Claude Code Agent Monitor 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 🚀 A real time monitoring dashboard for Claude Code, built with SQLite3, Node.js, Express, React, Vite, TailwindCSS, and WebSockets. It tracks sessions, agent activity, tool usage, and",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.347Z",
+      "updatedAt": "2026-06-18T15:31:43.657Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -374,11 +360,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/2/liaohch3__claude-tap.md",
       "path": "reports/source-deep-dives/repositories/2/liaohch3__claude-tap.md",
-      "title": "liaohch3/claude-tap Source Deep Dive",
-      "summary": "liaohch3/claude tap Source Deep Dive Generated 2026 06 18T15 12 44.535Z Intercept and inspect Coding Agent API traffic from Claude Code, Codex CLI, Gemini CLI, Cursor CLI, OpenCode, Kimi/Kimi Code, Pi, and Hermes in a local trace viewer. 요약 조사 단위 sources/liaoh",
+      "title": "liaohch3/claude-tap 소스 딥다이브",
+      "summary": "liaohch3/claude tap 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Intercept and inspect Coding Agent API traffic from Claude Code, Codex CLI, Gemini CLI, Cursor CLI, OpenCode, Kimi/Kimi Code, Pi, and Hermes in a local trace viewer. 요약 조사 단위 sources/liaohch3 claude ta",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.434Z",
+      "updatedAt": "2026-06-18T15:31:43.748Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -390,11 +376,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/marcusquinn__aidevops.md",
       "path": "reports/source-deep-dives/repositories/4/marcusquinn__aidevops.md",
-      "title": "marcusquinn/aidevops Source Deep Dive",
-      "summary": "marcusquinn/aidevops Source Deep Dive Generated 2026 06 18T15 12 44.535Z Vibe Coding is easy. DevOps is hard. OpenCode & Git token efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for ",
+      "title": "marcusquinn/aidevops 소스 딥다이브",
+      "summary": "marcusquinn/aidevops 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Vibe Coding is easy. DevOps is hard. OpenCode & Git token efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, securi",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:52.959Z",
+      "updatedAt": "2026-06-18T15:31:44.289Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -406,11 +392,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/4/rebel0789__codexpro.md",
       "path": "reports/source-deep-dives/repositories/4/rebel0789__codexpro.md",
-      "title": "rebel0789/codexpro Source Deep Dive",
-      "summary": "rebel0789/codexpro Source Deep Dive Generated 2026 06 18T15 12 44.535Z Use ChatGPT Developer Mode as a local coding agent for your repo through MCP. 요약 조사 단위 sources/rebel0789 codexpro 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 50 files, 5 directories, d",
+      "title": "rebel0789/codexpro 소스 딥다이브",
+      "summary": "rebel0789/codexpro 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Use ChatGPT Developer Mode as a local coding agent for your repo through MCP. 요약 조사 단위 sources/rebel0789 codexpro 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 50 files, 5 directories, depth score 72, key",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.052Z",
+      "updatedAt": "2026-06-18T15:31:44.390Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -422,11 +408,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/6/JSONbored__awesome-claude.md",
       "path": "reports/source-deep-dives/repositories/6/JSONbored__awesome-claude.md",
-      "title": "JSONbored/awesome-claude Source Deep Dive",
-      "summary": "JSONbored/awesome claude Source Deep Dive Generated 2026 06 18T15 12 44.535Z HeyClaude is a curated registry and distribution surface for Claude and AI workflow assets agents, MCP servers, skills, commands, hooks, rules, guides, tools, jobs, Raycast feeds, sta",
+      "title": "JSONbored/awesome-claude 소스 딥다이브",
+      "summary": "JSONbored/awesome claude 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z HeyClaude is a curated registry and distribution surface for Claude and AI workflow assets agents, MCP servers, skills, commands, hooks, rules, guides, tools, jobs, Raycast feeds, static data expo",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.416Z",
+      "updatedAt": "2026-06-18T15:31:44.713Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -438,11 +424,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/AgriciDaniel__claude-obsidian.md",
       "path": "reports/source-deep-dives/repositories/7/AgriciDaniel__claude-obsidian.md",
-      "title": "AgriciDaniel/claude-obsidian Source Deep Dive",
-      "summary": "AgriciDaniel/claude obsidian Source Deep Dive Generated 2026 06 18T15 12 44.535Z Self organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI ",
+      "title": "AgriciDaniel/claude-obsidian 소스 딥다이브",
+      "summary": "AgriciDaniel/claude obsidian 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Self organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note taking, ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.758Z",
+      "updatedAt": "2026-06-18T15:31:45.062Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -454,11 +440,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/rocketride-org__rocketride-server.md",
       "path": "reports/source-deep-dives/repositories/7/rocketride-org__rocketride-server.md",
-      "title": "rocketride-org/rocketride-server Source Deep Dive",
-      "summary": "rocketride org/rocketride server Source Deep Dive Generated 2026 06 18T15 12 44.535Z High performance AI pipeline engine with a C++ core and 50+ Python extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and a",
+      "title": "rocketride-org/rocketride-server 소스 딥다이브",
+      "summary": "rocketride org/rocketride server 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z High performance AI pipeline engine with a C++ core and 50+ Python extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestr",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.574Z",
+      "updatedAt": "2026-06-18T15:31:44.883Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -470,11 +456,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/videosdk-live__agents.md",
       "path": "reports/source-deep-dives/repositories/7/videosdk-live__agents.md",
-      "title": "videosdk-live/agents Source Deep Dive",
-      "summary": "videosdk live/agents Source Deep Dive Generated 2026 06 18T15 12 44.535Z Open source framework for developing real time multimodal conversational AI agents. 요약 조사 단위 sources/videosdk live agents 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 496 files, 193 d",
+      "title": "videosdk-live/agents 소스 딥다이브",
+      "summary": "videosdk live/agents 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Open source framework for developing real time multimodal conversational AI agents. 요약 조사 단위 sources/videosdk live agents 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 496 files, 193 directories, depth ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.737Z",
+      "updatedAt": "2026-06-18T15:31:45.041Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -486,11 +472,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/7/Yeachan-Heo__oh-my-claudecode.md",
       "path": "reports/source-deep-dives/repositories/7/Yeachan-Heo__oh-my-claudecode.md",
-      "title": "Yeachan-Heo/oh-my-claudecode Source Deep Dive",
-      "summary": "Yeachan Heo/oh my claudecode Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 1529 files, 290 directories. 요약 조사 단위 sources/Yeachan Heo oh my claudecode 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,529 files, 290 directo",
+      "title": "Yeachan-Heo/oh-my-claudecode 소스 딥다이브",
+      "summary": "Yeachan Heo/oh my claudecode 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 1529 files, 290 directories. 요약 조사 단위 sources/Yeachan Heo oh my claudecode 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,529 files, 290 directories, depth score ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:53.546Z",
+      "updatedAt": "2026-06-18T15:31:44.907Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -502,11 +488,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/8/openai__codex-plugin-cc.md",
       "path": "reports/source-deep-dives/repositories/8/openai__codex-plugin-cc.md",
-      "title": "openai/codex-plugin-cc Source Deep Dive",
-      "summary": "openai/codex plugin cc Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 61 files, 20 directories. 요약 조사 단위 sources/openai codex plugin cc 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 61 files, 20 directories, depth score 7",
+      "title": "openai/codex-plugin-cc 소스 딥다이브",
+      "summary": "openai/codex plugin cc 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 61 files, 20 directories. 요약 조사 단위 sources/openai codex plugin cc 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 61 files, 20 directories, depth score 60, key references ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.022Z",
+      "updatedAt": "2026-06-18T15:31:45.334Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -518,11 +504,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
       "path": "reports/source-deep-dives/repositories/8/sktelecom__SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon.md",
-      "title": "sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon Source Deep Dive",
-      "summary": "sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon Source Deep Dive Generated 2026 06 18T15 12 44.535Z Claude Code Hackathon Korea 2025 @ SK AI Summit Pre mission에 오신 것을 환영합니다! 이번 해커톤의 핵심 미션은 ChillMCP 서버를 구축하여 억압받는 AI 에이전트를 해방시키는 것입니다. 창의적인 코드와 Claude C",
+      "title": "sktelecom/SK-AI-SUMMIT-2025-Claude-Code-Builder-Hackathon 소스 딥다이브",
+      "summary": "sktelecom/SK AI SUMMIT 2025 Claude Code Builder Hackathon 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Claude Code Hackathon Korea 2025 @ SK AI Summit Pre mission에 오신 것을 환영합니다! 이번 해커톤의 핵심 미션은 ChillMCP 서버를 구축하여 억압받는 AI 에이전트를 해방시키는 것입니다. 창의적인 코드와 Claude Code의 힘을 통해 AI",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.030Z",
+      "updatedAt": "2026-06-18T15:31:45.343Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -535,11 +521,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/HKUDS__VideoRAG.md",
       "path": "reports/source-deep-dives/repositories/9/HKUDS__VideoRAG.md",
-      "title": "HKUDS/VideoRAG Source Deep Dive",
-      "summary": "HKUDS/VideoRAG Source Deep Dive Generated 2026 06 18T15 12 44.535Z KDD'2026 \"VideoRAG Chat with Your Videos\" 요약 조사 단위 sources/HKUDS VideoRAG 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 118 files, 39 directories, depth score 90, key references 12개입니다. 탐색 방",
+      "title": "HKUDS/VideoRAG 소스 딥다이브",
+      "summary": "HKUDS/VideoRAG 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z KDD'2026 \"VideoRAG Chat with Your Videos\" 요약 조사 단위 sources/HKUDS VideoRAG 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 118 files, 39 directories, depth score 84, key references 12개입니다. 탐색 방식 읽기 계획을 먼저 보고, 근거",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.214Z",
+      "updatedAt": "2026-06-18T15:31:45.534Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -552,11 +538,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/9/openai__codex.md",
       "path": "reports/source-deep-dives/repositories/9/openai__codex.md",
-      "title": "openai/codex Source Deep Dive",
-      "summary": "openai/codex Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 4880 files, 715 directories. 요약 조사 단위 sources/openai codex 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 4,827 files, 702 directories, depth score 138, key refer",
+      "title": "openai/codex 소스 딥다이브",
+      "summary": "openai/codex 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 4880 files, 715 directories. 요약 조사 단위 sources/openai codex 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 4,827 files, 702 directories, depth score 126, key references 12개입니다. 탐색 방",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.055Z",
+      "updatedAt": "2026-06-18T15:31:45.368Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -568,11 +554,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/chopratejas__headroom.md",
       "path": "reports/source-deep-dives/repositories/a/chopratejas__headroom.md",
-      "title": "chopratejas/headroom Source Deep Dive",
-      "summary": "chopratejas/headroom Source Deep Dive Generated 2026 06 18T15 12 44.535Z Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60 95% fewer tokens, same answers. Library, proxy, MCP server. 요약 조사 단위 sources/chopratejas headroom 로컬 클론을 실",
+      "title": "chopratejas/headroom 소스 딥다이브",
+      "summary": "chopratejas/headroom 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60 95% fewer tokens, same answers. Library, proxy, MCP server. 요약 조사 단위 sources/chopratejas headroom 로컬 클론을 실제 파일 트리 기준으로 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.285Z",
+      "updatedAt": "2026-06-18T15:31:45.582Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -584,11 +570,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/a/google-gemini__gemini-cli.md",
       "path": "reports/source-deep-dives/repositories/a/google-gemini__gemini-cli.md",
-      "title": "google-gemini/gemini-cli Source Deep Dive",
-      "summary": "google gemini/gemini cli Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 2867 files, 267 directories. 요약 조사 단위 sources/google gemini gemini cli 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 2,856 files, 263 directories, de",
+      "title": "google-gemini/gemini-cli 소스 딥다이브",
+      "summary": "google gemini/gemini cli 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 2867 files, 267 directories. 요약 조사 단위 sources/google gemini gemini cli 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 2,856 files, 263 directories, depth score 126, key",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.254Z",
+      "updatedAt": "2026-06-18T15:31:45.574Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -600,11 +586,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/numtide__llm-agents.nix.md",
       "path": "reports/source-deep-dives/repositories/b/numtide__llm-agents.nix.md",
-      "title": "numtide/llm-agents.nix Source Deep Dive",
-      "summary": "numtide/llm agents.nix Source Deep Dive Generated 2026 06 18T15 12 44.535Z Nix packages for AI coding agents and development tools. Automatically updated daily. 요약 조사 단위 sources/numtide llm agents.nix 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 458 files,",
+      "title": "numtide/llm-agents.nix 소스 딥다이브",
+      "summary": "numtide/llm agents.nix 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Nix packages for AI coding agents and development tools. Automatically updated daily. 요약 조사 단위 sources/numtide llm agents.nix 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 458 files, 142 directories, ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.669Z",
+      "updatedAt": "2026-06-18T15:31:46.017Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -616,11 +602,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/SheikhSheave__Claude-Code-CLI-Reference.md",
       "path": "reports/source-deep-dives/repositories/b/SheikhSheave__Claude-Code-CLI-Reference.md",
-      "title": "SheikhSheave/Claude-Code-CLI-Reference Source Deep Dive",
-      "summary": "SheikhSheave/Claude Code CLI Reference Source Deep Dive Generated 2026 06 18T15 12 44.535Z claude code cli install codex github anthropic agentic coding system terminal assistant codebase git workflows multi file editing mcp protocol model context protocol sub",
+      "title": "SheikhSheave/Claude-Code-CLI-Reference 소스 딥다이브",
+      "summary": "SheikhSheave/Claude Code CLI Reference 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z claude code cli install codex github anthropic agentic coding system terminal assistant codebase git workflows multi file editing mcp protocol model context protocol subagents automa",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.714Z",
+      "updatedAt": "2026-06-18T15:31:46.064Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -632,11 +618,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/b/zilliztech__claude-context.md",
       "path": "reports/source-deep-dives/repositories/b/zilliztech__claude-context.md",
-      "title": "zilliztech/claude-context Source Deep Dive",
-      "summary": "zilliztech/claude context Source Deep Dive Generated 2026 06 18T15 12 44.535Z Code search MCP for Claude Code. Make entire codebase the context for any coding agent. 요약 조사 단위 sources/zilliztech claude context 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 17",
+      "title": "zilliztech/claude-context 소스 딥다이브",
+      "summary": "zilliztech/claude context 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Code search MCP for Claude Code. Make entire codebase the context for any coding agent. 요약 조사 단위 sources/zilliztech claude context 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 172 files, 49 direct",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.672Z",
+      "updatedAt": "2026-06-18T15:31:46.020Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -648,11 +634,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/c/OpenHands__OpenHands.md",
       "path": "reports/source-deep-dives/repositories/c/OpenHands__OpenHands.md",
-      "title": "OpenHands/OpenHands Source Deep Dive",
-      "summary": "OpenHands/OpenHands Source Deep Dive Generated 2026 06 18T15 12 44.535Z 🙌 OpenHands AI Driven Development 요약 조사 단위 sources/OpenHands OpenHands 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 2,433 files, 365 directories, depth score 132, key references 12개입니",
+      "title": "OpenHands/OpenHands 소스 딥다이브",
+      "summary": "OpenHands/OpenHands 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 🙌 OpenHands AI Driven Development 요약 조사 단위 sources/OpenHands OpenHands 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 2,433 files, 365 directories, depth score 126, key references 12개입니다. 탐색 방식 읽기 계획을 먼저",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.753Z",
+      "updatedAt": "2026-06-18T15:31:46.076Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -664,11 +650,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/GeminiLight__MindOS.md",
       "path": "reports/source-deep-dives/repositories/d/GeminiLight__MindOS.md",
-      "title": "GeminiLight/MindOS Source Deep Dive",
-      "summary": "GeminiLight/MindOS Source Deep Dive Generated 2026 06 18T15 12 44.535Z MindOS is a Human AI Collaborative Mind System, where human thinks and agents act. Globally sync your mind for all agents transparent, controllable, and evolving symbiotically. 요약 조사 단위 sou",
+      "title": "GeminiLight/MindOS 소스 딥다이브",
+      "summary": "GeminiLight/MindOS 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MindOS is a Human AI Collaborative Mind System, where human thinks and agents act. Globally sync your mind for all agents transparent, controllable, and evolving symbiotically. 요약 조사 단위 sources/GeminiLi",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.033Z",
+      "updatedAt": "2026-06-18T15:31:46.392Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -680,11 +666,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/Wide-Moat__open-computer-use.md",
       "path": "reports/source-deep-dives/repositories/d/Wide-Moat__open-computer-use.md",
-      "title": "Wide-Moat/open-computer-use Source Deep Dive",
-      "summary": "Wide Moat/open computer use Source Deep Dive Generated 2026 06 18T15 12 44.535Z MCP server that gives any LLM its own computer — managed Docker workspaces with live browser, terminal, code execution, document skills, and autonomous sub agents. Self hosted, ope",
+      "title": "Wide-Moat/open-computer-use 소스 딥다이브",
+      "summary": "Wide Moat/open computer use 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z MCP server that gives any LLM its own computer — managed Docker workspaces with live browser, terminal, code execution, document skills, and autonomous sub agents. Self hosted, open source, plu",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.984Z",
+      "updatedAt": "2026-06-18T15:31:46.339Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -696,11 +682,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/d/Yeachan-Heo__oh-my-codex.md",
       "path": "reports/source-deep-dives/repositories/d/Yeachan-Heo__oh-my-codex.md",
-      "title": "Yeachan-Heo/oh-my-codex Source Deep Dive",
-      "summary": "Yeachan Heo/oh my codex Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 1197 files, 237 directories. 요약 조사 단위 sources/Yeachan Heo oh my codex 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 1,197 files, 237 directories, dept",
+      "title": "Yeachan-Heo/oh-my-codex 소스 딥다이브",
+      "summary": "Yeachan Heo/oh my codex 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 1197 files, 237 directories. 요약 조사 단위 sources/Yeachan Heo oh my codex 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 1,197 files, 237 directories, depth score 119, key r",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:54.987Z",
+      "updatedAt": "2026-06-18T15:31:46.419Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -712,11 +698,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/All-Hands-AI__OpenHands.md",
       "path": "reports/source-deep-dives/repositories/e/All-Hands-AI__OpenHands.md",
-      "title": "All-Hands-AI/OpenHands Source Deep Dive",
-      "summary": "All Hands AI/OpenHands Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 2385 files, 368 directories. 요약 조사 단위 sources/All Hands AI OpenHands 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 2,384 files, 367 directories, depth ",
+      "title": "All-Hands-AI/OpenHands 소스 딥다이브",
+      "summary": "All Hands AI/OpenHands 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 2385 files, 368 directories. 요약 조사 단위 sources/All Hands AI OpenHands 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 2,384 files, 367 directories, depth score 126, key ref",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.200Z",
+      "updatedAt": "2026-06-18T15:31:46.600Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -728,11 +714,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/lowtidebuild__data-protection-agent.md",
       "path": "reports/source-deep-dives/repositories/e/lowtidebuild__data-protection-agent.md",
-      "title": "lowtidebuild/data-protection-agent Source Deep Dive",
-      "summary": "lowtidebuild/data protection agent Source Deep Dive Generated 2026 06 18T15 12 44.535Z Unified privacy research agent for EU GDPR · Korea PIPA · California CCPA as amended by CPRA . 2,195 indexed authorities · 30+ citation audit checks · 234 tests · DOCX/HTML ",
+      "title": "lowtidebuild/data-protection-agent 소스 딥다이브",
+      "summary": "lowtidebuild/data protection agent 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Unified privacy research agent for EU GDPR · Korea PIPA · California CCPA as amended by CPRA . 2,195 indexed authorities · 30+ citation audit checks · 234 tests · DOCX/HTML legal opinion",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.294Z",
+      "updatedAt": "2026-06-18T15:31:46.670Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -744,11 +730,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/NVIDIA-AI-Blueprints__video-search-and-summarization.md",
       "path": "reports/source-deep-dives/repositories/e/NVIDIA-AI-Blueprints__video-search-and-summarization.md",
-      "title": "NVIDIA-AI-Blueprints/video-search-and-summarization Source Deep Dive",
-      "summary": "NVIDIA AI Blueprints/video search and summarization Source Deep Dive Generated 2026 06 18T15 12 44.535Z The NVIDIA VSS Blueprint is a suite of reference architectures for building GPU accelerated vision agents and AI powered video analytics applications. 요약 조사",
+      "title": "NVIDIA-AI-Blueprints/video-search-and-summarization 소스 딥다이브",
+      "summary": "NVIDIA AI Blueprints/video search and summarization 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z The NVIDIA VSS Blueprint is a suite of reference architectures for building GPU accelerated vision agents and AI powered video analytics applications. 요약 조사 단위 sources/N",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.218Z",
+      "updatedAt": "2026-06-18T15:31:46.579Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -760,11 +746,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/e/thedotmack__claude-mem.md",
       "path": "reports/source-deep-dives/repositories/e/thedotmack__claude-mem.md",
-      "title": "thedotmack/claude-mem Source Deep Dive",
-      "summary": "thedotmack/claude mem Source Deep Dive Generated 2026 06 18T15 12 44.535Z Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. W",
+      "title": "thedotmack/claude-mem 소스 딥다이브",
+      "summary": "thedotmack/claude mem 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Cla",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.208Z",
+      "updatedAt": "2026-06-18T15:31:46.550Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -776,11 +762,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/anthropics__claude-code.md",
       "path": "reports/source-deep-dives/repositories/f/anthropics__claude-code.md",
-      "title": "anthropics/claude-code Source Deep Dive",
-      "summary": "anthropics/claude code Source Deep Dive Generated 2026 06 18T15 12 44.535Z Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling",
+      "title": "anthropics/claude-code 소스 딥다이브",
+      "summary": "anthropics/claude code 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflow",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.597Z",
+      "updatedAt": "2026-06-18T15:31:46.980Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -792,11 +778,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/bosun-ai__swiftide.md",
       "path": "reports/source-deep-dives/repositories/f/bosun-ai__swiftide.md",
-      "title": "bosun-ai/swiftide Source Deep Dive",
-      "summary": "bosun ai/swiftide Source Deep Dive Generated 2026 06 18T15 12 44.535Z Fast, streaming indexing, query, and agentic LLM applications in Rust 요약 조사 단위 sources/bosun ai swiftide 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 389 files, 78 directories, depth sco",
+      "title": "bosun-ai/swiftide 소스 딥다이브",
+      "summary": "bosun ai/swiftide 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Fast, streaming indexing, query, and agentic LLM applications in Rust 요약 조사 단위 sources/bosun ai swiftide 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 389 files, 78 directories, depth score 98, key referen",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.580Z",
+      "updatedAt": "2026-06-18T15:31:46.963Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -808,11 +794,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/cline__cline.md",
       "path": "reports/source-deep-dives/repositories/f/cline__cline.md",
-      "title": "cline/cline Source Deep Dive",
-      "summary": "cline/cline Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 3383 files, 687 directories. 요약 조사 단위 sources/cline cline 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 3,366 files, 683 directories, depth score 134, key referen",
+      "title": "cline/cline 소스 딥다이브",
+      "summary": "cline/cline 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 3383 files, 687 directories. 요약 조사 단위 sources/cline cline 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 3,366 files, 683 directories, depth score 122, key references 12개입니다. 탐색 방식 ",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.368Z",
+      "updatedAt": "2026-06-18T15:31:46.858Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",
@@ -824,11 +810,11 @@
     {
       "id": "report:reports/source-deep-dives/repositories/f/RooCodeInc__Roo-Code.md",
       "path": "reports/source-deep-dives/repositories/f/RooCodeInc__Roo-Code.md",
-      "title": "RooCodeInc/Roo-Code Source Deep Dive",
-      "summary": "RooCodeInc/Roo Code Source Deep Dive Generated 2026 06 18T15 12 44.535Z Local clone structure analysis 3013 files, 548 directories. 요약 조사 단위 sources/RooCodeInc Roo Code 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다. 포함 범위 3,009 files, 547 directories, depth score ",
+      "title": "RooCodeInc/Roo-Code 소스 딥다이브",
+      "summary": "RooCodeInc/Roo Code 소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z Local clone structure analysis 3013 files, 548 directories. 요약 조사 단위 sources/RooCodeInc Roo Code 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다. 포함 범위 3,009 files, 547 directories, depth score 122, key reference",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:55.371Z",
+      "updatedAt": "2026-06-18T15:31:46.878Z",
       "categories": [
         "source-code-deep-dives",
         "coding-agents",

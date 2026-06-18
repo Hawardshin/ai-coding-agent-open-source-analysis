@@ -1,63 +1,63 @@
-# joshuaswarren/remnic Source Deep Dive
+# joshuaswarren/remnic 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Open-source memory and context for user-aware agents: scoped memory, provenance, retrieval quality, correction, boundaries, evals, and MCP/HTTP access.
 
 ## 요약
 
-- 조사 단위: `sources/joshuaswarren__remnic` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 2,408 files, 315 directories, depth score 128, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/joshuaswarren__remnic` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 2,408 files, 315 directories, depth score 122, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/access-mcp-action-confidence.test.ts, tests/access-mcp-chatgpt-app.test.ts, tests/access-mcp-recall-xray.test.ts이고, 의존성 단서는 openai, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/access-mcp-action-confidence.test.ts, tests/access-mcp-chatgpt-app.test.ts, tests/access-mcp-recall-xray.test.ts이고, 의존성 단서는 openai, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | joshuaswarren/remnic |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | joshuaswarren/remnic |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 87 |
 | Forks | 15 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/joshuaswarren__remnic](../../../../sources/joshuaswarren__remnic) |
-| Existing report | [reports/global-trending/repositories/joshuaswarren__remnic.md](../../../global-trending/repositories/joshuaswarren__remnic.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/joshuaswarren__remnic](../../../../sources/joshuaswarren__remnic) |
+| 기존 보고서 | [reports/global-trending/repositories/joshuaswarren__remnic.md](../../../global-trending/repositories/joshuaswarren__remnic.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 2408 / 315 |
-| Max observed depth | 7 |
-| Top directories | .agents, .changeset, .cursor, .githooks, .github, admin-console, benchmarks, bin, dashboard, docs, evals, examples, integrations, packages, prompts, scripts, src, tests |
-| Top extensions | .ts: 1764, .md: 327, .json: 108, .mjs: 63, .py: 33, .tsx: 25, .sh: 23, .yml: 21, (none): 13, .js: 8, .cjs: 5, .txt: 5 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 2408 / 315 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .agents, .changeset, .cursor, .githooks, .github, admin-console, benchmarks, bin, dashboard, docs, evals, examples, integrations, packages, prompts, scripts, src, tests |
+| 상위 확장자 | .ts: 1764, .md: 327, .json: 108, .mjs: 63, .py: 33, .tsx: 25, .sh: 23, .yml: 21, (none): 13, .js: 8, .cjs: 5, .txt: 5 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 127 |
 | docs | documentation surface | 36 |
@@ -79,9 +79,9 @@ Open-source memory and context for user-aware agents: scoped memory, provenance,
 | packages/import-mem0 | packages workspace | 4 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | sync:openclaw-plugin | node scripts/sync-openclaw-plugin.mjs |
 | quality | package.json | check:openclaw-plugin-sync | node scripts/check-openclaw-plugin-sync.mjs |
@@ -125,24 +125,24 @@ Open-source memory and context for user-aware agents: scoped memory, provenance,
 | build | Makefile | build | make build |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [tests/access-mcp-action-confidence.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-mcp-action-confidence.test.ts) | mcp signal |
 | mcp | [tests/access-mcp-chatgpt-app.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-mcp-chatgpt-app.test.ts) | mcp signal |
@@ -158,9 +158,9 @@ Open-source memory and context for user-aware agents: scoped memory, provenance,
 | entrypoints | [src/cli.ts](../../../../sources/joshuaswarren__remnic/src/cli.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 55 | [tests/compat-fixtures/missing-manifest/src/index.ts](../../../../sources/joshuaswarren__remnic/tests/compat-fixtures/missing-manifest/src/index.ts)<br>[tests/compat-fixtures/healthy/src/index.ts](../../../../sources/joshuaswarren__remnic/tests/compat-fixtures/healthy/src/index.ts)<br>[tests/compat-fixtures/empty-package/src/index.ts](../../../../sources/joshuaswarren__remnic/tests/compat-fixtures/empty-package/src/index.ts)<br>[src/cli.ts](../../../../sources/joshuaswarren__remnic/src/cli.ts)<br>[src/index.ts](../../../../sources/joshuaswarren__remnic/src/index.ts)<br>[packages/shim-openclaw-engram/src/index.ts](../../../../sources/joshuaswarren__remnic/packages/shim-openclaw-engram/src/index.ts)<br>[packages/shim-openclaw-engram/bin/engram-access.js](../../../../sources/joshuaswarren__remnic/packages/shim-openclaw-engram/bin/engram-access.js)<br>[packages/remnic-server/src/index.ts](../../../../sources/joshuaswarren__remnic/packages/remnic-server/src/index.ts) |
 | agentRuntime | 196 | [AGENTS.md](../../../../sources/joshuaswarren__remnic/AGENTS.md)<br>[tests/hook-migration-preamble.test.ts](../../../../sources/joshuaswarren__remnic/tests/hook-migration-preamble.test.ts)<br>[tests/memory-action-contracts.test.ts](../../../../sources/joshuaswarren__remnic/tests/memory-action-contracts.test.ts)<br>[tests/memory-action-lifecycle-integration.test.ts](../../../../sources/joshuaswarren__remnic/tests/memory-action-lifecycle-integration.test.ts)<br>[tests/memory-action-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/memory-action-policy.test.ts)<br>[tests/memory-boxes.test.ts](../../../../sources/joshuaswarren__remnic/tests/memory-boxes.test.ts)<br>[tests/memory-cache.test.ts](../../../../sources/joshuaswarren__remnic/tests/memory-cache.test.ts)<br>[tests/memory-extension-discovery.test.ts](../../../../sources/joshuaswarren__remnic/tests/memory-extension-discovery.test.ts) |
@@ -170,45 +170,45 @@ Open-source memory and context for user-aware agents: scoped memory, provenance,
 | eval | 1152 | [tsconfig.tests.json](../../../../sources/joshuaswarren__remnic/tsconfig.tests.json)<br>[tests/abstraction-nodes.test.ts](../../../../sources/joshuaswarren__remnic/tests/abstraction-nodes.test.ts)<br>[tests/access-http-action-confidence.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-http-action-confidence.test.ts)<br>[tests/access-http.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-http.test.ts)<br>[tests/access-idempotency.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-idempotency.test.ts)<br>[tests/access-mcp-action-confidence.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-mcp-action-confidence.test.ts)<br>[tests/access-mcp-chatgpt-app.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-mcp-chatgpt-app.test.ts)<br>[tests/access-mcp-recall-xray.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-mcp-recall-xray.test.ts) |
 | security | 70 | [SECURITY.md](../../../../sources/joshuaswarren__remnic/SECURITY.md)<br>[tests/changelog-guard.test.mjs](../../../../sources/joshuaswarren__remnic/tests/changelog-guard.test.mjs)<br>[tests/cli-memory-action-audit.test.ts](../../../../sources/joshuaswarren__remnic/tests/cli-memory-action-audit.test.ts)<br>[tests/cli-policy-tuning.test.ts](../../../../sources/joshuaswarren__remnic/tests/cli-policy-tuning.test.ts)<br>[tests/config-lifecycle-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/config-lifecycle-policy.test.ts)<br>[tests/config-proactive-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/config-proactive-policy.test.ts)<br>[tests/continuity-audit.test.ts](../../../../sources/joshuaswarren__remnic/tests/continuity-audit.test.ts)<br>[tests/memory-action-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/memory-action-policy.test.ts) |
 | ci | 15 | [.github/workflows/ai-review-gate.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/ai-review-gate.yml)<br>[.github/workflows/amb-beam-remnic.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/amb-beam-remnic.yml)<br>[.github/workflows/bench-exploit-audit.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/bench-exploit-audit.yml)<br>[.github/workflows/bench-smoke.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/bench-smoke.yml)<br>[.github/workflows/changelog-guard.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/changelog-guard.yml)<br>[.github/workflows/ci.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/codeql.yml)<br>[.github/workflows/dependency-review.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/dependency-review.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 3 | [AGENTS.md](../../../../sources/joshuaswarren__remnic/AGENTS.md)<br>[CLAUDE.md](../../../../sources/joshuaswarren__remnic/CLAUDE.md)<br>[src/AGENTS.md](../../../../sources/joshuaswarren__remnic/src/AGENTS.md) |
 | docs | 244 | [README.md](../../../../sources/joshuaswarren__remnic/README.md)<br>[tests/compat-fixtures/README.md](../../../../sources/joshuaswarren__remnic/tests/compat-fixtures/README.md)<br>[scripts/faiss/README.md](../../../../sources/joshuaswarren__remnic/scripts/faiss/README.md)<br>[packages/shim-openclaw-engram/README.md](../../../../sources/joshuaswarren__remnic/packages/shim-openclaw-engram/README.md)<br>[packages/remnic-server/README.md](../../../../sources/joshuaswarren__remnic/packages/remnic-server/README.md)<br>[packages/remnic-core/README.md](../../../../sources/joshuaswarren__remnic/packages/remnic-core/README.md)<br>[packages/remnic-cli/README.md](../../../../sources/joshuaswarren__remnic/packages/remnic-cli/README.md)<br>[packages/plugin-pi/README.md](../../../../sources/joshuaswarren__remnic/packages/plugin-pi/README.md) |
 | config | 57 | [Makefile](../../../../sources/joshuaswarren__remnic/Makefile)<br>[package.json](../../../../sources/joshuaswarren__remnic/package.json)<br>[pnpm-workspace.yaml](../../../../sources/joshuaswarren__remnic/pnpm-workspace.yaml)<br>[tsconfig.json](../../../../sources/joshuaswarren__remnic/tsconfig.json)<br>[turbo.json](../../../../sources/joshuaswarren__remnic/turbo.json)<br>[tests/compat-fixtures/missing-manifest/package.json](../../../../sources/joshuaswarren__remnic/tests/compat-fixtures/missing-manifest/package.json)<br>[tests/compat-fixtures/healthy/package.json](../../../../sources/joshuaswarren__remnic/tests/compat-fixtures/healthy/package.json)<br>[tests/compat-fixtures/empty-package/package.json](../../../../sources/joshuaswarren__remnic/tests/compat-fixtures/empty-package/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 1152 | [tsconfig.tests.json](../../../../sources/joshuaswarren__remnic/tsconfig.tests.json)<br>[tests/abstraction-nodes.test.ts](../../../../sources/joshuaswarren__remnic/tests/abstraction-nodes.test.ts)<br>[tests/access-http-action-confidence.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-http-action-confidence.test.ts)<br>[tests/access-http.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-http.test.ts)<br>[tests/access-idempotency.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-idempotency.test.ts)<br>[tests/access-mcp-action-confidence.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-mcp-action-confidence.test.ts) |
-| CI workflows | 15 | [.github/workflows/ai-review-gate.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/ai-review-gate.yml)<br>[.github/workflows/amb-beam-remnic.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/amb-beam-remnic.yml)<br>[.github/workflows/bench-exploit-audit.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/bench-exploit-audit.yml)<br>[.github/workflows/bench-smoke.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/bench-smoke.yml)<br>[.github/workflows/changelog-guard.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/changelog-guard.yml)<br>[.github/workflows/ci.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/ci.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 70 | [SECURITY.md](../../../../sources/joshuaswarren__remnic/SECURITY.md)<br>[tests/changelog-guard.test.mjs](../../../../sources/joshuaswarren__remnic/tests/changelog-guard.test.mjs)<br>[tests/cli-memory-action-audit.test.ts](../../../../sources/joshuaswarren__remnic/tests/cli-memory-action-audit.test.ts)<br>[tests/cli-policy-tuning.test.ts](../../../../sources/joshuaswarren__remnic/tests/cli-policy-tuning.test.ts)<br>[tests/config-lifecycle-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/config-lifecycle-policy.test.ts)<br>[tests/config-proactive-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/config-proactive-policy.test.ts) |
-| Agent instructions | 3 | [AGENTS.md](../../../../sources/joshuaswarren__remnic/AGENTS.md)<br>[CLAUDE.md](../../../../sources/joshuaswarren__remnic/CLAUDE.md)<br>[src/AGENTS.md](../../../../sources/joshuaswarren__remnic/src/AGENTS.md) |
+| 테스트/평가 | 1152 | [tsconfig.tests.json](../../../../sources/joshuaswarren__remnic/tsconfig.tests.json)<br>[tests/abstraction-nodes.test.ts](../../../../sources/joshuaswarren__remnic/tests/abstraction-nodes.test.ts)<br>[tests/access-http-action-confidence.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-http-action-confidence.test.ts)<br>[tests/access-http.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-http.test.ts)<br>[tests/access-idempotency.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-idempotency.test.ts)<br>[tests/access-mcp-action-confidence.test.ts](../../../../sources/joshuaswarren__remnic/tests/access-mcp-action-confidence.test.ts) |
+| CI workflow | 15 | [.github/workflows/ai-review-gate.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/ai-review-gate.yml)<br>[.github/workflows/amb-beam-remnic.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/amb-beam-remnic.yml)<br>[.github/workflows/bench-exploit-audit.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/bench-exploit-audit.yml)<br>[.github/workflows/bench-smoke.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/bench-smoke.yml)<br>[.github/workflows/changelog-guard.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/changelog-guard.yml)<br>[.github/workflows/ci.yml](../../../../sources/joshuaswarren__remnic/.github/workflows/ci.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 70 | [SECURITY.md](../../../../sources/joshuaswarren__remnic/SECURITY.md)<br>[tests/changelog-guard.test.mjs](../../../../sources/joshuaswarren__remnic/tests/changelog-guard.test.mjs)<br>[tests/cli-memory-action-audit.test.ts](../../../../sources/joshuaswarren__remnic/tests/cli-memory-action-audit.test.ts)<br>[tests/cli-policy-tuning.test.ts](../../../../sources/joshuaswarren__remnic/tests/cli-policy-tuning.test.ts)<br>[tests/config-lifecycle-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/config-lifecycle-policy.test.ts)<br>[tests/config-proactive-policy.test.ts](../../../../sources/joshuaswarren__remnic/tests/config-proactive-policy.test.ts) |
+| 에이전트 지시문 | 3 | [AGENTS.md](../../../../sources/joshuaswarren__remnic/AGENTS.md)<br>[CLAUDE.md](../../../../sources/joshuaswarren__remnic/CLAUDE.md)<br>[src/AGENTS.md](../../../../sources/joshuaswarren__remnic/src/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/access-mcp-action-confidence.test.ts`, `tests/access-mcp-chatgpt-app.test.ts`, `tests/access-mcp-recall-xray.test.ts`.
-2. Trace execution through entrypoints: `tests/compat-fixtures/missing-manifest/src/index.ts`, `tests/compat-fixtures/healthy/src/index.ts`, `tests/compat-fixtures/empty-package/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tests/hook-migration-preamble.test.ts`, `tests/memory-action-contracts.test.ts`.
-4. Inspect retrieval/memory/indexing through: `tests/bench-memory-arena-runner.test.ts`, `tests/causal-retrieval.test.ts`, `tests/causal-trajectory-graph.test.ts`.
-5. Verify behavior through test/eval files: `tsconfig.tests.json`, `tests/abstraction-nodes.test.ts`, `tests/access-http-action-confidence.test.ts`.
+1. 핵심 참조에서 시작: `tests/access-mcp-action-confidence.test.ts`, `tests/access-mcp-chatgpt-app.test.ts`, `tests/access-mcp-recall-xray.test.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `tests/compat-fixtures/missing-manifest/src/index.ts`, `tests/compat-fixtures/healthy/src/index.ts`, `tests/compat-fixtures/empty-package/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tests/hook-migration-preamble.test.ts`, `tests/memory-action-contracts.test.ts`.
+4. retrieval/memory/indexing 확인: `tests/bench-memory-arena-runner.test.ts`, `tests/causal-retrieval.test.ts`, `tests/causal-trajectory-graph.test.ts`.
+5. test/eval 파일로 동작 검증: `tsconfig.tests.json`, `tests/abstraction-nodes.test.ts`, `tests/access-http-action-confidence.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Open source memory and context for user aware agents scoped memory, provenance, retrieval quality, correction, boundarie. 핵심 구조 신호는 TypeScript, package.json, Makefile, README.md, AGENTS.md, CLAUDE.md이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Open source memory and context for user aware agents scoped memory, provenance, retrieval quality, correction, boundarie. 핵심 구조 신호는 TypeScript, package.json, Makefile, README.md, AGENTS.md, CLAUDE.md이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

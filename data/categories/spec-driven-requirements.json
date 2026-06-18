@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "spec-driven-requirements",
-  "title": "Spec-Driven and Requirements",
-  "description": "Spec-driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications.",
+  "title": "스펙 드리븐/요구사항",
+  "description": "spec-driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contract, formal specification을 묶은 카테고리입니다.",
   "counts": {
     "total": 696,
     "reference-material": 18,

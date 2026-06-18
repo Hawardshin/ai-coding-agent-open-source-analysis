@@ -1,63 +1,63 @@
-# Samsung/netcoredbg Source Deep Dive
+# Samsung/netcoredbg 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 NetCoreDbg is a managed code debugger with GDB/MI, VSCode DAP and CLI interfaces for CoreCLR.
 
 ## 요약
 
-- 조사 단위: `sources/Samsung__netcoredbg` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 496 files, 122 directories, depth score 85, key references 8개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/Samsung__netcoredbg` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 496 files, 122 directories, depth score 79, key references 8개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-개발 생산성/DevTools 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=src/main.cpp이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 8개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+개발 생산성/DevTools 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=src/main.cpp이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 8개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | Samsung/netcoredbg |
-| Topic | Developer Productivity and DevTools / 개발 생산성/DevTools |
+| 레포 | Samsung/netcoredbg |
+| 주제 | 개발 생산성/DevTools / 개발 생산성/DevTools |
 | Region | korea |
 | Language | C# |
 | Stars | 1288 |
 | Forks | 147 |
 | License | MIT |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/Samsung__netcoredbg](../../../../sources/Samsung__netcoredbg) |
-| Existing report | [reports/korea-trending/repositories/Samsung__netcoredbg.md](../../../korea-trending/repositories/Samsung__netcoredbg.md) |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/Samsung__netcoredbg](../../../../sources/Samsung__netcoredbg) |
+| 기존 보고서 | [reports/korea-trending/repositories/Samsung__netcoredbg.md](../../../korea-trending/repositories/Samsung__netcoredbg.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 496 / 122 |
-| Max observed depth | 4 |
-| Top directories | .ahub, .github, docs, packaging, src, test-suite, third_party, tools |
-| Top extensions | .cs: 121, .h: 115, .cpp: 97, .csproj: 88, .txt: 13, .md: 12, (none): 9, .cmake: 8, .sh: 5, .nupkg: 4, .xml: 4, .drawio: 3 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, eval/test harness |
+| 파일 / 디렉터리 | 496 / 122 |
+| 관측 최대 깊이 | 4 |
+| 상위 디렉터리 | .ahub, .github, docs, packaging, src, test-suite, third_party, tools |
+| 상위 확장자 | .cs: 121, .h: 115, .cpp: 97, .csproj: 88, .txt: 13, .md: 12, (none): 9, .cmake: 8, .sh: 5, .nupkg: 4, .xml: 4, .drawio: 3 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, eval/test harness |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 15 |
 | src | source boundary | 4 |
@@ -68,29 +68,29 @@ NetCoreDbg is a managed code debugger with GDB/MI, VSCode DAP and CLI interfaces
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [src/main.cpp](../../../../sources/Samsung__netcoredbg/src/main.cpp) | entrypoints signal |
 | config | [docs/guide/Makefile](../../../../sources/Samsung__netcoredbg/docs/guide/Makefile) | config signal |
@@ -102,57 +102,57 @@ _No command surface extracted from root manifests._
 | eval | [test-suite/README.md](../../../../sources/Samsung__netcoredbg/test-suite/README.md) | eval support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1 | [src/main.cpp](../../../../sources/Samsung__netcoredbg/src/main.cpp) |
 | agentRuntime | 4 | [tools/getvscodecmd/get-vscodecmd.py](../../../../sources/Samsung__netcoredbg/tools/getvscodecmd/get-vscodecmd.py)<br>[tools/getvscodecmd/README.md](../../../../sources/Samsung__netcoredbg/tools/getvscodecmd/README.md)<br>[tools/generrmsg/GenErrMsg.cs](../../../../sources/Samsung__netcoredbg/tools/generrmsg/GenErrMsg.cs)<br>[tools/generrmsg/nuget.xml](../../../../sources/Samsung__netcoredbg/tools/generrmsg/nuget.xml) |
-| mcp | 0 | not obvious |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 1 | [third_party/libelfin/dwarf/small_vector.h](../../../../sources/Samsung__netcoredbg/third_party/libelfin/dwarf/small_vector.h) |
-| spec | 0 | not obvious |
+| spec | 0 | 명확하지 않음 |
 | eval | 225 | [test-suite/llvm-gcov.sh](../../../../sources/Samsung__netcoredbg/test-suite/llvm-gcov.sh)<br>[test-suite/README.md](../../../../sources/Samsung__netcoredbg/test-suite/README.md)<br>[test-suite/run_cli_test.sh](../../../../sources/Samsung__netcoredbg/test-suite/run_cli_test.sh)<br>[test-suite/run_tests.ps1](../../../../sources/Samsung__netcoredbg/test-suite/run_tests.ps1)<br>[test-suite/run_tests.sh](../../../../sources/Samsung__netcoredbg/test-suite/run_tests.sh)<br>[test-suite/sdb_run_tests.ps1](../../../../sources/Samsung__netcoredbg/test-suite/sdb_run_tests.ps1)<br>[test-suite/sdb_run_tests.sh](../../../../sources/Samsung__netcoredbg/test-suite/sdb_run_tests.sh)<br>[test-suite/sdb_run_tizen_tests.sh](../../../../sources/Samsung__netcoredbg/test-suite/sdb_run_tizen_tests.sh) |
-| security | 0 | not obvious |
-| ci | 0 | not obvious |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| security | 0 | 명확하지 않음 |
+| ci | 0 | 명확하지 않음 |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 20 | [README.md](../../../../sources/Samsung__netcoredbg/README.md)<br>[tools/getvscodecmd/README.md](../../../../sources/Samsung__netcoredbg/tools/getvscodecmd/README.md)<br>[third_party/linenoise-ng/README.md](../../../../sources/Samsung__netcoredbg/third_party/linenoise-ng/README.md)<br>[third_party/libelfin/README.md](../../../../sources/Samsung__netcoredbg/third_party/libelfin/README.md)<br>[test-suite/README.md](../../../../sources/Samsung__netcoredbg/test-suite/README.md)<br>[src/unittests/README.md](../../../../sources/Samsung__netcoredbg/src/unittests/README.md)<br>[src/coreclr/README.md](../../../../sources/Samsung__netcoredbg/src/coreclr/README.md)<br>[docs/cli.md](../../../../sources/Samsung__netcoredbg/docs/cli.md) |
 | config | 1 | [docs/guide/Makefile](../../../../sources/Samsung__netcoredbg/docs/guide/Makefile) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 225 | [test-suite/llvm-gcov.sh](../../../../sources/Samsung__netcoredbg/test-suite/llvm-gcov.sh)<br>[test-suite/README.md](../../../../sources/Samsung__netcoredbg/test-suite/README.md)<br>[test-suite/run_cli_test.sh](../../../../sources/Samsung__netcoredbg/test-suite/run_cli_test.sh)<br>[test-suite/run_tests.ps1](../../../../sources/Samsung__netcoredbg/test-suite/run_tests.ps1)<br>[test-suite/run_tests.sh](../../../../sources/Samsung__netcoredbg/test-suite/run_tests.sh)<br>[test-suite/sdb_run_tests.ps1](../../../../sources/Samsung__netcoredbg/test-suite/sdb_run_tests.ps1) |
-| CI workflows | 0 | not obvious |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 0 | not obvious |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 225 | [test-suite/llvm-gcov.sh](../../../../sources/Samsung__netcoredbg/test-suite/llvm-gcov.sh)<br>[test-suite/README.md](../../../../sources/Samsung__netcoredbg/test-suite/README.md)<br>[test-suite/run_cli_test.sh](../../../../sources/Samsung__netcoredbg/test-suite/run_cli_test.sh)<br>[test-suite/run_tests.ps1](../../../../sources/Samsung__netcoredbg/test-suite/run_tests.ps1)<br>[test-suite/run_tests.sh](../../../../sources/Samsung__netcoredbg/test-suite/run_tests.sh)<br>[test-suite/sdb_run_tests.ps1](../../../../sources/Samsung__netcoredbg/test-suite/sdb_run_tests.ps1) |
+| CI workflow | 0 | 명확하지 않음 |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 0 | 명확하지 않음 |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | CI workflow path not obvious; container/deploy path not obvious |
-| security | security/policy surface not obvious |
+| architecture | 없음 |
+| operation | CI workflow 경로가 명확하지 않음; container/deploy 경로가 명확하지 않음 |
+| security | security/policy 표면이 명확하지 않음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `src/main.cpp`, `docs/guide/Makefile`, `README.md`.
-2. Trace execution through entrypoints: `src/main.cpp`.
-3. Map agent/tool runtime through: `tools/getvscodecmd/get-vscodecmd.py`, `tools/getvscodecmd/README.md`, `tools/generrmsg/GenErrMsg.cs`.
-4. Inspect retrieval/memory/indexing through: `third_party/libelfin/dwarf/small_vector.h`.
-5. Verify behavior through test/eval files: `test-suite/llvm-gcov.sh`, `test-suite/README.md`, `test-suite/run_cli_test.sh`.
+1. 핵심 참조에서 시작: `src/main.cpp`, `docs/guide/Makefile`, `README.md`.
+2. entrypoint를 따라 실행 흐름 확인: `src/main.cpp`.
+3. agent/tool runtime 매핑: `tools/getvscodecmd/get-vscodecmd.py`, `tools/getvscodecmd/README.md`, `tools/generrmsg/GenErrMsg.cs`.
+4. retrieval/memory/indexing 확인: `third_party/libelfin/dwarf/small_vector.h`.
+5. test/eval 파일로 동작 검증: `test-suite/llvm-gcov.sh`, `test-suite/README.md`, `test-suite/run_cli_test.sh`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-개발 생산성/DevTools 관점에서 NetCoreDbg is a managed code debugger with GDB/MI, VSCode DAP and CLI interfaces for CoreCLR.. 핵심 구조 신호는 C#, README.md, LICENSE, tests, ci, docs이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+개발 생산성/DevTools 관점에서 NetCoreDbg is a managed code debugger with GDB/MI, VSCode DAP and CLI interfaces for CoreCLR.. 핵심 구조 신호는 C#, README.md, LICENSE, tests, ci, docs이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

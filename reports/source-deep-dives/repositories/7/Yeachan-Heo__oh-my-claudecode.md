@@ -1,63 +1,63 @@
-# Yeachan-Heo/oh-my-claudecode Source Deep Dive
+# Yeachan-Heo/oh-my-claudecode 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 1529 files, 290 directories.
 
 ## 요약
 
-- 조사 단위: `sources/Yeachan-Heo__oh-my-claudecode` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,529 files, 290 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/Yeachan-Heo__oh-my-claudecode` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,529 files, 290 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json, src/team/mcp-comm.ts, src/team/mcp-team-bridge.ts이고, 의존성 단서는 anthropic, claude, modelcontextprotocol, vscode, commander, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json, src/team/mcp-comm.ts, src/team/mcp-team-bridge.ts이고, 의존성 단서는 anthropic, claude, modelcontextprotocol, vscode, commander, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | Yeachan-Heo/oh-my-claudecode |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | Yeachan-Heo/oh-my-claudecode |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | mixed |
-| Language | none |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | deep-source+report |
-| Source | [sources/Yeachan-Heo__oh-my-claudecode](../../../../sources/Yeachan-Heo__oh-my-claudecode) |
-| Existing report | [reports/clone-structures/Yeachan-Heo__oh-my-claudecode.md](../../../clone-structures/Yeachan-Heo__oh-my-claudecode.md) |
+| Language | 없음 |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/Yeachan-Heo__oh-my-claudecode](../../../../sources/Yeachan-Heo__oh-my-claudecode) |
+| 기존 보고서 | [reports/clone-structures/Yeachan-Heo__oh-my-claudecode.md](../../../clone-structures/Yeachan-Heo__oh-my-claudecode.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1529 / 290 |
-| Max observed depth | 6 |
-| Top directories | .claude-plugin, .clawhip, .github, .omx, agents, assets, benchmark, benchmarks, bin, bridge, commands, docs, examples, hooks, missions, research, scripts, seminar, shellmark, skills |
-| Top extensions | .ts: 1107, .md: 229, .mjs: 73, .json: 40, .sh: 30, .yml: 10, .cjs: 9, (none): 7, .py: 6, .js: 4, .jsonl: 4, .txt: 3 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 1529 / 290 |
+| 관측 최대 깊이 | 6 |
+| 상위 디렉터리 | .claude-plugin, .clawhip, .github, .omx, agents, assets, benchmark, benchmarks, bin, bridge, commands, docs, examples, hooks, missions, research, scripts, seminar, shellmark, skills |
+| 상위 확장자 | .ts: 1107, .md: 229, .mjs: 73, .json: 40, .sh: 30, .yml: 10, .cjs: 9, (none): 7, .py: 6, .js: 4, .jsonl: 4, .txt: 3 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 164 |
 | docs | documentation surface | 32 |
@@ -79,9 +79,9 @@ Local clone structure analysis: 1529 files, 290 directories.
 | seminar | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | build | tsc && node scripts/build-skill-bridge.mjs && node scripts/build-mcp-server.mjs && node scripts/build-bridge-entry.mjs && npm run compose-docs && npm run build:runtime-cli && npm run build:team-server && npm run build:cl |
 | build | package.json | build:bridge | node scripts/build-skill-bridge.mjs |
@@ -116,24 +116,24 @@ Local clone structure analysis: 1529 files, 290 directories.
 | entrypoint | package.json bin | cli.cjs | bridge/cli.cjs |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | anthropic, claude |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
 | developerSurface | vscode, commander |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [.mcp.json](../../../../sources/Yeachan-Heo__oh-my-claudecode/.mcp.json) | mcp signal |
 | mcp | [src/team/mcp-comm.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/team/mcp-comm.ts) | mcp signal |
@@ -149,9 +149,9 @@ Local clone structure analysis: 1529 files, 290 directories.
 | instruction | [CLAUDE.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/CLAUDE.md) | instruction signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 3 | [src/index.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/index.ts)<br>[examples/vendor-mcp-server/server.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/examples/vendor-mcp-server/server.mjs)<br>[bin/oh-my-claudecode.js](../../../../sources/Yeachan-Heo__oh-my-claudecode/bin/oh-my-claudecode.js) |
 | agentRuntime | 526 | [AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/AGENTS.md)<br>[tests/lint/skill-parallel-caveats.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/lint/skill-parallel-caveats.test.ts)<br>[templates/hooks/code-simplifier.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/hooks/code-simplifier.mjs)<br>[templates/hooks/keyword-detector.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/hooks/keyword-detector.mjs)<br>[templates/hooks/persistent-mode.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/hooks/persistent-mode.mjs)<br>[templates/hooks/post-tool-use-failure.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/hooks/post-tool-use-failure.mjs)<br>[templates/hooks/post-tool-use.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/hooks/post-tool-use.mjs)<br>[templates/hooks/pre-tool-use.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/hooks/pre-tool-use.mjs) |
@@ -167,39 +167,39 @@ Local clone structure analysis: 1529 files, 290 directories.
 | config | 5 | [package.json](../../../../sources/Yeachan-Heo__oh-my-claudecode/package.json)<br>[tsconfig.json](../../../../sources/Yeachan-Heo__oh-my-claudecode/tsconfig.json)<br>[tests/fixtures/typescript-pnpm/package.json](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/fixtures/typescript-pnpm/package.json)<br>[tests/fixtures/typescript-pnpm/tsconfig.json](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/fixtures/typescript-pnpm/tsconfig.json)<br>[benchmark/requirements.txt](../../../../sources/Yeachan-Heo__oh-my-claudecode/benchmark/requirements.txt) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 627 | [tests/perf/subagent-lock.bench.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/perf/subagent-lock.bench.ts)<br>[tests/lint/handoffs-writers.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/lint/handoffs-writers.test.ts)<br>[tests/lint/skill-parallel-caveats.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/lint/skill-parallel-caveats.test.ts)<br>[tests/integration/concurrent-project-memory.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/integration/concurrent-project-memory.test.ts)<br>[tests/integration/concurrent-ralph-sessions.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/integration/concurrent-ralph-sessions.test.ts)<br>[tests/integration/multirepo-workspace.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/integration/multirepo-workspace.test.ts) |
-| CI workflows | 9 | [scripts/ci/check-multirepo-paths.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/scripts/ci/check-multirepo-paths.mjs)<br>[scripts/ci/multirepo-patterns.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/scripts/ci/multirepo-patterns.yml)<br>[.github/workflows/auto-label.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/auto-label.yml)<br>[.github/workflows/ci.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/ci.yml)<br>[.github/workflows/cleanup.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/cleanup.yml)<br>[.github/workflows/pr-check.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/pr-check.yml) |
-| Containers / deploy | 2 | [benchmark/docker-compose.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/benchmark/docker-compose.yml)<br>[benchmark/Dockerfile](../../../../sources/Yeachan-Heo__oh-my-claudecode/benchmark/Dockerfile) |
-| Security / policy | 37 | [SECURITY.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/SECURITY.md)<br>[templates/rules/security.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/rules/security.md)<br>[src/utils/ssrf-guard.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/utils/ssrf-guard.ts)<br>[src/tools/python-repl/__tests__/python-sandbox.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/python-repl/__tests__/python-sandbox.test.ts)<br>[src/team/allocation-policy.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/team/allocation-policy.ts)<br>[src/team/audit-log.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/team/audit-log.ts) |
-| Agent instructions | 13 | [AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/AGENTS.md)<br>[CLAUDE.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/CLAUDE.md)<br>[src/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/AGENTS.md)<br>[src/tools/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/AGENTS.md)<br>[src/tools/lsp/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/lsp/AGENTS.md)<br>[src/tools/diagnostics/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/diagnostics/AGENTS.md) |
+| 테스트/평가 | 627 | [tests/perf/subagent-lock.bench.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/perf/subagent-lock.bench.ts)<br>[tests/lint/handoffs-writers.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/lint/handoffs-writers.test.ts)<br>[tests/lint/skill-parallel-caveats.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/lint/skill-parallel-caveats.test.ts)<br>[tests/integration/concurrent-project-memory.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/integration/concurrent-project-memory.test.ts)<br>[tests/integration/concurrent-ralph-sessions.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/integration/concurrent-ralph-sessions.test.ts)<br>[tests/integration/multirepo-workspace.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/tests/integration/multirepo-workspace.test.ts) |
+| CI workflow | 9 | [scripts/ci/check-multirepo-paths.mjs](../../../../sources/Yeachan-Heo__oh-my-claudecode/scripts/ci/check-multirepo-paths.mjs)<br>[scripts/ci/multirepo-patterns.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/scripts/ci/multirepo-patterns.yml)<br>[.github/workflows/auto-label.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/auto-label.yml)<br>[.github/workflows/ci.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/ci.yml)<br>[.github/workflows/cleanup.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/cleanup.yml)<br>[.github/workflows/pr-check.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/.github/workflows/pr-check.yml) |
+| 컨테이너/배포 | 2 | [benchmark/docker-compose.yml](../../../../sources/Yeachan-Heo__oh-my-claudecode/benchmark/docker-compose.yml)<br>[benchmark/Dockerfile](../../../../sources/Yeachan-Heo__oh-my-claudecode/benchmark/Dockerfile) |
+| 보안/정책 | 37 | [SECURITY.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/SECURITY.md)<br>[templates/rules/security.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/templates/rules/security.md)<br>[src/utils/ssrf-guard.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/utils/ssrf-guard.ts)<br>[src/tools/python-repl/__tests__/python-sandbox.test.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/python-repl/__tests__/python-sandbox.test.ts)<br>[src/team/allocation-policy.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/team/allocation-policy.ts)<br>[src/team/audit-log.ts](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/team/audit-log.ts) |
+| 에이전트 지시문 | 13 | [AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/AGENTS.md)<br>[CLAUDE.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/CLAUDE.md)<br>[src/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/AGENTS.md)<br>[src/tools/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/AGENTS.md)<br>[src/tools/lsp/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/lsp/AGENTS.md)<br>[src/tools/diagnostics/AGENTS.md](../../../../sources/Yeachan-Heo__oh-my-claudecode/src/tools/diagnostics/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `.mcp.json`, `src/team/mcp-comm.ts`, `src/team/mcp-team-bridge.ts`.
-2. Trace execution through entrypoints: `src/index.ts`, `examples/vendor-mcp-server/server.mjs`, `bin/oh-my-claudecode.js`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tests/lint/skill-parallel-caveats.test.ts`, `templates/hooks/code-simplifier.mjs`.
-4. Inspect retrieval/memory/indexing through: `tests/integration/concurrent-project-memory.test.ts`, `src/index.ts`, `src/tools/index.ts`.
-5. Verify behavior through test/eval files: `tests/perf/subagent-lock.bench.ts`, `tests/lint/handoffs-writers.test.ts`, `tests/lint/skill-parallel-caveats.test.ts`.
+1. 핵심 참조에서 시작: `.mcp.json`, `src/team/mcp-comm.ts`, `src/team/mcp-team-bridge.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `src/index.ts`, `examples/vendor-mcp-server/server.mjs`, `bin/oh-my-claudecode.js`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tests/lint/skill-parallel-caveats.test.ts`, `templates/hooks/code-simplifier.mjs`.
+4. retrieval/memory/indexing 확인: `tests/integration/concurrent-project-memory.test.ts`, `src/index.ts`, `src/tools/index.ts`.
+5. test/eval 파일로 동작 검증: `tests/perf/subagent-lock.bench.ts`, `tests/lint/handoffs-writers.test.ts`, `tests/lint/skill-parallel-caveats.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 1529 files, 290 directories.. 핵심 구조 신호는 package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE, anthropic이며, deep-source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 1529 files, 290 directories.. 핵심 구조 신호는 package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE, anthropic이며, 심층 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

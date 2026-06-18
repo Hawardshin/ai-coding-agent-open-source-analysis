@@ -1,63 +1,63 @@
-# guardrails-ai/guardrails Source Deep Dive
+# guardrails-ai/guardrails 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 552 files, 98 directories.
 
 ## 요약
 
-- 조사 단위: `sources/guardrails-ai__guardrails` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 552 files, 98 directories, depth score 120, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/guardrails-ai__guardrails` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 552 files, 98 directories, depth score 108, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-보안/거버넌스/안전 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 security=SECURITY_ADVISORY.md, tests/unit_tests/test_async_guard.py, tests/unit_tests/test_guard_log.py이고, 의존성 단서는 openai, anthropic, langchain, llama-index, pydantic, click, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+보안/거버넌스/안전 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 security=SECURITY_ADVISORY.md, tests/unit_tests/test_async_guard.py, tests/unit_tests/test_guard_log.py이고, 의존성 단서는 openai, anthropic, langchain, llama-index, pydantic, click, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | guardrails-ai/guardrails |
-| Topic | Security, Governance, and Safety / 보안/거버넌스/안전 |
+| 레포 | guardrails-ai/guardrails |
+| 주제 | 보안/거버넌스/안전 / 보안/거버넌스/안전 |
 | Region | mixed |
-| Language | none |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | deep-source+report |
-| Source | [sources/guardrails-ai__guardrails](../../../../sources/guardrails-ai__guardrails) |
-| Existing report | [reports/clone-structures/guardrails-ai__guardrails.md](../../../clone-structures/guardrails-ai__guardrails.md) |
+| Language | 없음 |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/guardrails-ai__guardrails](../../../../sources/guardrails-ai__guardrails) |
+| 기존 보고서 | [reports/clone-structures/guardrails-ai__guardrails.md](../../../clone-structures/guardrails-ai__guardrails.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 552 / 98 |
-| Max observed depth | 5 |
-| Top directories | .github, docs, guardrails, server_ci, tests |
-| Top extensions | .py: 351, .txt: 70, .ipynb: 37, .rail: 20, .md: 17, .json: 13, .yml: 11, .sh: 9, (none): 6, .svg: 4, .sql: 3, .png: 2 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 552 / 98 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | .github, docs, guardrails, server_ci, tests |
+| 상위 확장자 | .py: 351, .txt: 70, .ipynb: 37, .rail: 20, .md: 17, .json: 13, .yml: 11, .sh: 9, (none): 6, .svg: 4, .sql: 3, .png: 2 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 49 |
 | docs | documentation surface | 41 |
@@ -66,9 +66,9 @@ Local clone structure analysis: 552 files, 98 directories.
 | server_ci | ci surface | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | quality | Makefile | autoformat | make autoformat |
@@ -91,24 +91,24 @@ Local clone structure analysis: 552 files, 98 directories.
 | utility | pyproject.toml | guardrails | guardrails |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
-| agentProtocols | none |
+| agentProtocols | 없음 |
 | agentFrameworks | langchain, llama-index |
 | vectorStores | faiss |
 | modelRuntime | torch, transformers, llama |
-| webRuntime | none |
+| webRuntime | 없음 |
 | developerSurface | click, typer |
 | observability | opentelemetry |
-| browserAutomation | none |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | security | [SECURITY_ADVISORY.md](../../../../sources/guardrails-ai__guardrails/SECURITY_ADVISORY.md) | security signal |
 | security | [tests/unit_tests/test_async_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_async_guard.py) | security signal |
@@ -124,56 +124,56 @@ Local clone structure analysis: 552 files, 98 directories.
 | config | [server_ci/requirements.txt](../../../../sources/guardrails-ai__guardrails/server_ci/requirements.txt) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
 | agentRuntime | 3 | [guardrails/telemetry/runner_tracing.py](../../../../sources/guardrails-ai__guardrails/guardrails/telemetry/runner_tracing.py)<br>[guardrails/stores/context.py](../../../../sources/guardrails-ai__guardrails/guardrails/stores/context.py)<br>[guardrails/run/runner.py](../../../../sources/guardrails-ai__guardrails/guardrails/run/runner.py) |
-| mcp | 0 | not obvious |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 7 | [tests/integration_tests/test_embedding_openai.py](../../../../sources/guardrails-ai__guardrails/tests/integration_tests/test_embedding_openai.py)<br>[tests/integration_tests/integrations/llama_index/test_guardrails_chat_engine.py](../../../../sources/guardrails-ai__guardrails/tests/integration_tests/integrations/llama_index/test_guardrails_chat_engine.py)<br>[tests/integration_tests/integrations/llama_index/test_guardrails_query_engine.py](../../../../sources/guardrails-ai__guardrails/tests/integration_tests/integrations/llama_index/test_guardrails_query_engine.py)<br>[guardrails/embedding.py](../../../../sources/guardrails-ai__guardrails/guardrails/embedding.py)<br>[guardrails/integrations/llama_index/__init__.py](../../../../sources/guardrails-ai__guardrails/guardrails/integrations/llama_index/__init__.py)<br>[guardrails/integrations/llama_index/guardrails_chat_engine.py](../../../../sources/guardrails-ai__guardrails/guardrails/integrations/llama_index/guardrails_chat_engine.py)<br>[guardrails/integrations/llama_index/guardrails_query_engine.py](../../../../sources/guardrails-ai__guardrails/guardrails/integrations/llama_index/guardrails_query_engine.py) |
 | spec | 2 | [test_spec.rail](../../../../sources/guardrails-ai__guardrails/test_spec.rail)<br>[server_ci/requirements.txt](../../../../sources/guardrails-ai__guardrails/server_ci/requirements.txt) |
 | eval | 270 | [test_spec.rail](../../../../sources/guardrails-ai__guardrails/test_spec.rail)<br>[tests/__init__.py](../../../../sources/guardrails-ai__guardrails/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/guardrails-ai__guardrails/tests/conftest.py)<br>[tests/unit_tests/__init__.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/__init__.py)<br>[tests/unit_tests/test_api_client.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_api_client.py)<br>[tests/unit_tests/test_async_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_async_guard.py)<br>[tests/unit_tests/test_datatypes.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_datatypes.py)<br>[tests/unit_tests/test_formatters.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_formatters.py) |
 | security | 14 | [SECURITY_ADVISORY.md](../../../../sources/guardrails-ai__guardrails/SECURITY_ADVISORY.md)<br>[tests/unit_tests/test_async_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_async_guard.py)<br>[tests/unit_tests/test_guard_log.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_guard_log.py)<br>[tests/unit_tests/test_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_guard.py)<br>[tests/unit_tests/cli/server/test_auth.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/cli/server/test_auth.py)<br>[tests/integration_tests/test_guard.py](../../../../sources/guardrails-ai__guardrails/tests/integration_tests/test_guard.py)<br>[tests/integration_tests/integrations/langchain/test_guard_runnable.py](../../../../sources/guardrails-ai__guardrails/tests/integration_tests/integrations/langchain/test_guard_runnable.py)<br>[server_ci/guard-template.json](../../../../sources/guardrails-ai__guardrails/server_ci/guard-template.json) |
 | ci | 10 | [.github/workflows/autoclose_stale_issues_and_prs.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/autoclose_stale_issues_and_prs.yml)<br>[.github/workflows/ci.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/ci.yml)<br>[.github/workflows/cli-compatibility.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/cli-compatibility.yml)<br>[.github/workflows/examples_check.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/examples_check.yml)<br>[.github/workflows/find_dead_links.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/find_dead_links.yml)<br>[.github/workflows/install_from_hub.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/install_from_hub.yml)<br>[.github/workflows/release_version.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/release_version.yml)<br>[.github/workflows/server_ci.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/server_ci.yml) |
 | container | 1 | [server_ci/Dockerfile](../../../../sources/guardrails-ai__guardrails/server_ci/Dockerfile) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 73 | [README.md](../../../../sources/guardrails-ai__guardrails/README.md)<br>[docs/pydocs/generate_pydocs.py](../../../../sources/guardrails-ai__guardrails/docs/pydocs/generate_pydocs.py)<br>[docs/pydocs/helpers.py](../../../../sources/guardrails-ai__guardrails/docs/pydocs/helpers.py)<br>[docs/pydocs/pydocs_markdown_impl.py](../../../../sources/guardrails-ai__guardrails/docs/pydocs/pydocs_markdown_impl.py)<br>[docs/pydocs/pydocs_to_md.py](../../../../sources/guardrails-ai__guardrails/docs/pydocs/pydocs_to_md.py)<br>[docs/pydocs/api_reference/actions.py](../../../../sources/guardrails-ai__guardrails/docs/pydocs/api_reference/actions.py)<br>[docs/pydocs/api_reference/errors.py](../../../../sources/guardrails-ai__guardrails/docs/pydocs/api_reference/errors.py)<br>[docs/pydocs/api_reference/formatters.py](../../../../sources/guardrails-ai__guardrails/docs/pydocs/api_reference/formatters.py) |
 | config | 4 | [Makefile](../../../../sources/guardrails-ai__guardrails/Makefile)<br>[poetry.lock](../../../../sources/guardrails-ai__guardrails/poetry.lock)<br>[pyproject.toml](../../../../sources/guardrails-ai__guardrails/pyproject.toml)<br>[server_ci/requirements.txt](../../../../sources/guardrails-ai__guardrails/server_ci/requirements.txt) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 270 | [test_spec.rail](../../../../sources/guardrails-ai__guardrails/test_spec.rail)<br>[tests/__init__.py](../../../../sources/guardrails-ai__guardrails/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/guardrails-ai__guardrails/tests/conftest.py)<br>[tests/unit_tests/__init__.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/__init__.py)<br>[tests/unit_tests/test_api_client.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_api_client.py)<br>[tests/unit_tests/test_async_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_async_guard.py) |
-| CI workflows | 10 | [.github/workflows/autoclose_stale_issues_and_prs.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/autoclose_stale_issues_and_prs.yml)<br>[.github/workflows/ci.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/ci.yml)<br>[.github/workflows/cli-compatibility.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/cli-compatibility.yml)<br>[.github/workflows/examples_check.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/examples_check.yml)<br>[.github/workflows/find_dead_links.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/find_dead_links.yml)<br>[.github/workflows/install_from_hub.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/install_from_hub.yml) |
-| Containers / deploy | 1 | [server_ci/Dockerfile](../../../../sources/guardrails-ai__guardrails/server_ci/Dockerfile) |
-| Security / policy | 14 | [SECURITY_ADVISORY.md](../../../../sources/guardrails-ai__guardrails/SECURITY_ADVISORY.md)<br>[tests/unit_tests/test_async_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_async_guard.py)<br>[tests/unit_tests/test_guard_log.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_guard_log.py)<br>[tests/unit_tests/test_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_guard.py)<br>[tests/unit_tests/cli/server/test_auth.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/cli/server/test_auth.py)<br>[tests/integration_tests/test_guard.py](../../../../sources/guardrails-ai__guardrails/tests/integration_tests/test_guard.py) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 270 | [test_spec.rail](../../../../sources/guardrails-ai__guardrails/test_spec.rail)<br>[tests/__init__.py](../../../../sources/guardrails-ai__guardrails/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/guardrails-ai__guardrails/tests/conftest.py)<br>[tests/unit_tests/__init__.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/__init__.py)<br>[tests/unit_tests/test_api_client.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_api_client.py)<br>[tests/unit_tests/test_async_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_async_guard.py) |
+| CI workflow | 10 | [.github/workflows/autoclose_stale_issues_and_prs.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/autoclose_stale_issues_and_prs.yml)<br>[.github/workflows/ci.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/ci.yml)<br>[.github/workflows/cli-compatibility.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/cli-compatibility.yml)<br>[.github/workflows/examples_check.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/examples_check.yml)<br>[.github/workflows/find_dead_links.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/find_dead_links.yml)<br>[.github/workflows/install_from_hub.yml](../../../../sources/guardrails-ai__guardrails/.github/workflows/install_from_hub.yml) |
+| 컨테이너/배포 | 1 | [server_ci/Dockerfile](../../../../sources/guardrails-ai__guardrails/server_ci/Dockerfile) |
+| 보안/정책 | 14 | [SECURITY_ADVISORY.md](../../../../sources/guardrails-ai__guardrails/SECURITY_ADVISORY.md)<br>[tests/unit_tests/test_async_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_async_guard.py)<br>[tests/unit_tests/test_guard_log.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_guard_log.py)<br>[tests/unit_tests/test_guard.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/test_guard.py)<br>[tests/unit_tests/cli/server/test_auth.py](../../../../sources/guardrails-ai__guardrails/tests/unit_tests/cli/server/test_auth.py)<br>[tests/integration_tests/test_guard.py](../../../../sources/guardrails-ai__guardrails/tests/integration_tests/test_guard.py) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `SECURITY_ADVISORY.md`, `tests/unit_tests/test_async_guard.py`, `tests/unit_tests/test_guard_log.py`.
-2. Map agent/tool runtime through: `guardrails/telemetry/runner_tracing.py`, `guardrails/stores/context.py`, `guardrails/run/runner.py`.
-3. Inspect retrieval/memory/indexing through: `tests/integration_tests/test_embedding_openai.py`, `tests/integration_tests/integrations/llama_index/test_guardrails_chat_engine.py`, `tests/integration_tests/integrations/llama_index/test_guardrails_query_engine.py`.
-4. Verify behavior through test/eval files: `test_spec.rail`, `tests/__init__.py`, `tests/conftest.py`.
+1. 핵심 참조에서 시작: `SECURITY_ADVISORY.md`, `tests/unit_tests/test_async_guard.py`, `tests/unit_tests/test_guard_log.py`.
+2. agent/tool runtime 매핑: `guardrails/telemetry/runner_tracing.py`, `guardrails/stores/context.py`, `guardrails/run/runner.py`.
+3. retrieval/memory/indexing 확인: `tests/integration_tests/test_embedding_openai.py`, `tests/integration_tests/integrations/llama_index/test_guardrails_chat_engine.py`, `tests/integration_tests/integrations/llama_index/test_guardrails_query_engine.py`.
+4. test/eval 파일로 동작 검증: `test_spec.rail`, `tests/__init__.py`, `tests/conftest.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-보안/거버넌스/안전 관점에서 Local clone structure analysis 552 files, 98 directories.. 핵심 구조 신호는 pyproject.toml, Makefile, README.md, LICENSE, openai, anthropic이며, deep-source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+보안/거버넌스/안전 관점에서 Local clone structure analysis 552 files, 98 directories.. 핵심 구조 신호는 pyproject.toml, Makefile, README.md, LICENSE, openai, anthropic이며, 심층 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-mixed 신호의 보안/거버넌스/안전 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 license metadata missing입니다.
+mixed 신호의 보안/거버넌스/안전 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

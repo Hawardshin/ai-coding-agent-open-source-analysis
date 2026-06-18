@@ -1,63 +1,63 @@
-# langgenius/dify Source Deep Dive
+# langgenius/dify 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Production-ready platform for agentic workflow development.
 
 ## 요약
 
-- 조사 단위: `sources/langgenius__dify` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 12,989 files, 3,264 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/langgenius__dify` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 12,989 files, 3,264 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=web/utils/mcp.spec.ts, web/utils/mcp.ts, web/app/components/workflow/nodes/_base/components/mcp-tool-availability.tsx이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=web/utils/mcp.spec.ts, web/utils/mcp.ts, web/app/components/workflow/nodes/_base/components/mcp-tool-availability.tsx이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | langgenius/dify |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | langgenius/dify |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 145630 |
 | Forks | 22906 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/langgenius__dify](../../../../sources/langgenius__dify) |
-| Existing report | [reports/global-trending/repositories/langgenius__dify.md](../../../global-trending/repositories/langgenius__dify.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/langgenius__dify](../../../../sources/langgenius__dify) |
+| 기존 보고서 | [reports/global-trending/repositories/langgenius__dify.md](../../../global-trending/repositories/langgenius__dify.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 12989 / 3264 |
-| Max observed depth | 13 |
-| Top directories | .agents, .claude, .devcontainer, .gemini, .github, .vite-hooks, api, cli, dev, dify-agent, docker, docs, e2e, images, packages, scripts, sdks, web |
-| Top extensions | .tsx: 4729, .py: 3422, .ts: 2185, .json: 1227, .svg: 604, .js: 126, .md: 124, .yml: 88, .css: 77, .png: 71, .html: 61, (none): 50 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 12989 / 3264 |
+| 관측 최대 깊이 | 13 |
+| 상위 디렉터리 | .agents, .claude, .devcontainer, .gemini, .github, .vite-hooks, api, cli, dev, dify-agent, docker, docs, e2e, images, packages, scripts, sdks, web |
+| 상위 확장자 | .tsx: 4729, .py: 3422, .ts: 2185, .json: 1227, .svg: 604, .js: 126, .md: 124, .yml: 88, .css: 77, .png: 71, .html: 61, (none): 50 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | web | source boundary | 295 |
 | api | source boundary | 21 |
@@ -79,9 +79,9 @@ Production-ready platform for agentic workflow development.
 | packages/tsconfig | packages workspace | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | dev | concurrently -k -n vinext,proxy "vp run dify-web#dev:vinext" "vp run dify-web#dev:proxy" |
 | utility | package.json | prepare | vp config |
@@ -112,24 +112,24 @@ Production-ready platform for agentic workflow development.
 | utility | Makefile | push-all | make push-all |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [web/utils/mcp.spec.ts](../../../../sources/langgenius__dify/web/utils/mcp.spec.ts) | mcp signal |
 | mcp | [web/utils/mcp.ts](../../../../sources/langgenius__dify/web/utils/mcp.ts) | mcp signal |
@@ -145,9 +145,9 @@ Production-ready platform for agentic workflow development.
 | entrypoints | [web/features/system-features/server.ts](../../../../sources/langgenius__dify/web/features/system-features/server.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 31 | [web/service/server.ts](../../../../sources/langgenius__dify/web/service/server.ts)<br>[web/service/__tests__/server.spec.ts](../../../../sources/langgenius__dify/web/service/__tests__/server.spec.ts)<br>[web/i18n-config/server.ts](../../../../sources/langgenius__dify/web/i18n-config/server.ts)<br>[web/features/system-features/server.ts](../../../../sources/langgenius__dify/web/features/system-features/server.ts)<br>[web/features/account-profile/server.ts](../../../../sources/langgenius__dify/web/features/account-profile/server.ts)<br>[web/features/account-profile/__tests__/server.spec.ts](../../../../sources/langgenius__dify/web/features/account-profile/__tests__/server.spec.ts)<br>[web/config/server.ts](../../../../sources/langgenius__dify/web/config/server.ts)<br>[web/config/__tests__/server.spec.ts](../../../../sources/langgenius__dify/web/config/__tests__/server.spec.ts) |
 | agentRuntime | 3110 | [AGENTS.md](../../../../sources/langgenius__dify/AGENTS.md)<br>[web/AGENTS.md](../../../../sources/langgenius__dify/web/AGENTS.md)<br>[web/utils/context.spec.ts](../../../../sources/langgenius__dify/web/utils/context.spec.ts)<br>[web/utils/context.ts](../../../../sources/langgenius__dify/web/utils/context.ts)<br>[web/utils/tool-call.spec.ts](../../../../sources/langgenius__dify/web/utils/tool-call.spec.ts)<br>[web/utils/tool-call.ts](../../../../sources/langgenius__dify/web/utils/tool-call.ts)<br>[web/types/workflow.ts](../../../../sources/langgenius__dify/web/types/workflow.ts)<br>[web/service/tools.ts](../../../../sources/langgenius__dify/web/service/tools.ts) |
@@ -163,39 +163,39 @@ Production-ready platform for agentic workflow development.
 | config | 64 | [Makefile](../../../../sources/langgenius__dify/Makefile)<br>[package.json](../../../../sources/langgenius__dify/package.json)<br>[pnpm-workspace.yaml](../../../../sources/langgenius__dify/pnpm-workspace.yaml)<br>[web/package.json](../../../../sources/langgenius__dify/web/package.json)<br>[web/tsconfig.json](../../../../sources/langgenius__dify/web/tsconfig.json)<br>[sdks/nodejs-client/package.json](../../../../sources/langgenius__dify/sdks/nodejs-client/package.json)<br>[sdks/nodejs-client/tsconfig.json](../../../../sources/langgenius__dify/sdks/nodejs-client/tsconfig.json)<br>[packages/tsconfig/package.json](../../../../sources/langgenius__dify/packages/tsconfig/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 4441 | [web/utils/app-redirection.spec.ts](../../../../sources/langgenius__dify/web/utils/app-redirection.spec.ts)<br>[web/utils/clipboard.spec.ts](../../../../sources/langgenius__dify/web/utils/clipboard.spec.ts)<br>[web/utils/completion-params.spec.ts](../../../../sources/langgenius__dify/web/utils/completion-params.spec.ts)<br>[web/utils/context.spec.ts](../../../../sources/langgenius__dify/web/utils/context.spec.ts)<br>[web/utils/download.spec.ts](../../../../sources/langgenius__dify/web/utils/download.spec.ts)<br>[web/utils/emoji.spec.ts](../../../../sources/langgenius__dify/web/utils/emoji.spec.ts) |
-| CI workflows | 32 | [.github/workflows/api-tests.yml](../../../../sources/langgenius__dify/.github/workflows/api-tests.yml)<br>[.github/workflows/autofix.yml](../../../../sources/langgenius__dify/.github/workflows/autofix.yml)<br>[.github/workflows/build-push.yml](../../../../sources/langgenius__dify/.github/workflows/build-push.yml)<br>[.github/workflows/cli-e2e.yml](../../../../sources/langgenius__dify/.github/workflows/cli-e2e.yml)<br>[.github/workflows/cli-edge.yml](../../../../sources/langgenius__dify/.github/workflows/cli-edge.yml)<br>[.github/workflows/cli-release.yml](../../../../sources/langgenius__dify/.github/workflows/cli-release.yml) |
-| Containers / deploy | 15 | [web/Dockerfile](../../../../sources/langgenius__dify/web/Dockerfile)<br>[web/Dockerfile.dockerignore](../../../../sources/langgenius__dify/web/Dockerfile.dockerignore)<br>[web/public/vs/basic-languages/dockerfile/dockerfile.js](../../../../sources/langgenius__dify/web/public/vs/basic-languages/dockerfile/dockerfile.js)<br>[docker/docker-compose-template.yaml](../../../../sources/langgenius__dify/docker/docker-compose-template.yaml)<br>[docker/docker-compose.middleware.yaml](../../../../sources/langgenius__dify/docker/docker-compose.middleware.yaml)<br>[docker/docker-compose.png](../../../../sources/langgenius__dify/docker/docker-compose.png) |
-| Security / policy | 397 | [SECURITY.md](../../../../sources/langgenius__dify/SECURITY.md)<br>[web/utils/permission.spec.ts](../../../../sources/langgenius__dify/web/utils/permission.spec.ts)<br>[web/utils/permission.ts](../../../../sources/langgenius__dify/web/utils/permission.ts)<br>[web/service/use-oauth.ts](../../../../sources/langgenius__dify/web/service/use-oauth.ts)<br>[web/service/use-plugins-auth.ts](../../../../sources/langgenius__dify/web/service/use-plugins-auth.ts)<br>[web/service/webapp-auth.ts](../../../../sources/langgenius__dify/web/service/webapp-auth.ts) |
-| Agent instructions | 8 | [AGENTS.md](../../../../sources/langgenius__dify/AGENTS.md)<br>[web/AGENTS.md](../../../../sources/langgenius__dify/web/AGENTS.md)<br>[packages/dify-ui/AGENTS.md](../../../../sources/langgenius__dify/packages/dify-ui/AGENTS.md)<br>[e2e/AGENTS.md](../../../../sources/langgenius__dify/e2e/AGENTS.md)<br>[dify-agent/AGENTS.md](../../../../sources/langgenius__dify/dify-agent/AGENTS.md)<br>[cli/AGENTS.md](../../../../sources/langgenius__dify/cli/AGENTS.md) |
+| 테스트/평가 | 4441 | [web/utils/app-redirection.spec.ts](../../../../sources/langgenius__dify/web/utils/app-redirection.spec.ts)<br>[web/utils/clipboard.spec.ts](../../../../sources/langgenius__dify/web/utils/clipboard.spec.ts)<br>[web/utils/completion-params.spec.ts](../../../../sources/langgenius__dify/web/utils/completion-params.spec.ts)<br>[web/utils/context.spec.ts](../../../../sources/langgenius__dify/web/utils/context.spec.ts)<br>[web/utils/download.spec.ts](../../../../sources/langgenius__dify/web/utils/download.spec.ts)<br>[web/utils/emoji.spec.ts](../../../../sources/langgenius__dify/web/utils/emoji.spec.ts) |
+| CI workflow | 32 | [.github/workflows/api-tests.yml](../../../../sources/langgenius__dify/.github/workflows/api-tests.yml)<br>[.github/workflows/autofix.yml](../../../../sources/langgenius__dify/.github/workflows/autofix.yml)<br>[.github/workflows/build-push.yml](../../../../sources/langgenius__dify/.github/workflows/build-push.yml)<br>[.github/workflows/cli-e2e.yml](../../../../sources/langgenius__dify/.github/workflows/cli-e2e.yml)<br>[.github/workflows/cli-edge.yml](../../../../sources/langgenius__dify/.github/workflows/cli-edge.yml)<br>[.github/workflows/cli-release.yml](../../../../sources/langgenius__dify/.github/workflows/cli-release.yml) |
+| 컨테이너/배포 | 15 | [web/Dockerfile](../../../../sources/langgenius__dify/web/Dockerfile)<br>[web/Dockerfile.dockerignore](../../../../sources/langgenius__dify/web/Dockerfile.dockerignore)<br>[web/public/vs/basic-languages/dockerfile/dockerfile.js](../../../../sources/langgenius__dify/web/public/vs/basic-languages/dockerfile/dockerfile.js)<br>[docker/docker-compose-template.yaml](../../../../sources/langgenius__dify/docker/docker-compose-template.yaml)<br>[docker/docker-compose.middleware.yaml](../../../../sources/langgenius__dify/docker/docker-compose.middleware.yaml)<br>[docker/docker-compose.png](../../../../sources/langgenius__dify/docker/docker-compose.png) |
+| 보안/정책 | 397 | [SECURITY.md](../../../../sources/langgenius__dify/SECURITY.md)<br>[web/utils/permission.spec.ts](../../../../sources/langgenius__dify/web/utils/permission.spec.ts)<br>[web/utils/permission.ts](../../../../sources/langgenius__dify/web/utils/permission.ts)<br>[web/service/use-oauth.ts](../../../../sources/langgenius__dify/web/service/use-oauth.ts)<br>[web/service/use-plugins-auth.ts](../../../../sources/langgenius__dify/web/service/use-plugins-auth.ts)<br>[web/service/webapp-auth.ts](../../../../sources/langgenius__dify/web/service/webapp-auth.ts) |
+| 에이전트 지시문 | 8 | [AGENTS.md](../../../../sources/langgenius__dify/AGENTS.md)<br>[web/AGENTS.md](../../../../sources/langgenius__dify/web/AGENTS.md)<br>[packages/dify-ui/AGENTS.md](../../../../sources/langgenius__dify/packages/dify-ui/AGENTS.md)<br>[e2e/AGENTS.md](../../../../sources/langgenius__dify/e2e/AGENTS.md)<br>[dify-agent/AGENTS.md](../../../../sources/langgenius__dify/dify-agent/AGENTS.md)<br>[cli/AGENTS.md](../../../../sources/langgenius__dify/cli/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `web/utils/mcp.spec.ts`, `web/utils/mcp.ts`, `web/app/components/workflow/nodes/_base/components/mcp-tool-availability.tsx`.
-2. Trace execution through entrypoints: `web/service/server.ts`, `web/service/__tests__/server.spec.ts`, `web/i18n-config/server.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `web/AGENTS.md`, `web/utils/context.spec.ts`.
-4. Inspect retrieval/memory/indexing through: `web/utils/index.spec.ts`, `web/utils/index.ts`, `web/service/knowledge/use-create-dataset.ts`.
-5. Verify behavior through test/eval files: `web/utils/app-redirection.spec.ts`, `web/utils/clipboard.spec.ts`, `web/utils/completion-params.spec.ts`.
+1. 핵심 참조에서 시작: `web/utils/mcp.spec.ts`, `web/utils/mcp.ts`, `web/app/components/workflow/nodes/_base/components/mcp-tool-availability.tsx`.
+2. entrypoint를 따라 실행 흐름 확인: `web/service/server.ts`, `web/service/__tests__/server.spec.ts`, `web/i18n-config/server.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `web/AGENTS.md`, `web/utils/context.spec.ts`.
+4. retrieval/memory/indexing 확인: `web/utils/index.spec.ts`, `web/utils/index.ts`, `web/service/knowledge/use-create-dataset.ts`.
+5. test/eval 파일로 동작 검증: `web/utils/app-redirection.spec.ts`, `web/utils/clipboard.spec.ts`, `web/utils/completion-params.spec.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Production ready platform for agentic workflow development.. 핵심 구조 신호는 TypeScript, package.json, Makefile, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Production ready platform for agentic workflow development.. 핵심 구조 신호는 TypeScript, package.json, Makefile, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

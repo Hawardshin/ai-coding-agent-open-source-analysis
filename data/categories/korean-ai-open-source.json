@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "korean-ai-open-source",
-  "title": "Korean AI and Open Source",
-  "description": "Korea-trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals.",
+  "title": "한국 AI/오픈소스",
+  "description": "한국 트렌딩 레포, 한국 AI 서비스, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, 한국 RAG/MCP, 국내 컨퍼런스 신호를 묶은 카테고리입니다.",
   "counts": {
     "total": 602,
     "repository": 581,

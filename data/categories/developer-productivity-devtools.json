@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "developer-productivity-devtools",
-  "title": "Developer Productivity and DevTools",
-  "description": "Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems.",
+  "title": "개발 생산성/DevTools",
+  "description": "developer tooling, automation, CI, GitHub Actions, CLI, SDK, workflow accelerator, code search, productivity system을 묶은 카테고리입니다.",
   "counts": {
     "total": 1307,
     "reference-material": 916,

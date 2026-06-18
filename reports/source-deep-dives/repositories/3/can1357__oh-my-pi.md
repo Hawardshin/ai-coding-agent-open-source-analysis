@@ -1,63 +1,63 @@
-# can1357/oh-my-pi Source Deep Dive
+# can1357/oh-my-pi 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 4212 files, 456 directories.
 
 ## 요약
 
-- 조사 단위: `sources/can1357__oh-my-pi` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 4,210 files, 455 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/can1357__oh-my-pi` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 4,210 files, 455 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/mnemopi/test/mcp-server.test.ts, packages/mnemopi/src/mcp-server.ts, packages/mnemopi/src/mcp-tools.ts이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/mnemopi/test/mcp-server.test.ts, packages/mnemopi/src/mcp-server.ts, packages/mnemopi/src/mcp-tools.ts이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | can1357/oh-my-pi |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | can1357/oh-my-pi |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 13165 |
 | Forks | 1121 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | deep-source+report |
-| Source | [sources/can1357__oh-my-pi](../../../../sources/can1357__oh-my-pi) |
-| Existing report | [reports/global-trending/repositories/can1357__oh-my-pi.md](../../../global-trending/repositories/can1357__oh-my-pi.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/can1357__oh-my-pi](../../../../sources/can1357__oh-my-pi) |
+| 기존 보고서 | [reports/global-trending/repositories/can1357__oh-my-pi.md](../../../global-trending/repositories/can1357__oh-my-pi.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 4210 / 455 |
-| Max observed depth | 11 |
-| Top directories | .github, .omp, assets, crates, docs, infra, packages, patches, python, scripts, types |
-| Top extensions | .ts: 2764, .md: 421, .rs: 243, .json: 176, .py: 160, .txt: 99, .tsx: 91, .toml: 82, .png: 24, .cmd: 20, .raw: 20, .yml: 13 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 4210 / 455 |
+| 관측 최대 깊이 | 11 |
+| 상위 디렉터리 | .github, .omp, assets, crates, docs, infra, packages, patches, python, scripts, types |
+| 상위 확장자 | .ts: 2764, .md: 421, .rs: 243, .json: 176, .py: 160, .txt: 99, .tsx: 91, .toml: 82, .png: 24, .cmd: 20, .raw: 20, .yml: 13 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/coding-agent | packages workspace | 85 |
 | packages/mnemopi | packages workspace | 34 |
@@ -79,9 +79,9 @@ Local clone structure analysis: 4212 files, 456 directories.
 | assets | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | install:dev | bun install && bun --cwd=packages/coding-agent link && ln -sfn "$(pwd)/packages/coding-agent/scripts/omp" "$(bun pm -g bin)/omp" |
 | serve-dev | package.json | dev | bun --cwd=packages/coding-agent src/cli.ts |
@@ -125,24 +125,24 @@ Local clone structure analysis: 4212 files, 456 directories.
 | test | package.json | ci:test:ts:workspace | bun scripts/ci-test-ts.ts workspace |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [packages/mnemopi/test/mcp-server.test.ts](../../../../sources/can1357__oh-my-pi/packages/mnemopi/test/mcp-server.test.ts) | mcp signal |
 | mcp | [packages/mnemopi/src/mcp-server.ts](../../../../sources/can1357__oh-my-pi/packages/mnemopi/src/mcp-server.ts) | mcp signal |
@@ -158,9 +158,9 @@ Local clone structure analysis: 4212 files, 456 directories.
 | entrypoints | [python/robomp/src/cli.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/cli.py) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 35 | [python/robomp/web/src/App.tsx](../../../../sources/can1357__oh-my-pi/python/robomp/web/src/App.tsx)<br>[python/robomp/web/src/main.tsx](../../../../sources/can1357__oh-my-pi/python/robomp/web/src/main.tsx)<br>[python/robomp/src/__main__.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/__main__.py)<br>[python/robomp/src/cli.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/cli.py)<br>[python/robomp/src/server.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/server.py)<br>[python/robomp/src/proxy/__main__.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/proxy/__main__.py)<br>[python/robomp/src/proxy/server.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/proxy/server.py)<br>[packages/wire/src/index.ts](../../../../sources/can1357__oh-my-pi/packages/wire/src/index.ts) |
 | agentRuntime | 620 | [AGENTS.md](../../../../sources/can1357__oh-my-pi/AGENTS.md)<br>[scripts/tool_io.py](../../../../sources/can1357__oh-my-pi/scripts/tool_io.py)<br>[scripts/tool-prompt-usage.ts](../../../../sources/can1357__oh-my-pi/scripts/tool-prompt-usage.ts)<br>[scripts/session-stats/out/tool-trends.png](../../../../sources/can1357__oh-my-pi/scripts/session-stats/out/tool-trends.png)<br>[python/robomp/AGENTS.md](../../../../sources/can1357__oh-my-pi/python/robomp/AGENTS.md)<br>[python/robomp/src/sandbox.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/sandbox.py)<br>[packages/typescript-edit-benchmark/test/runner.test.ts](../../../../sources/can1357__oh-my-pi/packages/typescript-edit-benchmark/test/runner.test.ts)<br>[packages/typescript-edit-benchmark/src/runner.ts](../../../../sources/can1357__oh-my-pi/packages/typescript-edit-benchmark/src/runner.ts) |
@@ -176,39 +176,39 @@ Local clone structure analysis: 4212 files, 456 directories.
 | config | 50 | [Cargo.lock](../../../../sources/can1357__oh-my-pi/Cargo.lock)<br>[Cargo.toml](../../../../sources/can1357__oh-my-pi/Cargo.toml)<br>[package.json](../../../../sources/can1357__oh-my-pi/package.json)<br>[tsconfig.json](../../../../sources/can1357__oh-my-pi/tsconfig.json)<br>[python/robomp/pyproject.toml](../../../../sources/can1357__oh-my-pi/python/robomp/pyproject.toml)<br>[python/robomp/web/package.json](../../../../sources/can1357__oh-my-pi/python/robomp/web/package.json)<br>[python/robomp/web/tsconfig.json](../../../../sources/can1357__oh-my-pi/python/robomp/web/tsconfig.json)<br>[python/omp-rpc/pyproject.toml](../../../../sources/can1357__oh-my-pi/python/omp-rpc/pyproject.toml) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 1545 | [scripts/ci-concurrency.test.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-concurrency.test.ts)<br>[scripts/ci-release-notes.test.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-release-notes.test.ts)<br>[scripts/ci-test-ts.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-test-ts.ts)<br>[scripts/ci-update-brew-formula.test.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-update-brew-formula.test.ts)<br>[scripts/claude-trace.ts](../../../../sources/can1357__oh-my-pi/scripts/claude-trace.ts)<br>[scripts/edit_benchmark_common.py](../../../../sources/can1357__oh-my-pi/scripts/edit_benchmark_common.py) |
-| CI workflows | 1 | [.github/workflows/ci.yml](../../../../sources/can1357__oh-my-pi/.github/workflows/ci.yml) |
-| Containers / deploy | 5 | [Dockerfile](../../../../sources/can1357__oh-my-pi/Dockerfile)<br>[Dockerfile.dockerignore](../../../../sources/can1357__oh-my-pi/Dockerfile.dockerignore)<br>[Dockerfile.robomp](../../../../sources/can1357__oh-my-pi/Dockerfile.robomp)<br>[Dockerfile.robomp.dockerignore](../../../../sources/can1357__oh-my-pi/Dockerfile.robomp.dockerignore)<br>[python/robomp/docker-compose.yml](../../../../sources/can1357__oh-my-pi/python/robomp/docker-compose.yml) |
-| Security / policy | 137 | [scripts/session-stats/audit-prompt.md](../../../../sources/can1357__oh-my-pi/scripts/session-stats/audit-prompt.md)<br>[scripts/session-stats/audit.test.ts](../../../../sources/can1357__oh-my-pi/scripts/session-stats/audit.test.ts)<br>[scripts/session-stats/audit.ts](../../../../sources/can1357__oh-my-pi/scripts/session-stats/audit.ts)<br>[python/robomp/tests/test_sandbox.py](../../../../sources/can1357__oh-my-pi/python/robomp/tests/test_sandbox.py)<br>[python/robomp/src/sandbox.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/sandbox.py)<br>[packages/coding-agent/test/active-oauth-account.test.ts](../../../../sources/can1357__oh-my-pi/packages/coding-agent/test/active-oauth-account.test.ts) |
-| Agent instructions | 4 | [AGENTS.md](../../../../sources/can1357__oh-my-pi/AGENTS.md)<br>[python/robomp/AGENTS.md](../../../../sources/can1357__oh-my-pi/python/robomp/AGENTS.md)<br>[packages/ai/src/dialect/gemini.md](../../../../sources/can1357__oh-my-pi/packages/ai/src/dialect/gemini.md)<br>[docs/toolconv/gemini.md](../../../../sources/can1357__oh-my-pi/docs/toolconv/gemini.md) |
+| 테스트/평가 | 1545 | [scripts/ci-concurrency.test.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-concurrency.test.ts)<br>[scripts/ci-release-notes.test.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-release-notes.test.ts)<br>[scripts/ci-test-ts.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-test-ts.ts)<br>[scripts/ci-update-brew-formula.test.ts](../../../../sources/can1357__oh-my-pi/scripts/ci-update-brew-formula.test.ts)<br>[scripts/claude-trace.ts](../../../../sources/can1357__oh-my-pi/scripts/claude-trace.ts)<br>[scripts/edit_benchmark_common.py](../../../../sources/can1357__oh-my-pi/scripts/edit_benchmark_common.py) |
+| CI workflow | 1 | [.github/workflows/ci.yml](../../../../sources/can1357__oh-my-pi/.github/workflows/ci.yml) |
+| 컨테이너/배포 | 5 | [Dockerfile](../../../../sources/can1357__oh-my-pi/Dockerfile)<br>[Dockerfile.dockerignore](../../../../sources/can1357__oh-my-pi/Dockerfile.dockerignore)<br>[Dockerfile.robomp](../../../../sources/can1357__oh-my-pi/Dockerfile.robomp)<br>[Dockerfile.robomp.dockerignore](../../../../sources/can1357__oh-my-pi/Dockerfile.robomp.dockerignore)<br>[python/robomp/docker-compose.yml](../../../../sources/can1357__oh-my-pi/python/robomp/docker-compose.yml) |
+| 보안/정책 | 137 | [scripts/session-stats/audit-prompt.md](../../../../sources/can1357__oh-my-pi/scripts/session-stats/audit-prompt.md)<br>[scripts/session-stats/audit.test.ts](../../../../sources/can1357__oh-my-pi/scripts/session-stats/audit.test.ts)<br>[scripts/session-stats/audit.ts](../../../../sources/can1357__oh-my-pi/scripts/session-stats/audit.ts)<br>[python/robomp/tests/test_sandbox.py](../../../../sources/can1357__oh-my-pi/python/robomp/tests/test_sandbox.py)<br>[python/robomp/src/sandbox.py](../../../../sources/can1357__oh-my-pi/python/robomp/src/sandbox.py)<br>[packages/coding-agent/test/active-oauth-account.test.ts](../../../../sources/can1357__oh-my-pi/packages/coding-agent/test/active-oauth-account.test.ts) |
+| 에이전트 지시문 | 4 | [AGENTS.md](../../../../sources/can1357__oh-my-pi/AGENTS.md)<br>[python/robomp/AGENTS.md](../../../../sources/can1357__oh-my-pi/python/robomp/AGENTS.md)<br>[packages/ai/src/dialect/gemini.md](../../../../sources/can1357__oh-my-pi/packages/ai/src/dialect/gemini.md)<br>[docs/toolconv/gemini.md](../../../../sources/can1357__oh-my-pi/docs/toolconv/gemini.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/mnemopi/test/mcp-server.test.ts`, `packages/mnemopi/src/mcp-server.ts`, `packages/mnemopi/src/mcp-tools.ts`.
-2. Trace execution through entrypoints: `python/robomp/web/src/App.tsx`, `python/robomp/web/src/main.tsx`, `python/robomp/src/__main__.py`.
-3. Map agent/tool runtime through: `AGENTS.md`, `scripts/tool_io.py`, `scripts/tool-prompt-usage.ts`.
-4. Inspect retrieval/memory/indexing through: `types/assets/index.d.ts`, `python/robomp/web/index.html`, `python/robomp/web/src/styles/index.css`.
-5. Verify behavior through test/eval files: `scripts/ci-concurrency.test.ts`, `scripts/ci-release-notes.test.ts`, `scripts/ci-test-ts.ts`.
+1. 핵심 참조에서 시작: `packages/mnemopi/test/mcp-server.test.ts`, `packages/mnemopi/src/mcp-server.ts`, `packages/mnemopi/src/mcp-tools.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `python/robomp/web/src/App.tsx`, `python/robomp/web/src/main.tsx`, `python/robomp/src/__main__.py`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `scripts/tool_io.py`, `scripts/tool-prompt-usage.ts`.
+4. retrieval/memory/indexing 확인: `types/assets/index.d.ts`, `python/robomp/web/index.html`, `python/robomp/web/src/styles/index.css`.
+5. test/eval 파일로 동작 검증: `scripts/ci-concurrency.test.ts`, `scripts/ci-release-notes.test.ts`, `scripts/ci-test-ts.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 4212 files, 456 directories.. 핵심 구조 신호는 TypeScript, package.json, Cargo.toml, Dockerfile, README.md, AGENTS.md이며, deep-source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 4212 files, 456 directories.. 핵심 구조 신호는 TypeScript, package.json, Cargo.toml, Dockerfile, README.md, AGENTS.md이며, 심층 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

@@ -1,63 +1,63 @@
-# chrisryugj/lexdiff Source Deep Dive
+# chrisryugj/lexdiff 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 한국 법령 AI 검색 — 자연어 질문 → 법령·판례 원문 근거 답변. Verbatim RAG · 신구조문 비교 · 3단 위임법령 · 영향 추적 · 조례 벤치마킹 (Next.js 16 · Gemini 3 Flash) | Korean Legal AI with verbatim RAG over govt API
 
 ## 요약
 
-- 조사 단위: `sources/chrisryugj__lexdiff` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 711 files, 152 directories, depth score 124, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/chrisryugj__lexdiff` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 711 files, 152 directories, depth score 118, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 api/server, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 retrieval=supabase/migrations/001_relation_graph.sql, src/domain/index.ts, src/domain/search/index.ts이고, 의존성 단서는 mcp, modelcontextprotocol, express, next, react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 api/server, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 retrieval=supabase/migrations/001_relation_graph.sql, src/domain/index.ts, src/domain/search/index.ts이고, 의존성 단서는 mcp, modelcontextprotocol, express, next, react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | chrisryugj/lexdiff |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | chrisryugj/lexdiff |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | korea |
 | Language | TypeScript |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/chrisryugj__lexdiff](../../../../sources/chrisryugj__lexdiff) |
-| Existing report | [reports/korea-trending/repositories/chrisryugj__lexdiff.md](../../../korea-trending/repositories/chrisryugj__lexdiff.md) |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/chrisryugj__lexdiff](../../../../sources/chrisryugj__lexdiff) |
+| 기존 보고서 | [reports/korea-trending/repositories/chrisryugj__lexdiff.md](../../../korea-trending/repositories/chrisryugj__lexdiff.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 711 / 152 |
-| Max observed depth | 5 |
-| Top directories | __tests__, .backup_20251102224016, .claude, .github, %programdata%, app, certs, components, demo, docs, evaluation, hooks, important-docs, lib, logs, public, scripts, src, styles, supabase |
-| Top extensions | .ts: 284, .tsx: 149, .md: 125, .mjs: 35, .json: 24, .mts: 14, .sql: 10, .svg: 10, .css: 7, .html: 6, .png: 6, .sh: 6 |
-| Source patterns | api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, ui/extension surface |
+| 파일 / 디렉터리 | 711 / 152 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | __tests__, .backup_20251102224016, .claude, .github, %programdata%, app, certs, components, demo, docs, evaluation, hooks, important-docs, lib, logs, public, scripts, src, styles, supabase |
+| 상위 확장자 | .ts: 284, .tsx: 149, .md: 125, .mjs: 35, .json: 24, .mts: 14, .sql: 10, .svg: 10, .css: 7, .html: 6, .png: 6, .sh: 6 |
+| 소스 패턴 | api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, ui/extension surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | lib | source boundary | 49 |
 | docs | documentation surface | 40 |
@@ -79,9 +79,9 @@ LLM 위키/RAG/지식베이스 관점에서 api/server, agent/tool runtime, retr
 | supabase | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | build | next build |
 | serve-dev | package.json | dev | next dev |
@@ -96,24 +96,24 @@ LLM 위키/RAG/지식베이스 관점에서 api/server, agent/tool runtime, retr
 | utility | package.json | download:ordinances:fast | node scripts/download-all-ordinances.mjs 500 |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | mcp, modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | express, next, react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [supabase/migrations/001_relation_graph.sql](../../../../sources/chrisryugj__lexdiff/supabase/migrations/001_relation_graph.sql) | retrieval signal |
 | retrieval | [src/domain/index.ts](../../../../sources/chrisryugj__lexdiff/src/domain/index.ts) | retrieval signal |
@@ -129,9 +129,9 @@ LLM 위키/RAG/지식베이스 관점에서 api/server, agent/tool runtime, retr
 | eval | [scripts/test-annex-match.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-annex-match.ts) | eval signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 2 | [lib/supabase/server.ts](../../../../sources/chrisryugj__lexdiff/lib/supabase/server.ts)<br>[demo/src/index.ts](../../../../sources/chrisryugj__lexdiff/demo/src/index.ts) |
 | agentRuntime | 53 | [lib/fc-rag/tool-adapter.ts](../../../../sources/chrisryugj__lexdiff/lib/fc-rag/tool-adapter.ts)<br>[lib/fc-rag/tool-cache.ts](../../../../sources/chrisryugj__lexdiff/lib/fc-rag/tool-cache.ts)<br>[lib/fc-rag/tool-registry.ts](../../../../sources/chrisryugj__lexdiff/lib/fc-rag/tool-registry.ts)<br>[lib/fc-rag/tool-tiers.ts](../../../../sources/chrisryugj__lexdiff/lib/fc-rag/tool-tiers.ts)<br>[hooks/law-viewer-modal-fetchers.ts](../../../../sources/chrisryugj__lexdiff/hooks/law-viewer-modal-fetchers.ts)<br>[hooks/use-ai-gate.ts](../../../../sources/chrisryugj__lexdiff/hooks/use-ai-gate.ts)<br>[hooks/use-api-key.ts](../../../../sources/chrisryugj__lexdiff/hooks/use-api-key.ts)<br>[hooks/use-content-click-handlers.ts](../../../../sources/chrisryugj__lexdiff/hooks/use-content-click-handlers.ts) |
@@ -141,45 +141,45 @@ LLM 위키/RAG/지식베이스 관점에서 api/server, agent/tool runtime, retr
 | eval | 89 | [scripts/e2e-fcrag-test.mjs](../../../../sources/chrisryugj__lexdiff/scripts/e2e-fcrag-test.mjs)<br>[scripts/test-annex-match.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-annex-match.ts)<br>[scripts/test-api-exhaustive.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-api-exhaustive.ts)<br>[scripts/test-civil-servant-gwangjin.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-civil-servant-gwangjin.ts)<br>[scripts/test-classifier-exhaustive.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-classifier-exhaustive.ts)<br>[scripts/test-classifier-round2.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-classifier-round2.ts)<br>[scripts/test-eflaw.mjs](../../../../sources/chrisryugj__lexdiff/scripts/test-eflaw.mjs)<br>[scripts/test-endpoints-e2e.mjs](../../../../sources/chrisryugj__lexdiff/scripts/test-endpoints-e2e.mjs) |
 | security | 12 | [ui-audit/2026-03-20-23-29.json](../../../../sources/chrisryugj__lexdiff/ui-audit/2026-03-20-23-29.json)<br>[ui-audit/2026-03-20-23-29.md](../../../../sources/chrisryugj__lexdiff/ui-audit/2026-03-20-23-29.md)<br>[ui-audit/screenshots/home-desktop-delay-check.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/home-desktop-delay-check.png)<br>[ui-audit/screenshots/step-00-home-desktop.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-00-home-desktop.png)<br>[ui-audit/screenshots/step-01-search-result-desktop.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-01-search-result-desktop.png)<br>[ui-audit/screenshots/step-02-home-mobile.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-02-home-mobile.png)<br>[ui-audit/screenshots/step-03-search-result-mobile.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-03-search-result-mobile.png)<br>[lib/api-auth.ts](../../../../sources/chrisryugj__lexdiff/lib/api-auth.ts) |
 | ci | 2 | [.github/workflows/ci.yml](../../../../sources/chrisryugj__lexdiff/.github/workflows/ci.yml)<br>[.github/workflows/rag-eval-weekly.yml](../../../../sources/chrisryugj__lexdiff/.github/workflows/rag-eval-weekly.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 2 | [CLAUDE.md](../../../../sources/chrisryugj__lexdiff/CLAUDE.md)<br>[.claude/sync/CLAUDE.md](../../../../sources/chrisryugj__lexdiff/.claude/sync/CLAUDE.md) |
 | docs | 35 | [README.md](../../../../sources/chrisryugj__lexdiff/README.md)<br>[scripts/README.md](../../../../sources/chrisryugj__lexdiff/scripts/README.md)<br>[evaluation/README.md](../../../../sources/chrisryugj__lexdiff/evaluation/README.md)<br>[docs/01-ANALYSIS_REPORT.md](../../../../sources/chrisryugj__lexdiff/docs/01-ANALYSIS_REPORT.md)<br>[docs/02-GEMINI_FILE_SEARCH_GUIDE.md](../../../../sources/chrisryugj__lexdiff/docs/02-GEMINI_FILE_SEARCH_GUIDE.md)<br>[docs/03-NEXT_STEPS.md](../../../../sources/chrisryugj__lexdiff/docs/03-NEXT_STEPS.md)<br>[docs/04-REFACTORING_PLAN.md](../../../../sources/chrisryugj__lexdiff/docs/04-REFACTORING_PLAN.md)<br>[docs/05-LAW_VIEWER_ARCHITECTURE.md](../../../../sources/chrisryugj__lexdiff/docs/05-LAW_VIEWER_ARCHITECTURE.md) |
 | config | 5 | [package.json](../../../../sources/chrisryugj__lexdiff/package.json)<br>[tsconfig.json](../../../../sources/chrisryugj__lexdiff/tsconfig.json)<br>[evaluation/requirements.txt](../../../../sources/chrisryugj__lexdiff/evaluation/requirements.txt)<br>[demo/package.json](../../../../sources/chrisryugj__lexdiff/demo/package.json)<br>[demo/tsconfig.json](../../../../sources/chrisryugj__lexdiff/demo/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 89 | [scripts/e2e-fcrag-test.mjs](../../../../sources/chrisryugj__lexdiff/scripts/e2e-fcrag-test.mjs)<br>[scripts/test-annex-match.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-annex-match.ts)<br>[scripts/test-api-exhaustive.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-api-exhaustive.ts)<br>[scripts/test-civil-servant-gwangjin.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-civil-servant-gwangjin.ts)<br>[scripts/test-classifier-exhaustive.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-classifier-exhaustive.ts)<br>[scripts/test-classifier-round2.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-classifier-round2.ts) |
-| CI workflows | 2 | [.github/workflows/ci.yml](../../../../sources/chrisryugj__lexdiff/.github/workflows/ci.yml)<br>[.github/workflows/rag-eval-weekly.yml](../../../../sources/chrisryugj__lexdiff/.github/workflows/rag-eval-weekly.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 12 | [ui-audit/2026-03-20-23-29.json](../../../../sources/chrisryugj__lexdiff/ui-audit/2026-03-20-23-29.json)<br>[ui-audit/2026-03-20-23-29.md](../../../../sources/chrisryugj__lexdiff/ui-audit/2026-03-20-23-29.md)<br>[ui-audit/screenshots/home-desktop-delay-check.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/home-desktop-delay-check.png)<br>[ui-audit/screenshots/step-00-home-desktop.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-00-home-desktop.png)<br>[ui-audit/screenshots/step-01-search-result-desktop.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-01-search-result-desktop.png)<br>[ui-audit/screenshots/step-02-home-mobile.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-02-home-mobile.png) |
-| Agent instructions | 2 | [CLAUDE.md](../../../../sources/chrisryugj__lexdiff/CLAUDE.md)<br>[.claude/sync/CLAUDE.md](../../../../sources/chrisryugj__lexdiff/.claude/sync/CLAUDE.md) |
+| 테스트/평가 | 89 | [scripts/e2e-fcrag-test.mjs](../../../../sources/chrisryugj__lexdiff/scripts/e2e-fcrag-test.mjs)<br>[scripts/test-annex-match.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-annex-match.ts)<br>[scripts/test-api-exhaustive.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-api-exhaustive.ts)<br>[scripts/test-civil-servant-gwangjin.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-civil-servant-gwangjin.ts)<br>[scripts/test-classifier-exhaustive.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-classifier-exhaustive.ts)<br>[scripts/test-classifier-round2.ts](../../../../sources/chrisryugj__lexdiff/scripts/test-classifier-round2.ts) |
+| CI workflow | 2 | [.github/workflows/ci.yml](../../../../sources/chrisryugj__lexdiff/.github/workflows/ci.yml)<br>[.github/workflows/rag-eval-weekly.yml](../../../../sources/chrisryugj__lexdiff/.github/workflows/rag-eval-weekly.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 12 | [ui-audit/2026-03-20-23-29.json](../../../../sources/chrisryugj__lexdiff/ui-audit/2026-03-20-23-29.json)<br>[ui-audit/2026-03-20-23-29.md](../../../../sources/chrisryugj__lexdiff/ui-audit/2026-03-20-23-29.md)<br>[ui-audit/screenshots/home-desktop-delay-check.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/home-desktop-delay-check.png)<br>[ui-audit/screenshots/step-00-home-desktop.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-00-home-desktop.png)<br>[ui-audit/screenshots/step-01-search-result-desktop.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-01-search-result-desktop.png)<br>[ui-audit/screenshots/step-02-home-mobile.png](../../../../sources/chrisryugj__lexdiff/ui-audit/screenshots/step-02-home-mobile.png) |
+| 에이전트 지시문 | 2 | [CLAUDE.md](../../../../sources/chrisryugj__lexdiff/CLAUDE.md)<br>[.claude/sync/CLAUDE.md](../../../../sources/chrisryugj__lexdiff/.claude/sync/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | container/deploy path not obvious |
-| security | none |
-| evidenceGaps | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `supabase/migrations/001_relation_graph.sql`, `src/domain/index.ts`, `src/domain/search/index.ts`.
-2. Trace execution through entrypoints: `lib/supabase/server.ts`, `demo/src/index.ts`.
-3. Map agent/tool runtime through: `lib/fc-rag/tool-adapter.ts`, `lib/fc-rag/tool-cache.ts`, `lib/fc-rag/tool-registry.ts`.
-4. Inspect retrieval/memory/indexing through: `supabase/migrations/001_relation_graph.sql`, `src/domain/index.ts`, `src/domain/search/index.ts`.
-5. Verify behavior through test/eval files: `scripts/e2e-fcrag-test.mjs`, `scripts/test-annex-match.ts`, `scripts/test-api-exhaustive.ts`.
+1. 핵심 참조에서 시작: `supabase/migrations/001_relation_graph.sql`, `src/domain/index.ts`, `src/domain/search/index.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `lib/supabase/server.ts`, `demo/src/index.ts`.
+3. agent/tool runtime 매핑: `lib/fc-rag/tool-adapter.ts`, `lib/fc-rag/tool-cache.ts`, `lib/fc-rag/tool-registry.ts`.
+4. retrieval/memory/indexing 확인: `supabase/migrations/001_relation_graph.sql`, `src/domain/index.ts`, `src/domain/search/index.ts`.
+5. test/eval 파일로 동작 검증: `scripts/e2e-fcrag-test.mjs`, `scripts/test-annex-match.ts`, `scripts/test-api-exhaustive.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 한국 법령 AI 검색 — 자연어 질문 → 법령·판례 원문 근거 답변. Verbatim RAG · 신구조문 비교 · 3단 위임법령 · 영향 추적 · 조례 벤치마킹 Next.js 16 · Gemini 3 Flash Ko. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, modelcontextprotocol이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 한국 법령 AI 검색 — 자연어 질문 → 법령·판례 원문 근거 답변. Verbatim RAG · 신구조문 비교 · 3단 위임법령 · 영향 추적 · 조례 벤치마킹 Next.js 16 · Gemini 3 Flash Ko. 핵심 구조 신호는 TypeScript, package.json, README.md, CLAUDE.md, LICENSE, modelcontextprotocol이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

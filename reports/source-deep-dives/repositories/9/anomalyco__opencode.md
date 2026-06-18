@@ -1,63 +1,63 @@
-# anomalyco/opencode Source Deep Dive
+# anomalyco/opencode 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 5666 files, 710 directories.
 
 ## 요약
 
-- 조사 단위: `sources/anomalyco__opencode` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 5,663 files, 708 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/anomalyco__opencode` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 5,663 files, 708 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/web/src/content/docs/mcp-servers.mdx, packages/web/src/content/docs/zh-tw/mcp-servers.mdx, packages/web/src/content/docs/zh-cn/mcp-servers.mdx이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/web/src/content/docs/mcp-servers.mdx, packages/web/src/content/docs/zh-tw/mcp-servers.mdx, packages/web/src/content/docs/zh-cn/mcp-servers.mdx이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | anomalyco/opencode |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | anomalyco/opencode |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 175712 |
 | Forks | 21355 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | deep-source+report |
-| Source | [sources/anomalyco__opencode](../../../../sources/anomalyco__opencode) |
-| Existing report | [reports/global-trending/repositories/anomalyco__opencode.md](../../../global-trending/repositories/anomalyco__opencode.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/anomalyco__opencode](../../../../sources/anomalyco__opencode) |
+| 기존 보고서 | [reports/global-trending/repositories/anomalyco__opencode.md](../../../global-trending/repositories/anomalyco__opencode.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 5663 / 708 |
-| Max observed depth | 10 |
-| Top directories | .github, .husky, .opencode, .zed, github, infra, nix, packages, patches, perf, script, sdks, specs |
-| Top extensions | .ts: 2015, .svg: 1251, .mdx: 627, .tsx: 524, .json: 330, .png: 215, .css: 156, .md: 130, .sql: 118, (none): 48, .aac: 45, .mp3: 45 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 5663 / 708 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .github, .husky, .opencode, .zed, github, infra, nix, packages, patches, perf, script, sdks, specs |
+| 상위 확장자 | .ts: 2015, .svg: 1251, .mdx: 627, .tsx: 524, .json: 330, .png: 215, .css: 156, .md: 130, .sql: 118, (none): 48, .aac: 45, .mp3: 45 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/web | packages workspace | 129 |
 | packages/opencode | packages workspace | 56 |
@@ -79,9 +79,9 @@ Local clone structure analysis: 5666 files, 710 directories.
 | packages/function | packages workspace | 2 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | dev | bun run --cwd packages/opencode --conditions=browser src/index.ts |
 | serve-dev | package.json | dev:desktop | bun --cwd packages/desktop dev |
@@ -99,24 +99,24 @@ Local clone structure analysis: 5666 files, 710 directories.
 | test | package.json | test | echo 'do not run tests from root' && exit 1 |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [packages/web/src/content/docs/mcp-servers.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/mcp-servers.mdx) | mcp signal |
 | mcp | [packages/web/src/content/docs/zh-tw/mcp-servers.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-tw/mcp-servers.mdx) | mcp signal |
@@ -132,9 +132,9 @@ Local clone structure analysis: 5666 files, 710 directories.
 | entrypoints | [packages/web/src/content/docs/tr/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/tr/server.mdx) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 57 | [packages/web/src/content/docs/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/server.mdx)<br>[packages/web/src/content/docs/zh-tw/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-tw/server.mdx)<br>[packages/web/src/content/docs/zh-cn/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-cn/server.mdx)<br>[packages/web/src/content/docs/tr/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/tr/server.mdx)<br>[packages/web/src/content/docs/th/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/th/server.mdx)<br>[packages/web/src/content/docs/ru/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/ru/server.mdx)<br>[packages/web/src/content/docs/pt-br/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/pt-br/server.mdx)<br>[packages/web/src/content/docs/pl/server.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/pl/server.mdx) |
 | agentRuntime | 401 | [AGENTS.md](../../../../sources/anomalyco__opencode/AGENTS.md)<br>[CONTEXT.md](../../../../sources/anomalyco__opencode/CONTEXT.md)<br>[specs/v2/tools.md](../../../../sources/anomalyco__opencode/specs/v2/tools.md)<br>[packages/web/src/content/docs/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/agents.mdx)<br>[packages/web/src/content/docs/skills.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/skills.mdx)<br>[packages/web/src/content/docs/tools.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/tools.mdx)<br>[packages/web/src/content/docs/zh-tw/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-tw/agents.mdx)<br>[packages/web/src/content/docs/zh-tw/skills.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-tw/skills.mdx) |
@@ -150,39 +150,39 @@ Local clone structure analysis: 5666 files, 710 directories.
 | config | 66 | [package.json](../../../../sources/anomalyco__opencode/package.json)<br>[tsconfig.json](../../../../sources/anomalyco__opencode/tsconfig.json)<br>[turbo.json](../../../../sources/anomalyco__opencode/turbo.json)<br>[sdks/vscode/package.json](../../../../sources/anomalyco__opencode/sdks/vscode/package.json)<br>[sdks/vscode/tsconfig.json](../../../../sources/anomalyco__opencode/sdks/vscode/tsconfig.json)<br>[packages/web/package.json](../../../../sources/anomalyco__opencode/packages/web/package.json)<br>[packages/web/tsconfig.json](../../../../sources/anomalyco__opencode/packages/web/tsconfig.json)<br>[packages/ui/package.json](../../../../sources/anomalyco__opencode/packages/ui/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 705 | [sdks/vscode/.vscode-test.mjs](../../../../sources/anomalyco__opencode/sdks/vscode/.vscode-test.mjs)<br>[perf/test-suite.md](../../../../sources/anomalyco__opencode/perf/test-suite.md)<br>[packages/ui/src/components/apply-patch-file.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/apply-patch-file.test.ts)<br>[packages/ui/src/components/markdown-stream.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/markdown-stream.test.ts)<br>[packages/ui/src/components/message-file.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/message-file.test.ts)<br>[packages/ui/src/components/message-part.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/message-part.test.ts) |
-| CI workflows | 31 | [packages/ui/src/assets/icons/file-types/azure-pipelines.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/azure-pipelines.svg)<br>[packages/ui/src/assets/icons/file-types/buildkite.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/buildkite.svg)<br>[packages/ui/src/assets/icons/file-types/circleci_light.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/circleci_light.svg)<br>[packages/ui/src/assets/icons/file-types/circleci.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/circleci.svg)<br>[packages/ui/src/assets/icons/file-types/jenkins.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/jenkins.svg)<br>[.github/workflows/beta.yml](../../../../sources/anomalyco__opencode/.github/workflows/beta.yml) |
-| Containers / deploy | 7 | [packages/stats/server/Dockerfile](../../../../sources/anomalyco__opencode/packages/stats/server/Dockerfile)<br>[packages/opencode/Dockerfile](../../../../sources/anomalyco__opencode/packages/opencode/Dockerfile)<br>[packages/containers/tauri-linux/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/tauri-linux/Dockerfile)<br>[packages/containers/rust/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/rust/Dockerfile)<br>[packages/containers/publish/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/publish/Dockerfile)<br>[packages/containers/bun-node/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/bun-node/Dockerfile) |
-| Security / policy | 87 | [SECURITY.md](../../../../sources/anomalyco__opencode/SECURITY.md)<br>[specs/v2/provider-policy.md](../../../../sources/anomalyco__opencode/specs/v2/provider-policy.md)<br>[packages/ui/src/assets/icons/file-types/folder-guard-open.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-guard-open.svg)<br>[packages/ui/src/assets/icons/file-types/folder-guard.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-guard.svg)<br>[packages/ui/src/assets/icons/file-types/folder-policy-open.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-policy-open.svg)<br>[packages/ui/src/assets/icons/file-types/folder-policy.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-policy.svg) |
-| Agent instructions | 30 | [AGENTS.md](../../../../sources/anomalyco__opencode/AGENTS.md)<br>[packages/web/src/content/docs/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/agents.mdx)<br>[packages/web/src/content/docs/zh-tw/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-tw/agents.mdx)<br>[packages/web/src/content/docs/zh-cn/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-cn/agents.mdx)<br>[packages/web/src/content/docs/tr/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/tr/agents.mdx)<br>[packages/web/src/content/docs/th/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/th/agents.mdx) |
+| 테스트/평가 | 705 | [sdks/vscode/.vscode-test.mjs](../../../../sources/anomalyco__opencode/sdks/vscode/.vscode-test.mjs)<br>[perf/test-suite.md](../../../../sources/anomalyco__opencode/perf/test-suite.md)<br>[packages/ui/src/components/apply-patch-file.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/apply-patch-file.test.ts)<br>[packages/ui/src/components/markdown-stream.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/markdown-stream.test.ts)<br>[packages/ui/src/components/message-file.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/message-file.test.ts)<br>[packages/ui/src/components/message-part.test.ts](../../../../sources/anomalyco__opencode/packages/ui/src/components/message-part.test.ts) |
+| CI workflow | 31 | [packages/ui/src/assets/icons/file-types/azure-pipelines.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/azure-pipelines.svg)<br>[packages/ui/src/assets/icons/file-types/buildkite.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/buildkite.svg)<br>[packages/ui/src/assets/icons/file-types/circleci_light.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/circleci_light.svg)<br>[packages/ui/src/assets/icons/file-types/circleci.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/circleci.svg)<br>[packages/ui/src/assets/icons/file-types/jenkins.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/jenkins.svg)<br>[.github/workflows/beta.yml](../../../../sources/anomalyco__opencode/.github/workflows/beta.yml) |
+| 컨테이너/배포 | 7 | [packages/stats/server/Dockerfile](../../../../sources/anomalyco__opencode/packages/stats/server/Dockerfile)<br>[packages/opencode/Dockerfile](../../../../sources/anomalyco__opencode/packages/opencode/Dockerfile)<br>[packages/containers/tauri-linux/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/tauri-linux/Dockerfile)<br>[packages/containers/rust/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/rust/Dockerfile)<br>[packages/containers/publish/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/publish/Dockerfile)<br>[packages/containers/bun-node/Dockerfile](../../../../sources/anomalyco__opencode/packages/containers/bun-node/Dockerfile) |
+| 보안/정책 | 87 | [SECURITY.md](../../../../sources/anomalyco__opencode/SECURITY.md)<br>[specs/v2/provider-policy.md](../../../../sources/anomalyco__opencode/specs/v2/provider-policy.md)<br>[packages/ui/src/assets/icons/file-types/folder-guard-open.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-guard-open.svg)<br>[packages/ui/src/assets/icons/file-types/folder-guard.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-guard.svg)<br>[packages/ui/src/assets/icons/file-types/folder-policy-open.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-policy-open.svg)<br>[packages/ui/src/assets/icons/file-types/folder-policy.svg](../../../../sources/anomalyco__opencode/packages/ui/src/assets/icons/file-types/folder-policy.svg) |
+| 에이전트 지시문 | 30 | [AGENTS.md](../../../../sources/anomalyco__opencode/AGENTS.md)<br>[packages/web/src/content/docs/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/agents.mdx)<br>[packages/web/src/content/docs/zh-tw/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-tw/agents.mdx)<br>[packages/web/src/content/docs/zh-cn/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/zh-cn/agents.mdx)<br>[packages/web/src/content/docs/tr/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/tr/agents.mdx)<br>[packages/web/src/content/docs/th/agents.mdx](../../../../sources/anomalyco__opencode/packages/web/src/content/docs/th/agents.mdx) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/web/src/content/docs/mcp-servers.mdx`, `packages/web/src/content/docs/zh-tw/mcp-servers.mdx`, `packages/web/src/content/docs/zh-cn/mcp-servers.mdx`.
-2. Trace execution through entrypoints: `packages/web/src/content/docs/server.mdx`, `packages/web/src/content/docs/zh-tw/server.mdx`, `packages/web/src/content/docs/zh-cn/server.mdx`.
-3. Map agent/tool runtime through: `AGENTS.md`, `CONTEXT.md`, `specs/v2/tools.md`.
-4. Inspect retrieval/memory/indexing through: `packages/web/src/content/docs/index.mdx`, `packages/web/src/content/docs/zh-tw/index.mdx`, `packages/web/src/content/docs/zh-cn/index.mdx`.
-5. Verify behavior through test/eval files: `sdks/vscode/.vscode-test.mjs`, `perf/test-suite.md`, `packages/ui/src/components/apply-patch-file.test.ts`.
+1. 핵심 참조에서 시작: `packages/web/src/content/docs/mcp-servers.mdx`, `packages/web/src/content/docs/zh-tw/mcp-servers.mdx`, `packages/web/src/content/docs/zh-cn/mcp-servers.mdx`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/web/src/content/docs/server.mdx`, `packages/web/src/content/docs/zh-tw/server.mdx`, `packages/web/src/content/docs/zh-cn/server.mdx`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `CONTEXT.md`, `specs/v2/tools.md`.
+4. retrieval/memory/indexing 확인: `packages/web/src/content/docs/index.mdx`, `packages/web/src/content/docs/zh-tw/index.mdx`, `packages/web/src/content/docs/zh-cn/index.mdx`.
+5. test/eval 파일로 동작 검증: `sdks/vscode/.vscode-test.mjs`, `perf/test-suite.md`, `packages/ui/src/components/apply-patch-file.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 5666 files, 710 directories.. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, LICENSE, tests이며, deep-source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 5666 files, 710 directories.. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, LICENSE, tests이며, 심층 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

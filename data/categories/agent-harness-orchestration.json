@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "agent-harness-orchestration",
-  "title": "Agent Harness and Orchestration",
-  "description": "Agent harnesses, multi-agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks.",
+  "title": "에이전트 하네스/오케스트레이션",
+  "description": "agent harness, multi-agent runtime, skills, tools, workflows, task orchestration, production agent framework를 묶은 카테고리입니다.",
   "counts": {
     "total": 2650,
     "reference-material": 1200,

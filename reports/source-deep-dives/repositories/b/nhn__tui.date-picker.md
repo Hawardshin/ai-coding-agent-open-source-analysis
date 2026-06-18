@@ -1,63 +1,63 @@
-# nhn/tui.date-picker Source Deep Dive
+# nhn/tui.date-picker 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Component that selects specific date.
 
 ## 요약
 
-- 조사 단위: `sources/nhn__tui.date-picker` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 74 files, 24 directories, depth score 80, key references 11개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/nhn__tui.date-picker` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 74 files, 24 directories, depth score 74, key references 11개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-일반 AI 오픈소스 관점에서 retrieval/vector path, spec/docs-driven, eval/test harness 구조로 읽힌다. 핵심 소스 근거는 config=package.json이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 11개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+일반 AI 오픈소스 관점에서 retrieval/vector path, spec/docs-driven, eval/test harness 구조로 읽힌다. 핵심 소스 근거는 config=package.json이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 11개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | nhn/tui.date-picker |
-| Topic | General AI Open Source / 일반 AI 오픈소스 |
+| 레포 | nhn/tui.date-picker |
+| 주제 | 일반 AI 오픈소스 / 일반 AI 오픈소스 |
 | Region | korea |
 | Language | JavaScript |
 | Stars | 99 |
 | Forks | 31 |
 | License | MIT |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/nhn__tui.date-picker](../../../../sources/nhn__tui.date-picker) |
-| Existing report | [reports/korea-trending/repositories/nhn__tui.date-picker.md](../../../korea-trending/repositories/nhn__tui.date-picker.md) |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/nhn__tui.date-picker](../../../../sources/nhn__tui.date-picker) |
+| 기존 보고서 | [reports/korea-trending/repositories/nhn__tui.date-picker.md](../../../korea-trending/repositories/nhn__tui.date-picker.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 74 / 24 |
-| Max observed depth | 5 |
-| Top directories | .github, docs, examples, src, test |
-| Top extensions | .js: 39, .md: 11, .html: 9, .json: 4, (none): 3, .css: 2, .png: 2, .ts: 2, .yml: 2 |
-| Source patterns | retrieval/vector path, spec/docs-driven, eval/test harness |
+| 파일 / 디렉터리 | 74 / 24 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | .github, docs, examples, src, test |
+| 상위 확장자 | .js: 39, .md: 11, .html: 9, .json: 4, (none): 3, .css: 2, .png: 2, .ts: 2, .yml: 2 |
+| 소스 패턴 | retrieval/vector path, spec/docs-driven, eval/test harness |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 7 |
 | docs | documentation surface | 6 |
@@ -66,9 +66,9 @@ Component that selects specific date.
 | test | validation surface | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | test | package.json | test | jest |
 | build | package.json | bundle | webpack --mode=production && webpack --mode=production --minify && node tsBannerGenerator.js |
@@ -79,24 +79,24 @@ Component that selects specific date.
 | utility | package.json | note | tui-note |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | config | [package.json](../../../../sources/nhn__tui.date-picker/package.json) | config signal |
 | docs | [README.md](../../../../sources/nhn__tui.date-picker/README.md) | docs signal |
@@ -111,55 +111,55 @@ Component that selects specific date.
 | manifest-entrypoint | [index.d.ts](../../../../sources/nhn__tui.date-picker/index.d.ts) | package manifest entrypoint |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
-| agentRuntime | 0 | not obvious |
-| mcp | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
+| agentRuntime | 0 | 명확하지 않음 |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 7 | [index.d.ts](../../../../sources/nhn__tui.date-picker/index.d.ts)<br>[src/template/datepicker/index.js](../../../../sources/nhn__tui.date-picker/src/template/datepicker/index.js)<br>[src/js/index.js](../../../../sources/nhn__tui.date-picker/src/js/index.js)<br>[src/js/rangeModel/index.js](../../../../sources/nhn__tui.date-picker/src/js/rangeModel/index.js)<br>[src/js/dateRangePicker/index.js](../../../../sources/nhn__tui.date-picker/src/js/dateRangePicker/index.js)<br>[src/js/datepicker/index.js](../../../../sources/nhn__tui.date-picker/src/js/datepicker/index.js)<br>[src/js/calendar/index.js](../../../../sources/nhn__tui.date-picker/src/js/calendar/index.js) |
 | spec | 10 | [test/dateTimeFormatter.spec.js](../../../../sources/nhn__tui.date-picker/test/dateTimeFormatter.spec.js)<br>[test/dateUtil.spec.js](../../../../sources/nhn__tui.date-picker/test/dateUtil.spec.js)<br>[test/rangeModel/range.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/range.spec.js)<br>[test/rangeModel/rangeModel.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/rangeModel.spec.js)<br>[test/dateRangePicker/dateRangePicker.spec.js](../../../../sources/nhn__tui.date-picker/test/dateRangePicker/dateRangePicker.spec.js)<br>[test/datepicker/datepicker.spec.js](../../../../sources/nhn__tui.date-picker/test/datepicker/datepicker.spec.js)<br>[test/calendar/body.spec.js](../../../../sources/nhn__tui.date-picker/test/calendar/body.spec.js)<br>[test/calendar/calendar.spec.js](../../../../sources/nhn__tui.date-picker/test/calendar/calendar.spec.js) |
 | eval | 12 | [test/dateTimeFormatter.spec.js](../../../../sources/nhn__tui.date-picker/test/dateTimeFormatter.spec.js)<br>[test/dateUtil.spec.js](../../../../sources/nhn__tui.date-picker/test/dateUtil.spec.js)<br>[test/types/type-tests.ts](../../../../sources/nhn__tui.date-picker/test/types/type-tests.ts)<br>[test/rangeModel/range.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/range.spec.js)<br>[test/rangeModel/rangeModel.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/rangeModel.spec.js)<br>[test/dateRangePicker/dateRangePicker.spec.js](../../../../sources/nhn__tui.date-picker/test/dateRangePicker/dateRangePicker.spec.js)<br>[test/datepicker/datepicker.spec.js](../../../../sources/nhn__tui.date-picker/test/datepicker/datepicker.spec.js)<br>[test/calendar/body.spec.js](../../../../sources/nhn__tui.date-picker/test/calendar/body.spec.js) |
-| security | 0 | not obvious |
+| security | 0 | 명확하지 않음 |
 | ci | 1 | [.github/workflows/test_on_pull_request.yml](../../../../sources/nhn__tui.date-picker/.github/workflows/test_on_pull_request.yml) |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 6 | [README.md](../../../../sources/nhn__tui.date-picker/README.md)<br>[docs/COMMIT_MESSAGE_CONVENTION.md](../../../../sources/nhn__tui.date-picker/docs/COMMIT_MESSAGE_CONVENTION.md)<br>[docs/getting-started.md](../../../../sources/nhn__tui.date-picker/docs/getting-started.md)<br>[docs/PULL_REQUEST_TEMPLATE.md](../../../../sources/nhn__tui.date-picker/docs/PULL_REQUEST_TEMPLATE.md)<br>[docs/README.md](../../../../sources/nhn__tui.date-picker/docs/README.md)<br>[docs/v3.0.0-migration-guide.md](../../../../sources/nhn__tui.date-picker/docs/v3.0.0-migration-guide.md) |
 | config | 1 | [package.json](../../../../sources/nhn__tui.date-picker/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 12 | [test/dateTimeFormatter.spec.js](../../../../sources/nhn__tui.date-picker/test/dateTimeFormatter.spec.js)<br>[test/dateUtil.spec.js](../../../../sources/nhn__tui.date-picker/test/dateUtil.spec.js)<br>[test/types/type-tests.ts](../../../../sources/nhn__tui.date-picker/test/types/type-tests.ts)<br>[test/rangeModel/range.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/range.spec.js)<br>[test/rangeModel/rangeModel.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/rangeModel.spec.js)<br>[test/dateRangePicker/dateRangePicker.spec.js](../../../../sources/nhn__tui.date-picker/test/dateRangePicker/dateRangePicker.spec.js) |
-| CI workflows | 1 | [.github/workflows/test_on_pull_request.yml](../../../../sources/nhn__tui.date-picker/.github/workflows/test_on_pull_request.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 0 | not obvious |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 12 | [test/dateTimeFormatter.spec.js](../../../../sources/nhn__tui.date-picker/test/dateTimeFormatter.spec.js)<br>[test/dateUtil.spec.js](../../../../sources/nhn__tui.date-picker/test/dateUtil.spec.js)<br>[test/types/type-tests.ts](../../../../sources/nhn__tui.date-picker/test/types/type-tests.ts)<br>[test/rangeModel/range.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/range.spec.js)<br>[test/rangeModel/rangeModel.spec.js](../../../../sources/nhn__tui.date-picker/test/rangeModel/rangeModel.spec.js)<br>[test/dateRangePicker/dateRangePicker.spec.js](../../../../sources/nhn__tui.date-picker/test/dateRangePicker/dateRangePicker.spec.js) |
+| CI workflow | 1 | [.github/workflows/test_on_pull_request.yml](../../../../sources/nhn__tui.date-picker/.github/workflows/test_on_pull_request.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 0 | 명확하지 않음 |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | container/deploy path not obvious |
-| security | security/policy surface not obvious |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | security/policy 표면이 명확하지 않음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `package.json`, `README.md`, `docs/COMMIT_MESSAGE_CONVENTION.md`.
-2. Inspect retrieval/memory/indexing through: `index.d.ts`, `src/template/datepicker/index.js`, `src/js/index.js`.
-3. Verify behavior through test/eval files: `test/dateTimeFormatter.spec.js`, `test/dateUtil.spec.js`, `test/types/type-tests.ts`.
+1. 핵심 참조에서 시작: `package.json`, `README.md`, `docs/COMMIT_MESSAGE_CONVENTION.md`.
+2. retrieval/memory/indexing 확인: `index.d.ts`, `src/template/datepicker/index.js`, `src/js/index.js`.
+3. test/eval 파일로 동작 검증: `test/dateTimeFormatter.spec.js`, `test/dateUtil.spec.js`, `test/types/type-tests.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-일반 AI 오픈소스 관점에서 Component that selects specific date.. 핵심 구조 신호는 JavaScript, package.json, README.md, LICENSE, tests, ci이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+일반 AI 오픈소스 관점에서 Component that selects specific date.. 핵심 구조 신호는 JavaScript, package.json, README.md, LICENSE, tests, ci이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

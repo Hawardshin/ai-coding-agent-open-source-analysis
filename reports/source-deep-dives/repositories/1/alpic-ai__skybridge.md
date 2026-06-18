@@ -1,63 +1,63 @@
-# alpic-ai/skybridge Source Deep Dive
+# alpic-ai/skybridge 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Skybridge is a full-stack TypeScript framework for MCP Apps and ChatGPT Apps. Type-safe. React-powered. Platform-agnostic.
 
 ## 요약
 
-- 조사 단위: `sources/alpic-ai__skybridge` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 813 files, 165 directories, depth score 131, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/alpic-ai__skybridge` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 813 files, 165 directories, depth score 125, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=skills/mcp-app-builder/SKILL.md, packages/devtools/src/lib/mcp/browser-oauth-provider.ts, packages/devtools/src/lib/mcp/client.ts이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=skills/mcp-app-builder/SKILL.md, packages/devtools/src/lib/mcp/browser-oauth-provider.ts, packages/devtools/src/lib/mcp/client.ts이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | alpic-ai/skybridge |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | alpic-ai/skybridge |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 1754 |
 | Forks | 102 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/alpic-ai__skybridge](../../../../sources/alpic-ai__skybridge) |
-| Existing report | [reports/global-trending/repositories/alpic-ai__skybridge.md](../../../global-trending/repositories/alpic-ai__skybridge.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/alpic-ai__skybridge](../../../../sources/alpic-ai__skybridge) |
+| 기존 보고서 | [reports/global-trending/repositories/alpic-ai__skybridge.md](../../../global-trending/repositories/alpic-ai__skybridge.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 813 / 165 |
-| Max observed depth | 9 |
-| Top directories | .claude, .github, docs, examples, infrastructure, landing, packages, scripts, skills |
-| Top extensions | .ts: 260, .tsx: 124, .json: 98, .mdx: 68, .webp: 64, .png: 45, .md: 44, .svg: 26, .css: 21, (none): 21, .example: 7, .jpg: 6 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 813 / 165 |
+| 관측 최대 깊이 | 9 |
+| 상위 디렉터리 | .claude, .github, docs, examples, infrastructure, landing, packages, scripts, skills |
+| 상위 확장자 | .ts: 260, .tsx: 124, .json: 98, .mdx: 68, .webp: 64, .png: 45, .md: 44, .svg: 26, .css: 21, (none): 21, .example: 7, .jpg: 6 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/core | packages workspace | 56 |
 | packages/devtools | packages workspace | 47 |
@@ -79,9 +79,9 @@ Skybridge is a full-stack TypeScript framework for MCP Apps and ChatGPT Apps. Ty
 | examples/auth-auth0 | examples workspace | 2 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | build | pnpm --filter "./packages/*" build |
 | test | package.json | test | pnpm -r --if-present test |
@@ -92,24 +92,24 @@ Skybridge is a full-stack TypeScript framework for MCP Apps and ChatGPT Apps. Ty
 | utility | package.json | bump | node scripts/bump.js && pnpm i |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [skills/mcp-app-builder/SKILL.md](../../../../sources/alpic-ai__skybridge/skills/mcp-app-builder/SKILL.md) | mcp signal |
 | mcp | [packages/devtools/src/lib/mcp/browser-oauth-provider.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/src/lib/mcp/browser-oauth-provider.ts) | mcp signal |
@@ -125,9 +125,9 @@ Skybridge is a full-stack TypeScript framework for MCP Apps and ChatGPT Apps. Ty
 | instruction | [packages/create-skybridge/templates/demo/AGENTS.md](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/AGENTS.md) | instruction signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 47 | [packages/devtools/src/App.tsx](../../../../sources/alpic-ai__skybridge/packages/devtools/src/App.tsx)<br>[packages/devtools/src/index.css](../../../../sources/alpic-ai__skybridge/packages/devtools/src/index.css)<br>[packages/devtools/src/index.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/src/index.ts)<br>[packages/devtools/src/main.tsx](../../../../sources/alpic-ai__skybridge/packages/devtools/src/main.tsx)<br>[packages/devtools/e2e/fixtures/server.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/fixtures/server.ts)<br>[packages/create-skybridge/templates/demo/src/index.css](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/src/index.css)<br>[packages/create-skybridge/templates/demo/src/server.ts](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/src/server.ts)<br>[packages/create-skybridge/templates/blank/src/server.ts](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/blank/src/server.ts) |
 | agentRuntime | 96 | [AGENTS.md](../../../../sources/alpic-ai__skybridge/AGENTS.md)<br>[skills/skybridge/SKILL.md](../../../../sources/alpic-ai__skybridge/skills/skybridge/SKILL.md)<br>[skills/mcp-app-builder/SKILL.md](../../../../sources/alpic-ai__skybridge/skills/mcp-app-builder/SKILL.md)<br>[skills/chatgpt-app-builder/SKILL.md](../../../../sources/alpic-ai__skybridge/skills/chatgpt-app-builder/SKILL.md)<br>[skills/chatgpt-app-builder/references/architecture.md](../../../../sources/alpic-ai__skybridge/skills/chatgpt-app-builder/references/architecture.md)<br>[skills/chatgpt-app-builder/references/copy-template.md](../../../../sources/alpic-ai__skybridge/skills/chatgpt-app-builder/references/copy-template.md)<br>[skills/chatgpt-app-builder/references/csp.md](../../../../sources/alpic-ai__skybridge/skills/chatgpt-app-builder/references/csp.md)<br>[skills/chatgpt-app-builder/references/deploy.md](../../../../sources/alpic-ai__skybridge/skills/chatgpt-app-builder/references/deploy.md) |
@@ -143,39 +143,39 @@ Skybridge is a full-stack TypeScript framework for MCP Apps and ChatGPT Apps. Ty
 | config | 48 | [package.json](../../../../sources/alpic-ai__skybridge/package.json)<br>[pnpm-workspace.yaml](../../../../sources/alpic-ai__skybridge/pnpm-workspace.yaml)<br>[packages/devtools/package.json](../../../../sources/alpic-ai__skybridge/packages/devtools/package.json)<br>[packages/devtools/tsconfig.json](../../../../sources/alpic-ai__skybridge/packages/devtools/tsconfig.json)<br>[packages/devtools/e2e/tsconfig.json](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tsconfig.json)<br>[packages/create-skybridge/package.json](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/package.json)<br>[packages/create-skybridge/tsconfig.json](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/tsconfig.json)<br>[packages/create-skybridge/templates/demo/package.json](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 51 | [packages/devtools/e2e/tests/auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/auth.spec.ts)<br>[packages/devtools/e2e/tests/every-input-type.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/every-input-type.spec.ts)<br>[packages/devtools/e2e/tests/mixed-auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/mixed-auth.spec.ts)<br>[packages/devtools/e2e/tests/smoke.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/smoke.spec.ts)<br>[packages/create-skybridge/src/index.test.ts](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/src/index.test.ts)<br>[packages/core/src/web/create-store.test.ts](../../../../sources/alpic-ai__skybridge/packages/core/src/web/create-store.test.ts) |
-| CI workflows | 4 | [.github/workflows/ci.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/ci.yml)<br>[.github/workflows/deploy-infra.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/deploy-infra.yml)<br>[.github/workflows/deploy-landing.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/deploy-landing.yml)<br>[.github/workflows/publish.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/publish.yml) |
-| Containers / deploy | 2 | [packages/create-skybridge/templates/demo/Dockerfile](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/Dockerfile)<br>[packages/create-skybridge/templates/blank/Dockerfile](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/blank/Dockerfile) |
-| Security / policy | 72 | [SECURITY.md](../../../../sources/alpic-ai__skybridge/SECURITY.md)<br>[skills/chatgpt-app-builder/references/oauth.md](../../../../sources/alpic-ai__skybridge/skills/chatgpt-app-builder/references/oauth.md)<br>[packages/devtools/src/lib/auth-store.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/src/lib/auth-store.ts)<br>[packages/devtools/src/lib/mcp/browser-oauth-provider.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/src/lib/mcp/browser-oauth-provider.ts)<br>[packages/devtools/e2e/tests/auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/auth.spec.ts)<br>[packages/devtools/e2e/tests/mixed-auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/mixed-auth.spec.ts) |
-| Agent instructions | 5 | [AGENTS.md](../../../../sources/alpic-ai__skybridge/AGENTS.md)<br>[packages/create-skybridge/templates/demo/AGENTS.md](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/AGENTS.md)<br>[packages/create-skybridge/templates/blank/AGENTS.md](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/blank/AGENTS.md)<br>[landing/CLAUDE.md](../../../../sources/alpic-ai__skybridge/landing/CLAUDE.md)<br>[examples/investigation-game/AGENTS.md](../../../../sources/alpic-ai__skybridge/examples/investigation-game/AGENTS.md) |
+| 테스트/평가 | 51 | [packages/devtools/e2e/tests/auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/auth.spec.ts)<br>[packages/devtools/e2e/tests/every-input-type.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/every-input-type.spec.ts)<br>[packages/devtools/e2e/tests/mixed-auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/mixed-auth.spec.ts)<br>[packages/devtools/e2e/tests/smoke.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/smoke.spec.ts)<br>[packages/create-skybridge/src/index.test.ts](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/src/index.test.ts)<br>[packages/core/src/web/create-store.test.ts](../../../../sources/alpic-ai__skybridge/packages/core/src/web/create-store.test.ts) |
+| CI workflow | 4 | [.github/workflows/ci.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/ci.yml)<br>[.github/workflows/deploy-infra.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/deploy-infra.yml)<br>[.github/workflows/deploy-landing.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/deploy-landing.yml)<br>[.github/workflows/publish.yml](../../../../sources/alpic-ai__skybridge/.github/workflows/publish.yml) |
+| 컨테이너/배포 | 2 | [packages/create-skybridge/templates/demo/Dockerfile](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/Dockerfile)<br>[packages/create-skybridge/templates/blank/Dockerfile](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/blank/Dockerfile) |
+| 보안/정책 | 72 | [SECURITY.md](../../../../sources/alpic-ai__skybridge/SECURITY.md)<br>[skills/chatgpt-app-builder/references/oauth.md](../../../../sources/alpic-ai__skybridge/skills/chatgpt-app-builder/references/oauth.md)<br>[packages/devtools/src/lib/auth-store.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/src/lib/auth-store.ts)<br>[packages/devtools/src/lib/mcp/browser-oauth-provider.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/src/lib/mcp/browser-oauth-provider.ts)<br>[packages/devtools/e2e/tests/auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/auth.spec.ts)<br>[packages/devtools/e2e/tests/mixed-auth.spec.ts](../../../../sources/alpic-ai__skybridge/packages/devtools/e2e/tests/mixed-auth.spec.ts) |
+| 에이전트 지시문 | 5 | [AGENTS.md](../../../../sources/alpic-ai__skybridge/AGENTS.md)<br>[packages/create-skybridge/templates/demo/AGENTS.md](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/demo/AGENTS.md)<br>[packages/create-skybridge/templates/blank/AGENTS.md](../../../../sources/alpic-ai__skybridge/packages/create-skybridge/templates/blank/AGENTS.md)<br>[landing/CLAUDE.md](../../../../sources/alpic-ai__skybridge/landing/CLAUDE.md)<br>[examples/investigation-game/AGENTS.md](../../../../sources/alpic-ai__skybridge/examples/investigation-game/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `skills/mcp-app-builder/SKILL.md`, `packages/devtools/src/lib/mcp/browser-oauth-provider.ts`, `packages/devtools/src/lib/mcp/client.ts`.
-2. Trace execution through entrypoints: `packages/devtools/src/App.tsx`, `packages/devtools/src/index.css`, `packages/devtools/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `skills/skybridge/SKILL.md`, `skills/mcp-app-builder/SKILL.md`.
-4. Inspect retrieval/memory/indexing through: `packages/devtools/index.html`, `packages/devtools/src/index.css`, `packages/devtools/src/index.ts`.
-5. Verify behavior through test/eval files: `packages/devtools/e2e/tests/auth.spec.ts`, `packages/devtools/e2e/tests/every-input-type.spec.ts`, `packages/devtools/e2e/tests/mixed-auth.spec.ts`.
+1. 핵심 참조에서 시작: `skills/mcp-app-builder/SKILL.md`, `packages/devtools/src/lib/mcp/browser-oauth-provider.ts`, `packages/devtools/src/lib/mcp/client.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/devtools/src/App.tsx`, `packages/devtools/src/index.css`, `packages/devtools/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `skills/skybridge/SKILL.md`, `skills/mcp-app-builder/SKILL.md`.
+4. retrieval/memory/indexing 확인: `packages/devtools/index.html`, `packages/devtools/src/index.css`, `packages/devtools/src/index.ts`.
+5. test/eval 파일로 동작 검증: `packages/devtools/e2e/tests/auth.spec.ts`, `packages/devtools/e2e/tests/every-input-type.spec.ts`, `packages/devtools/e2e/tests/mixed-auth.spec.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Skybridge is a full stack TypeScript framework for MCP Apps and ChatGPT Apps. Type safe. React powered. Platform agnosti. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, LICENSE, ci이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Skybridge is a full stack TypeScript framework for MCP Apps and ChatGPT Apps. Type safe. React powered. Platform agnosti. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, LICENSE, ci이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

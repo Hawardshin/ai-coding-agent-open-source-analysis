@@ -1,63 +1,63 @@
-# Natively-AI-assistant/natively-cluely-ai-assistant Source Deep Dive
+# Natively-AI-assistant/natively-cluely-ai-assistant 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Natively — Free open-source AI meeting assistant, interview copilot, and note taker. The best alternative to Cluely, Otter, Granola, Final Round AI, Fireflies, and Interview Coder. Real-time transcription, AI meeting notes, lecture recording, local RAG, BYOK, and stealth mode. Runs locally. No subscriptions. No data breaches.
 
 ## 요약
 
-- 조사 단위: `sources/Natively-AI-assistant__natively-cluely-ai-assistant` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,225 files, 129 directories, depth score 124, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/Natively-AI-assistant__natively-cluely-ai-assistant` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,225 files, 129 directories, depth score 118, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json이고, 의존성 단서는 openai, anthropic, react, electron, transformers, playwright, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=.mcp.json이고, 의존성 단서는 openai, anthropic, react, electron, transformers, playwright, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | Natively-AI-assistant/natively-cluely-ai-assistant |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | Natively-AI-assistant/natively-cluely-ai-assistant |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 1491 |
 | Forks | 356 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/Natively-AI-assistant__natively-cluely-ai-assistant](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant) |
-| Existing report | [reports/global-trending/repositories/Natively-AI-assistant__natively-cluely-ai-assistant.md](../../../global-trending/repositories/Natively-AI-assistant__natively-cluely-ai-assistant.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/Natively-AI-assistant__natively-cluely-ai-assistant](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant) |
+| 기존 보고서 | [reports/global-trending/repositories/Natively-AI-assistant__natively-cluely-ai-assistant.md](../../../global-trending/repositories/Natively-AI-assistant__natively-cluely-ai-assistant.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1225 / 129 |
-| Max observed depth | 6 |
-| Top directories | .github, assets, docs, electron, native-module, natively-api, natively-browser, premium, renderer, resources, scripts, src, tests, worker-script |
-| Top extensions | .mjs: 430, .ts: 247, .md: 100, .woff2: 74, .tsx: 62, .png: 60, .otf: 38, .ttf: 38, .json: 37, .js: 18, .txt: 17, .mts: 15 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, ui/extension surface |
+| 파일 / 디렉터리 | 1225 / 129 |
+| 관측 최대 깊이 | 6 |
+| 상위 디렉터리 | .github, assets, docs, electron, native-module, natively-api, natively-browser, premium, renderer, resources, scripts, src, tests, worker-script |
+| 상위 확장자 | .mjs: 430, .ts: 247, .md: 100, .woff2: 74, .tsx: 62, .png: 60, .otf: 38, .ttf: 38, .json: 37, .js: 18, .txt: 17, .mts: 15 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, ui/extension surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 62 |
 | docs | documentation surface | 52 |
@@ -75,9 +75,9 @@ Natively — Free open-source AI meeting assistant, interview copilot, and note 
 | worker-script | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | clean | rimraf dist dist-electron |
 | serve-dev | package.json | dev | vite |
@@ -121,24 +121,24 @@ Natively — Free open-source AI meeting assistant, interview copilot, and note 
 | utility | package.json | benchmark:manual-regression | cross-env NODE_NO_WARNINGS=1 BENCHMARK_MODEL=gemini-3.1-flash-lite node benchmarks/profile-intelligence/run_manual_chat_regression.ts |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | transformers |
 | webRuntime | react |
 | developerSurface | electron |
-| observability | none |
+| observability | 없음 |
 | browserAutomation | playwright |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [.mcp.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.mcp.json) | mcp signal |
 | agentRuntime | [tests/intelligence/memory-context/dataset.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence/memory-context/dataset.mjs) | agentRuntime signal |
@@ -154,9 +154,9 @@ Natively — Free open-source AI meeting assistant, interview copilot, and note 
 | config | [renderer/package.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/package.json) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 9 | [src/App.tsx](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/src/App.tsx)<br>[src/index.css](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/src/index.css)<br>[src/main.tsx](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/src/main.tsx)<br>[renderer/src/App.css](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/src/App.css)<br>[renderer/src/App.test.tsx](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/src/App.test.tsx)<br>[renderer/src/App.tsx](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/src/App.tsx)<br>[renderer/src/index.css](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/src/index.css)<br>[renderer/src/index.tsx](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/src/index.tsx) |
 | agentRuntime | 14 | [tests/intelligence/memory-context/dataset.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence/memory-context/dataset.mjs)<br>[tests/intelligence/memory-context/run-verification.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence/memory-context/run-verification.mjs)<br>[src/hooks/useResolvedTheme.ts](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/src/hooks/useResolvedTheme.ts)<br>[src/hooks/useShortcuts.ts](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/src/hooks/useShortcuts.ts)<br>[src/hooks/useStreamBuffer.ts](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/src/hooks/useStreamBuffer.ts)<br>[electron/test/memory-leak-long-session.test.ts](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/electron/test/memory-leak-long-session.test.ts)<br>[electron/services/context/ContextPacket.ts](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/electron/services/context/ContextPacket.ts)<br>[electron/services/context/PromptAssembler.ts](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/electron/services/context/PromptAssembler.ts) |
@@ -166,45 +166,45 @@ Natively — Free open-source AI meeting assistant, interview copilot, and note 
 | eval | 494 | [tests/utils/createModeTestFixtures.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/createModeTestFixtures.mjs)<br>[tests/utils/internetFixtureCollector.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/internetFixtureCollector.mjs)<br>[tests/utils/profileIntelligenceSeeder.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/profileIntelligenceSeeder.mjs)<br>[tests/utils/referenceFileFactory.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/referenceFileFactory.mjs)<br>[tests/utils/scenarioRunner.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/scenarioRunner.mjs)<br>[tests/intelligence-fixtures/fixture-set.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence-fixtures/fixture-set.mjs)<br>[tests/intelligence/memory-context/dataset.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence/memory-context/dataset.mjs)<br>[tests/intelligence/memory-context/run-verification.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence/memory-context/run-verification.mjs) |
 | security | 19 | [SECURITY.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/SECURITY.md)<br>[tests/fixtures/modes/sales/sales_pricing_policy.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/sales/sales_pricing_policy.json)<br>[tests/fixtures/modes/sales/sales_security_faq.html](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/sales/sales_security_faq.html)<br>[tests/fixtures/modes/recruiting/recruiting_compensation_policy.txt](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/recruiting/recruiting_compensation_policy.txt)<br>[tests/fixtures/modes/recruiting/recruiting_hiring_policy.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/recruiting/recruiting_hiring_policy.json)<br>[tests/fixtures/modes/negotiation/neg_refund_policy.html](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/negotiation/neg_refund_policy.html)<br>[tests/fixtures/modes/negotiation/neg_saas_discount_policy.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/negotiation/neg_saas_discount_policy.json)<br>[tests/fixtures/modes/custom/support/support_refund_policy.xml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/custom/support/support_refund_policy.xml) |
 | ci | 3 | [.github/workflows/build-smoke.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/build-smoke.yml)<br>[.github/workflows/react-doctor.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/react-doctor.yml)<br>[.github/workflows/release-macos.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/release-macos.yml) |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 70 | [README.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/README.md)<br>[tests/intelligence/e2e/fixtures/README.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence/e2e/fixtures/README.md)<br>[natively-browser/README.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/natively-browser/README.md)<br>[docs/00-current-server-audit.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/docs/00-current-server-audit.md)<br>[docs/00b-pre-migration-review-findings.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/docs/00b-pre-migration-review-findings.md)<br>[docs/01-target-stt-relay-architecture.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/docs/01-target-stt-relay-architecture.md)<br>[docs/02-stt-core-extraction.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/docs/02-stt-core-extraction.md)<br>[docs/03-relay-session-token.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/docs/03-relay-session-token.md) |
 | config | 10 | [package.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/package.json)<br>[tsconfig.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tsconfig.json)<br>[renderer/package.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/package.json)<br>[renderer/tsconfig.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/renderer/tsconfig.json)<br>[natively-browser/package.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/natively-browser/package.json)<br>[natively-browser/tsconfig.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/natively-browser/tsconfig.json)<br>[native-module/Cargo.lock](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/native-module/Cargo.lock)<br>[native-module/Cargo.toml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/native-module/Cargo.toml) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 494 | [tests/utils/createModeTestFixtures.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/createModeTestFixtures.mjs)<br>[tests/utils/internetFixtureCollector.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/internetFixtureCollector.mjs)<br>[tests/utils/profileIntelligenceSeeder.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/profileIntelligenceSeeder.mjs)<br>[tests/utils/referenceFileFactory.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/referenceFileFactory.mjs)<br>[tests/utils/scenarioRunner.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/scenarioRunner.mjs)<br>[tests/intelligence-fixtures/fixture-set.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence-fixtures/fixture-set.mjs) |
-| CI workflows | 3 | [.github/workflows/build-smoke.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/build-smoke.yml)<br>[.github/workflows/react-doctor.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/react-doctor.yml)<br>[.github/workflows/release-macos.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/release-macos.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 19 | [SECURITY.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/SECURITY.md)<br>[tests/fixtures/modes/sales/sales_pricing_policy.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/sales/sales_pricing_policy.json)<br>[tests/fixtures/modes/sales/sales_security_faq.html](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/sales/sales_security_faq.html)<br>[tests/fixtures/modes/recruiting/recruiting_compensation_policy.txt](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/recruiting/recruiting_compensation_policy.txt)<br>[tests/fixtures/modes/recruiting/recruiting_hiring_policy.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/recruiting/recruiting_hiring_policy.json)<br>[tests/fixtures/modes/negotiation/neg_refund_policy.html](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/negotiation/neg_refund_policy.html) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 494 | [tests/utils/createModeTestFixtures.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/createModeTestFixtures.mjs)<br>[tests/utils/internetFixtureCollector.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/internetFixtureCollector.mjs)<br>[tests/utils/profileIntelligenceSeeder.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/profileIntelligenceSeeder.mjs)<br>[tests/utils/referenceFileFactory.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/referenceFileFactory.mjs)<br>[tests/utils/scenarioRunner.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/utils/scenarioRunner.mjs)<br>[tests/intelligence-fixtures/fixture-set.mjs](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/intelligence-fixtures/fixture-set.mjs) |
+| CI workflow | 3 | [.github/workflows/build-smoke.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/build-smoke.yml)<br>[.github/workflows/react-doctor.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/react-doctor.yml)<br>[.github/workflows/release-macos.yml](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/.github/workflows/release-macos.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 19 | [SECURITY.md](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/SECURITY.md)<br>[tests/fixtures/modes/sales/sales_pricing_policy.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/sales/sales_pricing_policy.json)<br>[tests/fixtures/modes/sales/sales_security_faq.html](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/sales/sales_security_faq.html)<br>[tests/fixtures/modes/recruiting/recruiting_compensation_policy.txt](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/recruiting/recruiting_compensation_policy.txt)<br>[tests/fixtures/modes/recruiting/recruiting_hiring_policy.json](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/recruiting/recruiting_hiring_policy.json)<br>[tests/fixtures/modes/negotiation/neg_refund_policy.html](../../../../sources/Natively-AI-assistant__natively-cluely-ai-assistant/tests/fixtures/modes/negotiation/neg_refund_policy.html) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | container/deploy path not obvious |
-| security | agent instruction files not obvious |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | agent instruction 파일이 명확하지 않음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `.mcp.json`, `tests/intelligence/memory-context/dataset.mjs`, `tests/intelligence/memory-context/run-verification.mjs`.
-2. Trace execution through entrypoints: `src/App.tsx`, `src/index.css`, `src/main.tsx`.
-3. Map agent/tool runtime through: `tests/intelligence/memory-context/dataset.mjs`, `tests/intelligence/memory-context/run-verification.mjs`, `src/hooks/useResolvedTheme.ts`.
-4. Inspect retrieval/memory/indexing through: `index.html`, `worker-script/node/index.js`, `tests/intelligence/memory-context/dataset.mjs`.
-5. Verify behavior through test/eval files: `tests/utils/createModeTestFixtures.mjs`, `tests/utils/internetFixtureCollector.mjs`, `tests/utils/profileIntelligenceSeeder.mjs`.
+1. 핵심 참조에서 시작: `.mcp.json`, `tests/intelligence/memory-context/dataset.mjs`, `tests/intelligence/memory-context/run-verification.mjs`.
+2. entrypoint를 따라 실행 흐름 확인: `src/App.tsx`, `src/index.css`, `src/main.tsx`.
+3. agent/tool runtime 매핑: `tests/intelligence/memory-context/dataset.mjs`, `tests/intelligence/memory-context/run-verification.mjs`, `src/hooks/useResolvedTheme.ts`.
+4. retrieval/memory/indexing 확인: `index.html`, `worker-script/node/index.js`, `tests/intelligence/memory-context/dataset.mjs`.
+5. test/eval 파일로 동작 검증: `tests/utils/createModeTestFixtures.mjs`, `tests/utils/internetFixtureCollector.mjs`, `tests/utils/profileIntelligenceSeeder.mjs`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Natively — Free open source AI meeting assistant, interview copilot, and note taker. The best alternative to Cluely, Ott. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, openai, anthropic이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Natively — Free open source AI meeting assistant, interview copilot, and note taker. The best alternative to Cluely, Ott. 핵심 구조 신호는 TypeScript, package.json, README.md, LICENSE, openai, anthropic이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

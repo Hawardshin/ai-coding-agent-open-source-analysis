@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-18T15:12:39.601Z",
+  "generatedAt": "2026-06-18T15:31:33.431Z",
   "slug": "ai-infrastructure-serving",
-  "title": "AI Infrastructure and Serving",
-  "description": "LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment.",
+  "title": "AI 인프라/서빙",
+  "description": "LLM serving, inference engine, GPU, AI factory, training/inference infrastructure, Kubernetes, runtime, model deployment를 묶은 카테고리입니다.",
   "counts": {
     "total": 244,
     "reference-material": 19,

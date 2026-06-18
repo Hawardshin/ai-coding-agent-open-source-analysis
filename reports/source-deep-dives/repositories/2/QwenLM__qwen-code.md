@@ -1,63 +1,63 @@
-# QwenLM/qwen-code Source Deep Dive
+# QwenLM/qwen-code 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 3114 files, 460 directories.
 
 ## 요약
 
-- 조사 단위: `sources/QwenLM__qwen-code` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 2,955 files, 437 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/QwenLM__qwen-code` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 2,955 files, 437 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/sdk-typescript/src/mcp/createSdkMcpServer.ts, packages/sdk-typescript/src/mcp/formatters.ts, packages/sdk-typescript/src/mcp/SdkControlServerTransport.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/sdk-typescript/src/mcp/createSdkMcpServer.ts, packages/sdk-typescript/src/mcp/formatters.ts, packages/sdk-typescript/src/mcp/SdkControlServerTransport.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | QwenLM/qwen-code |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | QwenLM/qwen-code |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | mixed |
-| Language | none |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | deep-source+report |
-| Source | [sources/QwenLM__qwen-code](../../../../sources/QwenLM__qwen-code) |
-| Existing report | [reports/clone-structures/QwenLM__qwen-code.md](../../../clone-structures/QwenLM__qwen-code.md) |
+| Language | 없음 |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/QwenLM__qwen-code](../../../../sources/QwenLM__qwen-code) |
+| 기존 보고서 | [reports/clone-structures/QwenLM__qwen-code.md](../../../clone-structures/QwenLM__qwen-code.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 2955 / 437 |
-| Max observed depth | 13 |
-| Top directories | .github, .husky, .qwen, docs, docs-site, eslint-rules, integration-tests, packages, scripts |
-| Top extensions | .ts: 1947, .tsx: 434, .md: 214, .js: 73, .json: 59, .java: 36, .yml: 26, .snap: 25, .py: 24, (none): 23, .sh: 22, .css: 16 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 2955 / 437 |
+| 관측 최대 깊이 | 13 |
+| 상위 디렉터리 | .github, .husky, .qwen, docs, docs-site, eslint-rules, integration-tests, packages, scripts |
+| 상위 확장자 | .ts: 1947, .tsx: 434, .md: 214, .js: 73, .json: 59, .java: 36, .yml: 26, .snap: 25, .py: 24, (none): 23, .sh: 22, .css: 16 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/core | packages workspace | 90 |
 | docs | documentation surface | 62 |
@@ -79,9 +79,9 @@ Local clone structure analysis: 3114 files, 460 directories.
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | start | cross-env node scripts/start.js |
 | serve-dev | package.json | dev | node scripts/dev.js |
@@ -125,24 +125,24 @@ Local clone structure analysis: 3114 files, 460 directories.
 | build | package.json | build:sdk:python | python3 -m build packages/sdk-python |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [packages/sdk-typescript/src/mcp/createSdkMcpServer.ts](../../../../sources/QwenLM__qwen-code/packages/sdk-typescript/src/mcp/createSdkMcpServer.ts) | mcp signal |
 | mcp | [packages/sdk-typescript/src/mcp/formatters.ts](../../../../sources/QwenLM__qwen-code/packages/sdk-typescript/src/mcp/formatters.ts) | mcp signal |
@@ -158,9 +158,9 @@ Local clone structure analysis: 3114 files, 460 directories.
 | entrypoints | [packages/web-templates/src/index.ts](../../../../sources/QwenLM__qwen-code/packages/web-templates/src/index.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 20 | [packages/webui/src/index.ts](../../../../sources/QwenLM__qwen-code/packages/webui/src/index.ts)<br>[packages/webui/src/components/layout/Main.tsx](../../../../sources/QwenLM__qwen-code/packages/webui/src/components/layout/Main.tsx)<br>[packages/webui/.storybook/main.ts](../../../../sources/QwenLM__qwen-code/packages/webui/.storybook/main.ts)<br>[packages/web-templates/src/index.ts](../../../../sources/QwenLM__qwen-code/packages/web-templates/src/index.ts)<br>[packages/web-templates/src/insight/src/App.tsx](../../../../sources/QwenLM__qwen-code/packages/web-templates/src/insight/src/App.tsx)<br>[packages/web-templates/src/export-html/src/index.html](../../../../sources/QwenLM__qwen-code/packages/web-templates/src/export-html/src/index.html)<br>[packages/web-templates/src/export-html/src/main.tsx](../../../../sources/QwenLM__qwen-code/packages/web-templates/src/export-html/src/main.tsx)<br>[packages/sdk-typescript/src/index.ts](../../../../sources/QwenLM__qwen-code/packages/sdk-typescript/src/index.ts) |
 | agentRuntime | 538 | [AGENTS.md](../../../../sources/QwenLM__qwen-code/AGENTS.md)<br>[scripts/sandbox_command.js](../../../../sources/QwenLM__qwen-code/scripts/sandbox_command.js)<br>[packages/webui/src/hooks/useFollowupSuggestions.ts](../../../../sources/QwenLM__qwen-code/packages/webui/src/hooks/useFollowupSuggestions.ts)<br>[packages/webui/src/hooks/useLocalStorage.ts](../../../../sources/QwenLM__qwen-code/packages/webui/src/hooks/useLocalStorage.ts)<br>[packages/webui/src/hooks/useTheme.ts](../../../../sources/QwenLM__qwen-code/packages/webui/src/hooks/useTheme.ts)<br>[packages/webui/src/context/PlatformContext.tsx](../../../../sources/QwenLM__qwen-code/packages/webui/src/context/PlatformContext.tsx)<br>[packages/web-templates/src/export-html/src/components/hooks.ts](../../../../sources/QwenLM__qwen-code/packages/web-templates/src/export-html/src/components/hooks.ts)<br>[packages/vscode-ide-companion/src/webview/hooks/useCompletionTrigger.ts](../../../../sources/QwenLM__qwen-code/packages/vscode-ide-companion/src/webview/hooks/useCompletionTrigger.ts) |
@@ -176,39 +176,39 @@ Local clone structure analysis: 3114 files, 460 directories.
 | config | 42 | [Makefile](../../../../sources/QwenLM__qwen-code/Makefile)<br>[package.json](../../../../sources/QwenLM__qwen-code/package.json)<br>[tsconfig.json](../../../../sources/QwenLM__qwen-code/tsconfig.json)<br>[packages/webui/package.json](../../../../sources/QwenLM__qwen-code/packages/webui/package.json)<br>[packages/webui/tsconfig.json](../../../../sources/QwenLM__qwen-code/packages/webui/tsconfig.json)<br>[packages/web-templates/package.json](../../../../sources/QwenLM__qwen-code/packages/web-templates/package.json)<br>[packages/web-templates/tsconfig.json](../../../../sources/QwenLM__qwen-code/packages/web-templates/tsconfig.json)<br>[packages/web-templates/src/insight/package.json](../../../../sources/QwenLM__qwen-code/packages/web-templates/src/insight/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 1068 | [scripts/benchmark-api-latency.mjs](../../../../sources/QwenLM__qwen-code/scripts/benchmark-api-latency.mjs)<br>[scripts/test-rewind-e2e.sh](../../../../sources/QwenLM__qwen-code/scripts/test-rewind-e2e.sh)<br>[scripts/test-windows-paths.js](../../../../sources/QwenLM__qwen-code/scripts/test-windows-paths.js)<br>[scripts/tests/check-i18n.test.ts](../../../../sources/QwenLM__qwen-code/scripts/tests/check-i18n.test.ts)<br>[scripts/tests/dev.test.js](../../../../sources/QwenLM__qwen-code/scripts/tests/dev.test.js)<br>[scripts/tests/generate-changelog.test.js](../../../../sources/QwenLM__qwen-code/scripts/tests/generate-changelog.test.js) |
-| CI workflows | 20 | [.github/workflows/build-and-publish-image.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/build-and-publish-image.yml)<br>[.github/workflows/check-issue-completeness.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/check-issue-completeness.yml)<br>[.github/workflows/ci.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/ci.yml)<br>[.github/workflows/desktop-release.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/desktop-release.yml)<br>[.github/workflows/docs-page-action.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/docs-page-action.yml)<br>[.github/workflows/e2e.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/e2e.yml) |
-| Containers / deploy | 5 | [Dockerfile](../../../../sources/QwenLM__qwen-code/Dockerfile)<br>[integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/docker-compose.yaml](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/docker-compose.yaml)<br>[integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/Dockerfile](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/Dockerfile)<br>[integration-tests/terminal-bench/ci-tasks/hello-world/docker-compose.yaml](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/hello-world/docker-compose.yaml)<br>[integration-tests/terminal-bench/ci-tasks/hello-world/Dockerfile](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/hello-world/Dockerfile) |
-| Security / policy | 60 | [SECURITY.md](../../../../sources/QwenLM__qwen-code/SECURITY.md)<br>[scripts/build_sandbox.js](../../../../sources/QwenLM__qwen-code/scripts/build_sandbox.js)<br>[scripts/sandbox_command.js](../../../../sources/QwenLM__qwen-code/scripts/sandbox_command.js)<br>[packages/core/src/tools/computer-use/permission-detector.test.ts](../../../../sources/QwenLM__qwen-code/packages/core/src/tools/computer-use/permission-detector.test.ts)<br>[packages/core/src/tools/computer-use/permission-detector.ts](../../../../sources/QwenLM__qwen-code/packages/core/src/tools/computer-use/permission-detector.ts)<br>[packages/core/src/permissions/permission-manager.test.ts](../../../../sources/QwenLM__qwen-code/packages/core/src/permissions/permission-manager.test.ts) |
-| Agent instructions | 1 | [AGENTS.md](../../../../sources/QwenLM__qwen-code/AGENTS.md) |
+| 테스트/평가 | 1068 | [scripts/benchmark-api-latency.mjs](../../../../sources/QwenLM__qwen-code/scripts/benchmark-api-latency.mjs)<br>[scripts/test-rewind-e2e.sh](../../../../sources/QwenLM__qwen-code/scripts/test-rewind-e2e.sh)<br>[scripts/test-windows-paths.js](../../../../sources/QwenLM__qwen-code/scripts/test-windows-paths.js)<br>[scripts/tests/check-i18n.test.ts](../../../../sources/QwenLM__qwen-code/scripts/tests/check-i18n.test.ts)<br>[scripts/tests/dev.test.js](../../../../sources/QwenLM__qwen-code/scripts/tests/dev.test.js)<br>[scripts/tests/generate-changelog.test.js](../../../../sources/QwenLM__qwen-code/scripts/tests/generate-changelog.test.js) |
+| CI workflow | 20 | [.github/workflows/build-and-publish-image.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/build-and-publish-image.yml)<br>[.github/workflows/check-issue-completeness.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/check-issue-completeness.yml)<br>[.github/workflows/ci.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/ci.yml)<br>[.github/workflows/desktop-release.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/desktop-release.yml)<br>[.github/workflows/docs-page-action.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/docs-page-action.yml)<br>[.github/workflows/e2e.yml](../../../../sources/QwenLM__qwen-code/.github/workflows/e2e.yml) |
+| 컨테이너/배포 | 5 | [Dockerfile](../../../../sources/QwenLM__qwen-code/Dockerfile)<br>[integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/docker-compose.yaml](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/docker-compose.yaml)<br>[integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/Dockerfile](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/swe-bench-astropy-1/Dockerfile)<br>[integration-tests/terminal-bench/ci-tasks/hello-world/docker-compose.yaml](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/hello-world/docker-compose.yaml)<br>[integration-tests/terminal-bench/ci-tasks/hello-world/Dockerfile](../../../../sources/QwenLM__qwen-code/integration-tests/terminal-bench/ci-tasks/hello-world/Dockerfile) |
+| 보안/정책 | 60 | [SECURITY.md](../../../../sources/QwenLM__qwen-code/SECURITY.md)<br>[scripts/build_sandbox.js](../../../../sources/QwenLM__qwen-code/scripts/build_sandbox.js)<br>[scripts/sandbox_command.js](../../../../sources/QwenLM__qwen-code/scripts/sandbox_command.js)<br>[packages/core/src/tools/computer-use/permission-detector.test.ts](../../../../sources/QwenLM__qwen-code/packages/core/src/tools/computer-use/permission-detector.test.ts)<br>[packages/core/src/tools/computer-use/permission-detector.ts](../../../../sources/QwenLM__qwen-code/packages/core/src/tools/computer-use/permission-detector.ts)<br>[packages/core/src/permissions/permission-manager.test.ts](../../../../sources/QwenLM__qwen-code/packages/core/src/permissions/permission-manager.test.ts) |
+| 에이전트 지시문 | 1 | [AGENTS.md](../../../../sources/QwenLM__qwen-code/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/sdk-typescript/src/mcp/createSdkMcpServer.ts`, `packages/sdk-typescript/src/mcp/formatters.ts`, `packages/sdk-typescript/src/mcp/SdkControlServerTransport.ts`.
-2. Trace execution through entrypoints: `packages/webui/src/index.ts`, `packages/webui/src/components/layout/Main.tsx`, `packages/webui/.storybook/main.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `scripts/sandbox_command.js`, `packages/webui/src/hooks/useFollowupSuggestions.ts`.
-4. Inspect retrieval/memory/indexing through: `packages/webui/src/index.ts`, `packages/webui/src/components/toolcalls/index.ts`, `packages/webui/src/components/toolcalls/shared/index.ts`.
-5. Verify behavior through test/eval files: `scripts/benchmark-api-latency.mjs`, `scripts/test-rewind-e2e.sh`, `scripts/test-windows-paths.js`.
+1. 핵심 참조에서 시작: `packages/sdk-typescript/src/mcp/createSdkMcpServer.ts`, `packages/sdk-typescript/src/mcp/formatters.ts`, `packages/sdk-typescript/src/mcp/SdkControlServerTransport.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/webui/src/index.ts`, `packages/webui/src/components/layout/Main.tsx`, `packages/webui/.storybook/main.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `scripts/sandbox_command.js`, `packages/webui/src/hooks/useFollowupSuggestions.ts`.
+4. retrieval/memory/indexing 확인: `packages/webui/src/index.ts`, `packages/webui/src/components/toolcalls/index.ts`, `packages/webui/src/components/toolcalls/shared/index.ts`.
+5. test/eval 파일로 동작 검증: `scripts/benchmark-api-latency.mjs`, `scripts/test-rewind-e2e.sh`, `scripts/test-windows-paths.js`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 3114 files, 460 directories.. 핵심 구조 신호는 package.json, Dockerfile, Makefile, README.md, AGENTS.md, react이며, deep-source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 3114 files, 460 directories.. 핵심 구조 신호는 package.json, Dockerfile, Makefile, README.md, AGENTS.md, react이며, 심층 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+mixed 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

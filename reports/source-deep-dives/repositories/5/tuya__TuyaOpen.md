@@ -1,63 +1,63 @@
-# tuya/TuyaOpen Source Deep Dive
+# tuya/TuyaOpen 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Next-gen AI+IoT framework for T2/T3/T5AI/ESP32/and more – Fast IoT and AI Agent hardware integration
 
 ## 요약
 
-- 조사 단위: `sources/tuya__TuyaOpen` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 10,523 files, 1,553 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/tuya__TuyaOpen` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 10,523 files, 1,553 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=src/ai_components/ai_mcp/CMakeLists.txt, src/ai_components/ai_mcp/Kconfig, src/ai_components/ai_mcp/src/ai_mcp_server.c이고, 의존성 단서는 click, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=src/ai_components/ai_mcp/CMakeLists.txt, src/ai_components/ai_mcp/Kconfig, src/ai_components/ai_mcp/src/ai_mcp_server.c이고, 의존성 단서는 click, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | tuya/TuyaOpen |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | tuya/TuyaOpen |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | C |
 | Stars | 1589 |
 | Forks | 270 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/tuya__TuyaOpen](../../../../sources/tuya__TuyaOpen) |
-| Existing report | [reports/global-trending/repositories/tuya__TuyaOpen.md](../../../global-trending/repositories/tuya__TuyaOpen.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/tuya__TuyaOpen](../../../../sources/tuya__TuyaOpen) |
+| 기존 보고서 | [reports/global-trending/repositories/tuya__TuyaOpen.md](../../../global-trending/repositories/tuya__TuyaOpen.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 10523 / 1553 |
-| Max observed depth | 11 |
-| Top directories | .github, apps, boards, docs, examples, platform, src, tests, tools |
-| Top extensions | .c: 3272, .h: 2244, .png: 1267, .bdf: 404, .py: 309, .md: 302, .txt: 293, .rst: 264, (none): 252, .ttf: 225, .config: 224, .cc: 207 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 10523 / 1553 |
+| 관측 최대 깊이 | 11 |
+| 상위 디렉터리 | .github, apps, boards, docs, examples, platform, src, tests, tools |
+| 상위 확장자 | .c: 3272, .h: 2244, .png: 1267, .bdf: 404, .py: 309, .md: 302, .txt: 293, .rst: 264, (none): 252, .ttf: 225, .config: 224, .cc: 207 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 208 |
 | tests | validation surface | 10 |
@@ -75,29 +75,29 @@ Next-gen AI+IoT framework for T2/T3/T5AI/ESP32/and more – Fast IoT and AI Agen
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
 | developerSurface | click |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [src/ai_components/ai_mcp/CMakeLists.txt](../../../../sources/tuya__TuyaOpen/src/ai_components/ai_mcp/CMakeLists.txt) | mcp signal |
 | mcp | [src/ai_components/ai_mcp/Kconfig](../../../../sources/tuya__TuyaOpen/src/ai_components/ai_mcp/Kconfig) | mcp signal |
@@ -113,9 +113,9 @@ _No command surface extracted from root manifests._
 | entrypoints | [src/liblvgl/v8/lvgl/tests/main.py](../../../../sources/tuya__TuyaOpen/src/liblvgl/v8/lvgl/tests/main.py) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 6 | [src/micropython/mpy/tools/mpremote/mpremote/__main__.py](../../../../sources/tuya__TuyaOpen/src/micropython/mpy/tools/mpremote/mpremote/__main__.py)<br>[src/micropython/mpy/tools/mpremote/mpremote/main.py](../../../../sources/tuya__TuyaOpen/src/micropython/mpy/tools/mpremote/mpremote/main.py)<br>[src/liblvgl/v9/lvgl/tests/main.py](../../../../sources/tuya__TuyaOpen/src/liblvgl/v9/lvgl/tests/main.py)<br>[src/liblvgl/v8/lvgl/tests/main.py](../../../../sources/tuya__TuyaOpen/src/liblvgl/v8/lvgl/tests/main.py)<br>[apps/games/lvgl_games/bin/其他游戏_QIO_1.0.0.bin](../../../../sources/tuya__TuyaOpen/apps/games/lvgl_games/bin/其他游戏_QIO_1.0.0.bin)<br>[apps/games/lvgl_games/bin/植物大战僵尸_QIO_1.0.0.bin](../../../../sources/tuya__TuyaOpen/apps/games/lvgl_games/bin/植物大战僵尸_QIO_1.0.0.bin) |
 | agentRuntime | 1717 | [AGENTS.md](../../../../sources/tuya__TuyaOpen/AGENTS.md)<br>[tools/__init__.py](../../../../sources/tuya__TuyaOpen/tools/__init__.py)<br>[tools/build_example.sh](../../../../sources/tuya__TuyaOpen/tools/build_example.sh)<br>[tools/check_format.py](../../../../sources/tuya__TuyaOpen/tools/check_format.py)<br>[tools/convert_types.py](../../../../sources/tuya__TuyaOpen/tools/convert_types.py)<br>[tools/get_conutry.py](../../../../sources/tuya__TuyaOpen/tools/get_conutry.py)<br>[tools/git-mirror.sh](../../../../sources/tuya__TuyaOpen/tools/git-mirror.sh)<br>[tools/gitee_sync.sh](../../../../sources/tuya__TuyaOpen/tools/gitee_sync.sh) |
@@ -131,39 +131,39 @@ _No command surface extracted from root manifests._
 | config | 30 | [pyproject.toml](../../../../sources/tuya__TuyaOpen/pyproject.toml)<br>[uv.lock](../../../../sources/tuya__TuyaOpen/uv.lock)<br>[tools/requirements.txt](../../../../sources/tuya__TuyaOpen/tools/requirements.txt)<br>[tools/porting/template/linux/Makefile](../../../../sources/tuya__TuyaOpen/tools/porting/template/linux/Makefile)<br>[src/micropython/mpy/tools/mpremote/pyproject.toml](../../../../sources/tuya__TuyaOpen/src/micropython/mpy/tools/mpremote/pyproject.toml)<br>[src/micropython/mpy/tools/mpremote/requirements.txt](../../../../sources/tuya__TuyaOpen/src/micropython/mpy/tools/mpremote/requirements.txt)<br>[src/libu8g2/u8g2/tools/png2bin/Makefile](../../../../sources/tuya__TuyaOpen/src/libu8g2/u8g2/tools/png2bin/Makefile)<br>[src/libu8g2/u8g2/tools/mdtoc/Makefile](../../../../sources/tuya__TuyaOpen/src/libu8g2/u8g2/tools/mdtoc/Makefile) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 1566 | [tools/cli_command/cli_monitor.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/cli_monitor.py)<br>[tools/cli_command/tests/__init__.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/tests/__init__.py)<br>[tools/cli_command/tests/test_cli_flash.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/tests/test_cli_flash.py)<br>[tools/cli_command/tests/test_util_tyutool.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/tests/test_util_tyutool.py)<br>[tests/export/README.md](../../../../sources/tuya__TuyaOpen/tests/export/README.md)<br>[tests/export/run_all.sh](../../../../sources/tuya__TuyaOpen/tests/export/run_all.sh) |
-| CI workflows | 4 | [src/libtls/mbedtls-3.1.0/tests/.jenkins/Jenkinsfile](../../../../sources/tuya__TuyaOpen/src/libtls/mbedtls-3.1.0/tests/.jenkins/Jenkinsfile)<br>[.github/workflows/check-build-apps.yml](../../../../sources/tuya__TuyaOpen/.github/workflows/check-build-apps.yml)<br>[.github/workflows/release.yml](../../../../sources/tuya__TuyaOpen/.github/workflows/release.yml)<br>[.github/workflows/sync-to-gitee.yml](../../../../sources/tuya__TuyaOpen/.github/workflows/sync-to-gitee.yml) |
-| Containers / deploy | 2 | [Dockerfile](../../../../sources/tuya__TuyaOpen/Dockerfile)<br>[src/libtls/mbedtls-3.1.0/tests/docker/bionic/Dockerfile](../../../../sources/tuya__TuyaOpen/src/libtls/mbedtls-3.1.0/tests/docker/bionic/Dockerfile) |
-| Security / policy | 32 | [tools/porting/adapter/security/tkl_asymmetrical.h](../../../../sources/tuya__TuyaOpen/tools/porting/adapter/security/tkl_asymmetrical.h)<br>[tools/porting/adapter/security/tkl_hash.h](../../../../sources/tuya__TuyaOpen/tools/porting/adapter/security/tkl_hash.h)<br>[tools/porting/adapter/security/tkl_symmetry.h](../../../../sources/tuya__TuyaOpen/tools/porting/adapter/security/tkl_symmetry.h)<br>[src/tuya_p2p/pjproject/pjnath/src/pjnath/stun_auth.c](../../../../sources/tuya__TuyaOpen/src/tuya_p2p/pjproject/pjnath/src/pjnath/stun_auth.c)<br>[src/tuya_p2p/pjproject/pjnath/include/pjnath/stun_auth.h](../../../../sources/tuya__TuyaOpen/src/tuya_p2p/pjproject/pjnath/include/pjnath/stun_auth.h)<br>[src/tuya_p2p/pjproject/pjlib/src/pj/pool_policy_malloc.c](../../../../sources/tuya__TuyaOpen/src/tuya_p2p/pjproject/pjlib/src/pj/pool_policy_malloc.c) |
-| Agent instructions | 1 | [AGENTS.md](../../../../sources/tuya__TuyaOpen/AGENTS.md) |
+| 테스트/평가 | 1566 | [tools/cli_command/cli_monitor.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/cli_monitor.py)<br>[tools/cli_command/tests/__init__.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/tests/__init__.py)<br>[tools/cli_command/tests/test_cli_flash.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/tests/test_cli_flash.py)<br>[tools/cli_command/tests/test_util_tyutool.py](../../../../sources/tuya__TuyaOpen/tools/cli_command/tests/test_util_tyutool.py)<br>[tests/export/README.md](../../../../sources/tuya__TuyaOpen/tests/export/README.md)<br>[tests/export/run_all.sh](../../../../sources/tuya__TuyaOpen/tests/export/run_all.sh) |
+| CI workflow | 4 | [src/libtls/mbedtls-3.1.0/tests/.jenkins/Jenkinsfile](../../../../sources/tuya__TuyaOpen/src/libtls/mbedtls-3.1.0/tests/.jenkins/Jenkinsfile)<br>[.github/workflows/check-build-apps.yml](../../../../sources/tuya__TuyaOpen/.github/workflows/check-build-apps.yml)<br>[.github/workflows/release.yml](../../../../sources/tuya__TuyaOpen/.github/workflows/release.yml)<br>[.github/workflows/sync-to-gitee.yml](../../../../sources/tuya__TuyaOpen/.github/workflows/sync-to-gitee.yml) |
+| 컨테이너/배포 | 2 | [Dockerfile](../../../../sources/tuya__TuyaOpen/Dockerfile)<br>[src/libtls/mbedtls-3.1.0/tests/docker/bionic/Dockerfile](../../../../sources/tuya__TuyaOpen/src/libtls/mbedtls-3.1.0/tests/docker/bionic/Dockerfile) |
+| 보안/정책 | 32 | [tools/porting/adapter/security/tkl_asymmetrical.h](../../../../sources/tuya__TuyaOpen/tools/porting/adapter/security/tkl_asymmetrical.h)<br>[tools/porting/adapter/security/tkl_hash.h](../../../../sources/tuya__TuyaOpen/tools/porting/adapter/security/tkl_hash.h)<br>[tools/porting/adapter/security/tkl_symmetry.h](../../../../sources/tuya__TuyaOpen/tools/porting/adapter/security/tkl_symmetry.h)<br>[src/tuya_p2p/pjproject/pjnath/src/pjnath/stun_auth.c](../../../../sources/tuya__TuyaOpen/src/tuya_p2p/pjproject/pjnath/src/pjnath/stun_auth.c)<br>[src/tuya_p2p/pjproject/pjnath/include/pjnath/stun_auth.h](../../../../sources/tuya__TuyaOpen/src/tuya_p2p/pjproject/pjnath/include/pjnath/stun_auth.h)<br>[src/tuya_p2p/pjproject/pjlib/src/pj/pool_policy_malloc.c](../../../../sources/tuya__TuyaOpen/src/tuya_p2p/pjproject/pjlib/src/pj/pool_policy_malloc.c) |
+| 에이전트 지시문 | 1 | [AGENTS.md](../../../../sources/tuya__TuyaOpen/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `src/ai_components/ai_mcp/CMakeLists.txt`, `src/ai_components/ai_mcp/Kconfig`, `src/ai_components/ai_mcp/src/ai_mcp_server.c`.
-2. Trace execution through entrypoints: `src/micropython/mpy/tools/mpremote/mpremote/__main__.py`, `src/micropython/mpy/tools/mpremote/mpremote/main.py`, `src/liblvgl/v9/lvgl/tests/main.py`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tools/__init__.py`, `tools/build_example.sh`.
-4. Inspect retrieval/memory/indexing through: `tools/porting/template/linux/tkl_memory.c`, `tools/porting/adapter/system/tkl_memory.h`, `src/tal_system/include/tal_memory.h`.
-5. Verify behavior through test/eval files: `tools/cli_command/cli_monitor.py`, `tools/cli_command/tests/__init__.py`, `tools/cli_command/tests/test_cli_flash.py`.
+1. 핵심 참조에서 시작: `src/ai_components/ai_mcp/CMakeLists.txt`, `src/ai_components/ai_mcp/Kconfig`, `src/ai_components/ai_mcp/src/ai_mcp_server.c`.
+2. entrypoint를 따라 실행 흐름 확인: `src/micropython/mpy/tools/mpremote/mpremote/__main__.py`, `src/micropython/mpy/tools/mpremote/mpremote/main.py`, `src/liblvgl/v9/lvgl/tests/main.py`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tools/__init__.py`, `tools/build_example.sh`.
+4. retrieval/memory/indexing 확인: `tools/porting/template/linux/tkl_memory.c`, `tools/porting/adapter/system/tkl_memory.h`, `src/tal_system/include/tal_memory.h`.
+5. test/eval 파일로 동작 검증: `tools/cli_command/cli_monitor.py`, `tools/cli_command/tests/__init__.py`, `tools/cli_command/tests/test_cli_flash.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Next gen AI+IoT framework for T2/T3/T5AI/ESP32/and more – Fast IoT and AI Agent hardware integration. 핵심 구조 신호는 C, pyproject.toml, Dockerfile, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Next gen AI+IoT framework for T2/T3/T5AI/ESP32/and more – Fast IoT and AI Agent hardware integration. 핵심 구조 신호는 C, pyproject.toml, Dockerfile, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

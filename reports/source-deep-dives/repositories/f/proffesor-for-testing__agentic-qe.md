@@ -1,63 +1,63 @@
-# proffesor-for-testing/agentic-qe Source Deep Dive
+# proffesor-for-testing/agentic-qe 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Agentic QE Fleet is an open-source AI-powered QA/QE platform designed for use with Coding Agents (works best with Claude Code) featuring specialized agents and skills to support testing activities for a product at any stage of the SDLC. Free to use, fork, build, and contribute. Based on the Agentic QE Framework created by Dragan Spiridonov.
 
 ## 요약
 
-- 조사 단위: `sources/proffesor-for-testing__agentic-qe` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 4,720 files, 1,435 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/proffesor-for-testing__agentic-qe` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 4,720 files, 1,435 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=verification/mcp-tool-parity-baseline.json, tests/unit/validation/agent-mcp-validator.test.ts, tests/unit/mcp/heartbeat-handlers.test.ts이고, 의존성 단서는 claude, commander, transformers, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=verification/mcp-tool-parity-baseline.json, tests/unit/validation/agent-mcp-validator.test.ts, tests/unit/mcp/heartbeat-handlers.test.ts이고, 의존성 단서는 claude, commander, transformers, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | proffesor-for-testing/agentic-qe |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | proffesor-for-testing/agentic-qe |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 390 |
 | Forks | 77 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/proffesor-for-testing__agentic-qe](../../../../sources/proffesor-for-testing__agentic-qe) |
-| Existing report | [reports/global-trending/repositories/proffesor-for-testing__agentic-qe.md](../../../global-trending/repositories/proffesor-for-testing__agentic-qe.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/proffesor-for-testing__agentic-qe](../../../../sources/proffesor-for-testing__agentic-qe) |
+| 기존 보고서 | [reports/global-trending/repositories/proffesor-for-testing__agentic-qe.md](../../../global-trending/repositories/proffesor-for-testing__agentic-qe.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 4720 / 1435 |
-| Max observed depth | 7 |
-| Top directories | .agentic-qe, .claude, .claude-plugin, .devcontainer, .github, .husky, .kiro, .opencode, .ruvector, assets, benchmarks, config, docs, examples, fixtures, packages, plugins, reports, schemas, scripts |
-| Top extensions | .ts: 2291, .md: 1403, .json: 510, .yaml: 288, .sh: 71, .cjs: 32, .js: 28, .mjs: 25, .yml: 20, .wasm: 9, (none): 9, .html: 8 |
-| Source patterns | monorepo/workspace, cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 4720 / 1435 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .agentic-qe, .claude, .claude-plugin, .devcontainer, .github, .husky, .kiro, .opencode, .ruvector, assets, benchmarks, config, docs, examples, fixtures, packages, plugins, reports, schemas, scripts |
+| 상위 확장자 | .ts: 2291, .md: 1403, .json: 510, .yaml: 288, .sh: 71, .cjs: 32, .js: 28, .mjs: 25, .yml: 20, .wasm: 9, (none): 9, .html: 8 |
+| 소스 패턴 | monorepo/workspace, cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 236 |
 | src | source boundary | 29 |
@@ -79,9 +79,9 @@ Agentic QE Fleet is an open-source AI-powered QA/QE platform designed for use wi
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | preinstall | node scripts/preinstall.cjs \|\| true |
 | utility | package.json | postinstall | node scripts/postinstall.cjs |
@@ -125,24 +125,24 @@ Agentic QE Fleet is an open-source AI-powered QA/QE platform designed for use wi
 | utility | package.json | performance:gate | npx tsx src/performance/run-gates.ts |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | claude |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | transformers |
-| webRuntime | none |
+| webRuntime | 없음 |
 | developerSurface | commander |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [verification/mcp-tool-parity-baseline.json](../../../../sources/proffesor-for-testing__agentic-qe/verification/mcp-tool-parity-baseline.json) | mcp signal |
 | mcp | [tests/unit/validation/agent-mcp-validator.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/validation/agent-mcp-validator.test.ts) | mcp signal |
@@ -158,9 +158,9 @@ Agentic QE Fleet is an open-source AI-powered QA/QE platform designed for use wi
 | instruction | [CLAUDE.md](../../../../sources/proffesor-for-testing__agentic-qe/CLAUDE.md) | instruction signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 5 | [tests/fixtures/sample-project/src/index.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/fixtures/sample-project/src/index.ts)<br>[src/index.ts](../../../../sources/proffesor-for-testing__agentic-qe/src/index.ts)<br>[packages/aqe-opencode-types/src/index.ts](../../../../sources/proffesor-for-testing__agentic-qe/packages/aqe-opencode-types/src/index.ts)<br>[packages/aqe-opencode-plugin/src/index.ts](../../../../sources/proffesor-for-testing__agentic-qe/packages/aqe-opencode-plugin/src/index.ts)<br>[packages/aqe-opencode-bridge/src/index.ts](../../../../sources/proffesor-for-testing__agentic-qe/packages/aqe-opencode-bridge/src/index.ts) |
 | agentRuntime | 1745 | [tests/validation/opencode/agent-configs.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/validation/opencode/agent-configs.test.ts)<br>[tests/validation/opencode/skill-configs.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/validation/opencode/skill-configs.test.ts)<br>[tests/validation/opencode/tool-wrappers.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/validation/opencode/tool-wrappers.test.ts)<br>[tests/unit/validation/agent-mcp-validator.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/validation/agent-mcp-validator.test.ts)<br>[tests/unit/shared/llm/translation/tool-translator.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/shared/llm/translation/tool-translator.test.ts)<br>[tests/unit/routing/agent-dependency-graph.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/routing/agent-dependency-graph.test.ts)<br>[tests/unit/memory/convergence-tracker.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/memory/convergence-tracker.test.ts)<br>[tests/unit/memory/crdt.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/memory/crdt.test.ts) |
@@ -176,39 +176,39 @@ Agentic QE Fleet is an open-source AI-powered QA/QE platform designed for use wi
 | config | 17 | [package.json](../../../../sources/proffesor-for-testing__agentic-qe/package.json)<br>[tsconfig.json](../../../../sources/proffesor-for-testing__agentic-qe/tsconfig.json)<br>[tests/fixtures/sample-project/package.json](../../../../sources/proffesor-for-testing__agentic-qe/tests/fixtures/sample-project/package.json)<br>[tests/fixtures/sample-project/tsconfig.json](../../../../sources/proffesor-for-testing__agentic-qe/tests/fixtures/sample-project/tsconfig.json)<br>[tests/e2e/package.json](../../../../sources/proffesor-for-testing__agentic-qe/tests/e2e/package.json)<br>[tests/e2e/tsconfig.json](../../../../sources/proffesor-for-testing__agentic-qe/tests/e2e/tsconfig.json)<br>[src/integrations/agent-booster-wasm/package.json](../../../../sources/proffesor-for-testing__agentic-qe/src/integrations/agent-booster-wasm/package.json)<br>[packages/aqe-opencode-types/package.json](../../../../sources/proffesor-for-testing__agentic-qe/packages/aqe-opencode-types/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 1507 | [tests/docker-compose.test.yml](../../../../sources/proffesor-for-testing__agentic-qe/tests/docker-compose.test.yml)<br>[tests/global-teardown.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/global-teardown.ts)<br>[tests/setup-worker.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/setup-worker.ts)<br>[tests/workers/quality-daemon/ci-monitor.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/workers/quality-daemon/ci-monitor.test.ts)<br>[tests/workers/quality-daemon/coverage-delta.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/workers/quality-daemon/coverage-delta.test.ts)<br>[tests/workers/quality-daemon/daemon-cli.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/workers/quality-daemon/daemon-cli.test.ts) |
-| CI workflows | 16 | [.github/workflows/benchmark.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/benchmark.yml)<br>[.github/workflows/coherence.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/coherence.yml)<br>[.github/workflows/consumer-audit.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/consumer-audit.yml)<br>[.github/workflows/init-chaos.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/init-chaos.yml)<br>[.github/workflows/init-corpus-mirror-test.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/init-corpus-mirror-test.yml)<br>[.github/workflows/invariant-check.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/invariant-check.yml) |
-| Containers / deploy | 2 | [Dockerfile](../../../../sources/proffesor-for-testing__agentic-qe/Dockerfile)<br>[tests/docker-compose.test.yml](../../../../sources/proffesor-for-testing__agentic-qe/tests/docker-compose.test.yml) |
-| Security / policy | 280 | [SECURITY.md](../../../../sources/proffesor-for-testing__agentic-qe/SECURITY.md)<br>[tests/unit/workers/workers/compliance-checker.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/workers/workers/compliance-checker.test.ts)<br>[tests/unit/workers/workers/security-scan.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/workers/workers/security-scan.test.ts)<br>[tests/unit/shared/io/file-reader-security.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/shared/io/file-reader-security.test.ts)<br>[tests/unit/mcp/tool-registry-security.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/mcp/tool-registry-security.test.ts)<br>[tests/unit/mcp/security/cve-prevention.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/mcp/security/cve-prevention.test.ts) |
-| Agent instructions | 3 | [CLAUDE.md](../../../../sources/proffesor-for-testing__agentic-qe/CLAUDE.md)<br>[.claude/commands/monitoring/agents.md](../../../../sources/proffesor-for-testing__agentic-qe/.claude/commands/monitoring/agents.md)<br>[.agentic-qe/docs/agents.md](../../../../sources/proffesor-for-testing__agentic-qe/.agentic-qe/docs/agents.md) |
+| 테스트/평가 | 1507 | [tests/docker-compose.test.yml](../../../../sources/proffesor-for-testing__agentic-qe/tests/docker-compose.test.yml)<br>[tests/global-teardown.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/global-teardown.ts)<br>[tests/setup-worker.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/setup-worker.ts)<br>[tests/workers/quality-daemon/ci-monitor.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/workers/quality-daemon/ci-monitor.test.ts)<br>[tests/workers/quality-daemon/coverage-delta.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/workers/quality-daemon/coverage-delta.test.ts)<br>[tests/workers/quality-daemon/daemon-cli.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/workers/quality-daemon/daemon-cli.test.ts) |
+| CI workflow | 16 | [.github/workflows/benchmark.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/benchmark.yml)<br>[.github/workflows/coherence.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/coherence.yml)<br>[.github/workflows/consumer-audit.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/consumer-audit.yml)<br>[.github/workflows/init-chaos.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/init-chaos.yml)<br>[.github/workflows/init-corpus-mirror-test.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/init-corpus-mirror-test.yml)<br>[.github/workflows/invariant-check.yml](../../../../sources/proffesor-for-testing__agentic-qe/.github/workflows/invariant-check.yml) |
+| 컨테이너/배포 | 2 | [Dockerfile](../../../../sources/proffesor-for-testing__agentic-qe/Dockerfile)<br>[tests/docker-compose.test.yml](../../../../sources/proffesor-for-testing__agentic-qe/tests/docker-compose.test.yml) |
+| 보안/정책 | 280 | [SECURITY.md](../../../../sources/proffesor-for-testing__agentic-qe/SECURITY.md)<br>[tests/unit/workers/workers/compliance-checker.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/workers/workers/compliance-checker.test.ts)<br>[tests/unit/workers/workers/security-scan.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/workers/workers/security-scan.test.ts)<br>[tests/unit/shared/io/file-reader-security.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/shared/io/file-reader-security.test.ts)<br>[tests/unit/mcp/tool-registry-security.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/mcp/tool-registry-security.test.ts)<br>[tests/unit/mcp/security/cve-prevention.test.ts](../../../../sources/proffesor-for-testing__agentic-qe/tests/unit/mcp/security/cve-prevention.test.ts) |
+| 에이전트 지시문 | 3 | [CLAUDE.md](../../../../sources/proffesor-for-testing__agentic-qe/CLAUDE.md)<br>[.claude/commands/monitoring/agents.md](../../../../sources/proffesor-for-testing__agentic-qe/.claude/commands/monitoring/agents.md)<br>[.agentic-qe/docs/agents.md](../../../../sources/proffesor-for-testing__agentic-qe/.agentic-qe/docs/agents.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `verification/mcp-tool-parity-baseline.json`, `tests/unit/validation/agent-mcp-validator.test.ts`, `tests/unit/mcp/heartbeat-handlers.test.ts`.
-2. Trace execution through entrypoints: `tests/fixtures/sample-project/src/index.ts`, `src/index.ts`, `packages/aqe-opencode-types/src/index.ts`.
-3. Map agent/tool runtime through: `tests/validation/opencode/agent-configs.test.ts`, `tests/validation/opencode/skill-configs.test.ts`, `tests/validation/opencode/tool-wrappers.test.ts`.
-4. Inspect retrieval/memory/indexing through: `tests/workers/quality-daemon/index.test.ts`, `tests/workers/quality-daemon/persistent-memory.test.ts`, `tests/unit/shared/code-index-extractor.test.ts`.
-5. Verify behavior through test/eval files: `tests/docker-compose.test.yml`, `tests/global-teardown.ts`, `tests/setup-worker.ts`.
+1. 핵심 참조에서 시작: `verification/mcp-tool-parity-baseline.json`, `tests/unit/validation/agent-mcp-validator.test.ts`, `tests/unit/mcp/heartbeat-handlers.test.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `tests/fixtures/sample-project/src/index.ts`, `src/index.ts`, `packages/aqe-opencode-types/src/index.ts`.
+3. agent/tool runtime 매핑: `tests/validation/opencode/agent-configs.test.ts`, `tests/validation/opencode/skill-configs.test.ts`, `tests/validation/opencode/tool-wrappers.test.ts`.
+4. retrieval/memory/indexing 확인: `tests/workers/quality-daemon/index.test.ts`, `tests/workers/quality-daemon/persistent-memory.test.ts`, `tests/unit/shared/code-index-extractor.test.ts`.
+5. test/eval 파일로 동작 검증: `tests/docker-compose.test.yml`, `tests/global-teardown.ts`, `tests/setup-worker.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Agentic QE Fleet is an open source AI powered QA/QE platform designed for use with Coding Agents works best with Claude . 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, CLAUDE.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Agentic QE Fleet is an open source AI powered QA/QE platform designed for use with Coding Agents works best with Claude . 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, CLAUDE.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

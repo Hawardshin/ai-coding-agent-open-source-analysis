@@ -1,63 +1,63 @@
-# mem0ai/mem0 Source Deep Dive
+# mem0ai/mem0 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 1671 files, 340 directories.
 
 ## 요약
 
-- 조사 단위: `sources/mem0ai__mem0` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,671 files, 340 directories, depth score 138, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/mem0ai__mem0` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,671 files, 340 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=openmemory/api/tests/test_mcp_server.py, openmemory/api/app/mcp_server.py, integrations/mem0-plugin/.codex-mcp.json이고, 의존성 단서는 openai, langchain, pydantic, transformers, ollama, llama, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=openmemory/api/tests/test_mcp_server.py, openmemory/api/app/mcp_server.py, integrations/mem0-plugin/.codex-mcp.json이고, 의존성 단서는 openai, langchain, pydantic, transformers, ollama, llama, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | mem0ai/mem0 |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | mem0ai/mem0 |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | Python |
 | Stars | 58803 |
 | Forks | 6767 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | deep-source+report |
-| Source | [sources/mem0ai__mem0](../../../../sources/mem0ai__mem0) |
-| Existing report | [reports/global-trending/repositories/mem0ai__mem0.md](../../../global-trending/repositories/mem0ai__mem0.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/mem0ai__mem0](../../../../sources/mem0ai__mem0) |
+| 기존 보고서 | [reports/global-trending/repositories/mem0ai__mem0.md](../../../global-trending/repositories/mem0ai__mem0.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1671 / 340 |
-| Max observed depth | 8 |
-| Top directories | .agents, .claude-plugin, .codex-plugin, .cursor-plugin, .github, cli, cookbooks, docs, evaluation, examples, integrations, mem0, mem0-ts, openmemory, scripts, server, skills, tests |
-| Top extensions | .py: 372, .ts: 333, .mdx: 241, .tsx: 227, .md: 129, .json: 65, .png: 54, (none): 45, .yml: 35, .svg: 33, .sh: 28, .js: 16 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 1671 / 340 |
+| 관측 최대 깊이 | 8 |
+| 상위 디렉터리 | .agents, .claude-plugin, .codex-plugin, .cursor-plugin, .github, cli, cookbooks, docs, evaluation, examples, integrations, mem0, mem0-ts, openmemory, scripts, server, skills, tests |
+| 상위 확장자 | .py: 372, .ts: 333, .mdx: 241, .tsx: 227, .md: 129, .json: 65, .png: 54, (none): 45, .yml: 35, .svg: 33, .sh: 28, .js: 16 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 81 |
 | docs | documentation surface | 22 |
@@ -79,9 +79,9 @@ Local clone structure analysis: 1671 files, 340 directories.
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | utility | Makefile | all | make all |
@@ -100,24 +100,24 @@ Local clone structure analysis: 1671 files, 340 directories.
 | test | Makefile | test-py-3.12 | make test-py-3.12 |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai |
-| agentProtocols | none |
+| agentProtocols | 없음 |
 | agentFrameworks | langchain |
 | vectorStores | chroma, qdrant, milvus, weaviate, faiss |
 | modelRuntime | transformers, ollama, llama |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [openmemory/api/tests/test_mcp_server.py](../../../../sources/mem0ai__mem0/openmemory/api/tests/test_mcp_server.py) | mcp signal |
 | mcp | [openmemory/api/app/mcp_server.py](../../../../sources/mem0ai__mem0/openmemory/api/app/mcp_server.py) | mcp signal |
@@ -133,9 +133,9 @@ Local clone structure analysis: 1671 files, 340 directories.
 | entrypoints | [mem0-ts/src/community/src/index.ts](../../../../sources/mem0ai__mem0/mem0-ts/src/community/src/index.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 17 | [server/main.py](../../../../sources/mem0ai__mem0/server/main.py)<br>[openmemory/api/main.py](../../../../sources/mem0ai__mem0/openmemory/api/main.py)<br>[mem0-ts/src/oss/src/index.ts](../../../../sources/mem0ai__mem0/mem0-ts/src/oss/src/index.ts)<br>[mem0-ts/src/community/src/index.ts](../../../../sources/mem0ai__mem0/mem0-ts/src/community/src/index.ts)<br>[mem0/proxy/main.py](../../../../sources/mem0ai__mem0/mem0/proxy/main.py)<br>[mem0/memory/main.py](../../../../sources/mem0ai__mem0/mem0/memory/main.py)<br>[mem0/client/main.py](../../../../sources/mem0ai__mem0/mem0/client/main.py)<br>[integrations/vercel-ai-sdk/src/index.ts](../../../../sources/mem0ai__mem0/integrations/vercel-ai-sdk/src/index.ts) |
 | agentRuntime | 200 | [AGENTS.md](../../../../sources/mem0ai__mem0/AGENTS.md)<br>[tests/memory/test_json_prompt_fix.py](../../../../sources/mem0ai__mem0/tests/memory/test_json_prompt_fix.py)<br>[tests/memory/test_main.py](../../../../sources/mem0ai__mem0/tests/memory/test_main.py)<br>[tests/memory/test_memory_utils.py](../../../../sources/mem0ai__mem0/tests/memory/test_memory_utils.py)<br>[tests/memory/test_safe_deepcopy_config.py](../../../../sources/mem0ai__mem0/tests/memory/test_safe_deepcopy_config.py)<br>[tests/memory/test_storage.py](../../../../sources/mem0ai__mem0/tests/memory/test_storage.py)<br>[skills/README.md](../../../../sources/mem0ai__mem0/skills/README.md)<br>[skills/mem0-vercel-ai-sdk/LICENSE](../../../../sources/mem0ai__mem0/skills/mem0-vercel-ai-sdk/LICENSE) |
@@ -151,39 +151,39 @@ Local clone structure analysis: 1671 files, 340 directories.
 | config | 47 | [Makefile](../../../../sources/mem0ai__mem0/Makefile)<br>[poetry.lock](../../../../sources/mem0ai__mem0/poetry.lock)<br>[pyproject.toml](../../../../sources/mem0ai__mem0/pyproject.toml)<br>[server/Makefile](../../../../sources/mem0ai__mem0/server/Makefile)<br>[server/requirements.txt](../../../../sources/mem0ai__mem0/server/requirements.txt)<br>[server/dashboard/package.json](../../../../sources/mem0ai__mem0/server/dashboard/package.json)<br>[server/dashboard/pnpm-workspace.yaml](../../../../sources/mem0ai__mem0/server/dashboard/pnpm-workspace.yaml)<br>[server/dashboard/tsconfig.json](../../../../sources/mem0ai__mem0/server/dashboard/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 232 | [tests/__init__.py](../../../../sources/mem0ai__mem0/tests/__init__.py)<br>[tests/test_chatty_llm_parsing.py](../../../../sources/mem0ai__mem0/tests/test_chatty_llm_parsing.py)<br>[tests/test_client_feedback.py](../../../../sources/mem0ai__mem0/tests/test_client_feedback.py)<br>[tests/test_client.py](../../../../sources/mem0ai__mem0/tests/test_client.py)<br>[tests/test_main.py](../../../../sources/mem0ai__mem0/tests/test_main.py)<br>[tests/test_memory_integration.py](../../../../sources/mem0ai__mem0/tests/test_memory_integration.py) |
-| CI workflows | 20 | [.github/workflows/cd.yml](../../../../sources/mem0ai__mem0/.github/workflows/cd.yml)<br>[.github/workflows/ci-gate.yml](../../../../sources/mem0ai__mem0/.github/workflows/ci-gate.yml)<br>[.github/workflows/ci.yml](../../../../sources/mem0ai__mem0/.github/workflows/ci.yml)<br>[.github/workflows/cli-node-cd.yml](../../../../sources/mem0ai__mem0/.github/workflows/cli-node-cd.yml)<br>[.github/workflows/cli-node-ci.yml](../../../../sources/mem0ai__mem0/.github/workflows/cli-node-ci.yml)<br>[.github/workflows/cli-python-cd.yml](../../../../sources/mem0ai__mem0/.github/workflows/cli-python-cd.yml) |
-| Containers / deploy | 6 | [server/docker-compose.yaml](../../../../sources/mem0ai__mem0/server/docker-compose.yaml)<br>[server/Dockerfile](../../../../sources/mem0ai__mem0/server/Dockerfile)<br>[server/dashboard/Dockerfile](../../../../sources/mem0ai__mem0/server/dashboard/Dockerfile)<br>[openmemory/docker-compose.yml](../../../../sources/mem0ai__mem0/openmemory/docker-compose.yml)<br>[openmemory/ui/Dockerfile](../../../../sources/mem0ai__mem0/openmemory/ui/Dockerfile)<br>[openmemory/api/Dockerfile](../../../../sources/mem0ai__mem0/openmemory/api/Dockerfile) |
-| Security / policy | 7 | [tests/test_server_auth.py](../../../../sources/mem0ai__mem0/tests/test_server_auth.py)<br>[server/auth.py](../../../../sources/mem0ai__mem0/server/auth.py)<br>[server/routers/auth.py](../../../../sources/mem0ai__mem0/server/routers/auth.py)<br>[server/dashboard/src/lib/auth.tsx](../../../../sources/mem0ai__mem0/server/dashboard/src/lib/auth.tsx)<br>[server/dashboard/src/hooks/use-auth.ts](../../../../sources/mem0ai__mem0/server/dashboard/src/hooks/use-auth.ts)<br>[server/dashboard/src/app/api/auth/refresh/route.ts](../../../../sources/mem0ai__mem0/server/dashboard/src/app/api/auth/refresh/route.ts) |
-| Agent instructions | 1 | [AGENTS.md](../../../../sources/mem0ai__mem0/AGENTS.md) |
+| 테스트/평가 | 232 | [tests/__init__.py](../../../../sources/mem0ai__mem0/tests/__init__.py)<br>[tests/test_chatty_llm_parsing.py](../../../../sources/mem0ai__mem0/tests/test_chatty_llm_parsing.py)<br>[tests/test_client_feedback.py](../../../../sources/mem0ai__mem0/tests/test_client_feedback.py)<br>[tests/test_client.py](../../../../sources/mem0ai__mem0/tests/test_client.py)<br>[tests/test_main.py](../../../../sources/mem0ai__mem0/tests/test_main.py)<br>[tests/test_memory_integration.py](../../../../sources/mem0ai__mem0/tests/test_memory_integration.py) |
+| CI workflow | 20 | [.github/workflows/cd.yml](../../../../sources/mem0ai__mem0/.github/workflows/cd.yml)<br>[.github/workflows/ci-gate.yml](../../../../sources/mem0ai__mem0/.github/workflows/ci-gate.yml)<br>[.github/workflows/ci.yml](../../../../sources/mem0ai__mem0/.github/workflows/ci.yml)<br>[.github/workflows/cli-node-cd.yml](../../../../sources/mem0ai__mem0/.github/workflows/cli-node-cd.yml)<br>[.github/workflows/cli-node-ci.yml](../../../../sources/mem0ai__mem0/.github/workflows/cli-node-ci.yml)<br>[.github/workflows/cli-python-cd.yml](../../../../sources/mem0ai__mem0/.github/workflows/cli-python-cd.yml) |
+| 컨테이너/배포 | 6 | [server/docker-compose.yaml](../../../../sources/mem0ai__mem0/server/docker-compose.yaml)<br>[server/Dockerfile](../../../../sources/mem0ai__mem0/server/Dockerfile)<br>[server/dashboard/Dockerfile](../../../../sources/mem0ai__mem0/server/dashboard/Dockerfile)<br>[openmemory/docker-compose.yml](../../../../sources/mem0ai__mem0/openmemory/docker-compose.yml)<br>[openmemory/ui/Dockerfile](../../../../sources/mem0ai__mem0/openmemory/ui/Dockerfile)<br>[openmemory/api/Dockerfile](../../../../sources/mem0ai__mem0/openmemory/api/Dockerfile) |
+| 보안/정책 | 7 | [tests/test_server_auth.py](../../../../sources/mem0ai__mem0/tests/test_server_auth.py)<br>[server/auth.py](../../../../sources/mem0ai__mem0/server/auth.py)<br>[server/routers/auth.py](../../../../sources/mem0ai__mem0/server/routers/auth.py)<br>[server/dashboard/src/lib/auth.tsx](../../../../sources/mem0ai__mem0/server/dashboard/src/lib/auth.tsx)<br>[server/dashboard/src/hooks/use-auth.ts](../../../../sources/mem0ai__mem0/server/dashboard/src/hooks/use-auth.ts)<br>[server/dashboard/src/app/api/auth/refresh/route.ts](../../../../sources/mem0ai__mem0/server/dashboard/src/app/api/auth/refresh/route.ts) |
+| 에이전트 지시문 | 1 | [AGENTS.md](../../../../sources/mem0ai__mem0/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `openmemory/api/tests/test_mcp_server.py`, `openmemory/api/app/mcp_server.py`, `integrations/mem0-plugin/.codex-mcp.json`.
-2. Trace execution through entrypoints: `server/main.py`, `openmemory/api/main.py`, `mem0-ts/src/oss/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tests/memory/test_json_prompt_fix.py`, `tests/memory/test_main.py`.
-4. Inspect retrieval/memory/indexing through: `tests/test_memory_integration.py`, `tests/test_memory.py`, `tests/vector_stores/test_azure_ai_search.py`.
-5. Verify behavior through test/eval files: `tests/__init__.py`, `tests/test_chatty_llm_parsing.py`, `tests/test_client_feedback.py`.
+1. 핵심 참조에서 시작: `openmemory/api/tests/test_mcp_server.py`, `openmemory/api/app/mcp_server.py`, `integrations/mem0-plugin/.codex-mcp.json`.
+2. entrypoint를 따라 실행 흐름 확인: `server/main.py`, `openmemory/api/main.py`, `mem0-ts/src/oss/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tests/memory/test_json_prompt_fix.py`, `tests/memory/test_main.py`.
+4. retrieval/memory/indexing 확인: `tests/test_memory_integration.py`, `tests/test_memory.py`, `tests/vector_stores/test_azure_ai_search.py`.
+5. test/eval 파일로 동작 검증: `tests/__init__.py`, `tests/test_chatty_llm_parsing.py`, `tests/test_client_feedback.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local clone structure analysis 1671 files, 340 directories.. 핵심 구조 신호는 Python, pyproject.toml, Makefile, README.md, AGENTS.md, LICENSE이며, deep-source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local clone structure analysis 1671 files, 340 directories.. 핵심 구조 신호는 Python, pyproject.toml, Makefile, README.md, AGENTS.md, LICENSE이며, 심층 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음입니다.

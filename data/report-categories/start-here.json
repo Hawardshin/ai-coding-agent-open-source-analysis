@@ -1,24 +1,10 @@
 {
-  "generatedAt": "2026-06-18T15:13:01.107Z",
+  "generatedAt": "2026-06-18T15:31:47.876Z",
   "slug": "start-here",
-  "title": "Start Here",
-  "description": "High-level maps and entry points for reading the repository.",
+  "title": "먼저 읽기",
+  "description": "전체 조사 흐름과 핵심 시작점을 빠르게 잡는 상위 지도입니다.",
   "count": 21,
   "reports": [
-    {
-      "id": "report:reports/categories/README.md",
-      "path": "reports/categories/README.md",
-      "title": "Category Index",
-      "summary": "Category Index Generated 2026 06 18T15 12 39.601Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
-      "kind": "category-guide",
-      "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.339Z",
-      "categories": [
-        "start-here",
-        "category-guides"
-      ],
-      "priority": 182
-    },
     {
       "id": "report:reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
       "path": "reports/comparisons/01-project-taxonomy-and-feature-comparison.md",
@@ -170,6 +156,20 @@
       "priority": 157
     },
     {
+      "id": "report:reports/categories/README.md",
+      "path": "reports/categories/README.md",
+      "title": "근거 카테고리 목차",
+      "summary": "근거 카테고리 목차 생성 시각 2026 06 18T15 31 33.431Z 이 폴더는 흩어져 있는 오픈소스, 연구, 발표, 트렌드 근거를 오래 유지할 수 있는 taxonomy로 다시 묶은 목차입니다. 원본 파일은 그대로 두고, 카테고리 README가 원본 데이터, 보고서, 클론 소스 위치로 연결합니다. 요약 조사 단위 전체 조사 근거를 artifact 기준으로 분류한 상위 목차입니다. 포함 범위 3,709개 항목, 17개 카테고리 폴더입니다. 탐색 방식 아래 카",
+      "kind": "category-guide",
+      "folder": "categories",
+      "updatedAt": "2026-06-18T15:31:34.309Z",
+      "categories": [
+        "start-here",
+        "category-guides"
+      ],
+      "priority": 157
+    },
+    {
       "id": "report:reports/global-trending/00-global-open-source-trend-report-2026-06-18.md",
       "path": "reports/global-trending/00-global-open-source-trend-report-2026-06-18.md",
       "title": "Global Trending Open Source 500 Analysis",
@@ -231,11 +231,11 @@
     {
       "id": "report:reports/repository-insights/README.md",
       "path": "reports/repository-insights/README.md",
-      "title": "Repository Insights",
-      "summary": "Repository Insights Generated 2026 06 18T15 12 42.018Z This report adds repository level insight rows on top of the existing category, topic, and folder indexes. 요약 조사 단위 repository artifact 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 source, 기존 report link, ca",
+      "title": "레포별 인사이트",
+      "summary": "레포별 인사이트 생성 시각 2026 06 18T15 31 34.546Z 이 보고서는 기존 카테고리/주제/폴더 인덱스 위에 레포별 판단 row를 얹어, 어떤 레포를 어떤 관점으로 읽어야 하는지 바로 볼 수 있게 만든 표 중심 README입니다. 요약 조사 단위 레포 항목 1,136개를 레포별로 다시 분석한 상세 인사이트 표입니다. 포함 범위 로컬 소스, 기존 보고서 링크, 카테고리 멤버십, 언어/stars/license, 소스 manifest 신호를 합쳐 역할, ",
       "kind": "overview-report",
       "folder": "repository-insights",
-      "updatedAt": "2026-06-18T15:12:42.577Z",
+      "updatedAt": "2026-06-18T15:31:35.303Z",
       "categories": [
         "start-here",
         "comparisons",
@@ -260,11 +260,11 @@
     {
       "id": "report:reports/source-deep-dives/README.md",
       "path": "reports/source-deep-dives/README.md",
-      "title": "Source Deep Dives",
-      "summary": "Source Deep Dives Generated 2026 06 18T15 12 44.535Z This report adds topic first, source path level evidence extracted from the locally cloned repositories under sources/ . 요약 조사 단위 로컬 clone 1,136개를 실제 파일 트리 기준으로 다시 스캔한 source deep scan 보고서입니다. 포함 범위 file/dir",
+      "title": "소스 딥다이브",
+      "summary": "소스 딥다이브 생성 시각 2026 06 18T15 31 35.584Z 이 보고서는 sources/ 아래 로컬 클론에서 추출한 소스 경로 수준의 근거를 주제별로 묶은 README입니다. 요약 조사 단위 로컬 클론 1,136개를 실제 파일 트리 기준으로 다시 스캔한 소스 심층 스캔 보고서입니다. 포함 범위 file/dir count, entrypoint, agent runtime, MCP, retrieval/vector, spec, eval/test, securit",
       "kind": "source-deep-dive-report",
       "folder": "source-deep-dives",
-      "updatedAt": "2026-06-18T15:12:51.724Z",
+      "updatedAt": "2026-06-18T15:31:43.012Z",
       "categories": [
         "start-here",
         "source-code-deep-dives",

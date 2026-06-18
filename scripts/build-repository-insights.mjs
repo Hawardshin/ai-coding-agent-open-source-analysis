@@ -12,7 +12,7 @@ const outputByRoleDir = path.join(outputReportDir, "by-role");
 const roleDefinitions = [
   {
     slug: "coding-agent-ide",
-    title: "Coding Agent and IDE",
+    title: "코딩 에이전트/IDE",
     korean: "코딩 에이전트/IDE",
     priority: 90,
     categories: ["coding-agents-ides"],
@@ -20,7 +20,7 @@ const roleDefinitions = [
   },
   {
     slug: "agent-harness-mcp",
-    title: "Agent Harness and MCP",
+    title: "에이전트 하네스/MCP",
     korean: "에이전트 하네스/MCP",
     priority: 85,
     categories: ["agent-harness-orchestration", "mcp-tools-protocols"],
@@ -28,7 +28,7 @@ const roleDefinitions = [
   },
   {
     slug: "llm-wiki-rag",
-    title: "LLM Wiki, RAG, and Knowledge",
+    title: "LLM 위키/RAG/지식베이스",
     korean: "LLM 위키/RAG/지식베이스",
     priority: 80,
     categories: ["llm-wiki-rag-knowledge", "context-memory"],
@@ -36,7 +36,7 @@ const roleDefinitions = [
   },
   {
     slug: "spec-driven",
-    title: "Spec-Driven and Requirements",
+    title: "스펙 드리븐/요구사항",
     korean: "스펙 드리븐/요구사항",
     priority: 78,
     categories: ["spec-driven-requirements"],
@@ -44,7 +44,7 @@ const roleDefinitions = [
   },
   {
     slug: "eval-observability",
-    title: "Evals, Observability, and Quality",
+    title: "평가/관측/품질",
     korean: "평가/관측/품질",
     priority: 72,
     categories: ["evals-observability-quality"],
@@ -52,7 +52,7 @@ const roleDefinitions = [
   },
   {
     slug: "ai-infrastructure-serving",
-    title: "AI Infrastructure and Serving",
+    title: "AI 인프라/서빙",
     korean: "AI 인프라/서빙",
     priority: 70,
     categories: ["ai-infrastructure-serving", "local-llm-models"],
@@ -60,7 +60,7 @@ const roleDefinitions = [
   },
   {
     slug: "data-vector-platform",
-    title: "Data and Vector Platforms",
+    title: "데이터/벡터 플랫폼",
     korean: "데이터/벡터 플랫폼",
     priority: 68,
     categories: ["data-platforms-vector-databases"],
@@ -68,7 +68,7 @@ const roleDefinitions = [
   },
   {
     slug: "security-governance",
-    title: "Security, Governance, and Safety",
+    title: "보안/거버넌스/안전",
     korean: "보안/거버넌스/안전",
     priority: 65,
     categories: ["security-governance-safety"],
@@ -76,7 +76,7 @@ const roleDefinitions = [
   },
   {
     slug: "developer-productivity",
-    title: "Developer Productivity and DevTools",
+    title: "개발 생산성/DevTools",
     korean: "개발 생산성/DevTools",
     priority: 60,
     categories: ["developer-productivity-devtools"],
@@ -84,7 +84,7 @@ const roleDefinitions = [
   },
   {
     slug: "general-ai-open-source",
-    title: "General AI Open Source",
+    title: "일반 AI 오픈소스",
     korean: "일반 AI 오픈소스",
     priority: 10,
     categories: ["global-ai-open-source", "korean-ai-open-source"],
@@ -302,12 +302,12 @@ async function inspectSource(localPath, cloneAnalysis = null) {
 }
 
 function evidenceLevel(repo, cloneAnalysis, source, reportPath) {
-  if (cloneAnalysis && source && reportPath) return "deep-source+report";
-  if (source && reportPath) return "source+report";
-  if (cloneAnalysis && reportPath) return "clone-analysis+report";
-  if (source) return "source-only";
-  if (reportPath) return "report-only";
-  return "metadata-only";
+  if (cloneAnalysis && source && reportPath) return "심층 소스+보고서";
+  if (source && reportPath) return "소스+보고서";
+  if (cloneAnalysis && reportPath) return "클론 구조+보고서";
+  if (source) return "소스만";
+  if (reportPath) return "보고서만";
+  return "메타데이터만";
 }
 
 function architectureSignals(repo, source, cloneAnalysis) {
@@ -336,45 +336,45 @@ function maturityBand(repo, source, cloneAnalysis, reportPath) {
   if (source?.hasDocs) score += 1;
   if (reportPath) score += 1;
   if (cloneAnalysis) score += 1;
-  if (score >= 6) return "high-signal";
-  if (score >= 4) return "solid";
-  if (score >= 2) return "emerging";
-  return "watchlist";
+  if (score >= 6) return "고신호";
+  if (score >= 4) return "안정";
+  if (score >= 2) return "초기";
+  return "관찰";
 }
 
 function strategicUse(repo, role, maturity, evidence) {
-  if (role.slug === "coding-agent-ide" && /deep|source/.test(evidence)) return "coding-agent reference implementation";
-  if (role.slug === "llm-wiki-rag") return "knowledge/RAG pattern reference";
-  if (role.slug === "spec-driven") return "spec workflow and requirements reference";
-  if (role.slug === "agent-harness-mcp") return "tooling and harness pattern reference";
-  if (role.slug === "eval-observability") return "quality and evaluation comparison point";
-  if (maturity === "watchlist") return "trend watch candidate";
-  return "architecture comparison point";
+  if (role.slug === "coding-agent-ide" && /소스/.test(evidence)) return "코딩 에이전트 참고 구현";
+  if (role.slug === "llm-wiki-rag") return "지식/RAG 패턴 참고";
+  if (role.slug === "spec-driven") return "스펙 workflow와 요구사항 참고";
+  if (role.slug === "agent-harness-mcp") return "도구/하네스 패턴 참고";
+  if (role.slug === "eval-observability") return "품질/평가 비교 지점";
+  if (maturity === "관찰") return "트렌드 관찰 후보";
+  return "아키텍처 비교 지점";
 }
 
 function riskNotes(repo, source, cloneAnalysis, reportPath) {
   const risks = [];
-  if (!reportPath) risks.push("no dedicated report link");
-  if (!source) risks.push("local source missing");
-  if (source && !source.hasTests) risks.push("test signal not obvious");
-  if (source && !source.hasCi) risks.push("ci signal not obvious");
-  if (!repo.license) risks.push("license metadata missing");
-  if (repo.fork) risks.push("forked repository");
-  if (repo.archived) risks.push("archived repository");
-  if (!cloneAnalysis && source) risks.push("needs deeper structural scan");
+  if (!reportPath) risks.push("전용 보고서 링크 없음");
+  if (!source) risks.push("로컬 소스 없음");
+  if (source && !source.hasTests) risks.push("테스트 신호가 명확하지 않음");
+  if (source && !source.hasCi) risks.push("CI 신호가 명확하지 않음");
+  if (!repo.license) risks.push("라이선스 메타데이터 없음");
+  if (repo.fork) risks.push("fork 레포");
+  if (repo.archived) risks.push("archived 레포");
+  if (!cloneAnalysis && source) risks.push("더 깊은 구조 스캔 필요");
   return risks.slice(0, 5);
 }
 
 function buildInsight(repo, role, source, cloneAnalysis, reportPath, evidence, maturity) {
   const signals = architectureSignals(repo, source, cloneAnalysis);
-  const signalText = signals.slice(0, 6).join(", ") || "metadata-only";
+  const signalText = signals.slice(0, 6).join(", ") || "메타데이터만";
   const summary = cleanText(repo.summary, 120) || "설명 메타데이터가 짧습니다";
   return `${role.korean} 관점에서 ${summary}. 핵심 구조 신호는 ${signalText}이며, ${evidence} 근거 수준으로 ${maturity} 후보로 읽는 것이 좋습니다.`;
 }
 
 function buildAssessment(repo, role, risks, strategy) {
   const region = regionSignal(repo);
-  const riskText = risks.length ? risks.join(", ") : "major metadata risk not obvious";
+  const riskText = risks.length ? risks.join(", ") : "큰 메타데이터 위험이 명확하지 않음";
   return `${region} 신호의 ${role.korean} 레포입니다. 활용 관점은 ${strategy}이고, 후속 확인 포인트는 ${riskText}입니다.`;
 }
 
@@ -458,12 +458,12 @@ function renderInsightTable(rows, baseDir, limit = Infinity) {
   if (!selected.length) return "_No repository insights indexed._\n";
   const body = selected.map((repo) => {
     const name = externalOrText(repo.name, repo.url);
-    const report = repo.reportPath ? linkFrom(baseDir, repo.reportPath, "report") : "";
-    const source = repo.localPath ? linkFrom(baseDir, repo.localPath, "source") : "";
+    const report = repo.reportPath ? linkFrom(baseDir, repo.reportPath, "보고서") : "";
+    const source = repo.localPath ? linkFrom(baseDir, repo.localPath, "소스") : "";
     const links = [report, source].filter(Boolean).join(" / ");
-    return `| ${name} | ${tableText(repo.roleKorean)} | ${repo.stars} | ${tableText(repo.maturity)} | ${tableText(repo.evidence)} | ${tableText(repo.insight)} | ${tableText(repo.risks.join(", ") || "none")} | ${links} |`;
+    return `| ${name} | ${tableText(repo.roleKorean)} | ${repo.stars} | ${tableText(repo.maturity)} | ${tableText(repo.evidence)} | ${tableText(repo.insight)} | ${tableText(repo.risks.join(", ") || "없음")} | ${links} |`;
   }).join("\n");
-  return `| Repository | Role | Stars | Maturity | Evidence | Insight | Risks | Links |\n| --- | --- | ---: | --- | --- | --- | --- | --- |\n${body}\n`;
+  return `| 레포 | 역할 | Stars | 성숙도 | 근거 수준 | 인사이트 | 위험 신호 | 링크 |\n| --- | --- | ---: | --- | --- | --- | --- | --- |\n${body}\n`;
 }
 
 function renderRoleSummary(rows, baseDir) {
@@ -478,17 +478,17 @@ function renderRoleSummary(rows, baseDir) {
 }
 
 function renderNavigation(baseDir) {
-  return `## Navigation
+  return `## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| ${linkFrom(baseDir, "README.md", "Repository README")} | Repo-wide orientation and top-level data/report structure. |
-| ${linkFrom(baseDir, "reports/README.md", "Reports Reading Index")} | Main report navigation and folder map. |
-| ${linkFrom(baseDir, "reports/tables/README.md", "Report Tables")} | Table-first view and CSV exports. |
-| ${linkFrom(baseDir, "reports/repository-insights/README.md", "Repository Insights")} | Repository-by-repository insights and role pages. |
-| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "Source Deep Dives")} | Topic-wise source-path evidence from local clones. |
-| ${linkFrom(baseDir, "reports/source-insights/README.md", "Source Trend Insights")} | Category trend insights and repository feature comparison from source evidence. |
-| ${linkFrom(baseDir, "reports/categories/README.md", "Artifact Categories")} | Artifact-level category index. |
+| ${linkFrom(baseDir, "README.md", "전체 시작 README")} | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| ${linkFrom(baseDir, "reports/README.md", "전체 보고서 읽기 지도")} | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| ${linkFrom(baseDir, "reports/tables/README.md", "표/CSV 목차")} | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| ${linkFrom(baseDir, "reports/repository-insights/README.md", "레포별 인사이트")} | 레포별 총평과 역할군 페이지. |
+| ${linkFrom(baseDir, "reports/source-deep-dives/README.md", "소스 딥다이브")} | 로컬 클론에서 뽑은 파일 경로 근거. |
+| ${linkFrom(baseDir, "reports/source-insights/README.md", "소스 트렌드 인사이트")} | 카테고리별 트렌드와 레포별 특징 비교. |
+| ${linkFrom(baseDir, "reports/categories/README.md", "근거 카테고리")} | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 `;
 }
 
@@ -498,52 +498,52 @@ function renderMainReadme(rows, roleSummaries) {
   const maturityCounts = countsBy(rows, (row) => row.maturity);
   const withReport = rows.filter((row) => row.reportPath).length;
   const withSource = rows.filter((row) => row.sourceExists).length;
-  return `# Repository Insights
+  return `# 레포별 인사이트
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
-This report adds repository-level insight rows on top of the existing category, topic, and folder indexes.
+이 보고서는 기존 카테고리/주제/폴더 인덱스 위에 레포별 판단 row를 얹어, 어떤 레포를 어떤 관점으로 읽어야 하는지 바로 볼 수 있게 만든 표 중심 README입니다.
 
 ## 요약
 
-- 조사 단위: repository artifact ${rows.length.toLocaleString("en-US")}개를 레포별로 다시 분석한 상세 인사이트 표입니다.
-- 포함 범위: 로컬 source, 기존 report link, category membership, language/stars/license, source manifest signal을 합쳐 role, maturity, evidence, insight, risk를 계산했습니다.
-- 탐색 방식: 이 README에서 전체 상위 레포를 보고, by-role README로 들어가면 각 역할군의 모든 레포 인사이트를 볼 수 있습니다.
+- 조사 단위: 레포 항목 ${rows.length.toLocaleString("en-US")}개를 레포별로 다시 분석한 상세 인사이트 표입니다.
+- 포함 범위: 로컬 소스, 기존 보고서 링크, 카테고리 멤버십, 언어/stars/license, 소스 manifest 신호를 합쳐 역할, 성숙도, 근거 수준, 인사이트, 위험 신호를 계산했습니다.
+- 탐색 방식: 이 README에서 전체 상위 레포를 보고, 역할군별 README로 들어가면 각 역할군의 모든 레포 인사이트를 볼 수 있습니다.
 
 ## 총평
 
-기존 표가 “어디에 무엇이 있는지”를 보여줬다면, 이 보고서는 “각 레포를 어떤 관점으로 읽어야 하는지”를 정리합니다. 각 row의 Insight와 Risks를 먼저 보고, report/source 링크로 들어가면 조사 시간을 줄일 수 있습니다. CSV와 JSON은 전체 ${rows.length.toLocaleString("en-US")}개 레포를 빠짐없이 담습니다.
+기존 표가 “어디에 무엇이 있는지”를 보여줬다면, 이 보고서는 “각 레포를 어떤 관점으로 읽어야 하는지”를 정리합니다. 각 row의 인사이트와 위험 신호를 먼저 보고, 보고서/소스 링크로 들어가면 조사 시간을 줄일 수 있습니다. CSV와 JSON은 전체 ${rows.length.toLocaleString("en-US")}개 레포를 빠짐없이 담습니다.
 
 ${renderNavigation(baseDir)}
 
-## Coverage
+## 범위
 
-| Metric | Count |
+| 항목 | 수 |
 | --- | ---: |
-| Repository insights | ${rows.length} |
-| Repositories with report link | ${withReport} |
-| Repositories with local source | ${withSource} |
-| Role groups | ${roleSummaries.length} |
+| 레포별 인사이트 | ${rows.length} |
+| 보고서 링크가 있는 레포 | ${withReport} |
+| 로컬 소스가 있는 레포 | ${withSource} |
+| 역할군 | ${roleSummaries.length} |
 
-## Evidence Breakdown
+## 근거 수준 분포
 
 ${Object.entries(evidenceCounts).sort((a, b) => b[1] - a[1]).map(([key, count]) => `- ${key}: ${count}`).join("\n")}
 
-## Maturity Breakdown
+## 성숙도 분포
 
 ${Object.entries(maturityCounts).sort((a, b) => b[1] - a[1]).map(([key, count]) => `- ${key}: ${count}`).join("\n")}
 
-## Role Index
+## 역할군 목차
 
-| Role README | Repositories | Korean label |
+| 역할군 README | 레포 수 | 한국어 라벨 |
 | --- | ---: | --- |
 ${renderRoleSummary(rows, baseDir)}
 
-## Top Repository Insights
+## 레포별 핵심 인사이트
 
 ${renderInsightTable(rows, baseDir, 120)}
 
-## Data Files
+## 데이터 파일
 
 - ${linkFrom(baseDir, "data/repository-insights.json", "data/repository-insights.json")}
 - ${linkFrom(baseDir, "data/report-tables/repository-insights.csv", "data/report-tables/repository-insights.csv")}
@@ -552,15 +552,15 @@ ${renderInsightTable(rows, baseDir, 120)}
 
 function renderRoleIndex(rows) {
   const baseDir = "reports/repository-insights/by-role";
-  return `# Repository Insights by Role
+  return `# 역할군별 레포 인사이트
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ## 요약
 
 - 조사 단위: repository insights를 역할군별로 나눈 하위 목차입니다.
-- 포함 범위: ${rows.length.toLocaleString("en-US")} repositories across ${roleDefinitions.length} possible role groups.
-- 탐색 방식: 역할 README로 들어가면 해당 역할군 레포의 insight, risk, report/source 링크를 한 표에서 볼 수 있습니다.
+- 포함 범위: ${rows.length.toLocaleString("en-US")}개 레포, ${roleDefinitions.length}개 역할군입니다.
+- 탐색 방식: 역할 README로 들어가면 해당 역할군 레포의 인사이트, 위험 신호, 보고서/소스 링크를 한 표에서 볼 수 있습니다.
 
 ## 총평
 
@@ -568,9 +568,9 @@ Generated: ${generatedAt}
 
 ${renderNavigation(baseDir)}
 
-## Roles
+## 역할군
 
-| Role README | Repositories | Korean label |
+| 역할군 README | 레포 수 | 한국어 라벨 |
 | --- | ---: | --- |
 ${renderRoleSummary(rows, baseDir)}
 `;
@@ -582,23 +582,23 @@ function renderRoleReadme(role, rows) {
   const withSource = rows.filter((row) => row.sourceExists).length;
   return `# ${role.title}
 
-Generated: ${generatedAt}
+생성 시각: ${generatedAt}
 
 ${role.korean} 역할군에 속한 repository-level insight 목록입니다.
 
 ## 요약
 
 - 조사 단위: \`${role.slug}\` 역할로 분류된 레포 묶음입니다.
-- 포함 범위: ${rows.length.toLocaleString("en-US")} repositories, report link ${withReport}, local source ${withSource}.
+- 포함 범위: ${rows.length.toLocaleString("en-US")}개 레포, 보고서 링크 ${withReport}, 로컬 소스 ${withSource}.
 - 탐색 방식: Insight로 읽을 이유를 확인하고, Risks로 후속 검증 포인트를 본 뒤 report/source 링크로 들어가면 됩니다.
 
 ## 총평
 
-이 역할군은 같은 문제를 서로 다른 구현 방식으로 푸는 레포들을 비교하기 좋습니다. maturity와 evidence가 높은 항목은 참고 구현으로, watchlist나 metadata-only 항목은 트렌드 후보로 읽는 편이 적절합니다.
+이 역할군은 같은 문제를 서로 다른 구현 방식으로 푸는 레포들을 비교하기 좋습니다. 성숙도와 근거 수준이 높은 항목은 참고 구현으로, 관찰 또는 메타데이터만 있는 항목은 트렌드 후보로 읽는 편이 적절합니다.
 
 ${renderNavigation(baseDir)}
 
-## Repository Insights
+## 레포별 인사이트
 
 ${renderInsightTable(rows, baseDir)}
 `;

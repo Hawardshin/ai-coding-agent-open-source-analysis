@@ -1,63 +1,63 @@
-# MelonS/MelonS-Agents Source Deep Dive
+# MelonS/MelonS-Agents 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 An agent that builds, plays, and verifies its own game ? a colony-sim prototype gated by 15-scenario input-level repro tests + isolated-grader rubric verdicts ? plus production media skills: music-video (60s 9:16 shorts, beat-aligned, genre-aware) and Korean job-board digest. agentskills.io-spec compliant. v0.4.0.
 
 ## 요약
 
-- 조사 단위: `sources/MelonS__MelonS-Agents` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 5,380 files, 510 directories, depth score 109, key references 9개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/MelonS__MelonS-Agents` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 5,380 files, 510 directories, depth score 103, key references 9개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-AI 인프라/서빙 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 config=skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json, skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json, skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.xr/package.json이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 9개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+AI 인프라/서빙 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 config=skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json, skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json, skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.xr/package.json이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 9개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | MelonS/MelonS-Agents |
-| Topic | AI Infrastructure and Serving / AI 인프라/서빙 |
+| 레포 | MelonS/MelonS-Agents |
+| 주제 | AI 인프라/서빙 / AI 인프라/서빙 |
 | Region | korea |
 | Language | C# |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | emerging |
-| Evidence | source+report |
-| Source | [sources/MelonS__MelonS-Agents](../../../../sources/MelonS__MelonS-Agents) |
-| Existing report | [reports/korea-trending/repositories/MelonS__MelonS-Agents.md](../../../korea-trending/repositories/MelonS__MelonS-Agents.md) |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 초기 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/MelonS__MelonS-Agents](../../../../sources/MelonS__MelonS-Agents) |
+| 기존 보고서 | [reports/korea-trending/repositories/MelonS__MelonS-Agents.md](../../../korea-trending/repositories/MelonS__MelonS-Agents.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 5380 / 510 |
-| Max observed depth | 12 |
-| Top directories | .claude, .claude-plugin, .github, agents, assets, config, docs, outputs, records, scripts, site, skills |
-| Top extensions | .meta: 1723, .cs: 678, .png: 468, (none): 339, .bin: 337, .md: 283, .json: 269, .dll: 253, .mvfrm: 226, .sh: 142, .asset: 95, .py: 77 |
-| Source patterns | agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 5380 / 510 |
+| 관측 최대 깊이 | 12 |
+| 상위 디렉터리 | .claude, .claude-plugin, .github, agents, assets, config, docs, outputs, records, scripts, site, skills |
+| 상위 확장자 | .meta: 1723, .cs: 678, .png: 468, (none): 339, .bin: 337, .md: 283, .json: 269, .dll: 253, .mvfrm: 226, .sh: 142, .asset: 95, .py: 77 |
+| 소스 패턴 | agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 26 |
 | .github | ci surface | 1 |
@@ -71,29 +71,29 @@ AI 인프라/서빙 관점에서 agent/tool runtime, retrieval/vector path, spec
 | skills | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | config | [skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json) | config signal |
 | config | [skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json) | config signal |
@@ -106,11 +106,11 @@ _No command surface extracted from root manifests._
 | instruction | [CLAUDE.md](../../../../sources/MelonS__MelonS-Agents/CLAUDE.md) | instruction support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
 | agentRuntime | 4884 | [skills/README.md](../../../../sources/MelonS__MelonS-Agents/skills/README.md)<br>[skills/product-cf/SKILL.md](../../../../sources/MelonS__MelonS-Agents/skills/product-cf/SKILL.md)<br>[skills/product-cf/scripts/cylinder_turntable.py](../../../../sources/MelonS__MelonS-Agents/skills/product-cf/scripts/cylinder_turntable.py)<br>[skills/product-cf/scripts/depth_estimate.py](../../../../sources/MelonS__MelonS-Agents/skills/product-cf/scripts/depth_estimate.py)<br>[skills/product-cf/scripts/depth_parallax.py](../../../../sources/MelonS__MelonS-Agents/skills/product-cf/scripts/depth_parallax.py)<br>[skills/product-cf/scripts/ltx_i2v.py](../../../../sources/MelonS__MelonS-Agents/skills/product-cf/scripts/ltx_i2v.py)<br>[skills/product-cf/scripts/product-hero.sh](../../../../sources/MelonS__MelonS-Agents/skills/product-cf/scripts/product-hero.sh)<br>[skills/product-cf/scripts/shade_normals.py](../../../../sources/MelonS__MelonS-Agents/skills/product-cf/scripts/shade_normals.py) |
 | mcp | 1 | [config/mcp.json](../../../../sources/MelonS__MelonS-Agents/config/mcp.json) |
 | retrieval | 23 | [skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png)<br>[skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png.meta)<br>[skills/game-prototype/unity-project/Assets/Sprites/stone_chunk.png](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/stone_chunk.png)<br>[skills/game-prototype/unity-project/Assets/Sprites/stone_chunk.png.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/stone_chunk.png.meta)<br>[skills/game-prototype/unity-project/Assets/Sprites/_pre_kenney_backup/stone_chunk.png](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_pre_kenney_backup/stone_chunk.png)<br>[skills/game-prototype/unity-project/Assets/Sprites/_pre_kenney_backup/stone_chunk.png.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_pre_kenney_backup/stone_chunk.png.meta)<br>[skills/game-prototype/unity-project/Assets/Resources/scatter/stone_chunk_small.png](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Resources/scatter/stone_chunk_small.png)<br>[skills/game-prototype/unity-project/Assets/Resources/scatter/stone_chunk_small.png.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Resources/scatter/stone_chunk_small.png.meta) |
@@ -118,44 +118,44 @@ _No command surface extracted from root manifests._
 | eval | 384 | [skills/music-video/tests/genre-aware-smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/music-video/tests/genre-aware-smoke.sh)<br>[skills/music-video/tests/smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/music-video/tests/smoke.sh)<br>[skills/job-hunt/tests/edge-cases.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/edge-cases.sh)<br>[skills/job-hunt/tests/run-all.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/run-all.sh)<br>[skills/job-hunt/tests/schema-validation.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/schema-validation.sh)<br>[skills/job-hunt/tests/smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/smoke.sh)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/Tests.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/Tests.meta)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/Tests/Editor.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/Tests/Editor.meta) |
 | security | 34 | [skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Mono.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Mono.Security.dll)<br>[skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Security.dll)<br>[skills/game-prototype-2048/builds/verify/G2048_Data/Managed/Mono.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/builds/verify/G2048_Data/Managed/Mono.Security.dll)<br>[skills/game-prototype-2048/builds/verify/G2048_Data/Managed/System.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/builds/verify/G2048_Data/Managed/System.Security.dll)<br>[skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py)<br>[skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py.meta)<br>[skills/game-prototype/docs/audit-genre-fidelity-2026-05-29.md](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/docs/audit-genre-fidelity-2026-05-29.md)<br>[skills/game-prototype/docs/ui-audit.md](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/docs/ui-audit.md) |
 | ci | 2 | [.github/workflows/main-protection.yml](../../../../sources/MelonS__MelonS-Agents/.github/workflows/main-protection.yml)<br>[.github/workflows/pages.yml](../../../../sources/MelonS__MelonS-Agents/.github/workflows/pages.yml) |
-| container | 0 | not obvious |
+| container | 0 | 명확하지 않음 |
 | instruction | 1 | [CLAUDE.md](../../../../sources/MelonS__MelonS-Agents/CLAUDE.md) |
 | docs | 418 | [README.ko.md](../../../../sources/MelonS__MelonS-Agents/README.ko.md)<br>[README.md](../../../../sources/MelonS__MelonS-Agents/README.md)<br>[skills/README.md](../../../../sources/MelonS__MelonS-Agents/skills/README.md)<br>[skills/job-hunt/sources/README.md](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/sources/README.md)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/README.md](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/README.md)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/README.md.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/README.md.meta)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/README.md](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/README.md)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/README.md.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/README.md.meta) |
 | config | 38 | [skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.xr/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.xr/package.json)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.wind/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.wind/package.json)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.vr/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.vr/package.json)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.video/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.video/package.json)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.vehicles/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.vehicles/package.json)<br>[skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.unitywebrequestwww/package.json](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.unitywebrequestwww/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 384 | [skills/music-video/tests/genre-aware-smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/music-video/tests/genre-aware-smoke.sh)<br>[skills/music-video/tests/smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/music-video/tests/smoke.sh)<br>[skills/job-hunt/tests/edge-cases.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/edge-cases.sh)<br>[skills/job-hunt/tests/run-all.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/run-all.sh)<br>[skills/job-hunt/tests/schema-validation.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/schema-validation.sh)<br>[skills/job-hunt/tests/smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/smoke.sh) |
-| CI workflows | 2 | [.github/workflows/main-protection.yml](../../../../sources/MelonS__MelonS-Agents/.github/workflows/main-protection.yml)<br>[.github/workflows/pages.yml](../../../../sources/MelonS__MelonS-Agents/.github/workflows/pages.yml) |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 34 | [skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Mono.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Mono.Security.dll)<br>[skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Security.dll)<br>[skills/game-prototype-2048/builds/verify/G2048_Data/Managed/Mono.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/builds/verify/G2048_Data/Managed/Mono.Security.dll)<br>[skills/game-prototype-2048/builds/verify/G2048_Data/Managed/System.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/builds/verify/G2048_Data/Managed/System.Security.dll)<br>[skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py)<br>[skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py.meta) |
-| Agent instructions | 1 | [CLAUDE.md](../../../../sources/MelonS__MelonS-Agents/CLAUDE.md) |
+| 테스트/평가 | 384 | [skills/music-video/tests/genre-aware-smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/music-video/tests/genre-aware-smoke.sh)<br>[skills/music-video/tests/smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/music-video/tests/smoke.sh)<br>[skills/job-hunt/tests/edge-cases.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/edge-cases.sh)<br>[skills/job-hunt/tests/run-all.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/run-all.sh)<br>[skills/job-hunt/tests/schema-validation.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/schema-validation.sh)<br>[skills/job-hunt/tests/smoke.sh](../../../../sources/MelonS__MelonS-Agents/skills/job-hunt/tests/smoke.sh) |
+| CI workflow | 2 | [.github/workflows/main-protection.yml](../../../../sources/MelonS__MelonS-Agents/.github/workflows/main-protection.yml)<br>[.github/workflows/pages.yml](../../../../sources/MelonS__MelonS-Agents/.github/workflows/pages.yml) |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 34 | [skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Mono.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Mono.Security.dll)<br>[skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/unity-project/Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Security.dll)<br>[skills/game-prototype-2048/builds/verify/G2048_Data/Managed/Mono.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/builds/verify/G2048_Data/Managed/Mono.Security.dll)<br>[skills/game-prototype-2048/builds/verify/G2048_Data/Managed/System.Security.dll](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype-2048/builds/verify/G2048_Data/Managed/System.Security.dll)<br>[skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py)<br>[skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py.meta](../../../../sources/MelonS__MelonS-Agents/skills/game-prototype/unity-project/Assets/Sprites/_gen_fix_audit.py.meta) |
+| 에이전트 지시문 | 1 | [CLAUDE.md](../../../../sources/MelonS__MelonS-Agents/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | container/deploy path not obvious |
-| security | none |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | container/deploy 경로가 명확하지 않음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json`, `skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json`, `skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.xr/package.json`.
-2. Map agent/tool runtime through: `skills/README.md`, `skills/product-cf/SKILL.md`, `skills/product-cf/scripts/cylinder_turntable.py`.
-3. Inspect retrieval/memory/indexing through: `skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png`, `skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png.meta`, `skills/game-prototype/unity-project/Assets/Sprites/stone_chunk.png`.
-4. Verify behavior through test/eval files: `skills/music-video/tests/genre-aware-smoke.sh`, `skills/music-video/tests/smoke.sh`, `skills/job-hunt/tests/edge-cases.sh`.
+1. 핵심 참조에서 시작: `skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.ugui@7537063fea2b/package.json`, `skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.multiplayer.center@f3fb577b3546/package.json`, `skills/game-prototype-2048/unity-project/Library/PackageCache/com.unity.modules.xr/package.json`.
+2. agent/tool runtime 매핑: `skills/README.md`, `skills/product-cf/SKILL.md`, `skills/product-cf/scripts/cylinder_turntable.py`.
+3. retrieval/memory/indexing 확인: `skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png`, `skills/game-prototype/unity-project/Assets/Sprites/stone_chunk_small.png.meta`, `skills/game-prototype/unity-project/Assets/Sprites/stone_chunk.png`.
+4. test/eval 파일로 동작 검증: `skills/music-video/tests/genre-aware-smoke.sh`, `skills/music-video/tests/smoke.sh`, `skills/job-hunt/tests/edge-cases.sh`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-AI 인프라/서빙 관점에서 An agent that builds, plays, and verifies its own game ? a colony sim prototype gated by 15 scenario input level repro t. 핵심 구조 신호는 C#, README.md, CLAUDE.md, LICENSE, ci, docs이며, source+report 근거 수준으로 emerging 후보로 읽는 것이 좋습니다.
+AI 인프라/서빙 관점에서 An agent that builds, plays, and verifies its own game ? a colony sim prototype gated by 15 scenario input level repro t. 핵심 구조 신호는 C#, README.md, CLAUDE.md, LICENSE, ci, docs이며, 소스+보고서 근거 수준으로 초기 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 AI 인프라/서빙 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+korea 신호의 AI 인프라/서빙 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-06-18T15:13:01.107Z",
+  "generatedAt": "2026-06-18T15:31:47.876Z",
   "slug": "category-guides",
-  "title": "Category Guides",
-  "description": "Generated category pages that group open-source, research, presentation, and trend artifacts.",
+  "title": "카테고리별 근거",
+  "description": "오픈소스, 연구, 발표, 트렌드 근거를 artifact 기준으로 묶은 분류 지도입니다.",
   "count": 18,
   "reports": [
     {
       "id": "report:reports/categories/README.md",
       "path": "reports/categories/README.md",
-      "title": "Category Index",
-      "summary": "Category Index Generated 2026 06 18T15 12 39.601Z This folder reorganizes the repository's scattered open source, research, presentation, and trend materials into a durable taxonomy. Original source files remain in place; category folders link back to the orig",
+      "title": "근거 카테고리 목차",
+      "summary": "근거 카테고리 목차 생성 시각 2026 06 18T15 31 33.431Z 이 폴더는 흩어져 있는 오픈소스, 연구, 발표, 트렌드 근거를 오래 유지할 수 있는 taxonomy로 다시 묶은 목차입니다. 원본 파일은 그대로 두고, 카테고리 README가 원본 데이터, 보고서, 클론 소스 위치로 연결합니다. 요약 조사 단위 전체 조사 근거를 artifact 기준으로 분류한 상위 목차입니다. 포함 범위 3,709개 항목, 17개 카테고리 폴더입니다. 탐색 방식 아래 카",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.339Z",
+      "updatedAt": "2026-06-18T15:31:34.309Z",
       "categories": [
         "start-here",
         "category-guides"
       ],
-      "priority": 182
+      "priority": 157
     },
     {
       "id": "report:reports/categories/agent-harness-orchestration/README.md",
       "path": "reports/categories/agent-harness-orchestration/README.md",
-      "title": "Agent Harness and Orchestration",
-      "summary": "Agent Harness and Orchestration Generated 2026 06 18T15 12 39.601Z Agent harnesses, multi agent runtimes, skills, tools, workflows, task orchestration, and production agent frameworks. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고",
+      "title": "에이전트 하네스/오케스트레이션",
+      "summary": "에이전트 하네스/오케스트레이션 생성 시각 2026 06 18T15 31 33.431Z agent harness, multi agent runtime, skills, tools, workflows, task orchestration, production agent framework를 묶은 카테고리입니다. 요약 조사 단위 agent harness orchestration artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.200Z",
+      "updatedAt": "2026-06-18T15:31:34.155Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -36,11 +36,11 @@
     {
       "id": "report:reports/categories/ai-infrastructure-serving/README.md",
       "path": "reports/categories/ai-infrastructure-serving/README.md",
-      "title": "AI Infrastructure and Serving",
-      "summary": "AI Infrastructure and Serving Generated 2026 06 18T15 12 39.601Z LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment. 요약 조사 단위 ai infrastructure serving artifact 카테고리에 속한 오픈소스, 논문, 발",
+      "title": "AI 인프라/서빙",
+      "summary": "AI 인프라/서빙 생성 시각 2026 06 18T15 31 33.431Z LLM serving, inference engine, GPU, AI factory, training/inference infrastructure, Kubernetes, runtime, model deployment를 묶은 카테고리입니다. 요약 조사 단위 ai infrastructure serving artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.264Z",
+      "updatedAt": "2026-06-18T15:31:34.222Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -50,11 +50,11 @@
     {
       "id": "report:reports/categories/ai-usage-trends/README.md",
       "path": "reports/categories/ai-usage-trends/README.md",
-      "title": "AI Usage Trends",
-      "summary": "AI Usage Trends Generated 2026 06 18T15 12 39.601Z Recent AI adoption trends from Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, and Korea events. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참",
+      "title": "AI 활용 트렌드",
+      "summary": "AI 활용 트렌드 생성 시각 2026 06 18T15 31 33.431Z Amazon/AWS, Microsoft, Google, NVIDIA, Salesforce, OpenAI, Anthropic, GitHub, NAVER, Samsung, SK, 한국 행사에서 나온 최근 AI 도입 트렌드입니다. 요약 조사 단위 ai usage trends artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 58개 항목이며, 주요 구",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.311Z",
+      "updatedAt": "2026-06-18T15:31:34.275Z",
       "categories": [
         "category-guides",
         "ai-usage-trends"
@@ -64,11 +64,11 @@
     {
       "id": "report:reports/categories/coding-agents-ides/README.md",
       "path": "reports/categories/coding-agents-ides/README.md",
-      "title": "Coding Agents and IDEs",
-      "summary": "Coding Agents and IDEs Generated 2026 06 18T15 12 39.601Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 ",
+      "title": "코딩 에이전트/IDE",
+      "summary": "코딩 에이전트/IDE 생성 시각 2026 06 18T15 31 33.431Z Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, 코드 리뷰, 코딩 보조, agentic IDE workflow를 묶은 카테고리입니다. 요약 조사 단위 coding agents ides artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 1,417개 항목이며, 주요 구성은 refere",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.178Z",
+      "updatedAt": "2026-06-18T15:31:34.130Z",
       "categories": [
         "category-guides",
         "coding-agents"
@@ -78,11 +78,11 @@
     {
       "id": "report:reports/categories/context-memory/README.md",
       "path": "reports/categories/context-memory/README.md",
-      "title": "Context and Memory",
-      "summary": "Context and Memory Generated 2026 06 18T15 12 39.601Z Long term memory, session state, context engineering, recall, persistence, personalization, and agent memory systems. 요약 조사 단위 context memory artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 1,178 entr",
+      "title": "컨텍스트/메모리",
+      "summary": "컨텍스트/메모리 생성 시각 2026 06 18T15 31 33.431Z long term memory, session state, context engineering, recall, persistence, personalization, agent memory system을 묶은 카테고리입니다. 요약 조사 단위 context memory artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 1,178개 항목이며, 주요 구",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.247Z",
+      "updatedAt": "2026-06-18T15:31:34.203Z",
       "categories": [
         "category-guides"
       ],
@@ -91,11 +91,11 @@
     {
       "id": "report:reports/categories/data-platforms-vector-databases/README.md",
       "path": "reports/categories/data-platforms-vector-databases/README.md",
-      "title": "Data Platforms and Vector Databases",
-      "summary": "Data Platforms and Vector Databases Generated 2026 06 18T15 12 39.601Z Vector databases, graph databases, search engines, data stores, embeddings, indexing, and retrieval infrastructure. 요약 조사 단위 data platforms vector databases artifact 카테고리에 속한 오픈소스, 논문, 발표/트",
+      "title": "데이터 플랫폼/벡터 DB",
+      "summary": "데이터 플랫폼/벡터 DB 생성 시각 2026 06 18T15 31 33.431Z vector database, graph database, search engine, data store, embedding, indexing, retrieval infrastructure를 묶은 카테고리입니다. 요약 조사 단위 data platforms vector databases artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 2",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.268Z",
+      "updatedAt": "2026-06-18T15:31:34.226Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -105,11 +105,11 @@
     {
       "id": "report:reports/categories/developer-productivity-devtools/README.md",
       "path": "reports/categories/developer-productivity-devtools/README.md",
-      "title": "Developer Productivity and DevTools",
-      "summary": "Developer Productivity and DevTools Generated 2026 06 18T15 12 39.601Z Developer tooling, automation, CI, GitHub Actions, CLIs, SDKs, workflow accelerators, code search, and productivity systems. 요약 조사 단위 developer productivity devtools artifact 카테고리에 속한 오픈소스,",
+      "title": "개발 생산성/DevTools",
+      "summary": "개발 생산성/DevTools 생성 시각 2026 06 18T15 31 33.431Z developer tooling, automation, CI, GitHub Actions, CLI, SDK, workflow accelerator, code search, productivity system을 묶은 카테고리입니다. 요약 조사 단위 developer productivity devtools artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.278Z",
+      "updatedAt": "2026-06-18T15:31:34.238Z",
       "categories": [
         "category-guides"
       ],
@@ -118,11 +118,11 @@
     {
       "id": "report:reports/categories/evals-observability-quality/README.md",
       "path": "reports/categories/evals-observability-quality/README.md",
-      "title": "Evals, Observability, and Quality",
-      "summary": "Evals, Observability, and Quality Generated 2026 06 18T15 12 39.601Z Prompt and agent evals, tracing, observability, quality gates, benchmarks, testing, monitoring, and reliability systems. 요약 조사 단위 evals observability quality artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌",
+      "title": "평가/관측/품질",
+      "summary": "평가/관측/품질 생성 시각 2026 06 18T15 31 33.431Z prompt/agent eval, tracing, observability, quality gate, benchmark, testing, monitoring, reliability system을 묶은 카테고리입니다. 요약 조사 단위 evals observability quality artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 648개 항목이",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.255Z",
+      "updatedAt": "2026-06-18T15:31:34.211Z",
       "categories": [
         "category-guides",
         "adjacent-infrastructure"
@@ -132,13 +132,14 @@
     {
       "id": "report:reports/categories/global-ai-open-source/README.md",
       "path": "reports/categories/global-ai-open-source/README.md",
-      "title": "Global AI Open Source",
-      "summary": "Global AI Open Source Generated 2026 06 18T15 12 39.601Z Global trending AI, LLM, agent, RAG, devtool, security, and infrastructure open source repositories. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519 entries이며, 주요",
+      "title": "글로벌 AI 오픈소스",
+      "summary": "글로벌 AI 오픈소스 생성 시각 2026 06 18T15 31 33.431Z 글로벌 트렌딩 AI, LLM, agent, RAG, devtool, security, infrastructure 오픈소스 레포를 묶은 카테고리입니다. 요약 조사 단위 global ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 519개 항목이며, 주요 구성은 repository 519 입니다. 연결 보고서 glo",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.297Z",
+      "updatedAt": "2026-06-18T15:31:34.260Z",
       "categories": [
         "category-guides",
+        "source-code-deep-dives",
         "global-trending-open-source"
       ],
       "priority": 156
@@ -146,13 +147,14 @@
     {
       "id": "report:reports/categories/korean-ai-open-source/README.md",
       "path": "reports/categories/korean-ai-open-source/README.md",
-      "title": "Korean AI and Open Source",
-      "summary": "Korean AI and Open Source Generated 2026 06 18T15 12 39.601Z Korea trending repositories, Korean AI services, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, Korean RAG/MCP, and Korea conference signals. 요약 조사 단위 korean ai open source artifact 카테고리에 속한 오픈소스, 논문, 발",
+      "title": "한국 AI/오픈소스",
+      "summary": "한국 AI/오픈소스 생성 시각 2026 06 18T15 31 33.431Z 한국 트렌딩 레포, 한국 AI 서비스, NAVER, Kakao, Samsung, SK, Toss, LINE, NHN, 한국 RAG/MCP, 국내 컨퍼런스 신호를 묶은 카테고리입니다. 요약 조사 단위 korean ai open source artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 602개 항목이며, 주요 구성은 repository 58",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.291Z",
+      "updatedAt": "2026-06-18T15:31:34.254Z",
       "categories": [
         "category-guides",
+        "source-code-deep-dives",
         "korea-trending-open-source"
       ],
       "priority": 156
@@ -160,11 +162,11 @@
     {
       "id": "report:reports/categories/llm-wiki-rag-knowledge/README.md",
       "path": "reports/categories/llm-wiki-rag-knowledge/README.md",
-      "title": "LLM Wiki, RAG, and Knowledge Bases",
-      "summary": "LLM Wiki, RAG, and Knowledge Bases Generated 2026 06 18T15 12 39.601Z LLM maintained wikis, RAG, GraphRAG, knowledge bases, document chat, retrieval, notebooks, and source aware knowledge systems. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/",
+      "title": "LLM 위키/RAG/지식베이스",
+      "summary": "LLM 위키/RAG/지식베이스 생성 시각 2026 06 18T15 31 33.431Z LLM maintained wiki, RAG, GraphRAG, knowledge base, document chat, retrieval, notebook, source aware knowledge system을 묶은 카테고리입니다. 요약 조사 단위 llm wiki rag knowledge artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.237Z",
+      "updatedAt": "2026-06-18T15:31:34.191Z",
       "categories": [
         "category-guides",
         "llm-wiki"
@@ -174,25 +176,24 @@
     {
       "id": "report:reports/categories/local-llm-models/README.md",
       "path": "reports/categories/local-llm-models/README.md",
-      "title": "Local LLMs and Models",
-      "summary": "Local LLMs and Models Generated 2026 06 18T15 12 39.601Z Local model runtimes, open models, model optimization, transformers, small models, edge inference, and model serving UIs. 요약 조사 단위 local llm models artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 6",
+      "title": "로컬 LLM/모델",
+      "summary": "로컬 LLM/모델 생성 시각 2026 06 18T15 31 33.431Z local model runtime, open model, model optimization, transformers, small model, edge inference, model serving UI를 묶은 카테고리입니다. 요약 조사 단위 local llm models artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 692개 항목이며, 주요",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.286Z",
+      "updatedAt": "2026-06-18T15:31:34.248Z",
       "categories": [
-        "category-guides",
-        "adjacent-infrastructure"
+        "category-guides"
       ],
       "priority": 156
     },
     {
       "id": "report:reports/categories/mcp-tools-protocols/README.md",
       "path": "reports/categories/mcp-tools-protocols/README.md",
-      "title": "MCP, Tools, and Protocols",
-      "summary": "MCP, Tools, and Protocols Generated 2026 06 18T15 12 39.601Z Model Context Protocol servers, tool registries, gateways, connectors, protocol SDKs, and tool calling infrastructure. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
+      "title": "MCP/도구/프로토콜",
+      "summary": "MCP/도구/프로토콜 생성 시각 2026 06 18T15 31 33.431Z Model Context Protocol 서버, tool registry, gateway, connector, protocol SDK, tool calling infrastructure를 묶은 카테고리입니다. 요약 조사 단위 mcp tools protocols artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 649개 항목이며, 주요 구성은",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.207Z",
+      "updatedAt": "2026-06-18T15:31:34.163Z",
       "categories": [
         "category-guides",
         "agent-harness"
@@ -202,11 +203,11 @@
     {
       "id": "report:reports/categories/presentations-conferences/README.md",
       "path": "reports/categories/presentations-conferences/README.md",
-      "title": "Presentations and Conferences",
-      "summary": "Presentations and Conferences Generated 2026 06 18T15 12 39.601Z Conference sessions, keynotes, webinars, event recaps, recordings, schedules, and presentation method references. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다",
+      "title": "발표/컨퍼런스",
+      "summary": "발표/컨퍼런스 생성 시각 2026 06 18T15 31 33.431Z conference session, keynote, webinar, event recap, recording, schedule, presentation method reference를 묶은 카테고리입니다. 요약 조사 단위 presentations conferences artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 723개 항목이며, 주요 구성은",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.310Z",
+      "updatedAt": "2026-06-18T15:31:34.274Z",
       "categories": [
         "category-guides",
         "presentations-conferences"
@@ -216,25 +217,25 @@
     {
       "id": "report:reports/categories/research-papers/README.md",
       "path": "reports/categories/research-papers/README.md",
-      "title": "Research Papers and Evidence",
-      "summary": "Research Papers and Evidence Generated 2026 06 18T15 12 39.601Z OpenAlex papers, studies, requirements research, agent research, source scanning research, and evidence corpus entries. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 ",
+      "title": "논문/연구 근거",
+      "summary": "논문/연구 근거 생성 시각 2026 06 18T15 31 33.431Z OpenAlex 논문, 연구, 요구사항 연구, agent 연구, source scanning 연구, evidence corpus 항목을 묶은 카테고리입니다. 요약 조사 단위 research papers artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다. 포함 범위 650개 항목이며, 주요 구성은 research paper 650 입니다. 연결 보고서 rese",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.306Z",
+      "updatedAt": "2026-06-18T15:31:34.268Z",
       "categories": [
         "category-guides",
-        "coding-agents"
+        "research-foundations"
       ],
       "priority": 156
     },
     {
       "id": "report:reports/categories/security-governance-safety/README.md",
       "path": "reports/categories/security-governance-safety/README.md",
-      "title": "Security, Governance, and Safety",
-      "summary": "Security, Governance, and Safety Generated 2026 06 18T15 12 39.601Z Sandboxing, policy, governance, guardrails, prompt injection defense, supply chain security, identity, audit, and safe agent execution. 요약 조사 단위 security governance safety artifact 카테고리에 속한 오픈",
+      "title": "보안/거버넌스/안전",
+      "summary": "보안/거버넌스/안전 생성 시각 2026 06 18T15 31 33.431Z sandboxing, policy, governance, guardrail, prompt injection defense, supply chain security, identity, audit, safe agent execution을 묶은 카테고리입니다. 요약 조사 단위 security governance safety artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.260Z",
+      "updatedAt": "2026-06-18T15:31:34.218Z",
       "categories": [
         "category-guides"
       ],
@@ -243,11 +244,11 @@
     {
       "id": "report:reports/categories/spec-driven-requirements/README.md",
       "path": "reports/categories/spec-driven-requirements/README.md",
-      "title": "Spec-Driven and Requirements",
-      "summary": "Spec Driven and Requirements Generated 2026 06 18T15 12 39.601Z Spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contracts, and formal specifications. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논",
+      "title": "스펙 드리븐/요구사항",
+      "summary": "스펙 드리븐/요구사항 생성 시각 2026 06 18T15 31 33.431Z spec driven development, requirements engineering, acceptance criteria, BDD/TDD, traceability, API contract, formal specification을 묶은 카테고리입니다. 요약 조사 단위 spec driven requirements artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료",
       "kind": "category-guide",
       "folder": "categories",
-      "updatedAt": "2026-06-18T15:12:40.216Z",
+      "updatedAt": "2026-06-18T15:31:34.173Z",
       "categories": [
         "category-guides",
         "spec-driven"

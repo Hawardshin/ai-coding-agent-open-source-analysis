@@ -1,63 +1,63 @@
-# mezmo/aura Source Deep Dive
+# mezmo/aura 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 AURA is an agentic harness that turns an LLM model into a reliable, autonomous service capable of executing real SRE work. AURA provides the guardrails, API servers, state management, authentication, streaming, error handling, and tool integrations necessary to run AI SRE agents safely in production.
 
 ## 요약
 
-- 조사 단위: `sources/mezmo__aura` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 277 files, 55 directories, depth score 126, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/mezmo__aura` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 277 files, 55 directories, depth score 120, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/integration/scratchpad-mcp/Dockerfile, tests/integration/scratchpad-mcp/requirements.txt, tests/integration/scratchpad-mcp/server.py이고, 의존성 단서는 mcp, qdrant, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/integration/scratchpad-mcp/Dockerfile, tests/integration/scratchpad-mcp/requirements.txt, tests/integration/scratchpad-mcp/server.py이고, 의존성 단서는 mcp, qdrant, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | mezmo/aura |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | mezmo/aura |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | korea |
 | Language | Rust |
 | Stars | 99 |
 | Forks | 18 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/mezmo__aura](../../../../sources/mezmo__aura) |
-| Existing report | [reports/global-trending/repositories/mezmo__aura.md](../../../global-trending/repositories/mezmo__aura.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/mezmo__aura](../../../../sources/mezmo__aura) |
+| 기존 보고서 | [reports/global-trending/repositories/mezmo__aura.md](../../../global-trending/repositories/mezmo__aura.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 277 / 55 |
-| Max observed depth | 6 |
-| Top directories | .config, .github, .makefiles, compose, configs, crates, deployment, docs, examples, quickstart, scripts, tests |
-| Top extensions | .rs: 156, .md: 30, .toml: 29, .yaml: 14, (none): 14, .yml: 12, .mk: 6, .py: 3, .txt: 3, .example: 2, .js: 2, .sh: 2 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 277 / 55 |
+| 관측 최대 깊이 | 6 |
+| 상위 디렉터리 | .config, .github, .makefiles, compose, configs, crates, deployment, docs, examples, quickstart, scripts, tests |
+| 상위 확장자 | .rs: 156, .md: 30, .toml: 29, .yaml: 14, (none): 14, .yml: 12, .mk: 6, .py: 3, .txt: 3, .example: 2, .js: 2, .sh: 2 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | crates/aura | crates workspace | 32 |
 | tests | validation surface | 23 |
@@ -79,9 +79,9 @@ AURA is an agentic harness that turns an LLM model into a reliable, autonomous s
 | quickstart | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | quality | package.json | commitlint | commitlint-mzm --format=pretty |
 | build | package.json | release | semantic-release |
@@ -108,24 +108,24 @@ AURA is an agentic harness that turns an LLM model into a reliable, autonomous s
 | utility | Makefile | clean | make clean |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | mcp |
-| agentFrameworks | none |
+| agentFrameworks | 없음 |
 | vectorStores | qdrant |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
 | observability | opentelemetry |
-| browserAutomation | none |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [tests/integration/scratchpad-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/Dockerfile) | mcp signal |
 | mcp | [tests/integration/scratchpad-mcp/requirements.txt](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/requirements.txt) | mcp signal |
@@ -141,9 +141,9 @@ AURA is an agentic harness that turns an LLM model into a reliable, autonomous s
 | instruction | [CLAUDE.md](../../../../sources/mezmo__aura/CLAUDE.md) | instruction signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 11 | [tests/integration/scratchpad-mcp/server.py](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/server.py)<br>[tests/integration/k8s-sre-mcp/server.py](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/server.py)<br>[crates/aura-web-server/src/lib.rs](../../../../sources/mezmo__aura/crates/aura-web-server/src/lib.rs)<br>[crates/aura-web-server/src/main.rs](../../../../sources/mezmo__aura/crates/aura-web-server/src/main.rs)<br>[crates/aura-test-utils/src/lib.rs](../../../../sources/mezmo__aura/crates/aura-test-utils/src/lib.rs)<br>[crates/aura-events/src/lib.rs](../../../../sources/mezmo__aura/crates/aura-events/src/lib.rs)<br>[crates/aura-config/src/lib.rs](../../../../sources/mezmo__aura/crates/aura-config/src/lib.rs)<br>[crates/aura-cli/src/cli.rs](../../../../sources/mezmo__aura/crates/aura-cli/src/cli.rs) |
 | agentRuntime | 22 | [crates/aura-web-server/src/a2a/agent_executor.rs](../../../../sources/mezmo__aura/crates/aura-web-server/src/a2a/agent_executor.rs)<br>[crates/aura-cli/src/tools/definitions.rs](../../../../sources/mezmo__aura/crates/aura-cli/src/tools/definitions.rs)<br>[crates/aura-cli/src/tools/diff.rs](../../../../sources/mezmo__aura/crates/aura-cli/src/tools/diff.rs)<br>[crates/aura-cli/src/tools/display.rs](../../../../sources/mezmo__aura/crates/aura-cli/src/tools/display.rs)<br>[crates/aura-cli/src/tools/execution.rs](../../../../sources/mezmo__aura/crates/aura-cli/src/tools/execution.rs)<br>[crates/aura-cli/src/tools/mod.rs](../../../../sources/mezmo__aura/crates/aura-cli/src/tools/mod.rs)<br>[crates/aura-cli/src/tools/rig_tools.rs](../../../../sources/mezmo__aura/crates/aura-cli/src/tools/rig_tools.rs)<br>[crates/aura/src/tool_call_observer.rs](../../../../sources/mezmo__aura/crates/aura/src/tool_call_observer.rs) |
@@ -159,39 +159,39 @@ AURA is an agentic harness that turns an LLM model into a reliable, autonomous s
 | config | 12 | [Cargo.lock](../../../../sources/mezmo__aura/Cargo.lock)<br>[Cargo.toml](../../../../sources/mezmo__aura/Cargo.toml)<br>[Makefile](../../../../sources/mezmo__aura/Makefile)<br>[package.json](../../../../sources/mezmo__aura/package.json)<br>[tests/integration/scratchpad-mcp/requirements.txt](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/requirements.txt)<br>[tests/integration/k8s-sre-mcp/requirements.txt](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/requirements.txt)<br>[crates/aura-web-server/Cargo.toml](../../../../sources/mezmo__aura/crates/aura-web-server/Cargo.toml)<br>[crates/aura-test-utils/Cargo.toml](../../../../sources/mezmo__aura/crates/aura-test-utils/Cargo.toml) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 35 | [tests/integration/scratchpad-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/Dockerfile)<br>[tests/integration/scratchpad-mcp/requirements.txt](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/requirements.txt)<br>[tests/integration/scratchpad-mcp/server.py](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/server.py)<br>[tests/integration/k8s-sre-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/Dockerfile)<br>[tests/integration/k8s-sre-mcp/requirements.txt](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/requirements.txt)<br>[tests/integration/k8s-sre-mcp/server.py](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/server.py) |
-| CI workflows | 2 | [Jenkinsfile](../../../../sources/mezmo__aura/Jenkinsfile)<br>[.github/workflows/cla.yml](../../../../sources/mezmo__aura/.github/workflows/cla.yml) |
-| Containers / deploy | 21 | [docker-compose.yml](../../../../sources/mezmo__aura/docker-compose.yml)<br>[Dockerfile](../../../../sources/mezmo__aura/Dockerfile)<br>[tests/integration/scratchpad-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/Dockerfile)<br>[tests/integration/k8s-sre-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/Dockerfile)<br>[examples/quickstart-orchestration-math/docker-compose.yml](../../../../sources/mezmo__aura/examples/quickstart-orchestration-math/docker-compose.yml)<br>[examples/quickstart-orchestration-math/math-mcp/Dockerfile](../../../../sources/mezmo__aura/examples/quickstart-orchestration-math/math-mcp/Dockerfile) |
-| Security / policy | 2 | [deployment/helm/aura/templates/secret.yaml](../../../../sources/mezmo__aura/deployment/helm/aura/templates/secret.yaml)<br>[crates/aura/src/orchestration/duplicate_call_guard.rs](../../../../sources/mezmo__aura/crates/aura/src/orchestration/duplicate_call_guard.rs) |
-| Agent instructions | 1 | [CLAUDE.md](../../../../sources/mezmo__aura/CLAUDE.md) |
+| 테스트/평가 | 35 | [tests/integration/scratchpad-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/Dockerfile)<br>[tests/integration/scratchpad-mcp/requirements.txt](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/requirements.txt)<br>[tests/integration/scratchpad-mcp/server.py](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/server.py)<br>[tests/integration/k8s-sre-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/Dockerfile)<br>[tests/integration/k8s-sre-mcp/requirements.txt](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/requirements.txt)<br>[tests/integration/k8s-sre-mcp/server.py](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/server.py) |
+| CI workflow | 2 | [Jenkinsfile](../../../../sources/mezmo__aura/Jenkinsfile)<br>[.github/workflows/cla.yml](../../../../sources/mezmo__aura/.github/workflows/cla.yml) |
+| 컨테이너/배포 | 21 | [docker-compose.yml](../../../../sources/mezmo__aura/docker-compose.yml)<br>[Dockerfile](../../../../sources/mezmo__aura/Dockerfile)<br>[tests/integration/scratchpad-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/scratchpad-mcp/Dockerfile)<br>[tests/integration/k8s-sre-mcp/Dockerfile](../../../../sources/mezmo__aura/tests/integration/k8s-sre-mcp/Dockerfile)<br>[examples/quickstart-orchestration-math/docker-compose.yml](../../../../sources/mezmo__aura/examples/quickstart-orchestration-math/docker-compose.yml)<br>[examples/quickstart-orchestration-math/math-mcp/Dockerfile](../../../../sources/mezmo__aura/examples/quickstart-orchestration-math/math-mcp/Dockerfile) |
+| 보안/정책 | 2 | [deployment/helm/aura/templates/secret.yaml](../../../../sources/mezmo__aura/deployment/helm/aura/templates/secret.yaml)<br>[crates/aura/src/orchestration/duplicate_call_guard.rs](../../../../sources/mezmo__aura/crates/aura/src/orchestration/duplicate_call_guard.rs) |
+| 에이전트 지시문 | 1 | [CLAUDE.md](../../../../sources/mezmo__aura/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/integration/scratchpad-mcp/Dockerfile`, `tests/integration/scratchpad-mcp/requirements.txt`, `tests/integration/scratchpad-mcp/server.py`.
-2. Trace execution through entrypoints: `tests/integration/scratchpad-mcp/server.py`, `tests/integration/k8s-sre-mcp/server.py`, `crates/aura-web-server/src/lib.rs`.
-3. Map agent/tool runtime through: `crates/aura-web-server/src/a2a/agent_executor.rs`, `crates/aura-cli/src/tools/definitions.rs`, `crates/aura-cli/src/tools/diff.rs`.
-4. Inspect retrieval/memory/indexing through: `crates/aura/src/bedrock_embedding.rs`, `crates/aura/src/rag_tools.rs`, `crates/aura/src/vector_dynamic.rs`.
-5. Verify behavior through test/eval files: `tests/integration/scratchpad-mcp/Dockerfile`, `tests/integration/scratchpad-mcp/requirements.txt`, `tests/integration/scratchpad-mcp/server.py`.
+1. 핵심 참조에서 시작: `tests/integration/scratchpad-mcp/Dockerfile`, `tests/integration/scratchpad-mcp/requirements.txt`, `tests/integration/scratchpad-mcp/server.py`.
+2. entrypoint를 따라 실행 흐름 확인: `tests/integration/scratchpad-mcp/server.py`, `tests/integration/k8s-sre-mcp/server.py`, `crates/aura-web-server/src/lib.rs`.
+3. agent/tool runtime 매핑: `crates/aura-web-server/src/a2a/agent_executor.rs`, `crates/aura-cli/src/tools/definitions.rs`, `crates/aura-cli/src/tools/diff.rs`.
+4. retrieval/memory/indexing 확인: `crates/aura/src/bedrock_embedding.rs`, `crates/aura/src/rag_tools.rs`, `crates/aura/src/vector_dynamic.rs`.
+5. test/eval 파일로 동작 검증: `tests/integration/scratchpad-mcp/Dockerfile`, `tests/integration/scratchpad-mcp/requirements.txt`, `tests/integration/scratchpad-mcp/server.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 AURA is an agentic harness that turns an LLM model into a reliable, autonomous service capable of executing real SRE wor. 핵심 구조 신호는 Rust, package.json, Cargo.toml, Dockerfile, docker-compose.yml, Makefile이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 AURA is an agentic harness that turns an LLM model into a reliable, autonomous service capable of executing real SRE wor. 핵심 구조 신호는 Rust, package.json, Cargo.toml, Dockerfile, docker-compose.yml, Makefile이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

@@ -1,63 +1,63 @@
-# CaviraOSS/OpenMemory Source Deep Dive
+# CaviraOSS/OpenMemory 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local persistent memory store for LLM applications including claude desktop, github copilot, codex, antigravity, etc.
 
 ## 요약
 
-- 조사 단위: `sources/CaviraOSS__OpenMemory` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 284 files, 76 directories, depth score 123, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/CaviraOSS__OpenMemory` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 284 files, 76 directories, depth score 117, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 retrieval=packages/openmemory-py/src/openmemory/temporal_graph/__init__.py, packages/openmemory-py/src/openmemory/temporal_graph/query.py, packages/openmemory-py/src/openmemory/temporal_graph/store.py이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 retrieval=packages/openmemory-py/src/openmemory/temporal_graph/__init__.py, packages/openmemory-py/src/openmemory/temporal_graph/query.py, packages/openmemory-py/src/openmemory/temporal_graph/store.py이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | CaviraOSS/OpenMemory |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | CaviraOSS/OpenMemory |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | korea |
 | Language | TypeScript |
 | Stars | 4243 |
 | Forks | 481 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/CaviraOSS__OpenMemory](../../../../sources/CaviraOSS__OpenMemory) |
-| Existing report | [reports/global-trending/repositories/CaviraOSS__OpenMemory.md](../../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/CaviraOSS__OpenMemory](../../../../sources/CaviraOSS__OpenMemory) |
+| 기존 보고서 | [reports/global-trending/repositories/CaviraOSS__OpenMemory.md](../../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 284 / 76 |
-| Max observed depth | 7 |
-| Top directories | .do, .github, apps, dashboard, docs, examples, packages, tools |
-| Top extensions | .ts: 94, .py: 93, .md: 26, .json: 14, .tsx: 12, .yml: 10, (none): 10, .js: 6, .png: 3, .example: 2, .mjs: 2, .ps1: 2 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 284 / 76 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .do, .github, apps, dashboard, docs, examples, packages, tools |
+| 상위 확장자 | .ts: 94, .py: 93, .md: 26, .json: 14, .tsx: 12, .yml: 10, (none): 10, .js: 6, .png: 3, .example: 2, .mjs: 2, .ps1: 2 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/openmemory-js | packages workspace | 50 |
 | packages/openmemory-py | packages workspace | 34 |
@@ -73,9 +73,9 @@ LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/s
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | utility | Makefile | help | make help |
@@ -99,24 +99,24 @@ LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/s
 | utility | Makefile | db-reset | make db-reset |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [packages/openmemory-py/src/openmemory/temporal_graph/__init__.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/src/openmemory/temporal_graph/__init__.py) | retrieval signal |
 | retrieval | [packages/openmemory-py/src/openmemory/temporal_graph/query.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/src/openmemory/temporal_graph/query.py) | retrieval signal |
@@ -132,9 +132,9 @@ LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/s
 | docs | [docs/api-server.md](../../../../sources/CaviraOSS__OpenMemory/docs/api-server.md) | docs signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 17 | [tools/migrate/__main__.py](../../../../sources/CaviraOSS__OpenMemory/tools/migrate/__main__.py)<br>[packages/openmemory-py/src/openmemory/main.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/src/openmemory/main.py)<br>[packages/openmemory-js/src/cli.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/src/cli.ts)<br>[packages/openmemory-js/src/index.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/src/index.ts)<br>[packages/openmemory-js/src/server.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/src/server.ts)<br>[packages/openmemory-js/src/server/server.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/src/server/server.ts)<br>[packages/openmemory-js/bin/opm.js](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/bin/opm.js)<br>[apps/vscode-extension/src/extension.ts](../../../../sources/CaviraOSS__OpenMemory/apps/vscode-extension/src/extension.ts) |
 | agentRuntime | 39 | [tools/backup_restore.py](../../../../sources/CaviraOSS__OpenMemory/tools/backup_restore.py)<br>[tools/ops/benchmark.py](../../../../sources/CaviraOSS__OpenMemory/tools/ops/benchmark.py)<br>[tools/ops/health_viz.py](../../../../sources/CaviraOSS__OpenMemory/tools/ops/health_viz.py)<br>[tools/migrate/__init__.py](../../../../sources/CaviraOSS__OpenMemory/tools/migrate/__init__.py)<br>[tools/migrate/__main__.py](../../../../sources/CaviraOSS__OpenMemory/tools/migrate/__main__.py)<br>[tools/migrate/importer.py](../../../../sources/CaviraOSS__OpenMemory/tools/migrate/importer.py)<br>[tools/migrate/schemas.py](../../../../sources/CaviraOSS__OpenMemory/tools/migrate/schemas.py)<br>[tools/migrate/utils.py](../../../../sources/CaviraOSS__OpenMemory/tools/migrate/utils.py) |
@@ -145,44 +145,44 @@ LLM 위키/RAG/지식베이스 관점에서 monorepo/workspace, cli-first, api/s
 | security | 2 | [SECURITY.md](../../../../sources/CaviraOSS__OpenMemory/SECURITY.md)<br>[packages/openmemory-js/src/server/middleware/auth.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/src/server/middleware/auth.ts) |
 | ci | 5 | [.github/workflows/ci.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/ci.yml)<br>[.github/workflows/docker-build.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/docker-build.yml)<br>[.github/workflows/main.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/main.yml)<br>[.github/workflows/publish-docker-image.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/publish-docker-image.yml)<br>[.github/workflows/publish-sdks.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/publish-sdks.yml) |
 | container | 3 | [docker-compose.yml](../../../../sources/CaviraOSS__OpenMemory/docker-compose.yml)<br>[packages/openmemory-js/Dockerfile](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/Dockerfile)<br>[dashboard/Dockerfile](../../../../sources/CaviraOSS__OpenMemory/dashboard/Dockerfile) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 15 | [README.md](../../../../sources/CaviraOSS__OpenMemory/README.md)<br>[packages/openmemory-py/README.md](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/README.md)<br>[packages/openmemory-js/README.md](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/README.md)<br>[docs/api-server.md](../../../../sources/CaviraOSS__OpenMemory/docs/api-server.md)<br>[docs/concepts.md](../../../../sources/CaviraOSS__OpenMemory/docs/concepts.md)<br>[docs/faq.md](../../../../sources/CaviraOSS__OpenMemory/docs/faq.md)<br>[docs/getting-started.md](../../../../sources/CaviraOSS__OpenMemory/docs/getting-started.md)<br>[docs/index.md](../../../../sources/CaviraOSS__OpenMemory/docs/index.md) |
 | config | 8 | [Makefile](../../../../sources/CaviraOSS__OpenMemory/Makefile)<br>[packages/openmemory-py/pyproject.toml](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/pyproject.toml)<br>[packages/openmemory-js/package.json](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/package.json)<br>[packages/openmemory-js/tsconfig.json](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/tsconfig.json)<br>[dashboard/package.json](../../../../sources/CaviraOSS__OpenMemory/dashboard/package.json)<br>[dashboard/tsconfig.json](../../../../sources/CaviraOSS__OpenMemory/dashboard/tsconfig.json)<br>[apps/vscode-extension/package.json](../../../../sources/CaviraOSS__OpenMemory/apps/vscode-extension/package.json)<br>[apps/vscode-extension/tsconfig.json](../../../../sources/CaviraOSS__OpenMemory/apps/vscode-extension/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 14 | [tools/ops/benchmark.py](../../../../sources/CaviraOSS__OpenMemory/tools/ops/benchmark.py)<br>[packages/openmemory-py/tests/test_minimax.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/tests/test_minimax.py)<br>[packages/openmemory-py/tests/test_omnibus.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/tests/test_omnibus.py)<br>[packages/openmemory-py/tests/test_multilingual_dedup.py/test_multilingual_dedup.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/tests/test_multilingual_dedup.py/test_multilingual_dedup.py)<br>[packages/openmemory-py/src/openmemory/trace.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/src/openmemory/trace.py)<br>[packages/openmemory-js/tests/mcp_per_tenant.test.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/tests/mcp_per_tenant.test.ts) |
-| CI workflows | 5 | [.github/workflows/ci.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/ci.yml)<br>[.github/workflows/docker-build.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/docker-build.yml)<br>[.github/workflows/main.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/main.yml)<br>[.github/workflows/publish-docker-image.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/publish-docker-image.yml)<br>[.github/workflows/publish-sdks.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/publish-sdks.yml) |
-| Containers / deploy | 3 | [docker-compose.yml](../../../../sources/CaviraOSS__OpenMemory/docker-compose.yml)<br>[packages/openmemory-js/Dockerfile](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/Dockerfile)<br>[dashboard/Dockerfile](../../../../sources/CaviraOSS__OpenMemory/dashboard/Dockerfile) |
-| Security / policy | 2 | [SECURITY.md](../../../../sources/CaviraOSS__OpenMemory/SECURITY.md)<br>[packages/openmemory-js/src/server/middleware/auth.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/src/server/middleware/auth.ts) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 14 | [tools/ops/benchmark.py](../../../../sources/CaviraOSS__OpenMemory/tools/ops/benchmark.py)<br>[packages/openmemory-py/tests/test_minimax.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/tests/test_minimax.py)<br>[packages/openmemory-py/tests/test_omnibus.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/tests/test_omnibus.py)<br>[packages/openmemory-py/tests/test_multilingual_dedup.py/test_multilingual_dedup.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/tests/test_multilingual_dedup.py/test_multilingual_dedup.py)<br>[packages/openmemory-py/src/openmemory/trace.py](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-py/src/openmemory/trace.py)<br>[packages/openmemory-js/tests/mcp_per_tenant.test.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/tests/mcp_per_tenant.test.ts) |
+| CI workflow | 5 | [.github/workflows/ci.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/ci.yml)<br>[.github/workflows/docker-build.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/docker-build.yml)<br>[.github/workflows/main.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/main.yml)<br>[.github/workflows/publish-docker-image.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/publish-docker-image.yml)<br>[.github/workflows/publish-sdks.yml](../../../../sources/CaviraOSS__OpenMemory/.github/workflows/publish-sdks.yml) |
+| 컨테이너/배포 | 3 | [docker-compose.yml](../../../../sources/CaviraOSS__OpenMemory/docker-compose.yml)<br>[packages/openmemory-js/Dockerfile](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/Dockerfile)<br>[dashboard/Dockerfile](../../../../sources/CaviraOSS__OpenMemory/dashboard/Dockerfile) |
+| 보안/정책 | 2 | [SECURITY.md](../../../../sources/CaviraOSS__OpenMemory/SECURITY.md)<br>[packages/openmemory-js/src/server/middleware/auth.ts](../../../../sources/CaviraOSS__OpenMemory/packages/openmemory-js/src/server/middleware/auth.ts) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/openmemory-py/src/openmemory/temporal_graph/__init__.py`, `packages/openmemory-py/src/openmemory/temporal_graph/query.py`, `packages/openmemory-py/src/openmemory/temporal_graph/store.py`.
-2. Trace execution through entrypoints: `tools/migrate/__main__.py`, `packages/openmemory-py/src/openmemory/main.py`, `packages/openmemory-js/src/cli.ts`.
-3. Map agent/tool runtime through: `tools/backup_restore.py`, `tools/ops/benchmark.py`, `tools/ops/health_viz.py`.
-4. Inspect retrieval/memory/indexing through: `packages/openmemory-py/src/openmemory/temporal_graph/__init__.py`, `packages/openmemory-py/src/openmemory/temporal_graph/query.py`, `packages/openmemory-py/src/openmemory/temporal_graph/store.py`.
-5. Verify behavior through test/eval files: `tools/ops/benchmark.py`, `packages/openmemory-py/tests/test_minimax.py`, `packages/openmemory-py/tests/test_omnibus.py`.
+1. 핵심 참조에서 시작: `packages/openmemory-py/src/openmemory/temporal_graph/__init__.py`, `packages/openmemory-py/src/openmemory/temporal_graph/query.py`, `packages/openmemory-py/src/openmemory/temporal_graph/store.py`.
+2. entrypoint를 따라 실행 흐름 확인: `tools/migrate/__main__.py`, `packages/openmemory-py/src/openmemory/main.py`, `packages/openmemory-js/src/cli.ts`.
+3. agent/tool runtime 매핑: `tools/backup_restore.py`, `tools/ops/benchmark.py`, `tools/ops/health_viz.py`.
+4. retrieval/memory/indexing 확인: `packages/openmemory-py/src/openmemory/temporal_graph/__init__.py`, `packages/openmemory-py/src/openmemory/temporal_graph/query.py`, `packages/openmemory-py/src/openmemory/temporal_graph/store.py`.
+5. test/eval 파일로 동작 검증: `tools/ops/benchmark.py`, `packages/openmemory-py/tests/test_minimax.py`, `packages/openmemory-py/tests/test_omnibus.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Local persistent memory store for LLM applications including claude desktop, github copilot, codex, antigravity, etc.. 핵심 구조 신호는 TypeScript, docker-compose.yml, Makefile, README.md, LICENSE, ci이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Local persistent memory store for LLM applications including claude desktop, github copilot, codex, antigravity, etc.. 핵심 구조 신호는 TypeScript, docker-compose.yml, Makefile, README.md, LICENSE, ci이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+korea 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

@@ -1,63 +1,63 @@
-# rush-db/rushdb Source Deep Dive
+# rush-db/rushdb 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 RushDB is a graph + vector database and memory layer for AI agents. Push any JSON, get typed, searchable, relationship-aware records back — no schema, no migrations. Built on Neo4j.
 
 ## 요약
 
-- 조사 단위: `sources/rush-db__rushdb` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 958 files, 264 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/rush-db__rushdb` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 958 files, 264 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=mcp.yaml, platform/core/src/dashboard/mcp-oauth/mcp-oauth.module.ts, platform/core/src/dashboard/mcp-oauth/mcp-oauth.scheduler.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=mcp.yaml, platform/core/src/dashboard/mcp-oauth/mcp-oauth.module.ts, platform/core/src/dashboard/mcp-oauth/mcp-oauth.scheduler.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | rush-db/rushdb |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | rush-db/rushdb |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 196 |
 | Forks | 17 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/rush-db__rushdb](../../../../sources/rush-db__rushdb) |
-| Existing report | [reports/global-trending/repositories/rush-db__rushdb.md](../../../global-trending/repositories/rush-db__rushdb.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/rush-db__rushdb](../../../../sources/rush-db__rushdb) |
+| 기존 보고서 | [reports/global-trending/repositories/rush-db__rushdb.md](../../../global-trending/repositories/rush-db__rushdb.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 958 / 264 |
-| Max observed depth | 9 |
-| Top directories | .changeset, .github, .husky, charts, docs, packages, platform |
-| Top extensions | .ts: 473, .tsx: 175, .mdx: 94, .md: 73, .json: 26, (none): 23, .png: 18, .svg: 18, .yaml: 13, .sql: 10, .js: 8, .css: 4 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 958 / 264 |
+| 관측 최대 깊이 | 9 |
+| 상위 디렉터리 | .changeset, .github, .husky, charts, docs, packages, platform |
+| 상위 확장자 | .ts: 473, .tsx: 175, .mdx: 94, .md: 73, .json: 26, (none): 23, .png: 18, .svg: 18, .yaml: 13, .sql: 10, .js: 8, .css: 4 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 63 |
 | packages/mcp-server | packages workspace | 42 |
@@ -69,9 +69,9 @@ RushDB is a graph + vector database and memory layer for AI agents. Push any JSO
 | platform | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | clean | pnpm -r run clean |
 | utility | package.json | clean:install | pnpm -r run flush & pnpm install |
@@ -92,24 +92,24 @@ RushDB is a graph + vector database and memory layer for AI agents. Push any JSO
 | utility | package.json | prepare | husky install |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [mcp.yaml](../../../../sources/rush-db__rushdb/mcp.yaml) | mcp signal |
 | mcp | [platform/core/src/dashboard/mcp-oauth/mcp-oauth.module.ts](../../../../sources/rush-db__rushdb/platform/core/src/dashboard/mcp-oauth/mcp-oauth.module.ts) | mcp signal |
@@ -125,9 +125,9 @@ RushDB is a graph + vector database and memory layer for AI agents. Push any JSO
 | entrypoints | [platform/core/src/app.controller.ts](../../../../sources/rush-db__rushdb/platform/core/src/app.controller.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 10 | [platform/dashboard/src/App.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/App.tsx)<br>[platform/dashboard/src/index.css](../../../../sources/rush-db__rushdb/platform/dashboard/src/index.css)<br>[platform/dashboard/src/main.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/main.tsx)<br>[platform/core/src/app.controller.ts](../../../../sources/rush-db__rushdb/platform/core/src/app.controller.ts)<br>[platform/core/src/app.module.ts](../../../../sources/rush-db__rushdb/platform/core/src/app.module.ts)<br>[platform/core/src/app.service.ts](../../../../sources/rush-db__rushdb/platform/core/src/app.service.ts)<br>[platform/core/src/cli.ts](../../../../sources/rush-db__rushdb/platform/core/src/cli.ts)<br>[platform/core/src/main.ts](../../../../sources/rush-db__rushdb/platform/core/src/main.ts) |
 | agentRuntime | 83 | [platform/dashboard/src/hooks/useClickOutside.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useClickOutside.ts)<br>[platform/dashboard/src/hooks/useControllableState.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useControllableState.ts)<br>[platform/dashboard/src/hooks/useDebounce.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useDebounce.ts)<br>[platform/dashboard/src/hooks/useFocusOutside.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useFocusOutside.ts)<br>[platform/dashboard/src/hooks/useHotkeys.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useHotkeys.ts)<br>[platform/dashboard/src/hooks/useIntersection.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useIntersection.ts)<br>[platform/dashboard/src/hooks/useTimeout.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useTimeout.ts)<br>[platform/dashboard/src/hooks/useSize/index.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/hooks/useSize/index.ts) |
@@ -143,39 +143,39 @@ RushDB is a graph + vector database and memory layer for AI agents. Push any JSO
 | config | 15 | [package.json](../../../../sources/rush-db__rushdb/package.json)<br>[pnpm-workspace.yaml](../../../../sources/rush-db__rushdb/pnpm-workspace.yaml)<br>[tsconfig.json](../../../../sources/rush-db__rushdb/tsconfig.json)<br>[platform/package.json](../../../../sources/rush-db__rushdb/platform/package.json)<br>[platform/dashboard/package.json](../../../../sources/rush-db__rushdb/platform/dashboard/package.json)<br>[platform/dashboard/tsconfig.json](../../../../sources/rush-db__rushdb/platform/dashboard/tsconfig.json)<br>[platform/core/package.json](../../../../sources/rush-db__rushdb/platform/core/package.json)<br>[platform/core/tsconfig.json](../../../../sources/rush-db__rushdb/platform/core/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 30 | [platform/core/test/app.e2e-spec.ts](../../../../sources/rush-db__rushdb/platform/core/test/app.e2e-spec.ts)<br>[platform/core/test/jest-e2e.json](../../../../sources/rush-db__rushdb/platform/core/test/jest-e2e.json)<br>[platform/core/src/core/search/parser/tests/aggregate.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/aggregate.spec.ts)<br>[platform/core/src/core/search/parser/tests/buildCompleteQuery.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/buildCompleteQuery.spec.ts)<br>[platform/core/src/core/search/parser/tests/compileExpr.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/compileExpr.spec.ts)<br>[platform/core/src/core/search/parser/tests/isCurrentLevelCriteria.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/isCurrentLevelCriteria.spec.ts) |
-| CI workflows | 3 | [.github/workflows/ci.yml](../../../../sources/rush-db__rushdb/.github/workflows/ci.yml)<br>[.github/workflows/helm-publish.yml](../../../../sources/rush-db__rushdb/.github/workflows/helm-publish.yml)<br>[.github/workflows/release.yml](../../../../sources/rush-db__rushdb/.github/workflows/release.yml) |
-| Containers / deploy | 36 | [platform/Dockerfile](../../../../sources/rush-db__rushdb/platform/Dockerfile)<br>[platform/core/docker-compose.yml](../../../../sources/rush-db__rushdb/platform/core/docker-compose.yml)<br>[packages/mcp-server/Dockerfile](../../../../sources/rush-db__rushdb/packages/mcp-server/Dockerfile)<br>[docs/docs/deploy/remote-hosting/aws-gcp-azure.mdx](../../../../sources/rush-db__rushdb/docs/docs/deploy/remote-hosting/aws-gcp-azure.mdx)<br>[docs/docs/deploy/remote-hosting/digital-ocean.mdx](../../../../sources/rush-db__rushdb/docs/docs/deploy/remote-hosting/digital-ocean.mdx)<br>[docs/docs/deploy/remote-hosting/index.mdx](../../../../sources/rush-db__rushdb/docs/docs/deploy/remote-hosting/index.mdx) |
-| Security / policy | 67 | [platform/dashboard/src/pages/oauth/consent.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/oauth/consent.tsx)<br>[platform/dashboard/src/pages/auth/confirmEmail.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/auth/confirmEmail.tsx)<br>[platform/dashboard/src/pages/auth/github.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/auth/github.tsx)<br>[platform/dashboard/src/pages/auth/google.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/auth/google.tsx)<br>[platform/dashboard/src/features/auth/constants.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/features/auth/constants.ts)<br>[platform/dashboard/src/features/auth/types.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/features/auth/types.ts) |
-| Agent instructions | 1 | [docs/docs/connect/agents.mdx](../../../../sources/rush-db__rushdb/docs/docs/connect/agents.mdx) |
+| 테스트/평가 | 30 | [platform/core/test/app.e2e-spec.ts](../../../../sources/rush-db__rushdb/platform/core/test/app.e2e-spec.ts)<br>[platform/core/test/jest-e2e.json](../../../../sources/rush-db__rushdb/platform/core/test/jest-e2e.json)<br>[platform/core/src/core/search/parser/tests/aggregate.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/aggregate.spec.ts)<br>[platform/core/src/core/search/parser/tests/buildCompleteQuery.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/buildCompleteQuery.spec.ts)<br>[platform/core/src/core/search/parser/tests/compileExpr.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/compileExpr.spec.ts)<br>[platform/core/src/core/search/parser/tests/isCurrentLevelCriteria.spec.ts](../../../../sources/rush-db__rushdb/platform/core/src/core/search/parser/tests/isCurrentLevelCriteria.spec.ts) |
+| CI workflow | 3 | [.github/workflows/ci.yml](../../../../sources/rush-db__rushdb/.github/workflows/ci.yml)<br>[.github/workflows/helm-publish.yml](../../../../sources/rush-db__rushdb/.github/workflows/helm-publish.yml)<br>[.github/workflows/release.yml](../../../../sources/rush-db__rushdb/.github/workflows/release.yml) |
+| 컨테이너/배포 | 36 | [platform/Dockerfile](../../../../sources/rush-db__rushdb/platform/Dockerfile)<br>[platform/core/docker-compose.yml](../../../../sources/rush-db__rushdb/platform/core/docker-compose.yml)<br>[packages/mcp-server/Dockerfile](../../../../sources/rush-db__rushdb/packages/mcp-server/Dockerfile)<br>[docs/docs/deploy/remote-hosting/aws-gcp-azure.mdx](../../../../sources/rush-db__rushdb/docs/docs/deploy/remote-hosting/aws-gcp-azure.mdx)<br>[docs/docs/deploy/remote-hosting/digital-ocean.mdx](../../../../sources/rush-db__rushdb/docs/docs/deploy/remote-hosting/digital-ocean.mdx)<br>[docs/docs/deploy/remote-hosting/index.mdx](../../../../sources/rush-db__rushdb/docs/docs/deploy/remote-hosting/index.mdx) |
+| 보안/정책 | 67 | [platform/dashboard/src/pages/oauth/consent.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/oauth/consent.tsx)<br>[platform/dashboard/src/pages/auth/confirmEmail.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/auth/confirmEmail.tsx)<br>[platform/dashboard/src/pages/auth/github.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/auth/github.tsx)<br>[platform/dashboard/src/pages/auth/google.tsx](../../../../sources/rush-db__rushdb/platform/dashboard/src/pages/auth/google.tsx)<br>[platform/dashboard/src/features/auth/constants.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/features/auth/constants.ts)<br>[platform/dashboard/src/features/auth/types.ts](../../../../sources/rush-db__rushdb/platform/dashboard/src/features/auth/types.ts) |
+| 에이전트 지시문 | 1 | [docs/docs/connect/agents.mdx](../../../../sources/rush-db__rushdb/docs/docs/connect/agents.mdx) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `mcp.yaml`, `platform/core/src/dashboard/mcp-oauth/mcp-oauth.module.ts`, `platform/core/src/dashboard/mcp-oauth/mcp-oauth.scheduler.ts`.
-2. Trace execution through entrypoints: `platform/dashboard/src/App.tsx`, `platform/dashboard/src/index.css`, `platform/dashboard/src/main.tsx`.
-3. Map agent/tool runtime through: `platform/dashboard/src/hooks/useClickOutside.ts`, `platform/dashboard/src/hooks/useControllableState.ts`, `platform/dashboard/src/hooks/useDebounce.ts`.
-4. Inspect retrieval/memory/indexing through: `platform/dashboard/index.html`, `platform/dashboard/src/index.css`, `platform/dashboard/src/layout/RootLayout/index.tsx`.
-5. Verify behavior through test/eval files: `platform/core/test/app.e2e-spec.ts`, `platform/core/test/jest-e2e.json`, `platform/core/src/core/search/parser/tests/aggregate.spec.ts`.
+1. 핵심 참조에서 시작: `mcp.yaml`, `platform/core/src/dashboard/mcp-oauth/mcp-oauth.module.ts`, `platform/core/src/dashboard/mcp-oauth/mcp-oauth.scheduler.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `platform/dashboard/src/App.tsx`, `platform/dashboard/src/index.css`, `platform/dashboard/src/main.tsx`.
+3. agent/tool runtime 매핑: `platform/dashboard/src/hooks/useClickOutside.ts`, `platform/dashboard/src/hooks/useControllableState.ts`, `platform/dashboard/src/hooks/useDebounce.ts`.
+4. retrieval/memory/indexing 확인: `platform/dashboard/index.html`, `platform/dashboard/src/index.css`, `platform/dashboard/src/layout/RootLayout/index.tsx`.
+5. test/eval 파일로 동작 검증: `platform/core/test/app.e2e-spec.ts`, `platform/core/test/jest-e2e.json`, `platform/core/src/core/search/parser/tests/aggregate.spec.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 RushDB is a graph + vector database and memory layer for AI agents. Push any JSON, get typed, searchable, relationship a. 핵심 구조 신호는 TypeScript, package.json, README.md, react, ci, docs이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 RushDB is a graph + vector database and memory layer for AI agents. Push any JSON, get typed, searchable, relationship a. 핵심 구조 신호는 TypeScript, package.json, README.md, react, ci, docs이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

@@ -1,6 +1,6 @@
-# Source Insights by Category
+# 카테고리별 소스 인사이트
 
-Generated: 2026-06-18T15:12:59.248Z
+생성 시각: 2026-06-18T15:31:47.340Z
 
 ## 요약
 
@@ -12,23 +12,23 @@ Generated: 2026-06-18T15:12:59.248Z
 
 카테고리별 페이지는 같은 유형의 레포를 서로 비교하기 위한 입구입니다. 전체 순위는 source-insights 메인 README가 빠르고, 특정 주제의 설계 패턴과 대표 레포를 고를 때는 이 인덱스에서 내려가는 편이 좋습니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, topics, and folder map. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Source-path evidence and per-repository deep dives. |
-| [Source Repository Deep Dives](../../source-deep-dives/repositories/README.md) | One Markdown deep dive per cloned repository. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-level assessment and role pages. |
-| [Source Trend Insights](../README.md) | Category trend insights and repository feature comparison. |
-| [Source Insights by Category](README.md) | Category-first source insight pages. |
-| [Report Tables](../../tables/README.md) | CSV and table-first navigation. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 소스 경로 근거와 레포별 딥다이브. |
+| [레포별 소스 딥다이브](../../source-deep-dives/repositories/README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평과 역할군 페이지. |
+| [소스 트렌드 인사이트](../README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
+| [카테고리별 소스 인사이트](README.md) | 카테고리 기준의 소스 인사이트 페이지. |
+| [표/CSV 목차](../../tables/README.md) | CSV와 표 중심 탐색. |
 
 
-## Categories
+## 카테고리
 
-| Category | Repos | Trend-linked | Global / Korea | Key refs | Dominant features | First insight |
+| 카테고리 | 레포 수 | 트렌드 연결 | 글로벌 / 한국 | 핵심 참조 | 주요 feature | 첫 인사이트 |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
 | [에이전트 하네스/MCP](agent-harness-mcp/README.md) | 514 | 427 | 340 / 110 | 5524 | agent-runtime (482), tests-evals (467), retrieval-memory (434), mcp/protocol (412) | 에이전트 하네스/MCP 카테고리는 514개 레포로 구성되며, 현재 트렌드 데이터와 직접 연결된 레포 비중은 83%입니다. |
 | [일반 AI 오픈소스](general-ai-open-source/README.md) | 268 | 263 | 9 / 254 | 1996 | tests-evals (208), retrieval-memory (158), spec-artifacts (124), agent-runtime (91) | 일반 AI 오픈소스 카테고리는 268개 레포로 구성되며, 현재 트렌드 데이터와 직접 연결된 레포 비중은 98%입니다. |

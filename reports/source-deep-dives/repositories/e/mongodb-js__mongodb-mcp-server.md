@@ -1,63 +1,63 @@
-# mongodb-js/mongodb-mcp-server Source Deep Dive
+# mongodb-js/mongodb-mcp-server 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.
 
 ## 요약
 
-- 조사 단위: `sources/mongodb-js__mongodb-mcp-server` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 499 files, 134 directories, depth score 125, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/mongodb-js__mongodb-mcp-server` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 499 files, 134 directories, depth score 119, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=MCP_SERVER_LIBRARY.md, packages/mongodb-mcp-remote/package.json, packages/mongodb-mcp-remote/README.md이고, 의존성 단서는 openai, anthropic, mcp, modelcontextprotocol, express, react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=MCP_SERVER_LIBRARY.md, packages/mongodb-mcp-remote/package.json, packages/mongodb-mcp-remote/README.md이고, 의존성 단서는 openai, anthropic, mcp, modelcontextprotocol, express, react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | mongodb-js/mongodb-mcp-server |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | mongodb-js/mongodb-mcp-server |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 1055 |
 | Forks | 257 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/mongodb-js__mongodb-mcp-server](../../../../sources/mongodb-js__mongodb-mcp-server) |
-| Existing report | [reports/global-trending/repositories/mongodb-js__mongodb-mcp-server.md](../../../global-trending/repositories/mongodb-js__mongodb-mcp-server.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/mongodb-js__mongodb-mcp-server](../../../../sources/mongodb-js__mongodb-mcp-server) |
+| 기존 보고서 | [reports/global-trending/repositories/mongodb-js__mongodb-mcp-server.md](../../../global-trending/repositories/mongodb-js__mongodb-mcp-server.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 499 / 134 |
-| Max observed depth | 7 |
-| Top directories | .github, .husky, api-extractor, deploy, eslint-rules, packages, packaging, resources, scripts, src, tests |
-| Top extensions | .ts: 395, .json: 32, .yml: 23, .md: 17, (none): 11, .js: 4, .sh: 4, .conf: 2, .tsx: 2, .yaml: 2, .bicep: 1, .css: 1 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 499 / 134 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .github, .husky, api-extractor, deploy, eslint-rules, packages, packaging, resources, scripts, src, tests |
+| 상위 확장자 | .ts: 395, .json: 32, .yml: 23, .md: 17, (none): 11, .js: 4, .sh: 4, .conf: 2, .tsx: 2, .yaml: 2, .bicep: 1, .css: 1 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 101 |
 | packages/mongodb-mcp-remote | packages workspace | 11 |
@@ -74,9 +74,9 @@ A Model Context Protocol server to connect to MongoDB databases and MongoDB Atla
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | start | node dist/index.js --transport http --loggers 'stderr, mcp' |
 | serve-dev | package.json | start:stdio | node dist/index.js --transport stdio --loggers 'stderr, mcp' |
@@ -119,24 +119,24 @@ A Model Context Protocol server to connect to MongoDB databases and MongoDB Atla
 | entrypoint | package.json bin | index.js | dist/esm/index.js |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
 | agentProtocols | mcp, modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | express, react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [MCP_SERVER_LIBRARY.md](../../../../sources/mongodb-js__mongodb-mcp-server/MCP_SERVER_LIBRARY.md) | mcp signal |
 | mcp | [packages/mongodb-mcp-remote/package.json](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/package.json) | mcp signal |
@@ -152,15 +152,15 @@ A Model Context Protocol server to connect to MongoDB databases and MongoDB Atla
 | entrypoints | [tests/integration/fixtures/server.pem](../../../../sources/mongodb-js__mongodb-mcp-server/tests/integration/fixtures/server.pem) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 10 | [server.json](../../../../sources/mongodb-js__mongodb-mcp-server/server.json)<br>[tests/integration/server.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/integration/server.test.ts)<br>[tests/integration/fixtures/server.key](../../../../sources/mongodb-js__mongodb-mcp-server/tests/integration/fixtures/server.key)<br>[tests/integration/fixtures/server.pem](../../../../sources/mongodb-js__mongodb-mcp-server/tests/integration/fixtures/server.pem)<br>[src/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/index.ts)<br>[src/server.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/server.ts)<br>[packages/types/src/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/packages/types/src/index.ts)<br>[packages/mongodb-mcp-remote/src/cli.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/src/cli.test.ts) |
 | agentRuntime | 136 | [tests/unit/tools/mongodb/mongodbSchemas.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/mongodb/mongodbSchemas.test.ts)<br>[tests/unit/tools/atlas/update/pauseResumeCluster.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/atlas/update/pauseResumeCluster.test.ts)<br>[tests/unit/tools/atlas/update/upgradeCluster.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/atlas/update/upgradeCluster.test.ts)<br>[tests/unit/tools/atlas/streams/build.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/atlas/streams/build.test.ts)<br>[tests/unit/tools/atlas/streams/discover.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/atlas/streams/discover.test.ts)<br>[tests/unit/tools/atlas/streams/manage.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/atlas/streams/manage.test.ts)<br>[tests/unit/tools/atlas/streams/streamsArgs.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/atlas/streams/streamsArgs.test.ts)<br>[tests/unit/tools/atlas/streams/streamsToolBase.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/tools/atlas/streams/streamsToolBase.test.ts) |
 | mcp | 9 | [MCP_SERVER_LIBRARY.md](../../../../sources/mongodb-js__mongodb-mcp-server/MCP_SERVER_LIBRARY.md)<br>[packages/mongodb-mcp-remote/package.json](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/package.json)<br>[packages/mongodb-mcp-remote/README.md](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/README.md)<br>[packages/mongodb-mcp-remote/tsconfig.json](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/tsconfig.json)<br>[packages/mongodb-mcp-remote/vitest.config.ts](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/vitest.config.ts)<br>[packages/mongodb-mcp-remote/src/cli.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/src/cli.test.ts)<br>[packages/mongodb-mcp-remote/src/cli.ts](../../../../sources/mongodb-js__mongodb-mcp-server/packages/mongodb-mcp-remote/src/cli.ts)<br>[api-extractor/reports/mongodb-mcp-server.public.api.md](../../../../sources/mongodb-js__mongodb-mcp-server/api-extractor/reports/mongodb-mcp-server.public.api.md) |
 | retrieval | 21 | [tests/utils/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/utils/index.ts)<br>[tests/browser/tests/embedding.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/tests/embedding.test.ts)<br>[tests/browser/polyfills/zlib/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/polyfills/zlib/index.ts)<br>[tests/browser/polyfills/stream/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/polyfills/stream/index.ts)<br>[tests/browser/polyfills/stream/promises/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/polyfills/stream/promises/index.ts)<br>[tests/browser/polyfills/process/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/polyfills/process/index.ts)<br>[tests/browser/polyfills/fs/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/polyfills/fs/index.ts)<br>[tests/browser/polyfills/fs/promises/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/polyfills/fs/promises/index.ts) |
-| spec | 0 | not obvious |
+| spec | 0 | 명확하지 않음 |
 | eval | 235 | [tests/setup.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/setup.ts)<br>[tests/setupReact.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/setupReact.ts)<br>[tests/vitest.d.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/vitest.d.ts)<br>[tests/utils/elicitationMocks.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/utils/elicitationMocks.ts)<br>[tests/utils/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/utils/index.ts)<br>[tests/unit/accessListUtils.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/accessListUtils.test.ts)<br>[tests/unit/accuracyScorer.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/accuracyScorer.test.ts)<br>[tests/unit/args.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/args.test.ts) |
 | security | 3 | [tests/unit/common/auth/clientCredentials.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/common/auth/clientCredentials.test.ts)<br>[src/common/atlas/auth/authProvider.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/common/atlas/auth/authProvider.ts)<br>[src/common/atlas/auth/clientCredentials.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/common/atlas/auth/clientCredentials.ts) |
 | ci | 19 | [.github/workflows/accuracy-tests.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/accuracy-tests.yml)<br>[.github/workflows/check-pr-title.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/check-pr-title.yml)<br>[.github/workflows/check.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/check.yml)<br>[.github/workflows/cleanup-atlas-env.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/cleanup-atlas-env.yml)<br>[.github/workflows/code-health-fork.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/code-health-fork.yml)<br>[.github/workflows/code-health-long-running.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/code-health-long-running.yml)<br>[.github/workflows/code-health.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/code-health.yml)<br>[.github/workflows/codeql.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/codeql.yml) |
@@ -170,39 +170,39 @@ A Model Context Protocol server to connect to MongoDB databases and MongoDB Atla
 | config | 12 | [package.json](../../../../sources/mongodb-js__mongodb-mcp-server/package.json)<br>[pnpm-workspace.yaml](../../../../sources/mongodb-js__mongodb-mcp-server/pnpm-workspace.yaml)<br>[tsconfig.json](../../../../sources/mongodb-js__mongodb-mcp-server/tsconfig.json)<br>[tests/browser/package.json](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/package.json)<br>[tests/browser/tsconfig.json](../../../../sources/mongodb-js__mongodb-mcp-server/tests/browser/tsconfig.json)<br>[scripts/generate/tsconfig.json](../../../../sources/mongodb-js__mongodb-mcp-server/scripts/generate/tsconfig.json)<br>[packages/types/package.json](../../../../sources/mongodb-js__mongodb-mcp-server/packages/types/package.json)<br>[packages/types/tsconfig.json](../../../../sources/mongodb-js__mongodb-mcp-server/packages/types/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 235 | [tests/setup.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/setup.ts)<br>[tests/setupReact.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/setupReact.ts)<br>[tests/vitest.d.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/vitest.d.ts)<br>[tests/utils/elicitationMocks.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/utils/elicitationMocks.ts)<br>[tests/utils/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/utils/index.ts)<br>[tests/unit/accessListUtils.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/accessListUtils.test.ts) |
-| CI workflows | 19 | [.github/workflows/accuracy-tests.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/accuracy-tests.yml)<br>[.github/workflows/check-pr-title.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/check-pr-title.yml)<br>[.github/workflows/check.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/check.yml)<br>[.github/workflows/cleanup-atlas-env.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/cleanup-atlas-env.yml)<br>[.github/workflows/code-health-fork.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/code-health-fork.yml)<br>[.github/workflows/code-health-long-running.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/code-health-long-running.yml) |
-| Containers / deploy | 8 | [Dockerfile](../../../../sources/mongodb-js__mongodb-mcp-server/Dockerfile)<br>[tests/integration/tools/mongodb/mongot-community-setup/docker-compose.yml](../../../../sources/mongodb-js__mongodb-mcp-server/tests/integration/tools/mongodb/mongot-community-setup/docker-compose.yml)<br>[deploy/azure/README.md](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/README.md)<br>[deploy/azure/bicep/main.bicep](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/bicep/main.bicep)<br>[deploy/azure/bicep/params_template.json](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/bicep/params_template.json)<br>[deploy/azure/bicep/paramsWithAuthEnabled_template.json](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/bicep/paramsWithAuthEnabled_template.json) |
-| Security / policy | 3 | [tests/unit/common/auth/clientCredentials.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/common/auth/clientCredentials.test.ts)<br>[src/common/atlas/auth/authProvider.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/common/atlas/auth/authProvider.ts)<br>[src/common/atlas/auth/clientCredentials.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/common/atlas/auth/clientCredentials.ts) |
-| Agent instructions | 2 | [.github/copilot-code-review-instructions.md](../../../../sources/mongodb-js__mongodb-mcp-server/.github/copilot-code-review-instructions.md)<br>[.github/copilot-instructions.md](../../../../sources/mongodb-js__mongodb-mcp-server/.github/copilot-instructions.md) |
+| 테스트/평가 | 235 | [tests/setup.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/setup.ts)<br>[tests/setupReact.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/setupReact.ts)<br>[tests/vitest.d.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/vitest.d.ts)<br>[tests/utils/elicitationMocks.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/utils/elicitationMocks.ts)<br>[tests/utils/index.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/utils/index.ts)<br>[tests/unit/accessListUtils.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/accessListUtils.test.ts) |
+| CI workflow | 19 | [.github/workflows/accuracy-tests.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/accuracy-tests.yml)<br>[.github/workflows/check-pr-title.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/check-pr-title.yml)<br>[.github/workflows/check.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/check.yml)<br>[.github/workflows/cleanup-atlas-env.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/cleanup-atlas-env.yml)<br>[.github/workflows/code-health-fork.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/code-health-fork.yml)<br>[.github/workflows/code-health-long-running.yml](../../../../sources/mongodb-js__mongodb-mcp-server/.github/workflows/code-health-long-running.yml) |
+| 컨테이너/배포 | 8 | [Dockerfile](../../../../sources/mongodb-js__mongodb-mcp-server/Dockerfile)<br>[tests/integration/tools/mongodb/mongot-community-setup/docker-compose.yml](../../../../sources/mongodb-js__mongodb-mcp-server/tests/integration/tools/mongodb/mongot-community-setup/docker-compose.yml)<br>[deploy/azure/README.md](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/README.md)<br>[deploy/azure/bicep/main.bicep](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/bicep/main.bicep)<br>[deploy/azure/bicep/params_template.json](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/bicep/params_template.json)<br>[deploy/azure/bicep/paramsWithAuthEnabled_template.json](../../../../sources/mongodb-js__mongodb-mcp-server/deploy/azure/bicep/paramsWithAuthEnabled_template.json) |
+| 보안/정책 | 3 | [tests/unit/common/auth/clientCredentials.test.ts](../../../../sources/mongodb-js__mongodb-mcp-server/tests/unit/common/auth/clientCredentials.test.ts)<br>[src/common/atlas/auth/authProvider.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/common/atlas/auth/authProvider.ts)<br>[src/common/atlas/auth/clientCredentials.ts](../../../../sources/mongodb-js__mongodb-mcp-server/src/common/atlas/auth/clientCredentials.ts) |
+| 에이전트 지시문 | 2 | [.github/copilot-code-review-instructions.md](../../../../sources/mongodb-js__mongodb-mcp-server/.github/copilot-code-review-instructions.md)<br>[.github/copilot-instructions.md](../../../../sources/mongodb-js__mongodb-mcp-server/.github/copilot-instructions.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `MCP_SERVER_LIBRARY.md`, `packages/mongodb-mcp-remote/package.json`, `packages/mongodb-mcp-remote/README.md`.
-2. Trace execution through entrypoints: `server.json`, `tests/integration/server.test.ts`, `tests/integration/fixtures/server.key`.
-3. Map agent/tool runtime through: `tests/unit/tools/mongodb/mongodbSchemas.test.ts`, `tests/unit/tools/atlas/update/pauseResumeCluster.test.ts`, `tests/unit/tools/atlas/update/upgradeCluster.test.ts`.
-4. Inspect retrieval/memory/indexing through: `tests/utils/index.ts`, `tests/browser/tests/embedding.test.ts`, `tests/browser/polyfills/zlib/index.ts`.
-5. Verify behavior through test/eval files: `tests/setup.ts`, `tests/setupReact.ts`, `tests/vitest.d.ts`.
+1. 핵심 참조에서 시작: `MCP_SERVER_LIBRARY.md`, `packages/mongodb-mcp-remote/package.json`, `packages/mongodb-mcp-remote/README.md`.
+2. entrypoint를 따라 실행 흐름 확인: `server.json`, `tests/integration/server.test.ts`, `tests/integration/fixtures/server.key`.
+3. agent/tool runtime 매핑: `tests/unit/tools/mongodb/mongodbSchemas.test.ts`, `tests/unit/tools/atlas/update/pauseResumeCluster.test.ts`, `tests/unit/tools/atlas/update/upgradeCluster.test.ts`.
+4. retrieval/memory/indexing 확인: `tests/utils/index.ts`, `tests/browser/tests/embedding.test.ts`, `tests/browser/polyfills/zlib/index.ts`.
+5. test/eval 파일로 동작 검증: `tests/setup.ts`, `tests/setupReact.ts`, `tests/vitest.d.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, LICENSE, openai이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, README.md, LICENSE, openai이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

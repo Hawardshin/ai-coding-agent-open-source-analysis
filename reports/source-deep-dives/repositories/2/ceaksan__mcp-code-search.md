@@ -1,93 +1,93 @@
-# ceaksan/mcp-code-search Source Deep Dive
+# ceaksan/mcp-code-search 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local clone structure analysis: 23 files, 3 directories.
 
 ## 요약
 
-- 조사 단위: `sources/ceaksan__mcp-code-search` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 23 files, 3 directories, depth score 76, key references 9개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/ceaksan__mcp-code-search` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 23 files, 3 directories, depth score 64, key references 9개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=src/mcp_code_search/__main__.py, src/mcp_code_search/server.py이고, 의존성 단서는 mcp, transformers, ollama, llama, 검증/운영 단서는 test/eval 경로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 9개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=src/mcp_code_search/__main__.py, src/mcp_code_search/server.py이고, 의존성 단서는 mcp, transformers, ollama, llama, 검증/운영 단서는 test/eval 경로가 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 9개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | ceaksan/mcp-code-search |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | ceaksan/mcp-code-search |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | mixed |
-| Language | none |
-| Stars | none |
-| Forks | none |
-| License | none |
-| Maturity | solid |
-| Evidence | deep-source+report |
-| Source | [sources/ceaksan__mcp-code-search](../../../../sources/ceaksan__mcp-code-search) |
-| Existing report | [reports/clone-structures/ceaksan__mcp-code-search.md](../../../clone-structures/ceaksan__mcp-code-search.md) |
+| Language | 없음 |
+| Stars | 없음 |
+| Forks | 없음 |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 심층 소스+보고서 |
+| 소스 | [sources/ceaksan__mcp-code-search](../../../../sources/ceaksan__mcp-code-search) |
+| 기존 보고서 | [reports/clone-structures/ceaksan__mcp-code-search.md](../../../clone-structures/ceaksan__mcp-code-search.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 23 / 3 |
-| Max observed depth | 3 |
-| Top directories | src, tests |
-| Top extensions | .py: 18, (none): 2, .lock: 1, .md: 1, .toml: 1 |
-| Source patterns | cli-first, api/server, agent/tool runtime, eval/test harness |
+| 파일 / 디렉터리 | 23 / 3 |
+| 관측 최대 깊이 | 3 |
+| 상위 디렉터리 | src, tests |
+| 상위 확장자 | .py: 18, (none): 2, .lock: 1, .md: 1, .toml: 1 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, eval/test harness |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 14 |
 | tests | validation surface | 8 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | pyproject.toml | mcp-code-search | mcp-code-search |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | mcp |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | transformers, ollama, llama |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [src/mcp_code_search/__main__.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/__main__.py) | entrypoints signal |
 | entrypoints | [src/mcp_code_search/server.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/server.py) | entrypoints signal |
@@ -100,55 +100,55 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | config | [uv.lock](../../../../sources/ceaksan__mcp-code-search/uv.lock) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 2 | [src/mcp_code_search/__main__.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/__main__.py)<br>[src/mcp_code_search/server.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/server.py) |
-| agentRuntime | 0 | not obvious |
+| agentRuntime | 0 | 명확하지 않음 |
 | mcp | 11 | [src/mcp_code_search/__init__.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/__init__.py)<br>[src/mcp_code_search/__main__.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/__main__.py)<br>[src/mcp_code_search/chunker.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/chunker.py)<br>[src/mcp_code_search/config.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/config.py)<br>[src/mcp_code_search/embedder.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/embedder.py)<br>[src/mcp_code_search/indexer.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/indexer.py)<br>[src/mcp_code_search/languages.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/languages.py)<br>[src/mcp_code_search/models.py](../../../../sources/ceaksan__mcp-code-search/src/mcp_code_search/models.py) |
-| retrieval | 0 | not obvious |
-| spec | 0 | not obvious |
+| retrieval | 0 | 명확하지 않음 |
+| spec | 0 | 명확하지 않음 |
 | eval | 7 | [tests/__init__.py](../../../../sources/ceaksan__mcp-code-search/tests/__init__.py)<br>[tests/test_chunker.py](../../../../sources/ceaksan__mcp-code-search/tests/test_chunker.py)<br>[tests/test_config.py](../../../../sources/ceaksan__mcp-code-search/tests/test_config.py)<br>[tests/test_embedder.py](../../../../sources/ceaksan__mcp-code-search/tests/test_embedder.py)<br>[tests/test_indexer.py](../../../../sources/ceaksan__mcp-code-search/tests/test_indexer.py)<br>[tests/test_store.py](../../../../sources/ceaksan__mcp-code-search/tests/test_store.py)<br>[tests/test_watcher.py](../../../../sources/ceaksan__mcp-code-search/tests/test_watcher.py) |
-| security | 0 | not obvious |
-| ci | 0 | not obvious |
-| container | 0 | not obvious |
-| instruction | 0 | not obvious |
+| security | 0 | 명확하지 않음 |
+| ci | 0 | 명확하지 않음 |
+| container | 0 | 명확하지 않음 |
+| instruction | 0 | 명확하지 않음 |
 | docs | 1 | [README.md](../../../../sources/ceaksan__mcp-code-search/README.md) |
 | config | 2 | [pyproject.toml](../../../../sources/ceaksan__mcp-code-search/pyproject.toml)<br>[uv.lock](../../../../sources/ceaksan__mcp-code-search/uv.lock) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 7 | [tests/__init__.py](../../../../sources/ceaksan__mcp-code-search/tests/__init__.py)<br>[tests/test_chunker.py](../../../../sources/ceaksan__mcp-code-search/tests/test_chunker.py)<br>[tests/test_config.py](../../../../sources/ceaksan__mcp-code-search/tests/test_config.py)<br>[tests/test_embedder.py](../../../../sources/ceaksan__mcp-code-search/tests/test_embedder.py)<br>[tests/test_indexer.py](../../../../sources/ceaksan__mcp-code-search/tests/test_indexer.py)<br>[tests/test_store.py](../../../../sources/ceaksan__mcp-code-search/tests/test_store.py) |
-| CI workflows | 0 | not obvious |
-| Containers / deploy | 0 | not obvious |
-| Security / policy | 0 | not obvious |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 7 | [tests/__init__.py](../../../../sources/ceaksan__mcp-code-search/tests/__init__.py)<br>[tests/test_chunker.py](../../../../sources/ceaksan__mcp-code-search/tests/test_chunker.py)<br>[tests/test_config.py](../../../../sources/ceaksan__mcp-code-search/tests/test_config.py)<br>[tests/test_embedder.py](../../../../sources/ceaksan__mcp-code-search/tests/test_embedder.py)<br>[tests/test_indexer.py](../../../../sources/ceaksan__mcp-code-search/tests/test_indexer.py)<br>[tests/test_store.py](../../../../sources/ceaksan__mcp-code-search/tests/test_store.py) |
+| CI workflow | 0 | 명확하지 않음 |
+| 컨테이너/배포 | 0 | 명확하지 않음 |
+| 보안/정책 | 0 | 명확하지 않음 |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | CI workflow path not obvious; container/deploy path not obvious |
-| security | security/policy surface not obvious |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | CI workflow 경로가 명확하지 않음; container/deploy 경로가 명확하지 않음 |
+| security | security/policy 표면이 명확하지 않음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `src/mcp_code_search/__main__.py`, `src/mcp_code_search/server.py`, `README.md`.
-2. Trace execution through entrypoints: `src/mcp_code_search/__main__.py`, `src/mcp_code_search/server.py`.
-3. Verify behavior through test/eval files: `tests/__init__.py`, `tests/test_chunker.py`, `tests/test_config.py`.
+1. 핵심 참조에서 시작: `src/mcp_code_search/__main__.py`, `src/mcp_code_search/server.py`, `README.md`.
+2. entrypoint를 따라 실행 흐름 확인: `src/mcp_code_search/__main__.py`, `src/mcp_code_search/server.py`.
+3. test/eval 파일로 동작 검증: `tests/__init__.py`, `tests/test_chunker.py`, `tests/test_config.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Local clone structure analysis 23 files, 3 directories.. 핵심 구조 신호는 pyproject.toml, README.md, LICENSE, mcp, transformers, ollama이며, deep-source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Local clone structure analysis 23 files, 3 directories.. 핵심 구조 신호는 pyproject.toml, README.md, LICENSE, mcp, transformers, ollama이며, 심층 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-mixed 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 ci signal not obvious, license metadata missing입니다.
+mixed 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 CI 신호가 명확하지 않음, 라이선스 메타데이터 없음입니다.

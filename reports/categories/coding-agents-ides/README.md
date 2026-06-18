@@ -1,43 +1,43 @@
-# Coding Agents and IDEs
+# 코딩 에이전트/IDE
 
-Generated: 2026-06-18T15:12:39.601Z
+생성 시각: 2026-06-18T15:31:33.431Z
 
-Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding assistants, and agentic IDE workflows.
+Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, 코드 리뷰, 코딩 보조, agentic IDE workflow를 묶은 카테고리입니다.
 
 ## 요약
 
 - 조사 단위: `coding-agents-ides` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
-- 포함 범위: 1,417 entries이며, 주요 구성은 reference-material (1200), repository (174), conference-reference (25), research-paper (13), trend-reference (5)입니다.
+- 포함 범위: 1,417개 항목이며, 주요 구성은 reference-material (1200), repository (174), conference-reference (25), research-paper (13), trend-reference (5)입니다.
 - 연결 보고서: [coding-agents](../../by-topic/coding-agents/README.md), [repository-deep-dives](../../by-topic/repository-deep-dives/README.md).
 
 ## 총평
 
 이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
-| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [근거 카테고리](../README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
-## Counts
+## 범위
 
-- Total categorized entries: 1417
-- Repositories: 174
-- Research papers: 13
-- Presentations/conferences/trend references: 30
-- Reference materials: 1200
-- Data file: [data/categories/coding-agents-ides.json](../../../data/categories/coding-agents-ides.json)
-- Related report topics: [coding-agents](../../by-topic/coding-agents/README.md), [repository-deep-dives](../../by-topic/repository-deep-dives/README.md)
+- 전체 분류 항목: 1417
+- 오픈소스/레포: 174
+- 논문/연구자료: 13
+- 발표/컨퍼런스/트렌드 자료: 30
+- 참고자료: 1200
+- 데이터 파일: [data/categories/coding-agents-ides.json](../../../data/categories/coding-agents-ides.json)
+- 연결된 보고서 주제: [coding-agents](../../by-topic/coding-agents/README.md), [repository-deep-dives](../../by-topic/repository-deep-dives/README.md)
 
-## Type Breakdown
+## 유형별 구성
 
 - reference-material: 1200
 - repository: 174
@@ -45,60 +45,60 @@ Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding
 - research-paper: 13
 - trend-reference: 5
 
-## Top Open Source
+## 주요 오픈소스
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | repository | Python, 133037 stars | 429.3 | [source](../../../sources/anthropics__claude-code) / [report](../../global-trending/repositories/anthropics__claude-code.md) |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | repository | TypeScript, 59994 stars | 422.2 | [source](../../../sources/ruvnet__ruflo) / [report](../../global-trending/repositories/ruvnet__ruflo.md) |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | repository | JavaScript, 217294 stars | 413.8 | [source](../../../sources/affaan-m__ECC) / [report](../../global-trending/repositories/affaan-m__ECC.md) |
-| [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) | repository | Python, 7691 stars | 397.0 | [source](../../../sources/EverMind-AI__EverOS) / [report](../../global-trending/repositories/EverMind-AI__EverOS.md) |
-| [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) | repository | TypeScript, 15139 stars | 393.3 | [source](../../../sources/GLips__Figma-Context-MCP) / [report](../../global-trending/repositories/GLips__Figma-Context-MCP.md) |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | repository | JavaScript, 82994 stars | 387.2 | [source](../../../sources/thedotmack__claude-mem) / [report](../../global-trending/repositories/thedotmack__claude-mem.md) |
-| [ollama/ollama](https://github.com/ollama/ollama) | repository | Go, 174404 stars | 383.4 | [source](../../../sources/ollama__ollama) / [report](../../global-trending/repositories/ollama__ollama.md) |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | repository | Python, 77562 stars | 381.1 | [source](../../../sources/OpenHands__OpenHands) / [report](../../global-trending/repositories/OpenHands__OpenHands.md) |
-| [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | repository | Python, 45383 stars | 380.0 | [source](../../../sources/zhayujie__CowAgent) / [report](../../global-trending/repositories/zhayujie__CowAgent.md) |
-| [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | repository | C, 5246 stars | 377.2 | [source](../../../sources/DeusData__codebase-memory-mcp) / [report](../../global-trending/repositories/DeusData__codebase-memory-mcp.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | repository | Python, 83195 stars | 372.2 | [source](../../../sources/vllm-project__vllm) / [report](../../global-trending/repositories/vllm-project__vllm.md) |
-| [gastownhall/beads](https://github.com/gastownhall/beads) | repository | Go, 24595 stars | 368.7 | [source](../../../sources/gastownhall__beads) / [report](../../global-trending/repositories/gastownhall__beads.md) |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | repository | Python, 58803 stars | 366.9 | [source](../../../sources/mem0ai__mem0) / [report](../../global-trending/repositories/mem0ai__mem0.md) |
-| [anomalyco/opencode](https://github.com/anomalyco/opencode) | repository | TypeScript, 175712 stars | 363.6 | [source](../../../sources/anomalyco__opencode) / [report](../../global-trending/repositories/anomalyco__opencode.md) |
-| [CaviraOSS/OpenMemory](https://github.com/CaviraOSS/OpenMemory) | repository | TypeScript, 4243 stars | 363.0 | [source](../../../sources/CaviraOSS__OpenMemory) / [report](../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
-| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | repository | TypeScript, 11880 stars | 361.6 | [source](../../../sources/zilliztech__claude-context) / [report](../../global-trending/repositories/zilliztech__claude-context.md) |
-| [InsForge/InsForge](https://github.com/InsForge/InsForge) | repository | TypeScript, 11848 stars | 359.6 | [source](../../../sources/InsForge__InsForge) / [report](../../global-trending/repositories/InsForge__InsForge.md) |
-| [the-open-agent/openagent](https://github.com/the-open-agent/openagent) | repository | Go, 5266 stars | 358.3 | [source](../../../sources/the-open-agent__openagent) / [report](../../global-trending/repositories/the-open-agent__openagent.md) |
-| [santifer/career-ops](https://github.com/santifer/career-ops) | repository | JavaScript, 54417 stars | 357.8 | [source](../../../sources/santifer__career-ops) / [report](../../global-trending/repositories/santifer__career-ops.md) |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | repository | TypeScript, 105365 stars | 355.8 | [source](../../../sources/google-gemini__gemini-cli) / [report](../../global-trending/repositories/google-gemini__gemini-cli.md) |
-| [microsoft/skills](https://github.com/microsoft/skills) | repository | TypeScript, 2580 stars | 355.4 | [source](../../../sources/microsoft__skills) / [report](../../global-trending/repositories/microsoft__skills.md) |
-| [openai/codex](https://github.com/openai/codex) | repository | Rust, 91749 stars | 353.7 | [source](../../../sources/openai__codex) / [report](../../global-trending/repositories/openai__codex.md) |
-| [cline/cline](https://github.com/cline/cline) | repository | TypeScript, 63454 stars | 348.1 | [source](../../../sources/cline__cline) / [report](../../global-trending/repositories/cline__cline.md) |
-| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | repository | Swift, 22309 stars | 345.2 | [source](../../../sources/manaflow-ai__cmux) / [report](../../global-trending/repositories/manaflow-ai__cmux.md) |
-| [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | repository | Python, 3500 stars | 343.1 | [source](../../../sources/omnigent-ai__omnigent) / [report](../../global-trending/repositories/omnigent-ai__omnigent.md) |
-| [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | repository | TypeScript, 28443 stars | 341.9 | [source](../../../sources/iOfficeAI__AionUi) / [report](../../global-trending/repositories/iOfficeAI__AionUi.md) |
-| [continuedev/continue](https://github.com/continuedev/continue) | repository | TypeScript, 33891 stars | 338.6 | [source](../../../sources/continuedev__continue) / [report](../../global-trending/repositories/continuedev__continue.md) |
-| [TabbyML/tabby](https://github.com/TabbyML/tabby) | repository | Rust, 33609 stars | 338.4 | [source](../../../sources/TabbyML__tabby) / [report](../../global-trending/repositories/TabbyML__tabby.md) |
-| [raullenchai/Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) | repository | Python, 2902 stars | 338.2 | [source](../../../sources/raullenchai__Rapid-MLX) / [report](../../global-trending/repositories/raullenchai__Rapid-MLX.md) |
-| [letta-ai/letta-code](https://github.com/letta-ai/letta-code) | repository | TypeScript, 2743 stars | 333.3 | [source](../../../sources/letta-ai__letta-code) / [report](../../global-trending/repositories/letta-ai__letta-code.md) |
-| [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | repository | TypeScript, 21173 stars | 331.4 | [source](../../../sources/Kilo-Org__kilocode) / [report](../../global-trending/repositories/Kilo-Org__kilocode.md) |
-| [kenn-io/agentsview](https://github.com/kenn-io/agentsview) | repository | Go, 2796 stars | 328.6 | [source](../../../sources/kenn-io__agentsview) / [report](../../global-trending/repositories/kenn-io__agentsview.md) |
-| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [source](../../../sources/gsd-build__get-shit-done) / [report](../../clone-structures/gsd-build__get-shit-done.md) |
-| [stablyai/orca](https://github.com/stablyai/orca) | repository | TypeScript, 5221 stars | 327.1 | [source](../../../sources/stablyai__orca) / [report](../../global-trending/repositories/stablyai__orca.md) |
-| [generalaction/emdash](https://github.com/generalaction/emdash) | repository | TypeScript, 4902 stars | 326.2 | [source](../../../sources/generalaction__emdash) / [report](../../global-trending/repositories/generalaction__emdash.md) |
-| [safishamsi/graphify](https://github.com/safishamsi/graphify) | repository | Python, 68714 stars | 325.3 | [source](../../../sources/safishamsi__graphify) / [report](../../global-trending/repositories/safishamsi__graphify.md) |
-| [zubair-trabzada/geo-seo-claude](https://github.com/zubair-trabzada/geo-seo-claude) | repository | Python, 8195 stars | 322.0 | [source](../../../sources/zubair-trabzada__geo-seo-claude) / [report](../../global-trending/repositories/zubair-trabzada__geo-seo-claude.md) |
-| [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | repository | TypeScript, 62771 stars | 320.9 | [source](../../../sources/Egonex-AI__Understand-Anything) / [report](../../global-trending/repositories/Egonex-AI__Understand-Anything.md) |
-| [giancarloerra/SocratiCode](https://github.com/giancarloerra/SocratiCode) | repository | TypeScript, 3002 stars | 317.7 | [source](../../../sources/giancarloerra__SocratiCode) / [report](../../global-trending/repositories/giancarloerra__SocratiCode.md) |
-| [waybarrios/vllm-mlx](https://github.com/waybarrios/vllm-mlx) | repository | Python, 1350 stars | 317.6 | [source](../../../sources/waybarrios__vllm-mlx) / [report](../../global-trending/repositories/waybarrios__vllm-mlx.md) |
-| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | repository | Rust, 2753 stars | 313.4 | [source](../../../sources/yvgude__lean-ctx) / [report](../../global-trending/repositories/yvgude__lean-ctx.md) |
-| [preset-io/agor](https://github.com/preset-io/agor) | repository | TypeScript, 1264 stars | 311.6 | [source](../../../sources/preset-io__agor) / [report](../../global-trending/repositories/preset-io__agor.md) |
-| [cocoindex-io/cocoindex-code](https://github.com/cocoindex-io/cocoindex-code) | repository | Python, 2100 stars | 311.3 | [source](../../../sources/cocoindex-io__cocoindex-code) / [report](../../global-trending/repositories/cocoindex-io__cocoindex-code.md) |
-| [Dicklesworthstone/mcp_agent_mail](https://github.com/Dicklesworthstone/mcp_agent_mail) | repository | Python, 1990 stars | 310.5 | [source](../../../sources/Dicklesworthstone__mcp_agent_mail) / [report](../../global-trending/repositories/Dicklesworthstone__mcp_agent_mail.md) |
-| [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | repository | TypeScript, 3433 stars | 307.8 | [source](../../../sources/MadsLorentzen__ai-job-search) / [report](../../global-trending/repositories/MadsLorentzen__ai-job-search.md) |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | repository | Python, 133037 stars | 429.3 | [소스](../../../sources/anthropics__claude-code) / [보고서](../../global-trending/repositories/anthropics__claude-code.md) |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | repository | TypeScript, 59994 stars | 422.2 | [소스](../../../sources/ruvnet__ruflo) / [보고서](../../global-trending/repositories/ruvnet__ruflo.md) |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | repository | JavaScript, 217294 stars | 413.8 | [소스](../../../sources/affaan-m__ECC) / [보고서](../../global-trending/repositories/affaan-m__ECC.md) |
+| [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) | repository | Python, 7691 stars | 397.0 | [소스](../../../sources/EverMind-AI__EverOS) / [보고서](../../global-trending/repositories/EverMind-AI__EverOS.md) |
+| [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) | repository | TypeScript, 15139 stars | 393.3 | [소스](../../../sources/GLips__Figma-Context-MCP) / [보고서](../../global-trending/repositories/GLips__Figma-Context-MCP.md) |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | repository | JavaScript, 82994 stars | 387.2 | [소스](../../../sources/thedotmack__claude-mem) / [보고서](../../global-trending/repositories/thedotmack__claude-mem.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | repository | Go, 174404 stars | 383.4 | [소스](../../../sources/ollama__ollama) / [보고서](../../global-trending/repositories/ollama__ollama.md) |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | repository | Python, 77562 stars | 381.1 | [소스](../../../sources/OpenHands__OpenHands) / [보고서](../../global-trending/repositories/OpenHands__OpenHands.md) |
+| [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | repository | Python, 45383 stars | 380.0 | [소스](../../../sources/zhayujie__CowAgent) / [보고서](../../global-trending/repositories/zhayujie__CowAgent.md) |
+| [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | repository | C, 5246 stars | 377.2 | [소스](../../../sources/DeusData__codebase-memory-mcp) / [보고서](../../global-trending/repositories/DeusData__codebase-memory-mcp.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | repository | Python, 83195 stars | 372.2 | [소스](../../../sources/vllm-project__vllm) / [보고서](../../global-trending/repositories/vllm-project__vllm.md) |
+| [gastownhall/beads](https://github.com/gastownhall/beads) | repository | Go, 24595 stars | 368.7 | [소스](../../../sources/gastownhall__beads) / [보고서](../../global-trending/repositories/gastownhall__beads.md) |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | repository | Python, 58803 stars | 366.9 | [소스](../../../sources/mem0ai__mem0) / [보고서](../../global-trending/repositories/mem0ai__mem0.md) |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | repository | TypeScript, 175712 stars | 363.6 | [소스](../../../sources/anomalyco__opencode) / [보고서](../../global-trending/repositories/anomalyco__opencode.md) |
+| [CaviraOSS/OpenMemory](https://github.com/CaviraOSS/OpenMemory) | repository | TypeScript, 4243 stars | 363.0 | [소스](../../../sources/CaviraOSS__OpenMemory) / [보고서](../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
+| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | repository | TypeScript, 11880 stars | 361.6 | [소스](../../../sources/zilliztech__claude-context) / [보고서](../../global-trending/repositories/zilliztech__claude-context.md) |
+| [InsForge/InsForge](https://github.com/InsForge/InsForge) | repository | TypeScript, 11848 stars | 359.6 | [소스](../../../sources/InsForge__InsForge) / [보고서](../../global-trending/repositories/InsForge__InsForge.md) |
+| [the-open-agent/openagent](https://github.com/the-open-agent/openagent) | repository | Go, 5266 stars | 358.3 | [소스](../../../sources/the-open-agent__openagent) / [보고서](../../global-trending/repositories/the-open-agent__openagent.md) |
+| [santifer/career-ops](https://github.com/santifer/career-ops) | repository | JavaScript, 54417 stars | 357.8 | [소스](../../../sources/santifer__career-ops) / [보고서](../../global-trending/repositories/santifer__career-ops.md) |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | repository | TypeScript, 105365 stars | 355.8 | [소스](../../../sources/google-gemini__gemini-cli) / [보고서](../../global-trending/repositories/google-gemini__gemini-cli.md) |
+| [microsoft/skills](https://github.com/microsoft/skills) | repository | TypeScript, 2580 stars | 355.4 | [소스](../../../sources/microsoft__skills) / [보고서](../../global-trending/repositories/microsoft__skills.md) |
+| [openai/codex](https://github.com/openai/codex) | repository | Rust, 91749 stars | 353.7 | [소스](../../../sources/openai__codex) / [보고서](../../global-trending/repositories/openai__codex.md) |
+| [cline/cline](https://github.com/cline/cline) | repository | TypeScript, 63454 stars | 348.1 | [소스](../../../sources/cline__cline) / [보고서](../../global-trending/repositories/cline__cline.md) |
+| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | repository | Swift, 22309 stars | 345.2 | [소스](../../../sources/manaflow-ai__cmux) / [보고서](../../global-trending/repositories/manaflow-ai__cmux.md) |
+| [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | repository | Python, 3500 stars | 343.1 | [소스](../../../sources/omnigent-ai__omnigent) / [보고서](../../global-trending/repositories/omnigent-ai__omnigent.md) |
+| [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | repository | TypeScript, 28443 stars | 341.9 | [소스](../../../sources/iOfficeAI__AionUi) / [보고서](../../global-trending/repositories/iOfficeAI__AionUi.md) |
+| [continuedev/continue](https://github.com/continuedev/continue) | repository | TypeScript, 33891 stars | 338.6 | [소스](../../../sources/continuedev__continue) / [보고서](../../global-trending/repositories/continuedev__continue.md) |
+| [TabbyML/tabby](https://github.com/TabbyML/tabby) | repository | Rust, 33609 stars | 338.4 | [소스](../../../sources/TabbyML__tabby) / [보고서](../../global-trending/repositories/TabbyML__tabby.md) |
+| [raullenchai/Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) | repository | Python, 2902 stars | 338.2 | [소스](../../../sources/raullenchai__Rapid-MLX) / [보고서](../../global-trending/repositories/raullenchai__Rapid-MLX.md) |
+| [letta-ai/letta-code](https://github.com/letta-ai/letta-code) | repository | TypeScript, 2743 stars | 333.3 | [소스](../../../sources/letta-ai__letta-code) / [보고서](../../global-trending/repositories/letta-ai__letta-code.md) |
+| [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | repository | TypeScript, 21173 stars | 331.4 | [소스](../../../sources/Kilo-Org__kilocode) / [보고서](../../global-trending/repositories/Kilo-Org__kilocode.md) |
+| [kenn-io/agentsview](https://github.com/kenn-io/agentsview) | repository | Go, 2796 stars | 328.6 | [소스](../../../sources/kenn-io__agentsview) / [보고서](../../global-trending/repositories/kenn-io__agentsview.md) |
+| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [소스](../../../sources/gsd-build__get-shit-done) / [보고서](../../clone-structures/gsd-build__get-shit-done.md) |
+| [stablyai/orca](https://github.com/stablyai/orca) | repository | TypeScript, 5221 stars | 327.1 | [소스](../../../sources/stablyai__orca) / [보고서](../../global-trending/repositories/stablyai__orca.md) |
+| [generalaction/emdash](https://github.com/generalaction/emdash) | repository | TypeScript, 4902 stars | 326.2 | [소스](../../../sources/generalaction__emdash) / [보고서](../../global-trending/repositories/generalaction__emdash.md) |
+| [safishamsi/graphify](https://github.com/safishamsi/graphify) | repository | Python, 68714 stars | 325.3 | [소스](../../../sources/safishamsi__graphify) / [보고서](../../global-trending/repositories/safishamsi__graphify.md) |
+| [zubair-trabzada/geo-seo-claude](https://github.com/zubair-trabzada/geo-seo-claude) | repository | Python, 8195 stars | 322.0 | [소스](../../../sources/zubair-trabzada__geo-seo-claude) / [보고서](../../global-trending/repositories/zubair-trabzada__geo-seo-claude.md) |
+| [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | repository | TypeScript, 62771 stars | 320.9 | [소스](../../../sources/Egonex-AI__Understand-Anything) / [보고서](../../global-trending/repositories/Egonex-AI__Understand-Anything.md) |
+| [giancarloerra/SocratiCode](https://github.com/giancarloerra/SocratiCode) | repository | TypeScript, 3002 stars | 317.7 | [소스](../../../sources/giancarloerra__SocratiCode) / [보고서](../../global-trending/repositories/giancarloerra__SocratiCode.md) |
+| [waybarrios/vllm-mlx](https://github.com/waybarrios/vllm-mlx) | repository | Python, 1350 stars | 317.6 | [소스](../../../sources/waybarrios__vllm-mlx) / [보고서](../../global-trending/repositories/waybarrios__vllm-mlx.md) |
+| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | repository | Rust, 2753 stars | 313.4 | [소스](../../../sources/yvgude__lean-ctx) / [보고서](../../global-trending/repositories/yvgude__lean-ctx.md) |
+| [preset-io/agor](https://github.com/preset-io/agor) | repository | TypeScript, 1264 stars | 311.6 | [소스](../../../sources/preset-io__agor) / [보고서](../../global-trending/repositories/preset-io__agor.md) |
+| [cocoindex-io/cocoindex-code](https://github.com/cocoindex-io/cocoindex-code) | repository | Python, 2100 stars | 311.3 | [소스](../../../sources/cocoindex-io__cocoindex-code) / [보고서](../../global-trending/repositories/cocoindex-io__cocoindex-code.md) |
+| [Dicklesworthstone/mcp_agent_mail](https://github.com/Dicklesworthstone/mcp_agent_mail) | repository | Python, 1990 stars | 310.5 | [소스](../../../sources/Dicklesworthstone__mcp_agent_mail) / [보고서](../../global-trending/repositories/Dicklesworthstone__mcp_agent_mail.md) |
+| [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | repository | TypeScript, 3433 stars | 307.8 | [소스](../../../sources/MadsLorentzen__ai-job-search) / [보고서](../../global-trending/repositories/MadsLorentzen__ai-job-search.md) |
 
 
-## Top Research
+## 주요 연구/논문
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Test-Driven Development - Still a Promising Approach?](https://doi.org/10.1109/quatic.2010.73) | research-paper | 2010 | 95.2 |  |
 | [Effects of Developer Experience on Learning and Applying Unit Test-Driven Development](https://doi.org/10.1109/tse.2013.2295827) | research-paper | 2014 | 92.6 |  |
@@ -115,9 +115,9 @@ Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding
 | [The Productivity-Reliability Paradox: Specification-Driven Governance for AI-Augmented Software Development](https://doi.org/10.48550/arxiv.2605.01160) | research-paper | 2026 | 20.0 |  |
 
 
-## Top Presentations and Conference References
+## 주요 발표/컨퍼런스 자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [DevDay talk about Codex](https://www.youtube.com/watch?v=Gr41tYOzE20) | conference-reference |  | 120.0 |  |
 | [How Codex ran OpenAI DevDay 2025](https://developers.openai.com/blog/codex-at-devday) | conference-reference |  | 120.0 |  |
@@ -151,9 +151,9 @@ Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding
 | [The Death of the Code Review](https://www.ai.engineer/schedule) | conference-reference |  | 55.0 |  |
 
 
-## Top Reference Materials
+## 주요 참고자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Agentic AI Foundation / MCP open governance coverage](https://www.itpro.com/software/open-source/anthropic-says-mcp-will-stay-open-neutral-and-community-driven-after-donating-project-to-linux-foundation) | reference-material |  | 1000.0 |  |
 | [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | reference-material |  | 1000.0 |  |
@@ -182,4 +182,4 @@ Codex, Claude Code, Aider, OpenHands, Cline/Roo, Gemini CLI, code review, coding
 | [Authentication](https://code.claude.com/docs/en/authentication.md) | reference-material |  | 970.0 |  |
 
 
-Complete category membership is stored in [data/categories/coding-agents-ides.json](../../../data/categories/coding-agents-ides.json).
+전체 카테고리 멤버십은 [data/categories/coding-agents-ides.json](../../../data/categories/coding-agents-ides.json)에 저장됩니다.

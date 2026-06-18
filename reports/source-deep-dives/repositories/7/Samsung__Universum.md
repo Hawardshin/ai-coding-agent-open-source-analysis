@@ -1,63 +1,63 @@
-# Samsung/Universum Source Deep Dive
+# Samsung/Universum 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Universum project is a Python solution that simplifies SW project verification by integrating existing CI systems and provides additional functionality for CI.
 
 ## 요약
 
-- 조사 단위: `sources/Samsung__Universum` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 158 files, 22 directories, depth score 99, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/Samsung__Universum` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 158 files, 22 directories, depth score 93, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-개발 생산성/DevTools 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=universum/__main__.py, universum/main.py이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+개발 생산성/DevTools 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 entrypoints=universum/__main__.py, universum/main.py이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | Samsung/Universum |
-| Topic | Developer Productivity and DevTools / 개발 생산성/DevTools |
+| 레포 | Samsung/Universum |
+| 주제 | 개발 생산성/DevTools / 개발 생산성/DevTools |
 | Region | korea |
 | Language | Python |
 | Stars | 20 |
 | Forks | 16 |
 | License | BSD-2-Clause |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/Samsung__Universum](../../../../sources/Samsung__Universum) |
-| Existing report | [reports/korea-trending/repositories/Samsung__Universum.md](../../../korea-trending/repositories/Samsung__Universum.md) |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/Samsung__Universum](../../../../sources/Samsung__Universum) |
+| 기존 보고서 | [reports/korea-trending/repositories/Samsung__Universum.md](../../../korea-trending/repositories/Samsung__Universum.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 158 / 22 |
-| Max observed depth | 5 |
-| Top directories | .github, doc, examples, tests, universum |
-| Top extensions | .py: 104, .rst: 18, (none): 8, .md: 6, .yml: 5, .sh: 4, .css: 3, .svg: 3, .ini: 2, .conf: 1, .js: 1, .pdf: 1 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, eval/test harness, containerized deploy |
+| 파일 / 디렉터리 | 158 / 22 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | .github, doc, examples, tests, universum |
+| 상위 확장자 | .py: 104, .rst: 18, (none): 8, .md: 6, .yml: 5, .sh: 4, .css: 3, .svg: 3, .ini: 2, .conf: 1, .js: 1, .pdf: 1 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, eval/test harness, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 45 |
 | .github | ci surface | 1 |
@@ -66,9 +66,9 @@ Universum project is a Python solution that simplifies SW project verification b
 | universum | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | utility | Makefile | all | make all |
@@ -84,24 +84,24 @@ Universum project is a Python solution that simplifies SW project verification b
 | build | Makefile | rebuild | make rebuild |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [universum/__main__.py](../../../../sources/Samsung__Universum/universum/__main__.py) | entrypoints signal |
 | entrypoints | [universum/main.py](../../../../sources/Samsung__Universum/universum/main.py) | entrypoints signal |
@@ -117,57 +117,57 @@ Universum project is a Python solution that simplifies SW project verification b
 | docs | [doc/additional_commands.rst](../../../../sources/Samsung__Universum/doc/additional_commands.rst) | docs signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 2 | [universum/__main__.py](../../../../sources/Samsung__Universum/universum/__main__.py)<br>[universum/main.py](../../../../sources/Samsung__Universum/universum/main.py) |
 | agentRuntime | 1 | [tests/thirdparty/pyfeed/tools.py](../../../../sources/Samsung__Universum/tests/thirdparty/pyfeed/tools.py) |
-| mcp | 0 | not obvious |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 1 | [doc/index.rst](../../../../sources/Samsung__Universum/doc/index.rst) |
-| spec | 0 | not obvious |
+| spec | 0 | 명확하지 않음 |
 | eval | 41 | [tests/__init__.py](../../../../sources/Samsung__Universum/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/Samsung__Universum/tests/conftest.py)<br>[tests/default_args.py](../../../../sources/Samsung__Universum/tests/default_args.py)<br>[tests/deployment_utils.py](../../../../sources/Samsung__Universum/tests/deployment_utils.py)<br>[tests/git_utils.py](../../../../sources/Samsung__Universum/tests/git_utils.py)<br>[tests/perforce_utils.py](../../../../sources/Samsung__Universum/tests/perforce_utils.py)<br>[tests/test_api.py](../../../../sources/Samsung__Universum/tests/test_api.py)<br>[tests/test_argument_check.py](../../../../sources/Samsung__Universum/tests/test_argument_check.py) |
-| security | 0 | not obvious |
+| security | 0 | 명확하지 않음 |
 | ci | 6 | [universum/modules/automation_server/jenkins_server.py](../../../../sources/Samsung__Universum/universum/modules/automation_server/jenkins_server.py)<br>[doc/jenkins.rst](../../../../sources/Samsung__Universum/doc/jenkins.rst)<br>[.github/workflows/postcommit-check.yml](../../../../sources/Samsung__Universum/.github/workflows/postcommit-check.yml)<br>[.github/workflows/precommit-check.yml](../../../../sources/Samsung__Universum/.github/workflows/precommit-check.yml)<br>[.github/workflows/python-versions-test.yml](../../../../sources/Samsung__Universum/.github/workflows/python-versions-test.yml)<br>[.github/workflows/telegram-bot.yml](../../../../sources/Samsung__Universum/.github/workflows/telegram-bot.yml) |
 | container | 2 | [tests/docker/universum_test_env/Dockerfile](../../../../sources/Samsung__Universum/tests/docker/universum_test_env/Dockerfile)<br>[tests/docker/perforce/Dockerfile](../../../../sources/Samsung__Universum/tests/docker/perforce/Dockerfile) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 31 | [README.md](../../../../sources/Samsung__Universum/README.md)<br>[doc/__init__.py](../../../../sources/Samsung__Universum/doc/__init__.py)<br>[doc/additional_commands.rst](../../../../sources/Samsung__Universum/doc/additional_commands.rst)<br>[doc/args.rst](../../../../sources/Samsung__Universum/doc/args.rst)<br>[doc/changelog_ref.rst](../../../../sources/Samsung__Universum/doc/changelog_ref.rst)<br>[doc/code_report.rst](../../../../sources/Samsung__Universum/doc/code_report.rst)<br>[doc/conf.py](../../../../sources/Samsung__Universum/doc/conf.py)<br>[doc/configuration_support.rst](../../../../sources/Samsung__Universum/doc/configuration_support.rst) |
 | config | 3 | [Makefile](../../../../sources/Samsung__Universum/Makefile)<br>[tests/docker/Makefile](../../../../sources/Samsung__Universum/tests/docker/Makefile)<br>[doc/Makefile](../../../../sources/Samsung__Universum/doc/Makefile) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 41 | [tests/__init__.py](../../../../sources/Samsung__Universum/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/Samsung__Universum/tests/conftest.py)<br>[tests/default_args.py](../../../../sources/Samsung__Universum/tests/default_args.py)<br>[tests/deployment_utils.py](../../../../sources/Samsung__Universum/tests/deployment_utils.py)<br>[tests/git_utils.py](../../../../sources/Samsung__Universum/tests/git_utils.py)<br>[tests/perforce_utils.py](../../../../sources/Samsung__Universum/tests/perforce_utils.py) |
-| CI workflows | 6 | [universum/modules/automation_server/jenkins_server.py](../../../../sources/Samsung__Universum/universum/modules/automation_server/jenkins_server.py)<br>[doc/jenkins.rst](../../../../sources/Samsung__Universum/doc/jenkins.rst)<br>[.github/workflows/postcommit-check.yml](../../../../sources/Samsung__Universum/.github/workflows/postcommit-check.yml)<br>[.github/workflows/precommit-check.yml](../../../../sources/Samsung__Universum/.github/workflows/precommit-check.yml)<br>[.github/workflows/python-versions-test.yml](../../../../sources/Samsung__Universum/.github/workflows/python-versions-test.yml)<br>[.github/workflows/telegram-bot.yml](../../../../sources/Samsung__Universum/.github/workflows/telegram-bot.yml) |
-| Containers / deploy | 2 | [tests/docker/universum_test_env/Dockerfile](../../../../sources/Samsung__Universum/tests/docker/universum_test_env/Dockerfile)<br>[tests/docker/perforce/Dockerfile](../../../../sources/Samsung__Universum/tests/docker/perforce/Dockerfile) |
-| Security / policy | 0 | not obvious |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 41 | [tests/__init__.py](../../../../sources/Samsung__Universum/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/Samsung__Universum/tests/conftest.py)<br>[tests/default_args.py](../../../../sources/Samsung__Universum/tests/default_args.py)<br>[tests/deployment_utils.py](../../../../sources/Samsung__Universum/tests/deployment_utils.py)<br>[tests/git_utils.py](../../../../sources/Samsung__Universum/tests/git_utils.py)<br>[tests/perforce_utils.py](../../../../sources/Samsung__Universum/tests/perforce_utils.py) |
+| CI workflow | 6 | [universum/modules/automation_server/jenkins_server.py](../../../../sources/Samsung__Universum/universum/modules/automation_server/jenkins_server.py)<br>[doc/jenkins.rst](../../../../sources/Samsung__Universum/doc/jenkins.rst)<br>[.github/workflows/postcommit-check.yml](../../../../sources/Samsung__Universum/.github/workflows/postcommit-check.yml)<br>[.github/workflows/precommit-check.yml](../../../../sources/Samsung__Universum/.github/workflows/precommit-check.yml)<br>[.github/workflows/python-versions-test.yml](../../../../sources/Samsung__Universum/.github/workflows/python-versions-test.yml)<br>[.github/workflows/telegram-bot.yml](../../../../sources/Samsung__Universum/.github/workflows/telegram-bot.yml) |
+| 컨테이너/배포 | 2 | [tests/docker/universum_test_env/Dockerfile](../../../../sources/Samsung__Universum/tests/docker/universum_test_env/Dockerfile)<br>[tests/docker/perforce/Dockerfile](../../../../sources/Samsung__Universum/tests/docker/perforce/Dockerfile) |
+| 보안/정책 | 0 | 명확하지 않음 |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | security/policy surface not obvious |
+| architecture | 없음 |
+| operation | 없음 |
+| security | security/policy 표면이 명확하지 않음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `universum/__main__.py`, `universum/main.py`, `Makefile`.
-2. Trace execution through entrypoints: `universum/__main__.py`, `universum/main.py`.
-3. Map agent/tool runtime through: `tests/thirdparty/pyfeed/tools.py`.
-4. Inspect retrieval/memory/indexing through: `doc/index.rst`.
-5. Verify behavior through test/eval files: `tests/__init__.py`, `tests/conftest.py`, `tests/default_args.py`.
+1. 핵심 참조에서 시작: `universum/__main__.py`, `universum/main.py`, `Makefile`.
+2. entrypoint를 따라 실행 흐름 확인: `universum/__main__.py`, `universum/main.py`.
+3. agent/tool runtime 매핑: `tests/thirdparty/pyfeed/tools.py`.
+4. retrieval/memory/indexing 확인: `doc/index.rst`.
+5. test/eval 파일로 동작 검증: `tests/__init__.py`, `tests/conftest.py`, `tests/default_args.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-개발 생산성/DevTools 관점에서 Universum project is a Python solution that simplifies SW project verification by integrating existing CI systems and pr. 핵심 구조 신호는 Python, Makefile, README.md, LICENSE, tests, ci이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+개발 생산성/DevTools 관점에서 Universum project is a Python solution that simplifies SW project verification by integrating existing CI systems and pr. 핵심 구조 신호는 Python, Makefile, README.md, LICENSE, tests, ci이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

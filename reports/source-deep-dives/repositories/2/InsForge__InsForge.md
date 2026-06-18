@@ -1,63 +1,63 @@
-# InsForge/InsForge Source Deep Dive
+# InsForge/InsForge 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 The all-in-one, open-source backend platform for agentic coding. InsForge gives your coding agent database, auth, storage, compute, hosting, and AI gateway to ship full-stack apps end-to-end.
 
 ## 요약
 
-- 조사 단위: `sources/InsForge__InsForge` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,319 files, 307 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/InsForge__InsForge` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,319 files, 307 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/dashboard/src/features/dashboard/components/connect/mcp/CursorDeeplinkGenerator.tsx, packages/dashboard/src/features/dashboard/components/connect/mcp/helpers.tsx, packages/dashboard/src/features/dashboard/components/connect/mcp/index.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=packages/dashboard/src/features/dashboard/components/connect/mcp/CursorDeeplinkGenerator.tsx, packages/dashboard/src/features/dashboard/components/connect/mcp/helpers.tsx, packages/dashboard/src/features/dashboard/components/connect/mcp/index.ts이고, 의존성 단서는 react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | InsForge/InsForge |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | InsForge/InsForge |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 11848 |
 | Forks | 1009 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/InsForge__InsForge](../../../../sources/InsForge__InsForge) |
-| Existing report | [reports/global-trending/repositories/InsForge__InsForge.md](../../../global-trending/repositories/InsForge__InsForge.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/InsForge__InsForge](../../../../sources/InsForge__InsForge) |
+| 기존 보고서 | [reports/global-trending/repositories/InsForge__InsForge.md](../../../global-trending/repositories/InsForge__InsForge.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1319 / 307 |
-| Max observed depth | 9 |
-| Top directories | .agents, .claude, .claude-plugin, .codex, .github, .gstack, assets, backend, deploy, docs, examples, frontend, functions, logs, openapi, packages, scripts |
-| Top extensions | .ts: 577, .tsx: 277, .md: 85, .mdx: 73, .svg: 70, .sql: 60, .png: 41, .sh: 29, .json: 20, .yml: 20, .yaml: 14, .js: 9 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 1319 / 307 |
+| 관측 최대 깊이 | 9 |
+| 상위 디렉터리 | .agents, .claude, .claude-plugin, .codex, .github, .gstack, assets, backend, deploy, docs, examples, frontend, functions, logs, openapi, packages, scripts |
+| 상위 확장자 | .ts: 577, .tsx: 277, .md: 85, .mdx: 73, .svg: 70, .sql: 60, .png: 41, .sh: 29, .json: 20, .yml: 20, .yaml: 14, .js: 9 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/dashboard | packages workspace | 135 |
 | docs | documentation surface | 73 |
@@ -79,9 +79,9 @@ The all-in-one, open-source backend platform for agentic coding. InsForge gives 
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | dev | turbo run dev |
 | serve-dev | package.json | dev:debug | concurrently -n "backend,frontend" -c "cyan,magenta" "npm run dev:backend:debug" "npm run dev:frontend:debug" |
@@ -104,24 +104,24 @@ The all-in-one, open-source backend platform for agentic coding. InsForge gives 
 | utility | package.json | install:all | npm install && cd backend && npm install && cd ../frontend && npm install |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [packages/dashboard/src/features/dashboard/components/connect/mcp/CursorDeeplinkGenerator.tsx](../../../../sources/InsForge__InsForge/packages/dashboard/src/features/dashboard/components/connect/mcp/CursorDeeplinkGenerator.tsx) | mcp signal |
 | mcp | [packages/dashboard/src/features/dashboard/components/connect/mcp/helpers.tsx](../../../../sources/InsForge__InsForge/packages/dashboard/src/features/dashboard/components/connect/mcp/helpers.tsx) | mcp signal |
@@ -137,9 +137,9 @@ The all-in-one, open-source backend platform for agentic coding. InsForge gives 
 | entrypoints | [functions/server.ts](../../../../sources/InsForge__InsForge/functions/server.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 7 | [packages/ui/src/index.ts](../../../../sources/InsForge__InsForge/packages/ui/src/index.ts)<br>[packages/shared-schemas/src/index.ts](../../../../sources/InsForge__InsForge/packages/shared-schemas/src/index.ts)<br>[packages/dashboard/src/index.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/index.ts)<br>[functions/server.ts](../../../../sources/InsForge__InsForge/functions/server.ts)<br>[frontend/src/App.tsx](../../../../sources/InsForge__InsForge/frontend/src/App.tsx)<br>[frontend/src/main.tsx](../../../../sources/InsForge__InsForge/frontend/src/main.tsx)<br>[backend/src/server.ts](../../../../sources/InsForge__InsForge/backend/src/server.ts) |
 | agentRuntime | 109 | [packages/shared-schemas/src/memory-api.schema.ts](../../../../sources/InsForge__InsForge/packages/shared-schemas/src/memory-api.schema.ts)<br>[packages/dashboard/src/lib/hooks/useCloudProjectInfo.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/lib/hooks/useCloudProjectInfo.ts)<br>[packages/dashboard/src/lib/hooks/useConfirm.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/lib/hooks/useConfirm.ts)<br>[packages/dashboard/src/lib/hooks/useHealth.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/lib/hooks/useHealth.ts)<br>[packages/dashboard/src/lib/hooks/useMediaQuery.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/lib/hooks/useMediaQuery.ts)<br>[packages/dashboard/src/lib/hooks/useMetadata.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/lib/hooks/useMetadata.ts)<br>[packages/dashboard/src/lib/hooks/usePageSize.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/lib/hooks/usePageSize.ts)<br>[packages/dashboard/src/lib/hooks/useSmartPaste.ts](../../../../sources/InsForge__InsForge/packages/dashboard/src/lib/hooks/useSmartPaste.ts) |
@@ -155,39 +155,39 @@ The all-in-one, open-source backend platform for agentic coding. InsForge gives 
 | config | 14 | [package.json](../../../../sources/InsForge__InsForge/package.json)<br>[tsconfig.json](../../../../sources/InsForge__InsForge/tsconfig.json)<br>[turbo.json](../../../../sources/InsForge__InsForge/turbo.json)<br>[packages/ui/package.json](../../../../sources/InsForge__InsForge/packages/ui/package.json)<br>[packages/ui/tsconfig.json](../../../../sources/InsForge__InsForge/packages/ui/tsconfig.json)<br>[packages/shared-schemas/package.json](../../../../sources/InsForge__InsForge/packages/shared-schemas/package.json)<br>[packages/shared-schemas/tsconfig.json](../../../../sources/InsForge__InsForge/packages/shared-schemas/tsconfig.json)<br>[packages/dashboard/package.json](../../../../sources/InsForge__InsForge/packages/dashboard/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 217 | [packages/ui/src/test/setup.ts](../../../../sources/InsForge__InsForge/packages/ui/src/test/setup.ts)<br>[packages/ui/src/lib/__tests__/utils.test.ts](../../../../sources/InsForge__InsForge/packages/ui/src/lib/__tests__/utils.test.ts)<br>[packages/ui/src/components/__tests__/Button.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/Button.test.tsx)<br>[packages/ui/src/components/__tests__/EmptyState.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/EmptyState.test.tsx)<br>[packages/ui/src/components/__tests__/Input.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/Input.test.tsx)<br>[packages/ui/src/components/__tests__/LoadingState.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/LoadingState.test.tsx) |
-| CI workflows | 8 | [.github/workflows/build-image.yml](../../../../sources/InsForge__InsForge/.github/workflows/build-image.yml)<br>[.github/workflows/check-migrations.yml](../../../../sources/InsForge__InsForge/.github/workflows/check-migrations.yml)<br>[.github/workflows/ci-premerge-check.yml](../../../../sources/InsForge__InsForge/.github/workflows/ci-premerge-check.yml)<br>[.github/workflows/e2e.yml](../../../../sources/InsForge__InsForge/.github/workflows/e2e.yml)<br>[.github/workflows/frontend-tests.yml](../../../../sources/InsForge__InsForge/.github/workflows/frontend-tests.yml)<br>[.github/workflows/integration-tests.yml](../../../../sources/InsForge__InsForge/.github/workflows/integration-tests.yml) |
-| Containers / deploy | 24 | [docker-compose.dokploy.yml](../../../../sources/InsForge__InsForge/docker-compose.dokploy.yml)<br>[docker-compose.override.yml](../../../../sources/InsForge__InsForge/docker-compose.override.yml)<br>[docker-compose.prod.yml](../../../../sources/InsForge__InsForge/docker-compose.prod.yml)<br>[docker-compose.yml](../../../../sources/InsForge__InsForge/docker-compose.yml)<br>[Dockerfile](../../../../sources/InsForge__InsForge/Dockerfile)<br>[docs/deployment/deploy-to-aws-ec2.md](../../../../sources/InsForge__InsForge/docs/deployment/deploy-to-aws-ec2.md) |
-| Security / policy | 106 | [GITHUB_OAUTH_SETUP.md](../../../../sources/InsForge__InsForge/GITHUB_OAUTH_SETUP.md)<br>[GOOGLE_OAUTH_SETUP.md](../../../../sources/InsForge__InsForge/GOOGLE_OAUTH_SETUP.md)<br>[SECURITY.md](../../../../sources/InsForge__InsForge/SECURITY.md)<br>[packages/shared-schemas/src/auth-api.schema.ts](../../../../sources/InsForge__InsForge/packages/shared-schemas/src/auth-api.schema.ts)<br>[packages/shared-schemas/src/auth.schema.ts](../../../../sources/InsForge__InsForge/packages/shared-schemas/src/auth.schema.ts)<br>[packages/dashboard/tests/ui/auth-flow.spec.ts](../../../../sources/InsForge__InsForge/packages/dashboard/tests/ui/auth-flow.spec.ts) |
-| Agent instructions | 7 | [.github/copilot-instructions.md](../../../../sources/InsForge__InsForge/.github/copilot-instructions.md)<br>[.codex/skills/insforge-dev/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/SKILL.md)<br>[.codex/skills/insforge-dev/ui/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/ui/SKILL.md)<br>[.codex/skills/insforge-dev/shared-schemas/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/shared-schemas/SKILL.md)<br>[.codex/skills/insforge-dev/docs/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/docs/SKILL.md)<br>[.codex/skills/insforge-dev/dashboard/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/dashboard/SKILL.md) |
+| 테스트/평가 | 217 | [packages/ui/src/test/setup.ts](../../../../sources/InsForge__InsForge/packages/ui/src/test/setup.ts)<br>[packages/ui/src/lib/__tests__/utils.test.ts](../../../../sources/InsForge__InsForge/packages/ui/src/lib/__tests__/utils.test.ts)<br>[packages/ui/src/components/__tests__/Button.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/Button.test.tsx)<br>[packages/ui/src/components/__tests__/EmptyState.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/EmptyState.test.tsx)<br>[packages/ui/src/components/__tests__/Input.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/Input.test.tsx)<br>[packages/ui/src/components/__tests__/LoadingState.test.tsx](../../../../sources/InsForge__InsForge/packages/ui/src/components/__tests__/LoadingState.test.tsx) |
+| CI workflow | 8 | [.github/workflows/build-image.yml](../../../../sources/InsForge__InsForge/.github/workflows/build-image.yml)<br>[.github/workflows/check-migrations.yml](../../../../sources/InsForge__InsForge/.github/workflows/check-migrations.yml)<br>[.github/workflows/ci-premerge-check.yml](../../../../sources/InsForge__InsForge/.github/workflows/ci-premerge-check.yml)<br>[.github/workflows/e2e.yml](../../../../sources/InsForge__InsForge/.github/workflows/e2e.yml)<br>[.github/workflows/frontend-tests.yml](../../../../sources/InsForge__InsForge/.github/workflows/frontend-tests.yml)<br>[.github/workflows/integration-tests.yml](../../../../sources/InsForge__InsForge/.github/workflows/integration-tests.yml) |
+| 컨테이너/배포 | 24 | [docker-compose.dokploy.yml](../../../../sources/InsForge__InsForge/docker-compose.dokploy.yml)<br>[docker-compose.override.yml](../../../../sources/InsForge__InsForge/docker-compose.override.yml)<br>[docker-compose.prod.yml](../../../../sources/InsForge__InsForge/docker-compose.prod.yml)<br>[docker-compose.yml](../../../../sources/InsForge__InsForge/docker-compose.yml)<br>[Dockerfile](../../../../sources/InsForge__InsForge/Dockerfile)<br>[docs/deployment/deploy-to-aws-ec2.md](../../../../sources/InsForge__InsForge/docs/deployment/deploy-to-aws-ec2.md) |
+| 보안/정책 | 106 | [GITHUB_OAUTH_SETUP.md](../../../../sources/InsForge__InsForge/GITHUB_OAUTH_SETUP.md)<br>[GOOGLE_OAUTH_SETUP.md](../../../../sources/InsForge__InsForge/GOOGLE_OAUTH_SETUP.md)<br>[SECURITY.md](../../../../sources/InsForge__InsForge/SECURITY.md)<br>[packages/shared-schemas/src/auth-api.schema.ts](../../../../sources/InsForge__InsForge/packages/shared-schemas/src/auth-api.schema.ts)<br>[packages/shared-schemas/src/auth.schema.ts](../../../../sources/InsForge__InsForge/packages/shared-schemas/src/auth.schema.ts)<br>[packages/dashboard/tests/ui/auth-flow.spec.ts](../../../../sources/InsForge__InsForge/packages/dashboard/tests/ui/auth-flow.spec.ts) |
+| 에이전트 지시문 | 7 | [.github/copilot-instructions.md](../../../../sources/InsForge__InsForge/.github/copilot-instructions.md)<br>[.codex/skills/insforge-dev/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/SKILL.md)<br>[.codex/skills/insforge-dev/ui/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/ui/SKILL.md)<br>[.codex/skills/insforge-dev/shared-schemas/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/shared-schemas/SKILL.md)<br>[.codex/skills/insforge-dev/docs/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/docs/SKILL.md)<br>[.codex/skills/insforge-dev/dashboard/SKILL.md](../../../../sources/InsForge__InsForge/.codex/skills/insforge-dev/dashboard/SKILL.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/dashboard/src/features/dashboard/components/connect/mcp/CursorDeeplinkGenerator.tsx`, `packages/dashboard/src/features/dashboard/components/connect/mcp/helpers.tsx`, `packages/dashboard/src/features/dashboard/components/connect/mcp/index.ts`.
-2. Trace execution through entrypoints: `packages/ui/src/index.ts`, `packages/shared-schemas/src/index.ts`, `packages/dashboard/src/index.ts`.
-3. Map agent/tool runtime through: `packages/shared-schemas/src/memory-api.schema.ts`, `packages/dashboard/src/lib/hooks/useCloudProjectInfo.ts`, `packages/dashboard/src/lib/hooks/useConfirm.ts`.
-4. Inspect retrieval/memory/indexing through: `packages/ui/src/index.ts`, `packages/ui/src/lib/index.ts`, `packages/ui/src/components/index.ts`.
-5. Verify behavior through test/eval files: `packages/ui/src/test/setup.ts`, `packages/ui/src/lib/__tests__/utils.test.ts`, `packages/ui/src/components/__tests__/Button.test.tsx`.
+1. 핵심 참조에서 시작: `packages/dashboard/src/features/dashboard/components/connect/mcp/CursorDeeplinkGenerator.tsx`, `packages/dashboard/src/features/dashboard/components/connect/mcp/helpers.tsx`, `packages/dashboard/src/features/dashboard/components/connect/mcp/index.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/ui/src/index.ts`, `packages/shared-schemas/src/index.ts`, `packages/dashboard/src/index.ts`.
+3. agent/tool runtime 매핑: `packages/shared-schemas/src/memory-api.schema.ts`, `packages/dashboard/src/lib/hooks/useCloudProjectInfo.ts`, `packages/dashboard/src/lib/hooks/useConfirm.ts`.
+4. retrieval/memory/indexing 확인: `packages/ui/src/index.ts`, `packages/ui/src/lib/index.ts`, `packages/ui/src/components/index.ts`.
+5. test/eval 파일로 동작 검증: `packages/ui/src/test/setup.ts`, `packages/ui/src/lib/__tests__/utils.test.ts`, `packages/ui/src/components/__tests__/Button.test.tsx`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 The all in one, open source backend platform for agentic coding. InsForge gives your coding agent database, auth, storag. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 The all in one, open source backend platform for agentic coding. InsForge gives your coding agent database, auth, storag. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

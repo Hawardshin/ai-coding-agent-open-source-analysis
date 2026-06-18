@@ -1,63 +1,63 @@
-# yvgude/lean-ctx Source Deep Dive
+# yvgude/lean-ctx 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Control what your AI can see. LeanCTX (Lean Context) is the context intelligence layer for AI agents — one local Rust binary that decides what they read, remembers what they learn, guards what they touch, and proves what they save. 60–90% fewer tokens as the receipt. 76 MCP tools, 30+ agents, local-first.
 
 ## 요약
 
-- 조사 단위: `sources/yvgude__lean-ctx` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,812 files, 255 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/yvgude__lean-ctx` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,812 files, 255 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=rust/tests/mcp_manifest_up_to_date.rs, rust/tests/mcp_optout_281.rs, rust/tests/p4_docker_claude_mcp_selfheal_eval.rs이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=rust/tests/mcp_manifest_up_to_date.rs, rust/tests/mcp_optout_281.rs, rust/tests/p4_docker_claude_mcp_selfheal_eval.rs이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | yvgude/lean-ctx |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | yvgude/lean-ctx |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | Rust |
 | Stars | 2753 |
 | Forks | 277 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/yvgude__lean-ctx](../../../../sources/yvgude__lean-ctx) |
-| Existing report | [reports/global-trending/repositories/yvgude__lean-ctx.md](../../../global-trending/repositories/yvgude__lean-ctx.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/yvgude__lean-ctx](../../../../sources/yvgude__lean-ctx) |
+| 기존 보고서 | [reports/global-trending/repositories/yvgude__lean-ctx.md](../../../global-trending/repositories/yvgude__lean-ctx.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1812 / 255 |
-| Max observed depth | 10 |
-| Top directories | .claude-plugin, .githooks, .github, .kiro, assets, aur, bench, benchmark, benchmarks, bin, blog, ci, clients, cloud-infra, cookbook, demo, discord-faq, docs, email-templates, integrations |
-| Top extensions | .rs: 1176, .md: 187, .kt: 73, .snap: 57, .json: 53, .ts: 33, .js: 32, .py: 32, (none): 31, .toml: 25, .sh: 14, .yml: 13 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 1812 / 255 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .claude-plugin, .githooks, .github, .kiro, assets, aur, bench, benchmark, benchmarks, bin, blog, ci, clients, cloud-infra, cookbook, demo, discord-faq, docs, email-templates, integrations |
+| 상위 확장자 | .rs: 1176, .md: 187, .kt: 73, .snap: 57, .json: 53, .ts: 33, .js: 32, .py: 32, (none): 31, .toml: 25, .sh: 14, .yml: 13 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 37 |
 | packages/pi-lean-ctx | packages workspace | 5 |
@@ -79,9 +79,9 @@ Control what your AI can see. LeanCTX (Lean Context) is the context intelligence
 | demo | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | utility | Makefile | setup-hooks | make setup-hooks |
@@ -93,24 +93,24 @@ Control what your AI can see. LeanCTX (Lean Context) is the context intelligence
 | utility | Makefile | help | make help |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [rust/tests/mcp_manifest_up_to_date.rs](../../../../sources/yvgude__lean-ctx/rust/tests/mcp_manifest_up_to_date.rs) | mcp signal |
 | mcp | [rust/tests/mcp_optout_281.rs](../../../../sources/yvgude__lean-ctx/rust/tests/mcp_optout_281.rs) | mcp signal |
@@ -126,9 +126,9 @@ Control what your AI can see. LeanCTX (Lean Context) is the context intelligence
 | entrypoints | [rust/src/bin/gen_docs.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_docs.rs) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 17 | [rust/src/main.rs](../../../../sources/yvgude__lean-ctx/rust/src/main.rs)<br>[rust/src/tools/server.rs](../../../../sources/yvgude__lean-ctx/rust/src/tools/server.rs)<br>[rust/src/cli/dispatch/server.rs](../../../../sources/yvgude__lean-ctx/rust/src/cli/dispatch/server.rs)<br>[rust/src/bin/gen_docs.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_docs.rs)<br>[rust/src/bin/gen_mcp_manifest.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_mcp_manifest.rs)<br>[rust/src/bin/gen_tdd_schema.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/gen_tdd_schema.rs)<br>[rust/src/bin/lean-ctx-cloud-api.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/lean-ctx-cloud-api.rs)<br>[rust/src/bin/locomo_bench.rs](../../../../sources/yvgude__lean-ctx/rust/src/bin/locomo_bench.rs) |
 | agentRuntime | 325 | [AGENTS.md](../../../../sources/yvgude__lean-ctx/AGENTS.md)<br>[skills/lean-ctx/SKILL.md](../../../../sources/yvgude__lean-ctx/skills/lean-ctx/SKILL.md)<br>[skills/lean-ctx/scripts/install.sh](../../../../sources/yvgude__lean-ctx/skills/lean-ctx/scripts/install.sh)<br>[rust/AGENTS.md](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md)<br>[rust/AGENTS.md.lean-ctx.bak](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md.lean-ctx.bak)<br>[rust/tests/context_cortex_e2e_scenarios.rs](../../../../sources/yvgude__lean-ctx/rust/tests/context_cortex_e2e_scenarios.rs)<br>[rust/tests/context_cortex_phase1.rs](../../../../sources/yvgude__lean-ctx/rust/tests/context_cortex_phase1.rs)<br>[rust/tests/context_cortex_phase2.rs](../../../../sources/yvgude__lean-ctx/rust/tests/context_cortex_phase2.rs) |
@@ -144,39 +144,39 @@ Control what your AI can see. LeanCTX (Lean Context) is the context intelligence
 | config | 25 | [Makefile](../../../../sources/yvgude__lean-ctx/Makefile)<br>[vscode-extension/package.json](../../../../sources/yvgude__lean-ctx/vscode-extension/package.json)<br>[vscode-extension/tsconfig.json](../../../../sources/yvgude__lean-ctx/vscode-extension/tsconfig.json)<br>[rust/Cargo.lock](../../../../sources/yvgude__lean-ctx/rust/Cargo.lock)<br>[rust/Cargo.toml](../../../../sources/yvgude__lean-ctx/rust/Cargo.toml)<br>[rust/src/templates/package.json](../../../../sources/yvgude__lean-ctx/rust/src/templates/package.json)<br>[packages/python-lean-ctx/pyproject.toml](../../../../sources/yvgude__lean-ctx/packages/python-lean-ctx/pyproject.toml)<br>[packages/pi-lean-ctx/package.json](../../../../sources/yvgude__lean-ctx/packages/pi-lean-ctx/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 285 | [rust/tests/adversarial_compression.rs](../../../../sources/yvgude__lean-ctx/rust/tests/adversarial_compression.rs)<br>[rust/tests/archive_expand_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/archive_expand_tests.rs)<br>[rust/tests/autonomy_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/autonomy_tests.rs)<br>[rust/tests/bazsi_reported_scenarios.rs](../../../../sources/yvgude__lean-ctx/rust/tests/bazsi_reported_scenarios.rs)<br>[rust/tests/benchmark_compare_integration.rs](../../../../sources/yvgude__lean-ctx/rust/tests/benchmark_compare_integration.rs)<br>[rust/tests/capabilities_contract_up_to_date.rs](../../../../sources/yvgude__lean-ctx/rust/tests/capabilities_contract_up_to_date.rs) |
-| CI workflows | 10 | [lean/.github/workflows/lean_action_ci.yml](../../../../sources/yvgude__lean-ctx/lean/.github/workflows/lean_action_ci.yml)<br>[ci/gitlab-ci.yml](../../../../sources/yvgude__lean-ctx/ci/gitlab-ci.yml)<br>[.github/workflows/ci.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/ci.yml)<br>[.github/workflows/cla.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/cla.yml)<br>[.github/workflows/codeql.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/codeql.yml)<br>[.github/workflows/issue-reopen.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/issue-reopen.yml) |
-| Containers / deploy | 1 | [cloud-infra/Dockerfile.cloud-api](../../../../sources/yvgude__lean-ctx/cloud-infra/Dockerfile.cloud-api) |
-| Security / policy | 64 | [SECURITY.md](../../../../sources/yvgude__lean-ctx/SECURITY.md)<br>[rust/tests/compliance_frameworks.rs](../../../../sources/yvgude__lean-ctx/rust/tests/compliance_frameworks.rs)<br>[rust/tests/p4_adaptive_mode_policy_eval.rs](../../../../sources/yvgude__lean-ctx/rust/tests/p4_adaptive_mode_policy_eval.rs)<br>[rust/tests/ro_config_sandbox.rs](../../../../sources/yvgude__lean-ctx/rust/tests/ro_config_sandbox.rs)<br>[rust/tests/secret_scan_artifacts.rs](../../../../sources/yvgude__lean-ctx/rust/tests/secret_scan_artifacts.rs)<br>[rust/tests/security_hardening.rs](../../../../sources/yvgude__lean-ctx/rust/tests/security_hardening.rs) |
-| Agent instructions | 7 | [AGENTS.md](../../../../sources/yvgude__lean-ctx/AGENTS.md)<br>[rust/AGENTS.md](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md)<br>[rust/AGENTS.md.lean-ctx.bak](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md.lean-ctx.bak)<br>[rust/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/CLAUDE.md)<br>[rust/src/templates/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/src/templates/CLAUDE.md)<br>[rust/examples/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/examples/CLAUDE.md) |
+| 테스트/평가 | 285 | [rust/tests/adversarial_compression.rs](../../../../sources/yvgude__lean-ctx/rust/tests/adversarial_compression.rs)<br>[rust/tests/archive_expand_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/archive_expand_tests.rs)<br>[rust/tests/autonomy_tests.rs](../../../../sources/yvgude__lean-ctx/rust/tests/autonomy_tests.rs)<br>[rust/tests/bazsi_reported_scenarios.rs](../../../../sources/yvgude__lean-ctx/rust/tests/bazsi_reported_scenarios.rs)<br>[rust/tests/benchmark_compare_integration.rs](../../../../sources/yvgude__lean-ctx/rust/tests/benchmark_compare_integration.rs)<br>[rust/tests/capabilities_contract_up_to_date.rs](../../../../sources/yvgude__lean-ctx/rust/tests/capabilities_contract_up_to_date.rs) |
+| CI workflow | 10 | [lean/.github/workflows/lean_action_ci.yml](../../../../sources/yvgude__lean-ctx/lean/.github/workflows/lean_action_ci.yml)<br>[ci/gitlab-ci.yml](../../../../sources/yvgude__lean-ctx/ci/gitlab-ci.yml)<br>[.github/workflows/ci.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/ci.yml)<br>[.github/workflows/cla.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/cla.yml)<br>[.github/workflows/codeql.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/codeql.yml)<br>[.github/workflows/issue-reopen.yml](../../../../sources/yvgude__lean-ctx/.github/workflows/issue-reopen.yml) |
+| 컨테이너/배포 | 1 | [cloud-infra/Dockerfile.cloud-api](../../../../sources/yvgude__lean-ctx/cloud-infra/Dockerfile.cloud-api) |
+| 보안/정책 | 64 | [SECURITY.md](../../../../sources/yvgude__lean-ctx/SECURITY.md)<br>[rust/tests/compliance_frameworks.rs](../../../../sources/yvgude__lean-ctx/rust/tests/compliance_frameworks.rs)<br>[rust/tests/p4_adaptive_mode_policy_eval.rs](../../../../sources/yvgude__lean-ctx/rust/tests/p4_adaptive_mode_policy_eval.rs)<br>[rust/tests/ro_config_sandbox.rs](../../../../sources/yvgude__lean-ctx/rust/tests/ro_config_sandbox.rs)<br>[rust/tests/secret_scan_artifacts.rs](../../../../sources/yvgude__lean-ctx/rust/tests/secret_scan_artifacts.rs)<br>[rust/tests/security_hardening.rs](../../../../sources/yvgude__lean-ctx/rust/tests/security_hardening.rs) |
+| 에이전트 지시문 | 7 | [AGENTS.md](../../../../sources/yvgude__lean-ctx/AGENTS.md)<br>[rust/AGENTS.md](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md)<br>[rust/AGENTS.md.lean-ctx.bak](../../../../sources/yvgude__lean-ctx/rust/AGENTS.md.lean-ctx.bak)<br>[rust/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/CLAUDE.md)<br>[rust/src/templates/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/src/templates/CLAUDE.md)<br>[rust/examples/CLAUDE.md](../../../../sources/yvgude__lean-ctx/rust/examples/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | none |
-| security | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `rust/tests/mcp_manifest_up_to_date.rs`, `rust/tests/mcp_optout_281.rs`, `rust/tests/p4_docker_claude_mcp_selfheal_eval.rs`.
-2. Trace execution through entrypoints: `rust/src/main.rs`, `rust/src/tools/server.rs`, `rust/src/cli/dispatch/server.rs`.
-3. Map agent/tool runtime through: `AGENTS.md`, `skills/lean-ctx/SKILL.md`, `skills/lean-ctx/scripts/install.sh`.
-4. Inspect retrieval/memory/indexing through: `rust/tests/embedding_download_test.py`, `rust/tests/graph_export_contract.rs`, `rust/tests/index_scoping_scenarios.rs`.
-5. Verify behavior through test/eval files: `rust/tests/adversarial_compression.rs`, `rust/tests/archive_expand_tests.rs`, `rust/tests/autonomy_tests.rs`.
+1. 핵심 참조에서 시작: `rust/tests/mcp_manifest_up_to_date.rs`, `rust/tests/mcp_optout_281.rs`, `rust/tests/p4_docker_claude_mcp_selfheal_eval.rs`.
+2. entrypoint를 따라 실행 흐름 확인: `rust/src/main.rs`, `rust/src/tools/server.rs`, `rust/src/cli/dispatch/server.rs`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `skills/lean-ctx/SKILL.md`, `skills/lean-ctx/scripts/install.sh`.
+4. retrieval/memory/indexing 확인: `rust/tests/embedding_download_test.py`, `rust/tests/graph_export_contract.rs`, `rust/tests/index_scoping_scenarios.rs`.
+5. test/eval 파일로 동작 검증: `rust/tests/adversarial_compression.rs`, `rust/tests/archive_expand_tests.rs`, `rust/tests/autonomy_tests.rs`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Control what your AI can see. LeanCTX Lean Context is the context intelligence layer for AI agents — one local Rust bina. 핵심 구조 신호는 Rust, Makefile, README.md, AGENTS.md, LICENSE, ci이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Control what your AI can see. LeanCTX Lean Context is the context intelligence layer for AI agents — one local Rust bina. 핵심 구조 신호는 Rust, Makefile, README.md, AGENTS.md, LICENSE, ci이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

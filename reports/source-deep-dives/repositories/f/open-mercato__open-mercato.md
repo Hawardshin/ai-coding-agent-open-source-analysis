@@ -1,63 +1,63 @@
-# open-mercato/open-mercato Source Deep Dive
+# open-mercato/open-mercato 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 AI-Engineering Foundation Framework built with AI and designed for AI. Hundreds of architectural and domain decisions (multi-tenancy, RBAC, event flow, pricing, sales pipeline,CRM/ERP processes) are already made conventions and specs so agents (Cursor, Claude Code, Codex) arch. decisions without reinventing. Ship production grade with AI Agents.
 
 ## 요약
 
-- 조사 단위: `sources/open-mercato__open-mercato` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 8,965 files, 2,628 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/open-mercato__open-mercato` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 8,965 files, 2,628 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-코딩 에이전트/IDE 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 entrypoints=packages/webhooks/src/index.ts, packages/ui/src/index.ts, packages/sync-akeneo/src/index.ts이고, 의존성 단서는 openai, next, react, playwright, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 coding-agent reference implementation이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+코딩 에이전트/IDE 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 entrypoints=packages/webhooks/src/index.ts, packages/ui/src/index.ts, packages/sync-akeneo/src/index.ts이고, 의존성 단서는 openai, next, react, playwright, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 코딩 에이전트 참고 구현이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | open-mercato/open-mercato |
-| Topic | Coding Agent and IDE / 코딩 에이전트/IDE |
+| 레포 | open-mercato/open-mercato |
+| 주제 | 코딩 에이전트/IDE / 코딩 에이전트/IDE |
 | Region | global |
 | Language | TypeScript |
 | Stars | 1411 |
 | Forks | 300 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/open-mercato__open-mercato](../../../../sources/open-mercato__open-mercato) |
-| Existing report | [reports/global-trending/repositories/open-mercato__open-mercato.md](../../../global-trending/repositories/open-mercato__open-mercato.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/open-mercato__open-mercato](../../../../sources/open-mercato__open-mercato) |
+| 기존 보고서 | [reports/global-trending/repositories/open-mercato__open-mercato.md](../../../global-trending/repositories/open-mercato__open-mercato.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 8965 / 2628 |
-| Max observed depth | 13 |
-| Top directories | .ai, .devcontainer, .github, .husky, apps, certs, config, docker, docs, packages, scripts, tests |
-| Top extensions | .ts: 5576, .tsx: 1349, .md: 926, .json: 343, .mdx: 251, .png: 219, .mjs: 125, .sh: 33, (none): 25, .cjs: 24, .yml: 22, .svg: 12 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 8965 / 2628 |
+| 관측 최대 깊이 | 13 |
+| 상위 디렉터리 | .ai, .devcontainer, .github, .husky, apps, certs, config, docker, docs, packages, scripts, tests |
+| 상위 확장자 | .ts: 5576, .tsx: 1349, .md: 926, .json: 343, .mdx: 251, .png: 219, .mjs: 125, .sh: 33, (none): 25, .cjs: 24, .yml: 22, .svg: 12 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/ui | packages workspace | 58 |
 | packages/shared | packages workspace | 49 |
@@ -79,9 +79,9 @@ AI-Engineering Foundation Framework built with AI and designed for AI. Hundreds 
 | packages/checkout | packages workspace | 4 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | dev | node ./scripts/dev.mjs |
 | serve-dev | package.json | dev:classic | node ./scripts/dev.mjs --classic |
@@ -125,24 +125,24 @@ AI-Engineering Foundation Framework built with AI and designed for AI. Hundreds 
 | container | package.json | docker:reinstall | node scripts/docker-exec.mjs reinstall |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | next, react |
-| developerSurface | none |
-| observability | none |
+| developerSurface | 없음 |
+| observability | 없음 |
 | browserAutomation | playwright |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [packages/webhooks/src/index.ts](../../../../sources/open-mercato__open-mercato/packages/webhooks/src/index.ts) | entrypoints signal |
 | entrypoints | [packages/ui/src/index.ts](../../../../sources/open-mercato__open-mercato/packages/ui/src/index.ts) | entrypoints signal |
@@ -158,9 +158,9 @@ AI-Engineering Foundation Framework built with AI and designed for AI. Hundreds 
 | security | [scripts/dev-orchestration-log-policy.mjs](../../../../sources/open-mercato__open-mercato/scripts/dev-orchestration-log-policy.mjs) | security signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 266 | [packages/webhooks/src/index.ts](../../../../sources/open-mercato__open-mercato/packages/webhooks/src/index.ts)<br>[packages/ui/src/index.ts](../../../../sources/open-mercato__open-mercato/packages/ui/src/index.ts)<br>[packages/sync-akeneo/src/index.ts](../../../../sources/open-mercato__open-mercato/packages/sync-akeneo/src/index.ts)<br>[packages/storage-s3/src/index.ts](../../../../sources/open-mercato__open-mercato/packages/storage-s3/src/index.ts)<br>[packages/shared/src/index.ts](../../../../sources/open-mercato__open-mercato/packages/shared/src/index.ts)<br>[packages/shared/src/lib/i18n/server.ts](../../../../sources/open-mercato__open-mercato/packages/shared/src/lib/i18n/server.ts)<br>[packages/shared/src/lib/auth/server.ts](../../../../sources/open-mercato__open-mercato/packages/shared/src/lib/auth/server.ts)<br>[packages/shared/src/lib/auth/__tests__/server.apiKeyCache.test.ts](../../../../sources/open-mercato__open-mercato/packages/shared/src/lib/auth/__tests__/server.apiKeyCache.test.ts) |
 | agentRuntime | 332 | [AGENTS.md](../../../../sources/open-mercato__open-mercato/AGENTS.md)<br>[packages/webhooks/AGENTS.md](../../../../sources/open-mercato__open-mercato/packages/webhooks/AGENTS.md)<br>[packages/ui/AGENTS.md](../../../../sources/open-mercato__open-mercato/packages/ui/AGENTS.md)<br>[packages/ui/src/portal/hooks/useCustomerAuth.ts](../../../../sources/open-mercato__open-mercato/packages/ui/src/portal/hooks/useCustomerAuth.ts)<br>[packages/ui/src/portal/hooks/usePortalAppEvent.ts](../../../../sources/open-mercato__open-mercato/packages/ui/src/portal/hooks/usePortalAppEvent.ts)<br>[packages/ui/src/portal/hooks/usePortalDashboardWidgets.ts](../../../../sources/open-mercato__open-mercato/packages/ui/src/portal/hooks/usePortalDashboardWidgets.ts)<br>[packages/ui/src/portal/hooks/usePortalEventBridge.ts](../../../../sources/open-mercato__open-mercato/packages/ui/src/portal/hooks/usePortalEventBridge.ts)<br>[packages/ui/src/portal/hooks/usePortalInjectedMenuItems.ts](../../../../sources/open-mercato__open-mercato/packages/ui/src/portal/hooks/usePortalInjectedMenuItems.ts) |
@@ -176,39 +176,39 @@ AI-Engineering Foundation Framework built with AI and designed for AI. Hundreds 
 | config | 52 | [package.json](../../../../sources/open-mercato__open-mercato/package.json)<br>[tsconfig.json](../../../../sources/open-mercato__open-mercato/tsconfig.json)<br>[turbo.json](../../../../sources/open-mercato__open-mercato/turbo.json)<br>[packages/webhooks/package.json](../../../../sources/open-mercato__open-mercato/packages/webhooks/package.json)<br>[packages/webhooks/tsconfig.json](../../../../sources/open-mercato__open-mercato/packages/webhooks/tsconfig.json)<br>[packages/ui/package.json](../../../../sources/open-mercato__open-mercato/packages/ui/package.json)<br>[packages/ui/tsconfig.json](../../../../sources/open-mercato__open-mercato/packages/ui/tsconfig.json)<br>[packages/sync-akeneo/package.json](../../../../sources/open-mercato__open-mercato/packages/sync-akeneo/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 2564 | [tests/helpers/renderWithProviders.tsx](../../../../sources/open-mercato__open-mercato/tests/helpers/renderWithProviders.tsx)<br>[scripts/test-create-app-integration.ts](../../../../sources/open-mercato__open-mercato/scripts/test-create-app-integration.ts)<br>[scripts/test-create-app.ts](../../../../sources/open-mercato__open-mercato/scripts/test-create-app.ts)<br>[scripts/lib/__tests__/snapshot-release.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/lib/__tests__/snapshot-release.test.mjs)<br>[scripts/__tests__/dev-cache-purge.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/dev-cache-purge.test.mjs)<br>[scripts/__tests__/dev-database-url.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/dev-database-url.test.mjs) |
-| CI workflows | 8 | [.github/workflows/ci.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/ci.yml)<br>[.github/workflows/dev-deploy.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/dev-deploy.yml)<br>[.github/workflows/merge-gate.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/merge-gate.yml)<br>[.github/workflows/qa-deploy.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/qa-deploy.yml)<br>[.github/workflows/qa-stop-on-merge.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/qa-stop-on-merge.yml)<br>[.github/workflows/release.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/release.yml) |
-| Containers / deploy | 50 | [docker-compose.fullapp.dev.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.dev.yml)<br>[docker-compose.fullapp.traefik.dev.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.traefik.dev.yml)<br>[docker-compose.fullapp.traefik.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.traefik.yml)<br>[docker-compose.fullapp.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.yml)<br>[docker-compose.preview.yaml](../../../../sources/open-mercato__open-mercato/docker-compose.preview.yaml)<br>[docker-compose.yml](../../../../sources/open-mercato__open-mercato/docker-compose.yml) |
-| Security / policy | 649 | [SECURITY.md](../../../../sources/open-mercato__open-mercato/SECURITY.md)<br>[scripts/dev-orchestration-log-policy.mjs](../../../../sources/open-mercato__open-mercato/scripts/dev-orchestration-log-policy.mjs)<br>[scripts/__tests__/dev-orchestration-log-policy.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/dev-orchestration-log-policy.test.mjs)<br>[scripts/__tests__/windows-spawn-guard.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/windows-spawn-guard.test.mjs)<br>`packages/webhooks/src/modules/webhooks/api/webhooks/[id]/rotate-secret/route.ts`<br>`packages/webhooks/src/modules/webhooks/api/[id]/rotate-secret/route.ts` |
-| Agent instructions | 59 | [AGENTS.md](../../../../sources/open-mercato__open-mercato/AGENTS.md)<br>[CLAUDE.md](../../../../sources/open-mercato__open-mercato/CLAUDE.md)<br>[packages/webhooks/AGENTS.md](../../../../sources/open-mercato__open-mercato/packages/webhooks/AGENTS.md)<br>[packages/webhooks/CLAUDE.md](../../../../sources/open-mercato__open-mercato/packages/webhooks/CLAUDE.md)<br>[packages/ui/AGENTS.md](../../../../sources/open-mercato__open-mercato/packages/ui/AGENTS.md)<br>[packages/ui/CLAUDE.md](../../../../sources/open-mercato__open-mercato/packages/ui/CLAUDE.md) |
+| 테스트/평가 | 2564 | [tests/helpers/renderWithProviders.tsx](../../../../sources/open-mercato__open-mercato/tests/helpers/renderWithProviders.tsx)<br>[scripts/test-create-app-integration.ts](../../../../sources/open-mercato__open-mercato/scripts/test-create-app-integration.ts)<br>[scripts/test-create-app.ts](../../../../sources/open-mercato__open-mercato/scripts/test-create-app.ts)<br>[scripts/lib/__tests__/snapshot-release.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/lib/__tests__/snapshot-release.test.mjs)<br>[scripts/__tests__/dev-cache-purge.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/dev-cache-purge.test.mjs)<br>[scripts/__tests__/dev-database-url.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/dev-database-url.test.mjs) |
+| CI workflow | 8 | [.github/workflows/ci.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/ci.yml)<br>[.github/workflows/dev-deploy.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/dev-deploy.yml)<br>[.github/workflows/merge-gate.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/merge-gate.yml)<br>[.github/workflows/qa-deploy.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/qa-deploy.yml)<br>[.github/workflows/qa-stop-on-merge.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/qa-stop-on-merge.yml)<br>[.github/workflows/release.yml](../../../../sources/open-mercato__open-mercato/.github/workflows/release.yml) |
+| 컨테이너/배포 | 50 | [docker-compose.fullapp.dev.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.dev.yml)<br>[docker-compose.fullapp.traefik.dev.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.traefik.dev.yml)<br>[docker-compose.fullapp.traefik.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.traefik.yml)<br>[docker-compose.fullapp.yml](../../../../sources/open-mercato__open-mercato/docker-compose.fullapp.yml)<br>[docker-compose.preview.yaml](../../../../sources/open-mercato__open-mercato/docker-compose.preview.yaml)<br>[docker-compose.yml](../../../../sources/open-mercato__open-mercato/docker-compose.yml) |
+| 보안/정책 | 649 | [SECURITY.md](../../../../sources/open-mercato__open-mercato/SECURITY.md)<br>[scripts/dev-orchestration-log-policy.mjs](../../../../sources/open-mercato__open-mercato/scripts/dev-orchestration-log-policy.mjs)<br>[scripts/__tests__/dev-orchestration-log-policy.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/dev-orchestration-log-policy.test.mjs)<br>[scripts/__tests__/windows-spawn-guard.test.mjs](../../../../sources/open-mercato__open-mercato/scripts/__tests__/windows-spawn-guard.test.mjs)<br>`packages/webhooks/src/modules/webhooks/api/webhooks/[id]/rotate-secret/route.ts`<br>`packages/webhooks/src/modules/webhooks/api/[id]/rotate-secret/route.ts` |
+| 에이전트 지시문 | 59 | [AGENTS.md](../../../../sources/open-mercato__open-mercato/AGENTS.md)<br>[CLAUDE.md](../../../../sources/open-mercato__open-mercato/CLAUDE.md)<br>[packages/webhooks/AGENTS.md](../../../../sources/open-mercato__open-mercato/packages/webhooks/AGENTS.md)<br>[packages/webhooks/CLAUDE.md](../../../../sources/open-mercato__open-mercato/packages/webhooks/CLAUDE.md)<br>[packages/ui/AGENTS.md](../../../../sources/open-mercato__open-mercato/packages/ui/AGENTS.md)<br>[packages/ui/CLAUDE.md](../../../../sources/open-mercato__open-mercato/packages/ui/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `packages/webhooks/src/index.ts`, `packages/ui/src/index.ts`, `packages/sync-akeneo/src/index.ts`.
-2. Trace execution through entrypoints: `packages/webhooks/src/index.ts`, `packages/ui/src/index.ts`, `packages/sync-akeneo/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `packages/webhooks/AGENTS.md`, `packages/ui/AGENTS.md`.
-4. Inspect retrieval/memory/indexing through: `scripts/__tests__/jest-memory-fanout.test.mjs`, `packages/webhooks/src/index.ts`, `packages/webhooks/src/modules/webhooks/index.ts`.
-5. Verify behavior through test/eval files: `tests/helpers/renderWithProviders.tsx`, `scripts/test-create-app-integration.ts`, `scripts/test-create-app.ts`.
+1. 핵심 참조에서 시작: `packages/webhooks/src/index.ts`, `packages/ui/src/index.ts`, `packages/sync-akeneo/src/index.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `packages/webhooks/src/index.ts`, `packages/ui/src/index.ts`, `packages/sync-akeneo/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `packages/webhooks/AGENTS.md`, `packages/ui/AGENTS.md`.
+4. retrieval/memory/indexing 확인: `scripts/__tests__/jest-memory-fanout.test.mjs`, `packages/webhooks/src/index.ts`, `packages/webhooks/src/modules/webhooks/index.ts`.
+5. test/eval 파일로 동작 검증: `tests/helpers/renderWithProviders.tsx`, `scripts/test-create-app-integration.ts`, `scripts/test-create-app.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-코딩 에이전트/IDE 관점에서 AI Engineering Foundation Framework built with AI and designed for AI. Hundreds of architectural and domain decisions mu. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, AGENTS.md이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+코딩 에이전트/IDE 관점에서 AI Engineering Foundation Framework built with AI and designed for AI. Hundreds of architectural and domain decisions mu. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, AGENTS.md이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 코딩 에이전트/IDE 레포입니다. 활용 관점은 coding-agent reference implementation이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 코딩 에이전트/IDE 레포입니다. 활용 관점은 코딩 에이전트 참고 구현이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

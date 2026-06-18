@@ -1,63 +1,63 @@
-# CoWork-OS/CoWork-OS Source Deep Dive
+# CoWork-OS/CoWork-OS 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Local-first personal agentic OS and everything app for coding, knowledge work, web design, automations, and artifacts.
 
 ## 요약
 
-- 조사 단위: `sources/CoWork-OS__CoWork-OS` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 2,992 files, 624 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/CoWork-OS__CoWork-OS` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 2,992 files, 624 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=src/electron/mcp/settings.ts, src/electron/mcp/types.ts, src/electron/mcp/registry/MCPRegistryManager.ts이고, 의존성 단서는 openai, anthropic, react, electron, pydantic, playwright, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=src/electron/mcp/settings.ts, src/electron/mcp/types.ts, src/electron/mcp/registry/MCPRegistryManager.ts이고, 의존성 단서는 openai, anthropic, react, electron, pydantic, playwright, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | CoWork-OS/CoWork-OS |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | CoWork-OS/CoWork-OS |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 360 |
 | Forks | 54 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/CoWork-OS__CoWork-OS](../../../../sources/CoWork-OS__CoWork-OS) |
-| Existing report | [reports/global-trending/repositories/CoWork-OS__CoWork-OS.md](../../../global-trending/repositories/CoWork-OS__CoWork-OS.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/CoWork-OS__CoWork-OS](../../../../sources/CoWork-OS__CoWork-OS) |
+| 기존 보고서 | [reports/global-trending/repositories/CoWork-OS__CoWork-OS.md](../../../global-trending/repositories/CoWork-OS__CoWork-OS.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 2992 / 624 |
-| Max observed depth | 10 |
-| Top directories | .codex, .githooks, .github, assets, bin, connectors, data, deploy, docs, mobile, native, registry, resources, screenshots, scripts, server, src, tests, tools |
-| Top extensions | .ts: 1464, .md: 576, .json: 415, .tsx: 230, .png: 56, .mjs: 48, (none): 38, .py: 21, .html: 17, .yml: 16, .webp: 14, .css: 12 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 2992 / 624 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .codex, .githooks, .github, assets, bin, connectors, data, deploy, docs, mobile, native, registry, resources, screenshots, scripts, server, src, tests, tools |
+| 상위 확장자 | .ts: 1464, .md: 576, .json: 415, .tsx: 230, .png: 56, .mjs: 48, (none): 38, .py: 21, .html: 17, .yml: 16, .webp: 14, .css: 12 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 160 |
 | docs | documentation surface | 45 |
@@ -79,9 +79,9 @@ Local-first personal agentic OS and everything app for coding, knowledge work, w
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | postinstall | node scripts/codesign_electron_dev.mjs |
 | utility | package.json | setup | node scripts/setup.mjs |
@@ -125,24 +125,24 @@ Local-first personal agentic OS and everything app for coding, knowledge work, w
 | utility | package.json | skills:validate-routing | node scripts/qa/validate-skills-routing.mjs |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
 | developerSurface | electron |
-| observability | none |
+| observability | 없음 |
 | browserAutomation | playwright |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [src/electron/mcp/settings.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/mcp/settings.ts) | mcp signal |
 | mcp | [src/electron/mcp/types.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/mcp/types.ts) | mcp signal |
@@ -158,9 +158,9 @@ Local-first personal agentic OS and everything app for coding, knowledge work, w
 | entrypoints | [src/electron/hooks/__tests__/server.test.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/hooks/__tests__/server.test.ts) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 33 | [src/renderer/main.tsx](../../../../sources/CoWork-OS__CoWork-OS/src/renderer/main.tsx)<br>[src/electron/main.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/main.ts)<br>[src/electron/hooks/server.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/hooks/server.ts)<br>[src/electron/hooks/__tests__/server.test.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/hooks/__tests__/server.test.ts)<br>[src/electron/control-plane/server.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/control-plane/server.ts)<br>[src/electron/control-plane/__tests__/server.test.ts](../../../../sources/CoWork-OS__CoWork-OS/src/electron/control-plane/__tests__/server.test.ts)<br>[src/daemon/main.ts](../../../../sources/CoWork-OS__CoWork-OS/src/daemon/main.ts)<br>[src/cli/main.ts](../../../../sources/CoWork-OS__CoWork-OS/src/cli/main.ts) |
 | agentRuntime | 1349 | [agent-policy.toml](../../../../sources/CoWork-OS__CoWork-OS/agent-policy.toml)<br>[tools/registry.ts](../../../../sources/CoWork-OS__CoWork-OS/tools/registry.ts)<br>[tests/tools/builtin-settings.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/builtin-settings.test.ts)<br>[tests/tools/shell-tools.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/shell-tools.test.ts)<br>[tests/tools/skills-content-validator.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/skills-content-validator.test.ts)<br>[tests/tools/system-tools.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/system-tools.test.ts)<br>[tests/security/sandbox-runner.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/security/sandbox-runner.test.ts)<br>[tests/security/tool-groups.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/security/tool-groups.test.ts) |
@@ -176,39 +176,39 @@ Local-first personal agentic OS and everything app for coding, knowledge work, w
 | config | 42 | [package.json](../../../../sources/CoWork-OS__CoWork-OS/package.json)<br>[tsconfig.json](../../../../sources/CoWork-OS__CoWork-OS/tsconfig.json)<br>[connectors/zendesk-mcp/package.json](../../../../sources/CoWork-OS__CoWork-OS/connectors/zendesk-mcp/package.json)<br>[connectors/zendesk-mcp/tsconfig.json](../../../../sources/CoWork-OS__CoWork-OS/connectors/zendesk-mcp/tsconfig.json)<br>[connectors/vercel-mcp/package.json](../../../../sources/CoWork-OS__CoWork-OS/connectors/vercel-mcp/package.json)<br>[connectors/vercel-mcp/tsconfig.json](../../../../sources/CoWork-OS__CoWork-OS/connectors/vercel-mcp/tsconfig.json)<br>[connectors/templates/mcp-connector/package.json](../../../../sources/CoWork-OS__CoWork-OS/connectors/templates/mcp-connector/package.json)<br>[connectors/templates/mcp-connector/tsconfig.json](../../../../sources/CoWork-OS__CoWork-OS/connectors/templates/mcp-connector/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 647 | [tests/codesign-electron-dev.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/codesign-electron-dev.test.ts)<br>[tests/dev-log-utils.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/dev-log-utils.test.ts)<br>[tests/profile-electron-task-switch.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/profile-electron-task-switch.test.ts)<br>[tests/tools/builtin-settings.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/builtin-settings.test.ts)<br>[tests/tools/shell-tools.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/shell-tools.test.ts)<br>[tests/tools/skills-content-validator.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/skills-content-validator.test.ts) |
-| CI workflows | 9 | [.github/workflows/auto-response.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/auto-response.yml)<br>[.github/workflows/ci.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/ci.yml)<br>[.github/workflows/labeler.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/labeler.yml)<br>[.github/workflows/macos-dmg-smoke.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/macos-dmg-smoke.yml)<br>[.github/workflows/nightly-hardening.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/nightly-hardening.yml)<br>[.github/workflows/notify-website-docs.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/notify-website-docs.yml) |
-| Containers / deploy | 12 | [docker-compose.yml](../../../../sources/CoWork-OS__CoWork-OS/docker-compose.yml)<br>[Dockerfile](../../../../sources/CoWork-OS__CoWork-OS/Dockerfile)<br>[Dockerfile.node](../../../../sources/CoWork-OS__CoWork-OS/Dockerfile.node)<br>[resources/skills/docker-compose-ops.json](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/docker-compose-ops.json)<br>[resources/skills/docker-compose-ops/SKILL.md](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/docker-compose-ops/SKILL.md)<br>[resources/skills/docker-compose-ops/scripts/.gitkeep](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/docker-compose-ops/scripts/.gitkeep) |
-| Security / policy | 148 | [agent-policy.toml](../../../../sources/CoWork-OS__CoWork-OS/agent-policy.toml)<br>[SECURITY_COMPARISON.md](../../../../sources/CoWork-OS__CoWork-OS/SECURITY_COMPARISON.md)<br>[SECURITY_GUIDE.md](../../../../sources/CoWork-OS__CoWork-OS/SECURITY_GUIDE.md)<br>[SECURITY.md](../../../../sources/CoWork-OS__CoWork-OS/SECURITY.md)<br>[tests/security/concurrency.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/security/concurrency.test.ts)<br>[tests/security/gateway-security.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/security/gateway-security.test.ts) |
-| Agent instructions | 4 | [resources/skills/react-native-skills/AGENTS.md](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/react-native-skills/AGENTS.md)<br>[.codex/agents/connector-reviewer.toml](../../../../sources/CoWork-OS__CoWork-OS/.codex/agents/connector-reviewer.toml)<br>[.codex/agents/security-auditor.toml](../../../../sources/CoWork-OS__CoWork-OS/.codex/agents/security-auditor.toml)<br>[.codex/agents/tool-reviewer.toml](../../../../sources/CoWork-OS__CoWork-OS/.codex/agents/tool-reviewer.toml) |
+| 테스트/평가 | 647 | [tests/codesign-electron-dev.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/codesign-electron-dev.test.ts)<br>[tests/dev-log-utils.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/dev-log-utils.test.ts)<br>[tests/profile-electron-task-switch.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/profile-electron-task-switch.test.ts)<br>[tests/tools/builtin-settings.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/builtin-settings.test.ts)<br>[tests/tools/shell-tools.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/shell-tools.test.ts)<br>[tests/tools/skills-content-validator.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/tools/skills-content-validator.test.ts) |
+| CI workflow | 9 | [.github/workflows/auto-response.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/auto-response.yml)<br>[.github/workflows/ci.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/ci.yml)<br>[.github/workflows/labeler.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/labeler.yml)<br>[.github/workflows/macos-dmg-smoke.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/macos-dmg-smoke.yml)<br>[.github/workflows/nightly-hardening.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/nightly-hardening.yml)<br>[.github/workflows/notify-website-docs.yml](../../../../sources/CoWork-OS__CoWork-OS/.github/workflows/notify-website-docs.yml) |
+| 컨테이너/배포 | 12 | [docker-compose.yml](../../../../sources/CoWork-OS__CoWork-OS/docker-compose.yml)<br>[Dockerfile](../../../../sources/CoWork-OS__CoWork-OS/Dockerfile)<br>[Dockerfile.node](../../../../sources/CoWork-OS__CoWork-OS/Dockerfile.node)<br>[resources/skills/docker-compose-ops.json](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/docker-compose-ops.json)<br>[resources/skills/docker-compose-ops/SKILL.md](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/docker-compose-ops/SKILL.md)<br>[resources/skills/docker-compose-ops/scripts/.gitkeep](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/docker-compose-ops/scripts/.gitkeep) |
+| 보안/정책 | 148 | [agent-policy.toml](../../../../sources/CoWork-OS__CoWork-OS/agent-policy.toml)<br>[SECURITY_COMPARISON.md](../../../../sources/CoWork-OS__CoWork-OS/SECURITY_COMPARISON.md)<br>[SECURITY_GUIDE.md](../../../../sources/CoWork-OS__CoWork-OS/SECURITY_GUIDE.md)<br>[SECURITY.md](../../../../sources/CoWork-OS__CoWork-OS/SECURITY.md)<br>[tests/security/concurrency.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/security/concurrency.test.ts)<br>[tests/security/gateway-security.test.ts](../../../../sources/CoWork-OS__CoWork-OS/tests/security/gateway-security.test.ts) |
+| 에이전트 지시문 | 4 | [resources/skills/react-native-skills/AGENTS.md](../../../../sources/CoWork-OS__CoWork-OS/resources/skills/react-native-skills/AGENTS.md)<br>[.codex/agents/connector-reviewer.toml](../../../../sources/CoWork-OS__CoWork-OS/.codex/agents/connector-reviewer.toml)<br>[.codex/agents/security-auditor.toml](../../../../sources/CoWork-OS__CoWork-OS/.codex/agents/security-auditor.toml)<br>[.codex/agents/tool-reviewer.toml](../../../../sources/CoWork-OS__CoWork-OS/.codex/agents/tool-reviewer.toml) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | many top-level directories; module boundaries need review |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 상위 디렉터리가 많아 모듈 경계 재확인 필요 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `src/electron/mcp/settings.ts`, `src/electron/mcp/types.ts`, `src/electron/mcp/registry/MCPRegistryManager.ts`.
-2. Trace execution through entrypoints: `src/renderer/main.tsx`, `src/electron/main.ts`, `src/electron/hooks/server.ts`.
-3. Map agent/tool runtime through: `agent-policy.toml`, `tools/registry.ts`, `tests/tools/builtin-settings.test.ts`.
-4. Inspect retrieval/memory/indexing through: `src/shared/knowledge-graph-types.ts`, `src/shared/llm-wiki-prompt-routing.ts`, `src/shared/__tests__/llm-wiki-graph-report.test.ts`.
-5. Verify behavior through test/eval files: `tests/codesign-electron-dev.test.ts`, `tests/dev-log-utils.test.ts`, `tests/profile-electron-task-switch.test.ts`.
+1. 핵심 참조에서 시작: `src/electron/mcp/settings.ts`, `src/electron/mcp/types.ts`, `src/electron/mcp/registry/MCPRegistryManager.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `src/renderer/main.tsx`, `src/electron/main.ts`, `src/electron/hooks/server.ts`.
+3. agent/tool runtime 매핑: `agent-policy.toml`, `tools/registry.ts`, `tests/tools/builtin-settings.test.ts`.
+4. retrieval/memory/indexing 확인: `src/shared/knowledge-graph-types.ts`, `src/shared/llm-wiki-prompt-routing.ts`, `src/shared/__tests__/llm-wiki-graph-report.test.ts`.
+5. test/eval 파일로 동작 검증: `tests/codesign-electron-dev.test.ts`, `tests/dev-log-utils.test.ts`, `tests/profile-electron-task-switch.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Local first personal agentic OS and everything app for coding, knowledge work, web design, automations, and artifacts.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Local first personal agentic OS and everything app for coding, knowledge work, web design, automations, and artifacts.. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

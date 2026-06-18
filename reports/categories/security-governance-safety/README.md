@@ -1,43 +1,43 @@
-# Security, Governance, and Safety
+# 보안/거버넌스/안전
 
-Generated: 2026-06-18T15:12:39.601Z
+생성 시각: 2026-06-18T15:31:33.431Z
 
-Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-chain security, identity, audit, and safe agent execution.
+sandboxing, policy, governance, guardrail, prompt-injection defense, supply-chain security, identity, audit, safe agent execution을 묶은 카테고리입니다.
 
 ## 요약
 
 - 조사 단위: `security-governance-safety` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
-- 포함 범위: 467 entries이며, 주요 구성은 reference-material (158), repository (125), research-paper (119), conference-reference (56), trend-reference (9)입니다.
+- 포함 범위: 467개 항목이며, 주요 구성은 reference-material (158), repository (125), research-paper (119), conference-reference (56), trend-reference (9)입니다.
 - 연결 보고서: [agent-harness](../../by-topic/agent-harness/README.md).
 
 ## 총평
 
 이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
-| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [근거 카테고리](../README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
-## Counts
+## 범위
 
-- Total categorized entries: 467
-- Repositories: 125
-- Research papers: 119
-- Presentations/conferences/trend references: 65
-- Reference materials: 158
-- Data file: [data/categories/security-governance-safety.json](../../../data/categories/security-governance-safety.json)
-- Related report topics: [agent-harness](../../by-topic/agent-harness/README.md)
+- 전체 분류 항목: 467
+- 오픈소스/레포: 125
+- 논문/연구자료: 119
+- 발표/컨퍼런스/트렌드 자료: 65
+- 참고자료: 158
+- 데이터 파일: [data/categories/security-governance-safety.json](../../../data/categories/security-governance-safety.json)
+- 연결된 보고서 주제: [agent-harness](../../by-topic/agent-harness/README.md)
 
-## Type Breakdown
+## 유형별 구성
 
 - reference-material: 158
 - repository: 125
@@ -45,60 +45,60 @@ Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-cha
 - conference-reference: 56
 - trend-reference: 9
 
-## Top Open Source
+## 주요 오픈소스
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | repository | JavaScript, 217294 stars | 413.8 | [source](../../../sources/affaan-m__ECC) / [report](../../global-trending/repositories/affaan-m__ECC.md) |
-| [danny-avila/LibreChat](https://github.com/danny-avila/LibreChat) | repository | TypeScript, 39364 stars | 402.8 | [source](../../../sources/danny-avila__LibreChat) / [report](../../global-trending/repositories/danny-avila__LibreChat.md) |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | repository | Python, 83034 stars | 392.2 | [source](../../../sources/infiniflow__ragflow) / [report](../../global-trending/repositories/infiniflow__ragflow.md) |
-| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | repository | TypeScript, 29904 stars | 363.6 | [source](../../../sources/nanocoai__nanoclaw) / [report](../../global-trending/repositories/nanocoai__nanoclaw.md) |
-| [mudler/LocalAI](https://github.com/mudler/LocalAI) | repository | Go, 46944 stars | 363.5 | [source](../../../sources/mudler__LocalAI) / [report](../../global-trending/repositories/mudler__LocalAI.md) |
-| [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) | repository | TypeScript, 69499 stars | 360.5 | [source](../../../sources/toeverything__AFFiNE) / [report](../../global-trending/repositories/toeverything__AFFiNE.md) |
-| [InsForge/InsForge](https://github.com/InsForge/InsForge) | repository | TypeScript, 11848 stars | 359.6 | [source](../../../sources/InsForge__InsForge) / [report](../../global-trending/repositories/InsForge__InsForge.md) |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | repository | TypeScript, 105365 stars | 355.8 | [source](../../../sources/google-gemini__gemini-cli) / [report](../../global-trending/repositories/google-gemini__gemini-cli.md) |
-| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | repository | Rust, 19349 stars | 355.0 | [source](../../../sources/screenpipe__screenpipe) / [report](../../global-trending/repositories/screenpipe__screenpipe.md) |
-| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | repository | TypeScript, 22326 stars | 352.2 | [source](../../../sources/promptfoo__promptfoo) / [report](../../global-trending/repositories/promptfoo__promptfoo.md) |
-| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | repository | Python, 53827 stars | 345.6 | [source](../../../sources/crewAIInc__crewAI) / [report](../../global-trending/repositories/crewAIInc__crewAI.md) |
-| [perplexityai/bumblebee](https://github.com/perplexityai/bumblebee) | repository | Go, 4485 stars | 344.8 | [source](../../../sources/perplexityai__bumblebee) / [report](../../global-trending/repositories/perplexityai__bumblebee.md) |
-| [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | repository | Python, 3500 stars | 343.1 | [source](../../../sources/omnigent-ai__omnigent) / [report](../../global-trending/repositories/omnigent-ai__omnigent.md) |
-| [osaurus-ai/osaurus](https://github.com/osaurus-ai/osaurus) | repository | Swift, 5927 stars | 342.1 | [source](../../../sources/osaurus-ai__osaurus) / [report](../../global-trending/repositories/osaurus-ai__osaurus.md) |
-| [stacklok/toolhive](https://github.com/stacklok/toolhive) | repository | Go, 1889 stars | 338.7 | [source](../../../sources/stacklok__toolhive) / [report](../../global-trending/repositories/stacklok__toolhive.md) |
-| [stackql/stackql](https://github.com/stackql/stackql) | repository | Go, 862 stars | 336.8 | [source](../../../sources/stackql__stackql) / [report](../../global-trending/repositories/stackql__stackql.md) |
-| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | repository | Jupyter Notebook, 16551 stars | 333.7 | [source](../../../sources/microsoft__mcp-for-beginners) / [report](../../global-trending/repositories/microsoft__mcp-for-beginners.md) |
-| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [source](../../../sources/gsd-build__get-shit-done) / [report](../../clone-structures/gsd-build__get-shit-done.md) |
-| [zubair-trabzada/geo-seo-claude](https://github.com/zubair-trabzada/geo-seo-claude) | repository | Python, 8195 stars | 322.0 | [source](../../../sources/zubair-trabzada__geo-seo-claude) / [report](../../global-trending/repositories/zubair-trabzada__geo-seo-claude.md) |
-| [alpic-ai/skybridge](https://github.com/alpic-ai/skybridge) | repository | TypeScript, 1754 stars | 316.6 | [source](../../../sources/alpic-ai__skybridge) / [report](../../global-trending/repositories/alpic-ai__skybridge.md) |
-| [cisco-ai-defense/mcp-scanner](https://github.com/cisco-ai-defense/mcp-scanner) | repository | Python, 965 stars | 315.5 | [source](../../../sources/cisco-ai-defense__mcp-scanner) / [report](../../global-trending/repositories/cisco-ai-defense__mcp-scanner.md) |
-| [vstorm-co/full-stack-ai-agent-template](https://github.com/vstorm-co/full-stack-ai-agent-template) | repository | Python, 1424 stars | 306.4 | [source](../../../sources/vstorm-co__full-stack-ai-agent-template) / [report](../../global-trending/repositories/vstorm-co__full-stack-ai-agent-template.md) |
-| [brycewang-stanford/StatsPAI](https://github.com/brycewang-stanford/StatsPAI) | repository | Python, 233 stars | 305.9 | [source](../../../sources/brycewang-stanford__StatsPAI) / [report](../../global-trending/repositories/brycewang-stanford__StatsPAI.md) |
-| [MCPJam/inspector](https://github.com/MCPJam/inspector) | repository | TypeScript, 2016 stars | 304.7 | [source](../../../sources/MCPJam__inspector) / [report](../../global-trending/repositories/MCPJam__inspector.md) |
-| [DemonDamon/AgenticX](https://github.com/DemonDamon/AgenticX) | repository | Python, 162 stars | 301.4 | [source](../../../sources/DemonDamon__AgenticX) / [report](../../global-trending/repositories/DemonDamon__AgenticX.md) |
-| [OpenOSINT/OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) | repository | Python, 688 stars | 299.3 | [source](../../../sources/OpenOSINT__OpenOSINT) / [report](../../global-trending/repositories/OpenOSINT__OpenOSINT.md) |
-| [aws/bedrock-agentcore-sdk-python](https://github.com/aws/bedrock-agentcore-sdk-python) | repository | Python, 727 stars | 299.2 | [source](../../../sources/aws__bedrock-agentcore-sdk-python) / [report](../../global-trending/repositories/aws__bedrock-agentcore-sdk-python.md) |
-| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | repository | TypeScript, 7739 stars | 296.1 | [source](../../../sources/gsd-build__gsd-2) / [report](../../clone-structures/gsd-build__gsd-2.md) |
-| [bitbonsai/mcpvault](https://github.com/bitbonsai/mcpvault) | repository | Astro, 1429 stars | 295.4 | [source](../../../sources/bitbonsai__mcpvault) / [report](../../global-trending/repositories/bitbonsai__mcpvault.md) |
-| [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain) | repository | TypeScript, 1130 stars | 292.9 | [source](../../../sources/your-papa__obsidian-Smart2Brain) / [report](../../global-trending/repositories/your-papa__obsidian-Smart2Brain.md) |
-| [C0nw0nk/Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) | repository | Lua, 1602 stars | 291.2 | [source](../../../sources/C0nw0nk__Nginx-Lua-Anti-DDoS) / [report](../../global-trending/repositories/C0nw0nk__Nginx-Lua-Anti-DDoS.md) |
-| [secure-agentic-framework/saf-mcp](https://github.com/secure-agentic-framework/saf-mcp) | repository | Python, 348 stars | 290.0 | [source](../../../sources/secure-agentic-framework__saf-mcp) / [report](../../global-trending/repositories/secure-agentic-framework__saf-mcp.md) |
-| [askalf/dario](https://github.com/askalf/dario) | repository | JavaScript, 278 stars | 289.6 | [source](../../../sources/askalf__dario) / [report](../../global-trending/repositories/askalf__dario.md) |
-| [Cranot/roam-code](https://github.com/Cranot/roam-code) | repository | Python, 483 stars | 288.0 | [source](../../../sources/Cranot__roam-code) / [report](../../global-trending/repositories/Cranot__roam-code.md) |
-| [paperboytm/spool](https://github.com/paperboytm/spool) | repository | TypeScript, 561 stars | 287.2 | [source](../../../sources/paperboytm__spool) / [report](../../global-trending/repositories/paperboytm__spool.md) |
-| [caura-ai/caura-memclaw](https://github.com/caura-ai/caura-memclaw) | repository | Python, 127 stars | 285.8 | [source](../../../sources/caura-ai__caura-memclaw) / [report](../../global-trending/repositories/caura-ai__caura-memclaw.md) |
-| [vstorm-co/pydantic-ai-backend](https://github.com/vstorm-co/pydantic-ai-backend) | repository | Python, 102 stars | 285.4 | [source](../../../sources/vstorm-co__pydantic-ai-backend) / [report](../../global-trending/repositories/vstorm-co__pydantic-ai-backend.md) |
-| [CoWork-OS/CoWork-OS](https://github.com/CoWork-OS/CoWork-OS) | repository | TypeScript, 360 stars | 283.5 | [source](../../../sources/CoWork-OS__CoWork-OS) / [report](../../global-trending/repositories/CoWork-OS__CoWork-OS.md) |
-| [theopenco/llmgateway](https://github.com/theopenco/llmgateway) | repository | TypeScript, 1316 stars | 283.2 | [source](../../../sources/theopenco__llmgateway) / [report](../../global-trending/repositories/theopenco__llmgateway.md) |
-| [PurpleDoubleD/locally-uncensored](https://github.com/PurpleDoubleD/locally-uncensored) | repository | TypeScript, 720 stars | 283.0 | [source](../../../sources/PurpleDoubleD__locally-uncensored) / [report](../../global-trending/repositories/PurpleDoubleD__locally-uncensored.md) |
-| [oleksiijko/pmb](https://github.com/oleksiijko/pmb) | repository | Python, 79 stars | 282.6 | [source](../../../sources/oleksiijko__pmb) / [report](../../global-trending/repositories/oleksiijko__pmb.md) |
-| [orneryd/NornicDB](https://github.com/orneryd/NornicDB) | repository | Go, 777 stars | 282.2 | [source](../../../sources/orneryd__NornicDB) / [report](../../global-trending/repositories/orneryd__NornicDB.md) |
-| [future-agi/future-agi](https://github.com/future-agi/future-agi) | repository | Python, 1182 stars | 281.6 | [source](../../../sources/future-agi__future-agi) / [report](../../global-trending/repositories/future-agi__future-agi.md) |
-| [QuivrHQ/quivr](https://github.com/QuivrHQ/quivr) | repository | Python, 39165 stars | 280.8 | [source](../../../sources/QuivrHQ__quivr) / [report](../../global-trending/repositories/QuivrHQ__quivr.md) |
-| [shinpr/mcp-local-rag](https://github.com/shinpr/mcp-local-rag) | repository | TypeScript, 317 stars | 280.6 | [source](../../../sources/shinpr__mcp-local-rag) / [report](../../global-trending/repositories/shinpr__mcp-local-rag.md) |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | repository | JavaScript, 217294 stars | 413.8 | [소스](../../../sources/affaan-m__ECC) / [보고서](../../global-trending/repositories/affaan-m__ECC.md) |
+| [danny-avila/LibreChat](https://github.com/danny-avila/LibreChat) | repository | TypeScript, 39364 stars | 402.8 | [소스](../../../sources/danny-avila__LibreChat) / [보고서](../../global-trending/repositories/danny-avila__LibreChat.md) |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | repository | Python, 83034 stars | 392.2 | [소스](../../../sources/infiniflow__ragflow) / [보고서](../../global-trending/repositories/infiniflow__ragflow.md) |
+| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | repository | TypeScript, 29904 stars | 363.6 | [소스](../../../sources/nanocoai__nanoclaw) / [보고서](../../global-trending/repositories/nanocoai__nanoclaw.md) |
+| [mudler/LocalAI](https://github.com/mudler/LocalAI) | repository | Go, 46944 stars | 363.5 | [소스](../../../sources/mudler__LocalAI) / [보고서](../../global-trending/repositories/mudler__LocalAI.md) |
+| [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) | repository | TypeScript, 69499 stars | 360.5 | [소스](../../../sources/toeverything__AFFiNE) / [보고서](../../global-trending/repositories/toeverything__AFFiNE.md) |
+| [InsForge/InsForge](https://github.com/InsForge/InsForge) | repository | TypeScript, 11848 stars | 359.6 | [소스](../../../sources/InsForge__InsForge) / [보고서](../../global-trending/repositories/InsForge__InsForge.md) |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | repository | TypeScript, 105365 stars | 355.8 | [소스](../../../sources/google-gemini__gemini-cli) / [보고서](../../global-trending/repositories/google-gemini__gemini-cli.md) |
+| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | repository | Rust, 19349 stars | 355.0 | [소스](../../../sources/screenpipe__screenpipe) / [보고서](../../global-trending/repositories/screenpipe__screenpipe.md) |
+| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | repository | TypeScript, 22326 stars | 352.2 | [소스](../../../sources/promptfoo__promptfoo) / [보고서](../../global-trending/repositories/promptfoo__promptfoo.md) |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | repository | Python, 53827 stars | 345.6 | [소스](../../../sources/crewAIInc__crewAI) / [보고서](../../global-trending/repositories/crewAIInc__crewAI.md) |
+| [perplexityai/bumblebee](https://github.com/perplexityai/bumblebee) | repository | Go, 4485 stars | 344.8 | [소스](../../../sources/perplexityai__bumblebee) / [보고서](../../global-trending/repositories/perplexityai__bumblebee.md) |
+| [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | repository | Python, 3500 stars | 343.1 | [소스](../../../sources/omnigent-ai__omnigent) / [보고서](../../global-trending/repositories/omnigent-ai__omnigent.md) |
+| [osaurus-ai/osaurus](https://github.com/osaurus-ai/osaurus) | repository | Swift, 5927 stars | 342.1 | [소스](../../../sources/osaurus-ai__osaurus) / [보고서](../../global-trending/repositories/osaurus-ai__osaurus.md) |
+| [stacklok/toolhive](https://github.com/stacklok/toolhive) | repository | Go, 1889 stars | 338.7 | [소스](../../../sources/stacklok__toolhive) / [보고서](../../global-trending/repositories/stacklok__toolhive.md) |
+| [stackql/stackql](https://github.com/stackql/stackql) | repository | Go, 862 stars | 336.8 | [소스](../../../sources/stackql__stackql) / [보고서](../../global-trending/repositories/stackql__stackql.md) |
+| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | repository | Jupyter Notebook, 16551 stars | 333.7 | [소스](../../../sources/microsoft__mcp-for-beginners) / [보고서](../../global-trending/repositories/microsoft__mcp-for-beginners.md) |
+| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [소스](../../../sources/gsd-build__get-shit-done) / [보고서](../../clone-structures/gsd-build__get-shit-done.md) |
+| [zubair-trabzada/geo-seo-claude](https://github.com/zubair-trabzada/geo-seo-claude) | repository | Python, 8195 stars | 322.0 | [소스](../../../sources/zubair-trabzada__geo-seo-claude) / [보고서](../../global-trending/repositories/zubair-trabzada__geo-seo-claude.md) |
+| [alpic-ai/skybridge](https://github.com/alpic-ai/skybridge) | repository | TypeScript, 1754 stars | 316.6 | [소스](../../../sources/alpic-ai__skybridge) / [보고서](../../global-trending/repositories/alpic-ai__skybridge.md) |
+| [cisco-ai-defense/mcp-scanner](https://github.com/cisco-ai-defense/mcp-scanner) | repository | Python, 965 stars | 315.5 | [소스](../../../sources/cisco-ai-defense__mcp-scanner) / [보고서](../../global-trending/repositories/cisco-ai-defense__mcp-scanner.md) |
+| [vstorm-co/full-stack-ai-agent-template](https://github.com/vstorm-co/full-stack-ai-agent-template) | repository | Python, 1424 stars | 306.4 | [소스](../../../sources/vstorm-co__full-stack-ai-agent-template) / [보고서](../../global-trending/repositories/vstorm-co__full-stack-ai-agent-template.md) |
+| [brycewang-stanford/StatsPAI](https://github.com/brycewang-stanford/StatsPAI) | repository | Python, 233 stars | 305.9 | [소스](../../../sources/brycewang-stanford__StatsPAI) / [보고서](../../global-trending/repositories/brycewang-stanford__StatsPAI.md) |
+| [MCPJam/inspector](https://github.com/MCPJam/inspector) | repository | TypeScript, 2016 stars | 304.7 | [소스](../../../sources/MCPJam__inspector) / [보고서](../../global-trending/repositories/MCPJam__inspector.md) |
+| [DemonDamon/AgenticX](https://github.com/DemonDamon/AgenticX) | repository | Python, 162 stars | 301.4 | [소스](../../../sources/DemonDamon__AgenticX) / [보고서](../../global-trending/repositories/DemonDamon__AgenticX.md) |
+| [OpenOSINT/OpenOSINT](https://github.com/OpenOSINT/OpenOSINT) | repository | Python, 688 stars | 299.3 | [소스](../../../sources/OpenOSINT__OpenOSINT) / [보고서](../../global-trending/repositories/OpenOSINT__OpenOSINT.md) |
+| [aws/bedrock-agentcore-sdk-python](https://github.com/aws/bedrock-agentcore-sdk-python) | repository | Python, 727 stars | 299.2 | [소스](../../../sources/aws__bedrock-agentcore-sdk-python) / [보고서](../../global-trending/repositories/aws__bedrock-agentcore-sdk-python.md) |
+| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | repository | TypeScript, 7739 stars | 296.1 | [소스](../../../sources/gsd-build__gsd-2) / [보고서](../../clone-structures/gsd-build__gsd-2.md) |
+| [bitbonsai/mcpvault](https://github.com/bitbonsai/mcpvault) | repository | Astro, 1429 stars | 295.4 | [소스](../../../sources/bitbonsai__mcpvault) / [보고서](../../global-trending/repositories/bitbonsai__mcpvault.md) |
+| [your-papa/obsidian-Smart2Brain](https://github.com/your-papa/obsidian-Smart2Brain) | repository | TypeScript, 1130 stars | 292.9 | [소스](../../../sources/your-papa__obsidian-Smart2Brain) / [보고서](../../global-trending/repositories/your-papa__obsidian-Smart2Brain.md) |
+| [C0nw0nk/Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS) | repository | Lua, 1602 stars | 291.2 | [소스](../../../sources/C0nw0nk__Nginx-Lua-Anti-DDoS) / [보고서](../../global-trending/repositories/C0nw0nk__Nginx-Lua-Anti-DDoS.md) |
+| [secure-agentic-framework/saf-mcp](https://github.com/secure-agentic-framework/saf-mcp) | repository | Python, 348 stars | 290.0 | [소스](../../../sources/secure-agentic-framework__saf-mcp) / [보고서](../../global-trending/repositories/secure-agentic-framework__saf-mcp.md) |
+| [askalf/dario](https://github.com/askalf/dario) | repository | JavaScript, 278 stars | 289.6 | [소스](../../../sources/askalf__dario) / [보고서](../../global-trending/repositories/askalf__dario.md) |
+| [Cranot/roam-code](https://github.com/Cranot/roam-code) | repository | Python, 483 stars | 288.0 | [소스](../../../sources/Cranot__roam-code) / [보고서](../../global-trending/repositories/Cranot__roam-code.md) |
+| [paperboytm/spool](https://github.com/paperboytm/spool) | repository | TypeScript, 561 stars | 287.2 | [소스](../../../sources/paperboytm__spool) / [보고서](../../global-trending/repositories/paperboytm__spool.md) |
+| [caura-ai/caura-memclaw](https://github.com/caura-ai/caura-memclaw) | repository | Python, 127 stars | 285.8 | [소스](../../../sources/caura-ai__caura-memclaw) / [보고서](../../global-trending/repositories/caura-ai__caura-memclaw.md) |
+| [vstorm-co/pydantic-ai-backend](https://github.com/vstorm-co/pydantic-ai-backend) | repository | Python, 102 stars | 285.4 | [소스](../../../sources/vstorm-co__pydantic-ai-backend) / [보고서](../../global-trending/repositories/vstorm-co__pydantic-ai-backend.md) |
+| [CoWork-OS/CoWork-OS](https://github.com/CoWork-OS/CoWork-OS) | repository | TypeScript, 360 stars | 283.5 | [소스](../../../sources/CoWork-OS__CoWork-OS) / [보고서](../../global-trending/repositories/CoWork-OS__CoWork-OS.md) |
+| [theopenco/llmgateway](https://github.com/theopenco/llmgateway) | repository | TypeScript, 1316 stars | 283.2 | [소스](../../../sources/theopenco__llmgateway) / [보고서](../../global-trending/repositories/theopenco__llmgateway.md) |
+| [PurpleDoubleD/locally-uncensored](https://github.com/PurpleDoubleD/locally-uncensored) | repository | TypeScript, 720 stars | 283.0 | [소스](../../../sources/PurpleDoubleD__locally-uncensored) / [보고서](../../global-trending/repositories/PurpleDoubleD__locally-uncensored.md) |
+| [oleksiijko/pmb](https://github.com/oleksiijko/pmb) | repository | Python, 79 stars | 282.6 | [소스](../../../sources/oleksiijko__pmb) / [보고서](../../global-trending/repositories/oleksiijko__pmb.md) |
+| [orneryd/NornicDB](https://github.com/orneryd/NornicDB) | repository | Go, 777 stars | 282.2 | [소스](../../../sources/orneryd__NornicDB) / [보고서](../../global-trending/repositories/orneryd__NornicDB.md) |
+| [future-agi/future-agi](https://github.com/future-agi/future-agi) | repository | Python, 1182 stars | 281.6 | [소스](../../../sources/future-agi__future-agi) / [보고서](../../global-trending/repositories/future-agi__future-agi.md) |
+| [QuivrHQ/quivr](https://github.com/QuivrHQ/quivr) | repository | Python, 39165 stars | 280.8 | [소스](../../../sources/QuivrHQ__quivr) / [보고서](../../global-trending/repositories/QuivrHQ__quivr.md) |
+| [shinpr/mcp-local-rag](https://github.com/shinpr/mcp-local-rag) | repository | TypeScript, 317 stars | 280.6 | [소스](../../../sources/shinpr__mcp-local-rag) / [보고서](../../global-trending/repositories/shinpr__mcp-local-rag.md) |
 
 
-## Top Research
+## 주요 연구/논문
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Blockchain for Supply Chain Traceability: Business Requirements and Critical Success Factors](https://doi.org/10.1111/poms.13147) | research-paper | 2019 | 948.3 |  |
 | [Social Modeling for Requirements Engineering: An Introduction](https://doi.org/10.7551/mitpress/7549.003.0004) | research-paper | 2010 | 360.2 |  |
@@ -127,9 +127,9 @@ Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-cha
 | [Regulatory Requirements Traceability and Analysis Using Semi-formal Specifications](https://doi.org/10.1007/978-3-642-37422-7_11) | research-paper | 2013 | 91.3 |  |
 
 
-## Top Presentations and Conference References
+## 주요 발표/컨퍼런스 자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Microsoft AI Tour in Seoul](https://aitour.microsoft.com/flow/microsoft/seoul26/landingpage/page/cityhome) | trend-reference | 2026-03-26, Microsoft | 125.0 |  |
 | [Microsoft AI Tour resources](https://adoption.microsoft.com/en-us/ai-tour/) | trend-reference | 2026-03-26, Microsoft | 125.0 |  |
@@ -168,9 +168,9 @@ Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-cha
 | [The Return of the Data Scientist](https://www.youtube.com/watch?v=QDQT99csHJQ) | conference-reference |  | 85.0 |  |
 
 
-## Top Reference Materials
+## 주요 참고자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Agentic AI Foundation / MCP open governance coverage](https://www.itpro.com/software/open-source/anthropic-says-mcp-will-stay-open-neutral-and-community-driven-after-donating-project-to-linux-foundation) | reference-material |  | 1000.0 |  |
 | [Codex Configuration Reference](https://developers.openai.com/codex/config-reference) | reference-material |  | 1000.0 |  |
@@ -199,4 +199,4 @@ Sandboxing, policy, governance, guardrails, prompt-injection defense, supply-cha
 | [Handle approvals and user input](https://code.claude.com/docs/en/agent-sdk/user-input.md) | reference-material |  | 970.0 |  |
 
 
-Complete category membership is stored in [data/categories/security-governance-safety.json](../../../data/categories/security-governance-safety.json).
+전체 카테고리 멤버십은 [data/categories/security-governance-safety.json](../../../data/categories/security-governance-safety.json)에 저장됩니다.

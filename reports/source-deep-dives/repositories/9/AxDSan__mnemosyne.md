@@ -1,63 +1,63 @@
-# AxDSan/mnemosyne Source Deep Dive
+# AxDSan/mnemosyne 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 The Zero-Dependency, Sub-Millisecond AI Memory System for Hermes Agents and Everyone Else!
 
 ## 요약
 
-- 조사 단위: `sources/AxDSan__mnemosyne` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 327 files, 43 directories, depth score 120, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/AxDSan__mnemosyne` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 327 files, 43 directories, depth score 114, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/test_mcp_server.py, tests/test_s1_mcp_sse_auth.py, mnemosyne/mcp_server.py이고, 의존성 단서는 claude, codex, mcp, transformers, llama, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, agent/tool runtime, retrieval/vector path 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/test_mcp_server.py, tests/test_s1_mcp_sse_auth.py, mnemosyne/mcp_server.py이고, 의존성 단서는 claude, codex, mcp, transformers, llama, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | AxDSan/mnemosyne |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | AxDSan/mnemosyne |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | Python |
 | Stars | 1170 |
 | Forks | 109 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/AxDSan__mnemosyne](../../../../sources/AxDSan__mnemosyne) |
-| Existing report | [reports/global-trending/repositories/AxDSan__mnemosyne.md](../../../global-trending/repositories/AxDSan__mnemosyne.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/AxDSan__mnemosyne](../../../../sources/AxDSan__mnemosyne) |
+| 기존 보고서 | [reports/global-trending/repositories/AxDSan__mnemosyne.md](../../../global-trending/repositories/AxDSan__mnemosyne.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 327 / 43 |
-| Max observed depth | 5 |
-| Top directories | .agents, .claude, .githooks, .github, assets, deploy, docs, examples, hermes_memory_provider, integrations, mnemosyne, scripts, skills, tests, tools |
-| Top extensions | .py: 229, .md: 55, (none): 9, .json: 6, .yml: 6, .ts: 5, .sh: 4, .toml: 3, .yaml: 3, .mdx: 2, .in: 1, .jpg: 1 |
-| Source patterns | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 327 / 43 |
+| 관측 최대 깊이 | 5 |
+| 상위 디렉터리 | .agents, .claude, .githooks, .github, assets, deploy, docs, examples, hermes_memory_provider, integrations, mnemosyne, scripts, skills, tests, tools |
+| 상위 확장자 | .py: 229, .md: 55, (none): 9, .json: 6, .yml: 6, .ts: 5, .sh: 4, .toml: 3, .yaml: 3, .mdx: 2, .in: 1, .jpg: 1 |
+| 소스 패턴 | cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 49 |
 | tests | validation surface | 49 |
@@ -74,9 +74,9 @@ The Zero-Dependency, Sub-Millisecond AI Memory System for Hermes Agents and Ever
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | pyproject.toml | mnemosyne-install | mnemosyne-install |
 | utility | pyproject.toml | mnemosyne-uninstall | mnemosyne-uninstall |
@@ -85,24 +85,24 @@ The Zero-Dependency, Sub-Millisecond AI Memory System for Hermes Agents and Ever
 | utility | pyproject.toml | mnemosyne-auto-save | mnemosyne-auto-save |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | claude |
 | agentProtocols | mcp, codex |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | transformers, llama |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [tests/test_mcp_server.py](../../../../sources/AxDSan__mnemosyne/tests/test_mcp_server.py) | mcp signal |
 | mcp | [tests/test_s1_mcp_sse_auth.py](../../../../sources/AxDSan__mnemosyne/tests/test_s1_mcp_sse_auth.py) | mcp signal |
@@ -118,9 +118,9 @@ The Zero-Dependency, Sub-Millisecond AI Memory System for Hermes Agents and Ever
 | config | [uv.lock](../../../../sources/AxDSan__mnemosyne/uv.lock) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 1 | [integrations/obsidian-mnemosyne/main.ts](../../../../sources/AxDSan__mnemosyne/integrations/obsidian-mnemosyne/main.ts) |
 | agentRuntime | 23 | [tools/beam_phase3_test.py](../../../../sources/AxDSan__mnemosyne/tools/beam_phase3_test.py)<br>[tools/bench_100k_fast.py](../../../../sources/AxDSan__mnemosyne/tools/bench_100k_fast.py)<br>[tools/bench_100k_gemma.py](../../../../sources/AxDSan__mnemosyne/tools/bench_100k_gemma.py)<br>[tools/bench_audit_log.py](../../../../sources/AxDSan__mnemosyne/tools/bench_audit_log.py)<br>[tools/bench_nai0.py](../../../../sources/AxDSan__mnemosyne/tools/bench_nai0.py)<br>[tools/bench_nai1.py](../../../../sources/AxDSan__mnemosyne/tools/bench_nai1.py)<br>[tools/bench_nai2.py](../../../../sources/AxDSan__mnemosyne/tools/bench_nai2.py)<br>[tools/bench_rerank.py](../../../../sources/AxDSan__mnemosyne/tools/bench_rerank.py) |
@@ -131,44 +131,44 @@ The Zero-Dependency, Sub-Millisecond AI Memory System for Hermes Agents and Ever
 | security | 13 | [SECURITY.md](../../../../sources/AxDSan__mnemosyne/SECURITY.md)<br>[tools/bench_audit_log.py](../../../../sources/AxDSan__mnemosyne/tools/bench_audit_log.py)<br>[tests/test_hermes_memory_provider_audit.py](../../../../sources/AxDSan__mnemosyne/tests/test_hermes_memory_provider_audit.py)<br>[tests/test_s1_mcp_sse_auth.py](../../../../sources/AxDSan__mnemosyne/tests/test_s1_mcp_sse_auth.py)<br>[tests/test_vec_dim_guard.py](../../../../sources/AxDSan__mnemosyne/tests/test_vec_dim_guard.py)<br>[scripts/memoria_audit.py](../../../../sources/AxDSan__mnemosyne/scripts/memoria_audit.py)<br>[integrations/hermes/src/mnemosyne_hermes/audit.py](../../../../sources/AxDSan__mnemosyne/integrations/hermes/src/mnemosyne_hermes/audit.py)<br>[hermes_memory_provider/audit.py](../../../../sources/AxDSan__mnemosyne/hermes_memory_provider/audit.py) |
 | ci | 2 | [.github/workflows/ci.yml](../../../../sources/AxDSan__mnemosyne/.github/workflows/ci.yml)<br>[.github/workflows/release.yml](../../../../sources/AxDSan__mnemosyne/.github/workflows/release.yml) |
 | container | 6 | [docker-compose.yml](../../../../sources/AxDSan__mnemosyne/docker-compose.yml)<br>[Dockerfile](../../../../sources/AxDSan__mnemosyne/Dockerfile)<br>[deploy/sync/Caddyfile](../../../../sources/AxDSan__mnemosyne/deploy/sync/Caddyfile)<br>[deploy/sync/docker-compose.yml](../../../../sources/AxDSan__mnemosyne/deploy/sync/docker-compose.yml)<br>[deploy/sync/fly.toml](../../../../sources/AxDSan__mnemosyne/deploy/sync/fly.toml)<br>[deploy/sync/README.md](../../../../sources/AxDSan__mnemosyne/deploy/sync/README.md) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 43 | [README.md](../../../../sources/AxDSan__mnemosyne/README.md)<br>[integrations/vscode-mnemosyne/README.md](../../../../sources/AxDSan__mnemosyne/integrations/vscode-mnemosyne/README.md)<br>[integrations/obsidian-mnemosyne/README.md](../../../../sources/AxDSan__mnemosyne/integrations/obsidian-mnemosyne/README.md)<br>[integrations/hermes/README.md](../../../../sources/AxDSan__mnemosyne/integrations/hermes/README.md)<br>[hermes_memory_provider/README.md](../../../../sources/AxDSan__mnemosyne/hermes_memory_provider/README.md)<br>[docs/api-reference.md](../../../../sources/AxDSan__mnemosyne/docs/api-reference.md)<br>[docs/architecture.md](../../../../sources/AxDSan__mnemosyne/docs/architecture.md)<br>[docs/audit-report-2026-05-11.md](../../../../sources/AxDSan__mnemosyne/docs/audit-report-2026-05-11.md) |
 | config | 7 | [pyproject.toml](../../../../sources/AxDSan__mnemosyne/pyproject.toml)<br>[requirements-benchmark.txt](../../../../sources/AxDSan__mnemosyne/requirements-benchmark.txt)<br>[uv.lock](../../../../sources/AxDSan__mnemosyne/uv.lock)<br>[integrations/vscode-mnemosyne/package.json](../../../../sources/AxDSan__mnemosyne/integrations/vscode-mnemosyne/package.json)<br>[integrations/vscode-mnemosyne/tsconfig.json](../../../../sources/AxDSan__mnemosyne/integrations/vscode-mnemosyne/tsconfig.json)<br>[integrations/obsidian-mnemosyne/package.json](../../../../sources/AxDSan__mnemosyne/integrations/obsidian-mnemosyne/package.json)<br>[integrations/hermes/pyproject.toml](../../../../sources/AxDSan__mnemosyne/integrations/hermes/pyproject.toml) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 136 | [requirements-benchmark.txt](../../../../sources/AxDSan__mnemosyne/requirements-benchmark.txt)<br>[run_beam_bench.sh](../../../../sources/AxDSan__mnemosyne/run_beam_bench.sh)<br>[tools/beam_phase3_test.py](../../../../sources/AxDSan__mnemosyne/tools/beam_phase3_test.py)<br>[tools/bench_100k_fast.py](../../../../sources/AxDSan__mnemosyne/tools/bench_100k_fast.py)<br>[tools/bench_100k_gemma.py](../../../../sources/AxDSan__mnemosyne/tools/bench_100k_gemma.py)<br>[tools/bench_audit_log.py](../../../../sources/AxDSan__mnemosyne/tools/bench_audit_log.py) |
-| CI workflows | 2 | [.github/workflows/ci.yml](../../../../sources/AxDSan__mnemosyne/.github/workflows/ci.yml)<br>[.github/workflows/release.yml](../../../../sources/AxDSan__mnemosyne/.github/workflows/release.yml) |
-| Containers / deploy | 6 | [docker-compose.yml](../../../../sources/AxDSan__mnemosyne/docker-compose.yml)<br>[Dockerfile](../../../../sources/AxDSan__mnemosyne/Dockerfile)<br>[deploy/sync/Caddyfile](../../../../sources/AxDSan__mnemosyne/deploy/sync/Caddyfile)<br>[deploy/sync/docker-compose.yml](../../../../sources/AxDSan__mnemosyne/deploy/sync/docker-compose.yml)<br>[deploy/sync/fly.toml](../../../../sources/AxDSan__mnemosyne/deploy/sync/fly.toml)<br>[deploy/sync/README.md](../../../../sources/AxDSan__mnemosyne/deploy/sync/README.md) |
-| Security / policy | 13 | [SECURITY.md](../../../../sources/AxDSan__mnemosyne/SECURITY.md)<br>[tools/bench_audit_log.py](../../../../sources/AxDSan__mnemosyne/tools/bench_audit_log.py)<br>[tests/test_hermes_memory_provider_audit.py](../../../../sources/AxDSan__mnemosyne/tests/test_hermes_memory_provider_audit.py)<br>[tests/test_s1_mcp_sse_auth.py](../../../../sources/AxDSan__mnemosyne/tests/test_s1_mcp_sse_auth.py)<br>[tests/test_vec_dim_guard.py](../../../../sources/AxDSan__mnemosyne/tests/test_vec_dim_guard.py)<br>[scripts/memoria_audit.py](../../../../sources/AxDSan__mnemosyne/scripts/memoria_audit.py) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 136 | [requirements-benchmark.txt](../../../../sources/AxDSan__mnemosyne/requirements-benchmark.txt)<br>[run_beam_bench.sh](../../../../sources/AxDSan__mnemosyne/run_beam_bench.sh)<br>[tools/beam_phase3_test.py](../../../../sources/AxDSan__mnemosyne/tools/beam_phase3_test.py)<br>[tools/bench_100k_fast.py](../../../../sources/AxDSan__mnemosyne/tools/bench_100k_fast.py)<br>[tools/bench_100k_gemma.py](../../../../sources/AxDSan__mnemosyne/tools/bench_100k_gemma.py)<br>[tools/bench_audit_log.py](../../../../sources/AxDSan__mnemosyne/tools/bench_audit_log.py) |
+| CI workflow | 2 | [.github/workflows/ci.yml](../../../../sources/AxDSan__mnemosyne/.github/workflows/ci.yml)<br>[.github/workflows/release.yml](../../../../sources/AxDSan__mnemosyne/.github/workflows/release.yml) |
+| 컨테이너/배포 | 6 | [docker-compose.yml](../../../../sources/AxDSan__mnemosyne/docker-compose.yml)<br>[Dockerfile](../../../../sources/AxDSan__mnemosyne/Dockerfile)<br>[deploy/sync/Caddyfile](../../../../sources/AxDSan__mnemosyne/deploy/sync/Caddyfile)<br>[deploy/sync/docker-compose.yml](../../../../sources/AxDSan__mnemosyne/deploy/sync/docker-compose.yml)<br>[deploy/sync/fly.toml](../../../../sources/AxDSan__mnemosyne/deploy/sync/fly.toml)<br>[deploy/sync/README.md](../../../../sources/AxDSan__mnemosyne/deploy/sync/README.md) |
+| 보안/정책 | 13 | [SECURITY.md](../../../../sources/AxDSan__mnemosyne/SECURITY.md)<br>[tools/bench_audit_log.py](../../../../sources/AxDSan__mnemosyne/tools/bench_audit_log.py)<br>[tests/test_hermes_memory_provider_audit.py](../../../../sources/AxDSan__mnemosyne/tests/test_hermes_memory_provider_audit.py)<br>[tests/test_s1_mcp_sse_auth.py](../../../../sources/AxDSan__mnemosyne/tests/test_s1_mcp_sse_auth.py)<br>[tests/test_vec_dim_guard.py](../../../../sources/AxDSan__mnemosyne/tests/test_vec_dim_guard.py)<br>[scripts/memoria_audit.py](../../../../sources/AxDSan__mnemosyne/scripts/memoria_audit.py) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | agent instruction files not obvious |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | agent instruction 파일이 명확하지 않음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/test_mcp_server.py`, `tests/test_s1_mcp_sse_auth.py`, `mnemosyne/mcp_server.py`.
-2. Trace execution through entrypoints: `integrations/obsidian-mnemosyne/main.ts`.
-3. Map agent/tool runtime through: `tools/beam_phase3_test.py`, `tools/bench_100k_fast.py`, `tools/bench_100k_gemma.py`.
-4. Inspect retrieval/memory/indexing through: `tests/benchmark_beam_working_memory.py`, `tests/test_degrade_vector.py`, `tests/test_e5a_vector_voice_dense_rewire.py`.
-5. Verify behavior through test/eval files: `requirements-benchmark.txt`, `run_beam_bench.sh`, `tools/beam_phase3_test.py`.
+1. 핵심 참조에서 시작: `tests/test_mcp_server.py`, `tests/test_s1_mcp_sse_auth.py`, `mnemosyne/mcp_server.py`.
+2. entrypoint를 따라 실행 흐름 확인: `integrations/obsidian-mnemosyne/main.ts`.
+3. agent/tool runtime 매핑: `tools/beam_phase3_test.py`, `tools/bench_100k_fast.py`, `tools/bench_100k_gemma.py`.
+4. retrieval/memory/indexing 확인: `tests/benchmark_beam_working_memory.py`, `tests/test_degrade_vector.py`, `tests/test_e5a_vector_voice_dense_rewire.py`.
+5. test/eval 파일로 동작 검증: `requirements-benchmark.txt`, `run_beam_bench.sh`, `tools/beam_phase3_test.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 The Zero Dependency, Sub Millisecond AI Memory System for Hermes Agents and Everyone Else!. 핵심 구조 신호는 Python, pyproject.toml, Dockerfile, docker-compose.yml, README.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 The Zero Dependency, Sub Millisecond AI Memory System for Hermes Agents and Everyone Else!. 핵심 구조 신호는 Python, pyproject.toml, Dockerfile, docker-compose.yml, README.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

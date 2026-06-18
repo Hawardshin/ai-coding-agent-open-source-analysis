@@ -1,63 +1,63 @@
-# gptme/gptme Source Deep Dive
+# gptme/gptme 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!
 
 ## 요약
 
-- 조사 단위: `sources/gptme__gptme` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,337 files, 137 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/gptme__gptme` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,337 files, 137 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=webui/index.html, webui/src/index.css, webui/src/pages/Index.tsx이고, 의존성 단서는 openai, anthropic, mcp, langchain, pydantic, click, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 knowledge/RAG pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 retrieval=webui/index.html, webui/src/index.css, webui/src/pages/Index.tsx이고, 의존성 단서는 openai, anthropic, mcp, langchain, pydantic, click, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 지식/RAG 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | gptme/gptme |
-| Topic | LLM Wiki, RAG, and Knowledge / LLM 위키/RAG/지식베이스 |
+| 레포 | gptme/gptme |
+| 주제 | LLM 위키/RAG/지식베이스 / LLM 위키/RAG/지식베이스 |
 | Region | global |
 | Language | Python |
 | Stars | 4332 |
 | Forks | 389 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/gptme__gptme](../../../../sources/gptme__gptme) |
-| Existing report | [reports/global-trending/repositories/gptme__gptme.md](../../../global-trending/repositories/gptme__gptme.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/gptme__gptme](../../../../sources/gptme__gptme) |
+| 기존 보고서 | [reports/global-trending/repositories/gptme__gptme.md](../../../global-trending/repositories/gptme__gptme.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1337 / 137 |
-| Max observed depth | 13 |
-| Top directories | .github, docs, gptme, gptme-extension, media, scripts, site, tauri, tests, webui |
-| Top extensions | .py: 682, .tsx: 170, .ts: 124, .md: 88, .png: 52, .rst: 37, .sh: 22, .yml: 22, .json: 21, (none): 21, .xml: 11, .html: 8 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 1337 / 137 |
+| 관측 최대 깊이 | 13 |
+| 상위 디렉터리 | .github, docs, gptme, gptme-extension, media, scripts, site, tauri, tests, webui |
+| 상위 확장자 | .py: 682, .tsx: 170, .ts: 124, .md: 88, .png: 52, .rst: 37, .sh: 22, .yml: 22, .json: 21, (none): 21, .xml: 11, .html: 8 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 40 |
 | tests | validation surface | 15 |
@@ -71,9 +71,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | webui | source boundary | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | build | Makefile | build | make build |
@@ -114,24 +114,24 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | utility | pyproject.toml | gptme-status | gptme-status |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
 | agentProtocols | mcp |
 | agentFrameworks | langchain |
 | vectorStores | chroma |
 | modelRuntime | transformers |
-| webRuntime | none |
+| webRuntime | 없음 |
 | developerSurface | click |
 | observability | opentelemetry, prometheus |
 | browserAutomation | playwright |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | retrieval | [webui/index.html](../../../../sources/gptme__gptme/webui/index.html) | retrieval signal |
 | retrieval | [webui/src/index.css](../../../../sources/gptme__gptme/webui/src/index.css) | retrieval signal |
@@ -147,9 +147,9 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | eval | [webui/tsconfig.test.json](../../../../sources/gptme__gptme/webui/tsconfig.test.json) | eval signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 16 | [webui/server.py](../../../../sources/gptme__gptme/webui/server.py)<br>[webui/src/App.tsx](../../../../sources/gptme__gptme/webui/src/App.tsx)<br>[webui/src/index.css](../../../../sources/gptme__gptme/webui/src/index.css)<br>[webui/src/main.tsx](../../../../sources/gptme__gptme/webui/src/main.tsx)<br>[tauri/src-tauri/src/main.rs](../../../../sources/gptme__gptme/tauri/src-tauri/src/main.rs)<br>[gptme/__main__.py](../../../../sources/gptme__gptme/gptme/__main__.py)<br>[gptme/server/__main__.py](../../../../sources/gptme__gptme/gptme/server/__main__.py)<br>[gptme/server/static/main.js](../../../../sources/gptme__gptme/gptme/server/static/main.js) |
 | agentRuntime | 174 | [AGENTS.md](../../../../sources/gptme__gptme/AGENTS.md)<br>[webui/AGENTS.md](../../../../sources/gptme__gptme/webui/AGENTS.md)<br>[webui/src/types/tool.ts](../../../../sources/gptme__gptme/webui/src/types/tool.ts)<br>[webui/src/pages/Agents.tsx](../../../../sources/gptme__gptme/webui/src/pages/Agents.tsx)<br>[webui/src/hooks/use-toast.ts](../../../../sources/gptme__gptme/webui/src/hooks/use-toast.ts)<br>[webui/src/hooks/useAgents.ts](../../../../sources/gptme__gptme/webui/src/hooks/useAgents.ts)<br>[webui/src/hooks/useConversation.ts](../../../../sources/gptme__gptme/webui/src/hooks/useConversation.ts)<br>[webui/src/hooks/useConversationMetadata.ts](../../../../sources/gptme__gptme/webui/src/hooks/useConversationMetadata.ts) |
@@ -165,39 +165,39 @@ LLM 위키/RAG/지식베이스 관점에서 cli-first, api/server, agent/tool ru
 | config | 14 | [Makefile](../../../../sources/gptme__gptme/Makefile)<br>[poetry.lock](../../../../sources/gptme__gptme/poetry.lock)<br>[pyproject.toml](../../../../sources/gptme__gptme/pyproject.toml)<br>[webui/package.json](../../../../sources/gptme__gptme/webui/package.json)<br>[webui/tsconfig.json](../../../../sources/gptme__gptme/webui/tsconfig.json)<br>[webui/extension/package.json](../../../../sources/gptme__gptme/webui/extension/package.json)<br>[webui/extension/tsconfig.json](../../../../sources/gptme__gptme/webui/extension/tsconfig.json)<br>[tauri/Makefile](../../../../sources/gptme__gptme/tauri/Makefile) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 477 | [webui/tsconfig.test.json](../../../../sources/gptme__gptme/webui/tsconfig.test.json)<br>[webui/src/utils/__tests__/addressSpace.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/addressSpace.test.ts)<br>[webui/src/utils/__tests__/api.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/api.test.ts)<br>[webui/src/utils/__tests__/apiKeyProviders.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/apiKeyProviders.test.ts)<br>[webui/src/utils/__tests__/branchUtils.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/branchUtils.test.ts)<br>[webui/src/utils/__tests__/cloudflareRedirects.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/cloudflareRedirects.test.ts) |
-| CI workflows | 17 | [webui/.github/workflows/ci.yml](../../../../sources/gptme__gptme/webui/.github/workflows/ci.yml)<br>[webui/.github/workflows/deploy.yml](../../../../sources/gptme__gptme/webui/.github/workflows/deploy.yml)<br>[.github/workflows/benchmark.yml](../../../../sources/gptme__gptme/.github/workflows/benchmark.yml)<br>[.github/workflows/bot.yml](../../../../sources/gptme__gptme/.github/workflows/bot.yml)<br>[.github/workflows/build.yml](../../../../sources/gptme__gptme/.github/workflows/build.yml)<br>[.github/workflows/demos.yml](../../../../sources/gptme__gptme/.github/workflows/demos.yml) |
-| Containers / deploy | 8 | [docker-compose.yml](../../../../sources/gptme__gptme/docker-compose.yml)<br>[scripts/Dockerfile](../../../../sources/gptme__gptme/scripts/Dockerfile)<br>[scripts/Dockerfile.computer](../../../../sources/gptme__gptme/scripts/Dockerfile.computer)<br>[scripts/Dockerfile.dev](../../../../sources/gptme__gptme/scripts/Dockerfile.dev)<br>[scripts/Dockerfile.eval](../../../../sources/gptme__gptme/scripts/Dockerfile.eval)<br>[scripts/Dockerfile.github-bot](../../../../sources/gptme__gptme/scripts/Dockerfile.github-bot) |
-| Security / policy | 10 | [SECURITY.md](../../../../sources/gptme__gptme/SECURITY.md)<br>[tests/test_llm_auth.py](../../../../sources/gptme__gptme/tests/test_llm_auth.py)<br>[tests/test_oauth_openrouter.py](../../../../sources/gptme__gptme/tests/test_oauth_openrouter.py)<br>[tests/test_server_auth.py](../../../../sources/gptme__gptme/tests/test_server_auth.py)<br>[gptme/server/auth.py](../../../../sources/gptme__gptme/gptme/server/auth.py)<br>[gptme/oauth/__init__.py](../../../../sources/gptme__gptme/gptme/oauth/__init__.py) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/gptme__gptme/AGENTS.md)<br>[webui/AGENTS.md](../../../../sources/gptme__gptme/webui/AGENTS.md) |
+| 테스트/평가 | 477 | [webui/tsconfig.test.json](../../../../sources/gptme__gptme/webui/tsconfig.test.json)<br>[webui/src/utils/__tests__/addressSpace.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/addressSpace.test.ts)<br>[webui/src/utils/__tests__/api.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/api.test.ts)<br>[webui/src/utils/__tests__/apiKeyProviders.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/apiKeyProviders.test.ts)<br>[webui/src/utils/__tests__/branchUtils.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/branchUtils.test.ts)<br>[webui/src/utils/__tests__/cloudflareRedirects.test.ts](../../../../sources/gptme__gptme/webui/src/utils/__tests__/cloudflareRedirects.test.ts) |
+| CI workflow | 17 | [webui/.github/workflows/ci.yml](../../../../sources/gptme__gptme/webui/.github/workflows/ci.yml)<br>[webui/.github/workflows/deploy.yml](../../../../sources/gptme__gptme/webui/.github/workflows/deploy.yml)<br>[.github/workflows/benchmark.yml](../../../../sources/gptme__gptme/.github/workflows/benchmark.yml)<br>[.github/workflows/bot.yml](../../../../sources/gptme__gptme/.github/workflows/bot.yml)<br>[.github/workflows/build.yml](../../../../sources/gptme__gptme/.github/workflows/build.yml)<br>[.github/workflows/demos.yml](../../../../sources/gptme__gptme/.github/workflows/demos.yml) |
+| 컨테이너/배포 | 8 | [docker-compose.yml](../../../../sources/gptme__gptme/docker-compose.yml)<br>[scripts/Dockerfile](../../../../sources/gptme__gptme/scripts/Dockerfile)<br>[scripts/Dockerfile.computer](../../../../sources/gptme__gptme/scripts/Dockerfile.computer)<br>[scripts/Dockerfile.dev](../../../../sources/gptme__gptme/scripts/Dockerfile.dev)<br>[scripts/Dockerfile.eval](../../../../sources/gptme__gptme/scripts/Dockerfile.eval)<br>[scripts/Dockerfile.github-bot](../../../../sources/gptme__gptme/scripts/Dockerfile.github-bot) |
+| 보안/정책 | 10 | [SECURITY.md](../../../../sources/gptme__gptme/SECURITY.md)<br>[tests/test_llm_auth.py](../../../../sources/gptme__gptme/tests/test_llm_auth.py)<br>[tests/test_oauth_openrouter.py](../../../../sources/gptme__gptme/tests/test_oauth_openrouter.py)<br>[tests/test_server_auth.py](../../../../sources/gptme__gptme/tests/test_server_auth.py)<br>[gptme/server/auth.py](../../../../sources/gptme__gptme/gptme/server/auth.py)<br>[gptme/oauth/__init__.py](../../../../sources/gptme__gptme/gptme/oauth/__init__.py) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/gptme__gptme/AGENTS.md)<br>[webui/AGENTS.md](../../../../sources/gptme__gptme/webui/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `webui/index.html`, `webui/src/index.css`, `webui/src/pages/Index.tsx`.
-2. Trace execution through entrypoints: `webui/server.py`, `webui/src/App.tsx`, `webui/src/index.css`.
-3. Map agent/tool runtime through: `AGENTS.md`, `webui/AGENTS.md`, `webui/src/types/tool.ts`.
-4. Inspect retrieval/memory/indexing through: `webui/index.html`, `webui/src/index.css`, `webui/src/pages/Index.tsx`.
-5. Verify behavior through test/eval files: `webui/tsconfig.test.json`, `webui/src/utils/__tests__/addressSpace.test.ts`, `webui/src/utils/__tests__/api.test.ts`.
+1. 핵심 참조에서 시작: `webui/index.html`, `webui/src/index.css`, `webui/src/pages/Index.tsx`.
+2. entrypoint를 따라 실행 흐름 확인: `webui/server.py`, `webui/src/App.tsx`, `webui/src/index.css`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `webui/AGENTS.md`, `webui/src/types/tool.ts`.
+4. retrieval/memory/indexing 확인: `webui/index.html`, `webui/src/index.css`, `webui/src/pages/Index.tsx`.
+5. test/eval 파일로 동작 검증: `webui/tsconfig.test.json`, `webui/src/utils/__tests__/addressSpace.test.ts`, `webui/src/utils/__tests__/api.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-LLM 위키/RAG/지식베이스 관점에서 Your agent in your terminal, equipped with local tools writes code, uses the terminal, browses the web. Make your own pe. 핵심 구조 신호는 Python, pyproject.toml, docker-compose.yml, Makefile, README.md, AGENTS.md이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+LLM 위키/RAG/지식베이스 관점에서 Your agent in your terminal, equipped with local tools writes code, uses the terminal, browses the web. Make your own pe. 핵심 구조 신호는 Python, pyproject.toml, docker-compose.yml, Makefile, README.md, AGENTS.md이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 knowledge/RAG pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 LLM 위키/RAG/지식베이스 레포입니다. 활용 관점은 지식/RAG 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

@@ -1,63 +1,63 @@
-# sktelecom/sktelecom.github.io Source Deep Dive
+# sktelecom/sktelecom.github.io 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Open Source Portal at SK telecom
 
 ## 요약
 
-- 조사 단위: `sources/sktelecom__sktelecom.github.io` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 533 files, 312 directories, depth score 100, key references 10개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/sktelecom__sktelecom.github.io` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 533 files, 312 directories, depth score 94, key references 10개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-일반 AI 오픈소스 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 config=go.mod, package.json이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 10개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+일반 AI 오픈소스 관점에서 agent/tool runtime, retrieval/vector path, spec/docs-driven 구조로 읽힌다. 핵심 소스 근거는 config=go.mod, package.json이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 10개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | sktelecom/sktelecom.github.io |
-| Topic | General AI Open Source / 일반 AI 오픈소스 |
+| 레포 | sktelecom/sktelecom.github.io |
+| 주제 | 일반 AI 오픈소스 / 일반 AI 오픈소스 |
 | Region | korea |
 | Language | SCSS |
 | Stars | 20 |
 | Forks | 19 |
 | License | Apache-2.0 |
-| Maturity | emerging |
-| Evidence | source+report |
-| Source | [sources/sktelecom__sktelecom.github.io](../../../../sources/sktelecom__sktelecom.github.io) |
-| Existing report | [reports/korea-trending/repositories/sktelecom__sktelecom.github.io.md](../../../korea-trending/repositories/sktelecom__sktelecom.github.io.md) |
+| 성숙도 | 초기 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/sktelecom__sktelecom.github.io](../../../../sources/sktelecom__sktelecom.github.io) |
+| 기존 보고서 | [reports/korea-trending/repositories/sktelecom__sktelecom.github.io.md](../../../korea-trending/repositories/sktelecom__sktelecom.github.io.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 533 / 312 |
-| Max observed depth | 7 |
-| Top directories | .github, assets, content, docs, i18n, layouts, slides, static |
-| Top extensions | .md: 317, .png: 133, .html: 23, .jpeg: 15, .jpg: 7, .scss: 6, .yml: 5, (none): 5, .toml: 4, .js: 3, .yaml: 3, .gif: 2 |
-| Source patterns | agent/tool runtime, retrieval/vector path, spec/docs-driven, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 533 / 312 |
+| 관측 최대 깊이 | 7 |
+| 상위 디렉터리 | .github, assets, content, docs, i18n, layouts, slides, static |
+| 상위 확장자 | .md: 317, .png: 133, .html: 23, .jpeg: 15, .jpg: 7, .scss: 6, .yml: 5, (none): 5, .toml: 4, .js: 3, .yaml: 3, .gif: 2 |
+| 소스 패턴 | agent/tool runtime, retrieval/vector path, spec/docs-driven, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 9 |
 | .github | ci surface | 1 |
@@ -69,9 +69,9 @@ Open Source Portal at SK telecom
 | static | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | _build | npm run _hugo-dev -- |
 | quality | package.json | _check:format | npx prettier --check . |
@@ -107,24 +107,24 @@ Open Source Portal at SK telecom
 | quality | package.json | update:packages | npx npm-check-updates -u |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | config | [go.mod](../../../../sources/sktelecom__sktelecom.github.io/go.mod) | config signal |
 | config | [package.json](../../../../sources/sktelecom__sktelecom.github.io/package.json) | config signal |
@@ -138,55 +138,55 @@ Open Source Portal at SK telecom
 | container | [Dockerfile](../../../../sources/sktelecom__sktelecom.github.io/Dockerfile) | container support |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| entrypoints | 0 | not obvious |
+| entrypoints | 0 | 명확하지 않음 |
 | agentRuntime | 2 | [layouts/partials/hooks/body-end.html](../../../../sources/sktelecom__sktelecom.github.io/layouts/partials/hooks/body-end.html)<br>[layouts/partials/hooks/head-end.html](../../../../sources/sktelecom__sktelecom.github.io/layouts/partials/hooks/head-end.html) |
-| mcp | 0 | not obvious |
+| mcp | 0 | 명확하지 않음 |
 | retrieval | 288 | [layouts/index.html](../../../../sources/sktelecom__sktelecom.github.io/layouts/index.html)<br>[content/ko/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/_index.md)<br>[content/ko/project/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/project/_index.md)<br>[content/ko/project/sktpasskey/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/project/sktpasskey/_index.md)<br>[content/ko/project/sbom-generator/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/project/sbom-generator/_index.md)<br>[content/ko/project/onot/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/project/onot/_index.md)<br>[content/ko/project/kogpt2/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/project/kogpt2/_index.md)<br>[content/ko/project/kobert/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/project/kobert/_index.md) |
 | spec | 2 | [content/ko/guide/supply-chain/for-suppliers/requirements.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/guide/supply-chain/for-suppliers/requirements.md)<br>[content/en/guide/supply-chain/for-suppliers/requirements.md](../../../../sources/sktelecom__sktelecom.github.io/content/en/guide/supply-chain/for-suppliers/requirements.md) |
-| eval | 0 | not obvious |
+| eval | 0 | 명확하지 않음 |
 | security | 119 | [layouts/compliance/list.html](../../../../sources/sktelecom__sktelecom.github.io/layouts/compliance/list.html)<br>[content/ko/guide/supply-chain/overview/policy.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/guide/supply-chain/overview/policy.md)<br>[content/ko/compliance/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/_index.md)<br>[content/ko/compliance/zem/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/zem/_index.md)<br>[content/ko/compliance/tlc_smart_drone_plan/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/tlc_smart_drone_plan/_index.md)<br>[content/ko/compliance/t_world/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/t_world/_index.md)<br>[content/ko/compliance/t_view/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/t_view/_index.md)<br>[content/ko/compliance/t_universe/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/t_universe/_index.md) |
 | ci | 3 | [.github/workflows/ci.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/ci.yml)<br>[.github/workflows/dependabot-auto-merge.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/dependabot-auto-merge.yml)<br>[.github/workflows/hugo.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/hugo.yml) |
 | container | 2 | [docker-compose.yaml](../../../../sources/sktelecom__sktelecom.github.io/docker-compose.yaml)<br>[Dockerfile](../../../../sources/sktelecom__sktelecom.github.io/Dockerfile) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 9 | [README.md](../../../../sources/sktelecom__sktelecom.github.io/README.md)<br>[docs/attach-file-image.md](../../../../sources/sktelecom__sktelecom.github.io/docs/attach-file-image.md)<br>[docs/blog.md](../../../../sources/sktelecom__sktelecom.github.io/docs/blog.md)<br>[docs/github-workflow.md](../../../../sources/sktelecom__sktelecom.github.io/docs/github-workflow.md)<br>[docs/github-workflow.png](../../../../sources/sktelecom__sktelecom.github.io/docs/github-workflow.png)<br>[docs/guide.md](../../../../sources/sktelecom__sktelecom.github.io/docs/guide.md)<br>[docs/local-website-server.md](../../../../sources/sktelecom__sktelecom.github.io/docs/local-website-server.md)<br>[docs/multi-language.md](../../../../sources/sktelecom__sktelecom.github.io/docs/multi-language.md) |
 | config | 2 | [go.mod](../../../../sources/sktelecom__sktelecom.github.io/go.mod)<br>[package.json](../../../../sources/sktelecom__sktelecom.github.io/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 0 | not obvious |
-| CI workflows | 3 | [.github/workflows/ci.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/ci.yml)<br>[.github/workflows/dependabot-auto-merge.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/dependabot-auto-merge.yml)<br>[.github/workflows/hugo.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/hugo.yml) |
-| Containers / deploy | 2 | [docker-compose.yaml](../../../../sources/sktelecom__sktelecom.github.io/docker-compose.yaml)<br>[Dockerfile](../../../../sources/sktelecom__sktelecom.github.io/Dockerfile) |
-| Security / policy | 119 | [layouts/compliance/list.html](../../../../sources/sktelecom__sktelecom.github.io/layouts/compliance/list.html)<br>[content/ko/guide/supply-chain/overview/policy.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/guide/supply-chain/overview/policy.md)<br>[content/ko/compliance/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/_index.md)<br>[content/ko/compliance/zem/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/zem/_index.md)<br>[content/ko/compliance/tlc_smart_drone_plan/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/tlc_smart_drone_plan/_index.md)<br>[content/ko/compliance/t_world/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/t_world/_index.md) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 0 | 명확하지 않음 |
+| CI workflow | 3 | [.github/workflows/ci.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/ci.yml)<br>[.github/workflows/dependabot-auto-merge.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/dependabot-auto-merge.yml)<br>[.github/workflows/hugo.yml](../../../../sources/sktelecom__sktelecom.github.io/.github/workflows/hugo.yml) |
+| 컨테이너/배포 | 2 | [docker-compose.yaml](../../../../sources/sktelecom__sktelecom.github.io/docker-compose.yaml)<br>[Dockerfile](../../../../sources/sktelecom__sktelecom.github.io/Dockerfile) |
+| 보안/정책 | 119 | [layouts/compliance/list.html](../../../../sources/sktelecom__sktelecom.github.io/layouts/compliance/list.html)<br>[content/ko/guide/supply-chain/overview/policy.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/guide/supply-chain/overview/policy.md)<br>[content/ko/compliance/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/_index.md)<br>[content/ko/compliance/zem/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/zem/_index.md)<br>[content/ko/compliance/tlc_smart_drone_plan/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/tlc_smart_drone_plan/_index.md)<br>[content/ko/compliance/t_world/_index.md](../../../../sources/sktelecom__sktelecom.github.io/content/ko/compliance/t_world/_index.md) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | primary entrypoint not obvious from path scan |
-| operation | test/eval path not obvious |
-| security | none |
+| architecture | path scan에서 primary entrypoint가 명확하지 않음 |
+| operation | test/eval 경로가 명확하지 않음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `go.mod`, `package.json`, `README.md`.
-2. Map agent/tool runtime through: `layouts/partials/hooks/body-end.html`, `layouts/partials/hooks/head-end.html`.
-3. Inspect retrieval/memory/indexing through: `layouts/index.html`, `content/ko/_index.md`, `content/ko/project/_index.md`.
+1. 핵심 참조에서 시작: `go.mod`, `package.json`, `README.md`.
+2. agent/tool runtime 매핑: `layouts/partials/hooks/body-end.html`, `layouts/partials/hooks/head-end.html`.
+3. retrieval/memory/indexing 확인: `layouts/index.html`, `content/ko/_index.md`, `content/ko/project/_index.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-일반 AI 오픈소스 관점에서 Open Source Portal at SK telecom. 핵심 구조 신호는 SCSS, package.json, go.mod, Dockerfile, README.md, LICENSE이며, source+report 근거 수준으로 emerging 후보로 읽는 것이 좋습니다.
+일반 AI 오픈소스 관점에서 Open Source Portal at SK telecom. 핵심 구조 신호는 SCSS, package.json, go.mod, Dockerfile, README.md, LICENSE이며, 소스+보고서 근거 수준으로 초기 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 test signal not obvious, needs deeper structural scan입니다.
+korea 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 더 깊은 구조 스캔 필요입니다.

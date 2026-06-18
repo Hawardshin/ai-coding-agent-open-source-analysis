@@ -1,63 +1,63 @@
-# Samsung/TizenRT Source Deep Dive
+# Samsung/TizenRT 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 TizenRT is a lightweight RTOS-based platform to support low-end IoT devices
 
 ## 요약
 
-- 조사 단위: `sources/Samsung__TizenRT` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 15,000 files, 1,663 directories, depth score 128, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/Samsung__TizenRT` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 15,000 files, 1,663 directories, depth score 122, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-일반 AI 오픈소스 관점에서 monorepo/workspace, cli-first, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=tools/nxfuse/src/main.c, os/wqueue/bin/.gitignore, os/wqueue/bin/Makefile이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+일반 AI 오픈소스 관점에서 monorepo/workspace, cli-first, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=tools/nxfuse/src/main.c, os/wqueue/bin/.gitignore, os/wqueue/bin/Makefile이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | Samsung/TizenRT |
-| Topic | General AI Open Source / 일반 AI 오픈소스 |
+| 레포 | Samsung/TizenRT |
+| 주제 | 일반 AI 오픈소스 / 일반 AI 오픈소스 |
 | Region | korea |
 | Language | C |
 | Stars | 642 |
 | Forks | 633 |
 | License | Apache-2.0 |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/Samsung__TizenRT](../../../../sources/Samsung__TizenRT) |
-| Existing report | [reports/korea-trending/repositories/Samsung__TizenRT.md](../../../korea-trending/repositories/Samsung__TizenRT.md) |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/Samsung__TizenRT](../../../../sources/Samsung__TizenRT) |
+| 기존 보고서 | [reports/korea-trending/repositories/Samsung__TizenRT.md](../../../korea-trending/repositories/Samsung__TizenRT.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 15000 / 1663 |
-| Max observed depth | 13 |
-| Top directories | .circleci, apps, docs, external, framework, lib, loadable_apps, os, resource, test, tools |
-| Top extensions | .c: 5763, .h: 5515, (none): 532, .crt: 438, .defs: 332, .pem: 318, .txt: 280, .der: 235, .data: 208, .function: 152, .py: 152, .sh: 119 |
-| Source patterns | monorepo/workspace, cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 15000 / 1663 |
+| 관측 최대 깊이 | 13 |
+| 상위 디렉터리 | .circleci, apps, docs, external, framework, lib, loadable_apps, os, resource, test, tools |
+| 상위 확장자 | .c: 5763, .h: 5515, (none): 532, .crt: 438, .defs: 332, .pem: 318, .txt: 280, .der: 235, .data: 208, .function: 152, .py: 152, .sh: 119 |
+| 소스 패턴 | monorepo/workspace, cli-first, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | lib | source boundary | 3 |
 | apps | source boundary | 1 |
@@ -71,29 +71,29 @@ TizenRT is a lightweight RTOS-based platform to support low-end IoT devices
 | tools | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [tools/nxfuse/src/main.c](../../../../sources/Samsung__TizenRT/tools/nxfuse/src/main.c) | entrypoints signal |
 | entrypoints | [os/wqueue/bin/.gitignore](../../../../sources/Samsung__TizenRT/os/wqueue/bin/.gitignore) | entrypoints signal |
@@ -109,9 +109,9 @@ _No command surface extracted from root manifests._
 | docs | [tools/symbolview/README.md](../../../../sources/Samsung__TizenRT/tools/symbolview/README.md) | docs signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 7 | [tools/nxfuse/src/main.c](../../../../sources/Samsung__TizenRT/tools/nxfuse/src/main.c)<br>[os/wqueue/bin/.gitignore](../../../../sources/Samsung__TizenRT/os/wqueue/bin/.gitignore)<br>[os/wqueue/bin/Makefile](../../../../sources/Samsung__TizenRT/os/wqueue/bin/Makefile)<br>[os/mm/bin/.gitignore](../../../../sources/Samsung__TizenRT/os/mm/bin/.gitignore)<br>[os/mm/bin/Makefile](../../../../sources/Samsung__TizenRT/os/mm/bin/Makefile)<br>[lib/libc/bin/.gitignore](../../../../sources/Samsung__TizenRT/lib/libc/bin/.gitignore)<br>[lib/libc/bin/Makefile](../../../../sources/Samsung__TizenRT/lib/libc/bin/Makefile) |
 | agentRuntime | 263 | [tools/cformatter.sh](../../../../sources/Samsung__TizenRT/tools/cformatter.sh)<br>[tools/cxxformatter.sh](../../../../sources/Samsung__TizenRT/tools/cxxformatter.sh)<br>[tools/HowToUseFormatter.md](../../../../sources/Samsung__TizenRT/tools/HowToUseFormatter.md)<br>[tools/Makefile](../../../../sources/Samsung__TizenRT/tools/Makefile)<br>[tools/tools.txt](../../../../sources/Samsung__TizenRT/tools/tools.txt)<br>[tools/uart_loopback_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_loopback_test/README.md)<br>[tools/uart_loopback_test/uart_loopback_test.py](../../../../sources/Samsung__TizenRT/tools/uart_loopback_test/uart_loopback_test.py)<br>[tools/uart_hw_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/README.md) |
@@ -122,44 +122,44 @@ _No command surface extracted from root manifests._
 | security | 121 | [os/se/sss/security_hal_wrapper.c](../../../../sources/Samsung__TizenRT/os/se/sss/security_hal_wrapper.c)<br>[os/se/security_level/Make.defs](../../../../sources/Samsung__TizenRT/os/se/security_level/Make.defs)<br>[os/se/security_level/security_level.c](../../../../sources/Samsung__TizenRT/os/se/security_level/security_level.c)<br>[os/se/armino/security_armino_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/armino/security_armino_wrapper_tz.c)<br>[os/se/ameba/rtl_security_api_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/ameba/rtl_security_api_wrapper_tz.c)<br>[os/se/ameba/security_ameba_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/ameba/security_ameba_wrapper_tz.c)<br>[os/net/lwip/src/netif/ppp/auth.c](../../../../sources/Samsung__TizenRT/os/net/lwip/src/netif/ppp/auth.c)<br>[os/net/lwip/src/netif/ppp/auth.h](../../../../sources/Samsung__TizenRT/os/net/lwip/src/netif/ppp/auth.h) |
 | ci | 7 | [os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile)<br>[os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/codeql-analysis.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/codeql-analysis.yml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/fileheader.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/fileheader.yml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/gh-pages.yaml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/gh-pages.yaml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/packdesc.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/packdesc.yml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/release.yaml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/release.yaml) |
 | container | 2 | [os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/docker/bionic/Dockerfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/docker/bionic/Dockerfile)<br>[os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/docker/bionic/Dockerfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/docker/bionic/Dockerfile) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 166 | [README.md](../../../../sources/Samsung__TizenRT/README.md)<br>[tools/uart_loopback_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_loopback_test/README.md)<br>[tools/uart_hw_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/README.md)<br>[tools/symbolview/README.md](../../../../sources/Samsung__TizenRT/tools/symbolview/README.md)<br>[tools/rng_test/README.md](../../../../sources/Samsung__TizenRT/tools/rng_test/README.md)<br>[tools/nxfuse/README_SMARTFS.md](../../../../sources/Samsung__TizenRT/tools/nxfuse/README_SMARTFS.md)<br>[tools/logdump_decompress/README.md](../../../../sources/Samsung__TizenRT/tools/logdump_decompress/README.md)<br>[tools/fs/README_ROMFS.md](../../../../sources/Samsung__TizenRT/tools/fs/README_ROMFS.md) |
 | config | 112 | [tools/Makefile](../../../../sources/Samsung__TizenRT/tools/Makefile)<br>[tools/nxfuse/Makefile](../../../../sources/Samsung__TizenRT/tools/nxfuse/Makefile)<br>[tools/araui/sim/template/Makefile](../../../../sources/Samsung__TizenRT/tools/araui/sim/template/Makefile)<br>[tools/araui/png2c/Makefile](../../../../sources/Samsung__TizenRT/tools/araui/png2c/Makefile)<br>[os/Makefile](../../../../sources/Samsung__TizenRT/os/Makefile)<br>[os/wqueue/Makefile](../../../../sources/Samsung__TizenRT/os/wqueue/Makefile)<br>[os/wqueue/ubin/Makefile](../../../../sources/Samsung__TizenRT/os/wqueue/ubin/Makefile)<br>[os/wqueue/kbin/Makefile](../../../../sources/Samsung__TizenRT/os/wqueue/kbin/Makefile) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 2498 | [tools/uart_loopback_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_loopback_test/README.md)<br>[tools/uart_loopback_test/uart_loopback_test.py](../../../../sources/Samsung__TizenRT/tools/uart_loopback_test/uart_loopback_test.py)<br>[tools/uart_hw_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/README.md)<br>[tools/uart_hw_test/uart_test_windows.c](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/uart_test_windows.c)<br>[tools/uart_hw_test/uart_test_windows.exe](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/uart_test_windows.exe)<br>[tools/uart_hw_test/uart_test.c](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/uart_test.c) |
-| CI workflows | 7 | [os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile)<br>[os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/codeql-analysis.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/codeql-analysis.yml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/fileheader.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/fileheader.yml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/gh-pages.yaml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/gh-pages.yaml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/packdesc.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/packdesc.yml) |
-| Containers / deploy | 2 | [os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/docker/bionic/Dockerfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/docker/bionic/Dockerfile)<br>[os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/docker/bionic/Dockerfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/docker/bionic/Dockerfile) |
-| Security / policy | 121 | [os/se/sss/security_hal_wrapper.c](../../../../sources/Samsung__TizenRT/os/se/sss/security_hal_wrapper.c)<br>[os/se/security_level/Make.defs](../../../../sources/Samsung__TizenRT/os/se/security_level/Make.defs)<br>[os/se/security_level/security_level.c](../../../../sources/Samsung__TizenRT/os/se/security_level/security_level.c)<br>[os/se/armino/security_armino_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/armino/security_armino_wrapper_tz.c)<br>[os/se/ameba/rtl_security_api_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/ameba/rtl_security_api_wrapper_tz.c)<br>[os/se/ameba/security_ameba_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/ameba/security_ameba_wrapper_tz.c) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 2498 | [tools/uart_loopback_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_loopback_test/README.md)<br>[tools/uart_loopback_test/uart_loopback_test.py](../../../../sources/Samsung__TizenRT/tools/uart_loopback_test/uart_loopback_test.py)<br>[tools/uart_hw_test/README.md](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/README.md)<br>[tools/uart_hw_test/uart_test_windows.c](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/uart_test_windows.c)<br>[tools/uart_hw_test/uart_test_windows.exe](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/uart_test_windows.exe)<br>[tools/uart_hw_test/uart_test.c](../../../../sources/Samsung__TizenRT/tools/uart_hw_test/uart_test.c) |
+| CI workflow | 7 | [os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile)<br>[os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/.jenkins/Jenkinsfile)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/codeql-analysis.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/codeql-analysis.yml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/fileheader.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/fileheader.yml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/gh-pages.yaml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/gh-pages.yaml)<br>[os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/packdesc.yml](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/cmsis/CMSIS_5/.github/workflows/packdesc.yml) |
+| 컨테이너/배포 | 2 | [os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/docker/bionic/Dockerfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/tfm_mbedtls/mbedtls/tests/docker/bionic/Dockerfile)<br>[os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/docker/bionic/Dockerfile](../../../../sources/Samsung__TizenRT/os/board/bk7239n/src/components/psa_mbedtls/mbedtls/tests/docker/bionic/Dockerfile) |
+| 보안/정책 | 121 | [os/se/sss/security_hal_wrapper.c](../../../../sources/Samsung__TizenRT/os/se/sss/security_hal_wrapper.c)<br>[os/se/security_level/Make.defs](../../../../sources/Samsung__TizenRT/os/se/security_level/Make.defs)<br>[os/se/security_level/security_level.c](../../../../sources/Samsung__TizenRT/os/se/security_level/security_level.c)<br>[os/se/armino/security_armino_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/armino/security_armino_wrapper_tz.c)<br>[os/se/ameba/rtl_security_api_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/ameba/rtl_security_api_wrapper_tz.c)<br>[os/se/ameba/security_ameba_wrapper_tz.c](../../../../sources/Samsung__TizenRT/os/se/ameba/security_ameba_wrapper_tz.c) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | large repository scan truncated at 15000 files |
-| operation | none |
-| security | none |
+| architecture | 큰 레포라 15000개 파일에서 스캔이 잘림 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tools/nxfuse/src/main.c`, `os/wqueue/bin/.gitignore`, `os/wqueue/bin/Makefile`.
-2. Trace execution through entrypoints: `tools/nxfuse/src/main.c`, `os/wqueue/bin/.gitignore`, `os/wqueue/bin/Makefile`.
-3. Map agent/tool runtime through: `tools/cformatter.sh`, `tools/cxxformatter.sh`, `tools/HowToUseFormatter.md`.
-4. Inspect retrieval/memory/indexing through: `tools/memory/.gitignore`, `tools/memory/g_var_profiler.sh`, `tools/memory/heapfailanalyzer.py`.
-5. Verify behavior through test/eval files: `tools/uart_loopback_test/README.md`, `tools/uart_loopback_test/uart_loopback_test.py`, `tools/uart_hw_test/README.md`.
+1. 핵심 참조에서 시작: `tools/nxfuse/src/main.c`, `os/wqueue/bin/.gitignore`, `os/wqueue/bin/Makefile`.
+2. entrypoint를 따라 실행 흐름 확인: `tools/nxfuse/src/main.c`, `os/wqueue/bin/.gitignore`, `os/wqueue/bin/Makefile`.
+3. agent/tool runtime 매핑: `tools/cformatter.sh`, `tools/cxxformatter.sh`, `tools/HowToUseFormatter.md`.
+4. retrieval/memory/indexing 확인: `tools/memory/.gitignore`, `tools/memory/g_var_profiler.sh`, `tools/memory/heapfailanalyzer.py`.
+5. test/eval 파일로 동작 검증: `tools/uart_loopback_test/README.md`, `tools/uart_loopback_test/uart_loopback_test.py`, `tools/uart_hw_test/README.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-일반 AI 오픈소스 관점에서 TizenRT is a lightweight RTOS based platform to support low end IoT devices. 핵심 구조 신호는 C, README.md, LICENSE, tests, ci, docs이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+일반 AI 오픈소스 관점에서 TizenRT is a lightweight RTOS based platform to support low end IoT devices. 핵심 구조 신호는 C, README.md, LICENSE, tests, ci, docs이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 일반 AI 오픈소스 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

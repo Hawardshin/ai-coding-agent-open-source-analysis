@@ -1,63 +1,63 @@
-# GCWing/BitFun Source Deep Dive
+# GCWing/BitFun 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent applications.with built-in Code Agent 、 Cowork Agent、Computer Use. It has memory, personality, and the ability to evolve over time
 
 ## 요약
 
-- 조사 단위: `sources/GCWing__BitFun` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 3,839 files, 800 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/GCWing__BitFun` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 3,839 files, 800 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=src/web-ui/src/locales/zh-TW/settings/mcp-tools.json, src/web-ui/src/locales/zh-TW/settings/mcp.json, src/web-ui/src/locales/zh-CN/settings/mcp-tools.json이고, 의존성 단서는 mcp, react, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=src/web-ui/src/locales/zh-TW/settings/mcp-tools.json, src/web-ui/src/locales/zh-TW/settings/mcp.json, src/web-ui/src/locales/zh-CN/settings/mcp-tools.json이고, 의존성 단서는 mcp, react, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | GCWing/BitFun |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | GCWing/BitFun |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | Rust |
 | Stars | 1070 |
 | Forks | 117 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/GCWing__BitFun](../../../../sources/GCWing__BitFun) |
-| Existing report | [reports/global-trending/repositories/GCWing__BitFun.md](../../../global-trending/repositories/GCWing__BitFun.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/GCWing__BitFun](../../../../sources/GCWing__BitFun) |
+| 기존 보고서 | [reports/global-trending/repositories/GCWing__BitFun.md](../../../global-trending/repositories/GCWing__BitFun.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 3839 / 800 |
-| Max observed depth | 12 |
-| Top directories | .github, BitFun-Installer, docs, MiniApp, png, resources, scripts, src, tests |
-| Top extensions | .ts: 1068, .rs: 1049, .tsx: 465, .scss: 295, .md: 288, .json: 177, .xsd: 117, .py: 53, .js: 49, .css: 44, .png: 38, .mjs: 32 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 3839 / 800 |
+| 관측 최대 깊이 | 12 |
+| 상위 디렉터리 | .github, BitFun-Installer, docs, MiniApp, png, resources, scripts, src, tests |
+| 상위 확장자 | .ts: 1068, .rs: 1049, .tsx: 465, .scss: 295, .md: 288, .json: 177, .xsd: 117, .py: 53, .js: 49, .css: 44, .png: 38, .mjs: 32 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 264 |
 | tests | validation surface | 81 |
@@ -70,9 +70,9 @@ BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | package.json | copy-monaco | copyfiles -u 5 "src/web-ui/node_modules/monaco-editor/min/vs/**/*" src/web-ui/public/monaco-editor |
 | utility | package.json | copy-icons | copyfiles -f "src/apps/desktop/icons/Logo-ICON.png" "src/web-ui/public/" |
@@ -116,24 +116,24 @@ BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent
 | build | package.json | desktop:build:nsis | node scripts/desktop-tauri-build.mjs --bundles nsis |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | mcp |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [src/web-ui/src/locales/zh-TW/settings/mcp-tools.json](../../../../sources/GCWing__BitFun/src/web-ui/src/locales/zh-TW/settings/mcp-tools.json) | mcp signal |
 | mcp | [src/web-ui/src/locales/zh-TW/settings/mcp.json](../../../../sources/GCWing__BitFun/src/web-ui/src/locales/zh-TW/settings/mcp.json) | mcp signal |
@@ -149,9 +149,9 @@ BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent
 | entrypoints | [src/mobile-web/src/main.tsx](../../../../sources/GCWing__BitFun/src/mobile-web/src/main.tsx) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 139 | [src/web-ui/src/main.tsx](../../../../sources/GCWing__BitFun/src/web-ui/src/main.tsx)<br>[src/web-ui/src/component-library/preview/main.tsx](../../../../sources/GCWing__BitFun/src/web-ui/src/component-library/preview/main.tsx)<br>[src/mobile-web/src/App.tsx](../../../../sources/GCWing__BitFun/src/mobile-web/src/App.tsx)<br>[src/mobile-web/src/main.tsx](../../../../sources/GCWing__BitFun/src/mobile-web/src/main.tsx)<br>[src/crates/interfaces/acp/src/server.rs](../../../../sources/GCWing__BitFun/src/crates/interfaces/acp/src/server.rs)<br>[src/apps/server/src/ai_relay.rs](../../../../sources/GCWing__BitFun/src/apps/server/src/ai_relay.rs)<br>[src/apps/server/src/bootstrap.rs](../../../../sources/GCWing__BitFun/src/apps/server/src/bootstrap.rs)<br>[src/apps/server/src/main.rs](../../../../sources/GCWing__BitFun/src/apps/server/src/main.rs) |
 | agentRuntime | 1019 | [AGENTS-CN.md](../../../../sources/GCWing__BitFun/AGENTS-CN.md)<br>[AGENTS.md](../../../../sources/GCWing__BitFun/AGENTS.md)<br>[tests/e2e/AGENTS-CN.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS-CN.md)<br>[tests/e2e/AGENTS.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS.md)<br>[src/web-ui/AGENTS-CN.md](../../../../sources/GCWing__BitFun/src/web-ui/AGENTS-CN.md)<br>[src/web-ui/AGENTS.md](../../../../sources/GCWing__BitFun/src/web-ui/AGENTS.md)<br>[src/web-ui/src/tools/index.ts](../../../../sources/GCWing__BitFun/src/web-ui/src/tools/index.ts)<br>[src/web-ui/src/tools/initializeTools.ts](../../../../sources/GCWing__BitFun/src/web-ui/src/tools/initializeTools.ts) |
@@ -167,39 +167,39 @@ BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent
 | config | 38 | [Cargo.toml](../../../../sources/GCWing__BitFun/Cargo.toml)<br>[package.json](../../../../sources/GCWing__BitFun/package.json)<br>[pnpm-workspace.yaml](../../../../sources/GCWing__BitFun/pnpm-workspace.yaml)<br>[tests/e2e/package.json](../../../../sources/GCWing__BitFun/tests/e2e/package.json)<br>[tests/e2e/tsconfig.json](../../../../sources/GCWing__BitFun/tests/e2e/tsconfig.json)<br>[src/web-ui/package.json](../../../../sources/GCWing__BitFun/src/web-ui/package.json)<br>[src/web-ui/tsconfig.json](../../../../sources/GCWing__BitFun/src/web-ui/tsconfig.json)<br>[src/mobile-web/package.json](../../../../sources/GCWing__BitFun/src/mobile-web/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 379 | [tests/e2e/.gitignore](../../../../sources/GCWing__BitFun/tests/e2e/.gitignore)<br>[tests/e2e/AGENTS-CN.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS-CN.md)<br>[tests/e2e/AGENTS.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS.md)<br>[tests/e2e/E2E-TESTING-GUIDE.md](../../../../sources/GCWing__BitFun/tests/e2e/E2E-TESTING-GUIDE.md)<br>[tests/e2e/E2E-TESTING-GUIDE.zh-CN.md](../../../../sources/GCWing__BitFun/tests/e2e/E2E-TESTING-GUIDE.zh-CN.md)<br>[tests/e2e/package-lock.json](../../../../sources/GCWing__BitFun/tests/e2e/package-lock.json) |
-| CI workflows | 7 | [scripts/ci/setup-openssl-windows.ps1](../../../../sources/GCWing__BitFun/scripts/ci/setup-openssl-windows.ps1)<br>[.github/workflows/ci.yml](../../../../sources/GCWing__BitFun/.github/workflows/ci.yml)<br>[.github/workflows/cli-package-manual.yml](../../../../sources/GCWing__BitFun/.github/workflows/cli-package-manual.yml)<br>[.github/workflows/cli-package.yml](../../../../sources/GCWing__BitFun/.github/workflows/cli-package.yml)<br>[.github/workflows/desktop-package.yml](../../../../sources/GCWing__BitFun/.github/workflows/desktop-package.yml)<br>[.github/workflows/nightly.yml](../../../../sources/GCWing__BitFun/.github/workflows/nightly.yml) |
-| Containers / deploy | 2 | [src/apps/relay-server/docker-compose.yml](../../../../sources/GCWing__BitFun/src/apps/relay-server/docker-compose.yml)<br>[src/apps/relay-server/Dockerfile](../../../../sources/GCWing__BitFun/src/apps/relay-server/Dockerfile) |
-| Security / policy | 18 | [src/crates/services/services-integrations/src/mcp/auth.rs](../../../../sources/GCWing__BitFun/src/crates/services/services-integrations/src/mcp/auth.rs)<br>[src/crates/services/services-integrations/src/mcp/server/runtime_policy.rs](../../../../sources/GCWing__BitFun/src/crates/services/services-integrations/src/mcp/server/runtime_policy.rs)<br>[src/crates/execution/agent-runtime/tests/deep_review_policy_contracts.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/tests/deep_review_policy_contracts.rs)<br>[src/crates/execution/agent-runtime/src/skills/policy.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/src/skills/policy.rs)<br>[src/crates/execution/agent-runtime/src/deep_review/concurrency_policy.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/src/deep_review/concurrency_policy.rs)<br>[src/crates/execution/agent-runtime/src/deep_review/execution_policy.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/src/deep_review/execution_policy.rs) |
-| Agent instructions | 36 | [AGENTS.md](../../../../sources/GCWing__BitFun/AGENTS.md)<br>[tests/e2e/AGENTS.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS.md)<br>[src/web-ui/AGENTS.md](../../../../sources/GCWing__BitFun/src/web-ui/AGENTS.md)<br>[src/web-ui/src/flow_chat/deep-review/AGENTS.md](../../../../sources/GCWing__BitFun/src/web-ui/src/flow_chat/deep-review/AGENTS.md)<br>[src/mobile-web/AGENTS.md](../../../../sources/GCWing__BitFun/src/mobile-web/AGENTS.md)<br>[src/crates/services/AGENTS.md](../../../../sources/GCWing__BitFun/src/crates/services/AGENTS.md) |
+| 테스트/평가 | 379 | [tests/e2e/.gitignore](../../../../sources/GCWing__BitFun/tests/e2e/.gitignore)<br>[tests/e2e/AGENTS-CN.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS-CN.md)<br>[tests/e2e/AGENTS.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS.md)<br>[tests/e2e/E2E-TESTING-GUIDE.md](../../../../sources/GCWing__BitFun/tests/e2e/E2E-TESTING-GUIDE.md)<br>[tests/e2e/E2E-TESTING-GUIDE.zh-CN.md](../../../../sources/GCWing__BitFun/tests/e2e/E2E-TESTING-GUIDE.zh-CN.md)<br>[tests/e2e/package-lock.json](../../../../sources/GCWing__BitFun/tests/e2e/package-lock.json) |
+| CI workflow | 7 | [scripts/ci/setup-openssl-windows.ps1](../../../../sources/GCWing__BitFun/scripts/ci/setup-openssl-windows.ps1)<br>[.github/workflows/ci.yml](../../../../sources/GCWing__BitFun/.github/workflows/ci.yml)<br>[.github/workflows/cli-package-manual.yml](../../../../sources/GCWing__BitFun/.github/workflows/cli-package-manual.yml)<br>[.github/workflows/cli-package.yml](../../../../sources/GCWing__BitFun/.github/workflows/cli-package.yml)<br>[.github/workflows/desktop-package.yml](../../../../sources/GCWing__BitFun/.github/workflows/desktop-package.yml)<br>[.github/workflows/nightly.yml](../../../../sources/GCWing__BitFun/.github/workflows/nightly.yml) |
+| 컨테이너/배포 | 2 | [src/apps/relay-server/docker-compose.yml](../../../../sources/GCWing__BitFun/src/apps/relay-server/docker-compose.yml)<br>[src/apps/relay-server/Dockerfile](../../../../sources/GCWing__BitFun/src/apps/relay-server/Dockerfile) |
+| 보안/정책 | 18 | [src/crates/services/services-integrations/src/mcp/auth.rs](../../../../sources/GCWing__BitFun/src/crates/services/services-integrations/src/mcp/auth.rs)<br>[src/crates/services/services-integrations/src/mcp/server/runtime_policy.rs](../../../../sources/GCWing__BitFun/src/crates/services/services-integrations/src/mcp/server/runtime_policy.rs)<br>[src/crates/execution/agent-runtime/tests/deep_review_policy_contracts.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/tests/deep_review_policy_contracts.rs)<br>[src/crates/execution/agent-runtime/src/skills/policy.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/src/skills/policy.rs)<br>[src/crates/execution/agent-runtime/src/deep_review/concurrency_policy.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/src/deep_review/concurrency_policy.rs)<br>[src/crates/execution/agent-runtime/src/deep_review/execution_policy.rs](../../../../sources/GCWing__BitFun/src/crates/execution/agent-runtime/src/deep_review/execution_policy.rs) |
+| 에이전트 지시문 | 36 | [AGENTS.md](../../../../sources/GCWing__BitFun/AGENTS.md)<br>[tests/e2e/AGENTS.md](../../../../sources/GCWing__BitFun/tests/e2e/AGENTS.md)<br>[src/web-ui/AGENTS.md](../../../../sources/GCWing__BitFun/src/web-ui/AGENTS.md)<br>[src/web-ui/src/flow_chat/deep-review/AGENTS.md](../../../../sources/GCWing__BitFun/src/web-ui/src/flow_chat/deep-review/AGENTS.md)<br>[src/mobile-web/AGENTS.md](../../../../sources/GCWing__BitFun/src/mobile-web/AGENTS.md)<br>[src/crates/services/AGENTS.md](../../../../sources/GCWing__BitFun/src/crates/services/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `src/web-ui/src/locales/zh-TW/settings/mcp-tools.json`, `src/web-ui/src/locales/zh-TW/settings/mcp.json`, `src/web-ui/src/locales/zh-CN/settings/mcp-tools.json`.
-2. Trace execution through entrypoints: `src/web-ui/src/main.tsx`, `src/web-ui/src/component-library/preview/main.tsx`, `src/mobile-web/src/App.tsx`.
-3. Map agent/tool runtime through: `AGENTS-CN.md`, `AGENTS.md`, `tests/e2e/AGENTS-CN.md`.
-4. Inspect retrieval/memory/indexing through: `tests/e2e/page-objects/index.ts`, `tests/e2e/helpers/index.ts`, `src/web-ui/index.html`.
-5. Verify behavior through test/eval files: `tests/e2e/.gitignore`, `tests/e2e/AGENTS-CN.md`, `tests/e2e/AGENTS.md`.
+1. 핵심 참조에서 시작: `src/web-ui/src/locales/zh-TW/settings/mcp-tools.json`, `src/web-ui/src/locales/zh-TW/settings/mcp.json`, `src/web-ui/src/locales/zh-CN/settings/mcp-tools.json`.
+2. entrypoint를 따라 실행 흐름 확인: `src/web-ui/src/main.tsx`, `src/web-ui/src/component-library/preview/main.tsx`, `src/mobile-web/src/App.tsx`.
+3. agent/tool runtime 매핑: `AGENTS-CN.md`, `AGENTS.md`, `tests/e2e/AGENTS-CN.md`.
+4. retrieval/memory/indexing 확인: `tests/e2e/page-objects/index.ts`, `tests/e2e/helpers/index.ts`, `src/web-ui/index.html`.
+5. test/eval 파일로 동작 검증: `tests/e2e/.gitignore`, `tests/e2e/AGENTS-CN.md`, `tests/e2e/AGENTS.md`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 BitFun is a desktop grade Agent runtimeand a ready to use suite of desktop Agent applications.with built in Code Agent 、. 핵심 구조 신호는 Rust, package.json, Cargo.toml, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 BitFun is a desktop grade Agent runtimeand a ready to use suite of desktop Agent applications.with built in Code Agent 、. 핵심 구조 신호는 Rust, package.json, Cargo.toml, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

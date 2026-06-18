@@ -1,63 +1,63 @@
-# ChiR24/Unreal_mcp Source Deep Dive
+# ChiR24/Unreal_mcp 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 A comprehensive Model Context Protocol (MCP) server that enables AI assistants to control Unreal Engine through the native C++ Automation Bridge plugin. Built with TypeScript and C++.
 
 ## 요약
 
-- 조사 단위: `sources/ChiR24__Unreal_mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 1,827 files, 298 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/ChiR24__Unreal_mcp` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 1,827 files, 298 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-개발 생산성/DevTools 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=server.json, src/cli.ts, src/index.ts이고, 의존성 단서는 mcp, modelcontextprotocol, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 architecture comparison point이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+개발 생산성/DevTools 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 entrypoints=server.json, src/cli.ts, src/index.ts이고, 의존성 단서는 mcp, modelcontextprotocol, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 아키텍처 비교 지점이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | ChiR24/Unreal_mcp |
-| Topic | Developer Productivity and DevTools / 개발 생산성/DevTools |
+| 레포 | ChiR24/Unreal_mcp |
+| 주제 | 개발 생산성/DevTools / 개발 생산성/DevTools |
 | Region | global |
 | Language | C++ |
 | Stars | 729 |
 | Forks | 136 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/ChiR24__Unreal_mcp](../../../../sources/ChiR24__Unreal_mcp) |
-| Existing report | [reports/global-trending/repositories/ChiR24__Unreal_mcp.md](../../../global-trending/repositories/ChiR24__Unreal_mcp.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/ChiR24__Unreal_mcp](../../../../sources/ChiR24__Unreal_mcp) |
+| 기존 보고서 | [reports/global-trending/repositories/ChiR24__Unreal_mcp.md](../../../global-trending/repositories/ChiR24__Unreal_mcp.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 1827 / 298 |
-| Max observed depth | 9 |
-| Top directories | .github, .jules, docs, plugins, Public, scripts, src, tests |
-| Top extensions | .cpp: 1056, .ts: 427, .h: 219, .mjs: 43, .md: 30, .yml: 21, .json: 8, (none): 7, .cs: 2, .ini: 2, .js: 2, .uplugin: 2 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 1827 / 298 |
+| 관측 최대 깊이 | 9 |
+| 상위 디렉터리 | .github, .jules, docs, plugins, Public, scripts, src, tests |
+| 상위 확장자 | .cpp: 1056, .ts: 427, .h: 219, .mjs: 43, .md: 30, .yml: 21, .json: 8, (none): 7, .cs: 2, .ini: 2, .js: 2, .uplugin: 2 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 96 |
 | src | source boundary | 54 |
@@ -68,9 +68,9 @@ A comprehensive Model Context Protocol (MCP) server that enables AI assistants t
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | build:core | tsc -p tsconfig.json |
 | build | package.json | build | npm run clean && npm run build:core |
@@ -98,24 +98,24 @@ A comprehensive Model Context Protocol (MCP) server that enables AI assistants t
 | entrypoint | package.json bin | cli.js | dist/cli.js |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | mcp, modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | entrypoints | [server.json](../../../../sources/ChiR24__Unreal_mcp/server.json) | entrypoints signal |
 | entrypoints | [src/cli.ts](../../../../sources/ChiR24__Unreal_mcp/src/cli.ts) | entrypoints signal |
@@ -131,9 +131,9 @@ A comprehensive Model Context Protocol (MCP) server that enables AI assistants t
 | docs | [plugins/UnrealAgent/Resources/OpenCodeStudioKit/README.md](../../../../sources/ChiR24__Unreal_mcp/plugins/UnrealAgent/Resources/OpenCodeStudioKit/README.md) | docs signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 3 | [server.json](../../../../sources/ChiR24__Unreal_mcp/server.json)<br>[src/cli.ts](../../../../sources/ChiR24__Unreal_mcp/src/cli.ts)<br>[src/index.ts](../../../../sources/ChiR24__Unreal_mcp/src/index.ts) |
 | agentRuntime | 352 | [AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/AGENTS.md)<br>[tests/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/tests/AGENTS.md)<br>[tests/unit/tools/asset_handlers_security.test.ts](../../../../sources/ChiR24__Unreal_mcp/tests/unit/tools/asset_handlers_security.test.ts)<br>[tests/unit/tools/behavior_tree_get_tree.test.ts](../../../../sources/ChiR24__Unreal_mcp/tests/unit/tools/behavior_tree_get_tree.test.ts)<br>[tests/unit/tools/blueprint_handlers.test.ts](../../../../sources/ChiR24__Unreal_mcp/tests/unit/tools/blueprint_handlers.test.ts)<br>[tests/unit/tools/editor.test.ts](../../../../sources/ChiR24__Unreal_mcp/tests/unit/tools/editor.test.ts)<br>[tests/unit/tools/handler_structure.test.ts](../../../../sources/ChiR24__Unreal_mcp/tests/unit/tools/handler_structure.test.ts)<br>[tests/unit/tools/inspect_handlers.test.ts](../../../../sources/ChiR24__Unreal_mcp/tests/unit/tools/inspect_handlers.test.ts) |
@@ -149,39 +149,39 @@ A comprehensive Model Context Protocol (MCP) server that enables AI assistants t
 | config | 2 | [package.json](../../../../sources/ChiR24__Unreal_mcp/package.json)<br>[tsconfig.json](../../../../sources/ChiR24__Unreal_mcp/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 149 | [tests/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/tests/AGENTS.md)<br>[tests/expectation-utils.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/expectation-utils.mjs)<br>[tests/heartbeat-progress.test.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/heartbeat-progress.test.mjs)<br>[tests/integration.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/integration.mjs)<br>[tests/native-mcp-parity-audit.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/native-mcp-parity-audit.mjs)<br>[tests/native-mcp-source-parser.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/native-mcp-source-parser.mjs) |
-| CI workflows | 14 | [.github/workflows/bump-version.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/bump-version.yml)<br>[.github/workflows/ci.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/codeql.yml)<br>[.github/workflows/dependency-review.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/dependency-review.yml)<br>[.github/workflows/greetings.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/greetings.yml)<br>[.github/workflows/labeler.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/labeler.yml) |
-| Containers / deploy | 1 | [Dockerfile](../../../../sources/ChiR24__Unreal_mcp/Dockerfile) |
-| Security / policy | 16 | [tests/native-mcp-parity-audit.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/native-mcp-parity-audit.mjs)<br>[tests/parameter-audit-cli.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-cli.mjs)<br>[tests/parameter-audit-context.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-context.mjs)<br>[tests/parameter-audit-coverage.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-coverage.mjs)<br>[tests/parameter-audit-schema.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-schema.mjs)<br>[tests/parameter-audit-suites.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-suites.mjs) |
-| Agent instructions | 15 | [AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/AGENTS.md)<br>[GEMINI.md](../../../../sources/ChiR24__Unreal_mcp/GEMINI.md)<br>[tests/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/tests/AGENTS.md)<br>[src/utils/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/src/utils/AGENTS.md)<br>[src/types/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/src/types/AGENTS.md)<br>[src/tools/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/src/tools/AGENTS.md) |
+| 테스트/평가 | 149 | [tests/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/tests/AGENTS.md)<br>[tests/expectation-utils.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/expectation-utils.mjs)<br>[tests/heartbeat-progress.test.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/heartbeat-progress.test.mjs)<br>[tests/integration.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/integration.mjs)<br>[tests/native-mcp-parity-audit.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/native-mcp-parity-audit.mjs)<br>[tests/native-mcp-source-parser.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/native-mcp-source-parser.mjs) |
+| CI workflow | 14 | [.github/workflows/bump-version.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/bump-version.yml)<br>[.github/workflows/ci.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/codeql.yml)<br>[.github/workflows/dependency-review.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/dependency-review.yml)<br>[.github/workflows/greetings.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/greetings.yml)<br>[.github/workflows/labeler.yml](../../../../sources/ChiR24__Unreal_mcp/.github/workflows/labeler.yml) |
+| 컨테이너/배포 | 1 | [Dockerfile](../../../../sources/ChiR24__Unreal_mcp/Dockerfile) |
+| 보안/정책 | 16 | [tests/native-mcp-parity-audit.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/native-mcp-parity-audit.mjs)<br>[tests/parameter-audit-cli.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-cli.mjs)<br>[tests/parameter-audit-context.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-context.mjs)<br>[tests/parameter-audit-coverage.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-coverage.mjs)<br>[tests/parameter-audit-schema.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-schema.mjs)<br>[tests/parameter-audit-suites.mjs](../../../../sources/ChiR24__Unreal_mcp/tests/parameter-audit-suites.mjs) |
+| 에이전트 지시문 | 15 | [AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/AGENTS.md)<br>[GEMINI.md](../../../../sources/ChiR24__Unreal_mcp/GEMINI.md)<br>[tests/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/tests/AGENTS.md)<br>[src/utils/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/src/utils/AGENTS.md)<br>[src/types/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/src/types/AGENTS.md)<br>[src/tools/AGENTS.md](../../../../sources/ChiR24__Unreal_mcp/src/tools/AGENTS.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `server.json`, `src/cli.ts`, `src/index.ts`.
-2. Trace execution through entrypoints: `server.json`, `src/cli.ts`, `src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `tests/AGENTS.md`, `tests/unit/tools/asset_handlers_security.test.ts`.
-4. Inspect retrieval/memory/indexing through: `src/index.ts`, `src/utils/index.ts`, `src/types/index.ts`.
-5. Verify behavior through test/eval files: `tests/AGENTS.md`, `tests/expectation-utils.mjs`, `tests/heartbeat-progress.test.mjs`.
+1. 핵심 참조에서 시작: `server.json`, `src/cli.ts`, `src/index.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `server.json`, `src/cli.ts`, `src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `tests/AGENTS.md`, `tests/unit/tools/asset_handlers_security.test.ts`.
+4. retrieval/memory/indexing 확인: `src/index.ts`, `src/utils/index.ts`, `src/types/index.ts`.
+5. test/eval 파일로 동작 검증: `tests/AGENTS.md`, `tests/expectation-utils.mjs`, `tests/heartbeat-progress.test.mjs`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-개발 생산성/DevTools 관점에서 A comprehensive Model Context Protocol MCP server that enables AI assistants to control Unreal Engine through the native. 핵심 구조 신호는 C++, package.json, Dockerfile, README.md, AGENTS.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+개발 생산성/DevTools 관점에서 A comprehensive Model Context Protocol MCP server that enables AI assistants to control Unreal Engine through the native. 핵심 구조 신호는 C++, package.json, Dockerfile, README.md, AGENTS.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 architecture comparison point이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 개발 생산성/DevTools 레포입니다. 활용 관점은 아키텍처 비교 지점이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

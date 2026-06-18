@@ -1,63 +1,63 @@
-# arthurpanhku/DocSentinel Source Deep Dive
+# arthurpanhku/DocSentinel 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 MCP server for AI agent for cybersecurity: automate assessment of documents, questionnaires & reports. Multi-format parsing, RAG knowledge base,Risks, compliance gaps, remediations.
 
 ## 요약
 
-- 조사 단위: `sources/arthurpanhku__DocSentinel` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 136 files, 28 directories, depth score 119, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/arthurpanhku__DocSentinel` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 136 files, 28 directories, depth score 113, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/test_mcp_server.py, app/mcp_server.py이고, 의존성 단서는 openai, anthropic, mcp, langchain, fastapi, pydantic, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=tests/test_mcp_server.py, app/mcp_server.py이고, 의존성 단서는 openai, anthropic, mcp, langchain, fastapi, pydantic, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | arthurpanhku/DocSentinel |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | arthurpanhku/DocSentinel |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | korea |
 | Language | Python |
 | Stars | 88 |
 | Forks | 11 |
 | License | MIT |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/arthurpanhku__DocSentinel](../../../../sources/arthurpanhku__DocSentinel) |
-| Existing report | [reports/llm-wiki/repositories/arthurpanhku__DocSentinel.md](../../../llm-wiki/repositories/arthurpanhku__DocSentinel.md) |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/arthurpanhku__DocSentinel](../../../../sources/arthurpanhku__DocSentinel) |
+| 기존 보고서 | [reports/llm-wiki/repositories/arthurpanhku__DocSentinel.md](../../../llm-wiki/repositories/arthurpanhku__DocSentinel.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 136 / 28 |
-| Max observed depth | 4 |
-| Top directories | .github, app, docs, examples, frontend, scripts, tests |
-| Top extensions | .py: 47, .md: 32, .tsx: 10, .json: 9, .png: 6, .ts: 5, (none): 5, .txt: 4, .html: 3, .sh: 3, .yml: 3, .pdf: 2 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 136 / 28 |
+| 관측 최대 깊이 | 4 |
+| 상위 디렉터리 | .github, app, docs, examples, frontend, scripts, tests |
+| 상위 확장자 | .py: 47, .md: 32, .tsx: 10, .json: 9, .png: 6, .ts: 5, (none): 5, .txt: 4, .html: 3, .sh: 3, .yml: 3, .pdf: 2 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | docs | documentation surface | 25 |
 | tests | validation surface | 15 |
@@ -73,9 +73,9 @@ MCP server for AI agent for cybersecurity: automate assessment of documents, que
 | scripts | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | utility | Makefile | .PHONY | make .PHONY |
 | utility | Makefile | help | make help |
@@ -94,9 +94,9 @@ MCP server for AI agent for cybersecurity: automate assessment of documents, que
 | utility | pyproject.toml | docsentinel-mcp | docsentinel-mcp |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
 | agentProtocols | mcp |
@@ -104,14 +104,14 @@ MCP server for AI agent for cybersecurity: automate assessment of documents, que
 | vectorStores | chroma |
 | modelRuntime | torch, transformers |
 | webRuntime | fastapi |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [tests/test_mcp_server.py](../../../../sources/arthurpanhku__DocSentinel/tests/test_mcp_server.py) | mcp signal |
 | mcp | [app/mcp_server.py](../../../../sources/arthurpanhku__DocSentinel/app/mcp_server.py) | mcp signal |
@@ -127,9 +127,9 @@ MCP server for AI agent for cybersecurity: automate assessment of documents, que
 | config | [pyproject.toml](../../../../sources/arthurpanhku__DocSentinel/pyproject.toml) | config signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 4 | [frontend/src/App.tsx](../../../../sources/arthurpanhku__DocSentinel/frontend/src/App.tsx)<br>[frontend/src/index.css](../../../../sources/arthurpanhku__DocSentinel/frontend/src/index.css)<br>[frontend/src/main.tsx](../../../../sources/arthurpanhku__DocSentinel/frontend/src/main.tsx)<br>[app/main.py](../../../../sources/arthurpanhku__DocSentinel/app/main.py) |
 | agentRuntime | 10 | [frontend/src/pages/Skills.tsx](../../../../sources/arthurpanhku__DocSentinel/frontend/src/pages/Skills.tsx)<br>[examples/templates/supplier_review/skill.json](../../../../sources/arthurpanhku__DocSentinel/examples/templates/supplier_review/skill.json)<br>[examples/templates/soc2_type2/skill.json](../../../../sources/arthurpanhku__DocSentinel/examples/templates/soc2_type2/skill.json)<br>[examples/templates/architecture_review/skill.json](../../../../sources/arthurpanhku__DocSentinel/examples/templates/architecture_review/skill.json)<br>[app/models/skill.py](../../../../sources/arthurpanhku__DocSentinel/app/models/skill.py)<br>[app/api/skills.py](../../../../sources/arthurpanhku__DocSentinel/app/api/skills.py)<br>[app/agent/__init__.py](../../../../sources/arthurpanhku__DocSentinel/app/agent/__init__.py)<br>[app/agent/orchestrator.py](../../../../sources/arthurpanhku__DocSentinel/app/agent/orchestrator.py) |
@@ -140,44 +140,44 @@ MCP server for AI agent for cybersecurity: automate assessment of documents, que
 | security | 4 | [SECURITY.md](../../../../sources/arthurpanhku__DocSentinel/SECURITY.md)<br>[examples/sample-policy.txt](../../../../sources/arthurpanhku__DocSentinel/examples/sample-policy.txt)<br>[app/models/audit.py](../../../../sources/arthurpanhku__DocSentinel/app/models/audit.py)<br>[app/core/security.py](../../../../sources/arthurpanhku__DocSentinel/app/core/security.py) |
 | ci | 1 | [.github/workflows/ci.yml](../../../../sources/arthurpanhku__DocSentinel/.github/workflows/ci.yml) |
 | container | 3 | [docker-compose.ollama.yml](../../../../sources/arthurpanhku__DocSentinel/docker-compose.ollama.yml)<br>[docker-compose.yml](../../../../sources/arthurpanhku__DocSentinel/docker-compose.yml)<br>[Dockerfile](../../../../sources/arthurpanhku__DocSentinel/Dockerfile) |
-| instruction | 0 | not obvious |
+| instruction | 0 | 명확하지 않음 |
 | docs | 30 | [README_de.md](../../../../sources/arthurpanhku__DocSentinel/README_de.md)<br>[README_fr.md](../../../../sources/arthurpanhku__DocSentinel/README_fr.md)<br>[README_ja.md](../../../../sources/arthurpanhku__DocSentinel/README_ja.md)<br>[README_ko.md](../../../../sources/arthurpanhku__DocSentinel/README_ko.md)<br>[README_ru.md](../../../../sources/arthurpanhku__DocSentinel/README_ru.md)<br>[README_zh.md](../../../../sources/arthurpanhku__DocSentinel/README_zh.md)<br>[README.md](../../../../sources/arthurpanhku__DocSentinel/README.md)<br>[examples/README.md](../../../../sources/arthurpanhku__DocSentinel/examples/README.md) |
 | config | 6 | [Makefile](../../../../sources/arthurpanhku__DocSentinel/Makefile)<br>[pyproject.toml](../../../../sources/arthurpanhku__DocSentinel/pyproject.toml)<br>[requirements-dev.txt](../../../../sources/arthurpanhku__DocSentinel/requirements-dev.txt)<br>[requirements.txt](../../../../sources/arthurpanhku__DocSentinel/requirements.txt)<br>[frontend/package.json](../../../../sources/arthurpanhku__DocSentinel/frontend/package.json)<br>[frontend/tsconfig.json](../../../../sources/arthurpanhku__DocSentinel/frontend/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 17 | [SPEC.md](../../../../sources/arthurpanhku__DocSentinel/SPEC.md)<br>[test_integration.sh](../../../../sources/arthurpanhku__DocSentinel/test_integration.sh)<br>[tests/__init__.py](../../../../sources/arthurpanhku__DocSentinel/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/arthurpanhku__DocSentinel/tests/conftest.py)<br>[tests/test_assessments_api.py](../../../../sources/arthurpanhku__DocSentinel/tests/test_assessments_api.py)<br>[tests/test_document_access.py](../../../../sources/arthurpanhku__DocSentinel/tests/test_document_access.py) |
-| CI workflows | 1 | [.github/workflows/ci.yml](../../../../sources/arthurpanhku__DocSentinel/.github/workflows/ci.yml) |
-| Containers / deploy | 3 | [docker-compose.ollama.yml](../../../../sources/arthurpanhku__DocSentinel/docker-compose.ollama.yml)<br>[docker-compose.yml](../../../../sources/arthurpanhku__DocSentinel/docker-compose.yml)<br>[Dockerfile](../../../../sources/arthurpanhku__DocSentinel/Dockerfile) |
-| Security / policy | 4 | [SECURITY.md](../../../../sources/arthurpanhku__DocSentinel/SECURITY.md)<br>[examples/sample-policy.txt](../../../../sources/arthurpanhku__DocSentinel/examples/sample-policy.txt)<br>[app/models/audit.py](../../../../sources/arthurpanhku__DocSentinel/app/models/audit.py)<br>[app/core/security.py](../../../../sources/arthurpanhku__DocSentinel/app/core/security.py) |
-| Agent instructions | 0 | not obvious |
+| 테스트/평가 | 17 | [SPEC.md](../../../../sources/arthurpanhku__DocSentinel/SPEC.md)<br>[test_integration.sh](../../../../sources/arthurpanhku__DocSentinel/test_integration.sh)<br>[tests/__init__.py](../../../../sources/arthurpanhku__DocSentinel/tests/__init__.py)<br>[tests/conftest.py](../../../../sources/arthurpanhku__DocSentinel/tests/conftest.py)<br>[tests/test_assessments_api.py](../../../../sources/arthurpanhku__DocSentinel/tests/test_assessments_api.py)<br>[tests/test_document_access.py](../../../../sources/arthurpanhku__DocSentinel/tests/test_document_access.py) |
+| CI workflow | 1 | [.github/workflows/ci.yml](../../../../sources/arthurpanhku__DocSentinel/.github/workflows/ci.yml) |
+| 컨테이너/배포 | 3 | [docker-compose.ollama.yml](../../../../sources/arthurpanhku__DocSentinel/docker-compose.ollama.yml)<br>[docker-compose.yml](../../../../sources/arthurpanhku__DocSentinel/docker-compose.yml)<br>[Dockerfile](../../../../sources/arthurpanhku__DocSentinel/Dockerfile) |
+| 보안/정책 | 4 | [SECURITY.md](../../../../sources/arthurpanhku__DocSentinel/SECURITY.md)<br>[examples/sample-policy.txt](../../../../sources/arthurpanhku__DocSentinel/examples/sample-policy.txt)<br>[app/models/audit.py](../../../../sources/arthurpanhku__DocSentinel/app/models/audit.py)<br>[app/core/security.py](../../../../sources/arthurpanhku__DocSentinel/app/core/security.py) |
+| 에이전트 지시문 | 0 | 명확하지 않음 |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | agent instruction files not obvious |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | agent instruction 파일이 명확하지 않음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `tests/test_mcp_server.py`, `app/mcp_server.py`, `frontend/src/pages/Skills.tsx`.
-2. Trace execution through entrypoints: `frontend/src/App.tsx`, `frontend/src/index.css`, `frontend/src/main.tsx`.
-3. Map agent/tool runtime through: `frontend/src/pages/Skills.tsx`, `examples/templates/supplier_review/skill.json`, `examples/templates/soc2_type2/skill.json`.
-4. Inspect retrieval/memory/indexing through: `tests/test_graph_rag.py`, `frontend/index.html`, `frontend/src/index.css`.
-5. Verify behavior through test/eval files: `SPEC.md`, `test_integration.sh`, `tests/__init__.py`.
+1. 핵심 참조에서 시작: `tests/test_mcp_server.py`, `app/mcp_server.py`, `frontend/src/pages/Skills.tsx`.
+2. entrypoint를 따라 실행 흐름 확인: `frontend/src/App.tsx`, `frontend/src/index.css`, `frontend/src/main.tsx`.
+3. agent/tool runtime 매핑: `frontend/src/pages/Skills.tsx`, `examples/templates/supplier_review/skill.json`, `examples/templates/soc2_type2/skill.json`.
+4. retrieval/memory/indexing 확인: `tests/test_graph_rag.py`, `frontend/index.html`, `frontend/src/index.css`.
+5. test/eval 파일로 동작 검증: `SPEC.md`, `test_integration.sh`, `tests/__init__.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 MCP server for AI agent for cybersecurity automate assessment of documents, questionnaires & reports. Multi format parsi. 핵심 구조 신호는 Python, pyproject.toml, requirements.txt, Dockerfile, docker-compose.yml, Makefile이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 MCP server for AI agent for cybersecurity automate assessment of documents, questionnaires & reports. Multi format parsi. 핵심 구조 신호는 Python, pyproject.toml, requirements.txt, Dockerfile, docker-compose.yml, Makefile이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 needs deeper structural scan입니다.
+korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 더 깊은 구조 스캔 필요입니다.

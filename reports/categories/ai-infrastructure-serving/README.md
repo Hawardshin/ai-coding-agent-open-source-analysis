@@ -1,43 +1,43 @@
-# AI Infrastructure and Serving
+# AI 인프라/서빙
 
-Generated: 2026-06-18T15:12:39.601Z
+생성 시각: 2026-06-18T15:31:33.431Z
 
-LLM serving, inference engines, GPUs, AI factories, training/inference infrastructure, Kubernetes, runtimes, and model deployment.
+LLM serving, inference engine, GPU, AI factory, training/inference infrastructure, Kubernetes, runtime, model deployment를 묶은 카테고리입니다.
 
 ## 요약
 
 - 조사 단위: `ai-infrastructure-serving` artifact 카테고리에 속한 오픈소스, 논문, 발표/트렌드, 참고자료 묶음입니다.
-- 포함 범위: 244 entries이며, 주요 구성은 repository (147), conference-reference (38), research-paper (32), reference-material (19), trend-reference (8)입니다.
+- 포함 범위: 244개 항목이며, 주요 구성은 repository (147), conference-reference (38), research-paper (32), reference-material (19), trend-reference (8)입니다.
 - 연결 보고서: [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md).
 
 ## 총평
 
 이 README는 보고서 파일이 아니라 조사 근거와 대상 artifact를 기준으로 정리한 입구입니다. 상단의 관련 report topic으로 넘어가면 같은 주제를 보고서 관점에서 읽을 수 있고, 아래 표들은 해당 카테고리의 주요 오픈소스, 연구, 발표, 참고자료를 우선순위대로 훑는 데 적합합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../README.md) | Main report navigation, start-here path, topics, and folder map. |
-| [Reports by Topic](../../by-topic/README.md) | Topic-first navigation across all Markdown reports. |
-| [Report Tables](../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../repository-insights/README.md) | Repository-by-repository insights, risks, and next-read links. |
-| [Source Deep Dives](../../source-deep-dives/README.md) | Topic-wise source-path evidence from local clones. |
-| [Artifact Categories](../README.md) | Artifact-level category index for repositories, papers, presentations, and references. |
+| [전체 시작 README](../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../repository-insights/README.md) | 레포별 총평, 위험 신호, 다음에 볼 링크. |
+| [소스 딥다이브](../../source-deep-dives/README.md) | 로컬 클론에서 뽑은 파일 경로 근거. |
+| [근거 카테고리](../README.md) | 오픈소스, 논문, 발표, 참고자료의 artifact 분류. |
 
 
-## Counts
+## 범위
 
-- Total categorized entries: 244
-- Repositories: 147
-- Research papers: 32
-- Presentations/conferences/trend references: 46
-- Reference materials: 19
-- Data file: [data/categories/ai-infrastructure-serving.json](../../../data/categories/ai-infrastructure-serving.json)
-- Related report topics: [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md)
+- 전체 분류 항목: 244
+- 오픈소스/레포: 147
+- 논문/연구자료: 32
+- 발표/컨퍼런스/트렌드 자료: 46
+- 참고자료: 19
+- 데이터 파일: [data/categories/ai-infrastructure-serving.json](../../../data/categories/ai-infrastructure-serving.json)
+- 연결된 보고서 주제: [adjacent-infrastructure](../../by-topic/adjacent-infrastructure/README.md)
 
-## Type Breakdown
+## 유형별 구성
 
 - repository: 147
 - conference-reference: 38
@@ -45,60 +45,60 @@ LLM serving, inference engines, GPUs, AI factories, training/inference infrastru
 - reference-material: 19
 - trend-reference: 8
 
-## Top Open Source
+## 주요 오픈소스
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
-| [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | repository | JavaScript, 61740 stars | 449.7 | [source](../../../sources/Mintplex-Labs__anything-llm) / [report](../../global-trending/repositories/Mintplex-Labs__anything-llm.md) |
-| [open-webui/open-webui](https://github.com/open-webui/open-webui) | repository | Python, 142039 stars | 419.3 | [source](../../../sources/open-webui__open-webui) / [report](../../global-trending/repositories/open-webui__open-webui.md) |
-| [ollama/ollama](https://github.com/ollama/ollama) | repository | Go, 174404 stars | 383.4 | [source](../../../sources/ollama__ollama) / [report](../../global-trending/repositories/ollama__ollama.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | repository | C++, 117045 stars | 377.4 | [source](../../../sources/ggml-org__llama.cpp) / [report](../../global-trending/repositories/ggml-org__llama.cpp.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | repository | Python, 83195 stars | 372.2 | [source](../../../sources/vllm-project__vllm) / [report](../../global-trending/repositories/vllm-project__vllm.md) |
-| [mudler/LocalAI](https://github.com/mudler/LocalAI) | repository | Go, 46944 stars | 363.5 | [source](../../../sources/mudler__LocalAI) / [report](../../global-trending/repositories/mudler__LocalAI.md) |
-| [CaviraOSS/OpenMemory](https://github.com/CaviraOSS/OpenMemory) | repository | TypeScript, 4243 stars | 363.0 | [source](../../../sources/CaviraOSS__OpenMemory) / [report](../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
-| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | repository | C++, 24999 stars | 360.9 | [source](../../../sources/mozilla-ai__llamafile) / [report](../../global-trending/repositories/mozilla-ai__llamafile.md) |
-| [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | repository | C++, 77378 stars | 357.1 | [source](../../../sources/nomic-ai__gpt4all) / [report](../../global-trending/repositories/nomic-ai__gpt4all.md) |
-| [sgl-project/sglang](https://github.com/sgl-project/sglang) | repository | Python, 29137 stars | 356.3 | [source](../../../sources/sgl-project__sglang) / [report](../../global-trending/repositories/sgl-project__sglang.md) |
-| [openai/codex](https://github.com/openai/codex) | repository | Rust, 91749 stars | 353.7 | [source](../../../sources/openai__codex) / [report](../../global-trending/repositories/openai__codex.md) |
-| [olimorris/codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim) | repository | Lua, 6672 stars | 345.9 | [source](../../../sources/olimorris__codecompanion.nvim) / [report](../../global-trending/repositories/olimorris__codecompanion.nvim.md) |
-| [dyad-sh/dyad](https://github.com/dyad-sh/dyad) | repository | TypeScript, 20657 stars | 341.0 | [source](../../../sources/dyad-sh__dyad) / [report](../../global-trending/repositories/dyad-sh__dyad.md) |
-| [xorbitsai/inference](https://github.com/xorbitsai/inference) | repository | Python, 9359 stars | 339.0 | [source](../../../sources/xorbitsai__inference) / [report](../../global-trending/repositories/xorbitsai__inference.md) |
-| [stacklok/toolhive](https://github.com/stacklok/toolhive) | repository | Go, 1889 stars | 338.7 | [source](../../../sources/stacklok__toolhive) / [report](../../global-trending/repositories/stacklok__toolhive.md) |
-| [continuedev/continue](https://github.com/continuedev/continue) | repository | TypeScript, 33891 stars | 338.6 | [source](../../../sources/continuedev__continue) / [report](../../global-trending/repositories/continuedev__continue.md) |
-| [raullenchai/Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) | repository | Python, 2902 stars | 338.2 | [source](../../../sources/raullenchai__Rapid-MLX) / [report](../../global-trending/repositories/raullenchai__Rapid-MLX.md) |
-| [pipeshub-ai/pipeshub-ai](https://github.com/pipeshub-ai/pipeshub-ai) | repository | Python, 2989 stars | 337.6 | [source](../../../sources/pipeshub-ai__pipeshub-ai) / [report](../../global-trending/repositories/pipeshub-ai__pipeshub-ai.md) |
-| [oracle-devrel/oracle-ai-developer-hub](https://github.com/oracle-devrel/oracle-ai-developer-hub) | repository | Jupyter Notebook, 4191 stars | 333.8 | [source](../../../sources/oracle-devrel__oracle-ai-developer-hub) / [report](../../global-trending/repositories/oracle-devrel__oracle-ai-developer-hub.md) |
-| [containers/ramalama](https://github.com/containers/ramalama) | repository | Python, 2902 stars | 332.2 | [source](../../../sources/containers__ramalama) / [report](../../global-trending/repositories/containers__ramalama.md) |
-| [Andyyyy64/whichllm](https://github.com/Andyyyy64/whichllm) | repository | Python, 4923 stars | 331.2 | [source](../../../sources/Andyyyy64__whichllm) / [report](../../global-trending/repositories/Andyyyy64__whichllm.md) |
-| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [source](../../../sources/gsd-build__get-shit-done) / [report](../../clone-structures/gsd-build__get-shit-done.md) |
-| [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) | repository | Python, 23594 stars | 328.1 | [source](../../../sources/cheahjs__free-llm-api-resources) / [report](../../global-trending/repositories/cheahjs__free-llm-api-resources.md) |
-| [matrixorigin/matrixone](https://github.com/matrixorigin/matrixone) | repository | Go, 1847 stars | 327.3 | [source](../../../sources/matrixorigin__matrixone) / [report](../../global-trending/repositories/matrixorigin__matrixone.md) |
-| [LMCache/LMCache](https://github.com/LMCache/LMCache) | repository | Python, 9269 stars | 325.9 | [source](../../../sources/LMCache__LMCache) / [report](../../global-trending/repositories/LMCache__LMCache.md) |
-| [RunanywhereAI/runanywhere-sdks](https://github.com/RunanywhereAI/runanywhere-sdks) | repository | C++, 10329 stars | 324.5 | [source](../../../sources/RunanywhereAI__runanywhere-sdks) / [report](../../global-trending/repositories/RunanywhereAI__runanywhere-sdks.md) |
-| [kvcache-ai/ktransformers](https://github.com/kvcache-ai/ktransformers) | repository | Python, 17302 stars | 322.3 | [source](../../../sources/kvcache-ai__ktransformers) / [report](../../global-trending/repositories/kvcache-ai__ktransformers.md) |
-| [jundot/omlx](https://github.com/jundot/omlx) | repository | Python, 16768 stars | 321.9 | [source](../../../sources/jundot__omlx) / [report](../../global-trending/repositories/jundot__omlx.md) |
-| [di-sukharev/opencommit](https://github.com/di-sukharev/opencommit) | repository | JavaScript, 7341 stars | 321.3 | [source](../../../sources/di-sukharev__opencommit) / [report](../../global-trending/repositories/di-sukharev__opencommit.md) |
-| [agents-flex/agents-flex](https://github.com/agents-flex/agents-flex) | repository | Java, 1005 stars | 318.1 | [source](../../../sources/agents-flex__agents-flex) / [report](../../global-trending/repositories/agents-flex__agents-flex.md) |
-| [waybarrios/vllm-mlx](https://github.com/waybarrios/vllm-mlx) | repository | Python, 1350 stars | 317.6 | [source](../../../sources/waybarrios__vllm-mlx) / [report](../../global-trending/repositories/waybarrios__vllm-mlx.md) |
-| [lemonade-sdk/lemonade](https://github.com/lemonade-sdk/lemonade) | repository | C++, 4507 stars | 315.9 | [source](../../../sources/lemonade-sdk__lemonade) / [report](../../global-trending/repositories/lemonade-sdk__lemonade.md) |
-| [vespa-engine/vespa](https://github.com/vespa-engine/vespa) | repository | Java, 6962 stars | 315.5 | [source](../../../sources/vespa-engine__vespa) / [report](../../global-trending/repositories/vespa-engine__vespa.md) |
-| [kvcache-ai/Mooncake](https://github.com/kvcache-ai/Mooncake) | repository | C++, 5603 stars | 314.2 | [source](../../../sources/kvcache-ai__Mooncake) / [report](../../global-trending/repositories/kvcache-ai__Mooncake.md) |
-| [gpustack/gpustack](https://github.com/gpustack/gpustack) | repository | Python, 5175 stars | 312.0 | [source](../../../sources/gpustack__gpustack) / [report](../../global-trending/repositories/gpustack__gpustack.md) |
-| [oumi-ai/oumi](https://github.com/oumi-ai/oumi) | repository | Python, 9317 stars | 310.9 | [source](../../../sources/oumi-ai__oumi) / [report](../../global-trending/repositories/oumi-ai__oumi.md) |
-| [Light-Heart-Labs/DreamServer](https://github.com/Light-Heart-Labs/DreamServer) | repository | Shell, 2079 stars | 310.1 | [source](../../../sources/Light-Heart-Labs__DreamServer) / [report](../../global-trending/repositories/Light-Heart-Labs__DreamServer.md) |
-| [superlinked/sie](https://github.com/superlinked/sie) | repository | Python, 2053 stars | 308.9 | [source](../../../sources/superlinked__sie) / [report](../../global-trending/repositories/superlinked__sie.md) |
-| [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai) | repository | PHP, 1966 stars | 308.3 | [source](../../../sources/neuron-core__neuron-ai) / [report](../../global-trending/repositories/neuron-core__neuron-ai.md) |
-| [skyzh/tiny-llm](https://github.com/skyzh/tiny-llm) | repository | Python, 4288 stars | 306.1 | [source](../../../sources/skyzh__tiny-llm) / [report](../../global-trending/repositories/skyzh__tiny-llm.md) |
-| [brycewang-stanford/StatsPAI](https://github.com/brycewang-stanford/StatsPAI) | repository | Python, 233 stars | 305.9 | [source](../../../sources/brycewang-stanford__StatsPAI) / [report](../../global-trending/repositories/brycewang-stanford__StatsPAI.md) |
-| [PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) | repository | Python, 3698 stars | 304.9 | [source](../../../sources/PaddlePaddle__FastDeploy) / [report](../../global-trending/repositories/PaddlePaddle__FastDeploy.md) |
-| [jonigl/mcp-client-for-ollama](https://github.com/jonigl/mcp-client-for-ollama) | repository | Python, 746 stars | 304.6 | [source](../../../sources/jonigl__mcp-client-for-ollama) / [report](../../global-trending/repositories/jonigl__mcp-client-for-ollama.md) |
-| [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi.git) | repository | TypeScript, 13165 stars | 304.2 | [source](../../../sources/can1357__oh-my-pi) / [report](../../global-trending/repositories/can1357__oh-my-pi.md) |
-| [NVIDIA-AI-Blueprints/video-search-and-summarization](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization) | repository | C++, 1559 stars | 303.8 | [source](../../../sources/NVIDIA-AI-Blueprints__video-search-and-summarization) / [report](../../global-trending/repositories/NVIDIA-AI-Blueprints__video-search-and-summarization.md) |
+| [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | repository | JavaScript, 61740 stars | 449.7 | [소스](../../../sources/Mintplex-Labs__anything-llm) / [보고서](../../global-trending/repositories/Mintplex-Labs__anything-llm.md) |
+| [open-webui/open-webui](https://github.com/open-webui/open-webui) | repository | Python, 142039 stars | 419.3 | [소스](../../../sources/open-webui__open-webui) / [보고서](../../global-trending/repositories/open-webui__open-webui.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | repository | Go, 174404 stars | 383.4 | [소스](../../../sources/ollama__ollama) / [보고서](../../global-trending/repositories/ollama__ollama.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | repository | C++, 117045 stars | 377.4 | [소스](../../../sources/ggml-org__llama.cpp) / [보고서](../../global-trending/repositories/ggml-org__llama.cpp.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | repository | Python, 83195 stars | 372.2 | [소스](../../../sources/vllm-project__vllm) / [보고서](../../global-trending/repositories/vllm-project__vllm.md) |
+| [mudler/LocalAI](https://github.com/mudler/LocalAI) | repository | Go, 46944 stars | 363.5 | [소스](../../../sources/mudler__LocalAI) / [보고서](../../global-trending/repositories/mudler__LocalAI.md) |
+| [CaviraOSS/OpenMemory](https://github.com/CaviraOSS/OpenMemory) | repository | TypeScript, 4243 stars | 363.0 | [소스](../../../sources/CaviraOSS__OpenMemory) / [보고서](../../global-trending/repositories/CaviraOSS__OpenMemory.md) |
+| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | repository | C++, 24999 stars | 360.9 | [소스](../../../sources/mozilla-ai__llamafile) / [보고서](../../global-trending/repositories/mozilla-ai__llamafile.md) |
+| [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | repository | C++, 77378 stars | 357.1 | [소스](../../../sources/nomic-ai__gpt4all) / [보고서](../../global-trending/repositories/nomic-ai__gpt4all.md) |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | repository | Python, 29137 stars | 356.3 | [소스](../../../sources/sgl-project__sglang) / [보고서](../../global-trending/repositories/sgl-project__sglang.md) |
+| [openai/codex](https://github.com/openai/codex) | repository | Rust, 91749 stars | 353.7 | [소스](../../../sources/openai__codex) / [보고서](../../global-trending/repositories/openai__codex.md) |
+| [olimorris/codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim) | repository | Lua, 6672 stars | 345.9 | [소스](../../../sources/olimorris__codecompanion.nvim) / [보고서](../../global-trending/repositories/olimorris__codecompanion.nvim.md) |
+| [dyad-sh/dyad](https://github.com/dyad-sh/dyad) | repository | TypeScript, 20657 stars | 341.0 | [소스](../../../sources/dyad-sh__dyad) / [보고서](../../global-trending/repositories/dyad-sh__dyad.md) |
+| [xorbitsai/inference](https://github.com/xorbitsai/inference) | repository | Python, 9359 stars | 339.0 | [소스](../../../sources/xorbitsai__inference) / [보고서](../../global-trending/repositories/xorbitsai__inference.md) |
+| [stacklok/toolhive](https://github.com/stacklok/toolhive) | repository | Go, 1889 stars | 338.7 | [소스](../../../sources/stacklok__toolhive) / [보고서](../../global-trending/repositories/stacklok__toolhive.md) |
+| [continuedev/continue](https://github.com/continuedev/continue) | repository | TypeScript, 33891 stars | 338.6 | [소스](../../../sources/continuedev__continue) / [보고서](../../global-trending/repositories/continuedev__continue.md) |
+| [raullenchai/Rapid-MLX](https://github.com/raullenchai/Rapid-MLX) | repository | Python, 2902 stars | 338.2 | [소스](../../../sources/raullenchai__Rapid-MLX) / [보고서](../../global-trending/repositories/raullenchai__Rapid-MLX.md) |
+| [pipeshub-ai/pipeshub-ai](https://github.com/pipeshub-ai/pipeshub-ai) | repository | Python, 2989 stars | 337.6 | [소스](../../../sources/pipeshub-ai__pipeshub-ai) / [보고서](../../global-trending/repositories/pipeshub-ai__pipeshub-ai.md) |
+| [oracle-devrel/oracle-ai-developer-hub](https://github.com/oracle-devrel/oracle-ai-developer-hub) | repository | Jupyter Notebook, 4191 stars | 333.8 | [소스](../../../sources/oracle-devrel__oracle-ai-developer-hub) / [보고서](../../global-trending/repositories/oracle-devrel__oracle-ai-developer-hub.md) |
+| [containers/ramalama](https://github.com/containers/ramalama) | repository | Python, 2902 stars | 332.2 | [소스](../../../sources/containers__ramalama) / [보고서](../../global-trending/repositories/containers__ramalama.md) |
+| [Andyyyy64/whichllm](https://github.com/Andyyyy64/whichllm) | repository | Python, 4923 stars | 331.2 | [소스](../../../sources/Andyyyy64__whichllm) / [보고서](../../global-trending/repositories/Andyyyy64__whichllm.md) |
+| [gsd-build/get-shit-done](https://github.com/gsd-build/get-shit-done) | repository | JavaScript, 64305 stars | 328.3 | [소스](../../../sources/gsd-build__get-shit-done) / [보고서](../../clone-structures/gsd-build__get-shit-done.md) |
+| [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) | repository | Python, 23594 stars | 328.1 | [소스](../../../sources/cheahjs__free-llm-api-resources) / [보고서](../../global-trending/repositories/cheahjs__free-llm-api-resources.md) |
+| [matrixorigin/matrixone](https://github.com/matrixorigin/matrixone) | repository | Go, 1847 stars | 327.3 | [소스](../../../sources/matrixorigin__matrixone) / [보고서](../../global-trending/repositories/matrixorigin__matrixone.md) |
+| [LMCache/LMCache](https://github.com/LMCache/LMCache) | repository | Python, 9269 stars | 325.9 | [소스](../../../sources/LMCache__LMCache) / [보고서](../../global-trending/repositories/LMCache__LMCache.md) |
+| [RunanywhereAI/runanywhere-sdks](https://github.com/RunanywhereAI/runanywhere-sdks) | repository | C++, 10329 stars | 324.5 | [소스](../../../sources/RunanywhereAI__runanywhere-sdks) / [보고서](../../global-trending/repositories/RunanywhereAI__runanywhere-sdks.md) |
+| [kvcache-ai/ktransformers](https://github.com/kvcache-ai/ktransformers) | repository | Python, 17302 stars | 322.3 | [소스](../../../sources/kvcache-ai__ktransformers) / [보고서](../../global-trending/repositories/kvcache-ai__ktransformers.md) |
+| [jundot/omlx](https://github.com/jundot/omlx) | repository | Python, 16768 stars | 321.9 | [소스](../../../sources/jundot__omlx) / [보고서](../../global-trending/repositories/jundot__omlx.md) |
+| [di-sukharev/opencommit](https://github.com/di-sukharev/opencommit) | repository | JavaScript, 7341 stars | 321.3 | [소스](../../../sources/di-sukharev__opencommit) / [보고서](../../global-trending/repositories/di-sukharev__opencommit.md) |
+| [agents-flex/agents-flex](https://github.com/agents-flex/agents-flex) | repository | Java, 1005 stars | 318.1 | [소스](../../../sources/agents-flex__agents-flex) / [보고서](../../global-trending/repositories/agents-flex__agents-flex.md) |
+| [waybarrios/vllm-mlx](https://github.com/waybarrios/vllm-mlx) | repository | Python, 1350 stars | 317.6 | [소스](../../../sources/waybarrios__vllm-mlx) / [보고서](../../global-trending/repositories/waybarrios__vllm-mlx.md) |
+| [lemonade-sdk/lemonade](https://github.com/lemonade-sdk/lemonade) | repository | C++, 4507 stars | 315.9 | [소스](../../../sources/lemonade-sdk__lemonade) / [보고서](../../global-trending/repositories/lemonade-sdk__lemonade.md) |
+| [vespa-engine/vespa](https://github.com/vespa-engine/vespa) | repository | Java, 6962 stars | 315.5 | [소스](../../../sources/vespa-engine__vespa) / [보고서](../../global-trending/repositories/vespa-engine__vespa.md) |
+| [kvcache-ai/Mooncake](https://github.com/kvcache-ai/Mooncake) | repository | C++, 5603 stars | 314.2 | [소스](../../../sources/kvcache-ai__Mooncake) / [보고서](../../global-trending/repositories/kvcache-ai__Mooncake.md) |
+| [gpustack/gpustack](https://github.com/gpustack/gpustack) | repository | Python, 5175 stars | 312.0 | [소스](../../../sources/gpustack__gpustack) / [보고서](../../global-trending/repositories/gpustack__gpustack.md) |
+| [oumi-ai/oumi](https://github.com/oumi-ai/oumi) | repository | Python, 9317 stars | 310.9 | [소스](../../../sources/oumi-ai__oumi) / [보고서](../../global-trending/repositories/oumi-ai__oumi.md) |
+| [Light-Heart-Labs/DreamServer](https://github.com/Light-Heart-Labs/DreamServer) | repository | Shell, 2079 stars | 310.1 | [소스](../../../sources/Light-Heart-Labs__DreamServer) / [보고서](../../global-trending/repositories/Light-Heart-Labs__DreamServer.md) |
+| [superlinked/sie](https://github.com/superlinked/sie) | repository | Python, 2053 stars | 308.9 | [소스](../../../sources/superlinked__sie) / [보고서](../../global-trending/repositories/superlinked__sie.md) |
+| [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai) | repository | PHP, 1966 stars | 308.3 | [소스](../../../sources/neuron-core__neuron-ai) / [보고서](../../global-trending/repositories/neuron-core__neuron-ai.md) |
+| [skyzh/tiny-llm](https://github.com/skyzh/tiny-llm) | repository | Python, 4288 stars | 306.1 | [소스](../../../sources/skyzh__tiny-llm) / [보고서](../../global-trending/repositories/skyzh__tiny-llm.md) |
+| [brycewang-stanford/StatsPAI](https://github.com/brycewang-stanford/StatsPAI) | repository | Python, 233 stars | 305.9 | [소스](../../../sources/brycewang-stanford__StatsPAI) / [보고서](../../global-trending/repositories/brycewang-stanford__StatsPAI.md) |
+| [PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) | repository | Python, 3698 stars | 304.9 | [소스](../../../sources/PaddlePaddle__FastDeploy) / [보고서](../../global-trending/repositories/PaddlePaddle__FastDeploy.md) |
+| [jonigl/mcp-client-for-ollama](https://github.com/jonigl/mcp-client-for-ollama) | repository | Python, 746 stars | 304.6 | [소스](../../../sources/jonigl__mcp-client-for-ollama) / [보고서](../../global-trending/repositories/jonigl__mcp-client-for-ollama.md) |
+| [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi.git) | repository | TypeScript, 13165 stars | 304.2 | [소스](../../../sources/can1357__oh-my-pi) / [보고서](../../global-trending/repositories/can1357__oh-my-pi.md) |
+| [NVIDIA-AI-Blueprints/video-search-and-summarization](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization) | repository | C++, 1559 stars | 303.8 | [소스](../../../sources/NVIDIA-AI-Blueprints__video-search-and-summarization) / [보고서](../../global-trending/repositories/NVIDIA-AI-Blueprints__video-search-and-summarization.md) |
 
 
-## Top Research
+## 주요 연구/논문
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [A Reusable Automated Acceptance Testing Architecture for Microservices in Behavior-Driven Development](https://doi.org/10.1109/sose.2015.55) | research-paper | 2015 | 143.2 |  |
 | [Successful Deployment of Requirements Traceability in a Commercial Engineering Organization...Really](https://doi.org/10.1109/re.2010.43) | research-paper | 2010 | 87.3 |  |
@@ -127,9 +127,9 @@ LLM serving, inference engines, GPUs, AI factories, training/inference infrastru
 | [Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents](https://arxiv.org/abs/2606.06036) | research-paper | 2026 | 20.0 |  |
 
 
-## Top Presentations and Conference References
+## 주요 발표/컨퍼런스 자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Architecting scalable and secure agentic AI applications with Amazon Bedrock AgentCore](https://www.youtube.com/watch?v=wqmeZOT6mmc) | trend-reference | 2025-12-04, Amazon/AWS | 120.0 |  |
 | [Frontier agents, Trainium chips, and Amazon Nova: key announcements from AWS re:Invent 2025](https://www.aboutamazon.com/news/aws/aws-re-invent-2025-ai-news-updates) | trend-reference | 2025-12-04, Amazon/AWS | 120.0 |  |
@@ -168,9 +168,9 @@ LLM serving, inference engines, GPUs, AI factories, training/inference infrastru
 | [HOLD — DigitalOcean](https://www.ai.engineer/schedule) | conference-reference |  | 55.0 |  |
 
 
-## Top Reference Materials
+## 주요 참고자료
 
-| Item | Type | Metadata | Score | Local links |
+| 항목 | 유형 | 메타데이터 | 점수 | 링크 |
 | --- | --- | --- | ---: | --- |
 | [Choose a sandbox environment](https://code.claude.com/docs/en/sandbox-environments.md) | reference-material |  | 970.0 |  |
 | [Enterprise deployment overview](https://code.claude.com/docs/en/third-party-integrations.md) | reference-material |  | 970.0 |  |
@@ -193,4 +193,4 @@ LLM serving, inference engines, GPUs, AI factories, training/inference infrastru
 | [Laceprndpm/my-nano-vllm/.codex/config.toml](https://github.com/Laceprndpm/my-nano-vllm/blob/5c01bd90bb1af2ebdfbccc14fb2ed277cf1c38f9/.codex/config.toml) | reference-material |  | 132.0 |  |
 
 
-Complete category membership is stored in [data/categories/ai-infrastructure-serving.json](../../../data/categories/ai-infrastructure-serving.json).
+전체 카테고리 멤버십은 [data/categories/ai-infrastructure-serving.json](../../../data/categories/ai-infrastructure-serving.json)에 저장됩니다.

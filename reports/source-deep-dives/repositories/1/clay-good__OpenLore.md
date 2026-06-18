@@ -1,63 +1,63 @@
-# clay-good/OpenLore Source Deep Dive
+# clay-good/OpenLore 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Deterministic persistent memory that empowers AI agents to accurately map their knowledge boundaries and eliminate guesswork across massive code repositories.
 
 ## 요약
 
-- 조사 단위: `sources/clay-good__OpenLore` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 757 files, 213 directories, depth score 131, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/clay-good__OpenLore` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 757 files, 213 directories, depth score 125, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=src/core/services/mcp-watcher-incremental.test.ts, src/core/services/mcp-watcher.integration.test.ts, src/core/services/mcp-watcher.test.ts이고, 의존성 단서는 modelcontextprotocol, react, commander, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=src/core/services/mcp-watcher-incremental.test.ts, src/core/services/mcp-watcher.integration.test.ts, src/core/services/mcp-watcher.test.ts이고, 의존성 단서는 modelcontextprotocol, react, commander, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | clay-good/OpenLore |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | clay-good/OpenLore |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 175 |
 | Forks | 24 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/clay-good__OpenLore](../../../../sources/clay-good__OpenLore) |
-| Existing report | [reports/global-trending/repositories/clay-good__OpenLore.md](../../../global-trending/repositories/clay-good__OpenLore.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/clay-good__OpenLore](../../../../sources/clay-good__OpenLore) |
+| 기존 보고서 | [reports/global-trending/repositories/clay-good__OpenLore.md](../../../global-trending/repositories/clay-good__OpenLore.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 757 / 213 |
-| Max observed depth | 10 |
-| Top directories | .claude, .github, .planning, docs, examples, openspec, packaging, schemas, scripts, skills, src, stubs |
-| Top extensions | .ts: 449, .md: 213, .json: 15, .yml: 13, .yaml: 10, .jsx: 9, .js: 6, .sh: 6, .mjs: 4, (none): 4, .c: 2, .cs: 2 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 757 / 213 |
+| 관측 최대 깊이 | 10 |
+| 상위 디렉터리 | .claude, .github, .planning, docs, examples, openspec, packaging, schemas, scripts, skills, src, stubs |
+| 상위 확장자 | .ts: 449, .md: 213, .json: 15, .yml: 13, .yaml: 10, .jsx: 9, .js: 6, .sh: 6, .mjs: 4, (none): 4, .c: 2, .cs: 2 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | src | source boundary | 179 |
 | docs | documentation surface | 32 |
@@ -79,9 +79,9 @@ Deterministic persistent memory that empowers AI agents to accurately map their 
 | schemas | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | dev | tsx watch src/cli/index.ts |
 | build | package.json | build | tsc && node scripts/copy-assets.mjs |
@@ -109,24 +109,24 @@ Deterministic persistent memory that empowers AI agents to accurately map their 
 | entrypoint | package.json bin | index.js | dist/cli/index.js |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
+| llmProviders | 없음 |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
 | webRuntime | react |
 | developerSurface | commander |
-| observability | none |
-| browserAutomation | none |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [src/core/services/mcp-watcher-incremental.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-watcher-incremental.test.ts) | mcp signal |
 | mcp | [src/core/services/mcp-watcher.integration.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-watcher.integration.test.ts) | mcp signal |
@@ -142,9 +142,9 @@ Deterministic persistent memory that empowers AI agents to accurately map their 
 | entrypoints | [src/core/analyzer/iac/fixtures/pulumi/main.go](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/pulumi/main.go) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 6 | [src/viewer/app/main.jsx](../../../../sources/clay-good__OpenLore/src/viewer/app/main.jsx)<br>[src/core/scip/fixtures/tiny-repo/src/index.ts](../../../../sources/clay-good__OpenLore/src/core/scip/fixtures/tiny-repo/src/index.ts)<br>[src/core/analyzer/iac/fixtures/pulumi/__main__.py](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/pulumi/__main__.py)<br>[src/core/analyzer/iac/fixtures/pulumi/main.go](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/pulumi/main.go)<br>[src/core/analyzer/iac/fixtures/cdk/main.go](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/cdk/main.go)<br>[examples/drift-demo/src/index.ts](../../../../sources/clay-good__OpenLore/examples/drift-demo/src/index.ts) |
 | agentRuntime | 59 | [AGENTS.md](../../../../sources/clay-good__OpenLore/AGENTS.md)<br>[src/viewer/hooks/usePanZoom.js](../../../../sources/clay-good__OpenLore/src/viewer/hooks/usePanZoom.js)<br>[src/core/services/tool-dispatch.ts](../../../../sources/clay-good__OpenLore/src/core/services/tool-dispatch.ts)<br>[src/core/services/mcp-handlers/memory.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/memory.test.ts)<br>[src/core/services/mcp-handlers/memory.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/memory.ts)<br>[src/core/services/mcp-handlers/tool-contract.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/tool-contract.test.ts)<br>[src/core/services/mcp-handlers/tool-contract.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/tool-contract.ts)<br>[src/core/services/mcp-handlers/tool-guard.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/tool-guard.test.ts) |
@@ -160,39 +160,39 @@ Deterministic persistent memory that empowers AI agents to accurately map their 
 | config | 6 | [package.json](../../../../sources/clay-good__OpenLore/package.json)<br>[tsconfig.json](../../../../sources/clay-good__OpenLore/tsconfig.json)<br>[stubs/tree-sitter-cli-stub/package.json](../../../../sources/clay-good__OpenLore/stubs/tree-sitter-cli-stub/package.json)<br>[src/core/scip/fixtures/tiny-repo/package.json](../../../../sources/clay-good__OpenLore/src/core/scip/fixtures/tiny-repo/package.json)<br>[examples/drift-demo/package.json](../../../../sources/clay-good__OpenLore/examples/drift-demo/package.json)<br>[examples/drift-demo/tsconfig.json](../../../../sources/clay-good__OpenLore/examples/drift-demo/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 311 | [src/honesty-contract.test.ts](../../../../sources/clay-good__OpenLore/src/honesty-contract.test.ts)<br>[src/viewer/utils/graph-helpers.test.ts](../../../../sources/clay-good__OpenLore/src/viewer/utils/graph-helpers.test.ts)<br>[src/utils/command-helpers.test.ts](../../../../sources/clay-good__OpenLore/src/utils/command-helpers.test.ts)<br>[src/utils/errors.test.ts](../../../../sources/clay-good__OpenLore/src/utils/errors.test.ts)<br>[src/utils/logger.test.ts](../../../../sources/clay-good__OpenLore/src/utils/logger.test.ts)<br>[src/utils/progress.test.ts](../../../../sources/clay-good__OpenLore/src/utils/progress.test.ts) |
-| CI workflows | 5 | [examples/ci/openlore-preflight.gitlab.yml](../../../../sources/clay-good__OpenLore/examples/ci/openlore-preflight.gitlab.yml)<br>[examples/ci/openlore-preflight.sh](../../../../sources/clay-good__OpenLore/examples/ci/openlore-preflight.sh)<br>[examples/ci/openlore-preflight.yml](../../../../sources/clay-good__OpenLore/examples/ci/openlore-preflight.yml)<br>[.github/workflows/ci.yml](../../../../sources/clay-good__OpenLore/.github/workflows/ci.yml)<br>[.github/workflows/release.yml](../../../../sources/clay-good__OpenLore/.github/workflows/release.yml) |
-| Containers / deploy | 6 | [src/core/analyzer/iac/fixtures/kubernetes/app.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/kubernetes/app.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/Chart.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/Chart.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/values.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/values.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/templates/_helpers.tpl](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/templates/_helpers.tpl)<br>[src/core/analyzer/iac/fixtures/helm/mychart/templates/deployment.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/templates/deployment.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/charts/sub/Chart.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/charts/sub/Chart.yaml) |
-| Security / policy | 18 | [src/core/services/secret-redaction.ts](../../../../sources/clay-good__OpenLore/src/core/services/secret-redaction.ts)<br>[src/core/services/security-capabilities.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/security-capabilities.test.ts)<br>[src/core/services/mcp-handlers/security.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/security.test.ts)<br>[src/core/services/mcp-handlers/tool-guard.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/tool-guard.test.ts)<br>[src/core/services/mcp-handlers/tool-guard.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/tool-guard.ts)<br>[src/cli/commands/audit.ts](../../../../sources/clay-good__OpenLore/src/cli/commands/audit.ts) |
-| Agent instructions | 2 | [AGENTS.md](../../../../sources/clay-good__OpenLore/AGENTS.md)<br>[CLAUDE.md](../../../../sources/clay-good__OpenLore/CLAUDE.md) |
+| 테스트/평가 | 311 | [src/honesty-contract.test.ts](../../../../sources/clay-good__OpenLore/src/honesty-contract.test.ts)<br>[src/viewer/utils/graph-helpers.test.ts](../../../../sources/clay-good__OpenLore/src/viewer/utils/graph-helpers.test.ts)<br>[src/utils/command-helpers.test.ts](../../../../sources/clay-good__OpenLore/src/utils/command-helpers.test.ts)<br>[src/utils/errors.test.ts](../../../../sources/clay-good__OpenLore/src/utils/errors.test.ts)<br>[src/utils/logger.test.ts](../../../../sources/clay-good__OpenLore/src/utils/logger.test.ts)<br>[src/utils/progress.test.ts](../../../../sources/clay-good__OpenLore/src/utils/progress.test.ts) |
+| CI workflow | 5 | [examples/ci/openlore-preflight.gitlab.yml](../../../../sources/clay-good__OpenLore/examples/ci/openlore-preflight.gitlab.yml)<br>[examples/ci/openlore-preflight.sh](../../../../sources/clay-good__OpenLore/examples/ci/openlore-preflight.sh)<br>[examples/ci/openlore-preflight.yml](../../../../sources/clay-good__OpenLore/examples/ci/openlore-preflight.yml)<br>[.github/workflows/ci.yml](../../../../sources/clay-good__OpenLore/.github/workflows/ci.yml)<br>[.github/workflows/release.yml](../../../../sources/clay-good__OpenLore/.github/workflows/release.yml) |
+| 컨테이너/배포 | 6 | [src/core/analyzer/iac/fixtures/kubernetes/app.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/kubernetes/app.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/Chart.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/Chart.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/values.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/values.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/templates/_helpers.tpl](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/templates/_helpers.tpl)<br>[src/core/analyzer/iac/fixtures/helm/mychart/templates/deployment.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/templates/deployment.yaml)<br>[src/core/analyzer/iac/fixtures/helm/mychart/charts/sub/Chart.yaml](../../../../sources/clay-good__OpenLore/src/core/analyzer/iac/fixtures/helm/mychart/charts/sub/Chart.yaml) |
+| 보안/정책 | 18 | [src/core/services/secret-redaction.ts](../../../../sources/clay-good__OpenLore/src/core/services/secret-redaction.ts)<br>[src/core/services/security-capabilities.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/security-capabilities.test.ts)<br>[src/core/services/mcp-handlers/security.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/security.test.ts)<br>[src/core/services/mcp-handlers/tool-guard.test.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/tool-guard.test.ts)<br>[src/core/services/mcp-handlers/tool-guard.ts](../../../../sources/clay-good__OpenLore/src/core/services/mcp-handlers/tool-guard.ts)<br>[src/cli/commands/audit.ts](../../../../sources/clay-good__OpenLore/src/cli/commands/audit.ts) |
+| 에이전트 지시문 | 2 | [AGENTS.md](../../../../sources/clay-good__OpenLore/AGENTS.md)<br>[CLAUDE.md](../../../../sources/clay-good__OpenLore/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `src/core/services/mcp-watcher-incremental.test.ts`, `src/core/services/mcp-watcher.integration.test.ts`, `src/core/services/mcp-watcher.test.ts`.
-2. Trace execution through entrypoints: `src/viewer/app/main.jsx`, `src/core/scip/fixtures/tiny-repo/src/index.ts`, `src/core/analyzer/iac/fixtures/pulumi/__main__.py`.
-3. Map agent/tool runtime through: `AGENTS.md`, `src/viewer/hooks/usePanZoom.js`, `src/core/services/tool-dispatch.ts`.
-4. Inspect retrieval/memory/indexing through: `src/viewer/utils/graph-helpers.js`, `src/viewer/utils/graph-helpers.test.ts`, `src/viewer/app/index.html`.
-5. Verify behavior through test/eval files: `src/honesty-contract.test.ts`, `src/viewer/utils/graph-helpers.test.ts`, `src/utils/command-helpers.test.ts`.
+1. 핵심 참조에서 시작: `src/core/services/mcp-watcher-incremental.test.ts`, `src/core/services/mcp-watcher.integration.test.ts`, `src/core/services/mcp-watcher.test.ts`.
+2. entrypoint를 따라 실행 흐름 확인: `src/viewer/app/main.jsx`, `src/core/scip/fixtures/tiny-repo/src/index.ts`, `src/core/analyzer/iac/fixtures/pulumi/__main__.py`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `src/viewer/hooks/usePanZoom.js`, `src/core/services/tool-dispatch.ts`.
+4. retrieval/memory/indexing 확인: `src/viewer/utils/graph-helpers.js`, `src/viewer/utils/graph-helpers.test.ts`, `src/viewer/app/index.html`.
+5. test/eval 파일로 동작 검증: `src/honesty-contract.test.ts`, `src/viewer/utils/graph-helpers.test.ts`, `src/utils/command-helpers.test.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Deterministic persistent memory that empowers AI agents to accurately map their knowledge boundaries and eliminate guess. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Deterministic persistent memory that empowers AI agents to accurately map their knowledge boundaries and eliminate guess. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

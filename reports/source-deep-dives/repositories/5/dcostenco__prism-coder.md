@@ -1,63 +1,63 @@
-# dcostenco/prism-coder Source Deep Dive
+# dcostenco/prism-coder 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Persistent memory + local AI for coding agents. 1.7B–32B open-weight LLM fleet, cross-session Mind Palace, cognitive routing, L3 grounding verifier, multi-agent Hivemind. Works with Claude Code, Cursor, VS Code. Offline-first, HIPAA-ready. Free tier included.
 
 ## 요약
 
-- 조사 단위: `sources/dcostenco__prism-coder` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 449 files, 87 directories, depth score 129, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/dcostenco__prism-coder` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 449 files, 87 directories, depth score 123, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=examples/langgraph-agent/mcp_client.py, docs/prism_mcp_demo.mp4, .well-known/mcp/server-card.json이고, 의존성 단서는 openai, anthropic, modelcontextprotocol, commander, transformers, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=examples/langgraph-agent/mcp_client.py, docs/prism_mcp_demo.mp4, .well-known/mcp/server-card.json이고, 의존성 단서는 openai, anthropic, modelcontextprotocol, commander, transformers, opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | dcostenco/prism-coder |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | dcostenco/prism-coder |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | korea |
 | Language | TypeScript |
 | Stars | 147 |
 | Forks | 24 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/dcostenco__prism-coder](../../../../sources/dcostenco__prism-coder) |
-| Existing report | [reports/global-trending/repositories/dcostenco__prism-coder.md](../../../global-trending/repositories/dcostenco__prism-coder.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/dcostenco__prism-coder](../../../../sources/dcostenco__prism-coder) |
+| 기존 보고서 | [reports/global-trending/repositories/dcostenco__prism-coder.md](../../../global-trending/repositories/dcostenco__prism-coder.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 449 / 87 |
-| Max observed depth | 6 |
-| Top directories | .agents, .claude, .github, .well-known, adapters, Brave-Gemini-Research-MCP-Server, docs, examples, packages, scripts, skills, src, supabase, tests, training, vertex-ai |
-| Top extensions | .ts: 259, .md: 56, .py: 28, .sql: 27, .json: 16, (none): 11, .jpg: 9, .yml: 9, .png: 5, .js: 4, .mjs: 4, .sh: 4 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 449 / 87 |
+| 관측 최대 깊이 | 6 |
+| 상위 디렉터리 | .agents, .claude, .github, .well-known, adapters, Brave-Gemini-Research-MCP-Server, docs, examples, packages, scripts, skills, src, supabase, tests, training, vertex-ai |
+| 상위 확장자 | .ts: 259, .md: 56, .py: 28, .sql: 27, .json: 16, (none): 11, .jpg: 9, .yml: 9, .png: 5, .js: 4, .mjs: 4, .sh: 4 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | tests | validation surface | 56 |
 | src | source boundary | 36 |
@@ -79,9 +79,9 @@ Persistent memory + local AI for coding agents. 1.7B–32B open-weight LLM fleet
 | supabase | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | build | package.json | build | tsc && npm run chmod-bins |
 | serve-dev | package.json | chmod-bins | node -e "['dist/cli.js','dist/server.js','dist/utils/universalImporter.js'].forEach(f => { try { require('fs').chmodSync(f, 0o755); } catch (e) { console.warn('chmod skipped', f, e.message); } })" |
@@ -100,24 +100,24 @@ Persistent memory + local AI for coding agents. 1.7B–32B open-weight LLM fleet
 | entrypoint | package.json bin | universalImporter.js | dist/utils/universalImporter.js |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
 | llmProviders | openai, anthropic |
 | agentProtocols | modelcontextprotocol |
-| agentFrameworks | none |
-| vectorStores | none |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
 | modelRuntime | transformers |
-| webRuntime | none |
+| webRuntime | 없음 |
 | developerSurface | commander |
 | observability | opentelemetry |
-| browserAutomation | none |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [examples/langgraph-agent/mcp_client.py](../../../../sources/dcostenco__prism-coder/examples/langgraph-agent/mcp_client.py) | mcp signal |
 | mcp | [docs/prism_mcp_demo.mp4](../../../../sources/dcostenco__prism-coder/docs/prism_mcp_demo.mp4) | mcp signal |
@@ -133,9 +133,9 @@ Persistent memory + local AI for coding agents. 1.7B–32B open-weight LLM fleet
 | instruction | [GEMINI.md](../../../../sources/dcostenco__prism-coder/GEMINI.md) | instruction signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 6 | [server.json](../../../../sources/dcostenco__prism-coder/server.json)<br>[src/cli.ts](../../../../sources/dcostenco__prism-coder/src/cli.ts)<br>[src/server.ts](../../../../sources/dcostenco__prism-coder/src/server.ts)<br>[src/dashboard/server.ts](../../../../sources/dcostenco__prism-coder/src/dashboard/server.ts)<br>[packages/prism-coder/bin/prism-coder.js](../../../../sources/dcostenco__prism-coder/packages/prism-coder/bin/prism-coder.js)<br>[examples/langgraph-agent/main.py](../../../../sources/dcostenco__prism-coder/examples/langgraph-agent/main.py) |
 | agentRuntime | 55 | [tests/skill-routing.test.ts](../../../../sources/dcostenco__prism-coder/tests/skill-routing.test.ts)<br>[tests/verification/runner.test.ts](../../../../sources/dcostenco__prism-coder/tests/verification/runner.test.ts)<br>[tests/tools/cli-load.test.ts](../../../../sources/dcostenco__prism-coder/tests/tools/cli-load.test.ts)<br>[tests/tools/cognitiveRoute.test.ts](../../../../sources/dcostenco__prism-coder/tests/tools/cognitiveRoute.test.ts)<br>[tests/tools/compactionHandler.test.ts](../../../../sources/dcostenco__prism-coder/tests/tools/compactionHandler.test.ts)<br>[tests/tools/definitions.test.ts](../../../../sources/dcostenco__prism-coder/tests/tools/definitions.test.ts)<br>[tests/tools/graphHandlers.test.ts](../../../../sources/dcostenco__prism-coder/tests/tools/graphHandlers.test.ts)<br>[tests/tools/ingestHandler.test.ts](../../../../sources/dcostenco__prism-coder/tests/tools/ingestHandler.test.ts) |
@@ -151,39 +151,39 @@ Persistent memory + local AI for coding agents. 1.7B–32B open-weight LLM fleet
 | config | 5 | [package.json](../../../../sources/dcostenco__prism-coder/package.json)<br>[tsconfig.json](../../../../sources/dcostenco__prism-coder/tsconfig.json)<br>[packages/prism-coder/package.json](../../../../sources/dcostenco__prism-coder/packages/prism-coder/package.json)<br>[examples/vercel-ai-sdk-prism/package.json](../../../../sources/dcostenco__prism-coder/examples/vercel-ai-sdk-prism/package.json)<br>[examples/vercel-ai-sdk-prism/tsconfig.json](../../../../sources/dcostenco__prism-coder/examples/vercel-ai-sdk-prism/tsconfig.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 135 | [benchmark.ts](../../../../sources/dcostenco__prism-coder/benchmark.ts)<br>[test-fallback.ts](../../../../sources/dcostenco__prism-coder/test-fallback.ts)<br>[test-yahoo.ts](../../../../sources/dcostenco__prism-coder/test-yahoo.ts)<br>[vertex-ai/test_claude_vertex.py](../../../../sources/dcostenco__prism-coder/vertex-ai/test_claude_vertex.py)<br>[vertex-ai/test_gemini_vertex.py](../../../../sources/dcostenco__prism-coder/vertex-ai/test_gemini_vertex.py)<br>[vertex-ai/test_hybrid_search_pipeline.ts](../../../../sources/dcostenco__prism-coder/vertex-ai/test_hybrid_search_pipeline.ts) |
-| CI workflows | 6 | [.github/workflows/ci.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/codeql.yml)<br>[.github/workflows/link-check.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/link-check.yml)<br>[.github/workflows/publish-prism-coder.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/publish-prism-coder.yml)<br>[.github/workflows/publish.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/publish.yml)<br>[.github/workflows/update-i18n.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/update-i18n.yml) |
-| Containers / deploy | 3 | [docker-compose.yml](../../../../sources/dcostenco__prism-coder/docker-compose.yml)<br>[Dockerfile](../../../../sources/dcostenco__prism-coder/Dockerfile)<br>[Dockerfile.smithery](../../../../sources/dcostenco__prism-coder/Dockerfile.smithery) |
-| Security / policy | 6 | [SECURITY_AUDIT.md](../../../../sources/dcostenco__prism-coder/SECURITY_AUDIT.md)<br>[SECURITY.md](../../../../sources/dcostenco__prism-coder/SECURITY.md)<br>[tests/security-hardening.test.ts](../../../../sources/dcostenco__prism-coder/tests/security-hardening.test.ts)<br>[tests/verification-audit-fixes.test.ts](../../../../sources/dcostenco__prism-coder/tests/verification-audit-fixes.test.ts)<br>[tests/dashboard/auth.test.ts](../../../../sources/dcostenco__prism-coder/tests/dashboard/auth.test.ts)<br>[supabase/migrations/035_rpc_soft_delete_and_write_security.sql](../../../../sources/dcostenco__prism-coder/supabase/migrations/035_rpc_soft_delete_and_write_security.sql) |
-| Agent instructions | 1 | [GEMINI.md](../../../../sources/dcostenco__prism-coder/GEMINI.md) |
+| 테스트/평가 | 135 | [benchmark.ts](../../../../sources/dcostenco__prism-coder/benchmark.ts)<br>[test-fallback.ts](../../../../sources/dcostenco__prism-coder/test-fallback.ts)<br>[test-yahoo.ts](../../../../sources/dcostenco__prism-coder/test-yahoo.ts)<br>[vertex-ai/test_claude_vertex.py](../../../../sources/dcostenco__prism-coder/vertex-ai/test_claude_vertex.py)<br>[vertex-ai/test_gemini_vertex.py](../../../../sources/dcostenco__prism-coder/vertex-ai/test_gemini_vertex.py)<br>[vertex-ai/test_hybrid_search_pipeline.ts](../../../../sources/dcostenco__prism-coder/vertex-ai/test_hybrid_search_pipeline.ts) |
+| CI workflow | 6 | [.github/workflows/ci.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/codeql.yml)<br>[.github/workflows/link-check.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/link-check.yml)<br>[.github/workflows/publish-prism-coder.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/publish-prism-coder.yml)<br>[.github/workflows/publish.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/publish.yml)<br>[.github/workflows/update-i18n.yml](../../../../sources/dcostenco__prism-coder/.github/workflows/update-i18n.yml) |
+| 컨테이너/배포 | 3 | [docker-compose.yml](../../../../sources/dcostenco__prism-coder/docker-compose.yml)<br>[Dockerfile](../../../../sources/dcostenco__prism-coder/Dockerfile)<br>[Dockerfile.smithery](../../../../sources/dcostenco__prism-coder/Dockerfile.smithery) |
+| 보안/정책 | 6 | [SECURITY_AUDIT.md](../../../../sources/dcostenco__prism-coder/SECURITY_AUDIT.md)<br>[SECURITY.md](../../../../sources/dcostenco__prism-coder/SECURITY.md)<br>[tests/security-hardening.test.ts](../../../../sources/dcostenco__prism-coder/tests/security-hardening.test.ts)<br>[tests/verification-audit-fixes.test.ts](../../../../sources/dcostenco__prism-coder/tests/verification-audit-fixes.test.ts)<br>[tests/dashboard/auth.test.ts](../../../../sources/dcostenco__prism-coder/tests/dashboard/auth.test.ts)<br>[supabase/migrations/035_rpc_soft_delete_and_write_security.sql](../../../../sources/dcostenco__prism-coder/supabase/migrations/035_rpc_soft_delete_and_write_security.sql) |
+| 에이전트 지시문 | 1 | [GEMINI.md](../../../../sources/dcostenco__prism-coder/GEMINI.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `examples/langgraph-agent/mcp_client.py`, `docs/prism_mcp_demo.mp4`, `.well-known/mcp/server-card.json`.
-2. Trace execution through entrypoints: `server.json`, `src/cli.ts`, `src/server.ts`.
-3. Map agent/tool runtime through: `tests/skill-routing.test.ts`, `tests/verification/runner.test.ts`, `tests/tools/cli-load.test.ts`.
-4. Inspect retrieval/memory/indexing through: `index.html`, `index.ts`, `tests/test_knowledge_system.js`.
-5. Verify behavior through test/eval files: `benchmark.ts`, `test-fallback.ts`, `test-yahoo.ts`.
+1. 핵심 참조에서 시작: `examples/langgraph-agent/mcp_client.py`, `docs/prism_mcp_demo.mp4`, `.well-known/mcp/server-card.json`.
+2. entrypoint를 따라 실행 흐름 확인: `server.json`, `src/cli.ts`, `src/server.ts`.
+3. agent/tool runtime 매핑: `tests/skill-routing.test.ts`, `tests/verification/runner.test.ts`, `tests/tools/cli-load.test.ts`.
+4. retrieval/memory/indexing 확인: `index.html`, `index.ts`, `tests/test_knowledge_system.js`.
+5. test/eval 파일로 동작 검증: `benchmark.ts`, `test-fallback.ts`, `test-yahoo.ts`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Persistent memory + local AI for coding agents. 1.7B–32B open weight LLM fleet, cross session Mind Palace, cognitive rou. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, LICENSE이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Persistent memory + local AI for coding agents. 1.7B–32B open weight LLM fleet, cross session Mind Palace, cognitive rou. 핵심 구조 신호는 TypeScript, package.json, Dockerfile, docker-compose.yml, README.md, LICENSE이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+korea 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

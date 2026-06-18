@@ -1,63 +1,63 @@
-# eastreams/loong Source Deep Dive
+# eastreams/loong 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Lightweight, clear, and fully extensible AI agent infrastructure — learn easily, customize anything 🐉
 
 ## 요약
 
-- 조사 단위: `sources/eastreams__loong` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 2,406 files, 394 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/eastreams__loong` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 2,406 files, 394 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=skills/native-mcp/SKILL.md, crates/daemon/tests/integration/mcp.rs, crates/daemon/src/mcp_cli.rs이고, 의존성 단서는 opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 cli-first, api/server, agent/tool runtime 구조로 읽힌다. 핵심 소스 근거는 mcp=skills/native-mcp/SKILL.md, crates/daemon/tests/integration/mcp.rs, crates/daemon/src/mcp_cli.rs이고, 의존성 단서는 opentelemetry, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | eastreams/loong |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | eastreams/loong |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | Rust |
 | Stars | 640 |
 | Forks | 104 |
-| License | none |
-| Maturity | solid |
-| Evidence | source+report |
-| Source | [sources/eastreams__loong](../../../../sources/eastreams__loong) |
-| Existing report | [reports/global-trending/repositories/eastreams__loong.md](../../../global-trending/repositories/eastreams__loong.md) |
+| License | 없음 |
+| 성숙도 | 안정 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/eastreams__loong](../../../../sources/eastreams__loong) |
+| 기존 보고서 | [reports/global-trending/repositories/eastreams__loong.md](../../../global-trending/repositories/eastreams__loong.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 2406 / 394 |
-| Max observed depth | 11 |
-| Top directories | .cargo, .github, assets, crates, deploy, docs, examples, patches, runtime-plugins, scripts, site, skills, tasks, tests |
-| Top extensions | .rs: 1017, .md: 576, .xsd: 242, .py: 165, .mdx: 107, .cs: 78, .sh: 59, .json: 28, .xml: 26, .toml: 22, .yml: 17, (none): 16 |
-| Source patterns | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
+| 파일 / 디렉터리 | 2406 / 394 |
+| 관측 최대 깊이 | 11 |
+| 상위 디렉터리 | .cargo, .github, assets, crates, deploy, docs, examples, patches, runtime-plugins, scripts, site, skills, tasks, tests |
+| 상위 확장자 | .rs: 1017, .md: 576, .xsd: 242, .py: 165, .mdx: 107, .cs: 78, .sh: 59, .json: 28, .xml: 26, .toml: 22, .yml: 17, (none): 16 |
+| 소스 패턴 | cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface, containerized deploy |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | crates/app | crates workspace | 30 |
 | examples/spec | examples workspace | 24 |
@@ -79,29 +79,29 @@ Lightweight, clear, and fully extensible AI agent infrastructure — learn easil
 | .github | ci surface | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-_No command surface extracted from root manifests._
+_root manifest에서 추출된 command surface가 없습니다._
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
 | observability | opentelemetry |
-| browserAutomation | none |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [skills/native-mcp/SKILL.md](../../../../sources/eastreams__loong/skills/native-mcp/SKILL.md) | mcp signal |
 | mcp | [crates/daemon/tests/integration/mcp.rs](../../../../sources/eastreams__loong/crates/daemon/tests/integration/mcp.rs) | mcp signal |
@@ -117,9 +117,9 @@ _No command surface extracted from root manifests._
 | entrypoints | [crates/loong-plugin-sdk/src/lib.rs](../../../../sources/eastreams__loong/crates/loong-plugin-sdk/src/lib.rs) | entrypoints signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 14 | [crates/spec/src/lib.rs](../../../../sources/eastreams__loong/crates/spec/src/lib.rs)<br>[crates/protocol/src/lib.rs](../../../../sources/eastreams__loong/crates/protocol/src/lib.rs)<br>[crates/loong-runtime/src/lib.rs](../../../../sources/eastreams__loong/crates/loong-runtime/src/lib.rs)<br>[crates/loong-plugin-sdk/src/lib.rs](../../../../sources/eastreams__loong/crates/loong-plugin-sdk/src/lib.rs)<br>[crates/loong-core/src/lib.rs](../../../../sources/eastreams__loong/crates/loong-core/src/lib.rs)<br>[crates/loong-cli/src/lib.rs](../../../../sources/eastreams__loong/crates/loong-cli/src/lib.rs)<br>[crates/loong-app-protocol/src/lib.rs](../../../../sources/eastreams__loong/crates/loong-app-protocol/src/lib.rs)<br>[crates/kernel/src/lib.rs](../../../../sources/eastreams__loong/crates/kernel/src/lib.rs) |
 | agentRuntime | 1226 | [AGENTS.md](../../../../sources/eastreams__loong/AGENTS.md)<br>[skills/systematic-debugging/SKILL.md](../../../../sources/eastreams__loong/skills/systematic-debugging/SKILL.md)<br>[skills/skill-creator/LICENSE.txt](../../../../sources/eastreams__loong/skills/skill-creator/LICENSE.txt)<br>[skills/skill-creator/SKILL.md](../../../../sources/eastreams__loong/skills/skill-creator/SKILL.md)<br>[skills/skill-creator/scripts/__init__.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/__init__.py)<br>[skills/skill-creator/scripts/aggregate_benchmark.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/aggregate_benchmark.py)<br>[skills/skill-creator/scripts/generate_report.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/generate_report.py)<br>[skills/skill-creator/scripts/improve_description.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/improve_description.py) |
@@ -135,39 +135,39 @@ _No command surface extracted from root manifests._
 | config | 18 | [Cargo.lock](../../../../sources/eastreams__loong/Cargo.lock)<br>[Cargo.toml](../../../../sources/eastreams__loong/Cargo.toml)<br>[runtime-plugins/whatsapp-personal-bridge/package.json](../../../../sources/eastreams__loong/runtime-plugins/whatsapp-personal-bridge/package.json)<br>[patches/dialoguer-0.12.0/Cargo.lock](../../../../sources/eastreams__loong/patches/dialoguer-0.12.0/Cargo.lock)<br>[patches/dialoguer-0.12.0/Cargo.toml](../../../../sources/eastreams__loong/patches/dialoguer-0.12.0/Cargo.toml)<br>[crates/spec/Cargo.toml](../../../../sources/eastreams__loong/crates/spec/Cargo.toml)<br>[crates/protocol/Cargo.toml](../../../../sources/eastreams__loong/crates/protocol/Cargo.toml)<br>[crates/loong-runtime/Cargo.toml](../../../../sources/eastreams__loong/crates/loong-runtime/Cargo.toml) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 277 | [tests/__init__.py](../../../../sources/eastreams__loong/tests/__init__.py)<br>[skills/skill-creator/scripts/aggregate_benchmark.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/aggregate_benchmark.py)<br>[skills/skill-creator/scripts/run_eval.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/run_eval.py)<br>[skills/skill-creator/eval-viewer/generate_review.py](../../../../sources/eastreams__loong/skills/skill-creator/eval-viewer/generate_review.py)<br>[skills/skill-creator/eval-viewer/viewer.html](../../../../sources/eastreams__loong/skills/skill-creator/eval-viewer/viewer.html)<br>[skills/skill-creator/assets/eval_review.html](../../../../sources/eastreams__loong/skills/skill-creator/assets/eval_review.html) |
-| CI workflows | 9 | [.github/workflows/ci.yml](../../../../sources/eastreams__loong/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/eastreams__loong/.github/workflows/codeql.yml)<br>[.github/workflows/enforce-dev-to-main.yml](../../../../sources/eastreams__loong/.github/workflows/enforce-dev-to-main.yml)<br>[.github/workflows/enforce-main-to-release.yml](../../../../sources/eastreams__loong/.github/workflows/enforce-main-to-release.yml)<br>[.github/workflows/labeler.yml](../../../../sources/eastreams__loong/.github/workflows/labeler.yml)<br>[.github/workflows/perf-benchmark.yml](../../../../sources/eastreams__loong/.github/workflows/perf-benchmark.yml) |
-| Containers / deploy | 4 | [deploy/observability/docker-compose.yml](../../../../sources/eastreams__loong/deploy/observability/docker-compose.yml)<br>[deploy/observability/generate-certs.sh](../../../../sources/eastreams__loong/deploy/observability/generate-certs.sh)<br>[deploy/observability/otel-collector-config.yaml](../../../../sources/eastreams__loong/deploy/observability/otel-collector-config.yaml)<br>[deploy/observability/README.md](../../../../sources/eastreams__loong/deploy/observability/README.md) |
-| Security / policy | 63 | [SECURITY.md](../../../../sources/eastreams__loong/SECURITY.md)<br>[skills/minimax-office/minimax-xlsx/scripts/style_audit.py](../../../../sources/eastreams__loong/skills/minimax-office/minimax-xlsx/scripts/style_audit.py)<br>[site/reference/documentation-policy.mdx](../../../../sources/eastreams__loong/site/reference/documentation-policy.mdx)<br>[site/reference/security-and-reliability.mdx](../../../../sources/eastreams__loong/site/reference/security-and-reliability.mdx)<br>[scripts/test_promotion_guard_workflows.sh](../../../../sources/eastreams__loong/scripts/test_promotion_guard_workflows.sh)<br>[examples/spec/plugin-bootstrap-trust-policy.json](../../../../sources/eastreams__loong/examples/spec/plugin-bootstrap-trust-policy.json) |
-| Agent instructions | 3 | [AGENTS.md](../../../../sources/eastreams__loong/AGENTS.md)<br>[CLAUDE.md](../../../../sources/eastreams__loong/CLAUDE.md)<br>[site/use-loong/provider-guides/gemini.mdx](../../../../sources/eastreams__loong/site/use-loong/provider-guides/gemini.mdx) |
+| 테스트/평가 | 277 | [tests/__init__.py](../../../../sources/eastreams__loong/tests/__init__.py)<br>[skills/skill-creator/scripts/aggregate_benchmark.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/aggregate_benchmark.py)<br>[skills/skill-creator/scripts/run_eval.py](../../../../sources/eastreams__loong/skills/skill-creator/scripts/run_eval.py)<br>[skills/skill-creator/eval-viewer/generate_review.py](../../../../sources/eastreams__loong/skills/skill-creator/eval-viewer/generate_review.py)<br>[skills/skill-creator/eval-viewer/viewer.html](../../../../sources/eastreams__loong/skills/skill-creator/eval-viewer/viewer.html)<br>[skills/skill-creator/assets/eval_review.html](../../../../sources/eastreams__loong/skills/skill-creator/assets/eval_review.html) |
+| CI workflow | 9 | [.github/workflows/ci.yml](../../../../sources/eastreams__loong/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/eastreams__loong/.github/workflows/codeql.yml)<br>[.github/workflows/enforce-dev-to-main.yml](../../../../sources/eastreams__loong/.github/workflows/enforce-dev-to-main.yml)<br>[.github/workflows/enforce-main-to-release.yml](../../../../sources/eastreams__loong/.github/workflows/enforce-main-to-release.yml)<br>[.github/workflows/labeler.yml](../../../../sources/eastreams__loong/.github/workflows/labeler.yml)<br>[.github/workflows/perf-benchmark.yml](../../../../sources/eastreams__loong/.github/workflows/perf-benchmark.yml) |
+| 컨테이너/배포 | 4 | [deploy/observability/docker-compose.yml](../../../../sources/eastreams__loong/deploy/observability/docker-compose.yml)<br>[deploy/observability/generate-certs.sh](../../../../sources/eastreams__loong/deploy/observability/generate-certs.sh)<br>[deploy/observability/otel-collector-config.yaml](../../../../sources/eastreams__loong/deploy/observability/otel-collector-config.yaml)<br>[deploy/observability/README.md](../../../../sources/eastreams__loong/deploy/observability/README.md) |
+| 보안/정책 | 63 | [SECURITY.md](../../../../sources/eastreams__loong/SECURITY.md)<br>[skills/minimax-office/minimax-xlsx/scripts/style_audit.py](../../../../sources/eastreams__loong/skills/minimax-office/minimax-xlsx/scripts/style_audit.py)<br>[site/reference/documentation-policy.mdx](../../../../sources/eastreams__loong/site/reference/documentation-policy.mdx)<br>[site/reference/security-and-reliability.mdx](../../../../sources/eastreams__loong/site/reference/security-and-reliability.mdx)<br>[scripts/test_promotion_guard_workflows.sh](../../../../sources/eastreams__loong/scripts/test_promotion_guard_workflows.sh)<br>[examples/spec/plugin-bootstrap-trust-policy.json](../../../../sources/eastreams__loong/examples/spec/plugin-bootstrap-trust-policy.json) |
+| 에이전트 지시문 | 3 | [AGENTS.md](../../../../sources/eastreams__loong/AGENTS.md)<br>[CLAUDE.md](../../../../sources/eastreams__loong/CLAUDE.md)<br>[site/use-loong/provider-guides/gemini.mdx](../../../../sources/eastreams__loong/site/use-loong/provider-guides/gemini.mdx) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
-| evidenceGaps | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
+| evidenceGaps | 없음 |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `skills/native-mcp/SKILL.md`, `crates/daemon/tests/integration/mcp.rs`, `crates/daemon/src/mcp_cli.rs`.
-2. Trace execution through entrypoints: `crates/spec/src/lib.rs`, `crates/protocol/src/lib.rs`, `crates/loong-runtime/src/lib.rs`.
-3. Map agent/tool runtime through: `AGENTS.md`, `skills/systematic-debugging/SKILL.md`, `skills/skill-creator/LICENSE.txt`.
-4. Inspect retrieval/memory/indexing through: `skills/larksuite-cli/lark-wiki/SKILL.md`, `skills/byted-web-search/references/docs-index.md`, `site/index.mdx`.
-5. Verify behavior through test/eval files: `tests/__init__.py`, `skills/skill-creator/scripts/aggregate_benchmark.py`, `skills/skill-creator/scripts/run_eval.py`.
+1. 핵심 참조에서 시작: `skills/native-mcp/SKILL.md`, `crates/daemon/tests/integration/mcp.rs`, `crates/daemon/src/mcp_cli.rs`.
+2. entrypoint를 따라 실행 흐름 확인: `crates/spec/src/lib.rs`, `crates/protocol/src/lib.rs`, `crates/loong-runtime/src/lib.rs`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `skills/systematic-debugging/SKILL.md`, `skills/skill-creator/LICENSE.txt`.
+4. retrieval/memory/indexing 확인: `skills/larksuite-cli/lark-wiki/SKILL.md`, `skills/byted-web-search/references/docs-index.md`, `site/index.mdx`.
+5. test/eval 파일로 동작 검증: `tests/__init__.py`, `skills/skill-creator/scripts/aggregate_benchmark.py`, `skills/skill-creator/scripts/run_eval.py`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Lightweight, clear, and fully extensible AI agent infrastructure — learn easily, customize anything 🐉. 핵심 구조 신호는 Rust, Cargo.toml, README.md, AGENTS.md, CLAUDE.md, tests이며, source+report 근거 수준으로 solid 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Lightweight, clear, and fully extensible AI agent infrastructure — learn easily, customize anything 🐉. 핵심 구조 신호는 Rust, Cargo.toml, README.md, AGENTS.md, CLAUDE.md, tests이며, 소스+보고서 근거 수준으로 안정 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.

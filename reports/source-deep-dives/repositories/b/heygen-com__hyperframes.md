@@ -1,63 +1,63 @@
-# heygen-com/hyperframes Source Deep Dive
+# heygen-com/hyperframes 소스 딥다이브
 
-Generated: 2026-06-18T15:12:44.535Z
+생성 시각: 2026-06-18T15:31:35.584Z
 
 Write HTML. Render video. Built for agents.
 
 ## 요약
 
-- 조사 단위: `sources/heygen-com__hyperframes` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 deep dive입니다.
-- 포함 범위: 3,636 files, 792 directories, depth score 132, key references 12개입니다.
-- 탐색 방식: Reading Plan을 먼저 보고, Evidence Buckets와 Key Source References의 파일 링크를 따라가면 됩니다.
+- 조사 단위: `sources/heygen-com__hyperframes` 로컬 클론을 실제 파일 트리 기준으로 분석한 레포별 딥다이브입니다.
+- 포함 범위: 3,636 files, 792 directories, depth score 126, key references 12개입니다.
+- 탐색 방식: 읽기 계획을 먼저 보고, 근거 bucket과 핵심 소스 참조의 파일 링크를 따라가면 됩니다.
 
 ## 총평
 
-에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=docs/guides/mcp.mdx이고, 의존성 단서는 dependency cue 약함, 검증/운영 단서는 test/eval 경로가 보임, CI workflow가 보임, container/deploy 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 tooling and harness pattern reference이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
+에이전트 하네스/MCP 관점에서 monorepo/workspace, cli-first, api/server 구조로 읽힌다. 핵심 소스 근거는 mcp=docs/guides/mcp.mdx이고, 의존성 단서는 의존성 단서 약함, 검증/운영 단서는 test/eval 경로가 보임, CI 워크플로가 보임, 컨테이너/배포 파일이 보임, 에이전트 지시문 파일이 보임이다. 이 판단은 README 메타데이터가 아니라 로컬 소스의 12개 파일 경로를 직접 스캔해야 확인된다. 기존 레포 평가 관점은 도구/하네스 패턴 참고이며, 이 문서는 README/메타데이터가 아니라 실제 소스 경로를 기준으로 후속 확인 지점을 분리합니다.
 
-## Navigation
+## 바로가기
 
-| Entry | Use it for |
+| 이동 | 여기서 볼 것 |
 | --- | --- |
-| [Repository README](../../../../README.md) | Repo-wide orientation and top-level data/report structure. |
-| [Reports Reading Index](../../../README.md) | Main report navigation, topics, and folder map. |
-| [Reports by Topic](../../../by-topic/README.md) | Topic-first report navigation. |
-| [Report Tables](../../../tables/README.md) | Table-first view and CSV exports. |
-| [Repository Insights](../../../repository-insights/README.md) | Repository-by-repository assessment rows. |
-| [Source Deep Dives](../../README.md) | Source-path-level findings by topic. |
-| [Source Repository Deep Dives](../README.md) | One Markdown deep dive per cloned repository. |
-| [Source Trend Insights](../../../source-insights/README.md) | Category trend insights and repository feature comparison from source evidence. |
+| [전체 시작 README](../../../../README.md) | 레포 전체 목적, 핵심 카테고리, 읽는 순서. |
+| [전체 보고서 읽기 지도](../../../README.md) | 모든 보고서의 시작점, 주제, 폴더 지도. |
+| [주제별 보고서 목차](../../../by-topic/README.md) | 조사 질문 기준으로 보고서를 찾는 입구. |
+| [표/CSV 목차](../../../tables/README.md) | 표로 빠르게 훑고 CSV로 비교하는 입구. |
+| [레포별 인사이트](../../../repository-insights/README.md) | 레포별 총평과 위험 신호. |
+| [소스 딥다이브](../../README.md) | 주제별 소스 경로 근거. |
+| [레포별 소스 딥다이브](../README.md) | 로컬 클론 1개당 1개 Markdown 딥다이브. |
+| [소스 트렌드 인사이트](../../../source-insights/README.md) | 카테고리별 트렌드와 레포별 특징 비교. |
 
 
-## Repository Context
+## 레포 컨텍스트
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Repository | heygen-com/hyperframes |
-| Topic | Agent Harness and MCP / 에이전트 하네스/MCP |
+| 레포 | heygen-com/hyperframes |
+| 주제 | 에이전트 하네스/MCP / 에이전트 하네스/MCP |
 | Region | global |
 | Language | TypeScript |
 | Stars | 28446 |
 | Forks | 2692 |
-| License | none |
-| Maturity | high-signal |
-| Evidence | source+report |
-| Source | [sources/heygen-com__hyperframes](../../../../sources/heygen-com__hyperframes) |
-| Existing report | [reports/global-trending/repositories/heygen-com__hyperframes.md](../../../global-trending/repositories/heygen-com__hyperframes.md) |
+| License | 없음 |
+| 성숙도 | 고신호 |
+| 근거 수준 | 소스+보고서 |
+| 소스 | [sources/heygen-com__hyperframes](../../../../sources/heygen-com__hyperframes) |
+| 기존 보고서 | [reports/global-trending/repositories/heygen-com__hyperframes.md](../../../global-trending/repositories/heygen-com__hyperframes.md) |
 
 
-## Architecture Map
+## 구조 지도
 
-| Field | Value |
+| 항목 | 값 |
 | --- | --- |
-| Files / directories | 3636 / 792 |
-| Max observed depth | 9 |
-| Top directories | .claude, .claude-plugin, .codex-plugin, .cursor-plugin, .github, assets, docs, examples, packages, registry, releases, scripts, skills, updates |
-| Top extensions | .ts: 1100, .md: 768, .html: 466, .json: 308, .mdx: 175, .png: 155, .tsx: 126, .mjs: 102, .mp3: 76, .mp4: 61, .woff2: 54, .jpg: 45 |
-| Source patterns | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
+| 파일 / 디렉터리 | 3636 / 792 |
+| 관측 최대 깊이 | 9 |
+| 상위 디렉터리 | .claude, .claude-plugin, .codex-plugin, .cursor-plugin, .github, assets, docs, examples, packages, registry, releases, scripts, skills, updates |
+| 상위 확장자 | .ts: 1100, .md: 768, .html: 466, .json: 308, .mdx: 175, .png: 155, .tsx: 126, .mjs: 102, .mp3: 76, .mp4: 61, .woff2: 54, .jpg: 45 |
+| 소스 패턴 | monorepo/workspace, cli-first, api/server, agent/tool runtime, retrieval/vector path, spec/docs-driven, eval/test harness, security/policy surface |
 
-### Components
+### 컴포넌트
 
-| Component | Role | Signal count |
+| 컴포넌트 | 역할 | 신호 수 |
 | --- | --- | ---: |
 | packages/cli | packages workspace | 42 |
 | packages/producer | packages workspace | 39 |
@@ -79,9 +79,9 @@ Write HTML. Render video. Built for agents.
 | registry | top-level component | 1 |
 
 
-## How It Runs
+## 실행 방식
 
-| Category | Source | Name | Command |
+| 카테고리 | 출처 | 이름 | 명령 |
 | --- | --- | --- | --- |
 | serve-dev | package.json | dev | bun run studio |
 | build | package.json | build | bun run --filter @hyperframes/core build && bun run --filter '@hyperframes/{core,engine,producer,player,studio,shader-transitions,aws-lambda,gcp-cloud-run,sdk}' build && bun run --filter @hyperframes/cli build |
@@ -112,24 +112,24 @@ Write HTML. Render video. Built for agents.
 | test | package.json | prepare | test -d .git && lefthook install \|\| true |
 
 
-## Dependency Stack
+## 의존성 스택
 
-| Group | Detected cues |
+| 그룹 | 감지된 단서 |
 | --- | --- |
-| llmProviders | none |
-| agentProtocols | none |
-| agentFrameworks | none |
-| vectorStores | none |
-| modelRuntime | none |
-| webRuntime | none |
-| developerSurface | none |
-| observability | none |
-| browserAutomation | none |
+| llmProviders | 없음 |
+| agentProtocols | 없음 |
+| agentFrameworks | 없음 |
+| vectorStores | 없음 |
+| modelRuntime | 없음 |
+| webRuntime | 없음 |
+| developerSurface | 없음 |
+| observability | 없음 |
+| browserAutomation | 없음 |
 
 
-## Key Source References
+## 핵심 소스 참조
 
-| Bucket | Source path | Why it matters |
+| Bucket | 소스 경로 | 중요한 이유 |
 | --- | --- | --- |
 | mcp | [docs/guides/mcp.mdx](../../../../sources/heygen-com__hyperframes/docs/guides/mcp.mdx) | mcp signal |
 | agentRuntime | [AGENTS.md](../../../../sources/heygen-com__hyperframes/AGENTS.md) | agentRuntime signal |
@@ -145,9 +145,9 @@ Write HTML. Render video. Built for agents.
 | instruction | [packages/cli/src/templates/_shared/CLAUDE.md](../../../../sources/heygen-com__hyperframes/packages/cli/src/templates/_shared/CLAUDE.md) | instruction signal |
 
 
-## Evidence Buckets
+## 근거 Bucket
 
-| Evidence bucket | Hits | Representative paths |
+| 근거 bucket | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
 | entrypoints | 83 | [skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/src/index.ts](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/src/index.ts)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/src/index.ts](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/src/index.ts)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/src/index.ts](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/src/index.ts)<br>[packages/studio/src/App.tsx](../../../../sources/heygen-com__hyperframes/packages/studio/src/App.tsx)<br>[packages/studio/src/index.ts](../../../../sources/heygen-com__hyperframes/packages/studio/src/index.ts)<br>[packages/studio/src/main.tsx](../../../../sources/heygen-com__hyperframes/packages/studio/src/main.tsx)<br>[packages/shader-transitions/src/index.ts](../../../../sources/heygen-com__hyperframes/packages/shader-transitions/src/index.ts)<br>[packages/sdk-playground/src/main.ts](../../../../sources/heygen-com__hyperframes/packages/sdk-playground/src/main.ts) |
 | agentRuntime | 1167 | [AGENTS.md](../../../../sources/heygen-com__hyperframes/AGENTS.md)<br>[skills/website-to-video/SKILL.md](../../../../sources/heygen-com__hyperframes/skills/website-to-video/SKILL.md)<br>[skills/website-to-video/scripts/w2h-verify.mjs](../../../../sources/heygen-com__hyperframes/skills/website-to-video/scripts/w2h-verify.mjs)<br>[skills/website-to-video/references/beat-builder-guide.md](../../../../sources/heygen-com__hyperframes/skills/website-to-video/references/beat-builder-guide.md)<br>[skills/website-to-video/references/capabilities.md](../../../../sources/heygen-com__hyperframes/skills/website-to-video/references/capabilities.md)<br>[skills/website-to-video/references/step-0-capture.md](../../../../sources/heygen-com__hyperframes/skills/website-to-video/references/step-0-capture.md)<br>[skills/website-to-video/references/step-1-design.md](../../../../sources/heygen-com__hyperframes/skills/website-to-video/references/step-1-design.md)<br>[skills/website-to-video/references/step-2-brief.md](../../../../sources/heygen-com__hyperframes/skills/website-to-video/references/step-2-brief.md) |
@@ -163,39 +163,39 @@ Write HTML. Render video. Built for agents.
 | config | 30 | [package.json](../../../../sources/heygen-com__hyperframes/package.json)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/package.json](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/package.json)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/tsconfig.json](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/tsconfig.json)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/package.json](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/package.json)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/tsconfig.json](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/tsconfig.json)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/package.json](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/package.json)<br>[skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/tsconfig.json](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/tsconfig.json)<br>[packages/studio/package.json](../../../../sources/heygen-com__hyperframes/packages/studio/package.json) |
 
 
-## Validation Surface
+## 검증 표면
 
-| Surface | Hits | Representative paths |
+| 표면 | Hit 수 | 대표 경로 |
 | --- | ---: | --- |
-| Tests / evals | 920 | [skills/remotion-to-hyperframes/scripts/tests/smoke.sh](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/scripts/tests/smoke.sh)<br>[skills/remotion-to-hyperframes/scripts/tests/fixtures/blocker.tsx](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/scripts/tests/fixtures/blocker.tsx)<br>[skills/remotion-to-hyperframes/scripts/tests/fixtures/clean.tsx](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/scripts/tests/fixtures/clean.tsx)<br>[skills/remotion-to-hyperframes/references/eval.md](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/references/eval.md)<br>[skills/remotion-to-hyperframes/assets/test-corpus/.gitignore](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/.gitignore)<br>[skills/remotion-to-hyperframes/assets/test-corpus/run.sh](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/run.sh) |
-| CI workflows | 10 | [.github/workflows/catalog-previews.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/catalog-previews.yml)<br>[.github/workflows/ci.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/codeql.yml)<br>[.github/workflows/docs.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/docs.yml)<br>[.github/workflows/player-perf.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/player-perf.yml)<br>[.github/workflows/preview-regression.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/preview-regression.yml) |
-| Containers / deploy | 10 | [Dockerfile.test](../../../../sources/heygen-com__hyperframes/Dockerfile.test)<br>[skills/motion-graphics/categories/charts/module.md](../../../../sources/heygen-com__hyperframes/skills/motion-graphics/categories/charts/module.md)<br>[packages/gcp-cloud-run/Dockerfile](../../../../sources/heygen-com__hyperframes/packages/gcp-cloud-run/Dockerfile)<br>[packages/cli/src/docker/Dockerfile.render](../../../../sources/heygen-com__hyperframes/packages/cli/src/docker/Dockerfile.render)<br>[examples/k8s-jobs/Dockerfile.example](../../../../sources/heygen-com__hyperframes/examples/k8s-jobs/Dockerfile.example)<br>[docs/deploy/aws-lambda.mdx](../../../../sources/heygen-com__hyperframes/docs/deploy/aws-lambda.mdx) |
-| Security / policy | 35 | [SECURITY.md](../../../../sources/heygen-com__hyperframes/SECURITY.md)<br>[skills/graphic-overlays/references/styles/audit.html](../../../../sources/heygen-com__hyperframes/skills/graphic-overlays/references/styles/audit.html)<br>[packages/engine/src/utils/uint16-alignment-audit.test.ts](../../../../sources/heygen-com__hyperframes/packages/engine/src/utils/uint16-alignment-audit.test.ts)<br>[packages/core/scripts/test-hyperframe-runtime-security.ts](../../../../sources/heygen-com__hyperframes/packages/core/scripts/test-hyperframe-runtime-security.ts)<br>[packages/cli/src/commands/auth.ts](../../../../sources/heygen-com__hyperframes/packages/cli/src/commands/auth.ts)<br>[packages/cli/src/commands/contrast-audit.browser.js](../../../../sources/heygen-com__hyperframes/packages/cli/src/commands/contrast-audit.browser.js) |
-| Agent instructions | 4 | [AGENTS.md](../../../../sources/heygen-com__hyperframes/AGENTS.md)<br>[CLAUDE.md](../../../../sources/heygen-com__hyperframes/CLAUDE.md)<br>[packages/cli/src/templates/_shared/AGENTS.md](../../../../sources/heygen-com__hyperframes/packages/cli/src/templates/_shared/AGENTS.md)<br>[packages/cli/src/templates/_shared/CLAUDE.md](../../../../sources/heygen-com__hyperframes/packages/cli/src/templates/_shared/CLAUDE.md) |
+| 테스트/평가 | 920 | [skills/remotion-to-hyperframes/scripts/tests/smoke.sh](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/scripts/tests/smoke.sh)<br>[skills/remotion-to-hyperframes/scripts/tests/fixtures/blocker.tsx](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/scripts/tests/fixtures/blocker.tsx)<br>[skills/remotion-to-hyperframes/scripts/tests/fixtures/clean.tsx](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/scripts/tests/fixtures/clean.tsx)<br>[skills/remotion-to-hyperframes/references/eval.md](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/references/eval.md)<br>[skills/remotion-to-hyperframes/assets/test-corpus/.gitignore](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/.gitignore)<br>[skills/remotion-to-hyperframes/assets/test-corpus/run.sh](../../../../sources/heygen-com__hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/run.sh) |
+| CI workflow | 10 | [.github/workflows/catalog-previews.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/catalog-previews.yml)<br>[.github/workflows/ci.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/ci.yml)<br>[.github/workflows/codeql.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/codeql.yml)<br>[.github/workflows/docs.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/docs.yml)<br>[.github/workflows/player-perf.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/player-perf.yml)<br>[.github/workflows/preview-regression.yml](../../../../sources/heygen-com__hyperframes/.github/workflows/preview-regression.yml) |
+| 컨테이너/배포 | 10 | [Dockerfile.test](../../../../sources/heygen-com__hyperframes/Dockerfile.test)<br>[skills/motion-graphics/categories/charts/module.md](../../../../sources/heygen-com__hyperframes/skills/motion-graphics/categories/charts/module.md)<br>[packages/gcp-cloud-run/Dockerfile](../../../../sources/heygen-com__hyperframes/packages/gcp-cloud-run/Dockerfile)<br>[packages/cli/src/docker/Dockerfile.render](../../../../sources/heygen-com__hyperframes/packages/cli/src/docker/Dockerfile.render)<br>[examples/k8s-jobs/Dockerfile.example](../../../../sources/heygen-com__hyperframes/examples/k8s-jobs/Dockerfile.example)<br>[docs/deploy/aws-lambda.mdx](../../../../sources/heygen-com__hyperframes/docs/deploy/aws-lambda.mdx) |
+| 보안/정책 | 35 | [SECURITY.md](../../../../sources/heygen-com__hyperframes/SECURITY.md)<br>[skills/graphic-overlays/references/styles/audit.html](../../../../sources/heygen-com__hyperframes/skills/graphic-overlays/references/styles/audit.html)<br>[packages/engine/src/utils/uint16-alignment-audit.test.ts](../../../../sources/heygen-com__hyperframes/packages/engine/src/utils/uint16-alignment-audit.test.ts)<br>[packages/core/scripts/test-hyperframe-runtime-security.ts](../../../../sources/heygen-com__hyperframes/packages/core/scripts/test-hyperframe-runtime-security.ts)<br>[packages/cli/src/commands/auth.ts](../../../../sources/heygen-com__hyperframes/packages/cli/src/commands/auth.ts)<br>[packages/cli/src/commands/contrast-audit.browser.js](../../../../sources/heygen-com__hyperframes/packages/cli/src/commands/contrast-audit.browser.js) |
+| 에이전트 지시문 | 4 | [AGENTS.md](../../../../sources/heygen-com__hyperframes/AGENTS.md)<br>[CLAUDE.md](../../../../sources/heygen-com__hyperframes/CLAUDE.md)<br>[packages/cli/src/templates/_shared/AGENTS.md](../../../../sources/heygen-com__hyperframes/packages/cli/src/templates/_shared/AGENTS.md)<br>[packages/cli/src/templates/_shared/CLAUDE.md](../../../../sources/heygen-com__hyperframes/packages/cli/src/templates/_shared/CLAUDE.md) |
 
 
-## Risks and Follow-up Checks
+## 위험 신호와 후속 확인
 
-| Risk category | Findings |
+| 위험 카테고리 | 발견 사항 |
 | --- | --- |
-| architecture | none |
-| operation | none |
-| security | none |
+| architecture | 없음 |
+| operation | 없음 |
+| security | 없음 |
 | evidenceGaps | dependency cue weak in root manifests |
 
 
-## Reading Plan
+## 읽기 계획
 
-1. Start from key references: `docs/guides/mcp.mdx`, `AGENTS.md`, `skills/website-to-video/SKILL.md`.
-2. Trace execution through entrypoints: `skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/src/index.ts`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/src/index.ts`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/src/index.ts`.
-3. Map agent/tool runtime through: `AGENTS.md`, `skills/website-to-video/SKILL.md`, `skills/website-to-video/scripts/w2h-verify.mjs`.
-4. Inspect retrieval/memory/indexing through: `skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/src/index.ts`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/hf-src/index.html`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/src/index.ts`.
-5. Verify behavior through test/eval files: `skills/remotion-to-hyperframes/scripts/tests/smoke.sh`, `skills/remotion-to-hyperframes/scripts/tests/fixtures/blocker.tsx`, `skills/remotion-to-hyperframes/scripts/tests/fixtures/clean.tsx`.
+1. 핵심 참조에서 시작: `docs/guides/mcp.mdx`, `AGENTS.md`, `skills/website-to-video/SKILL.md`.
+2. entrypoint를 따라 실행 흐름 확인: `skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/src/index.ts`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/src/index.ts`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/remotion-src/src/index.ts`.
+3. agent/tool runtime 매핑: `AGENTS.md`, `skills/website-to-video/SKILL.md`, `skills/website-to-video/scripts/w2h-verify.mjs`.
+4. retrieval/memory/indexing 확인: `skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/remotion-src/src/index.ts`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/hf-src/index.html`, `skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/remotion-src/src/index.ts`.
+5. test/eval 파일로 동작 검증: `skills/remotion-to-hyperframes/scripts/tests/smoke.sh`, `skills/remotion-to-hyperframes/scripts/tests/fixtures/blocker.tsx`, `skills/remotion-to-hyperframes/scripts/tests/fixtures/clean.tsx`.
 
-## Existing Repository Insight
+## 기존 레포 인사이트
 
-에이전트 하네스/MCP 관점에서 Write HTML. Render video. Built for agents.. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, source+report 근거 수준으로 high-signal 후보로 읽는 것이 좋습니다.
+에이전트 하네스/MCP 관점에서 Write HTML. Render video. Built for agents.. 핵심 구조 신호는 TypeScript, package.json, README.md, AGENTS.md, CLAUDE.md, LICENSE이며, 소스+보고서 근거 수준으로 고신호 후보로 읽는 것이 좋습니다.
 
-## Existing Assessment
+## 기존 평가
 
-global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 tooling and harness pattern reference이고, 후속 확인 포인트는 test signal not obvious, license metadata missing, needs deeper structural scan입니다.
+global 신호의 에이전트 하네스/MCP 레포입니다. 활용 관점은 도구/하네스 패턴 참고이고, 후속 확인 포인트는 테스트 신호가 명확하지 않음, 라이선스 메타데이터 없음, 더 깊은 구조 스캔 필요입니다.
